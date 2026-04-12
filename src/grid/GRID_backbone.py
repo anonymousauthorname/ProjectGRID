@@ -198,7 +198,7 @@ def _build_final_split_output(
     return "\n".join(blocks).strip()
 
 
-class _GRIDTwoStepsMixin:
+class _GRIDBackboneMixin:
 
     def _create_entity_step_prompt(self, content: str) -> List[Dict[str, str]]:
         return [
@@ -233,7 +233,7 @@ class _GRIDTwoStepsMixin:
             {"name": "Preview_Target", "type": "other"},
         ]
         return {
-            "prompt_type": "GRID_two_steps",
+            "prompt_type": "GRID_backbone",
             "prompt_version": PROMPT_VERSION,
             "step1_entity_prompt": self._create_entity_step_prompt(content),
             "step2_entity_relation_prompt_template": self._create_relation_step_prompt(
@@ -349,15 +349,15 @@ class _GRIDTwoStepsMixin:
         return results
 
 
-class _GRIDTwoStepsToolsAskMethod(_GRIDTwoStepsMixin, ToolsAskMethod):
+class _GRIDBackboneToolsAskMethod(_GRIDBackboneMixin, ToolsAskMethod):
     pass
 
 
-class _GRIDTwoStepsVLLMServerMethod(_GRIDTwoStepsMixin, VLLMServerMethod):
+class _GRIDBackboneVLLMServerMethod(_GRIDBackboneMixin, VLLMServerMethod):
     pass
 
 
-class GRIDTwoStepsMethod:
+class GRIDBackboneMethod:
 
     def __init__(
         self,
@@ -374,7 +374,7 @@ class GRIDTwoStepsMethod:
     ):
         self.llm_backend = str(llm_backend or "cloud_api").strip().lower()
         self.runtime_context = runtime_context or {}
-        self.name = "GRIDTwoSteps"
+        self.name = "GRIDBackbone"
 
         
         
@@ -387,7 +387,7 @@ class GRIDTwoStepsMethod:
             )
 
         if self.llm_backend == "shared_vllm":
-            self.impl = _GRIDTwoStepsVLLMServerMethod(
+            self.impl = _GRIDBackboneVLLMServerMethod(
                 model="local",
                 token=token,
                 temp=temp,
@@ -398,7 +398,7 @@ class GRIDTwoStepsMethod:
                 **kwargs,
             )
         elif self.llm_backend == "dedicated_vllm":
-            self.impl = _GRIDTwoStepsVLLMServerMethod(
+            self.impl = _GRIDBackboneVLLMServerMethod(
                 model="local",
                 model_path=model or DEFAULT_RL_MODEL_PATH,
                 token=token,
@@ -409,7 +409,7 @@ class GRIDTwoStepsMethod:
                 **kwargs,
             )
         else:
-            self.impl = _GRIDTwoStepsToolsAskMethod(
+            self.impl = _GRIDBackboneToolsAskMethod(
                 model=model or "gpt-5-nano",
                 token=max(int(token or 0), 64 * 1024),
                 temp=temp,
@@ -429,4 +429,4 @@ class GRIDTwoStepsMethod:
             self.impl.cleanup()
 
 
-Method = GRIDTwoStepsMethod
+Method = GRIDBackboneMethod

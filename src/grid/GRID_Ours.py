@@ -11,7 +11,7 @@ _CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 if _CURRENT_DIR not in sys.path:
     sys.path.insert(0, _CURRENT_DIR)
 
-import GRID_two_steps as v1
+import GRID_backbone as v1
 from single_pass_template import ToolsAskMethod, VLLMServerMethod
 from shared_eval_backend import build_default_shared_backend, DEFAULT_SHARED_QWEN_MODEL_PATH
 
@@ -46,7 +46,7 @@ __GRID_LATEST_PROMPT_BODY__
 """.replace("__GRID_LATEST_PROMPT_BODY__", v1._LATEST_GRID_PROMPT_BODY)
 
 
-class _GRIDOursMixin(v1._GRIDTwoStepsMixin):
+class _GRIDOursMixin(v1._GRIDBackboneMixin):
 
     def _create_entity_step_prompt(self, content: str) -> List[Dict[str, str]]:
         return [
