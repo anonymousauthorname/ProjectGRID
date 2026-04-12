@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Filename: tools_prompt_nano.py
-Description: Local prompt bundle for the packaged GRID repository. This module vendors the prompt functions required by train-data, src/grid, src/baseline, and eval so the artifact does not depend on the Dropbox-level tools_prompt.py.
+Description: Local prompt bundle for the packaged GRID repository. This module vendors the prompt functions required by train-data, src/grid, src/comparisons, and eval so the artifact does not depend on the Dropbox-level tools_prompt.py.
 Keywords: GRID, prompt bundle, train-data, evaluation, judge prompt
 """
 

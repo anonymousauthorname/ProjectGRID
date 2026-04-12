@@ -91,5 +91,5 @@ Example article-to-graph illustration:
 
 Additional result artifacts:
 
-- baseline registry and generated artifacts: `generated/registry.csv`, `generated/<method>/artifact_card.json`
+- method registry and generated artifacts: `generated/registry.csv`, `generated/<method>/artifact_card.json`
 - benchmark summary and runtime inputs: `benchmark/source_statistics.csv`, `benchmark/runtime_input/benchmark_full249.parquet`

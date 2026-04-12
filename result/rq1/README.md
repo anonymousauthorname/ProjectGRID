@@ -7,10 +7,10 @@ How does GRID compare with representative CTI knowledge-graph construction basel
 ## Artifacts
 
 - `rq1_main_table.csv`: main comparison table
-- `../../baseline/registry.csv`: baseline artifact index
-- `../../baseline/<method>/generated/`: canonical generated graphs for each representative baseline
-- `../../baseline/<method>/source_metrics.csv`: per-source metric summary for each baseline
-- `../../src/baseline/Approach_*.py`: restored baseline implementations corresponding to the compared methods
+- `../../generated/registry.csv`: baseline artifact index
+- `../../generated/<method>/generated/`: canonical generated graphs for each representative baseline
+- `../../generated/<method>/source_metrics.csv`: per-source metric summary for each baseline
+- `../../src/comparisons/Approach_*.py`: restored baseline implementations corresponding to the compared methods
 
 ## Paper Table
 
@@ -37,8 +37,8 @@ How does GRID compare with representative CTI knowledge-graph construction basel
 ## Reading Guide
 
 - `rq1_main_table.csv` is the machine-readable version of the table shown above.
-- `../../baseline/registry.csv` provides the method-to-artifact mapping for the baselines discussed in this section.
-- Each `../../baseline/<method>/` directory contains the public generated outputs and source-level summaries for that method.
-- `../../src/baseline/Approach_*.py` provides the restored method implementations underlying these baselines.
+- `../../generated/registry.csv` provides the method-to-artifact mapping for the baselines discussed in this section.
+- Each `../../generated/<method>/` directory contains the public generated outputs and source-level summaries for that method.
+- `../../src/comparisons/Approach_*.py` provides the restored method implementations underlying these baselines.
 - The benchmark inputs used for these baseline experiments are stored under `../../benchmark/runtime_input/`.
-- The corresponding baseline outputs used in the paper are stored under `../../baseline/<method>/generated/`.
+- The corresponding baseline outputs used in the paper are stored under `../../generated/<method>/generated/`.
