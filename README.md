@@ -42,23 +42,23 @@ Main findings:
 
 ## Repository Structure
 
-- `src/`: `src/grid/` for the main GRID implementation, `src/grid/GRID_Ours.py` for the public two-step entry, `src/baseline/` for the baseline implementations and shared helpers, plus `tools_nano.py`
+- `src/`: `src/grid/` for the main GRID implementation, `src/grid/GRID_Ours.py` for the public two-step entry, `src/comparisons/` for the baseline implementations and shared helpers, plus `tools_nano.py`
 - `eval/`: the unified evaluation executor, experiment YAMLs, calibration assets, and `eval/llm-judge-calibration-with-human/` for the three human-review JSON exports
-- `baseline/`: canonical generated outputs, sample manifests, and source-level summaries for the representative RQ1 baselines
-- `train-data/`: train-data generation code under `train-data/code/` and representative parquet artifacts under `train-data/data/`
+- `generated/`: canonical generated outputs, method registry, and source-level summaries for the representative RQ1 baselines
+- `train-data/`: generation code for post-training data (covering Steps 1-4, 5b, and 7) and representative parquet artifacts
 - `models/`: Hugging Face references for the five checkpoints, model cards, and training summaries
 - `benchmark/`: the canonical full-249 runtime input, source-level split views, schemas, and a synthetic demo case
 - `result/`: paper-aligned artifacts for RQ1, RQ2, and RQ3
 
 ## Evaluation Artifacts
 
-- `baseline/registry.csv` indexes the public baseline artifacts included in `baseline/<method>/`.
-- `baseline/<method>/generated/` stores the canonical generated graphs used for the corresponding RQ1 baseline.
+- `generated/registry.csv` indexes the public baseline artifacts included in `generated/<method>/`.
+- `generated/<method>/generated/` stores the canonical generated graphs used for the corresponding RQ1 baseline.
 - `src/grid/GRID_Ours.py` contains the public GRID two-step method entry used for the main method variant.
-- `src/baseline/Approach_*.py` contains the baseline implementations discussed in RQ1.
+- `src/comparisons/Approach_*.py` contains the baseline implementations discussed in RQ1.
 - `benchmark/runtime_input/benchmark_full249.parquet` is the canonical five-source benchmark input used by the public evaluation pipeline.
 - `benchmark/{casie,ctinexus,grid,malkg,securenlp}/` provides source-level split views for inspection and lightweight reuse.
-- For the baseline experiments, the canonical inputs are stored under `benchmark/runtime_input/` and the corresponding generated outputs are stored under `baseline/<method>/generated/`.
+- For the baseline experiments, the canonical inputs are stored under `benchmark/runtime_input/` and the corresponding generated outputs are stored under `generated/<method>/generated/`.
 - `eval/llm-judge-calibration-with-human/` provides the three reviewer JSON exports from the human calibration workbench.
 
 ## Checkpoint References
@@ -91,5 +91,5 @@ Example article-to-graph illustration:
 
 Additional result artifacts:
 
-- baseline registry and generated artifacts: `baseline/registry.csv`, `baseline/<method>/artifact_card.json`
+- baseline registry and generated artifacts: `generated/registry.csv`, `generated/<method>/artifact_card.json`
 - benchmark summary and runtime inputs: `benchmark/source_statistics.csv`, `benchmark/runtime_input/benchmark_full249.parquet`
