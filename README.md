@@ -45,9 +45,9 @@ Main findings:
 - `src/`: `src/grid/` for the main GRID implementation, `src/grid/GRID_Ours.py` for the public two-step entry, `src/comparisons/` for the baseline implementations and shared helpers, plus `tools_nano.py`
 - `eval/`: the unified evaluation executor, experiment YAMLs, calibration assets, and `eval/llm-judge-calibration-with-human/` for the three human-review JSON exports
 - `generated/`: canonical generated outputs, method registry, and source-level summaries for the representative RQ1 baselines
-- `train-data/`: generation code for post-training data (covering Steps 1-4, 5b, and 7) and representative parquet artifacts
+- `train-data/`: generation code for post-training data and representative parquet artifacts
 - `models/`: Hugging Face references for the five checkpoints, model cards, and training summaries
-- `benchmark/`: the canonical full-249 runtime input, source-level split views, schemas, and a synthetic demo case
+- `benchmark/`: the canonical full-249 runtime input, source-level split views, and schemas
 - `result/`: paper-aligned artifacts for RQ1, RQ2, and RQ3
 
 ## Evaluation Artifacts
