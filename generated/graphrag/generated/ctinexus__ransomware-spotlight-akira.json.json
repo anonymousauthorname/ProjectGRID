@@ -1,0 +1,112 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-akira.json",
+  "sample_index": 91,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-akira.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CISCO",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "AKIRA RANSOMWARE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CVE-2023-20269",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "CISCO ADAPTIVE SECURITY APPLIANCE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CISCO FIREPOWER THREAT DEFENSE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SENTINEL ONE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MEGAZORD",
+        "type": "MALWARE"
+      },
+      {
+        "name": "POWER RANGERS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "TOX MESSANGER",
+        "type": "TOOL"
+      },
+      {
+        "name": "AUGUST 2023",
+        "type": "EVENT"
+      },
+      {
+        "name": "AKIRA RANSOMWARE OPERATORS",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "AKIRA RANSOMWARE",
+        "rel": "related_to",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "related_to",
+        "obj": "CISCO ADAPTIVE SECURITY APPLIANCE"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "related_to",
+        "obj": "CISCO FIREPOWER THREAT DEFENSE"
+      },
+      {
+        "sub": "MEGAZORD",
+        "rel": "related_to",
+        "obj": "AKIRA RANSOMWARE"
+      },
+      {
+        "sub": "MEGAZORD",
+        "rel": "related_to",
+        "obj": "POWER RANGERS"
+      },
+      {
+        "sub": "MEGAZORD",
+        "rel": "related_to",
+        "obj": "SENTINEL ONE"
+      },
+      {
+        "sub": "AKIRA RANSOMWARE OPERATORS",
+        "rel": "related_to",
+        "obj": "TOX MESSANGER"
+      },
+      {
+        "sub": "AUGUST 2023",
+        "rel": "related_to",
+        "obj": "MEGAZORD"
+      }
+    ]
+  }
+}

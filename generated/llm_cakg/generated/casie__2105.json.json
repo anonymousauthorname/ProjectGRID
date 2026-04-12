@@ -1,0 +1,385 @@
+{
+  "sample_id": "casie__2105.json",
+  "sample_index": 40,
+  "source": "casie",
+  "file_name": "2105.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SS7",
+        "type": "Entity"
+      },
+      {
+        "name": "SS7 network",
+        "type": "Entity"
+      },
+      {
+        "name": "SMS-based authentication",
+        "type": "Entity"
+      },
+      {
+        "name": "bank accounts",
+        "type": "Entity"
+      },
+      {
+        "name": "text messages",
+        "type": "Entity"
+      },
+      {
+        "name": "device location",
+        "type": "Entity"
+      },
+      {
+        "name": "routing request",
+        "type": "Entity"
+      },
+      {
+        "name": "data-roaming",
+        "type": "Entity"
+      },
+      {
+        "name": "telcos",
+        "type": "Entity"
+      },
+      {
+        "name": "FCC",
+        "type": "Entity"
+      },
+      {
+        "name": "telecom industry",
+        "type": "Entity"
+      },
+      {
+        "name": "two-factor authentication",
+        "type": "Entity"
+      },
+      {
+        "name": "Google Authenticator",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "USB devices",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "attack vectors",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "exploits",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Entity"
+      },
+      {
+        "name": "backdoor programs",
+        "type": "Entity"
+      },
+      {
+        "name": "Dropper files",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious scripts",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Entity"
+      },
+      {
+        "name": "shellcode",
+        "type": "Entity"
+      },
+      {
+        "name": "macros",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actors",
+        "type": "Entity"
+      },
+      {
+        "name": "financially-motivated hackers",
+        "type": "Entity"
+      },
+      {
+        "name": "cybersecurity researcher",
+        "type": "Entity"
+      },
+      {
+        "name": "Karsten Nohl",
+        "type": "Entity"
+      },
+      {
+        "name": "Süddeutsche Zeitung",
+        "type": "Entity"
+      },
+      {
+        "name": "online bank thieves",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanisms",
+        "type": "Entity"
+      },
+      {
+        "name": "registry keys",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled tasks",
+        "type": "Entity"
+      },
+      {
+        "name": "attack stages",
+        "type": "Entity"
+      },
+      {
+        "name": "technical identifiers",
+        "type": "Entity"
+      },
+      {
+        "name": "attackers",
+        "type": "Entity"
+      },
+      {
+        "name": "victims",
+        "type": "Entity"
+      },
+      {
+        "name": "C2",
+        "type": "Entity"
+      },
+      {
+        "name": "IP addresses",
+        "type": "Entity"
+      },
+      {
+        "name": "domain names",
+        "type": "Entity"
+      },
+      {
+        "name": "URLs",
+        "type": "Entity"
+      },
+      {
+        "name": "filenames",
+        "type": "Entity"
+      },
+      {
+        "name": "file paths",
+        "type": "Entity"
+      },
+      {
+        "name": "encoding methods",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SS7",
+        "rel": "allows",
+        "obj": "attackers to intercept text messages"
+      },
+      {
+        "sub": "SS7",
+        "rel": "allows",
+        "obj": "attackers to listen to calls"
+      },
+      {
+        "sub": "SS7",
+        "rel": "allows",
+        "obj": "attackers to pinpoint device location"
+      },
+      {
+        "sub": "SS7",
+        "rel": "is used for",
+        "obj": "data-roaming"
+      },
+      {
+        "sub": "SS7",
+        "rel": "can be exploited by",
+        "obj": "financially-motivated hackers"
+      },
+      {
+        "sub": "financially-motivated hackers",
+        "rel": "used",
+        "obj": "SS7 flaws to drain bank accounts"
+      },
+      {
+        "sub": "SS7 network",
+        "rel": "responds to",
+        "obj": "routing requests"
+      },
+      {
+        "sub": "routing request",
+        "rel": "can be sent by",
+        "obj": "attackers with SS7 access"
+      },
+      {
+        "sub": "attackers with SS7 access",
+        "rel": "can direct",
+        "obj": "target's text messages to another device"
+      },
+      {
+        "sub": "text messages",
+        "rel": "are intercepted by",
+        "obj": "attackers"
+      },
+      {
+        "sub": "bank accounts",
+        "rel": "are at risk from",
+        "obj": "SS7 vulnerabilities"
+      },
+      {
+        "sub": "SMS-based authentication",
+        "rel": "is used by",
+        "obj": "bank accounts"
+      },
+      {
+        "sub": "SMS-based authentication",
+        "rel": "is vulnerable to",
+        "obj": "SS7 attacks"
+      },
+      {
+        "sub": "telcos",
+        "rel": "have taken steps to mitigate",
+        "obj": "SS7 vulnerabilities"
+      },
+      {
+        "sub": "FCC",
+        "rel": "has not acted to protect",
+        "obj": "privacy and financial security"
+      },
+      {
+        "sub": "telecom industry",
+        "rel": "has not acted to protect",
+        "obj": "privacy and financial security"
+      },
+      {
+        "sub": "online bank thieves",
+        "rel": "have exploited",
+        "obj": "SS7 network"
+      },
+      {
+        "sub": "SS7",
+        "rel": "is vulnerable to",
+        "obj": "routing request attacks"
+      },
+      {
+        "sub": "SS7",
+        "rel": "can be accessed by",
+        "obj": "attackers who purchase access for 1000 Euros"
+      },
+      {
+        "sub": "Twitter",
+        "rel": "still sends",
+        "obj": "SMS codes during login"
+      },
+      {
+        "sub": "Twitter",
+        "rel": "allows users to sign in with",
+        "obj": "Google Authenticator"
+      },
+      {
+        "sub": "Google Authenticator",
+        "rel": "provides",
+        "obj": "robust two-factor authentication"
+      },
+      {
+        "sub": "SMS-based two-factor authentication",
+        "rel": "is no longer recommended by",
+        "obj": "National Institute of Standards and Technology"
+      },
+      {
+        "sub": "Motherboard",
+        "rel": "published a piece stating",
+        "obj": "general readers are likely fine with SMS-based two-factor authentication"
+      },
+      {
+        "sub": "Motherboard article",
+        "rel": "is out of date",
+        "obj": "due to recent SS7 attacks"
+      },
+      {
+        "sub": "Karsten Nohl",
+        "rel": "has highlighted",
+        "obj": "vulnerabilities in SS7"
+      },
+      {
+        "sub": "Karsten Nohl",
+        "rel": "stated",
+        "obj": "hackers take money that is 'lying on the table"
+      },
+      {
+        "sub": "Karsten Nohl",
+        "rel": "stated",
+        "obj": "online bank thieves took so long to join spying contractors"
+      },
+      {
+        "sub": "Lieu",
+        "rel": "called for",
+        "obj": "immediate hearings on SS7 issue"
+      },
+      {
+        "sub": "Lieu",
+        "rel": "urged",
+        "obj": "Republican-controlled Congress to hold hearings"
+      },
+      {
+        "sub": "social media companies",
+        "rel": "need to stop using",
+        "obj": "SMS-based two-factor authentication"
+      },
+      {
+        "sub": "banks",
+        "rel": "need to stop using",
+        "obj": "SMS-based two-factor authentication"
+      },
+      {
+        "sub": "online services",
+        "rel": "need to stop using",
+        "obj": "SMS-based two-factor authentication"
+      }
+    ]
+  }
+}

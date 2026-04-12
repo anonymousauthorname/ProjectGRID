@@ -1,0 +1,311 @@
+{
+  "sample_id": "casie__1103.json",
+  "sample_index": 38,
+  "source": "casie",
+  "file_name": "1103.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "WhatsApp Web & Telegram Web",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerability",
+          "the security issue"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "WhatsApp",
+        "type": "general-software",
+        "alias": [
+          "WhatsApp and Telegram",
+          "WhatsApp Web"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Telegram",
+        "type": "general-software",
+        "alias": [
+          "Telegram Web"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "user accounts",
+        "type": "user-account",
+        "alias": [
+          "the victim’s account"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "personal and group conversations, photos, videos and other shared files, contact lists",
+        "type": "file",
+        "alias": [
+          "the victim’s WhatsApp or Telegram storage data"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malicious code",
+        "type": "malware",
+        "alias": [
+          "malicious file"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "innocent looking image",
+        "type": "file",
+        "alias": [
+          "the image"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the attacker",
+          "they",
+          "attackers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "March 8, 2017",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "WhatsApp and Telegram security teams",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "worldwide web clients",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Oded Vanunu",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "browser",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "end-to-end message encryption",
+        "type": "general-software",
+        "alias": [
+          "the same end-to-end encryption"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "sender",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malicious content",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malicious files",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "mobile app",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "vulnerability",
+        "rel": "on",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "WhatsApp Web & Telegram Web"
+      },
+      {
+        "sub": "attacker",
+        "rel": "take over",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "user accounts"
+      },
+      {
+        "sub": "attacker",
+        "rel": "access",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "personal and group conversations, photos, videos and other shared files, contact lists"
+      },
+      {
+        "sub": "attacker",
+        "rel": "send",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malicious code"
+      },
+      {
+        "sub": "malicious code",
+        "rel": "hidden within",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "innocent looking image"
+      },
+      {
+        "sub": "attacker",
+        "rel": "gain full access to",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "the victim’s WhatsApp or Telegram storage data"
+      },
+      {
+        "sub": "attacker",
+        "rel": "giving full access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the victim’s account"
+      },
+      {
+        "sub": "attacker",
+        "rel": "send to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "victim’s contacts"
+      },
+      {
+        "sub": "Check Point",
+        "rel": "disclosed information to",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "WhatsApp and Telegram security teams"
+      },
+      {
+        "sub": "WhatsApp and Telegram security teams",
+        "rel": "acknowledged the security issue",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "developed fixes for",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "worldwide web clients"
+      },
+      {
+        "sub": "Oded Vanunu",
+        "rel": "described the mitigation of the issue",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "WhatsApp Web users",
+        "rel": "restart",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "browser"
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "end-to-end message encryption"
+      },
+      {
+        "sub": "sender",
+        "rel": "encrypted on the side of",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "messages"
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "unable to prevent",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "malicious content",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "blocking",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "malicious files"
+      },
+      {
+        "sub": "web versions",
+        "rel": "mirror all messages",
+        "rel_type": [
+          "mirrors"
+        ],
+        "obj": "mobile app"
+      }
+    ]
+  }
+}

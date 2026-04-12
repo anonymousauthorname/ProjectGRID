@@ -1,0 +1,927 @@
+{
+  "sample_id": "malkg__201403TrendMicroSiesta.txt",
+  "sample_index": 124,
+  "source": "malkg",
+  "file_name": "201403TrendMicroSiesta.txt",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "the Siesta Campaign",
+        "type": "campaign",
+        "alias": [
+          "the campaign",
+          "Siesta Campaign"
+        ]
+      },
+      {
+        "name": "application vulnerabilities",
+        "type": "vulnerability",
+        "alias": [
+          "various application vulnerabilities"
+        ]
+      },
+      {
+        "name": "various organizations",
+        "type": "victims-targets",
+        "alias": [
+          "organizations"
+        ]
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attackers",
+          "attackers orchestrating the campaign"
+        ]
+      },
+      {
+        "name": "multicomponent malware",
+        "type": "malware",
+        "alias": [
+          "the malware"
+        ]
+      },
+      {
+        "name": "Consumer goods and services",
+        "type": "industry"
+      },
+      {
+        "name": "Energy",
+        "type": "industry"
+      },
+      {
+        "name": "Finance",
+        "type": "industry"
+      },
+      {
+        "name": "Healthcare",
+        "type": "industry"
+      },
+      {
+        "name": "Media and telecommunications",
+        "type": "industry"
+      },
+      {
+        "name": "Public administration",
+        "type": "industry"
+      },
+      {
+        "name": "Security and defense",
+        "type": "industry"
+      },
+      {
+        "name": "Transport and traffic",
+        "type": "industry"
+      },
+      {
+        "name": "spear-phishing emails",
+        "type": "email-address",
+        "alias": [
+          "emails"
+        ]
+      },
+      {
+        "name": "executives",
+        "type": "identity",
+        "alias": [
+          "target executives"
+        ]
+      },
+      {
+        "name": "an undisclosed company",
+        "type": "identity",
+        "alias": [
+          "the target organization"
+        ]
+      },
+      {
+        "name": "spoofed email addresses",
+        "type": "email-address",
+        "alias": [
+          "email addresses of personnel"
+        ]
+      },
+      {
+        "name": "legitimate-looking file download link",
+        "type": "url",
+        "alias": [
+          "file download link"
+        ]
+      },
+      {
+        "name": "{malicious domain}",
+        "type": "domain-name"
+      },
+      {
+        "name": "{organization name}",
+        "type": "textual-contextual-object"
+      },
+      {
+        "name": "{legitimate archive name}.zip",
+        "type": "file"
+      },
+      {
+        "name": "TROJ_SLOTH",
+        "type": "malware",
+        "alias": [
+          "an executable",
+          "the executable"
+        ]
+      },
+      {
+        "name": "PDF document",
+        "type": "file",
+        "alias": [
+          "a PDF document"
+        ]
+      },
+      {
+        "name": "valid PDF file",
+        "type": "file",
+        "alias": [
+          "the valid PDF file"
+        ]
+      },
+      {
+        "name": "UIODsevr.exe",
+        "type": "malware",
+        "alias": [
+          "the file",
+          "its backdoor component"
+        ]
+      },
+      {
+        "name": "google{BLOCKED}.exe",
+        "type": "malware",
+        "alias": [
+          "the backdoor component"
+        ]
+      },
+      {
+        "name": "http://www.micro{BLOCKED}.com/index.html",
+        "type": "url",
+        "alias": [
+          "its C&C servers"
+        ]
+      },
+      {
+        "name": "C&C servers",
+        "type": "infrastructure"
+      },
+      {
+        "name": "command-and-control (C&C) servers",
+        "type": "infrastructure",
+        "alias": [
+          "C&C servers"
+        ]
+      },
+      {
+        "name": "Trend Micro",
+        "type": "security-product",
+        "alias": [
+          "Trend Micro™ Deep Discovery"
+        ]
+      },
+      {
+        "name": "BKDR_SLOTH.B",
+        "type": "malware",
+        "alias": [
+          "these samples"
+        ]
+      },
+      {
+        "name": "BKDR_SLOTH.A",
+        "type": "malware",
+        "alias": [
+          "one of the similar samples"
+        ]
+      },
+      {
+        "name": "Questionaire Concerning the Spread of Superbugs February 2014.exe",
+        "type": "file",
+        "alias": [
+          "this sample"
+        ]
+      },
+      {
+        "name": "SHA1: 014542eafb792b98196954373b3fd13e60cb94fe",
+        "type": "indicator",
+        "alias": [
+          "SHA1"
+        ]
+      },
+      {
+        "name": "Sleep",
+        "type": "attack-pattern",
+        "alias": [
+          "sleep command"
+        ]
+      },
+      {
+        "name": "sleep:120",
+        "type": "command",
+        "alias": [
+          "a sleep command"
+        ]
+      },
+      {
+        "name": "Download",
+        "type": "attack-pattern",
+        "alias": [
+          "download command"
+        ]
+      },
+      {
+        "name": "<download_url>",
+        "type": "url",
+        "alias": [
+          "a specified URL"
+        ]
+      },
+      {
+        "name": "run1",
+        "type": "command",
+        "alias": [
+          "open a remote shell"
+        ]
+      },
+      {
+        "name": "run2",
+        "type": "command",
+        "alias": [
+          "pipe shell commands from URL1"
+        ]
+      },
+      {
+        "name": "run3",
+        "type": "command",
+        "alias": [
+          "pipe shell commands from URL2"
+        ]
+      },
+      {
+        "name": "http",
+        "type": "command",
+        "alias": [
+          "pipe shell commands from C2"
+        ]
+      },
+      {
+        "name": "x_",
+        "type": "command",
+        "alias": [
+          "sleep for specified number of minutes"
+        ]
+      },
+      {
+        "name": "sleep:",
+        "type": "command",
+        "alias": [
+          "sleep for specified number of minutes"
+        ]
+      },
+      {
+        "name": "download:",
+        "type": "command",
+        "alias": [
+          "download and execute another executable from C2"
+        ]
+      },
+      {
+        "name": "SC",
+        "type": "textual-contextual-object",
+        "alias": [
+          ">SC<"
+        ]
+      },
+      {
+        "name": "longDesc=",
+        "type": "textual-contextual-object",
+        "alias": [
+          "prefix"
+        ]
+      },
+      {
+        "name": ".txt",
+        "type": "textual-contextual-object",
+        "alias": [
+          "suffix"
+        ]
+      },
+      {
+        "name": "sky{BLOCKED}.com",
+        "type": "domain-name",
+        "alias": [
+          "its C&C at",
+          "skys{BLOCKED}com"
+        ]
+      },
+      {
+        "name": "micro{BLOCKED}.com",
+        "type": "domain-name",
+        "alias": [
+          "its command-and-control (C&C) servers"
+        ]
+      },
+      {
+        "name": "ifued{BLOCKED}.net",
+        "type": "domain-name"
+      },
+      {
+        "name": "Li Ning",
+        "type": "identity",
+        "alias": [
+          "this individual",
+          "the registrant"
+        ]
+      },
+      {
+        "name": "xiaomao{BLOCKED}@163.com",
+        "type": "email-address",
+        "alias": [
+          "email address of the registrant"
+        ]
+      },
+      {
+        "name": "79 additional domains",
+        "type": "quantity",
+        "alias": [
+          "79 domains"
+        ]
+      },
+      {
+        "name": "17,000 domains",
+        "type": "quantity",
+        "alias": [
+          "roughly 17,000 domains"
+        ]
+      },
+      {
+        "name": "Trend Micro™ Deep Discovery",
+        "type": "security-product",
+        "alias": [
+          "Custom Defense solution"
+        ]
+      },
+      {
+        "name": "advanced threat protection platform",
+        "type": "security-product"
+      },
+      {
+        "name": "Deep Discovery",
+        "type": "security-product"
+      },
+      {
+        "name": "related threats",
+        "type": "indicator"
+      },
+      {
+        "name": "emails",
+        "type": "indicator"
+      },
+      {
+        "name": "URLs",
+        "type": "indicator"
+      },
+      {
+        "name": "Kervin Alintanahin",
+        "type": "identity"
+      },
+      {
+        "name": "Dove Chiu",
+        "type": "identity"
+      },
+      {
+        "name": "Kyle Wilhoit",
+        "type": "identity"
+      },
+      {
+        "name": "the registrant",
+        "type": "identity",
+        "alias": [
+          "the individual",
+          "Li Ning"
+        ]
+      },
+      {
+        "name": "Attackers",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Win32 executable",
+        "type": "general-software"
+      },
+      {
+        "name": "HTML pages",
+        "type": "infrastructure"
+      },
+      {
+        "name": "an undisclosed company",
+        "type": "identity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "The Siesta Campaign",
+        "rel": "is a variant of",
+        "rel_type": [
+          "campaign"
+        ],
+        "obj": "the campaign"
+      },
+      {
+        "sub": "targeted attacks",
+        "rel": "exploits",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "various application vulnerabilities"
+      },
+      {
+        "sub": "the campaigns",
+        "rel": "went unnoticed and under the radar",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "various organizations"
+      },
+      {
+        "sub": "the attackers orchestrating the campaign",
+        "rel": "we call",
+        "rel_type": [
+          "named"
+        ],
+        "obj": "the Siesta Campaign"
+      },
+      {
+        "sub": "the Siesta Campaign",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "multicomponent malware"
+      },
+      {
+        "sub": "certain institutions",
+        "rel": "fall under",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Consumer goods and services"
+      },
+      {
+        "sub": "certain institutions",
+        "rel": "fall under",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Energy"
+      },
+      {
+        "sub": "certain institutions",
+        "rel": "fall under",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Finance"
+      },
+      {
+        "sub": "certain institutions",
+        "rel": "fall under",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Healthcare"
+      },
+      {
+        "sub": "certain institutions",
+        "rel": "fall under",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Media and telecommunications"
+      },
+      {
+        "sub": "certain institutions",
+        "rel": "fall under",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Public administration"
+      },
+      {
+        "sub": "certain institutions",
+        "rel": "fall under",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Security and defense"
+      },
+      {
+        "sub": "certain institutions",
+        "rel": "fall under",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Transport and traffic"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "can make use of",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "basic social engineering techniques"
+      },
+      {
+        "sub": "attackers",
+        "rel": "sending out",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "spear-phishing emails"
+      },
+      {
+        "sub": "spear-phishing emails",
+        "rel": "addressed to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "executives"
+      },
+      {
+        "sub": "executives",
+        "rel": "of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "an undisclosed company"
+      },
+      {
+        "sub": "emails",
+        "rel": "were sent from",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "spoofed email addresses"
+      },
+      {
+        "sub": "attackers",
+        "rel": "served their malware through",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "legitimate-looking file download link"
+      },
+      {
+        "sub": "malware",
+        "rel": "disguised as",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "PDF document"
+      },
+      {
+        "sub": "TROJ_SLOTH",
+        "rel": "is contained within",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "{legitimate archive name}.zip"
+      },
+      {
+        "sub": "an executable",
+        "rel": "is named",
+        "rel_type": [
+          "named"
+        ],
+        "obj": "TROJ_SLOTH"
+      },
+      {
+        "sub": "the archive",
+        "rel": "drops and opens",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "valid PDF file"
+      },
+      {
+        "sub": "valid PDF file",
+        "rel": "was most probably taken from",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "the target organization’s website"
+      },
+      {
+        "sub": "the malware",
+        "rel": "drops and executes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "google{BLOCKED}.exe"
+      },
+      {
+        "sub": "google{BLOCKED}.exe",
+        "rel": "connects to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "http://www.micro{BLOCKED}.com/index.html"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "identifies",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "BKDR_SLOTH.B"
+      },
+      {
+        "sub": "the malware",
+        "rel": "begins waiting for",
+        "rel_type": [
+          "waits-for"
+        ],
+        "obj": "additional commands from the attacker"
+      },
+      {
+        "sub": "Sleep",
+        "rel": "commands the backdoor to",
+        "rel_type": [
+          "commands"
+        ],
+        "obj": "sleep for specified number of minutes"
+      },
+      {
+        "sub": "sleep:120",
+        "rel": "means that the malware will wait for",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "2hrs"
+      },
+      {
+        "sub": "Download",
+        "rel": "commands the backdoor to",
+        "rel_type": [
+          "commands"
+        ],
+        "obj": "download and execute a file from a specified URL"
+      },
+      {
+        "sub": "C&C servers",
+        "rel": "are found to be",
+        "rel_type": [
+          "is"
+        ],
+        "obj": "newly registered"
+      },
+      {
+        "sub": "we found",
+        "rel": "identified",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "2 variants of the malware"
+      },
+      {
+        "sub": "one of the similar samples",
+        "rel": "is a file named",
+        "rel_type": [
+          "named"
+        ],
+        "obj": "Questionaire Concerning the Spread of Superbugs February 2014.exe"
+      },
+      {
+        "sub": "Questionaire Concerning the Spread of Superbugs February 2014.exe",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "UIODsevr.exe"
+      },
+      {
+        "sub": "UIODsevr.exe",
+        "rel": "behaves similarly as",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "BKDR_SLOTH.B"
+      },
+      {
+        "sub": "UIODsevr.exe",
+        "rel": "communicating to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "its C&C at skys{BLOCKED}com"
+      },
+      {
+        "sub": "These samples",
+        "rel": "are identified by",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Trend Micro as BKDR_SLOTH.A"
+      },
+      {
+        "sub": "The malware",
+        "rel": "excessively use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Sleep calls"
+      },
+      {
+        "sub": "Campaign name Siesta",
+        "rel": "means to",
+        "rel_type": [
+          "defined-as"
+        ],
+        "obj": "take a short nap in Spanish"
+      },
+      {
+        "sub": "Variant 1",
+        "rel": "uses prefix",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": ">SC<"
+      },
+      {
+        "sub": "Variant 2",
+        "rel": "uses prefix",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "longDesc="
+      },
+      {
+        "sub": "Variant 2",
+        "rel": "uses suffix",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": ".txt"
+      },
+      {
+        "sub": "run1",
+        "rel": "– open a remote shell",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "open a remote shell"
+      },
+      {
+        "sub": "run2",
+        "rel": "– pipe shell commands from URL1",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "pipe shell commands from URL1"
+      },
+      {
+        "sub": "run3",
+        "rel": "– pipe shell commands from URL2",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "pipe shell commands from URL2"
+      },
+      {
+        "sub": "http",
+        "rel": "– pipe shell commands from C2",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "pipe shell commands from C2"
+      },
+      {
+        "sub": "x_",
+        "rel": "– sleep for specified number of minutes",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "sleep for specified number of minutes"
+      },
+      {
+        "sub": "sleep:",
+        "rel": "– sleep for specified number of minutes",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "sleep for specified number of minutes"
+      },
+      {
+        "sub": "download:",
+        "rel": "– download and execute another executable from C2",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "download and execute another executable from C2"
+      },
+      {
+        "sub": "registrant of sky{BLOCKED}.com",
+        "rel": "is also the same registrant as",
+        "rel_type": [
+          "is"
+        ],
+        "obj": "micro{BLOCKED}.com"
+      },
+      {
+        "sub": "Li Ning",
+        "rel": "used the name",
+        "rel_type": [
+          "named"
+        ],
+        "obj": "Li Ning"
+      },
+      {
+        "sub": "the registrant",
+        "rel": "recently registered",
+        "rel_type": [
+          "registered"
+        ],
+        "obj": "79 additional domains"
+      },
+      {
+        "sub": "there are",
+        "rel": "registered",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "roughly 17,000 domains"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "blocks",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "related threats"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "blocks",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "emails"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "blocks",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "URLs"
+      },
+      {
+        "sub": "Custom Defense solution",
+        "rel": "is at the heart of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Trend Micro™ Deep Discovery"
+      },
+      {
+        "sub": "we advise users",
+        "rel": "exercise caution when opening",
+        "rel_type": [
+          "advice"
+        ],
+        "obj": "emails and links"
+      },
+      {
+        "sub": "additional insights and analysis",
+        "rel": "from",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": [
+          "Kervin Alintanahin",
+          "Dove Chiu",
+          "Kyle Wilhoit"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "sample_id": "securenlp__Darwin_fav_APT_Group",
+  "sample_index": 191,
+  "source": "securenlp",
+  "file_name": "Darwin_fav_APT_Group",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT12",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "IXESHE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "DYNCALC",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "DNSCALC",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "PEOPLE'S REPUBLIC OF CHINA",
+        "type": "GEO"
+      },
+      {
+        "name": "CHINESE PEOPLE'S LIBERATION ARMY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "RIPTIDE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "HIGHTIDE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "THREEBYTE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "WATERSPOUT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "TRAN DUY LINH",
+        "type": "TOOL"
+      },
+      {
+        "name": "NEW YORK TIMES",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "JAPAN",
+        "type": "GEO"
+      },
+      {
+        "name": "TAIWAN",
+        "type": "GEO"
+      },
+      {
+        "name": "ARBOR NETWORKS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "FIREEYE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "SPEAR PHISHING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "COMMAND AND CONTROL",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "C2 SERVER AT 141.108.2.157",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "C2 SERVER AT video.csmcpr.com",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "C2 SERVER AT icc.ignorelist.com",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MALICIOUS MICROSOFT WORD DOCUMENT",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "EXPLOIT DOCUMENT MD5 f6fafb7c30b1114befc93f39d0698560",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "EXPLOIT DOCUMENT MD5 e009b95ff7b69cbbebc538b2c5728b11",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "EXPLOIT DOCUMENT MD5 499bec15ac83f2c8998f03917b63652e",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "HIGHTIDE BACKDOOR FILEPATH",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "THREEBYTE BACKDOOR FILEPATH",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "WATERSPOUT BACKDOOR FILEPATH",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "CAMPAIGN",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "RIPTIDE"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "HIGHTIDE"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "THREEBYTE"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "WATERSPOUT"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "TRAN DUY LINH"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "NEW YORK TIMES"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "ARBOR NETWORKS"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "related_to",
+        "obj": "RIPTIDE"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "related_to",
+        "obj": "HIGHTIDE"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "related_to",
+        "obj": "HIGHTIDE"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "related_to",
+        "obj": "THREEBYTE"
+      },
+      {
+        "sub": "FIREEYE",
+        "rel": "related_to",
+        "obj": "APT12"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "HIGHTIDE"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "THREEBYTE"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "WATERSPOUT"
+      },
+      {
+        "sub": "CVE-2012-0158",
+        "rel": "related_to",
+        "obj": "TRAN DUY LINH"
+      },
+      {
+        "sub": "JAPAN",
+        "rel": "related_to",
+        "obj": "WATERSPOUT"
+      },
+      {
+        "sub": "TAIWAN",
+        "rel": "related_to",
+        "obj": "HIGHTIDE"
+      },
+      {
+        "sub": "TAIWAN",
+        "rel": "related_to",
+        "obj": "THREEBYTE"
+      },
+      {
+        "sub": "TAIWAN",
+        "rel": "related_to",
+        "obj": "APT12"
+      },
+      {
+        "sub": "JAPAN",
+        "rel": "related_to",
+        "obj": "APT12"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "related_to",
+        "obj": "C2 SERVER AT 141.108.2.157"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "related_to",
+        "obj": "C2 SERVER AT video.csmcpr.com"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "related_to",
+        "obj": "C2 SERVER AT icc.ignorelist.com"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "related_to",
+        "obj": "MALICIOUS MICROSOFT WORD DOCUMENT"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "related_to",
+        "obj": "MALICIOUS MICROSOFT WORD DOCUMENT"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "related_to",
+        "obj": "MALICIOUS MICROSOFT WORD DOCUMENT"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "CAMPAIGN"
+      }
+    ]
+  }
+}

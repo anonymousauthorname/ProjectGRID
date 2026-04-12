@@ -1,0 +1,797 @@
+{
+  "sample_id": "securenlp__Miniduke_twitter",
+  "sample_index": 186,
+  "source": "securenlp",
+  "file_name": "Miniduke_twitter",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2014-1761",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "HP Security Research blog",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "MiniDuke",
+        "type": "malware",
+        "alias": [
+          "Win32/SandyEva",
+          "the backdoor",
+          "the malware",
+          "this version of the MiniDuke payload",
+          "MiniDuke components",
+          "this version of MiniDuke"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Win32/SandyEva",
+        "type": "malware",
+        "alias": [
+          "MiniDuke"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "Proposal-Cover-Sheet-English.rtf",
+        "type": "file",
+        "alias": [
+          "the exploit document"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "The MiniDuke Mystery: PDF 0-day Government Spy Assembler 0x29A Micro Backdoor",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "The MiniDuke Mystery"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Bitdefender",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "kernel32.dll",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "%TEMP% directory",
+        "type": "location",
+        "alias": [
+          "TEMP directory"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "a.l",
+        "type": "file",
+        "alias": [
+          "the payload"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "general-software",
+        "alias": [
+          "rundll32"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "%ALLUSERSPROFILE%\\Application Data directory",
+        "type": "location",
+        "alias": [
+          "Application Data directory"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "TwitterJS module",
+        "type": "hacker-tool",
+        "alias": [
+          "TwitterJS component",
+          "the TwitterJS component",
+          "this DLL",
+          "the patched binary",
+          "TwitterJS component (JScript version)"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "cryptdll.dll",
+        "type": "general-software",
+        "alias": [
+          "Windows DLL"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "NTUSER.DAT",
+        "type": "file",
+        "alias": [
+          "user’s registry file"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "@FloydLSchwartz",
+        "type": "identity",
+        "alias": [
+          "the Twitter account",
+          "Twitter account @FloydLSchwartz"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "X)))",
+        "type": "abstract-concept",
+        "alias": [
+          "tag X)))"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "escape sequences .xhtml/.php",
+        "type": "abstract-concept",
+        "alias": [
+          "URLs ending in .xhtml"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "Twitter DGA accounts",
+        "type": "infrastructure",
+        "alias": [
+          "TwitterJS account",
+          "@AA2ADcAOAA"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "Belgium, France, UK",
+        "type": "location",
+        "alias": [
+          "infected computers"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "national CERTs",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "RTF exploit document",
+        "type": "file",
+        "alias": [
+          "the document"
+        ],
+        "mother entity": "CVE-2014-1761"
+      },
+      {
+        "name": "RSA-2048 public key",
+        "type": "x509-certificate",
+        "alias": [
+          "the same as in the previous version"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "fake GIF8 file",
+        "type": "file",
+        "alias": [
+          "encrypted executable",
+          "the payload"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "Twitter DGA algorithm",
+        "type": "attack-pattern",
+        "alias": [
+          "DGA algorithm"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "Twitter search term",
+        "type": "abstract-concept",
+        "alias": [
+          "search query"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "init.cmd script",
+        "type": "script",
+        "alias": [
+          "installation script"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "SHA-1 hashing algorithm",
+        "type": "attack-pattern",
+        "alias": [
+          "modified SHA-1",
+          "TwitterJS_SHA1"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "ESET Research",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "GitHub repository",
+        "type": "location",
+        "alias": [
+          "miniduke GitHub repository"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "ESET VirusRadar description",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "VirusRadar"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "April 5th",
+        "type": "date",
+        "alias": [
+          "April 5"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "April 8th",
+        "type": "date",
+        "alias": [
+          "April 8"
+        ],
+        "mother entity": "Proposal-Cover-Sheet-English.rtf"
+      },
+      {
+        "name": "April 2013",
+        "type": "date",
+        "alias": [
+          "March 2013"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "Kernel32!LoadLibraryA",
+        "type": "function",
+        "alias": [
+          "LoadLibraryA"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "system32\\rundll32.exe",
+        "type": "file",
+        "alias": [
+          "rundll32.exe"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "@AA2ADcAOAA",
+        "type": "identity",
+        "alias": [
+          "TwitterJS account"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "April 2013",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "MiniDuke main component (before config encryption)",
+        "type": "file",
+        "alias": [
+          "encrypted payload"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "TwitterJS javascript code",
+        "type": "script",
+        "alias": [
+          "JScript file"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "20 KB",
+        "type": "quantity",
+        "alias": [
+          "20 KB"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "JScript",
+        "type": "general-software",
+        "alias": [
+          "JScript COM object"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "TwitterJS component",
+        "type": "hacker-tool",
+        "alias": [
+          "TwitterJS component (JScript version)"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "MiniDuke (previous version)",
+        "type": "malware",
+        "alias": [
+          "earlier version"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "@FloydLSchwartz (previous search term)",
+        "type": "identity",
+        "alias": [
+          "uri!"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "Twitter bot",
+        "type": "hacker-tool",
+        "alias": [
+          "the bot"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "base64 data",
+        "type": "indicator",
+        "alias": [
+          "encrypted script"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "rolling XOR key",
+        "type": "credential-value",
+        "alias": [
+          "XOR key"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "Twitter account search",
+        "type": "attack-pattern",
+        "alias": [
+          "dynamic Twitter search"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "ESET Malware Research",
+        "type": "identity",
+        "alias": [
+          "ESET"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "urlmon!URLDownloadToFileA API",
+        "type": "software component / function",
+        "alias": [
+          "URLDownloadToFileA"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "encrypted system information",
+        "type": "credential-value",
+        "alias": [
+          "system info"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "MiniDuke (v2, with TwitterJS)",
+        "type": "malware",
+        "alias": [
+          "v2 MiniDuke",
+          "MiniDuke (current variant)"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "Twitter account name",
+        "type": "identity",
+        "alias": [
+          "real account name"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "Twitter account @AA2ADcAOAA (v2)",
+        "type": "identity",
+        "alias": [
+          "TwitterJS account"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "Twitter bot (v2)",
+        "type": "hacker-tool",
+        "alias": [
+          "v2 bot"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "Twitter account search term (v2)",
+        "type": "attack-pattern",
+        "alias": [
+          "dynamic search"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "sample script",
+        "type": "script",
+        "alias": [
+          "obfuscated script"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "Twitter account hash",
+        "type": "indicator",
+        "alias": [
+          "hardcoded hash"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "Twitter account tweet",
+        "type": "indicator",
+        "alias": [
+          "malicious tweets"
+        ],
+        "mother entity": "TwitterJS module"
+      },
+      {
+        "name": "MiniDuke payload (v2)",
+        "type": "file",
+        "alias": [
+          "LNK file",
+          "persistence file"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "Twitter account name list",
+        "type": "list",
+        "alias": [
+          "search term list"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "Twitter account name list (generated)",
+        "type": "list",
+        "alias": [
+          "search terms"
+        ],
+        "mother entity": "MiniDuke"
+      },
+      {
+        "name": "Twitter account name list (filed)",
+        "type": "document",
+        "alias": [
+          "technical report"
+        ],
+        "mother entity": "MiniDuke"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2014-1761",
+        "rel": "used to deliver",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "HP Security Research blog",
+        "rel": "analysis of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "CVE-2014-1761"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "variant of",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Win32/SandyEva"
+      },
+      {
+        "sub": "Proposal-Cover-Sheet-English.rtf",
+        "rel": "named",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Proposal-Cover-Sheet-English.rtf"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "discussed in",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "The MiniDuke Mystery: PDF 0-day Government Spy Assembler 0x29A Micro Backdoor"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "uses functions exported by",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "kernel32.dll"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "drops payload in",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "a.l"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "subsequently loaded by calling",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "kernel32!LoadLibraryA"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "checks host process is not",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "checks current directory is",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "%TEMP% directory"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "gathers",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "computer name"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "stores in",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "%ALLUSERSPROFILE%\\Application Data directory"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "hidden .LNK file"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "points to",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "modified main module"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "generates",
+        "rel_type": [
+          "produces"
+        ],
+        "obj": "Twitter account search term"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "retrieves from Twitter page of",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "@FloydLSchwartz"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "looks for tag",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "X)))"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "decrypts a URL from data that follows",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "Twitter account tweet"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "sends to C&C server",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "C&C server"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "verifies integrity using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "RSA-2048 public key"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Twitter DGA algorithm"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "downloads via",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "urlmon!URLDownloadToFileA API"
+      },
+      {
+        "sub": "Twitter DGA accounts",
+        "rel": "registered to receive from",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "TwitterJS module",
+        "rel": "is part of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "TwitterJS module",
+        "rel": "injects code into",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "cryptdll.dll"
+      },
+      {
+        "sub": "TwitterJS module",
+        "rel": "redirects exported functions to",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "TwitterJS module"
+      },
+      {
+        "sub": "TwitterJS module",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Twitter account name"
+      },
+      {
+        "sub": "TwitterJS module",
+        "rel": "fetches from .xhtml/.php links",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "escape sequences .xhtml/.php"
+      },
+      {
+        "sub": "TwitterJS module",
+        "rel": "decrypts using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "rolling XOR key"
+      },
+      {
+        "sub": "TwitterJS module",
+        "rel": "compares to",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "Twitter account hash"
+      },
+      {
+        "sub": "TwitterJS module",
+        "rel": "executes by calling",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "eval()"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "detects via",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "Twitter DGA accounts"
+      }
+    ]
+  }
+}

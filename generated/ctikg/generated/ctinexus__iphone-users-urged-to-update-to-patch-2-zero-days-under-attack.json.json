@@ -1,0 +1,82 @@
+{
+  "sample_id": "ctinexus__iphone-users-urged-to-update-to-patch-2-zero-days-under-attack.json",
+  "sample_index": 93,
+  "source": "ctinexus",
+  "file_name": "iphone-users-urged-to-update-to-patch-2-zero-days-under-attack.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "patches",
+        "rel": "address",
+        "obj": "flaw"
+      },
+      {
+        "sub": "flaw",
+        "rel": "impact",
+        "obj": "Apple device"
+      },
+      {
+        "sub": "Apple device",
+        "rel": "can run",
+        "obj": "iOS 15"
+      },
+      {
+        "sub": "Apple device",
+        "rel": "can run",
+        "obj": "Monterey OS"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "is a",
+        "obj": "kernel bug"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "is present in",
+        "obj": "iOS"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "is",
+        "obj": "out-of-bounds write issue"
+      },
+      {
+        "sub": "out-of-bounds write issue",
+        "rel": "was addressed by",
+        "obj": "improved bounds checking"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "allows",
+        "obj": "an application to execute arbitrary code with kernel privileges"
+      },
+      {
+        "sub": "Apple",
+        "rel": "addressed",
+        "obj": "improved bounds checking"
+      },
+      {
+        "sub": "Apple",
+        "rel": "states",
+        "obj": "there is a report that CVE-2022-32894 may have been actively exploited"
+      }
+    ]
+  }
+}

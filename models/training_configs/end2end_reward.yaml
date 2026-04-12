@@ -1,0 +1,10 @@
+name: end2end_reward
+base_model: Qwen3-4B-Instruct-2507
+training_articles: 1000
+batch_size: 64
+rollout_count: 8
+reward_backend: online_llm_judge
+training_goal: direct_article_to_knowledge_graph_generation
+notes:
+  - More expensive than the task-bank variant because reward computation is online.
+  - The released artifact focuses on the paper-facing training configuration and results.

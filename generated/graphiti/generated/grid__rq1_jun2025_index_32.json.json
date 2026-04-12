@@ -1,0 +1,270 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_32.json",
+  "sample_index": 222,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_32.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Ammyy Admin",
+        "type": "Malware"
+      },
+      {
+        "name": "Win32/Kasidet",
+        "type": "Malware"
+      },
+      {
+        "name": "ammyy.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "fifa2018start.info",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Buhtrap",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "FIFA World Cup",
+        "type": "Location"
+      },
+      {
+        "name": "ESET",
+        "type": "Organization"
+      },
+      {
+        "name": "SmartInstaller",
+        "type": "Tool"
+      },
+      {
+        "name": "bitcoin",
+        "type": "Indicator"
+      },
+      {
+        "name": "pass.txt",
+        "type": "Indicator"
+      },
+      {
+        "name": "passwords.txt",
+        "type": "Indicator"
+      },
+      {
+        "name": "wallet.dat",
+        "type": "Indicator"
+      },
+      {
+        "name": "armoryqt",
+        "type": "Indicator"
+      },
+      {
+        "name": "exodus",
+        "type": "Indicator"
+      },
+      {
+        "name": "electrum",
+        "type": "Indicator"
+      },
+      {
+        "name": "jaxx",
+        "type": "Indicator"
+      },
+      {
+        "name": "keepass",
+        "type": "Indicator"
+      },
+      {
+        "name": "kitty",
+        "type": "Indicator"
+      },
+      {
+        "name": "mstsc",
+        "type": "Indicator"
+      },
+      {
+        "name": "multibit",
+        "type": "Indicator"
+      },
+      {
+        "name": "putty",
+        "type": "Indicator"
+      },
+      {
+        "name": "radmin",
+        "type": "Indicator"
+      },
+      {
+        "name": "vsphere",
+        "type": "Indicator"
+      },
+      {
+        "name": "winscp",
+        "type": "Indicator"
+      },
+      {
+        "name": "xshell",
+        "type": "Indicator"
+      },
+      {
+        "name": "AAv3.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "AmmyyService.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "SHA1 hashes",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "ammyy.com",
+        "rel": "served malware",
+        "obj": "Win32/Kasidet"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "steals files with",
+        "obj": "bitcoin"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "steals files with",
+        "obj": "pass.txt"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "steals files with",
+        "obj": "passwords.txt"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "steals files with",
+        "obj": "wallet.dat"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "reports processes with",
+        "obj": "armoryqt"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "reports processes with",
+        "obj": "exodus"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "reports processes with",
+        "obj": "electrum"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "reports processes with",
+        "obj": "jaxx"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "reports processes with",
+        "obj": "keepass"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "reports processes with",
+        "obj": "kitty"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "reports processes with",
+        "obj": "mstsc"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "reports processes with",
+        "obj": "multibit"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "reports processes with",
+        "obj": "putty"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "reports processes with",
+        "obj": "radmin"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "reports processes with",
+        "obj": "vsphere"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "reports processes with",
+        "obj": "winscp"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "reports processes with",
+        "obj": "xshell"
+      },
+      {
+        "sub": "ammyy.com",
+        "rel": "used cc server",
+        "obj": "fifa2018start.info"
+      },
+      {
+        "sub": "ammyy.com",
+        "rel": "used tool",
+        "obj": "SmartInstaller"
+      },
+      {
+        "sub": "AAv3.exe",
+        "rel": "DROPS",
+        "obj": "AmmyyService.exe"
+      },
+      {
+        "sub": "ESET",
+        "rel": "ANALYZED",
+        "obj": "ammyy.com"
+      },
+      {
+        "sub": "ESET",
+        "rel": "DETECTED",
+        "obj": "Win32/Kasidet"
+      },
+      {
+        "sub": "ammyy.com",
+        "rel": "hided behind",
+        "obj": "FIFA World Cup"
+      },
+      {
+        "sub": "ammyy.com",
+        "rel": "previously compromised",
+        "obj": "Buhtrap"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "delivered with",
+        "obj": "AmmyyAdmin"
+      }
+    ]
+  }
+}

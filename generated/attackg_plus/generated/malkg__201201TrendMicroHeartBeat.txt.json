@@ -1,0 +1,472 @@
+{
+  "sample_id": "malkg__201201TrendMicroHeartBeat.txt",
+  "sample_index": 105,
+  "source": "malkg",
+  "file_name": "201201TrendMicroHeartBeat.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "HeartBeat APT",
+        "rel": "Operate",
+        "obj": "South Korean government"
+      },
+      {
+        "sub": "HeartBeat APT",
+        "rel": "Operate",
+        "obj": "Organization"
+      },
+      {
+        "sub": "HeartBeat APT",
+        "rel": "Operate",
+        "obj": "Political party"
+      },
+      {
+        "sub": "HeartBeat APT",
+        "rel": "Operate",
+        "obj": "Media outfit"
+      },
+      {
+        "sub": "HeartBeat APT",
+        "rel": "Operate",
+        "obj": "Military branch"
+      },
+      {
+        "sub": "HeartBeat APT",
+        "rel": "Construct",
+        "obj": "Decoy document"
+      },
+      {
+        "sub": "HeartBeat APT",
+        "rel": "Modify",
+        "obj": "Campaign code"
+      },
+      {
+        "sub": "HeartBeat APT",
+        "rel": "Has value",
+        "obj": "MMDD format"
+      },
+      {
+        "sub": "HeartBeat APT",
+        "rel": "Use",
+        "obj": "Logos of specific groups"
+      },
+      {
+        "sub": "HeartBeat APT",
+        "rel": "Use",
+        "obj": "Military-related content"
+      },
+      {
+        "sub": "HeartBeat APT",
+        "rel": "Has vulnerability",
+        "obj": "Targeting and planning for initial access"
+      },
+      {
+        "sub": "HeartBeat APT",
+        "rel": "Has tactic",
+        "obj": "Spearphishing"
+      },
+      {
+        "sub": "HeartBeat APT",
+        "rel": "Use",
+        "obj": "Remote Access Tool"
+      },
+      {
+        "sub": "Remote Access Tool",
+        "rel": "Construct",
+        "obj": "Disguised or fake document"
+      },
+      {
+        "sub": "Disguised or fake document",
+        "rel": "Has file format",
+        "obj": ".JPG"
+      },
+      {
+        "sub": "Disguised or fake document",
+        "rel": "Has file format",
+        "obj": ".PDF"
+      },
+      {
+        "sub": "Disguised or fake document",
+        "rel": "Has file format",
+        "obj": "XLS"
+      },
+      {
+        "sub": "Disguised or fake document",
+        "rel": "Has file format",
+        "obj": "HWP"
+      },
+      {
+        "sub": "Disguised or fake document",
+        "rel": "Has value",
+        "obj": "Password"
+      },
+      {
+        "sub": "Password",
+        "rel": "Locate at",
+        "obj": "Email body"
+      },
+      {
+        "sub": "Disguised or fake document",
+        "rel": "Modify",
+        "obj": "Display to user"
+      },
+      {
+        "sub": "Disguised or fake document",
+        "rel": "Write",
+        "obj": "RAT installer"
+      },
+      {
+        "sub": "RAT installer",
+        "rel": "Execute",
+        "obj": "Background"
+      },
+      {
+        "sub": "RAT installer",
+        "rel": "Operate",
+        "obj": "Target system"
+      },
+      {
+        "sub": "HeartBeat APT",
+        "rel": "Establish foothold",
+        "obj": "Target system"
+      },
+      {
+        "sub": "HeartBeat RAT",
+        "rel": "Use",
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "HeartBeat RAT",
+        "rel": "Inject",
+        "obj": ".DLL"
+      },
+      {
+        "sub": ". DLL",
+        "rel": "Has filename",
+        "obj": "6to4nt.dll"
+      },
+      {
+        "sub": ". DLL",
+        "rel": "Has filename",
+        "obj": "htrn.dll"
+      },
+      {
+        "sub": ". DLL",
+        "rel": "Has filename",
+        "obj": "svcHost.dll"
+      },
+      {
+        "sub": ". DLL",
+        "rel": "Has value",
+        "obj": "fake file properties"
+      },
+      {
+        "sub": "HeartBeat RAT",
+        "rel": "Operate",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "HeartBeat RAT",
+        "rel": "Write",
+        "obj": "malicious code"
+      },
+      {
+        "sub": "HeartBeat RAT",
+        "rel": "Construct",
+        "obj": ".DLL"
+      },
+      {
+        "sub": "HeartBeat RAT",
+        "rel": "Modify",
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "HeartBeat RAT",
+        "rel": "Initiate communication",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "- RAT installer",
+        "rel": "Modify",
+        "obj": "Registry"
+      },
+      {
+        "sub": "- RAT installer",
+        "rel": "Write",
+        "obj": "Service"
+      },
+      {
+        "sub": "- Service",
+        "rel": "Has value",
+        "obj": "Start = '2'"
+      },
+      {
+        "sub": "- Service",
+        "rel": "Has value",
+        "obj": "ErrorControl = '1'"
+      },
+      {
+        "sub": "- Service",
+        "rel": "Has value",
+        "obj": "ImagePath = C:\\Program Files\\Windows NT\\htrn.dll"
+      },
+      {
+        "sub": "- Service",
+        "rel": "Operate",
+        "obj": "Under LocalSystem account"
+      },
+      {
+        "sub": "- Service",
+        "rel": "Has hostname",
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "- RAT installer",
+        "rel": "Construct",
+        "obj": "Service"
+      },
+      {
+        "sub": "- RAT installer",
+        "rel": "Use",
+        "obj": "Persistence through registry modifications"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Obfuscation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Stealth techniques"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "XOR encryption with a single byte key"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Contiguous 02H bytes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Legitimate-looking file names"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Legitimate-looking file properties"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Through compromised hosts as proxy servers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Via C&C domains redirected through ISPs in Armenia, USA, Japan, India, and Korea"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Installer deletion after execution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "No visible traces"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has geolocation",
+        "obj": "Armenia"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has geolocation",
+        "obj": "USA"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has geolocation",
+        "obj": "Japan"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has geolocation",
+        "obj": "India"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has geolocation",
+        "obj": "Korea"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Compromised hosts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "C&C domains"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Forensic evidence"
+      },
+      {
+        "sub": "RAT",
+        "rel": "Use",
+        "obj": "Running processes"
+      },
+      {
+        "sub": "RAT",
+        "rel": "Use",
+        "obj": "Available drives"
+      },
+      {
+        "sub": "RAT",
+        "rel": "Use",
+        "obj": "System information"
+      },
+      {
+        "sub": "RAT",
+        "rel": "Retrieve",
+        "obj": "Computer name"
+      },
+      {
+        "sub": "RAT",
+        "rel": "Retrieve",
+        "obj": "Local IP address"
+      },
+      {
+        "sub": "RAT",
+        "rel": "Retrieve",
+        "obj": "Service pack"
+      },
+      {
+        "sub": "RAT",
+        "rel": "Retrieve",
+        "obj": "File creation dates"
+      },
+      {
+        "sub": "RAT",
+        "rel": "Operate",
+        "obj": "Remotely"
+      },
+      {
+        "sub": "RAT",
+        "rel": "Enable",
+        "obj": "Understanding of internal environment"
+      },
+      {
+        "sub": "RAT",
+        "rel": "Enable",
+        "obj": "Identification of potential lateral movement paths"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "Port 80"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "Port 443"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "Port 5600"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "Port 8080"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Has value",
+        "obj": "800H"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Encrypt with",
+        "obj": "Single-byte XOR key 02H"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Has URL",
+        "obj": "ahlab.myfw.us"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Has URL",
+        "obj": "kissyou01.myfw.us"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Locate at",
+        "obj": "Armenia"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Locate at",
+        "obj": "USA"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Locate at",
+        "obj": "Japan"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Locate at",
+        "obj": "India"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Locate at",
+        "obj": "Korea"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Operate through",
+        "obj": "Compromised IP hosts"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Has hostname",
+        "obj": "qawsed"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Modify",
+        "obj": "Add string 'qawsed' in later versions of the RAT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "sample_id": "casie__2604.json",
+  "sample_index": 9,
+  "source": "casie",
+  "file_name": "2604.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "company",
+        "type": "generic-noun",
+        "alias": []
+      },
+      {
+        "name": "hackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the hackers",
+          "the extortionists",
+          "hackers who were threatening"
+        ]
+      },
+      {
+        "name": "systems",
+        "type": "infrastructure",
+        "alias": []
+      },
+      {
+        "name": "intellectual property",
+        "type": "generic-noun",
+        "alias": []
+      },
+      {
+        "name": "Disney",
+        "type": "identity",
+        "alias": [
+          "the studio",
+          "Walt Disney",
+          "Disney’s CEO Bob Iger",
+          "Disney’s CEO"
+        ]
+      },
+      {
+        "name": "$230 million blockbuster",
+        "type": "generic-noun",
+        "alias": []
+      },
+      {
+        "name": "Pirates of the Caribbean movie",
+        "type": "file",
+        "alias": [
+          "the latest Pirates of the Caribbean movie",
+          "the soon to be released “Pirates of the Caribbean: Dead Men Tell No Tales”",
+          "the blockbuster starring Johnny Depp"
+        ]
+      },
+      {
+        "name": "pirated copy of the film",
+        "type": "file",
+        "alias": []
+      },
+      {
+        "name": "torrent sites",
+        "type": "infrastructure",
+        "alias": []
+      },
+      {
+        "name": "ransom",
+        "type": "credential-value",
+        "alias": []
+      },
+      {
+        "name": "Pirate Bay",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "extortionists",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": []
+      },
+      {
+        "name": "Bob Iger",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "Pirates of the Caribbean: Dead Men Tell No Tales",
+        "type": "file",
+        "alias": []
+      },
+      {
+        "name": "torrents",
+        "type": "file",
+        "alias": [
+          "those downloadable torrents"
+        ]
+      },
+      {
+        "name": "the “Pirates of the Caribbean” movie",
+        "type": "file",
+        "alias": []
+      },
+      {
+        "name": "law enforcement agencies",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "security breach",
+        "type": "abstract-concept",
+        "alias": []
+      },
+      {
+        "name": "ransom demand",
+        "type": "course-of-action",
+        "alias": []
+      },
+      {
+        "name": "Yahoo Finance",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "company",
+        "type": "identity",
+        "alias": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "hackers",
+        "rel": "break into",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "systems"
+      },
+      {
+        "sub": "hackers",
+        "rel": "steal away",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "intellectual property"
+      },
+      {
+        "sub": "hackers",
+        "rel": "threaten to release",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Pirates of the Caribbean movie"
+      },
+      {
+        "sub": "pirated copy of the film",
+        "rel": "seed on",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "torrent sites"
+      },
+      {
+        "sub": "Disney",
+        "rel": "contacted by",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "hackers"
+      },
+      {
+        "sub": "hackers",
+        "rel": "threatening to release",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Pirates of the Caribbean: Dead Men Tell No Tales"
+      },
+      {
+        "sub": "torrents",
+        "rel": "claiming to be",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "Pirates of the Caribbean movie"
+      },
+      {
+        "sub": "Disney",
+        "rel": "did not have",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "pirated copy of the film"
+      },
+      {
+        "sub": "Disney",
+        "rel": "not hacked",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "systems"
+      },
+      {
+        "sub": "Disney",
+        "rel": "refused to pay",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "ransom demand"
+      },
+      {
+        "sub": "extortionists",
+        "rel": "never had a copy of",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "Pirates of the Caribbean movie"
+      },
+      {
+        "sub": "Disney",
+        "rel": "review the security of",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "systems"
+      },
+      {
+        "sub": "Disney",
+        "rel": "inform",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "law enforcement agencies"
+      },
+      {
+        "sub": "extortionists",
+        "rel": "make threats against",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "company"
+      },
+      {
+        "sub": "extortionists",
+        "rel": "jumping on the bandwagon of",
+        "rel_type": [
+          "cooperates-with"
+        ],
+        "obj": "high profile hacks"
+      },
+      {
+        "sub": "Disney",
+        "rel": "debunked claims that",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "security breach"
+      },
+      {
+        "sub": "Yahoo Finance",
+        "rel": "video interview with",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Disney"
+      },
+      {
+        "sub": "hackers",
+        "rel": "claiming to have stolen",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "intellectual property"
+      }
+    ]
+  }
+}

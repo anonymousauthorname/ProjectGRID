@@ -1,0 +1,347 @@
+{
+  "sample_id": "ctinexus__apts-swarm-zimbra-zero-day-to-steal-government-info-worldwide.json",
+  "sample_index": 82,
+  "source": "ctinexus",
+  "file_name": "apts-swarm-zimbra-zero-day-to-steal-government-info-worldwide.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "at least four separate cyberattack groups",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "cyberattack groups"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "a former zero-day security vulnerability in the Zimbra Collaboration Suite (ZCS)",
+        "type": "vulnerability",
+        "alias": [
+          "the bug (CVE-2023-37580)",
+          "the zero-day vulnerability",
+          "the zero-day exploitation"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Zimbra Collaboration Suite (ZCS)",
+        "type": "general-software",
+        "alias": [
+          "ZCS",
+          "the Zimbra email server",
+          "Zimbra email server"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "reflected cross-site scripting (XSS) vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "the bug (CVE-2023-37580)"
+        ],
+        "mother entity": [
+          "CVE-2023-37580"
+        ]
+      },
+      {
+        "name": "government organizations globally",
+        "type": "identity",
+        "alias": [
+          "client organizations"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Zimbra website",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Japan Advanced Institute of Science and Technology",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Germany's Max Planck Institute",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Gunung Sewu",
+        "type": "identity",
+        "alias": [
+          "top business incubator in Southeast Asia"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2023-37580",
+        "type": "vulnerability",
+        "alias": [
+          "the bug"
+        ],
+        "mother entity": [
+          "Zimbra Collaboration Suite (ZCS)"
+        ]
+      },
+      {
+        "name": "July 25",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "July 5",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Google's Threat Analysis Group (TAG)",
+        "type": "identity",
+        "alias": [
+          "TAG"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Dark Reading",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "June",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "remediation",
+        "type": "course-of-action",
+        "alias": [
+          "patch",
+          "hotfix"
+        ],
+        "mother entity": [
+          "Zimbra Collaboration Suite (ZCS)"
+        ]
+      },
+      {
+        "name": "GitHub repository",
+        "type": "infrastructure",
+        "alias": [
+          "public GitHub repository"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "email data, user credentials, and authentication tokens",
+        "type": "credential-value",
+        "alias": [
+          "email data",
+          "user credentials",
+          "authentication tokens"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Zimbra email server",
+        "type": "general-software",
+        "alias": [
+          "ZCS"
+        ],
+        "mother entity": [
+          "Zimbra Collaboration Suite (ZCS)"
+        ]
+      },
+      {
+        "name": "public GitHub repository",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "at least four separate cyberattack groups",
+        "rel": "used",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "a former zero-day security vulnerability in the Zimbra Collaboration Suite (ZCS)"
+      },
+      {
+        "sub": "at least four separate cyberattack groups",
+        "rel": "steal",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "email data, user credentials, and authentication tokens"
+      },
+      {
+        "sub": "a former zero-day security vulnerability in the Zimbra Collaboration Suite (ZCS)",
+        "rel": "in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Zimbra Collaboration Suite (ZCS)"
+      },
+      {
+        "sub": "a former zero-day security vulnerability in the Zimbra Collaboration Suite (ZCS)",
+        "rel": "is a",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "reflected cross-site scripting (XSS) vulnerability"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite (ZCS)",
+        "rel": "is",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "email server, calendaring, and chat and video platform"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite (ZCS)",
+        "rel": "used by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "government organizations globally"
+      },
+      {
+        "sub": "Zimbra website",
+        "rel": "provides information about",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Zimbra Collaboration Suite (ZCS)"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite (ZCS)",
+        "rel": "has client organizations",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Japan Advanced Institute of Science and Technology"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite (ZCS)",
+        "rel": "has client organizations",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Germany's Max Planck Institute"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite (ZCS)",
+        "rel": "has client organizations",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Gunung Sewu"
+      },
+      {
+        "sub": "The bug (CVE-2023-37580)",
+        "rel": "was patched on",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "July 25"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite (ZCS)",
+        "rel": "offered",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "remediation"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite (ZCS)",
+        "rel": "remediation rolled out to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "public GitHub repository"
+      },
+      {
+        "sub": "Google's Threat Analysis Group (TAG)",
+        "rel": "shared",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Dark Reading"
+      },
+      {
+        "sub": "The bug (CVE-2023-37580)",
+        "rel": "started in",
+        "rel_type": [
+          "origins-from"
+        ],
+        "obj": "June"
+      },
+      {
+        "sub": "a former zero-day security vulnerability in the Zimbra Collaboration Suite (ZCS)",
+        "rel": "patched on",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "July 25"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite (ZCS)",
+        "rel": "rolled out hotfix to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "GitHub repository"
+      },
+      {
+        "sub": "a former zero-day security vulnerability in the Zimbra Collaboration Suite (ZCS)",
+        "rel": "in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Zimbra email server"
+      },
+      {
+        "sub": "a former zero-day security vulnerability in the Zimbra Collaboration Suite (ZCS)",
+        "rel": "exploited",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "the zero-day exploitation"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite (ZCS)",
+        "rel": "rolled out hotfix to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "public GitHub repository"
+      }
+    ]
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-targetcompany.json",
+  "sample_index": 68,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-targetcompany.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "threat actors behind TargetCompany",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the ransomware group",
+          "the group",
+          "the ransomware group was given the name Fargo",
+          "the group was given the name Fargo"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "TargetCompany ransomware",
+        "type": "malware",
+        "alias": [
+          "the ransomware",
+          "TargetCompany ransomware",
+          "TargetCompany's earlier variants",
+          "later variants of the TargetCompany ransomware",
+          "the ransomware group",
+          "the ransomware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "encryption algorithm",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "different decryptor characteristics"
+        ],
+        "mother entity": "TargetCompany ransomware"
+      },
+      {
+        "name": "file name extensions",
+        "type": "generic-noun",
+        "alias": [
+          "the extension that it added to its encrypted files",
+          "Other extensions used by the ransomware group"
+        ],
+        "mother entity": "TargetCompany ransomware"
+      },
+      {
+        "name": ".onion",
+        "type": "domain-name",
+        "alias": [
+          "a “.onion” contact site"
+        ],
+        "mother entity": "TargetCompany's earlier variants"
+      },
+      {
+        "name": "How to decrypt files.txt",
+        "type": "file",
+        "alias": [
+          "ransom notes named How to decrypt files.txt"
+        ],
+        "mother entity": "TargetCompany's earlier variants"
+      },
+      {
+        "name": "Fargo",
+        "type": "other",
+        "alias": [
+          "the name Fargo"
+        ],
+        "mother entity": "TargetCompany ransomware"
+      },
+      {
+        "name": ".mallox",
+        "type": "file",
+        "alias": [],
+        "mother entity": "TargetCompany ransomware"
+      },
+      {
+        "name": ".xollam",
+        "type": "file",
+        "alias": [],
+        "mother entity": "TargetCompany ransomware"
+      },
+      {
+        "name": "Chacha20",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": "encryption algorithm"
+      },
+      {
+        "name": "Curve 25519",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": "encryption algorithm"
+      },
+      {
+        "name": "AES-128",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": "encryption algorithm"
+      },
+      {
+        "name": "Mallox",
+        "type": "infrastructure",
+        "alias": [
+          "a data leak site under the name Mallox"
+        ],
+        "mother entity": "threat actors behind TargetCompany"
+      },
+      {
+        "name": "HOW TO RECOVER!!.txt",
+        "type": "file",
+        "alias": [],
+        "mother entity": "later variants of the TargetCompany ransomware"
+      },
+      {
+        "name": "January 2023",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "mid- to late 2022",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "TargetCompany",
+        "type": "identity",
+        "alias": [
+          "the targeted enterprise"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Negotiations",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "victim’s files",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "blog entry",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "TargetCompany’s earlier variants",
+        "type": "malware",
+        "alias": [],
+        "mother entity": "TargetCompany ransomware"
+      },
+      {
+        "name": "later variants",
+        "type": "malware",
+        "alias": [
+          "These later variants",
+          "the later variants of the ransomware"
+        ],
+        "mother entity": "TargetCompany ransomware"
+      },
+      {
+        "name": "the extension that it added to its encrypted files",
+        "type": "file",
+        "alias": [],
+        "mother entity": "TargetCompany ransomware"
+      },
+      {
+        "name": "data leak site",
+        "type": "infrastructure",
+        "alias": [
+          "a data leak site"
+        ],
+        "mother entity": "threat actors behind TargetCompany"
+      },
+      {
+        "name": "encrypted files",
+        "type": "file",
+        "alias": [],
+        "mother entity": "victim’s files"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "threat actors behind TargetCompany",
+        "rel": "clarified that each major update of the ransomware entailed a change in the encryption algorithm and different decryptor characteristics",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "TargetCompany ransomware"
+      },
+      {
+        "sub": "TargetCompany ransomware",
+        "rel": "entailed a change in the encryption algorithm",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "encryption algorithm"
+      },
+      {
+        "sub": "TargetCompany ransomware",
+        "rel": "entailed a change in file name extensions",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "file name extensions"
+      },
+      {
+        "sub": "TargetCompany ransomware",
+        "rel": "evolution of names by which the ransomware group is known",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "file name extensions"
+      },
+      {
+        "sub": "TargetCompany's earlier variants",
+        "rel": "provided a “.onion” contact site for negotiations",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": ".onion"
+      },
+      {
+        "sub": ".onion",
+        "rel": "for negotiations",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "Negotiations"
+      },
+      {
+        "sub": "TargetCompany's earlier variants",
+        "rel": "dropped ransom notes named How to decrypt files.txt",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "How to decrypt files.txt"
+      },
+      {
+        "sub": "later variants of the TargetCompany ransomware",
+        "rel": "no longer use the name of the targeted enterprise as file name extensions",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "TargetCompany"
+      },
+      {
+        "sub": "the group",
+        "rel": "was given the name Fargo",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Fargo"
+      },
+      {
+        "sub": "the group",
+        "rel": "added to its encrypted files",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the extension that it added to its encrypted files"
+      },
+      {
+        "sub": "the ransomware group",
+        "rel": "used .mallox and .xollam",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": [
+          ".mallox",
+          ".xollam"
+        ]
+      },
+      {
+        "sub": "later variants of the TargetCompany ransomware",
+        "rel": "using a combination of Chacha20, Curve 25519, and AES-128 algorithms to encrypt the victim's files",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": [
+          "Chacha20",
+          "Curve 25519",
+          "AES-128"
+        ]
+      },
+      {
+        "sub": "later variants of the TargetCompany ransomware",
+        "rel": "encrypt the victim's files",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "victim’s files"
+      },
+      {
+        "sub": "the ransomware group",
+        "rel": "established a data leak site under the name Mallox",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "Mallox"
+      },
+      {
+        "sub": "later variants of the TargetCompany ransomware",
+        "rel": "dropped ransom notes as HOW TO RECOVER!!.txt",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "HOW TO RECOVER!!.txt"
+      },
+      {
+        "sub": "later variants of the TargetCompany ransomware",
+        "rel": "targeted the victim’s files",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "victim’s files"
+      },
+      {
+        "sub": "blog entry",
+        "rel": "discusses evolution of names",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "file name extensions",
+        "special_factuality": [
+          "future"
+        ]
+      },
+      {
+        "sub": "encrypted files",
+        "rel": "have extensions such as .mallox or .xollam",
+        "rel_type": [
+          "has"
+        ],
+        "obj": [
+          ".mallox",
+          ".xollam"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,454 @@
+{
+  "sample_id": "malkg__201303FidelisDarkSeoulJokra.txt",
+  "sample_index": 111,
+  "source": "malkg",
+  "file_name": "201303FidelisDarkSeoulJokra.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Fidelis Threat Advisory #1008",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "DarkSeoul",
+        "type": "malware",
+        "alias": [
+          "the wiper malware used",
+          "the DarkSeoul/Jokra malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Jokra",
+        "type": "malware",
+        "alias": [
+          "the malware samples"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Shamoon malware",
+        "type": "malware",
+        "alias": [
+          "the Shamoon malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Master Boot Record (MBR)",
+        "type": "windows-registry-key",
+        "alias": [
+          "the MBR",
+          "boot records"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Volume Boot Record (VBR)",
+        "type": "windows-registry-key",
+        "alias": [
+          "the VBR",
+          "backup VBR"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "HASTATI",
+        "type": "pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PR!NCPES",
+        "type": "pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "mb_join.exe",
+        "type": "hacker-tool",
+        "alias": [
+          "The malware"
+        ],
+        "mother entity": [
+          "DarkSeoul"
+        ]
+      },
+      {
+        "name": "239ed75323.exe",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "DarkSeoul"
+        ]
+      },
+      {
+        "name": "0a8032cd6b4a710b1771a080fa09fb87",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Jokra"
+        ]
+      },
+      {
+        "name": "5fcd6e1dace6b0599429d913850f0364",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "DarkSeoul"
+        ]
+      },
+      {
+        "name": "PhysicalDrive[0-9]",
+        "type": "hardware-device",
+        "alias": [
+          "physical drive",
+          "fixed drive",
+          "removable devices"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "pasvc.exe",
+        "type": "process",
+        "alias": [
+          "AhnLab Policy Agent process"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Clisvc.exe",
+        "type": "process",
+        "alias": [
+          "ViRobot ISMS security tool from HAURI Inc."
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "shutdown -r -t 0",
+        "type": "command",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Fidelis Threat Geek blog",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "our blog entry"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Fidelis Security Systems, Inc.",
+        "type": "identity",
+        "alias": [
+          "Fidelis"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Fidelis XPS",
+        "type": "security-product",
+        "alias": [
+          "Fidelis XPS sensors",
+          "Fidelis Threat Research and Network Forensics and Incident Response teams"
+        ],
+        "mother entity": [
+          "Fidelis Security Systems, Inc."
+        ]
+      },
+      {
+        "name": "zip files",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "XOR'ed inside of a weaponized MS Office document",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Adobe PDF File",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "EnCase (v6.19.6)",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "backup VBR",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": [
+          "Volume Boot Record (VBR)"
+        ]
+      },
+      {
+        "name": "NTFS partition",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "windows recovery CD",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "DarkSeoul malware",
+        "type": "malware",
+        "alias": [
+          "the DarkSeoul/Jokra malware"
+        ],
+        "mother entity": [
+          "DarkSeoul"
+        ]
+      },
+      {
+        "name": "Trojan.Win32.EraseMBR.b",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Threat Actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Fidelis Threat Advisory #1008",
+        "rel": "focuses on",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "DarkSeoul"
+      },
+      {
+        "sub": "Shamoon malware",
+        "rel": "compared in intent and method to",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "DarkSeoul"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "overwrites",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Master Boot Record (MBR)"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "overwrites",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Volume Boot Record (VBR)"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "overwrites with HASTATI pattern",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "HASTATI"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "overwrites with PR!NCPES pattern",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "PR!NCPES"
+      },
+      {
+        "sub": "mb_join.exe",
+        "rel": "is component of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "DarkSeoul"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "239ed75323.exe"
+      },
+      {
+        "sub": "Jokra",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "0a8032cd6b4a710b1771a080fa09fb87"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "5fcd6e1dace6b0599429d913850f0364"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "PhysicalDrive[0-9]"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "attempts to terminate",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "pasvc.exe"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "attempts to terminate",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Clisvc.exe"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "shutdown -r -t 0"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "overwrites MBR",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Master Boot Record (MBR)",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "overwrites VBR",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Volume Boot Record (VBR)",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "enables recovery via",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "NTFS partition"
+      },
+      {
+        "sub": "Fidelis XPS",
+        "rel": "detects",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "DarkSeoul"
+      },
+      {
+        "sub": "Fidelis XPS",
+        "rel": "detects malware in",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "zip files"
+      },
+      {
+        "sub": "Fidelis XPS",
+        "rel": "detects malware in",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "XOR'ed inside of a weaponized MS Office document"
+      },
+      {
+        "sub": "Fidelis XPS",
+        "rel": "detects malware in",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "Adobe PDF File"
+      },
+      {
+        "sub": "EnCase (v6.19.6)",
+        "rel": "detects",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "backup VBR"
+      },
+      {
+        "sub": "Threat Actors",
+        "rel": "responsible for",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "DarkSeoul"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "categorized as",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Trojan.Win32.EraseMBR.b"
+      },
+      {
+        "sub": "Fidelis Threat Geek blog",
+        "rel": "authored or published",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Fidelis Threat Advisory #1008"
+      }
+    ]
+  }
+}

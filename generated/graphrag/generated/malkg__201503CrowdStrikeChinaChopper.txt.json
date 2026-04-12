@@ -1,0 +1,204 @@
+{
+  "sample_id": "malkg__201503CrowdStrikeChinaChopper.txt",
+  "sample_index": 144,
+  "source": "malkg",
+  "file_name": "201503CrowdStrikeChinaChopper.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CHOPPER WEB SHELL",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CHOPPER CLIENT",
+        "type": "TOOL"
+      },
+      {
+        "name": "CHOPSHOP",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CROWDSTRIKE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MITRE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "SYSTEM.WEBSERVICES.DLL",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "WILLIAM TAN",
+        "type": "PERSON"
+      },
+      {
+        "name": "MIMIKATZ",
+        "type": "TOOL"
+      },
+      {
+        "name": "SSL TRAFFIC",
+        "type": "NETWORK TRAFFIC"
+      },
+      {
+        "name": "HTTP POST REQUEST",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "PORTABLE EXECUTABLE (PE) FILE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CHOPPER DECODE MODULE",
+        "type": "TOOL"
+      },
+      {
+        "name": "C2 SESSION",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "WEB SERVER",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "IIS SERVER",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "BASE64 ENCODING",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "HTTP TRAFFIC",
+        "type": "NETWORK TRAFFIC"
+      },
+      {
+        "name": "ATTACKER",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "DECRYPTION OF SSL TRAFFIC",
+        "type": "ATTACK_PATTERN"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CHOPPER WEB SHELL",
+        "rel": "related_to",
+        "obj": "CHOPPER CLIENT"
+      },
+      {
+        "sub": "CHOPPER WEB SHELL",
+        "rel": "related_to",
+        "obj": "CHOPPER DECODE MODULE"
+      },
+      {
+        "sub": "CHOPPER DECODE MODULE",
+        "rel": "related_to",
+        "obj": "CHOPSHOP"
+      },
+      {
+        "sub": "CHOPPER DECODE MODULE",
+        "rel": "related_to",
+        "obj": "SSL TRAFFIC"
+      },
+      {
+        "sub": "CHOPPER WEB SHELL",
+        "rel": "related_to",
+        "obj": "SYSTEM.WEBSERVICES.DLL"
+      },
+      {
+        "sub": "CHOPPER WEB SHELL",
+        "rel": "related_to",
+        "obj": "WEB SERVER"
+      },
+      {
+        "sub": "CHOPPER WEB SHELL",
+        "rel": "related_to",
+        "obj": "ATTACKER"
+      },
+      {
+        "sub": "CHOPPER CLIENT",
+        "rel": "related_to",
+        "obj": "CHOPPER WEB SHELL"
+      },
+      {
+        "sub": "CHOPPER DECODE MODULE",
+        "rel": "related_to",
+        "obj": "CROWDSTRIKE"
+      },
+      {
+        "sub": "CHOPPER DECODE MODULE",
+        "rel": "related_to",
+        "obj": "MITRE"
+      },
+      {
+        "sub": "CHOPPER WEB SHELL",
+        "rel": "related_to",
+        "obj": "HTTP POST REQUEST"
+      },
+      {
+        "sub": "CHOPPER WEB SHELL",
+        "rel": "related_to",
+        "obj": "MIMIKATZ"
+      },
+      {
+        "sub": "CHOPPER DECODE MODULE",
+        "rel": "related_to",
+        "obj": "PORTABLE EXECUTABLE (PE) FILE"
+      },
+      {
+        "sub": "CHOPPER DECODE MODULE",
+        "rel": "related_to",
+        "obj": "C2 SESSION"
+      },
+      {
+        "sub": "CHOPPER WEB SHELL",
+        "rel": "related_to",
+        "obj": "IIS SERVER"
+      },
+      {
+        "sub": "CHOPPER DECODE MODULE",
+        "rel": "related_to",
+        "obj": "BASE64 ENCODING"
+      },
+      {
+        "sub": "CHOPPER DECODE MODULE",
+        "rel": "related_to",
+        "obj": "HTTP TRAFFIC"
+      },
+      {
+        "sub": "CHOPPER WEB SHELL",
+        "rel": "related_to",
+        "obj": "DECRYPTION OF SSL TRAFFIC"
+      },
+      {
+        "sub": "WILLIAM TAN",
+        "rel": "related_to",
+        "obj": "CROWDSTRIKE"
+      },
+      {
+        "sub": "ATTACKER",
+        "rel": "related_to",
+        "obj": "CHOPPER WEB SHELL"
+      }
+    ]
+  }
+}

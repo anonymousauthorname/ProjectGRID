@@ -1,0 +1,232 @@
+{
+  "sample_id": "ctinexus__sea-turtle-cyber-espionage-campaign.json",
+  "sample_index": 50,
+  "source": "ctinexus",
+  "file_name": "sea-turtle-cyber-espionage-campaign.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Sea Turtle",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Cosmic Wolf",
+          "Marbled Dust",
+          "Teal Kurma",
+          "UNC1326"
+        ]
+      },
+      {
+        "name": "Cisco Talos",
+        "type": "security-product"
+      },
+      {
+        "name": "April 2019",
+        "type": "date"
+      },
+      {
+        "name": "January 2017",
+        "type": "date"
+      },
+      {
+        "name": "DNS hijacking",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "public and private entities in the Middle East and North Africa",
+        "type": "victims/targets"
+      },
+      {
+        "name": "actor-controlled server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "SnappyTCP",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "Linux/Unix systems",
+        "type": "general-software"
+      },
+      {
+        "name": "command-and-control",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "2021 to 2023",
+        "type": "date"
+      },
+      {
+        "name": "PricewaterhouseCoopers (PwC) Threat Intelligence team",
+        "type": "security-product"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Sea Turtle",
+        "rel": "was first documented by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Cisco Talos"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "also known by",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Cosmic Wolf"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "also known by",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Marbled Dust"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "also known by",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Teal Kurma"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "also known by",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "UNC1326"
+      },
+      {
+        "sub": "Cisco Talos",
+        "rel": "first documented",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Sea Turtle"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "public and private entities in the Middle East and North Africa"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "believed to have been active since",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "January 2017",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "leveraging",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "DNS hijacking"
+      },
+      {
+        "sub": "DNS hijacking",
+        "rel": "to redirect",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "prospective targets attempting to query a specific domain"
+      },
+      {
+        "sub": "prospective targets attempting to query a specific domain",
+        "rel": "redirected to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "actor-controlled server"
+      },
+      {
+        "sub": "actor-controlled server",
+        "rel": "capable of harvesting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "their credentials"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "was revealed to be using",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "SnappyTCP"
+      },
+      {
+        "sub": "SnappyTCP",
+        "rel": "used for attacks carried out between",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "2021 to 2023"
+      },
+      {
+        "sub": "SnappyTCP",
+        "rel": "is a simple reverse TCP shell for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Linux/Unix systems"
+      },
+      {
+        "sub": "PricewaterhouseCoopers (PwC) Threat Intelligence team",
+        "rel": "according to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Sea Turtle activities"
+      },
+      {
+        "sub": "SnappyTCP",
+        "rel": "has basic capabilities of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "command-and-control"
+      },
+      {
+        "sub": "SnappyTCP",
+        "rel": "is also likely used for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "establishing persistence",
+        "special_factuality": [
+          "possible"
+        ]
+      }
+    ]
+  }
+}

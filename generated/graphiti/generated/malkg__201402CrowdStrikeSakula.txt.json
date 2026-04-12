@@ -1,0 +1,222 @@
+{
+  "sample_id": "malkg__201402CrowdStrikeSakula.txt",
+  "sample_index": 146,
+  "source": "malkg",
+  "file_name": "201402CrowdStrikeSakula.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "AURORA PANDA",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "CVE-2014-0322",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "ZxShell",
+        "type": "Malware"
+      },
+      {
+        "name": "Sakula",
+        "type": "Malware"
+      },
+      {
+        "name": "savmpet.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "gifas.asso.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Erido.jpg",
+        "type": "Indicator"
+      },
+      {
+        "name": "oa.ameteksen.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Groupement des industries françaises aéronautiques et spatiales",
+        "type": "Organization"
+      },
+      {
+        "name": "Safran",
+        "type": "Organization"
+      },
+      {
+        "name": "snecma.fr",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "secure.safran-group.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "icbcqsz.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Capstone Turbine",
+        "type": "Organization"
+      },
+      {
+        "name": "CVE-2012-4792",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "web.vipreclod.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "GIFAS",
+        "type": "Organization"
+      },
+      {
+        "name": "173.252.252.204",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "217.108.170.0/24",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "MD5 hash: 61fe6f4cb2c54511f0804b1417ab3bd2",
+        "type": "Indicator"
+      },
+      {
+        "name": "MD5 hash: c869c75ed1998294af3c676bdbd56851",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "AURORA PANDA",
+        "rel": "USES",
+        "obj": "ZxShell"
+      },
+      {
+        "sub": "GIFAS",
+        "rel": "has content on",
+        "obj": "savmpet.com"
+      },
+      {
+        "sub": "GIFAS",
+        "rel": "hosts exploit code on",
+        "obj": "gifas.asso.net"
+      },
+      {
+        "sub": "gifas.asso.net",
+        "rel": "hosts payload",
+        "obj": "Erido.jpg"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "connects to",
+        "obj": "oa.ameteksen.com"
+      },
+      {
+        "sub": "Safran",
+        "rel": "has subdomain",
+        "obj": "secure.safran-group.com"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "add domain to host file",
+        "obj": "snecma.fr"
+      },
+      {
+        "sub": "Capstone Turbine",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2012-4792"
+      },
+      {
+        "sub": "Capstone Turbine",
+        "rel": "USES",
+        "obj": "Sakula"
+      },
+      {
+        "sub": "Capstone Turbine",
+        "rel": "has related domain",
+        "obj": "gifas.cechire.com"
+      },
+      {
+        "sub": "Capstone Turbine",
+        "rel": "has related domain",
+        "obj": "gifas.blogsite.org"
+      },
+      {
+        "sub": "French aerospace activity",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2014-0322"
+      },
+      {
+        "sub": "French aerospace activity",
+        "rel": "USES",
+        "obj": "Sakula"
+      },
+      {
+        "sub": "GIFAS",
+        "rel": "has domain",
+        "obj": "gifas.cechire.com"
+      },
+      {
+        "sub": "GIFAS",
+        "rel": "has domain",
+        "obj": "gifas.blogsite.org"
+      },
+      {
+        "sub": "173.252.252.204",
+        "rel": "HOSTS",
+        "obj": "savmpet.com"
+      },
+      {
+        "sub": "173.252.252.204",
+        "rel": "HOSTS",
+        "obj": "gifas.asso.net"
+      },
+      {
+        "sub": "173.252.252.204",
+        "rel": "HOSTS",
+        "obj": "secure.safran-group.com"
+      },
+      {
+        "sub": "173.252.252.204",
+        "rel": "HOSTS",
+        "obj": "icbcqsz.com"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "connects to",
+        "obj": "web.vipreclod.com"
+      },
+      {
+        "sub": "GIFAS",
+        "rel": "is associated with",
+        "obj": "Groupement des industries françaises aéronautiques et spatiales"
+      },
+      {
+        "sub": "Safran",
+        "rel": "owned by",
+        "obj": "snecma.fr"
+      }
+    ]
+  }
+}

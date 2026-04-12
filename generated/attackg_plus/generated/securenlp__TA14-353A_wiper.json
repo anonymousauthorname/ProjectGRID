@@ -1,0 +1,592 @@
+{
+  "sample_id": "securenlp__TA14-353A_wiper",
+  "sample_index": 158,
+  "source": "securenlp",
+  "file_name": "TA14-353A_wiper",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "Use",
+        "obj": "Server Message Block"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "Operate",
+        "obj": "Network"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "Write",
+        "obj": "net_ver.dat"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "Modify",
+        "obj": "'\\hostname\\admin$\\system32'"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "Modify",
+        "obj": "'\\hostname\\shared$\\system32'"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "Construct",
+        "obj": "'cmd.exe /q /c net share shared$=%SystemRoot% /GRANT:everyone, FULL'"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "Has value",
+        "obj": "HOSTNAME"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "Has value",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "Has value",
+        "obj": "2"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "Detect",
+        "obj": "Hostname"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "Detect",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "'diskpartmg16.exe'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "'igfxtrayex.exe'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "'igfxtpers.exe'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "'usbdrv3_32bit.sys'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "'usbdrv3_64bit.sys'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Disk-level access"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Disk-level manipulation"
+      },
+      {
+        "sub": "'igfxtrayex.exe'",
+        "rel": "Construct",
+        "obj": "Multiple copies"
+      },
+      {
+        "sub": "'igfxtrayex.exe'",
+        "rel": "Deploy",
+        "obj": "'igfxtpers.exe'"
+      },
+      {
+        "sub": "'igfxtrayex.exe'",
+        "rel": "Deploy",
+        "obj": "'usbdrv3_32bit.sys'"
+      },
+      {
+        "sub": "'igfxtrayex.exe'",
+        "rel": "Deploy",
+        "obj": "'usbdrv3_64bit.sys'"
+      },
+      {
+        "sub": "'WinsSchMgmt'",
+        "rel": "Belong to",
+        "obj": "Malware"
+      },
+      {
+        "sub": "'diskpartmg16.exe'",
+        "rel": "Install as",
+        "obj": "'WinsSchMgmt' service"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "SMB worm tool"
+      },
+      {
+        "sub": "SMB worm tool",
+        "rel": "Operate",
+        "obj": "Windows SMB shares"
+      },
+      {
+        "sub": "SMB worm tool",
+        "rel": "Connect to",
+        "obj": "port 445"
+      },
+      {
+        "sub": "SMB worm tool",
+        "rel": "Attempt to guess",
+        "obj": "passwords"
+      },
+      {
+        "sub": "SMB worm tool",
+        "rel": "Establish",
+        "obj": "file share"
+      },
+      {
+        "sub": "SMB worm tool",
+        "rel": "Copy and execute",
+        "obj": "malicious payload"
+      },
+      {
+        "sub": "SMB worm tool",
+        "rel": "Exploit",
+        "obj": "weak authentication mechanisms in SMB services"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Dropper"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "igfxtrayex.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "taskhostXX.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "cmd.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "wmic.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "C2 infrastructure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "processes via PROCESS CALL CREATE"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "-m"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "-d"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "-w"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "hostname"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "network communications to C2 infrastructure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "wmic.exe /node:hostname /user:username /password:pass PROCESS CALL CREATE"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Windows service named 'WinsSchMgmt'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Argument '-k'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Log file 'net_ver.dat'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Append",
+        "obj": "Log file 'net_ver.dat'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Infected hosts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Administrator-level privileges"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Master boot record"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "First four physical drives"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "With elevated privileges"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Obfuscation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "XOR encoding"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Byte 0x1F"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Message length prefix"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encrypted communication patterns"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Randomly generated filename format"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encrypted payloads"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "TCP port 195"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "TCP port 444"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "'taskhostXX.exe'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Message content"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Encrypted payloads"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Antivirus software"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Brute-force authentication"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Username and password information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "SMB shares"
+      },
+      {
+        "sub": "Configuration file",
+        "rel": "Has value",
+        "obj": "Username and password information"
+      },
+      {
+        "sub": "Credential access",
+        "rel": "Has vulnerability",
+        "obj": "Brute-force authentication"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Hostname"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "IP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Create",
+        "obj": "Share"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "net_ver.dat"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Network topology"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Network topology"
+      },
+      {
+        "sub": "SMB worm tool",
+        "rel": "Use",
+        "obj": "Lateral Movement"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Configuration file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Remote network shares"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Copy of wiper"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Initiate",
+        "obj": "Wiping process"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "cmd.exe /c net share shared$ /delete"
+      },
+      {
+        "sub": "cmd.exe /c net share shared$ /delete",
+        "rel": "Modify",
+        "obj": "Network shares"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Destructive hard drive tool"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Target cleaning tool"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Overwriting"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Wiping"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "System inoperability"
+      },
+      {
+        "sub": "C2 IP",
+        "rel": "Operate",
+        "obj": "Malware"
+      },
+      {
+        "sub": "C2 IP",
+        "rel": "Has value",
+        "obj": "Port 8080"
+      },
+      {
+        "sub": "C2 IP",
+        "rel": "Has value",
+        "obj": "Port 8000"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Logs of successful SMB exploitations"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "New scan tasking"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "C2 infrastructure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has tactic",
+        "obj": "Destruction"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "File"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "Data"
+      },
+      {
+        "sub": "Data",
+        "rel": "Modify",
+        "obj": "File"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Overwrite",
+        "obj": "Data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Overwrite",
+        "obj": "Master Boot Record"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Windows 7"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Cause",
+        "obj": "Loss of intellectual property"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Cause",
+        "obj": "Disruption of critical systems"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Physical drives"
+      },
+      {
+        "sub": "System",
+        "rel": "Operate",
+        "obj": "In degraded state"
+      },
+      {
+        "sub": "System",
+        "rel": "Locate at",
+        "obj": "Windows 7"
+      },
+      {
+        "sub": "MBR",
+        "rel": "Write",
+        "obj": "Drive"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Target cleaning tools"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Destructive hard drive tools"
+      }
+    ]
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "sample_id": "casie__1024.json",
+  "sample_index": 8,
+  "source": "casie",
+  "file_name": "1024.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2017-5638"
+      },
+      {
+        "sub": "Apache Struts",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2017-5638"
+      },
+      {
+        "sub": "Jakarta Multipart parser",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2017-5638"
+      },
+      {
+        "sub": "CVE-2017-5638",
+        "rel": "Modify",
+        "obj": "Content-Type header"
+      },
+      {
+        "sub": "Content-Type header",
+        "rel": "Has value",
+        "obj": "improper handling"
+      },
+      {
+        "sub": "Adversaries",
+        "rel": "Use",
+        "obj": "CVE-2017-5638"
+      },
+      {
+        "sub": "Adversaries",
+        "rel": "Operate",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Cisco Talos",
+        "rel": "Detect",
+        "obj": "exploitation events"
+      },
+      {
+        "sub": "Exploitation events",
+        "rel": "Locate at",
+        "obj": "reconnaissance efforts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Jakarta Multipart parser"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Apache Struts versions"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Jakarta Multipart parser"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has value",
+        "obj": "Remote code execution without authentication"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has URL",
+        "obj": "Jakarta Multipart parser"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "Apache Struts versions"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Compromised software components"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Apache Struts versions"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Belong to",
+        "obj": "Jakarta Multipart parser"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has vulnerability",
+        "obj": "Apache Struts versions"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "System"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Triggered by",
+        "obj": "Malformed Content-Type HTTP header"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Cisco Talos",
+        "rel": "Detect",
+        "obj": "Exploitation event"
+      },
+      {
+        "sub": "System",
+        "rel": "Has geolocation",
+        "obj": "Unknown"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Modify",
+        "obj": "Content-Type HTTP header"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Write",
+        "obj": "Remote code execution"
+      },
+      {
+        "sub": "Remote code execution",
+        "rel": "Allows",
+        "obj": "Complete control of system"
+      },
+      {
+        "sub": "Complete control of system",
+        "rel": "Requires",
+        "obj": "No authentication"
+      },
+      {
+        "sub": "Complete control of system",
+        "rel": "Requires",
+        "obj": "No file uploads"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has tactic",
+        "obj": "Remote code execution"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Jakarta Multipart parser"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "Jakarta Multipart parser"
+      },
+      {
+        "sub": "System",
+        "rel": "Detect",
+        "obj": "Remote code execution"
+      },
+      {
+        "sub": "HTTP request",
+        "rel": "Has value",
+        "obj": "Content-Type header"
+      },
+      {
+        "sub": "Server",
+        "rel": "Fail to validate",
+        "obj": "Content-Type header"
+      },
+      {
+        "sub": "Server",
+        "rel": "Write",
+        "obj": "Adversary-controlled code"
+      },
+      {
+        "sub": "Server",
+        "rel": "Execute",
+        "obj": "Arbitrary code"
+      },
+      {
+        "sub": "Adversary-controlled code",
+        "rel": "Run on",
+        "obj": "Target system"
+      },
+      {
+        "sub": "Exploitation",
+        "rel": "Occur when",
+        "obj": "Server fails to properly validate Content-Type header"
+      },
+      {
+        "sub": "Remote code execution",
+        "rel": "Require",
+        "obj": "No authentication"
+      },
+      {
+        "sub": "Remote code execution",
+        "rel": "Require",
+        "obj": "No file upload functionality"
+      }
+    ]
+  }
+}

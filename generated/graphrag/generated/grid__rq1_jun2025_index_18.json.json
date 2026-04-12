@@ -1,0 +1,336 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_18.json",
+  "sample_index": 210,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_18.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TSPYSPCESEND.A",
+        "type": "MALWARE"
+      },
+      {
+        "name": "FEDEX",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "FAKEAV",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "FAKEHDD",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "BESTAV",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "YAMBA",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "SENDSPACE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "COMMAND AND CONTROL SERVER",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "BLOCKED28889.ru",
+        "type": "LOCATION"
+      },
+      {
+        "name": "BLOCKED8483825.ru",
+        "type": "LOCATION"
+      },
+      {
+        "name": "BLOCKED372721.ru",
+        "type": "LOCATION"
+      },
+      {
+        "name": "BFBOT (PALEVO)",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "NGRBOT",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "IRCBOT",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "LOG.TXT",
+        "type": "FILE"
+      },
+      {
+        "name": "SERIALSE.TXT",
+        "type": "FILE"
+      },
+      {
+        "name": "PAYPERSELL (PPS)",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "UNITED STATES",
+        "type": "GEO"
+      },
+      {
+        "name": "UNITED KINGDOM",
+        "type": "GEO"
+      },
+      {
+        "name": "INDIA",
+        "type": "GEO"
+      },
+      {
+        "name": "CANADA",
+        "type": "GEO"
+      },
+      {
+        "name": "AUSTRALIA",
+        "type": "GEO"
+      },
+      {
+        "name": "SPAIN",
+        "type": "GEO"
+      },
+      {
+        "name": "CHINA",
+        "type": "GEO"
+      },
+      {
+        "name": "MEXICO",
+        "type": "GEO"
+      },
+      {
+        "name": "TURKEY",
+        "type": "GEO"
+      },
+      {
+        "name": "COLOMBIA",
+        "type": "GEO"
+      },
+      {
+        "name": "GERMANY",
+        "type": "GEO"
+      },
+      {
+        "name": "UNITED ARAB EMIRATES",
+        "type": "GEO"
+      },
+      {
+        "name": "SOUTH AFRICA",
+        "type": "GEO"
+      },
+      {
+        "name": "FRANCE",
+        "type": "GEO"
+      },
+      {
+        "name": "NETHERLANDS",
+        "type": "GEO"
+      },
+      {
+        "name": "TREND MICRO",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "NART VILLENEUVE",
+        "type": "PERSON"
+      },
+      {
+        "name": "MARTIN AMPS",
+        "type": "PERSON"
+      },
+      {
+        "name": "EMAIL DISGUISED AS SHIPMENT NOTIFICATION",
+        "type": "EVENT"
+      },
+      {
+        "name": "MALICIOUS CAMPAIGN",
+        "type": "CAMPAIGN"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "related_to",
+        "obj": "FEDEX"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "related_to",
+        "obj": "FAKEAV"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "related_to",
+        "obj": "FAKEHDD"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "related_to",
+        "obj": "COMMAND AND CONTROL SERVER"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "related_to",
+        "obj": "SENDSPACE"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "related_to",
+        "obj": "PAYPERSELL (PPS)"
+      },
+      {
+        "sub": "FEDEX",
+        "rel": "related_to",
+        "obj": "EMAIL DISGUISED AS SHIPMENT NOTIFICATION"
+      },
+      {
+        "sub": "COMMAND AND CONTROL SERVER",
+        "rel": "related_to",
+        "obj": "BFBOT (PALEVO)"
+      },
+      {
+        "sub": "COMMAND AND CONTROL SERVER",
+        "rel": "related_to",
+        "obj": "NGRBOT"
+      },
+      {
+        "sub": "COMMAND AND CONTROL SERVER",
+        "rel": "related_to",
+        "obj": "IRCBOT"
+      },
+      {
+        "sub": "COMMAND AND CONTROL SERVER",
+        "rel": "related_to",
+        "obj": "LOG.TXT"
+      },
+      {
+        "sub": "COMMAND AND CONTROL SERVER",
+        "rel": "related_to",
+        "obj": "SERIALSE.TXT"
+      },
+      {
+        "sub": "SENDSPACE",
+        "rel": "related_to",
+        "obj": "TREND MICRO"
+      },
+      {
+        "sub": "SENDSPACE",
+        "rel": "related_to",
+        "obj": "MALICIOUS CAMPAIGN"
+      },
+      {
+        "sub": "TREND MICRO",
+        "rel": "related_to",
+        "obj": "NART VILLENEUVE"
+      },
+      {
+        "sub": "TREND MICRO",
+        "rel": "related_to",
+        "obj": "MARTIN AMPS"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "UNITED STATES"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "UNITED KINGDOM"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "INDIA"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "CANADA"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "AUSTRALIA"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "SPAIN"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "CHINA"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "MEXICO"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "TURKEY"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "COLOMBIA"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "GERMANY"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "UNITED ARAB EMIRATES"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "SOUTH AFRICA"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "FRANCE"
+      },
+      {
+        "sub": "MALICIOUS CAMPAIGN",
+        "rel": "related_to",
+        "obj": "NETHERLANDS"
+      },
+      {
+        "sub": "PAYPERSELL (PPS)",
+        "rel": "related_to",
+        "obj": "TSPYSPCESEND.A"
+      }
+    ]
+  }
+}

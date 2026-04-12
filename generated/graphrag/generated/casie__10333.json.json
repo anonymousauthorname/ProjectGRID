@@ -1,0 +1,177 @@
+{
+  "sample_id": "casie__10333.json",
+  "sample_index": 24,
+  "source": "casie",
+  "file_name": "10333.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "PHISHING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "HMRC",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "UK NATIONAL CYBER CRIME CENTRE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "ACTIVE CYBER DEFENCE PROGRAMME",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "CYBERCRIMINALS",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "MALICIOUS URLS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "DECEPTIVE DOMAINS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "GCHQ",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "UK",
+        "type": "GEO"
+      },
+      {
+        "name": "PHISHING EMAILS",
+        "type": "TOOL"
+      },
+      {
+        "name": "TAX REFUND SCAMS",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "42 HOURS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "10 HOURS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "NCSC REPORT: ACTIVE CYBER DEFENCE - ONE YEAR ON",
+        "type": "EVENT"
+      },
+      {
+        "name": "121,479 PHISHING SITES",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "18,067 SPOOFING UK GOVERNMENT DOMAINS",
+        "type": "INFRASTRUCTURE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CYBERCRIMINALS",
+        "rel": "related_to",
+        "obj": "PHISHING"
+      },
+      {
+        "sub": "PHISHING",
+        "rel": "related_to",
+        "obj": "HMRC"
+      },
+      {
+        "sub": "HMRC",
+        "rel": "related_to",
+        "obj": "UK NATIONAL CYBER CRIME CENTRE"
+      },
+      {
+        "sub": "UK NATIONAL CYBER CRIME CENTRE",
+        "rel": "related_to",
+        "obj": "ACTIVE CYBER DEFENCE PROGRAMME"
+      },
+      {
+        "sub": "ACTIVE CYBER DEFENCE PROGRAMME",
+        "rel": "related_to",
+        "obj": "PHISHING"
+      },
+      {
+        "sub": "ACTIVE CYBER DEFENCE PROGRAMME",
+        "rel": "related_to",
+        "obj": "42 HOURS"
+      },
+      {
+        "sub": "ACTIVE CYBER DEFENCE PROGRAMME",
+        "rel": "related_to",
+        "obj": "10 HOURS"
+      },
+      {
+        "sub": "CYBERCRIMINALS",
+        "rel": "related_to",
+        "obj": "DECEPTIVE DOMAINS"
+      },
+      {
+        "sub": "PHISHING EMAILS",
+        "rel": "related_to",
+        "obj": "PHISHING"
+      },
+      {
+        "sub": "TAX REFUND SCAMS",
+        "rel": "related_to",
+        "obj": "PHISHING"
+      },
+      {
+        "sub": "NCSC REPORT: ACTIVE CYBER DEFENCE - ONE YEAR ON",
+        "rel": "related_to",
+        "obj": "ACTIVE CYBER DEFENCE PROGRAMME"
+      },
+      {
+        "sub": "121,479 PHISHING SITES",
+        "rel": "related_to",
+        "obj": "ACTIVE CYBER DEFENCE PROGRAMME"
+      },
+      {
+        "sub": "18,067 SPOOFING UK GOVERNMENT DOMAINS",
+        "rel": "related_to",
+        "obj": "ACTIVE CYBER DEFENCE PROGRAMME"
+      },
+      {
+        "sub": "UK",
+        "rel": "related_to",
+        "obj": "UK NATIONAL CYBER CRIME CENTRE"
+      },
+      {
+        "sub": "GCHQ",
+        "rel": "related_to",
+        "obj": "UK NATIONAL CYBER CRIME CENTRE"
+      },
+      {
+        "sub": "PHISHING",
+        "rel": "related_to",
+        "obj": "MALICIOUS URLS"
+      },
+      {
+        "sub": "PHISHING",
+        "rel": "related_to",
+        "obj": "DECEPTIVE DOMAINS"
+      }
+    ]
+  }
+}

@@ -1,0 +1,832 @@
+{
+  "sample_id": "securenlp__fireeye-sidewinder-targeted-attack",
+  "sample_index": 190,
+  "source": "securenlp",
+  "file_name": "fireeye-sidewinder-targeted-attack",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Sidewinder Targeted Attacks",
+        "type": "campaign"
+      },
+      {
+        "name": "Android",
+        "type": "general-software"
+      },
+      {
+        "name": "Android users",
+        "type": "user-account"
+      },
+      {
+        "name": "Android devices",
+        "type": "general-software"
+      },
+      {
+        "name": "Bring Your Own Device (BYOD)",
+        "type": "general-software"
+      },
+      {
+        "name": "Intel’s BYOD program",
+        "type": "general-software"
+      },
+      {
+        "name": "Google Play",
+        "type": "general-software"
+      },
+      {
+        "name": "ad libraries",
+        "type": "malware"
+      },
+      {
+        "name": "JavaScript-binding-over-HTTP (JBOH)",
+        "type": "vulnerability"
+      },
+      {
+        "name": "dynamic-loading-over-HTTP (DLOH)",
+        "type": "vulnerability"
+      },
+      {
+        "name": "JS Sidedoors",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "JavaScript Binding Method (addJavascriptInterface)",
+        "type": "general-software"
+      },
+      {
+        "name": "Webview",
+        "type": "general-software"
+      },
+      {
+        "name": "Android API 16",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Android API >16",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Android 4.1",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Android 4.4.3",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Android 4.4.2 and below",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Google Ad",
+        "type": "malware"
+      },
+      {
+        "name": "Ad1",
+        "type": "file"
+      },
+      {
+        "name": "Ad2",
+        "type": "file"
+      },
+      {
+        "name": "Ad3",
+        "type": "file"
+      },
+      {
+        "name": "Ad4",
+        "type": "file"
+      },
+      {
+        "name": "Ad5",
+        "type": "file"
+      },
+      {
+        "name": "host app",
+        "type": "general-software"
+      },
+      {
+        "name": "remote attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "attacker’s server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "ad server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "Device A",
+        "type": "device"
+      },
+      {
+        "name": "Device B",
+        "type": "device"
+      },
+      {
+        "name": "Device V",
+        "type": "device"
+      },
+      {
+        "name": "Clipboard",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "Google services",
+        "type": "general-software"
+      },
+      {
+        "name": "host app’s package name",
+        "type": "credential-value"
+      },
+      {
+        "name": "IMEI",
+        "type": "credential-value"
+      },
+      {
+        "name": "Android version",
+        "type": "vulnerability"
+      },
+      {
+        "name": "device model",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Android ID",
+        "type": "credential-value"
+      },
+      {
+        "name": "device specification",
+        "type": "vulnerability"
+      },
+      {
+        "name": "carrier information",
+        "type": "vulnerability"
+      },
+      {
+        "name": "installed app list",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Google",
+        "type": "general-software"
+      },
+      {
+        "name": "FireEye",
+        "type": "security-product"
+      },
+      {
+        "name": "FireEye Mobile Threat Prevention (MTP) engine",
+        "type": "security-product"
+      },
+      {
+        "name": "root exploit",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "ptrace",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "towelroot",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "Linux kernel",
+        "type": "general-software"
+      },
+      {
+        "name": "certificate",
+        "type": "indicator"
+      },
+      {
+        "name": "SSL library",
+        "type": "general-software"
+      },
+      {
+        "name": "WIFI",
+        "type": "general-software"
+      },
+      {
+        "name": "WifiManager",
+        "type": "general-software"
+      },
+      {
+        "name": "Runtime.load()",
+        "type": "general-software"
+      },
+      {
+        "name": "MediaRecorder APIs",
+        "type": "general-software"
+      },
+      {
+        "name": "Camera API",
+        "type": "general-software"
+      },
+      {
+        "name": "Android context",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Java reflection",
+        "type": "general-software"
+      },
+      {
+        "name": "DexClassLoaderload",
+        "type": "general-software"
+      },
+      {
+        "name": "SurfaceView",
+        "type": "general-software"
+      },
+      {
+        "name": "Network traffic",
+        "type": "general-software"
+      },
+      {
+        "name": "DNS hijacking",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "BGP hijacking",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "ARP hijacking",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "Google Ad servers",
+        "type": "infrastructure"
+      },
+      {
+        "name": "remote calls",
+        "type": "general-software"
+      },
+      {
+        "name": "MITM attacks",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "Gartner",
+        "type": "other"
+      },
+      {
+        "name": "Intel",
+        "type": "other"
+      },
+      {
+        "name": "Android Open Source Project (AOSP)",
+        "type": "general-software"
+      },
+      {
+        "name": "Android Permissions",
+        "type": "general-software"
+      },
+      {
+        "name": "launcher READ SETTINGS",
+        "type": "permission"
+      },
+      {
+        "name": "WRITE SETTINGS",
+        "type": "permission"
+      },
+      {
+        "name": "banking apps",
+        "type": "general-software"
+      },
+      {
+        "name": "email app icons",
+        "type": "general-software"
+      },
+      {
+        "name": "phishing app",
+        "type": "malware"
+      },
+      {
+        "name": "phishing site",
+        "type": "general-software"
+      },
+      {
+        "name": "user agent",
+        "type": "vulnerability"
+      },
+      {
+        "name": "GPS location",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Remote Android telephony service",
+        "type": "general-software"
+      },
+      {
+        "name": "service call phone",
+        "type": "general-software"
+      },
+      {
+        "name": "Java static context variable",
+        "type": "general-software"
+      },
+      {
+        "name": "AIDL",
+        "type": "general-software"
+      },
+      {
+        "name": "API Level",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "device specification",
+        "type": "vulnerability"
+      },
+      {
+        "name": "API <=16",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "API >16",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "February 2014",
+        "type": "date"
+      },
+      {
+        "name": "April 2014",
+        "type": "date"
+      },
+      {
+        "name": "June 2014",
+        "type": "date"
+      },
+      {
+        "name": "July 2014",
+        "type": "date"
+      },
+      {
+        "name": "Black Hat",
+        "type": "other"
+      },
+      {
+        "name": "MWR",
+        "type": "other"
+      },
+      {
+        "name": "FireEye Mobile Threat Prevention (MTP) engine",
+        "type": "security-product"
+      },
+      {
+        "name": "FireEye",
+        "type": "security-product"
+      },
+      {
+        "name": "Google",
+        "type": "general-software"
+      },
+      {
+        "name": "Android",
+        "type": "general-software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Android users",
+        "rel": "has grown to",
+        "rel_type": [
+          "vulnerability"
+        ],
+        "obj": "1.1 billion"
+      },
+      {
+        "sub": "Android devices",
+        "rel": "has reached",
+        "rel_type": [
+          "vulnerability"
+        ],
+        "obj": "1.9 billion"
+      },
+      {
+        "sub": "enterprises",
+        "rel": "embracing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Bring Your Own Device (BYOD) solutions"
+      },
+      {
+        "sub": "Intel’s BYOD program",
+        "rel": "has",
+        "rel_type": [
+          "vulnerability"
+        ],
+        "obj": "20,000 Android devices"
+      },
+      {
+        "sub": "Google Play",
+        "rel": "has",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "little malware"
+      },
+      {
+        "sub": "aggressive ad libraries",
+        "rel": "leak",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the user’s private information"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can conduct",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Sidewinder Targeted Attacks"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can hijack",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "network"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "seeks",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "emission from ad libraries"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can exploit",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "JBOH"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can exploit",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "DLOH"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can call",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Android services"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can invoke",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Android services"
+      },
+      {
+        "sub": "an app",
+        "rel": "uses",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "addJavascriptInterface"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "could hijack",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "HTTP traffic"
+      },
+      {
+        "sub": "JavaScript-Binding-Over-HTTP",
+        "rel": "is",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "JBOH"
+      },
+      {
+        "sub": "remote attacker",
+        "rel": "could exploit",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "JBOH"
+      },
+      {
+        "sub": "Google",
+        "rel": "noted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "attacker could manipulate"
+      },
+      {
+        "sub": "Android devices",
+        "rel": "are still running",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "API≤16"
+      },
+      {
+        "sub": "Android services",
+        "rel": "can be invoked",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "in the same way"
+      },
+      {
+        "sub": "JBOH shell",
+        "rel": "can be used to download",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "executables"
+      },
+      {
+        "sub": "towelroot",
+        "rel": "exploits",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Linux kernel"
+      },
+      {
+        "sub": "commercial one-touch root apps",
+        "rel": "claim they can root",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "1,000 brands"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can attempt",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "ptrace"
+      },
+      {
+        "sub": "telephony service",
+        "rel": "can be used to dial numbers",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "numbers"
+      },
+      {
+        "sub": "JS Sidedoors",
+        "rel": "is",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "exposed JS binding annotation interfaces"
+      },
+      {
+        "sub": "certain versions of a real-world ad library",
+        "rel": "expose",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "makeCall"
+      },
+      {
+        "sub": "attackers",
+        "rel": "can abuse",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "makeCall"
+      },
+      {
+        "sub": "attackers",
+        "rel": "can inject",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "malicious DEX files"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can upload",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "private and sensitive files"
+      },
+      {
+        "sub": "attackers",
+        "rel": "may use",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Java reflection"
+      },
+      {
+        "sub": "Java reflection",
+        "rel": "makes sending SMS easy",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "sending SMS"
+      },
+      {
+        "sub": "attacker",
+        "rel": "can use",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Runtime.load()"
+      },
+      {
+        "sub": "the code",
+        "rel": "can obtain",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "context"
+      },
+      {
+        "sub": "attackers",
+        "rel": "need to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "boot a Java VM"
+      },
+      {
+        "sub": "certain permissions",
+        "rel": "have",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "dangerous security impacts"
+      },
+      {
+        "sub": "attackers",
+        "rel": "can manipulate",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Android home screen icons"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can change",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "proxy settings"
+      },
+      {
+        "sub": "attacker",
+        "rel": "can use",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "remote calls exposed by WifiManager"
+      },
+      {
+        "sub": "MediaRecorder APIs",
+        "rel": "do not require",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "user interaction"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can monitor",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "clipboard"
+      },
+      {
+        "sub": "attackers",
+        "rel": "can alter",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "clipboard content"
+      },
+      {
+        "sub": "attackers",
+        "rel": "can use",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "remote calls exposed by WifiManager"
+      },
+      {
+        "sub": "attackers",
+        "rel": "can use",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "GET ACCOUNTS"
+      },
+      {
+        "sub": "attackers",
+        "rel": "can use",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "USE CREDENTIALS"
+      },
+      {
+        "sub": "Google",
+        "rel": "has patched",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "communication via HTTP",
+        "rel": "is prone to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "hijacking"
+      },
+      {
+        "sub": "We",
+        "rel": "successfully launched",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "MITM attacks"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can identify",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "potential victims"
+      },
+      {
+        "sub": "attackers",
+        "rel": "keep a low profile by allowing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "network traffic"
+      },
+      {
+        "sub": "We",
+        "rel": "exclude",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Google Ad"
+      },
+      {
+        "sub": "We",
+        "rel": "analyzed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "92 ad libraries"
+      }
+    ]
+  }
+}

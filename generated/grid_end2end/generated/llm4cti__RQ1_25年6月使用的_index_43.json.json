@@ -1,0 +1,392 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_43.json",
+  "sample_index": 233,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_43.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "A distributed denialofservice attack (DDoS)",
+        "type": "attack-pattern",
+        "alias": [
+          "DDoS attacks",
+          "DDoS attack",
+          "this kind of attack",
+          "simple DDoS attacks"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "your targets website",
+        "type": "infrastructure",
+        "alias": [
+          "the web server",
+          "your website",
+          "the site",
+          "your websites purpose"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "so much traffic",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the web server",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hacktivist groups like Anonymous",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Anonymous"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the Lizard Squad",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Lizard Squad"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Playstation and Xbox servers",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "cybercriminals",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the Armada Collective",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "a cybergang calling itself the Armada Collective"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "victims",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ransom in bitcoins",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the encrypted webmail provider ProtonMail",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "6000 in bitcoins",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the site",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Graham Cluley",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Twitter",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "DDoSforhire web tools",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "armies of zombified computers",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "web requests",
+        "type": "network-traffic",
+        "alias": [
+          "illegitimate web requests"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "customers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "new sales",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "losing customers",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ad revenue",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "internet extortionists",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "extortionists",
+          "blackmailers",
+          "ransamtakers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Shutterstock.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "A distributed denialofservice attack (DDoS)",
+        "rel": "take out",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "your targets website"
+      },
+      {
+        "sub": "A distributed denialofservice attack (DDoS)",
+        "rel": "flooding it with so much traffic",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "your targets website"
+      },
+      {
+        "sub": "A distributed denialofservice attack (DDoS)",
+        "rel": "overwhelms",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the web server"
+      },
+      {
+        "sub": "hacktivist groups like Anonymous",
+        "rel": "use DDoS attacks as a kind of online protest",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "DDoS attacks"
+      },
+      {
+        "sub": "the Lizard Squad",
+        "rel": "took out",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Playstation and Xbox servers"
+      },
+      {
+        "sub": "cybercriminals",
+        "rel": "uses DDoS attacks",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "DDoS attacks"
+      },
+      {
+        "sub": "the Armada Collective",
+        "rel": "threatening DDoS attacks",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "your targets website"
+      },
+      {
+        "sub": "the Armada Collective",
+        "rel": "extort money from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "victims"
+      },
+      {
+        "sub": "the Armada Collective",
+        "rel": "threatens unless a ransom is paid in bitcoins",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "ransom in bitcoins"
+      },
+      {
+        "sub": "the encrypted webmail provider ProtonMail",
+        "rel": "paid 6000 in bitcoins",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "ransom in bitcoins"
+      },
+      {
+        "sub": "the encrypted webmail provider ProtonMail",
+        "rel": "was DDoSed",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the site"
+      },
+      {
+        "sub": "Graham Cluley",
+        "rel": "fall victim to a DDoS attack",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "DDoS attacks"
+      },
+      {
+        "sub": "DDoSforhire web tools",
+        "rel": "harness armies of zombified computers to bombard your website",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "DDoS attacks"
+      },
+      {
+        "sub": "DDoSforhire web tools",
+        "rel": "harness",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "armies of zombified computers"
+      },
+      {
+        "sub": "armies of zombified computers",
+        "rel": "bombard your website with",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "DDoS attacks"
+      },
+      {
+        "sub": "armies of zombified computers",
+        "rel": "bombard with thousands or millions of illegitimate web requests",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "web requests"
+      },
+      {
+        "sub": "DDoS attacks",
+        "rel": "crash the website",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "your targets website"
+      },
+      {
+        "sub": "DDoS attacks",
+        "rel": "cause",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "customers cant get through"
+      },
+      {
+        "sub": "DDoS attacks",
+        "rel": "cause",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "losing new sales"
+      },
+      {
+        "sub": "DDoS attacks",
+        "rel": "cause",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "losing customers"
+      },
+      {
+        "sub": "DDoS attacks",
+        "rel": "cause",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "missing ad revenue"
+      },
+      {
+        "sub": "internet extortionists",
+        "rel": "demand ransom from victims",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "victims"
+      },
+      {
+        "sub": "Graham Cluley",
+        "rel": "noted he didnt receive a ransom demand",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "DDoS attacks"
+      },
+      {
+        "sub": "Shutterstock.com",
+        "rel": "provides image of attacking cursor arrows",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "attacking cursor arrows"
+      }
+    ]
+  }
+}

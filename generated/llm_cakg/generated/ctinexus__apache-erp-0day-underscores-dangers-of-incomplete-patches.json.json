@@ -1,0 +1,147 @@
+{
+  "sample_id": "ctinexus__apache-erp-0day-underscores-dangers-of-incomplete-patches.json",
+  "sample_index": 86,
+  "source": "ctinexus",
+  "file_name": "apache-erp-0day-underscores-dangers-of-incomplete-patches.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2023-51467",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2023-49070",
+        "type": "Entity"
+      },
+      {
+        "name": "Apache OFBiz",
+        "type": "Entity"
+      },
+      {
+        "name": "zero-day vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "sensitive information access",
+        "type": "Entity"
+      },
+      {
+        "name": "Apache Software Foundation",
+        "type": "Entity"
+      },
+      {
+        "name": "patch",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability exploitation",
+        "type": "Entity"
+      },
+      {
+        "name": "software patch bypass",
+        "type": "Entity"
+      },
+      {
+        "name": "attack vector",
+        "type": "Entity"
+      },
+      {
+        "name": "enterprise resource planning (ERP) framework",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "attack probes",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actor",
+        "type": "Entity"
+      },
+      {
+        "name": "unknown groups",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "unknown groups",
+        "rel": "launches",
+        "obj": "attack probes"
+      },
+      {
+        "sub": "attack probes",
+        "rel": "target",
+        "obj": "CVE-2023-51467"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "exists in",
+        "obj": "Apache OFBiz"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "enables",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "enables",
+        "obj": "sensitive information access"
+      },
+      {
+        "sub": "Apache OFBiz",
+        "rel": "is part of",
+        "obj": "enterprise resource planning (ERP) framework"
+      },
+      {
+        "sub": "Apache Software Foundation",
+        "rel": "released",
+        "obj": "patch"
+      },
+      {
+        "sub": "patch",
+        "rel": "addresses",
+        "obj": "CVE-2023-49070"
+      },
+      {
+        "sub": "CVE-2023-49070",
+        "rel": "is related to",
+        "obj": "vulnerability exploitation"
+      },
+      {
+        "sub": "vulnerability exploitation",
+        "rel": "fails to protect against",
+        "obj": "software patch bypass"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "is a type of",
+        "obj": "zero-day vulnerability"
+      }
+    ]
+  }
+}

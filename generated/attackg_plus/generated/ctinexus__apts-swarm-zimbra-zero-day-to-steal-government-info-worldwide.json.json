@@ -1,0 +1,427 @@
+{
+  "sample_id": "ctinexus__apts-swarm-zimbra-zero-day-to-steal-government-info-worldwide.json",
+  "sample_index": 82,
+  "source": "ctinexus",
+  "file_name": "apts-swarm-zimbra-zero-day-to-steal-government-info-worldwide.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Reconnaissance",
+        "rel": "Use",
+        "obj": "Government organization"
+      },
+      {
+        "sub": "Government organization",
+        "rel": "Has vulnerability",
+        "obj": "Zimbra Collaboration Suite"
+      },
+      {
+        "sub": "Japan Advanced Institute of Science and Technology",
+        "rel": "Belong to",
+        "obj": "Government organization"
+      },
+      {
+        "sub": "Max Planck Institute",
+        "rel": "Belong to",
+        "obj": "Government organization"
+      },
+      {
+        "sub": "Gunung Sewu",
+        "rel": "Belong to",
+        "obj": "Government organization"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Active scanning"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Search of open websites"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Technical databases"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "Has geolocation",
+        "obj": "Japan"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "Has geolocation",
+        "obj": "Germany"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "Has geolocation",
+        "obj": "Gunung Sewu"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Gather",
+        "obj": "Victim organization information"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Gather",
+        "obj": "Victim network information"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Vulnerable instances of ZCS"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2023-37580"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "Has vulnerability",
+        "obj": "Reflected cross-site scripting"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Zimbra Collaboration Suite"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Email data"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "User credentials"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Authentication tokens"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Write",
+        "obj": "Foothold"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "Locate at",
+        "obj": "Email server"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Zimbra Collaboration Suite"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has value",
+        "obj": "CVE-2023-37580"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Modify",
+        "obj": "Reflected cross-site scripting"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Zimbra Collaboration Suite"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "CVE-2023-37580"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Malicious scripts"
+      },
+      {
+        "sub": "Malicious scripts",
+        "rel": "Execute",
+        "obj": "Browser of authenticated users"
+      },
+      {
+        "sub": "Malicious scripts",
+        "rel": "Detect",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "Malicious scripts",
+        "rel": "Detect",
+        "obj": "Authentication tokens"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2023-37580"
+      },
+      {
+        "sub": "System",
+        "rel": "Locate at",
+        "obj": "Email server"
+      },
+      {
+        "sub": "Date",
+        "rel": "Belong to",
+        "obj": "June"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has geolocation",
+        "obj": "None"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Malicious scripts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Initial Access",
+        "obj": "Zimbra Collaboration Suite"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Reflected XSS vulnerability"
+      },
+      {
+        "sub": "Reflected XSS vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "ZCS"
+      },
+      {
+        "sub": "ZCS",
+        "rel": "Operate",
+        "obj": "Web pages"
+      },
+      {
+        "sub": "Web pages",
+        "rel": "Has value",
+        "obj": "User credentials"
+      },
+      {
+        "sub": "Web pages",
+        "rel": "Has value",
+        "obj": "Authentication tokens"
+      },
+      {
+        "sub": "Web pages",
+        "rel": "Has value",
+        "obj": "Email data"
+      },
+      {
+        "sub": "ZCS",
+        "rel": "Belong to",
+        "obj": "Organization"
+      },
+      {
+        "sub": "ZCS",
+        "rel": "Locate at",
+        "obj": "Platform"
+      },
+      {
+        "sub": "ZCS",
+        "rel": "Has vulnerability",
+        "obj": "XSS"
+      },
+      {
+        "sub": "XSS",
+        "rel": "Enable",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "ZCS",
+        "rel": "Operate",
+        "obj": "User Account"
+      },
+      {
+        "sub": "ZCS",
+        "rel": "Write",
+        "obj": "Session Cookies"
+      },
+      {
+        "sub": "ZCS",
+        "rel": "Write",
+        "obj": "Authentication Tokens"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Session Cookies"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Authentication Tokens"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Maintain",
+        "obj": "Access to User Accounts"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Perform",
+        "obj": "Actions on Behalf of Users"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "ZCS platform"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Exploit",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Access",
+        "obj": "User account information"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Extract",
+        "obj": "System configurations"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Extract",
+        "obj": "Network services"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Access",
+        "obj": "User identities"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Access",
+        "obj": "Email addresses"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Access",
+        "obj": "Authentication details"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Map",
+        "obj": "Internal environment"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Identify",
+        "obj": "High-value targets"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "XSS"
+      },
+      {
+        "sub": "XSS",
+        "rel": "Use",
+        "obj": "Browser session"
+      },
+      {
+        "sub": "Browser session",
+        "rel": "Operate",
+        "obj": "Victim's browser"
+      },
+      {
+        "sub": "Victim's browser",
+        "rel": "Write",
+        "obj": "Authentication tokens"
+      },
+      {
+        "sub": "Authentication tokens",
+        "rel": "Exfiltrate",
+        "obj": "External servers"
+      },
+      {
+        "sub": "XSS",
+        "rel": "Detect",
+        "obj": "Email content"
+      },
+      {
+        "sub": "XSS",
+        "rel": "Detect",
+        "obj": "User credentials"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Web Service"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Command and Control Channel"
+      },
+      {
+        "sub": "ZCS Instance",
+        "rel": "Has vulnerability",
+        "obj": "Exfiltration"
+      },
+      {
+        "sub": "ZCS Instance",
+        "rel": "Locate at",
+        "obj": "Compromised"
+      },
+      {
+        "sub": "Stolen Data",
+        "rel": "Modify",
+        "obj": "Email Content"
+      },
+      {
+        "sub": "Stolen Data",
+        "rel": "Modify",
+        "obj": "Authentication Tokens"
+      },
+      {
+        "sub": "Stolen Data",
+        "rel": "Write",
+        "obj": "External Servers"
+      },
+      {
+        "sub": "External Servers",
+        "rel": "Has URL",
+        "obj": "Command and Control Channel"
+      },
+      {
+        "sub": "Data Transfer",
+        "rel": "Use",
+        "obj": "Encrypted or Obfuscated Methods"
+      }
+    ]
+  }
+}

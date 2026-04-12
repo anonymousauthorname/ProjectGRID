@@ -1,0 +1,432 @@
+{
+  "sample_id": "casie__10206.json",
+  "sample_index": 37,
+  "source": "casie",
+  "file_name": "10206.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Microsoft",
+        "type": "security-product",
+        "alias": [
+          "Microsoft"
+        ]
+      },
+      {
+        "name": "CVE-201808115",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerability",
+          "the flaw"
+        ]
+      },
+      {
+        "name": "Windows Host Compute Service Shim (hcsshim)",
+        "type": "hacker-tool",
+        "alias": [
+          "hcsshim",
+          "the Windows Host Compute Service Shim",
+          "hcsshim library"
+        ]
+      },
+      {
+        "name": "Docker container images",
+        "type": "file",
+        "alias": [
+          "container images"
+        ]
+      },
+      {
+        "name": "Windows service",
+        "type": "general-software",
+        "alias": [
+          "the Windows service"
+        ]
+      },
+      {
+        "name": "Windows host",
+        "type": "identity",
+        "alias": [
+          "host operating system"
+        ]
+      },
+      {
+        "name": "Docker for Windows",
+        "type": "general-software",
+        "alias": [
+          "Docker for Windows"
+        ]
+      },
+      {
+        "name": "Windows Hyper-V virtualization",
+        "type": "location",
+        "alias": [
+          "Windows Hyper-V"
+        ]
+      },
+      {
+        "name": "Go",
+        "type": "general-software",
+        "alias": [
+          "Go language"
+        ]
+      },
+      {
+        "name": "Linux Namespaces",
+        "type": "abstract-concept",
+        "alias": [
+          "Linux Namespaces"
+        ]
+      },
+      {
+        "name": "Control Groups",
+        "type": "abstract-concept",
+        "alias": [
+          "Control Groups"
+        ]
+      },
+      {
+        "name": "filepath.Join function",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "Go's filepath.Join function"
+        ]
+      },
+      {
+        "name": "Microsoft's security advisory",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "security advisory"
+        ]
+      },
+      {
+        "name": "Microsoft's GitHub page",
+        "type": "url",
+        "alias": [
+          "GitHub page"
+        ]
+      },
+      {
+        "name": "Windows 10 April 2018 Update",
+        "type": "general-software",
+        "alias": [
+          "April 2018 Update"
+        ]
+      },
+      {
+        "name": "Meltdown CPU vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "Meltdown",
+          "the Meltdown CPU vulnerability"
+        ]
+      },
+      {
+        "name": "Crowdstrike",
+        "type": "security-product",
+        "alias": [
+          "Crowdstrike"
+        ]
+      },
+      {
+        "name": "Alex Ionescu",
+        "type": "identity",
+        "alias": [
+          "Alex Ionescu",
+          "chief architect at Crowdstrike"
+        ]
+      },
+      {
+        "name": "remote attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "an attacker"
+        ]
+      },
+      {
+        "name": "authenticated administrator",
+        "type": "identity",
+        "alias": [
+          "administrator"
+        ]
+      },
+      {
+        "name": "arbitrary code",
+        "type": "abstract-concept",
+        "alias": [
+          "code"
+        ]
+      },
+      {
+        "name": "the patch",
+        "type": "course-of-action",
+        "alias": [
+          "patch",
+          "version 0.6.10 of hcsshim"
+        ]
+      },
+      {
+        "name": "importing",
+        "type": "attack-pattern",
+        "alias": [
+          "importing a container image"
+        ]
+      },
+      {
+        "name": "host file system",
+        "type": "windows-registry-key",
+        "alias": [
+          "host file system"
+        ]
+      },
+      {
+        "name": "Docker-internal data structures",
+        "type": "abstract-concept",
+        "alias": [
+          "Docker-internal data structures"
+        ]
+      },
+      {
+        "name": "HCS abstraction layer",
+        "type": "general-software",
+        "alias": [
+          "HCS abstraction layer"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft",
+        "rel": "has released a patch for",
+        "rel_type": [
+          "course-of-action"
+        ],
+        "obj": "CVE-201808115"
+      },
+      {
+        "sub": "CVE-201808115",
+        "rel": "affects",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Windows service"
+      },
+      {
+        "sub": "CVE-201808115",
+        "rel": "is due to",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Windows Host Compute Service Shim (hcsshim) library not properly validating input"
+      },
+      {
+        "sub": "remote attacker",
+        "rel": "could execute malware on",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Windows host"
+      },
+      {
+        "sub": "malicious Docker container image",
+        "rel": "could be imported by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "authenticated administrator"
+      },
+      {
+        "sub": "Docker for Windows",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "hcsshim library"
+      },
+      {
+        "sub": "An attacker who successfully exploited the vulnerability",
+        "rel": "could execute",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "arbitrary code on the host operating system"
+      },
+      {
+        "sub": "CVE-201808115",
+        "rel": "hasn't been publicly disclosed",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "publicly disclosed"
+      },
+      {
+        "sub": "Anyone using Docker for Windows",
+        "rel": "can resolve the issue by installing",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "version 0.6.10 of hcsshim"
+      },
+      {
+        "sub": "The patch",
+        "rel": "is available from",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "Microsoft's security advisory"
+      },
+      {
+        "sub": "The patch",
+        "rel": "is available from",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "Microsoft's GitHub page"
+      },
+      {
+        "sub": "hcsshim",
+        "rel": "is written in",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "Go"
+      },
+      {
+        "sub": "hcsshim",
+        "rel": "is an open-source wrapper developed by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "hcsshim",
+        "rel": "is for use with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Host Compute Service"
+      },
+      {
+        "sub": "Host Compute Service",
+        "rel": "is part of",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Windows Hyper-V virtualization"
+      },
+      {
+        "sub": "The HCS abstraction layer",
+        "rel": "allows",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "Docker containers to use Linux Namespaces"
+      },
+      {
+        "sub": "The HCS abstraction layer",
+        "rel": "allows",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "Docker containers to use Control Groups"
+      },
+      {
+        "sub": "Hanselmann",
+        "rel": "explains that the flaw stems from",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "hccshim's use of Go's filepath.Join function"
+      },
+      {
+        "sub": "hcsshim's use of Go's filepath.Join function",
+        "rel": "with unsanitized input",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "input validation"
+      },
+      {
+        "sub": "hcsshim's use of Go's filepath.Join function",
+        "rel": "allowed",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "files in the host file system"
+      },
+      {
+        "sub": "creating, removing and replacing files",
+        "rel": "led to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "Importing a Docker container image",
+        "rel": "isn't commonly expected to make modifications to",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "the host file system outside the Docker-internal data structures"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "is reportedly working on a fix for a 'fatal flaw' in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "its initial Windows 10 fix for the Meltdown CPU vulnerability"
+      },
+      {
+        "sub": "Windows 10 April 2018 Update",
+        "rel": "contains a patch for",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Meltdown CPU vulnerability"
+      },
+      {
+        "sub": "Alex Ionescu",
+        "rel": "is chief architect at",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Crowdstrike"
+      },
+      {
+        "sub": "the patch",
+        "rel": "is available from",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "Microsoft's security advisory"
+      },
+      {
+        "sub": "the patch",
+        "rel": "is available from",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "Microsoft's GitHub page"
+      }
+    ]
+  }
+}

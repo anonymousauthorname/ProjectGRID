@@ -1,0 +1,424 @@
+{
+  "sample_id": "malkg__201402CrowdStrikeSakula.txt",
+  "sample_index": 146,
+  "source": "malkg",
+  "file_name": "201402CrowdStrikeSakula.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Veterans of Foreign Wars (VFW)",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2014-0322",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ZxShell malware",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "AURORA PANDA adversary",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "another adversary",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the other adversary"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Capstone Turbine",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2012-4792",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "savmpet[.]com",
+        "type": "url",
+        "alias": [
+          "the savmpet[.]com webpage",
+          "the iframe redirect"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "gifas[.]assso[.]net",
+        "type": "domain-name",
+        "alias": [
+          "GIFAS-based domain"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "include.html",
+        "type": "file",
+        "alias": [],
+        "mother entity": "gifas[.]assso[.]net"
+      },
+      {
+        "name": "Tope.swf",
+        "type": "file",
+        "alias": [],
+        "mother entity": "gifas[.]assso[.]net"
+      },
+      {
+        "name": "Erido.jpg",
+        "type": "file",
+        "alias": [
+          "malicious payload"
+        ],
+        "mother entity": "gifas[.]assso[.]net"
+      },
+      {
+        "name": "Groupement des industries françaises aéronautiques et spatiales (GIFAS)",
+        "type": "identity",
+        "alias": [
+          "the GIFAS website",
+          "GIFAS website"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "173.252.252.204",
+        "type": "ipv4-addr",
+        "alias": [
+          "the IP address"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "secure[.]safran-group[.]com",
+        "type": "domain-name",
+        "alias": [
+          "one of its subdomains",
+          "the secure[.]safran-group[.]com domain"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Safran",
+        "type": "identity",
+        "alias": [
+          "a France-based aerospace and defense company",
+          "France-based aerospace and defense company"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "snecma[.]fr",
+        "type": "domain-name",
+        "alias": [
+          "the Snecma subsidiary",
+          "Snecma"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Sakula malware",
+        "type": "malware",
+        "alias": [
+          "Sakula variant",
+          "Sakula sample",
+          "the Sakula malware used in this attack"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "oa[.]ameteksen[.]com",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "web[.]vipreclod[.]com",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "gifas[.]cechire[.]com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "gifas[.]blogsite[.]org",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "The French aerospace industries association",
+        "type": "identity",
+        "alias": [
+          "GIFAS website",
+          "the content taken from the GIFAS website"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "17 January 2014",
+        "type": "date",
+        "alias": [],
+        "mother entity": "Groupement des industries françaises aéronautiques et spatiales (GIFAS)"
+      },
+      {
+        "name": "safran-group[.]com",
+        "type": "domain-name",
+        "alias": [
+          "the safran-group[.]com domain"
+        ],
+        "mother entity": "Safran"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "activity",
+        "rel": "leveraged exploit code for",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2014-0322"
+      },
+      {
+        "sub": "activity",
+        "rel": "infected victims with",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "ZxShell malware"
+      },
+      {
+        "sub": "CrowdStrike Intelligence",
+        "rel": "attributed this attack to",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "AURORA PANDA adversary"
+      },
+      {
+        "sub": "another adversary",
+        "rel": "leveraging the same vulnerability to carry out targeted attacks on",
+        "rel_type": [
+          "exploits",
+          "targets"
+        ],
+        "obj": "French aerospace"
+      },
+      {
+        "sub": "another adversary",
+        "rel": "shares similarities with",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "Capstone Turbine activity"
+      },
+      {
+        "sub": "savmpet[.]com",
+        "rel": "redirected visitors to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "gifas[.]assso[.]net"
+      },
+      {
+        "sub": "gifas[.]assso[.]net",
+        "rel": "hosting exploit code in",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "include.html"
+      },
+      {
+        "sub": "gifas[.]assso[.]net",
+        "rel": "hosting exploit code in",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "Tope.swf"
+      },
+      {
+        "sub": "gifas[.]assso[.]net",
+        "rel": "hosting a malicious payload",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "Erido.jpg"
+      },
+      {
+        "sub": "savmpet[.]com",
+        "rel": "created from content of",
+        "rel_type": [
+          "located-at",
+          "originates-from"
+        ],
+        "obj": "Groupement des industries françaises aéronautiques et spatiales (GIFAS)"
+      },
+      {
+        "sub": "gifas[.]assso[.]net",
+        "rel": "hosted on",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "173.252.252.204"
+      },
+      {
+        "sub": "secure[.]safran-group[.]com",
+        "rel": "pointed at",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "173.252.252.204"
+      },
+      {
+        "sub": "Safran",
+        "rel": "owns",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "safran-group[.]com"
+      },
+      {
+        "sub": "Safran",
+        "rel": "owns",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "secure[.]safran-group[.]com"
+      },
+      {
+        "sub": "Sakula malware",
+        "rel": "connecting to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "oa[.]ameteksen[.]com"
+      },
+      {
+        "sub": "Sakula malware",
+        "rel": "added a number of domains to",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "victim machines"
+      },
+      {
+        "sub": "Snecma",
+        "rel": "owns",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "snecma[.]fr"
+      },
+      {
+        "sub": "Sakula malware",
+        "rel": "does not map these domains to",
+        "rel_type": [
+          "modifies-or-removes-or-replaces",
+          "negation"
+        ],
+        "obj": "217.108.170.0/24 range"
+      },
+      {
+        "sub": "Capstone Turbine",
+        "rel": "used exploit for",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2012-4792"
+      },
+      {
+        "sub": "Capstone Turbine",
+        "rel": "used",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Sakula malware"
+      },
+      {
+        "sub": "Capstone Turbine",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "web[.]vipreclod[.]com"
+      },
+      {
+        "sub": "gifas[.]cechire[.]com",
+        "rel": "related to",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Capstone Turbine incident"
+      },
+      {
+        "sub": "gifas[.]blogsite[.]org",
+        "rel": "related to",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Capstone Turbine incident"
+      },
+      {
+        "sub": "Capstone Turbine",
+        "rel": "used zero-day during time it was active, just like the exploit used in the recent French aerospace activity",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2012-4792"
+      },
+      {
+        "sub": "another adversary",
+        "rel": "compromised",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Safran",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "French aerospace industries association",
+        "rel": "hosting content of",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "savmpet[.]com"
+      }
+    ]
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "sample_id": "ctinexus__fortra-warns-of-new-critical-goanywhere-mft-auth-bypass-patch-now.json",
+  "sample_index": 66,
+  "source": "ctinexus",
+  "file_name": "fortra-warns-of-new-critical-goanywhere-mft-auth-bypass-patch-now.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Clop ransomware gang",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the Clop ransomware gang"
+        ]
+      },
+      {
+        "name": "GoAnywhere MFT",
+        "type": "general-software",
+        "alias": [
+          "the GoAnywhere MFT"
+        ]
+      },
+      {
+        "name": "CVE-2023-0669",
+        "type": "vulnerability",
+        "alias": [
+          "the flaw"
+        ]
+      },
+      {
+        "name": "remote code execution flaw",
+        "type": "vulnerability",
+        "alias": [
+          "a critical remote code execution flaw"
+        ]
+      },
+      {
+        "name": "zero-day vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "a zero-day vulnerability"
+        ]
+      },
+      {
+        "name": "early 2023",
+        "type": "date",
+        "alias": [
+          "early 2023"
+        ]
+      },
+      {
+        "name": "January 18, 2023",
+        "type": "date",
+        "alias": [
+          "January 18, 2023"
+        ]
+      },
+      {
+        "name": "February 3, 2023",
+        "type": "date",
+        "alias": [
+          "February 3, 2023"
+        ]
+      },
+      {
+        "name": "Fortra",
+        "type": "security-product",
+        "alias": [
+          "Fortra"
+        ]
+      },
+      {
+        "name": "Crown Resorts",
+        "type": "organization",
+        "alias": [
+          "Crown Resorts"
+        ]
+      },
+      {
+        "name": "CHS",
+        "type": "organization",
+        "alias": [
+          "CHS"
+        ]
+      },
+      {
+        "name": "Hatch Bank",
+        "type": "organization",
+        "alias": [
+          "Hatch Bank"
+        ]
+      },
+      {
+        "name": "Rubrik",
+        "type": "organization",
+        "alias": [
+          "Rubrik"
+        ]
+      },
+      {
+        "name": "the City of Toronto",
+        "type": "organization",
+        "alias": [
+          "the City of Toronto"
+        ]
+      },
+      {
+        "name": "Hitachi Energy",
+        "type": "organization",
+        "alias": [
+          "Hitachi Energy"
+        ]
+      },
+      {
+        "name": "Procter & Gamble",
+        "type": "organization",
+        "alias": [
+          "Procter & Gamble"
+        ]
+      },
+      {
+        "name": "Saks Fifth Avenue",
+        "type": "organization",
+        "alias": [
+          "Saks Fifth Avenue"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "the Clop ransomware gang",
+        "rel": "had breached",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "130 companies and organizations"
+      },
+      {
+        "sub": "the Clop ransomware gang",
+        "rel": "by leveraging",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "a critical remote code execution flaw"
+      },
+      {
+        "sub": "GoAnywhere MFT",
+        "rel": "has",
+        "rel_type": [
+          "contains"
+        ],
+        "obj": "a critical remote code execution flaw"
+      },
+      {
+        "sub": "the flaw",
+        "rel": "is tracked as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "CVE-2023-0669"
+      },
+      {
+        "sub": "the flaw",
+        "rel": "had been exploited as",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "a zero-day vulnerability"
+      },
+      {
+        "sub": "a zero-day vulnerability",
+        "rel": "since",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "January 18, 2023"
+      },
+      {
+        "sub": "Fortra",
+        "rel": "discovered",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "its exploitation"
+      },
+      {
+        "sub": "Fortra",
+        "rel": "released",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "patches"
+      },
+      {
+        "sub": "patches",
+        "rel": "three days later",
+        "rel_type": [
+          "occurs-at"
+        ],
+        "obj": "after February 3, 2023"
+      },
+      {
+        "sub": "Clop",
+        "rel": "conducting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "widespread data theft attacks"
+      },
+      {
+        "sub": "widespread data theft attacks",
+        "rel": "impacted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "organizations worldwide"
+      },
+      {
+        "sub": "widespread data theft attacks",
+        "rel": "causing",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "data leaks"
+      },
+      {
+        "sub": "widespread data theft attacks",
+        "rel": "causing",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "reputational damage"
+      },
+      {
+        "sub": "widespread data theft attacks",
+        "rel": "causing",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "operational disruptions"
+      },
+      {
+        "sub": "attacks",
+        "rel": "impacted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Crown Resorts"
+      },
+      {
+        "sub": "attacks",
+        "rel": "impacted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "CHS"
+      },
+      {
+        "sub": "attacks",
+        "rel": "impacted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Hatch Bank"
+      },
+      {
+        "sub": "attacks",
+        "rel": "impacted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Rubrik"
+      },
+      {
+        "sub": "attacks",
+        "rel": "impacted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the City of Toronto"
+      },
+      {
+        "sub": "attacks",
+        "rel": "impacted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Hitachi Energy"
+      },
+      {
+        "sub": "attacks",
+        "rel": "impacted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Procter & Gamble"
+      },
+      {
+        "sub": "attacks",
+        "rel": "impacted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Saks Fifth Avenue"
+      }
+    ]
+  }
+}

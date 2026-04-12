@@ -1,0 +1,199 @@
+{
+  "sample_id": "securenlp__fireeye-sidewinder-targeted-attack",
+  "sample_index": 190,
+  "source": "securenlp",
+  "file_name": "fireeye-sidewinder-targeted-attack",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SIDEWINDER TARGETED ATTACK",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "ANDROID",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "FIREEYE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "JBOH",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "DLOH",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "AD LIBRARIES",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "GOOGLE PLAY",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "ANDROID API LEVEL",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "GPS LOCATION",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "CLIPBOARD",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "LAUNCHER SETTINGS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PROXY SETTINGS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MEDIA RECORDER",
+        "type": "TOOL"
+      },
+      {
+        "name": "JAVASCRIPT BRIDGE",
+        "type": "TOOL"
+      },
+      {
+        "name": "ROOT EXPLOIT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "PHISHING",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "DNS HIJACKING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "BGP HIJACKING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "ARP SPIEFOOTING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "AD1",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "AD2",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "AD3",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "AD4",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "AD5",
+        "type": "SOFTWARE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SIDEWINDER TARGETED ATTACK",
+        "rel": "related_to",
+        "obj": "JBOH"
+      },
+      {
+        "sub": "SIDEWINDER TARGETED ATTACK",
+        "rel": "related_to",
+        "obj": "DLOH"
+      },
+      {
+        "sub": "SIDEWINDER TARGETED ATTACK",
+        "rel": "related_to",
+        "obj": "AD LIBRARIES"
+      },
+      {
+        "sub": "AD LIBRARIES",
+        "rel": "related_to",
+        "obj": "ANDROID"
+      },
+      {
+        "sub": "JBOH",
+        "rel": "related_to",
+        "obj": "ANDROID API LEVEL"
+      },
+      {
+        "sub": "GPS LOCATION",
+        "rel": "related_to",
+        "obj": "SIDEWINDER TARGETED ATTACK"
+      },
+      {
+        "sub": "CLIPBOARD",
+        "rel": "related_to",
+        "obj": "SIDEWINDER TARGETED ATTACK"
+      },
+      {
+        "sub": "LAUNCHER SETTINGS",
+        "rel": "related_to",
+        "obj": "SIDEWINDER TARGETED ATTACK"
+      },
+      {
+        "sub": "PROXY SETTINGS",
+        "rel": "related_to",
+        "obj": "SIDEWINDER TARGETED ATTACK"
+      },
+      {
+        "sub": "FIREEYE",
+        "rel": "related_to",
+        "obj": "SIDEWINDER TARGETED ATTACK"
+      },
+      {
+        "sub": "GOOGLE PLAY",
+        "rel": "related_to",
+        "obj": "AD LIBRARIES"
+      },
+      {
+        "sub": "AD1",
+        "rel": "related_to",
+        "obj": "SIDEWINDER TARGETED ATTACK"
+      },
+      {
+        "sub": "AD2",
+        "rel": "related_to",
+        "obj": "SIDEWINDER TARGETED ATTACK"
+      },
+      {
+        "sub": "AD4",
+        "rel": "related_to",
+        "obj": "SIDEWINDER TARGETED ATTACK"
+      },
+      {
+        "sub": "AD5",
+        "rel": "related_to",
+        "obj": "SIDEWINDER TARGETED ATTACK"
+      }
+    ]
+  }
+}

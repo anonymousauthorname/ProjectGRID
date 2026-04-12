@@ -1,0 +1,280 @@
+{
+  "sample_id": "ctinexus__reservation-links-prey-on-travelers.json",
+  "sample_index": 90,
+  "source": "ctinexus",
+  "file_name": "reservation-links-prey-on-travelers.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TA558",
+        "type": "Entity"
+      },
+      {
+        "name": "travel and hospitality industries",
+        "type": "Entity"
+      },
+      {
+        "name": "cybercriminals",
+        "type": "Entity"
+      },
+      {
+        "name": "fake reservation emails",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious malware payload",
+        "type": "Entity"
+      },
+      {
+        "name": "malware variants",
+        "type": "Entity"
+      },
+      {
+        "name": "RAR file attachments",
+        "type": "Entity"
+      },
+      {
+        "name": "ISO file attachments",
+        "type": "Entity"
+      },
+      {
+        "name": "compressed files",
+        "type": "Entity"
+      },
+      {
+        "name": "decompressed files",
+        "type": "Entity"
+      },
+      {
+        "name": "Proofpoint",
+        "type": "Entity"
+      },
+      {
+        "name": "COVID-related travel restrictions",
+        "type": "Entity"
+      },
+      {
+        "name": "airline bookings",
+        "type": "Entity"
+      },
+      {
+        "name": "hotel bookings",
+        "type": "Entity"
+      },
+      {
+        "name": "security researchers",
+        "type": "Entity"
+      },
+      {
+        "name": "campaigns",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "email links",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious payload",
+        "type": "Entity"
+      },
+      {
+        "name": "file execution",
+        "type": "Entity"
+      },
+      {
+        "name": "threat group",
+        "type": "Entity"
+      },
+      {
+        "name": "2018 campaigns",
+        "type": "Entity"
+      },
+      {
+        "name": "cybersecurity warnings",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TA558",
+        "rel": "targets",
+        "obj": "travel and hospitality industries"
+      },
+      {
+        "sub": "TA558",
+        "rel": "is a threat group",
+        "obj": "cybercriminals"
+      },
+      {
+        "sub": "TA558",
+        "rel": "uses",
+        "obj": "fake reservation emails"
+      },
+      {
+        "sub": "TA558",
+        "rel": "delivers",
+        "obj": "malicious malware payload"
+      },
+      {
+        "sub": "malicious malware payload",
+        "rel": "contains variants of",
+        "obj": "malware variants"
+      },
+      {
+        "sub": "TA558",
+        "rel": "uses",
+        "obj": "RAR file attachments"
+      },
+      {
+        "sub": "TA558",
+        "rel": "uses",
+        "obj": "ISO file attachments"
+      },
+      {
+        "sub": "RAR file attachments",
+        "rel": "is a form of",
+        "obj": "compressed files"
+      },
+      {
+        "sub": "ISO file attachments",
+        "rel": "is a form of",
+        "obj": "compressed files"
+      },
+      {
+        "sub": "compressed files",
+        "rel": "is decompressed to",
+        "obj": "decompressed files"
+      },
+      {
+        "sub": "TA558",
+        "rel": "has warning from",
+        "obj": "Proofpoint"
+      },
+      {
+        "sub": "Proofpoint",
+        "rel": "has issued a report on",
+        "obj": "cybersecurity warnings"
+      },
+      {
+        "sub": "TA558",
+        "rel": "has activity tied to",
+        "obj": "COVID-related travel restrictions"
+      },
+      {
+        "sub": "TA558",
+        "rel": "targets through",
+        "obj": "airline bookings"
+      },
+      {
+        "sub": "TA558",
+        "rel": "targets through",
+        "obj": "hotel bookings"
+      },
+      {
+        "sub": "TA558",
+        "rel": "has warning from",
+        "obj": "security researchers"
+      },
+      {
+        "sub": "TA558",
+        "rel": "has campaigns",
+        "obj": "campaigns"
+      },
+      {
+        "sub": "campaigns",
+        "rel": "is a revival of prior tactics",
+        "obj": "2018 campaigns"
+      },
+      {
+        "sub": "TA558",
+        "rel": "is a threat actor",
+        "obj": "malware"
+      },
+      {
+        "sub": "fake reservation emails",
+        "rel": "contains",
+        "obj": "email links"
+      },
+      {
+        "sub": "email links",
+        "rel": "is a delivery mechanism",
+        "obj": "malicious payload"
+      },
+      {
+        "sub": "malicious payload",
+        "rel": "is triggered by",
+        "obj": "file execution"
+      },
+      {
+        "sub": "TA558",
+        "rel": "uses",
+        "obj": "file execution"
+      },
+      {
+        "sub": "TA558",
+        "rel": "has evolved since 2018",
+        "obj": "2018 campaigns"
+      },
+      {
+        "sub": "TA558",
+        "rel": "has a campaign focused on",
+        "obj": "campaigns"
+      },
+      {
+        "sub": "TA558",
+        "rel": "targets",
+        "obj": "airline bookings"
+      },
+      {
+        "sub": "TA558",
+        "rel": "targets",
+        "obj": "hotel bookings"
+      },
+      {
+        "sub": "TA558",
+        "rel": "has been observed targeting",
+        "obj": "travel and hospitality industries"
+      },
+      {
+        "sub": "TA558",
+        "rel": "is a target sector",
+        "obj": "travel and hospitality industries"
+      },
+      {
+        "sub": "TA558",
+        "rel": "is a target sector",
+        "obj": "airline bookings"
+      },
+      {
+        "sub": "TA558",
+        "rel": "is a target sector",
+        "obj": "hotel bookings"
+      },
+      {
+        "sub": "TA558",
+        "rel": "is a targeted industry",
+        "obj": "travel and hospitality industries"
+      }
+    ]
+  }
+}

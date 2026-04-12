@@ -1,0 +1,77 @@
+{
+  "sample_id": "ctinexus__ryuk-2020-distributing-ransomware-via-trickbot-and-bazarloader.json",
+  "sample_index": 85,
+  "source": "ctinexus",
+  "file_name": "ryuk-2020-distributing-ransomware-via-trickbot-and-bazarloader.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Phishing email",
+        "rel": "Use",
+        "obj": "BazarLoader"
+      },
+      {
+        "sub": "BazarLoader",
+        "rel": "Has vulnerability",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Phishing email",
+        "rel": "Contains",
+        "obj": "malicious attachment"
+      },
+      {
+        "sub": "Phishing email",
+        "rel": "Contains",
+        "obj": "malicious link"
+      },
+      {
+        "sub": "Malicious attachment",
+        "rel": "Locate at",
+        "obj": "free online file-hosting solution"
+      },
+      {
+        "sub": "Malicious link",
+        "rel": "Locate at",
+        "obj": "free online file-hosting solution"
+      },
+      {
+        "sub": "BazarLoader",
+        "rel": "Operate",
+        "obj": "targeted social engineering"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Use",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Malicious code",
+        "rel": "Run",
+        "obj": "Compromised systems"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Operate",
+        "obj": "Compromised systems"
+      }
+    ]
+  }
+}

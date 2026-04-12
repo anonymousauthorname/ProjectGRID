@@ -1,0 +1,257 @@
+{
+  "sample_id": "securenlp__Darwin_fav_APT_Group",
+  "sample_index": 191,
+  "source": "securenlp",
+  "file_name": "Darwin_fav_APT_Group",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "APT12",
+        "rel": "Use",
+        "obj": "Spear phishing emails"
+      },
+      {
+        "sub": "Spear phishing emails",
+        "rel": "Have vulnerability",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "Malicious Microsoft Word documents",
+        "rel": "Exploit",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "Malicious Microsoft Word documents",
+        "rel": "Deliver",
+        "obj": "APT12"
+      },
+      {
+        "sub": "APT12",
+        "rel": "Operate",
+        "obj": "Compromised accounts"
+      },
+      {
+        "sub": "Compromised accounts",
+        "rel": "Belong to",
+        "obj": "Taiwanese government employee"
+      },
+      {
+        "sub": "Taiwanese government employee",
+        "rel": "Locate at",
+        "obj": "Taiwan"
+      },
+      {
+        "sub": "Malicious Microsoft Word documents",
+        "rel": "Have filename",
+        "obj": "Word document"
+      },
+      {
+        "sub": "Malicious Microsoft Word documents",
+        "rel": "Have platform",
+        "obj": "Microsoft Word"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Microsoft Word"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "word.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "C:\\DOCUMENTS and SETTINGS\\{user}\\LOCAL SETTINGS\\Temp\\"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "HIGHTIDE"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "THREEBYTE"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "HIGHTIDE"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "THREEBYTE"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "C:\\DOCUMENTS and SETTINGS\\{user}\\LOCAL SETTINGS\\Temp\\"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Target system"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "Has technique",
+        "obj": "Defense Evasion"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "Has technique",
+        "obj": "Defense Evasion"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "Modify",
+        "obj": "User-Agent"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "Modify",
+        "obj": "URI structure"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "Modify",
+        "obj": "User-Agent"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "Modify",
+        "obj": "URI structure"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "Use",
+        "obj": "HTTP-based communication"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "Use",
+        "obj": "HTTP-based communication"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "Operate",
+        "obj": "Command and control  servers"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "Operate",
+        "obj": "Command and control  servers"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "Construct",
+        "obj": "Obfuscated traffic"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "Construct",
+        "obj": "Obfuscated traffic"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "Avoid",
+        "obj": "Detection mechanisms"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "Avoid",
+        "obj": "Detection mechanisms"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "Operate",
+        "obj": "141.108.2.157"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "Operate",
+        "obj": "video.csmcpr.com"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "Operate",
+        "obj": "icc.ignorelist.com"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "Use",
+        "obj": "HTTP GET"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "Use",
+        "obj": "HTTP GET"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "Use",
+        "obj": "HTTP GET"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "Has value",
+        "obj": "custom User-Agent string"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "Has value",
+        "obj": "custom User-Agent string"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "Has value",
+        "obj": "custom User-Agent string"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "Has URL",
+        "obj": "/"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "Has URL",
+        "obj": "/"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "Has URL",
+        "obj": "/"
+      }
+    ]
+  }
+}

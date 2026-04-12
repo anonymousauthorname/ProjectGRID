@@ -1,0 +1,652 @@
+{
+  "sample_id": "casie__638.json",
+  "sample_index": 20,
+  "source": "casie",
+  "file_name": "638.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Qatar",
+        "type": "location"
+      },
+      {
+        "name": "2022 FIFA Soccer World Cup",
+        "type": "campaign"
+      },
+      {
+        "name": "stadiums",
+        "type": "infrastructure"
+      },
+      {
+        "name": "Qatar's economy",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "tax-free zones",
+        "type": "infrastructure"
+      },
+      {
+        "name": "real-estate boom",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "buildings",
+        "type": "infrastructure"
+      },
+      {
+        "name": "migrant workers",
+        "type": "user-account"
+      },
+      {
+        "name": "East-Asian countries",
+        "type": "location"
+      },
+      {
+        "name": "India",
+        "type": "location"
+      },
+      {
+        "name": "Bangladesh",
+        "type": "location"
+      },
+      {
+        "name": "Nepal",
+        "type": "location"
+      },
+      {
+        "name": "local legislation",
+        "type": "vulnerability"
+      },
+      {
+        "name": "employers",
+        "type": "identity"
+      },
+      {
+        "name": "passports",
+        "type": "credential-value"
+      },
+      {
+        "name": "appalling conditions",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "penalties",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "jail time",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "activists",
+        "type": "identity"
+      },
+      {
+        "name": "organizations",
+        "type": "identity"
+      },
+      {
+        "name": "journalists",
+        "type": "identity"
+      },
+      {
+        "name": "Amnesty International",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Claudio Guarnieri",
+        "type": "identity"
+      },
+      {
+        "name": "Saleena Malik",
+        "type": "identity"
+      },
+      {
+        "name": "fake persona",
+        "type": "identity"
+      },
+      {
+        "name": "phishing",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "Google login",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "phishing page",
+        "type": "file"
+      },
+      {
+        "name": "Google Hangouts",
+        "type": "general-software"
+      },
+      {
+        "name": "document",
+        "type": "file"
+      },
+      {
+        "name": "Gmail accounts",
+        "type": "identity"
+      },
+      {
+        "name": "Qatar Internet service provider",
+        "type": "infrastructure"
+      },
+      {
+        "name": "government of Qatar",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "contractor",
+        "type": "identity"
+      },
+      {
+        "name": "construction firms",
+        "type": "identity"
+      },
+      {
+        "name": "government agency",
+        "type": "identity"
+      },
+      {
+        "name": "FIFA",
+        "type": "identity"
+      },
+      {
+        "name": "private conversations",
+        "type": "network-traffic"
+      },
+      {
+        "name": "email",
+        "type": "general-software"
+      },
+      {
+        "name": "LinkedIn",
+        "type": "general-software"
+      },
+      {
+        "name": "Facebook",
+        "type": "general-software"
+      },
+      {
+        "name": "intruder",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "IP address",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "report",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "social engineering",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "phishing tactics",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the campaign",
+        "type": "campaign"
+      },
+      {
+        "name": "Malik's phishing attacks",
+        "type": "campaign"
+      },
+      {
+        "name": "the seeds he planted",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Qatar's roaring constructions sector",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "targeted journalists",
+        "type": "identity"
+      },
+      {
+        "name": "the people behind the Malik persona",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Google login page",
+        "type": "file"
+      },
+      {
+        "name": "the researcher",
+        "type": "identity"
+      },
+      {
+        "name": "his guesses",
+        "type": "abstract-concept"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Qatar",
+        "rel": "is set to host",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "2022 FIFA Soccer World Cup"
+      },
+      {
+        "sub": "Qatar",
+        "rel": "must build",
+        "rel_type": [
+          "builds"
+        ],
+        "obj": "stadiums"
+      },
+      {
+        "sub": "Qatar's economy",
+        "rel": "is in full bloom",
+        "rel_type": [
+          "is"
+        ],
+        "obj": "full bloom"
+      },
+      {
+        "sub": "companies",
+        "rel": "taking advantage of",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "tax-free zones"
+      },
+      {
+        "sub": "tax-free zones",
+        "rel": "drive",
+        "rel_type": [
+          "drives"
+        ],
+        "obj": "real-estate boom"
+      },
+      {
+        "sub": "buildings",
+        "rel": "are being built",
+        "rel_type": [
+          "being built"
+        ],
+        "obj": "every year"
+      },
+      {
+        "sub": "migrant workers",
+        "rel": "are at the heart of",
+        "rel_type": [
+          "are at the heart of"
+        ],
+        "obj": "Qatar's roaring constructions sector"
+      },
+      {
+        "sub": "migrant workers",
+        "rel": "are from",
+        "rel_type": [
+          "are from"
+        ],
+        "obj": "East-Asian countries"
+      },
+      {
+        "sub": "India",
+        "rel": "is an example of",
+        "rel_type": [
+          "is an example of"
+        ],
+        "obj": "East-Asian countries"
+      },
+      {
+        "sub": "Bangladesh",
+        "rel": "is an example of",
+        "rel_type": [
+          "is an example of"
+        ],
+        "obj": "East-Asian countries"
+      },
+      {
+        "sub": "Nepal",
+        "rel": "is an example of",
+        "rel_type": [
+          "is an example of"
+        ],
+        "obj": "East-Asian countries"
+      },
+      {
+        "sub": "local legislation",
+        "rel": "has loopholes",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "loopholes"
+      },
+      {
+        "sub": "employers",
+        "rel": "allow",
+        "rel_type": [
+          "allow"
+        ],
+        "obj": "withholding passports"
+      },
+      {
+        "sub": "employers",
+        "rel": "force",
+        "rel_type": [
+          "force"
+        ],
+        "obj": "employees to work under appalling conditions"
+      },
+      {
+        "sub": "employees",
+        "rel": "face",
+        "rel_type": [
+          "face"
+        ],
+        "obj": "penalties"
+      },
+      {
+        "sub": "employees",
+        "rel": "face",
+        "rel_type": [
+          "face"
+        ],
+        "obj": "jail time"
+      },
+      {
+        "sub": "activists",
+        "rel": "have attracted the attention of",
+        "rel_type": [
+          "have attracted the attention of"
+        ],
+        "obj": "appalling conditions"
+      },
+      {
+        "sub": "activists",
+        "rel": "published",
+        "rel_type": [
+          "published"
+        ],
+        "obj": "damning reports"
+      },
+      {
+        "sub": "activists",
+        "rel": "are asking",
+        "rel_type": [
+          "are asking"
+        ],
+        "obj": "FIFA to revoke the rights"
+      },
+      {
+        "sub": "Claudio Guarnieri",
+        "rel": "works for",
+        "rel_type": [
+          "works for"
+        ],
+        "obj": "Amnesty International"
+      },
+      {
+        "sub": "Claudio Guarnieri",
+        "rel": "has published",
+        "rel_type": [
+          "published"
+        ],
+        "obj": "a report"
+      },
+      {
+        "sub": "an unknown person or group",
+        "rel": "has created",
+        "rel_type": [
+          "has created"
+        ],
+        "obj": "a fake persona named Saleena Malik"
+      },
+      {
+        "sub": "Saleena Malik",
+        "rel": "was used to get close to",
+        "rel_type": [
+          "was used to"
+        ],
+        "obj": "journalists"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "had primary goal to become friends with",
+        "rel_type": [
+          "had primary goal"
+        ],
+        "obj": "potential victims"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "lure the target into accessing",
+        "rel_type": [
+          "lure"
+        ],
+        "obj": "a phishing page"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "collect",
+        "rel_type": [
+          "collect"
+        ],
+        "obj": "their credentials"
+      },
+      {
+        "sub": "Malik's phishing attacks",
+        "rel": "didn't happen right away",
+        "rel_type": [
+          "didn't happen"
+        ],
+        "obj": "right away"
+      },
+      {
+        "sub": "Malik's phishing attacks",
+        "rel": "happen after",
+        "rel_type": [
+          "happen after"
+        ],
+        "obj": "the victim had time to get acquainted"
+      },
+      {
+        "sub": "Malik",
+        "rel": "posed as",
+        "rel_type": [
+          "posed as"
+        ],
+        "obj": "a person with similar interests in activism and Qatar's migrant labor laws"
+      },
+      {
+        "sub": "private conversations",
+        "rel": "occurred via",
+        "rel_type": [
+          "occurred via"
+        ],
+        "obj": "email"
+      },
+      {
+        "sub": "private conversations",
+        "rel": "occurred via",
+        "rel_type": [
+          "occurred via"
+        ],
+        "obj": "LinkedIn"
+      },
+      {
+        "sub": "private conversations",
+        "rel": "occurred via",
+        "rel_type": [
+          "occurred via"
+        ],
+        "obj": "Facebook"
+      },
+      {
+        "sub": "Malik",
+        "rel": "would eventually invite a target to access",
+        "rel_type": [
+          "would invite"
+        ],
+        "obj": "a document"
+      },
+      {
+        "sub": "Malik",
+        "rel": "would invite a target to connect via",
+        "rel_type": [
+          "would invite"
+        ],
+        "obj": "Google Hangouts"
+      },
+      {
+        "sub": "victim",
+        "rel": "was prompted by",
+        "rel_type": [
+          "was prompted by"
+        ],
+        "obj": "a fake login page"
+      },
+      {
+        "sub": "the researcher",
+        "rel": "tracked down",
+        "rel_type": [
+          "tracked down"
+        ],
+        "obj": "at least 30 other victims"
+      },
+      {
+        "sub": "the people behind the Malik persona",
+        "rel": "had also accessed",
+        "rel_type": [
+          "had also accessed"
+        ],
+        "obj": "some of the phished Gmail accounts"
+      },
+      {
+        "sub": "the intruder's IP address",
+        "rel": "belonged to",
+        "rel_type": [
+          "belonged to"
+        ],
+        "obj": "a local Qatar Internet service provider"
+      },
+      {
+        "sub": "researchers",
+        "rel": "wasn't able to find",
+        "rel_type": [
+          "wasn't able to find"
+        ],
+        "obj": "who was behind the attacks"
+      },
+      {
+        "sub": "Guarnieri",
+        "rel": "guessed",
+        "rel_type": [
+          "guessed"
+        ],
+        "obj": "government of Qatar"
+      },
+      {
+        "sub": "Guarnieri",
+        "rel": "guessed",
+        "rel_type": [
+          "guessed"
+        ],
+        "obj": "another government"
+      },
+      {
+        "sub": "Guarnieri",
+        "rel": "guessed",
+        "rel_type": [
+          "guessed"
+        ],
+        "obj": "a contractor"
+      },
+      {
+        "sub": "a contractor",
+        "rel": "was hired by",
+        "rel_type": [
+          "was hired by"
+        ],
+        "obj": "one of the construction firms"
+      },
+      {
+        "sub": "a contractor",
+        "rel": "was hired by",
+        "rel_type": [
+          "was hired by"
+        ],
+        "obj": "a government agency"
+      },
+      {
+        "sub": "a spokesperson for the government of Qatar",
+        "rel": "denied any involvement",
+        "rel_type": [
+          "denied"
+        ],
+        "obj": "any involvement"
+      },
+      {
+        "sub": "these particular set of attacks",
+        "rel": "show a deep knowledge of",
+        "rel_type": [
+          "demonstrates knowledge of"
+        ],
+        "obj": "social engineering"
+      },
+      {
+        "sub": "these particular set of attacks",
+        "rel": "demonstrated knowledge of",
+        "rel_type": [
+          "demonstrated knowledge of"
+        ],
+        "obj": "phishing tactics"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "had",
+        "rel_type": [
+          "had"
+        ],
+        "obj": "the knowledge, skills and patience"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "had",
+        "rel_type": [
+          "had"
+        ],
+        "obj": "patience to wait for the seeds he planted to bear fruits many months later"
+      },
+      {
+        "sub": "seeds he planted",
+        "rel": "to bear fruits",
+        "rel_type": [
+          "to bear fruits"
+        ],
+        "obj": "many months later"
+      }
+    ]
+  }
+}

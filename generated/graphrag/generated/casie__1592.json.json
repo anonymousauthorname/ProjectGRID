@@ -1,0 +1,190 @@
+{
+  "sample_id": "casie__1592.json",
+  "sample_index": 7,
+  "source": "casie",
+  "file_name": "1592.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TP-LINK",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "M5350",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "JAN HÖRSCH",
+        "type": "PERSON"
+      },
+      {
+        "name": "SECUARI",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "HEISE.DE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "KASPERSKY SECURITY ANALYST SUMMIT",
+        "type": "EVENT"
+      },
+      {
+        "name": "HOOOTO TRAVELMATE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "TRENDNET TEW714TRU",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "VSTARCAM",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "STARTECH MODEMS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PANASONIC BM ET200",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "WESTERN DIGITAL MYCLOUD NAS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "SMS VULNERABILITY",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "TELNET PASSWORD HARD-CODED",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "URL AUTHENTICATION BYPASS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "ROOT ACCESS",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "SIM CARD",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "FIRMWARE",
+        "type": "SOFTWARE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "JAN HÖRSCH",
+        "rel": "related_to",
+        "obj": "TP-LINK"
+      },
+      {
+        "sub": "JAN HÖRSCH",
+        "rel": "related_to",
+        "obj": "SECUARI"
+      },
+      {
+        "sub": "JAN HÖRSCH",
+        "rel": "related_to",
+        "obj": "HEISE.DE"
+      },
+      {
+        "sub": "JAN HÖRSCH",
+        "rel": "related_to",
+        "obj": "KASPERSKY SECURITY ANALYST SUMMIT"
+      },
+      {
+        "sub": "TP-LINK",
+        "rel": "related_to",
+        "obj": "M5350"
+      },
+      {
+        "sub": "M5350",
+        "rel": "related_to",
+        "obj": "SMS VULNERABILITY"
+      },
+      {
+        "sub": "SMS VULNERABILITY",
+        "rel": "related_to",
+        "obj": "SIM CARD"
+      },
+      {
+        "sub": "JAN HÖRSCH",
+        "rel": "related_to",
+        "obj": "ROOT ACCESS"
+      },
+      {
+        "sub": "ROOT ACCESS",
+        "rel": "related_to",
+        "obj": "HOOOTO TRAVELMATE"
+      },
+      {
+        "sub": "ROOT ACCESS",
+        "rel": "related_to",
+        "obj": "TRENDNET TEW714TRU"
+      },
+      {
+        "sub": "ROOT ACCESS",
+        "rel": "related_to",
+        "obj": "VSTARCAM"
+      },
+      {
+        "sub": "ROOT ACCESS",
+        "rel": "related_to",
+        "obj": "STARTECH MODEMS"
+      },
+      {
+        "sub": "ROOT ACCESS",
+        "rel": "related_to",
+        "obj": "WESTERN DIGITAL MYCLOUD NAS"
+      },
+      {
+        "sub": "TELNET PASSWORD HARD-CODED",
+        "rel": "related_to",
+        "obj": "STARTECH MODEMS"
+      },
+      {
+        "sub": "URL AUTHENTICATION BYPASS",
+        "rel": "related_to",
+        "obj": "PANASONIC BM ET200"
+      },
+      {
+        "sub": "FIRMWARE",
+        "rel": "related_to",
+        "obj": "M5350"
+      },
+      {
+        "sub": "KASPERSKY SECURITY ANALYST SUMMIT",
+        "rel": "related_to",
+        "obj": "JAN HÖRSCH"
+      },
+      {
+        "sub": "KASPERSKY SECURITY ANALYST SUMMIT",
+        "rel": "related_to",
+        "obj": "ROOT ACCESS"
+      }
+    ]
+  }
+}

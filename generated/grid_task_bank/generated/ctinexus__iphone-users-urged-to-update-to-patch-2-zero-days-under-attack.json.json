@@ -1,0 +1,276 @@
+{
+  "sample_id": "ctinexus__iphone-users-urged-to-update-to-patch-2-zero-days-under-attack.json",
+  "sample_index": 93,
+  "source": "ctinexus",
+  "file_name": "iphone-users-urged-to-update-to-patch-2-zero-days-under-attack.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Apple",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "macOS",
+        "type": "general-software"
+      },
+      {
+        "name": "iPhone",
+        "type": "general-software"
+      },
+      {
+        "name": "iPad",
+        "type": "general-software"
+      },
+      {
+        "name": "respective updates",
+        "type": "course-of-action"
+      },
+      {
+        "name": "zero-days",
+        "type": "vulnerability"
+      },
+      {
+        "name": "two zero-days",
+        "type": "vulnerability"
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "vulnerability"
+      },
+      {
+        "name": "patches",
+        "type": "course-of-action"
+      },
+      {
+        "name": "iOS 15.6.1",
+        "type": "general-software"
+      },
+      {
+        "name": "macOS Monterey 12.5.1",
+        "type": "general-software"
+      },
+      {
+        "name": "CVE-2022-32894",
+        "type": "vulnerability"
+      },
+      {
+        "name": "kernel bug",
+        "type": "vulnerability"
+      },
+      {
+        "name": "out-of-bounds write issue",
+        "type": "vulnerability"
+      },
+      {
+        "name": "arbitrary code",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "execute arbitrary code",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "take over devices",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "Apple Wednesday",
+        "type": "location"
+      },
+      {
+        "name": "iOS",
+        "type": "general-software"
+      },
+      {
+        "name": "Monterey version of its desktop OS",
+        "type": "general-software"
+      },
+      {
+        "name": "prevent exploitation",
+        "type": "course-of-action"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Apple",
+        "rel": "is urging",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "macOS, iPhone and iPad users"
+      },
+      {
+        "sub": "respective updates",
+        "rel": "includes fixes for",
+        "rel_type": [
+          "fixes"
+        ],
+        "obj": "two zero-days"
+      },
+      {
+        "sub": "The patches",
+        "rel": "are for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "vulnerabilities",
+        "rel": "allow",
+        "rel_type": [
+          "allow"
+        ],
+        "obj": "attackers to execute arbitrary code"
+      },
+      {
+        "sub": "attackers",
+        "rel": "execute arbitrary code",
+        "rel_type": [
+          "execute"
+        ],
+        "obj": "arbitrary code"
+      },
+      {
+        "sub": "vulnerabilities",
+        "rel": "allow",
+        "rel_type": [
+          "allow"
+        ],
+        "obj": "attackers to take over devices"
+      },
+      {
+        "sub": "patches",
+        "rel": "are available for",
+        "rel_type": [
+          "available-for"
+        ],
+        "obj": "effected devices running iOS 15.6.1"
+      },
+      {
+        "sub": "patches",
+        "rel": "are available for",
+        "rel_type": [
+          "available-for"
+        ],
+        "obj": "effected devices running macOS Monterey 12.5.1"
+      },
+      {
+        "sub": "patches",
+        "rel": "address",
+        "rel_type": [
+          "addresses"
+        ],
+        "obj": "two flaws"
+      },
+      {
+        "sub": "two flaws",
+        "rel": "impact",
+        "rel_type": [
+          "impacts"
+        ],
+        "obj": "Apple device that can run iOS 15"
+      },
+      {
+        "sub": "two flaws",
+        "rel": "impact",
+        "rel_type": [
+          "impacts"
+        ],
+        "obj": "Apple device that can run Monterey version of its desktop OS"
+      },
+      {
+        "sub": "kernel bug",
+        "rel": "is",
+        "rel_type": [
+          "is-variant-of"
+        ],
+        "obj": "CVE-2022-32894"
+      },
+      {
+        "sub": "kernel bug",
+        "rel": "present in",
+        "rel_type": [
+          "impacts"
+        ],
+        "obj": "iOS"
+      },
+      {
+        "sub": "kernel bug",
+        "rel": "present in",
+        "rel_type": [
+          "impacts"
+        ],
+        "obj": "macOS"
+      },
+      {
+        "sub": "out-of-bounds write issue",
+        "rel": "was addressed with",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "improved bounds checking"
+      },
+      {
+        "sub": "Apple",
+        "rel": "described",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "out-of-bounds write issue"
+      },
+      {
+        "sub": "Apple",
+        "rel": "said",
+        "rel_type": [
+          "stated"
+        ],
+        "obj": "there is a report that it \"may have been actively exploited\""
+      },
+      {
+        "sub": "security updates",
+        "rel": "were released by",
+        "rel_type": [
+          "issued-by"
+        ],
+        "obj": "Apple Wednesday"
+      },
+      {
+        "sub": "out-of-bounds write issue",
+        "rel": "allows",
+        "rel_type": [
+          "allows"
+        ],
+        "obj": "an application to execute arbitrary code with kernel privileges"
+      },
+      {
+        "sub": "Apple",
+        "rel": "said",
+        "rel_type": [
+          "stated"
+        ],
+        "obj": "the vulnerability allows an application to execute arbitrary code with kernel privileges"
+      }
+    ]
+  }
+}

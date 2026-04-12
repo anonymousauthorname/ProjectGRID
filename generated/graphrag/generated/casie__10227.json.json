@@ -1,0 +1,161 @@
+{
+  "sample_id": "casie__10227.json",
+  "sample_index": 43,
+  "source": "casie",
+  "file_name": "10227.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "KUBERNETES",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CVE-2018-1002105",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "JORDAN LIGGITT",
+        "type": "PERSON"
+      },
+      {
+        "name": "DARREN SHEPHERD",
+        "type": "PERSON"
+      },
+      {
+        "name": "RANCHER LABS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "OPENSHIFT CONTAINER PLATFORM",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "OPENSHIFT ONLINE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "OPENSHIFT DEDICATED",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "KUBELET",
+        "type": "TOOL"
+      },
+      {
+        "name": "METRICS-SERVER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SERVICECATALOG",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "COMMON VULNERABILITY SCORING SYSTEM",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "CLUSTER-ADMIN ACCESS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "KUBERNETES MASTER",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "KUBERNETES NODE",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "POD",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "GOOGLE",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "related_to",
+        "obj": "KUBERNETES"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "related_to",
+        "obj": "OPENSHIFT CONTAINER PLATFORM"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "related_to",
+        "obj": "OPENSHIFT ONLINE"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "related_to",
+        "obj": "OPENSHIFT DEDICATED"
+      },
+      {
+        "sub": "DARREN SHEPHERD",
+        "rel": "related_to",
+        "obj": "RANCHER LABS"
+      },
+      {
+        "sub": "JORDAN LIGGITT",
+        "rel": "related_to",
+        "obj": "GOOGLE"
+      },
+      {
+        "sub": "KUBELET",
+        "rel": "related_to",
+        "obj": "KUBERNETES NODE"
+      },
+      {
+        "sub": "KUBERNETES MASTER",
+        "rel": "related_to",
+        "obj": "KUBERNETES"
+      },
+      {
+        "sub": "POD",
+        "rel": "related_to",
+        "obj": "KUBERNETES"
+      },
+      {
+        "sub": "SERVICECATALOG",
+        "rel": "related_to",
+        "obj": "OPENSHIFT CONTAINER PLATFORM"
+      },
+      {
+        "sub": "METRICS-SERVER",
+        "rel": "related_to",
+        "obj": "OPENSHIFT CONTAINER PLATFORM"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "related_to",
+        "obj": "CLUSTER-ADMIN ACCESS"
+      },
+      {
+        "sub": "CLUSTER-ADMIN ACCESS",
+        "rel": "related_to",
+        "obj": "KUBERNETES"
+      }
+    ]
+  }
+}

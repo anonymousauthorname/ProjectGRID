@@ -1,0 +1,722 @@
+{
+  "sample_id": "securenlp__fireeye-sidewinder-targeted-attack",
+  "sample_index": 190,
+  "source": "securenlp",
+  "file_name": "fireeye-sidewinder-targeted-attack",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Reconnaissance",
+        "rel": "Has tactic",
+        "obj": "Information gathering"
+      },
+      {
+        "sub": "Ad library",
+        "rel": "Has value",
+        "obj": "GPS location"
+      },
+      {
+        "sub": "Ad library",
+        "rel": "Has value",
+        "obj": "Device model"
+      },
+      {
+        "sub": "Ad library",
+        "rel": "Has value",
+        "obj": "Android version"
+      },
+      {
+        "sub": "Ad library",
+        "rel": "Has value",
+        "obj": "Carrier information"
+      },
+      {
+        "sub": "Ad library",
+        "rel": "Has value",
+        "obj": "Installed app list"
+      },
+      {
+        "sub": "Ad library",
+        "rel": "Operate",
+        "obj": "HTTP upload"
+      },
+      {
+        "sub": "Remote ad server",
+        "rel": "Modify",
+        "obj": "GPS location data"
+      },
+      {
+        "sub": "MITM attack",
+        "rel": "Detect",
+        "obj": "HTTP traffic"
+      },
+      {
+        "sub": "DNS hijacking",
+        "rel": "Detect",
+        "obj": "HTTP traffic"
+      },
+      {
+        "sub": "BGP hijacking",
+        "rel": "Detect",
+        "obj": "HTTP traffic"
+      },
+      {
+        "sub": "ARP spoofing",
+        "rel": "Detect",
+        "obj": "HTTP traffic"
+      },
+      {
+        "sub": "GPS location data",
+        "rel": "Locate at",
+        "obj": "Office location"
+      },
+      {
+        "sub": "GPS location data",
+        "rel": "Locate at",
+        "obj": "Conference room location"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Use",
+        "obj": "Ad library"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Use",
+        "obj": "HTTP upload"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Operate",
+        "obj": "Information gathering"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Construct",
+        "obj": "Target profile based on GPS location"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Android device"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Ad library"
+      },
+      {
+        "sub": "Ad library",
+        "rel": "Locate at",
+        "obj": "Google Play apps"
+      },
+      {
+        "sub": "Ad library",
+        "rel": "Has value",
+        "obj": "70% of popular Google Play apps"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Launcher configuration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Camera"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "SMS"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Clipboard access"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Proxy settings"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "AccountManager"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Malicious apps"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Create",
+        "obj": "Persistent access"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "JavaScript-binding-over-HTTP"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "DEX loading over HTTP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "JavaScript-binding-over-HTTP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "DEX loading over HTTP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "WebView components"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "code on the victim's device"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "through insecure HTTP communication"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "HTTP communication"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "via MITM attacks"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Take control of",
+        "obj": "the victim's device"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "WebView components"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "insecure HTTP communication"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has URL",
+        "obj": "HTTP communication"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Detect",
+        "obj": "MITM attacks"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "JavaScript"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Invoke",
+        "obj": "Android API for sending SMS"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Invoke",
+        "obj": "Android API for making phone calls"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Invoke",
+        "obj": "Android API for taking pictures"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Invoke",
+        "obj": "Android API for recording audio/video"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "clipboard content"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "reflection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "JNI"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Load",
+        "obj": "malicious binaries"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "code with elevated privileges"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Access",
+        "obj": "sensitive system functions"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Launcher settings"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "READ SETTINGS permission"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "WRITE SETTINGS permission"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "System icons"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Redirect",
+        "obj": "Banking applications"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Persistence"
+      },
+      {
+        "sub": "System icons",
+        "rel": "Have value",
+        "obj": "Sensitive apps"
+      },
+      {
+        "sub": "Banking applications",
+        "rel": "Be redirected to",
+        "obj": "Phishing sites"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Remain effective",
+        "obj": "After initial attack"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Has vulnerability",
+        "obj": "READ SETTINGS"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Has vulnerability",
+        "obj": "WRITE SETTINGS"
+      },
+      {
+        "sub": "Launcher",
+        "rel": "Use",
+        "obj": "READ SETTINGS"
+      },
+      {
+        "sub": "Launcher",
+        "rel": "Use",
+        "obj": "WRITE SETTINGS"
+      },
+      {
+        "sub": "READ SETTINGS",
+        "rel": "Modify",
+        "obj": "System-level configurations"
+      },
+      {
+        "sub": "WRITE SETTINGS",
+        "rel": "Modify",
+        "obj": "System-level configurations"
+      },
+      {
+        "sub": "Launcher",
+        "rel": "Enable",
+        "obj": "Unauthorized access to app icon redirection"
+      },
+      {
+        "sub": "Launcher",
+        "rel": "Enable",
+        "obj": "System settings changes"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Use of insecure communication channels"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Targeting specific devices based on GPS location data"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Use of JavaScript to execute code without user interaction"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "AccountManager"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "GET ACCOUNTS"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "USE CREDENTIALS"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Google services"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Install",
+        "obj": "malicious apps"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Perform",
+        "obj": "phishing"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Perform",
+        "obj": "credential theft"
+      },
+      {
+        "sub": "- Discovery",
+        "rel": "Use",
+        "obj": "Victim information"
+      },
+      {
+        "sub": "- Discovery",
+        "rel": "Operate",
+        "obj": "Remote servers"
+      },
+      {
+        "sub": "- Discovery",
+        "rel": "Has value",
+        "obj": "GPS location"
+      },
+      {
+        "sub": "- Discovery",
+        "rel": "Has value",
+        "obj": "Device model"
+      },
+      {
+        "sub": "- Discovery",
+        "rel": "Has value",
+        "obj": "Android version"
+      },
+      {
+        "sub": "- Discovery",
+        "rel": "Has value",
+        "obj": "Carrier information"
+      },
+      {
+        "sub": "- Discovery",
+        "rel": "Has value",
+        "obj": "Installed app list"
+      },
+      {
+        "sub": "- Discovery",
+        "rel": "Has value",
+        "obj": "User agent"
+      },
+      {
+        "sub": "- Discovery",
+        "rel": "Locate at",
+        "obj": "Office or conference room"
+      },
+      {
+        "sub": "- Discovery",
+        "rel": "Modify",
+        "obj": "Target's location"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Launcher Settings"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Redirect",
+        "obj": "App Icons"
+      },
+      {
+        "sub": "App Icon",
+        "rel": "Has value",
+        "obj": "Phishing Site"
+      },
+      {
+        "sub": "User",
+        "rel": "Operate",
+        "obj": "Malicious Environment"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Construct",
+        "obj": "Indirect Lateral Movement"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Clipboard content"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Photos"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Audio"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Video"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Upload",
+        "obj": "Remote server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Ad library’s communication channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Capture",
+        "obj": "Screenshots"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Record",
+        "obj": "Audio"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Record",
+        "obj": "Video"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Access",
+        "obj": "Clipboard content"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Achieve",
+        "obj": "Phishing objectives"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Operate",
+        "obj": "Attacker's server"
+      },
+      {
+        "sub": "WebView",
+        "rel": "Use",
+        "obj": "JavaScript"
+      },
+      {
+        "sub": "WebView",
+        "rel": "Modify",
+        "obj": "Malicious payloads"
+      },
+      {
+        "sub": "Attacker's server",
+        "rel": "Receive",
+        "obj": "Data from victim's device"
+      },
+      {
+        "sub": "Attacker's server",
+        "rel": "Control",
+        "obj": "Remote actions"
+      },
+      {
+        "sub": "WebView",
+        "rel": "Execute",
+        "obj": "Sending SMS"
+      },
+      {
+        "sub": "WebView",
+        "rel": "Execute",
+        "obj": "Making calls"
+      },
+      {
+        "sub": "WebView",
+        "rel": "Execute",
+        "obj": "Taking photos"
+      },
+      {
+        "sub": "WebView",
+        "rel": "Execute",
+        "obj": "Recording audio/video"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Communication Channel"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "GPS Location"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Device Specifications"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Installed App List"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Clipboard Content"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Remote Server"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "Remote Server"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has value",
+        "obj": "Sensitive Information"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has URL",
+        "obj": "Ad Library"
+      },
+      {
+        "sub": "Communication Channel",
+        "rel": "Has value",
+        "obj": "Insecure Transmission"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has geolocation",
+        "obj": "GPS Location"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Clipboard Content"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Device Specifications"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Installed App List"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Business and operational processes"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Legitimate app icons"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Phishing sites"
+      },
+      {
+        "sub": "Business and operational processes",
+        "rel": "Has vulnerability",
+        "obj": "Financial loss"
+      },
+      {
+        "sub": "Business and operational processes",
+        "rel": "Has vulnerability",
+        "obj": "Data compromise"
+      }
+    ]
+  }
+}

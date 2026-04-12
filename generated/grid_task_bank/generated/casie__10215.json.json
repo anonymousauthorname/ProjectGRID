@@ -1,0 +1,388 @@
+{
+  "sample_id": "casie__10215.json",
+  "sample_index": 47,
+  "source": "casie",
+  "file_name": "10215.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Cisco",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "switch deployment software",
+        "type": "general-software"
+      },
+      {
+        "name": "crafted messages",
+        "type": "network-traffic"
+      },
+      {
+        "name": "port that's open by default",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "34 vulnerabilities",
+        "type": "vulnerability"
+      },
+      {
+        "name": "IOS",
+        "type": "general-software"
+      },
+      {
+        "name": "IOS XE",
+        "type": "general-software"
+      },
+      {
+        "name": "critical remote code execution security bugs",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "CVE-2018-0171",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Smart Install",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "remote unauthenticated attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Embedi",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "enterprise's network",
+        "type": "location"
+      },
+      {
+        "name": "internet",
+        "type": "location"
+      },
+      {
+        "name": "250,000 vulnerable devices",
+        "type": "quantity"
+      },
+      {
+        "name": "8.5 million devices",
+        "type": "quantity"
+      },
+      {
+        "name": "TCP port 4786",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "network admins",
+        "type": "user-account"
+      },
+      {
+        "name": "proof-of-concept exploit code",
+        "type": "course-of-action"
+      },
+      {
+        "name": "CVE-2018-0150",
+        "type": "vulnerability"
+      },
+      {
+        "name": "undocumented user account",
+        "type": "user-account"
+      },
+      {
+        "name": "default username and password",
+        "type": "credential-value"
+      },
+      {
+        "name": "CVE-2018-0151",
+        "type": "vulnerability"
+      },
+      {
+        "name": "QoS subsystem",
+        "type": "general-software"
+      },
+      {
+        "name": "UDP port 18999",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "messaging",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "CVSS score",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "GeekPwn conference",
+        "type": "event"
+      },
+      {
+        "name": "Hong Kong",
+        "type": "location"
+      },
+      {
+        "name": "September",
+        "type": "date"
+      },
+      {
+        "name": "Cisco's internal testing",
+        "type": "course-of-action"
+      },
+      {
+        "name": "the flaw",
+        "type": "vulnerability"
+      },
+      {
+        "name": "an attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the client",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "malicious packets",
+        "type": "network-traffic"
+      },
+      {
+        "name": "the default port",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "the software",
+        "type": "general-software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cisco",
+        "rel": "patches",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "a severe flaw in switch deployment software"
+      },
+      {
+        "sub": "crafted messages",
+        "rel": "sent to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a port that's open by default"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "has released patches for",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "34 vulnerabilities"
+      },
+      {
+        "sub": "34 vulnerabilities",
+        "rel": "mostly affecting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "its IOS and IOS XE networking software"
+      },
+      {
+        "sub": "critical remote code execution security bugs",
+        "rel": "including",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "CVE-2018-0171"
+      },
+      {
+        "sub": "critical bug CVE-2018-0171",
+        "rel": "affecting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Smart Install"
+      },
+      {
+        "sub": "remote unauthenticated attacker",
+        "rel": "can exploit",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "a flaw in the client"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "initially believed it could only be exploited within",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "an enterprise's network"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "found",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "millions of affected devices exposed on the internet"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "detected",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "250,000 vulnerable devices"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "detected",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "8.5 million devices that have a vulnerable port open"
+      },
+      {
+        "sub": "Smart Install",
+        "rel": "is supported by",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a broad range of Cisco routers and switches"
+      },
+      {
+        "sub": "250,000 vulnerable devices",
+        "rel": "is probably because",
+        "rel_type": [
+          "causes"
+        ],
+        "obj": "the Smart Install client's port TCP 4786 is open by default"
+      },
+      {
+        "sub": "This situation",
+        "rel": "is overlooked by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "network admins"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "has published",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "proof-of-concept exploit code"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can exploit",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "the bug by sending a crafted Smart Install message to these devices on TCP port 4786"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "discovered",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the flaw"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "landing it an award at",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "the GeekPwn conference"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "reported it to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Cisco"
+      },
+      {
+        "sub": "Cisco's internal testing",
+        "rel": "turned up",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "critical issue in its IOS XE software, CVE-2018-0150"
+      },
+      {
+        "sub": "CVE-2018-0150",
+        "rel": "due to",
+        "rel_type": [
+          "causes"
+        ],
+        "obj": "an undocumented user account"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "could use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "this account to remotely connect to a device running the software"
+      },
+      {
+        "sub": "Cisco engineers",
+        "rel": "also found",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "CVE-2018-0151"
+      },
+      {
+        "sub": "CVE-2018-0151",
+        "rel": "is due to",
+        "rel_type": [
+          "causes"
+        ],
+        "obj": "incorrect bounds checking of certain values in packets that are destined for UDP port 18999 of an affected device"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "could exploit",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "this vulnerability by sending malicious packets to an affected device"
+      },
+      {
+        "sub": "All three bugs",
+        "rel": "were given a CVSS score of",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "9.8 out of 10"
+      }
+    ]
+  }
+}

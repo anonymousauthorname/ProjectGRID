@@ -1,0 +1,202 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_18.json",
+  "sample_index": 210,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_18.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Trojan",
+        "rel": "harvests",
+        "obj": "documents"
+      },
+      {
+        "sub": "Trojan",
+        "rel": "uploads",
+        "obj": "file hosting"
+      },
+      {
+        "sub": "Trojan",
+        "rel": "uploads",
+        "obj": "sendspace.com"
+      },
+      {
+        "sub": "email",
+        "rel": "is disguised as",
+        "obj": "notification"
+      },
+      {
+        "sub": "email",
+        "rel": "is sent from",
+        "obj": "Fedex"
+      },
+      {
+        "sub": "email",
+        "rel": "is massmailed to",
+        "obj": "target victim"
+      },
+      {
+        "sub": "malware",
+        "rel": "uploads",
+        "obj": ".ZIP archive"
+      },
+      {
+        "sub": "malware",
+        "rel": "sends",
+        "obj": "sendspace"
+      },
+      {
+        "sub": "malware",
+        "rel": "sends",
+        "obj": "download link"
+      },
+      {
+        "sub": "malware",
+        "rel": "sends",
+        "obj": "unique ID"
+      },
+      {
+        "sub": "malware",
+        "rel": "sends",
+        "obj": "password"
+      },
+      {
+        "sub": "malware",
+        "rel": "sends",
+        "obj": "victims IP"
+      },
+      {
+        "sub": "malware",
+        "rel": "sends",
+        "obj": "command and control server"
+      },
+      {
+        "sub": ".ZIP archive",
+        "rel": "contains",
+        "obj": "documents"
+      },
+      {
+        "sub": "31.184.237.143",
+        "rel": "points to",
+        "obj": "BLOCKED28889.ru"
+      },
+      {
+        "sub": "31.184.237.142",
+        "rel": "points to",
+        "obj": "BLOCKED8483825.ru"
+      },
+      {
+        "sub": "31.184.237.143",
+        "rel": "hosts",
+        "obj": "malicious files"
+      },
+      {
+        "sub": "31.184.237.142",
+        "rel": "hosts",
+        "obj": "malicious files"
+      },
+      {
+        "sub": "malicious files",
+        "rel": "include",
+        "obj": "BFBot"
+      },
+      {
+        "sub": "malicious files",
+        "rel": "include",
+        "obj": "NgrBot"
+      },
+      {
+        "sub": "malicious files",
+        "rel": "include",
+        "obj": "IRCBot"
+      },
+      {
+        "sub": "command and control server",
+        "rel": "contains",
+        "obj": "log file"
+      },
+      {
+        "sub": "log file",
+        "rel": "contains",
+        "obj": "victims"
+      },
+      {
+        "sub": "malware",
+        "rel": "assigns",
+        "obj": "victim ID"
+      },
+      {
+        "sub": "IP addresses",
+        "rel": "span",
+        "obj": "150 countries"
+      },
+      {
+        "sub": "United Arab Emirates",
+        "rel": "is associated with",
+        "obj": "victims"
+      },
+      {
+        "sub": "IP addresses",
+        "rel": "are identified by",
+        "obj": "WHOIS lookup"
+      },
+      {
+        "sub": "IP addresses",
+        "rel": "belong to",
+        "obj": "ISPs"
+      },
+      {
+        "sub": "IP addresses",
+        "rel": "are associated with",
+        "obj": "ISP services"
+      },
+      {
+        "sub": "networks",
+        "rel": "are identified",
+        "obj": "via IP address analysis"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "contacted",
+        "obj": "sendspace"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "received findings from",
+        "obj": "Trend Micro"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "assisted",
+        "obj": "sendspace"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "deployed",
+        "obj": "mitigation measures"
+      },
+      {
+        "sub": "IP addresses",
+        "rel": "are analyzed",
+        "obj": "to identify networks"
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_33.json",
+  "sample_index": 223,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_33.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TrojanDownloader.Win32.Kido",
+        "type": "Entity"
+      },
+      {
+        "name": "Conficker.c",
+        "type": "Entity"
+      },
+      {
+        "name": "NetWorm.Win32.Kido.js",
+        "type": "Entity"
+      },
+      {
+        "name": "FraudTool.Win32.SpywareProtect2009.s",
+        "type": "Entity"
+      },
+      {
+        "name": "SpywareProtect2009",
+        "type": "Entity"
+      },
+      {
+        "name": "spyprotect2009.com",
+        "type": "Entity"
+      },
+      {
+        "name": "spywrprotect2009.com",
+        "type": "Entity"
+      },
+      {
+        "name": "spywareprotector2009.com",
+        "type": "Entity"
+      },
+      {
+        "name": "1313.elaninet.com.78.26.179.107",
+        "type": "Entity"
+      },
+      {
+        "name": "EmailWorm.Win32.Iksmas.atz",
+        "type": "Entity"
+      },
+      {
+        "name": "Waledac",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "P2P",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious files",
+        "type": "Entity"
+      },
+      {
+        "name": "rogue antivirus app",
+        "type": "Entity"
+      },
+      {
+        "name": "fake antivirus",
+        "type": "Entity"
+      },
+      {
+        "name": "data theft",
+        "type": "Entity"
+      },
+      {
+        "name": "spam mailings",
+        "type": "Entity"
+      },
+      {
+        "name": "Conficker Working Group",
+        "type": "Entity"
+      },
+      {
+        "name": "CWG site",
+        "type": "Entity"
+      },
+      {
+        "name": "cable sabotage",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "USB devices",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TrojanDownloader.Win32.Kido",
+        "rel": "uses",
+        "obj": "P2P"
+      },
+      {
+        "sub": "TrojanDownloader.Win32.Kido",
+        "rel": "downloads",
+        "obj": "malicious files"
+      },
+      {
+        "sub": "NetWorm.Win32.Kido.js",
+        "rel": "is a variant of",
+        "obj": "TrojanDownloader.Win32.Kido"
+      },
+      {
+        "sub": "NetWorm.Win32.Kido.js",
+        "rel": "is functional until",
+        "obj": "3rd May"
+      },
+      {
+        "sub": "TrojanDownloader.Win32.Kido",
+        "rel": "downloads",
+        "obj": "FraudTool.Win32.SpywareProtect2009.s"
+      },
+      {
+        "sub": "FraudTool.Win32.SpywareProtect2009.s",
+        "rel": "is a",
+        "obj": "rogue antivirus app"
+      },
+      {
+        "sub": "SpywareProtect2009",
+        "rel": "is available at",
+        "obj": "spyprotect2009.com"
+      },
+      {
+        "sub": "SpywareProtect2009",
+        "rel": "is available at",
+        "obj": "spywrprotect2009.com"
+      },
+      {
+        "sub": "SpywareProtect2009",
+        "rel": "is available at",
+        "obj": "spywareprotector2009.com"
+      },
+      {
+        "sub": "FraudTool.Win32.SpywareProtect2009.s",
+        "rel": "charges",
+        "obj": "49.95"
+      },
+      {
+        "sub": "TrojanDownloader.Win32.Kido",
+        "rel": "downloads",
+        "obj": "EmailWorm.Win32.Iksmas.atz"
+      },
+      {
+        "sub": "EmailWorm.Win32.Iksmas.atz",
+        "rel": "is also known as",
+        "obj": "Waledac"
+      },
+      {
+        "sub": "EmailWorm.Win32.Iksmas.atz",
+        "rel": "can",
+        "obj": "steal data"
+      },
+      {
+        "sub": "EmailWorm.Win32.Iksmas.atz",
+        "rel": "can",
+        "obj": "send spam"
+      },
+      {
+        "sub": "EmailWorm.Win32.Iksmas.atz",
+        "rel": "is similar to",
+        "obj": "TrojanDownloader.Win32.Kido"
+      },
+      {
+        "sub": "Kido",
+        "rel": "is part of",
+        "obj": "spam mailings"
+      },
+      {
+        "sub": "Conficker Working Group",
+        "rel": "is under attack",
+        "obj": "sites belonging to companies and organizations"
+      },
+      {
+        "sub": "cable sabotage",
+        "rel": "causes",
+        "obj": "outage of CWG site"
+      }
+    ]
+  }
+}

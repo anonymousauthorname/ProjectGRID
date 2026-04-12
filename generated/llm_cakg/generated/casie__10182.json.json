@@ -1,0 +1,270 @@
+{
+  "sample_id": "casie__10182.json",
+  "sample_index": 22,
+  "source": "casie",
+  "file_name": "10182.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2018-1002105",
+        "type": "Entity"
+      },
+      {
+        "name": "Kubernetes privilege escalation flaw",
+        "type": "Entity"
+      },
+      {
+        "name": "CVSS 9.8",
+        "type": "Entity"
+      },
+      {
+        "name": "Kubernetes API server",
+        "type": "Entity"
+      },
+      {
+        "name": "backend server",
+        "type": "Entity"
+      },
+      {
+        "name": "network request",
+        "type": "Entity"
+      },
+      {
+        "name": "Transport Layer Security (TLS) credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "discovery API calls",
+        "type": "Entity"
+      },
+      {
+        "name": "unauthorized requests",
+        "type": "Entity"
+      },
+      {
+        "name": "Kubernetes API server audit logs",
+        "type": "Entity"
+      },
+      {
+        "name": "kubelet logs",
+        "type": "Entity"
+      },
+      {
+        "name": "aggregated API server logs",
+        "type": "Entity"
+      },
+      {
+        "name": "full administrator privileges",
+        "type": "Entity"
+      },
+      {
+        "name": "steal sensitive data",
+        "type": "Entity"
+      },
+      {
+        "name": "inject malicious code",
+        "type": "Entity"
+      },
+      {
+        "name": "bring down production applications and services",
+        "type": "Entity"
+      },
+      {
+        "name": "upgrade Kubernetes",
+        "type": "Entity"
+      },
+      {
+        "name": "Red Hat OpenShift Container Platform",
+        "type": "Entity"
+      },
+      {
+        "name": "Red Hat OpenShift Online",
+        "type": "Entity"
+      },
+      {
+        "name": "Red Hat OpenShift Dedicated",
+        "type": "Entity"
+      },
+      {
+        "name": "Rancher Labs",
+        "type": "Entity"
+      },
+      {
+        "name": "Darren Shepard",
+        "type": "Entity"
+      },
+      {
+        "name": "no obvious traces in the logs",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "is known as",
+        "obj": "Kubernetes privilege escalation flaw"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "has CVSS rating",
+        "obj": "CVSS 9.8"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "allows",
+        "obj": "Kubernetes privilege escalation flaw"
+      },
+      {
+        "sub": "any user",
+        "rel": "can establish a connection to",
+        "obj": "Kubernetes API server"
+      },
+      {
+        "sub": "Kubernetes API server",
+        "rel": "receives",
+        "obj": "network request"
+      },
+      {
+        "sub": "network request",
+        "rel": "is authenticated with",
+        "obj": "Transport Layer Security (TLS) credentials"
+      },
+      {
+        "sub": "default configurations",
+        "rel": "allow",
+        "obj": "discovery API calls"
+      },
+      {
+        "sub": "discovery API calls",
+        "rel": "enable",
+        "obj": "Kubernetes privilege escalation flaw"
+      },
+      {
+        "sub": "Kubernetes privilege escalation flaw",
+        "rel": "allows",
+        "obj": "any user to gain full administrator privileges"
+      },
+      {
+        "sub": "any user with access to the flaw",
+        "rel": "can",
+        "obj": "steal sensitive data"
+      },
+      {
+        "sub": "any user with access to the flaw",
+        "rel": "can",
+        "obj": "inject malicious code"
+      },
+      {
+        "sub": "any user with access to the flaw",
+        "rel": "can",
+        "obj": "bring down production applications and services"
+      },
+      {
+        "sub": "Kubernetes privilege escalation flaw",
+        "rel": "cannot be detected in",
+        "obj": "Kubernetes API server audit logs"
+      },
+      {
+        "sub": "unauthorized requests",
+        "rel": "are not logged in",
+        "obj": "Kubernetes API server audit logs"
+      },
+      {
+        "sub": "unauthorized requests",
+        "rel": "appear in",
+        "obj": "kubelet logs"
+      },
+      {
+        "sub": "unauthorized requests",
+        "rel": "appear in",
+        "obj": "aggregated API server logs"
+      },
+      {
+        "sub": "unauthorized requests",
+        "rel": "are indistinguishable from",
+        "obj": "correctly authorized and proxied requests"
+      },
+      {
+        "sub": "Kubernetes privilege escalation flaw",
+        "rel": "can be exploited to gain",
+        "obj": "full administrator privileges"
+      },
+      {
+        "sub": "Red Hat OpenShift Container Platform",
+        "rel": "is affected by",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Red Hat OpenShift Online",
+        "rel": "is affected by",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Red Hat OpenShift Dedicated",
+        "rel": "is affected by",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Rancher Labs",
+        "rel": "has chief architect",
+        "obj": "Darren Shepard"
+      },
+      {
+        "sub": "Darren Shepard",
+        "rel": "discovered",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Darren Shepard",
+        "rel": "reported",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "abusing the vulnerability",
+        "rel": "leaves",
+        "obj": "no obvious traces in the logs"
+      },
+      {
+        "sub": "Kubernetes privilege escalation flaw",
+        "rel": "can be abused",
+        "obj": "to gain full administrator privileges"
+      },
+      {
+        "sub": "any program including Kubernetes",
+        "rel": "is vulnerable to",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Kubernetes distributors",
+        "rel": "are releasing fixes for",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Red Hat",
+        "rel": "is delivering patches to",
+        "obj": "affected users"
+      },
+      {
+        "sub": "Kubernetes systems",
+        "rel": "should be upgraded to prevent exploitation",
+        "obj": "CVE-2018-1002105"
+      }
+    ]
+  }
+}

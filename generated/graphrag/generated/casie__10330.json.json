@@ -1,0 +1,124 @@
+{
+  "sample_id": "casie__10330.json",
+  "sample_index": 1,
+  "source": "casie",
+  "file_name": "10330.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "MICROSOFT",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "OUTLOOK 2010",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "KB 4461529",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "KB 4461585",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "OFFICE 365 HOME",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MICROSOFT DOWNLOAD CENTER",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MICROSOFT UPDATE CATALOG",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "WOODY LEONHARD",
+        "type": "PERSON"
+      },
+      {
+        "name": "NOVEMBER PATCH TUESDAY",
+        "type": "EVENT"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "KB 4461529",
+        "rel": "related_to",
+        "obj": "OUTLOOK 2010"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "related_to",
+        "obj": "OUTLOOK 2010"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "related_to",
+        "obj": "KB 4461529"
+      },
+      {
+        "sub": "MICROSOFT",
+        "rel": "related_to",
+        "obj": "KB 4461529"
+      },
+      {
+        "sub": "MICROSOFT",
+        "rel": "related_to",
+        "obj": "KB 4461585"
+      },
+      {
+        "sub": "MICROSOFT",
+        "rel": "related_to",
+        "obj": "OUTLOOK 2010"
+      },
+      {
+        "sub": "WOODY LEONHARD",
+        "rel": "related_to",
+        "obj": "KB 4461529"
+      },
+      {
+        "sub": "OUTLOOK 2010",
+        "rel": "related_to",
+        "obj": "OFFICE 365 HOME"
+      },
+      {
+        "sub": "MICROSOFT DOWNLOAD CENTER",
+        "rel": "related_to",
+        "obj": "KB 4461585"
+      },
+      {
+        "sub": "MICROSOFT UPDATE CATALOG",
+        "rel": "related_to",
+        "obj": "KB 4461585"
+      },
+      {
+        "sub": "NOVEMBER PATCH TUESDAY",
+        "rel": "related_to",
+        "obj": "KB 4461529"
+      },
+      {
+        "sub": "NOVEMBER PATCH TUESDAY",
+        "rel": "related_to",
+        "obj": "KB 4461585"
+      }
+    ]
+  }
+}

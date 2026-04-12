@@ -1,0 +1,182 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_10.json",
+  "sample_index": 202,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_10.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Spring4Shell",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "CVE-2022-22965",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "CVE-2022-22963",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Spring Framework",
+        "type": "Software"
+      },
+      {
+        "name": "Java",
+        "type": "Software"
+      },
+      {
+        "name": "Apache Tomcat",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Spring Cloud Function",
+        "type": "Software"
+      },
+      {
+        "name": "Spring Expression Language (SpEL)",
+        "type": "Software"
+      },
+      {
+        "name": "shell.jsp",
+        "type": "Indicator"
+      },
+      {
+        "name": "exploit.py",
+        "type": "Indicator"
+      },
+      {
+        "name": "Java 9 Platform Module System",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Win32.Generic",
+        "type": "Indicator"
+      },
+      {
+        "name": "UMIDS:Intrusion.Generic.Agent.gen",
+        "type": "Indicator"
+      },
+      {
+        "name": "Intrusion.Generic.CVE-*.*",
+        "type": "Indicator"
+      },
+      {
+        "name": "7e46801dd171bb5bf1771df1239d760c",
+        "type": "Indicator"
+      },
+      {
+        "name": "3de4e174c2c8612aebb3adef10027679",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "AFFECTS",
+        "obj": "Spring Framework"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "ENABLES",
+        "obj": "Java 9 Platform Module System"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "REQUIRES",
+        "obj": "Apache Tomcat"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "AFFECTS",
+        "obj": "Spring Framework 5.3.0"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "AFFECTS",
+        "obj": "Spring Framework 5.2.0"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "REQUIRES",
+        "obj": "JDK version 9+"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "GENERATES",
+        "obj": "shell.jsp"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "GENERATES",
+        "obj": "exploit.py"
+      },
+      {
+        "sub": "CVE-2022-22963",
+        "rel": "AFFECTS",
+        "obj": "Spring Cloud Function"
+      },
+      {
+        "sub": "CVE-2022-22963",
+        "rel": "USES",
+        "obj": "Spring Expression Language (SpEL)"
+      },
+      {
+        "sub": "CVE-2022-22963",
+        "rel": "AFFECTS",
+        "obj": "Spring Cloud Function 3.1.6"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "is also known as",
+        "obj": "Spring4Shell"
+      },
+      {
+        "sub": "Spring4Shell",
+        "rel": "AFFECTS",
+        "obj": "Spring Framework"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "leads to",
+        "obj": "Win32.Generic"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "leads to",
+        "obj": "UMIDS:Intrusion.Generic.Agent.gen"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "leads to",
+        "obj": "Intrusion.Generic.CVE-*.*"
+      },
+      {
+        "sub": "7e46801dd171bb5bf1771df1239d760c",
+        "rel": "is md5 hash of",
+        "obj": "CVE-2022-22965"
+      },
+      {
+        "sub": "3de4e174c2c8612aebb3adef10027679",
+        "rel": "is md5 hash of",
+        "obj": "CVE-2022-22965"
+      }
+    ]
+  }
+}

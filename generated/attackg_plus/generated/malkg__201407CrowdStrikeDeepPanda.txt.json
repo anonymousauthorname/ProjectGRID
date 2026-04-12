@@ -1,0 +1,472 @@
+{
+  "sample_id": "malkg__201407CrowdStrikeDeepPanda.txt",
+  "sample_index": 140,
+  "source": "malkg",
+  "file_name": "201407CrowdStrikeDeepPanda.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "DEEP PANDA",
+        "rel": "Operate",
+        "obj": "net use"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "Operate",
+        "obj": "tasklist"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "Operate",
+        "obj": "net view"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "Operate",
+        "obj": "net localgroup administrators"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "Use",
+        "obj": "cftmon.exe"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "Use",
+        "obj": "ping"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "Modify",
+        "obj": "network shares"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "Gather",
+        "obj": "system information"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "Gather",
+        "obj": "network information"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "Locate at",
+        "obj": "victim network"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "PowerShell script"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Webshell"
+      },
+      {
+        "sub": "Webshell",
+        "rel": "Modify",
+        "obj": "Scheduled task"
+      },
+      {
+        "sub": "Webshell",
+        "rel": "Operate",
+        "obj": "Victim network"
+      },
+      {
+        "sub": "PowerShell script",
+        "rel": "Construct",
+        "obj": "Scheduled task"
+      },
+      {
+        "sub": "Webshell",
+        "rel": "Maintain",
+        "obj": "Persistent access"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Spear-phishing lures"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Stolen credentials"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Government email accounts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Craft",
+        "obj": "Realistic phishing lures"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Email mailboxes"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "National security think tanks"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Target",
+        "obj": "Senior individuals involved in geopolitical policy issues"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Scheduled Task"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Base64-encoded script"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Download",
+        "obj": "Wafer"
+      },
+      {
+        "sub": "Wafer",
+        "rel": "Execute",
+        "obj": "MadHatter"
+      },
+      {
+        "sub": "MadHatter",
+        "rel": "Belong to",
+        "obj": ".NET Remote Access Tool"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Base64-encoded"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Windows machine"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": ".NET executable"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Webshell"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Scheduled task"
+      },
+      {
+        "sub": "PowerShell script",
+        "rel": "Operate",
+        "obj": "DEEP PANDA Command and Control  infrastructure"
+      },
+      {
+        "sub": "PowerShell script",
+        "rel": "Schedule",
+        "obj": "Every two hours"
+      },
+      {
+        "sub": "Webshell",
+        "rel": "Enable",
+        "obj": "Long-term persistence"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Webshell"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Memory-based execution"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Host-based IOCs"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Anti-forensic techniques"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Anti-IOC detection techniques"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Victim system"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Disk artifacts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Avoid",
+        "obj": "Detection by traditional security tools"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Use",
+        "obj": "Stolen credentials"
+      },
+      {
+        "sub": "Stolen credentials",
+        "rel": "Use",
+        "obj": "Network shares"
+      },
+      {
+        "sub": "Network shares",
+        "rel": "Access",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "Windows tools",
+        "rel": "Use",
+        "obj": "Existing user accounts"
+      },
+      {
+        "sub": "Existing user accounts",
+        "rel": "Operate",
+        "obj": "Network shares"
+      },
+      {
+        "sub": "Stolen credentials",
+        "rel": "Authenticate",
+        "obj": "Network shares"
+      },
+      {
+        "sub": "Network shares",
+        "rel": "Access",
+        "obj": "User-specific data"
+      },
+      {
+        "sub": "Tasklist",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Net view",
+        "rel": "Operate",
+        "obj": "Network"
+      },
+      {
+        "sub": "Net localgroup administrators",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Net use",
+        "rel": "Operate",
+        "obj": "Network Share"
+      },
+      {
+        "sub": "Net use",
+        "rel": "Discover",
+        "obj": "User"
+      },
+      {
+        "sub": "Net use",
+        "rel": "Discover",
+        "obj": "Group"
+      },
+      {
+        "sub": "Net use",
+        "rel": "Discover",
+        "obj": "Administrator Group"
+      },
+      {
+        "sub": "Windows Management Instrumentation",
+        "rel": "Use",
+        "obj": "PowerShell script"
+      },
+      {
+        "sub": "Windows Management Instrumentation",
+        "rel": "Use",
+        "obj": "Scheduled task"
+      },
+      {
+        "sub": "PowerShell script",
+        "rel": "Modify",
+        "obj": "Scheduled task"
+      },
+      {
+        "sub": "Scheduled task",
+        "rel": "Operate",
+        "obj": "Remote system"
+      },
+      {
+        "sub": "Remote system",
+        "rel": "Belong to",
+        "obj": "Network"
+      },
+      {
+        "sub": "Lateral movement",
+        "rel": "Enable",
+        "obj": "Expanded access"
+      },
+      {
+        "sub": "7-zip",
+        "rel": "Use",
+        "obj": "Compress"
+      },
+      {
+        "sub": "7-zip",
+        "rel": "Use",
+        "obj": "Wildcard extensions"
+      },
+      {
+        "sub": "*.rtf",
+        "rel": "Has value",
+        "obj": "Document"
+      },
+      {
+        "sub": "*.doc",
+        "rel": "Has value",
+        "obj": "Document"
+      },
+      {
+        "sub": "*.ppt",
+        "rel": "Has value",
+        "obj": "Document"
+      },
+      {
+        "sub": "c:\\windows\\temp\\fix",
+        "rel": "Locate at",
+        "obj": "User-specific locations"
+      },
+      {
+        "sub": "c:\\windows\\temp\\fix",
+        "rel": "Has hostname",
+        "obj": "fix"
+      },
+      {
+        "sub": "Encrypted archive",
+        "rel": "Has value",
+        "obj": "Targeted user name"
+      },
+      {
+        "sub": "Encrypted archive",
+        "rel": "Store at",
+        "obj": "c:\\windows\\temp\\fix"
+      },
+      {
+        "sub": "Encrypted archive",
+        "rel": "Construct",
+        "obj": "Named after targeted users"
+      },
+      {
+        "sub": "C2 Infrastructure",
+        "rel": "Has URL",
+        "obj": "DEEP PANDA-controlled C2 infrastructure"
+      },
+      {
+        "sub": "PowerShell script",
+        "rel": "Use",
+        "obj": "C2 Infrastructure"
+      },
+      {
+        "sub": "PowerShell script",
+        "rel": "Operate",
+        "obj": "C2 communication"
+      },
+      {
+        "sub": "C2 communication",
+        "rel": "Use",
+        "obj": "HTTPS"
+      },
+      {
+        "sub": "C2 communication",
+        "rel": "Use",
+        "obj": "custom headers"
+      },
+      {
+        "sub": "C2 communication",
+        "rel": "Use",
+        "obj": "cookies"
+      },
+      {
+        "sub": "C2 communication",
+        "rel": "Modify",
+        "obj": "normal web traffic"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "Control",
+        "obj": "C2 infrastructure"
+      },
+      {
+        "sub": "7-zip",
+        "rel": "Use",
+        "obj": "Encrypt"
+      },
+      {
+        "sub": "c:\\windows\\temp\\fix",
+        "rel": "Locate at",
+        "obj": "Directory"
+      },
+      {
+        "sub": "c:\\windows\\temp\\fix",
+        "rel": "Has value",
+        "obj": "Compressed and encrypted data"
+      },
+      {
+        "sub": "\"uinfw\"",
+        "rel": "Has value",
+        "obj": "Password used for encryption"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has vulnerability",
+        "obj": "Exfiltration via network shares"
+      },
+      {
+        "sub": "Network share",
+        "rel": "Use",
+        "obj": "Transfer of compressed files"
+      }
+    ]
+  }
+}

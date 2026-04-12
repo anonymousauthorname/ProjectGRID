@@ -1,0 +1,210 @@
+{
+  "sample_id": "malkg__201411SymantecCloudyOmega.txt",
+  "sample_index": 106,
+  "source": "malkg",
+  "file_name": "201411SymantecCloudyOmega.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CloudyOmega",
+        "type": "Campaign"
+      },
+      {
+        "name": "Ichitaro",
+        "type": "Software"
+      },
+      {
+        "name": "Bloodhound.Exploit.557",
+        "type": "Indicator"
+      },
+      {
+        "name": "Backdoor.Emdivi",
+        "type": "Malware"
+      },
+      {
+        "name": "Backdoor.Korplug",
+        "type": "Malware"
+      },
+      {
+        "name": "Backdoor.ZXshell",
+        "type": "Malware"
+      },
+      {
+        "name": "CVE-2012-5054",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "CVE-2013-0634",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Adobe Flash Player",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Word",
+        "type": "Software"
+      },
+      {
+        "name": "Apache",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Microsoft Internet Information Services (IIS)",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Hidden Lynx",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "LadyBoyle",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Japanese office suite software",
+        "type": "Software"
+      },
+      {
+        "name": "Japanese websites",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "cloud-hosting service",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Japan",
+        "type": "Location"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CloudyOmega",
+        "rel": "TARGETS",
+        "obj": "Ichitaro"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "USES",
+        "obj": "Backdoor.Emdivi"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "USES",
+        "obj": "Bloodhound.Exploit.557"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "USES",
+        "obj": "Backdoor.Korplug"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "USES",
+        "obj": "Backdoor.ZXshell"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2012-5054"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2013-0634"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "EXPLOITS",
+        "obj": "Adobe Flash Player"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "communicates with",
+        "obj": "Microsoft Internet Information Services (IIS)"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "communicates with",
+        "obj": "Apache"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "communicates with",
+        "obj": "Japanese websites"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "has communication channel with",
+        "obj": "Hidden Lynx"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "has communication channel with",
+        "obj": "LadyBoyle"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "COMPROMISES",
+        "obj": "cloud-hosting service"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "steals credentials from",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "DETECTS",
+        "obj": "VirtualMachine"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "DETECTS",
+        "obj": "Debugger"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "DETECTS",
+        "obj": "Sandbox"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "is based on",
+        "obj": "Type T"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "is based on",
+        "obj": "Type S"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "TARGETS",
+        "obj": "Japanese office suite software"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "operates in",
+        "obj": "Japan"
+      }
+    ]
+  }
+}

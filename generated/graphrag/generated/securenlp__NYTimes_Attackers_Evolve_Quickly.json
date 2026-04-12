@@ -1,0 +1,274 @@
+{
+  "sample_id": "securenlp__NYTimes_Attackers_Evolve_Quickly",
+  "sample_index": 193,
+  "source": "securenlp",
+  "file_name": "NYTimes_Attackers_Evolve_Quickly",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "NEW YORK TIMES",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "APT12",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "AUMLIB",
+        "type": "MALWARE"
+      },
+      {
+        "name": "IXESHE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BACKDOOR.APT.AUMLIB",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BACKDOOR.APT.IXESHE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "ECONOMIC POLICY ORGANIZATION",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "TAIWAN",
+        "type": "GEO"
+      },
+      {
+        "name": "CHINA",
+        "type": "GEO"
+      },
+      {
+        "name": "THE NEW YORK TIMES BREACH",
+        "type": "EVENT"
+      },
+      {
+        "name": "AUMLIB UPDATE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "IXESHE UPDATE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "APT12 REACTIVATION",
+        "type": "EVENT"
+      },
+      {
+        "name": "NED MORAN",
+        "type": "PERSON"
+      },
+      {
+        "name": "NART VILLENEUVE",
+        "type": "PERSON"
+      },
+      {
+        "name": "ACMETOY",
+        "type": "LOCATION"
+      },
+      {
+        "name": "DOCUMENTS.MYPICTURE.INFO",
+        "type": "LOCATION"
+      },
+      {
+        "name": "WWW.DOCUMENTS.MYPICTURE.INFO",
+        "type": "LOCATION"
+      },
+      {
+        "name": "THREAT RESEARCH",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "NEW YORK TIMES"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "AUMLIB"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "IXESHE"
+      },
+      {
+        "sub": "AUMLIB",
+        "rel": "related_to",
+        "obj": "ECONOMIC POLICY ORGANIZATION"
+      },
+      {
+        "sub": "IXESHE",
+        "rel": "related_to",
+        "obj": "TAIWAN"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "CHINA"
+      },
+      {
+        "sub": "THE NEW YORK TIMES BREACH",
+        "rel": "related_to",
+        "obj": "APT12 REACTIVATION"
+      },
+      {
+        "sub": "AUMLIB UPDATE",
+        "rel": "related_to",
+        "obj": "AUMLIB"
+      },
+      {
+        "sub": "IXESHE UPDATE",
+        "rel": "related_to",
+        "obj": "IXESHE"
+      },
+      {
+        "sub": "APT12 REACTIVATION",
+        "rel": "related_to",
+        "obj": "AUMLIB UPDATE"
+      },
+      {
+        "sub": "APT12 REACTIVATION",
+        "rel": "related_to",
+        "obj": "IXESHE UPDATE"
+      },
+      {
+        "sub": "NED MORAN",
+        "rel": "related_to",
+        "obj": "THREAT RESEARCH"
+      },
+      {
+        "sub": "NART VILLENEUVE",
+        "rel": "related_to",
+        "obj": "THREAT RESEARCH"
+      },
+      {
+        "sub": "ACMETOY",
+        "rel": "related_to",
+        "obj": "AUMLIB"
+      },
+      {
+        "sub": "DOCUMENTS.MYPICTURE.INFO",
+        "rel": "related_to",
+        "obj": "AUMLIB"
+      },
+      {
+        "sub": "WWW.DOCUMENTS.MYPICTURE.INFO",
+        "rel": "related_to",
+        "obj": "AUMLIB"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "THE NEW YORK TIMES BREACH"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "NEW YORK TIMES"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "AUMLIB"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "IXESHE"
+      },
+      {
+        "sub": "AUMLIB",
+        "rel": "related_to",
+        "obj": "ECONOMIC POLICY ORGANIZATION"
+      },
+      {
+        "sub": "IXESHE",
+        "rel": "related_to",
+        "obj": "TAIWAN"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "CHINA"
+      },
+      {
+        "sub": "THE NEW YORK TIMES BREACH",
+        "rel": "related_to",
+        "obj": "APT12 REACTIVATION"
+      },
+      {
+        "sub": "AUMLIB UPDATE",
+        "rel": "related_to",
+        "obj": "AUMLIB"
+      },
+      {
+        "sub": "IXESHE UPDATE",
+        "rel": "related_to",
+        "obj": "IXESHE"
+      },
+      {
+        "sub": "APT12 REACTIVATION",
+        "rel": "related_to",
+        "obj": "AUMLIB UPDATE"
+      },
+      {
+        "sub": "APT12 REACTIVATION",
+        "rel": "related_to",
+        "obj": "IXESHE UPDATE"
+      },
+      {
+        "sub": "NED MORAN",
+        "rel": "related_to",
+        "obj": "THREAT RESEARCH"
+      },
+      {
+        "sub": "NART VILLENEUVE",
+        "rel": "related_to",
+        "obj": "THREAT RESEARCH"
+      },
+      {
+        "sub": "ACMETOY",
+        "rel": "related_to",
+        "obj": "AUMLIB"
+      },
+      {
+        "sub": "DOCUMENTS.MYPICTURE.INFO",
+        "rel": "related_to",
+        "obj": "AUMLIB"
+      },
+      {
+        "sub": "WWW.DOCUMENTS.MYPICTURE.INFO",
+        "rel": "related_to",
+        "obj": "AUMLIB"
+      },
+      {
+        "sub": "APT12",
+        "rel": "related_to",
+        "obj": "THE NEW YORK TIMES BREACH"
+      }
+    ]
+  }
+}

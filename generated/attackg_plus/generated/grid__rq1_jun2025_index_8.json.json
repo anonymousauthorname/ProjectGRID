@@ -1,0 +1,387 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_8.json",
+  "sample_index": 247,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_8.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Adobe Flash",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerable Software"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Open technical databases"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Websites"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Locate at",
+        "obj": "Public-facing applications"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Construct",
+        "obj": "Targeted attack vector"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Modify",
+        "obj": "Information about victim organization"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Detect",
+        "obj": "Systems vulnerable to Flash-based exploits"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "C2 Endpoint"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Malicious Flash Object"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "Compromised Website"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Malicious Flash Object"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Web Server"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Command and Control Endpoint"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Flash"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Microsoft Excel document"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Malformed Flash object"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Victim network"
+      },
+      {
+        "sub": "Microsoft Excel document",
+        "rel": "Has URL",
+        "obj": "Malicious document"
+      },
+      {
+        "sub": "Malformed Flash object",
+        "rel": "Modify",
+        "obj": "Remote code execution"
+      },
+      {
+        "sub": "Flash",
+        "rel": "Belong to",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Flash Player"
+      },
+      {
+        "sub": "Flash Player",
+        "rel": "Has vulnerability",
+        "obj": "Use-after-free"
+      },
+      {
+        "sub": "Flash Player",
+        "rel": "Has vulnerability",
+        "obj": "Remote code execution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Download from",
+        "obj": "Compromised website"
+      },
+      {
+        "sub": "Compromised website",
+        "rel": "Has URL",
+        "obj": "URL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Remote code execution payload"
+      },
+      {
+        "sub": "Remote code execution payload",
+        "rel": "Modify",
+        "obj": "System"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Victim's system"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Establish",
+        "obj": "Persistent backdoor"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Operate",
+        "obj": "Backdoor payload"
+      },
+      {
+        "sub": "Initial payload",
+        "rel": "Use",
+        "obj": "Flash exploit"
+      },
+      {
+        "sub": "Initial payload",
+        "rel": "Modify",
+        "obj": "Download and install additional components"
+      },
+      {
+        "sub": "Additional components",
+        "rel": "Operate",
+        "obj": "Automatically upon system boot or logon"
+      },
+      {
+        "sub": "Additional components",
+        "rel": "Have value",
+        "obj": "Continued access to the victim environment"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Obfuscate payload"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Legitimate software processes"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Mimic",
+        "obj": "Normal user behavior"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Operate",
+        "obj": "Within trusted application contexts"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Encrypted channels"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Apply",
+        "obj": "Data obfuscation"
+      },
+      {
+        "sub": "Compromised System",
+        "rel": "Use",
+        "obj": "Native Operating System Tools"
+      },
+      {
+        "sub": "Compromised System",
+        "rel": "Operate",
+        "obj": "Network Shares"
+      },
+      {
+        "sub": "Compromised System",
+        "rel": "Operate",
+        "obj": "System Services"
+      },
+      {
+        "sub": "Compromised System",
+        "rel": "Operate",
+        "obj": "Open Ports"
+      },
+      {
+        "sub": "Compromised System",
+        "rel": "Detect",
+        "obj": "Internal Network Structure"
+      },
+      {
+        "sub": "Compromised System",
+        "rel": "Detect",
+        "obj": "Available Resources"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Remote service"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Legitimate remote access tool"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Exploit",
+        "obj": "Open network service"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gain access to",
+        "obj": "Additional system"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Expand footprint",
+        "obj": "Network"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Input capture"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Screen capture"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Collect",
+        "obj": "User credentials"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Collect",
+        "obj": "System configurations"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Collect",
+        "obj": "Files stored on local drives"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "Compromised website"
+      },
+      {
+        "sub": "Malicious payload",
+        "rel": "Connect to",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "C2 communication",
+        "rel": "Use",
+        "obj": "Encrypted channels"
+      },
+      {
+        "sub": "C2 communication",
+        "rel": "Use",
+        "obj": "Dynamic resolution"
+      },
+      {
+        "sub": "C2 traffic",
+        "rel": "Hide within",
+        "obj": "Legitimate network traffic"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "Protocol tunneling"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Command and control channel"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Encrypted data transfer"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Scheduled transfers"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Data"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Compressed and encrypted data"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Small, frequent bursts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Detect",
+        "obj": "Network monitoring tools"
+      }
+    ]
+  }
+}

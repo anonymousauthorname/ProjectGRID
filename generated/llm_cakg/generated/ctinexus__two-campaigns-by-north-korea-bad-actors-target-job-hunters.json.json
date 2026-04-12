@@ -1,0 +1,136 @@
+{
+  "sample_id": "ctinexus__two-campaigns-by-north-korea-bad-actors-target-job-hunters.json",
+  "sample_index": 52,
+  "source": "ctinexus",
+  "file_name": "two-campaigns-by-north-korea-bad-actors-target-job-hunters.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Contagious Interview",
+        "type": "Entity"
+      },
+      {
+        "name": "Wagemole",
+        "type": "Entity"
+      },
+      {
+        "name": "Democratic People's Republic of Korea",
+        "type": "Entity"
+      },
+      {
+        "name": "North Korea",
+        "type": "Entity"
+      },
+      {
+        "name": "state-sponsored threat actor",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "software developers",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "interview process",
+        "type": "Entity"
+      },
+      {
+        "name": "unauthorized employment",
+        "type": "Entity"
+      },
+      {
+        "name": "financial gain",
+        "type": "Entity"
+      },
+      {
+        "name": "espionage",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Contagious Interview",
+        "rel": "uses",
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "poses as",
+        "obj": "employers"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "targets",
+        "obj": "software developers"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "lures",
+        "obj": "software developers"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "leads to",
+        "obj": "malware installation"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "results in",
+        "obj": "theft"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "is run by",
+        "obj": "North Korea state-sponsored threat actor"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "targets",
+        "obj": "organizations in the US and other parts of the world"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "seeks",
+        "obj": "unauthorized employment"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "has potential for",
+        "obj": "financial gain"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "has potential for",
+        "obj": "espionage"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "is run by",
+        "obj": "North Korea state-sponsored threat actor"
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "sample_id": "casie__10150.json",
+  "sample_index": 48,
+  "source": "casie",
+  "file_name": "10150.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Management Engine",
+        "type": "Software"
+      },
+      {
+        "name": "MFS",
+        "type": "Software"
+      },
+      {
+        "name": "Intel",
+        "type": "Organization"
+      },
+      {
+        "name": "Positive Technologies",
+        "type": "Organization"
+      },
+      {
+        "name": "CVE-2018-3655",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Intel-SA-00125",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Active Management Technology",
+        "type": "Tool"
+      },
+      {
+        "name": "JTAG debugger",
+        "type": "Tool"
+      },
+      {
+        "name": "Intel Integrity Key",
+        "type": "Indicator"
+      },
+      {
+        "name": "Non-Intel Integrity Key",
+        "type": "Indicator"
+      },
+      {
+        "name": "Intel Confidentiality Key",
+        "type": "Indicator"
+      },
+      {
+        "name": "Non-Intel Confidentiality Key",
+        "type": "Indicator"
+      },
+      {
+        "name": "Purism",
+        "type": "Organization"
+      },
+      {
+        "name": "Google",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Management Engine",
+        "rel": "has file system",
+        "obj": "MFS"
+      },
+      {
+        "sub": "Positive Technologies",
+        "rel": "DISCOVERED",
+        "obj": "CVE-2018-3655"
+      },
+      {
+        "sub": "Positive Technologies",
+        "rel": "DISCOVERED",
+        "obj": "Intel-SA-00125"
+      },
+      {
+        "sub": "Management Engine",
+        "rel": "ENABLES",
+        "obj": "Active Management Technology"
+      },
+      {
+        "sub": "Management Engine",
+        "rel": "enables access to",
+        "obj": "JTAG debugger"
+      },
+      {
+        "sub": "Management Engine",
+        "rel": "USES",
+        "obj": "Intel Integrity Key"
+      },
+      {
+        "sub": "Management Engine",
+        "rel": "USES",
+        "obj": "Non-Intel Integrity Key"
+      },
+      {
+        "sub": "Management Engine",
+        "rel": "USES",
+        "obj": "Intel Confidentiality Key"
+      },
+      {
+        "sub": "Management Engine",
+        "rel": "USES",
+        "obj": "Non-Intel Confidentiality Key"
+      },
+      {
+        "sub": "Intel",
+        "rel": "released update for",
+        "obj": "Intel-SA-00125"
+      },
+      {
+        "sub": "Purism",
+        "rel": "AVOIDS",
+        "obj": "Management Engine"
+      },
+      {
+        "sub": "Google",
+        "rel": "works to remove",
+        "obj": "Management Engine"
+      }
+    ]
+  }
+}

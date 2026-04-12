@@ -1,0 +1,481 @@
+{
+  "sample_id": "casie__10333.json",
+  "sample_index": 24,
+  "source": "casie",
+  "file_name": "10333.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Cybercriminals",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malicious URLs",
+        "type": "url",
+        "alias": [
+          "phishing URLs",
+          "malicious URLs and deceptive domains",
+          "fraudulent domains",
+          "phishing domains"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "deceptive domains",
+        "type": "domain-name",
+        "alias": [
+          "deceptive domains",
+          "phishing URLs",
+          "fraudulent domains",
+          "phishing domains",
+          "phishing sites",
+          "phishing website",
+          "spoofing UK government website"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "phishing attacks",
+        "type": "campaign",
+        "alias": [
+          "phishing",
+          "phishing and other forms of cyber-attack",
+          "phishing attacks"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "government tax collectors",
+        "type": "identity",
+        "alias": [
+          "taxman",
+          "HMRC"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "emails claiming to be from the taxman",
+        "type": "email-address",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "bank details",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "personal information",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "UK's National Cyber Crime Centre",
+        "type": "security-product",
+        "alias": [
+          "NCSC",
+          "the internet security arm of GCHQ"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Active Cyber Defence programme",
+        "type": "course-of-action",
+        "alias": [
+          "ACD programme"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "fraudulent domains",
+        "type": "domain-name",
+        "alias": [
+          "phishing domains"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "phishing URL",
+        "type": "url",
+        "alias": [
+          "phishing websites",
+          "phishing sites",
+          "malicious links"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "HMRC",
+        "type": "identity",
+        "alias": [
+          "HMRC"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "tax refund scams",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "121,479 phishing sites hosted in the UK",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "18,067 worldwide spoofing UK government",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malicious IPs",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Dr Ian Levy",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "UK-hosted sites",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "42 hours",
+        "type": "generic-noun",
+        "alias": [
+          "almost two days"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "10 hours",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "taxman",
+        "type": "identity",
+        "alias": [
+          "taxman",
+          "taxman’s emails"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "NCSC report: Active Cyber Defence - One Year On",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "web-inject attacks",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "crooks",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "cybercriminal campaigns",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "internet",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "action",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cybercriminals",
+        "rel": "finding it more difficult to maintain",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "malicious URLs and deceptive domains",
+        "special_factuality": []
+      },
+      {
+        "sub": "malicious URLs and deceptive domains",
+        "rel": "used for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "phishing attacks",
+        "special_factuality": []
+      },
+      {
+        "sub": "action",
+        "rel": "being taken to remove",
+        "rel_type": [
+          "removes"
+        ],
+        "obj": "malicious URLs and deceptive domains",
+        "special_factuality": []
+      },
+      {
+        "sub": "phishing attacks",
+        "rel": "means of performing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber-attacks",
+        "special_factuality": []
+      },
+      {
+        "sub": "deceptive domains",
+        "rel": "look like",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "authentic services",
+        "special_factuality": []
+      },
+      {
+        "sub": "cyber-attackers",
+        "rel": "imitated",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "government tax collectors",
+        "special_factuality": []
+      },
+      {
+        "sub": "emails claiming to be from the taxman",
+        "rel": "claim to be from",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "government tax collectors",
+        "special_factuality": []
+      },
+      {
+        "sub": "victim",
+        "rel": "loses",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "bank details",
+        "special_factuality": []
+      },
+      {
+        "sub": "victim",
+        "rel": "has personal information compromised",
+        "rel_type": [
+          "leaks"
+        ],
+        "obj": "personal information",
+        "special_factuality": []
+      },
+      {
+        "sub": "UK's National Cyber Crime Centre",
+        "rel": "launched",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Active Cyber Defence programme",
+        "special_factuality": []
+      },
+      {
+        "sub": "Active Cyber Defence programme",
+        "rel": "reduces lifespan of",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "phishing URL",
+        "special_factuality": []
+      },
+      {
+        "sub": "Active Cyber Defence programme",
+        "rel": "reduced number of",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "phishing attacks by UK-hosted sites",
+        "special_factuality": []
+      },
+      {
+        "sub": "NCSC report: Active Cyber Defence - One Year On",
+        "rel": "laid out",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "121,479 phishing sites hosted in the UK",
+        "special_factuality": []
+      },
+      {
+        "sub": "Active Cyber Defence programme",
+        "rel": "taken down",
+        "rel_type": [
+          "removes"
+        ],
+        "obj": "121,479 phishing sites hosted in the UK",
+        "special_factuality": []
+      },
+      {
+        "sub": "Active Cyber Defence programme",
+        "rel": "taken down",
+        "rel_type": [
+          "removes"
+        ],
+        "obj": "18,067 worldwide spoofing UK government",
+        "special_factuality": []
+      },
+      {
+        "sub": "18,067 worldwide spoofing UK government",
+        "rel": "purporting to be",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "HMRC",
+        "special_factuality": []
+      },
+      {
+        "sub": "18,067 worldwide spoofing UK government",
+        "rel": "linked to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "emails claiming to be from the taxman",
+        "special_factuality": []
+      },
+      {
+        "sub": "Active Cyber Defence programme",
+        "rel": "reducing time active",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "phishing domains",
+        "special_factuality": []
+      },
+      {
+        "sub": "phishing websites",
+        "rel": "remained active for",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "42 hours",
+        "special_factuality": []
+      },
+      {
+        "sub": "phishing websites",
+        "rel": "remained active for",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "10 hours",
+        "special_factuality": []
+      },
+      {
+        "sub": "crooks",
+        "rel": "work harder for",
+        "rel_type": [
+          "cooperates-with"
+        ],
+        "obj": "cybercriminal campaigns",
+        "special_factuality": []
+      },
+      {
+        "sub": "Dr Ian Levy",
+        "rel": "described",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Active Cyber Defence programme",
+        "special_factuality": []
+      },
+      {
+        "sub": "malicious IPs",
+        "rel": "hosted in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "practically every country",
+        "special_factuality": []
+      },
+      {
+        "sub": "web-inject attacks",
+        "rel": "not connected to",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "UK's IP space",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "Active Cyber Defence programme",
+        "rel": "aims to increase risk of",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "cybercriminals",
+        "special_factuality": []
+      },
+      {
+        "sub": "NCSC",
+        "rel": "protecting",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "UK users",
+        "special_factuality": []
+      },
+      {
+        "sub": "cybercriminal campaigns",
+        "rel": "gain traction",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "phishing domains",
+        "special_factuality": [
+          "negated"
+        ]
+      }
+    ]
+  }
+}

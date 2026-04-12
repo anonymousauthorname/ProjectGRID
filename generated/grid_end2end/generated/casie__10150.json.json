@@ -1,0 +1,528 @@
+{
+  "sample_id": "casie__10150.json",
+  "sample_index": 48,
+  "source": "casie",
+  "file_name": "10150.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Intel",
+        "type": "other",
+        "alias": [
+          "Intel"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Management Engine (ME)",
+        "type": "hacker-tool",
+        "alias": [
+          "the subsystem",
+          "ME",
+          "the utility",
+          "ME and its components",
+          "ME’s components"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "MFS file system",
+        "type": "file",
+        "alias": [
+          "MFS",
+          "the file system (MFS)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "researchers at Positive Technologies",
+        "type": "identity",
+        "alias": [
+          "Positive Technologies",
+          "Positive Technologies expert Dmitry Sklyarov"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "security flaw",
+        "type": "vulnerability",
+        "alias": [
+          "one in 2017",
+          "another one",
+          "the vulnerability",
+          "vulnerabilities in ME"
+        ],
+        "mother entity": [
+          "Management Engine (ME)"
+        ]
+      },
+      {
+        "name": "Intel-SA-00125",
+        "type": "indicator",
+        "alias": [
+          "vulnerability CVE-2018-3655",
+          "advisory Intel-SA-00125"
+        ],
+        "mother entity": [
+          "security flaw"
+        ]
+      },
+      {
+        "name": "USB",
+        "type": "generic-noun",
+        "alias": [
+          "the USB"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "firmware",
+        "type": "general-software",
+        "alias": [
+          "the firmware",
+          "Intel firmware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Intel CPU owners",
+        "type": "identity",
+        "alias": [
+          "owners",
+          "system owners"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Active Management Technology (AMT)",
+        "type": "hacker-tool",
+        "alias": [
+          "Intel's Active Management Technology (AMT)"
+        ],
+        "mother entity": [
+          "Management Engine (ME)"
+        ]
+      },
+      {
+        "name": "network interface",
+        "type": "network-traffic",
+        "alias": [
+          "ME’s network interface"
+        ],
+        "mother entity": [
+          "Management Engine (ME)"
+        ]
+      },
+      {
+        "name": "memory",
+        "type": "memory-address",
+        "alias": [
+          "ME’s memory"
+        ],
+        "mother entity": [
+          "Management Engine (ME)"
+        ]
+      },
+      {
+        "name": "operating system",
+        "type": "general-software",
+        "alias": [
+          "ME’s operating system"
+        ],
+        "mother entity": [
+          "Management Engine (ME)"
+        ]
+      },
+      {
+        "name": "Intel Integrity Key",
+        "type": "credential-value",
+        "alias": [
+          "MFS uses to secure data"
+        ],
+        "mother entity": [
+          "MFS file system"
+        ]
+      },
+      {
+        "name": "Non-Intel Integrity Key",
+        "type": "credential-value",
+        "alias": [
+          "Non-Intel Keys"
+        ],
+        "mother entity": [
+          "MFS file system"
+        ]
+      },
+      {
+        "name": "Intel Confidentiality Key",
+        "type": "credential-value",
+        "alias": [
+          "Confidentiality Key"
+        ],
+        "mother entity": [
+          "MFS file system"
+        ]
+      },
+      {
+        "name": "Non-Intel Confidentiality Key",
+        "type": "credential-value",
+        "alias": [
+          "Non-Intel Confidentiality Key"
+        ],
+        "mother entity": [
+          "MFS file system"
+        ]
+      },
+      {
+        "name": "SVN",
+        "type": "credential-value",
+        "alias": [
+          "updated SVN value"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "immutable non-Intel root secret",
+        "type": "credential-value",
+        "alias": [
+          "latter value",
+          "unique to each platform"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "JTAG debugger",
+        "type": "hacker-tool",
+        "alias": [
+          "JTAG debugger"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Purism",
+        "type": "identity",
+        "alias": [
+          "privacy-focused Librem notebooks"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Google",
+        "type": "identity",
+        "alias": [
+          "Intel processors it uses"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Intel released in 2017 (firmware update)",
+        "type": "course-of-action",
+        "alias": [
+          "firmware update"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Intel",
+        "rel": "was overdue for serious vulnerabilities in",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Management Engine (ME)"
+      },
+      {
+        "sub": "researchers at Positive Technologies",
+        "rel": "revealed a new security flaw in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "security flaw"
+      },
+      {
+        "sub": "security flaw",
+        "rel": "could let attackers compromise",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "MFS file system"
+      },
+      {
+        "sub": "Intel",
+        "rel": "released updates to address",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "security flaw"
+      },
+      {
+        "sub": "Intel CPU owners",
+        "rel": "should make sure their firmware is up-to-date",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "firmware"
+      },
+      {
+        "sub": "ME",
+        "rel": "is a repeated source of problems for",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Intel"
+      },
+      {
+        "sub": "ME",
+        "rel": "allows IT managers to remotely access",
+        "rel_type": [
+          "controls"
+        ],
+        "obj": "company PCs"
+      },
+      {
+        "sub": "ME",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "network interface"
+      },
+      {
+        "sub": "ME",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "memory"
+      },
+      {
+        "sub": "ME",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "operating system"
+      },
+      {
+        "sub": "ME",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "MFS file system"
+      },
+      {
+        "sub": "researchers at Positive Technologies",
+        "rel": "discovered numerous vulnerabilities in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "ME"
+      },
+      {
+        "sub": "security flaw (in 2017)",
+        "rel": "allowed full takeover of ME via",
+        "rel_type": [
+          "compromises",
+          "uses"
+        ],
+        "obj": "USB"
+      },
+      {
+        "sub": "another one",
+        "rel": "allows someone with physical access to compromise",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "ME"
+      },
+      {
+        "sub": "another one",
+        "rel": "manipulate the state of",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "MFS file system"
+      },
+      {
+        "sub": "another one",
+        "rel": "extract important secrets from",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "MFS file system"
+      },
+      {
+        "sub": "another one",
+        "rel": "add files, delete files and change their protection attributes on",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "MFS file system"
+      },
+      {
+        "sub": "Positive Technologies",
+        "rel": "explained how someone with physical access could bypass",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "security flaw (2017 patch)"
+      },
+      {
+        "sub": "Positive Technologies",
+        "rel": "discovered",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "security flaw (CVE-2018-3655)"
+      },
+      {
+        "sub": "security flaw (CVE-2018-3655)",
+        "rel": "described in",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "Intel-SA-00125"
+      },
+      {
+        "sub": "Positive Technologies",
+        "rel": "found that Non-Intel Keys are derived from",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "SVN"
+      },
+      {
+        "sub": "Positive Technologies",
+        "rel": "found that Non-Intel Keys are derived from",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "immutable non-Intel root secret"
+      },
+      {
+        "sub": "JTAG debugger",
+        "rel": "was used to enable",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the JTAG debugger"
+      },
+      {
+        "sub": "JTAG debugger",
+        "rel": "was used to obtain",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "immutable non-Intel root secret"
+      },
+      {
+        "sub": "Knowledge of immutable root secret",
+        "rel": "enables calculating the values of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Non-Intel Keys"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "could calculate",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Non-Intel Integrity Key",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Attackers",
+        "rel": "could calculate",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Non-Intel Confidentiality Key",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Attackers",
+        "rel": "compromise",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "MFS security mechanisms",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Intel",
+        "rel": "released",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Intel-SA-00125"
+      },
+      {
+        "sub": "companies",
+        "rel": "questioning or outright banning use of",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "ME",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "Purism",
+        "rel": "avoids",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "ME",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "Google",
+        "rel": "working to remove",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "ME",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "security flaw",
+        "rel": "raised concerns among",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "consumers"
+      }
+    ]
+  }
+}

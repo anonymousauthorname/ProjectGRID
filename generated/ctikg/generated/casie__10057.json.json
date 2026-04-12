@@ -1,0 +1,197 @@
+{
+  "sample_id": "casie__10057.json",
+  "sample_index": 41,
+  "source": "casie",
+  "file_name": "10057.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "attacker",
+        "rel": "can exploit",
+        "obj": "baseband flaws"
+      },
+      {
+        "sub": "attacker",
+        "rel": "can eavesdrop on",
+        "obj": "mobile communications"
+      },
+      {
+        "sub": "attacker",
+        "rel": "can take over",
+        "obj": "device"
+      },
+      {
+        "sub": "attacker",
+        "rel": "can send",
+        "obj": "sms messages to premium numbers"
+      },
+      {
+        "sub": "attacker",
+        "rel": "can exfiltrate",
+        "obj": "data"
+      },
+      {
+        "sub": "baseband flaws",
+        "rel": "can be used to",
+        "obj": "eavesdrop mobile communications"
+      },
+      {
+        "sub": "baseband flaws",
+        "rel": "can be used to",
+        "obj": "take over the device"
+      },
+      {
+        "sub": "baseband flaws",
+        "rel": "can be used to",
+        "obj": "make calls"
+      },
+      {
+        "sub": "baseband flaws",
+        "rel": "can be used to",
+        "obj": "send SMS messages to premium numbers"
+      },
+      {
+        "sub": "baseband flaws",
+        "rel": "can be used to",
+        "obj": "exfiltrate data"
+      },
+      {
+        "sub": "affected firmware",
+        "rel": "is present in",
+        "obj": "Huawei Honor smartphone"
+      },
+      {
+        "sub": "Huawei Honor smartphone",
+        "rel": "has",
+        "obj": "P10"
+      },
+      {
+        "sub": "Huawei Honor smartphone",
+        "rel": "has",
+        "obj": "Huawei Mate 9"
+      },
+      {
+        "sub": "Huawei Honor smartphone",
+        "rel": "has",
+        "obj": "Honor 9"
+      },
+      {
+        "sub": "Huawei Honor smartphone",
+        "rel": "has",
+        "obj": "7"
+      },
+      {
+        "sub": "Huawei Honor smartphone",
+        "rel": "has",
+        "obj": "5c"
+      },
+      {
+        "sub": "Huawei Honor smartphone",
+        "rel": "has",
+        "obj": "6"
+      },
+      {
+        "sub": "Weinmann",
+        "rel": "presented",
+        "obj": "baseband flaws"
+      },
+      {
+        "sub": "Kirin application processor",
+        "rel": "has",
+        "obj": "baseband flaws"
+      },
+      {
+        "sub": "attacker",
+        "rel": "sends",
+        "obj": "packets"
+      },
+      {
+        "sub": "packets",
+        "rel": "trigger",
+        "obj": "stack buffer overflow"
+      },
+      {
+        "sub": "stack buffer overflow",
+        "rel": "causes",
+        "obj": "crash"
+      },
+      {
+        "sub": "attacker",
+        "rel": "gains",
+        "obj": "persistence"
+      },
+      {
+        "sub": "attacker",
+        "rel": "installs",
+        "obj": "rootkit"
+      },
+      {
+        "sub": "attacker",
+        "rel": "has",
+        "obj": "physical access"
+      },
+      {
+        "sub": "attacker",
+        "rel": "installs",
+        "obj": "tool"
+      },
+      {
+        "sub": "tool",
+        "rel": "is installed on",
+        "obj": "firmware"
+      },
+      {
+        "sub": "key material",
+        "rel": "is stored",
+        "obj": "carrier"
+      },
+      {
+        "sub": "key material",
+        "rel": "is stored",
+        "obj": "SIM card"
+      },
+      {
+        "sub": "key material",
+        "rel": "is required for",
+        "obj": "mutual authentication"
+      },
+      {
+        "sub": "Weinmann",
+        "rel": "used",
+        "obj": "VxWorks build environment"
+      },
+      {
+        "sub": "Weinmann",
+        "rel": "used",
+        "obj": "VxWorks 7.0"
+      },
+      {
+        "sub": "Weinmann",
+        "rel": "stated",
+        "obj": "Higher severity findings are in the pipeline"
+      },
+      {
+        "sub": "Weinmann",
+        "rel": "stated",
+        "obj": "finding is upcoming"
+      }
+    ]
+  }
+}

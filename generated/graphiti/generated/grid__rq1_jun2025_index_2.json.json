@@ -1,0 +1,265 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_2.json",
+  "sample_index": 212,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_2.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "AdShield",
+        "type": "Organization"
+      },
+      {
+        "name": "Netshield",
+        "type": "Organization"
+      },
+      {
+        "name": "OpenDNS",
+        "type": "Organization"
+      },
+      {
+        "name": "Adshield.pro",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "transmissionbt.org",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "netshieldkit.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "opendns.info",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "142.4.214.15",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "185.201.47.42",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "176.31.103.74",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "37.59.58.122",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "185.192.111.210",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "update.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "flock.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "data.pak",
+        "type": "Indicator"
+      },
+      {
+        "name": "lic.data",
+        "type": "Indicator"
+      },
+      {
+        "name": "QtWinExtras.dll",
+        "type": "Indicator"
+      },
+      {
+        "name": "XMRig",
+        "type": "Malware"
+      },
+      {
+        "name": "bxsdk64.dll",
+        "type": "Indicator"
+      },
+      {
+        "name": "Win64.Patched.netyyk",
+        "type": "Malware"
+      },
+      {
+        "name": "Win32.DNSChanger.aaox",
+        "type": "Malware"
+      },
+      {
+        "name": "Win64.Miner.gen",
+        "type": "Malware"
+      },
+      {
+        "name": "HEUR:Trojan.Multi.Miner.gen",
+        "type": "Malware"
+      },
+      {
+        "name": "Transmission",
+        "type": "Tool"
+      },
+      {
+        "name": "Monero",
+        "type": "Malware"
+      },
+      {
+        "name": "DNSChanger",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Anton Kuzmenko",
+        "type": "Person"
+      },
+      {
+        "name": "Kaspersky Security Network",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Adshield.pro",
+        "rel": "IMPERSONATES",
+        "obj": "AdShield"
+      },
+      {
+        "sub": "Adshield.pro",
+        "rel": "DELIVERS",
+        "obj": "Win32.DNSChanger.aaox"
+      },
+      {
+        "sub": "Adshield.pro",
+        "rel": "DELIVERS",
+        "obj": "Win64.Miner.gen"
+      },
+      {
+        "sub": "Adshield.pro",
+        "rel": "DELIVERS",
+        "obj": "HEUR:Trojan.Multi.Miner.gen"
+      },
+      {
+        "sub": "update.exe",
+        "rel": "CONTACTS",
+        "obj": "C&C"
+      },
+      {
+        "sub": "update.exe",
+        "rel": "downloads from",
+        "obj": "transmissionbt.org"
+      },
+      {
+        "sub": "modified Transmission installer",
+        "rel": "NOTIFIES",
+        "obj": "C&C"
+      },
+      {
+        "sub": "modified Transmission installer",
+        "rel": "downloads and runs",
+        "obj": "flock.exe"
+      },
+      {
+        "sub": "data.pak",
+        "rel": "DECRYPTS",
+        "obj": "flock.exe"
+      },
+      {
+        "sub": "flock.exe",
+        "rel": "RUNS",
+        "obj": "XMRig"
+      },
+      {
+        "sub": "flock.exe",
+        "rel": "USES",
+        "obj": "bxsdk64.dll"
+      },
+      {
+        "sub": "bxsdk64.dll",
+        "rel": "CREATES",
+        "obj": "find.exe"
+      },
+      {
+        "sub": "flock.exe",
+        "rel": "CREATES",
+        "obj": "servicecheck_XX"
+      },
+      {
+        "sub": "Kaspersky Security Network",
+        "rel": "REPORTS",
+        "obj": "Adshield.pro"
+      },
+      {
+        "sub": "Kaspersky Security Network",
+        "rel": "DETECTS",
+        "obj": "Win64.Patched.netyyk"
+      },
+      {
+        "sub": "Kaspersky Security Network",
+        "rel": "DETECTS",
+        "obj": "Win32.DNSChanger.aaox"
+      },
+      {
+        "sub": "Kaspersky Security Network",
+        "rel": "DETECTS",
+        "obj": "Win64.Miner.gen"
+      },
+      {
+        "sub": "Kaspersky Security Network",
+        "rel": "DETECTS",
+        "obj": "HEUR:Trojan.Multi.Miner.gen"
+      },
+      {
+        "sub": "flock.exe",
+        "rel": "REQUIRES",
+        "obj": "QtWinExtras.dll"
+      },
+      {
+        "sub": "Adshield.pro",
+        "rel": "IMPERSONATES",
+        "obj": "Netshield"
+      },
+      {
+        "sub": "Adshield.pro",
+        "rel": "IMPERSONATES",
+        "obj": "OpenDNS"
+      },
+      {
+        "sub": "Transmission",
+        "rel": "RUNS",
+        "obj": "flock.exe"
+      },
+      {
+        "sub": "Monero",
+        "rel": "is mined by",
+        "obj": "XMRig"
+      },
+      {
+        "sub": "DNSChanger",
+        "rel": "is used by",
+        "obj": "Adshield.pro"
+      },
+      {
+        "sub": "Anton Kuzmenko",
+        "rel": "AUTHOR",
+        "obj": "Adshield.pro"
+      }
+    ]
+  }
+}

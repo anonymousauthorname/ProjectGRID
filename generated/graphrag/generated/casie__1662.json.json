@@ -1,0 +1,296 @@
+{
+  "sample_id": "casie__1662.json",
+  "sample_index": 0,
+  "source": "casie",
+  "file_name": "1662.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "MAGENTO",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "DEFENSECODE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "VIMEO",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PHP",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "HTACCESS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CSRF ATTACK",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "REMOTE CODE EXECUTION",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "ARBITRARY FILE UPLOAD",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "ADD SECRET KEY TO URLs",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "MAGENTO COMMUNITY EDITION",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ONLINE RETAILERS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "PAYMENT CARD DETAILS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "DATABASE PASSWORD",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "CROSS-SITE REQUEST FORGERY",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "MALWARE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "WEB SERVER",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "DATABASE",
+        "type": "INFRASTRUCTURE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "MAGENTO",
+        "rel": "related_to",
+        "obj": "ARBITRARY FILE UPLOAD"
+      },
+      {
+        "sub": "ARBITRARY FILE UPLOAD",
+        "rel": "related_to",
+        "obj": "REMOTE CODE EXECUTION"
+      },
+      {
+        "sub": "REMOTE CODE EXECUTION",
+        "rel": "related_to",
+        "obj": "MALWARE"
+      },
+      {
+        "sub": "REMOTE CODE EXECUTION",
+        "rel": "related_to",
+        "obj": "DATABASE PASSWORD"
+      },
+      {
+        "sub": "REMOTE CODE EXECUTION",
+        "rel": "related_to",
+        "obj": "PAYMENT CARD DETAILS"
+      },
+      {
+        "sub": "CSRF ATTACK",
+        "rel": "related_to",
+        "obj": "ARBITRARY FILE UPLOAD"
+      },
+      {
+        "sub": "CSRF ATTACK",
+        "rel": "related_to",
+        "obj": "REMOTE CODE EXECUTION"
+      },
+      {
+        "sub": "DEFENSECODE",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "DEFENSECODE",
+        "rel": "related_to",
+        "obj": "ARBITRARY FILE UPLOAD"
+      },
+      {
+        "sub": "DEFENSECODE",
+        "rel": "related_to",
+        "obj": "REMOTE CODE EXECUTION"
+      },
+      {
+        "sub": "MAGENTO",
+        "rel": "related_to",
+        "obj": "VIMEO"
+      },
+      {
+        "sub": "MAGENTO",
+        "rel": "related_to",
+        "obj": "PHP"
+      },
+      {
+        "sub": "MAGENTO",
+        "rel": "related_to",
+        "obj": "HTACCESS"
+      },
+      {
+        "sub": "MAGENTO",
+        "rel": "related_to",
+        "obj": "ADD SECRET KEY TO URLs"
+      },
+      {
+        "sub": "MAGENTO COMMUNITY EDITION",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "ONLINE RETAILERS",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "PAYMENT CARD DETAILS",
+        "rel": "related_to",
+        "obj": "DATABASE"
+      },
+      {
+        "sub": "DATABASE PASSWORD",
+        "rel": "related_to",
+        "obj": "DATABASE"
+      },
+      {
+        "sub": "WEB SERVER",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "WEB SERVER",
+        "rel": "related_to",
+        "obj": "MALWARE"
+      },
+      {
+        "sub": "MAGENTO",
+        "rel": "related_to",
+        "obj": "ARBITRARY FILE UPLOAD"
+      },
+      {
+        "sub": "ARBITRARY FILE UPLOAD",
+        "rel": "related_to",
+        "obj": "REMOTE CODE EXECUTION"
+      },
+      {
+        "sub": "REMOTE CODE EXECUTION",
+        "rel": "related_to",
+        "obj": "MALWARE"
+      },
+      {
+        "sub": "REMOTE CODE EXECUTION",
+        "rel": "related_to",
+        "obj": "DATABASE PASSWORD"
+      },
+      {
+        "sub": "REMOTE CODE EXECUTION",
+        "rel": "related_to",
+        "obj": "PAYMENT CARD DETAILS"
+      },
+      {
+        "sub": "CSRF ATTACK",
+        "rel": "related_to",
+        "obj": "ARBITRARY FILE UPLOAD"
+      },
+      {
+        "sub": "CSRF ATTACK",
+        "rel": "related_to",
+        "obj": "REMOTE CODE EXECUTION"
+      },
+      {
+        "sub": "DEFENSECODE",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "DEFENSECODE",
+        "rel": "related_to",
+        "obj": "ARBITRARY FILE UPLOAD"
+      },
+      {
+        "sub": "DEFENSECODE",
+        "rel": "related_to",
+        "obj": "REMOTE CODE EXECUTION"
+      },
+      {
+        "sub": "MAGENTO",
+        "rel": "related_to",
+        "obj": "VIMEO"
+      },
+      {
+        "sub": "MAGENTO",
+        "rel": "related_to",
+        "obj": "PHP"
+      },
+      {
+        "sub": "MAGENTO",
+        "rel": "related_to",
+        "obj": "HTACCESS"
+      },
+      {
+        "sub": "MAGENTO",
+        "rel": "related_to",
+        "obj": "ADD SECRET KEY TO URLs"
+      },
+      {
+        "sub": "MAGENTO COMMUNITY EDITION",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "ONLINE RETAILERS",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "PAYMENT CARD DETAILS",
+        "rel": "related_to",
+        "obj": "DATABASE"
+      },
+      {
+        "sub": "DATABASE PASSWORD",
+        "rel": "related_to",
+        "obj": "DATABASE"
+      },
+      {
+        "sub": "WEB SERVER",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "WEB SERVER",
+        "rel": "related_to",
+        "obj": "MALWARE"
+      }
+    ]
+  }
+}

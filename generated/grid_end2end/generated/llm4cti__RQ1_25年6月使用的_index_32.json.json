@@ -1,0 +1,380 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_32.json",
+  "sample_index": 222,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_32.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "malwaretainted version of otherwise legitimate software",
+        "type": "malware",
+        "alias": [
+          "otherwise legitimate software"
+        ],
+        "mother entity": [
+          "otherwise legitimate software"
+        ]
+      },
+      {
+        "name": "Ammyy Admin",
+        "type": "general-software",
+        "alias": [
+          "free remote administration tool Ammyy Admin",
+          "the site",
+          "the website",
+          "the software",
+          "the requested software",
+          "Ammyy Admin software",
+          "Ammyy Admin software"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ammyy.com",
+        "type": "domain-name",
+        "alias": [
+          "the website",
+          "the site",
+          "this website"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "June 13 or 14",
+        "type": "date",
+        "alias": [
+          "the aforementioned timeframe",
+          "June 13 and 14, 2018"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ESET",
+        "type": "security-product",
+        "alias": [
+          "ESET researchers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "FIFA World Cup",
+        "type": "event",
+        "alias": [
+          "the ongoing FIFA World Cup"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Buhtrap",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Win32/Kasidet",
+        "type": "malware",
+        "alias": [
+          "multipurpose Trojan and banking malware detected by ESET as Win32/Kasidet",
+          "the build detected",
+          "the build detected on the ammyy.com site"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Win32/Kasidet build detected on the ammyy.com site on June 13 and 14, 2018",
+        "type": "malware",
+        "alias": [],
+        "mother entity": [
+          "Win32/Kasidet"
+        ]
+      },
+      {
+        "name": "AmmyyService.exe",
+        "type": "file",
+        "alias": [
+          "the payload"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "AAv3.exe",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "SmartInstaller",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "CC server",
+        "type": "infrastructure",
+        "alias": [
+          "hxxp://fifa2018start[.]info/panel/tasks.php"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://fifa2018start[.]info/panel/tasks.php",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "CC server"
+        ]
+      },
+      {
+        "name": "SHA1 hashes",
+        "type": "indicator",
+        "alias": [
+          "Installer",
+          "CC Servers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Jakub Souek",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Ondrej Kubovi",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "cryptocurrency wallets and accounts of the victims",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "files",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "processes",
+        "type": "process",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ESET systems",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "potentially unsafe application",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Ammyy",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "malwaretainted version of otherwise legitimate software",
+        "rel": "serve",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Ammyy Admin"
+      },
+      {
+        "sub": "Ammyy Admin",
+        "rel": "downloaded from",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "ammyy.com"
+      },
+      {
+        "sub": "ammyy.com",
+        "rel": "compromised to serve",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "malwaretainted version of otherwise legitimate software"
+      },
+      {
+        "sub": "attackers",
+        "rel": "hide malicious activity behind",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "FIFA World Cup"
+      },
+      {
+        "sub": "ESET",
+        "rel": "analysis of",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "malwaretainted version of otherwise legitimate software"
+      },
+      {
+        "sub": "ESET",
+        "rel": "detected",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Win32/Kasidet"
+      },
+      {
+        "sub": "Win32/Kasidet",
+        "rel": "detected on",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "ammyy.com"
+      },
+      {
+        "sub": "Win32/Kasidet build detected on the ammyy.com site on June 13 and 14, 2018",
+        "rel": "stealing",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "cryptocurrency wallets and accounts of the victims"
+      },
+      {
+        "sub": "Win32/Kasidet build detected on the ammyy.com site on June 13 and 14, 2018",
+        "rel": "searches for filenames matching",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "bitcoin"
+      },
+      {
+        "sub": "Win32/Kasidet build detected on the ammyy.com site on June 13 and 14, 2018",
+        "rel": "sends to",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "CC server"
+      },
+      {
+        "sub": "Win32/Kasidet build detected on the ammyy.com site on June 13 and 14, 2018",
+        "rel": "reports processes whose names include",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "armoryqt"
+      },
+      {
+        "sub": "Win32/Kasidet build detected on the ammyy.com site on June 13 and 14, 2018",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "AmmyyService.exe"
+      },
+      {
+        "sub": "AAv3.exe",
+        "rel": "installs",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Ammyy Admin software"
+      },
+      {
+        "sub": "SmartInstaller",
+        "rel": "built",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "AAv3.exe"
+      },
+      {
+        "sub": "CC server",
+        "rel": "has URL",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "hxxp://fifa2018start[.]info/panel/tasks.php"
+      },
+      {
+        "sub": "ESET systems",
+        "rel": "detected",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Win32/Kasidet"
+      },
+      {
+        "sub": "ESET",
+        "rel": "notify",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Ammyy"
+      },
+      {
+        "sub": "Jakub Souek",
+        "rel": "pointed us to",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "malwaretainted version of otherwise legitimate software"
+      },
+      {
+        "sub": "Ondrej Kubovi",
+        "rel": "contributing to IoCs",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "malwaretainted version of otherwise legitimate software"
+      },
+      {
+        "sub": "ESET",
+        "rel": "detects as",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "potentially unsafe application"
+      },
+      {
+        "sub": "Ammyy Admin",
+        "rel": "is used by",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "fraudsters"
+      },
+      {
+        "sub": "Ammyy Admin",
+        "rel": "delivers",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malwaretainted version of otherwise legitimate software"
+      }
+    ]
+  }
+}

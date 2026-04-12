@@ -1,0 +1,96 @@
+{
+  "sample_id": "ctinexus__apts-swarm-zimbra-zero-day-to-steal-government-info-worldwide.json",
+  "sample_index": 82,
+  "source": "ctinexus",
+  "file_name": "apts-swarm-zimbra-zero-day-to-steal-government-info-worldwide.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Zimbra Collaboration Suite",
+        "type": "Software"
+      },
+      {
+        "name": "CVE-2023-37580",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "reflected cross-site scripting (XSS)",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Google's Threat Analysis Group",
+        "type": "Organization"
+      },
+      {
+        "name": "Japan Advanced Institute of Science and Technology",
+        "type": "Organization"
+      },
+      {
+        "name": "Germany's Max Planck Institute",
+        "type": "Organization"
+      },
+      {
+        "name": "Gunung Sewu",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "has vulnerability",
+        "obj": "reflected cross-site scripting (XSS)"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "has vulnerability",
+        "obj": "CVE-2023-37580"
+      },
+      {
+        "sub": "Google's Threat Analysis Group",
+        "rel": "REPORTED",
+        "obj": "CVE-2023-37580"
+      },
+      {
+        "sub": "Japan Advanced Institute of Science and Technology",
+        "rel": "USES",
+        "obj": "Zimbra Collaboration Suite"
+      },
+      {
+        "sub": "Germany's Max Planck Institute",
+        "rel": "USES",
+        "obj": "Zimbra Collaboration Suite"
+      },
+      {
+        "sub": "Gunung Sewu",
+        "rel": "USES",
+        "obj": "Zimbra Collaboration Suite"
+      },
+      {
+        "sub": "CVE-2023-37580",
+        "rel": "exploited by",
+        "obj": "government organizations"
+      },
+      {
+        "sub": "cyberattack groups",
+        "rel": "EXPLOITED",
+        "obj": "CVE-2023-37580"
+      }
+    ]
+  }
+}

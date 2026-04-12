@@ -1,0 +1,115 @@
+{
+  "sample_id": "ctinexus__sea-turtle-cyber-espionage-campaign.json",
+  "sample_index": 50,
+  "source": "ctinexus",
+  "file_name": "sea-turtle-cyber-espionage-campaign.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Sea Turtle",
+        "type": "Entity"
+      },
+      {
+        "name": "Cosmic Wolf",
+        "type": "Entity"
+      },
+      {
+        "name": "Marbled Dust",
+        "type": "Entity"
+      },
+      {
+        "name": "Silicon",
+        "type": "Entity"
+      },
+      {
+        "name": "Teal Kurma",
+        "type": "Entity"
+      },
+      {
+        "name": "UNC1326",
+        "type": "Entity"
+      },
+      {
+        "name": "DNS hijacking",
+        "type": "Entity"
+      },
+      {
+        "name": "reverse TCP shell",
+        "type": "Entity"
+      },
+      {
+        "name": "SnappyTCP",
+        "type": "Entity"
+      },
+      {
+        "name": "Linux",
+        "type": "Entity"
+      },
+      {
+        "name": "Unix",
+        "type": "Entity"
+      },
+      {
+        "name": "command-and-control",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Sea Turtle",
+        "rel": "uses",
+        "obj": "DNS hijacking"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "redirects",
+        "obj": "prospective targets"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "harvests",
+        "obj": "credentials"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "uses",
+        "obj": "reverse TCP shell"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "uses",
+        "obj": "SnappyTCP"
+      },
+      {
+        "sub": "SnappyTCP",
+        "rel": "establishes",
+        "obj": "persistence"
+      },
+      {
+        "sub": "SnappyTCP",
+        "rel": "connects to",
+        "obj": "command-and-control"
+      }
+    ]
+  }
+}

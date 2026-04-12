@@ -1,0 +1,283 @@
+{
+  "sample_id": "casie__2173.json",
+  "sample_index": 17,
+  "source": "casie",
+  "file_name": "2173.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "hackers"
+        ]
+      },
+      {
+        "name": "SMS messages used for two-factor authentication",
+        "type": "network-traffic"
+      },
+      {
+        "name": "money transfers",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Signaling System No. 7 (SS7)",
+        "type": "vulnerability",
+        "alias": [
+          "SS7"
+        ]
+      },
+      {
+        "name": "two-factor authentication",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "German victims' bank accounts",
+        "type": "victims/targets"
+      },
+      {
+        "name": "phishing emails",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "banks",
+        "type": "identity",
+        "alias": [
+          "victims' banks"
+        ]
+      },
+      {
+        "name": "O2 Telefonica",
+        "type": "infrastructure"
+      },
+      {
+        "name": "January",
+        "type": "date-time"
+      },
+      {
+        "name": "Karsten Nohl",
+        "type": "security-product",
+        "alias": [
+          "security researcher"
+        ]
+      },
+      {
+        "name": "U.S. Rep. Ted Lieu",
+        "type": "identity"
+      },
+      {
+        "name": "FCC",
+        "type": "identity"
+      },
+      {
+        "name": "telecom industry",
+        "type": "identity"
+      },
+      {
+        "name": "the flaws in SS7",
+        "type": "vulnerability",
+        "alias": [
+          "SS7 flaws"
+        ]
+      },
+      {
+        "name": "recorded calls",
+        "type": "course-of-action"
+      },
+      {
+        "name": "tracking the location",
+        "type": "course-of-action"
+      },
+      {
+        "name": "bank login credentials",
+        "type": "credential-value"
+      },
+      {
+        "name": "redirected SMS messages",
+        "type": "network-traffic"
+      },
+      {
+        "name": "incoming SMS messages",
+        "type": "network-traffic"
+      },
+      {
+        "name": "selected German customers",
+        "type": "victims/targets"
+      },
+      {
+        "name": "#SS7 security flaw",
+        "type": "indicator"
+      },
+      {
+        "name": "#SS7",
+        "type": "indicator"
+      },
+      {
+        "name": "money",
+        "type": "abstract-concept"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "attackers",
+        "rel": "were able to redirect",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "SMS messages used for two-factor authentication"
+      },
+      {
+        "sub": "attackers",
+        "rel": "approve",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "money transfers"
+      },
+      {
+        "sub": "hackers",
+        "rel": "exploited",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "vulnerabilities in the Signaling System No. 7 (SS7) protocols"
+      },
+      {
+        "sub": "hackers",
+        "rel": "sidestep",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "two-factor authentication"
+      },
+      {
+        "sub": "hackers",
+        "rel": "stole",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "bank login credentials"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "appeared to come from",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "victims' banks"
+      },
+      {
+        "sub": "hackers",
+        "rel": "leveraged",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "flaws in SS7"
+      },
+      {
+        "sub": "attackers",
+        "rel": "redirected",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "incoming SMS messages"
+      },
+      {
+        "sub": "attackers",
+        "rel": "redirected",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "SMS messages for selected German customers"
+      },
+      {
+        "sub": "representative of Germany's O2 Telefonica",
+        "rel": "said",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "The attack redirected incoming SMS messages for selected German customers to the attackers"
+      },
+      {
+        "sub": "security researcher Karsten Nohl",
+        "rel": "demonstrated",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "the potential impact of the flaws in SS7"
+      },
+      {
+        "sub": "security researcher Karsten Nohl",
+        "rel": "recorded",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "calls"
+      },
+      {
+        "sub": "security researcher Karsten Nohl",
+        "rel": "tracked",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "the location of U.S. Rep. Ted Lieu"
+      },
+      {
+        "sub": "U.S. Rep. Ted Lieu",
+        "rel": "tweeted",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "I've been screaming for FCC & telecom industry to fix #SS7 security flaw"
+      },
+      {
+        "sub": "U.S. Rep. Ted Lieu",
+        "rel": "added",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "EVERYONE'S BANK ACCOUNT IS AT RISK until FCC and telecom industry fix the devastating #SS7 flaw"
+      },
+      {
+        "sub": "U.S. Rep. Ted Lieu",
+        "rel": "to fix",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "#SS7 security flaw"
+      },
+      {
+        "sub": "FCC & telecom industry",
+        "rel": "to fix",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "#SS7 security flaw"
+      },
+      {
+        "sub": "the flaws in SS7",
+        "rel": "demonstrated",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "security researcher Karsten Nohl"
+      }
+    ]
+  }
+}

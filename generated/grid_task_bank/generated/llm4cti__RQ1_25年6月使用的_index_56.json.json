@@ -1,0 +1,541 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_56.json",
+  "sample_index": 243,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_56.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Cybercriminals",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the attacker"
+        ]
+      },
+      {
+        "name": "fake GitHub repositories",
+        "type": "infrastructure",
+        "alias": [
+          "malicious repositories",
+          "fake repositories"
+        ]
+      },
+      {
+        "name": "AI",
+        "type": "hacker-tool",
+        "alias": [
+          "generative AI"
+        ]
+      },
+      {
+        "name": "lures",
+        "type": "attack-pattern",
+        "alias": [
+          "social engineering lures"
+        ]
+      },
+      {
+        "name": "malware",
+        "type": "malware",
+        "alias": [
+          "payload"
+        ]
+      },
+      {
+        "name": "SmartLoader",
+        "type": "malware",
+        "alias": [
+          "the malware deployed",
+          "the loader"
+        ]
+      },
+      {
+        "name": "Lumma Stealer",
+        "type": "malware",
+        "alias": [
+          "information stealer"
+        ]
+      },
+      {
+        "name": "Malware-as-a-Service (MaaS) model",
+        "type": "attack-pattern",
+        "alias": [
+          "MaaS"
+        ]
+      },
+      {
+        "name": "Water Kurita",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "its creators"
+        ]
+      },
+      {
+        "name": "GitHub",
+        "type": "infrastructure",
+        "alias": [
+          "trusted platform"
+        ]
+      },
+      {
+        "name": "gamers",
+        "type": "user-account",
+        "alias": [
+          "users searching for gaming mods"
+        ]
+      },
+      {
+        "name": "game cheats",
+        "type": "general-software",
+        "alias": [
+          "gaming cheats"
+        ]
+      },
+      {
+        "name": "cracked software",
+        "type": "general-software",
+        "alias": [
+          "software cracks"
+        ]
+      },
+      {
+        "name": "cryptocurrency utilities",
+        "type": "general-software",
+        "alias": [
+          "crypto tools"
+        ]
+      },
+      {
+        "name": "Release.zip",
+        "type": "file",
+        "alias": [
+          "ZIP file"
+        ]
+      },
+      {
+        "name": "Software.zip",
+        "type": "file",
+        "alias": [
+          "ZIP file"
+        ]
+      },
+      {
+        "name": "README files",
+        "type": "file",
+        "alias": [
+          "documentation"
+        ]
+      },
+      {
+        "name": "obfuscated scripts",
+        "type": "hacker-tool",
+        "alias": [
+          "scripts"
+        ]
+      },
+      {
+        "name": "obfuscated Lua script",
+        "type": "detailed-part-of-general-software",
+        "alias": [
+          "malicious component"
+        ]
+      },
+      {
+        "name": "X/Twitter",
+        "type": "infrastructure",
+        "alias": [
+          "X"
+        ]
+      },
+      {
+        "name": "security researchers",
+        "type": "identity",
+        "alias": [
+          "researchers"
+        ]
+      },
+      {
+        "name": "gaming mods",
+        "type": "general-software",
+        "alias": [
+          "mods"
+        ]
+      },
+      {
+        "name": "information stealer",
+        "type": "malware",
+        "alias": [
+          "Lumma Stealer"
+        ]
+      },
+      {
+        "name": "delivery",
+        "type": "attack-pattern",
+        "alias": [
+          "delivery mechanism"
+        ]
+      },
+      {
+        "name": "initial detection",
+        "type": "abstract-concept",
+        "alias": [
+          "detection phase"
+        ]
+      },
+      {
+        "name": "downloading",
+        "type": "course-of-action",
+        "alias": [
+          "downloads"
+        ]
+      },
+      {
+        "name": "fake tools",
+        "type": "general-software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cybercriminals",
+        "rel": "are using",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "fake GitHub repositories"
+      },
+      {
+        "sub": "fake GitHub repositories",
+        "rel": "make heavy use of",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "AI"
+      },
+      {
+        "sub": "fake GitHub repositories",
+        "rel": "distribute",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "malware"
+      },
+      {
+        "sub": "fake GitHub repositories",
+        "rel": "deceiving",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "users"
+      },
+      {
+        "sub": "the Trend Micro Threat Hunting team",
+        "rel": "identified",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "an ongoing campaign"
+      },
+      {
+        "sub": "an ongoing campaign",
+        "rel": "uses",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "these repositories"
+      },
+      {
+        "sub": "an ongoing campaign",
+        "rel": "deploy",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "SmartLoader"
+      },
+      {
+        "sub": "SmartLoader",
+        "rel": "deliver",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "other malware"
+      },
+      {
+        "sub": "other malware",
+        "rel": "such as",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Lumma Stealer"
+      },
+      {
+        "sub": "Lumma Stealer",
+        "rel": "being distributed via",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Malware-as-a-Service (MaaS) model"
+      },
+      {
+        "sub": "Malware-as-a-Service (MaaS) model",
+        "rel": "by",
+        "rel_type": [
+          "controls"
+        ],
+        "obj": "Water Kurita"
+      },
+      {
+        "sub": "fake GitHub repositories",
+        "rel": "disguised as",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "non-malicious tools"
+      },
+      {
+        "sub": "non-malicious tools",
+        "rel": "including",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "game cheats"
+      },
+      {
+        "sub": "non-malicious tools",
+        "rel": "including",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "cracked software"
+      },
+      {
+        "sub": "non-malicious tools",
+        "rel": "including",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "cryptocurrency utilities"
+      },
+      {
+        "sub": "campaign",
+        "rel": "prompting them to download",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "ZIP files"
+      },
+      {
+        "sub": "ZIP files",
+        "rel": "deploy",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "SmartLoader"
+      },
+      {
+        "sub": "fake GitHub repositories",
+        "rel": "exploits",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "GitHub’s trusted reputation"
+      },
+      {
+        "sub": "fake GitHub repositories",
+        "rel": "evade",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "initial detection"
+      },
+      {
+        "sub": "campaign",
+        "rel": "target users searching for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "gaming mods"
+      },
+      {
+        "sub": "campaign",
+        "rel": "emphasizing the dangers of downloading",
+        "rel_type": [
+          "negates"
+        ],
+        "obj": "unverified 'gray-area' tools"
+      },
+      {
+        "sub": "cybercriminals",
+        "rel": "abusing",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "GitHub"
+      },
+      {
+        "sub": "generative AI",
+        "rel": "create",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "convincing fake repositories"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "design",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "to lure",
+        "special_factuality": [
+          "possible"
+        ],
+        "obj2": "unsuspecting users into downloading",
+        "obj3": "malicious and/or fake tools"
+      },
+      {
+        "sub": "SmartLoader",
+        "rel": "delivered via",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "ZIP files"
+      },
+      {
+        "sub": "obfuscated Lua script",
+        "rel": "is",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "only malicious component"
+      },
+      {
+        "sub": "malicious actors",
+        "rel": "use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "AI"
+      },
+      {
+        "sub": "malicious actors",
+        "rel": "generate",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "convincing README files"
+      },
+      {
+        "sub": "README content",
+        "rel": "appears to be heavily assisted by",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "AI"
+      },
+      {
+        "sub": "README content",
+        "rel": "exhibited by",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "excessive emoji usage"
+      },
+      {
+        "sub": "README content",
+        "rel": "exhibited by",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "unnatural phrasing"
+      },
+      {
+        "sub": "README content",
+        "rel": "exhibited by",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "hyperlinked logo"
+      },
+      {
+        "sub": "README content",
+        "rel": "exhibited by",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "structured content"
+      },
+      {
+        "sub": "hyperlinks",
+        "rel": "redirect to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "malicious files"
+      },
+      {
+        "sub": "malicious files",
+        "rel": "strategically concealed in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "releases section"
+      },
+      {
+        "sub": "campaign",
+        "rel": "exploits",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "GitHub’s trusted reputation"
+      },
+      {
+        "sub": "example of malware propagation",
+        "rel": "on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "X/Twitter"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "may exploit",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "pretending to be researchers themselves"
+      },
+      {
+        "sub": "SmartLoader",
+        "rel": "is typically delivered via",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "ZIP files containing obfuscated scripts"
+      },
+      {
+        "sub": "obfuscated scripts",
+        "rel": "containing",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "obfuscated Lua script"
+      }
+    ]
+  }
+}

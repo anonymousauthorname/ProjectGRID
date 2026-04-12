@@ -1,0 +1,596 @@
+{
+  "sample_id": "casie__10150.json",
+  "sample_index": 48,
+  "source": "casie",
+  "file_name": "10150.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Intel",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Intel"
+        ]
+      },
+      {
+        "name": "Management Engine (ME)",
+        "type": "malware",
+        "alias": [
+          "ME",
+          "the utility",
+          "subsystem"
+        ]
+      },
+      {
+        "name": "Positive Technologies",
+        "type": "researcher",
+        "alias": [
+          "researchers at Positive Technologies"
+        ]
+      },
+      {
+        "name": "Intel-SA-00125",
+        "type": "course-of-action",
+        "alias": [
+          "firmware update"
+        ]
+      },
+      {
+        "name": "CVE-2018-3655",
+        "type": "vulnerability",
+        "alias": [
+          "vulnerability",
+          "the vulnerability"
+        ]
+      },
+      {
+        "name": "MFS file system",
+        "type": "windows-registry-key",
+        "alias": [
+          "MFS",
+          "MFS file system"
+        ]
+      },
+      {
+        "name": "Active Management Technology (AMT)",
+        "type": "hacker-tool",
+        "alias": [
+          "AMT",
+          "Intel's Active Management Technology"
+        ]
+      },
+      {
+        "name": "Intel Integrity Key",
+        "type": "credential-value",
+        "alias": [
+          "Intel Integrity Key"
+        ]
+      },
+      {
+        "name": "Non-Intel Integrity Key",
+        "type": "credential-value",
+        "alias": [
+          "Non-Intel Integrity Key"
+        ]
+      },
+      {
+        "name": "Intel Confidentiality Key",
+        "type": "credential-value",
+        "alias": [
+          "Intel Confidentiality Key"
+        ]
+      },
+      {
+        "name": "Non-Intel Confidentiality Key",
+        "type": "credential-value",
+        "alias": [
+          "Non-Intel Confidentiality Key"
+        ]
+      },
+      {
+        "name": "firmware update",
+        "type": "course-of-action",
+        "alias": [
+          "Intel-SA-00125",
+          "update"
+        ]
+      },
+      {
+        "name": "September 11",
+        "type": "date",
+        "alias": [
+          "September 11"
+        ]
+      },
+      {
+        "name": "USB",
+        "type": "attack-pattern",
+        "alias": [
+          "USB"
+        ]
+      },
+      {
+        "name": "JTAG debugger",
+        "type": "hacker-tool",
+        "alias": [
+          "JTAG debugger"
+        ]
+      },
+      {
+        "name": "SVN",
+        "type": "credential-value",
+        "alias": [
+          "SVN"
+        ]
+      },
+      {
+        "name": "immutable non-Intel root secret",
+        "type": "credential-value",
+        "alias": [
+          "immutable non-Intel root secret"
+        ]
+      },
+      {
+        "name": "updated SVN value",
+        "type": "abstract-concept",
+        "alias": [
+          "updated SVN value"
+        ]
+      },
+      {
+        "name": "Intel CPU owners",
+        "type": "user-account",
+        "alias": [
+          "Intel CPU owners"
+        ]
+      },
+      {
+        "name": "Dmitry Sklyarov",
+        "type": "identity",
+        "alias": [
+          "Dmitry Sklyarov"
+        ]
+      },
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attackers"
+        ]
+      },
+      {
+        "name": "physical access",
+        "type": "abstract-concept",
+        "alias": [
+          "with physical access"
+        ]
+      },
+      {
+        "name": "remote access",
+        "type": "abstract-concept",
+        "alias": [
+          "remote access"
+        ]
+      },
+      {
+        "name": "Intel processors",
+        "type": "general-software",
+        "alias": [
+          "Intel processors"
+        ]
+      },
+      {
+        "name": "Librem notebooks",
+        "type": "general-software",
+        "alias": [
+          "Librem notebooks"
+        ]
+      },
+      {
+        "name": "Google",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Google"
+        ]
+      },
+      {
+        "name": "IT managers",
+        "type": "identity",
+        "alias": [
+          "IT managers"
+        ]
+      },
+      {
+        "name": "customers",
+        "type": "identity",
+        "alias": [
+          "Intel and its customers"
+        ]
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "vulnerability",
+        "alias": [
+          "vulnerabilities"
+        ]
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the attacker"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "researchers at Positive Technologies",
+        "rel": "revealed",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "a new security flaw"
+      },
+      {
+        "sub": "attackers",
+        "rel": "compromise",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "its MFS file system"
+      },
+      {
+        "sub": "Intel",
+        "rel": "released",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "updates"
+      },
+      {
+        "sub": "Intel CPU owners",
+        "rel": "should make sure",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "their firmware is up-to-date"
+      },
+      {
+        "sub": "ME",
+        "rel": "has become",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a repeated source of problems"
+      },
+      {
+        "sub": "The utility",
+        "rel": "allows",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "IT managers"
+      },
+      {
+        "sub": "IT managers",
+        "rel": "remotely access",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "company PCs"
+      },
+      {
+        "sub": "ME",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "network interface"
+      },
+      {
+        "sub": "ME",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "memory"
+      },
+      {
+        "sub": "ME",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "operating system"
+      },
+      {
+        "sub": "ME",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "MFS file system"
+      },
+      {
+        "sub": "researchers",
+        "rel": "have discovered",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "vulnerabilities",
+        "rel": "in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "ME"
+      },
+      {
+        "sub": "Positive Technologies",
+        "rel": "revealed",
+        "rel_type": [
+          "reveals"
+        ],
+        "obj": "one in 2017"
+      },
+      {
+        "sub": "one in 2017",
+        "rel": "allowed",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "full takeover of ME"
+      },
+      {
+        "sub": "full takeover of ME",
+        "rel": "via",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "USB"
+      },
+      {
+        "sub": "another one",
+        "rel": "allows",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "someone with physical access"
+      },
+      {
+        "sub": "someone with physical access",
+        "rel": "compromise",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "ME"
+      },
+      {
+        "sub": "compromise ME",
+        "rel": "manipulate",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "state of MFS"
+      },
+      {
+        "sub": "compromise ME",
+        "rel": "extract",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "important secrets"
+      },
+      {
+        "sub": "compromise ME",
+        "rel": "add",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "files"
+      },
+      {
+        "sub": "compromise ME",
+        "rel": "delete",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "files"
+      },
+      {
+        "sub": "compromise ME",
+        "rel": "change",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "protection attributes of files"
+      },
+      {
+        "sub": "the attack",
+        "rel": "can be used to learn",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "four keys"
+      },
+      {
+        "sub": "four keys",
+        "rel": "were supposed to be protected via",
+        "rel_type": [
+          "protects"
+        ],
+        "obj": "firmware update"
+      },
+      {
+        "sub": "someone with physical access",
+        "rel": "could bypass",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "that patch"
+      },
+      {
+        "sub": "Dmitry Sklyarov",
+        "rel": "found that",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Non-Intel Keys"
+      },
+      {
+        "sub": "Non-Intel Keys",
+        "rel": "are derived from",
+        "rel_type": [
+          "derived-from"
+        ],
+        "obj": "SVN"
+      },
+      {
+        "sub": "Non-Intel Keys",
+        "rel": "are derived from",
+        "rel_type": [
+          "derived-from"
+        ],
+        "obj": "immutable non-Intel root secret"
+      },
+      {
+        "sub": "earlier vulnerability",
+        "rel": "to enable",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "JTAG debugger"
+      },
+      {
+        "sub": "it",
+        "rel": "possible to obtain",
+        "rel_type": [
+          "offers"
+        ],
+        "obj": "immutable non-Intel root secret"
+      },
+      {
+        "sub": "Knowing the immutable root secret",
+        "rel": "enables",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "calculating the values of both Non-Intel Keys"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "could calculate",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Non-Intel Integrity Key"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "could calculate",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Non-Intel Confidentiality Key"
+      },
+      {
+        "sub": "Non-Intel Keys",
+        "rel": "for",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "firmware that has the updated SVN value"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "compromise",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "MFS security mechanisms"
+      },
+      {
+        "sub": "MFS security mechanisms",
+        "rel": "rely on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "these keys"
+      },
+      {
+        "sub": "Intel",
+        "rel": "released",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Intel-SA-00125 firmware update"
+      },
+      {
+        "sub": "Intel-SA-00125 firmware update",
+        "rel": "to defend against",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "this vulnerability"
+      },
+      {
+        "sub": "Intel-SA-00125",
+        "rel": "released on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "September 11"
+      },
+      {
+        "sub": "companies",
+        "rel": "questioning--or outright banning--",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the use of ME"
+      },
+      {
+        "sub": "Purism",
+        "rel": "avoids",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "ME"
+      },
+      {
+        "sub": "Google",
+        "rel": "is working to remove",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "ME"
+      },
+      {
+        "sub": "previous security flaws",
+        "rel": "raised concerns among",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "consumers"
+      }
+    ]
+  }
+}

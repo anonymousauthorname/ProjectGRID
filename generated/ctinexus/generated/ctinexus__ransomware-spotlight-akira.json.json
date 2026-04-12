@@ -1,0 +1,176 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-akira.json",
+  "sample_index": 91,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-akira.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Cisco",
+        "type": "Unknown"
+      },
+      {
+        "name": "a security advisory on Sept. 6, 2023",
+        "type": "Unknown"
+      },
+      {
+        "name": "Akira ransomware operators",
+        "type": "Unknown"
+      },
+      {
+        "name": "CVE-2023-20269",
+        "type": "Unknown"
+      },
+      {
+        "name": "Cisco Adaptive Security Appliance (ASA) software",
+        "type": "Unknown"
+      },
+      {
+        "name": "Cisco Firepower Threat Defense (FTD) software",
+        "type": "Unknown"
+      },
+      {
+        "name": "malicious actors",
+        "type": "Unknown"
+      },
+      {
+        "name": "valid credentials",
+        "type": "Unknown"
+      },
+      {
+        "name": "unauthorized remote access VPN sessions",
+        "type": "Unknown"
+      },
+      {
+        "name": "a clientless SSL VPN session",
+        "type": "Unknown"
+      },
+      {
+        "name": "Sentinel One",
+        "type": "Unknown"
+      },
+      {
+        "name": "an Akira ransomware variant named Megazord",
+        "type": "Unknown"
+      },
+      {
+        "name": "August 2023",
+        "type": "Unknown"
+      },
+      {
+        "name": "POWERRANGES file extension",
+        "type": "Unknown"
+      },
+      {
+        "name": "The ransom note",
+        "type": "Unknown"
+      },
+      {
+        "name": "powerranges.txt",
+        "type": "Unknown"
+      },
+      {
+        "name": "TOX messenger",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cisco",
+        "rel": "released",
+        "obj": "a security advisory on Sept. 6, 2023"
+      },
+      {
+        "sub": "Akira ransomware operators",
+        "rel": "exploited",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "is a vulnerability in",
+        "obj": "Cisco Adaptive Security Appliance (ASA) software"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "is a vulnerability in",
+        "obj": "Cisco Firepower Threat Defense (FTD) software"
+      },
+      {
+        "sub": "malicious actors",
+        "rel": "can identify",
+        "obj": "valid credentials"
+      },
+      {
+        "sub": "valid credentials",
+        "rel": "could be abused to establish",
+        "obj": "unauthorized remote access VPN sessions"
+      },
+      {
+        "sub": "valid credentials",
+        "rel": "could be abused to establish",
+        "obj": "a clientless SSL VPN session"
+      },
+      {
+        "sub": "Sentinel One",
+        "rel": "released a video analyzing",
+        "obj": "an Akira ransomware variant named Megazord"
+      },
+      {
+        "sub": "an Akira ransomware variant named Megazord",
+        "rel": "emerged in",
+        "obj": "August 2023"
+      },
+      {
+        "sub": "an Akira ransomware variant named Megazord",
+        "rel": "encrypts files with",
+        "obj": "POWERRANGES file extension"
+      },
+      {
+        "sub": "The ransom note",
+        "rel": "is named",
+        "obj": "powerranges.txt"
+      },
+      {
+        "sub": "The ransom note",
+        "rel": "instructs victims to contact",
+        "obj": "TOX messenger"
+      },
+      {
+        "sub": "a security advisory on Sept. 6, 2023",
+        "rel": "discloses",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "enables exploitation of",
+        "obj": "valid credentials"
+      },
+      {
+        "sub": "an Akira ransomware variant named Megazord",
+        "rel": "exploits",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "The ransom note",
+        "rel": "is associated with",
+        "obj": "CVE-2023-20269"
+      }
+    ]
+  }
+}

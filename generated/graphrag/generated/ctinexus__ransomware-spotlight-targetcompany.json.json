@@ -1,0 +1,114 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-targetcompany.json",
+  "sample_index": 68,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-targetcompany.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TARGETCOMPANY",
+        "type": "MALWARE"
+      },
+      {
+        "name": "FARGO",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "MALLOX",
+        "type": "LOCATION"
+      },
+      {
+        "name": "CHACHA20",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CURVE 25519",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "AES-128",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "HOW TO DECRYPT FILES.TXT",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "HOW TO RECOVER!!.TXT",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "TARGETCOMPANY RANSOMWARE GROUP",
+        "type": "THREAT_ACTOR"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TARGETCOMPANY",
+        "rel": "related_to",
+        "obj": "FARGO"
+      },
+      {
+        "sub": "TARGETCOMPANY",
+        "rel": "related_to",
+        "obj": "MALLOX"
+      },
+      {
+        "sub": "TARGETCOMPANY",
+        "rel": "related_to",
+        "obj": "CHACHA20"
+      },
+      {
+        "sub": "TARGETCOMPANY",
+        "rel": "related_to",
+        "obj": "CURVE 25519"
+      },
+      {
+        "sub": "TARGETCOMPANY",
+        "rel": "related_to",
+        "obj": "AES-128"
+      },
+      {
+        "sub": "TARGETCOMPANY RANSOMWARE GROUP",
+        "rel": "related_to",
+        "obj": "TARGETCOMPANY"
+      },
+      {
+        "sub": "FARGO",
+        "rel": "related_to",
+        "obj": "TARGETCOMPANY"
+      },
+      {
+        "sub": "MALLOX",
+        "rel": "related_to",
+        "obj": "TARGETCOMPANY"
+      },
+      {
+        "sub": "HOW TO DECRYPT FILES.TXT",
+        "rel": "related_to",
+        "obj": "TARGETCOMPANY"
+      },
+      {
+        "sub": "HOW TO RECOVER!!.TXT",
+        "rel": "related_to",
+        "obj": "TARGETCOMPANY"
+      }
+    ]
+  }
+}

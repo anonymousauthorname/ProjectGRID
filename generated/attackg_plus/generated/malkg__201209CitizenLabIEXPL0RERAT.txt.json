@@ -1,0 +1,612 @@
+{
+  "sample_id": "malkg__201209CitizenLabIEXPL0RERAT.txt",
+  "sample_index": 103,
+  "source": "malkg",
+  "file_name": "201209CitizenLabIEXPL0RERAT.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Social engineering"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Customized email"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Fake forwards"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Email content analysis"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Victim identity"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Organizational information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Keywords related to Tibetan human rights issues"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Keywords related to high-rise apartment building fire"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Names of real people"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Names of real organizations"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Reference",
+        "obj": "Dalai Lama speeches"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Reference",
+        "obj": "Climate change conferences"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Custom remote access trojan"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Password-protected archives"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Disguise as",
+        "obj": "Legitimate documents"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Connect to",
+        "obj": "Command and control  servers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Have",
+        "obj": "Unique configuration file"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Custom-built RAT"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Belong to",
+        "obj": "Specific target"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Locate at",
+        "obj": "Command and control  servers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Personalized resource for attack"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Spearphishing"
+      },
+      {
+        "sub": "Spearphishing",
+        "rel": "Use",
+        "obj": "Social engineering"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Password-protected archive"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "DLL injection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Replace",
+        "obj": "config.dll"
+      },
+      {
+        "sub": "config.dll",
+        "rel": "Belong to",
+        "obj": "Legitimate program"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Deliver",
+        "obj": "Password-protected archive"
+      },
+      {
+        "sub": "Email",
+        "rel": "Has value",
+        "obj": "Password included in email address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Through malicious attachments"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Disguise as",
+        "obj": "Video of Dalai Lama speech"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Disguise as",
+        "obj": "Excel spreadsheet about climate change"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "In password-protected archive"
+      },
+      {
+        "sub": "Note: Some entities like \"video of Dalai Lama speech\" or \"Excel spreadsheet about climate change\" are not strictly in the defined entity list. However, based on the rules, only valid entity types  are used. Since no specific filename or URL is given, only the relations involving clearly defined entities are extracted. The triplet \"Malware",
+        "rel": "Disguise as",
+        "obj": "...\" is not valid per entity types . Therefore, we revise strictly to valid relations."
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Spearphishing"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Password included in email address"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "Use",
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "Operate",
+        "obj": "ContainerV2"
+      },
+      {
+        "sub": "ContainerV2",
+        "rel": "Download",
+        "obj": "IEXPL0RE RAT"
+      },
+      {
+        "sub": "csv.exe",
+        "rel": "Run",
+        "obj": "360tray.exe"
+      },
+      {
+        "sub": "360tray.exe",
+        "rel": "Inject",
+        "obj": "perf*.dat"
+      },
+      {
+        "sub": "perf*.dat",
+        "rel": "Inject",
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "Obfuscate",
+        "obj": "antivirus detection"
+      },
+      {
+        "sub": "launcher",
+        "rel": "Construct",
+        "obj": "layered structure"
+      },
+      {
+        "sub": "launcher",
+        "rel": "Modify",
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "csv.exe",
+        "rel": "Execute",
+        "obj": "perf*.dat"
+      },
+      {
+        "sub": "360tray.exe",
+        "rel": "Execute",
+        "obj": "perf*.dat"
+      },
+      {
+        "sub": "perf*.dat",
+        "rel": "Write",
+        "obj": "memory"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "Evade",
+        "obj": "signature-based antivirus detection"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "Execute",
+        "obj": "multi-layered launcher process"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Startup link"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Filename"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Leave behind",
+        "obj": "Temporary file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Indicator of infection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Temporary files for detection of persistence"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Obfuscation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Memory"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Avoid",
+        "obj": "Writing to disk"
+      },
+      {
+        "sub": "ContainerV2",
+        "rel": "Operate",
+        "obj": "Memory"
+      },
+      {
+        "sub": "Client",
+        "rel": "Operate",
+        "obj": "Memory"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "One-byte XOR encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Communication traffic"
+      },
+      {
+        "sub": "Configuration file",
+        "rel": "Has value",
+        "obj": "Unique settings for each target"
+      },
+      {
+        "sub": "Configuration file",
+        "rel": "Has value",
+        "obj": "Settings to evade signature-based detection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Signature-based antivirus detection"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "Has capability",
+        "obj": "Capture credentials"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "Has capability",
+        "obj": "Read files"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "Use",
+        "obj": "Keystroke logging"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "Send back",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "Send back",
+        "obj": "Email addresses"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "Operate",
+        "obj": "Victim’s system"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "Access",
+        "obj": "Stored credentials"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "Access",
+        "obj": "Account information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "GetSystemInfo"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "List Running Programs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Enumerate Registry Keys"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Query Registry Values"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Discover",
+        "obj": "Network Shares"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Discover",
+        "obj": "Document Paths"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Discover",
+        "obj": "Desktop Locations"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Running Processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Services"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Registry Keys"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has capability",
+        "obj": "Keystroke logging"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has capability",
+        "obj": "Screen capture"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has capability",
+        "obj": "Audio/video capture"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has capability",
+        "obj": "Capture passwords"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has capability",
+        "obj": "Capture email addresses"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has capability",
+        "obj": "Capture screenshots"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has capability",
+        "obj": "Record audio through offsound.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has capability",
+        "obj": "Record video through offscreen.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encrypted HTTP POST and GET requests"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "One-byte XOR key"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Fixed host"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Two connections"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Sequence number that increments with each packet"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "200 OK response from C2 server"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Receive",
+        "obj": "Commands"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Respond",
+        "obj": "200 OK message"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Configuration file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "update.microsoft.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "update.microsoft.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encrypted HTTP POST"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encrypted HTTP GET"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Keylogger data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Screenshots"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Keystrokes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "Data in chunks"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Track",
+        "obj": "Communication via sequence number"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Continuous data exfiltration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "Data at regular intervals"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "Data in encrypted form"
+      }
+    ]
+  }
+}

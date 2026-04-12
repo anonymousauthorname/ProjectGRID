@@ -1,0 +1,318 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_2.json",
+  "sample_index": 212,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_2.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "ADSHIELD",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "NETSHIELD",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "OPENDNS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "TRANSMISSIONBT",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ADSHIELD PRO",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "FLOCK.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "DATA.PAK",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BXSdk64.DLL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "XMRIG",
+        "type": "MALWARE"
+      },
+      {
+        "name": "C&C SERVER",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "TRANSMISSIONBT.ORG",
+        "type": "LOCATION"
+      },
+      {
+        "name": "ADSHIELD WITH MINER INCLUDED",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "ANTON KUZMENKO",
+        "type": "PERSON"
+      },
+      {
+        "name": "WIN64.PATCHED.NETYYK",
+        "type": "MALWARE"
+      },
+      {
+        "name": "WIN32.DNSCHANGER.AAOX",
+        "type": "MALWARE"
+      },
+      {
+        "name": "WIN64.Miner.gen",
+        "type": "MALWARE"
+      },
+      {
+        "name": "HEUR:TROJAN.MULTI.Miner.gen",
+        "type": "MALWARE"
+      },
+      {
+        "name": "142.4.214.15",
+        "type": "LOCATION"
+      },
+      {
+        "name": "185.201.47.42",
+        "type": "LOCATION"
+      },
+      {
+        "name": "176.31.103.74",
+        "type": "LOCATION"
+      },
+      {
+        "name": "37.59.58.122",
+        "type": "LOCATION"
+      },
+      {
+        "name": "185.192.111.210",
+        "type": "LOCATION"
+      },
+      {
+        "name": "ADSHIELD.PRO",
+        "type": "DOMAIN"
+      },
+      {
+        "name": "NETSHIELDKIT.COM",
+        "type": "DOMAIN"
+      },
+      {
+        "name": "OPENDNS.INFO",
+        "type": "DOMAIN"
+      },
+      {
+        "name": "5AA0CDA743E5FBD1D0315B686E5E6024",
+        "type": "HASH"
+      },
+      {
+        "name": "81BC965E07A0D6C9E3EB0124CDF97AA2",
+        "type": "HASH"
+      },
+      {
+        "name": "AC9E74EF5CCAB1D5C2BDD9C74BB798CC",
+        "type": "HASH"
+      },
+      {
+        "name": "9E989EF2A8D4BC5BA1421143AAD59A47",
+        "type": "HASH"
+      },
+      {
+        "name": "2156F6E4DF941600FE3F44D07109354E",
+        "type": "HASH"
+      },
+      {
+        "name": "RUSIA AND CIS COUNTRIES",
+        "type": "GEO"
+      },
+      {
+        "name": "SECURELIST",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MALWAREBYTES",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "KASPERSKY SECURITY NETWORK",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CLOUD SERVICES",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "DNS CHANGER",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "CRYPTOCURRENCY MINING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "MALWARE DISTRIBUTION THROUGH SEARCH RESULTS",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "VIRTUAL ENVIRONMENT INJECTION",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "STATIC DETECTION AVOIDANCE",
+        "type": "ATTACK_PATTERN"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "ADSHIELD",
+        "rel": "related_to",
+        "obj": "ADSHIELD PRO"
+      },
+      {
+        "sub": "ADSHIELD PRO",
+        "rel": "related_to",
+        "obj": "XMRIG"
+      },
+      {
+        "sub": "ADSHIELD PRO",
+        "rel": "related_to",
+        "obj": "FLOCK.EXE"
+      },
+      {
+        "sub": "ADSHIELD PRO",
+        "rel": "related_to",
+        "obj": "C&C SERVER"
+      },
+      {
+        "sub": "NETSHIELD",
+        "rel": "related_to",
+        "obj": "NETSHIELDKIT.COM"
+      },
+      {
+        "sub": "NETSHIELDKIT.COM",
+        "rel": "related_to",
+        "obj": "XMRIG"
+      },
+      {
+        "sub": "OPENDNS",
+        "rel": "related_to",
+        "obj": "OPENDNS.INFO"
+      },
+      {
+        "sub": "TRANSMISSIONBT",
+        "rel": "related_to",
+        "obj": "C&C SERVER"
+      },
+      {
+        "sub": "FLOCK.EXE",
+        "rel": "related_to",
+        "obj": "BXSdk64.DLL"
+      },
+      {
+        "sub": "FLOCK.EXE",
+        "rel": "related_to",
+        "obj": "XMRIG"
+      },
+      {
+        "sub": "DATA.PAK",
+        "rel": "related_to",
+        "obj": "XMRIG"
+      },
+      {
+        "sub": "DATA.PAK",
+        "rel": "related_to",
+        "obj": "BXSdk64.DLL"
+      },
+      {
+        "sub": "C&C SERVER",
+        "rel": "related_to",
+        "obj": "TRANSMISSIONBT.ORG"
+      },
+      {
+        "sub": "ANTON KUZMENKO",
+        "rel": "related_to",
+        "obj": "SECURELIST"
+      },
+      {
+        "sub": "SECURELIST",
+        "rel": "related_to",
+        "obj": "ADSHIELD WITH MINER INCLUDED"
+      },
+      {
+        "sub": "KASPERSKY SECURITY NETWORK",
+        "rel": "related_to",
+        "obj": "WIN64.PATCHED.NETYYK"
+      },
+      {
+        "sub": "KASPERSKY SECURITY NETWORK",
+        "rel": "related_to",
+        "obj": "WIN32.DNSCHANGER.AAOX"
+      },
+      {
+        "sub": "KASPERSKY SECURITY NETWORK",
+        "rel": "related_to",
+        "obj": "HEUR:TROJAN.MULTI.Miner.gen"
+      },
+      {
+        "sub": "RUSIA AND CIS COUNTRIES",
+        "rel": "related_to",
+        "obj": "ADSHIELD WITH MINER INCLUDED"
+      },
+      {
+        "sub": "MALWAREBYTES",
+        "rel": "related_to",
+        "obj": "ADSHIELD WITH MINER INCLUDED"
+      },
+      {
+        "sub": "ADSHIELD WITH MINER INCLUDED",
+        "rel": "related_to",
+        "obj": "DNS CHANGER"
+      },
+      {
+        "sub": "ADSHIELD WITH MINER INCLUDED",
+        "rel": "related_to",
+        "obj": "CRYPTOCURRENCY MINING"
+      },
+      {
+        "sub": "ADSHIELD WITH MINER INCLUDED",
+        "rel": "related_to",
+        "obj": "MALWARE DISTRIBUTION THROUGH SEARCH RESULTS"
+      },
+      {
+        "sub": "ADSHIELD WITH MINER INCLUDED",
+        "rel": "related_to",
+        "obj": "VIRTUAL ENVIRONMENT INJECTION"
+      },
+      {
+        "sub": "ADSHIELD WITH MINER INCLUDED",
+        "rel": "related_to",
+        "obj": "STATIC DETECTION AVOIDANCE"
+      },
+      {
+        "sub": "ADSHIELD WITH MINER INCLUDED",
+        "rel": "related_to",
+        "obj": "SECURELIST"
+      }
+    ]
+  }
+}

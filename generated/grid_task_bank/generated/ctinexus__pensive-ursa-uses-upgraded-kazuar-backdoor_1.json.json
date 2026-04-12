@@ -1,0 +1,271 @@
+{
+  "sample_id": "ctinexus__pensive-ursa-uses-upgraded-kazuar-backdoor_1.json",
+  "sample_index": 69,
+  "source": "ctinexus",
+  "file_name": "pensive-ursa-uses-upgraded-kazuar-backdoor_1.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Pensive Ursa",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Turla",
+          "Uroburos",
+          "the attacker",
+          "the threat group"
+        ]
+      },
+      {
+        "name": "Kazuar",
+        "type": "malware",
+        "alias": [
+          "another name for the enormous and dangerous cassowary bird",
+          "the variant",
+          "this version of Kazuar"
+        ]
+      },
+      {
+        "name": "cassowary bird",
+        "type": "abstract-concept",
+        "alias": [
+          "the enormous and dangerous cassowary bird"
+        ]
+      },
+      {
+        "name": "Unit 42 researchers",
+        "type": "identity",
+        "alias": [
+          "Unit 42"
+        ]
+      },
+      {
+        "name": "the Ukrainian CERT",
+        "type": "identity"
+      },
+      {
+        "name": "July 2023",
+        "type": "date"
+      },
+      {
+        "name": "Ukrainian defense sector",
+        "type": "victim-target"
+      },
+      {
+        "name": "Signal messages",
+        "type": "sensitive asset"
+      },
+      {
+        "name": "source control",
+        "type": "sensitive asset"
+      },
+      {
+        "name": "cloud platforms data",
+        "type": "sensitive asset"
+      },
+      {
+        "name": "European government and military sectors",
+        "type": "victim-target"
+      },
+      {
+        "name": "Sunburst backdoor",
+        "type": "malware"
+      },
+      {
+        "name": "2017",
+        "type": "date"
+      },
+      {
+        "name": "late 2020",
+        "type": "date"
+      },
+      {
+        "name": "2004",
+        "type": "date"
+      },
+      {
+        "name": "Russian Federal Security Service (FSB)",
+        "type": "identity"
+      },
+      {
+        "name": "advanced and stealthy .NET backdoor",
+        "type": "general-software",
+        "alias": [
+          "the advanced and stealthy .NET backdoor"
+        ]
+      },
+      {
+        "name": "second stage payload",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "code resemblance",
+        "type": "indicator",
+        "alias": [
+          "code resemblance between Sunburst and Kazuar"
+        ]
+      },
+      {
+        "name": "complexity level",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "researchers",
+        "type": "identity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Pensive Ursa",
+        "rel": "is a threat group operating since at least",
+        "rel_type": [
+          "date"
+        ],
+        "obj": "2004"
+      },
+      {
+        "sub": "Pensive Ursa",
+        "rel": "is linked to",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Russian Federal Security Service (FSB)"
+      },
+      {
+        "sub": "Unit 42 researchers",
+        "rel": "came across",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a new, upgraded variant of Kazuar"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "is another name for",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the enormous and dangerous cassowary bird"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "is an",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "advanced and stealthy .NET backdoor"
+      },
+      {
+        "sub": "Pensive Ursa",
+        "rel": "usually uses as a",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "second stage payload"
+      },
+      {
+        "sub": "The Ukrainian CERT",
+        "rel": "reported in",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "July 2023"
+      },
+      {
+        "sub": "this version of Kazuar",
+        "rel": "was targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the Ukrainian defense sector"
+      },
+      {
+        "sub": "the threat group behind this variant",
+        "rel": "was going after",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "sensitive assets such as those found in Signal messages, source control and cloud platforms data"
+      },
+      {
+        "sub": "Sunburst backdoor",
+        "rel": "has been tied to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Kazuar by code resemblance"
+      },
+      {
+        "sub": "Sunburst backdoor",
+        "rel": "demonstrates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "its complexity level"
+      },
+      {
+        "sub": "Unit 42 researchers",
+        "rel": "discovered",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Kazuar in 2017"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "has been seen in the wild only a handful of times since",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "2017"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "has been targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "organizations in the European government and military sectors"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "was not seen in the wild since",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "late 2020"
+      },
+      {
+        "sub": "reports",
+        "rel": "suggested",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "Kazuar was under constant development"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "is a",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "the variant"
+      }
+    ]
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_40.json",
+  "sample_index": 230,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_40.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Malwarebytes",
+        "type": "general-software",
+        "alias": [
+          "We at Malwarebytes"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "PUP Friday",
+        "type": "campaign",
+        "alias": [
+          "our latest attempt at getting users acquainted with files they may need to watch out for in the Wild Web"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "DNS hijackers",
+        "type": "attack-pattern",
+        "alias": [
+          "a family of adware",
+          "the installer",
+          "the wrapper"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "TopFlix",
+        "type": "malware",
+        "alias": [
+          "a DNS hijacker",
+          "the installer",
+          "TopFlix installer",
+          "the Services"
+        ],
+        "mother entity": "DNSUnlocker"
+      },
+      {
+        "name": "DNSUnlocker",
+        "type": "malware",
+        "alias": [
+          "a family of adware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "SoftPulse",
+        "type": "hacker-tool",
+        "alias": [
+          "bundle wrapper",
+          "the SoftPulse bundle installer",
+          "the wrapper",
+          "SoftPulse bundle wrapper"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Java",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Flash Player",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "additional offers",
+        "type": "file",
+        "alias": [
+          "the extra ingredients of their own",
+          "extra offers"
+        ],
+        "mother entity": "SoftPulse"
+      },
+      {
+        "name": "EULA",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "their EULA",
+          "the EULA"
+        ],
+        "mother entity": "TopFlix"
+      },
+      {
+        "name": "Privacy Policy",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": "TopFlix"
+      },
+      {
+        "name": "DNS settings",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": "the Services"
+      },
+      {
+        "name": "Unsupervised thirdparty content",
+        "type": "file",
+        "alias": [
+          "text popups",
+          "some others",
+          "thirdparty content",
+          "the advertisement"
+        ],
+        "mother entity": "TopFlix"
+      },
+      {
+        "name": "OneSafe PC Cleaner",
+        "type": "malware",
+        "alias": [
+          "potentially unwanted program",
+          "PUP"
+        ],
+        "mother entity": "Avanquest"
+      },
+      {
+        "name": "Avanquest",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "adsupply",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Malwarebytes AntiMalware",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PUP.Optional.SoftPulse",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": "SoftPulse"
+      },
+      {
+        "name": "Adware.TopGuard",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": "TopFlix"
+      },
+      {
+        "name": "forums",
+        "type": "location",
+        "alias": [],
+        "mother entity": "Malwarebytes"
+      },
+      {
+        "name": "Total Uninstaller",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Ashampoo Uninstaller",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Restore Point",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Pieter Arntz",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "We at Malwarebytes",
+        "rel": "continue to do our part in educating our product users and constant blog readers about daytoday online threats",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "users",
+        "special_factuality": []
+      },
+      {
+        "sub": "PUP Friday",
+        "rel": "offers an indepth look at some interesting and quite notable potentially unwanted programs (PUPs)",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "PUP Friday",
+        "special_factuality": []
+      },
+      {
+        "sub": "TopFlix",
+        "rel": "belongs to a family of adware that we call DNSUnlocker",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "DNSUnlocker",
+        "special_factuality": []
+      },
+      {
+        "sub": "SoftPulse",
+        "rel": "pushed by a bundle wrapper called SoftPulse",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "TopFlix",
+        "special_factuality": []
+      },
+      {
+        "sub": "SoftPulse",
+        "rel": "uses advertisements to lure users into downloading and installing useful applications like Java or Flash Player",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "Java",
+        "special_factuality": []
+      },
+      {
+        "sub": "SoftPulse",
+        "rel": "uses advertisements to lure users into downloading and installing useful applications like Java or Flash Player",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "Flash Player",
+        "special_factuality": []
+      },
+      {
+        "sub": "SoftPulse",
+        "rel": "add some extra ingredients of their own",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "additional offers",
+        "special_factuality": []
+      },
+      {
+        "sub": "SoftPulse",
+        "rel": "triggers the installation of TopFlix",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "TopFlix",
+        "special_factuality": []
+      },
+      {
+        "sub": "TopFlix installer",
+        "rel": "presented with an EULA and link to Privacy Policy",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "EULA",
+        "special_factuality": []
+      },
+      {
+        "sub": "TopFlix installer",
+        "rel": "gives the Services permission to change your DNS settings",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "DNS settings",
+        "special_factuality": []
+      },
+      {
+        "sub": "TopFlix installer",
+        "rel": "may contain unsupervised thirdparty content",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "Unsupervised thirdparty content",
+        "special_factuality": []
+      },
+      {
+        "sub": "Unsupervised thirdparty content",
+        "rel": "comes as text popups or new browser tabs",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "text popups",
+        "special_factuality": []
+      },
+      {
+        "sub": "Unsupervised thirdparty content",
+        "rel": "comes as text popups or new browser tabs",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "new browser tab or window",
+        "special_factuality": []
+      },
+      {
+        "sub": "Unsupervised thirdparty content",
+        "rel": "led to the potentially unwanted program called OneSafe PC Cleaner",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "OneSafe PC Cleaner",
+        "special_factuality": []
+      },
+      {
+        "sub": "OneSafe PC Cleaner",
+        "rel": "by Avanquest",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Avanquest",
+        "special_factuality": []
+      },
+      {
+        "sub": "OneSafe PC Cleaner",
+        "rel": "was marked as Ad by adsupply",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "adsupply",
+        "special_factuality": []
+      },
+      {
+        "sub": "Malwarebytes AntiMalware",
+        "rel": "detects SoftPulse as PUP.Optional.SoftPulse",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "PUP.Optional.SoftPulse",
+        "special_factuality": []
+      },
+      {
+        "sub": "Malwarebytes AntiMalware",
+        "rel": "detects TopFlix as Adware.TopGuard",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Adware.TopGuard",
+        "special_factuality": []
+      },
+      {
+        "sub": "forums",
+        "rel": "host a full removal guide and logs of the install",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "removal guide and logs",
+        "special_factuality": []
+      },
+      {
+        "sub": "user",
+        "rel": "Skip or Deny extra offers",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "extra offers",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "user",
+        "rel": "Create a Restore Point before installing software",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "software",
+        "special_factuality": []
+      },
+      {
+        "sub": "Pieter Arntz",
+        "rel": "authored the analysis on TopFlix and SoftPulse",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "TopFlix",
+        "special_factuality": []
+      }
+    ]
+  }
+}

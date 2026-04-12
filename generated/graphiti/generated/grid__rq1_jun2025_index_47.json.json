@@ -1,0 +1,297 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_47.json",
+  "sample_index": 236,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_47.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Win32/Quervar",
+        "type": "Malware"
+      },
+      {
+        "name": "Dorifel",
+        "type": "Malware"
+      },
+      {
+        "name": "XDocCrypt",
+        "type": "Malware"
+      },
+      {
+        "name": "Win32/Induc.C",
+        "type": "Malware"
+      },
+      {
+        "name": "RC4",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Delphi",
+        "type": "Tool"
+      },
+      {
+        "name": "Zeus",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Citadel",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Microsoft Word",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Excel",
+        "type": "Software"
+      },
+      {
+        "name": "RLOcod.scr",
+        "type": "Indicator"
+      },
+      {
+        "name": "RLOslx.scr",
+        "type": "Indicator"
+      },
+      {
+        "name": "HKCUSoftwareMicrosoftWindowsCurrentVersionInternet Settings",
+        "type": "Indicator"
+      },
+      {
+        "name": "GlobalUserOffline",
+        "type": "Indicator"
+      },
+      {
+        "name": "kaspersky",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "ESET",
+        "type": "Organization"
+      },
+      {
+        "name": "Netherlands",
+        "type": "Location"
+      },
+      {
+        "name": "Turkey",
+        "type": "Location"
+      },
+      {
+        "name": "Russia",
+        "type": "Location"
+      },
+      {
+        "name": "Slovakia",
+        "type": "Location"
+      },
+      {
+        "name": "Right-to-left override",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Task Manager",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "browser history",
+        "type": "Indicator"
+      },
+      {
+        "name": "browser cache",
+        "type": "Indicator"
+      },
+      {
+        "name": "URLs",
+        "type": "Indicator"
+      },
+      {
+        "name": "botnet",
+        "type": "Campaign"
+      },
+      {
+        "name": "CC server",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Scarface",
+        "type": "Person"
+      },
+      {
+        "name": "Breaking Bad",
+        "type": "Person"
+      },
+      {
+        "name": "deadline",
+        "type": "Person"
+      },
+      {
+        "name": "SayHellotomyLittleFriend",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Win32/Quervar",
+        "rel": "has alternate name",
+        "obj": "Dorifel"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "has alternate name",
+        "obj": "XDocCrypt"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "has similarity to",
+        "obj": "Win32/Induc.C"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "USES",
+        "obj": "RC4"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "is programmed in",
+        "obj": "Delphi"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "INfects",
+        "obj": "Microsoft Word"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "INfects",
+        "obj": "Microsoft Excel"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "changes extension to",
+        "obj": "RLOcod.scr"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "changes extension to",
+        "obj": "RLOslx.scr"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "modifies registry key",
+        "obj": "HKCUSoftwareMicrosoftWindowsCurrentVersionInternet Settings"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "sets registry value",
+        "obj": "GlobalUserOffline"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "attempts to connect to",
+        "obj": "kaspersky"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "can be cleaned by",
+        "obj": "ESET"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "is prevalent in",
+        "obj": "Netherlands"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "is prevalent in",
+        "obj": "Turkey"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "is prevalent in",
+        "obj": "Russia"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "is prevalent in",
+        "obj": "Slovakia"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "USES",
+        "obj": "Right-to-left override"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "self defense aggainst",
+        "obj": "Task Manager"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "STEALS",
+        "obj": "browser history"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "STEALS",
+        "obj": "browser cache"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "communicates with",
+        "obj": "CC server"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "uses as marker",
+        "obj": "Scarface"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "uses as marker",
+        "obj": "Breaking Bad"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "uses as marker",
+        "obj": "deadline"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "uses as event",
+        "obj": "SayHellotomyLittleFriend"
+      },
+      {
+        "sub": "Win32/Induc.C",
+        "rel": "has similarity to",
+        "obj": "Win32/Quervar"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "co occurs with",
+        "obj": "Zeus"
+      },
+      {
+        "sub": "Win32/Quervar",
+        "rel": "co occurs with",
+        "obj": "Citadel"
+      }
+    ]
+  }
+}

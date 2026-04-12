@@ -1,0 +1,319 @@
+{
+  "sample_id": "ctinexus__two-campaigns-by-north-korea-bad-actors-target-job-hunters.json",
+  "sample_index": 52,
+  "source": "ctinexus",
+  "file_name": "two-campaigns-by-north-korea-bad-actors-target-job-hunters.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Unit 42",
+        "type": "Entity"
+      },
+      {
+        "name": "Contagious Interview",
+        "type": "Entity"
+      },
+      {
+        "name": "Wagemole",
+        "type": "Entity"
+      },
+      {
+        "name": "Democratic People's Republic of Korea",
+        "type": "Entity"
+      },
+      {
+        "name": "North Korea",
+        "type": "Entity"
+      },
+      {
+        "name": "state-sponsored threat actors",
+        "type": "Entity"
+      },
+      {
+        "name": "software developers",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "theft",
+        "type": "Entity"
+      },
+      {
+        "name": "unauthorized employment",
+        "type": "Entity"
+      },
+      {
+        "name": "United States",
+        "type": "Entity"
+      },
+      {
+        "name": "global organizations",
+        "type": "Entity"
+      },
+      {
+        "name": "espionage",
+        "type": "Entity"
+      },
+      {
+        "name": "financial gain",
+        "type": "Entity"
+      },
+      {
+        "name": "threat attribution",
+        "type": "Entity"
+      },
+      {
+        "name": "moderate confidence",
+        "type": "Entity"
+      },
+      {
+        "name": "high confidence",
+        "type": "Entity"
+      },
+      {
+        "name": "ongoing active threat",
+        "type": "Entity"
+      },
+      {
+        "name": "employers",
+        "type": "Entity"
+      },
+      {
+        "name": "anonymous identities",
+        "type": "Entity"
+      },
+      {
+        "name": "vague identities",
+        "type": "Entity"
+      },
+      {
+        "name": "interview process",
+        "type": "Entity"
+      },
+      {
+        "name": "malware installation",
+        "type": "Entity"
+      },
+      {
+        "name": "job-seeking activities",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Unit 42",
+        "rel": "discovered_by",
+        "obj": "Contagious Interview"
+      },
+      {
+        "sub": "Unit 42",
+        "rel": "discovered_by",
+        "obj": "Wagemole"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "targets",
+        "obj": "software developers"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "poses_as",
+        "obj": "employers"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "uses_anonymous_or_vague_identities",
+        "obj": "anonymous identities"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "uses_anonymous_or_vague_identities",
+        "obj": "vague identities"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "involves_interview_process",
+        "obj": "interview process"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "leads_to",
+        "obj": "malware installation"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "leads_to_theft",
+        "obj": "theft"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "drives_unauthorized_employment",
+        "obj": "unauthorized employment"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "occurs_in",
+        "obj": "United States"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "occurs_in",
+        "obj": "global organizations"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "results_in",
+        "obj": "espionage"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "results_in_financial_gain",
+        "obj": "financial gain"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "results_in_espionage",
+        "obj": "espionage"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "attributed_to",
+        "obj": "state-sponsored threat actors"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "attributed_to",
+        "obj": "state-sponsored threat actors"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "has_confidence_level",
+        "obj": "moderate confidence"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "has_confidence_level",
+        "obj": "high confidence"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "is_active",
+        "obj": "ongoing active threat"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "is_active",
+        "obj": "ongoing active threat"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "associated_with",
+        "obj": "Democratic People's Republic of Korea"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "associated_with",
+        "obj": "North Korea"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "involves_job_seeking",
+        "obj": "job-seeking activities"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "involves_job_seeking",
+        "obj": "job-seeking activities"
+      },
+      {
+        "sub": "state-sponsored threat actors",
+        "rel": "is_associated_with_state_sponsored_activity",
+        "obj": "Democratic People's Republic of Korea"
+      },
+      {
+        "sub": "state-sponsored threat actors",
+        "rel": "is_associated_with_state_sponsored_activity",
+        "obj": "North Korea"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "leads_to",
+        "obj": "leads_to_theft"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "drives_unauthorized_employment",
+        "obj": "drives_unauthorized_employment"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "is_active_in_us_and_global_orgs",
+        "obj": "is_active_in_us_and_global_orgs"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "is_targeted_by_software_developers",
+        "obj": "is_targeted_by_software_developers"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "is_conducted_by_state_sponsored_threat_actors",
+        "obj": "is_conducted_by_state_sponsored_threat_actors"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "is_conducted_by_state_sponsored_threat_actors",
+        "obj": "is_conducted_by_state_sponsored_threat_actors"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "leads_to",
+        "obj": "results_in_financial_gain"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "results_in",
+        "obj": "results_in_espionage"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "is_a_campaign",
+        "obj": "is_a_campaign"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "is_a_campaign",
+        "obj": "is_a_campaign"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "is_a_threat_activity",
+        "obj": "is_a_threat_activity"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "is_a_threat_activity",
+        "obj": "is_a_threat_activity"
+      }
+    ]
+  }
+}

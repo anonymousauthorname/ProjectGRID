@@ -1,0 +1,314 @@
+{
+  "sample_id": "malkg__201306FireEyeSeinUp.txt",
+  "sample_index": 123,
+  "source": "malkg",
+  "file_name": "201306FireEyeSeinUp.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TROJAN.APT.SEINUP",
+        "type": "MALWARE"
+      },
+      {
+        "name": "EXP1ORE.EXE",
+        "type": "TOOL"
+      },
+      {
+        "name": "WAB.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "WAB32RES.DLL",
+        "type": "MALWARE"
+      },
+      {
+        "name": "MSNETRSVW.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "GOOGLE DOCS",
+        "type": "TOOL"
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "ASEAN",
+        "type": "GEO"
+      },
+      {
+        "name": "BRUNEI",
+        "type": "GEO"
+      },
+      {
+        "name": "CAMBODIA",
+        "type": "GEO"
+      },
+      {
+        "name": "INDONESIA",
+        "type": "GEO"
+      },
+      {
+        "name": "LAOS",
+        "type": "GEO"
+      },
+      {
+        "name": "MALAYSIA",
+        "type": "GEO"
+      },
+      {
+        "name": "MYANMAR",
+        "type": "GEO"
+      },
+      {
+        "name": "PHILIPPINES",
+        "type": "GEO"
+      },
+      {
+        "name": "SINGAPORE",
+        "type": "GEO"
+      },
+      {
+        "name": "THAILAND",
+        "type": "GEO"
+      },
+      {
+        "name": "VIETNAM",
+        "type": "GEO"
+      },
+      {
+        "name": "ELIZABEARDEN.COM",
+        "type": "DOMAIN"
+      },
+      {
+        "name": "DNSSERVICEONLINE.COM",
+        "type": "DOMAIN"
+      },
+      {
+        "name": "SYMTECONLINE.COM",
+        "type": "DOMAIN"
+      },
+      {
+        "name": "WINSHELL.NET",
+        "type": "DOMAIN"
+      },
+      {
+        "name": "PHILNEWSONLINE.COM",
+        "type": "DOMAIN"
+      },
+      {
+        "name": "INFO-WEEK.COM",
+        "type": "DOMAIN"
+      },
+      {
+        "name": "GO-TWITTER.COM",
+        "type": "DOMAIN"
+      },
+      {
+        "name": "FIREEYE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "TAKASHI KATSUKI",
+        "type": "PERSON"
+      },
+      {
+        "name": "MERSENNE TWISTER ALGORITHM",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "ZERO-SKIPPING XOR ENCRYPTION",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "DLL SIDE-LOADING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "SECURE CALLBACK",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "SPEAR PHISHING",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "BACKDOOR",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "WINSHL.NET",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TROJAN.APT.SEINUP",
+        "rel": "related_to",
+        "obj": "EXP1ORE.EXE"
+      },
+      {
+        "sub": "EXP1ORE.EXE",
+        "rel": "related_to",
+        "obj": "WAB.EXE"
+      },
+      {
+        "sub": "WAB.EXE",
+        "rel": "related_to",
+        "obj": "WAB32RES.DLL"
+      },
+      {
+        "sub": "WAB32RES.DLL",
+        "rel": "related_to",
+        "obj": "MSNETRSVW.EXE"
+      },
+      {
+        "sub": "TROJAN.APT.SEINUP",
+        "rel": "related_to",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "TROJAN.APT.SEINUP",
+        "rel": "related_to",
+        "obj": "GOOGLE DOCS"
+      },
+      {
+        "sub": "TROJAN.APT.SEINUP",
+        "rel": "related_to",
+        "obj": "SPEAR PHISHING"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "ASEAN"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "TAKASHI KATSUKI"
+      },
+      {
+        "sub": "TROJAN.APT.SEINUP",
+        "rel": "related_to",
+        "obj": "ELIZABEARDEN.COM"
+      },
+      {
+        "sub": "TROJAN.APT.SEINUP",
+        "rel": "related_to",
+        "obj": "DNSSERVICEONLINE.COM"
+      },
+      {
+        "sub": "TROJAN.APT.SEINUP",
+        "rel": "related_to",
+        "obj": "SYMTECONLINE.COM"
+      },
+      {
+        "sub": "TROJAN.APT.SEINUP",
+        "rel": "related_to",
+        "obj": "WINSHL.NET"
+      },
+      {
+        "sub": "TROJAN.APT.SEINUP",
+        "rel": "related_to",
+        "obj": "FIREEYE"
+      },
+      {
+        "sub": "TROJAN.APT.SEINUP",
+        "rel": "related_to",
+        "obj": "MERSENNE TWISTER ALGORITHM"
+      },
+      {
+        "sub": "TROJAN.APT.SEINUP",
+        "rel": "related_to",
+        "obj": "ZERO-SKIPPING XOR ENCRYPTION"
+      },
+      {
+        "sub": "TROJAN.APT.SEINUP",
+        "rel": "related_to",
+        "obj": "DLL SIDE-LOADING"
+      },
+      {
+        "sub": "TROJAN.APT.SEINUP",
+        "rel": "related_to",
+        "obj": "SECURE CALLBACK"
+      },
+      {
+        "sub": "FIREEYE",
+        "rel": "related_to",
+        "obj": "TROJAN.APT.SEINUP"
+      },
+      {
+        "sub": "TROJAN.APT.SEINUP",
+        "rel": "related_to",
+        "obj": "BACKDOOR"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "BRUNEI"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "CAMBODIA"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "INDONESIA"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "LAOS"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "MALAYSIA"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "MYANMAR"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "PHILIPPINES"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "SINGAPORE"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "THAILAND"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "VIETNAM"
+      }
+    ]
+  }
+}

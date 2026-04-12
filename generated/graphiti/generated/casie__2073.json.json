@@ -1,0 +1,148 @@
+{
+  "sample_id": "casie__2073.json",
+  "sample_index": 30,
+  "source": "casie",
+  "file_name": "2073.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Dawid Golunski",
+        "type": "Person"
+      },
+      {
+        "name": "WordPress",
+        "type": "Software"
+      },
+      {
+        "name": "WordPress 4.6",
+        "type": "Software"
+      },
+      {
+        "name": "WordPress 4.7.1",
+        "type": "Entity"
+      },
+      {
+        "name": "WordPress 4.7.4",
+        "type": "Software"
+      },
+      {
+        "name": "WordPress 4.3.1",
+        "type": "Software"
+      },
+      {
+        "name": "PHPMailer",
+        "type": "Software"
+      },
+      {
+        "name": "CVE-2016-10033",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "CVE-2017-8295",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "WordPress Foundation",
+        "type": "Organization"
+      },
+      {
+        "name": "BeyondSecurity",
+        "type": "Organization"
+      },
+      {
+        "name": "Unauthenticated remote code execution",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Unauthorized password reset",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Password reset e-mail",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "UseCanonicalName",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Dawid Golunski",
+        "rel": "releassed proof of concept for",
+        "obj": "CVE-2016-10033"
+      },
+      {
+        "sub": "Dawid Golunski",
+        "rel": "released proof of concept for",
+        "obj": "CVE-2017-8295"
+      },
+      {
+        "sub": "WordPress 4.6",
+        "rel": "has vulnerability",
+        "obj": "CVE-2016-10033"
+      },
+      {
+        "sub": "WordPress 4.3.1",
+        "rel": "has vulnerability",
+        "obj": "CVE-2017-8295"
+      },
+      {
+        "sub": "WordPress Foundation",
+        "rel": "plugged vulnerability in",
+        "obj": "CVE-2016-10033"
+      },
+      {
+        "sub": "WordPress Foundation",
+        "rel": "has not patched vulnerability",
+        "obj": "CVE-2017-8295"
+      },
+      {
+        "sub": "WordPress",
+        "rel": "USES",
+        "obj": "PHPMailer"
+      },
+      {
+        "sub": "CVE-2017-8295",
+        "rel": "AFFECTS",
+        "obj": "Password reset e-mail"
+      },
+      {
+        "sub": "Dawid Golunski",
+        "rel": "offers temporary solution using",
+        "obj": "UseCanonicalName"
+      },
+      {
+        "sub": "BeyondSecurity",
+        "rel": "coordinated disclosure to",
+        "obj": "CVE-2017-8295"
+      },
+      {
+        "sub": "WordPress 4.6",
+        "rel": "upgraded to",
+        "obj": "WordPress 4.7.1"
+      },
+      {
+        "sub": "WordPress 4.6",
+        "rel": "upgraded to",
+        "obj": "WordPress 4.7.4"
+      }
+    ]
+  }
+}

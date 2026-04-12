@@ -1,0 +1,302 @@
+{
+  "sample_id": "casie__1103.json",
+  "sample_index": 38,
+  "source": "casie",
+  "file_name": "1103.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Reconnaissance",
+        "rel": "Has tactic",
+        "obj": "Identify user interactions with images"
+      },
+      {
+        "sub": "WhatsApp Web",
+        "rel": "Has platform",
+        "obj": "Web interface"
+      },
+      {
+        "sub": "Telegram Web",
+        "rel": "Has platform",
+        "obj": "Web interface"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "Has vulnerability",
+        "obj": "Lack of content validation prior to encryption"
+      },
+      {
+        "sub": "Telegram",
+        "rel": "Has vulnerability",
+        "obj": "Lack of content validation prior to encryption"
+      },
+      {
+        "sub": "Malicious payload",
+        "rel": "Use",
+        "obj": "Exploited via benign images"
+      },
+      {
+        "sub": "Benign image",
+        "rel": "Has URL",
+        "obj": "Image link used in user interaction"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Through user interaction with images"
+      },
+      {
+        "sub": "Image",
+        "rel": "Has value",
+        "obj": "Unvalidated content before encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Resource"
+      },
+      {
+        "sub": "Resource",
+        "rel": "Use",
+        "obj": "Image"
+      },
+      {
+        "sub": "Resource",
+        "rel": "Exploit",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Affect",
+        "obj": "Web Client"
+      },
+      {
+        "sub": "Web Client",
+        "rel": "Has vulnerability",
+        "obj": "Resource"
+      },
+      {
+        "sub": "Resource",
+        "rel": "Deliver",
+        "obj": "Malicious Code"
+      },
+      {
+        "sub": "Malicious Code",
+        "rel": "Execute",
+        "obj": "On Victim's Device"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Malicious code"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Operate",
+        "obj": "Victim’s account"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Modify",
+        "obj": "Personal data"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Modify",
+        "obj": "Group conversations"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Modify",
+        "obj": "Photos"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Modify",
+        "obj": "Videos"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Modify",
+        "obj": "Contact lists"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Relies on",
+        "obj": "User interaction"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Relies on",
+        "obj": "Trust in the platform’s interface"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Operate",
+        "obj": "Web client"
+      },
+      {
+        "sub": "Malicious image",
+        "rel": "Execute",
+        "obj": "Victim’s device"
+      },
+      {
+        "sub": "Malicious payload",
+        "rel": "Run",
+        "obj": "User’s session"
+      },
+      {
+        "sub": "Malicious payload",
+        "rel": "Access",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Lack",
+        "obj": "Content validation"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Perform",
+        "obj": "Encryption"
+      },
+      {
+        "sub": "Malicious payload",
+        "rel": "Run",
+        "obj": "Without detection"
+      },
+      {
+        "sub": "Web client",
+        "rel": "Execute",
+        "obj": "Attacker’s code"
+      },
+      {
+        "sub": "Victim’s account data",
+        "rel": "Has vulnerability",
+        "obj": "Full access granted by compromised session"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Victim’s account data"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Discover",
+        "obj": "Personal conversations"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Discover",
+        "obj": "Shared files"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Discover",
+        "obj": "Contact lists"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Discover",
+        "obj": "Group information"
+      },
+      {
+        "sub": "Compromised session",
+        "rel": "Enable",
+        "obj": "Exploration of victim’s data environment"
+      },
+      {
+        "sub": "Compromised session",
+        "rel": "Enable",
+        "obj": "Mapping of victim’s data environment"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Personal and group conversations"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Photos"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Videos"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Shared files"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Contact lists"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Data"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Use",
+        "obj": "Messaging Infrastructure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Compromised Web Interface"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encrypted Channel"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has vulnerability",
+        "obj": "Web Interface"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Modify",
+        "obj": "Data Transfer"
+      },
+      {
+        "sub": "Victim’s Device",
+        "rel": "Exfiltrate",
+        "obj": "Data"
+      },
+      {
+        "sub": "Web Interface",
+        "rel": "Has URL",
+        "obj": "Initial Access Channel"
+      },
+      {
+        "sub": "Web Interface",
+        "rel": "Locate at",
+        "obj": "Victim’s Device"
+      }
+    ]
+  }
+}

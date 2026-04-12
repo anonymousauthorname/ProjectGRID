@@ -1,0 +1,457 @@
+{
+  "sample_id": "securenlp__ThreatConnect_Operation_Arachnophobia_Report",
+  "sample_index": 199,
+  "source": "securenlp",
+  "file_name": "ThreatConnect_Operation_Arachnophobia_Report",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Lure related to the death of Sarabjit Singh"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Lure related to Indian Government pension memorandum"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Leaked report lure related to Pakistan's alleged inability to locate Osama Bin Laden"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Lure related to the disappearance of Malaysia Airlines Flight 370 cast as a Pakistan-related hijacking"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Information about India-Pakistan issues"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "C2 Infrastructure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "VPSNOC"
+      },
+      {
+        "sub": "VPSNOC",
+        "rel": "Locate at",
+        "obj": "Pakistan"
+      },
+      {
+        "sub": "VPSNOC",
+        "rel": "Has value",
+        "obj": "U.S. hosting services"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "C2 Infrastructure"
+      },
+      {
+        "sub": "C2 Infrastructure",
+        "rel": "Has hostname",
+        "obj": "IP"
+      },
+      {
+        "sub": "C2 Infrastructure",
+        "rel": "Has value",
+        "obj": "Pakistan-based hosting provider"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Belong to",
+        "obj": "Resource Development"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Self-extracting RAR archive"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Has value",
+        "obj": "Configuration files"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Has value",
+        "obj": "Dependency DLLs"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Construct",
+        "obj": "BITTERBUG executable"
+      },
+      {
+        "sub": "BITTERBUG executable",
+        "rel": "Install",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "BITTERBUG executable",
+        "rel": "Operate",
+        "obj": "Victim network"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Disguise as",
+        "obj": "Screensaver"
+      },
+      {
+        "sub": "BITTERBUG executable",
+        "rel": "Communicate with",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "BITTERBUG",
+        "rel": "Has vulnerability",
+        "obj": "libcurld.dll"
+      },
+      {
+        "sub": "BITTERBUG",
+        "rel": "Has vulnerability",
+        "obj": "msvcm90d.dll"
+      },
+      {
+        "sub": "BITTERBUG",
+        "rel": "Has vulnerability",
+        "obj": "msvcp90d.dll"
+      },
+      {
+        "sub": "BITTERBUG",
+        "rel": "Has vulnerability",
+        "obj": "msvcr90d.dll"
+      },
+      {
+        "sub": "BITTERBUG",
+        "rel": "Use",
+        "obj": "Windows Management Instrumentation"
+      },
+      {
+        "sub": "BITTERBUG",
+        "rel": "Operate",
+        "obj": "virtual machine"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Construct",
+        "obj": "BITTERBUG"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Deliver",
+        "obj": "phishing lures"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Execute",
+        "obj": "BITTERBUG"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Modify",
+        "obj": "%USERPROFILE%\\Start Menu\\Programs\\Startup"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Modify",
+        "obj": "%APPDATA%\\Microsoft"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Construct",
+        "obj": "wincheck.exe"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Construct",
+        "obj": "winsquirt.exe"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Use",
+        "obj": "wincheck.exe"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Use",
+        "obj": "winsquirt.exe"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Write",
+        "obj": "recovery.txt"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Write",
+        "obj": "prc.dat"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Operate",
+        "obj": "Startup directory"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Obfuscation"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Use of generic debug paths"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Debug strings"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "File paths"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Obfuscated file paths"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Operate",
+        "obj": "Avoid detection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Filelist"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Extension"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "%APPDATA%\\Microsoft\\plang006.txt"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "%APPDATA%\\Microsoft\\tlang006.txt"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "%APPDATA%\\Microsoft\\prc.dat"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Extension"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Filelist"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Scan",
+        "obj": "Drive letter"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Recursively search",
+        "obj": "File with extension"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": ".doc"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": ".xls"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": ".pdf"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": ".ppt"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": ".egm"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": ".xml"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "File list"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Upload",
+        "obj": "File list"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Drive letter"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "PHP-based HTTP requests"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "URIs '/path_active.php?compname='"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "URIs '/checkpkg.php?compname='"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "file 'versionchk.php?srs=436712384'"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "file 'vtris.php?srs=436712384'"
+      },
+      {
+        "sub": "C2",
+        "rel": "Respond with",
+        "obj": "filenames"
+      },
+      {
+        "sub": "C2",
+        "rel": "Operate",
+        "obj": "%APPDATA%\\Microsoft directory"
+      },
+      {
+        "sub": "C2",
+        "rel": "Modify",
+        "obj": "%APPDATA%\\Microsoft directory"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "HTTP request"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Upload",
+        "obj": "Running process list"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Upload",
+        "obj": "Document file list"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Upload",
+        "obj": "All documents"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "http://<c2_location>/fetch_updates_flex.php?compname=<%COMPUTERNAME%>_<%USERNAME%>"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Data collection and transmission mechanism"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Data to C2 channel"
+      }
+    ]
+  }
+}

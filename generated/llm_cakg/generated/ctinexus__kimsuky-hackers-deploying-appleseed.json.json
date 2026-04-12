@@ -1,0 +1,105 @@
+{
+  "sample_id": "ctinexus__kimsuky-hackers-deploying-appleseed.json",
+  "sample_index": 72,
+  "source": "ctinexus",
+  "file_name": "kimsuky-hackers-deploying-appleseed.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "AppleSeed",
+        "type": "Entity"
+      },
+      {
+        "name": "Meterpreter",
+        "type": "Entity"
+      },
+      {
+        "name": "TinyNuke",
+        "type": "Entity"
+      },
+      {
+        "name": "Kimsuky",
+        "type": "Entity"
+      },
+      {
+        "name": "spear-phishing",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious lure documents",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Kimsuky",
+        "rel": "uses",
+        "obj": "spear-phishing"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "uses",
+        "obj": "malicious lure documents"
+      },
+      {
+        "sub": "malicious lure documents",
+        "rel": "downloaded and executed",
+        "obj": "AppleSeed"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "uses",
+        "obj": "Meterpreter"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "uses",
+        "obj": "TinyNuke"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "exploits",
+        "obj": "CVE-2021-44228"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "targets",
+        "obj": "South Korea"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "expands focus to",
+        "obj": "other geographies"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "is sanctioned by",
+        "obj": "U.S. government"
+      }
+    ]
+  }
+}

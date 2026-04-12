@@ -1,0 +1,117 @@
+{
+  "sample_id": "casie__10104.json",
+  "sample_index": 6,
+  "source": "casie",
+  "file_name": "10104.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "GANDCRAB",
+        "type": "MALWARE"
+      },
+      {
+        "name": "RIG EK",
+        "type": "TOOL"
+      },
+      {
+        "name": "GRANDSOFT EK",
+        "type": "TOOL"
+      },
+      {
+        "name": "MALWAREBYTES",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "PRINCESS RANSOMWARE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "DASH",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "INTERNET EXPLORER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "FLASH PLAYER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "JAVA RUNTIME ENVIRONMENT",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "RSA ALGORITHM",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "EXPLOIT KIT",
+        "type": "ATTACK_PATTERN"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "GANDCRAB",
+        "rel": "related_to",
+        "obj": "RIG EK"
+      },
+      {
+        "sub": "GANDCRAB",
+        "rel": "related_to",
+        "obj": "GRANDSOFT EK"
+      },
+      {
+        "sub": "RIG EK",
+        "rel": "related_to",
+        "obj": "INTERNET EXPLORER"
+      },
+      {
+        "sub": "RIG EK",
+        "rel": "related_to",
+        "obj": "FLASH PLAYER"
+      },
+      {
+        "sub": "GRANDSOFT EK",
+        "rel": "related_to",
+        "obj": "JAVA RUNTIME ENVIRONMENT"
+      },
+      {
+        "sub": "GANDCRAB",
+        "rel": "related_to",
+        "obj": "DASH"
+      },
+      {
+        "sub": "GANDCRAB",
+        "rel": "related_to",
+        "obj": "MALWAREBYTES"
+      },
+      {
+        "sub": "RIG EK",
+        "rel": "related_to",
+        "obj": "PRINCESS RANSOMWARE"
+      },
+      {
+        "sub": "GANDCRAB",
+        "rel": "related_to",
+        "obj": "EXPLOIT KIT"
+      }
+    ]
+  }
+}

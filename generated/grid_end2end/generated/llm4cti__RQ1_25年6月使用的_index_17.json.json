@@ -1,0 +1,360 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_17.json",
+  "sample_index": 209,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_17.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "VirusTotal",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malware authors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "malware authors",
+          "the attacker",
+          "the curious",
+          "the malware authors"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "carrelated forum",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "spamtraps",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Subject: Warning!",
+        "type": "email-address",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "DO NOT REPLY TO THIS EMAIL!",
+        "type": "email-address",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "[Redacted forum user name]",
+        "type": "identity",
+        "alias": [
+          "the forum user",
+          "Redacted forum user names"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "[Redacted]",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://[Redacted]",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "virustotal.TLD",
+        "type": "domain-name",
+        "alias": [
+          "the domain",
+          "the fake site"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "virustotal.com",
+        "type": "domain-name",
+        "alias": [
+          "legitimate site"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "http://www.virustotal.[TLD removed]/detected/[Redacted]",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "a page which says: We detected viruses activity from your computer.",
+        "type": "web-page",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "/scanning/",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "fake scanning page",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows Security Alert popup",
+        "type": "abstract-concept",
+        "alias": [
+          "the box",
+          "the box from Windows XP"
+        ],
+        "mother entity": [
+          "fake scanning page"
+        ]
+      },
+      {
+        "name": "securitytoolsetup.exe",
+        "type": "file",
+        "alias": [
+          "this file",
+          "malicious executable",
+          "Fake Antiviruses"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Mal/FakeVirPkA",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "securitytoolsetup.exe"
+        ]
+      },
+      {
+        "name": "log file (your IP address, etc.)",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Internet Service Provider (ISP)",
+        "type": "organization",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "vulnerabilities or shortcomings in your Internet security",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "spyware removal",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "friend, family, or a close acquaintance",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malicious executable",
+        "type": "malware",
+        "alias": [
+          "Mal/FakeVirPkA"
+        ],
+        "mother entity": [
+          "securitytoolsetup.exe"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "malware authors",
+        "rel": "try to use that name",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "VirusTotal"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "arrive at spamtraps via carrelated forum",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "spamtraps"
+      },
+      {
+        "sub": "Subject: Warning!",
+        "rel": "part of email",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "DO NOT REPLY TO THIS EMAIL!"
+      },
+      {
+        "sub": "[Redacted forum user name]",
+        "rel": "received from [Redacted]",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "[Redacted]"
+      },
+      {
+        "sub": "[Redacted forum user name]",
+        "rel": "must log in to http://[Redacted]",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "http://[Redacted]"
+      },
+      {
+        "sub": "[Redacted forum user names]",
+        "rel": "receives threat of complaint",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Internet Service Provider (ISP)"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "attach",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "log file (your IP address, etc.)"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "provide link to scan service",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "http://www.virustotal.[TLD removed]/detected/[Redacted]"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "offer service: spyware removal",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "spyware removal"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "registered",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "virustotal.TLD"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "owns",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "virustotal.com"
+      },
+      {
+        "sub": "link in forum message",
+        "rel": "leads to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "a page which says: We detected viruses activity from your computer."
+      },
+      {
+        "sub": "a page which says: We detected viruses activity from your computer.",
+        "rel": "redirect to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "/scanning/"
+      },
+      {
+        "sub": "/scanning/",
+        "rel": "generates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "Windows Security Alert popup"
+      },
+      {
+        "sub": "fake scanning page",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Windows Security Alert popup"
+      },
+      {
+        "sub": "fake scanning page",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "securitytoolsetup.exe"
+      },
+      {
+        "sub": "securitytoolsetup.exe",
+        "rel": "is",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "malicious executable"
+      },
+      {
+        "sub": "securitytoolsetup.exe",
+        "rel": "detected as",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Mal/FakeVirPkA"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "abuse VirusTotal name for gain",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "VirusTotal"
+      },
+      {
+        "sub": "friend, family, or a close acquaintance",
+        "rel": "send malicious links",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malicious executable"
+      }
+    ]
+  }
+}

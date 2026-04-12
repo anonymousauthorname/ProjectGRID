@@ -1,0 +1,181 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_56.json",
+  "sample_index": 243,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_56.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SmartLoader",
+        "type": "Malware"
+      },
+      {
+        "name": "Lumma Stealer",
+        "type": "Malware"
+      },
+      {
+        "name": "Water Kurita",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "GitHub",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "AI",
+        "type": "Tool"
+      },
+      {
+        "name": "Malware-as-a-Service (MaaS)",
+        "type": "Malware"
+      },
+      {
+        "name": "Release.zip",
+        "type": "Indicator"
+      },
+      {
+        "name": "Software.zip",
+        "type": "Indicator"
+      },
+      {
+        "name": "README",
+        "type": "Indicator"
+      },
+      {
+        "name": "Lua script",
+        "type": "Indicator"
+      },
+      {
+        "name": "game cheats",
+        "type": "Software"
+      },
+      {
+        "name": "cracked software",
+        "type": "Software"
+      },
+      {
+        "name": "cryptocurrency utilities",
+        "type": "Software"
+      },
+      {
+        "name": "gaming mods",
+        "type": "Software"
+      },
+      {
+        "name": "open-source tools",
+        "type": "Software"
+      },
+      {
+        "name": "Trend Micro Threat Hunting team",
+        "type": "Organization"
+      },
+      {
+        "name": "X/Twitter",
+        "type": "Infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cybercriminals",
+        "rel": "ABUSES",
+        "obj": "GitHub"
+      },
+      {
+        "sub": "AI",
+        "rel": "GENERATES",
+        "obj": "README"
+      },
+      {
+        "sub": "AI",
+        "rel": "CREATES",
+        "obj": "game cheats"
+      },
+      {
+        "sub": "AI",
+        "rel": "CREATES",
+        "obj": "cracked software"
+      },
+      {
+        "sub": "AI",
+        "rel": "CREATES",
+        "obj": "cryptocurrency utilities"
+      },
+      {
+        "sub": "fake GitHub repositories",
+        "rel": "DELIVERS",
+        "obj": "SmartLoader"
+      },
+      {
+        "sub": "SmartLoader",
+        "rel": "DELIVERS",
+        "obj": "Lumma Stealer"
+      },
+      {
+        "sub": "Lumma Stealer",
+        "rel": "DISTRIBUTES",
+        "obj": "Malware-as-a-Service (MaaS)"
+      },
+      {
+        "sub": "Water Kurita",
+        "rel": "OPERATES",
+        "obj": "Malware-as-a-Service (MaaS)"
+      },
+      {
+        "sub": "Trend Micro Threat Hunting team",
+        "rel": "IDENTIFIES",
+        "obj": "SmartLoader"
+      },
+      {
+        "sub": "X/Twitter",
+        "rel": "MIMICS",
+        "obj": "open-source tools"
+      },
+      {
+        "sub": "Release.zip",
+        "rel": "CONTAINS",
+        "obj": "SmartLoader"
+      },
+      {
+        "sub": "Software.zip",
+        "rel": "CONTAINS",
+        "obj": "SmartLoader"
+      },
+      {
+        "sub": "SmartLoader",
+        "rel": "DELIVERS",
+        "obj": "Lua script"
+      },
+      {
+        "sub": "fake GitHub repositories",
+        "rel": "MIMICS",
+        "obj": "gaming mods"
+      },
+      {
+        "sub": "fake GitHub repositories",
+        "rel": "MIMICS",
+        "obj": "cracked software"
+      },
+      {
+        "sub": "fake GitHub repositories",
+        "rel": "MIMICS",
+        "obj": "cryptocurrency utilities"
+      }
+    ]
+  }
+}

@@ -1,0 +1,756 @@
+{
+  "sample_id": "malkg__201403TrendMicroSiesta.txt",
+  "sample_index": 124,
+  "source": "malkg",
+  "file_name": "201403TrendMicroSiesta.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Siesta Campaign",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the attackers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "multicomponent malware",
+        "type": "malware",
+        "alias": [
+          "the malware",
+          "the malware dropped",
+          "these samples"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Consumer goods and services",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Energy",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Finance",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Healthcare",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Media and telecommunications",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Public administration",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Security and defense",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Transport and traffic",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "spear-phishing emails",
+        "type": "attack-pattern",
+        "alias": [
+          "phishing emails"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "undisclosed company",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "spoofed email addresses",
+        "type": "email-address",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "URL path named after the target organization",
+        "type": "url",
+        "alias": [
+          "http://{malicious domain}/{organization name}/{legitimate archive name}.zip"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "TROJ_SLOTH",
+        "type": "malware",
+        "alias": [
+          "the executable",
+          "the malware",
+          "this executable"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "valid PDF file",
+        "type": "file",
+        "alias": [
+          "PDF file",
+          "this valid PDF file"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "UIODsevr.exe",
+        "type": "file",
+        "alias": [
+          "its backdoor component"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "BKDR_SLOTH.B",
+        "type": "malware",
+        "alias": [],
+        "mother entity": [
+          "google{BLOCKED}.exe"
+        ]
+      },
+      {
+        "name": "google{BLOCKED}.exe",
+        "type": "malware",
+        "alias": [
+          "the backdoor component",
+          "this backdoor"
+        ],
+        "mother entity": [
+          "TROJ_SLOTH"
+        ]
+      },
+      {
+        "name": "http://www.micro{BLOCKED}.com/index.html",
+        "type": "url",
+        "alias": [
+          "its command-and-control (C&C) servers"
+        ],
+        "mother entity": [
+          "google{BLOCKED}.exe"
+        ]
+      },
+      {
+        "name": "BKDR_SLOTH.A",
+        "type": "malware",
+        "alias": [
+          "similar samples"
+        ],
+        "mother entity": [
+          "Questionaire Concerning the Spread of Superbugs February 2014.exe"
+        ]
+      },
+      {
+        "name": "Questionaire Concerning the Spread of Superbugs February 2014.exe",
+        "type": "file",
+        "alias": [
+          "this sample",
+          "one of the similar samples"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "sha1: 014542eafb792b98196954373b3fd13e60cb94fe",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "Questionaire Concerning the Spread of Superbugs February 2014.exe"
+        ]
+      },
+      {
+        "name": "skys{BLOCKED}.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "UIODsevr.exe"
+        ]
+      },
+      {
+        "name": "malicious domain",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "organization name",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "legitimate archive name",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Sleep command",
+        "type": "course-of-action",
+        "alias": [
+          "sleep:120",
+          "x_"
+        ],
+        "mother entity": [
+          "google{BLOCKED}.exe"
+        ]
+      },
+      {
+        "name": "Download command",
+        "type": "course-of-action",
+        "alias": [
+          "download:"
+        ],
+        "mother entity": [
+          "google{BLOCKED}.exe"
+        ]
+      },
+      {
+        "name": "longDesc=.txt",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "SC< command prefix",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "run1",
+        "type": "course-of-action",
+        "alias": [
+          "open a remote shell"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "run2",
+        "type": "course-of-action",
+        "alias": [
+          "pipe shell commands from URL1"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "run3",
+        "type": "course-of-action",
+        "alias": [
+          "pipe shell commands from URL2"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "http",
+        "type": "course-of-action",
+        "alias": [
+          "pipe shell commands from C2"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Li Ning",
+        "type": "identity",
+        "alias": [
+          "this individual"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "xiaomao{BLOCKED}@163.com",
+        "type": "email-address",
+        "alias": [],
+        "mother entity": [
+          "Li Ning"
+        ]
+      },
+      {
+        "name": "79 additional domains",
+        "type": "infrastructure",
+        "alias": [
+          "domains registered under the name Li Ning"
+        ],
+        "mother entity": [
+          "Li Ning"
+        ]
+      },
+      {
+        "name": "sky{BLOCKED}.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "Li Ning"
+        ]
+      },
+      {
+        "name": "micro{BLOCKED}.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "Li Ning"
+        ]
+      },
+      {
+        "name": "ifued{BLOCKED}.net",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "Li Ning"
+        ]
+      },
+      {
+        "name": "Trend Micro",
+        "type": "security-product",
+        "alias": [
+          "Trend Micro™ Deep Discovery"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Trend Micro Deep Discovery",
+        "type": "security-product",
+        "alias": [
+          "Custom Defense solution"
+        ],
+        "mother entity": [
+          "Trend Micro"
+        ]
+      },
+      {
+        "name": "Deep Discovery",
+        "type": "security-product",
+        "alias": [
+          "real-time local and global intelligence"
+        ],
+        "mother entity": [
+          "Trend Micro Deep Discovery"
+        ]
+      },
+      {
+        "name": "encrypted commands",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "google{BLOCKED}.exe"
+        ]
+      },
+      {
+        "name": "URL1",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "URL2",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "C2",
+        "type": "other",
+        "alias": [
+          "command-and-control server"
+        ],
+        "mother entity": [
+          "google{BLOCKED}.exe"
+        ]
+      },
+      {
+        "name": "Figure 1",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "Attribution Graph"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Figure 2",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "Domains registered under the name Li Ning"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "global threat intelligence",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "Deep Discovery"
+        ]
+      },
+      {
+        "name": "Microsoft Edge",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Traveler",
+        "type": "hacker-tool",
+        "alias": [
+          "traveler tool"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malicious code provider",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "a threat actor",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": [
+          "attackers"
+        ]
+      },
+      {
+        "name": "confidential company data",
+        "type": "data",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Edge users",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Kervin Alintanahin",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Dove Chiu",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Kyle Wilhoit",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Trend Micro™",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": [
+          "Trend Micro"
+        ]
+      },
+      {
+        "name": "emails and URLs associated with these attacks",
+        "type": "other",
+        "alias": [],
+        "mother entity": [
+          "Trend Micro"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "attackers",
+        "rel": "orchestrating",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Siesta Campaign"
+      },
+      {
+        "sub": "attackers",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "multicomponent malware"
+      },
+      {
+        "sub": "multicomponent malware",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Consumer goods and services"
+      },
+      {
+        "sub": "multicomponent malware",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Energy"
+      },
+      {
+        "sub": "multicomponent malware",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Finance"
+      },
+      {
+        "sub": "multicomponent malware",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Healthcare"
+      },
+      {
+        "sub": "multicomponent malware",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Media and telecommunications"
+      },
+      {
+        "sub": "multicomponent malware",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Public administration"
+      },
+      {
+        "sub": "multicomponent malware",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Security and defense"
+      },
+      {
+        "sub": "multicomponent malware",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Transport and traffic"
+      },
+      {
+        "sub": "attackers",
+        "rel": "sending out",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "spear-phishing emails"
+      },
+      {
+        "sub": "spear-phishing emails",
+        "rel": "addressed to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "undisclosed company"
+      },
+      {
+        "sub": "spear-phishing emails",
+        "rel": "sent from",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "spoofed email addresses"
+      },
+      {
+        "sub": "URL path named after the target organization",
+        "rel": "serves",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "valid PDF file"
+      },
+      {
+        "sub": "TROJ_SLOTH",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "valid PDF file"
+      },
+      {
+        "sub": "TROJ_SLOTH",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "UIODsevr.exe"
+      },
+      {
+        "sub": "google{BLOCKED}.exe",
+        "rel": "connects to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "http://www.micro{BLOCKED}.com/index.html"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "identifies",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "BKDR_SLOTH.B"
+      },
+      {
+        "sub": "Questionaire Concerning the Spread of Superbugs February 2014.exe",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "UIODsevr.exe"
+      },
+      {
+        "sub": "UIODsevr.exe",
+        "rel": "communicating to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "skys{BLOCKED}.com"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "identifies",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "BKDR_SLOTH.A"
+      },
+      {
+        "sub": "google{BLOCKED}.exe",
+        "rel": "accepts",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Sleep command"
+      },
+      {
+        "sub": "google{BLOCKED}.exe",
+        "rel": "accepts",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Download command"
+      },
+      {
+        "sub": "Li Ning",
+        "rel": "used",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "sky{BLOCKED}.com"
+      },
+      {
+        "sub": "Li Ning",
+        "rel": "used",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "micro{BLOCKED}.com"
+      },
+      {
+        "sub": "Li Ning",
+        "rel": "used",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "ifued{BLOCKED}.net"
+      },
+      {
+        "sub": "google{BLOCKED}.exe",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "C2"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "blocks",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "emails and URLs associated with these attacks"
+      },
+      {
+        "sub": "Trend Micro Deep Discovery",
+        "rel": "provides",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "global threat intelligence"
+      },
+      {
+        "sub": "global threat intelligence",
+        "rel": "indicates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "confidential company data"
+      },
+      {
+        "sub": "malicious code provider",
+        "rel": "provided",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "a threat actor"
+      }
+    ]
+  }
+}

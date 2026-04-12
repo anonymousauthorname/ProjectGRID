@@ -1,0 +1,194 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_36.json",
+  "sample_index": 226,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_36.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Andromeda",
+        "type": "Malware"
+      },
+      {
+        "name": "Blackhole Exploit Kit",
+        "type": "Malware"
+      },
+      {
+        "name": "Keyloggers",
+        "type": "Malware"
+      },
+      {
+        "name": "Form grabbers",
+        "type": "Malware"
+      },
+      {
+        "name": "SOCKS4 proxy module",
+        "type": "Malware"
+      },
+      {
+        "name": "Rootkits",
+        "type": "Malware"
+      },
+      {
+        "name": "ZeuS",
+        "type": "Malware"
+      },
+      {
+        "name": "BKDRANDROM.DA",
+        "type": "Indicator"
+      },
+      {
+        "name": "ZwCreateSection",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "ZwMapViewOfSection",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "ZwResumeThread",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "ZwUnmapViewOfSection",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "TCP Port 8000",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Command Shell",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "DUQU",
+        "type": "Malware"
+      },
+      {
+        "name": "KULUOZ",
+        "type": "Malware"
+      },
+      {
+        "name": "Australia",
+        "type": "Location"
+      },
+      {
+        "name": "Turkey",
+        "type": "Location"
+      },
+      {
+        "name": "Germany",
+        "type": "Location"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Andromeda",
+        "rel": "spreads through",
+        "obj": "Blackhole Exploit Kit"
+      },
+      {
+        "sub": "Andromeda",
+        "rel": "INCLUDES",
+        "obj": "Keyloggers"
+      },
+      {
+        "sub": "Andromeda",
+        "rel": "INCLUDES",
+        "obj": "Form grabbers"
+      },
+      {
+        "sub": "Andromeda",
+        "rel": "INCLUDES",
+        "obj": "SOCKS4 proxy module"
+      },
+      {
+        "sub": "Andromeda",
+        "rel": "INCLUDES",
+        "obj": "Rootkits"
+      },
+      {
+        "sub": "Andromeda",
+        "rel": "downloads and executes",
+        "obj": "ZeuS"
+      },
+      {
+        "sub": "Andromeda",
+        "rel": "detected as",
+        "obj": "BKDRANDROM.DA"
+      },
+      {
+        "sub": "Andromeda",
+        "rel": "listens on",
+        "obj": "TCP Port 8000"
+      },
+      {
+        "sub": "Andromeda",
+        "rel": "LAUNCHES",
+        "obj": "Command Shell"
+      },
+      {
+        "sub": "Andromeda",
+        "rel": "USES",
+        "obj": "ZwCreateSection"
+      },
+      {
+        "sub": "Andromeda",
+        "rel": "USES",
+        "obj": "ZwMapViewOfSection"
+      },
+      {
+        "sub": "Andromeda",
+        "rel": "USES",
+        "obj": "ZwResumeThread"
+      },
+      {
+        "sub": "Andromeda",
+        "rel": "USES",
+        "obj": "ZwUnmapViewOfSection"
+      },
+      {
+        "sub": "Andromeda",
+        "rel": "uses same injection technique as",
+        "obj": "DUQU"
+      },
+      {
+        "sub": "Andromeda",
+        "rel": "uses same injection technique as",
+        "obj": "KULUOZ"
+      },
+      {
+        "sub": "Australia",
+        "rel": "has high infection count",
+        "obj": "Andromeda"
+      },
+      {
+        "sub": "Turkey",
+        "rel": "has high infection count",
+        "obj": "Andromeda"
+      },
+      {
+        "sub": "Germany",
+        "rel": "has high infection count",
+        "obj": "Andromeda"
+      }
+    ]
+  }
+}

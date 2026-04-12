@@ -1,0 +1,108 @@
+{
+  "sample_id": "ctinexus__pegasus-forcedentry-protection.json",
+  "sample_index": 83,
+  "source": "ctinexus",
+  "file_name": "pegasus-forcedentry-protection.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "FORCEDENTRY",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-30860",
+        "type": "Entity"
+      },
+      {
+        "name": "iOS 14.8",
+        "type": "Entity"
+      },
+      {
+        "name": "iMessage",
+        "type": "Entity"
+      },
+      {
+        "name": "NSO Group",
+        "type": "Entity"
+      },
+      {
+        "name": "Pegasus spyware",
+        "type": "Entity"
+      },
+      {
+        "name": "zero-day",
+        "type": "Entity"
+      },
+      {
+        "name": "zero-click exploit",
+        "type": "Entity"
+      },
+      {
+        "name": "Apple ID",
+        "type": "Entity"
+      },
+      {
+        "name": "zero-click attack",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "uses",
+        "obj": "zero-click exploit"
+      },
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "exploits",
+        "obj": "CVE-2021-30860"
+      },
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "resides in",
+        "obj": "iMessage"
+      },
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "enables",
+        "obj": "zero-click attack"
+      },
+      {
+        "sub": "NSO Group",
+        "rel": "uses",
+        "obj": "Pegasus spyware"
+      },
+      {
+        "sub": "Pegasus spyware",
+        "rel": "is delivered via",
+        "obj": "FORCEDENTRY"
+      },
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "requires",
+        "obj": "Apple ID"
+      },
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "compromises",
+        "obj": "mobile iOS devices"
+      }
+    ]
+  }
+}

@@ -1,0 +1,783 @@
+{
+  "sample_id": "securenlp__HPSR SecurityBriefing_Episode16_NorthKorea",
+  "sample_index": 162,
+  "source": "securenlp",
+  "file_name": "HPSR SecurityBriefing_Episode16_NorthKorea",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "North Korea",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the North Korean regime",
+          "the regime"
+        ]
+      },
+      {
+        "name": "DarkSeoul",
+        "type": "campaign",
+        "alias": [
+          "the group responsible for the DarkSeoul malware"
+        ]
+      },
+      {
+        "name": "Lab 110",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "North Korea’s Lab 110"
+        ]
+      },
+      {
+        "name": "Unit 121",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the premier hacking unit",
+          "the regime’s Unit 121"
+        ]
+      },
+      {
+        "name": "WhoIs Team",
+        "type": "campaign",
+        "alias": [
+          "a group"
+        ]
+      },
+      {
+        "name": "New Romantic Cyber Army Team / Hastati",
+        "type": "campaign",
+        "alias": [
+          "New Romantic Cyber Army Team"
+        ]
+      },
+      {
+        "name": "IsOne",
+        "type": "campaign",
+        "alias": [
+          "an entity"
+        ]
+      },
+      {
+        "name": "Kimsukyang",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "an actor"
+        ]
+      },
+      {
+        "name": "Kimsuky",
+        "type": "malware",
+        "alias": [
+          "the Kimsuky malware"
+        ]
+      },
+      {
+        "name": "Korean Central News Agency (KCNA)",
+        "type": "general-software",
+        "alias": [
+          "KCNA"
+        ]
+      },
+      {
+        "name": "Uriminzokkiri.com",
+        "type": "website",
+        "alias": [
+          "Uriminzokkiri"
+        ]
+      },
+      {
+        "name": "North Korean infrastructure",
+        "type": "general-software",
+        "alias": [
+          "the regime’s infrastructure"
+        ]
+      },
+      {
+        "name": "Red Star OS",
+        "type": "general-software",
+        "alias": [
+          "the regime’s Red Star OS"
+        ]
+      },
+      {
+        "name": "United States",
+        "type": "identity",
+        "alias": [
+          "US"
+        ]
+      },
+      {
+        "name": "South Korea",
+        "type": "identity",
+        "alias": [
+          "ROK"
+        ]
+      },
+      {
+        "name": "China",
+        "type": "identity",
+        "alias": [
+          "China"
+        ]
+      },
+      {
+        "name": "Russia",
+        "type": "identity",
+        "alias": [
+          "Russia"
+        ]
+      },
+      {
+        "name": "Iran",
+        "type": "identity",
+        "alias": [
+          "Iran"
+        ]
+      },
+      {
+        "name": "Syria",
+        "type": "identity",
+        "alias": [
+          "Syria"
+        ]
+      },
+      {
+        "name": "Korea Computer Center (KCC)",
+        "type": "general-software",
+        "alias": [
+          "KCC"
+        ]
+      },
+      {
+        "name": "Chongryon",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the Chongryon"
+        ]
+      },
+      {
+        "name": "Korean Children's Union",
+        "type": "general-software",
+        "alias": [
+          "the Korean Children's Union"
+        ]
+      },
+      {
+        "name": "Kwangmyong",
+        "type": "general-software",
+        "alias": [
+          "the Kwangmyong"
+        ]
+      },
+      {
+        "name": "210.52.109.0/24",
+        "type": "ipv4-addr",
+        "alias": [
+          "210.52.109.0/24"
+        ]
+      },
+      {
+        "name": "175.45.176.0/22",
+        "type": "ipv4-addr",
+        "alias": [
+          "175.45.176.0/22"
+        ]
+      },
+      {
+        "name": ".kp",
+        "type": "domain-name",
+        "alias": [
+          "the .kp TLD"
+        ]
+      },
+      {
+        "name": "Korea Internet and Security Agency (KISA)",
+        "type": "security-product",
+        "alias": [
+          "KISA"
+        ]
+      },
+      {
+        "name": "RAON_ASRT",
+        "type": "security-product",
+        "alias": [
+          "RAON_ASRT"
+        ]
+      },
+      {
+        "name": "Symantec",
+        "type": "security-product",
+        "alias": [
+          "Symantec"
+        ]
+      },
+      {
+        "name": "CrowdStrike",
+        "type": "security-product",
+        "alias": [
+          "CrowdStrike"
+        ]
+      },
+      {
+        "name": "Osint",
+        "type": "abstract-concept",
+        "alias": [
+          "open source intelligence"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "North Korea",
+        "rel": "is known for",
+        "rel_type": [
+          "cyber warfare capabilities"
+        ],
+        "obj": "cyber warfare capabilities"
+      },
+      {
+        "sub": "North Korea's regime",
+        "rel": "is a foray into",
+        "rel_type": [
+          "asymmetrical warfare"
+        ],
+        "obj": "modern asymmetrical warfare"
+      },
+      {
+        "sub": "Lab 110",
+        "rel": "were the actors behind",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the DarkSeoul malware"
+      },
+      {
+        "sub": "Lab 110",
+        "rel": "was ordered by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the North Korean regime"
+      },
+      {
+        "sub": "the North Korean regime",
+        "rel": "has the following motivations for expanding its",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber warfare capabilities"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "uses",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "computer games"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "tested",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a logic bomb"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "stated that it is “fully ready for any form of high-tech war”",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "in June 2009"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "conducted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "an underground nuclear test"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a longstanding historical relationship with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "China"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a long history of ties to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Russia"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has longstanding political and military ties with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Iran"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "signed a technology treaty with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Iran"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a cyber relationship with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Syria"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a cyber relationship with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Cuba"
+      },
+      {
+        "sub": "the regime",
+        "rel": "is known for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber warfare capabilities"
+      },
+      {
+        "sub": "the regime",
+        "rel": "is known for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber warfare capabilities"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "views",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the United States"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "views",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "South Korea"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has made significant progress in developing its",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "infrastructure"
+      },
+      {
+        "sub": "North Korea's regime",
+        "rel": "has the following motivations for expanding its",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber warfare capabilities"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a long history of ties to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Russia"
+      },
+      {
+        "sub": "North Korea and Iran",
+        "rel": "signed a technology treaty",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "to combat ‘common enemies’ in cyberspace"
+      },
+      {
+        "sub": "James Clapper",
+        "rel": "testified",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "that North Korea likely had undeclared uranium enrichment facilities"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a longstanding historical relationship with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "China"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a long history of ties to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Russia"
+      },
+      {
+        "sub": "Iran and North Korea",
+        "rel": "have longstanding political and military ties",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "with"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "is known to have",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "unstable power supplies"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "is known to have",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "monetary deficiencies"
+      },
+      {
+        "sub": "United States Director of National Intelligence, James Clapper",
+        "rel": "testified",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "that North Korea likely had undeclared uranium enrichment facilities"
+      },
+      {
+        "sub": "US and South Korea",
+        "rel": "are the primary adversaries",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "of North Korea"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has made significant progress in developing its",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber warfare capabilities"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "views",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the United States"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "views",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "South Korea"
+      },
+      {
+        "sub": "North Korea's regime",
+        "rel": "is known to have",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "unstable power supplies"
+      },
+      {
+        "sub": "North Korea's regime",
+        "rel": "is known to have",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "monetary deficiencies"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "is known to have",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "unstable power supplies"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "is known to have",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "monetary deficiencies"
+      },
+      {
+        "sub": "the regime",
+        "rel": "has made significant progress in developing its",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber warfare capabilities"
+      },
+      {
+        "sub": "the regime",
+        "rel": "is known for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber warfare capabilities"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "views",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the United States"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "views",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "South Korea"
+      },
+      {
+        "sub": "the regime",
+        "rel": "is known for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber warfare capabilities"
+      },
+      {
+        "sub": "the regime",
+        "rel": "has made significant progress in developing its",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber warfare capabilities"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a long history of ties to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Russia"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a longstanding historical relationship with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "China"
+      },
+      {
+        "sub": "North Korea and Iran",
+        "rel": "have longstanding political and military ties",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "with"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a cyber relationship with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Syria"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a cyber relationship with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Cuba"
+      },
+      {
+        "sub": "the regime",
+        "rel": "is known for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber warfare capabilities"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "views",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the United States"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "views",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "South Korea"
+      },
+      {
+        "sub": "the regime",
+        "rel": "has made significant progress in developing its",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber warfare capabilities"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a long history of ties to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Russia"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a longstanding historical relationship with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "China"
+      },
+      {
+        "sub": "North Korea and Iran",
+        "rel": "have longstanding political and military ties",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "with"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a cyber relationship with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Syria"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a cyber relationship with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Cuba"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "views",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the United States"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "views",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "South Korea"
+      },
+      {
+        "sub": "the regime",
+        "rel": "is known for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber warfare capabilities"
+      },
+      {
+        "sub": "the regime",
+        "rel": "has made significant progress in developing its",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber warfare capabilities"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a long history of ties to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Russia"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a longstanding historical relationship with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "China"
+      },
+      {
+        "sub": "North Korea and Iran",
+        "rel": "have longstanding political and military ties",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "with"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a cyber relationship with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Syria"
+      },
+      {
+        "sub": "North Korea",
+        "rel": "has a cyber relationship with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Cuba"
+      }
+    ]
+  }
+}

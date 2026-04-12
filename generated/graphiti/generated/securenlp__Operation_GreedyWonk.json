@@ -1,0 +1,362 @@
+{
+  "sample_id": "securenlp__Operation_GreedyWonk",
+  "sample_index": 198,
+  "source": "securenlp",
+  "file_name": "Operation_GreedyWonk",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Operation GreedyWonk",
+        "type": "Campaign"
+      },
+      {
+        "name": "CVE-2014-0502",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Flash",
+        "type": "Software"
+      },
+      {
+        "name": "Adobe Flash",
+        "type": "Software"
+      },
+      {
+        "name": "Peter G. Peterson Institute for International Economics",
+        "type": "Organization"
+      },
+      {
+        "name": "American Research Center in Egypt",
+        "type": "Organization"
+      },
+      {
+        "name": "Smith Richardson Foundation",
+        "type": "Organization"
+      },
+      {
+        "name": "PlugX/Kaba",
+        "type": "Malware"
+      },
+      {
+        "name": "java.ns1.name",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "adservice.no-ip.org",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "wmi.ns01.us",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "PlugX",
+        "type": "Malware"
+      },
+      {
+        "name": "Poison Ivy",
+        "type": "Malware"
+      },
+      {
+        "name": "BrightBalls.swf",
+        "type": "Indicator"
+      },
+      {
+        "name": "test.jar",
+        "type": "Indicator"
+      },
+      {
+        "name": "Center for Defense Information",
+        "type": "Organization"
+      },
+      {
+        "name": "Center for European Policy Studies",
+        "type": "Organization"
+      },
+      {
+        "name": "shop.fujifilm.be",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Windows XP",
+        "type": "Software"
+      },
+      {
+        "name": "Windows 7",
+        "type": "Software"
+      },
+      {
+        "name": "Java 1.6",
+        "type": "Software"
+      },
+      {
+        "name": "Java 1.7",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Office 2007",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Office 2010",
+        "type": "Software"
+      },
+      {
+        "name": "HXDS.dll",
+        "type": "Software"
+      },
+      {
+        "name": "MSVCR71.dll",
+        "type": "Software"
+      },
+      {
+        "name": "MSVCRT",
+        "type": "Software"
+      },
+      {
+        "name": "ActionScript",
+        "type": "Software"
+      },
+      {
+        "name": "InternetOpenURLA",
+        "type": "Software"
+      },
+      {
+        "name": "InternetReadFile",
+        "type": "Software"
+      },
+      {
+        "name": "CreateFileA",
+        "type": "Software"
+      },
+      {
+        "name": "WriteFile",
+        "type": "Software"
+      },
+      {
+        "name": "WinExec",
+        "type": "Software"
+      },
+      {
+        "name": "ShadowServer",
+        "type": "Organization"
+      },
+      {
+        "name": "FireEye",
+        "type": "Organization"
+      },
+      {
+        "name": "Adobe",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2014-0502"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "TARGETS",
+        "obj": "Peter G. Peterson Institute for International Economics"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "TARGETS",
+        "obj": "American Research Center in Egypt"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "TARGETS",
+        "obj": "Smith Richardson Foundation"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "DEPLOYS",
+        "obj": "PlugX/Kaba"
+      },
+      {
+        "sub": "PlugX/Kaba",
+        "rel": "USES",
+        "obj": "java.ns1.name"
+      },
+      {
+        "sub": "PlugX/Kaba",
+        "rel": "USES",
+        "obj": "adservice.no-ip.org"
+      },
+      {
+        "sub": "PlugX/Kaba",
+        "rel": "USES",
+        "obj": "wmi.ns01.us"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "related to",
+        "obj": "ShadowServer"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "EXPLOITS",
+        "obj": "Adobe Flash"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "collaborates with",
+        "obj": "FireEye"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "collaborates with",
+        "obj": "Adobe"
+      },
+      {
+        "sub": "PlugX",
+        "rel": "USES",
+        "obj": "wmi.ns01.us"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "USES",
+        "obj": "wmi.ns01.us"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "configured with",
+        "obj": "java7"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "configured with",
+        "obj": "ytf^&^333"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "DELIVERS",
+        "obj": "BrightBalls.swf"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "DELIVERS",
+        "obj": "test.jar"
+      },
+      {
+        "sub": "Center for Defense Information",
+        "rel": "receives attack from",
+        "obj": "wmi.ns01.us"
+      },
+      {
+        "sub": "Center for European Policy Studies",
+        "rel": "redirects to",
+        "obj": "shop.fujifilm.be"
+      },
+      {
+        "sub": "American Research Center in Egypt",
+        "rel": "redirects to",
+        "obj": "shop.fujifilm.be"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "AFFECTS",
+        "obj": "Windows XP"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "AFFECTS",
+        "obj": "Windows 7"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "AFFECTS",
+        "obj": "Java 1.6"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "AFFECTS",
+        "obj": "Microsoft Office 2007"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "AFFECTS",
+        "obj": "Microsoft Office 2010"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "USES",
+        "obj": "MSVCR71.dll"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "USES",
+        "obj": "HXDS.dll"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "USES",
+        "obj": "MSVCRT"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "USES",
+        "obj": "ActionScript"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "USES",
+        "obj": "InternetOpenURLA"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "USES",
+        "obj": "InternetReadFile"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "USES",
+        "obj": "CreateFileA"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "USES",
+        "obj": "WriteFile"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "USES",
+        "obj": "WinExec"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "recommends upgrade to",
+        "obj": "Java 1.7"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "recommends upgrade to",
+        "obj": "Microsoft Office 2007"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "recommends upgrade to",
+        "obj": "Microsoft Office 2010"
+      }
+    ]
+  }
+}

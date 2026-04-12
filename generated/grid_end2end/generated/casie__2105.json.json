@@ -1,0 +1,448 @@
+{
+  "sample_id": "casie__2105.json",
+  "sample_index": 40,
+  "source": "casie",
+  "file_name": "2105.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SS7",
+        "type": "general-software",
+        "alias": [
+          "the SS7 network",
+          "the global SS7 network",
+          "the devastating SS7 security flaw",
+          "SS7 network",
+          "a mobile data network called SS7"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "vulnerability",
+        "alias": [
+          "these flaws",
+          "these issues",
+          "the issue with SS7"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "researchers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hackers",
+        "type": "identity",
+        "alias": [
+          "financially-motivated hackers",
+          "online bank thieves",
+          "non-state hackers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "politicians",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "target's phone number",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "governments",
+        "type": "identity",
+        "alias": [
+          "government or surveillance contractors"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "surveillance contractors",
+        "type": "identity",
+        "alias": [
+          "government or surveillance contractors"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "German newspaper The Süddeutsche Zeitung",
+        "type": "organization",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "bank accounts",
+        "type": "victim-account",
+        "alias": [
+          "customer accounts",
+          "accounts protected by text-based two-factor authentication"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Karsten Nohl",
+        "type": "identity",
+        "alias": [
+          "a cybersecurity researcher who has highlighted vulnerabilities in SS7"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Motherboard",
+        "type": "organization",
+        "alias": [
+          "Motherboard in an email"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "data-roaming",
+        "type": "attack-pattern",
+        "alias": [
+          "when a phone user goes outside their own provider's coverage"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "routing request",
+        "type": "hacker-tool",
+        "alias": [
+          "send a routing request"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "telcos",
+        "type": "identity",
+        "alias": [
+          "some telcos"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "FCC",
+        "type": "organization",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Republican-controlled Congress",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "social media companies",
+        "type": "identity",
+        "alias": [
+          "Twitter"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "banks",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "SMS-based two-factor authentication",
+        "type": "course-of-action",
+        "alias": [
+          "text-based two-factor authentication"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Google Authenticator",
+        "type": "general-software",
+        "alias": [
+          "an app on your smartphone"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "SMS code",
+        "type": "credential-value",
+        "alias": [
+          "code needed to login or greenlight money transfers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Twitter",
+        "type": "identity",
+        "alias": [
+          "the site",
+          "social media companies"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Lieu",
+        "type": "identity",
+        "alias": [
+          "Lieu said",
+          "Lieu's statement"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "non-state hackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "text messages",
+        "type": "message",
+        "alias": [
+          "codes needed to login",
+          "device's location"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "victim passwords",
+        "type": "credential-value",
+        "alias": [
+          "passwords"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "researchers",
+        "rel": "warned about",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "hackers",
+        "rel": "exploit",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "hackers",
+        "rel": "listen to calls, intercept text messages, and pinpoint a device's location",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "calls"
+      },
+      {
+        "sub": "hackers",
+        "rel": "intercept text messages",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "text messages"
+      },
+      {
+        "sub": "hackers",
+        "rel": "pinpoint a device's location",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "location"
+      },
+      {
+        "sub": "hackers",
+        "rel": "used those flaws to help drain",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "bank accounts"
+      },
+      {
+        "sub": "German newspaper The Süddeutsche Zeitung",
+        "rel": "reported that financially-motivated hackers had used those flaws",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "hackers"
+      },
+      {
+        "sub": "SS7",
+        "rel": "believes whatever you tell it",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "SS7",
+        "rel": "used for",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "data-roaming"
+      },
+      {
+        "sub": "SS7",
+        "rel": "allows attackers to intercept communications with just the",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "target's phone number"
+      },
+      {
+        "sub": "SS7",
+        "rel": "may not authenticate where the message is coming from",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "source of message"
+      },
+      {
+        "sub": "hackers",
+        "rel": "direct a target's text messages to another device",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "text messages"
+      },
+      {
+        "sub": "hackers",
+        "rel": "steal any codes needed to login",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "SMS code"
+      },
+      {
+        "sub": "hackers",
+        "rel": "obtained",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "victim passwords"
+      },
+      {
+        "sub": "telcos",
+        "rel": "taken steps to mitigate",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "FCC",
+        "rel": "fix",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "SS7"
+      },
+      {
+        "sub": "Republican-controlled Congress",
+        "rel": "hold immediate hearings on",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "SS7"
+      },
+      {
+        "sub": "social media companies",
+        "rel": "stop using",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "SMS-based two-factor authentication"
+      },
+      {
+        "sub": "Twitter",
+        "rel": "sends",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "SMS code"
+      },
+      {
+        "sub": "Google Authenticator",
+        "rel": "provides a more robust form of two-factor authentication",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "SMS-based two-factor authentication"
+      },
+      {
+        "sub": "hackers",
+        "rel": "able to direct",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "text messages"
+      },
+      {
+        "sub": "online bank thieves",
+        "rel": "joining spying contractors",
+        "rel_type": [
+          "cooperates-with"
+        ],
+        "obj": "surveillance contractors"
+      },
+      {
+        "sub": "Lieu",
+        "rel": "said the issue with SS7 is unacceptable",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "SS7"
+      },
+      {
+        "sub": "social media companies",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "SMS-based two-factor authentication"
+      },
+      {
+        "sub": "Karsten Nohl",
+        "rel": "highlighted vulnerabilities in",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "SS7"
+      },
+      {
+        "sub": "Motherboard",
+        "rel": "published a piece that likely fine with only SMS-based authentication",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "SMS-based two-factor authentication"
+      }
+    ]
+  }
+}

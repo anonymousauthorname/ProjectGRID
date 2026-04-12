@@ -1,0 +1,559 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_5.json",
+  "sample_index": 238,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_5.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DMA Locker",
+        "type": "malware",
+        "alias": [
+          "another ransomware",
+          "the ransomware",
+          "this ransomware",
+          "the malware",
+          "real thing",
+          "the program",
+          "it",
+          "the newest ransomware",
+          "the malware (type 2)",
+          "the examined variant of the malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "AES in ECB mode",
+        "type": "attack-pattern",
+        "alias": [
+          "AES",
+          "ECB mode",
+          "16 byte chunks",
+          "single unit have 16 bytes (4 DWORDs)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ransom note",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "GUI with ransom note",
+          "the ransom note"
+        ],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "fakturax.exe",
+        "type": "file",
+        "alias": [
+          "the program",
+          "original copy of the malware",
+          "original sample",
+          "original file",
+          "the original sample"
+        ],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "ntserver.exe",
+        "type": "file",
+        "alias": [
+          "the copy of the program (DMALOCK 41:55:16:13:51:76:67:99ntserver.exe)"
+        ],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "4.0",
+        "type": "version",
+        "alias": [],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "Polish version type 2 (from Jan 2016)",
+        "type": "file",
+        "alias": [],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "English version type 2 (from Jan 2016)",
+        "type": "file",
+        "alias": [],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "Polish version type 1 (from Dec 2015)",
+        "type": "file",
+        "alias": [],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "rstrui.exe",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ShadowExplorer.exe",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "sesvc.exe",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "cbengine.exe",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "encrypted files",
+        "type": "file",
+        "alias": [
+          "original files",
+          "the same files encrypted",
+          "the beginnings of original files"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "BMP",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PNG",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "magic value ABCXYZ11",
+        "type": "indicator",
+        "alias": [
+          "magic value"
+        ],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "AutoRun entries",
+        "type": "infrastructure",
+        "alias": [
+          "deploy a dropped copy of the program",
+          "display a ransom note in TXT format (via notepad)"
+        ],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "DMALOCK 41:55:16:13:51:76:67:99ntserver.exe",
+        "type": "file",
+        "alias": [
+          "the copy of the program"
+        ],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "Malwarebytes AntiMalware",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PhysicalDrive0 , JAMESWTMHT and siriurz",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "fwosar and maciekkotowicz",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "blocklisted substrings",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "original sample with key included",
+        "type": "file",
+        "alias": [
+          "original copy of the malware",
+          "original sample"
+        ],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "32 characters long key",
+        "type": "credential-value",
+        "alias": [
+          "supplied key",
+          "the key"
+        ],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "C:ProgramData",
+        "type": "location",
+        "alias": [],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "C:Documents and SettingsAll UsersDokumenty",
+        "type": "location",
+        "alias": [],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "shadow copy",
+        "type": "abstract-concept",
+        "alias": [
+          "system recovery"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "debug strings",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "debug logs",
+          "the logs"
+        ],
+        "mother entity": "DMA Locker"
+      },
+      {
+        "name": "forum.4programmers.net/HardwareSoftware/264028dmalockerzaszyfrowanepliki",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DMA Locker",
+        "rel": "is",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "another ransomware"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "has been observed to be active only on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "small scale",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "AES in ECB mode"
+      },
+      {
+        "sub": "ransom note",
+        "rel": "is part of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "DMA Locker"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "moves itself into",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "C:ProgramData"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "renamed to",
+        "rel_type": [
+          "renames"
+        ],
+        "obj": "fakturax.exe"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "ntserver.exe"
+      },
+      {
+        "sub": "fakturax.exe",
+        "rel": "is renamed from",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "DMA Locker"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "is detected by",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Malwarebytes AntiMalware"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "adds",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "AutoRun entries"
+      },
+      {
+        "sub": "AutoRun entries",
+        "rel": "deploy",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "DMALOCK 41:55:16:13:51:76:67:99ntserver.exe"
+      },
+      {
+        "sub": "AutoRun entries",
+        "rel": "display",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "ransom note"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "comes with",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "decrypting feature"
+      },
+      {
+        "sub": "decrypting feature",
+        "rel": "available at",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "ransom note"
+      },
+      {
+        "sub": "user",
+        "rel": "enters",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "32 characters long key"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "32 characters long key"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "switches to",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "decryption mode"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "crashes during",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "encryption",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "terminates",
+        "rel_type": [
+          "terminates"
+        ],
+        "obj": "rstrui.exe"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "terminates",
+        "rel_type": [
+          "terminates"
+        ],
+        "obj": "ShadowExplorer.exe"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "terminates",
+        "rel_type": [
+          "terminates"
+        ],
+        "obj": "sesvc.exe"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "terminates",
+        "rel_type": [
+          "terminates"
+        ],
+        "obj": "cbengine.exe"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "logs",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Blocking processes of system recovery"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "skips files that contain in their path",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "blacklisted substrings"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "enumerates",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "files"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "encrypts",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "encrypted files"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "DMALOCK 41:55:16:13:51:76:67:99ntserver.exe"
+      },
+      {
+        "sub": "fakturax.exe",
+        "rel": "contains",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "32 characters long key"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "cleans",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "ntserver.exe"
+      },
+      {
+        "sub": "fakturax.exe",
+        "rel": "is removed after",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "execution"
+      },
+      {
+        "sub": "encrypted files",
+        "rel": "have content prefixed by",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "magic value ABCXYZ11"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "encrypts in chunks of",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "16 bytes"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "was not using",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "RSA"
+      },
+      {
+        "sub": "Malwarebytes AntiMalware",
+        "rel": "detects as",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Ransom.DMALocker"
+      },
+      {
+        "sub": "PhysicalDrive0 , JAMESWTMHT and siriurz",
+        "rel": "helped in collecting",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "samples"
+      },
+      {
+        "sub": "fwosar and maciekkotowicz",
+        "rel": "consulted during analysis",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "DMA Locker"
+      },
+      {
+        "sub": "forum.4programmers.net/HardwareSoftware/264028dmalockerzaszyfrowanepliki",
+        "rel": "contains information about",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "DMA Locker"
+      }
+    ]
+  }
+}

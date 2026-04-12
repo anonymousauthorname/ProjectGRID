@@ -1,0 +1,277 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_38.json",
+  "sample_index": 228,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_38.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "BrickerBot.1",
+        "type": "Malware"
+      },
+      {
+        "name": "BrickerBot.2",
+        "type": "Malware"
+      },
+      {
+        "name": "BrickerBot.3",
+        "type": "Malware"
+      },
+      {
+        "name": "BrickerBot.4",
+        "type": "Malware"
+      },
+      {
+        "name": "Dropbear SSH server",
+        "type": "Software"
+      },
+      {
+        "name": "Busybox",
+        "type": "Software"
+      },
+      {
+        "name": "Catalin Cimpany",
+        "type": "Person"
+      },
+      {
+        "name": "Janit0r",
+        "type": "Person"
+      },
+      {
+        "name": "Victor Gevers",
+        "type": "Person"
+      },
+      {
+        "name": "Sricam AP003 Metal Gun Type Waterproof Outdoor Bullet IP camera",
+        "type": "Software"
+      },
+      {
+        "name": "Mirai",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Telnet",
+        "type": "Software"
+      },
+      {
+        "name": "IoT devices",
+        "type": "Software"
+      },
+      {
+        "name": "DDoS attacks",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Root",
+        "type": "Indicator"
+      },
+      {
+        "name": "TCP timestamps",
+        "type": "Indicator"
+      },
+      {
+        "name": "Kernel threats",
+        "type": "Indicator"
+      },
+      {
+        "name": "Fork bomb",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Honeypot",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "ZoomEye",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Shodan",
+        "type": "Infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "BrickerBot.3",
+        "rel": "EXPLOITS",
+        "obj": "Dropbear SSH server"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "TARGETS",
+        "obj": "Busybox"
+      },
+      {
+        "sub": "BrickerBot.4",
+        "rel": "EXPLOITS",
+        "obj": "Dropbear SSH server"
+      },
+      {
+        "sub": "BrickerBot.4",
+        "rel": "TARGETS",
+        "obj": "Busybox"
+      },
+      {
+        "sub": "BrickerBot.1",
+        "rel": "TARGETS",
+        "obj": "Busybox"
+      },
+      {
+        "sub": "BrickerBot.2",
+        "rel": "TARGETS",
+        "obj": "Busybox"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "can corrupt",
+        "obj": "Sricam AP003 Metal Gun Type Waterproof Outdoor Bullet IP camera"
+      },
+      {
+        "sub": "BrickerBot.4",
+        "rel": "can corrupt",
+        "obj": "Sricam AP003 Metal Gun Type Waterproof Outdoor Bullet IP camera"
+      },
+      {
+        "sub": "BrickerBot.1",
+        "rel": "USES",
+        "obj": "Telnet"
+      },
+      {
+        "sub": "BrickerBot.2",
+        "rel": "USES",
+        "obj": "Telnet"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "USES",
+        "obj": "Telnet"
+      },
+      {
+        "sub": "BrickerBot.4",
+        "rel": "USES",
+        "obj": "Telnet"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "uses exploit vector",
+        "obj": "Mirai"
+      },
+      {
+        "sub": "BrickerBot.4",
+        "rel": "uses exploit vector",
+        "obj": "Mirai"
+      },
+      {
+        "sub": "BrickerBot.1",
+        "rel": "detected by",
+        "obj": "Honeypot"
+      },
+      {
+        "sub": "BrickerBot.2",
+        "rel": "detected by",
+        "obj": "Honeypot"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "detected by",
+        "obj": "Honeypot"
+      },
+      {
+        "sub": "BrickerBot.4",
+        "rel": "detected by",
+        "obj": "Honeypot"
+      },
+      {
+        "sub": "Janit0r",
+        "rel": "is author of",
+        "obj": "BrickerBot"
+      },
+      {
+        "sub": "Janit0r",
+        "rel": "reached out to",
+        "obj": "Victor Gevers"
+      },
+      {
+        "sub": "Catalin Cimpany",
+        "rel": "published article on",
+        "obj": "BrickerBot"
+      },
+      {
+        "sub": "Catalin Cimpany",
+        "rel": "published comments by",
+        "obj": "Janit0r"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "attempts to remove",
+        "obj": "Root"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "attempts to disable",
+        "obj": "TCP timestamps"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "limits to one",
+        "obj": "Kernel threats"
+      },
+      {
+        "sub": "BrickerBot.2",
+        "rel": "CONTAINS",
+        "obj": "Fork bomb"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "does not contain",
+        "obj": "Fork bomb"
+      },
+      {
+        "sub": "ZoomEye",
+        "rel": "searched for",
+        "obj": "Dropbear SSH server"
+      },
+      {
+        "sub": "Shodan",
+        "rel": "searched for",
+        "obj": "Dropbear SSH server"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "TARGETS",
+        "obj": "IoT devices"
+      },
+      {
+        "sub": "BrickerBot.4",
+        "rel": "TARGETS",
+        "obj": "IoT devices"
+      },
+      {
+        "sub": "BrickerBot.1",
+        "rel": "TARGETS",
+        "obj": "IoT devices"
+      },
+      {
+        "sub": "BrickerBot.2",
+        "rel": "TARGETS",
+        "obj": "IoT devices"
+      }
+    ]
+  }
+}

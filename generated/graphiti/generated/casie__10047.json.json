@@ -1,0 +1,212 @@
+{
+  "sample_id": "casie__10047.json",
+  "sample_index": 49,
+  "source": "casie",
+  "file_name": "10047.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "phishing campaigns",
+        "type": "Campaign"
+      },
+      {
+        "name": "travel agency",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "airline consumers",
+        "type": "Organization"
+      },
+      {
+        "name": "logistic industry",
+        "type": "Location"
+      },
+      {
+        "name": "manufacturing industry",
+        "type": "Location"
+      },
+      {
+        "name": "shipping industry",
+        "type": "Location"
+      },
+      {
+        "name": "US-CERT",
+        "type": "Organization"
+      },
+      {
+        "name": "Delta Air Lines",
+        "type": "Organization"
+      },
+      {
+        "name": "Barracuda Networks",
+        "type": "Organization"
+      },
+      {
+        "name": "airline ticket",
+        "type": "Indicator"
+      },
+      {
+        "name": "spoofed airline sites",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "malicious link",
+        "type": "Indicator"
+      },
+      {
+        "name": "weaponized document",
+        "type": "Indicator"
+      },
+      {
+        "name": "email-based phishing campaigns",
+        "type": "Campaign"
+      },
+      {
+        "name": "free travel",
+        "type": "Indicator"
+      },
+      {
+        "name": "fraudulent emails",
+        "type": "Campaign"
+      },
+      {
+        "name": "social media sites",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "postcards",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Gift Card promotional websites",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "prize notifications",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Asaf Cidon",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "phishing campaigns",
+        "rel": "IMPERSOНАTES",
+        "obj": "travel agency"
+      },
+      {
+        "sub": "phishing campaigns",
+        "rel": "TARGETS",
+        "obj": "airline consumers"
+      },
+      {
+        "sub": "phishing campaigns",
+        "rel": "EMBEDS",
+        "obj": "malicious link"
+      },
+      {
+        "sub": "phishing campaigns",
+        "rel": "INCLUDES",
+        "obj": "weaponized document"
+      },
+      {
+        "sub": "phishing campaigns",
+        "rel": "contains links to",
+        "obj": "spoofed airline sites"
+      },
+      {
+        "sub": "phishing campaigns",
+        "rel": "TARGETS",
+        "obj": "logistic industry"
+      },
+      {
+        "sub": "phishing campaigns",
+        "rel": "TARGETS",
+        "obj": "manufacturing industry"
+      },
+      {
+        "sub": "phishing campaigns",
+        "rel": "TARGETS",
+        "obj": "shipping industry"
+      },
+      {
+        "sub": "US-CERT",
+        "rel": "issued alert for",
+        "obj": "phishing campaigns"
+      },
+      {
+        "sub": "US-CERT",
+        "rel": "references security advisory of",
+        "obj": "Delta Air Lines"
+      },
+      {
+        "sub": "Delta Air Lines",
+        "rel": "reports attempts of",
+        "obj": "fraudulent emails"
+      },
+      {
+        "sub": "Delta Air Lines",
+        "rel": "reports attempts of",
+        "obj": "social media sites"
+      },
+      {
+        "sub": "Delta Air Lines",
+        "rel": "reports attempts of",
+        "obj": "postcards"
+      },
+      {
+        "sub": "Delta Air Lines",
+        "rel": "reports attempts of",
+        "obj": "Gift Card promotional websites"
+      },
+      {
+        "sub": "Delta Air Lines",
+        "rel": "reports attempts of",
+        "obj": "prize notifications"
+      },
+      {
+        "sub": "Delta Air Lines",
+        "rel": "PROMISES",
+        "obj": "free travel"
+      },
+      {
+        "sub": "Barracuda Networks",
+        "rel": "ANALYZES",
+        "obj": "phishing campaigns"
+      },
+      {
+        "sub": "Barracuda Networks",
+        "rel": "finds high success rate in",
+        "obj": "airline phishing attack"
+      },
+      {
+        "sub": "Barracuda Networks",
+        "rel": "reports success rate for",
+        "obj": "airline consumers"
+      },
+      {
+        "sub": "Asaf Cidon",
+        "rel": "explains attack techniques of",
+        "obj": "phishing campaigns"
+      }
+    ]
+  }
+}

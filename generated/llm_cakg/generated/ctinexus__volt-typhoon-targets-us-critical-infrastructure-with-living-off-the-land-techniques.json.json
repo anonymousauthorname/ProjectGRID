@@ -1,0 +1,229 @@
+{
+  "sample_id": "ctinexus__volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques.json",
+  "sample_index": 75,
+  "source": "ctinexus",
+  "file_name": "volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Volt Typhoon",
+        "type": "Entity"
+      },
+      {
+        "name": "Fortinet FortiGuard devices",
+        "type": "Entity"
+      },
+      {
+        "name": "Active Directory",
+        "type": "Entity"
+      },
+      {
+        "name": "SOHO network edge devices",
+        "type": "Entity"
+      },
+      {
+        "name": "ASUS",
+        "type": "Entity"
+      },
+      {
+        "name": "Cisco",
+        "type": "Entity"
+      },
+      {
+        "name": "D-Link",
+        "type": "Entity"
+      },
+      {
+        "name": "NETGEAR",
+        "type": "Entity"
+      },
+      {
+        "name": "Zyxel",
+        "type": "Entity"
+      },
+      {
+        "name": "HTTP management interfaces",
+        "type": "Entity"
+      },
+      {
+        "name": "SSH management interfaces",
+        "type": "Entity"
+      },
+      {
+        "name": "network traffic proxying",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious network traffic redirection",
+        "type": "Entity"
+      },
+      {
+        "name": "exposed management interfaces",
+        "type": "Entity"
+      },
+      {
+        "name": "internet-facing devices",
+        "type": "Entity"
+      },
+      {
+        "name": "privilege escalation",
+        "type": "Entity"
+      },
+      {
+        "name": "credential extraction",
+        "type": "Entity"
+      },
+      {
+        "name": "authentication to network devices",
+        "type": "Entity"
+      },
+      {
+        "name": "attack surface reduction",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Volt Typhoon",
+        "rel": "achieves initial access to",
+        "obj": "Fortinet FortiGuard devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "leverages privileges from",
+        "obj": "Fortinet FortiGuard devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "extracts credentials from",
+        "obj": "Active Directory account"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "attempts to authenticate to",
+        "obj": "network devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "proxies network traffic through",
+        "obj": "SOHO network edge devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "uses",
+        "obj": "ASUS devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "uses",
+        "obj": "Cisco devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "uses",
+        "obj": "D-Link devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "uses",
+        "obj": "NETGEAR devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "uses",
+        "obj": "Zyxel devices"
+      },
+      {
+        "sub": "ASUS",
+        "rel": "allows exposure of",
+        "obj": "HTTP management interfaces"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "allows exposure of",
+        "obj": "HTTP management interfaces"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "allows exposure of",
+        "obj": "HTTP management interfaces"
+      },
+      {
+        "sub": "NETGEAR",
+        "rel": "allows exposure of",
+        "obj": "HTTP management interfaces"
+      },
+      {
+        "sub": "Zyxel",
+        "rel": "allows exposure of",
+        "obj": "HTTP management interfaces"
+      },
+      {
+        "sub": "ASUS",
+        "rel": "allows exposure of",
+        "obj": "SSH management interfaces"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "allows exposure of",
+        "obj": "SSH management interfaces"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "allows exposure of",
+        "obj": "SSH management interfaces"
+      },
+      {
+        "sub": "NETGEAR",
+        "rel": "allows exposure of",
+        "obj": "SSH management interfaces"
+      },
+      {
+        "sub": "Zyxel",
+        "rel": "allows exposure of",
+        "obj": "SSH management interfaces"
+      },
+      {
+        "sub": "SOHO network edge devices",
+        "rel": "exposes",
+        "obj": "HTTP management interfaces"
+      },
+      {
+        "sub": "SOHO network edge devices",
+        "rel": "exposes",
+        "obj": "SSH management interfaces"
+      },
+      {
+        "sub": "SOHO network edge devices",
+        "rel": "is used for",
+        "obj": "network traffic proxying"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "performs",
+        "obj": "malicious network traffic redirection"
+      },
+      {
+        "sub": "SOHO network edge devices",
+        "rel": "reduces",
+        "obj": "attack surface"
+      }
+    ]
+  }
+}

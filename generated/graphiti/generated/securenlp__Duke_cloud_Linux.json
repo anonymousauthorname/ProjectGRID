@@ -1,0 +1,412 @@
+{
+  "sample_id": "securenlp__Duke_cloud_Linux",
+  "sample_index": 189,
+  "source": "securenlp",
+  "file_name": "Duke_cloud_Linux",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Duke",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "SeaDuke",
+        "type": "Malware"
+      },
+      {
+        "name": "CloudDuke",
+        "type": "Malware"
+      },
+      {
+        "name": "MiniDionis",
+        "type": "Malware"
+      },
+      {
+        "name": "CloudLook",
+        "type": "Malware"
+      },
+      {
+        "name": "OneDrive",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "BastionSolution",
+        "type": "Malware"
+      },
+      {
+        "name": "DropperSolution",
+        "type": "Malware"
+      },
+      {
+        "name": "Z framework",
+        "type": "Tool"
+      },
+      {
+        "name": "CozyDuke",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "US Department of Defense",
+        "type": "Organization"
+      },
+      {
+        "name": "F-Secure",
+        "type": "Organization"
+      },
+      {
+        "name": "Symantec",
+        "type": "Organization"
+      },
+      {
+        "name": "Palo Alto Networks",
+        "type": "Organization"
+      },
+      {
+        "name": "Kaspersky Labs",
+        "type": "Organization"
+      },
+      {
+        "name": "cognimuse.cs.ntua.gr",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "portal.sbn.co.th",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "97.75.120.45",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "58.80.109.59",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "flockfilmseries.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "recordsmanagementservices.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "counseling.org",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "OneDriveSolution",
+        "type": "Malware"
+      },
+      {
+        "name": "eFax",
+        "type": "Software"
+      },
+      {
+        "name": "Duke group",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "files.counseling.org",
+        "type": "Infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Duke",
+        "rel": "USES",
+        "obj": "SeaDuke"
+      },
+      {
+        "sub": "Duke",
+        "rel": "USES",
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "SeaDuke",
+        "rel": "written in",
+        "obj": "Python"
+      },
+      {
+        "sub": "BastionSolution",
+        "rel": "USES",
+        "obj": "Z framework"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "USES",
+        "obj": "Z framework"
+      },
+      {
+        "sub": "DropperSolution",
+        "rel": "USES",
+        "obj": "OneDrive"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "USES",
+        "obj": "OneDrive"
+      },
+      {
+        "sub": "DropperSolution",
+        "rel": "is identical to",
+        "obj": "MiniDionis"
+      },
+      {
+        "sub": "CloudLook",
+        "rel": "is component of",
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "MiniDionis",
+        "rel": "is component of",
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "has similar spear phishing campaigns to",
+        "obj": "CozyDuke"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "TARGETS",
+        "obj": "US Department of Defense"
+      },
+      {
+        "sub": "SeaDuke",
+        "rel": "TARGETS",
+        "obj": "Linux"
+      },
+      {
+        "sub": "SeaDuke",
+        "rel": "TARGETS",
+        "obj": "Windows"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "relys exclusively on",
+        "obj": "OneDrive"
+      },
+      {
+        "sub": "F-Secure",
+        "rel": "DETECTS",
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "RESEARCHES",
+        "obj": "SeaDuke"
+      },
+      {
+        "sub": "Palo Alto Networks",
+        "rel": "RESEARCHES",
+        "obj": "SeaDuke"
+      },
+      {
+        "sub": "Palo Alto Networks",
+        "rel": "RESEARCHES",
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "Kaspersky Labs",
+        "rel": "RESEARCHES",
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "CONTAINS",
+        "obj": "DropperSolution"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "CONTAINS",
+        "obj": "BastionSolution"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "CONTAINS",
+        "obj": "OneDriveSolution"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "uses as",
+        "obj": "OneDrive"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "USES",
+        "obj": "eFax"
+      },
+      {
+        "sub": "Duke",
+        "rel": "TARGETS",
+        "obj": "Linux"
+      },
+      {
+        "sub": "SeaDuke",
+        "rel": "SUPPORTS",
+        "obj": "Linux"
+      },
+      {
+        "sub": "SeaDuke",
+        "rel": "is functionally exact copy of",
+        "obj": "BastionSolution"
+      },
+      {
+        "sub": "DropperSolution",
+        "rel": "can retrieve payload from",
+        "obj": "OneDrive"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "logs in to",
+        "obj": "OneDrive"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "copy data to",
+        "obj": "OneDrive"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "searches for commands in",
+        "obj": "OneDrive"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "published research on",
+        "obj": "SeaDuke"
+      },
+      {
+        "sub": "Palo Alto Networks",
+        "rel": "published research on",
+        "obj": "SeaDuke"
+      },
+      {
+        "sub": "Palo Alto Networks",
+        "rel": "published research on",
+        "obj": "MiniDionis"
+      },
+      {
+        "sub": "Kaspersky Labs",
+        "rel": "published research on",
+        "obj": "CloudLook"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "USES",
+        "obj": "OneDrive"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "uses as",
+        "obj": "OneDrive"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "uses for command and control",
+        "obj": "cognimuse.cs.ntua.gr"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "uses for command and control",
+        "obj": "portal.sbn.co.th"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "uses for command and control",
+        "obj": "97.75.120.45"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "uses for command and control",
+        "obj": "58.80.109.59"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "uses to host",
+        "obj": "flockfilmseries.com"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "uses to host",
+        "obj": "recordsmanagementservices.com"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "uses to host",
+        "obj": "counseling.org"
+      },
+      {
+        "sub": "Duke group",
+        "rel": "USES",
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "Duke group",
+        "rel": "USES",
+        "obj": "SeaDuke"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "USES",
+        "obj": "OneDrive"
+      },
+      {
+        "sub": "BastionSolution",
+        "rel": "rewritten from",
+        "obj": "SeaDuke"
+      },
+      {
+        "sub": "Duke group",
+        "rel": "USES",
+        "obj": "cognimuse.cs.ntua.gr"
+      },
+      {
+        "sub": "Duke group",
+        "rel": "USES",
+        "obj": "portal.sbn.co.th"
+      },
+      {
+        "sub": "Duke group",
+        "rel": "USES",
+        "obj": "97.75.120.45"
+      },
+      {
+        "sub": "Duke group",
+        "rel": "USES",
+        "obj": "58.80.109.59"
+      },
+      {
+        "sub": "Duke group",
+        "rel": "USES",
+        "obj": "flockfilmseries.com"
+      },
+      {
+        "sub": "Duke group",
+        "rel": "USES",
+        "obj": "recordsmanagementservices.com"
+      },
+      {
+        "sub": "Duke group",
+        "rel": "USES",
+        "obj": "files.counseling.org"
+      }
+    ]
+  }
+}

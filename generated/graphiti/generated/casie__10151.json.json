@@ -1,0 +1,155 @@
+{
+  "sample_id": "casie__10151.json",
+  "sample_index": 21,
+  "source": "casie",
+  "file_name": "10151.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Meltdown",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Spectre",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Windows 10",
+        "type": "Software"
+      },
+      {
+        "name": "Redstone 4",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "April 2018 Update",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "NtCallEnclave",
+        "type": "Indicator"
+      },
+      {
+        "name": "Windows Host Compute Service Shim",
+        "type": "Software"
+      },
+      {
+        "name": "hcsshim",
+        "type": "Indicator"
+      },
+      {
+        "name": "CVE-2018-8115",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Alex Ionescu",
+        "type": "Person"
+      },
+      {
+        "name": "Crowdstrike",
+        "type": "Organization"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Organization"
+      },
+      {
+        "name": "Intel",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Alex Ionescu",
+        "rel": "RESEARCHED",
+        "obj": "Meltdown"
+      },
+      {
+        "sub": "Crowdstrike",
+        "rel": "works with",
+        "obj": "Alex Ionescu"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "provides patches for",
+        "obj": "Windows 10"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "fixed patch for",
+        "obj": "Redstone 4"
+      },
+      {
+        "sub": "Redstone 4",
+        "rel": "is also known as",
+        "obj": "April 2018 Update"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has fatal flaw in patch",
+        "obj": "NtCallEnclave"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issued security update for",
+        "obj": "Windows Host Compute Service Shim"
+      },
+      {
+        "sub": "Windows Host Compute Service Shim",
+        "rel": "is related to",
+        "obj": "hcsshim"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "classified as critical",
+        "obj": "CVE-2018-8115"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issued cpu microcode updates for",
+        "obj": "Intel"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "released patches for",
+        "obj": "Meltdown"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "released patches for",
+        "obj": "Spectre"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "patched with fatal flaw",
+        "obj": "Windows 10"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "released on",
+        "obj": "April 2018 Update"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "FIXED",
+        "obj": "CVE-2018-8115"
+      }
+    ]
+  }
+}

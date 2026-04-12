@@ -1,0 +1,399 @@
+{
+  "sample_id": "casie__10182.json",
+  "sample_index": 22,
+  "source": "casie",
+  "file_name": "10182.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Kubernetes",
+        "type": "general-software",
+        "alias": [
+          "Kubernetes",
+          "the Kubernetes platform"
+        ]
+      },
+      {
+        "name": "CVE-2018-1002105",
+        "type": "vulnerability",
+        "alias": [
+          "the Kubernetes privilege escalation flaw"
+        ]
+      },
+      {
+        "name": "CVSS 9.8",
+        "type": "vulnerability",
+        "alias": [
+          "CVSS score"
+        ]
+      },
+      {
+        "name": "Kubernetes application programming interface (API) server",
+        "type": "general-software",
+        "alias": [
+          "API server"
+        ]
+      },
+      {
+        "name": "backend server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "Transport Layer Security (TLS) credentials",
+        "type": "credential-value"
+      },
+      {
+        "name": "Red Hat",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Red Hat"
+        ]
+      },
+      {
+        "name": "Red Hat OpenShift Container Platform",
+        "type": "general-software"
+      },
+      {
+        "name": "Red Hat OpenShift Online",
+        "type": "general-software"
+      },
+      {
+        "name": "Red Hat OpenShift Dedicated",
+        "type": "general-software"
+      },
+      {
+        "name": "Darren Shepard",
+        "type": "identity"
+      },
+      {
+        "name": "Rancher Labs",
+        "type": "identity"
+      },
+      {
+        "name": "Kubernetes distributors",
+        "type": "identity"
+      },
+      {
+        "name": "Kubernetes vulnerability reporting process",
+        "type": "course-of-action"
+      },
+      {
+        "name": "API server audit logs",
+        "type": "log"
+      },
+      {
+        "name": "server log",
+        "type": "log"
+      },
+      {
+        "name": "kubelet",
+        "type": "general-software"
+      },
+      {
+        "name": "aggregated API server logs",
+        "type": "log"
+      },
+      {
+        "name": "unauthorized requests",
+        "type": "network-traffic"
+      },
+      {
+        "name": "authenticated and unauthenticated users",
+        "type": "user-account"
+      },
+      {
+        "name": "compute node",
+        "type": "infrastructure"
+      },
+      {
+        "name": "specially crafted network request",
+        "type": "network-traffic"
+      },
+      {
+        "name": "full administrator privileges",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "production applications and services",
+        "type": "victims/targets"
+      },
+      {
+        "name": "upgrade Kubernetes",
+        "type": "course-of-action"
+      },
+      {
+        "name": "patch",
+        "type": "course-of-action"
+      },
+      {
+        "name": "service updates",
+        "type": "course-of-action"
+      },
+      {
+        "name": "the bug",
+        "type": "malware",
+        "alias": [
+          "CVE-2018-1002105"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Kubernetes",
+        "rel": "has become",
+        "rel_type": [
+          "general-software-characteristic"
+        ],
+        "obj": "the most popular cloud container orchestration system"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "is",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "the Kubernetes privilege escalation flaw"
+      },
+      {
+        "sub": "the bug",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "the Kubernetes privilege escalation flaw",
+        "rel": "is",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "is",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "CVSS 9.8 critical security hole"
+      },
+      {
+        "sub": "a specially crafted network request",
+        "rel": "can establish a connection through",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the Kubernetes application programming interface (API) server"
+      },
+      {
+        "sub": "any user",
+        "rel": "can establish a connection to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a backend server"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can send",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "arbitrary requests over the network connection"
+      },
+      {
+        "sub": "these requests",
+        "rel": "are authenticated with",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the Kubernetes API server's Transport Layer Security (TLS) credentials"
+      },
+      {
+        "sub": "all users",
+        "rel": "are allowed to perform",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "discovery API calls"
+      },
+      {
+        "sub": "anyone who knows about this hole",
+        "rel": "can take command of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "your Kubernetes cluster"
+      },
+      {
+        "sub": "the vulnerability",
+        "rel": "is a doozy",
+        "rel_type": [
+          "describes-characteristic"
+        ],
+        "obj": "the Kubernetes privilege escalation flaw"
+      },
+      {
+        "sub": "there is no simple way to detect",
+        "rel": "whether",
+        "rel_type": [
+          "negates"
+        ],
+        "obj": "this vulnerability has been used"
+      },
+      {
+        "sub": "unauthorized requests",
+        "rel": "do not appear in",
+        "rel_type": [
+          "inability-to-detect"
+        ],
+        "obj": "the Kubernetes API server audit logs or server log"
+      },
+      {
+        "sub": "the requests",
+        "rel": "do appear in",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the kubelet or aggregated API server logs"
+      },
+      {
+        "sub": "the privilege escalation flaw",
+        "rel": "makes it possible for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "any user to gain full administrator privileges"
+      },
+      {
+        "sub": "any user",
+        "rel": "can gain",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "full administrator privileges"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can steal",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "sensitive data"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can inject",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "malicious code"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can bring down",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "production applications and services"
+      },
+      {
+        "sub": "The only real fix is to",
+        "rel": "upgrade",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Kubernetes"
+      },
+      {
+        "sub": "Any program",
+        "rel": "is vulnerable",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Kubernetes"
+      },
+      {
+        "sub": "Kubernetes distributors",
+        "rel": "are releasing fixes",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Kubernetes"
+      },
+      {
+        "sub": "Red Hat",
+        "rel": "reports",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "all its 'Kubernetes-based services and products'"
+      },
+      {
+        "sub": "Red Hat",
+        "rel": "has begun delivering",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "patches and service updates"
+      },
+      {
+        "sub": "Darren Shepard",
+        "rel": "discovered",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the bug"
+      },
+      {
+        "sub": "Darren Shepard",
+        "rel": "reported it using",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the Kubernetes vulnerability reporting process"
+      },
+      {
+        "sub": "abusing the vulnerability",
+        "rel": "would have left",
+        "rel_type": [
+          "would-have-caused"
+        ],
+        "obj": "no obvious traces in the logs"
+      },
+      {
+        "sub": "news of the bug is out",
+        "rel": "it's only a matter of time until",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "it's abused"
+      },
+      {
+        "sub": "upgrade your Kubernetes systems",
+        "rel": "before",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "your company ends up in a world of trouble"
+      }
+    ]
+  }
+}

@@ -1,0 +1,650 @@
+{
+  "sample_id": "malkg__201304BitdefenderMiniDuke.txt",
+  "sample_index": 127,
+  "source": "malkg",
+  "file_name": "201304BitdefenderMiniDuke.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "MiniDuke",
+        "type": "malware",
+        "alias": [
+          "this piece of malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Marius TIVADAR",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Bíró BALÁZS",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Cristian ISTRATE",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PDF file",
+        "type": "file",
+        "alias": [
+          "the malicious PDF file",
+          "the infected PDF file"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "exploit code",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": [
+          "PDF file"
+        ]
+      },
+      {
+        "name": "dropper",
+        "type": "hacker-tool",
+        "alias": [
+          "DLL component"
+        ],
+        "mother entity": [
+          "PDF file"
+        ]
+      },
+      {
+        "name": "main DLL component",
+        "type": "file",
+        "alias": [
+          "the main DLL file",
+          "the malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "clean PDF file",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Watermark",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "the watermarking process",
+          "the watermark"
+        ],
+        "mother entity": [
+          "main DLL component"
+        ]
+      },
+      {
+        "name": "Twitter link",
+        "type": "url",
+        "alias": [
+          "the encrypted Twitter link",
+          "the full Twitter link"
+        ],
+        "mother entity": [
+          "Watermark"
+        ]
+      },
+      {
+        "name": "Google query",
+        "type": "attack-pattern",
+        "alias": [
+          "encrypted Google link",
+          "Google accounts"
+        ],
+        "mother entity": [
+          "Watermark"
+        ]
+      },
+      {
+        "name": "Twitter accounts",
+        "type": "identity",
+        "alias": [
+          "the Twitter accounts"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Google accounts",
+        "type": "identity",
+        "alias": [
+          "Google ID"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Twitter usernames",
+        "type": "credential-value",
+        "alias": [
+          "the primary Twitter username",
+          "secondary Twitter account"
+        ],
+        "mother entity": [
+          "Twitter accounts"
+        ]
+      },
+      {
+        "name": "Google usernames",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": [
+          "Google accounts"
+        ]
+      },
+      {
+        "name": "command and control server",
+        "type": "infrastructure",
+        "alias": [
+          "the command and control center"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Twitter messages",
+        "type": "text",
+        "alias": [
+          "tweets",
+          "the messages"
+        ],
+        "mother entity": [
+          "Twitter accounts"
+        ]
+      },
+      {
+        "name": "Google search results",
+        "type": "indicator",
+        "alias": [
+          "Google results"
+        ],
+        "mother entity": [
+          "Google accounts"
+        ]
+      },
+      {
+        "name": "Twitter handles (e.g., ObamaApril, RuthHarper14, etc.)",
+        "type": "identity",
+        "alias": [
+          "the Twitter handle"
+        ],
+        "mother entity": [
+          "Twitter accounts"
+        ]
+      },
+      {
+        "name": "Twitter messages with 'uri!' command",
+        "type": "indicator",
+        "alias": [
+          "the 'uri!' command"
+        ],
+        "mother entity": [
+          "Twitter messages"
+        ]
+      },
+      {
+        "name": "info.leveldelta.com",
+        "type": "domain-name",
+        "alias": [
+          "the server info.leveldelta.com"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "news.grouptumbler.com",
+        "type": "domain-name",
+        "alias": [
+          "The server news.grouptumbler.com"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "85.95.236.114",
+        "type": "ipv4-addr",
+        "alias": [
+          "the server at 85.95.236.114"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "embedded payloads",
+        "type": "file",
+        "alias": [
+          "the payload",
+          "new updates"
+        ],
+        "mother entity": [
+          "command and control server"
+        ]
+      },
+      {
+        "name": "Backdoor",
+        "type": "malware",
+        "alias": [
+          "the backdoor"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "DLL files",
+        "type": "file",
+        "alias": [
+          "valid images"
+        ],
+        "mother entity": [
+          "embedded payloads"
+        ]
+      },
+      {
+        "name": "EXE files",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "embedded payloads"
+        ]
+      },
+      {
+        "name": "get-logon-history.ps1",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "get-sensors.ps1",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "AppID",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "GetTickCount()",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "AppID"
+        ]
+      },
+      {
+        "name": "info.leveldelta.com/php/text.php",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "command and control server"
+        ]
+      },
+      {
+        "name": "53db085a276ebbf5798ba756cac833ea, 2013-02-22 info.leveldelta.com/php/text.php",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "command and control server"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "MiniDuke",
+        "rel": "is made of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "PDF file"
+      },
+      {
+        "sub": "PDF file",
+        "rel": "embeds",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "exploit code"
+      },
+      {
+        "sub": "PDF file",
+        "rel": "contains",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "dropper"
+      },
+      {
+        "sub": "dropper",
+        "rel": "writes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "main DLL component"
+      },
+      {
+        "sub": "PDF file",
+        "rel": "contains",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "clean PDF file"
+      },
+      {
+        "sub": "malicious PDF file",
+        "rel": "gets exploited and results in running",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "dropper"
+      },
+      {
+        "sub": "dropper",
+        "rel": "kills",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "host process"
+      },
+      {
+        "sub": "dropper",
+        "rel": "displays",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "clean PDF file"
+      },
+      {
+        "sub": "main DLL component",
+        "rel": "on",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "PDF file"
+      },
+      {
+        "sub": "malware",
+        "rel": "calls back home",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "command and control server"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses URL found via",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "Twitter link"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses URL found via",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "Google query"
+      },
+      {
+        "sub": "malware",
+        "rel": "installs updates or payloads",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "embedded payloads"
+      },
+      {
+        "sub": "malware",
+        "rel": "waits for response from",
+        "rel_type": [
+          "receives"
+        ],
+        "obj": "command and control server"
+      },
+      {
+        "sub": "malware",
+        "rel": "removes the watermark",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Watermark"
+      },
+      {
+        "sub": "malware",
+        "rel": "attempts to access",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Twitter accounts"
+      },
+      {
+        "sub": "malware",
+        "rel": "attempts to access",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Google accounts"
+      },
+      {
+        "sub": "malware",
+        "rel": "decodes",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Twitter messages"
+      },
+      {
+        "sub": "malware",
+        "rel": "attempts the same operation with",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "secondary Twitter account"
+      },
+      {
+        "sub": "malware",
+        "rel": "falls back to backup mechanism, sends search query to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Google accounts"
+      },
+      {
+        "sub": "malware",
+        "rel": "receives encrypted GIF file that holds",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "embedded payloads"
+      },
+      {
+        "sub": "malware",
+        "rel": "checks for",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "GIF8 magic"
+      },
+      {
+        "sub": "malware",
+        "rel": "isolates",
+        "rel_type": [
+          "extracts"
+        ],
+        "obj": "decryption key"
+      },
+      {
+        "sub": "malware",
+        "rel": "decrypts",
+        "rel_type": [
+          "decrypts"
+        ],
+        "obj": "payload"
+      },
+      {
+        "sub": "malware",
+        "rel": "loads",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "DLL files"
+      },
+      {
+        "sub": "malware",
+        "rel": "writes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "EXE files"
+      },
+      {
+        "sub": "malware",
+        "rel": "exfiltrates documents",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "command and control server"
+      },
+      {
+        "sub": "malware",
+        "rel": "performs GET request to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "info.leveldelta.com"
+      },
+      {
+        "sub": "malware",
+        "rel": "performs POST to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "info.leveldelta.com"
+      },
+      {
+        "sub": "malware",
+        "rel": "receives commands from",
+        "rel_type": [
+          "receives"
+        ],
+        "obj": "command and control server"
+      },
+      {
+        "sub": "malware",
+        "rel": "connects to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "85.95.236.114"
+      },
+      {
+        "sub": "malware",
+        "rel": "sends identifier on",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "85.95.236.114"
+      },
+      {
+        "sub": "malware",
+        "rel": "creates MD5 hash on",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "16 bytes"
+      },
+      {
+        "sub": "malware",
+        "rel": "receives AES IV from",
+        "rel_type": [
+          "receives"
+        ],
+        "obj": "85.95.236.114"
+      },
+      {
+        "sub": "malware",
+        "rel": "receives value from",
+        "rel_type": [
+          "receives"
+        ],
+        "obj": "85.95.236.114"
+      },
+      {
+        "sub": "malware",
+        "rel": "receives decrypted code from",
+        "rel_type": [
+          "receives"
+        ],
+        "obj": "85.95.236.114"
+      },
+      {
+        "sub": "malware",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "decrypted code"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "GetTickCount()"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "info.leveldelta.com/php/text.php"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "malware",
+        "rel": "sends identifier via",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "GET request"
+      }
+    ]
+  }
+}

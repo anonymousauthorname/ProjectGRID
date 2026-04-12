@@ -1,0 +1,907 @@
+{
+  "sample_id": "securenlp__fireeye-sidewinder-targeted-attack",
+  "sample_index": 190,
+  "source": "securenlp",
+  "file_name": "fireeye-sidewinder-targeted-attack",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Sidewinder",
+        "type": "Campaign"
+      },
+      {
+        "name": "Android",
+        "type": "Software"
+      },
+      {
+        "name": "Google Play",
+        "type": "Software"
+      },
+      {
+        "name": "ad libraries",
+        "type": "Software"
+      },
+      {
+        "name": "Javascript-binding-over-HTTP",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "dynamic-loading-over-HTTP",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "JS Sidedoor",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "JBOH",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "DLOH",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Clipboard manipulation",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Local files uploading",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Root launcher settings modification",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Bootkit implantation",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "SMS sending",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Phone calling",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Photo taking",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Audio and video recording",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Stealthy app installation",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "GPS location interception",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "FireEye",
+        "type": "Organization"
+      },
+      {
+        "name": "JavaScript-Binding-Over-HTTP (JBOH)",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "JS Sidedoors",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "DEX Loading over HTTP (DLOH)",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "addJavascriptInterface",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "makeCall",
+        "type": "Indicator"
+      },
+      {
+        "name": "sendSMS",
+        "type": "Indicator"
+      },
+      {
+        "name": "takeCameraPicture",
+        "type": "Indicator"
+      },
+      {
+        "name": "createCalendarEvent",
+        "type": "Indicator"
+      },
+      {
+        "name": "postToSocial",
+        "type": "Indicator"
+      },
+      {
+        "name": "sendMail",
+        "type": "Indicator"
+      },
+      {
+        "name": "getGalleryImage",
+        "type": "Indicator"
+      },
+      {
+        "name": "registerMicListener",
+        "type": "Indicator"
+      },
+      {
+        "name": "Runtime",
+        "type": "Software"
+      },
+      {
+        "name": "Android API 16",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Android API >16",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "WebView",
+        "type": "Software"
+      },
+      {
+        "name": "JavaScript binding",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "towelroot",
+        "type": "Malware"
+      },
+      {
+        "name": "ad library",
+        "type": "Software"
+      },
+      {
+        "name": "SMS",
+        "type": "Indicator"
+      },
+      {
+        "name": "Dialing Numbers",
+        "type": "Indicator"
+      },
+      {
+        "name": "Telephony service",
+        "type": "Tool"
+      },
+      {
+        "name": "JavaScript bridge",
+        "type": "Tool"
+      },
+      {
+        "name": "Runtime.load",
+        "type": "Tool"
+      },
+      {
+        "name": "JNI",
+        "type": "Tool"
+      },
+      {
+        "name": "DexClassLoader",
+        "type": "Tool"
+      },
+      {
+        "name": "ClipboardManager",
+        "type": "Indicator"
+      },
+      {
+        "name": "Launcher",
+        "type": "Organization"
+      },
+      {
+        "name": "READ SETTINGS",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "WRITE SETTINGS",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "CHANGE WIFI STATE",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "WifiManager",
+        "type": "Tool"
+      },
+      {
+        "name": "MediaRecorder",
+        "type": "Tool"
+      },
+      {
+        "name": "MWR",
+        "type": "Organization"
+      },
+      {
+        "name": "AOSP",
+        "type": "Organization"
+      },
+      {
+        "name": "Android context",
+        "type": "Indicator"
+      },
+      {
+        "name": "AccountManager",
+        "type": "Software"
+      },
+      {
+        "name": "Google services",
+        "type": "Software"
+      },
+      {
+        "name": "Android audio recording",
+        "type": "Software"
+      },
+      {
+        "name": "Android video recording",
+        "type": "Software"
+      },
+      {
+        "name": "Java reflection",
+        "type": "Tool"
+      },
+      {
+        "name": "HTTP",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "HTTPS",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "SSL",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "MITM attack",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "DNS hijacking",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "BGP hijacking",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "ARP hijacking",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Google",
+        "type": "Organization"
+      },
+      {
+        "name": "proxySettings",
+        "type": "Indicator"
+      },
+      {
+        "name": "IMEI",
+        "type": "Indicator"
+      },
+      {
+        "name": "Android version",
+        "type": "Indicator"
+      },
+      {
+        "name": "Android ID",
+        "type": "Indicator"
+      },
+      {
+        "name": "device specification",
+        "type": "Indicator"
+      },
+      {
+        "name": "carrier information",
+        "type": "Indicator"
+      },
+      {
+        "name": "host app information",
+        "type": "Indicator"
+      },
+      {
+        "name": "installed app list",
+        "type": "Indicator"
+      },
+      {
+        "name": "GPS location",
+        "type": "Indicator"
+      },
+      {
+        "name": "d-device-screen-density",
+        "type": "Indicator"
+      },
+      {
+        "name": "d-device-screen-size",
+        "type": "Indicator"
+      },
+      {
+        "name": "u-appBId",
+        "type": "Indicator"
+      },
+      {
+        "name": "u-appDNM",
+        "type": "Indicator"
+      },
+      {
+        "name": "u-appVer",
+        "type": "Indicator"
+      },
+      {
+        "name": "h-user-agent",
+        "type": "Indicator"
+      },
+      {
+        "name": "d-localization",
+        "type": "Indicator"
+      },
+      {
+        "name": "d-netType",
+        "type": "Indicator"
+      },
+      {
+        "name": "d-orientation",
+        "type": "Indicator"
+      },
+      {
+        "name": "u-latlong-accu",
+        "type": "Indicator"
+      },
+      {
+        "name": "Sidewinder Targeted Attack",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Ad1",
+        "type": "Indicator"
+      },
+      {
+        "name": "Ad2",
+        "type": "Indicator"
+      },
+      {
+        "name": "Ad3",
+        "type": "Indicator"
+      },
+      {
+        "name": "Ad4",
+        "type": "Indicator"
+      },
+      {
+        "name": "Ad5",
+        "type": "Indicator"
+      },
+      {
+        "name": "Google Ad",
+        "type": "Software"
+      },
+      {
+        "name": "FireEye Mobile Threat Prevention (MTP)",
+        "type": "Tool"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Sidewinder",
+        "rel": "EXPLOITS",
+        "obj": "ad libraries"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "CONTAINS",
+        "obj": "Javascript-binding-over-HTTP"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "CONTAINS",
+        "obj": "dynamic-loading-over-HTTP"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "CONTAINS",
+        "obj": "JS Sidedoor"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "CONTAINS",
+        "obj": "JBOH"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "CONTAINS",
+        "obj": "DLOH"
+      },
+      {
+        "sub": "Sidewinder",
+        "rel": "PERFORMS",
+        "obj": "Clipboard manipulation"
+      },
+      {
+        "sub": "Sidewinder",
+        "rel": "PERFORMS",
+        "obj": "Local files uploading"
+      },
+      {
+        "sub": "Sidewinder",
+        "rel": "PERFORMS",
+        "obj": "Root launcher settings modification"
+      },
+      {
+        "sub": "Sidewinder",
+        "rel": "PERFORMS",
+        "obj": "Bootkit implantation"
+      },
+      {
+        "sub": "Sidewinder",
+        "rel": "PERFORMS",
+        "obj": "SMS sending"
+      },
+      {
+        "sub": "Sidewinder",
+        "rel": "PERFORMS",
+        "obj": "Phone calling"
+      },
+      {
+        "sub": "Sidewinder",
+        "rel": "PERFORMS",
+        "obj": "Photo taking"
+      },
+      {
+        "sub": "Sidewinder",
+        "rel": "PERFORMS",
+        "obj": "Audio and video recording"
+      },
+      {
+        "sub": "Sidewinder",
+        "rel": "PERFORMS",
+        "obj": "Stealthy app installation"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "GPS location interception"
+      },
+      {
+        "sub": "Sidewinder",
+        "rel": "ATTACKS",
+        "obj": "Android"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "RESEARCHES",
+        "obj": "Sidewinder"
+      },
+      {
+        "sub": "Android",
+        "rel": "USES",
+        "obj": "Google Play"
+      },
+      {
+        "sub": "JavaScript-Binding-Over-HTTP (JBOH)",
+        "rel": "is a",
+        "obj": "addJavascriptInterface"
+      },
+      {
+        "sub": "JS Sidedoors",
+        "rel": "is a",
+        "obj": "addJavascriptInterface"
+      },
+      {
+        "sub": "JS Sidedoors",
+        "rel": "EXPLOITS",
+        "obj": "ad library"
+      },
+      {
+        "sub": "JavaScript-Binding-Over-HTTP (JBOH)",
+        "rel": "EXPLOITS",
+        "obj": "ad library"
+      },
+      {
+        "sub": "DEX Loading over HTTP (DLOH)",
+        "rel": "EXPLOITS",
+        "obj": "ad library"
+      },
+      {
+        "sub": "makeCall",
+        "rel": "exposed by",
+        "obj": "ad library"
+      },
+      {
+        "sub": "sendSMS",
+        "rel": "exposed by",
+        "obj": "ad library"
+      },
+      {
+        "sub": "takeCameraPicture",
+        "rel": "exposed by",
+        "obj": "ad library"
+      },
+      {
+        "sub": "createCalendarEvent",
+        "rel": "exposed by",
+        "obj": "ad library"
+      },
+      {
+        "sub": "postToSocial",
+        "rel": "exposed by",
+        "obj": "ad library"
+      },
+      {
+        "sub": "sendMail",
+        "rel": "exposed by",
+        "obj": "ad library"
+      },
+      {
+        "sub": "getGalleryImage",
+        "rel": "exposed by",
+        "obj": "ad library"
+      },
+      {
+        "sub": "registerMicListener",
+        "rel": "exposed by",
+        "obj": "ad library"
+      },
+      {
+        "sub": "Runtime",
+        "rel": "used in",
+        "obj": "JavaScript-Binding-Over-HTTP (JBOH)"
+      },
+      {
+        "sub": "towelroot",
+        "rel": "can be used with",
+        "obj": "JavaScript-Binding-Over-HTTP (JBOH)"
+      },
+      {
+        "sub": "Android API 16",
+        "rel": "applies to",
+        "obj": "JavaScript-Binding-Over-HTTP (JBOH)"
+      },
+      {
+        "sub": "Android API >16",
+        "rel": "applies to",
+        "obj": "JS Sidedoors"
+      },
+      {
+        "sub": "WebView",
+        "rel": "INVOLVES",
+        "obj": "JavaScript-Binding-Over-HTTP (JBOH)"
+      },
+      {
+        "sub": "Android",
+        "rel": "is vulnerable to",
+        "obj": "JavaScript-Binding-Over-HTTP (JBOH)"
+      },
+      {
+        "sub": "Google Play",
+        "rel": "HOSTS",
+        "obj": "ad library"
+      },
+      {
+        "sub": "Sidewinder",
+        "rel": "USES",
+        "obj": "JavaScript-Binding-Over-HTTP (JBOH)"
+      },
+      {
+        "sub": "Sidewinder",
+        "rel": "USES",
+        "obj": "JS Sidedoors"
+      },
+      {
+        "sub": "Sidewinder",
+        "rel": "USES",
+        "obj": "DEX Loading over HTTP (DLOH)"
+      },
+      {
+        "sub": "JavaScript bridge",
+        "rel": "SENDING",
+        "obj": "SMS"
+      },
+      {
+        "sub": "JavaScript bridge",
+        "rel": "DIALING",
+        "obj": "Dialing Numbers"
+      },
+      {
+        "sub": "JavaScript bridge",
+        "rel": "INVOKING",
+        "obj": "Telephony service"
+      },
+      {
+        "sub": "Runtime.load",
+        "rel": "LOADS",
+        "obj": "JNI"
+      },
+      {
+        "sub": "DexClassLoader",
+        "rel": "OBTAINS",
+        "obj": "Android context"
+      },
+      {
+        "sub": "JavaScript bridge",
+        "rel": "OBTAINS",
+        "obj": "Android context"
+      },
+      {
+        "sub": "ClipboardManager",
+        "rel": "MONITORING",
+        "obj": "Clipboard"
+      },
+      {
+        "sub": "Launcher",
+        "rel": "USES",
+        "obj": "READ SETTINGS"
+      },
+      {
+        "sub": "Launcher",
+        "rel": "USES",
+        "obj": "WRITE SETTINGS"
+      },
+      {
+        "sub": "WifiManager",
+        "rel": "EXPLOITS",
+        "obj": "CHANGE WIFI STATE"
+      },
+      {
+        "sub": "MediaRecorder",
+        "rel": "RECORDING",
+        "obj": "Audio/Video"
+      },
+      {
+        "sub": "WifiManager",
+        "rel": "ACCESSES",
+        "obj": "proxySettings"
+      },
+      {
+        "sub": "Java reflection",
+        "rel": "EXPOSES",
+        "obj": "proxySettings"
+      },
+      {
+        "sub": "MediaRecorder",
+        "rel": "is used for",
+        "obj": "Android audio recording"
+      },
+      {
+        "sub": "MediaRecorder",
+        "rel": "is used for",
+        "obj": "Android video recording"
+      },
+      {
+        "sub": "AccountManager",
+        "rel": "USES",
+        "obj": "Google services"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "USES",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "USES",
+        "obj": "HTTPS"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "USES",
+        "obj": "SSL"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "is vulnerable to",
+        "obj": "MITM attack"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "GPS location"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "d-device-screen-density"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "d-device-screen-size"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "u-appBId"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "u-appDNM"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "u-appVer"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "h-user-agent"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "d-localization"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "d-netType"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "d-orientation"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "u-latlong-accu"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "IMEI"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "Android version"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "Android ID"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "device specification"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "carrier information"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "host app information"
+      },
+      {
+        "sub": "ad libraries",
+        "rel": "LEAKS",
+        "obj": "installed app list"
+      },
+      {
+        "sub": "DNS hijacking",
+        "rel": "MONITORS",
+        "obj": "ad libraries"
+      },
+      {
+        "sub": "BGP hijacking",
+        "rel": "MONITORS",
+        "obj": "ad libraries"
+      },
+      {
+        "sub": "ARP hijacking",
+        "rel": "MONITORS",
+        "obj": "ad libraries"
+      },
+      {
+        "sub": "Sidewinder Targeted Attack",
+        "rel": "UTILIZES",
+        "obj": "Ad1"
+      },
+      {
+        "sub": "Sidewinder Targeted Attack",
+        "rel": "UTILIZES",
+        "obj": "Ad2"
+      },
+      {
+        "sub": "Sidewinder Targeted Attack",
+        "rel": "UTILIZES",
+        "obj": "Ad3"
+      },
+      {
+        "sub": "Sidewinder Targeted Attack",
+        "rel": "UTILIZES",
+        "obj": "Ad4"
+      },
+      {
+        "sub": "Sidewinder Targeted Attack",
+        "rel": "UTILIZES",
+        "obj": "Ad5"
+      },
+      {
+        "sub": "Sidewinder Targeted Attack",
+        "rel": "has vulnerability",
+        "obj": "JBOH"
+      },
+      {
+        "sub": "Sidewinder Targeted Attack",
+        "rel": "has vulnerability",
+        "obj": "DLOH"
+      },
+      {
+        "sub": "FireEye Mobile Threat Prevention (MTP)",
+        "rel": "ANALYZES",
+        "obj": "Google Play"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "DISCOVERED",
+        "obj": "Sidewinder Targeted Attack"
+      },
+      {
+        "sub": "Ad1",
+        "rel": "uses protocol",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "Ad2",
+        "rel": "uses protocol",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "Ad3",
+        "rel": "uses protocol",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "Ad4",
+        "rel": "uses protocol",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "Ad5",
+        "rel": "uses protocol",
+        "obj": "HTTPS"
+      },
+      {
+        "sub": "Google Play",
+        "rel": "runs on",
+        "obj": "Android"
+      },
+      {
+        "sub": "Sidewinder Targeted Attack",
+        "rel": "EXCLUDES",
+        "obj": "Google Ad"
+      }
+    ]
+  }
+}

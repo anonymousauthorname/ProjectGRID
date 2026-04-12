@@ -1,0 +1,138 @@
+{
+  "sample_id": "ctinexus__cloaked-ursa-phishing.json",
+  "sample_index": 74,
+  "source": "ctinexus",
+  "file_name": "cloaked-ursa-phishing.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Cloaked Ursa",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "APT29",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "UAC-0004",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Midnight Blizzard/Nobelium",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Cozy Bear",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Russia's Foreign Intelligence Service",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "SVR",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Ukraine",
+        "type": "Location"
+      },
+      {
+        "name": "Kyiv",
+        "type": "Location"
+      },
+      {
+        "name": "diplomatic missions",
+        "type": "Organization"
+      },
+      {
+        "name": "Notes verbale",
+        "type": "Indicator"
+      },
+      {
+        "name": "embassies' operating status updates",
+        "type": "Indicator"
+      },
+      {
+        "name": "schedules for diplomats",
+        "type": "Indicator"
+      },
+      {
+        "name": "invitations to embassy events",
+        "type": "Indicator"
+      },
+      {
+        "name": "vehicle",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "USES",
+        "obj": "Notes verbale"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "USES",
+        "obj": "embassies' operating status updates"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "USES",
+        "obj": "schedules for diplomats"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "USES",
+        "obj": "invitations to embassy events"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "TARGETS",
+        "obj": "vehicle"
+      },
+      {
+        "sub": "Russia's Foreign Intelligence Service",
+        "rel": "is identified as",
+        "obj": "Cloaked Ursa"
+      },
+      {
+        "sub": "SVR",
+        "rel": "is identified as",
+        "obj": "Cloaked Ursa"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "TARGETS",
+        "obj": "diplomatic missions"
+      },
+      {
+        "sub": "diplomatic missions",
+        "rel": "located in",
+        "obj": "Ukraine"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "TARGETS",
+        "obj": "Kyiv"
+      }
+    ]
+  }
+}

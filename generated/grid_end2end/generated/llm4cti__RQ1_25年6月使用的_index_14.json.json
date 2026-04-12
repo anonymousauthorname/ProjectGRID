@@ -1,0 +1,495 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_14.json",
+  "sample_index": 206,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_14.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Facebook worms",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the last few variants",
+          "these worms",
+          "the current plague of fake antivirus (aka fake AV) Trojans"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "MySpace",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the message",
+        "type": "email-address",
+        "alias": [
+          "the message",
+          "the following chain"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "your friends name",
+        "type": "identity",
+        "alias": [
+          "someone you know"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Subject: is it u there?",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "WOW",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://www.facebook.com/l.php?u=http://google.com2Fsearch3Fq3Dcache",
+        "type": "url",
+        "alias": [
+          "the Facebook link"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Google",
+        "type": "domain-name",
+        "alias": [
+          "Google"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the cached page",
+        "type": "url",
+        "alias": [
+          "the page",
+          "site that had been the subject of SQL injection"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Mal/BadSrcC",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "SQL injection",
+        "type": "attack-pattern",
+        "alias": [
+          "the point of the injection"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Mal/JSRedirA",
+        "type": "malware",
+        "alias": [
+          "This script",
+          "the script"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "document.referrer",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "another site",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "302 redirect",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the payload",
+        "type": "malware",
+        "alias": [
+          "targeted code",
+          "video page"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "heres a video, download a codec or software update",
+        "type": "text",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "flashupdate.exe",
+        "type": "file",
+        "alias": [
+          "the file"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Mal/VidHtmlA",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Mal/VidHtmlB",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Mal/VidHtmlC",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "setup.exe",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Mal/EncPkGA",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Zlob family",
+        "type": "malware",
+        "alias": [
+          "one of the oldest strains of this phenomenon"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "fake antivirus Trojan",
+        "type": "malware",
+        "alias": [
+          "Trojans"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "GeoCities",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Bebo",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hi5",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "SophosLabs",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the worm",
+        "type": "malware",
+        "alias": [
+          "the worm starts running",
+          "the cycle"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the cycle",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Facebook worms",
+        "rel": "reference",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "MySpace"
+      },
+      {
+        "sub": "the message",
+        "rel": "sent from",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "your friends name"
+      },
+      {
+        "sub": "the message",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Subject: is it u there?"
+      },
+      {
+        "sub": "the message",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "WOW"
+      },
+      {
+        "sub": "the message",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "http://www.facebook.com/l.php?u=http://google.com2Fsearch3Fq3Dcache"
+      },
+      {
+        "sub": "http://www.facebook.com/l.php?u=http://google.com2Fsearch3Fq3Dcache",
+        "rel": "directs to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "the cached page"
+      },
+      {
+        "sub": "the cached page",
+        "rel": "cached in",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "Google"
+      },
+      {
+        "sub": "the cached page",
+        "rel": "detected as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "Mal/BadSrcC"
+      },
+      {
+        "sub": "the cached page",
+        "rel": "subject of",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "SQL injection"
+      },
+      {
+        "sub": "SQL injection",
+        "rel": "was to redirect visitors",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "another site"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "document.referrer"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "redirects visitors to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "another site"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "redirects to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "302 redirect"
+      },
+      {
+        "sub": "302 redirect",
+        "rel": "leads to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the payload"
+      },
+      {
+        "sub": "the payload",
+        "rel": "appears as",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "heres a video, download a codec or software update"
+      },
+      {
+        "sub": "heres a video, download a codec or software update",
+        "rel": "tries to get you to install",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "flashupdate.exe"
+      },
+      {
+        "sub": "SophosLabs",
+        "rel": "detect",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Mal/VidHtmlA"
+      },
+      {
+        "sub": "SophosLabs",
+        "rel": "detect",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Mal/VidHtmlB"
+      },
+      {
+        "sub": "SophosLabs",
+        "rel": "detect",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Mal/VidHtmlC"
+      },
+      {
+        "sub": "SophosLabs",
+        "rel": "detect",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Mal/EncPkGA"
+      },
+      {
+        "sub": "Mal/VidHtmlC",
+        "rel": "tries to download",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "setup.exe"
+      },
+      {
+        "sub": "setup.exe",
+        "rel": "detected as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "Mal/EncPkGA"
+      },
+      {
+        "sub": "fake antivirus Trojan",
+        "rel": "is-part-of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "Zlob family"
+      },
+      {
+        "sub": "the worm",
+        "rel": "starts running",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the cycle"
+      },
+      {
+        "sub": "the cycle",
+        "rel": "includes",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "the message"
+      },
+      {
+        "sub": "the cycle",
+        "rel": "includes",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "MySpace"
+      },
+      {
+        "sub": "the cycle",
+        "rel": "includes",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "SQL injection"
+      },
+      {
+        "sub": "the cycle",
+        "rel": "includes",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "fake antivirus Trojan"
+      },
+      {
+        "sub": "Facebook worms",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "GeoCities"
+      },
+      {
+        "sub": "Facebook worms",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Bebo"
+      },
+      {
+        "sub": "Facebook worms",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "hi5"
+      }
+    ]
+  }
+}

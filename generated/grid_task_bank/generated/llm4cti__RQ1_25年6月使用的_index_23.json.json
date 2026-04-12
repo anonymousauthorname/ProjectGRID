@@ -1,0 +1,391 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_23.json",
+  "sample_index": 215,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_23.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Stuxnet",
+        "type": "malware",
+        "alias": [
+          "a new malware",
+          "the malware"
+        ]
+      },
+      {
+        "name": "Scada systems",
+        "type": "industrial-system",
+        "alias": [
+          "Scada systems"
+        ]
+      },
+      {
+        "name": "Siemens WinCC systems",
+        "type": "industrial-system",
+        "alias": [
+          "Siemens WinCC systems"
+        ]
+      },
+      {
+        "name": "criminals",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "criminals"
+        ]
+      },
+      {
+        "name": "default system credentials",
+        "type": "credential-value",
+        "alias": [
+          "default system credentials"
+        ]
+      },
+      {
+        "name": "schematics information",
+        "type": "information-type",
+        "alias": [
+          "schematics information"
+        ]
+      },
+      {
+        "name": "Windows",
+        "type": "general-software",
+        "alias": [
+          "current versions of Windows"
+        ]
+      },
+      {
+        "name": "Windows Shell",
+        "type": "general-software",
+        "alias": [
+          "Windows Shell"
+        ]
+      },
+      {
+        "name": "USB drives",
+        "type": "infrastructure",
+        "alias": [
+          "USB drives"
+        ]
+      },
+      {
+        "name": "network shares",
+        "type": "infrastructure",
+        "alias": [
+          "network shares"
+        ]
+      },
+      {
+        "name": "Realtek",
+        "type": "security-product",
+        "alias": [
+          "Realtek"
+        ]
+      },
+      {
+        "name": "digital certificate",
+        "type": "x509-certificate",
+        "alias": [
+          "digital certificate"
+        ]
+      },
+      {
+        "name": "Iran",
+        "type": "location",
+        "alias": [
+          "Iran"
+        ]
+      },
+      {
+        "name": "Indonesia",
+        "type": "location",
+        "alias": [
+          "Indonesia"
+        ]
+      },
+      {
+        "name": "India",
+        "type": "location",
+        "alias": [
+          "India"
+        ]
+      },
+      {
+        "name": "Azerbaijan",
+        "type": "location",
+        "alias": [
+          "Azerbaijan"
+        ]
+      },
+      {
+        "name": "the United States",
+        "type": "location",
+        "alias": [
+          "the United States"
+        ]
+      },
+      {
+        "name": "vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "previously unknown vulnerability"
+        ]
+      },
+      {
+        "name": "POC",
+        "type": "indicator",
+        "alias": [
+          "Proof of Concept"
+        ]
+      },
+      {
+        "name": "http://www.securityfocus.com/bid/41753",
+        "type": "url",
+        "alias": [
+          "securityfocus.com/bid/41753"
+        ]
+      },
+      {
+        "name": "http://www.exploitdb.com/exploits/14403/",
+        "type": "url",
+        "alias": [
+          "exploitdb.com/exploits/14403/"
+        ]
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "whoever did this"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Stuxnet",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Scada systems"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Siemens WinCC systems"
+      },
+      {
+        "sub": "Siemens WinCC systems",
+        "rel": "controls",
+        "rel_type": [
+          "controls"
+        ],
+        "obj": "industrial processes"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "takes advantage of",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "default system credentials"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "seems to steal",
+        "rel_type": [
+          "steals"
+        ],
+        "obj": "schematics information"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "previously unknown vulnerability"
+      },
+      {
+        "sub": "previously unknown vulnerability",
+        "rel": "affects",
+        "rel_type": [
+          "affects"
+        ],
+        "obj": "current versions of Windows"
+      },
+      {
+        "sub": "Windows Shell",
+        "rel": "incorrectly parses",
+        "rel_type": [
+          "incorrectly parses"
+        ],
+        "obj": "shortcuts"
+      },
+      {
+        "sub": "previously unknown vulnerability",
+        "rel": "can be exploited through",
+        "rel_type": [
+          "can be exploited through"
+        ],
+        "obj": "USB drives"
+      },
+      {
+        "sub": "previously unknown vulnerability",
+        "rel": "can be exploited through",
+        "rel_type": [
+          "can be exploited through"
+        ],
+        "obj": "network shares"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "drivers"
+      },
+      {
+        "sub": "drivers",
+        "rel": "signed with",
+        "rel_type": [
+          "signed with"
+        ],
+        "obj": "digital certificate"
+      },
+      {
+        "sub": "digital certificate",
+        "rel": "belonging to",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Realtek"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "gained access to",
+        "rel_type": [
+          "gained access to"
+        ],
+        "obj": "Realteks private key"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "detected/infections reported in",
+        "rel_type": [
+          "detected/infections reported in"
+        ],
+        "obj": "Iran"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "detected/infections reported in",
+        "rel_type": [
+          "detected/infections reported in"
+        ],
+        "obj": "Indonesia"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "detected/infections reported in",
+        "rel_type": [
+          "detected/infections reported in"
+        ],
+        "obj": "India"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "detected/infections reported in",
+        "rel_type": [
+          "detected/infections reported in"
+        ],
+        "obj": "Azerbaijan"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "detected/infections reported in",
+        "rel_type": [
+          "detected/infections reported in"
+        ],
+        "obj": "the United States"
+      },
+      {
+        "sub": "previously unknown vulnerability",
+        "rel": "POC-at",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "http://www.exploitdb.com/exploits/14403/"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "referenced-at",
+        "rel_type": [
+          "referenced-at"
+        ],
+        "obj": "http://www.securityfocus.com/bid/41753"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "attributed-to",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "the attacker"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "is highly skilled",
+        "rel_type": [
+          "is highly skilled"
+        ],
+        "obj": "the attacker"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "is well funded",
+        "rel_type": [
+          "is well funded"
+        ],
+        "obj": "the attacker"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "possibly motivated by",
+        "rel_type": [
+          "possibly motivated by"
+        ],
+        "obj": "political, economical or military reasons"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "attempts to attack",
+        "rel_type": [
+          "attempts to attack"
+        ],
+        "obj": "high-value assets around the world"
+      }
+    ]
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_29.json",
+  "sample_index": 220,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_29.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Chinanexus",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "PlugX",
+        "type": "Malware"
+      },
+      {
+        "name": "WICKED PANDA",
+        "type": "Malware"
+      },
+      {
+        "name": "NotPetya",
+        "type": "Malware"
+      },
+      {
+        "name": "XDATA",
+        "type": "Malware"
+      },
+      {
+        "name": "M.E. Doc",
+        "type": "Software"
+      },
+      {
+        "name": "PyPi",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "NetSarang",
+        "type": "Software"
+      },
+      {
+        "name": "CCleaner",
+        "type": "Software"
+      },
+      {
+        "name": "Supply chain attack",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Software supply chain attack",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "SDLC",
+        "type": "Software"
+      },
+      {
+        "name": "CrowdStrike",
+        "type": "Organization"
+      },
+      {
+        "name": "Adam Meyers",
+        "type": "Person"
+      },
+      {
+        "name": "Dmitri Alperovitch",
+        "type": "Person"
+      },
+      {
+        "name": "Falcon Intelligence",
+        "type": "Organization"
+      },
+      {
+        "name": "Ukrainian company",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Chinanexus",
+        "rel": "ATTACKED",
+        "obj": "NetSarang"
+      },
+      {
+        "sub": "Chinanexus",
+        "rel": "ATTACKED",
+        "obj": "CCleaner"
+      },
+      {
+        "sub": "NetSarang",
+        "rel": "DELIVERS",
+        "obj": "PlugX"
+      },
+      {
+        "sub": "PlugX",
+        "rel": "is linked to",
+        "obj": "WICKED PANDA"
+      },
+      {
+        "sub": "M.E. Doc",
+        "rel": "DELIVERED",
+        "obj": "NotPetya"
+      },
+      {
+        "sub": "M.E. Doc",
+        "rel": "DELIVERED",
+        "obj": "XDATA"
+      },
+      {
+        "sub": "PyPi",
+        "rel": "COMPROMISED",
+        "obj": "XDATA"
+      },
+      {
+        "sub": "PyPi",
+        "rel": "compromised by",
+        "obj": "Software supply chain attack"
+      },
+      {
+        "sub": "Software supply chain attack",
+        "rel": "TARGETS",
+        "obj": "Thirdparty software"
+      },
+      {
+        "sub": "Software supply chain attack",
+        "rel": "exploits vulnerabilities in",
+        "obj": "Small vendors"
+      },
+      {
+        "sub": "Software supply chain attack",
+        "rel": "exploits lack of",
+        "obj": "SDLC"
+      },
+      {
+        "sub": "Adam Meyers",
+        "rel": "DISCUSSED",
+        "obj": "CrowdStrike 2018 Global Threat Report"
+      },
+      {
+        "sub": "Dmitri Alperovitch",
+        "rel": "DISCUSSED",
+        "obj": "CrowdStrike 2018 Global Threat Report"
+      },
+      {
+        "sub": "Falcon Intelligence",
+        "rel": "ANALYZED",
+        "obj": "CrowdStrike 2018 Global Threat Report"
+      },
+      {
+        "sub": "Falcon Intelligence",
+        "rel": "ANALYZED",
+        "obj": "M.E. Doc"
+      },
+      {
+        "sub": "Falcon Intelligence",
+        "rel": "ANALYZED",
+        "obj": "NetSarang"
+      },
+      {
+        "sub": "Falcon Intelligence",
+        "rel": "ANALYZED",
+        "obj": "PyPi"
+      },
+      {
+        "sub": "Ukrainian company",
+        "rel": "DEVELOPED",
+        "obj": "M.E. Doc"
+      }
+    ]
+  }
+}

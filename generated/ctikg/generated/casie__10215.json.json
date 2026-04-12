@@ -1,0 +1,87 @@
+{
+  "sample_id": "casie__10215.json",
+  "sample_index": 47,
+  "source": "casie",
+  "file_name": "10215.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Cisco",
+        "rel": "has released a patch for",
+        "obj": "CVE-2018-0171"
+      },
+      {
+        "sub": "CVE-2018-0171",
+        "rel": "affects",
+        "obj": "Smart Install"
+      },
+      {
+        "sub": "Smart Install",
+        "rel": "is a client for",
+        "obj": "switch deployment"
+      },
+      {
+        "sub": "switch deployment",
+        "rel": "is for",
+        "obj": "Cisco IOS Software"
+      },
+      {
+        "sub": "switch deployment",
+        "rel": "is for",
+        "obj": "Cisco IOS XE Software"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "found",
+        "obj": "flaw"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "believed",
+        "obj": "flaw only exploitable in enterprise network"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "found",
+        "obj": "exposed devices"
+      },
+      {
+        "sub": "Smart Install",
+        "rel": "should not be accessible",
+        "obj": "internet"
+      },
+      {
+        "sub": "Smart Install",
+        "rel": "should not be",
+        "obj": "accessible via internet"
+      },
+      {
+        "sub": "proof-of-concept exploit code",
+        "rel": "published by",
+        "obj": "company"
+      },
+      {
+        "sub": "admin",
+        "rel": "needs to patch",
+        "obj": "proof-of-concept exploit code"
+      }
+    ]
+  }
+}

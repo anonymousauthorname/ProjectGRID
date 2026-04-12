@@ -1,0 +1,215 @@
+{
+  "sample_id": "casie__10104.json",
+  "sample_index": 6,
+  "source": "casie",
+  "file_name": "10104.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "GandCrab",
+        "type": "Entity"
+      },
+      {
+        "name": "RIG EK",
+        "type": "Entity"
+      },
+      {
+        "name": "GrandSoft EK",
+        "type": "Entity"
+      },
+      {
+        "name": "Internet Explorer",
+        "type": "Entity"
+      },
+      {
+        "name": "Flash Player",
+        "type": "Entity"
+      },
+      {
+        "name": "JavaScript",
+        "type": "Entity"
+      },
+      {
+        "name": "Flash",
+        "type": "Entity"
+      },
+      {
+        "name": "VBscript",
+        "type": "Entity"
+      },
+      {
+        "name": "Java Runtime Environment",
+        "type": "Entity"
+      },
+      {
+        "name": "Dash",
+        "type": "Entity"
+      },
+      {
+        "name": "RSA algorithm",
+        "type": "Entity"
+      },
+      {
+        "name": "GandCrab Decryptor",
+        "type": "Entity"
+      },
+      {
+        "name": "file extension .GDCB",
+        "type": "Entity"
+      },
+      {
+        "name": "malvertising",
+        "type": "Entity"
+      },
+      {
+        "name": "Princess ransomware",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE not specified",
+        "type": "Entity"
+      },
+      {
+        "name": "software updates",
+        "type": "Entity"
+      },
+      {
+        "name": "patches",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "GandCrab",
+        "rel": "is distributed by",
+        "obj": "RIG EK"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "is distributed by",
+        "obj": "GrandSoft EK"
+      },
+      {
+        "sub": "RIG EK",
+        "rel": "uses",
+        "obj": "vulnerability in Internet Explorer"
+      },
+      {
+        "sub": "RIG EK",
+        "rel": "uses",
+        "obj": "vulnerability in Flash Player"
+      },
+      {
+        "sub": "RIG EK",
+        "rel": "launches",
+        "obj": "JavaScript"
+      },
+      {
+        "sub": "RIG EK",
+        "rel": "launches",
+        "obj": "Flash"
+      },
+      {
+        "sub": "RIG EK",
+        "rel": "launches",
+        "obj": "VBscript"
+      },
+      {
+        "sub": "GrandSoft EK",
+        "rel": "uses",
+        "obj": "vulnerability in Java Runtime Environment"
+      },
+      {
+        "sub": "GrandSoft EK",
+        "rel": "remotely executes",
+        "obj": "code"
+      },
+      {
+        "sub": "GrandSoft EK",
+        "rel": "distributes",
+        "obj": "GandCrab"
+      },
+      {
+        "sub": "RIG EK",
+        "rel": "uses",
+        "obj": "malvertising"
+      },
+      {
+        "sub": "malvertising",
+        "rel": "is used by",
+        "obj": "RIG EK"
+      },
+      {
+        "sub": "malvertising",
+        "rel": "is used in attack method similar to",
+        "obj": "Princess ransomware"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "encrypts",
+        "obj": "Windows files"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "uses",
+        "obj": "RSA algorithm"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "demands",
+        "obj": "GandCrab Decryptor"
+      },
+      {
+        "sub": "encrypted files",
+        "rel": "gain",
+        "obj": "file extension .GDCB"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "demands payment in",
+        "obj": "Dash"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "demands 1.5 Dash",
+        "obj": "as ransom"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "doubles ransom to",
+        "obj": "3 Dash"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "moves away from",
+        "obj": "bitcoin"
+      },
+      {
+        "sub": "ransomware distributors",
+        "rel": "attempt to move to",
+        "obj": "Dash"
+      },
+      {
+        "sub": "software updates and patches",
+        "rel": "are applied to",
+        "obj": "prevent exploitation of vulnerabilities"
+      }
+    ]
+  }
+}

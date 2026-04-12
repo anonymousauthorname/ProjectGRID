@@ -1,0 +1,91 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-ransomexx.json",
+  "sample_index": 95,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-ransomexx.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "RANSOMEXX",
+        "type": "MALWARE"
+      },
+      {
+        "name": "DEFRAY777",
+        "type": "MALWARE"
+      },
+      {
+        "name": "SCOTTISH MENTAL HEALTH CHARITY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "RANSOMEXX GROUP",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "MARCH 2022",
+        "type": "EVENT"
+      },
+      {
+        "name": "LOCKBIT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CONTI",
+        "type": "MALWARE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "RANSOMEXX",
+        "rel": "related_to",
+        "obj": "RANSOMEXX GROUP"
+      },
+      {
+        "sub": "RANSOMEXX GROUP",
+        "rel": "related_to",
+        "obj": "SCOTTISH MENTAL HEALTH CHARITY"
+      },
+      {
+        "sub": "RANSOMEXX",
+        "rel": "related_to",
+        "obj": "DEFRAY777"
+      },
+      {
+        "sub": "RANSOMEXX GROUP",
+        "rel": "related_to",
+        "obj": "MARCH 2022"
+      },
+      {
+        "sub": "RANSOMEXX",
+        "rel": "related_to",
+        "obj": "LOCKBIT"
+      },
+      {
+        "sub": "RANSOMEXX",
+        "rel": "related_to",
+        "obj": "CONTI"
+      },
+      {
+        "sub": "RANSOMEXX GROUP",
+        "rel": "related_to",
+        "obj": "DEFRAY777"
+      }
+    ]
+  }
+}

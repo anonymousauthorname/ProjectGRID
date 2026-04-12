@@ -1,0 +1,344 @@
+{
+  "sample_id": "casie__1024.json",
+  "sample_index": 8,
+  "source": "casie",
+  "file_name": "1024.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Apache Software Foundation",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Apache Software Foundation"
+        ]
+      },
+      {
+        "name": "remote code execution vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "vulnerability"
+        ]
+      },
+      {
+        "name": "CVE-2017-5638",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2017-5638"
+        ]
+      },
+      {
+        "name": "Jakarta Multipart parser",
+        "type": "general-software",
+        "alias": [
+          "Jakarta Multipart parser"
+        ]
+      },
+      {
+        "name": "Apache Struts",
+        "type": "general-software",
+        "alias": [
+          "Apache Struts"
+        ]
+      },
+      {
+        "name": "versions 2.3.5 through 2.3.31",
+        "type": "version",
+        "alias": [
+          "versions 2.3.5 through 2.3.31"
+        ]
+      },
+      {
+        "name": "versions 2.5 through 2.5.10",
+        "type": "version",
+        "alias": [
+          "versions 2.5 through 2.5.10"
+        ]
+      },
+      {
+        "name": "web application",
+        "type": "abstract-concept",
+        "alias": [
+          "web application"
+        ]
+      },
+      {
+        "name": "file upload",
+        "type": "attack-pattern",
+        "alias": [
+          "file upload"
+        ]
+      },
+      {
+        "name": "Content-Type header",
+        "type": "windows-registry-key",
+        "alias": [
+          "Content-Type header"
+        ]
+      },
+      {
+        "name": "POST or PUT request",
+        "type": "attack-pattern",
+        "alias": [
+          "POST or PUT request"
+        ]
+      },
+      {
+        "name": "response",
+        "type": "abstract-concept",
+        "alias": [
+          "response"
+        ]
+      },
+      {
+        "name": "Cisco Talos",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Cisco Talos"
+        ]
+      },
+      {
+        "name": "Nick Biasini",
+        "type": "researcher",
+        "alias": [
+          "Nick Biasini"
+        ]
+      },
+      {
+        "name": "workarounds",
+        "type": "course-of-action",
+        "alias": [
+          "workarounds"
+        ]
+      },
+      {
+        "name": "security advisory",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "security advisory"
+        ]
+      },
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attackers"
+        ]
+      },
+      {
+        "name": "system",
+        "type": "abstract-concept",
+        "alias": [
+          "system"
+        ]
+      },
+      {
+        "name": "improper handling of the Content-Type header",
+        "type": "vulnerability",
+        "alias": [
+          "improper handling of the Content-Type header"
+        ]
+      },
+      {
+        "name": "complete control",
+        "type": "abstract-concept",
+        "alias": [
+          "complete control"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Apache Software Foundation",
+        "rel": "has patched",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "a remote code execution vulnerability"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "affecting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the Jakarta Multipart parser"
+      },
+      {
+        "sub": "Jakarta Multipart parser",
+        "rel": "in",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "Apache Struts"
+      },
+      {
+        "sub": "Administrators",
+        "rel": "need to update",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the popular Java application framework"
+      },
+      {
+        "sub": "Administrators",
+        "rel": "or put",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "workarounds in place"
+      },
+      {
+        "sub": "the vulnerability",
+        "rel": "is actively being targeted in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "attacks"
+      },
+      {
+        "sub": "The issue",
+        "rel": "affects",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Apache Struts versions 2.3.5 through 2.3.31"
+      },
+      {
+        "sub": "The issue",
+        "rel": "affects",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "versions 2.5 through 2.5.10"
+      },
+      {
+        "sub": "web application",
+        "rel": "doesn’t need to implement",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "file upload"
+      },
+      {
+        "sub": "researchers from Cisco Talos",
+        "rel": "said",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "the web application"
+      },
+      {
+        "sub": "Talos",
+        "rel": "found a high number of",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "exploitation events"
+      },
+      {
+        "sub": "Talos",
+        "rel": "recommends",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "immediate upgrading if possible"
+      },
+      {
+        "sub": "Talos",
+        "rel": "recommends",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "following the workaround referenced in the above security advisory"
+      },
+      {
+        "sub": "The remote code execution vulnerability (CVE-2017-5638)",
+        "rel": "in",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "the Jakarta Multipart parser"
+      },
+      {
+        "sub": "The remote code execution vulnerability (CVE-2017-5638)",
+        "rel": "is the result of",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "improper handling of the Content-Type header"
+      },
+      {
+        "sub": "The header",
+        "rel": "indicates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "the media type of the resource"
+      },
+      {
+        "sub": "when the client tells the server",
+        "rel": "what type of data was sent as part of a",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "POST or PUT request"
+      },
+      {
+        "sub": "or the server telling the client",
+        "rel": "what type of content is being returned as part of the",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "response"
+      },
+      {
+        "sub": "Struts",
+        "rel": "parses",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "a malformed Content-Type HTTP header"
+      },
+      {
+        "sub": "Struts",
+        "rel": "lets attackers remotely take",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "complete control of the system"
+      },
+      {
+        "sub": "attackers",
+        "rel": "exploit",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "the flaw"
+      },
+      {
+        "sub": "the flaw",
+        "rel": "is triggered when",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Struts parses a malformed Content-Type HTTP header"
+      }
+    ]
+  }
+}

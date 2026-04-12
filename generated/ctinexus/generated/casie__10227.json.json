@@ -1,0 +1,311 @@
+{
+  "sample_id": "casie__10227.json",
+  "sample_index": 43,
+  "source": "casie",
+  "file_name": "10227.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Kubernetes",
+        "type": "Unknown"
+      },
+      {
+        "name": "CVE-2018-1002105",
+        "type": "Unknown"
+      },
+      {
+        "name": "attacker to gain full administrator privileges on Kubernetes compute nodes",
+        "type": "Unknown"
+      },
+      {
+        "name": "9.8",
+        "type": "Unknown"
+      },
+      {
+        "name": "no user interaction",
+        "type": "Unknown"
+      },
+      {
+        "name": "authenticated and unauthenticated users",
+        "type": "Unknown"
+      },
+      {
+        "name": "privilege escalation via discovery API calls",
+        "type": "Unknown"
+      },
+      {
+        "name": "pods",
+        "type": "Unknown"
+      },
+      {
+        "name": "physical or virtual machines",
+        "type": "Unknown"
+      },
+      {
+        "name": "multiple nodes",
+        "type": "Unknown"
+      },
+      {
+        "name": "Kubernetes master",
+        "type": "Unknown"
+      },
+      {
+        "name": "cluster-related activities such as scaling, scheduling, or updating apps",
+        "type": "Unknown"
+      },
+      {
+        "name": "Kubelet",
+        "type": "Unknown"
+      },
+      {
+        "name": "Kubernetes master via API",
+        "type": "Unknown"
+      },
+      {
+        "name": "Red Hat's OpenShift Container Platform",
+        "type": "Unknown"
+      },
+      {
+        "name": "OpenShift Container Platform",
+        "type": "Unknown"
+      },
+      {
+        "name": "Kubernetes for orchestrating and managing containers",
+        "type": "Unknown"
+      },
+      {
+        "name": "normal user with 'exec', 'attach', or 'portforward' rights",
+        "type": "Unknown"
+      },
+      {
+        "name": "cluster-admin level",
+        "type": "Unknown"
+      },
+      {
+        "name": "any process in a container",
+        "type": "Unknown"
+      },
+      {
+        "name": "API extension feature",
+        "type": "Unknown"
+      },
+      {
+        "name": "unauthenticated users",
+        "type": "Unknown"
+      },
+      {
+        "name": "metrics-server and servicecatalog",
+        "type": "Unknown"
+      },
+      {
+        "name": "servicecatalog",
+        "type": "Unknown"
+      },
+      {
+        "name": "service brokers in any namespace and on any node",
+        "type": "Unknown"
+      },
+      {
+        "name": "Kubernetes v1.10.11, v1.11.5, v1.12.3, and v1.13.0-rc.1",
+        "type": "Unknown"
+      },
+      {
+        "name": "Kubernetes releases prior to",
+        "type": "Unknown"
+      },
+      {
+        "name": "Red Hat",
+        "type": "Unknown"
+      },
+      {
+        "name": "malicious actor",
+        "type": "Unknown"
+      },
+      {
+        "name": "to steal data",
+        "type": "Unknown"
+      },
+      {
+        "name": "to inject malicious code",
+        "type": "Unknown"
+      },
+      {
+        "name": "to bring down production applications and services",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Kubernetes",
+        "rel": "has a critical vulnerability",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "allows",
+        "obj": "attacker to gain full administrator privileges on Kubernetes compute nodes"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "has CVSS score",
+        "obj": "9.8"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "requires",
+        "obj": "no user interaction"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "can be exploited by",
+        "obj": "authenticated and unauthenticated users"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "enables",
+        "obj": "privilege escalation via discovery API calls"
+      },
+      {
+        "sub": "Kubernetes",
+        "rel": "organizes application containers into",
+        "obj": "pods"
+      },
+      {
+        "sub": "Kubernetes",
+        "rel": "manages nodes",
+        "obj": "physical or virtual machines"
+      },
+      {
+        "sub": "Kubernetes",
+        "rel": "forms clusters from",
+        "obj": "multiple nodes"
+      },
+      {
+        "sub": "Kubernetes master",
+        "rel": "coordinates",
+        "obj": "cluster-related activities such as scaling, scheduling, or updating apps"
+      },
+      {
+        "sub": "Kubelet",
+        "rel": "facilitates communication with",
+        "obj": "Kubernetes master via API"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "impacts",
+        "obj": "Red Hat's OpenShift Container Platform"
+      },
+      {
+        "sub": "OpenShift Container Platform",
+        "rel": "uses",
+        "obj": "Kubernetes for orchestrating and managing containers"
+      },
+      {
+        "sub": "OpenShift Container Platform",
+        "rel": "is affected by",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "OpenShift Container Platform",
+        "rel": "has two attack methods for",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "normal user with 'exec', 'attach', or 'portforward' rights",
+        "rel": "can escalate privileges to",
+        "obj": "cluster-admin level"
+      },
+      {
+        "sub": "normal user with 'exec', 'attach', or 'portforward' rights",
+        "rel": "can execute",
+        "obj": "any process in a container"
+      },
+      {
+        "sub": "API extension feature",
+        "rel": "is exploited by",
+        "obj": "unauthenticated users"
+      },
+      {
+        "sub": "API extension feature",
+        "rel": "is used by",
+        "obj": "metrics-server and servicecatalog"
+      },
+      {
+        "sub": "servicecatalog",
+        "rel": "allows creation of",
+        "obj": "service brokers in any namespace and on any node"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "is addressed in",
+        "obj": "Kubernetes v1.10.11, v1.11.5, v1.12.3, and v1.13.0-rc.1"
+      },
+      {
+        "sub": "Kubernetes releases prior to",
+        "rel": "are affected by",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Red Hat",
+        "rel": "released patches for",
+        "obj": "OpenShift Container Platform"
+      },
+      {
+        "sub": "Red Hat",
+        "rel": "warns malicious actors could exploit",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "malicious actor",
+        "rel": "could exploit",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "malicious actor",
+        "rel": "could use",
+        "obj": "to steal data"
+      },
+      {
+        "sub": "malicious actor",
+        "rel": "could use",
+        "obj": "to inject malicious code"
+      },
+      {
+        "sub": "malicious actor",
+        "rel": "could use",
+        "obj": "to bring down production applications and services"
+      },
+      {
+        "sub": "Kubernetes master via API",
+        "rel": "is exploited through",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "API extension feature",
+        "rel": "exploited by",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "service brokers in any namespace and on any node",
+        "rel": "is a consequence of",
+        "obj": "CVE-2018-1002105"
+      }
+    ]
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "sample_id": "securenlp__Derusbi_Server_Analysis-Final",
+  "sample_index": 153,
+  "source": "securenlp",
+  "file_name": "Derusbi_Server_Analysis-Final",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Derusbi",
+        "rel": "has two types",
+        "obj": "client-server model"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "has two types",
+        "obj": "server-client model"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "provides",
+        "obj": "RAT functionality"
+      },
+      {
+        "sub": "client-server model",
+        "rel": "distinguishes from",
+        "obj": "server-client model"
+      },
+      {
+        "sub": "server-client variant",
+        "rel": "acts as",
+        "obj": "server"
+      },
+      {
+        "sub": "server-client variant",
+        "rel": "waits for",
+        "obj": "commands"
+      },
+      {
+        "sub": "client-server model",
+        "rel": "differs in",
+        "obj": "directionality of communication"
+      },
+      {
+        "sub": "server-client model",
+        "rel": "differs in",
+        "obj": "directionality of communication"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "supports",
+        "obj": "file management"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "supports",
+        "obj": "network tunneling"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "supports",
+        "obj": "remote command shell"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "utilizes",
+        "obj": "device driver"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "hooks into",
+        "obj": "Windows firewall"
+      },
+      {
+        "sub": "driver",
+        "rel": "hooks",
+        "obj": "firewall"
+      },
+      {
+        "sub": "driver",
+        "rel": "inspects",
+        "obj": "network packets"
+      },
+      {
+        "sub": "driver",
+        "rel": "redirects",
+        "obj": "communication session"
+      },
+      {
+        "sub": "attacker",
+        "rel": "hides",
+        "obj": "network traffic"
+      },
+      {
+        "sub": "driver",
+        "rel": "hooks",
+        "obj": "firewall"
+      },
+      {
+        "sub": "driver",
+        "rel": "works on",
+        "obj": "Windows operating system"
+      },
+      {
+        "sub": "driver",
+        "rel": "inspects",
+        "obj": "network packets"
+      },
+      {
+        "sub": "DWORD",
+        "rel": "is defined as",
+        "obj": "offset 12"
+      },
+      {
+        "sub": "DWORD",
+        "rel": "is defined as",
+        "obj": "offset 32"
+      },
+      {
+        "sub": "server-client variant",
+        "rel": "sends",
+        "obj": "information about the victim"
+      },
+      {
+        "sub": "server-client variant",
+        "rel": "provides",
+        "obj": "details about the victim"
+      },
+      {
+        "sub": "PCC_CMD::ProcessPacket",
+        "rel": "passes payload data to",
+        "obj": "PCC_CMD::ProcessPacketEx"
+      },
+      {
+        "sub": "payload data",
+        "rel": "is a datagram",
+        "obj": "datagram"
+      },
+      {
+        "sub": "payload data",
+        "rel": "has header",
+        "obj": "header"
+      },
+      {
+        "sub": "payload data",
+        "rel": "has optional payload",
+        "obj": "payload"
+      },
+      {
+        "sub": "PCCCMDPacketHeader",
+        "rel": "contains",
+        "obj": "dwPacketSize"
+      },
+      {
+        "sub": "PCC_CMD::ReadWaitingData",
+        "rel": "performs",
+        "obj": "console output pipe"
+      },
+      {
+        "sub": "PCC_CMD::ReadWaitingData",
+        "rel": "attempts to read",
+        "obj": "waiting data"
+      },
+      {
+        "sub": "PCC_CMD::ReadWaitingData",
+        "rel": "generates",
+        "obj": "PacketHeader packet"
+      },
+      {
+        "sub": "PacketHeader packet",
+        "rel": "has dwCommandType set to",
+        "obj": "0x0C"
+      },
+      {
+        "sub": "PCC_CMD::ReadWaitingData",
+        "rel": "returns",
+        "obj": "PacketHeader packet"
+      },
+      {
+        "sub": "PacketHeader packet",
+        "rel": "has dwCommandType set to",
+        "obj": "0x10"
+      },
+      {
+        "sub": "PacketHeader packet",
+        "rel": "returns on failure",
+        "obj": "PacketHeader packet with dwCommandType 0x10"
+      },
+      {
+        "sub": "PacketHeader packet with dwCommandType set to 0x10",
+        "rel": "indicates",
+        "obj": "error"
+      },
+      {
+        "sub": "PacketHeader packet with dwCommandType set to 0x10",
+        "rel": "terminates",
+        "obj": "remote shell session"
+      },
+      {
+        "sub": "waiting data",
+        "rel": "becomes the payload of",
+        "obj": "PacketHeader packet"
+      },
+      {
+        "sub": "0x08",
+        "rel": "terminate",
+        "obj": "network connection"
+      },
+      {
+        "sub": "0x10",
+        "rel": "run",
+        "obj": "Cleanup member function of each of the registered PCC_BASEMOD derived objects"
+      },
+      {
+        "sub": "0x10",
+        "rel": "reset",
+        "obj": "module state"
+      },
+      {
+        "sub": "0x14",
+        "rel": "write",
+        "obj": "infection ID"
+      },
+      {
+        "sub": "0x14",
+        "rel": "write",
+        "obj": "registry"
+      },
+      {
+        "sub": "0x14",
+        "rel": "terminate",
+        "obj": "server variant"
+      },
+      {
+        "sub": "0x18",
+        "rel": "shutdown",
+        "obj": "server variant"
+      },
+      {
+        "sub": "0x1C",
+        "rel": "drop",
+        "obj": "DLL to tmp1.dat"
+      },
+      {
+        "sub": "0x1C",
+        "rel": "load",
+        "obj": "DLL into memory"
+      },
+      {
+        "sub": "hex pattern 0x2800000002000000",
+        "rel": "is used to detect",
+        "obj": "Derusbi server variants"
+      },
+      {
+        "sub": "hex pattern 0x2800000002000000",
+        "rel": "is associated with",
+        "obj": "Detecting Derusbi server variants on disk"
+      },
+      {
+        "sub": "Detecting Derusbi server variants on disk",
+        "rel": "is possible using",
+        "obj": "YARA signature"
+      },
+      {
+        "sub": "Detecting Derusbi server variants",
+        "rel": "is possible using",
+        "obj": "YARA signature"
+      },
+      {
+        "sub": "YARA signature",
+        "rel": "contains",
+        "obj": "uuid"
+      },
+      {
+        "sub": "YARA signature",
+        "rel": "contains",
+        "obj": "infectionID1"
+      },
+      {
+        "sub": "YARA signature",
+        "rel": "contains",
+        "obj": "infectionID2"
+      },
+      {
+        "sub": "YARA signature",
+        "rel": "contains",
+        "obj": "other"
+      }
+    ]
+  }
+}

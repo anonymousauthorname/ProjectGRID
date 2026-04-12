@@ -1,0 +1,472 @@
+{
+  "sample_id": "securenlp__AdversaryIntelligenceReport_DeepPanda_0 (1)",
+  "sample_index": 177,
+  "source": "securenlp",
+  "file_name": "AdversaryIntelligenceReport_DeepPanda_0 (1)",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "'Common Documents' folder"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Remote Access Tool"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Obfuscated API calls"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Mimic",
+        "obj": "Legitimate system behavior"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Has hash",
+        "obj": "14c04f88dc97aef3e9b516ef208a2bf5"
+      },
+      {
+        "sub": "Remote Access Tool",
+        "rel": "Belong to",
+        "obj": "Malware"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "'Common Documents' folder"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "DLL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Hash"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "LoadLibrary"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "GetProcAddress"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "'Z'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "'Z' to 'M'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Obfuscated DLL payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Process space"
+      },
+      {
+        "sub": "Backdoor DLL",
+        "rel": "Write",
+        "obj": "Registry entry under HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\msupdate"
+      },
+      {
+        "sub": "Backdoor DLL",
+        "rel": "Write",
+        "obj": "Registry entry under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Svchost"
+      },
+      {
+        "sub": "Backdoor DLL",
+        "rel": "Construct",
+        "obj": "Windows service named 'msupdate'"
+      },
+      {
+        "sub": "Backdoor DLL",
+        "rel": "Operate",
+        "obj": "rundll32.exe with NULL SID"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Has tactic",
+        "obj": "Operate"
+      },
+      {
+        "sub": "Backdoor DLL",
+        "rel": "Construct",
+        "obj": "Temporary user '_DomainUser_'"
+      },
+      {
+        "sub": "Backdoor DLL",
+        "rel": "Modify",
+        "obj": "Local Administrators group"
+      },
+      {
+        "sub": "Backdoor DLL",
+        "rel": "Use",
+        "obj": "Password 'Dom4!nUserP4ss'"
+      },
+      {
+        "sub": "Backdoor DLL",
+        "rel": "Write",
+        "obj": "User '_DomainUser_'"
+      },
+      {
+        "sub": "Backdoor DLL",
+        "rel": "Delete",
+        "obj": "Temporary user '_DomainUser_'"
+      },
+      {
+        "sub": "Backdoor DLL",
+        "rel": "Obfuscate",
+        "obj": "Attacker's identity"
+      },
+      {
+        "sub": "Backdoor DLL",
+        "rel": "Mask",
+        "obj": "Process creator's user name"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Uses",
+        "obj": "Fake window with class 'NOD32_%d'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Stack buffer overflow in network protocol"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Custom DNS client"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Over legitimate DNS"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "C2 traffic tunneling over DNS"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Firefox"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Remote Access Service"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Recover",
+        "obj": "Authentication credentials"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Credentials stored in system storage"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Credentials stored in client storage"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "System information"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "Machine name"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "Username"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "Windows version"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "Uptime"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "Current remote desktop sessions"
+      },
+      {
+        "sub": "System",
+        "rel": "Operate",
+        "obj": "Running processes"
+      },
+      {
+        "sub": "System",
+        "rel": "Operate",
+        "obj": "Network shares"
+      },
+      {
+        "sub": "System",
+        "rel": "Operate",
+        "obj": "Registry keys"
+      },
+      {
+        "sub": "System",
+        "rel": "Modify",
+        "obj": "Internal environment"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Has capability",
+        "obj": "Execute commands"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Has capability",
+        "obj": "Manage system services"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Has capability",
+        "obj": "Enumerate remote desktop sessions"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Has capability",
+        "obj": "Initiate file browsing"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Has capability",
+        "obj": "Transfer files"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Enable",
+        "obj": "Lateral movement"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "File browsing"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Downloading files from C2"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Capturing screen content"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Uploading files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Downloading files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Initiating screen captures using GDI API calls"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "HTTP POST request to '/forum/login.cgi'"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "HTTP GET/POST request to '/Photos/Query.cgi'"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "HTTP GET/POST request to '/Catelog/login1.cgi'"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "Custom DNS client"
+      },
+      {
+        "sub": "C2",
+        "rel": "Communicate with",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "AES encryption"
+      },
+      {
+        "sub": "C2",
+        "rel": "Generate",
+        "obj": "Dynamically generated key from random number and machine ID"
+      },
+      {
+        "sub": "C2",
+        "rel": "Has value",
+        "obj": "Proprietary binary header"
+      },
+      {
+        "sub": "Note: \"Backdoor\" is not a standalone entity in the list of required types , so the triplet \"C2",
+        "rel": "Communicate with",
+        "obj": "Backdoor\" is not included per Rule 2 . Correcting per rules:"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Use",
+        "obj": "URL"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Use",
+        "obj": "Security Tool"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Use",
+        "obj": "Technique"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has value",
+        "obj": "Filename"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "C2 channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Screen captures"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Download"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Upload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Transfer",
+        "obj": "Sensitive information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Victim system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "Kill switch command"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Registry keys"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Stop",
+        "obj": "Services"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Take",
+        "obj": "Screenshots"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Backdoor process"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Delete",
+        "obj": "Itself"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System-level actions"
+      }
+    ]
+  }
+}

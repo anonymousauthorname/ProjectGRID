@@ -1,0 +1,295 @@
+{
+  "sample_id": "casie__10341.json",
+  "sample_index": 36,
+  "source": "casie",
+  "file_name": "10341.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "phishing attacks",
+        "type": "Entity"
+      },
+      {
+        "name": "TSB",
+        "type": "Entity"
+      },
+      {
+        "name": "Action Fraud",
+        "type": "Entity"
+      },
+      {
+        "name": "Barclays",
+        "type": "Entity"
+      },
+      {
+        "name": "NatWest",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious websites",
+        "type": "Entity"
+      },
+      {
+        "name": "links",
+        "type": "Entity"
+      },
+      {
+        "name": "username and password",
+        "type": "Entity"
+      },
+      {
+        "name": "fraudulent websites",
+        "type": "Entity"
+      },
+      {
+        "name": "phone calls",
+        "type": "Entity"
+      },
+      {
+        "name": "texts",
+        "type": "Entity"
+      },
+      {
+        "name": "social media posts",
+        "type": "Entity"
+      },
+      {
+        "name": "cyber criminals",
+        "type": "Entity"
+      },
+      {
+        "name": "IT outage",
+        "type": "Entity"
+      },
+      {
+        "name": "botched IT upgrade",
+        "type": "Entity"
+      },
+      {
+        "name": "banking meltdown",
+        "type": "Entity"
+      },
+      {
+        "name": "fraudulent transactions",
+        "type": "Entity"
+      },
+      {
+        "name": "customers",
+        "type": "Entity"
+      },
+      {
+        "name": "web banking",
+        "type": "Entity"
+      },
+      {
+        "name": "fraudulent domains",
+        "type": "Entity"
+      },
+      {
+        "name": "publicly known IT failures",
+        "type": "Entity"
+      },
+      {
+        "name": "internal scandals",
+        "type": "Entity"
+      },
+      {
+        "name": "public 'ball drops",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "phishing attacks",
+        "rel": "uses",
+        "obj": "links"
+      },
+      {
+        "sub": "phishing attacks",
+        "rel": "targets",
+        "obj": "customers"
+      },
+      {
+        "sub": "phishing attacks",
+        "rel": "includes",
+        "obj": "fraudulent websites"
+      },
+      {
+        "sub": "phishing attacks",
+        "rel": "requests",
+        "obj": "username and password"
+      },
+      {
+        "sub": "phishing attacks",
+        "rel": "occurs via",
+        "obj": "texts"
+      },
+      {
+        "sub": "phishing attacks",
+        "rel": "occurs via",
+        "obj": "emails"
+      },
+      {
+        "sub": "phishing attacks",
+        "rel": "exploits",
+        "obj": "IT outage"
+      },
+      {
+        "sub": "phishing attacks",
+        "rel": "exploits",
+        "obj": "public 'ball drops"
+      },
+      {
+        "sub": "phishing attacks",
+        "rel": "exploits",
+        "obj": "internal scandals"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "reacts to",
+        "obj": "botched IT upgrade"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "reacts to",
+        "obj": "banking meltdown"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "uses",
+        "obj": "phishing attacks"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "uses",
+        "obj": "phone calls"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "uses",
+        "obj": "texts"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "uses",
+        "obj": "social media posts"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "exploits",
+        "obj": "confusing, chaotic situation"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "causes",
+        "obj": "fraudulent transactions"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "targets",
+        "obj": "web banking"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "targets",
+        "obj": "TSB"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "targets",
+        "obj": "Barclays"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "targets",
+        "obj": "NatWest"
+      },
+      {
+        "sub": "fraudulent websites",
+        "rel": "mimics",
+        "obj": "legitimate websites"
+      },
+      {
+        "sub": "customers",
+        "rel": "click",
+        "obj": "links"
+      },
+      {
+        "sub": "customers",
+        "rel": "enter",
+        "obj": "username and password"
+      },
+      {
+        "sub": "customers",
+        "rel": "lose control of",
+        "obj": "bank account"
+      },
+      {
+        "sub": "TSB",
+        "rel": "experiences",
+        "obj": "IT outage"
+      },
+      {
+        "sub": "TSB",
+        "rel": "experiences",
+        "obj": "botched IT upgrade"
+      },
+      {
+        "sub": "TSB",
+        "rel": "experiences",
+        "obj": "banking meltdown"
+      },
+      {
+        "sub": "TSB",
+        "rel": "fails to",
+        "obj": "track fraudulent transactions"
+      },
+      {
+        "sub": "TSB",
+        "rel": "fails to",
+        "obj": "respond promptly to customers"
+      },
+      {
+        "sub": "TSB",
+        "rel": "allows",
+        "obj": "fraudulent domains to remain active"
+      },
+      {
+        "sub": "Action Fraud",
+        "rel": "reports",
+        "obj": "phishing attacks"
+      },
+      {
+        "sub": "Action Fraud",
+        "rel": "notifies",
+        "obj": "public about increase in phishing attacks"
+      },
+      {
+        "sub": "public 'ball drops",
+        "rel": "attracts",
+        "obj": "cyber criminals"
+      },
+      {
+        "sub": "internal scandals",
+        "rel": "attracts",
+        "obj": "cyber criminals"
+      }
+    ]
+  }
+}

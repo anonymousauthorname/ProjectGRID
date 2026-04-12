@@ -1,0 +1,83 @@
+{
+  "sample_id": "ctinexus__russian-hackers-stole-microsoft-corporate-emails-in-month-long-breach.json",
+  "sample_index": 64,
+  "source": "ctinexus",
+  "file_name": "russian-hackers-stole-microsoft-corporate-emails-in-month-long-breach.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Midnight Blizzard",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Nobelium",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "APT29",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Organization"
+      },
+      {
+        "name": "password spray",
+        "type": "AttackPattern"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft",
+        "rel": "weren t breached by",
+        "obj": "Midnight Blizzard"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "is also known as",
+        "obj": "Nobelium"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "is also known as",
+        "obj": "APT29"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "was attacked using",
+        "obj": "password spray"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has breached email accounts in",
+        "obj": "leadership team"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has breached email accounts in",
+        "obj": "cybersecurity department"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has breached email accounts in",
+        "obj": "legal department"
+      }
+    ]
+  }
+}

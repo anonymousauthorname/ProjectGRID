@@ -1,0 +1,121 @@
+{
+  "sample_id": "casie__2604.json",
+  "sample_index": 9,
+  "source": "casie",
+  "file_name": "2604.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Walt Disney",
+        "type": "Organization"
+      },
+      {
+        "name": "Bob Iger",
+        "type": "Person"
+      },
+      {
+        "name": "Pirates of the Caribbean: Dead Men Tell No Tales",
+        "type": "Software"
+      },
+      {
+        "name": "Pirate Bay",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Johnny Depp",
+        "type": "Person"
+      },
+      {
+        "name": "Javier Bardem",
+        "type": "Person"
+      },
+      {
+        "name": "Geoffrey Rush",
+        "type": "Person"
+      },
+      {
+        "name": "extortionists",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "hackers",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "intellectual property",
+        "type": "Software"
+      },
+      {
+        "name": "ransom",
+        "type": "Indicator"
+      },
+      {
+        "name": "threat",
+        "type": "AttackPattern"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Walt Disney",
+        "rel": "has threat of theft",
+        "obj": "Pirates of the Caribbean: Dead Men Tell No Tales"
+      },
+      {
+        "sub": "Walt Disney",
+        "rel": "received threat from",
+        "obj": "extortionists"
+      },
+      {
+        "sub": "extortionists",
+        "rel": "claimed to have stolen",
+        "obj": "Pirates of the Caribbean: Dead Men Tell No Tales"
+      },
+      {
+        "sub": "Pirate Bay",
+        "rel": "had torrents claiming to contain",
+        "obj": "Pirates of the Caribbean: Dead Men Tell No Tales"
+      },
+      {
+        "sub": "Walt Disney",
+        "rel": "has ceo",
+        "obj": "Bob Iger"
+      },
+      {
+        "sub": "Walt Disney",
+        "rel": "PROTECTS",
+        "obj": "intellectual property"
+      },
+      {
+        "sub": "extortionists",
+        "rel": "DEManded",
+        "obj": "ransom"
+      },
+      {
+        "sub": "Walt Disney",
+        "rel": "FACED",
+        "obj": "threat"
+      },
+      {
+        "sub": "Walt Disney",
+        "rel": "debunked threats on",
+        "obj": "Pirate Bay"
+      }
+    ]
+  }
+}

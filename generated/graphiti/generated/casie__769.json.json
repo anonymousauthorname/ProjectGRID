@@ -1,0 +1,150 @@
+{
+  "sample_id": "casie__769.json",
+  "sample_index": 12,
+  "source": "casie",
+  "file_name": "769.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Filecoder.E",
+        "type": "Malware"
+      },
+      {
+        "name": "BitTorrent",
+        "type": "Tool"
+      },
+      {
+        "name": "ESET",
+        "type": "Organization"
+      },
+      {
+        "name": "Adobe Premiere Pro CC",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Office 2016",
+        "type": "Software"
+      },
+      {
+        "name": "Time Machine",
+        "type": "Software"
+      },
+      {
+        "name": "Trump Locker",
+        "type": "Malware"
+      },
+      {
+        "name": "VenusLocker",
+        "type": "Malware"
+      },
+      {
+        "name": "Bleeping Computer",
+        "type": "Organization"
+      },
+      {
+        "name": "MalwareHunter Team",
+        "type": "Organization"
+      },
+      {
+        "name": "F-Secure",
+        "type": "Organization"
+      },
+      {
+        "name": "Mikko Hypponen",
+        "type": "Person"
+      },
+      {
+        "name": "Sean Sullivan",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Filecoder.E",
+        "rel": "circulates through",
+        "obj": "BitTorrent"
+      },
+      {
+        "sub": "Filecoder.E",
+        "rel": "disguised as patcher for",
+        "obj": "Adobe Premiere Pro CC"
+      },
+      {
+        "sub": "Filecoder.E",
+        "rel": "disguised as patcher for",
+        "obj": "Microsoft Office 2016"
+      },
+      {
+        "sub": "Filecoder.E",
+        "rel": "can encrypt backups of",
+        "obj": "Time Machine"
+      },
+      {
+        "sub": "Trump Locker",
+        "rel": "is lightly repackaged version of",
+        "obj": "VenusLocker"
+      },
+      {
+        "sub": "Trump Locker",
+        "rel": "reported by",
+        "obj": "Bleeping Computer"
+      },
+      {
+        "sub": "Trump Locker",
+        "rel": "reported by",
+        "obj": "MalwareHunter Team"
+      },
+      {
+        "sub": "VenusLocker",
+        "rel": "reported by",
+        "obj": "Bleeping Computer"
+      },
+      {
+        "sub": "VenusLocker",
+        "rel": "reported by",
+        "obj": "MalwareHunter Team"
+      },
+      {
+        "sub": "Mikko Hypponen",
+        "rel": "works at",
+        "obj": "F-Secure"
+      },
+      {
+        "sub": "Sean Sullivan",
+        "rel": "works at",
+        "obj": "F-Secure"
+      },
+      {
+        "sub": "Filecoder.E",
+        "rel": "spotted by",
+        "obj": "ESET"
+      },
+      {
+        "sub": "Marc-Etienne M.L Éveillé",
+        "rel": "works at",
+        "obj": "ESET"
+      },
+      {
+        "sub": "Cheryl Biswas",
+        "rel": "works at",
+        "obj": "ESET"
+      }
+    ]
+  }
+}

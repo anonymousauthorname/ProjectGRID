@@ -1,0 +1,99 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-akira.json",
+  "sample_index": 91,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-akira.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Akira ransomware",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2023-20269",
+        "type": "Entity"
+      },
+      {
+        "name": "Cisco Adaptive Security Appliance (ASA) software",
+        "type": "Entity"
+      },
+      {
+        "name": "Cisco Firepower Threat Defense (FTD) software",
+        "type": "Entity"
+      },
+      {
+        "name": "Power Rangers",
+        "type": "Entity"
+      },
+      {
+        "name": "Megazord",
+        "type": "Entity"
+      },
+      {
+        "name": "POWERRANGES",
+        "type": "Entity"
+      },
+      {
+        "name": "powerranges.txt",
+        "type": "Entity"
+      },
+      {
+        "name": "TOX messenger",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Akira ransomware",
+        "rel": "exploits",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "affects",
+        "obj": "Cisco Adaptive Security Appliance (ASA) software"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "affects",
+        "obj": "Cisco Firepower Threat Defense (FTD) software"
+      },
+      {
+        "sub": "Akira ransomware",
+        "rel": "uses",
+        "obj": "Megazord"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "encrypts files with",
+        "obj": "POWERRANGES"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "creates ransom note",
+        "obj": "powerranges.txt"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "instructs victims to contact",
+        "obj": "TOX messenger"
+      }
+    ]
+  }
+}

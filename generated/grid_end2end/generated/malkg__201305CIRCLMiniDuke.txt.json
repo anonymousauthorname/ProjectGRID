@@ -1,0 +1,455 @@
+{
+  "sample_id": "malkg__201305CIRCLMiniDuke.txt",
+  "sample_index": 130,
+  "source": "malkg",
+  "file_name": "201305CIRCLMiniDuke.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Miniduke",
+        "type": "malware",
+        "alias": [
+          "the malware",
+          "the latest MiniDuke evolution (CosmicDuke)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CIRCL",
+        "type": "identity",
+        "alias": [
+          "we"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Stage 3 sample",
+        "type": "malware",
+        "alias": [
+          "a stage 3 Miniduke sample",
+          "Sample A",
+          "Sample B"
+        ],
+        "mother entity": [
+          "Miniduke"
+        ]
+      },
+      {
+        "name": "Sample A",
+        "type": "file",
+        "alias": [
+          "Stage 3 sample from Kaspersky reports"
+        ],
+        "mother entity": [
+          "Stage 3 sample"
+        ]
+      },
+      {
+        "name": "Sample B",
+        "type": "file",
+        "alias": [
+          "Derrived from Sample A",
+          "the real payload",
+          "Sample B (after decompression)"
+        ],
+        "mother entity": [
+          "Sample A"
+        ]
+      },
+      {
+        "name": "HTTP controlled backdoor",
+        "type": "malware",
+        "alias": [
+          "an exhaustive backdoor"
+        ],
+        "mother entity": [
+          "Sample B"
+        ]
+      },
+      {
+        "name": "news.grouptumbler.com",
+        "type": "domain-name",
+        "alias": [
+          "the domain",
+          "http://news.grouptumbler.com"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "173.194.70.101",
+        "type": "ipv4-addr",
+        "alias": [
+          "this IP"
+        ],
+        "mother entity": [
+          "news.grouptumbler.com"
+        ]
+      },
+      {
+        "name": "200.63.46.33",
+        "type": "ipv4-addr",
+        "alias": [
+          "the IP",
+          "IP 200.63.46.33"
+        ],
+        "mother entity": [
+          "news.grouptumbler.com"
+        ]
+      },
+      {
+        "name": "UCL",
+        "type": "hacker-tool",
+        "alias": [
+          "UCL decompression"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "wininet.dll",
+        "type": "general-software",
+        "alias": [
+          "wininet.dl"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "InternetOpenA",
+        "type": "detailed-part-of-general-software",
+        "alias": [],
+        "mother entity": [
+          "wininet.dll"
+        ]
+      },
+      {
+        "name": "InternetConnectA",
+        "type": "detailed-part-of-general-software",
+        "alias": [],
+        "mother entity": [
+          "wininet.dll"
+        ]
+      },
+      {
+        "name": "HttpOpenRequestA",
+        "type": "detailed-part-of-general-software",
+        "alias": [],
+        "mother entity": [
+          "wininet.dll"
+        ]
+      },
+      {
+        "name": "HttpSendRequestA",
+        "type": "detailed-part-of-general-software",
+        "alias": [],
+        "mother entity": [
+          "wininet.dll"
+        ]
+      },
+      {
+        "name": "GetTickCount",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [],
+        "mother entity": [
+          "HTTP controlled backdoor"
+        ]
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\ApplicationManager",
+        "type": "windows-registry-key",
+        "alias": [
+          "the registry key"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "AppID",
+        "type": "credential-value",
+        "alias": [
+          "identifier/mutex"
+        ],
+        "mother entity": [
+          "HKCU\\Software\\Microsoft\\ApplicationManager"
+        ]
+      },
+      {
+        "name": "HTTP GET and POST requests",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Mozilla/4.0",
+        "type": "user-agent",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Accept",
+        "type": "header-value",
+        "alias": [
+          "Accept: */*"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Custom BASE64 encoding",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": [
+          "HTTP GET and POST requests"
+        ]
+      },
+      {
+        "name": "http://news.grouptumbler.com/news/feed.php?i={Custom BASE64}",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "news.grouptumbler.com"
+        ]
+      },
+      {
+        "name": "F-Secure",
+        "type": "identity",
+        "alias": [
+          "F-Secure released an analysis"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CosmicDuke",
+        "type": "malware",
+        "alias": [
+          "latest MiniDuke evolution"
+        ],
+        "mother entity": [
+          "Miniduke"
+        ]
+      },
+      {
+        "name": "get-logon-history.ps1",
+        "type": "file",
+        "alias": [
+          "the script"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CIRCL",
+        "rel": "authored analysis of",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Miniduke"
+      },
+      {
+        "sub": "Stage 3 sample",
+        "rel": "is-part-of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "Miniduke"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Sample B"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "decompresses",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Sample B"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "determined to be a",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "HTTP controlled backdoor"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "communicates-with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "news.grouptumbler.com"
+      },
+      {
+        "sub": "news.grouptumbler.com",
+        "rel": "resolves-to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "173.194.70.101"
+      },
+      {
+        "sub": "news.grouptumbler.com",
+        "rel": "resolves-to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "200.63.46.33"
+      },
+      {
+        "sub": "UCL",
+        "rel": "decompresses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Sample B"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "loads",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "wininet.dll"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "InternetOpenA"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "InternetConnectA"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "HttpOpenRequestA"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "HttpSendRequestA"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "GetTickCount"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "creates-or-generates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "AppID"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "HTTP GET and POST requests"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Mozilla/4.0"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Accept"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Custom BASE64 encoding"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "http://news.grouptumbler.com/news/feed.php?i={Custom BASE64}"
+      },
+      {
+        "sub": "F-Secure",
+        "rel": "released analysis of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "CosmicDuke"
+      },
+      {
+        "sub": "CosmicDuke",
+        "rel": "is an evolution of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Miniduke"
+      },
+      {
+        "sub": "Miniduke",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Sample A"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "can perform",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "get-logon-history.ps1"
+      }
+    ]
+  }
+}

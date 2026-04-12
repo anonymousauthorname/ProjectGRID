@@ -1,0 +1,223 @@
+{
+  "sample_id": "malkg__201503CrowdStrikeChinaChopper.txt",
+  "sample_index": 144,
+  "source": "malkg",
+  "file_name": "201503CrowdStrikeChinaChopper.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Chopper Web shell",
+        "type": "Malware"
+      },
+      {
+        "name": "System.WebServices.dll",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "mimikatz",
+        "type": "Malware"
+      },
+      {
+        "name": "ChopShop",
+        "type": "Tool"
+      },
+      {
+        "name": "MITRE",
+        "type": "Organization"
+      },
+      {
+        "name": "CrowdStrike",
+        "type": "Organization"
+      },
+      {
+        "name": "ASPX",
+        "type": "Software"
+      },
+      {
+        "name": "ASP",
+        "type": "Software"
+      },
+      {
+        "name": "PHP",
+        "type": "Software"
+      },
+      {
+        "name": "JSP",
+        "type": "Software"
+      },
+      {
+        "name": "CFM",
+        "type": "Software"
+      },
+      {
+        "name": "C#",
+        "type": "Software"
+      },
+      {
+        "name": "w3wp.exe",
+        "type": "Software"
+      },
+      {
+        "name": "SSL",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "HTTP POST",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "TCP",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "base64",
+        "type": "Indicator"
+      },
+      {
+        "name": "hex",
+        "type": "Indicator"
+      },
+      {
+        "name": "privatekeyrsa.key",
+        "type": "Indicator"
+      },
+      {
+        "name": "Chopper client side binary",
+        "type": "Malware"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Chopper Web shell",
+        "rel": "USES",
+        "obj": "ASPX"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "USES",
+        "obj": "ASP"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "USES",
+        "obj": "PHP"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "USES",
+        "obj": "JSP"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "USES",
+        "obj": "CFM"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "deployed on",
+        "obj": "System.WebServices.dll"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "accessible by",
+        "obj": "Chopper client side binary"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "EXECUTES",
+        "obj": "mimikatz"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "searches for",
+        "obj": "w3wp.exe"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "communicates over",
+        "obj": "SSL"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "GENERATES",
+        "obj": "HTTP POST"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "USES",
+        "obj": "TCP"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "encodes commands in",
+        "obj": "base64"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "encodes responses in",
+        "obj": "hex"
+      },
+      {
+        "sub": "ChopShop",
+        "rel": "developed by",
+        "obj": "MITRE"
+      },
+      {
+        "sub": "ChopShop",
+        "rel": "has module",
+        "obj": "CrowdStrike"
+      },
+      {
+        "sub": "ChopShop",
+        "rel": "has module",
+        "obj": "webshell_chopper_decode"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "REQUIRES",
+        "obj": "privatekeyrsa.key"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "chains with",
+        "obj": "http"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "chains with",
+        "obj": "chop_ssl"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "attempts to carve",
+        "obj": "PE files"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "decodes commands from",
+        "obj": "Chopper Web shell"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "decodes responses from",
+        "obj": "Chopper client side binary"
+      }
+    ]
+  }
+}

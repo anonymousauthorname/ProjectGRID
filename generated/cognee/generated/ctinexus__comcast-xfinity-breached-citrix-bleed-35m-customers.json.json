@@ -1,0 +1,406 @@
+{
+  "sample_id": "ctinexus__comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "sample_index": 98,
+  "source": "ctinexus",
+  "file_name": "comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2023-4966",
+        "type": "Entity"
+      },
+      {
+        "name": "CitrixBleed",
+        "type": "Entity"
+      },
+      {
+        "name": "Citrix Systems",
+        "type": "Entity"
+      },
+      {
+        "name": "NetScaler ADC",
+        "type": "Entity"
+      },
+      {
+        "name": "NetScaler Gateway",
+        "type": "Entity"
+      },
+      {
+        "name": "October",
+        "type": "Entity"
+      },
+      {
+        "name": "Comcast Xfinity",
+        "type": "Entity"
+      },
+      {
+        "name": "cable giant",
+        "type": "Entity"
+      },
+      {
+        "name": "customer data",
+        "type": "Entity"
+      },
+      {
+        "name": "usernames",
+        "type": "Entity"
+      },
+      {
+        "name": "hashed passwords",
+        "type": "Entity"
+      },
+      {
+        "name": "names",
+        "type": "Entity"
+      },
+      {
+        "name": "contact information",
+        "type": "Entity"
+      },
+      {
+        "name": "last four digits of Social Security numbers",
+        "type": "Entity"
+      },
+      {
+        "name": "dates of birth",
+        "type": "Entity"
+      },
+      {
+        "name": "security questions and answers",
+        "type": "Entity"
+      },
+      {
+        "name": "breach",
+        "type": "Entity"
+      },
+      {
+        "name": "August",
+        "type": "Entity"
+      },
+      {
+        "name": "high-severity vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "organizations",
+        "type": "Entity"
+      },
+      {
+        "name": "system security",
+        "type": "Entity"
+      },
+      {
+        "name": "data exposure",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is known as",
+        "obj": "CitrixBleed"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a vulnerability in",
+        "obj": "Citrix Systems"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a vulnerability in",
+        "obj": "NetScaler ADC"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a vulnerability in",
+        "obj": "NetScaler Gateway"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "was exploited since August",
+        "obj": "August"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "was disclosed in",
+        "obj": "October"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a high-severity vulnerability",
+        "obj": "high-severity vulnerability"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "leads to",
+        "obj": "system security flaw"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "leads to",
+        "obj": "data breach"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "is a vulnerability in",
+        "obj": "Citrix Systems"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "is a vulnerability in",
+        "obj": "NetScaler ADC"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "is a vulnerability in",
+        "obj": "NetScaler Gateway"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "is associated with",
+        "obj": "data breach"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "is a security flaw in",
+        "obj": "system security flaw"
+      },
+      {
+        "sub": "Citrix Systems",
+        "rel": "is a product of",
+        "obj": "NetScaler ADC"
+      },
+      {
+        "sub": "Citrix Systems",
+        "rel": "is a product of",
+        "obj": "NetScaler Gateway"
+      },
+      {
+        "sub": "Citrix Systems",
+        "rel": "has vulnerability",
+        "obj": "CitrixBleed"
+      },
+      {
+        "sub": "NetScaler ADC",
+        "rel": "has security flaw",
+        "obj": "CitrixBleed"
+      },
+      {
+        "sub": "NetScaler Gateway",
+        "rel": "has security flaw",
+        "obj": "CitrixBleed"
+      },
+      {
+        "sub": "Comcast Xfinity",
+        "rel": "has data breach",
+        "obj": "data breach"
+      },
+      {
+        "sub": "Comcast Xfinity",
+        "rel": "is affected by",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "Comcast Xfinity",
+        "rel": "was exploited in",
+        "obj": "August"
+      },
+      {
+        "sub": "Comcast Xfinity",
+        "rel": "was disclosed by",
+        "obj": "October"
+      },
+      {
+        "sub": "Comcast Xfinity",
+        "rel": "has breach",
+        "obj": "breach"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposes",
+        "obj": "customer data"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposes",
+        "obj": "usernames"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposes",
+        "obj": "hashed passwords"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposes",
+        "obj": "names"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposes",
+        "obj": "contact information"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposes",
+        "obj": "last four digits of Social Security numbers"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposes",
+        "obj": "dates of birth"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposes",
+        "obj": "security questions and answers"
+      },
+      {
+        "sub": "breach",
+        "rel": "is an impact on",
+        "obj": "organizations"
+      },
+      {
+        "sub": "breach",
+        "rel": "impacted by",
+        "obj": "system security"
+      },
+      {
+        "sub": "breach",
+        "rel": "is a data exposure incident",
+        "obj": "data exposure"
+      },
+      {
+        "sub": "breach",
+        "rel": "is a breach of customer data",
+        "obj": "data breach"
+      },
+      {
+        "sub": "breach",
+        "rel": "is associated with",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "breach",
+        "rel": "occurred since August",
+        "obj": "August"
+      },
+      {
+        "sub": "breach",
+        "rel": "was disclosed in",
+        "obj": "October"
+      },
+      {
+        "sub": "breach",
+        "rel": "is a breach event involving",
+        "obj": "Comcast Xfinity"
+      },
+      {
+        "sub": "breach",
+        "rel": "is associated with",
+        "obj": "cable giant"
+      },
+      {
+        "sub": "August",
+        "rel": "is a period of exploitation",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "October",
+        "rel": "was made public in",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "October",
+        "rel": "is a disclosure date of",
+        "obj": "breach"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a vulnerability that leads to breach",
+        "obj": "data breach"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a vulnerability that enables data exposure",
+        "obj": "data exposure"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "compromises system security",
+        "obj": "system security"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a vulnerability that allows access to customer data",
+        "obj": "customer data"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a vulnerability that allows access to usernames",
+        "obj": "usernames"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a vulnerability that allows access to hashed passwords",
+        "obj": "hashed passwords"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a vulnerability that allows access to names",
+        "obj": "names"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a vulnerability that allows access to contact information",
+        "obj": "contact information"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a vulnerability that allows access to last four digits of SSN",
+        "obj": "last four digits of Social Security numbers"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a vulnerability that allows access to dates of birth",
+        "obj": "dates of birth"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a vulnerability that allows access to security questions",
+        "obj": "security questions and answers"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is a security flaw in a product",
+        "obj": "system security flaw"
+      },
+      {
+        "sub": "NetScaler ADC",
+        "rel": "has vulnerability",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "NetScaler Gateway",
+        "rel": "has vulnerability",
+        "obj": "CVE-2023-4966"
+      }
+    ]
+  }
+}

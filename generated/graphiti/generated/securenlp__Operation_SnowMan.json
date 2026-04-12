@@ -1,0 +1,322 @@
+{
+  "sample_id": "securenlp__Operation_SnowMan",
+  "sample_index": 156,
+  "source": "securenlp",
+  "file_name": "Operation_SnowMan",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Operation SnowMan",
+        "type": "Campaign"
+      },
+      {
+        "name": "Operation DeputyDog",
+        "type": "Campaign"
+      },
+      {
+        "name": "Operation Ephemeral Hydra",
+        "type": "Campaign"
+      },
+      {
+        "name": "CVE-2014-0322",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "ZxShell",
+        "type": "Malware"
+      },
+      {
+        "name": "Gh0stRat",
+        "type": "Malware"
+      },
+      {
+        "name": "vfw.org",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "www.REDACTED.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "newss.effers.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "info.flnet.org",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "icybin.flnet.org",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "book.flnet.org",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "me.scieron.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "dll.freshdns.org",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "ali.blankchair.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "cht.blankchair.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "118.99.60.142",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "58.64.200.178",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "58.64.200.179",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "103.20.192.4",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "58.64.199.22",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "58.64.199.27",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "58.64.199.25",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Microsoft Internet Explorer 10",
+        "type": "Software"
+      },
+      {
+        "name": "Adobe Flash",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft XMLDOM ActiveX control",
+        "type": "Tool"
+      },
+      {
+        "name": "Experience Mitigation Toolkit (EMET)",
+        "type": "Tool"
+      },
+      {
+        "name": "Return-oriented programming (ROP)",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Address Space Layout Randomization (ASLR)",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Data Execution Prevention (DEP)",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Flash Vector object",
+        "type": "Indicator"
+      },
+      {
+        "name": "flash.Media.Sound()",
+        "type": "Indicator"
+      },
+      {
+        "name": "sqlrenew.txt",
+        "type": "Indicator"
+      },
+      {
+        "name": "stream.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "JPG image file",
+        "type": "Indicator"
+      },
+      {
+        "name": "XOR key 0x95",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Operation SnowMan",
+        "rel": "UTILIZES",
+        "obj": "CVE-2014-0322"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "COMPROMISES",
+        "obj": "vfw.org"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "is associated with",
+        "obj": "Operation DeputyDog"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "is associated with",
+        "obj": "Operation Ephemeral Hydra"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "DEPOSITS",
+        "obj": "ZxShell"
+      },
+      {
+        "sub": "ZxShell",
+        "rel": "calls to",
+        "obj": "newss.effers.com"
+      },
+      {
+        "sub": "ZxShell",
+        "rel": "resolves to",
+        "obj": "info.flnet.org"
+      },
+      {
+        "sub": "Gh0stRat",
+        "rel": "USES",
+        "obj": "book.flnet.org"
+      },
+      {
+        "sub": "Gh0stRat",
+        "rel": "USES",
+        "obj": "icybin.flnet.org"
+      },
+      {
+        "sub": "Gh0stRat",
+        "rel": "USES",
+        "obj": "me.scieron.com"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "EXPLOITS",
+        "obj": "Microsoft Internet Explorer 10"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "depends on",
+        "obj": "Adobe Flash"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "USES",
+        "obj": "Microsoft XMLDOM ActiveX control"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "aborts if",
+        "obj": "Experience Mitigation Toolkit (EMET)"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "USES",
+        "obj": "Return-oriented programming (ROP)"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "BYPASSES",
+        "obj": "Address Space Layout Randomization (ASLR)"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "BYPASSES",
+        "obj": "Data Execution Prevention (DEP)"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "CORRUPTS",
+        "obj": "Flash Vector object"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "overwrites vftable of",
+        "obj": "flash.Media.Sound()"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "CREATES",
+        "obj": "sqlrenew.txt"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "CREATES",
+        "obj": "stream.exe"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "obfuscates with",
+        "obj": "JPG image file"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "USES",
+        "obj": "XOR key 0x95"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "USES",
+        "obj": "118.99.60.142"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "USES",
+        "obj": "58.64.200.178"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "USES",
+        "obj": "58.64.200.179"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "USES",
+        "obj": "103.20.192.4"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "USES",
+        "obj": "58.64.199.22"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "USES",
+        "obj": "58.64.199.27"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "USES",
+        "obj": "58.64.199.25"
+      }
+    ]
+  }
+}

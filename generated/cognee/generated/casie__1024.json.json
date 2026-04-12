@@ -1,0 +1,455 @@
+{
+  "sample_id": "casie__1024.json",
+  "sample_index": 8,
+  "source": "casie",
+  "file_name": "1024.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Apache Software Foundation",
+        "type": "Entity"
+      },
+      {
+        "name": "Jakarta Multipart parser",
+        "type": "Entity"
+      },
+      {
+        "name": "Apache Struts",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2017-5638",
+        "type": "Entity"
+      },
+      {
+        "name": "Apache Struts versions 2.3.5 through 2.3.31",
+        "type": "Entity"
+      },
+      {
+        "name": "Apache Struts versions 2.5 through 2.5.10",
+        "type": "Entity"
+      },
+      {
+        "name": "Content-Type header",
+        "type": "Entity"
+      },
+      {
+        "name": "media type",
+        "type": "Entity"
+      },
+      {
+        "name": "POST request",
+        "type": "Entity"
+      },
+      {
+        "name": "PUT request",
+        "type": "Entity"
+      },
+      {
+        "name": "response",
+        "type": "Entity"
+      },
+      {
+        "name": "Cisco Talos",
+        "type": "Entity"
+      },
+      {
+        "name": "Nick Biasini",
+        "type": "Entity"
+      },
+      {
+        "name": "security advisory",
+        "type": "Entity"
+      },
+      {
+        "name": "exploitation events",
+        "type": "Entity"
+      },
+      {
+        "name": "attack",
+        "type": "Entity"
+      },
+      {
+        "name": "authentication",
+        "type": "Entity"
+      },
+      {
+        "name": "malformed Content-Type HTTP header",
+        "type": "Entity"
+      },
+      {
+        "name": "web application",
+        "type": "Entity"
+      },
+      {
+        "name": "file upload",
+        "type": "Entity"
+      },
+      {
+        "name": "system control",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerable code",
+        "type": "Entity"
+      },
+      {
+        "name": "immediate upgrading",
+        "type": "Entity"
+      },
+      {
+        "name": "workaround",
+        "type": "Entity"
+      },
+      {
+        "name": "improper handling",
+        "type": "Entity"
+      },
+      {
+        "name": "HTTP header",
+        "type": "Entity"
+      },
+      {
+        "name": "client",
+        "type": "Entity"
+      },
+      {
+        "name": "server",
+        "type": "Entity"
+      },
+      {
+        "name": "data transmission",
+        "type": "Entity"
+      },
+      {
+        "name": "remote exploitation",
+        "type": "Entity"
+      },
+      {
+        "name": "code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "security patch",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Apache Software Foundation",
+        "rel": "has_patch",
+        "obj": "Apache Struts"
+      },
+      {
+        "sub": "Apache Struts",
+        "rel": "has_component",
+        "obj": "Jakarta Multipart parser"
+      },
+      {
+        "sub": "Jakarta Multipart parser",
+        "rel": "causes",
+        "obj": "remote code execution vulnerability"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_cve",
+        "obj": "CVE-2017-5638"
+      },
+      {
+        "sub": "Apache Struts",
+        "rel": "is_vulnerable_in",
+        "obj": "Apache Struts versions 2.3.5 through 2.3.31"
+      },
+      {
+        "sub": "Apache Struts",
+        "rel": "is_vulnerable_in",
+        "obj": "Apache Struts versions 2.5 through 2.5.10"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_triggered_by",
+        "obj": "malformed Content-Type HTTP header"
+      },
+      {
+        "sub": "malformed Content-Type HTTP header",
+        "rel": "is_a_malformed_input",
+        "obj": "Content-Type header"
+      },
+      {
+        "sub": "Content-Type header",
+        "rel": "is_a_media_type",
+        "obj": "media type"
+      },
+      {
+        "sub": "Content-Type header",
+        "rel": "is_used_in",
+        "obj": "POST request"
+      },
+      {
+        "sub": "Content-Type header",
+        "rel": "is_used_in",
+        "obj": "PUT request"
+      },
+      {
+        "sub": "Content-Type header",
+        "rel": "is_sent_by",
+        "obj": "response"
+      },
+      {
+        "sub": "Jakarta Multipart parser",
+        "rel": "is_incorrectly_handled",
+        "obj": "improper handling"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_type_of",
+        "obj": "code execution"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "leads_to",
+        "obj": "attack"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "allows_remote_control",
+        "obj": "system takeover"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_found_in",
+        "obj": "vulnerable code"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_exposed_to",
+        "obj": "web application"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_remote_attack",
+        "obj": "remote exploitation"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_vulnerability_exploitation",
+        "obj": "vulnerability exploitation"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_attack_vector",
+        "obj": "attack vector"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_code_execution_flaw",
+        "obj": "code execution flaw"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_server_side_flaw",
+        "obj": "server-side flaw"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_data_transfer",
+        "obj": "data transmission"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_client_action",
+        "obj": "client"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_server_function",
+        "obj": "server"
+      },
+      {
+        "sub": "Cisco Talos",
+        "rel": "is_reported_by",
+        "obj": "remote code execution vulnerability"
+      },
+      {
+        "sub": "Nick Biasini",
+        "rel": "is_discussed_by",
+        "obj": "remote code execution vulnerability"
+      },
+      {
+        "sub": "Nick Biasini",
+        "rel": "is_a_researcher",
+        "obj": "exploitation events"
+      },
+      {
+        "sub": "Cisco Talos",
+        "rel": "provides",
+        "obj": "security advisory"
+      },
+      {
+        "sub": "security advisory",
+        "rel": "is_recommended_for",
+        "obj": "immediate upgrading"
+      },
+      {
+        "sub": "security advisory",
+        "rel": "is_a_workaround",
+        "obj": "workaround"
+      },
+      {
+        "sub": "security advisory",
+        "rel": "is_a_security_update",
+        "obj": "security update"
+      },
+      {
+        "sub": "security advisory",
+        "rel": "is_a_patch",
+        "obj": "security patch"
+      },
+      {
+        "sub": "security advisory",
+        "rel": "is_a_workaround_deployment",
+        "obj": "workaround deployment"
+      },
+      {
+        "sub": "security advisory",
+        "rel": "is_a_patch_release",
+        "obj": "patch deployment"
+      },
+      {
+        "sub": "security advisory",
+        "rel": "is_a_security_response",
+        "obj": "security response"
+      },
+      {
+        "sub": "security advisory",
+        "rel": "is_a_patch_deployment",
+        "obj": "security patch action"
+      },
+      {
+        "sub": "security advisory",
+        "rel": "is_a_security_update_action",
+        "obj": "security update action"
+      },
+      {
+        "sub": "security advisory",
+        "rel": "is_a_data_format_specification",
+        "obj": "security advisory reference"
+      },
+      {
+        "sub": "security advisory",
+        "rel": "is_a_data_format",
+        "obj": "data format specification"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_authentication_bypass",
+        "obj": "authentication"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_remote_access",
+        "obj": "remote access"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_system_exposure",
+        "obj": "system exposure"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_active_in",
+        "obj": "exploitation events"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_exploited_via",
+        "obj": "file upload"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "allows_remote_control",
+        "obj": "system control"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_transmitted_via",
+        "obj": "data transmission"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_client_server_interaction",
+        "obj": "client-server interaction"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_remote_exploit",
+        "obj": "remote exploitation"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_code_execution",
+        "obj": "code execution"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_remote_control",
+        "obj": "remote access"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_system_takeover",
+        "obj": "system takeover"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_data_format_specification",
+        "obj": "data format specification"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_data_format",
+        "obj": "security advisory reference"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_security_update_action",
+        "obj": "security update action"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_security_response",
+        "obj": "security response"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_patch_deployment",
+        "obj": "security patch action"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is_a_remote_code_execution",
+        "obj": "remote code execution"
+      }
+    ]
+  }
+}

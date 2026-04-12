@@ -1,0 +1,352 @@
+{
+  "sample_id": "securenlp__NYTimes_Attackers_Evolve_Quickly",
+  "sample_index": 193,
+  "source": "securenlp",
+  "file_name": "NYTimes_Attackers_Evolve_Quickly",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Aumlib",
+        "type": "Entity"
+      },
+      {
+        "name": "Ixeshe",
+        "type": "Entity"
+      },
+      {
+        "name": "Backdoor.APT.Aumlib",
+        "type": "Entity"
+      },
+      {
+        "name": "Backdoor.APT.Ixeshe",
+        "type": "Entity"
+      },
+      {
+        "name": "status.acmetoy.com",
+        "type": "Entity"
+      },
+      {
+        "name": "acmetoy.com",
+        "type": "Entity"
+      },
+      {
+        "name": "documents.myPicture.info",
+        "type": "Entity"
+      },
+      {
+        "name": "www.documents.myPicture.info",
+        "type": "Entity"
+      },
+      {
+        "name": "bbs/info.asp",
+        "type": "Entity"
+      },
+      {
+        "name": "bbs/search.asp",
+        "type": "Entity"
+      },
+      {
+        "name": "myScript.js",
+        "type": "Entity"
+      },
+      {
+        "name": "css.css",
+        "type": "Entity"
+      },
+      {
+        "name": "POST /bbs/info.asp HTTP/1.1",
+        "type": "Entity"
+      },
+      {
+        "name": "POST /bbs/search.asp HTTP/1.1",
+        "type": "Entity"
+      },
+      {
+        "name": "Base64",
+        "type": "Entity"
+      },
+      {
+        "name": "/[ACD] [EW]S[Numbers].jsp?[Base64]",
+        "type": "Entity"
+      },
+      {
+        "name": "ll65",
+        "type": "Entity"
+      },
+      {
+        "name": "URL: status.acmetoy.com/DD/myScript.js",
+        "type": "Entity"
+      },
+      {
+        "name": "URL: status.acmetoy.com/DD/css.css",
+        "type": "Entity"
+      },
+      {
+        "name": "malware sample hash 832f5e01be536da71d5b3f7e41938cfb",
+        "type": "Entity"
+      },
+      {
+        "name": "malware sample hash cb3dcde34fd9ff0e19381d99b02f9692",
+        "type": "Entity"
+      },
+      {
+        "name": "attackers behind the breach of the New York Times’ computer network",
+        "type": "Entity"
+      },
+      {
+        "name": "New York Times",
+        "type": "Entity"
+      },
+      {
+        "name": "economic policy organization",
+        "type": "Entity"
+      },
+      {
+        "name": "Taiwan",
+        "type": "Entity"
+      },
+      {
+        "name": "APT12",
+        "type": "Entity"
+      },
+      {
+        "name": "malware families",
+        "type": "Entity"
+      },
+      {
+        "name": "network traffic patterns",
+        "type": "Entity"
+      },
+      {
+        "name": "custom Base64 alphabet",
+        "type": "Entity"
+      },
+      {
+        "name": "encoded HTTP communications",
+        "type": "Entity"
+      },
+      {
+        "name": "POST body encoded",
+        "type": "Entity"
+      },
+      {
+        "name": "victim BIOS name",
+        "type": "Entity"
+      },
+      {
+        "name": "campaign ID",
+        "type": "Entity"
+      },
+      {
+        "name": "victim external IP",
+        "type": "Entity"
+      },
+      {
+        "name": "victim OS",
+        "type": "Entity"
+      },
+      {
+        "name": "campaign tag/code",
+        "type": "Entity"
+      },
+      {
+        "name": "mark",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actors",
+        "type": "Entity"
+      },
+      {
+        "name": "TTPs",
+        "type": "Entity"
+      },
+      {
+        "name": "evolution of tactics",
+        "type": "Entity"
+      },
+      {
+        "name": "external scrutiny",
+        "type": "Entity"
+      },
+      {
+        "name": "IDS signatures",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanisms",
+        "type": "Entity"
+      },
+      {
+        "name": "malware updates",
+        "type": "Entity"
+      },
+      {
+        "name": "retooling of spying operation",
+        "type": "Entity"
+      },
+      {
+        "name": "China",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing",
+        "type": "Entity"
+      },
+      {
+        "name": "USB devices",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "attackers behind the breach of the New York Times’ computer network",
+        "rel": "uses",
+        "obj": "Backdoor.APT.Aumlib"
+      },
+      {
+        "sub": "attackers behind the breach of the New York Times’ computer network",
+        "rel": "uses",
+        "obj": "Backdoor.APT.Ixeshe"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "encodes",
+        "obj": "HTTP communications"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "uses",
+        "obj": "POST /bbs/info.asp HTTP/1.1"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "changes",
+        "obj": "POST URI to /bbs/search.asp"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "encodes",
+        "obj": "POST body"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "downloads",
+        "obj": "myScript.js"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "downloads",
+        "obj": "css.css"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "connects to",
+        "obj": "status.acmetoy.com"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "shares code with",
+        "obj": "malware sample hash 832f5e01be536da71d5b3f7e41938cfb"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "shares code with",
+        "obj": "malware sample hash cb3dcde34fd9ff0e19381d99b02f9692"
+      },
+      {
+        "sub": "malware sample hash 832f5e01be536da71d5b3f7e41938cfb",
+        "rel": "is a modified variant of",
+        "obj": "Aumlib"
+      },
+      {
+        "sub": "malware sample hash cb3dcde34fd9ff0e19381d99b02f9692",
+        "rel": "connects to",
+        "obj": "documents.myPicture.info"
+      },
+      {
+        "sub": "malware sample hash cb3dcde34fd9ff0e19381d99b02f9692",
+        "rel": "connects to",
+        "obj": "www.documents.myPicture.info"
+      },
+      {
+        "sub": "malware sample hash cb3dcde34fd9ff0e19381d99b02f9692",
+        "rel": "generates",
+        "obj": "POST /bbs/info.asp HTTP/1.1"
+      },
+      {
+        "sub": "Ixeshe",
+        "rel": "uses",
+        "obj": "custom Base64 alphabet"
+      },
+      {
+        "sub": "Ixeshe",
+        "rel": "uses",
+        "obj": "/[ACD] [EW]S[Numbers].jsp?[Base64]"
+      },
+      {
+        "sub": "Ixeshe",
+        "rel": "targets",
+        "obj": "Taiwan"
+      },
+      {
+        "sub": "Ixeshe",
+        "rel": "exhibits",
+        "obj": "network traffic that does not match earlier pattern"
+      },
+      {
+        "sub": "Ixeshe",
+        "rel": "includes",
+        "obj": "mark"
+      },
+      {
+        "sub": "Ixeshe",
+        "rel": "has mark",
+        "obj": "ll65"
+      },
+      {
+        "sub": "attackers behind the breach of the New York Times’ computer network",
+        "rel": "retooling",
+        "obj": "spying operation"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "evolve",
+        "obj": "TTPs"
+      },
+      {
+        "sub": "attackers behind the breach of the New York Times’ computer network",
+        "rel": "responds to",
+        "obj": "external scrutiny"
+      }
+    ]
+  }
+}

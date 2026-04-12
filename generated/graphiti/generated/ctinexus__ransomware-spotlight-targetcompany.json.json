@@ -1,0 +1,114 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-targetcompany.json",
+  "sample_index": 68,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-targetcompany.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TargetCompany",
+        "type": "Malware"
+      },
+      {
+        "name": "Fargo",
+        "type": "Campaign"
+      },
+      {
+        "name": "Mallox",
+        "type": "Malware"
+      },
+      {
+        "name": "xollam",
+        "type": "Malware"
+      },
+      {
+        "name": "Chacha20",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Curve 25519",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "AES-128",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "How to decrypt files.txt",
+        "type": "Indicator"
+      },
+      {
+        "name": "HOW TO RECOVER!!.txt",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TargetCompany",
+        "rel": "evolved into",
+        "obj": "Fargo"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "evolved into",
+        "obj": "Mallox"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "evolved into",
+        "obj": "xollam"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "DROPS",
+        "obj": "How to decrypt files.txt"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "DROPS",
+        "obj": "HOW TO RECOVER!!.txt"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "USES",
+        "obj": "Chacha20"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "USES",
+        "obj": "Curve 25519"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "USES",
+        "obj": "AES-128"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "has extension",
+        "obj": "Fargo"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "established data leak site",
+        "obj": "Mallox"
+      }
+    ]
+  }
+}

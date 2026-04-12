@@ -1,0 +1,72 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_15.json",
+  "sample_index": 207,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_15.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Troj/JSRedirBV",
+        "type": "Malware"
+      },
+      {
+        "name": "Mal/IframeQ",
+        "type": "Indicator"
+      },
+      {
+        "name": "Canadian Pharmacy",
+        "type": "Location"
+      },
+      {
+        "name": "XOR",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "setTimeOut",
+        "type": "Tool"
+      },
+      {
+        "name": "JavaScript emulation tools",
+        "type": "Infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Troj/JSRedirBV",
+        "rel": "redirects to",
+        "obj": "Mal/IframeQ"
+      },
+      {
+        "sub": "Mal/IframeQ",
+        "rel": "redirects to",
+        "obj": "Canadian Pharmacy"
+      },
+      {
+        "sub": "JavaScript emulation tools",
+        "rel": "IGNORES",
+        "obj": "setTimeOut"
+      },
+      {
+        "sub": "setTimeOut",
+        "rel": "TRIGGERS",
+        "obj": "XOR"
+      }
+    ]
+  }
+}

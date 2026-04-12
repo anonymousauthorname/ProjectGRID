@@ -1,0 +1,203 @@
+{
+  "sample_id": "casie__10242.json",
+  "sample_index": 11,
+  "source": "casie",
+  "file_name": "10242.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CYBER MONDAY",
+        "type": "EVENT"
+      },
+      {
+        "name": "CHRISTMAS",
+        "type": "EVENT"
+      },
+      {
+        "name": "FINGERLINGS TOYS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "IPHONE",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "APPLE MACBOOK",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "UGG BOOTS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "GUMTREE",
+        "type": "TOOL"
+      },
+      {
+        "name": "EBAY",
+        "type": "TOOL"
+      },
+      {
+        "name": "FACEBOOK",
+        "type": "TOOL"
+      },
+      {
+        "name": "CITY OF LONDON POLICE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "ACTION FRAUD",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "PETE O'DOHERTY",
+        "type": "PERSON"
+      },
+      {
+        "name": "TONY NEATE",
+        "type": "PERSON"
+      },
+      {
+        "name": "GET SAFE ONLINE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "SCAMMERS",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "TESCO",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "FAKE WEBSITES",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "PHISHING EMAILS",
+        "type": "TOOL"
+      },
+      {
+        "name": "FRAUD REPORTS",
+        "type": "EVENT"
+      },
+      {
+        "name": "CONSUMERS",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SCAMMERS",
+        "rel": "related_to",
+        "obj": "FAKE WEBSITES"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "related_to",
+        "obj": "PHISHING EMAILS"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "related_to",
+        "obj": "GUMTREE"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "related_to",
+        "obj": "EBAY"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "related_to",
+        "obj": "FACEBOOK"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "related_to",
+        "obj": "TESCO"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "related_to",
+        "obj": "FINGERLINGS TOYS"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "related_to",
+        "obj": "IPHONE"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "related_to",
+        "obj": "APPLE MACBOOK"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "related_to",
+        "obj": "UGG BOOTS"
+      },
+      {
+        "sub": "CITY OF LONDON POLICE",
+        "rel": "related_to",
+        "obj": "SCAMMERS"
+      },
+      {
+        "sub": "ACTION FRAUD",
+        "rel": "related_to",
+        "obj": "SCAMMERS"
+      },
+      {
+        "sub": "PETE O'DOHERTY",
+        "rel": "related_to",
+        "obj": "CITY OF LONDON POLICE"
+      },
+      {
+        "sub": "TONY NEATE",
+        "rel": "related_to",
+        "obj": "GET SAFE ONLINE"
+      },
+      {
+        "sub": "GET SAFE ONLINE",
+        "rel": "related_to",
+        "obj": "CONSUMERS"
+      },
+      {
+        "sub": "CYBER MONDAY",
+        "rel": "related_to",
+        "obj": "SCAMMERS"
+      },
+      {
+        "sub": "CHRISTMAS",
+        "rel": "related_to",
+        "obj": "SCAMMERS"
+      },
+      {
+        "sub": "FRAUD REPORTS",
+        "rel": "related_to",
+        "obj": "CITY OF LONDON POLICE"
+      },
+      {
+        "sub": "FRAUD REPORTS",
+        "rel": "related_to",
+        "obj": "ACTION FRAUD"
+      }
+    ]
+  }
+}

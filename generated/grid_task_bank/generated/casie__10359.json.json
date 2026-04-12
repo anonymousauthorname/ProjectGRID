@@ -1,0 +1,501 @@
+{
+  "sample_id": "casie__10359.json",
+  "sample_index": 44,
+  "source": "casie",
+  "file_name": "10359.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Logitech",
+        "type": "company"
+      },
+      {
+        "name": "Logitech Options",
+        "type": "malware",
+        "alias": [
+          "Options application for Windows",
+          "Options application",
+          "the application",
+          "Logitech’s Options application for Windows"
+        ]
+      },
+      {
+        "name": "Mac",
+        "type": "general-software"
+      },
+      {
+        "name": "Google’s Project Zero team",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Tavis Ormandy",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Project Zero researcher"
+        ]
+      },
+      {
+        "name": "web socket server",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "port 10134",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "origin checking",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "Windows PC",
+        "type": "general-software"
+      },
+      {
+        "name": "process owned by your user",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "pid [process ID]",
+        "type": "credential-value"
+      },
+      {
+        "name": "keystroke injection",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "vulnerability",
+        "type": "indicator"
+      },
+      {
+        "name": "90-day deadline",
+        "type": "course-of-action"
+      },
+      {
+        "name": "update",
+        "type": "course-of-action"
+      },
+      {
+        "name": "version 7.00.564",
+        "type": "file"
+      },
+      {
+        "name": "version 7.00.554",
+        "type": "file"
+      },
+      {
+        "name": "Edge browser",
+        "type": "general-software"
+      },
+      {
+        "name": "Microsoft",
+        "type": "company"
+      },
+      {
+        "name": "2018",
+        "type": "location"
+      },
+      {
+        "name": "guillotine",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "bug",
+        "type": "vulnerability"
+      },
+      {
+        "name": "fix",
+        "type": "course-of-action"
+      },
+      {
+        "name": "patch",
+        "type": "course-of-action"
+      },
+      {
+        "name": "contacted",
+        "type": "course-of-action"
+      },
+      {
+        "name": "meeting",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "fellow vendors",
+        "type": "other"
+      },
+      {
+        "name": "Times have changed",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "engineers",
+        "type": "identity"
+      },
+      {
+        "name": "website",
+        "type": "url"
+      },
+      {
+        "name": "client",
+        "type": "general-software"
+      },
+      {
+        "name": "server",
+        "type": "general-software"
+      },
+      {
+        "name": "HTTP",
+        "type": "general-software"
+      },
+      {
+        "name": "websockets",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "customise buttons",
+        "type": "course-of-action"
+      },
+      {
+        "name": "keyboards",
+        "type": "general-software"
+      },
+      {
+        "name": "mice",
+        "type": "general-software"
+      },
+      {
+        "name": "touchpads",
+        "type": "general-software"
+      },
+      {
+        "name": "flaw disclosure",
+        "type": "course-of-action"
+      },
+      {
+        "name": "disclosure",
+        "type": "course-of-action"
+      },
+      {
+        "name": "18 September",
+        "type": "date"
+      },
+      {
+        "name": "1 October",
+        "type": "date"
+      },
+      {
+        "name": "13 December",
+        "type": "date"
+      },
+      {
+        "name": "Project Zero",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "compromises",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "bruteforce",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "public flaw disclosure",
+        "type": "course-of-action"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Logitech",
+        "rel": "became the latest company to find itself on the receiving end of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "an embarrassing public flaw disclosure by Google’s Project Zero team"
+      },
+      {
+        "sub": "Tavis Ormandy",
+        "rel": "installed",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Logitech’s Options application for Windows"
+      },
+      {
+        "sub": "Logitech’s Options application for Windows",
+        "rel": "used to customise buttons",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "keyboards"
+      },
+      {
+        "sub": "Logitech’s Options application for Windows",
+        "rel": "used to customise buttons",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "mice"
+      },
+      {
+        "sub": "Logitech’s Options application for Windows",
+        "rel": "used to customise buttons",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "touchpads"
+      },
+      {
+        "sub": "Logitech’s Options application for Windows",
+        "rel": "opens",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "websocket server"
+      },
+      {
+        "sub": "websocket server",
+        "rel": "located-at",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "port 10134"
+      },
+      {
+        "sub": "Logitech’s Options application for Windows",
+        "rel": "has no",
+        "rel_type": [
+          "lacks"
+        ],
+        "obj": "origin checking"
+      },
+      {
+        "sub": "Websockets",
+        "rel": "simplify the communication between",
+        "rel_type": [
+          "simplifies"
+        ],
+        "obj": "a client and a server"
+      },
+      {
+        "sub": "Websockets",
+        "rel": "unlike",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "HTTP"
+      },
+      {
+        "sub": "Logitech’s Options application for Windows",
+        "rel": "requires",
+        "rel_type": [
+          "requires"
+        ],
+        "obj": "pid [process ID]"
+      },
+      {
+        "sub": "Logitech’s Options application for Windows",
+        "rel": "allows",
+        "rel_type": [
+          "allows"
+        ],
+        "obj": "bruteforce"
+      },
+      {
+        "sub": "Tavis Ormandy",
+        "rel": "claimed this might offer",
+        "rel_type": [
+          "might offer"
+        ],
+        "obj": "attackers a way of executing keystroke injection"
+      },
+      {
+        "sub": "Logitech’s Options application for Windows",
+        "rel": "might offer",
+        "rel_type": [
+          "might offer"
+        ],
+        "obj": "attackers a way of executing keystroke injection"
+      },
+      {
+        "sub": "Tavis Ormandy",
+        "rel": "had meeting with",
+        "rel_type": [
+          "discusses"
+        ],
+        "obj": "engineers"
+      },
+      {
+        "sub": "engineers",
+        "rel": "assured",
+        "rel_type": [
+          "assured"
+        ],
+        "obj": "Tavis Ormandy"
+      },
+      {
+        "sub": "a new version of Options",
+        "rel": "appeared on",
+        "rel_type": [
+          "appears on"
+        ],
+        "obj": "1 October"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "updated",
+        "rel_type": [
+          "updates"
+        ],
+        "obj": "Options application"
+      },
+      {
+        "sub": "Options application",
+        "rel": "updated to",
+        "rel_type": [
+          "updated to"
+        ],
+        "obj": "version 7.00.564"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "updated",
+        "rel_type": [
+          "updates"
+        ],
+        "obj": "Options application"
+      },
+      {
+        "sub": "Options application",
+        "rel": "updated to",
+        "rel_type": [
+          "updated to"
+        ],
+        "obj": "version 7.00.554"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "ran into",
+        "rel_type": [
+          "ran into"
+        ],
+        "obj": "a similar issue"
+      },
+      {
+        "sub": "Project Zero",
+        "rel": "found",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "found in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Edge browser"
+      },
+      {
+        "sub": "Tavis Ormandy",
+        "rel": "had meeting with",
+        "rel_type": [
+          "discusses"
+        ],
+        "obj": "engineers"
+      },
+      {
+        "sub": "Google’s Project Zero team",
+        "rel": "operates",
+        "rel_type": [
+          "operates"
+        ],
+        "obj": "90-day deadline"
+      },
+      {
+        "sub": "I",
+        "rel": "would recommend",
+        "rel_type": [
+          "would recommend"
+        ],
+        "obj": "disabling Logitech Options"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "updated",
+        "rel_type": [
+          "updates"
+        ],
+        "obj": "Options application"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "tweeted",
+        "rel_type": [
+          "tweeted"
+        ],
+        "obj": "flaws had been fixed"
+      },
+      {
+        "sub": "Ormandy",
+        "rel": "confirmed",
+        "rel_type": [
+          "confirmed"
+        ],
+        "obj": "flaws had been fixed"
+      },
+      {
+        "sub": "Project Zero",
+        "rel": "applies",
+        "rel_type": [
+          "applies"
+        ],
+        "obj": "guillotine"
+      },
+      {
+        "sub": "guillotine",
+        "rel": "applied to",
+        "rel_type": [
+          "applies"
+        ],
+        "obj": "vendors"
+      },
+      {
+        "sub": "vendors",
+        "rel": "move from",
+        "rel_type": [
+          "move from"
+        ],
+        "obj": "learning about a bug to releasing a fix"
+      },
+      {
+        "sub": "Logitech’s Options application for Windows",
+        "rel": "compromises",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Windows PC"
+      }
+    ]
+  }
+}

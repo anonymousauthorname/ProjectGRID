@@ -1,0 +1,193 @@
+{
+  "sample_id": "casie__10206.json",
+  "sample_index": 37,
+  "source": "casie",
+  "file_name": "10206.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-201808115",
+        "type": "Entity"
+      },
+      {
+        "name": "hcsshim",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows Host Compute Service Shim",
+        "type": "Entity"
+      },
+      {
+        "name": "Docker for Windows",
+        "type": "Entity"
+      },
+      {
+        "name": "Go",
+        "type": "Entity"
+      },
+      {
+        "name": "filepath.Join",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious Docker container image",
+        "type": "Entity"
+      },
+      {
+        "name": "authenticated administrator",
+        "type": "Entity"
+      },
+      {
+        "name": "host file system",
+        "type": "Entity"
+      },
+      {
+        "name": "Linux Namespaces",
+        "type": "Entity"
+      },
+      {
+        "name": "Control Groups",
+        "type": "Entity"
+      },
+      {
+        "name": "HCS abstraction layer",
+        "type": "Entity"
+      },
+      {
+        "name": "Meltdown CPU vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows 10 April 2018 Update",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-201808115",
+        "rel": "affects",
+        "obj": "Windows Host Compute Service Shim"
+      },
+      {
+        "sub": "Windows Host Compute Service Shim",
+        "rel": "fails to validate",
+        "obj": "input from container images"
+      },
+      {
+        "sub": "malicious Docker container image",
+        "rel": "tricks",
+        "obj": "authenticated administrator"
+      },
+      {
+        "sub": "authenticated administrator",
+        "rel": "imports",
+        "obj": "malicious Docker container image"
+      },
+      {
+        "sub": "malicious Docker container image",
+        "rel": "is used to execute",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "CVE-201808115",
+        "rel": "leads to",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "hcsshim",
+        "rel": "is used by",
+        "obj": "Docker for Windows"
+      },
+      {
+        "sub": "hcsshim",
+        "rel": "is written in",
+        "obj": "Go"
+      },
+      {
+        "sub": "hcsshim",
+        "rel": "is a wrapper for",
+        "obj": "Host Compute Service"
+      },
+      {
+        "sub": "Host Compute Service",
+        "rel": "provides",
+        "obj": "container management API in Windows Hyper-V virtualization for Docker"
+      },
+      {
+        "sub": "HCS abstraction layer",
+        "rel": "enables",
+        "obj": "Linux Namespaces"
+      },
+      {
+        "sub": "HCS abstraction layer",
+        "rel": "enables",
+        "obj": "Control Groups"
+      },
+      {
+        "sub": "hcsshim",
+        "rel": "uses",
+        "obj": "filepath.Join"
+      },
+      {
+        "sub": "filepath.Join",
+        "rel": "is used with",
+        "obj": "unsanitized input"
+      },
+      {
+        "sub": "filepath.Join with unsanitized input",
+        "rel": "allows",
+        "obj": "creation of files in host file system"
+      },
+      {
+        "sub": "filepath.Join with unsanitized input",
+        "rel": "allows",
+        "obj": "removal of files in host file system"
+      },
+      {
+        "sub": "filepath.Join with unsanitized input",
+        "rel": "allows",
+        "obj": "replacement of files in host file system"
+      },
+      {
+        "sub": "filepath.Join with unsanitized input",
+        "rel": "leads to",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "Docker for Windows",
+        "rel": "uses",
+        "obj": "hcsshim"
+      },
+      {
+        "sub": "Windows 10 April 2018 Update",
+        "rel": "patches",
+        "obj": "Meltdown CPU vulnerability"
+      },
+      {
+        "sub": "Meltdown CPU vulnerability",
+        "rel": "has a fatal flaw in initial Windows 10 fix",
+        "obj": "Windows 10 April 2018 Update"
+      }
+    ]
+  }
+}

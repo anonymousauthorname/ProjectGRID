@@ -1,0 +1,121 @@
+{
+  "sample_id": "casie__1077.json",
+  "sample_index": 4,
+  "source": "casie",
+  "file_name": "1077.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Magento",
+        "type": "Organization"
+      },
+      {
+        "name": "SF9 Realex",
+        "type": "Malware"
+      },
+      {
+        "name": "Realex RealAuth Remote and Redirect",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "sendCCNumber",
+        "type": "Indicator"
+      },
+      {
+        "name": "binlist.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Sucuri",
+        "type": "Organization"
+      },
+      {
+        "name": "Cesar Anjos",
+        "type": "Person"
+      },
+      {
+        "name": "Ben Martin",
+        "type": "Person"
+      },
+      {
+        "name": "RiskIQ",
+        "type": "Organization"
+      },
+      {
+        "name": "Powerfront CMS",
+        "type": "Organization"
+      },
+      {
+        "name": "OpenCart",
+        "type": "Organization"
+      },
+      {
+        "name": "web-based keylogger",
+        "type": "Tool"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Magento",
+        "rel": "has module",
+        "obj": "SF9 Realex"
+      },
+      {
+        "sub": "SF9 Realex",
+        "rel": "contains function",
+        "obj": "sendCCNumber"
+      },
+      {
+        "sub": "sendCCNumber",
+        "rel": "USES",
+        "obj": "binlist.net"
+      },
+      {
+        "sub": "Sucuri",
+        "rel": "has researcher",
+        "obj": "Cesar Anjos"
+      },
+      {
+        "sub": "Sucuri",
+        "rel": "has researcher",
+        "obj": "Ben Martin"
+      },
+      {
+        "sub": "RiskIQ",
+        "rel": "monitored attacks involving",
+        "obj": "web-based keylogger"
+      },
+      {
+        "sub": "RiskIQ",
+        "rel": "monitored attacks targeting",
+        "obj": "Powerfront CMS"
+      },
+      {
+        "sub": "RiskIQ",
+        "rel": "monitored attacks targeting",
+        "obj": "OpenCart"
+      },
+      {
+        "sub": "SF9 Realex",
+        "rel": "interacts with",
+        "obj": "Realex RealAuth Remote and Redirect"
+      }
+    ]
+  }
+}

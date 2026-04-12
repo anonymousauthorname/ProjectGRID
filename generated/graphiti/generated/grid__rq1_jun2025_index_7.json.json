@@ -1,0 +1,197 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_7.json",
+  "sample_index": 246,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_7.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Sodinokibi",
+        "type": "Malware"
+      },
+      {
+        "name": "Cobalt Strike",
+        "type": "Tool"
+      },
+      {
+        "name": "Point of Sale (PoS) software",
+        "type": "Software"
+      },
+      {
+        "name": "NetSupport Ltd",
+        "type": "Tool"
+      },
+      {
+        "name": "AnyDesk",
+        "type": "Tool"
+      },
+      {
+        "name": "Pastebin",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Amazon CloudFront",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Organization"
+      },
+      {
+        "name": "Travelex",
+        "type": "Organization"
+      },
+      {
+        "name": "Maze ransomware",
+        "type": "Malware"
+      },
+      {
+        "name": "GandCrab",
+        "type": "Malware"
+      },
+      {
+        "name": "Ransomware-as-a-Service (RaaS)",
+        "type": "Campaign"
+      },
+      {
+        "name": "healthcare sector",
+        "type": "Location"
+      },
+      {
+        "name": "services sector",
+        "type": "Location"
+      },
+      {
+        "name": "food sector",
+        "type": "Location"
+      },
+      {
+        "name": "Monero",
+        "type": "Indicator"
+      },
+      {
+        "name": "Symantec",
+        "type": "Organization"
+      },
+      {
+        "name": "Broadcom",
+        "type": "Organization"
+      },
+      {
+        "name": "Remote Desktop Protocol (RDP)",
+        "type": "Software"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Software"
+      },
+      {
+        "name": "Ransomware",
+        "type": "Malware"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Sodinokibi",
+        "rel": "DEPLOYS",
+        "obj": "Cobalt Strike"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "scans for",
+        "obj": "Point of Sale (PoS) software"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "requires payment in",
+        "obj": "Monero"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "USES",
+        "obj": "NetSupport Ltd"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "USES",
+        "obj": "AnyDesk"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "hosts payload on",
+        "obj": "Pastebin"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "uses for c2",
+        "obj": "Amazon CloudFront"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "USES",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "exploits vulnerabilities in",
+        "obj": "Remote Desktop Protocol (RDP)"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "attacks victims in",
+        "obj": "healthcare sector"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "attacks victims in",
+        "obj": "services sector"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "attacks victims in",
+        "obj": "food sector"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "successor to",
+        "obj": "GandCrab"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "operates as",
+        "obj": "Ransomware-as-a-Service (RaaS)"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "announces data exfiltration like",
+        "obj": "Maze ransomware"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "RESEARCHES",
+        "obj": "Sodinokibi"
+      },
+      {
+        "sub": "Travelex",
+        "rel": "victim of",
+        "obj": "Sodinokibi"
+      }
+    ]
+  }
+}

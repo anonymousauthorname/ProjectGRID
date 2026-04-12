@@ -1,0 +1,231 @@
+{
+  "sample_id": "casie__10205.json",
+  "sample_index": 5,
+  "source": "casie",
+  "file_name": "10205.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Samsung",
+        "type": "Entity"
+      },
+      {
+        "name": "Galaxy Xcover 4",
+        "type": "Entity"
+      },
+      {
+        "name": "December 2018 security patch",
+        "type": "Entity"
+      },
+      {
+        "name": "Google",
+        "type": "Entity"
+      },
+      {
+        "name": "Android",
+        "type": "Entity"
+      },
+      {
+        "name": "Samsung custom software",
+        "type": "Entity"
+      },
+      {
+        "name": "six critical vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious app",
+        "type": "Entity"
+      },
+      {
+        "name": "unapproved code",
+        "type": "Entity"
+      },
+      {
+        "name": "privileged process",
+        "type": "Entity"
+      },
+      {
+        "name": "moderate risk vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "low-risk vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "40 Samsung Vulnerabilities and Exposures (SVE) items",
+        "type": "Entity"
+      },
+      {
+        "name": "Secure Folder app",
+        "type": "Entity"
+      },
+      {
+        "name": "authentication",
+        "type": "Entity"
+      },
+      {
+        "name": "gallery app",
+        "type": "Entity"
+      },
+      {
+        "name": "security maintenance release",
+        "type": "Entity"
+      },
+      {
+        "name": "monthly security maintenance release",
+        "type": "Entity"
+      },
+      {
+        "name": "supported devices",
+        "type": "Entity"
+      },
+      {
+        "name": "high-end devices",
+        "type": "Entity"
+      },
+      {
+        "name": "coming weeks",
+        "type": "Entity"
+      },
+      {
+        "name": "next few days",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Samsung",
+        "rel": "releases",
+        "obj": "December 2018 security patch"
+      },
+      {
+        "sub": "Galaxy Xcover 4",
+        "rel": "is first to receive",
+        "obj": "December 2018 security patch"
+      },
+      {
+        "sub": "December 2018 security patch",
+        "rel": "includes patches from",
+        "obj": "Google"
+      },
+      {
+        "sub": "December 2018 security patch",
+        "rel": "is a security update for",
+        "obj": "Android"
+      },
+      {
+        "sub": "December 2018 security patch",
+        "rel": "includes patches from",
+        "obj": "Samsung custom software"
+      },
+      {
+        "sub": "December 2018 security patch",
+        "rel": "has fixes for",
+        "obj": "six critical vulnerabilities"
+      },
+      {
+        "sub": "six critical vulnerabilities",
+        "rel": "could enable",
+        "obj": "privileged process"
+      },
+      {
+        "sub": "40 Samsung Vulnerabilities and Exposures (SVE) items",
+        "rel": "has vulnerabilities in",
+        "obj": "Secure Folder app"
+      },
+      {
+        "sub": "40 Samsung Vulnerabilities and Exposures (SVE) items",
+        "rel": "has vulnerabilities in",
+        "obj": "gallery app"
+      },
+      {
+        "sub": "Secure Folder app",
+        "rel": "can be accessed without authentication",
+        "obj": "authentication"
+      },
+      {
+        "sub": "gallery app",
+        "rel": "exposes",
+        "obj": "authentication"
+      },
+      {
+        "sub": "December 2018 security patch",
+        "rel": "is part of a maintenance release",
+        "obj": "security maintenance release"
+      },
+      {
+        "sub": "security maintenance release",
+        "rel": "is released monthly",
+        "obj": "monthly security maintenance release"
+      },
+      {
+        "sub": "Samsung",
+        "rel": "rolls out to",
+        "obj": "supported devices"
+      },
+      {
+        "sub": "Samsung",
+        "rel": "may start rolling it out to",
+        "obj": "high-end devices"
+      },
+      {
+        "sub": "December 2018 security patch",
+        "rel": "is scheduled for",
+        "obj": "coming weeks"
+      },
+      {
+        "sub": "December 2018 security patch",
+        "rel": "is rolled out to",
+        "obj": "next few days"
+      },
+      {
+        "sub": "December 2018 security patch",
+        "rel": "has no need to patch",
+        "obj": "moderate risk vulnerability"
+      },
+      {
+        "sub": "December 2018 security patch",
+        "rel": "has no need to patch",
+        "obj": "low-risk vulnerability"
+      },
+      {
+        "sub": "40 Samsung Vulnerabilities and Exposures (SVE) items",
+        "rel": "is included in",
+        "obj": "December 2018 security patch"
+      },
+      {
+        "sub": "Samsung",
+        "rel": "announces as part of",
+        "obj": "monthly security maintenance release"
+      },
+      {
+        "sub": "December 2018 security patch",
+        "rel": "is a component of",
+        "obj": "Android"
+      },
+      {
+        "sub": "December 2018 security patch",
+        "rel": "is a component of",
+        "obj": "Samsung custom software"
+      }
+    ]
+  }
+}

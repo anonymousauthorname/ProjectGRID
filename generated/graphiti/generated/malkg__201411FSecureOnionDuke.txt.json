@@ -1,0 +1,253 @@
+{
+  "sample_id": "malkg__201411FSecureOnionDuke.txt",
+  "sample_index": 134,
+  "source": "malkg",
+  "file_name": "201411FSecureOnionDuke.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "OnionDuke",
+        "type": "Malware"
+      },
+      {
+        "name": "MiniDuke",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Tor",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "overpict.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "leveldelta.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "grouptumbler.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "airtravelabroad.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "beijingnewsblog.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "nasdaqblog.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "natureinhome.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "nestedmail.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "nostressjob.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "nytunion.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "oilnewsblog.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "sixsquare.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "ustradecomp.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "C&C URLs",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Trojan-Dropper:W32/OnionDuke.A",
+        "type": "Indicator"
+      },
+      {
+        "name": "Backdoor:W32/OnionDuke.A",
+        "type": "Indicator"
+      },
+      {
+        "name": "Backdoor:W32/OnionDuke.B",
+        "type": "Indicator"
+      },
+      {
+        "name": "Russia",
+        "type": "Location"
+      },
+      {
+        "name": "European government agencies",
+        "type": "Organization"
+      },
+      {
+        "name": "NATO",
+        "type": "Organization"
+      },
+      {
+        "name": "Twitter",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "F-Secure",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "OnionDuke",
+        "rel": "spreads through",
+        "obj": "Tor"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "INFECTS",
+        "obj": "Torrent files"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "CONTAINS",
+        "obj": "Backdoor:W32/OnionDuke.A"
+      },
+      {
+        "sub": "Backdoor:W32/OnionDuke.A",
+        "rel": "connects to",
+        "obj": "C&C URLs"
+      },
+      {
+        "sub": "Backdoor:W32/OnionDuke.B",
+        "rel": "connects to",
+        "obj": "C&C URLs"
+      },
+      {
+        "sub": "Backdoor:W32/OnionDuke.A",
+        "rel": "USES",
+        "obj": "overpict.com"
+      },
+      {
+        "sub": "Backdoor:W32/OnionDuke.A",
+        "rel": "abuses as c&c channel",
+        "obj": "Twitter"
+      },
+      {
+        "sub": "overpict.com",
+        "rel": "registered by",
+        "obj": "John Kasai"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "REGISTERED",
+        "obj": "airtravelabroad.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "REGISTERED",
+        "obj": "beijingnewsblog.net"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "REGISTERED",
+        "obj": "grouptumbler.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "REGISTERED",
+        "obj": "leveldelta.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "REGISTERED",
+        "obj": "nasdaqblog.net"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "REGISTERED",
+        "obj": "natureinhome.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "REGISTERED",
+        "obj": "nestedmail.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "REGISTERED",
+        "obj": "nostressjob.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "REGISTERED",
+        "obj": "nytunion.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "REGISTERED",
+        "obj": "oilnewsblog.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "REGISTERED",
+        "obj": "sixsquare.net"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "REGISTERED",
+        "obj": "ustradecomp.com"
+      },
+      {
+        "sub": "leveldelta.com",
+        "rel": "used by",
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "grouptumbler.com",
+        "rel": "used by",
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "ATTACKED",
+        "obj": "European government agencies"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "ATTACKED",
+        "obj": "NATO"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "researched by",
+        "obj": "F-Secure"
+      }
+    ]
+  }
+}

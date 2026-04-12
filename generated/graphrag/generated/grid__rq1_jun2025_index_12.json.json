@@ -1,0 +1,144 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_12.json",
+  "sample_index": 204,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_12.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2022-30190",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "FOLLINA",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "MICROSOFT SUPPORT DIAGNOSTIC TOOL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MICROSOFT OFFICE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "KASPERSKY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "BENJAMIN PACHECO",
+        "type": "PERSON"
+      },
+      {
+        "name": "AMR",
+        "type": "EVENT"
+      },
+      {
+        "name": "EXPLOIT.MSOFFICE.CVE-2021-40444.A",
+        "type": "MALWARE"
+      },
+      {
+        "name": "EXPLOIT.MSOFFICE.AGENT.N",
+        "type": "MALWARE"
+      },
+      {
+        "name": "EXPLOIT.MSOFFICE.GENERIC",
+        "type": "MALWARE"
+      },
+      {
+        "name": "MANAGED DETECTION AND RESPONSE",
+        "type": "SERVICE"
+      },
+      {
+        "name": "WINDOWS EXPLORER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "REGISTRY KEY HKEY_CLASSES_ROOT\\ms-msdt",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "COMMAND PROMPT",
+        "type": "TOOL"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "related_to",
+        "obj": "FOLLINA"
+      },
+      {
+        "sub": "FOLLINA",
+        "rel": "related_to",
+        "obj": "MICROSOFT SUPPORT DIAGNOSTIC TOOL"
+      },
+      {
+        "sub": "FOLLINA",
+        "rel": "related_to",
+        "obj": "MICROSOFT OFFICE"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "related_to",
+        "obj": "MICROSOFT OFFICE"
+      },
+      {
+        "sub": "KASPERSKY",
+        "rel": "related_to",
+        "obj": "EXPLOIT.MSOFFICE.CVE-2021-40444.A"
+      },
+      {
+        "sub": "KASPERSKY",
+        "rel": "related_to",
+        "obj": "EXPLOIT.MSOFFICE.AGENT.N"
+      },
+      {
+        "sub": "KASPERSKY",
+        "rel": "related_to",
+        "obj": "EXPLOIT.MSOFFICE.GENERIC"
+      },
+      {
+        "sub": "KASPERSKY",
+        "rel": "related_to",
+        "obj": "MANAGED DETECTION AND RESPONSE"
+      },
+      {
+        "sub": "FOLLINA",
+        "rel": "related_to",
+        "obj": "WINDOWS EXPLORER"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "related_to",
+        "obj": "REGISTRY KEY HKEY_CLASSES_ROOT\\ms-msdt"
+      },
+      {
+        "sub": "COMMAND PROMPT",
+        "rel": "related_to",
+        "obj": "REGISTRY KEY HKEY_CLASSES_ROOT\\ms-msdt"
+      },
+      {
+        "sub": "BENJAMIN PACHECO",
+        "rel": "related_to",
+        "obj": "KASPERSKY"
+      }
+    ]
+  }
+}

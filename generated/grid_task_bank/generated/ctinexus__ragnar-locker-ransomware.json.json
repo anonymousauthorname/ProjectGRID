@@ -1,0 +1,291 @@
+{
+  "sample_id": "ctinexus__ragnar-locker-ransomware.json",
+  "sample_index": 61,
+  "source": "ctinexus",
+  "file_name": "ragnar-locker-ransomware.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Ragnar Locker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the ransomware group",
+          "the ransomware",
+          "Ragnar Locker"
+        ]
+      },
+      {
+        "name": "the FBI",
+        "type": "security-product",
+        "alias": [
+          "the FBI"
+        ]
+      },
+      {
+        "name": "April 2020",
+        "type": "date-time"
+      },
+      {
+        "name": "December 2019",
+        "type": "date-time"
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the gang"
+        ]
+      },
+      {
+        "name": "double extortion tactic",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "threat actors",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "sensitive data",
+        "type": "vulnerability"
+      },
+      {
+        "name": "encryption attack",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "RDP service",
+        "type": "general-software"
+      },
+      {
+        "name": "brute force",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "stolen credentials",
+        "type": "credential-value"
+      },
+      {
+        "name": "dark web",
+        "type": "infrastructure"
+      },
+      {
+        "name": "CVE-2017-0213",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Windows COM Aggregate Marshaler",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "elevation of privilege",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "arbitrary code",
+        "type": "general-software"
+      },
+      {
+        "name": "Microsoft",
+        "type": "security-product"
+      },
+      {
+        "name": "specially crafted application",
+        "type": "hacker-tool"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Ragnar Locker",
+        "rel": "was discovered by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the FBI"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "has actually been active since",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "December 2019"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "is both the name of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "the ransomware group"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "is the name of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "the ransomware"
+      },
+      {
+        "sub": "the gang",
+        "rel": "works as a part of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a ransomware family"
+      },
+      {
+        "sub": "the gang",
+        "rel": "are associated with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "several ransomware variants or threat actor groups"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "is known for using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "double extortion tactic"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "exfiltrating",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "sensitive data"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "triggering",
+        "rel_type": [
+          "commits"
+        ],
+        "obj": "encryption attack"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "threatening to leak",
+        "rel_type": [
+          "threatens-to-leak"
+        ],
+        "obj": "sensitive data"
+      },
+      {
+        "sub": "the threat actor",
+        "rel": "frequently changes",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "their obfuscation techniques"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "initiates their attacks by compromising",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the networks of companies"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "compromises",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the networks of companies through RDP service"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "brute force"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "stolen credentials"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "purchased on",
+        "rel_type": [
+          "purchases"
+        ],
+        "obj": "dark web"
+      },
+      {
+        "sub": "the threat actor",
+        "rel": "elevates their privileges by exploiting",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2017-0213"
+      },
+      {
+        "sub": "CVE-2017-0213",
+        "rel": "is found in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Windows COM Aggregate Marshaler"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "describes",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "CVE-2017-0213 as an elevation of privilege"
+      },
+      {
+        "sub": "CVE-2017-0213",
+        "rel": "is an",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "elevation of privilege"
+      },
+      {
+        "sub": "elevation of privilege",
+        "rel": "allows attackers to run",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "arbitrary code"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "runs",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "a specially crafted application"
+      }
+    ]
+  }
+}

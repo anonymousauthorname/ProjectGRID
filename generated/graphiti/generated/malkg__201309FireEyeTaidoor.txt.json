@@ -1,0 +1,226 @@
+{
+  "sample_id": "malkg__201309FireEyeTaidoor.txt",
+  "sample_index": 149,
+  "source": "malkg",
+  "file_name": "201309FireEyeTaidoor.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Taidoor",
+        "type": "Malware"
+      },
+      {
+        "name": "Taleret",
+        "type": "Malware"
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Yahoo Blogs",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "roudan.serveftp.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "mac.gov.hpc.tw",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "opp.gov.taiwans.tw",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "nscnet.gov.medicare.tw",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "mac.gov.skies.tw",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "klserver.servehttp.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "kllserver.serveftp.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "202.142.153.154",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "80.149.239.139",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "202.142.172.131",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "www.facebook.trickip.NET",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "www.braintrust.AlmostMy.COM",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Microsoft Office",
+        "type": "Software"
+      },
+      {
+        "name": "People's Republic of China",
+        "type": "Location"
+      },
+      {
+        "name": "Taiwan",
+        "type": "Location"
+      },
+      {
+        "name": "government agencies",
+        "type": "Organization"
+      },
+      {
+        "name": "corporate entities",
+        "type": "Organization"
+      },
+      {
+        "name": "think tanks",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Taidoor",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "Taidoor",
+        "rel": "USES",
+        "obj": "Yahoo Blogs"
+      },
+      {
+        "sub": "Taidoor",
+        "rel": "connects to",
+        "obj": "roudan.serveftp.com"
+      },
+      {
+        "sub": "Taidoor",
+        "rel": "connects to",
+        "obj": "mac.gov.hpc.tw"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "USES",
+        "obj": "Yahoo Blogs"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "connects to",
+        "obj": "opp.gov.taiwans.tw"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "connects to",
+        "obj": "nscnet.gov.medicare.tw"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "connects to",
+        "obj": "mac.gov.skies.tw"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "connects to",
+        "obj": "klserver.servehttp.com"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "connects to",
+        "obj": "kllserver.serveftp.com"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "connects to",
+        "obj": "202.142.153.154"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "connects to",
+        "obj": "80.149.239.139"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "connects to",
+        "obj": "202.142.172.131"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "connects to",
+        "obj": "www.facebook.trickip.NET"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "connects to",
+        "obj": "www.braintrust.AlmostMy.COM"
+      },
+      {
+        "sub": "Taidoor",
+        "rel": "delivers through",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "Taidoor",
+        "rel": "TARGETS",
+        "obj": "People's Republic of China"
+      },
+      {
+        "sub": "Taidoor",
+        "rel": "TARGETS",
+        "obj": "Taiwan"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "TARGETS",
+        "obj": "Taiwan"
+      },
+      {
+        "sub": "Taidoor",
+        "rel": "ATTACKS",
+        "obj": "government agencies"
+      },
+      {
+        "sub": "Taidoor",
+        "rel": "ATTACKS",
+        "obj": "corporate entities"
+      },
+      {
+        "sub": "Taidoor",
+        "rel": "ATTACKS",
+        "obj": "think tanks"
+      }
+    ]
+  }
+}

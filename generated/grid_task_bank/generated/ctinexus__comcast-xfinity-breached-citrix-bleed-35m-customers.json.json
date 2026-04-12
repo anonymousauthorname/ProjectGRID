@@ -1,0 +1,242 @@
+{
+  "sample_id": "ctinexus__comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "sample_index": 98,
+  "source": "ctinexus",
+  "file_name": "comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2023-4966",
+        "type": "vulnerability",
+        "alias": [
+          "CitrixBleed"
+        ]
+      },
+      {
+        "name": "CitrixBleed",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2023-4966"
+        ]
+      },
+      {
+        "name": "Citrix Systems' NetScaler ADC and Gateway networking products",
+        "type": "general-software",
+        "alias": [
+          "NetScaler ADC",
+          "NetScaler Gateway"
+        ]
+      },
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Comcast Xfinity",
+        "type": "organization",
+        "alias": [
+          "cable giant"
+        ]
+      },
+      {
+        "name": "customer data",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "usernames",
+        "type": "credential-value"
+      },
+      {
+        "name": "hashed passwords",
+        "type": "credential-value"
+      },
+      {
+        "name": "names",
+        "type": "identity"
+      },
+      {
+        "name": "contact information",
+        "type": "identity"
+      },
+      {
+        "name": "last four digits of Social Security numbers",
+        "type": "identity"
+      },
+      {
+        "name": "dates of birth",
+        "type": "identity"
+      },
+      {
+        "name": "security questions and answers",
+        "type": "identity"
+      },
+      {
+        "name": "August",
+        "type": "date"
+      },
+      {
+        "name": "October",
+        "type": "date"
+      },
+      {
+        "name": "Monday",
+        "type": "date"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "attackers",
+        "rel": "have been exploiting",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "affecting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Citrix Systems' NetScaler ADC and Gateway networking products"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is also known as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "CitrixBleed"
+      },
+      {
+        "sub": "many organizations",
+        "rel": "have struggled to comprehensively shore up",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "their systems"
+      },
+      {
+        "sub": "Comcast Xfinity",
+        "rel": "is one such organization",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "attackers"
+      },
+      {
+        "sub": "Comcast Xfinity",
+        "rel": "disclosed",
+        "rel_type": [
+          "discloses"
+        ],
+        "obj": "a CitrixBleed-enabled breach of its customer data"
+      },
+      {
+        "sub": "the breach",
+        "rel": "compromised",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "usernames"
+      },
+      {
+        "sub": "the breach",
+        "rel": "compromised",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "hashed passwords"
+      },
+      {
+        "sub": "the breach",
+        "rel": "compromised",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "names"
+      },
+      {
+        "sub": "the breach",
+        "rel": "compromised",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "contact information"
+      },
+      {
+        "sub": "the breach",
+        "rel": "compromised",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "last four digits of Social Security numbers"
+      },
+      {
+        "sub": "the breach",
+        "rel": "compromised",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "dates of birth"
+      },
+      {
+        "sub": "the breach",
+        "rel": "compromised",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "security questions and answers"
+      },
+      {
+        "sub": "attackers",
+        "rel": "have been exploiting",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2023-4966",
+        "special_factuality": [
+          "since at least August"
+        ]
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "was brought to light",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "October",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "the cable giant",
+        "rel": "disclosed",
+        "rel_type": [
+          "discloses"
+        ],
+        "obj": "the breach",
+        "special_factuality": [
+          "on Monday"
+        ]
+      }
+    ]
+  }
+}

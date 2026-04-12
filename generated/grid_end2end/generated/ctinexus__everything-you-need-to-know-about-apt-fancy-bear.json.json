@@ -1,0 +1,368 @@
+{
+  "sample_id": "ctinexus__everything-you-need-to-know-about-apt-fancy-bear.json",
+  "sample_index": 81,
+  "source": "ctinexus",
+  "file_name": "everything-you-need-to-know-about-apt-fancy-bear.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Fancy Bear",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "APT 28",
+          "Sofacy",
+          "Swallowtail"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Russian government",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Follina (CVE-2022-30190)",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2022-30190"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malicious activity",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "researchers from Malwarebytes",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malicious documents",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Democratic National Committee (DNC)",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "World Anti-Doping Agency (WADA)",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "confidential drug testing information",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": [
+          "World Anti-Doping Agency (WADA)"
+        ]
+      },
+      {
+        "name": "Fancy Bears",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "energy, government, media, aerospace, and defense sectors",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "phishing campaigns",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "credential harvesting",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "computers and mobile devices",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "European military",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "European government",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "A South American country's government",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "An Eastern European embassy",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "A prominent international organization",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Ukrainians",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft zero-day",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": [
+          "Follina (CVE-2022-30190)"
+        ]
+      },
+      {
+        "name": "exploit for the Microsoft zero-day",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the group",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Fancy Bear"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Fancy Bear",
+        "rel": "linked to",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Russian government"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "energy, government, media, aerospace, and defense sectors"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "phishing campaigns"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "credential harvesting"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "computers and mobile devices"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "attacked",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Democratic National Committee (DNC)"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "attacked",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "World Anti-Doping Agency (WADA)"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "leaking",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "confidential drug testing information"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "leaked information on",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "Fancy Bears"
+      },
+      {
+        "sub": "researchers from Malwarebytes",
+        "rel": "observed",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "malicious activity"
+      },
+      {
+        "sub": "the group",
+        "rel": "sending",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malicious documents"
+      },
+      {
+        "sub": "malicious documents",
+        "rel": "contained",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "exploit for the Microsoft zero-day"
+      },
+      {
+        "sub": "exploit for the Microsoft zero-day",
+        "rel": "exploits",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Follina (CVE-2022-30190)"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "European military"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "European government"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "A South American country's government"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "An Eastern European embassy"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "A prominent international organization"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "took credit for",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "the attack"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "running",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "multiple intrusion operations"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "motivated by",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "intelligence gathering"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "returned to the shadows",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "the shadows"
+      },
+      {
+        "sub": "Fancy Bear",
+        "rel": "attacked",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Ukrainians"
+      }
+    ]
+  }
+}

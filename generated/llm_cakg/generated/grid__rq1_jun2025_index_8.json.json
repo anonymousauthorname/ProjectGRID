@@ -1,0 +1,123 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_8.json",
+  "sample_index": 247,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_8.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2018-4878",
+        "type": "Entity"
+      },
+      {
+        "name": "Flash vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "use after free",
+        "type": "Entity"
+      },
+      {
+        "name": "Remote Code Execute",
+        "type": "Entity"
+      },
+      {
+        "name": "malformed Flash object",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Excel document",
+        "type": "Entity"
+      },
+      {
+        "name": "compromised website",
+        "type": "Entity"
+      },
+      {
+        "name": "Group 123",
+        "type": "Entity"
+      },
+      {
+        "name": "Talos",
+        "type": "Entity"
+      },
+      {
+        "name": "Flash 0-Day",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Flash 0-Day",
+        "rel": "exploits",
+        "obj": "CVE-2018-4878"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a",
+        "obj": "use after free"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "allows",
+        "obj": "Remote Code Execute"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is triggered by",
+        "obj": "malformed Flash object"
+      },
+      {
+        "sub": "Group 123",
+        "rel": "exploits",
+        "obj": "Flash 0-Day"
+      },
+      {
+        "sub": "Group 123",
+        "rel": "uses",
+        "obj": "Flash object"
+      },
+      {
+        "sub": "Flash object",
+        "rel": "is embedded in",
+        "obj": "Microsoft Excel document"
+      },
+      {
+        "sub": "Microsoft Excel document",
+        "rel": "is opened",
+        "obj": "by attacker"
+      },
+      {
+        "sub": "attacker",
+        "rel": "executes",
+        "obj": "exploit"
+      },
+      {
+        "sub": "exploit",
+        "rel": "downloads",
+        "obj": "additional payload"
+      },
+      {
+        "sub": "additional payload",
+        "rel": "is downloaded from",
+        "obj": "compromised website"
+      }
+    ]
+  }
+}

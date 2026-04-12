@@ -1,0 +1,478 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_38.json",
+  "sample_index": 228,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_38.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "BrickerBot.1",
+        "type": "malware",
+        "alias": [
+          "this intense, shortlived bot (BrickerBot.1)",
+          "the original BrickerBot.1",
+          "the bot",
+          "BrickerBot.1"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "BrickerBot.2",
+        "type": "malware",
+        "alias": [
+          "a second, very similar bot (BrickerBot.2)",
+          "the real thing",
+          "the bot",
+          "the bot associated with BrickerBot.2"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "BrickerBot.3",
+        "type": "malware",
+        "alias": [
+          "a new version of the BrickerBot PDoS attack (BrickerBot.3)",
+          "this bot",
+          "the new PDoS attempt sequence",
+          "the bots that are responsible for performing the attacks"
+        ],
+        "mother entity": [
+          "BrickerBot.1"
+        ]
+      },
+      {
+        "name": "BrickerBot.4",
+        "type": "malware",
+        "alias": [
+          "yet another, very similar sequence of commands. BrickerBot.4",
+          "the isolated bot"
+        ],
+        "mother entity": [
+          "BrickerBot.3"
+        ]
+      },
+      {
+        "name": "Catalin Cimpany",
+        "type": "identity",
+        "alias": [
+          "Cimpanu"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Janit0r",
+        "type": "identity",
+        "alias": [
+          "The Janit0r",
+          "the Janit0r",
+          "the author of BrickerBot"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Victor Gevers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Dropbear SSH server",
+        "type": "general-software",
+        "alias": [
+          "Dropbear",
+          "SSH2.0dropbear0.51",
+          "SSH2.0dropbear2013.58",
+          "SSH2.0dropbear2014.63"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Busyboxbased Linux devices",
+        "type": "general-software",
+        "alias": [
+          "Busyboxbased Linux device",
+          "Busyboxbased Linux devices"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Sricam AP003 Metal Gun Type Waterproof Outdoor Bullet IP camera",
+        "type": "file",
+        "alias": [
+          "the camera",
+          "the device in question"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "PDoS attempts",
+        "type": "attack-pattern",
+        "alias": [
+          "DDoS attacks",
+          "the attacks",
+          "PDoS attempt sequence",
+          "1,118 PDoS attempts"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "honeypots",
+        "type": "infrastructure",
+        "alias": [
+          "our honeypots",
+          "the honeypot",
+          "a different honeypot"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "IP addresses",
+        "type": "ipv4-addr",
+        "alias": [
+          "clear net IP addresses"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "telnet",
+        "type": "general-software",
+        "alias": [
+          "exposed publically telnet"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "factory default credentials",
+        "type": "credential-value",
+        "alias": [
+          "default credentials",
+          "unchanged factory default credentials"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Mirai exploit vector",
+        "type": "attack-pattern",
+        "alias": [
+          "the Mirai exploit vector"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ZoomEye and Shodan searches",
+        "type": "security-product",
+        "alias": [
+          "ZoomEye and Shodan"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "root",
+        "type": "credential-value",
+        "alias": [
+          "root and limiting the number of kernel threats"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "fork bomb",
+        "type": "hacker-tool",
+        "alias": [
+          "signature for BrickerBot.2"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "TOR egress nodes",
+        "type": "infrastructure",
+        "alias": [
+          "location(s) concealed by TOR egress nodes"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "radware emergency response team",
+        "type": "identity",
+        "alias": [
+          "Radwares Emergency Response Team"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "network behavioral analysis",
+        "type": "security-product",
+        "alias": [
+          "Network Behavioral Analysis"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "user/entity behavioral analysis (UEBA)",
+        "type": "security-product",
+        "alias": [
+          "UEBA"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "DPI signature",
+        "type": "course-of-action",
+        "alias": [
+          "a DPI signature to detect default credentials"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "20162017 Global Application Network Security Report",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "The 20162017 Global Application Network Security Report"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "get-logon-history.ps1",
+        "type": "hacker-tool",
+        "alias": [
+          "this script",
+          "the script"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "our honeypots",
+        "rel": "recorded",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "PDoS attempts"
+      },
+      {
+        "sub": "BrickerBot.1",
+        "rel": "started PDoS attempts",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "PDoS attempts"
+      },
+      {
+        "sub": "BrickerBot.2",
+        "rel": "started PDoS attempts",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "PDoS attempts"
+      },
+      {
+        "sub": "BrickerBot.2",
+        "rel": "started PDoS attempts",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "TOR egress nodes"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "detected on a different honeypot location",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "honeypots"
+      },
+      {
+        "sub": "Catalin Cimpany",
+        "rel": "published the article on the author of BrickerBot",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Janit0r"
+      },
+      {
+        "sub": "Janit0r",
+        "rel": "is the author of BrickerBot",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "BrickerBot.1"
+      },
+      {
+        "sub": "Janit0r",
+        "rel": "reached out to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Victor Gevers"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Busyboxbased Linux devices"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Sricam AP003 Metal Gun Type Waterproof Outdoor Bullet IP camera"
+      },
+      {
+        "sub": "BrickerBot.1",
+        "rel": "tries to corrupt",
+        "rel_type": [
+          "corrupts"
+        ],
+        "obj": "block devices"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "tries to corrupt",
+        "rel_type": [
+          "corrupts"
+        ],
+        "obj": "mtd0,1 and mtdblock1,2,3"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "tries to corrupt",
+        "rel_type": [
+          "corrupts"
+        ],
+        "obj": "/dev/ram0"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "removes",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "default route"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "disabling",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "TCP timestamps"
+      },
+      {
+        "sub": "BrickerBot.3",
+        "rel": "limiting",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "kernel threats"
+      },
+      {
+        "sub": "BrickerBot.2",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "fork bomb"
+      },
+      {
+        "sub": "BrickerBot.4",
+        "rel": "performed 90 attacks",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "PDoS attempts"
+      },
+      {
+        "sub": "BrickerBot.4",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "outdated Dropbear SSH server"
+      },
+      {
+        "sub": "BrickerBot.4",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "IP cameras"
+      },
+      {
+        "sub": "BrickerBot.1",
+        "rel": "got disconnected from the network",
+        "rel_type": [
+          "corrupts"
+        ],
+        "obj": "Sricam AP003 Metal Gun Type Waterproof Outdoor Bullet IP camera"
+      },
+      {
+        "sub": "ZoomEye and Shodan searches",
+        "rel": "based on the source IPs of the attacks",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "IP addresses"
+      },
+      {
+        "sub": "ZoomEye and Shodan searches",
+        "rel": "revealed",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Dropbear SSH server"
+      },
+      {
+        "sub": "Mirai exploit vector",
+        "rel": "to compromise the target",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Busyboxbased Linux devices"
+      },
+      {
+        "sub": "radware emergency response team",
+        "rel": "authored",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "20162017 Global Application Network Security Report"
+      },
+      {
+        "sub": "network behavioral analysis",
+        "rel": "to detect anomalies",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "anomalies"
+      },
+      {
+        "sub": "DPI signature",
+        "rel": "to detect default credentials",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "default credentials"
+      }
+    ]
+  }
+}

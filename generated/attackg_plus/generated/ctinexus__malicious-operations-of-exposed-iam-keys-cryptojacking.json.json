@@ -1,0 +1,282 @@
+{
+  "sample_id": "ctinexus__malicious-operations-of-exposed-iam-keys-cryptojacking.json",
+  "sample_index": 62,
+  "source": "ctinexus",
+  "file_name": "malicious-operations-of-exposed-iam-keys-cryptojacking.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Unit 42",
+        "rel": "Belong to",
+        "obj": "Threat Actor"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "Belong to",
+        "obj": "Threat Actor"
+      },
+      {
+        "sub": "GitHub",
+        "rel": "Has URL",
+        "obj": "https://github.com"
+      },
+      {
+        "sub": "GitHub",
+        "rel": "Has value",
+        "obj": "IAM credentials"
+      },
+      {
+        "sub": "GitHub",
+        "rel": "Has value",
+        "obj": "identity and access management  information"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "Operate",
+        "obj": "GitHub"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "Use",
+        "obj": "public GitHub repositories"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "Perform",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "Modify",
+        "obj": "victim organizational information"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "Locate at",
+        "obj": "public GitHub repositories"
+      },
+      {
+        "sub": "Public GitHub repositories",
+        "rel": "Has geolocation",
+        "obj": "Internet"
+      },
+      {
+        "sub": "IAM credentials",
+        "rel": "Has vulnerability",
+        "obj": "unauthorized access"
+      },
+      {
+        "sub": "Identity and access management systems",
+        "rel": "Has vulnerability",
+        "obj": "credential exposure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "AWS Elastic Compute  instance"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Cloud infrastructure"
+      },
+      {
+        "sub": "Cloud infrastructure",
+        "rel": "Has value",
+        "obj": "Cryptojacking operations"
+      },
+      {
+        "sub": "Cloud infrastructure",
+        "rel": "Belong to",
+        "obj": "Threat Actor"
+      },
+      {
+        "sub": "Resource Development",
+        "rel": "Has tactic",
+        "obj": "Cryptojacking"
+      },
+      {
+        "sub": "Resource Development",
+        "rel": "Has technique",
+        "obj": "Establish and develop cloud resources"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Has vulnerability",
+        "obj": "Exposed IAM credentials"
+      },
+      {
+        "sub": "Exposed IAM credentials",
+        "rel": "Use",
+        "obj": "Cloud environments"
+      },
+      {
+        "sub": "AWS systems",
+        "rel": "Operate",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Belong to",
+        "obj": "Credential-based initial access"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "EC2 Instance"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "EC2 Instance"
+      },
+      {
+        "sub": "Cryptojacking",
+        "rel": "Belong to",
+        "obj": "Execution"
+      },
+      {
+        "sub": "Execution",
+        "rel": "Has tactic",
+        "obj": "Execution"
+      },
+      {
+        "sub": "Cryptojacking",
+        "rel": "Has value",
+        "obj": "Cryptocurrency Mining Software"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Cryptocurrency Mining Software"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Has vulnerability",
+        "obj": "EC2 instances"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Operate",
+        "obj": "EC2 instances"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Maintain access",
+        "obj": "EC2 instances"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Has vulnerability",
+        "obj": "Exposed IAM credentials in public GitHub repositories"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Exposed IAM credentials in public GitHub repositories"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Account names and passwords"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Belong to",
+        "obj": "IAM credentials"
+      },
+      {
+        "sub": "IAM credentials",
+        "rel": "Has value",
+        "obj": "Account names and passwords"
+      },
+      {
+        "sub": "GitHub repositories",
+        "rel": "Locate at",
+        "obj": "Public repositories"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Modify",
+        "obj": "Sensitive authentication data"
+      },
+      {
+        "sub": "Sensitive authentication data",
+        "rel": "Has geolocation",
+        "obj": "Cloud services"
+      },
+      {
+        "sub": "- Adversary",
+        "rel": "Operate",
+        "obj": "AWS environments"
+      },
+      {
+        "sub": "- AWS environments",
+        "rel": "Has value",
+        "obj": "EC2 instances"
+      },
+      {
+        "sub": "- AWS environments",
+        "rel": "Has value",
+        "obj": "network configurations"
+      },
+      {
+        "sub": "- AWS environments",
+        "rel": "Has value",
+        "obj": "cloud resources"
+      },
+      {
+        "sub": "- Adversary",
+        "rel": "Use",
+        "obj": "AWS services"
+      },
+      {
+        "sub": "- AWS services",
+        "rel": "Has value",
+        "obj": "configuration details"
+      },
+      {
+        "sub": "- Adversary",
+        "rel": "Has vulnerability",
+        "obj": "exposed IAM credentials"
+      },
+      {
+        "sub": "- Adversary",
+        "rel": "Modify",
+        "obj": "system information"
+      },
+      {
+        "sub": "- Adversary",
+        "rel": "Locate at",
+        "obj": "cloud infrastructure"
+      },
+      {
+        "sub": "- Discovery tactic",
+        "rel": "Belong to",
+        "obj": "Adversary"
+      }
+    ]
+  }
+}

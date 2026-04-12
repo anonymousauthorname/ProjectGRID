@@ -1,0 +1,627 @@
+{
+  "sample_id": "securenlp__Targeting_Syrian_ISIS_Critics",
+  "sample_index": 166,
+  "source": "securenlp",
+  "file_name": "Targeting_Syrian_ISIS_Critics",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Malware Attack Targeting Syrian ISIS Critics",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Cyber Arabs",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Associated Press, Forbes",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Islamic State in Iraq and Syria (ISIS)",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "ISIS"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Syrian citizen media group critical of Islamic State of Iraq and Syria (ISIS)",
+        "type": "identity",
+        "alias": [
+          "Raqqah is being Slaughtered Silently (RSS)",
+          "the group"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Ar-Raqqah",
+        "type": "location",
+        "alias": [
+          "Raqqah"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Free Syrian Army (FSA)",
+        "type": "identity",
+        "alias": [
+          "FSA"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Syrian regime",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Islamists",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Syrian regime-linked malware",
+        "type": "malware",
+        "alias": [
+          "Pro-regime / Regime-Linked Groups"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Pro-Regime / Regime-Linked Groups",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Syrian diaspora",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Tempsend.com",
+        "type": "url",
+        "alias": [
+          "file-sharing site tempsend.com"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "slideshow.zip",
+        "type": "file",
+        "alias": [
+          "The file to be downloaded"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "slideshow.exe",
+        "type": "file",
+        "alias": [
+          "the decoy ‘slideshow’"
+        ],
+        "mother entity": "slideshow.zip"
+      },
+      {
+        "name": "AdobeR1.exe",
+        "type": "malware",
+        "alias": [
+          "malicious"
+        ],
+        "mother entity": "slideshow.zip"
+      },
+      {
+        "name": "pictures.exe",
+        "type": "general-software",
+        "alias": [
+          "the genuine slideshow"
+        ],
+        "mother entity": "slideshow.zip"
+      },
+      {
+        "name": "AdbrRader.exe",
+        "type": "malware",
+        "alias": [
+          "AdbrRader"
+        ],
+        "mother entity": "slideshow.zip"
+      },
+      {
+        "name": "AdobeIns.exe",
+        "type": "malware",
+        "alias": [
+          "AdobeIns"
+        ],
+        "mother entity": "slideshow.zip"
+      },
+      {
+        "name": "GoogleUpate.exe",
+        "type": "malware",
+        "alias": [
+          "GoogleUpate"
+        ],
+        "mother entity": "slideshow.zip"
+      },
+      {
+        "name": "GooglUpd.exe",
+        "type": "malware",
+        "alias": [
+          "GooglUpd"
+        ],
+        "mother entity": "slideshow.zip"
+      },
+      {
+        "name": "nvidrv.exe",
+        "type": "malware",
+        "alias": [
+          "nvidrv"
+        ],
+        "mother entity": "slideshow.zip"
+      },
+      {
+        "name": "nvisdvr.exe",
+        "type": "malware",
+        "alias": [
+          "nvisdvr"
+        ],
+        "mother entity": "slideshow.zip"
+      },
+      {
+        "name": "rundl132.exe",
+        "type": "malware",
+        "alias": [
+          "rundl132"
+        ],
+        "mother entity": "slideshow.zip"
+      },
+      {
+        "name": "svhosts.exe",
+        "type": "malware",
+        "alias": [
+          "svhosts"
+        ],
+        "mother entity": "slideshow.zip"
+      },
+      {
+        "name": "DefaultKeyboard\\User\\F124-5KK83-F2IV9-FDN293\\JIPC7-K2ODP-OFnD3-FJCC3\\J1K1F-DKV8J-FKVJI-GVKBU\\1",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": "nvidrv.exe"
+      },
+      {
+        "name": "DefaultKeyboard\\User\\F124-5KK83-F2IV9-FDN293\\JIPC7-K2ODP-OFnD3-FJCC3\\J1K2F-DKV8J-FKVJI-GVKBU\\2",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": "AdbrRader.exe"
+      },
+      {
+        "name": "DefaultKeyboard\\User\\F124-5KK83-F2IV9-FDN293\\JIPC7-K2ODP-OFnD3-FJCC3\\J1K3F-DKV8J-FKVJI-GVKBU\\3",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": "GoogleUpate.exe"
+      },
+      {
+        "name": "DefaultKeyboard\\User\\F124-5KK83-F2IV9-FDN293\\JIPC7-K2ODP-OFnD3-FJCC3\\J1K4F-DKV8J-FKVJI-GVKBU\\4",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": "nvisdvr.exe"
+      },
+      {
+        "name": "DefaultKeyboard\\User\\F124-5KK83-F2IV9-FDN293\\JIPC7-K2ODP-OFnD3-FJCC3\\J1K6F-DKV8J-FKVJI-GVKBU\\6",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": "rundl132.exe"
+      },
+      {
+        "name": "http://tempsend [DOT]com/[Redacted]",
+        "type": "url",
+        "alias": [],
+        "mother entity": "slideshow.zip"
+      },
+      {
+        "name": "gmail email address",
+        "type": "email-address",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "inbox.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "myexternalip.com",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "windowsupdate.microsoft.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": "svhosts.exe"
+      },
+      {
+        "name": "[Name Redacted]",
+        "type": "identity",
+        "alias": [],
+        "mother entity": "gmail email address"
+      },
+      {
+        "name": "Citizen Lab",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Junaid Hussain (aka TriCk)",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "teamp0ison hacking team",
+        "type": "identity",
+        "alias": [],
+        "mother entity": "Junaid Hussain (aka TriCk)"
+      },
+      {
+        "name": "PKWARE implementation of zip encryption",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": "AdobeIns.exe"
+      },
+      {
+        "name": "TLS connection",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "VirusTotal",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Targeted Threat Index (TTI)",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Malware Attack Targeting Syrian ISIS Critics",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Syrian citizen media group critical of Islamic State of Iraq and Syria (ISIS)"
+      },
+      {
+        "sub": "Cyber Arabs",
+        "rel": "collaboration",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "Malware Attack Targeting Syrian ISIS Critics"
+      },
+      {
+        "sub": "Syrian citizen media group critical of Islamic State of Iraq and Syria (ISIS)",
+        "rel": "advocacy on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Ar-Raqqah"
+      },
+      {
+        "sub": "Islamic State in Iraq and Syria (ISIS)",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Syrian citizen media group critical of Islamic State of Iraq and Syria (ISIS)"
+      },
+      {
+        "sub": "Islamic State in Iraq and Syria (ISIS)",
+        "rel": "spying on",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Syrian citizen media group critical of Islamic State of Iraq and Syria (ISIS)"
+      },
+      {
+        "sub": "Syrian regime-linked malware",
+        "rel": "differs from",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Syrian regime"
+      },
+      {
+        "sub": "Syrian regime-linked malware",
+        "rel": "focused against",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Syrian citizen media group critical of Islamic State of Iraq and Syria (ISIS)"
+      },
+      {
+        "sub": "Cyber Arabs",
+        "rel": "provided assistance",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Malware Attack Targeting Syrian ISIS Critics"
+      },
+      {
+        "sub": "slideshow.zip",
+        "rel": "sent to",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Syrian citizen media group critical of Islamic State of Iraq and Syria (ISIS)"
+      },
+      {
+        "sub": "slideshow.zip",
+        "rel": "downloaded from",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "Tempsend.com"
+      },
+      {
+        "sub": "slideshow.zip",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "slideshow.exe"
+      },
+      {
+        "sub": "slideshow.exe",
+        "rel": "is a decoy for",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "slideshow.zip"
+      },
+      {
+        "sub": "slideshow.zip",
+        "rel": "downloads",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "AdobeR1.exe"
+      },
+      {
+        "sub": "slideshow.zip",
+        "rel": "downloads",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "pictures.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "writes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "AdbrRader.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "writes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "AdobeIns.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "writes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "GoogleUpate.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "writes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "GooglUpd.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "writes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "nvidrv.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "writes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "nvisdvr.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "writes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "rundl132.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "writes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "svhosts.exe"
+      },
+      {
+        "sub": "nvidrv.exe",
+        "rel": "adds itself to",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "DefaultKeyboard\\User\\F124-5KK83-F2IV9-FDN293\\JIPC7-K2ODP-OFnD3-FJCC3\\J1K1F-DKV8J-FKVJI-GVKBU\\1"
+      },
+      {
+        "sub": "rundl132.exe",
+        "rel": "communicates via",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "DefaultKeyboard\\User\\F124-5KK83-F2IV9-FDN293\\JIPC7-K2ODP-OFnD3-FJCC3\\J1K6F-DKV8J-FKVJI-GVKBU\\6"
+      },
+      {
+        "sub": "nvisdvr.exe",
+        "rel": "communicates via",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "DefaultKeyboard\\User\\F124-5KK83-F2IV9-FDN293\\JIPC7-K2ODP-OFnD3-FJCC3\\J1K4F-DKV8J-FKVJI-GVKBU\\4"
+      },
+      {
+        "sub": "GoogleUpate.exe",
+        "rel": "communicates via",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "DefaultKeyboard\\User\\F124-5KK83-F2IV9-FDN293\\JIPC7-K2ODP-OFnD3-FJCC3\\J1K3F-DKV8J-FKVJI-GVKBU\\3"
+      },
+      {
+        "sub": "AdbrRader.exe",
+        "rel": "communicates via",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "DefaultKeyboard\\User\\F124-5KK83-F2IV9-FDN293\\JIPC7-K2ODP-OFnD3-FJCC3\\J1K2F-DKV8J-FKVJI-GVKBU\\2"
+      },
+      {
+        "sub": "slideshow.zip",
+        "rel": "beacons home with",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "slideshow.zip"
+      },
+      {
+        "sub": "slideshow.zip",
+        "rel": "transmits",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "[Name Redacted]"
+      },
+      {
+        "sub": "AdobeIns.exe",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "inbox.com"
+      },
+      {
+        "sub": "AdobeIns.exe",
+        "rel": "exfiltrate to",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "inbox.com"
+      },
+      {
+        "sub": "AdobeIns.exe",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "PKWARE implementation of zip encryption"
+      },
+      {
+        "sub": "AdobeIns.exe",
+        "rel": "bypasses use of",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "TLS connection"
+      },
+      {
+        "sub": "VirusTotal",
+        "rel": "detection of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "AdobeR1.exe"
+      },
+      {
+        "sub": "Targeted Threat Index (TTI)",
+        "rel": "analyzes",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Malware Attack Targeting Syrian ISIS Critics"
+      },
+      {
+        "sub": "Junaid Hussain (aka TriCk)",
+        "rel": "affiliated-with",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "ISIS"
+      },
+      {
+        "sub": "Junaid Hussain (aka TriCk)",
+        "rel": "working with",
+        "rel_type": [
+          "cooperates-with"
+        ],
+        "obj": "ISIS"
+      },
+      {
+        "sub": "teamp0ison hacking team",
+        "rel": "affiliated-with",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Junaid Hussain (aka TriCk)"
+      }
+    ]
+  }
+}

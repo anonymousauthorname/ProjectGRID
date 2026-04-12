@@ -1,0 +1,442 @@
+{
+  "sample_id": "malkg__201407VinsulaSayad.txt",
+  "sample_index": 120,
+  "source": "malkg",
+  "file_name": "201407VinsulaSayad.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Sayad",
+        "type": "malware",
+        "alias": [
+          "the malware",
+          "Sayad malware",
+          "the Sayad malware",
+          "Sayad Client",
+          "the Sayad malware binary",
+          "Sayad Client (DiagnosticsService.dll)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "WEXTRACT.exe",
+        "type": "file",
+        "alias": [
+          "the main malware WEXTRACT.exe",
+          "main self-extracting binary WEXTRACT.exe"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "~8f60957b3689075fa093b047242c0255.exe",
+        "type": "file",
+        "alias": [
+          "Binder",
+          "the Binder executable malware",
+          "the Binder"
+        ],
+        "mother entity": [
+          "WEXTRACT.exe"
+        ]
+      },
+      {
+        "name": "DiagnosticsService.dll",
+        "type": "file",
+        "alias": [
+          "Sayad (aka Client)",
+          "the malware",
+          "the Client",
+          "the Client (aka Client – DiagnosticsService.dll)"
+        ],
+        "mother entity": [
+          "~8f60957b3689075fa093b047242c0255.exe"
+        ]
+      },
+      {
+        "name": "base.dll",
+        "type": "file",
+        "alias": [
+          "its configuration disguised as a DLL file, base.dll"
+        ],
+        "mother entity": [
+          "~8f60957b3689075fa093b047242c0255.exe"
+        ]
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "general-software",
+        "alias": [
+          "rundll32.exe Windows utility",
+          "Windows utility rundll32.exe",
+          "rundll32.exe"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": ".NET",
+        "type": "general-software",
+        "alias": [
+          ".NET version",
+          ".NET version installed"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Phishing emails",
+        "type": "attack-pattern",
+        "alias": [
+          "phishing email",
+          "phishing emails"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "VirusTotal",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "NCC Group’s Cyber Defence Operations",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "our collegues from NCC Group’s Cyber Defence Operations"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "someone who seems to have a .NET OOP/OOD background"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://0o0o0o0o0.com",
+        "type": "url",
+        "alias": [
+          "malicious Web site hxxp://0o0o0o0o0.com"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "107.6.182.179",
+        "type": "ipv4-addr",
+        "alias": [
+          "IP address 107.6.182.179"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Flying Kitten",
+        "type": "malware",
+        "alias": [
+          "the Iranian hacking group “Ajax Security Team”",
+          "the activities of the Iranian hacking group “Ajax Security Team”"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Client (DiagnosticsService.dll)",
+        "type": "malware",
+        "alias": [
+          "the Sayad Client (DiagnosticsService.dll)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Sayad Client DLL",
+        "type": "file",
+        "alias": [
+          "the Sayad Client DLL"
+        ],
+        "mother entity": [
+          "DiagnosticsService.dll"
+        ]
+      },
+      {
+        "name": "Microsoft C# compiler",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": ".NET Reflector",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Vinsula Execution Engine (VEE)",
+        "type": "security-product",
+        "alias": [
+          "Vinsula Execution Engine"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "IDA Pro",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "WinDBG",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "sqlite3.dll",
+        "type": "file",
+        "alias": [
+          "sqllite3.dll"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Browser cookies",
+        "type": "credential-value",
+        "alias": [
+          "steal browser cookies"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Kerio VPN client user configuration files",
+        "type": "file",
+        "alias": [
+          "VPN related account information"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Shell script",
+        "type": "script",
+        "alias": [
+          "msil",
+          "MSIL",
+          "Managed Intermediate Language"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Sayad",
+        "rel": "distributed through",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Phishing emails"
+      },
+      {
+        "sub": "Sayad",
+        "rel": "steals sensitive data and uploads to a Web server",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "hxxp://0o0o0o0o0.com"
+      },
+      {
+        "sub": "WEXTRACT.exe",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "~8f60957b3689075fa093b047242c0255.exe"
+      },
+      {
+        "sub": "WEXTRACT.exe",
+        "rel": "launches",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "~8f60957b3689075fa093b047242c0255.exe"
+      },
+      {
+        "sub": "~8f60957b3689075fa093b047242c0255.exe",
+        "rel": "checks the installed",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": ".NET"
+      },
+      {
+        "sub": "~8f60957b3689075fa093b047242c0255.exe",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "DiagnosticsService.dll"
+      },
+      {
+        "sub": "~8f60957b3689075fa093b047242c0255.exe",
+        "rel": "drops its configuration disguised as a DLL file",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "base.dll"
+      },
+      {
+        "sub": "~8f60957b3689075fa093b047242c0255.exe",
+        "rel": "modifies the registry so that it will run at startup",
+        "rel_type": [
+          "modifies-or-replaces"
+        ],
+        "obj": "Windows Registry Key"
+      },
+      {
+        "sub": "rundll32.exe",
+        "rel": "loads",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "DiagnosticsService.dll"
+      },
+      {
+        "sub": "Sayad Client (DiagnosticsService.dll)",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "Sayad Client (DiagnosticsService.dll)",
+        "rel": "exfiltrate collected data to",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "hxxp://0o0o0o0o0.com"
+      },
+      {
+        "sub": "Sayad Client (DiagnosticsService.dll)",
+        "rel": "uses the URL to upload data",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "hxxp://0o0o0o0o0.com"
+      },
+      {
+        "sub": "Sayad Client (DiagnosticsService.dll)",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "sqlite3.dll"
+      },
+      {
+        "sub": "Sayad Client (DiagnosticsService.dll)",
+        "rel": "steals",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "Browser cookies"
+      },
+      {
+        "sub": "Sayad Client (DiagnosticsService.dll)",
+        "rel": "transfers",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "Kerio VPN client user configuration files"
+      },
+      {
+        "sub": "Sayad Client (DiagnosticsService.dll)",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "Sayad Client (DiagnosticsService.dll)",
+        "rel": "implements logic in .NET",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": ".NET"
+      },
+      {
+        "sub": "NCC Group’s Cyber Defence Operations",
+        "rel": "published an article on",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Sayad"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "designed",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Sayad"
+      },
+      {
+        "sub": "Sayad Client (DiagnosticsService.dll)",
+        "rel": "registers to run at startup using",
+        "rel_type": [
+          "modifies-or-replaces"
+        ],
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "Sayad Client (DiagnosticsService.dll)",
+        "rel": "starts up using",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "Sayad Client (DiagnosticsService.dll)",
+        "rel": "communicates with C2 server at",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "107.6.182.179"
+      },
+      {
+        "sub": "Sayad Client (DiagnosticsService.dll)",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "PostURL"
+      },
+      {
+        "sub": "Sayad Client (DiagnosticsService.dll)",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "PublicKey"
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "sample_id": "ctinexus__in-depth-look-at-apt35-aka-charming-kitten.json",
+  "sample_index": 55,
+  "source": "ctinexus",
+  "file_name": "in-depth-look-at-apt35-aka-charming-kitten.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT35",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Charming Kitten",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Phosphorus",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Microsoft Exchange Server",
+        "type": "Software"
+      },
+      {
+        "name": "ProxyShell",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Hyperscrape",
+        "type": "Tool"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT35",
+        "rel": "is known as",
+        "obj": "Charming Kitten"
+      },
+      {
+        "sub": "APT35",
+        "rel": "is known as",
+        "obj": "Phosphorus"
+      },
+      {
+        "sub": "APT35",
+        "rel": "ABUSES",
+        "obj": "Microsoft Exchange Server"
+      },
+      {
+        "sub": "APT35",
+        "rel": "EXPLOITS",
+        "obj": "ProxyShell"
+      },
+      {
+        "sub": "APT35",
+        "rel": "USES",
+        "obj": "Hyperscrape"
+      }
+    ]
+  }
+}

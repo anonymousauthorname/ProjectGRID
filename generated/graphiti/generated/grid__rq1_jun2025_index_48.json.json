@@ -1,0 +1,118 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_48.json",
+  "sample_index": 237,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_48.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Win32.Worm.Stuxnet",
+        "type": "Malware"
+      },
+      {
+        "name": "BitDefender",
+        "type": "Organization"
+      },
+      {
+        "name": "SCADA systems",
+        "type": "Software"
+      },
+      {
+        "name": "Siemens WinCC",
+        "type": "Software"
+      },
+      {
+        "name": "Windows",
+        "type": "Software"
+      },
+      {
+        "name": "rootkit drivers",
+        "type": "Indicator"
+      },
+      {
+        "name": "0day exploits",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Removal tool",
+        "type": "Tool"
+      },
+      {
+        "name": "Rzvan Benchea",
+        "type": "Person"
+      },
+      {
+        "name": "Bogdan Timofte",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "BitDefender",
+        "rel": "has released",
+        "obj": "Removal tool"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "INSTALLED",
+        "obj": "rootkit drivers"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "EXPLOITS",
+        "obj": "0day exploits"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "TARGETS",
+        "obj": "SCADA systems"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "TARGETS",
+        "obj": "Siemens WinCC"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "spreads through",
+        "obj": "Windows"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "can be removed by",
+        "obj": "Removal tool"
+      },
+      {
+        "sub": "BitDefender",
+        "rel": "has analyst",
+        "obj": "Rzvan Benchea"
+      },
+      {
+        "sub": "BitDefender",
+        "rel": "has researcher",
+        "obj": "Bogdan Timofte"
+      },
+      {
+        "sub": "Removal tool",
+        "rel": "is compatible with",
+        "obj": "Windows"
+      }
+    ]
+  }
+}

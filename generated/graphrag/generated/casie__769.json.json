@@ -1,0 +1,196 @@
+{
+  "sample_id": "casie__769.json",
+  "sample_index": 12,
+  "source": "casie",
+  "file_name": "769.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "FILECODER.E",
+        "type": "MALWARE"
+      },
+      {
+        "name": "TRUMP LOCKER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "VENUSLOCKER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "ESET",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CHERYL BISWAS",
+        "type": "PERSON"
+      },
+      {
+        "name": "MARC-ETIENNE M.L ÉVEILLÉ",
+        "type": "PERSON"
+      },
+      {
+        "name": "BLEEPING COMPUTER",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MALWAREHUNTER TEAM",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "LAWRENCE ABRAMS",
+        "type": "PERSON"
+      },
+      {
+        "name": "MIKKO HYPPONEN",
+        "type": "PERSON"
+      },
+      {
+        "name": "F-Secure",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "SPORA",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BITTORRENT",
+        "type": "TOOL"
+      },
+      {
+        "name": "TIME MACHINE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ADOBE PREMIERE PRO CC",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MICROSOFT OFFICE 2016",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CUSTOMER SERVICE PORTALS",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "FILECODER.E",
+        "rel": "related_to",
+        "obj": "BITTORRENT"
+      },
+      {
+        "sub": "FILECODER.E",
+        "rel": "related_to",
+        "obj": "TIME MACHINE"
+      },
+      {
+        "sub": "FILECODER.E",
+        "rel": "related_to",
+        "obj": "ADOBE PREMIERE PRO CC"
+      },
+      {
+        "sub": "FILECODER.E",
+        "rel": "related_to",
+        "obj": "MICROSOFT OFFICE 2016"
+      },
+      {
+        "sub": "TRUMP LOCKER",
+        "rel": "related_to",
+        "obj": "VENUSLOCKER"
+      },
+      {
+        "sub": "TRUMP LOCKER",
+        "rel": "related_to",
+        "obj": "MALWAREHUNTER TEAM"
+      },
+      {
+        "sub": "TRUMP LOCKER",
+        "rel": "related_to",
+        "obj": "BLEEPING COMPUTER"
+      },
+      {
+        "sub": "VENUSLOCKER",
+        "rel": "related_to",
+        "obj": "TRUMP LOCKER"
+      },
+      {
+        "sub": "ESET",
+        "rel": "related_to",
+        "obj": "FILECODER.E"
+      },
+      {
+        "sub": "CHERYL BISWAS",
+        "rel": "related_to",
+        "obj": "FILECODER.E"
+      },
+      {
+        "sub": "MARC-ETIENNE M.L ÉVEILLÉ",
+        "rel": "related_to",
+        "obj": "FILECODER.E"
+      },
+      {
+        "sub": "LAWRENCE ABRAMS",
+        "rel": "related_to",
+        "obj": "TRUMP LOCKER"
+      },
+      {
+        "sub": "MIKKO HYPPONEN",
+        "rel": "related_to",
+        "obj": "SPORA"
+      },
+      {
+        "sub": "F-Secure",
+        "rel": "related_to",
+        "obj": "SPORA"
+      },
+      {
+        "sub": "SPORA",
+        "rel": "related_to",
+        "obj": "CUSTOMER SERVICE PORTALS"
+      },
+      {
+        "sub": "BITTORRENT",
+        "rel": "related_to",
+        "obj": "TRUMP LOCKER"
+      },
+      {
+        "sub": "BITTORRENT",
+        "rel": "related_to",
+        "obj": "FILECODER.E"
+      },
+      {
+        "sub": "FILECODER.E",
+        "rel": "related_to",
+        "obj": "MARC-ETIENNE M.L ÉVEILLÉ"
+      },
+      {
+        "sub": "TRUMP LOCKER",
+        "rel": "related_to",
+        "obj": "VENUSLOCKER"
+      },
+      {
+        "sub": "MALWAREHUNTER TEAM",
+        "rel": "related_to",
+        "obj": "TRUMP LOCKER"
+      }
+    ]
+  }
+}

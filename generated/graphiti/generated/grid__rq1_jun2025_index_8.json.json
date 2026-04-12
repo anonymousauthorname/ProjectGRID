@@ -1,0 +1,86 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_8.json",
+  "sample_index": 247,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_8.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Group 123",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "CVE-2018-4878",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Flash",
+        "type": "Software"
+      },
+      {
+        "name": "Talos",
+        "type": "Organization"
+      },
+      {
+        "name": "KISA",
+        "type": "Organization"
+      },
+      {
+        "name": "Microsoft Excel",
+        "type": "Software"
+      },
+      {
+        "name": "compromised website",
+        "type": "Infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Group 123",
+        "rel": "EXPLOITS",
+        "obj": "Flash"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "AFFECTS",
+        "obj": "Flash"
+      },
+      {
+        "sub": "Flash",
+        "rel": "embedded in",
+        "obj": "Microsoft Excel"
+      },
+      {
+        "sub": "Talos",
+        "rel": "IDENTIFIED",
+        "obj": "Group 123"
+      },
+      {
+        "sub": "KISA",
+        "rel": "reported vulnerability in wild",
+        "obj": "Flash"
+      },
+      {
+        "sub": "Flash",
+        "rel": "downloads payload from",
+        "obj": "compromised website"
+      }
+    ]
+  }
+}

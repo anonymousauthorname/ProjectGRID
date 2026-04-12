@@ -1,0 +1,303 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-lockbit.json",
+  "sample_index": 77,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-lockbit.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "LockBit",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the attacker",
+          "LockBit group",
+          "the LockBit group"
+        ]
+      },
+      {
+        "name": "ransomware-as-a-service (RaaS) model",
+        "type": "attack-pattern",
+        "alias": [
+          "RaaS model"
+        ]
+      },
+      {
+        "name": "double extortion methods",
+        "type": "attack-pattern",
+        "alias": [
+          "double extortion"
+        ]
+      },
+      {
+        "name": "StealBit",
+        "type": "malware",
+        "alias": [
+          "the malware StealBit"
+        ]
+      },
+      {
+        "name": "LockBit 2.0",
+        "type": "malware",
+        "alias": [
+          "LockBit 2.0"
+        ]
+      },
+      {
+        "name": "Linux-ESXI Locker version 1.0",
+        "type": "malware",
+        "alias": [
+          "Linux-ESXI Locker"
+        ]
+      },
+      {
+        "name": "ESXi servers",
+        "type": "location",
+        "alias": [
+          "Linux hosts"
+        ]
+      },
+      {
+        "name": "network access brokers",
+        "type": "infrastructure",
+        "alias": [
+          "affiliates",
+          "network access brokers"
+        ]
+      },
+      {
+        "name": "criminal groups",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "other criminal groups"
+        ]
+      },
+      {
+        "name": "Maze",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the now defunct Maze"
+        ]
+      },
+      {
+        "name": "company insiders",
+        "type": "identity",
+        "alias": [
+          "insiders"
+        ]
+      },
+      {
+        "name": "underground technical writing contests",
+        "type": "course-of-action",
+        "alias": [
+          "contests"
+        ]
+      },
+      {
+        "name": "its competitors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "competitors"
+        ]
+      },
+      {
+        "name": "military-grade encryption",
+        "type": "abstract-concept",
+        "alias": [
+          "encryption"
+        ]
+      },
+      {
+        "name": "victims",
+        "type": "identity",
+        "alias": [
+          "targeted organizations"
+        ]
+      },
+      {
+        "name": "targeted organizations",
+        "type": "identity",
+        "alias": [
+          "organizations"
+        ]
+      },
+      {
+        "name": "affiliates",
+        "type": "identity",
+        "alias": [
+          "affiliated parties"
+        ]
+      },
+      {
+        "name": "criminal underground",
+        "type": "location",
+        "alias": [
+          "underground"
+        ]
+      },
+      {
+        "name": "October 2021",
+        "type": "date",
+        "alias": [
+          "2021",
+          "October"
+        ]
+      },
+      {
+        "name": "version 1.0",
+        "type": "version",
+        "alias": [
+          "version 1.0"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "LockBit",
+        "rel": "uses",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "ransomware-as-a-service (RaaS) model"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "stays ahead of",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "its competitors"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "adds pressure to",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "victims"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "created and used",
+        "rel_type": [
+          "malware"
+        ],
+        "obj": "StealBit"
+      },
+      {
+        "sub": "StealBit",
+        "rel": "was seen with",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "LockBit 2.0"
+      },
+      {
+        "sub": "LockBit 2.0",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "military-grade encryption"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "expanded to",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "ESXi servers"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "released",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Linux-ESXI Locker version 1.0"
+      },
+      {
+        "sub": "Linux-ESXI Locker version 1.0",
+        "rel": "can target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Linux hosts"
+      },
+      {
+        "sub": "Linux-ESXI Locker version 1.0",
+        "rel": "could have a big impact on",
+        "rel_type": [
+          "impacts"
+        ],
+        "obj": "targeted organizations",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "LockBit",
+        "rel": "recruits",
+        "rel_type": [
+          "recruits"
+        ],
+        "obj": "affiliates"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "hires",
+        "rel_type": [
+          "hires"
+        ],
+        "obj": "network access brokers"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "cooperates with",
+        "rel_type": [
+          "cooperates-with"
+        ],
+        "obj": "other criminal groups"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "recruits",
+        "rel_type": [
+          "recruits"
+        ],
+        "obj": "company insiders"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "sponsors",
+        "rel_type": [
+          "sponsors"
+        ],
+        "obj": "underground technical writing contests"
+      },
+      {
+        "sub": "LockBit group",
+        "rel": "has built itself into",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "one of the most professional organized criminal gangs in the criminal underground"
+      }
+    ]
+  }
+}

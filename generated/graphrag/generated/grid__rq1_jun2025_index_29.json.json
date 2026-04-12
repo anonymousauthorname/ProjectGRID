@@ -1,0 +1,208 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_29.json",
+  "sample_index": 220,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_29.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CROWDSTRIKE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "ADAM MEYERS",
+        "type": "PERSON"
+      },
+      {
+        "name": "DMITRI ALPEROVITCH",
+        "type": "PERSON"
+      },
+      {
+        "name": "SUPPLY CHAIN ATTACK",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "SOFTWARE SUPPLY CHAIN ATTACK",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "NETSARANG",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CCLEANER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PLUGX",
+        "type": "MALWARE"
+      },
+      {
+        "name": "WICKED PANDA",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "CHINANEXUS",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "M.E. DOC",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "NOTPETYA",
+        "type": "MALWARE"
+      },
+      {
+        "name": "XDATA RANSOMWARE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "PYPI",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "CHECK-IN BEACON",
+        "type": "TOOL"
+      },
+      {
+        "name": "CROWDSTRIKE FALCON INTELLIGENCE",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "2017 GLOBAL THREAT REPORT",
+        "type": "EVENT"
+      },
+      {
+        "name": "WEBCAST",
+        "type": "EVENT"
+      },
+      {
+        "name": "Ukrainian COMPANY",
+        "type": "Unknown"
+      },
+      {
+        "name": "USER-CURATED SYSTEMS",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "ADAM MEYERS",
+        "rel": "related_to",
+        "obj": "CROWDSTRIKE"
+      },
+      {
+        "sub": "DMITRI ALPEROVITCH",
+        "rel": "related_to",
+        "obj": "CROWDSTRIKE"
+      },
+      {
+        "sub": "ADAM MEYERS",
+        "rel": "related_to",
+        "obj": "SUPPLY CHAIN ATTACK"
+      },
+      {
+        "sub": "ADAM MEYERS",
+        "rel": "related_to",
+        "obj": "SOFTWARE SUPPLY CHAIN ATTACK"
+      },
+      {
+        "sub": "CROWDSTRIKE",
+        "rel": "related_to",
+        "obj": "2017 GLOBAL THREAT REPORT"
+      },
+      {
+        "sub": "CROWDSTRIKE",
+        "rel": "related_to",
+        "obj": "WEBCAST"
+      },
+      {
+        "sub": "NETSARANG",
+        "rel": "related_to",
+        "obj": "CHINANEXUS"
+      },
+      {
+        "sub": "CCLEANER",
+        "rel": "related_to",
+        "obj": "NETSARANG"
+      },
+      {
+        "sub": "CCLEANER",
+        "rel": "related_to",
+        "obj": "PLUGX"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "WICKED PANDA"
+      },
+      {
+        "sub": "WICKED PANDA",
+        "rel": "related_to",
+        "obj": "CHINANEXUS"
+      },
+      {
+        "sub": "M.E. DOC",
+        "rel": "related_to",
+        "obj": "NOTPETYA"
+      },
+      {
+        "sub": "M.E. DOC",
+        "rel": "related_to",
+        "obj": "XDATA RANSOMWARE"
+      },
+      {
+        "sub": "PYPI",
+        "rel": "related_to",
+        "obj": "CHECK-IN BEACON"
+      },
+      {
+        "sub": "CROWDSTRIKE FALCON INTELLIGENCE",
+        "rel": "related_to",
+        "obj": "NETSARANG"
+      },
+      {
+        "sub": "CROWDSTRIKE FALCON INTELLIGENCE",
+        "rel": "related_to",
+        "obj": "M.E. DOC"
+      },
+      {
+        "sub": "CROWDSTRIKE FALCON INTELLIGENCE",
+        "rel": "related_to",
+        "obj": "PYPI"
+      },
+      {
+        "sub": "SOFTWARE SUPPLY CHAIN ATTACK",
+        "rel": "related_to",
+        "obj": "SUPPLY CHAIN ATTACK"
+      },
+      {
+        "sub": "M.E. DOC",
+        "rel": "related_to",
+        "obj": "Ukrainian COMPANY"
+      },
+      {
+        "sub": "PYPI",
+        "rel": "related_to",
+        "obj": "USER-CURATED SYSTEMS"
+      }
+    ]
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_8.json",
+  "sample_index": 247,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_8.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2018-4878",
+        "type": "vulnerability",
+        "alias": [
+          "Flash vulnerability"
+        ]
+      },
+      {
+        "name": "Adobe",
+        "type": "security-product",
+        "alias": [
+          "Adobe",
+          "Adobe published"
+        ]
+      },
+      {
+        "name": "KISA",
+        "type": "security-product",
+        "alias": [
+          "KISA (Korean CERT)"
+        ]
+      },
+      {
+        "name": "Flash 0-day",
+        "type": "vulnerability",
+        "alias": [
+          "Flash 0-day used in the wild"
+        ]
+      },
+      {
+        "name": "the exploit",
+        "type": "attack-pattern",
+        "alias": [
+          "exploit",
+          "exploit of CVE-2018-4878"
+        ]
+      },
+      {
+        "name": "Flash object",
+        "type": "file",
+        "alias": [
+          "malformed Flash object"
+        ]
+      },
+      {
+        "name": "Microsoft Excel document",
+        "type": "file",
+        "alias": [
+          "document",
+          "Excel document"
+        ]
+      },
+      {
+        "name": "the compromised website",
+        "type": "url",
+        "alias": [
+          "compromised website"
+        ]
+      },
+      {
+        "name": "additional payload",
+        "type": "file",
+        "alias": [
+          "additional payload"
+        ]
+      },
+      {
+        "name": "Group 123",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Group 123"
+        ]
+      },
+      {
+        "name": "1st of February",
+        "type": "date",
+        "alias": [
+          "February 1st"
+        ]
+      },
+      {
+        "name": "Cisco Blogs",
+        "type": "location",
+        "alias": [
+          "Cisco Blogs / Security / Threat Research"
+        ]
+      },
+      {
+        "name": "Remote Code Execute",
+        "type": "attack-pattern",
+        "alias": [
+          "Remote Code Execute"
+        ]
+      },
+      {
+        "name": "use after free",
+        "type": "attack-pattern",
+        "alias": [
+          "use after free vulnerability"
+        ]
+      },
+      {
+        "name": "Talos Group",
+        "type": "security-product",
+        "alias": [
+          "Talos"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Adobe",
+        "rel": "published an advisory concerning",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2018-4878"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "use after free"
+      },
+      {
+        "sub": "use after free",
+        "rel": "allows",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Remote Code Execute"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "allows",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Remote Code Execute"
+      },
+      {
+        "sub": "malformed Flash object",
+        "rel": "through which",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Remote Code Execute"
+      },
+      {
+        "sub": "KISA (Korean CERT)",
+        "rel": "published an advisory about",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Flash 0-day"
+      },
+      {
+        "sub": "Talos Group",
+        "rel": "identified that",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "an attacker exploited this vulnerability with a Flash object embedded in a Microsoft Excel document"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "exploited",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "this vulnerability"
+      },
+      {
+        "sub": "a Flash object",
+        "rel": "embedded in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a Microsoft Excel document"
+      },
+      {
+        "sub": "Microsoft Excel document",
+        "rel": "when opened, executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "the exploit"
+      },
+      {
+        "sub": "the exploit",
+        "rel": "executed in order to",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "download an additional payload"
+      },
+      {
+        "sub": "the exploit",
+        "rel": "executed",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "an additional payload"
+      },
+      {
+        "sub": "additional payload",
+        "rel": "downloaded from",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "a compromised website"
+      },
+      {
+        "sub": "the compromised website",
+        "rel": "allows",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "additional payload"
+      }
+    ]
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_4.json",
+  "sample_index": 229,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_4.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "REDLINE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "SELF-SPREADING BUNDLE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MAKISEKURISU",
+        "type": "MALWARE"
+      },
+      {
+        "name": "DOWNLOAD.EXE",
+        "type": "TOOL"
+      },
+      {
+        "name": "UPLOAD.EXE",
+        "type": "TOOL"
+      },
+      {
+        "name": "YOUTUBE",
+        "type": "LOCATION"
+      },
+      {
+        "name": "APB RELOADED",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CROSSFIRE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "DAYZ",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "DYING LIGHT 2",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "F1® 22",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "FARMING SIMULATOR",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "FARHEST FRONTIER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "FIFA 22",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "FINAL FANTASY XIV",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "FORZA",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "LEGO STAR WARS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "OSU!",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "POINT BLANK",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PROJECT ZOMBOID",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "RUST",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SNIPER ELITE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SPIDER-MAN",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "STRAY",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "THYMESIA",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "VRCHAT",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "WALKEN",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "GITHUB",
+        "type": "LOCATION"
+      },
+      {
+        "name": "OLEG KUPREEV",
+        "type": "PERSON"
+      },
+      {
+        "name": "45.150.108.67:80",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "C2",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MINER",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "STEALER",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "SELF-SPREADING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "GAME HACKS AND CRACKS",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "SECURELIST",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "GOOGLE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "DISCORD",
+        "type": "SOFTWARE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "REDLINE",
+        "rel": "related_to",
+        "obj": "SELF-SPREADING BUNDLE"
+      },
+      {
+        "sub": "SELF-SPREADING BUNDLE",
+        "rel": "related_to",
+        "obj": "DOWNLOAD.EXE"
+      },
+      {
+        "sub": "SELF-SPREADING BUNDLE",
+        "rel": "related_to",
+        "obj": "UPLOAD.EXE"
+      },
+      {
+        "sub": "SELF-SPREADING BUNDLE",
+        "rel": "related_to",
+        "obj": "MAKISEKURISU"
+      },
+      {
+        "sub": "SELF-SPREADING BUNDLE",
+        "rel": "related_to",
+        "obj": "YOUTUBE"
+      },
+      {
+        "sub": "GAME HACKS AND CRACKS",
+        "rel": "related_to",
+        "obj": "YOUTUBE"
+      },
+      {
+        "sub": "GAME HACKS AND CRACKS",
+        "rel": "related_to",
+        "obj": "SELF-SPREADING BUNDLE"
+      },
+      {
+        "sub": "REDLINE",
+        "rel": "related_to",
+        "obj": "STEALER"
+      },
+      {
+        "sub": "REDLINE",
+        "rel": "related_to",
+        "obj": "MINER"
+      },
+      {
+        "sub": "SELF-SPREADING BUNDLE",
+        "rel": "related_to",
+        "obj": "MINER"
+      },
+      {
+        "sub": "SELF-SPREADING BUNDLE",
+        "rel": "related_to",
+        "obj": "C2"
+      },
+      {
+        "sub": "REDLINE",
+        "rel": "related_to",
+        "obj": "C2"
+      },
+      {
+        "sub": "DOWNLOAD.EXE",
+        "rel": "related_to",
+        "obj": "GITHUB"
+      },
+      {
+        "sub": "UPLOAD.EXE",
+        "rel": "related_to",
+        "obj": "DISCORD"
+      },
+      {
+        "sub": "OLEG KUPREEV",
+        "rel": "related_to",
+        "obj": "SECURELIST"
+      },
+      {
+        "sub": "SECURELIST",
+        "rel": "related_to",
+        "obj": "GOOGLE"
+      },
+      {
+        "sub": "YOUTUBE",
+        "rel": "related_to",
+        "obj": "GOOGLE"
+      }
+    ]
+  }
+}

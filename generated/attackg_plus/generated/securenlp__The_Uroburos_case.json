@@ -1,0 +1,257 @@
+{
+  "sample_id": "securenlp__The_Uroburos_case",
+  "sample_index": 183,
+  "source": "securenlp",
+  "file_name": "The_Uroburos_case",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "credprov.tlb"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "shdocvw.tlp"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Microsoft Windows dynamic libraries"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "File installation phase"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Belong to",
+        "obj": "Payload delivery mechanism"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Registry Key"
+      },
+      {
+        "sub": "Registry Key",
+        "rel": "Has value",
+        "obj": "HKCU\\Software\\Classes\\CLSID\\{42aedc87-2188-41fd-b9a3-0c966feabec1}\\InprocServer32"
+      },
+      {
+        "sub": "Registry Key",
+        "rel": "Has value",
+        "obj": "%APPDATA%\\shdocvw.tlp"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "COM Object"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Process"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "System Execution Environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "XOR encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Non-ASCII key"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Log files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Command and control  server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Named pipes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Firewall"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Security products"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Perform",
+        "obj": "System information discovery"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "XML log file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "OSVer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Machine"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "UserName"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "WinDir"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "TempDir"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "WorkDir"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Store",
+        "obj": "Log files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "User details"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Machine details"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Execution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Log files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Named pipe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Communicate with",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has value",
+        "obj": "weather-online.hopto.org"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has value",
+        "obj": "webonline.mefound.com"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has value",
+        "obj": "sportacademy.my03.com"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has value",
+        "obj": "easport-news.publicvm.com"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has value",
+        "obj": "new-book.linkpc.net"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has registry location",
+        "obj": "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\SessionMRU\\IPlace"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Blend into",
+        "obj": "Browser traffic"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Belong to",
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Belong to",
+        "obj": "Agent.BTZ"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Share infrastructure with",
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Share infrastructure with",
+        "obj": "Agent.BTZ"
+      }
+    ]
+  }
+}

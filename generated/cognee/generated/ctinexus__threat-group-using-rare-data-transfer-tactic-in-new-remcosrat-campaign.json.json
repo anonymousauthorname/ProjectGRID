@@ -1,0 +1,131 @@
+{
+  "sample_id": "ctinexus__threat-group-using-rare-data-transfer-tactic-in-new-remcosrat-campaign.json",
+  "sample_index": 78,
+  "source": "ctinexus",
+  "file_name": "threat-group-using-rare-data-transfer-tactic-in-new-remcosrat-campaign.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "RemcosRAT",
+        "type": "Entity"
+      },
+      {
+        "name": "UNC-0050",
+        "type": "Entity"
+      },
+      {
+        "name": "Ukraine",
+        "type": "Entity"
+      },
+      {
+        "name": "Ukrainian government entities",
+        "type": "Entity"
+      },
+      {
+        "name": "endpoint detection and response systems",
+        "type": "Entity"
+      },
+      {
+        "name": "Uptycs",
+        "type": "Entity"
+      },
+      {
+        "name": "political motivation",
+        "type": "Entity"
+      },
+      {
+        "name": "state sponsorship",
+        "type": "Entity"
+      },
+      {
+        "name": "government sectors",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows systems",
+        "type": "Entity"
+      },
+      {
+        "name": "data transfer",
+        "type": "Entity"
+      },
+      {
+        "name": "intelligence collection",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "UNC-0050",
+        "rel": "uses",
+        "obj": "RemcosRAT"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "targets",
+        "obj": "Ukrainian government entities"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "operates in",
+        "obj": "Ukraine"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "conducts",
+        "obj": "data transfer"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "collects",
+        "obj": "intelligence collection"
+      },
+      {
+        "sub": "Uptycs",
+        "rel": "identified by",
+        "obj": "UNC-0050"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "is motivated by",
+        "obj": "political motivation"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "is linked to",
+        "obj": "state sponsorship"
+      },
+      {
+        "sub": "Ukrainian government entities",
+        "rel": "is associated with",
+        "obj": "government sectors"
+      },
+      {
+        "sub": "Windows systems",
+        "rel": "relies on",
+        "obj": "government sectors"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "affects",
+        "obj": "endpoint detection and response systems"
+      }
+    ]
+  }
+}

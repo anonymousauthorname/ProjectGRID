@@ -1,0 +1,518 @@
+{
+  "sample_id": "malkg__201411FireEyeOperationDoubleTap.txt",
+  "sample_index": 135,
+  "source": "malkg",
+  "file_name": "201411FireEyeOperationDoubleTap.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT3",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the actors responsible for Operation Clandestine Fox",
+          "this actor",
+          "this group",
+          "the attacker",
+          "the real thing",
+          "APT3"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Operation Clandestine Fox",
+        "type": "campaign",
+        "alias": [
+          "this campaign"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Operation Double Tap",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "November 19, 2014",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2014-6332",
+        "type": "vulnerability",
+        "alias": [
+          "Windows OLE Automation Array Remote Code Execution vulnerability",
+          "this exploit",
+          "CVE-2014-6332 was disclosed publicly",
+          "the use of CVE-2014-6332"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2014-4113",
+        "type": "vulnerability",
+        "alias": [
+          "privilege escalation vulnerability",
+          "local kernel vulnerability",
+          "CVE is a local kernel vulnerability",
+          "4113.pdb"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "http://www.exploit-db.com/exploits/35230/",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Metasploit project",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "spearphishing messages",
+        "type": "campaign",
+        "alias": [
+          "phishing campaigns",
+          "spearphish",
+          "phishing messages"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "One Month's Free Membership for The PLAYBOY ClUB...",
+        "type": "email-address",
+        "alias": [
+          "the body of the message",
+          "The webpage"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://join.playboysplus.com/signup/",
+        "type": "url",
+        "alias": [
+          "join.playboysplus[.]com",
+          "join.playboysplus[.]com exploit and payload delivery site"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "104.151.248.173",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "install.exe",
+        "type": "file",
+        "alias": [
+          "the below payload",
+          "the malware component",
+          "this payload",
+          "the file install.exe"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "doc.exe",
+        "type": "file",
+        "alias": [
+          "the first dropped file",
+          "the CVE-2014-4113 exploit",
+          "doc.exe (x86)",
+          "doc.exe (x64)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "test.exe",
+        "type": "file",
+        "alias": [
+          "the malware component",
+          "newnotepad.exe (MD5 8849538ef1c3471640230605c2623c67)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "C:\\Users\\Public",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "c:\\Users\\aa\\Documents\\Visual Studio 2008\\Projects\\MShell\\Release\\MShell.pdb",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "c:\\Users\\aa\\Documents\\Visual Studio 2008\\Projects\\4113\\Release\\4113.pdb",
+        "type": "indicator",
+        "alias": [
+          "4113.pdb"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "C:\\Users\\aa\\Documents\\Visual Studio 2010\\Projects\\MyRat\\Client\\Client\\obj\\x86\\Release\\Client.pdb",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "schtasks /create /tn \"mysc\" /tr C:\\Users\\Public\\test.exe /sc ONLOGON /ru \"System\"",
+        "type": "command",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "192.157.198.103",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "1913",
+        "type": "port",
+        "alias": [
+          "TCP port 1913"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "192.184.60.229",
+        "type": "ipv4-addr",
+        "alias": [
+          "the 192.184.60.229 IP address"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "81",
+        "type": "port",
+        "alias": [
+          "port 81"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "securitywap.com",
+        "type": "domain-name",
+        "alias": [
+          "www.securitywap.com"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "inform.bedircati[.]com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "pn.lamb-site[.]com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "210.109.99.64",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Backdoor.APT.CookieCutter (aka Pirpi)",
+        "type": "malware",
+        "alias": [
+          "newnotepad.exe"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "198.55.115.71",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT3",
+        "rel": "initiated",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Operation Double Tap"
+      },
+      {
+        "sub": "APT3",
+        "rel": "leveraged",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2014-6332"
+      },
+      {
+        "sub": "APT3",
+        "rel": "leveraged",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2014-4113"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "disclosed publicly on",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "November 19, 2014"
+      },
+      {
+        "sub": "CVE-2014-4113",
+        "rel": "disclosed publicly on",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "November 19, 2014"
+      },
+      {
+        "sub": "One Month's Free Membership for The PLAYBOY ClUB...",
+        "rel": "contains",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "hxxp://join.playboysplus.com/signup/"
+      },
+      {
+        "sub": "hxxp://join.playboysplus.com/signup/",
+        "rel": "resolves to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "104.151.248.173"
+      },
+      {
+        "sub": "hxxp://join.playboysplus.com/signup/",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "install.exe"
+      },
+      {
+        "sub": "hxxp://join.playboysplus.com/signup/",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "install.exe"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "writes to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "C:\\Users\\Public"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "writes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "doc.exe"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "writes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "test.exe"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "contains",
+        "rel_type": [
+          "contains"
+        ],
+        "obj": "CVE-2014-4113"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "attempts to execute",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "test.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "verifies privileges with",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "cmd.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "creates persistence via",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "schtasks /create /tn \"mysc\" /tr C:\\Users\\Public\\test.exe /sc ONLOGON /ru \"System\""
+      },
+      {
+        "sub": "test.exe",
+        "rel": "establishes connection to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "192.157.198.103"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "requests a connection to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "receives command from",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "server"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "inform.bedircati[.]com"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "pn.lamb-site[.]com"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "210.109.99.64"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "198.55.115.71"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "derived from",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "http://www.exploit-db.com/exploits/35230/"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "incorporated in",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Metasploit project"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "URL"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "C:\\Users\\Public\\test.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "sends data to server",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "C:\\Users\\Public\\test.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "executes command",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "cmd /C"
+      },
+      {
+        "sub": "APT3",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "securitywap.com"
+      },
+      {
+        "sub": "APT3",
+        "rel": "uses",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "join.playboysplus[.]com"
+      },
+      {
+        "sub": "APT3",
+        "rel": "uses",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "walterclean[.]com"
+      }
+    ]
+  }
+}

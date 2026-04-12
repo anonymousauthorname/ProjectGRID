@@ -1,0 +1,477 @@
+{
+  "sample_id": "securenlp__Derusbi_Server_Analysis-Final",
+  "sample_index": 153,
+  "source": "securenlp",
+  "file_name": "Derusbi_Server_Analysis-Final",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Use",
+        "obj": "GetCommandLineW"
+      },
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Patch",
+        "obj": "CommandLineString"
+      },
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Verify",
+        "obj": "SystemAccessRights"
+      },
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Run",
+        "obj": "UnderNTAuthority"
+      },
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Sleep",
+        "obj": "5Seconds"
+      },
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Wait",
+        "obj": "DllRegisterServer"
+      },
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Load",
+        "obj": "UniqueInfectionID"
+      },
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Generate",
+        "obj": "InfectionIDFromEncodedBuffer"
+      },
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Acquire",
+        "obj": "SeDebugPrivilege"
+      },
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Acquire",
+        "obj": "SeLoadDriverPrivilege"
+      },
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Acquire",
+        "obj": "SeShutdownPrivilege"
+      },
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Acquire",
+        "obj": "SeTcbPrivilege"
+      },
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Spawn",
+        "obj": "DerusbiThread"
+      },
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Manage",
+        "obj": "Communication"
+      },
+      {
+        "sub": "DerusbiServerVariant",
+        "rel": "Dispatch",
+        "obj": "Command"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Operate",
+        "obj": "svchost-dependent service"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Install",
+        "obj": "service"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Write",
+        "obj": "HKLM\\SOFTWARE\\Microsoft\\Rpc\\Security"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Construct",
+        "obj": "device driver"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Operate",
+        "obj": "Windows Firewall"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Write",
+        "obj": "encoded buffer"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Use",
+        "obj": "driver binary"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Modify",
+        "obj": "network traffic redirection"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Has value",
+        "obj": "unique infection ID"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Locate at",
+        "obj": "HKLM\\SOFTWARE\\Microsoft\\Rpc\\Security"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Has hostname",
+        "obj": "Windows Firewall"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Has vulnerability",
+        "obj": "SeDebugPrivilege"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Has vulnerability",
+        "obj": "SeLoadDriverPrivilege"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Has vulnerability",
+        "obj": "SeShutdownPrivilege"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Has vulnerability",
+        "obj": "SeTcbPrivilege"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Use",
+        "obj": "Driver installation"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Operate",
+        "obj": "Network traffic redirection"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Modify",
+        "obj": "Windows privileges"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Write",
+        "obj": "Device driver"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Detect",
+        "obj": "Insufficient access rights"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Terminate",
+        "obj": "Process"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Encryption"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Obfuscation"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "32-bit XOR key"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "LZO compression"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "64-byte handshake"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "DWORD3 == ~DWORD0"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "DWORD8 == ROR"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Operate",
+        "obj": "Network traffic redirection"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Avoid",
+        "obj": "Network monitoring detection"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Modify",
+        "obj": "Communication patterns"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Mimic",
+        "obj": "Normal traffic"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Write",
+        "obj": "Device driver"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Locate at",
+        "obj": "Client-server communication"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has value",
+        "obj": "Handshake authentication pattern"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Operate",
+        "obj": "VictimInfoPacket"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Send",
+        "obj": "infection ID"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Send",
+        "obj": "computer name"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Send",
+        "obj": "self IP"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Send",
+        "obj": "OS version info"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Send",
+        "obj": "SP version info"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Send",
+        "obj": "build number"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Send",
+        "obj": "OEM ID"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Use",
+        "obj": "encrypted datagram"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Construct",
+        "obj": "24-byte header"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Have",
+        "obj": "optional payload"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Use",
+        "obj": "VictimInfoPacket to configure file management"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Use",
+        "obj": "VictimInfoPacket to configure remote shell access"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "File enumeration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "File search"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "File download"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "File copy"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "File move"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Victim’s system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Encrypted packets"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "Client through command channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Data from victim’s machine"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Transfer",
+        "obj": "Data to attacker’s control"
+      },
+      {
+        "sub": "The Derusbi server variant",
+        "rel": "Operate",
+        "obj": "A secure, encrypted communication channel"
+      },
+      {
+        "sub": "The Derusbi server variant",
+        "rel": "Use",
+        "obj": "A 64-byte handshake"
+      },
+      {
+        "sub": "The Derusbi server variant",
+        "rel": "Validate",
+        "obj": "DWORD patterns )"
+      },
+      {
+        "sub": "The Derusbi server variant",
+        "rel": "Use",
+        "obj": "A POST request with a Via header to an endpoint"
+      },
+      {
+        "sub": "The Derusbi server variant",
+        "rel": "Respond with",
+        "obj": "HTTP 200 or 400 status"
+      },
+      {
+        "sub": "The Derusbi server variant",
+        "rel": "Encrypt",
+        "obj": "Communication using a 32-bit XOR key"
+      },
+      {
+        "sub": "The Derusbi server variant",
+        "rel": "Compress",
+        "obj": "Communication using LZO"
+      },
+      {
+        "sub": "The Derusbi server variant",
+        "rel": "Listen on",
+        "obj": "A random port between 40,000 and 45,000"
+      },
+      {
+        "sub": "The Derusbi server variant",
+        "rel": "Redirect traffic via",
+        "obj": "A device driver hook"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "Has value",
+        "obj": "File data"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "Use",
+        "obj": "Encrypted datagrams"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "Modify",
+        "obj": "Victim’s system"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "Operate",
+        "obj": "Command channel"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Use",
+        "obj": "PCC_FILE"
+      },
+      {
+        "sub": "Derusbi server variant",
+        "rel": "Has vulnerability",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "Construct",
+        "obj": "Downloading files"
+      },
+      {
+        "sub": "C2 handshake",
+        "rel": "Locate at",
+        "obj": "Command channel"
+      }
+    ]
+  }
+}

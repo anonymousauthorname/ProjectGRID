@@ -1,0 +1,484 @@
+{
+  "sample_id": "casie__1120.json",
+  "sample_index": 45,
+  "source": "casie",
+  "file_name": "1120.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Dun & Bradstreet",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "D&B"
+        ]
+      },
+      {
+        "name": "NetProspex",
+        "type": "general-software",
+        "alias": [
+          "NetProspex"
+        ]
+      },
+      {
+        "name": "33 million records",
+        "type": "quantity",
+        "alias": [
+          "about 33 million records"
+        ]
+      },
+      {
+        "name": "52 gigabytes",
+        "type": "quantity",
+        "alias": [
+          "52 gigabytes in size"
+        ]
+      },
+      {
+        "name": "33.7 million unique email addresses",
+        "type": "quantity",
+        "alias": [
+          "just under 33.7 million unique email addresses"
+        ]
+      },
+      {
+        "name": "US Department of Defense",
+        "type": "government-entity",
+        "alias": [
+          "US DoD"
+        ]
+      },
+      {
+        "name": "Wells Fargo",
+        "type": "corporate-entity",
+        "alias": [
+          "Wells Fargo"
+        ]
+      },
+      {
+        "name": "45 vice presidents, senior vice presidents, assistant vice presidents and executive vice presidents",
+        "type": "personnel-class",
+        "alias": [
+          "45 vice presidents",
+          "senior vice presidents",
+          "assistant vice presidents",
+          "executive vice presidents"
+        ]
+      },
+      {
+        "name": "email addresses and other contact information",
+        "type": "contact-information",
+        "alias": [
+          "contact information"
+        ]
+      },
+      {
+        "name": "marketing firms",
+        "type": "identity",
+        "alias": [
+          "one of these marketing firms"
+        ]
+      },
+      {
+        "name": "BitSight",
+        "type": "security-product",
+        "alias": [
+          "third-party risk management and security ratings firm BitSight"
+        ]
+      },
+      {
+        "name": "Stephen Boyer",
+        "type": "identity",
+        "alias": [
+          "co-founder and CTO of BitSight"
+        ]
+      },
+      {
+        "name": "Rapid7",
+        "type": "security-product",
+        "alias": [
+          "Rapid7"
+        ]
+      },
+      {
+        "name": "Lee Weiner",
+        "type": "identity",
+        "alias": [
+          "chief product officer at Rapid7"
+        ]
+      },
+      {
+        "name": "piggy-back attacks",
+        "type": "attack-pattern",
+        "alias": [
+          "piggy-back attacks"
+        ]
+      },
+      {
+        "name": "phishing tactics",
+        "type": "attack-pattern",
+        "alias": [
+          "phishing tactics"
+        ]
+      },
+      {
+        "name": "business email compromise (BEC)",
+        "type": "attack-pattern",
+        "alias": [
+          "BEC"
+        ]
+      },
+      {
+        "name": "whaling attacks",
+        "type": "attack-pattern",
+        "alias": [
+          "whaling attacks"
+        ]
+      },
+      {
+        "name": "third-party risk",
+        "type": "abstract-concept",
+        "alias": [
+          "third-party risk"
+        ]
+      },
+      {
+        "name": "data management",
+        "type": "abstract-concept",
+        "alias": [
+          "data management"
+        ]
+      },
+      {
+        "name": "personal identifiable information",
+        "type": "abstract-concept",
+        "alias": [
+          "PII"
+        ]
+      },
+      {
+        "name": "ZDNet",
+        "type": "media-outlet",
+        "alias": [
+          "ZDNet"
+        ]
+      },
+      {
+        "name": "Troy Hunt",
+        "type": "researcher",
+        "alias": [
+          "independent researcher Troy Hunt"
+        ]
+      },
+      {
+        "name": "the leak",
+        "type": "event",
+        "alias": [
+          "the database leak"
+        ]
+      },
+      {
+        "name": "the database",
+        "type": "file",
+        "alias": [
+          "database"
+        ]
+      },
+      {
+        "name": "list rental file",
+        "type": "hacker-tool",
+        "alias": [
+          "list rental"
+        ]
+      },
+      {
+        "name": "2015",
+        "type": "year",
+        "alias": [
+          "2015"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "About 33 million records belonging to Dun & Bradstreet have been leaked",
+        "rel": "have been leaked",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "33 million records"
+      },
+      {
+        "sub": "placing a large portion of the US corporate population at risk",
+        "rel": "at risk",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "US corporate population"
+      },
+      {
+        "sub": "the database is about 52 gigabytes in size",
+        "rel": "is about",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "52 gigabytes"
+      },
+      {
+        "sub": "contains just under 33.7 million unique email addresses",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "33.7 million unique email addresses"
+      },
+      {
+        "sub": "and other contact information from employees of thousands of large enterprises and government entities",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "email addresses and other contact information"
+      },
+      {
+        "sub": "the leak is thought to be from a database D&B acquired from NetProspex in 2015",
+        "rel": "acquired from",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "NetProspex"
+      },
+      {
+        "sub": "the leak is thought to be from a database D&B acquired from NetProspex in 2015",
+        "rel": "acquired from",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "NetProspex"
+      },
+      {
+        "sub": "The file is a 'list rental' file",
+        "rel": "is a",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "list rental file"
+      },
+      {
+        "sub": "D&B offers marketers for use for their own email campaigns",
+        "rel": "offers for use",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "marketing firms"
+      },
+      {
+        "sub": "one of these marketing firms is the source of the leak itself having been compromised in some way",
+        "rel": "is the source of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the leak"
+      },
+      {
+        "sub": "D&B said in a media statement",
+        "rel": "said",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "media statement"
+      },
+      {
+        "sub": "Dun & Bradstreet maintains that neither they or NetProspex suffered a breach or caused the leak",
+        "rel": "maintains that neither... suffered a breach or caused",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "NetProspex"
+      },
+      {
+        "sub": "Stephen Boyer, co-founder and CTO of third-party risk management and security ratings firm BitSight",
+        "rel": "said",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Dun & Bradstreet maintains"
+      },
+      {
+        "sub": "which represents a new dimension of third-party risk",
+        "rel": "represents a new dimension of",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "third-party risk"
+      },
+      {
+        "sub": "customers don't have ongoing relationships in the way that vendors and suppliers do",
+        "rel": "don't have ongoing relationships",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "customers"
+      },
+      {
+        "sub": "customers can pose risk when licensing and buying data in bulk",
+        "rel": "can pose risk when",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "customers"
+      },
+      {
+        "sub": "Hunt said in a blog post",
+        "rel": "said",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "blog post"
+      },
+      {
+        "sub": "most records in the database come from the US Department of Defense",
+        "rel": "come from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "US Department of Defense"
+      },
+      {
+        "sub": "For Wells Fargo, the information is for the C-suite and 45 vice presidents, senior vice presidents, assistant vice presidents and executive vice presidents",
+        "rel": "is for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "45 vice presidents, senior vice presidents, assistant vice presidents and executive vice presidents"
+      },
+      {
+        "sub": "The market for stolen personal identifiable information continues to be lucrative",
+        "rel": "continues to be",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "lucrative"
+      },
+      {
+        "sub": "attackers to steal and sell data",
+        "rel": "to steal and sell",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "data"
+      },
+      {
+        "sub": "vigilant for piggy-back attacks",
+        "rel": "vigilant for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "piggy-back attacks"
+      },
+      {
+        "sub": "attackers using this information to engage in phishing tactics",
+        "rel": "using this information to engage in",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "phishing tactics"
+      },
+      {
+        "sub": "steal passwords and gain access to accounts",
+        "rel": "to steal passwords and gain access to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "accounts"
+      },
+      {
+        "sub": "follow-on threats can include business email compromise (BEC)",
+        "rel": "can include",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "business email compromise (BEC)"
+      },
+      {
+        "sub": "This leak allows cyber-criminals to carry out whaling attacks",
+        "rel": "allows to carry out",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "whaling attacks"
+      },
+      {
+        "sub": "Some organizations have over 100,000 employee records compromised",
+        "rel": "have",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "100,000 employee records"
+      },
+      {
+        "sub": "may witness an uptake in targeted phishing attacks",
+        "rel": "may witness an uptake in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "targeted phishing attacks"
+      },
+      {
+        "sub": "Hunt noted that the leak is an example of an endemic problem in data management",
+        "rel": "is an example of",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "endemic problem in data management"
+      },
+      {
+        "sub": "we don't have any way of feeding back to companies what data we’d rather not share",
+        "rel": "don't have any way of",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "feeding back to companies"
+      },
+      {
+        "sub": "D&B believe they're operating legally",
+        "rel": "believe they're operating",
+        "rel_type": [
+          "believes"
+        ],
+        "obj": "legally"
+      },
+      {
+        "sub": "what chance do we have... of regaining control of data like this?",
+        "rel": "have",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "regaining control of data like this"
+      },
+      {
+        "sub": "assess whether you've been exposed",
+        "rel": "assess whether you've been",
+        "rel_type": [
+          "course-of-action"
+        ],
+        "obj": "exposed"
+      }
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "sample_id": "casie__638.json",
+  "sample_index": 20,
+  "source": "casie",
+  "file_name": "638.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Saleena Malik",
+        "type": "Malware"
+      },
+      {
+        "name": "Claudio Guarnieri",
+        "type": "Person"
+      },
+      {
+        "name": "Amnesty International",
+        "type": "Organization"
+      },
+      {
+        "name": "Qatar",
+        "type": "Location"
+      },
+      {
+        "name": "FIFA",
+        "type": "Organization"
+      },
+      {
+        "name": "Google",
+        "type": "Indicator"
+      },
+      {
+        "name": "phishing page",
+        "type": "Indicator"
+      },
+      {
+        "name": "Google Hangouts",
+        "type": "Indicator"
+      },
+      {
+        "name": "Qatar Internet service provider",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "migrant labor laws",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "activists",
+        "type": "Person"
+      },
+      {
+        "name": "journalists",
+        "type": "Person"
+      },
+      {
+        "name": "construction firms",
+        "type": "Organization"
+      },
+      {
+        "name": "government of Qatar",
+        "type": "Organization"
+      },
+      {
+        "name": "government agency",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Saleena Malik",
+        "rel": "is disguised as",
+        "obj": "phishing page"
+      },
+      {
+        "sub": "Saleena Malik",
+        "rel": "IMITATES",
+        "obj": "Google"
+      },
+      {
+        "sub": "Saleena Malik",
+        "rel": "invites victims to connect through",
+        "obj": "Google Hangouts"
+      },
+      {
+        "sub": "Saleena Malik",
+        "rel": "poses as",
+        "obj": "activists"
+      },
+      {
+        "sub": "Saleena Malik",
+        "rel": "poses as",
+        "obj": "journalists"
+      },
+      {
+        "sub": "Claudio Guarnieri",
+        "rel": "works for",
+        "obj": "Amnesty International"
+      },
+      {
+        "sub": "Claudio Guarnieri",
+        "rel": "identified attacks by",
+        "obj": "Saleena Malik"
+      },
+      {
+        "sub": "Claudio Guarnieri",
+        "rel": "traced ip to",
+        "obj": "Qatar Internet service provider"
+      },
+      {
+        "sub": "Qatar Internet service provider",
+        "rel": "hosts phishing pages",
+        "obj": "Saleena Malik"
+      },
+      {
+        "sub": "government of Qatar",
+        "rel": "may be behind",
+        "obj": "Saleena Malik"
+      },
+      {
+        "sub": "government agency",
+        "rel": "may be behind",
+        "obj": "Saleena Malik"
+      },
+      {
+        "sub": "construction firms",
+        "rel": "may be behind",
+        "obj": "Saleena Malik"
+      },
+      {
+        "sub": "FIFA",
+        "rel": "granted rights to hold",
+        "obj": "Qatar"
+      },
+      {
+        "sub": "migrant labor laws",
+        "rel": "is vulnerable to",
+        "obj": "activists"
+      },
+      {
+        "sub": "migrant labor laws",
+        "rel": "is vulnerable to",
+        "obj": "journalists"
+      },
+      {
+        "sub": "Saleena Malik",
+        "rel": "ACCESSES",
+        "obj": "phished Gmail accounts"
+      }
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "sample_id": "casie__1656.json",
+  "sample_index": 34,
+  "source": "casie",
+  "file_name": "1656.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2017-0199",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Microsoft Office",
+        "type": "Software"
+      },
+      {
+        "name": "WordPad",
+        "type": "Software"
+      },
+      {
+        "name": "RTF files",
+        "type": "Software"
+      },
+      {
+        "name": "FinSpy",
+        "type": "Malware"
+      },
+      {
+        "name": "LatentBot",
+        "type": "Malware"
+      },
+      {
+        "name": "Ryan Hanson",
+        "type": "Person"
+      },
+      {
+        "name": "McAfee",
+        "type": "Organization"
+      },
+      {
+        "name": "FireEye",
+        "type": "Organization"
+      },
+      {
+        "name": "Gamma Group",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Software"
+      },
+      {
+        "name": "HTA (HTML application)",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2017-0199",
+        "rel": "AFFECTS",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "CVE-2017-0199",
+        "rel": "AFFECTS",
+        "obj": "WordPad"
+      },
+      {
+        "sub": "RTF files",
+        "rel": "CONTAIN",
+        "obj": "CVE-2017-0199"
+      },
+      {
+        "sub": "FinSpy",
+        "rel": "USES",
+        "obj": "CVE-2017-0199"
+      },
+      {
+        "sub": "LatentBot",
+        "rel": "USES",
+        "obj": "CVE-2017-0199"
+      },
+      {
+        "sub": "Ryan Hanson",
+        "rel": "DISCOVERED",
+        "obj": "CVE-2017-0199"
+      },
+      {
+        "sub": "McAfee",
+        "rel": "DISCOVERED",
+        "obj": "CVE-2017-0199"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "DISCOVERED",
+        "obj": "CVE-2017-0199"
+      },
+      {
+        "sub": "Gamma Group",
+        "rel": "disclosed to",
+        "obj": "CVE-2017-0199"
+      },
+      {
+        "sub": "CVE-2017-0199",
+        "rel": "EXPLOITS",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "HTA (HTML application)",
+        "rel": "downloaded by",
+        "obj": "CVE-2017-0199"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "DETECTED",
+        "obj": "January 25, 2017"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "DETECTED",
+        "obj": "March 2017"
+      }
+    ]
+  }
+}

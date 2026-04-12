@@ -1,0 +1,153 @@
+{
+  "sample_id": "casie__1662.json",
+  "sample_index": 0,
+  "source": "casie",
+  "file_name": "1662.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Magento",
+        "type": "Software"
+      },
+      {
+        "name": "DefenseCode",
+        "type": "Organization"
+      },
+      {
+        "name": "Vimeo",
+        "type": "Software"
+      },
+      {
+        "name": "PHP",
+        "type": "Software"
+      },
+      {
+        "name": ".htaccess",
+        "type": "Indicator"
+      },
+      {
+        "name": "remote code execution",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "cross-site request forgery",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "arbitrary file upload",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Magento Community Edition",
+        "type": "Organization"
+      },
+      {
+        "name": "CVE",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Magento configuration file",
+        "type": "Indicator"
+      },
+      {
+        "name": "database password",
+        "type": "Indicator"
+      },
+      {
+        "name": "customer information",
+        "type": "Indicator"
+      },
+      {
+        "name": "online shops",
+        "type": "Organization"
+      },
+      {
+        "name": "payment card details",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Magento",
+        "rel": "retreives preview images from",
+        "obj": "Vimeo"
+      },
+      {
+        "sub": "Magento",
+        "rel": "can execute",
+        "obj": "PHP"
+      },
+      {
+        "sub": "DefenseCode",
+        "rel": "reported vulnerability in",
+        "obj": "Magento"
+      },
+      {
+        "sub": "DefenseCode",
+        "rel": "MITIGATES",
+        "obj": "cross-site request forgery"
+      },
+      {
+        "sub": "Magento",
+        "rel": "is vulnerable to",
+        "obj": "arbitrary file upload"
+      },
+      {
+        "sub": "arbitrary file upload",
+        "rel": "leads to",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "Magento",
+        "rel": "can download and allow execution of",
+        "obj": ".htaccess"
+      },
+      {
+        "sub": "Magento configuration file",
+        "rel": "CONTAINS",
+        "obj": "database password"
+      },
+      {
+        "sub": "Magento",
+        "rel": "STORES",
+        "obj": "customer information"
+      },
+      {
+        "sub": "remote code execution",
+        "rel": "can access",
+        "obj": "payment card details"
+      },
+      {
+        "sub": "Magento Community Edition",
+        "rel": "is a version of",
+        "obj": "Magento"
+      },
+      {
+        "sub": "Magento",
+        "rel": "requires for security",
+        "obj": "Add Secret Key to URLs"
+      },
+      {
+        "sub": "DefenseCode",
+        "rel": "DISCOVERED",
+        "obj": "arbitrary file upload"
+      }
+    ]
+  }
+}

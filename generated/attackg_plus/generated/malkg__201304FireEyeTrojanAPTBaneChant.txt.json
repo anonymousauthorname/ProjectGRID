@@ -1,0 +1,472 @@
+{
+  "sample_id": "malkg__201304FireEyeTrojanAPTBaneChant.txt",
+  "sample_index": 108,
+  "source": "malkg",
+  "file_name": "201304FireEyeTrojanAPTBaneChant.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "CVE_2012_0158"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Observes",
+        "obj": "User behavior"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Uses",
+        "obj": "'Islamic Jihad.doc'"
+      },
+      {
+        "sub": "'Islamic Jihad.doc'",
+        "rel": "Has filename",
+        "obj": "'Islamic Jihad.doc'"
+      },
+      {
+        "sub": "'Islamic Jihad.doc'",
+        "rel": "Has value",
+        "obj": "'Spear phishing document'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Human-operated environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Mouse clicks"
+      },
+      {
+        "sub": "Spear phishing document",
+        "rel": "Belong to",
+        "obj": "Reconnaissance phase"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Malicious document"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Dynamic DNS"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "URL shortening service"
+      },
+      {
+        "sub": "Malicious document",
+        "rel": "Has URL",
+        "obj": "Shortened URL"
+      },
+      {
+        "sub": "Malicious document",
+        "rel": "Use",
+        "obj": "Command and control"
+      },
+      {
+        "sub": "Command and control",
+        "rel": "Operate",
+        "obj": "Compromised systems"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Compromised systems"
+      },
+      {
+        "sub": "Malicious domain",
+        "rel": "Has value",
+        "obj": "Hidden domain"
+      },
+      {
+        "sub": "Malicious domain",
+        "rel": "Locate at",
+        "obj": "Dynamic DNS"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "MSCOMCTL.ocx"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "shellcode"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Run in",
+        "obj": "memory"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Initiate",
+        "obj": "further malicious activities"
+      },
+      {
+        "sub": "Filename",
+        "rel": "Is",
+        "obj": "Islamic_Jihad.doc"
+      },
+      {
+        "sub": "Filename",
+        "rel": "Exploit",
+        "obj": "CVE_2012_0158"
+      },
+      {
+        "sub": "Vulnerable Software",
+        "rel": "Has vulnerability",
+        "obj": "CVE_2012_0158"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "spear_phishing"
+      },
+      {
+        "sub": "Tactic",
+        "rel": "Is",
+        "obj": "initial_access"
+      },
+      {
+        "sub": "Technique",
+        "rel": "Is",
+        "obj": "spear_phishing"
+      },
+      {
+        "sub": "Technique",
+        "rel": "Use",
+        "obj": "malicious_RTF_document"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "'Islamic_Jihad.doc'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "shellcode"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Double-byte XOR key"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "Malicious code in memory"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Download",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Decrypt",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "Fake JPEG file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Evade",
+        "obj": "Network binary detection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "Code directly in memory"
+      },
+      {
+        "sub": "Fake JPEG file",
+        "rel": "Lack",
+        "obj": "'FFD8FFE0' header"
+      },
+      {
+        "sub": "Fake JPEG file",
+        "rel": "Not",
+        "obj": "Valid JPEG"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "In memory without saving to disk"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Shortcut link"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "C:\\ProgramData\\Google2\\GoogleUpdate.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "GoogleUpdate.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Google Updater"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Startup folder"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "C:\\ProgramData\\Google2\\GoogleUpdate.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Belong to",
+        "obj": "GoogleUpdate.exe"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Construct",
+        "obj": "Shortcut link"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Write",
+        "obj": "C:\\ProgramData\\Google2\\GoogleUpdate.exe"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Use",
+        "obj": "GoogleUpdate.exe"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Has value",
+        "obj": "Google Updater"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Operate",
+        "obj": "Startup folder"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Mouse click detection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "XOR encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Fake JPEG file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "URL shortening"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Dynamic DNS"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Obfuscate",
+        "obj": "True malicious code"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Network binary extraction tools"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Bypass",
+        "obj": "File type detection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Avoid",
+        "obj": "Automated domain blacklisting"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Make",
+        "obj": "Forensic analysis difficult"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Perform discovery",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Running processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "IP configuration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Root drive directories"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Encode",
+        "obj": "Base-64 format"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Enable",
+        "obj": "Attacker understanding of victim environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Support",
+        "obj": "Further actions planning"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "System processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Directory information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Exfiltrate",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Base-64 encoding"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Support",
+        "obj": "Attacker's objective"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Compromised system"
+      },
+      {
+        "sub": "C2 Server",
+        "rel": "Has URL",
+        "obj": "hxxp://symbisecure.com/adserv/get.php"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "hxxp://kibber.no-ip.org/adserv/logo.jpg"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "URL shortening"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Dynamic DNS services"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Fake user-agent"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Disguised JPEG file"
+      },
+      {
+        "sub": "C2 Server",
+        "rel": "Locate at",
+        "obj": "symbisecure.com"
+      },
+      {
+        "sub": "URL hxxp://kibber.no-ip.org/adserv/logo.jpg",
+        "rel": "Redirect to",
+        "obj": "hxxp://symbisecure.com/adserv/get.php"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Base-64 format"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Data about victim's system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "C2 server at hxxp://symbisecure.com/adserv/get.php"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Human interaction through mouse click"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Real user environment"
+      }
+    ]
+  }
+}

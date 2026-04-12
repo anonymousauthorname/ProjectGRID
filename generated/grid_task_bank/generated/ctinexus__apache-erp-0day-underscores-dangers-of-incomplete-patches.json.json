@@ -1,0 +1,201 @@
+{
+  "sample_id": "ctinexus__apache-erp-0day-underscores-dangers-of-incomplete-patches.json",
+  "sample_index": 86,
+  "source": "ctinexus",
+  "file_name": "apache-erp-0day-underscores-dangers-of-incomplete-patches.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Unknown groups",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "unknown groups"
+        ]
+      },
+      {
+        "name": "zero-day vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "0-day vulnerability"
+        ]
+      },
+      {
+        "name": "Apache's OfBiz enterprise resource planning (ERP) framework",
+        "type": "general-software",
+        "alias": [
+          "Apache OFBiz",
+          "OfBiz",
+          "ERP framework"
+        ]
+      },
+      {
+        "name": "CVE-2023-51467",
+        "type": "vulnerability",
+        "alias": [
+          "the 0-day vulnerability"
+        ]
+      },
+      {
+        "name": "Dec. 26",
+        "type": "date",
+        "alias": [
+          "December 26"
+        ]
+      },
+      {
+        "name": "SonicWall",
+        "type": "security-product",
+        "alias": [
+          "cybersecurity firm"
+        ]
+      },
+      {
+        "name": "Apache Software Foundation",
+        "type": "organization",
+        "alias": [
+          "the Apache Software Foundation"
+        ]
+      },
+      {
+        "name": "CVE-2023-49070",
+        "type": "vulnerability",
+        "alias": [
+          "the related issue"
+        ]
+      },
+      {
+        "name": "remote execution",
+        "type": "attack-pattern",
+        "alias": [
+          "remote execution"
+        ]
+      },
+      {
+        "name": "sensitive information",
+        "type": "indicator",
+        "alias": [
+          "sensitive data"
+        ]
+      },
+      {
+        "name": "patch",
+        "type": "course-of-action",
+        "alias": [
+          "a patch"
+        ]
+      },
+      {
+        "name": "attack",
+        "type": "attack-pattern",
+        "alias": [
+          "other variations of the attack"
+        ]
+      },
+      {
+        "name": "ERP framework",
+        "type": "general-software",
+        "alias": [
+          "enterprise resource planning framework"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Unknown groups",
+        "rel": "have launched probes against",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a zero-day vulnerability"
+      },
+      {
+        "sub": "zero-day vulnerability",
+        "rel": "identified in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Apache's OfBiz enterprise resource planning (ERP) framework"
+      },
+      {
+        "sub": "the 0-day vulnerability (CVE-2023-51467)",
+        "rel": "allows an attacker to access",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "sensitive information"
+      },
+      {
+        "sub": "the 0-day vulnerability (CVE-2023-51467)",
+        "rel": "allows an attacker to remotely execute code against",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "applications using the ERP framework"
+      },
+      {
+        "sub": "The 0-day vulnerability (CVE-2023-51467)",
+        "rel": "allows an attacker to access",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "sensitive information"
+      },
+      {
+        "sub": "cybersecurity firm SonicWall",
+        "rel": "analyzed",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "the 0-day vulnerability (CVE-2023-51467)"
+      },
+      {
+        "sub": "Apache Software Foundation",
+        "rel": "originally released a patch for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "CVE-2023-49070"
+      },
+      {
+        "sub": "the fix",
+        "rel": "failed to protect against",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "other variations of the attack"
+      },
+      {
+        "sub": "The 0-day vulnerability (CVE-2023-51467)",
+        "rel": "disclosed on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Dec. 26"
+      },
+      {
+        "sub": "applications using the ERP framework",
+        "rel": "using",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "ERP framework"
+      }
+    ]
+  }
+}

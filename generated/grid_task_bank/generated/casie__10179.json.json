@@ -1,0 +1,289 @@
+{
+  "sample_id": "casie__10179.json",
+  "sample_index": 15,
+  "source": "casie",
+  "file_name": "10179.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Ryzenfall",
+        "type": "campaign",
+        "alias": [
+          "the vulnerabilities",
+          "security flaws"
+        ]
+      },
+      {
+        "name": "AMD",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the processor manufacturer"
+        ]
+      },
+      {
+        "name": "Ryzen",
+        "type": "general-software",
+        "alias": [
+          "the Ryzen processors"
+        ]
+      },
+      {
+        "name": "EPYC",
+        "type": "general-software",
+        "alias": [
+          "the EPYC processors"
+        ]
+      },
+      {
+        "name": "CTS Labs",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the security company"
+        ]
+      },
+      {
+        "name": "Tom's Hardware",
+        "type": "general-software",
+        "alias": [
+          "the media outlet"
+        ]
+      },
+      {
+        "name": "Chimera",
+        "type": "attack-pattern",
+        "alias": [
+          "the Chimera issues"
+        ]
+      },
+      {
+        "name": "patches",
+        "type": "course-of-action",
+        "alias": [
+          "security updates"
+        ]
+      },
+      {
+        "name": "ecosystem partners",
+        "type": "infrastructure",
+        "alias": [
+          "AMD's ecosystem partners"
+        ]
+      },
+      {
+        "name": "sky",
+        "type": "abstract-concept",
+        "alias": [
+          "a metaphor"
+        ]
+      },
+      {
+        "name": "90-day notice",
+        "type": "course-of-action",
+        "alias": [
+          "customary notice period"
+        ]
+      },
+      {
+        "name": "the latest chips",
+        "type": "general-software",
+        "alias": [
+          "AMD's latest chips"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Ryzenfall",
+        "rel": "is a collection of",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "security flaws"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "revealed vulnerabilities in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "AMD's new Ryzen and EPYC processor lines"
+      },
+      {
+        "sub": "AMD",
+        "rel": "has been quiet about",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "these vulnerabilities"
+      },
+      {
+        "sub": "AMD",
+        "rel": "assured",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Tom's Hardware"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "released information on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a collection of vulnerabilities"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "decided to publish its findings without giving",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "AMD the customary 90-day notice"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "expressed concern about",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the lack of updates from AMD"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "said it believed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "many of the vulnerabilities would take months to fix"
+      },
+      {
+        "sub": "Chimera",
+        "rel": "requires",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "a hardware change"
+      },
+      {
+        "sub": "AMD's relative silence",
+        "rel": "led CTS Labs to believe",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the company had stalled out"
+      },
+      {
+        "sub": "AMD",
+        "rel": "released patches to",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "our ecosystem partners"
+      },
+      {
+        "sub": "patches",
+        "rel": "mitigating all of the CTS identified vulnerabilities on",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "our EPYC™ platform"
+      },
+      {
+        "sub": "patches",
+        "rel": "mitigating Chimera across",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "all AMD platforms"
+      },
+      {
+        "sub": "patches",
+        "rel": "are in final testing with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "our ecosystem partners"
+      },
+      {
+        "sub": "AMD",
+        "rel": "expect these patches to be released publicly as",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "our ecosystem partners complete their validation work"
+      },
+      {
+        "sub": "We",
+        "rel": "expect to hear more about",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "these patches"
+      },
+      {
+        "sub": "AMD",
+        "rel": "has not forgotten about",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "CTS Labs' report"
+      },
+      {
+        "sub": "the vulnerabilities",
+        "rel": "were present in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the most basic aspects of the Ryzen and EPYC processors"
+      },
+      {
+        "sub": "the Chimera issues",
+        "rel": "require a hardware change",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "that couldn't be implemented in products that have already shipped"
+      },
+      {
+        "sub": "AMD",
+        "rel": "released patches to",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "our ecosystem partners"
+      },
+      {
+        "sub": "the sky",
+        "rel": "has yet to fall",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "Ryzen"
+      },
+      {
+        "sub": "Ryzen",
+        "rel": "has yet to fall",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "the sky"
+      }
+    ]
+  }
+}

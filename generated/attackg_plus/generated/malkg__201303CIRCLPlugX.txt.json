@@ -1,0 +1,407 @@
+{
+  "sample_id": "malkg__201303CIRCLPlugX.txt",
+  "sample_index": 121,
+  "source": "malkg",
+  "file_name": "201303CIRCLPlugX.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Sample A",
+        "rel": "Construct",
+        "obj": "Sample B"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "Construct",
+        "obj": "Sample C"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "Construct",
+        "obj": "Sample D"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "Operate",
+        "obj": "Document reader"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "Has value",
+        "obj": "Self-extracting archive"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "Modify",
+        "obj": "Document reader"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "Use",
+        "obj": "Crafted document"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "Write",
+        "obj": "Malicious file"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "Belong to",
+        "obj": "Attack vector"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "Has vulnerability",
+        "obj": "Document reader"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "Locate at",
+        "obj": "PDF or Office document attacks"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "Use",
+        "obj": "mcvsmap.exe"
+      },
+      {
+        "sub": "mcvsmap.exe",
+        "rel": "Construct",
+        "obj": "Sample B"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "Use",
+        "obj": "McUtil.DLL"
+      },
+      {
+        "sub": "McUtil.DLL",
+        "rel": "Use",
+        "obj": "McUtil.DLL.PPT"
+      },
+      {
+        "sub": "McUtil.DLL.PPT",
+        "rel": "Has value",
+        "obj": "RtlDecompressBuffer"
+      },
+      {
+        "sub": "McUtil.DLL.PPT",
+        "rel": "Has value",
+        "obj": "custom decryption routine"
+      },
+      {
+        "sub": "McUtil.DLL.PPT",
+        "rel": "Modify",
+        "obj": "memory"
+      },
+      {
+        "sub": "Decompressed code",
+        "rel": "Execute",
+        "obj": "in memory"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Inject",
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Inject",
+        "obj": "msiexec.exe"
+      },
+      {
+        "sub": "McUtil.DLL.PPT",
+        "rel": "Has value",
+        "obj": "Microsoft API call RtlDecompressBuffer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "msiexec.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Service"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Imagepath"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Filename"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Service Configuration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Inject Code Into",
+        "obj": "System Process"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Adjust",
+        "obj": "SeDebugPrivilege"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Adjust",
+        "obj": "SeTcbPrivilege"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate With",
+        "obj": "Elevated Privileges"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Have Tactic",
+        "obj": "Privilege Escalation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Temporary file UAC.TMP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Legitimate signed binary mcvsmap.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Windows 7"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "User Account Control"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Legitimate signed binary mcvsmap.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Trusted process"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "%ALLUSERSPROFILE%\\SxS\\bug.log"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "%ALLUSERSPROFILE%\\SxS\\bug.log"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Keylogger"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Capture",
+        "obj": "Window titles"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Capture",
+        "obj": "Date"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Capture",
+        "obj": "Time"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Capture",
+        "obj": "Keystrokes"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Gather",
+        "obj": "Sensitive credentials"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Gather",
+        "obj": "User input"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "XPlugNethood"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "XPlugDisk"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "XPlugNetstat"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Enumerate",
+        "obj": "Processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Enumerate",
+        "obj": "Services"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Enumerate",
+        "obj": "Registry keys"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Provide",
+        "obj": "Detailed information about the system environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "ScreenT1"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "bug.log"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Keylogger"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "ScreenT1"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Capture",
+        "obj": "User keystrokes"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Operate",
+        "obj": "help.yahoo-upgrade.com"
+      },
+      {
+        "sub": "help.yahoo-upgrade.com",
+        "rel": "Has value",
+        "obj": "122.199.194.197"
+      },
+      {
+        "sub": "help.yahoo-upgrade.com",
+        "rel": "Has URL",
+        "obj": "https://help.yahoo-upgrade.com"
+      },
+      {
+        "sub": "support.yahoo-upgrade.com",
+        "rel": "Has value",
+        "obj": "Domain"
+      },
+      {
+        "sub": "update.ayuisyahooapis.com",
+        "rel": "Has value",
+        "obj": "Domain"
+      },
+      {
+        "sub": "update.trendmicros.co.in",
+        "rel": "Has value",
+        "obj": "Domain"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "encrypted channels"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "scheduled transfers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "automated exfiltration methods"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Exfiltrate",
+        "obj": "screenshots"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Exfiltrate",
+        "obj": "keystrokes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Exfiltrate",
+        "obj": "system data"
+      }
+    ]
+  }
+}

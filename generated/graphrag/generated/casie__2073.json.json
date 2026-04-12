@@ -1,0 +1,142 @@
+{
+  "sample_id": "casie__2073.json",
+  "sample_index": 30,
+  "source": "casie",
+  "file_name": "2073.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DAWID GOLUNSKI",
+        "type": "PERSON"
+      },
+      {
+        "name": "WORDPRESS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PHPMAILER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CVE-2016-10033",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "CVE-2017-8295",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "WORDPRESS FOUNDATION",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "BEYONDSECURITY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "USECANONICALNAME",
+        "type": "TOOL"
+      },
+      {
+        "name": "UNAUTHENTICATED REMOTE CODE EXECUTION",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "UNAUTHORIZED PASSWORD RESET",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "SECURITY RESEARCH",
+        "type": "CAMPAIGN"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DAWID GOLUNSKI",
+        "rel": "related_to",
+        "obj": "CVE-2016-10033"
+      },
+      {
+        "sub": "DAWID GOLUNSKI",
+        "rel": "related_to",
+        "obj": "CVE-2017-8295"
+      },
+      {
+        "sub": "DAWID GOLUNSKI",
+        "rel": "related_to",
+        "obj": "WORDPRESS"
+      },
+      {
+        "sub": "CVE-2016-10033",
+        "rel": "related_to",
+        "obj": "PHPMAILER"
+      },
+      {
+        "sub": "CVE-2017-8295",
+        "rel": "related_to",
+        "obj": "WORDPRESS"
+      },
+      {
+        "sub": "CVE-2017-8295",
+        "rel": "related_to",
+        "obj": "USECANONICALNAME"
+      },
+      {
+        "sub": "WORDPRESS FOUNDATION",
+        "rel": "related_to",
+        "obj": "CVE-2016-10033"
+      },
+      {
+        "sub": "WORDPRESS FOUNDATION",
+        "rel": "related_to",
+        "obj": "CVE-2017-8295"
+      },
+      {
+        "sub": "BEYONDSECURITY",
+        "rel": "related_to",
+        "obj": "CVE-2017-8295"
+      },
+      {
+        "sub": "DAWID GOLUNSKI",
+        "rel": "related_to",
+        "obj": "BEYONDSECURITY"
+      },
+      {
+        "sub": "UNAUTHENTICATED REMOTE CODE EXECUTION",
+        "rel": "related_to",
+        "obj": "CVE-2016-10033"
+      },
+      {
+        "sub": "UNAUTHORIZED PASSWORD RESET",
+        "rel": "related_to",
+        "obj": "CVE-2017-8295"
+      },
+      {
+        "sub": "SECURITY RESEARCH",
+        "rel": "related_to",
+        "obj": "DAWID GOLUNSKI"
+      },
+      {
+        "sub": "SECURITY RESEARCH",
+        "rel": "related_to",
+        "obj": "BEYONDSECURITY"
+      }
+    ]
+  }
+}

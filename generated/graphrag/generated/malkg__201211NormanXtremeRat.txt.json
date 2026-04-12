@@ -1,0 +1,266 @@
+{
+  "sample_id": "malkg__201211NormanXtremeRat.txt",
+  "sample_index": 102,
+  "source": "malkg",
+  "file_name": "201211NormanXtremeRat.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "ISRAELI GOVERNMENT",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "PALESTINIAN TARGETS",
+        "type": "GEO"
+      },
+      {
+        "name": "IDF CHIEF OF STAFF BENNY GANTZ",
+        "type": "PERSON"
+      },
+      {
+        "name": "XtremeRat",
+        "type": "MALWARE"
+      },
+      {
+        "name": "COMMAND-AND-CONTROL (C&C) STRUCTURES",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "PALESTINE TELECOMMUNICATIONS COMPANY (PALTEL)",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "HADARA TECHNOLOGIES",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MAHMOUD ABBAS",
+        "type": "PERSON"
+      },
+      {
+        "name": "MOSSAD",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "NABIL AMR",
+        "type": "PERSON"
+      },
+      {
+        "name": "GILAD SHALIT",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "Hamas",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "IDF",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "PALESTINE NOW",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SFX RAR ARCHIVE",
+        "type": "TOOL"
+      },
+      {
+        "name": "SFX ZIP ARCHIVE",
+        "type": "TOOL"
+      },
+      {
+        "name": "OFF-THE-SHORE MALWARE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "THE ATTACKER",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "SPEAR PHISHING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "CYBER SURVEILLANCE CAMPAIGN",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "CLOUD HOSTING SERVICES (US)",
+        "type": "LOCATION"
+      },
+      {
+        "name": "Gaza Strip",
+        "type": "LOCATION"
+      },
+      {
+        "name": "RAMALAH",
+        "type": "LOCATION"
+      },
+      {
+        "name": "WEST BANK",
+        "type": "GEO"
+      },
+      {
+        "name": "MOSSEAD",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "Arafat",
+        "type": "PERSON"
+      },
+      {
+        "name": "BENNY GANTZ",
+        "type": "PERSON"
+      },
+      {
+        "name": "THEATTACKER",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "PRISONER EXCHANGE DEAL",
+        "type": "Unknown"
+      },
+      {
+        "name": "PALTEL",
+        "type": "Unknown"
+      },
+      {
+        "name": "PALESTINIAN MEDIA",
+        "type": "Unknown"
+      },
+      {
+        "name": "HAMS",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "XtremeRat",
+        "rel": "related_to",
+        "obj": "COMMAND-AND-CONTROL (C&C) STRUCTURES"
+      },
+      {
+        "sub": "XtremeRat",
+        "rel": "related_to",
+        "obj": "THE ATTACKER"
+      },
+      {
+        "sub": "THE ATTACKER",
+        "rel": "related_to",
+        "obj": "ISRAELI GOVERNMENT"
+      },
+      {
+        "sub": "THE ATTACKER",
+        "rel": "related_to",
+        "obj": "PALESTINIAN TARGETS"
+      },
+      {
+        "sub": "THE ATTACKER",
+        "rel": "related_to",
+        "obj": "MAHMOUD ABBAS"
+      },
+      {
+        "sub": "THE ATTACKER",
+        "rel": "related_to",
+        "obj": "NABIL AMR"
+      },
+      {
+        "sub": "THE ATTACKER",
+        "rel": "related_to",
+        "obj": "GILAD SHALIT"
+      },
+      {
+        "sub": "THE ATTACKER",
+        "rel": "related_to",
+        "obj": "IDF CHIEF OF STAFF BENNY GANTZ"
+      },
+      {
+        "sub": "THE ATTACKER",
+        "rel": "related_to",
+        "obj": "CLOUD HOSTING SERVICES (US)"
+      },
+      {
+        "sub": "XtremeRat",
+        "rel": "related_to",
+        "obj": "SFX RAR ARCHIVE"
+      },
+      {
+        "sub": "SFX RAR ARCHIVE",
+        "rel": "related_to",
+        "obj": "PALESTINIAN TARGETS"
+      },
+      {
+        "sub": "SFX ZIP ARCHIVE",
+        "rel": "related_to",
+        "obj": "PRISONER EXCHANGE DEAL"
+      },
+      {
+        "sub": "COMMAND-AND-CONTROL (C&C) STRUCTURES",
+        "rel": "related_to",
+        "obj": "PALTEL"
+      },
+      {
+        "sub": "COMMAND-AND-CONTROL (C&C) STRUCTURES",
+        "rel": "related_to",
+        "obj": "WEST BANK"
+      },
+      {
+        "sub": "CYBER SURVEILLANCE CAMPAIGN",
+        "rel": "related_to",
+        "obj": "THE ATTACKER"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "IDF CHIEF OF STAFF BENNY GANTZ"
+      },
+      {
+        "sub": "SPEAR PHISHING",
+        "rel": "related_to",
+        "obj": "PALESTINIAN MEDIA"
+      },
+      {
+        "sub": "THE ATTACKER",
+        "rel": "related_to",
+        "obj": "HAMS"
+      },
+      {
+        "sub": "THE ATTACKER",
+        "rel": "related_to",
+        "obj": "Arafat"
+      },
+      {
+        "sub": "THE ATTACKER",
+        "rel": "related_to",
+        "obj": "Gaza Strip"
+      },
+      {
+        "sub": "THE ATTACKER",
+        "rel": "related_to",
+        "obj": "RAMALAH"
+      },
+      {
+        "sub": "THE ATTACKER",
+        "rel": "related_to",
+        "obj": "WEST BANK"
+      }
+    ]
+  }
+}

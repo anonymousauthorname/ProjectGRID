@@ -1,0 +1,174 @@
+{
+  "sample_id": "malkg__201204SecureListSabPub.txt",
+  "sample_index": 129,
+  "source": "malkg",
+  "file_name": "201204SecureListSabPub.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "OSX.SabPub",
+        "type": "Malware"
+      },
+      {
+        "name": "LuckyCat",
+        "type": "Campaign"
+      },
+      {
+        "name": "onedumb.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Fremont",
+        "type": "Location"
+      },
+      {
+        "name": "U.S.",
+        "type": "Location"
+      },
+      {
+        "name": "CVE-2009-0563",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Exploit.MSWord.CVE-2009-0563.a",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "8958.doc",
+        "type": "Indicator"
+      },
+      {
+        "name": "MaControl",
+        "type": "Malware"
+      },
+      {
+        "name": "Dalai-Lama",
+        "type": "Person"
+      },
+      {
+        "name": "Tibetan community",
+        "type": "Organization"
+      },
+      {
+        "name": "VirusTotal",
+        "type": "Organization"
+      },
+      {
+        "name": "Java",
+        "type": "Software"
+      },
+      {
+        "name": "Mac OS X",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "OSX.SabPub",
+        "rel": "is connected to",
+        "obj": "LuckyCat"
+      },
+      {
+        "sub": "OSX.SabPub",
+        "rel": "uses c2 on",
+        "obj": "onedumb.com"
+      },
+      {
+        "sub": "OSX.SabPub",
+        "rel": "uses vps in",
+        "obj": "Fremont"
+      },
+      {
+        "sub": "OSX.SabPub",
+        "rel": "uses vps in",
+        "obj": "U.S."
+      },
+      {
+        "sub": "OSX.SabPub",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2009-0563"
+      },
+      {
+        "sub": "Exploit.MSWord.CVE-2009-0563.a",
+        "rel": "is used to infection",
+        "obj": "OSX.SabPub"
+      },
+      {
+        "sub": "8958.doc",
+        "rel": "SPREADS",
+        "obj": "OSX.SabPub"
+      },
+      {
+        "sub": "8958.doc",
+        "rel": "was submitted to",
+        "obj": "VirusTotal"
+      },
+      {
+        "sub": "8958.doc",
+        "rel": "was uploaded from",
+        "obj": "U.S."
+      },
+      {
+        "sub": "8958.doc",
+        "rel": "has file name linked to",
+        "obj": "Dalai-Lama"
+      },
+      {
+        "sub": "8958.doc",
+        "rel": "has file name linked to",
+        "obj": "Tibetan community"
+      },
+      {
+        "sub": "OSX.SabPub",
+        "rel": "uses to infection",
+        "obj": "Java"
+      },
+      {
+        "sub": "OSX.SabPub",
+        "rel": "is different from",
+        "obj": "MaControl"
+      },
+      {
+        "sub": "OSX.SabPub",
+        "rel": "TARGETS",
+        "obj": "Mac OS X"
+      },
+      {
+        "sub": "OSX.SabPub",
+        "rel": "was created in",
+        "obj": "February 2012"
+      },
+      {
+        "sub": "OSX.SabPub",
+        "rel": "was updated in",
+        "obj": "March 2012"
+      },
+      {
+        "sub": "OSX.SabPub",
+        "rel": "was contained in document created in",
+        "obj": "August 2010"
+      },
+      {
+        "sub": "OSX.SabPub",
+        "rel": "was updated in",
+        "obj": "2012"
+      }
+    ]
+  }
+}

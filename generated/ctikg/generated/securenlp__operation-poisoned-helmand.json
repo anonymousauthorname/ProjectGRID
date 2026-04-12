@@ -1,0 +1,182 @@
+{
+  "sample_id": "securenlp__operation-poisoned-helmand",
+  "sample_index": 174,
+  "source": "securenlp",
+  "file_name": "operation-poisoned-helmand",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "ThreatConnect",
+        "rel": "observed",
+        "obj": "drive-by XSS attack"
+      },
+      {
+        "sub": "content delivery network resource",
+        "rel": "leveraged",
+        "obj": "malicious Java applet"
+      },
+      {
+        "sub": "content delivery network resource",
+        "rel": "distributed",
+        "obj": "malicious Java applet"
+      },
+      {
+        "sub": "malicious Java applet",
+        "rel": "distributed",
+        "obj": "Government of Afghanistan websites"
+      },
+      {
+        "sub": "Government of Afghanistan websites",
+        "rel": "used as distribution channel",
+        "obj": "malicious Java applet"
+      },
+      {
+        "sub": "content delivery network resource",
+        "rel": "serves",
+        "obj": "gop-script.js"
+      },
+      {
+        "sub": "document.write",
+        "rel": "contains",
+        "obj": "malicious Java applet"
+      },
+      {
+        "sub": "document.write",
+        "rel": "contains",
+        "obj": "malicious Java applet"
+      },
+      {
+        "sub": "update.javaplug-in.com",
+        "rel": "has similar naming to",
+        "obj": "java-se.com"
+      },
+      {
+        "sub": "malicious Java applet",
+        "rel": "contains",
+        "obj": "malicious class file"
+      },
+      {
+        "sub": "malicious class file",
+        "rel": "downloads",
+        "obj": "Windows PE executable payload"
+      },
+      {
+        "sub": "malicious class file",
+        "rel": "decodes",
+        "obj": "Windows PE executable payload"
+      },
+      {
+        "sub": "Windows PE executable payload",
+        "rel": "is downloaded from",
+        "obj": "icon35.png"
+      },
+      {
+        "sub": "icon35.png",
+        "rel": "is hosted on",
+        "obj": "Government of Afghanistan websites"
+      },
+      {
+        "sub": "malicious Java applet",
+        "rel": "is from the same source code as",
+        "obj": "ADC162DD909283097E72FC50B7AB0E04AB8A2BCC"
+      },
+      {
+        "sub": "malicious Java applet",
+        "rel": "downloads",
+        "obj": "Windows PE executable payload"
+      },
+      {
+        "sub": "malicious Java applet",
+        "rel": "is hosted on",
+        "obj": "Government of Afghanistan websites"
+      },
+      {
+        "sub": "malicious Java applet",
+        "rel": "downloads",
+        "obj": "Windows PE executable payload"
+      },
+      {
+        "sub": "XOR 0xC8 encoded payload",
+        "rel": "downloads",
+        "obj": "Windows PE executable"
+      },
+      {
+        "sub": "malware",
+        "rel": "downloads",
+        "obj": "Windows PE executable"
+      },
+      {
+        "sub": "Windows PE executable",
+        "rel": "is digitally signed with",
+        "obj": "certificate from OnAndOn Information System Co., Ltd."
+      },
+      {
+        "sub": "Windows PE executable",
+        "rel": "is digitally signed with",
+        "obj": "certificate"
+      },
+      {
+        "sub": "certificate",
+        "rel": "has serial number",
+        "obj": "1F F7 D8 64 18 1C 55 5E 70 CF DD 3A 59 34 C4 7D"
+      },
+      {
+        "sub": "certificate",
+        "rel": "signed",
+        "obj": "Java applet"
+      },
+      {
+        "sub": "Windows PE executable",
+        "rel": "drops",
+        "obj": "dllhost.exe"
+      },
+      {
+        "sub": "dbgeng.dll",
+        "rel": "is loaded by",
+        "obj": "Microsoft Debugging Tools"
+      },
+      {
+        "sub": "DLL",
+        "rel": "loads into",
+        "obj": "dllhost.exe"
+      },
+      {
+        "sub": "DLL",
+        "rel": "uses",
+        "obj": "DLL sideloading technique"
+      },
+      {
+        "sub": "DLL",
+        "rel": "is associated with",
+        "obj": "PlugX"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "is loaded by",
+        "obj": "dbgeng.dll"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "connects to",
+        "obj": "javaplug-in.com"
+      }
+    ]
+  }
+}

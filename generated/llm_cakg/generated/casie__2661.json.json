@@ -1,0 +1,349 @@
+{
+  "sample_id": "casie__2661.json",
+  "sample_index": 29,
+  "source": "casie",
+  "file_name": "2661.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "HospitalGown",
+        "type": "Entity"
+      },
+      {
+        "name": "Elasticsearch",
+        "type": "Entity"
+      },
+      {
+        "name": "Redis",
+        "type": "Entity"
+      },
+      {
+        "name": "MongoDB",
+        "type": "Entity"
+      },
+      {
+        "name": "MySQL",
+        "type": "Entity"
+      },
+      {
+        "name": "Pulse Workspace",
+        "type": "Entity"
+      },
+      {
+        "name": "backend storage platforms",
+        "type": "Entity"
+      },
+      {
+        "name": "insecure database installations",
+        "type": "Entity"
+      },
+      {
+        "name": "misconfigured backend storage platforms",
+        "type": "Entity"
+      },
+      {
+        "name": "open Elasticsearch servers",
+        "type": "Entity"
+      },
+      {
+        "name": "43 terabytes of exposed data",
+        "type": "Entity"
+      },
+      {
+        "name": "cloud based servers",
+        "type": "Entity"
+      },
+      {
+        "name": "Internet accessible servers",
+        "type": "Entity"
+      },
+      {
+        "name": "lack of authentication",
+        "type": "Entity"
+      },
+      {
+        "name": "failure to secure transport of data",
+        "type": "Entity"
+      },
+      {
+        "name": "HTTPS conventions",
+        "type": "Entity"
+      },
+      {
+        "name": "personal identifiable information (PII)",
+        "type": "Entity"
+      },
+      {
+        "name": "spear phishing attack",
+        "type": "Entity"
+      },
+      {
+        "name": "brute force attack",
+        "type": "Entity"
+      },
+      {
+        "name": "API",
+        "type": "Entity"
+      },
+      {
+        "name": "data exposure",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerable mobile apps",
+        "type": "Entity"
+      },
+      {
+        "name": "office productivity apps",
+        "type": "Entity"
+      },
+      {
+        "name": "enterprise access management apps",
+        "type": "Entity"
+      },
+      {
+        "name": "games",
+        "type": "Entity"
+      },
+      {
+        "name": "dating apps",
+        "type": "Entity"
+      },
+      {
+        "name": "travel apps",
+        "type": "Entity"
+      },
+      {
+        "name": "flight apps",
+        "type": "Entity"
+      },
+      {
+        "name": "hotel apps",
+        "type": "Entity"
+      },
+      {
+        "name": "advertising components",
+        "type": "Entity"
+      },
+      {
+        "name": "data mining",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware attacks",
+        "type": "Entity"
+      },
+      {
+        "name": "secure data stores",
+        "type": "Entity"
+      },
+      {
+        "name": "best practices on secure data stores",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "HospitalGown",
+        "rel": "causes",
+        "obj": "data exposure"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "results from",
+        "obj": "misconfigured backend storage platforms"
+      },
+      {
+        "sub": "misconfigured backend storage platforms",
+        "rel": "include",
+        "obj": "Elasticsearch"
+      },
+      {
+        "sub": "misconfigured backend storage platforms",
+        "rel": "include",
+        "obj": "Redis"
+      },
+      {
+        "sub": "misconfigured backend storage platforms",
+        "rel": "include",
+        "obj": "MongoDB"
+      },
+      {
+        "sub": "misconfigured backend storage platforms",
+        "rel": "include",
+        "obj": "MySQL"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "is caused by",
+        "obj": "lack of authentication"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "is caused by",
+        "obj": "failure to secure transport of data"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "is caused by",
+        "obj": "HTTPS conventions not followed"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "exposes",
+        "obj": "43 terabytes of exposed data"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "exposes",
+        "obj": "personal identifiable information (PII)"
+      },
+      {
+        "sub": "vulnerable mobile apps",
+        "rel": "leak",
+        "obj": "personal identifiable information (PII)"
+      },
+      {
+        "sub": "vulnerable mobile apps",
+        "rel": "include",
+        "obj": "office productivity apps"
+      },
+      {
+        "sub": "vulnerable mobile apps",
+        "rel": "include",
+        "obj": "enterprise access management apps"
+      },
+      {
+        "sub": "vulnerable mobile apps",
+        "rel": "include",
+        "obj": "games"
+      },
+      {
+        "sub": "vulnerable mobile apps",
+        "rel": "include",
+        "obj": "dating apps"
+      },
+      {
+        "sub": "vulnerable mobile apps",
+        "rel": "include",
+        "obj": "travel apps"
+      },
+      {
+        "sub": "vulnerable mobile apps",
+        "rel": "include",
+        "obj": "flight apps"
+      },
+      {
+        "sub": "vulnerable mobile apps",
+        "rel": "include",
+        "obj": "hotel apps"
+      },
+      {
+        "sub": "vulnerable mobile apps",
+        "rel": "have",
+        "obj": "advertising components"
+      },
+      {
+        "sub": "advertising components",
+        "rel": "enable",
+        "obj": "data mining"
+      },
+      {
+        "sub": "data mining",
+        "rel": "can be used for",
+        "obj": "phishing"
+      },
+      {
+        "sub": "data mining",
+        "rel": "can be used for",
+        "obj": "ransomware attacks"
+      },
+      {
+        "sub": "Pulse Workspace",
+        "rel": "has",
+        "obj": "API"
+      },
+      {
+        "sub": "Pulse Workspace",
+        "rel": "exposes",
+        "obj": "backend data"
+      },
+      {
+        "sub": "Pulse Workspace",
+        "rel": "exposes",
+        "obj": "all app data records"
+      },
+      {
+        "sub": "Pulse Workspace",
+        "rel": "leaked",
+        "obj": "Pulse customer data"
+      },
+      {
+        "sub": "Pulse Workspace",
+        "rel": "was found to have",
+        "obj": "insecure backend storage platforms"
+      },
+      {
+        "sub": "insecure database installations",
+        "rel": "were targeted",
+        "obj": "by hackers"
+      },
+      {
+        "sub": "hackers",
+        "rel": "scan for",
+        "obj": "vulnerable servers"
+      },
+      {
+        "sub": "vulnerable servers",
+        "rel": "are accessible from",
+        "obj": "Internet"
+      },
+      {
+        "sub": "vulnerable servers",
+        "rel": "expose",
+        "obj": "PII"
+      },
+      {
+        "sub": "data exposure",
+        "rel": "can be leveraged for",
+        "obj": "spear phishing attack"
+      },
+      {
+        "sub": "data exposure",
+        "rel": "can be leveraged for",
+        "obj": "brute force attack"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "has",
+        "obj": "security and data protection capabilities"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "can encrypt",
+        "obj": "all data on the platform"
+      },
+      {
+        "sub": "best practices on secure data stores",
+        "rel": "are not adopted",
+        "obj": "in many cases"
+      }
+    ]
+  }
+}

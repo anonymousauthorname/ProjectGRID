@@ -1,0 +1,164 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_9.json",
+  "sample_index": 248,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_9.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE20141761",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Microsoft Word",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Outlook",
+        "type": "Software"
+      },
+      {
+        "name": "RTF",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Office 2003",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Word 2010",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Word 2003",
+        "type": "Software"
+      },
+      {
+        "name": "Trend Micro Deep Security",
+        "type": "Organization"
+      },
+      {
+        "name": "HEURRTFEXP.A",
+        "type": "Indicator"
+      },
+      {
+        "name": "TROJARTIEF.NSA",
+        "type": "Indicator"
+      },
+      {
+        "name": "TROJARTIEF.NSB",
+        "type": "Indicator"
+      },
+      {
+        "name": "Protected View",
+        "type": "Software"
+      },
+      {
+        "name": "Fixtool",
+        "type": "Tool"
+      },
+      {
+        "name": "Remote Code Execution",
+        "type": "AttackPattern"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE20141761",
+        "rel": "AFFECTS",
+        "obj": "Microsoft Word"
+      },
+      {
+        "sub": "CVE20141761",
+        "rel": "AFFECTS",
+        "obj": "Microsoft Outlook"
+      },
+      {
+        "sub": "CVE20141761",
+        "rel": "exploits through",
+        "obj": "RTF"
+      },
+      {
+        "sub": "Microsoft Word 2010",
+        "rel": "is affected by",
+        "obj": "CVE20141761"
+      },
+      {
+        "sub": "Microsoft Word 2003",
+        "rel": "is affected by",
+        "obj": "CVE20141761"
+      },
+      {
+        "sub": "Microsoft Office 2003",
+        "rel": "has support ending",
+        "obj": "CVE20141761"
+      },
+      {
+        "sub": "CVE20141761",
+        "rel": "has detection rule",
+        "obj": "Trend Micro Deep Security"
+      },
+      {
+        "sub": "Trend Micro Deep Security",
+        "rel": "has detection rule",
+        "obj": "HEURRTFEXP.A"
+      },
+      {
+        "sub": "Trend Micro Deep Security",
+        "rel": "has detection rule",
+        "obj": "TROJARTIEF.NSA"
+      },
+      {
+        "sub": "Trend Micro Deep Security",
+        "rel": "has detection rule",
+        "obj": "TROJARTIEF.NSB"
+      },
+      {
+        "sub": "Microsoft Word",
+        "rel": "ENFORCES",
+        "obj": "Protected View"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "RELEASSED",
+        "obj": "Fixtool"
+      },
+      {
+        "sub": "CVE20141761",
+        "rel": "leads to",
+        "obj": "Remote Code Execution"
+      },
+      {
+        "sub": "Microsoft Outlook 2007",
+        "rel": "uses as email viewer",
+        "obj": "Microsoft Word"
+      },
+      {
+        "sub": "Microsoft Outlook 2010",
+        "rel": "uses as email viewer",
+        "obj": "Microsoft Word"
+      },
+      {
+        "sub": "Microsoft Outlook 2013",
+        "rel": "uses as email viewer",
+        "obj": "Microsoft Word"
+      }
+    ]
+  }
+}

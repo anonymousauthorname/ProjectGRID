@@ -1,0 +1,328 @@
+{
+  "sample_id": "securenlp__Miniduke_twitter",
+  "sample_index": 186,
+  "source": "securenlp",
+  "file_name": "Miniduke_twitter",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "MiniDuke",
+        "type": "Malware"
+      },
+      {
+        "name": "Win32/SandyEva",
+        "type": "Malware"
+      },
+      {
+        "name": "CVE-2014-1761",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "RTF",
+        "type": "Software"
+      },
+      {
+        "name": "kernel32.dll",
+        "type": "Software"
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "Software"
+      },
+      {
+        "name": "TwitterJS",
+        "type": "Malware"
+      },
+      {
+        "name": "@FloydLSchwartz",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "geoiptool.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "urlmon!URLDownloadToFileA",
+        "type": "Tool"
+      },
+      {
+        "name": "RSA-2048",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "GIF8",
+        "type": "Indicator"
+      },
+      {
+        "name": "IShellLinkA",
+        "type": "Tool"
+      },
+      {
+        "name": "cryptdll.dll",
+        "type": "Software"
+      },
+      {
+        "name": "NTUSER.DAT",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "JScript",
+        "type": "Tool"
+      },
+      {
+        "name": "SHA-1",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Twitter",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Proposal-Cover-Sheet-English.rtf",
+        "type": "Indicator"
+      },
+      {
+        "name": "a.l",
+        "type": "Indicator"
+      },
+      {
+        "name": "fdbywu",
+        "type": "Indicator"
+      },
+      {
+        "name": "Windows",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Organization"
+      },
+      {
+        "name": "HP Security Research",
+        "type": "Organization"
+      },
+      {
+        "name": "Kaspersky",
+        "type": "Organization"
+      },
+      {
+        "name": "Bitdefender",
+        "type": "Organization"
+      },
+      {
+        "name": "OSX/Flashback",
+        "type": "Malware"
+      },
+      {
+        "name": "Win32/Exploit.CVE-2014-1761.D",
+        "type": "Malware"
+      },
+      {
+        "name": "Win32/SandyEva.G",
+        "type": "Malware"
+      },
+      {
+        "name": "ESET Research",
+        "type": "Organization"
+      },
+      {
+        "name": "GitHub",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "https://github.com/eset/malware-research/tree/master/miniduke",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Belgium",
+        "type": "Location"
+      },
+      {
+        "name": "France",
+        "type": "Location"
+      },
+      {
+        "name": "UK",
+        "type": "Location"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "MiniDuke",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2014-1761"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "PARSING",
+        "obj": "RTF"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "USES",
+        "obj": "kernel32.dll"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "USES",
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "has component",
+        "obj": "TwitterJS"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "DELIVERS",
+        "obj": "Proposal-Cover-Sheet-English.rtf"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "DROPS",
+        "obj": "a.l"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "DOWNSLOADS",
+        "obj": "fdbywu"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "USES",
+        "obj": "Twitter"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "USES",
+        "obj": "geoiptool.com"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "USES",
+        "obj": "urlmon!URLDownloadToFileA"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "verifies with",
+        "obj": "RSA-2048"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "hides in",
+        "obj": "GIF8"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "USES",
+        "obj": "IShellLinkA"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "injects code into",
+        "obj": "cryptdll.dll"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "stores in alternate data stream",
+        "obj": "NTUSER.DAT"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "EXECUTES",
+        "obj": "JScript"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "implements altered version of",
+        "obj": "SHA-1"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "searches on",
+        "obj": "@FloydLSchwartz"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "is a variant of",
+        "obj": "Win32/SandyEva"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "announced vulnerability",
+        "obj": "CVE-2014-1761"
+      },
+      {
+        "sub": "HP Security Research",
+        "rel": "ANALYZED",
+        "obj": "CVE-2014-1761"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "DISCUSSED",
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "Bitdefender",
+        "rel": "DISCUSSED",
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "uses watermarking method",
+        "obj": "OSX/Flashback"
+      },
+      {
+        "sub": "Win32/Exploit.CVE-2014-1761.D",
+        "rel": "DELIVERS",
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "uses modified version of",
+        "obj": "SHA-1"
+      },
+      {
+        "sub": "ESET Research",
+        "rel": "HOSTS",
+        "obj": "https://github.com/eset/malware-research/tree/master/miniduke"
+      },
+      {
+        "sub": "TwitterJS",
+        "rel": "uses to contact candy server",
+        "obj": "Twitter"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "infected in",
+        "obj": "Belgium"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "infected in",
+        "obj": "France"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "infected in",
+        "obj": "UK"
+      }
+    ]
+  }
+}

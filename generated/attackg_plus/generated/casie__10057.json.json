@@ -1,0 +1,587 @@
+{
+  "sample_id": "casie__10057.json",
+  "sample_index": 41,
+  "source": "casie",
+  "file_name": "10057.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Kirin application processor"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Modify",
+        "obj": "Baseband firmware"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Allow",
+        "obj": "Memory-corruption attacks over the air"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Enable",
+        "obj": "Reconnaissance efforts"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Enable",
+        "obj": "Probing of device behavior"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Enable",
+        "obj": "Probing of network interactions"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Memory-corruption attacks over the air"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Reconnaissance efforts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Probing of device behavior"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Probing of network interactions"
+      },
+      {
+        "sub": "Huawei",
+        "rel": "Belong to",
+        "obj": "Hisilicon Technologies"
+      },
+      {
+        "sub": "HiSilicon Technologies",
+        "rel": "Produce",
+        "obj": "Kirin application processor"
+      },
+      {
+        "sub": "Kirin application processor",
+        "rel": "Locate at",
+        "obj": "HiSilicon Balong integrated 4G LTE modems"
+      },
+      {
+        "sub": "Huawei",
+        "rel": "Have",
+        "obj": "Smartphone"
+      },
+      {
+        "sub": "Huawei",
+        "rel": "Have",
+        "obj": "Laptop WWAN modules"
+      },
+      {
+        "sub": "Huawei",
+        "rel": "Have",
+        "obj": "IoT components"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has geolocation",
+        "obj": "Huawei smartphones"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has geolocation",
+        "obj": "Laptop WWAN modules"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has geolocation",
+        "obj": "IoT components"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Detect",
+        "obj": "Memory-corruption attacks over the air"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "Memory-corruption attacks over the air"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Operate",
+        "obj": "Baseband firmware"
+      },
+      {
+        "sub": "Baseband firmware",
+        "rel": "Has value",
+        "obj": "Memory-corruption attacks over the air"
+      },
+      {
+        "sub": "Researcher",
+        "rel": "Disclose",
+        "obj": "Zero-day vulnerability"
+      },
+      {
+        "sub": "Ralf-Phillip Weinmann",
+        "rel": "Author",
+        "obj": "Zero-day vulnerability"
+      },
+      {
+        "sub": "Ralf-Phillip Weinmann",
+        "rel": "Present",
+        "obj": "Multiple baseband vulnerabilities"
+      },
+      {
+        "sub": "Baseband firmware",
+        "rel": "Construct",
+        "obj": "Memory-corruption attacks over the air"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Reconnaissance efforts"
+      },
+      {
+        "sub": "HiSilicon Balong integrated 4G LTE modem",
+        "rel": "Has vulnerability",
+        "obj": "Baseband vulnerability"
+      },
+      {
+        "sub": "HiSilicon Balong integrated 4G LTE modem",
+        "rel": "Belong to",
+        "obj": "Kirin application processor"
+      },
+      {
+        "sub": "HiSilicon Balong integrated 4G LTE modem",
+        "rel": "Has value",
+        "obj": "Published source code"
+      },
+      {
+        "sub": "Published source code",
+        "rel": "Enable",
+        "obj": "Adversaries develop malicious tools"
+      },
+      {
+        "sub": "Malicious tools",
+        "rel": "Use",
+        "obj": "Custom firmware"
+      },
+      {
+        "sub": "Malicious tools",
+        "rel": "Use",
+        "obj": "Implants"
+      },
+      {
+        "sub": "Implants",
+        "rel": "Enable",
+        "obj": "Persistent access"
+      },
+      {
+        "sub": "Implants",
+        "rel": "Enable",
+        "obj": "Control over affected devices"
+      },
+      {
+        "sub": "Baseband vulnerability",
+        "rel": "Support",
+        "obj": "Attack tool development"
+      },
+      {
+        "sub": "Baseband vulnerability",
+        "rel": "Support",
+        "obj": "Infrastructure development"
+      },
+      {
+        "sub": "Baseband implantation",
+        "rel": "Has malleability",
+        "obj": "Suitable for device experimentation"
+      },
+      {
+        "sub": "Baseband implantation",
+        "rel": "Has malleability",
+        "obj": "Suitable for network testing"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "OpenLTE"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Modify",
+        "obj": "LTE stack"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Trigger",
+        "obj": "stack buffer overflow"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Write",
+        "obj": "rootkit"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Operate",
+        "obj": "Kirin application processor"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Has vulnerability",
+        "obj": "baseband vulnerability"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Belong to",
+        "obj": "Huawei devices"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Locate at",
+        "obj": "baseband component"
+      },
+      {
+        "sub": "Note: \"Initial Access\" is treated as a security event or tactic, and the extracted entities and relations follow the defined rules. All entities are from the allowed types, and relations are from the allowed relation types. The triplets are structured as Subject",
+        "rel": "Relation",
+        "obj": "Object, with active voice and no pronouns."
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Lua scripting interpreter"
+      },
+      {
+        "sub": "Lua scripting interpreter",
+        "rel": "Operate",
+        "obj": "Baseband firmware"
+      },
+      {
+        "sub": "Baseband firmware",
+        "rel": "Has vulnerability",
+        "obj": "Memory-corruption attack"
+      },
+      {
+        "sub": "Baseband firmware",
+        "rel": "Locate at",
+        "obj": "Trusted baseband context"
+      },
+      {
+        "sub": "Lua scripting interpreter",
+        "rel": "Construct",
+        "obj": "Arbitrary code"
+      },
+      {
+        "sub": "Arbitrary code",
+        "rel": "Execute",
+        "obj": "Malicious payloads"
+      },
+      {
+        "sub": "Baseband firmware",
+        "rel": "Has value",
+        "obj": "Trusted execution environment"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Has vulnerability",
+        "obj": "Baseband's firmware"
+      },
+      {
+        "sub": "Rootkit",
+        "rel": "Modify",
+        "obj": "Legitimate system processes"
+      },
+      {
+        "sub": "Rootkit",
+        "rel": "Operate",
+        "obj": "Device"
+      },
+      {
+        "sub": "Rootkit",
+        "rel": "Remain active",
+        "obj": "Device after reboot"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Install",
+        "obj": "Rootkit"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Establish",
+        "obj": "Persistence"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Has vulnerability",
+        "obj": "Baseband firmware"
+      },
+      {
+        "sub": "Baseband firmware",
+        "rel": "Operate",
+        "obj": "Device's communication functions"
+      },
+      {
+        "sub": "Baseband firmware",
+        "rel": "Has value",
+        "obj": "High-level access"
+      },
+      {
+        "sub": "Baseband firmware",
+        "rel": "Write",
+        "obj": "Memory and execution environment"
+      },
+      {
+        "sub": "Baseband firmware",
+        "rel": "Modify",
+        "obj": "Memory"
+      },
+      {
+        "sub": "Baseband firmware",
+        "rel": "Has geolocation",
+        "obj": "Device's core functions"
+      },
+      {
+        "sub": "Baseband firmware",
+        "rel": "Has URL",
+        "obj": "Voice calls and SMS transmission"
+      },
+      {
+        "sub": "Baseband firmware",
+        "rel": "Use",
+        "obj": "Memory corruption"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has vulnerability",
+        "obj": "Baseband"
+      },
+      {
+        "sub": "Baseband",
+        "rel": "Operate",
+        "obj": "Lua interpreter"
+      },
+      {
+        "sub": "Lua interpreter",
+        "rel": "Use",
+        "obj": "Code injection"
+      },
+      {
+        "sub": "Code injection",
+        "rel": "Modify",
+        "obj": "Malicious activity"
+      },
+      {
+        "sub": "Malicious activity",
+        "rel": "Hide",
+        "obj": "Legitimate processes"
+      },
+      {
+        "sub": "Source code",
+        "rel": "Has URL",
+        "obj": "Publicly available source code"
+      },
+      {
+        "sub": "Publicly available source code",
+        "rel": "Construct",
+        "obj": "Detection-evasive tools"
+      },
+      {
+        "sub": "Detection-evasive tools",
+        "rel": "Mimic",
+        "obj": "Normal network traffic"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Baseband vulnerability"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Operate",
+        "obj": "Device"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Detect",
+        "obj": "Network configuration"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Detect",
+        "obj": "Service status"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Detect",
+        "obj": "Firmware"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Detect",
+        "obj": "Communication capabilities"
+      },
+      {
+        "sub": "Device",
+        "rel": "Has value",
+        "obj": "Network configuration"
+      },
+      {
+        "sub": "Device",
+        "rel": "Has value",
+        "obj": "Service status"
+      },
+      {
+        "sub": "Device",
+        "rel": "Has value",
+        "obj": "Firmware"
+      },
+      {
+        "sub": "Device",
+        "rel": "Has value",
+        "obj": "Communication capabilities"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Modify",
+        "obj": "Device behavior"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Write",
+        "obj": "Network signals"
+      },
+      {
+        "sub": "Device",
+        "rel": "Respond to",
+        "obj": "Specially crafted packets"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Enable",
+        "obj": "Eavesdropping"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Enable",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Allow",
+        "obj": "Capture of cellular network data"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Enable",
+        "obj": "Intelligence gathering"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Enable",
+        "obj": "Further exploitation"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "Lua scripting interpreter"
+      },
+      {
+        "sub": "Lua scripting interpreter",
+        "rel": "Operate",
+        "obj": "Remote server"
+      },
+      {
+        "sub": "Baseband",
+        "rel": "Use",
+        "obj": "Command and control"
+      },
+      {
+        "sub": "Baseband",
+        "rel": "Write",
+        "obj": "Encrypted or obfuscated channels"
+      },
+      {
+        "sub": "Baseband",
+        "rel": "Operate",
+        "obj": "Data over the air"
+      },
+      {
+        "sub": "Baseband",
+        "rel": "Maintain",
+        "obj": "Persistent C2 channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Baseband"
+      },
+      {
+        "sub": "Baseband",
+        "rel": "Has value",
+        "obj": "Voice calls"
+      },
+      {
+        "sub": "Baseband",
+        "rel": "Has value",
+        "obj": "SMS messages"
+      },
+      {
+        "sub": "Baseband",
+        "rel": "Has value",
+        "obj": "Communications"
+      },
+      {
+        "sub": "Baseband",
+        "rel": "Operate",
+        "obj": "External server"
+      },
+      {
+        "sub": "Baseband",
+        "rel": "Use",
+        "obj": "Encrypted or encoded channels"
+      },
+      {
+        "sub": "Baseband",
+        "rel": "Modify",
+        "obj": "Data collected from device"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Operate",
+        "obj": "Initial access"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Use",
+        "obj": "Same attack vector"
+      }
+    ]
+  }
+}

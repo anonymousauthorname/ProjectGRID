@@ -1,0 +1,484 @@
+{
+  "sample_id": "securenlp__NYTimes_Attackers_Evolve_Quickly",
+  "sample_index": 193,
+  "source": "securenlp",
+  "file_name": "NYTimes_Attackers_Evolve_Quickly",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "The attackers behind the breach of the New York Times’ computer network late last year",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the group",
+          "the attackers behind the intrusion",
+          "the attackers behind the intrusion",
+          "the actor",
+          "the actor"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "New York Times’ computer network",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malware",
+        "type": "hacker-tool",
+        "alias": [
+          "updated versions of their Backdoor.APT.Aumlib and Backdoor.APT.Ixeshe malware families"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Aumlib",
+        "type": "malware",
+        "alias": [
+          "Backdoor.APT.Aumlib",
+          "Aumlib, which for years has been used in targeted attacks",
+          "this malware family"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Ixeshe",
+        "type": "malware",
+        "alias": [
+          "Backdoor.APT.Ixeshe",
+          "Ixeshe has been in service since 2009"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "HTTP communications",
+        "type": "network-traffic",
+        "alias": [
+          "certain HTTP communications"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "FireEye researchers",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "organization involved in shaping economic policy",
+        "type": "identity",
+        "alias": [
+          "the organization"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "recent attempted attack",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "status[.]acmetoy[.]com/DD/myScript.js or status[.]acmetoy[.]com/DD/css.css",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "sample (hash value 832f5e01be536da71d5b3f7e41938cfb)",
+        "type": "file",
+        "alias": [
+          "recently observed malware sample"
+        ],
+        "mother entity": [
+          "Aumlib"
+        ]
+      },
+      {
+        "name": "hash value 832f5e01be536da71d5b3f7e41938cfb",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "sample with the hash cb3dcde34fd9ff0e19381d99b02f9692",
+        "type": "file",
+        "alias": [
+          "older Aumlib variant"
+        ],
+        "mother entity": [
+          "Aumlib"
+        ]
+      },
+      {
+        "name": "documents[.]myPicture[.]info",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "www[.]documents[.]myPicture[.]info",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Backdoor.APT.Aumlib and Backdoor.APT.Ixeshe malware families",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "/bbs/info.asp",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "/bbs/search.asp",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "custom Base64 alphabet",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "/[ACD] [EW]S[Numbers].jsp?[Base64]",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "sample (aa873ed803ca800ce92a39d9a683c644)",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Ixeshe"
+        ]
+      },
+      {
+        "name": "victim’s hostname and IP address",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "mark or campaign tag/code",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "[ll65]",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "The New York Times",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Cybercriminals",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "larger, more successful threat actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "TTPs",
+        "type": "abstract-concept",
+        "alias": [
+          "techniques, tactics, procedures"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "APT12",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Mandiant",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "IDS signatures",
+        "type": "security-product",
+        "alias": [
+          "existing IDS signatures"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "infrastructure",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "The attackers behind the breach of the New York Times’ computer network late last year",
+        "rel": "leverage",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "malware"
+      },
+      {
+        "sub": "The attackers behind the breach of the New York Times’ computer network late last year",
+        "rel": "mounting fresh assaults on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "New York Times’ computer network"
+      },
+      {
+        "sub": "The new campaigns",
+        "rel": "mark the first significant stirrings from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the group"
+      },
+      {
+        "sub": "The newest campaign",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "updated versions of Aumlib"
+      },
+      {
+        "sub": "The newest campaign",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "updated versions of Ixeshe"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "encodes",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "certain HTTP communications"
+      },
+      {
+        "sub": "FireEye researchers",
+        "rel": "spotted the malware when analyzing",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "recent attempted attack"
+      },
+      {
+        "sub": "recent attempted attack",
+        "rel": "on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "organization involved in shaping economic policy"
+      },
+      {
+        "sub": "new version of Ixeshe",
+        "rel": "uses new network traffic patterns",
+        "rel_type": [
+          "communicates-with",
+          "bypasses"
+        ],
+        "obj": "traditional network security systems",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "The attackers behind the breach of the New York Times’ computer network late last year",
+        "rel": "deployed updated versions of",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Backdoor.APT.Aumlib and Backdoor.APT.Ixeshe malware families"
+      },
+      {
+        "sub": "Backdoor.APT.Aumlib",
+        "rel": "generated the following POST request to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "/bbs/info.asp"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "transmitted in clear text in the following structure: <VICTIM BIOS NAME>|<CAMPAIGN ID>|<VICTIM EXTERNAL IP>|<VICTIM OS>",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "victim’s hostname and IP address"
+      },
+      {
+        "sub": "sample (hash value 832f5e01be536da71d5b3f7e41938cfb)",
+        "rel": "downloaded from",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "status[.]acmetoy[.]com/DD/myScript.js"
+      },
+      {
+        "sub": "sample (hash value 832f5e01be536da71d5b3f7e41938cfb)",
+        "rel": "shares code with",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "sample with the hash cb3dcde34fd9ff0e19381d99b02f9692"
+      },
+      {
+        "sub": "sample with the hash cb3dcde34fd9ff0e19381d99b02f9692",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "documents[.]myPicture[.]info"
+      },
+      {
+        "sub": "sample with the hash cb3dcde34fd9ff0e19381d99b02f9692",
+        "rel": "generated the POST request to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "/bbs/info.asp"
+      },
+      {
+        "sub": "Ixeshe",
+        "rel": "network traffic is encoded with",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "custom Base64 alphabet"
+      },
+      {
+        "sub": "sample (aa873ed803ca800ce92a39d9a683c644)",
+        "rel": "exhibited network traffic that does not match the earlier pattern",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "Ixeshe",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "sample (aa873ed803ca800ce92a39d9a683c644)",
+        "rel": "Base64-encoded data contains",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "victim’s hostname and IP address"
+      },
+      {
+        "sub": "sample (aa873ed803ca800ce92a39d9a683c644)",
+        "rel": "Base64-encoded data contains",
+        "rel_type": [
+          "leaks"
+        ],
+        "obj": "mark or campaign tag/code"
+      },
+      {
+        "sub": "mark for this particular attack was [ll65]",
+        "rel": "used by",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "Ixeshe"
+      },
+      {
+        "sub": "Cybercriminals",
+        "rel": "evolving and adapting to bypass",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "computer network defenses"
+      },
+      {
+        "sub": "larger, more successful threat actors",
+        "rel": "evolve at a slower rate",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "TTPs"
+      },
+      {
+        "sub": "larger, more successful threat actors",
+        "rel": "change up tactics",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "recoding malware"
+      },
+      {
+        "sub": "APT12",
+        "rel": "known as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the attackers behind the breach of the New York Times’ computer network late last year"
+      },
+      {
+        "sub": "larger, more successful threat actors",
+        "rel": "requires updating",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "infrastructure"
+      },
+      {
+        "sub": "IDS signatures",
+        "rel": "designed to detect",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Backdoor.APT.Aumlib"
+      },
+      {
+        "sub": "The attackers behind the breach of the New York Times’ computer network late last year",
+        "rel": "changed up tactics",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the attackers behind the breach of the New York Times’ computer network late last year"
+      }
+    ]
+  }
+}

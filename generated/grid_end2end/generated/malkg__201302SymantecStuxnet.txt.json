@@ -1,0 +1,822 @@
+{
+  "sample_id": "malkg__201302SymantecStuxnet.txt",
+  "sample_index": 107,
+  "source": "malkg",
+  "file_name": "201302SymantecStuxnet.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Stuxnet 0.5",
+        "type": "malware",
+        "alias": [
+          "the oldest known Stuxnet version",
+          "Stuxnet versions 0.5",
+          "Stuxnet 0.5",
+          "Stuxnet versions",
+          "versions of Stuxnet",
+          "the version of Stuxnet 0.5",
+          "the original version of Stuxnet"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Stuxnet",
+        "type": "malware",
+        "alias": [
+          "the worm",
+          "the Stuxnet worm",
+          "the first computer software threat that was used as a cyber-weapon",
+          "the Stuxnet worm became known as",
+          "Stuxnet 0.5",
+          "the Stuxnet family",
+          "Stuxnet versions 0.5",
+          "Stuxnet versions",
+          "versions 1.x of Stuxnet",
+          "versions 1.x",
+          "the Stuxnet versions",
+          "the Stuxnet worms"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Symantec",
+        "type": "security-product",
+        "alias": [
+          "Symantec have",
+          "Symantec would like to thank",
+          "Symantec Corporation"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "industrial plant machinery",
+        "type": "general-software",
+        "alias": [
+          "industrial plant machinery",
+          "machinery"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Siemens Step 7 project files",
+        "type": "file",
+        "alias": [
+          "Step 7 project archives",
+          "Step 7 project archives with a .s7p or .zip file name extension",
+          "Step 7 project files",
+          "Step 7 project archives on the local disk",
+          "infected Step 7 project archives",
+          ".s7p or .zip file name extension",
+          "Step 7 project archives (as described in W32.Stuxnet Dossier, Step 7 Project File Infections)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Step 7 project archives",
+        "type": "file",
+        "alias": [
+          "Step 7 project archives"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "C&C server registration",
+        "type": "attack-pattern",
+        "alias": [
+          "C&C server registration"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "C&C servers",
+        "type": "infrastructure",
+        "alias": [
+          "four C&C servers",
+          "C&C servers"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "smartclick.org",
+        "type": "domain-name",
+        "alias": [
+          "the C&C servers"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "best-advertising.net",
+        "type": "domain-name",
+        "alias": [
+          "the C&C servers"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "internetadvertising4u.com",
+        "type": "domain-name",
+        "alias": [
+          "the C&C servers"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "ad-marketing.net",
+        "type": "domain-name",
+        "alias": [
+          "the C&C servers"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "Media Suffix",
+        "type": "generic-noun",
+        "alias": [
+          "Internet advertising agency homepage for Stuxnet C&C servers"
+        ],
+        "mother entity": [
+          "C&C servers"
+        ]
+      },
+      {
+        "name": "United States, Canada, France, and Thailand",
+        "type": "location",
+        "alias": [
+          "commercial hosting providers"
+        ],
+        "mother entity": [
+          "C&C servers"
+        ]
+      },
+      {
+        "name": "Siemens",
+        "type": "identity",
+        "alias": [
+          "Siemens Step 7"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "SIMATIC 400 Station (0x14109A)",
+        "type": "hardware",
+        "alias": [
+          "SIMATIC 400 Station (0x14109A)"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "SIMATIC H-Station (0x141342)",
+        "type": "hardware",
+        "alias": [
+          "SIMATIC H-Station (0x141342)"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "automatic control system",
+        "type": "infrastructure",
+        "alias": [
+          "automatic control system"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "PLCs",
+        "type": "general-software",
+        "alias": [
+          "PLC data blocks",
+          "PLCs"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "Siemens SIMATIC Products DLL Loading Arbitrary Code Execution Vulnerability (CVE-2012-3015)",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerability",
+          "This vulnerability"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "s7hkimdb.dll",
+        "type": "file",
+        "alias": [
+          "the s7hkimdb.dll file",
+          "the loader"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "XR000001.MDX",
+        "type": "file",
+        "alias": [
+          "the XR000001.MDX Stuxnet binary file"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "services.exe",
+        "type": "process",
+        "alias": [
+          "the services.exe process"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "outbreak.dll",
+        "type": "file",
+        "alias": [
+          "the main Stuxnet component",
+          "outbreak.dll (main Stuxnet component)",
+          "the main Stuxnet binary"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "oem7a.pnf",
+        "type": "file",
+        "alias": [
+          "the main Stuxnet binary is saved to disk as oem7a.pnf"
+        ],
+        "mother entity": [
+          "outbreak.dll"
+        ]
+      },
+      {
+        "name": "installation.dll",
+        "type": "file",
+        "alias": [
+          "the companion DLL that implements the payload"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "oem7w.pnf",
+        "type": "file",
+        "alias": [
+          "the payload DLL will be decrypted as well and injected into the Explorer process... saved to disk as oem7w.pnf"
+        ],
+        "mother entity": [
+          "installation.dll"
+        ]
+      },
+      {
+        "name": "MRXCLS.SYS",
+        "type": "windows-registry-key",
+        "alias": [
+          "load point driver",
+          "MRXCLS.SYS load point driver"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "PCIBUS.SYS",
+        "type": "windows-registry-key",
+        "alias": [
+          "Timer driver for generating BSoD"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "USBACC11.SYS",
+        "type": "windows-registry-key",
+        "alias": [
+          "the USBACC11.SYS driver",
+          "the usbacc11.sys driver"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "inetpsp.dll",
+        "type": "file",
+        "alias": [
+          "C&C server communication"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "netsimp32.dll",
+        "type": "file",
+        "alias": [
+          "P2P communication"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "s7otbxdx.dll",
+        "type": "file",
+        "alias": [
+          "the s7otbxdx.dll file"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "s7aaapix.dll",
+        "type": "file",
+        "alias": [
+          "the s7aaapix.dll file"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "DB8061",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "a PLC data block"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "Step 7 DLLs",
+        "type": "general-software",
+        "alias": [
+          "DLLs hijacked by Stuxnet"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "symbol labels",
+        "type": "generic-noun",
+        "alias": [
+          "each field in the symbol labels"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "cascades",
+        "type": "generic-noun",
+        "alias": [
+          "the 18 cascades",
+          "cascades in a cascade"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "centrifuges",
+        "type": "hardware",
+        "alias": [
+          "the centrifuges"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "valves",
+        "type": "hardware",
+        "alias": [
+          "centrifuge valves",
+          "stage valves",
+          "auxiliary valves"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "stage 1",
+        "type": "location",
+        "alias": [
+          "stage 10"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "Stage numbers with expected numbers of centrifuges",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "the chart in figure 4"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "pipes",
+        "type": "other",
+        "alias": [
+          "the piping"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "417 PLCs",
+        "type": "hardware",
+        "alias": [
+          "a 417 PLC"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "Flamer platform",
+        "type": "hacker-tool",
+        "alias": [
+          "the Flamer platform"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "Tilded platform",
+        "type": "hacker-tool",
+        "alias": [
+          "the Tilded platform"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "Kaspersky",
+        "type": "security-product",
+        "alias": [
+          "Kaspersky"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "F-Secure",
+        "type": "security-product",
+        "alias": [
+          "F-Secure"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "ZoneAlarm",
+        "type": "security-product",
+        "alias": [
+          "ZoneAlarm Personal Firewall"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "Windows Defender",
+        "type": "security-product",
+        "alias": [
+          "Windows Defender"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "MS09-025",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2010-2568",
+          "MS09-025"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "CVE-2010-2568",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2010-2568"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "CVE-2010-2743",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2010-2743"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "CVE-2012-3015",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2012-3015"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "CVE-2010-2772",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2010-2772"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "CVE-2010-2729",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2010-2729"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "CVE-2010-3888",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2010-3888"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "CVE-2008-4250",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2008-4250"
+        ],
+        "mother entity": [
+          "Stuxnet 0.5"
+        ]
+      },
+      {
+        "name": "Redmond, WA",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://www.symantec.com/security_response/writeup.jsp?docid=2011-101814-1119-99",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "designed to take control over",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "industrial plant machinery"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "spread through",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Siemens Step 7 project files"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "causing damage in the process",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "centrifuges"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "registered with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "C&C servers"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "spreads to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "C&C servers"
+      },
+      {
+        "sub": "C&C servers",
+        "rel": "hosted on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "United States, Canada, France, and Thailand"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "arrives as",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Siemens Step 7 project archives"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "uses",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "s7hkimdb.dll"
+      },
+      {
+        "sub": "s7hkimdb.dll",
+        "rel": "decrypts and injects",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "XR000001.MDX"
+      },
+      {
+        "sub": "outbreak.dll",
+        "rel": "saved to disk as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "oem7a.pnf"
+      },
+      {
+        "sub": "installation.dll",
+        "rel": "saved to disk as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "oem7w.pnf"
+      },
+      {
+        "sub": "MRXCLS.SYS",
+        "rel": "decrypts",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "outbreak.dll"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "notifies the C&C server of an active successful infection",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "smartclick.org"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "requests to download and execute a file if an update is available",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "best-advertising.net"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "uses",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "USBACC11.SYS"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "hijacks",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "s7otbxdx.dll"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "hijacks",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "s7aaapix.dll"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "modifies the behavior of",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "valves"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "modifies valve states in",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "cascades"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "pipes"
+      },
+      {
+        "sub": "Flamer platform",
+        "rel": "is based on",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Stuxnet 0.5"
+      },
+      {
+        "sub": "Tilded platform",
+        "rel": "is based on",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Stuxnet 0.5"
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "sample_id": "casie__10191.json",
+  "sample_index": 26,
+  "source": "casie",
+  "file_name": "10191.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "AMD",
+        "type": "Organization"
+      },
+      {
+        "name": "CTS Labs",
+        "type": "Organization"
+      },
+      {
+        "name": "Ryzen",
+        "type": "Software"
+      },
+      {
+        "name": "EPYC",
+        "type": "Software"
+      },
+      {
+        "name": "firmware",
+        "type": "Software"
+      },
+      {
+        "name": "BIOS",
+        "type": "Software"
+      },
+      {
+        "name": "administrative access",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Sarah Youngbauer",
+        "type": "Person"
+      },
+      {
+        "name": "Yaron Luk-Zilberman",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "AMD",
+        "rel": "ADDRESSING",
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "AMD",
+        "rel": "providing patches for",
+        "obj": "firmware"
+      },
+      {
+        "sub": "AMD",
+        "rel": "providing patches for",
+        "obj": "BIOS"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "DISCOVERED",
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "notified without standard window",
+        "obj": "AMD"
+      },
+      {
+        "sub": "AMD",
+        "rel": "REQUIRES",
+        "obj": "administrative access"
+      },
+      {
+        "sub": "Sarah Youngbauer",
+        "rel": "speaks for",
+        "obj": "AMD"
+      },
+      {
+        "sub": "Yaron Luk-Zilberman",
+        "rel": "cofounder of",
+        "obj": "CTS Labs"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "reported vulnerabilities in",
+        "obj": "Ryzen"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "reported vulnerabilities in",
+        "obj": "EPYC"
+      }
+    ]
+  }
+}

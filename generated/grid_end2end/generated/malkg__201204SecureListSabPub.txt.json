@@ -1,0 +1,515 @@
+{
+  "sample_id": "malkg__201204SecureListSabPub.txt",
+  "sample_index": 129,
+  "source": "malkg",
+  "file_name": "201204SecureListSabPub.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "OSX.SabPub",
+        "type": "malware",
+        "alias": [
+          "SabPub",
+          "the bot",
+          "the malware",
+          "this version",
+          "the second SabPub variant",
+          "the real thing",
+          "the sample",
+          "the malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "LuckyCat",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "199.192.152.*",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "rt*****.onedumb.com",
+        "type": "domain-name",
+        "alias": [
+          "the C&C server",
+          "the C&C server located at rt*****.onedumb.com"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "VPS in Fremont, U.S.",
+        "type": "infrastructure",
+        "alias": [
+          "the VPS used as the C&C",
+          "the VPS",
+          "the C&C server"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "C&C server",
+        "type": "infrastructure",
+        "alias": [
+          "the C&C server located at rt*****.onedumb.com"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "port 80",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "fake infected system",
+        "type": "identity",
+        "alias": [
+          "a fake infected system",
+          "the fake victim machine",
+          "goat infected machine",
+          "our fake victim machine",
+          "the fake victim",
+          "the goat infected machine"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "root and home folders",
+        "type": "windows-registry-key",
+        "alias": [
+          "the contents of the root and home folders"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "goat documents",
+        "type": "file",
+        "alias": [
+          "some of the goat documents"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "C&C domain shutdown",
+        "type": "course-of-action",
+        "alias": [
+          "the C&C domain was shutdown"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "onedumb.com",
+        "type": "domain-name",
+        "alias": [
+          "the free DNS service onedumb.com"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Exploit.MSWord.CVE-2009-0563.a",
+        "type": "attack-pattern",
+        "alias": [
+          "CVE-2009-0563 vulnerability"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Six Microsoft Word documents",
+        "type": "file",
+        "alias": [
+          "six relevant Word .docs",
+          "the container DOC"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "8958.doc",
+        "type": "file",
+        "alias": [
+          "the second SabPub variant",
+          "a virus collection entry"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "MD5 (40C8786A4887A763D8F3E5243724D1C9)",
+        "type": "indicator",
+        "alias": [
+          "the sample",
+          "the container DOC"
+        ],
+        "mother entity": [
+          "8958.doc"
+        ]
+      },
+      {
+        "name": "February 25, 2012",
+        "type": "date",
+        "alias": [
+          "the upload date"
+        ],
+        "mother entity": [
+          "MD5 (40C8786A4887A763D8F3E5243724D1C9)"
+        ]
+      },
+      {
+        "name": "10th March Statemnet",
+        "type": "file",
+        "alias": [
+          "file name was 10th March Statemnet"
+        ],
+        "mother entity": [
+          "8958.doc"
+        ]
+      },
+      {
+        "name": "Duqu",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Java exploits",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Tibetan People’s National Uprising Day",
+        "type": "abstract-concept",
+        "alias": [
+          "Anniversary of the Tibetan People’s National Uprising Day"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2009-0563",
+        "type": "vulnerability",
+        "alias": [
+          "the CVE-2009-0563 vulnerability"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "MaControl",
+        "type": "malware",
+        "alias": [
+          "backdoor MaControl"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "spearphishing emails",
+        "type": "course-of-action",
+        "alias": [
+          "emails"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "APT controllers",
+          "real attacker",
+          "the malicious group",
+          "attackers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "new variants of the bot with new C2s",
+        "type": "course-of-action",
+        "alias": [
+          "new variants... over the next days/weeks"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "authors",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": [
+          "8958.doc"
+        ]
+      },
+      {
+        "name": "creation date",
+        "type": "date",
+        "alias": [],
+        "mother entity": [
+          "8958.doc"
+        ]
+      },
+      {
+        "name": "2012 update",
+        "type": "date",
+        "alias": [],
+        "mother entity": [
+          "8958.doc"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "a Mac OS X backdoor trojan",
+        "rel": "linked to",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "an APT attack known as LuckyCat"
+      },
+      {
+        "sub": "IP address of the C&C",
+        "rel": "connects to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "OSX.SabPub"
+      },
+      {
+        "sub": "199.192.152.*",
+        "rel": "used in",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "LuckyCat"
+      },
+      {
+        "sub": "fake infected system",
+        "rel": "used in APT bot monitoring",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "fake infected system",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "APT controllers",
+        "rel": "took over",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "fake infected system",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "port 80",
+        "rel": "on the C&C server located at rt*****.onedumb.com",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "C&C server"
+      },
+      {
+        "sub": "C&C server located at rt*****.onedumb.com",
+        "rel": "hosted on",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "VPS in Fremont, U.S."
+      },
+      {
+        "sub": "port 80",
+        "rel": "was closed",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "C&C server"
+      },
+      {
+        "sub": "port 80",
+        "rel": "was opened and bot started communicating with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "C&C server"
+      },
+      {
+        "sub": "attackers",
+        "rel": "started analysing",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "fake infected system"
+      },
+      {
+        "sub": "attackers",
+        "rel": "listed the contents of",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "root and home folders"
+      },
+      {
+        "sub": "attackers",
+        "rel": "stole",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "goat documents"
+      },
+      {
+        "sub": "C&C domain was shutdown",
+        "rel": "shutdown",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "C&C server"
+      },
+      {
+        "sub": "onedumb.com",
+        "rel": "managed",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "C&C server"
+      },
+      {
+        "sub": "VPS in Fremont, U.S.",
+        "rel": "used as C&C",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "C&C server"
+      },
+      {
+        "sub": "the second SabPub variant",
+        "rel": "variant-of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "OSX.SabPub"
+      },
+      {
+        "sub": "Six Microsoft Word documents",
+        "rel": "detect as",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Exploit.MSWord.CVE-2009-0563.a"
+      },
+      {
+        "sub": "MD5 (40C8786A4887A763D8F3E5243724D1C9)",
+        "rel": "is the MD5 of",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "8958.doc"
+      },
+      {
+        "sub": "MD5 (40C8786A4887A763D8F3E5243724D1C9)",
+        "rel": "uploaded on",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "February 25, 2012"
+      },
+      {
+        "sub": "10th March Statemnet",
+        "rel": "was named",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "8958.doc"
+      },
+      {
+        "sub": "Duqu",
+        "rel": "similar to",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "OSX.SabPub"
+      },
+      {
+        "sub": "Java exploits",
+        "rel": "used to infect",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "OSX.SabPub"
+      },
+      {
+        "sub": "spearphishing emails",
+        "rel": "distributed via",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "OSX.SabPub"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "created",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "MD5 (40C8786A4887A763D8F3E5243724D1C9)"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "will release",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "new variants of the bot with new C2s"
+      },
+      {
+        "sub": "authors",
+        "rel": "authored",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "8958.doc"
+      },
+      {
+        "sub": "creation date",
+        "rel": "created on",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "8958.doc"
+      },
+      {
+        "sub": "2012 update",
+        "rel": "updated with",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "8958.doc"
+      },
+      {
+        "sub": "CVE-2009-0563",
+        "rel": "exploits",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "OSX.SabPub"
+      }
+    ]
+  }
+}

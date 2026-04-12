@@ -1,0 +1,362 @@
+{
+  "sample_id": "securenlp__The_Monju_Incident",
+  "sample_index": 185,
+  "source": "securenlp",
+  "file_name": "The_Monju_Incident",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "connection",
+        "rel": "emanate from",
+        "obj": "machine"
+      },
+      {
+        "sub": "media player",
+        "rel": "undergoes software update",
+        "obj": "routine"
+      },
+      {
+        "sub": "training document",
+        "rel": "are stored on",
+        "obj": "machine"
+      },
+      {
+        "sub": "email",
+        "rel": "are stored on",
+        "obj": "machine"
+      },
+      {
+        "sub": "email",
+        "rel": "are harvested by",
+        "obj": "attacker"
+      },
+      {
+        "sub": "media player",
+        "rel": "updates",
+        "obj": "routine"
+      },
+      {
+        "sub": "training document",
+        "rel": "are stored on",
+        "obj": "machine"
+      },
+      {
+        "sub": "email",
+        "rel": "are stored on",
+        "obj": "machine"
+      },
+      {
+        "sub": "email",
+        "rel": "are harvested by",
+        "obj": "attacker"
+      },
+      {
+        "sub": "machine",
+        "rel": "is delivered",
+        "obj": "malware"
+      },
+      {
+        "sub": "GOM Player update server",
+        "rel": "compromised",
+        "obj": "attacker"
+      },
+      {
+        "sub": "attacker",
+        "rel": "gained entry via",
+        "obj": "webshell"
+      },
+      {
+        "sub": "webshell",
+        "rel": "is hidden within",
+        "obj": "image"
+      },
+      {
+        "sub": "image",
+        "rel": "is present on",
+        "obj": "machine"
+      },
+      {
+        "sub": "malicious activity",
+        "rel": "relates to",
+        "obj": "file modification"
+      },
+      {
+        "sub": "malicious activity",
+        "rel": "relates to",
+        "obj": "modification of a file that controls GOM Player updates"
+      },
+      {
+        "sub": "modification of a file that controls GOM Player updates",
+        "rel": "occurred during",
+        "obj": "date range 2013–2014"
+      },
+      {
+        "sub": "modification of a file that controls GOM Player updates",
+        "rel": "occurred during",
+        "obj": "date range 27th December 2013 to 16th January 2014"
+      },
+      {
+        "sub": "file",
+        "rel": "redirects",
+        "obj": "server"
+      },
+      {
+        "sub": "file",
+        "rel": "delivers",
+        "obj": "legitimate update"
+      },
+      {
+        "sub": "file",
+        "rel": "delivers",
+        "obj": "malware"
+      },
+      {
+        "sub": "server",
+        "rel": "contains",
+        "obj": "legitimate update"
+      },
+      {
+        "sub": "server",
+        "rel": "contains",
+        "obj": "malware"
+      },
+      {
+        "sub": "server",
+        "rel": "contains",
+        "obj": "legitimate update"
+      },
+      {
+        "sub": "server",
+        "rel": "contains",
+        "obj": "malware"
+      },
+      {
+        "sub": "GOM Player",
+        "rel": "requires update",
+        "obj": "GOM Update 2"
+      },
+      {
+        "sub": "GOM Player",
+        "rel": "is downloaded by",
+        "obj": "Malware Victim"
+      },
+      {
+        "sub": "GOM Player",
+        "rel": "is downloaded by",
+        "obj": "victim"
+      },
+      {
+        "sub": "www.fudousankaitori.jp",
+        "rel": "is used as",
+        "obj": "Malware Command And Control"
+      },
+      {
+        "sub": "www.fudousankaitori.jp",
+        "rel": "is used as",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "testqweasd.tk",
+        "rel": "is used as",
+        "obj": "Attacker Infrastructure"
+      },
+      {
+        "sub": "testqweasd.tk",
+        "rel": "is used as",
+        "obj": "infrastructure"
+      },
+      {
+        "sub": "malware",
+        "rel": "is launched on",
+        "obj": "startup"
+      },
+      {
+        "sub": "gh0st RAT",
+        "rel": "is known as",
+        "obj": "Backdoor.Miancha"
+      },
+      {
+        "sub": "gh0st RAT",
+        "rel": "uses",
+        "obj": "HTTPS"
+      },
+      {
+        "sub": "Snort signature",
+        "rel": "detects",
+        "obj": "trojan-activity"
+      },
+      {
+        "sub": "Yara signature",
+        "rel": "identifies",
+        "obj": "malware implant"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "has",
+        "obj": "13314 bytes"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "has",
+        "obj": "2013-11-22 12:19:48 UTC"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "has",
+        "obj": "install.exe"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "has",
+        "obj": "g:\\\\ykcx\\\\install(miansha)\\\\Release\\\\install.pdb"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "has",
+        "obj": "d5548e1913950a42a04debcac42222bd2"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "has",
+        "obj": "ac48bc2deefd30dad762a23e85409a7eec48b723"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "has",
+        "obj": "3d43f7fab3c8f574e2790c2d97f85fa87f0d53e412c995462e53348b4fc34b74"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "has",
+        "obj": "10299 bytes"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "has",
+        "obj": "dll.tmp"
+      },
+      {
+        "sub": "MD5",
+        "rel": "has hash value",
+        "obj": "04e7361323b431f7c9f86388f316bbea"
+      },
+      {
+        "sub": "SHA1",
+        "rel": "has hash value",
+        "obj": "e3c095c7ace563b41b3f4310f3de69e47c86fd03"
+      },
+      {
+        "sub": "SHA256",
+        "rel": "has hash value",
+        "obj": "73ef70f1e80e32341eebcb3b1084cf896f6b1aa701b7a6c7abcb9293500d84ae"
+      },
+      {
+        "sub": "Size",
+        "rel": "has value",
+        "obj": "10299"
+      },
+      {
+        "sub": "Compile Time",
+        "rel": "is",
+        "obj": "2013-11-26 09:34:10 UTC"
+      },
+      {
+        "sub": "Filename",
+        "rel": "includes filename",
+        "obj": "install.ocx"
+      },
+      {
+        "sub": "PDB",
+        "rel": "contains path",
+        "obj": "2013.11.25\\\\server\\\\Release\\\\server.pdb"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "is associated with",
+        "obj": "01f7b465242237bd3d31d39767aa68e0"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "has SHA1 hash",
+        "obj": "db4ec59bf7f34a21f9dc7f2ded68c616f7c0fe47"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "has",
+        "obj": "3d43f7fab3c8f574e2790c2d97f85fa87f0d53e412c995462e53348b4fc34b74"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "has",
+        "obj": "10299 bytes"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "has",
+        "obj": "dll.tmp"
+      },
+      {
+        "sub": "MD5",
+        "rel": "has hash value",
+        "obj": "04e7361323b431f7c9f86388f316bbea"
+      },
+      {
+        "sub": "SHA1",
+        "rel": "has hash value",
+        "obj": "e3c095c7ace563b41b3f4310f3de69e47c86fd03"
+      },
+      {
+        "sub": "SHA256",
+        "rel": "has hash value",
+        "obj": "73ef70f1e80e32341eebcb3b1084cf896f6b1aa701b7a6c7abcb9293500d84ae"
+      },
+      {
+        "sub": "Size",
+        "rel": "has value",
+        "obj": "10299"
+      },
+      {
+        "sub": "Compile Time",
+        "rel": "is",
+        "obj": "2013-11-26 09:34:10 UTC"
+      },
+      {
+        "sub": "Filename",
+        "rel": "includes filename",
+        "obj": "install.ocx"
+      },
+      {
+        "sub": "PDB",
+        "rel": "contains path",
+        "obj": "2013.11.25\\\\server\\\\Release\\\\server.pdb"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "is associated with",
+        "obj": "01f7b465242237bd3d31d39767aa68e0"
+      },
+      {
+        "sub": "TrojanLoader",
+        "rel": "has SHA1 hash",
+        "obj": "db4ec59bf7f34a21f9dc7f2ded68c616f7c0fe47"
+      }
+    ]
+  }
+}

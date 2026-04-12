@@ -1,0 +1,236 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-akira.json",
+  "sample_index": 91,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-akira.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Cisco",
+        "type": "Entity"
+      },
+      {
+        "name": "Sept. 6, 2023",
+        "type": "Entity"
+      },
+      {
+        "name": "Akira ransomware",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2023-20269",
+        "type": "Entity"
+      },
+      {
+        "name": "Cisco Adaptive Security Appliance (ASA) software",
+        "type": "Entity"
+      },
+      {
+        "name": "Cisco Firepower Thread Defense (FTD) software",
+        "type": "Entity"
+      },
+      {
+        "name": "remote access VPN feature",
+        "type": "Entity"
+      },
+      {
+        "name": "valid credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "unauthorized remote access VPN sessions",
+        "type": "Entity"
+      },
+      {
+        "name": "clientless SSL VPN session",
+        "type": "Entity"
+      },
+      {
+        "name": "Cisco ASA Software Release 9.16",
+        "type": "Entity"
+      },
+      {
+        "name": "Sentinel One",
+        "type": "Entity"
+      },
+      {
+        "name": "Megazord",
+        "type": "Entity"
+      },
+      {
+        "name": "Power Rangers formation",
+        "type": "Entity"
+      },
+      {
+        "name": "POWERRANGES file extension",
+        "type": "Entity"
+      },
+      {
+        "name": "powerranges.txt",
+        "type": "Entity"
+      },
+      {
+        "name": "TOX messenger",
+        "type": "Entity"
+      },
+      {
+        "name": "August 2023",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware variant",
+        "type": "Entity"
+      },
+      {
+        "name": "ransom note",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious actors",
+        "type": "Entity"
+      },
+      {
+        "name": "zero-day vulnerability",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cisco",
+        "rel": "released security advisory",
+        "obj": "Sept. 6, 2023"
+      },
+      {
+        "sub": "Akira ransomware",
+        "rel": "exploits",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "has vulnerability in",
+        "obj": "Cisco Adaptive Security Appliance (ASA) software"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "has vulnerability in",
+        "obj": "Cisco Firepower Thread Defense (FTD) software"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "is a vulnerability in",
+        "obj": "remote access VPN feature"
+      },
+      {
+        "sub": "Akira ransomware",
+        "rel": "can identify valid credentials",
+        "obj": "valid credentials"
+      },
+      {
+        "sub": "Akira ransomware",
+        "rel": "enables unauthorized access to",
+        "obj": "unauthorized remote access VPN sessions"
+      },
+      {
+        "sub": "Akira ransomware",
+        "rel": "allows establishment of",
+        "obj": "clientless SSL VPN session"
+      },
+      {
+        "sub": "Cisco ASA Software Release 9.16",
+        "rel": "is affected by",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "Sentinel One",
+        "rel": "analyzes",
+        "obj": "Megazord"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "references",
+        "obj": "Power Rangers formation"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "uses file extension",
+        "obj": "POWERRANGES file extension"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "has ransom note",
+        "obj": "powerranges.txt"
+      },
+      {
+        "sub": "powerranges.txt",
+        "rel": "instructs to contact via",
+        "obj": "TOX messenger"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "emerges in",
+        "obj": "August 2023"
+      },
+      {
+        "sub": "ransomware variant",
+        "rel": "is a type of",
+        "obj": "Megazord"
+      },
+      {
+        "sub": "ransom note",
+        "rel": "is a ransom note",
+        "obj": "powerranges.txt"
+      },
+      {
+        "sub": "malicious actors",
+        "rel": "has malicious actor",
+        "obj": "Akira ransomware"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "is a zero-day vulnerability",
+        "obj": "zero-day vulnerability"
+      },
+      {
+        "sub": "Cisco Adaptive Security Appliance (ASA) software",
+        "rel": "has security feature of",
+        "obj": "remote access VPN feature"
+      },
+      {
+        "sub": "Cisco Firepower Thread Defense (FTD) software",
+        "rel": "has security feature of",
+        "obj": "remote access VPN feature"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "is a ransomware variant",
+        "obj": "ransomware variant"
+      },
+      {
+        "sub": "POWERRANGES file extension",
+        "rel": "has extension",
+        "obj": "powerranges.txt"
+      },
+      {
+        "sub": "Power Rangers formation",
+        "rel": "is named after",
+        "obj": "Megazord"
+      }
+    ]
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "sample_id": "securenlp__KL_Epic_Turla_Technical_Appendix_20140806",
+  "sample_index": 161,
+  "source": "securenlp",
+  "file_name": "KL_Epic_Turla_Technical_Appendix_20140806",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "keylogger",
+        "rel": "creates log file",
+        "obj": "%TEMP%\\\\~DFD3O8.tmp"
+      },
+      {
+        "sub": "keylogger",
+        "rel": "tries to write to file",
+        "obj": "f:\\\\keyhook.log"
+      },
+      {
+        "sub": "keylogger",
+        "rel": "appends header to log file",
+        "obj": "when keylogger starts"
+      },
+      {
+        "sub": "MD5",
+        "rel": "has value",
+        "obj": "a3cbf6179d437909eb532b7319b3dafe"
+      },
+      {
+        "sub": "MD5",
+        "rel": "is associated with",
+        "obj": "compiler: Microsoft Visual Studio"
+      },
+      {
+        "sub": "MD5",
+        "rel": "is linked to",
+        "obj": "file format: PE32 DLL"
+      },
+      {
+        "sub": "timestamp",
+        "rel": "is",
+        "obj": "2012.10.02 10:51:50 (GMT)"
+      },
+      {
+        "sub": "Compiler",
+        "rel": "is",
+        "obj": "Microsoft Visual Studio"
+      },
+      {
+        "sub": "File format",
+        "rel": "is",
+        "obj": "PE32 DLL"
+      },
+      {
+        "sub": "Exports",
+        "rel": "includes",
+        "obj": "_LowLevelKeyboardProc@12"
+      },
+      {
+        "sub": "_LowLevelKeyboardProc@12",
+        "rel": "is registered as",
+        "obj": "a hook procedure"
+      },
+      {
+        "sub": "thread",
+        "rel": "retrieves",
+        "obj": "window handle"
+      },
+      {
+        "sub": "handle",
+        "rel": "is used in",
+        "obj": "keyboard hook procedure"
+      },
+      {
+        "sub": "low-level keyboard hook procedure",
+        "rel": "intercepts",
+        "obj": "WM_KEYDOWN"
+      },
+      {
+        "sub": "low-level keyboard hook procedure",
+        "rel": "intercepts",
+        "obj": "WM_KEYUP"
+      },
+      {
+        "sub": "low-level keyboard hook procedure",
+        "rel": "intercepts",
+        "obj": "WM_SYSKEYDOWN"
+      },
+      {
+        "sub": "low-level keyboard hook procedure",
+        "rel": "writes",
+        "obj": "information about each keystroke"
+      },
+      {
+        "sub": "low-level keyboard hook procedure",
+        "rel": "writes",
+        "obj": "information to the log file"
+      },
+      {
+        "sub": "low-level keyboard hook procedure",
+        "rel": "retrieves",
+        "obj": "window name"
+      },
+      {
+        "sub": "low-level keyboard hook procedure",
+        "rel": "retrieves",
+        "obj": "application path"
+      },
+      {
+        "sub": "low-level keyboard hook procedure",
+        "rel": "writes",
+        "obj": "information about window name and application path"
+      },
+      {
+        "sub": "low-level keyboard hook procedure",
+        "rel": "writes",
+        "obj": "information to the log file"
+      },
+      {
+        "sub": "It",
+        "rel": "starts",
+        "obj": "a thread"
+      },
+      {
+        "sub": "thread",
+        "rel": "retrieves",
+        "obj": "window handle"
+      },
+      {
+        "sub": "It",
+        "rel": "uses",
+        "obj": "keyboard hook procedure"
+      },
+      {
+        "sub": "It",
+        "rel": "retrieves",
+        "obj": "window name"
+      },
+      {
+        "sub": "It",
+        "rel": "retrieves",
+        "obj": "application path"
+      },
+      {
+        "sub": "It",
+        "rel": "writes",
+        "obj": "information about the window"
+      },
+      {
+        "sub": "It",
+        "rel": "writes",
+        "obj": "information to the log file"
+      },
+      {
+        "sub": "Directory listing",
+        "rel": "provides information about",
+        "obj": "logical drives"
+      },
+      {
+        "sub": "Directory listing",
+        "rel": "provides information about",
+        "obj": "directories"
+      },
+      {
+        "sub": "Directory listing",
+        "rel": "includes",
+        "obj": "Desktop"
+      },
+      {
+        "sub": "Directory listing",
+        "rel": "includes",
+        "obj": "Temp"
+      },
+      {
+        "sub": "Base64",
+        "rel": "is transmitted to",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "file",
+        "rel": "is uploaded to",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "C&C",
+        "rel": "is implemented on top of",
+        "obj": "HTTP/HTTPS"
+      },
+      {
+        "sub": "C&C URLs",
+        "rel": "is hardcoded in",
+        "obj": "binary"
+      },
+      {
+        "sub": "C&C URLs",
+        "rel": "may be overridden by",
+        "obj": "commands"
+      },
+      {
+        "sub": "module",
+        "rel": "uses",
+        "obj": "API functions"
+      },
+      {
+        "sub": "module",
+        "rel": "issues",
+        "obj": "HTTP POST requests"
+      },
+      {
+        "sub": "module",
+        "rel": "transmits",
+        "obj": "information"
+      },
+      {
+        "sub": "module",
+        "rel": "gets",
+        "obj": "commands"
+      },
+      {
+        "sub": "request body",
+        "rel": "can be",
+        "obj": "empty"
+      },
+      {
+        "sub": "response",
+        "rel": "is",
+        "obj": "HTML document"
+      },
+      {
+        "sub": "commands",
+        "rel": "are",
+        "obj": "Base64-encoded strings"
+      },
+      {
+        "sub": "command",
+        "rel": "is encrypted using",
+        "obj": "asymmetric encryption"
+      },
+      {
+        "sub": "command",
+        "rel": "uses",
+        "obj": "AES session keys"
+      },
+      {
+        "sub": "command",
+        "rel": "is a",
+        "obj": "text/binary buffer"
+      },
+      {
+        "sub": "command",
+        "rel": "consists of",
+        "obj": "payload"
+      },
+      {
+        "sub": "command",
+        "rel": "consists of",
+        "obj": "configuration"
+      },
+      {
+        "sub": "configuration",
+        "rel": "is",
+        "obj": "INI file"
+      },
+      {
+        "sub": "configuration",
+        "rel": "controls",
+        "obj": "module behavior"
+      },
+      {
+        "sub": "configuration",
+        "rel": "is extracted into",
+        "obj": "temporary file"
+      },
+      {
+        "sub": "payload",
+        "rel": "is",
+        "obj": "executable file"
+      },
+      {
+        "sub": "payload",
+        "rel": "may be executed if",
+        "obj": "there is a corresponding command present in the INI part"
+      },
+      {
+        "sub": "payload",
+        "rel": "executed when",
+        "obj": "a command in INI part"
+      },
+      {
+        "sub": "downloader",
+        "rel": "changes",
+        "obj": "C&C URL"
+      },
+      {
+        "sub": "deletion module",
+        "rel": "deletes",
+        "obj": "file"
+      },
+      {
+        "sub": "result",
+        "rel": "sets",
+        "obj": "filename"
+      },
+      {
+        "sub": "backdoor installer",
+        "rel": "are",
+        "obj": "malware"
+      },
+      {
+        "sub": "Turla",
+        "rel": "contains",
+        "obj": "Pfinet backdoor"
+      },
+      {
+        "sub": "Turla",
+        "rel": "contains",
+        "obj": "backdoor installer"
+      }
+    ]
+  }
+}

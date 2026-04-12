@@ -1,0 +1,424 @@
+{
+  "sample_id": "casie__10191.json",
+  "sample_index": 26,
+  "source": "casie",
+  "file_name": "10191.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "AMD",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the chipmaker",
+          "AMD device owners",
+          "AMD"
+        ]
+      },
+      {
+        "name": "Ryzen",
+        "type": "general-software",
+        "alias": [
+          "its Ryzen chips"
+        ]
+      },
+      {
+        "name": "EPYC",
+        "type": "general-software",
+        "alias": [
+          "its EPYC chips"
+        ]
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "vulnerability",
+        "alias": [
+          "the 13 vulnerabilities",
+          "the issues",
+          "the flaws"
+        ]
+      },
+      {
+        "name": "firmware patches",
+        "type": "course-of-action",
+        "alias": [
+          "patches",
+          "firmware updates"
+        ]
+      },
+      {
+        "name": "BIOS update",
+        "type": "course-of-action",
+        "alias": [
+          "standard BIOS update"
+        ]
+      },
+      {
+        "name": "CTS Labs",
+        "type": "security-product",
+        "alias": [
+          "the security company CTS Labs"
+        ]
+      },
+      {
+        "name": "Sarah Youngbauer",
+        "type": "identity",
+        "alias": [
+          "AMD's senior spokeswoman"
+        ]
+      },
+      {
+        "name": "Yaron Luk-Zilberman",
+        "type": "identity",
+        "alias": [
+          "CTSLabs' chief financial officer",
+          "co-founder",
+          "former hedge fund manager"
+        ]
+      },
+      {
+        "name": "Intel",
+        "type": "identity",
+        "alias": [
+          "Intel"
+        ]
+      },
+      {
+        "name": "administrative access",
+        "type": "attack-pattern",
+        "alias": [
+          "unauthorized administrative access"
+        ]
+      },
+      {
+        "name": "exploits",
+        "type": "attack-pattern",
+        "alias": [
+          "the exploits identified in this research"
+        ]
+      },
+      {
+        "name": "standard vulnerability disclosure practices",
+        "type": "abstract-concept",
+        "alias": [
+          "90-day notice",
+          "standard notification window"
+        ]
+      },
+      {
+        "name": "research",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "this research"
+        ]
+      },
+      {
+        "name": "firmware",
+        "type": "general-software",
+        "alias": [
+          "software embedded in hardware"
+        ]
+      },
+      {
+        "name": "several weeks",
+        "type": "time-interval",
+        "alias": [
+          "a few weeks",
+          "in the coming weeks",
+          "several weeks"
+        ]
+      },
+      {
+        "name": "90 days",
+        "type": "time-interval",
+        "alias": [
+          "90-day notification window"
+        ]
+      },
+      {
+        "name": "several months",
+        "type": "time-interval",
+        "alias": [
+          "it would take several months"
+        ]
+      },
+      {
+        "name": "a week",
+        "type": "time-interval",
+        "alias": [
+          "within a week"
+        ]
+      },
+      {
+        "name": "Papermaster",
+        "type": "identity",
+        "alias": [
+          "Papermaster said"
+        ]
+      },
+      {
+        "name": "legal disclaimer",
+        "type": "abstract-concept",
+        "alias": [
+          "You are advised that we may have..."
+        ]
+      },
+      {
+        "name": "The security company CTS Labs",
+        "type": "security-product",
+        "alias": [
+          "CTS Labs"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "AMD",
+        "rel": "will release",
+        "rel_type": [
+          "course-of-action"
+        ],
+        "obj": "firmware patches"
+      },
+      {
+        "sub": "AMD",
+        "rel": "says",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "AMD device owners"
+      },
+      {
+        "sub": "AMD",
+        "rel": "is addressing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "several vulnerabilities"
+      },
+      {
+        "sub": "several vulnerabilities",
+        "rel": "discovered in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "its Ryzen chips"
+      },
+      {
+        "sub": "several vulnerabilities",
+        "rel": "discovered in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "its EPYC chips"
+      },
+      {
+        "sub": "AMD",
+        "rel": "rolling out updates for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "millions of devices"
+      },
+      {
+        "sub": "The 13 vulnerabilities",
+        "rel": "came to public attention",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "clouded in controversy"
+      },
+      {
+        "sub": "The security company CTS Labs",
+        "rel": "gave",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "AMD"
+      },
+      {
+        "sub": "The security company CTS Labs",
+        "rel": "gave",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "less than 24 hours notice"
+      },
+      {
+        "sub": "Standard vulnerability disclosure practices",
+        "rel": "call for giving",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "companies"
+      },
+      {
+        "sub": "Standard vulnerability disclosure practices",
+        "rel": "call for giving",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "at least 90 days' notice"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "said it would take",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "several months"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "said",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "some hardware flaws cannot be fixed"
+      },
+      {
+        "sub": "AMD",
+        "rel": "disagreed with",
+        "rel_type": [
+          "negates"
+        ],
+        "obj": "that timeline"
+      },
+      {
+        "sub": "AMD",
+        "rel": "will provide",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "more information"
+      },
+      {
+        "sub": "AMD",
+        "rel": "said",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the issues were not with its hardware"
+      },
+      {
+        "sub": "AMD",
+        "rel": "said",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the issues were with firmware"
+      },
+      {
+        "sub": "AMD",
+        "rel": "will send fixes for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "all 13 vulnerabilities"
+      },
+      {
+        "sub": "AMD",
+        "rel": "will send fixes for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "through patches and BIOS updates"
+      },
+      {
+        "sub": "research",
+        "rel": "identified",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "exploits"
+      },
+      {
+        "sub": "AMD's technical assessment",
+        "rel": "indicates",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "each of the flaws required administrative access"
+      },
+      {
+        "sub": "attackers gaining unauthorized administrative access",
+        "rel": "would have",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a wide range of attacks"
+      },
+      {
+        "sub": "Papermaster",
+        "rel": "said",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Any attacker gaining unauthorized administrative access would have a wide range of attacks at their disposal well beyond the exploits identified in this research"
+      },
+      {
+        "sub": "Critics",
+        "rel": "took issue with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "another aspect of the CTS Labs report"
+      },
+      {
+        "sub": "Critics",
+        "rel": "pointing out",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the legal disclaimer"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "may have",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "an economic interest in the performance of the securities of the companies whose products are the subject of our reports"
+      },
+      {
+        "sub": "Yaron Luk-Zilberman",
+        "rel": "said",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "it didn't have any investment in Intel or AMD"
+      },
+      {
+        "sub": "AMD",
+        "rel": "will mitigate",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "each of the issues cited through firmware patches and a standard BIOS update"
+      },
+      {
+        "sub": "the exploits identified in this research",
+        "rel": "identified in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "this research"
+      }
+    ]
+  }
+}

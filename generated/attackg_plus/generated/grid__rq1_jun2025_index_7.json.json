@@ -1,0 +1,357 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_7.json",
+  "sample_index": 246,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_7.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Reconnaissance",
+        "rel": "Operate",
+        "obj": "Network"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Modify",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Use",
+        "obj": "Point of Sale software"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Detect",
+        "obj": "Credit card data"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Locate at",
+        "obj": "Victim organization"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Pastebin"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Amazon's CloudFront"
+      },
+      {
+        "sub": "Pastebin",
+        "rel": "Operate",
+        "obj": "Cobalt Strike"
+      },
+      {
+        "sub": "Pastebin",
+        "rel": "Operate",
+        "obj": "Sodinokibi"
+      },
+      {
+        "sub": "Amazon's CloudFront",
+        "rel": "Operate",
+        "obj": "Command and control"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "Has vulnerability",
+        "obj": "Payload storage"
+      },
+      {
+        "sub": "Sodinokibi",
+        "rel": "Has vulnerability",
+        "obj": "Payload delivery"
+      },
+      {
+        "sub": "Pastebin",
+        "rel": "Has value",
+        "obj": "Hosting payload"
+      },
+      {
+        "sub": "Amazon's CloudFront",
+        "rel": "Has value",
+        "obj": "Command and control infrastructure"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "Use",
+        "obj": "Sodinokibi ransomware"
+      },
+      {
+        "sub": "NetSupport Ltd",
+        "rel": "Use",
+        "obj": "legitimate remote admin client tool"
+      },
+      {
+        "sub": "AnyDesk",
+        "rel": "Use",
+        "obj": "malware"
+      },
+      {
+        "sub": "Remote access tools",
+        "rel": "Have vulnerability",
+        "obj": "brute-force attacks"
+      },
+      {
+        "sub": "RDP servers",
+        "rel": "Be targeted by",
+        "obj": "brute-force attacks"
+      },
+      {
+        "sub": "PowerShell",
+        "rel": "Use",
+        "obj": "Malicious code"
+      },
+      {
+        "sub": "PowerShell",
+        "rel": "Operate",
+        "obj": "Windows command-line tool"
+      },
+      {
+        "sub": "PowerShell",
+        "rel": "Modify",
+        "obj": "Execution environment"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Living-off-the-land techniques"
+      },
+      {
+        "sub": "Living-off-the-land techniques",
+        "rel": "Help",
+        "obj": "Evasion of detection"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Operate",
+        "obj": "User account"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Modify",
+        "obj": "Victim machine"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has tactic",
+        "obj": "Disable security software"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has tactic",
+        "obj": "Enable remote desktop connection"
+      },
+      {
+        "sub": "Remote desktop connection",
+        "rel": "Use",
+        "obj": "Facilitate command execution"
+      },
+      {
+        "sub": "Command execution",
+        "rel": "Has purpose",
+        "obj": "Hide malicious behavior"
+      },
+      {
+        "sub": "Command execution",
+        "rel": "Has purpose",
+        "obj": "Maintain operational stealth"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has tactic",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Victim machines"
+      },
+      {
+        "sub": "Victim machines",
+        "rel": "Has vulnerability",
+        "obj": "Credential theft"
+      },
+      {
+        "sub": "Use",
+        "rel": "PowerShell",
+        "obj": "System"
+      },
+      {
+        "sub": "Use",
+        "rel": "remote access tools",
+        "obj": "System"
+      },
+      {
+        "sub": "Discover",
+        "rel": "system information",
+        "obj": "System"
+      },
+      {
+        "sub": "Discover",
+        "rel": "user accounts",
+        "obj": "System"
+      },
+      {
+        "sub": "Discover",
+        "rel": "network configurations",
+        "obj": "System"
+      },
+      {
+        "sub": "Operate",
+        "rel": "network environment",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Locate at",
+        "rel": "internal structure",
+        "obj": "Network"
+      },
+      {
+        "sub": "Identify",
+        "rel": "targets",
+        "obj": "System"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Has tactic",
+        "obj": "Remote Desktop Connection"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Has tactic",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Use",
+        "obj": "Stolen Credentials"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Operate",
+        "obj": "Multiple Computers"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Spread",
+        "obj": "Ransomware"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has tactic",
+        "obj": "Data gathering"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Victim systems"
+      },
+      {
+        "sub": "Victim systems",
+        "rel": "Has vulnerability",
+        "obj": "PoS data"
+      },
+      {
+        "sub": "PoS data",
+        "rel": "Belong to",
+        "obj": "Sensitive information"
+      },
+      {
+        "sub": "Pastebin",
+        "rel": "Host",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Amazon's CloudFront",
+        "rel": "Has value",
+        "obj": "Legitimate service"
+      },
+      {
+        "sub": "Pastebin",
+        "rel": "Has value",
+        "obj": "Legitimate service"
+      },
+      {
+        "sub": "Amazon's CloudFront",
+        "rel": "Modify",
+        "obj": "Traffic to blend with legitimate activity"
+      },
+      {
+        "sub": "Pastebin",
+        "rel": "Modify",
+        "obj": "Traffic to blend with legitimate activity"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has tactic",
+        "obj": "Exfiltration"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Ransom demand negotiation as a trigger for data release"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "System"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Ransomware"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Travelex"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Data integrity"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Stolen data"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Travelex"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has URL",
+        "obj": "Ransom demand threat"
+      }
+    ]
+  }
+}

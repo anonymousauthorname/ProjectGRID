@@ -1,0 +1,242 @@
+{
+  "sample_id": "malkg__201306Rapid7KeyBoy.txt",
+  "sample_index": 137,
+  "source": "malkg",
+  "file_name": "201306Rapid7KeyBoy.txt",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "KeyBoy",
+        "rel": "is a type of",
+        "obj": "malware"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "is directed at",
+        "obj": "Vietnam"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "is directed at",
+        "obj": "India"
+      },
+      {
+        "sub": "THAM luan- GD- NCKH2.doc",
+        "rel": "is an exploit",
+        "obj": "leveraging vulnerabilities patched with MS12-060"
+      },
+      {
+        "sub": "THAM luan- GD- NCKH2.doc",
+        "rel": "is an exploit",
+        "obj": "leveraging vulnerabilities"
+      },
+      {
+        "sub": "THAM luan- GD- NCKH2.doc",
+        "rel": "will initiate",
+        "obj": "infection routine"
+      },
+      {
+        "sub": "THAM luan- GD- NCKH2.doc",
+        "rel": "will display",
+        "obj": "legitimate document"
+      },
+      {
+        "sub": "payload",
+        "rel": "creates",
+        "obj": "CREDRIVER.dll"
+      },
+      {
+        "sub": "CREDRIVER.dll",
+        "rel": "is",
+        "obj": "malware"
+      },
+      {
+        "sub": "CREDRIVER.dll",
+        "rel": "has",
+        "obj": "MD5:2df60de8cb6b9fe7db1ea10581cfcda4fb8057595f2bb53331620c717775751df781c151ba4863d8a22864fa50a32aa85bc808371f05e8953167d34251cbd779d33e2d6d5907c682e1cce4ce2aae3a165abefd40e7de4c4befefe895204ee59f9efd11ef75f894cd535597fe698de80f6ee4e361234c96a0454c490b4faa69869191ed81"
+      },
+      {
+        "sub": "CVE-2012-0158",
+        "rel": "targets",
+        "obj": "individual"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "operates in the same way",
+        "obj": "attack"
+      },
+      {
+        "sub": "exploit",
+        "rel": "opens",
+        "obj": "dropper"
+      },
+      {
+        "sub": "dropper",
+        "rel": "creates",
+        "obj": "service"
+      },
+      {
+        "sub": "dropper",
+        "rel": "launches",
+        "obj": "service"
+      },
+      {
+        "sub": "service",
+        "rel": "is visible in",
+        "obj": "registry"
+      },
+      {
+        "sub": "dropper",
+        "rel": "launches",
+        "obj": "CREDRIVER"
+      },
+      {
+        "sub": "dropper",
+        "rel": "deletes",
+        "obj": "dropper"
+      },
+      {
+        "sub": "service",
+        "rel": "guarantees",
+        "obj": "resilience"
+      },
+      {
+        "sub": "service",
+        "rel": "is executed at",
+        "obj": "startup"
+      },
+      {
+        "sub": "Mozilla Firefox",
+        "rel": "is installed on",
+        "obj": "system"
+      },
+      {
+        "sub": "Mozilla Firefox",
+        "rel": "decides to use",
+        "obj": "technique to recover credentials"
+      },
+      {
+        "sub": "credentials",
+        "rel": "stored in",
+        "obj": "txt files in Firefox profile"
+      },
+      {
+        "sub": "credentials",
+        "rel": "stored in",
+        "obj": "SQLite database"
+      },
+      {
+        "sub": "older Firefox versions",
+        "rel": "stores",
+        "obj": "credentials in txt files in Firefox profile"
+      },
+      {
+        "sub": "recent Firefox versions",
+        "rel": "stores",
+        "obj": "credentials in SQLite database"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "attempts to collect",
+        "obj": "password autocomplete"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "creates",
+        "obj": "separate thread"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "installs",
+        "obj": "Windows hook procedure"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "contacts",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "expects",
+        "obj": "messages from C&C server"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "obj": "communication protocol"
+      },
+      {
+        "sub": "malware",
+        "rel": "has",
+        "obj": "controller"
+      },
+      {
+        "sub": "malware",
+        "rel": "implements",
+        "obj": "protocol"
+      },
+      {
+        "sub": "tool",
+        "rel": "operates",
+        "obj": "controller"
+      },
+      {
+        "sub": "tool",
+        "rel": "behaves like",
+        "obj": "controller"
+      },
+      {
+        "sub": "tool",
+        "rel": "interacts",
+        "obj": "malware"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "contacts",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Sysinfo",
+        "rel": "returns information on",
+        "obj": "computer"
+      },
+      {
+        "sub": "FileManager",
+        "rel": "interact with",
+        "obj": "disks on victim system"
+      },
+      {
+        "sub": "Download",
+        "rel": "download file from",
+        "obj": "compromised system"
+      },
+      {
+        "sub": "Shell",
+        "rel": "spawns",
+        "obj": "command shell"
+      },
+      {
+        "sub": "command shell",
+        "rel": "can be controlled",
+        "obj": "controller"
+      }
+    ]
+  }
+}

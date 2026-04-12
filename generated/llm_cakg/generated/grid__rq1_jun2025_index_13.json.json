@@ -1,0 +1,326 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_13.json",
+  "sample_index": 205,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_13.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TDSS",
+        "type": "Entity"
+      },
+      {
+        "name": "NetWorm.Win32.Rorpian",
+        "type": "Entity"
+      },
+      {
+        "name": "setup.lnk",
+        "type": "Entity"
+      },
+      {
+        "name": "myporno.avi.lnk",
+        "type": "Entity"
+      },
+      {
+        "name": "pornmovs.lnk",
+        "type": "Entity"
+      },
+      {
+        "name": "autorun.inf",
+        "type": "Entity"
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "Entity"
+      },
+      {
+        "name": "DHCP",
+        "type": "Entity"
+      },
+      {
+        "name": "DHSP server",
+        "type": "Entity"
+      },
+      {
+        "name": "LAN",
+        "type": "Entity"
+      },
+      {
+        "name": "IP address",
+        "type": "Entity"
+      },
+      {
+        "name": "main gateway",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious DNS server",
+        "type": "Entity"
+      },
+      {
+        "name": "Google server address",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Entity"
+      },
+      {
+        "name": "removable media",
+        "type": "Entity"
+      },
+      {
+        "name": "network scanning",
+        "type": "Entity"
+      },
+      {
+        "name": "DHCP server",
+        "type": "Entity"
+      },
+      {
+        "name": "DNS settings",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious site",
+        "type": "Entity"
+      },
+      {
+        "name": "self-propagation",
+        "type": "Entity"
+      },
+      {
+        "name": "loader",
+        "type": "Entity"
+      },
+      {
+        "name": "registry key",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled task",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanism",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "user indiscretion",
+        "type": "Entity"
+      },
+      {
+        "name": "DHCP protocol",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious program",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "exploit",
+        "type": "Entity"
+      },
+      {
+        "name": "network infection",
+        "type": "Entity"
+      },
+      {
+        "name": "web browser update",
+        "type": "Entity"
+      },
+      {
+        "name": "redirect",
+        "type": "Entity"
+      },
+      {
+        "name": "file path",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious script",
+        "type": "Entity"
+      },
+      {
+        "name": "script",
+        "type": "Entity"
+      },
+      {
+        "name": "URL",
+        "type": "Entity"
+      },
+      {
+        "name": "domain name",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TDSS",
+        "rel": "uses",
+        "obj": "NetWorm.Win32.Rorpian"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "has",
+        "obj": "self-propagation"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "propagates",
+        "obj": "via removable media"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "propagates",
+        "obj": "via LAN"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "creates",
+        "obj": "setup.lnk"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "creates",
+        "obj": "myporno.avi.lnk"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "creates",
+        "obj": "pornmovs.lnk"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "creates",
+        "obj": "autorun.inf"
+      },
+      {
+        "sub": "setup.lnk",
+        "rel": "links to",
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "rundll32.exe",
+        "rel": "references",
+        "obj": "TDSS DLL"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "checks",
+        "obj": "DHSP server"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "detects",
+        "obj": "DHCP protocol"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "performs",
+        "obj": "network scanning"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "launches",
+        "obj": "DHCP server"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "listens",
+        "obj": "to network"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "responds to",
+        "obj": "DHCP request"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "specifies",
+        "obj": "IP address from available pool"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "specifies",
+        "obj": "main gateway"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "specifies",
+        "obj": "malicious DNS server"
+      },
+      {
+        "sub": "malicious DNS server",
+        "rel": "redirects",
+        "obj": "user web browsing"
+      },
+      {
+        "sub": "user",
+        "rel": "is prompted to",
+        "obj": "update web browser"
+      },
+      {
+        "sub": "user",
+        "rel": "downloads",
+        "obj": "NetWorm.Win32.Rorpian"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "modifies",
+        "obj": "DNS settings"
+      },
+      {
+        "sub": "DNS settings",
+        "rel": "is changed to",
+        "obj": "Google server address"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "exploits",
+        "obj": "user indiscretion"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "acts as",
+        "obj": "loader for TDSS"
+      }
+    ]
+  }
+}

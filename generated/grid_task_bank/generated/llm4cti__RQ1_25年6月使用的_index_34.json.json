@@ -1,0 +1,403 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_34.json",
+  "sample_index": 224,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_34.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Independence day",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the Dorf botnet",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the Dorf authors",
+          "Dorf"
+        ]
+      },
+      {
+        "name": "13:00 PST",
+        "type": "time"
+      },
+      {
+        "name": "fireworks video",
+        "type": "file",
+        "alias": [
+          "Independence day fireworks video"
+        ]
+      },
+      {
+        "name": "subject lines",
+        "type": "other",
+        "alias": [
+          "Amazing Independence Day salute",
+          "Amazing firework 2008",
+          "America for You and Me",
+          "America the Beautiful",
+          "Celebrate Independence",
+          "Celebrate with Pride",
+          "Celebrating Fourth of July",
+          "Celebrations have already begun",
+          "Fabulous Independence Day firework",
+          "God bless America",
+          "Happy Fourth of July",
+          "Happy Independence Day",
+          "Independence Day firework broke all records",
+          "Light up the sky",
+          "Proud to be an American",
+          "Sparkling Celebration of Independence Day",
+          "Spectacular fireworks show",
+          "Stars and Strips forever",
+          "Super 4th!",
+          "The best firework youve ever seen",
+          "The best of 4th of July Salute",
+          "Well done 4th!",
+          "The body of the messages"
+        ]
+      },
+      {
+        "name": "IP address",
+        "type": "indicator",
+        "alias": [
+          "http://xxx.xxx.xxx.xxx/"
+        ]
+      },
+      {
+        "name": "online video player",
+        "type": "general-software"
+      },
+      {
+        "name": "picture of fireworks",
+        "type": "image"
+      },
+      {
+        "name": "fireworks.exe",
+        "type": "file"
+      },
+      {
+        "name": "iframe ind.php",
+        "type": "file"
+      },
+      {
+        "name": "Troj/DorfBP",
+        "type": "indicator"
+      },
+      {
+        "name": "Mal/ObfJSAY",
+        "type": "indicator"
+      },
+      {
+        "name": "Spanska",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Happy99 malware",
+        "type": "malware"
+      },
+      {
+        "name": "1998",
+        "type": "time"
+      },
+      {
+        "name": "the largest firework",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "unprecedented sum of money",
+        "type": "quantity"
+      },
+      {
+        "name": "the Fourth of July",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "users",
+        "type": "identity"
+      },
+      {
+        "name": "Sophos customers",
+        "type": "identity"
+      },
+      {
+        "name": "antispam solutions",
+        "type": "security-product"
+      },
+      {
+        "name": "the Dorf site",
+        "type": "infrastructure"
+      },
+      {
+        "name": "a one line phrase",
+        "type": "text-element"
+      },
+      {
+        "name": "Colorful Independence Day events",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the last weekday before the Fourth of July",
+        "type": "location"
+      },
+      {
+        "name": "a video",
+        "type": "file"
+      },
+      {
+        "name": "an executable",
+        "type": "file"
+      },
+      {
+        "name": "a malicious code",
+        "type": "malware"
+      },
+      {
+        "name": "animated images of a fireworks display",
+        "type": "image"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Independence day",
+        "rel": "has always been a big event for",
+        "rel_type": [
+          "abstract-concept"
+        ],
+        "obj": "our neighbors south of the border"
+      },
+      {
+        "sub": "the Dorf botnet",
+        "rel": "is an alias of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "the Dorf (Storm) authors"
+      },
+      {
+        "sub": "the Dorf botnet",
+        "rel": "launched",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the latest campaign"
+      },
+      {
+        "sub": "the latest campaign",
+        "rel": "launched at",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "13:00 PST"
+      },
+      {
+        "sub": "the Dorf botnet",
+        "rel": "is using",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Independence day fireworks video as the lure"
+      },
+      {
+        "sub": "spammer",
+        "rel": "uses",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "subject lines"
+      },
+      {
+        "sub": "the body of the messages",
+        "rel": "is similar to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "previous Dorf campaigns"
+      },
+      {
+        "sub": "the body of the messages",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a one line phrase"
+      },
+      {
+        "sub": "the body of the messages",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "an IP address"
+      },
+      {
+        "sub": "visiting the IP address",
+        "rel": "brings up",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "an online video player"
+      },
+      {
+        "sub": "visiting the IP address",
+        "rel": "brings up",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "a picture of fireworks"
+      },
+      {
+        "sub": "Colorful Independence Day events",
+        "rel": "have already started",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "throughout the country"
+      },
+      {
+        "sub": "the largest firework",
+        "rel": "happens on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the last weekday before the Fourth of July"
+      },
+      {
+        "sub": "Unprecedented sum of money",
+        "rel": "was spent on",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "this fabulous show"
+      },
+      {
+        "sub": "If you want to see the best Independence Day firework",
+        "rel": "just click on the video and run it",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "the video"
+      },
+      {
+        "sub": "users",
+        "rel": "will instead be infected by",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "malicious code"
+      },
+      {
+        "sub": "the video",
+        "rel": "links to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "fireworks.exe"
+      },
+      {
+        "sub": "the Dorf site",
+        "rel": "also launches",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "iframe ind.php"
+      },
+      {
+        "sub": "Sophos customers",
+        "rel": "are protected from",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "this latest Dorf campaign"
+      },
+      {
+        "sub": "antispam solutions",
+        "rel": "detect",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "these Dorf spam messages"
+      },
+      {
+        "sub": "the executable",
+        "rel": "is detected as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "Troj/DorfBP"
+      },
+      {
+        "sub": "obfuscated malicious javascript ind.php",
+        "rel": "is detected as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "Mal/ObfJSAY"
+      },
+      {
+        "sub": "Spanska",
+        "rel": "used his",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Happy99 malware"
+      },
+      {
+        "sub": "Spanska",
+        "rel": "used",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "animated images of a fireworks display"
+      },
+      {
+        "sub": "hackers",
+        "rel": "have used",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "fireworks in their attempts to infect computer users"
+      },
+      {
+        "sub": "Spanska",
+        "rel": "is a French virus writer",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the French virus writer Spanska"
+      },
+      {
+        "sub": "the largest firework",
+        "rel": "happens on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the last weekday before the Fourth of July"
+      },
+      {
+        "sub": "users",
+        "rel": "attempting to watch",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the fireworks video"
+      }
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "sample_id": "casie__2173.json",
+  "sample_index": 17,
+  "source": "casie",
+  "file_name": "2173.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Phishing emails"
+      },
+      {
+        "sub": "Phishing emails",
+        "rel": "Have URL",
+        "obj": "Bank emails"
+      },
+      {
+        "sub": "Phishing emails",
+        "rel": "Belong to",
+        "obj": "Attackers"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Bank login credentials"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Use",
+        "obj": "Phishing emails"
+      },
+      {
+        "sub": "Phishing emails",
+        "rel": "Have origin",
+        "obj": "Bank"
+      },
+      {
+        "sub": "Bank",
+        "rel": "Belong to",
+        "obj": "Victims' banks"
+      },
+      {
+        "sub": "Victims' banks",
+        "rel": "Have value",
+        "obj": "Login credentials"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "SS7"
+      },
+      {
+        "sub": "SS7",
+        "rel": "Modify",
+        "obj": "SMS messages"
+      },
+      {
+        "sub": "SMS messages",
+        "rel": "Operate",
+        "obj": "Fund transfers"
+      },
+      {
+        "sub": "Fund transfers",
+        "rel": "Has value",
+        "obj": "Financial data"
+      },
+      {
+        "sub": "Financial data",
+        "rel": "Exfiltrate",
+        "obj": "Bank accounts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Bank accounts"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "Operate",
+        "obj": "German victims' bank accounts"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "Use",
+        "obj": "stolen credentials"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "Modify",
+        "obj": "money transfers"
+      },
+      {
+        "sub": "Money transfers",
+        "rel": "Result in",
+        "obj": "financial theft"
+      },
+      {
+        "sub": "- The attackers",
+        "rel": "Use",
+        "obj": "stolen credentials"
+      },
+      {
+        "sub": "- The attackers",
+        "rel": "Operate",
+        "obj": "bank accounts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "stolen credentials"
+      }
+    ]
+  }
+}

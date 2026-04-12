@@ -1,0 +1,42 @@
+数据集路径: benchmark/runtime_input/benchmark_full249.parquet
+数据来源筛选: casie
+每个数据源采样数量: 1
+随机种子: 42
+
+是否跳过生成文章KG对而是直接使用现有的parquet文件作为真实值: true
+作为真实值的parquet文件名: benchmark/runtime_input/benchmark_full249.parquet
+是否跳过生成快进到评估并统计: false
+是否跳过生成和评估快进到统计: false
+如果生成是否重试生成失败的文章: true
+如果生成是否重试已经成功的文章: false
+如果评估是否重试评估失败的文章: true
+如果评估是否重试已经成功的结果: false
+是否从默认的方法级切换到最大化并行流水线的文章级: false
+最大本地VLLM生成并行任务数: 8
+单任务最大存活分钟数: 60
+
+裁判用LLM模型: gpt-5.4-mini
+judge_backend: kg_reward
+裁判用LLM的提示词模式: grid_judge_fav
+裁判用LLM是否开启Flex: true
+
+共享LLM后端模型路径: models/base_model
+共享LLM服务器列表: super,ultra
+资源采样间隔秒: 2
+多进程数量: 8
+输出目录: result/eval_runs/smoke
+
+生成方法:
+  - 文件名: GRID_Ours.py
+    参数:
+      llm_backend: dedicated_vllm
+      model: models/task_bank_reward
+      token: 32768
+      temp: 0.7
+  - 文件名: Approach_CTINexus.py
+    参数:
+      llm_backend: shared_vllm
+      model: models/base_model
+      token: 32768
+      temp: 0.7
+  - 文件名: Approach_knowgl.py

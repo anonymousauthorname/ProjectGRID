@@ -1,0 +1,278 @@
+{
+  "sample_id": "securenlp__bcs_wp_InceptionReport_EN_v12914",
+  "sample_index": 178,
+  "source": "securenlp",
+  "file_name": "bcs_wp_InceptionReport_EN_v12914",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Inception framework",
+        "type": "campaign",
+        "alias": [
+          "the Inception framework",
+          "Inception",
+          "the framework",
+          "the malware",
+          "the framework",
+          "the campaign"
+        ]
+      },
+      {
+        "name": "CloudMe.com",
+        "type": "infrastructure",
+        "alias": [
+          "CloudMe",
+          "the cloud service provider",
+          "CloudMe.com"
+        ]
+      },
+      {
+        "name": "Windows Management Instrumentation (WMI)",
+        "type": "general-software",
+        "alias": [
+          "WMI"
+        ]
+      },
+      {
+        "name": "Visual Basic script",
+        "type": "hacker-tool",
+        "alias": [
+          "VBScript",
+          "the script"
+        ]
+      },
+      {
+        "name": "the malware installation chain",
+        "type": "course-of-action",
+        "alias": [
+          "the chain"
+        ]
+      },
+      {
+        "name": "the WebDAV cloud storage",
+        "type": "infrastructure",
+        "alias": [
+          "CloudMe",
+          "the cloud storage"
+        ]
+      },
+      {
+        "name": "the PE image",
+        "type": "file",
+        "alias": [
+          "PE image"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "the Inception framework",
+        "rel": "is notable for",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "its use of a cloud-based infrastructure for command-and-control"
+      },
+      {
+        "sub": "the Inception framework",
+        "rel": "is notable for",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "its use of the WebDAV protocol to send instructions and receive exfiltrated information"
+      },
+      {
+        "sub": "Initial malware components",
+        "rel": "were embedded in",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Rich Text Format (RTF) files"
+      },
+      {
+        "sub": "vulnerabilities in the RTF file format",
+        "rel": "is leveraged to gain remote access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "victim’s computers"
+      },
+      {
+        "sub": "the framework",
+        "rel": "has been using the services of",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "a cloud service provider based in Sweden, CloudMe.com"
+      },
+      {
+        "sub": "The malware components of this framework",
+        "rel": "follow a plugin model",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "where new malware rely on other, previously delivered malware components"
+      },
+      {
+        "sub": "post-infection communication",
+        "rel": "can be performed via",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the cloud service"
+      },
+      {
+        "sub": "The VBScript dropper code",
+        "rel": "declares a",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Windows Management Instrumentation (WMI) object"
+      },
+      {
+        "sub": "Upon successful execution",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "a Word document and a Visual Basic script"
+      },
+      {
+        "sub": "The shellcode used",
+        "rel": "is a pretty standard variant previously used by",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "a number of campaigns typically operating out of China"
+      },
+      {
+        "sub": "The VBScript",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "two files to disk"
+      },
+      {
+        "sub": "The VBScript",
+        "rel": "sets a startup key in",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run registry path"
+      },
+      {
+        "sub": "one of the dropped dlls",
+        "rel": "will rebuild",
+        "rel_type": [
+          "rebuilds"
+        ],
+        "obj": "the original dll (95Num3p3gm.dll)"
+      },
+      {
+        "sub": "The PE file",
+        "rel": "gathers system information including",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "OS version, computer name, user name, user group membership"
+      },
+      {
+        "sub": "The PE file",
+        "rel": "gathers system information",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "computer name, user name, user group membership, the process it is running in, locale ID’s, as well as system drive and volume information"
+      },
+      {
+        "sub": "The PE file",
+        "rel": "gathers system information",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "cloud storage via WebDAV"
+      },
+      {
+        "sub": "The binary",
+        "rel": "checks a separate folder on",
+        "rel_type": [
+          "checks"
+        ],
+        "obj": "the cloud service designated to contain new configuration information"
+      },
+      {
+        "sub": "the malware",
+        "rel": "checks configured subfolders for",
+        "rel_type": [
+          "checks"
+        ],
+        "obj": "updates"
+      },
+      {
+        "sub": "the malware",
+        "rel": "will download",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "new configuration file"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "were able to compromise",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "these devices"
+      },
+      {
+        "sub": "the framework",
+        "rel": "has been using the services of",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "the cloud service provider"
+      },
+      {
+        "sub": "the framework",
+        "rel": "is designed in such a way that",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "all post-infection communication can be performed via the cloud service"
+      },
+      {
+        "sub": "the framework",
+        "rel": "is designed in such a way that",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "all post-infection communication (i.e. target surveying, configuration updates, malware updates, and data exfiltration) can be performed via the cloud service"
+      },
+      {
+        "sub": "the framework",
+        "rel": "is being used for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "targeted attacks"
+      }
+    ]
+  }
+}

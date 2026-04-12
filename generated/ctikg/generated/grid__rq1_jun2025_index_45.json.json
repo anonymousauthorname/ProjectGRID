@@ -1,0 +1,102 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_45.json",
+  "sample_index": 234,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_45.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Virus.Win32.Induc",
+        "rel": "checks",
+        "obj": "Delphi"
+      },
+      {
+        "sub": "Virus.Win32.Induc",
+        "rel": "looks for",
+        "obj": "version 4.0"
+      },
+      {
+        "sub": "Virus.Win32.Induc",
+        "rel": "looks for",
+        "obj": "version 5.0"
+      },
+      {
+        "sub": "Virus.Win32.Induc",
+        "rel": "looks for",
+        "obj": "version 6.0"
+      },
+      {
+        "sub": "Virus.Win32.Induc",
+        "rel": "looks for",
+        "obj": "version 7.0"
+      },
+      {
+        "sub": "malware",
+        "rel": "copies",
+        "obj": "SysConst.pas"
+      },
+      {
+        "sub": "malware",
+        "rel": "writes",
+        "obj": "code"
+      },
+      {
+        "sub": "malware",
+        "rel": "writes to",
+        "obj": "SysConst.pas"
+      },
+      {
+        "sub": "malware",
+        "rel": "backups",
+        "obj": "SysConst.dcu"
+      },
+      {
+        "sub": "malware",
+        "rel": "calls",
+        "obj": "SysConst.bak"
+      },
+      {
+        "sub": "malware",
+        "rel": "compiles",
+        "obj": "LibSysConst.pas"
+      },
+      {
+        "sub": "malware",
+        "rel": "deletes",
+        "obj": ".pas file"
+      },
+      {
+        "sub": "malware",
+        "rel": "writes",
+        "obj": "code"
+      },
+      {
+        "sub": "malware",
+        "rel": "writes to",
+        "obj": "Lib"
+      },
+      {
+        "sub": "malware",
+        "rel": "produces",
+        "obj": "infected SysConst.dcu"
+      }
+    ]
+  }
+}

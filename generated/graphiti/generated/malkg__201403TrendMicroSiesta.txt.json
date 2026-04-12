@@ -1,0 +1,361 @@
+{
+  "sample_id": "malkg__201403TrendMicroSiesta.txt",
+  "sample_index": 124,
+  "source": "malkg",
+  "file_name": "201403TrendMicroSiesta.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Siesta Campaign",
+        "type": "Campaign"
+      },
+      {
+        "name": "TROJ_SLOTH",
+        "type": "Malware"
+      },
+      {
+        "name": "BKDR_SLOTH.B",
+        "type": "Malware"
+      },
+      {
+        "name": "BKDR_SLOTH.A",
+        "type": "Malware"
+      },
+      {
+        "name": "google{BLOCKED}.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "UIODsevr.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "http://www.micro{BLOCKED}.com/index.html",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "http://sky{BLOCKED}.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "http://ifued{BLOCKED}.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Li Ning",
+        "type": "Person"
+      },
+      {
+        "name": "xiaomao{BLOCKED}@163.com",
+        "type": "Person"
+      },
+      {
+        "name": "Consumer goods and services",
+        "type": "Organization"
+      },
+      {
+        "name": "Energy",
+        "type": "Organization"
+      },
+      {
+        "name": "Finance",
+        "type": "Organization"
+      },
+      {
+        "name": "Healthcare",
+        "type": "Organization"
+      },
+      {
+        "name": "Media and telecommunications",
+        "type": "Organization"
+      },
+      {
+        "name": "Public administration",
+        "type": "Organization"
+      },
+      {
+        "name": "Security and defense",
+        "type": "Organization"
+      },
+      {
+        "name": "Transport and traffic",
+        "type": "Organization"
+      },
+      {
+        "name": "spear-phishing",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Sleep",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Download",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "run1",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "run2",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "run3",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "http",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "x_",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "sleep:",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "download:",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Questionaire Concerning the Spread of Superbugs February 2014.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "Trend Micro",
+        "type": "Organization"
+      },
+      {
+        "name": "Deep Discovery",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Siesta Campaign",
+        "rel": "USES",
+        "obj": "TROJ_SLOTH"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "USES",
+        "obj": "BKDR_SLOTH.B"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "USES",
+        "obj": "BKDR_SLOTH.A"
+      },
+      {
+        "sub": "TROJ_SLOTH",
+        "rel": "DROPS",
+        "obj": "google{BLOCKED}.exe"
+      },
+      {
+        "sub": "BKDR_SLOTH.A",
+        "rel": "DROPS",
+        "obj": "UIODsevr.exe"
+      },
+      {
+        "sub": "BKDR_SLOTH.B",
+        "rel": "connects to",
+        "obj": "http://www.micro{BLOCKED}.com/index.html"
+      },
+      {
+        "sub": "BKDR_SLOTH.A",
+        "rel": "connects to",
+        "obj": "http://sky{BLOCKED}.com"
+      },
+      {
+        "sub": "BKDR_SLOTH.A",
+        "rel": "connects to",
+        "obj": "http://ifued{BLOCKED}.net"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "UTILIZES",
+        "obj": "spear-phishing"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "UTILIZES",
+        "obj": "Sleep"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "UTILIZES",
+        "obj": "Download"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "UTILIZES",
+        "obj": "run1"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "UTILIZES",
+        "obj": "run2"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "UTILIZES",
+        "obj": "run3"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "UTILIZES",
+        "obj": "http"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "UTILIZES",
+        "obj": "x_"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "UTILIZES",
+        "obj": "sleep:"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "UTILIZES",
+        "obj": "download:"
+      },
+      {
+        "sub": "Li Ning",
+        "rel": "REGISTERS",
+        "obj": "http://www.micro{BLOCKED}.com/index.html"
+      },
+      {
+        "sub": "Li Ning",
+        "rel": "REGISTERS",
+        "obj": "http://sky{BLOCKED}.com"
+      },
+      {
+        "sub": "Li Ning",
+        "rel": "REGISTERS",
+        "obj": "http://ifued{BLOCKED}.net"
+      },
+      {
+        "sub": "Li Ning",
+        "rel": "has email",
+        "obj": "xiaomao{BLOCKED}@163.com"
+      },
+      {
+        "sub": "xiaomao{BLOCKED}@163.com",
+        "rel": "registered with",
+        "obj": "http://www.micro{BLOCKED}.com/index.html"
+      },
+      {
+        "sub": "xiaomao{BLOCKED}@163.com",
+        "rel": "registered with",
+        "obj": "http://sky{BLOCKED}.com"
+      },
+      {
+        "sub": "xiaomao{BLOCKED}@163.com",
+        "rel": "registered with",
+        "obj": "http://ifued{BLOCKED}.net"
+      },
+      {
+        "sub": "xiaomao{BLOCKED}@163.com",
+        "rel": "is associated with",
+        "obj": "Li Ning"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "TARGETS",
+        "obj": "Consumer goods and services"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "TARGETS",
+        "obj": "Energy"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "TARGETS",
+        "obj": "Finance"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "TARGETS",
+        "obj": "Healthcare"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "TARGETS",
+        "obj": "Media and telecommunications"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "TARGETS",
+        "obj": "Public administration"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "TARGETS",
+        "obj": "Security and defense"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "TARGETS",
+        "obj": "Transport and traffic"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "OFFERS",
+        "obj": "Deep Discovery"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "BLOCKS",
+        "obj": "Siesta Campaign"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "BLOCKS",
+        "obj": "TROJ_SLOTH"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "BLOCKS",
+        "obj": "BKDR_SLOTH.B"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "BLOCKS",
+        "obj": "BKDR_SLOTH.A"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "BLOCKS",
+        "obj": "google{BLOCKED}.exe"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "BLOCKS",
+        "obj": "UIODsevr.exe"
+      }
+    ]
+  }
+}

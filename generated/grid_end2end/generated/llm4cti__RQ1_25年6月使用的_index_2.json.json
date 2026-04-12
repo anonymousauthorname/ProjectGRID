@@ -1,0 +1,732 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_2.json",
+  "sample_index": 212,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_2.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "fake apps",
+        "type": "generic-noun",
+        "alias": [
+          "the malicious apps",
+          "the malware",
+          "the above-described threats"
+        ]
+      },
+      {
+        "name": "Monero cryptocurrency miner",
+        "type": "malware",
+        "alias": [
+          "the Monero cryptocurrency miner",
+          "the miner",
+          "the mining module",
+          "the miner body"
+        ]
+      },
+      {
+        "name": "malicious websites",
+        "type": "infrastructure",
+        "alias": [
+          "malicious websites that may turn up in the victim’s search results"
+        ]
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "cybercriminals"
+        ]
+      },
+      {
+        "name": "AdShield",
+        "type": "hacker-tool",
+        "alias": [
+          "the ad blockers AdShield and Netshield",
+          "the AdShield mobile ad blocker",
+          "the fake AdShield app",
+          "AdShield installer",
+          "Windows version of the AdShield mobile ad blocker"
+        ]
+      },
+      {
+        "name": "Netshield",
+        "type": "hacker-tool",
+        "alias": [
+          "the ad blockers AdShield and Netshield"
+        ]
+      },
+      {
+        "name": "OpenDNS service",
+        "type": "general-software",
+        "alias": [
+          "the OpenDNS service"
+        ]
+      },
+      {
+        "name": "adshield[.]pro",
+        "type": "domain-name",
+        "alias": [
+          "the name adshield[.]pro"
+        ]
+      },
+      {
+        "name": "attackers’ servers",
+        "type": "infrastructure",
+        "alias": [
+          "the attackers’ servers"
+        ]
+      },
+      {
+        "name": "Malwarebytes.com",
+        "type": "domain-name",
+        "alias": [
+          "antivirus sites, such as Malwarebytes.com"
+        ]
+      },
+      {
+        "name": "update.exe",
+        "type": "file",
+        "alias": [
+          "updater.exe",
+          "the updater.exe"
+        ],
+        "mother entity": [
+          "AdShield"
+        ]
+      },
+      {
+        "name": "C&C",
+        "type": "infrastructure",
+        "alias": [
+          "the site",
+          "C&C server"
+        ]
+      },
+      {
+        "name": "self-upgrade argument",
+        "type": "credential-value",
+        "alias": [
+          "self-upgrade (C:\\Program Files (x86)\\AdShield\\updater.exe -self-upgrade)"
+        ],
+        "mother entity": [
+          "update.exe"
+        ]
+      },
+      {
+        "name": "transmissionbt[.]org",
+        "type": "domain-name",
+        "alias": [
+          "the site transmissionbt[.]org"
+        ]
+      },
+      {
+        "name": "modified version of the Transmission torrent client",
+        "type": "hacker-tool",
+        "alias": [
+          "the modified program",
+          "the modified Transmission installer"
+        ],
+        "mother entity": [
+          "Transmission"
+        ]
+      },
+      {
+        "name": "Transmission",
+        "type": "general-software",
+        "alias": [
+          "the original distribution"
+        ],
+        "mother entity": [
+          "transmissionbt.com"
+        ]
+      },
+      {
+        "name": "transmissionbt.com",
+        "type": "domain-name",
+        "alias": [
+          "the original distribution can be found at transmissionbt.com"
+        ]
+      },
+      {
+        "name": "mining module",
+        "type": "malware",
+        "alias": [
+          "the mining module",
+          "miner module"
+        ]
+      },
+      {
+        "name": "data.pak",
+        "type": "file",
+        "alias": [
+          "the encrypted miner file",
+          "the data from the data.pak file"
+        ],
+        "mother entity": [
+          "mining module"
+        ]
+      },
+      {
+        "name": "flock.exe",
+        "type": "file",
+        "alias": [
+          "executable file flock.exe",
+          "mining module",
+          "mining module executed via flock.exe"
+        ],
+        "mother entity": [
+          "mining module"
+        ]
+      },
+      {
+        "name": "lic.data",
+        "type": "file",
+        "alias": [
+          "the \"license\" file lic.data"
+        ],
+        "mother entity": [
+          "mining module"
+        ]
+      },
+      {
+        "name": "C&C server address",
+        "type": "indicator",
+        "alias": [
+          "the C&C server address"
+        ],
+        "mother entity": [
+          "Updater.exe"
+        ]
+      },
+      {
+        "name": "Qt binary resource file",
+        "type": "file",
+        "alias": [
+          "the decrypted data.pak file"
+        ],
+        "mother entity": [
+          "flock.exe"
+        ]
+      },
+      {
+        "name": "open-source XMRig miner",
+        "type": "malware",
+        "alias": [
+          "the open-source XMRig miner",
+          "the same one used in the summer attack"
+        ],
+        "mother entity": [
+          "Qt binary resource file"
+        ]
+      },
+      {
+        "name": "bxsdk64.dll",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "the BoxedApp SDK for creating a virtual environment",
+          "the bxsdk64.dll file"
+        ],
+        "mother entity": [
+          "mining module"
+        ]
+      },
+      {
+        "name": "find.exe",
+        "type": "file",
+        "alias": [
+          "the find.exe file",
+          "C:\\Windows\\System32\\find.exe",
+          "a copy of the C:\\Windows\\System32\\find.exe file"
+        ],
+        "mother entity": [
+          "flock.exe"
+        ]
+      },
+      {
+        "name": "C:\\ProgramData\\Flock",
+        "type": "file",
+        "alias": [
+          "the C:\\ProgramData\\Flock directory"
+        ],
+        "mother entity": [
+          "flock.exe"
+        ]
+      },
+      {
+        "name": "servicecheck_XX task",
+        "type": "process",
+        "alias": [
+          "a servicecheck_XX task",
+          "the servicecheck_XX task"
+        ],
+        "mother entity": [
+          "Windows Task Scheduler"
+        ]
+      },
+      {
+        "name": "Windows Task Scheduler",
+        "type": "general-software",
+        "alias": [
+          "the Windows Task Scheduler"
+        ]
+      },
+      {
+        "name": "142[.]4[.]214[.]15",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "185[.]201[.]47[.]42",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "176[.]31[.]103[.]74",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "37[.]59[.]58[.]122",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "185[.]192[.]111[.]210",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "DNS",
+        "type": "abstract-concept",
+        "alias": [
+          "all domains are resolved through the attackers’ servers"
+        ]
+      },
+      {
+        "name": "Win64.Patched.netyyk",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "the above-described threats"
+        ]
+      },
+      {
+        "name": "Win32.DNSChanger.aaox",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "Win64.Miner.gen",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "HEUR:Trojan.Multi.Miner.gen",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "QtWinExtras.dll",
+        "type": "file",
+        "alias": [
+          "the QtWinExtras.dll file"
+        ]
+      },
+      {
+        "name": "Malwarebytes",
+        "type": "security-product",
+        "alias": [
+          "Malwarebytes antivirus",
+          "Malwarebytes"
+        ]
+      },
+      {
+        "name": "%program files%\\malwarebytes",
+        "type": "file",
+        "alias": [
+          "the malwarebytes folder"
+        ]
+      },
+      {
+        "name": "%windir%\\.old\\program files\\malwarebytes",
+        "type": "file"
+      },
+      {
+        "name": "%windir%\\.old\\program files (x86)\\malwarebytes",
+        "type": "file"
+      },
+      {
+        "name": "%windir%\\.old\\program files (x86)\\malwarebytes",
+        "type": "file"
+      },
+      {
+        "name": "NetshieldKit",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "AdShield",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "OpenDNS",
+        "type": "general-software"
+      },
+      {
+        "name": "7 thousand users",
+        "type": "quantity/money"
+      },
+      {
+        "name": "2,500 unique users per day",
+        "type": "quantity/money"
+      },
+      {
+        "name": "Russia and CIS countries",
+        "type": "location"
+      },
+      {
+        "name": "Anton Kuzmenko",
+        "type": "identity"
+      },
+      {
+        "name": "Securelist",
+        "type": "organization"
+      },
+      {
+        "name": "Kaspersky Security Network",
+        "type": "organization"
+      },
+      {
+        "name": "AdShield installer",
+        "type": "file",
+        "alias": [
+          "installer"
+        ],
+        "mother entity": [
+          "adshield[.]pro"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "fake apps",
+        "rel": "delivered",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Monero cryptocurrency miner"
+      },
+      {
+        "sub": "fake apps",
+        "rel": "distributed through",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "malicious websites"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "impersonates",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "AdShield"
+      },
+      {
+        "sub": "AdShield",
+        "rel": "changes DNS settings on the device",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "device"
+      },
+      {
+        "sub": "AdShield",
+        "rel": "resolves domains through",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "attackers’ servers"
+      },
+      {
+        "sub": "AdShield",
+        "rel": "prevents access to",
+        "rel_type": [
+          "blocks"
+        ],
+        "obj": "Malwarebytes.com"
+      },
+      {
+        "sub": "AdShield",
+        "rel": "starts updating itself by running",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "update.exe"
+      },
+      {
+        "sub": "update.exe",
+        "rel": "with argument self-upgrade",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "self-upgrade argument"
+      },
+      {
+        "sub": "update.exe",
+        "rel": "contacts",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "C&C"
+      },
+      {
+        "sub": "update.exe",
+        "rel": "sends data about the infected machine",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "infected machine"
+      },
+      {
+        "sub": "update.exe",
+        "rel": "contains",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "C&C server address"
+      },
+      {
+        "sub": "update.exe",
+        "rel": "downloads from",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "transmissionbt[.]org"
+      },
+      {
+        "sub": "update.exe",
+        "rel": "runs",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "modified version of the Transmission torrent client"
+      },
+      {
+        "sub": "modified version of the Transmission torrent client",
+        "rel": "sends installation info to",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "C&C"
+      },
+      {
+        "sub": "modified version of the Transmission torrent client",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "mining module"
+      },
+      {
+        "sub": "mining module",
+        "rel": "made up of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "legitimate auxiliary libraries"
+      },
+      {
+        "sub": "mining module",
+        "rel": "made up of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "data.pak"
+      },
+      {
+        "sub": "mining module",
+        "rel": "made up of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "flock.exe"
+      },
+      {
+        "sub": "mining module",
+        "rel": "made up of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "lic.data"
+      },
+      {
+        "sub": "flock.exe",
+        "rel": "calculates hash",
+        "rel_type": [
+          "calculates"
+        ],
+        "obj": "parameters of infected computer"
+      },
+      {
+        "sub": "flock.exe",
+        "rel": "compares hash with",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "lic.data"
+      },
+      {
+        "sub": "flock.exe",
+        "rel": "decrypts data from",
+        "rel_type": [
+          "decrypts"
+        ],
+        "obj": "data.pak"
+      },
+      {
+        "sub": "flock.exe",
+        "rel": "results in",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "Qt binary resource file"
+      },
+      {
+        "sub": "Qt binary resource file",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "open-source XMRig miner"
+      },
+      {
+        "sub": "bxsdk64.dll",
+        "rel": "used to run the miner under the guise of",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "find.exe"
+      },
+      {
+        "sub": "bxsdk64.dll",
+        "rel": "intercepts calls to system functions",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "system functions"
+      },
+      {
+        "sub": "bxsdk64.dll",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "find.exe"
+      },
+      {
+        "sub": "find.exe",
+        "rel": "runs from",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "C:\\ProgramData\\Flock"
+      },
+      {
+        "sub": "bxsdk",
+        "rel": "injects the decrypted miner body into process memory",
+        "rel_type": [
+          "injects"
+        ],
+        "obj": "decrypted miner body"
+      },
+      {
+        "sub": "servicecheck_XX task",
+        "rel": "created in",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "Windows Task Scheduler"
+      },
+      {
+        "sub": "servicecheck_XX task",
+        "rel": "runs",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "flock.exe"
+      },
+      {
+        "sub": "Kaspersky Security Network",
+        "rel": "detects",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Win64.Patched.netyyk"
+      },
+      {
+        "sub": "Malwarebytes",
+        "rel": "detects",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Win32.DNSChanger.aaox"
+      },
+      {
+        "sub": "Malwarebytes",
+        "rel": "detects",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Win64.Miner.gen"
+      },
+      {
+        "sub": "Malwarebytes",
+        "rel": "detects",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "HEUR:Trojan.Multi.Miner.gen"
+      },
+      {
+        "sub": "Malwarebytes",
+        "rel": "reinstall",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Malwarebytes"
+      },
+      {
+        "sub": "flock.exe",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "servicecheck_XX task"
+      },
+      {
+        "sub": "servicecheck_XX task",
+        "rel": "runs with argument minimize",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "flock.exe"
+      },
+      {
+        "sub": "AdShield installer",
+        "rel": "installed on devices of",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "7 thousand users"
+      }
+    ]
+  }
+}

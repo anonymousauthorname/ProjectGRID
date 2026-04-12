@@ -1,0 +1,192 @@
+{
+  "sample_id": "ctinexus__midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams.json",
+  "sample_index": 60,
+  "source": "ctinexus",
+  "file_name": "midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Domain"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Microsoft 365"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Conduct",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Send",
+        "obj": "Phishing Lures"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Aim",
+        "obj": "Credential Theft"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Target",
+        "obj": "Organization"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Belong to",
+        "obj": "Microsoft 365"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has value",
+        "obj": "Technical Support"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has URL",
+        "obj": "Microsoft Teams"
+      },
+      {
+        "sub": "Phishing Lure",
+        "rel": "Has URL",
+        "obj": "Microsoft Teams"
+      },
+      {
+        "sub": "Microsoft 365",
+        "rel": "Owned by",
+        "obj": "Small Business"
+      },
+      {
+        "sub": "Small Business",
+        "rel": "Has vulnerable software",
+        "obj": "Microsoft 365"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "Operate",
+        "obj": "Microsoft 365"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "Construct",
+        "obj": "Domain"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Belong to",
+        "obj": "Midnight Blizzard"
+      },
+      {
+        "sub": "Microsoft 365",
+        "rel": "Has vulnerability",
+        "obj": "Midnight Blizzard"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "Use",
+        "obj": "Domain"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has value",
+        "obj": "Technical support entity"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "Locate at",
+        "obj": "Microsoft 365 tenant"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Microsoft Teams"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Social engineering"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Multifactor authentication  prompts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "User credentials"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "User accounts"
+      },
+      {
+        "sub": "Microsoft Teams",
+        "rel": "Operate",
+        "obj": "Phishing lures"
+      },
+      {
+        "sub": "Phishing lures",
+        "rel": "Use",
+        "obj": "Credential theft"
+      },
+      {
+        "sub": "Microsoft Teams",
+        "rel": "Has value",
+        "obj": "Legitimate communication platform"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has tactic",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Multifactor authentication  prompt"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Attempt",
+        "obj": "Steal credentials"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Prompt",
+        "obj": "User to approve MFA prompt"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Extract",
+        "obj": "Account names"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Extract",
+        "obj": "Passwords"
+      }
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_35.json",
+  "sample_index": 225,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_35.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "GUMBLAR",
+        "type": "MALWARE"
+      },
+      {
+        "name": "FTP",
+        "type": "TOOL"
+      },
+      {
+        "name": "REDIRECTORS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "INFECTORS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "INJECTORS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "DISPATCHERS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "PHP",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "WINDOWS EXECUTABLE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "HTML",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "GUMBLAR MALWARE INFRASTRUCTURE",
+        "type": "INFRASTRUCTURE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "GUMBLAR",
+        "rel": "related_to",
+        "obj": "FTP"
+      },
+      {
+        "sub": "GUMBLAR",
+        "rel": "related_to",
+        "obj": "REDIRECTORS"
+      },
+      {
+        "sub": "GUMBLAR",
+        "rel": "related_to",
+        "obj": "INFECTORS"
+      },
+      {
+        "sub": "GUMBLAR",
+        "rel": "related_to",
+        "obj": "INJECTORS"
+      },
+      {
+        "sub": "GUMBLAR",
+        "rel": "related_to",
+        "obj": "DISPATCHERS"
+      },
+      {
+        "sub": "REDIRECTORS",
+        "rel": "related_to",
+        "obj": "INFECTORS"
+      },
+      {
+        "sub": "INFECTORS",
+        "rel": "related_to",
+        "obj": "WINDOWS EXECUTABLE"
+      },
+      {
+        "sub": "INJECTORS",
+        "rel": "related_to",
+        "obj": "PHP"
+      },
+      {
+        "sub": "DISPATCHERS",
+        "rel": "related_to",
+        "obj": "INJECTORS"
+      },
+      {
+        "sub": "GUMBLAR",
+        "rel": "related_to",
+        "obj": "GUMBLAR MALWARE INFRASTRUCTURE"
+      },
+      {
+        "sub": "HTML",
+        "rel": "related_to",
+        "obj": "REDIRECTORS"
+      },
+      {
+        "sub": "PHP",
+        "rel": "related_to",
+        "obj": "INFECTORS"
+      },
+      {
+        "sub": "WINDOWS EXECUTABLE",
+        "rel": "related_to",
+        "obj": "FTP"
+      }
+    ]
+  }
+}

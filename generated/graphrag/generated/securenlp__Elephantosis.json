@@ -1,0 +1,292 @@
+{
+  "sample_id": "securenlp__Elephantosis",
+  "sample_index": 154,
+  "source": "securenlp",
+  "file_name": "Elephantosis",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "BABAR",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BABAR64",
+        "type": "MALWARE"
+      },
+      {
+        "name": "DROPPER",
+        "type": "TOOL"
+      },
+      {
+        "name": "IMPLANT",
+        "type": "TOOL"
+      },
+      {
+        "name": "HORIZONS-TOURISME.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "GEZELIMMI.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "ALEXPETRO.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "ETEHADYIE.IR",
+        "type": "LOCATION"
+      },
+      {
+        "name": "BUNNY",
+        "type": "MALWARE"
+      },
+      {
+        "name": "TFC",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CSEC",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "FRANCE",
+        "type": "GEO"
+      },
+      {
+        "name": "MSNP21",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "AES-128",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "DEFLOAT",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "RAWINPUT",
+        "type": "TOOL"
+      },
+      {
+        "name": "DIRECTSOUND",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "OPENCORE AMR",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CONFIGURATION DATA",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "KEYLOGGER",
+        "type": "TOOL"
+      },
+      {
+        "name": "SCREEN CAPTURE",
+        "type": "TOOL"
+      },
+      {
+        "name": "API HOOKING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "NAMED PIPES",
+        "type": "TOOL"
+      },
+      {
+        "name": "DETOURS",
+        "type": "TOOL"
+      },
+      {
+        "name": "C&C SERVER",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "CSEC DOCUMENT",
+        "type": "EVENT"
+      },
+      {
+        "name": "MALWARE ANALYSIS REPORT",
+        "type": "EVENT"
+      },
+      {
+        "name": "USERAGENT STRING",
+        "type": "MALWARE"
+      },
+      {
+        "name": "STOLEN GOODS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "Babar",
+        "type": "Unknown"
+      },
+      {
+        "name": "AUDIO CAPTURE",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "BABAR",
+        "rel": "related_to",
+        "obj": "DROPPER"
+      },
+      {
+        "sub": "BABAR",
+        "rel": "related_to",
+        "obj": "IMPLANT"
+      },
+      {
+        "sub": "BABAR64",
+        "rel": "related_to",
+        "obj": "BABAR"
+      },
+      {
+        "sub": "DROPPER",
+        "rel": "related_to",
+        "obj": "IMPLANT"
+      },
+      {
+        "sub": "IMPLANT",
+        "rel": "related_to",
+        "obj": "KEYLOGGER"
+      },
+      {
+        "sub": "IMPLANT",
+        "rel": "related_to",
+        "obj": "SCREEN CAPTURE"
+      },
+      {
+        "sub": "IMPLANT",
+        "rel": "related_to",
+        "obj": "API HOOKING"
+      },
+      {
+        "sub": "IMPLANT",
+        "rel": "related_to",
+        "obj": "NAMED PIPES"
+      },
+      {
+        "sub": "IMPLANT",
+        "rel": "related_to",
+        "obj": "DETOURS"
+      },
+      {
+        "sub": "CSEC",
+        "rel": "related_to",
+        "obj": "Babar"
+      },
+      {
+        "sub": "FRANCE",
+        "rel": "related_to",
+        "obj": "Babar"
+      },
+      {
+        "sub": "HORIZONS-TOURISME.COM",
+        "rel": "related_to",
+        "obj": "C&C SERVER"
+      },
+      {
+        "sub": "GEZELIMMI.COM",
+        "rel": "related_to",
+        "obj": "C&C SERVER"
+      },
+      {
+        "sub": "ALEXPETRO.COM",
+        "rel": "related_to",
+        "obj": "C&C SERVER"
+      },
+      {
+        "sub": "ETEHADYIE.IR",
+        "rel": "related_to",
+        "obj": "C&C SERVER"
+      },
+      {
+        "sub": "BUNNY",
+        "rel": "related_to",
+        "obj": "TFC"
+      },
+      {
+        "sub": "BUNNY",
+        "rel": "related_to",
+        "obj": "BABAR"
+      },
+      {
+        "sub": "TFC",
+        "rel": "related_to",
+        "obj": "BABAR"
+      },
+      {
+        "sub": "AES-128",
+        "rel": "related_to",
+        "obj": "DROPPER"
+      },
+      {
+        "sub": "AES-128",
+        "rel": "related_to",
+        "obj": "IMPLANT"
+      },
+      {
+        "sub": "DEFLOAT",
+        "rel": "related_to",
+        "obj": "STOLEN GOODS"
+      },
+      {
+        "sub": "RAWINPUT",
+        "rel": "related_to",
+        "obj": "KEYLOGGER"
+      },
+      {
+        "sub": "DIRECTSOUND",
+        "rel": "related_to",
+        "obj": "AUDIO CAPTURE"
+      },
+      {
+        "sub": "OPENCORE AMR",
+        "rel": "related_to",
+        "obj": "AUDIO CAPTURE"
+      },
+      {
+        "sub": "CONFIGURATION DATA",
+        "rel": "related_to",
+        "obj": "IMPLANT"
+      },
+      {
+        "sub": "USERAGENT STRING",
+        "rel": "related_to",
+        "obj": "BABAR64"
+      },
+      {
+        "sub": "CSEC DOCUMENT",
+        "rel": "related_to",
+        "obj": "Babar"
+      },
+      {
+        "sub": "MALWARE ANALYSIS REPORT",
+        "rel": "related_to",
+        "obj": "BABAR"
+      }
+    ]
+  }
+}

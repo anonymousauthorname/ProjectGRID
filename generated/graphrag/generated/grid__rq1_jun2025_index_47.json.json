@@ -1,0 +1,197 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_47.json",
+  "sample_index": 236,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_47.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "WIN32/QUERVAR",
+        "type": "MALWARE"
+      },
+      {
+        "name": "WIN32/INDUC.C",
+        "type": "MALWARE"
+      },
+      {
+        "name": "NETHLANDS",
+        "type": "GEO"
+      },
+      {
+        "name": "TURKEY",
+        "type": "GEO"
+      },
+      {
+        "name": "RUSSIA",
+        "type": "GEO"
+      },
+      {
+        "name": "SLOVAKIA",
+        "type": "GEO"
+      },
+      {
+        "name": "ZEUS VARIANT CITADEL",
+        "type": "MALWARE"
+      },
+      {
+        "name": "ESET",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "REMOVAL TOOL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "COMMAND AND CONTROL (CC) SERVER",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "RIGHT-TO-LEFT OVERRIDE (RLO)",
+        "type": "TOOL"
+      },
+      {
+        "name": "RC4",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "GLOBAL USER OFFLINE REGISTRY ENTRY",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "TASK MANAGER SELF-DEFENSE",
+        "type": "TOOL"
+      },
+      {
+        "name": "SCARFACE",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "BREAKING BAD",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "USER AVATAR ON DISCUSSION FORUM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "BROWSER HISTORY AND CACHE",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "WIN32/QUERVAR.C",
+        "type": "MALWARE"
+      },
+      {
+        "name": "ESET LIVEGRID",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "WIN32/QUERVAR.D",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "WIN32/QUERVAR",
+        "rel": "related_to",
+        "obj": "WIN32/INDUC.C"
+      },
+      {
+        "sub": "WIN32/QUERVAR",
+        "rel": "related_to",
+        "obj": "ZEUS VARIANT CITADEL"
+      },
+      {
+        "sub": "WIN32/QUERVAR.C",
+        "rel": "related_to",
+        "obj": "NETHLANDS"
+      },
+      {
+        "sub": "WIN32/QUERVAR",
+        "rel": "related_to",
+        "obj": "COMMAND AND CONTROL (CC) SERVER"
+      },
+      {
+        "sub": "WIN32/QUERVAR",
+        "rel": "related_to",
+        "obj": "REMOVAL TOOL"
+      },
+      {
+        "sub": "WIN32/QUERVAR",
+        "rel": "related_to",
+        "obj": "RIGHT-TO-LEFT OVERRIDE (RLO)"
+      },
+      {
+        "sub": "WIN32/QUERVAR",
+        "rel": "related_to",
+        "obj": "RC4"
+      },
+      {
+        "sub": "WIN32/QUERVAR",
+        "rel": "related_to",
+        "obj": "BROWSER HISTORY AND CACHE"
+      },
+      {
+        "sub": "WIN32/QUERVAR.C",
+        "rel": "related_to",
+        "obj": "TURKEY"
+      },
+      {
+        "sub": "WIN32/QUERVAR.D",
+        "rel": "related_to",
+        "obj": "USER AVATAR ON DISCUSSION FORUM"
+      },
+      {
+        "sub": "ESET",
+        "rel": "related_to",
+        "obj": "REMOVAL TOOL"
+      },
+      {
+        "sub": "ESET",
+        "rel": "related_to",
+        "obj": "ESET LIVEGRID"
+      },
+      {
+        "sub": "WIN32/QUERVAR",
+        "rel": "related_to",
+        "obj": "TASK MANAGER SELF-DEFENSE"
+      },
+      {
+        "sub": "SCARFACE",
+        "rel": "related_to",
+        "obj": "WIN32/QUERVAR.C"
+      },
+      {
+        "sub": "BREAKING BAD",
+        "rel": "related_to",
+        "obj": "WIN32/QUERVAR"
+      },
+      {
+        "sub": "USER AVATAR ON DISCUSSION FORUM",
+        "rel": "related_to",
+        "obj": "COMMAND AND CONTROL (CC) SERVER"
+      },
+      {
+        "sub": "WIN32/QUERVAR",
+        "rel": "related_to",
+        "obj": "GLOBAL USER OFFLINE REGISTRY ENTRY"
+      }
+    ]
+  }
+}

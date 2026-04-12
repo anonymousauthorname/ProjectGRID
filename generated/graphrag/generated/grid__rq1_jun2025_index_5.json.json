@@ -1,0 +1,398 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_5.json",
+  "sample_index": 238,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_5.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DMA LOCKER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "AES IN ECB MODE",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "Fakturax.exe",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "Ntserver.exe",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "RSTRUI.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SHADOWEXPLORER.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SESVCE.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CBENGINE.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MALWAREBYTES ANTIMALWARE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "FORUM.4PROGRAMMERS.NET",
+        "type": "WEBSITE"
+      },
+      {
+        "name": "FIREWALL OR SECURITY ANALYST",
+        "type": "PERSON"
+      },
+      {
+        "name": "JAMESWTMHT",
+        "type": "PERSON"
+      },
+      {
+        "name": "SIRIURZ",
+        "type": "PERSON"
+      },
+      {
+        "name": "POLISH VERSION",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ENGLISH VERSION",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "4.0",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "ENCRYPTION MODE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "DECRYPTION MODE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "BLACKLISTED DIRECTORIES",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "BLACKLISTED FILE EXTENSIONS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "ORIGINAL SAMPLE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "KEY RECOVERY",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "RANSOM NOTE",
+        "type": "EVENT"
+      },
+      {
+        "name": "SYSTEM RECOVERY",
+        "type": "EVENT"
+      },
+      {
+        "name": "PHYSICALDRIVE0",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "AES IN ECB MODE"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "Fakturax.exe"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "Ntserver.exe"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "RSTRUI.EXE"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "SHADOWEXPLORER.EXE"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "SESVCE.EXE"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "CBENGINE.EXE"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "MALWAREBYTES ANTIMALWARE"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "FORUM.4PROGRAMMERS.NET"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "FIREWALL OR SECURITY ANALYST"
+      },
+      {
+        "sub": "Fakturax.exe",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "Ntserver.exe",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "POLISH VERSION",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "ENGLISH VERSION",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "4.0",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "ENCRYPTION MODE",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "DECRYPTION MODE",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "BLACKLISTED DIRECTORIES",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "BLACKLISTED FILE EXTENSIONS",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "ORIGINAL SAMPLE",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "KEY RECOVERY",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "RANSOM NOTE",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "SYSTEM RECOVERY",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "PHYSICALDRIVE0",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "JAMESWTMHT",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "SIRIURZ",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "FIREWALL OR SECURITY ANALYST",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "AES IN ECB MODE"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "Fakturax.exe"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "Ntserver.exe"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "RSTRUI.EXE"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "SHADOWEXPLORER.EXE"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "SESVCE.EXE"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "CBENGINE.EXE"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "MALWAREBYTES ANTIMALWARE"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "FORUM.4PROGRAMMERS.NET"
+      },
+      {
+        "sub": "DMA LOCKER",
+        "rel": "related_to",
+        "obj": "FIREWALL OR SECURITY ANALYST"
+      },
+      {
+        "sub": "Fakturax.exe",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "Ntserver.exe",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "POLISH VERSION",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "ENGLISH VERSION",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "4.0",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "ENCRYPTION MODE",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "DECRYPTION MODE",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "BLACKLISTED DIRECTORIES",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "BLACKLISTED FILE EXTENSIONS",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "ORIGINAL SAMPLE",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "KEY RECOVERY",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "RANSOM NOTE",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "SYSTEM RECOVERY",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "PHYSICALDRIVE0",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "JAMESWTMHT",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "SIRIURZ",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      },
+      {
+        "sub": "FIREWALL OR SECURITY ANALYST",
+        "rel": "related_to",
+        "obj": "DMA LOCKER"
+      }
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "sample_id": "casie__10359.json",
+  "sample_index": 44,
+  "source": "casie",
+  "file_name": "10359.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Logitech Options application",
+        "type": "Entity"
+      },
+      {
+        "name": "websocket server",
+        "type": "Entity"
+      },
+      {
+        "name": "port 10134",
+        "type": "Entity"
+      },
+      {
+        "name": "origin checking",
+        "type": "Entity"
+      },
+      {
+        "name": "process ID",
+        "type": "Entity"
+      },
+      {
+        "name": "bruteforce",
+        "type": "Entity"
+      },
+      {
+        "name": "keystroke injection",
+        "type": "Entity"
+      },
+      {
+        "name": "Project Zero",
+        "type": "Entity"
+      },
+      {
+        "name": "Tavis Ormandy",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability disclosure",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows PC",
+        "type": "Entity"
+      },
+      {
+        "name": "version 7.00.564",
+        "type": "Entity"
+      },
+      {
+        "name": "version 7.00.554",
+        "type": "Entity"
+      },
+      {
+        "name": "Edge browser",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Logitech Options application",
+        "rel": "opens",
+        "obj": "websocket server"
+      },
+      {
+        "sub": "Logitech Options application",
+        "rel": "runs on",
+        "obj": "port 10134"
+      },
+      {
+        "sub": "Logitech Options application",
+        "rel": "lacks",
+        "obj": "origin checking"
+      },
+      {
+        "sub": "Logitech Options application",
+        "rel": "requires",
+        "obj": "process ID"
+      },
+      {
+        "sub": "Logitech Options application",
+        "rel": "allows bruteforce",
+        "obj": "process ID"
+      },
+      {
+        "sub": "Logitech Options application",
+        "rel": "enables",
+        "obj": "keystroke injection"
+      },
+      {
+        "sub": "Logitech Options application",
+        "rel": "can be exploited to take control of",
+        "obj": "Windows PC"
+      },
+      {
+        "sub": "Tavis Ormandy",
+        "rel": "uses",
+        "obj": "Logitech Options application"
+      },
+      {
+        "sub": "Project Zero",
+        "rel": "discloses",
+        "obj": "vulnerability in Logitech Options application"
+      },
+      {
+        "sub": "Project Zero",
+        "rel": "discloses",
+        "obj": "vulnerability in Edge browser"
+      },
+      {
+        "sub": "Project Zero",
+        "rel": "enforces",
+        "obj": "90-day deadline for vulnerability fixes"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "releases",
+        "obj": "version 7.00.564 of Logitech Options application"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "releases",
+        "obj": "version 7.00.554 of Logitech Options application (Mac)"
+      },
+      {
+        "sub": "Project Zero",
+        "rel": "confirms",
+        "obj": "vulnerability in Logitech Options application has been fixed"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "meets",
+        "obj": "Project Zero's 90-day deadline for fix"
+      }
+    ]
+  }
+}

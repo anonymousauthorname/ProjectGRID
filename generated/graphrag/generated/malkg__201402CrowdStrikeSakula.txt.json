@@ -1,0 +1,219 @@
+{
+  "sample_id": "malkg__201402CrowdStrikeSakula.txt",
+  "sample_index": 146,
+  "source": "malkg",
+  "file_name": "201402CrowdStrikeSakula.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "VETERANS OF FOREIGN WARS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CVE-2014-0322",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "ZxShell",
+        "type": "MALWARE"
+      },
+      {
+        "name": "AURORA PANDA",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "CAPSTONE TURBINE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "GIFAS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "gifas[.]assso[.]net",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "secure[.]safran-group[.]com",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "SAFRAN",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "SNECMA",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "Sakula",
+        "type": "MALWARE"
+      },
+      {
+        "name": "oa[.]ameteksen[.]com",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "web[.]vipreclod[.]com",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "25 FEB 2014",
+        "type": "EVENT"
+      },
+      {
+        "name": "MATT DAHL",
+        "type": "PERSON"
+      },
+      {
+        "name": "STRATEGIC WEB COMPROMISE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "2012 CAPSTONE TURBINE SWC CAMPAIGN",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "17 JANUARY 2014",
+        "type": "EVENT"
+      },
+      {
+        "name": "173.252.252.204",
+        "type": "LOCATION"
+      },
+      {
+        "name": "217.108.170.0/24",
+        "type": "LOCATION"
+      },
+      {
+        "name": "CROWDSTRIKE INTELLIGENCE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "FRANCE AEROSPACE ATTACK",
+        "type": "Unknown"
+      },
+      {
+        "name": "snecma[.]fr",
+        "type": "Unknown"
+      },
+      {
+        "name": "CVE-2012-4792",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "AURORA PANDA",
+        "rel": "related_to",
+        "obj": "VETERANS OF FOREIGN WARS"
+      },
+      {
+        "sub": "CVE-2014-0322",
+        "rel": "related_to",
+        "obj": "ZxShell"
+      },
+      {
+        "sub": "CVE-2014-0322",
+        "rel": "related_to",
+        "obj": "Sakula"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "related_to",
+        "obj": "CAPSTONE TURBINE"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "related_to",
+        "obj": "FRANCE AEROSPACE ATTACK"
+      },
+      {
+        "sub": "GIFAS",
+        "rel": "related_to",
+        "obj": "gifas[.]assso[.]net"
+      },
+      {
+        "sub": "GIFAS",
+        "rel": "related_to",
+        "obj": "secure[.]safran-group[.]com"
+      },
+      {
+        "sub": "SAFRAN",
+        "rel": "related_to",
+        "obj": "snecma[.]fr"
+      },
+      {
+        "sub": "SAFRAN",
+        "rel": "related_to",
+        "obj": "secure[.]safran-group[.]com"
+      },
+      {
+        "sub": "CAPSTONE TURBINE",
+        "rel": "related_to",
+        "obj": "CVE-2012-4792"
+      },
+      {
+        "sub": "CAPSTONE TURBINE",
+        "rel": "related_to",
+        "obj": "2012 CAPSTONE TURBINE SWC CAMPAIGN"
+      },
+      {
+        "sub": "25 FEB 2014",
+        "rel": "related_to",
+        "obj": "MATT DAHL"
+      },
+      {
+        "sub": "17 JANUARY 2014",
+        "rel": "related_to",
+        "obj": "GIFAS"
+      },
+      {
+        "sub": "173.252.252.204",
+        "rel": "related_to",
+        "obj": "gifas[.]assso[.]net"
+      },
+      {
+        "sub": "173.252.252.204",
+        "rel": "related_to",
+        "obj": "secure[.]safran-group[.]com"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "related_to",
+        "obj": "oa[.]ameteksen[.]com"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "related_to",
+        "obj": "web[.]vipreclod[.]com"
+      },
+      {
+        "sub": "FRANCE AEROSPACE ATTACK",
+        "rel": "related_to",
+        "obj": "2012 CAPSTONE TURBINE SWC CAMPAIGN"
+      },
+      {
+        "sub": "MATT DAHL",
+        "rel": "related_to",
+        "obj": "CROWDSTRIKE INTELLIGENCE"
+      }
+    ]
+  }
+}

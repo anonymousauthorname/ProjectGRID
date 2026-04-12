@@ -1,0 +1,361 @@
+{
+  "sample_id": "malkg__201304FireEyeTrojanAPTBaneChant.txt",
+  "sample_index": 108,
+  "source": "malkg",
+  "file_name": "201304FireEyeTrojanAPTBaneChant.txt",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Trojan.APT.BaneChant",
+        "type": "Unknown"
+      },
+      {
+        "name": "multiple mouse clicks",
+        "type": "Unknown"
+      },
+      {
+        "name": "XOR encryption with two-byte key",
+        "type": "Unknown"
+      },
+      {
+        "name": "stage two payload",
+        "type": "Unknown"
+      },
+      {
+        "name": "hxxp://ow.ly/iGKKT",
+        "type": "Unknown"
+      },
+      {
+        "name": "legitimate service",
+        "type": "Unknown"
+      },
+      {
+        "name": "hxxp://symbisecure.com/update/winword.pkg",
+        "type": "Unknown"
+      },
+      {
+        "name": "fake JPEG file",
+        "type": "Unknown"
+      },
+      {
+        "name": "to avoid disk-based detection",
+        "type": "Unknown"
+      },
+      {
+        "name": "C:\\ProgramData\\Google2\\GoogleUpdate.exe",
+        "type": "Unknown"
+      },
+      {
+        "name": "legitimate Google Update",
+        "type": "Unknown"
+      },
+      {
+        "name": "computer information",
+        "type": "Unknown"
+      },
+      {
+        "name": "running processes",
+        "type": "Unknown"
+      },
+      {
+        "name": "IP configuration",
+        "type": "Unknown"
+      },
+      {
+        "name": "directories of root drives",
+        "type": "Unknown"
+      },
+      {
+        "name": "exfiltrated data",
+        "type": "Unknown"
+      },
+      {
+        "name": "hxxp://symbisecure.com/adserv/get.php",
+        "type": "Unknown"
+      },
+      {
+        "name": "Base-64 format",
+        "type": "Unknown"
+      },
+      {
+        "name": "BaneChant",
+        "type": "Unknown"
+      },
+      {
+        "name": "remote access",
+        "type": "Unknown"
+      },
+      {
+        "name": "command 'g'",
+        "type": "Unknown"
+      },
+      {
+        "name": "command 'i'",
+        "type": "Unknown"
+      },
+      {
+        "name": "command 'x'",
+        "type": "Unknown"
+      },
+      {
+        "name": "command 'u'",
+        "type": "Unknown"
+      },
+      {
+        "name": "NO-IP",
+        "type": "Unknown"
+      },
+      {
+        "name": "malicious document",
+        "type": "Unknown"
+      },
+      {
+        "name": "Islamic Jihad.doc",
+        "type": "Unknown"
+      },
+      {
+        "name": "RTF",
+        "type": "Unknown"
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "Unknown"
+      },
+      {
+        "name": "MSCOMCTL.ocx",
+        "type": "Unknown"
+      },
+      {
+        "name": "stack corruption to JMP ESP",
+        "type": "Unknown"
+      },
+      {
+        "name": "governments of Middle East and Central Asia",
+        "type": "Unknown"
+      },
+      {
+        "name": "detecting human behavior",
+        "type": "Unknown"
+      },
+      {
+        "name": "using XOR encryption",
+        "type": "Unknown"
+      },
+      {
+        "name": "using URL shortening and dynamic DNS",
+        "type": "Unknown"
+      },
+      {
+        "name": "creating startup shortcut",
+        "type": "Unknown"
+      },
+      {
+        "name": "soundtrack BaneChant by Hans Zimmer",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "detects",
+        "obj": "multiple mouse clicks"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "uses",
+        "obj": "XOR encryption with two-byte key"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "downloads",
+        "obj": "stage two payload"
+      },
+      {
+        "sub": "stage two payload",
+        "rel": "downloads",
+        "obj": "stage two payload"
+      },
+      {
+        "sub": "stage two payload",
+        "rel": "downloads from",
+        "obj": "hxxp://ow.ly/iGKKT"
+      },
+      {
+        "sub": "hxxp://ow.ly/iGKKT",
+        "rel": "is a URL shortening service",
+        "obj": "legitimate service"
+      },
+      {
+        "sub": "stage two payload",
+        "rel": "is hosted at",
+        "obj": "hxxp://symbisecure.com/update/winword.pkg"
+      },
+      {
+        "sub": "stage two payload",
+        "rel": "is disguised as",
+        "obj": "fake JPEG file"
+      },
+      {
+        "sub": "stage two payload",
+        "rel": "is executed in memory",
+        "obj": "to avoid disk-based detection"
+      },
+      {
+        "sub": "stage two payload",
+        "rel": "creates a shortcut at",
+        "obj": "C:\\ProgramData\\Google2\\GoogleUpdate.exe"
+      },
+      {
+        "sub": "stage two payload",
+        "rel": "masquerades as",
+        "obj": "legitimate Google Update"
+      },
+      {
+        "sub": "stage two payload",
+        "rel": "exfiltrates",
+        "obj": "computer information"
+      },
+      {
+        "sub": "stage two payload",
+        "rel": "exfiltrates",
+        "obj": "running processes"
+      },
+      {
+        "sub": "stage two payload",
+        "rel": "exfiltrates",
+        "obj": "IP configuration"
+      },
+      {
+        "sub": "stage two payload",
+        "rel": "exfiltrates",
+        "obj": "directories of root drives"
+      },
+      {
+        "sub": "exfiltrated data",
+        "rel": "is sent to",
+        "obj": "hxxp://symbisecure.com/adserv/get.php"
+      },
+      {
+        "sub": "exfiltrated data",
+        "rel": "is encoded in",
+        "obj": "Base-64 format"
+      },
+      {
+        "sub": "exfiltrated data",
+        "rel": "starts with tag",
+        "obj": "BaneChant"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "establishes backdoor",
+        "obj": "remote access"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "enables command execution via",
+        "obj": "command 'g'"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "enables command execution via",
+        "obj": "command 'i'"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "enables command execution via",
+        "obj": "command 'x'"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "enables command execution via",
+        "obj": "command 'u'"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "uses dynamic DNS service",
+        "obj": "NO-IP"
+      },
+      {
+        "sub": "malicious document",
+        "rel": "is named",
+        "obj": "Islamic Jihad.doc"
+      },
+      {
+        "sub": "malicious document",
+        "rel": "is in RTF format",
+        "obj": "RTF"
+      },
+      {
+        "sub": "malicious document",
+        "rel": "exploits",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "malicious document",
+        "rel": "loads",
+        "obj": "MSCOMCTL.ocx"
+      },
+      {
+        "sub": "malicious document",
+        "rel": "triggers",
+        "obj": "stack corruption to JMP ESP"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "is used to target",
+        "obj": "governments of Middle East and Central Asia"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "evades sandbox by",
+        "obj": "detecting human behavior"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "evades network binary extraction by",
+        "obj": "using XOR encryption"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "evades automated domain blacklisting by",
+        "obj": "using URL shortening and dynamic DNS"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "achieves persistence by",
+        "obj": "creating startup shortcut"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "is named after",
+        "obj": "soundtrack BaneChant by Hans Zimmer"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "exfiltrates",
+        "obj": "exfiltrated data"
+      },
+      {
+        "sub": "malicious document",
+        "rel": "contains and delivers",
+        "obj": "Trojan.APT.BaneChant"
+      }
+    ]
+  }
+}

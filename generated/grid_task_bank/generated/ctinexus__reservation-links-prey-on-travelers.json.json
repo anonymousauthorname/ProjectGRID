@@ -1,0 +1,176 @@
+{
+  "sample_id": "ctinexus__reservation-links-prey-on-travelers.json",
+  "sample_index": 90,
+  "source": "ctinexus",
+  "file_name": "reservation-links-prey-on-travelers.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TA558",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the threat group",
+          "TA558 cybercriminals"
+        ]
+      },
+      {
+        "name": "travel and hospitality industries",
+        "type": "victims/targets"
+      },
+      {
+        "name": "COVID-related travel restrictions",
+        "type": "contextual event"
+      },
+      {
+        "name": "2018 campaigns",
+        "type": "campaign"
+      },
+      {
+        "name": "fake reservation emails",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "links",
+        "type": "url"
+      },
+      {
+        "name": "malicious malware payload",
+        "type": "malware"
+      },
+      {
+        "name": "potpourri of malware variants",
+        "type": "malware"
+      },
+      {
+        "name": "RAR file",
+        "type": "file"
+      },
+      {
+        "name": "ISO file",
+        "type": "file"
+      },
+      {
+        "name": "messages",
+        "type": "email"
+      },
+      {
+        "name": "Proofpoint",
+        "type": "security-product"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TA558",
+        "rel": "has ramped up efforts to target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "travel and hospitality industries"
+      },
+      {
+        "sub": "TA558",
+        "rel": "has ramped up efforts to target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "travel and hospitality industries"
+      },
+      {
+        "sub": "TA558",
+        "rel": "has ramped up campaigns to exploit",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "an uptick in travel and related airline and hotel bookings"
+      },
+      {
+        "sub": "TA558 cybercriminals",
+        "rel": "have revamped",
+        "rel_type": [
+          "revamped"
+        ],
+        "obj": "2018 campaigns"
+      },
+      {
+        "sub": "fake reservation emails",
+        "rel": "contain",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "links"
+      },
+      {
+        "sub": "links",
+        "rel": "deliver",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "a malicious malware payload"
+      },
+      {
+        "sub": "malicious malware payload",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a potpourri of malware variants"
+      },
+      {
+        "sub": "Proofpoint",
+        "rel": "reported on",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "this most recent campaign"
+      },
+      {
+        "sub": "RAR and ISO file attachments",
+        "rel": "are linked to",
+        "rel_type": [
+          "linked-to"
+        ],
+        "obj": "messages"
+      },
+      {
+        "sub": "ISO and RAR",
+        "rel": "are single compressed files",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "that if executed, decompress the file and folder data inside of them"
+      },
+      {
+        "sub": "RAR file",
+        "rel": "if executed, decompress",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the file and folder data inside of them"
+      },
+      {
+        "sub": "ISO file",
+        "rel": "if executed, decompress",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the file and folder data inside of them"
+      }
+    ]
+  }
+}

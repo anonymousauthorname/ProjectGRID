@@ -1,0 +1,182 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_10.json",
+  "sample_index": 202,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_10.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Spring4Shell",
+        "rel": "Has vulnerability",
+        "obj": "Spring Framework version 5.3.0 to 5.3.17 and 5.2.0 to 5.2.19"
+      },
+      {
+        "sub": "Spring4Shell",
+        "rel": "Has vulnerability",
+        "obj": "Apache Tomcat"
+      },
+      {
+        "sub": "Spring4Shell",
+        "rel": "Has vulnerability",
+        "obj": "WAR-based applications"
+      },
+      {
+        "sub": "Spring4Shell",
+        "rel": "Locate at",
+        "obj": "WAR-based applications"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2022-22965"
+      },
+      {
+        "sub": "Spring Framework",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2022-22965"
+      },
+      {
+        "sub": "Apache Tomcat",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2022-22965"
+      },
+      {
+        "sub": "Web server",
+        "rel": "Operate",
+        "obj": "Spring Framework"
+      },
+      {
+        "sub": "Web server",
+        "rel": "Operate",
+        "obj": "Apache Tomcat"
+      },
+      {
+        "sub": "Public-facing application",
+        "rel": "Belong to",
+        "obj": "Web server"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "Allow",
+        "obj": "Gain access"
+      },
+      {
+        "sub": "Gain access",
+        "rel": "Lead to",
+        "obj": "Foothold in target environment"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Spring Framework"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has URL",
+        "obj": "https://nvd.nist.gov/vuln/detail/CVE-2022-22965"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Remote code execution"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Public-facing web application"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2022-22965"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Belong to",
+        "obj": "Web application"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Locate at",
+        "obj": "Public-facing web application"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Modify",
+        "obj": "HTTP request"
+      },
+      {
+        "sub": "System",
+        "rel": "Write",
+        "obj": "Arbitrary code"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Foothold in the network"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Spring Framework"
+      },
+      {
+        "sub": "Spring Framework",
+        "rel": "Has vulnerability",
+        "obj": "Data binding functionality"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Server"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Execute",
+        "obj": "Malicious code"
+      },
+      {
+        "sub": "HTTP request",
+        "rel": "Construct",
+        "obj": "Class name"
+      },
+      {
+        "sub": "Class name",
+        "rel": "Bypass",
+        "obj": "Security checks"
+      },
+      {
+        "sub": "JSP web shell",
+        "rel": "Write",
+        "obj": "Arbitrary commands"
+      },
+      {
+        "sub": "Remote code execution",
+        "rel": "Detect",
+        "obj": "Malicious code"
+      },
+      {
+        "sub": "Spring Framework",
+        "rel": "Locate at",
+        "obj": "Data binding functionality"
+      }
+    ]
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "sample_id": "malkg__201409ClearSkyGholee.txt",
+  "sample_index": 101,
+  "source": "malkg",
+  "file_name": "201409ClearSkyGholee.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Operation Protective Edge",
+        "type": "Campaign"
+      },
+      {
+        "name": "Gholee",
+        "type": "Malware"
+      },
+      {
+        "name": "Operation Protective Edge.xlsb",
+        "type": "Indicator"
+      },
+      {
+        "name": "svchost 67.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "83.170.33.60",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "83.170.33.37",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "coreimpactagent.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Thawte",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Core Security",
+        "type": "Organization"
+      },
+      {
+        "name": "iABG Mbh",
+        "type": "Organization"
+      },
+      {
+        "name": "Kaspersky",
+        "type": "Malware"
+      },
+      {
+        "name": "Virus Total",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "NTUSER.data.{GUIDE}.dll",
+        "type": "Indicator"
+      },
+      {
+        "name": "NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0b**c}.dll",
+        "type": "Indicator"
+      },
+      {
+        "name": "Microsoft Excel",
+        "type": "Software"
+      },
+      {
+        "name": "VBA",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Macro",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "SSL",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Cuckoo",
+        "type": "Tool"
+      },
+      {
+        "name": "Anubis",
+        "type": "Tool"
+      },
+      {
+        "name": "Ollydbg",
+        "type": "Tool"
+      },
+      {
+        "name": "IDA",
+        "type": "Tool"
+      },
+      {
+        "name": "GPO",
+        "type": "Tool"
+      },
+      {
+        "name": "Windows",
+        "type": "Software"
+      },
+      {
+        "name": "cmd.exe",
+        "type": "Tool"
+      },
+      {
+        "name": "Rundll32",
+        "type": "Tool"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Operation Protective Edge.xlsb",
+        "rel": "injected with",
+        "obj": "Gholee"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "communicates with",
+        "obj": "83.170.33.60"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "communicates with",
+        "obj": "83.170.33.37"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "uses ssl certificate for",
+        "obj": "coreimpactagent.net"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "issuing certificate authority",
+        "obj": "Thawte"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "executes macro from",
+        "obj": "Microsoft Excel"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "USES",
+        "obj": "VBA"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "USES",
+        "obj": "Macro"
+      },
+      {
+        "sub": "svchost 67.exe",
+        "rel": "related to",
+        "obj": "Gholee"
+      },
+      {
+        "sub": "svchost 67.exe",
+        "rel": "communicates with",
+        "obj": "83.170.33.37"
+      },
+      {
+        "sub": "Operation Protective Edge.xlsb",
+        "rel": "uploaded to",
+        "obj": "Virus Total"
+      },
+      {
+        "sub": "svchost 67.exe",
+        "rel": "uploaded to",
+        "obj": "Virus Total"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "saves as",
+        "obj": "NTUSER.data.{GUIDE}.dll"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "saves as",
+        "obj": "NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0b**c}.dll"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "executes through",
+        "obj": "cmd.exe"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "executes through",
+        "obj": "Rundll32"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "hides from",
+        "obj": "Cuckoo"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "hides from",
+        "obj": "Anubis"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "hides from",
+        "obj": "Ollydbg"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "hides from",
+        "obj": "IDA"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "detected by",
+        "obj": "Kaspersky"
+      },
+      {
+        "sub": "Operation Protective Edge.xlsb",
+        "rel": "uploaded from",
+        "obj": "Israel"
+      },
+      {
+        "sub": "svchost 67.exe",
+        "rel": "uploaded from",
+        "obj": "Latvia"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "runs on",
+        "obj": "Windows"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "prevented by",
+        "obj": "GPO"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "threat model based on",
+        "obj": "Operation Protective Edge"
+      }
+    ]
+  }
+}

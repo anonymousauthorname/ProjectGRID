@@ -1,0 +1,838 @@
+{
+  "sample_id": "securenlp__TA14-353A_wiper",
+  "sample_index": 158,
+  "source": "securenlp",
+  "file_name": "TA14-353A_wiper",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SMB Worm Tool",
+        "type": "malware",
+        "alias": [
+          "Server Message Block (SMB) Worm Tool",
+          "the SMB Worm Tool"
+        ]
+      },
+      {
+        "name": "Destructive Target Cleaning Tool",
+        "type": "malware",
+        "alias": [
+          "the Destructive Target Cleaning Tool"
+        ]
+      },
+      {
+        "name": "Network Propagation Wiper",
+        "type": "malware",
+        "alias": [
+          "the malware",
+          "wiper"
+        ]
+      },
+      {
+        "name": "igfxtrayex.exe",
+        "type": "file",
+        "alias": [
+          "igfxtrayex.exe",
+          "disk wiper",
+          "destructive malware"
+        ]
+      },
+      {
+        "name": "diskpartmg16.exe",
+        "type": "file",
+        "alias": [
+          "diskpartmg16.exe",
+          "dropper"
+        ]
+      },
+      {
+        "name": "Microsoft Windows",
+        "type": "general-software",
+        "alias": [
+          "Windows"
+        ]
+      },
+      {
+        "name": "anti-virus software",
+        "type": "security-product"
+      },
+      {
+        "name": "US-CERT",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "United States Computer Emergency Readiness Team"
+        ]
+      },
+      {
+        "name": "Windows Server 7970",
+        "type": "general-software"
+      },
+      {
+        "name": "Listening Implant",
+        "type": "malware"
+      },
+      {
+        "name": "Lightweight Backdoor",
+        "type": "malware"
+      },
+      {
+        "name": "Proxy Tool",
+        "type": "malware"
+      },
+      {
+        "name": "Destructive Hard Drive Tool",
+        "type": "malware"
+      },
+      {
+        "name": "net_ver.dat",
+        "type": "file"
+      },
+      {
+        "name": "taskhostXX.exe",
+        "type": "file"
+      },
+      {
+        "name": "igfxtpers.exe",
+        "type": "file"
+      },
+      {
+        "name": "usbdrv3_32bit.sys",
+        "type": "file"
+      },
+      {
+        "name": "usbdrv3_64bit.sys",
+        "type": "file"
+      },
+      {
+        "name": "command and control (C2) infrastructure",
+        "type": "infrastructure"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "US-CERT",
+        "rel": "was recently notified by",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "a trusted third party"
+      },
+      {
+        "sub": "cyber threat actors",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "SMB Worm Tool"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "is equipped with",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Listening Implant"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "is equipped with",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Lightweight Backdoor"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "is equipped with",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Proxy Tool"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "is equipped with",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Destructive Hard Drive Tool"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "is equipped with",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Destructive Target Cleaning Tool"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "uses a brute force authentication attack to propagate via",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Windows SMB shares"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "connects to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "command and control (C2) infrastructure"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "sends log data back to",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "command and control (C2) infrastructure"
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "accepts new scan tasking when it connects to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "command and control (C2) infrastructure"
+      },
+      {
+        "sub": "first thread",
+        "rel": "calls home",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "command and control (C2) infrastructure"
+      },
+      {
+        "sub": "second thread",
+        "rel": "attempts to guess passwords for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "SMB connections"
+      },
+      {
+        "sub": "if the password is correctly guessed",
+        "rel": "a file share is established",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "file share"
+      },
+      {
+        "sub": "file",
+        "rel": "is copied and run on",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "the newly-infected host"
+      },
+      {
+        "sub": "Listening Implant",
+        "rel": "decrypts using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "AES"
+      },
+      {
+        "sub": "Listening Implant",
+        "rel": "listens for connections on",
+        "rel_type": [
+          "listens for connections on"
+        ],
+        "obj": "TCP port 195"
+      },
+      {
+        "sub": "Listening Implant",
+        "rel": "listens for connections on",
+        "rel_type": [
+          "listens for connections on"
+        ],
+        "obj": "TCP port 444"
+      },
+      {
+        "sub": "each message sent to and from this implant",
+        "rel": "is preceded with its length, then XOR encoded with the byte",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "0x1F"
+      },
+      {
+        "sub": "victim",
+        "rel": "sends the string",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "HTTP/1.1 GET /dns?\u0000."
+      },
+      {
+        "sub": "controller",
+        "rel": "responds with the string",
+        "rel_type": [
+          "responds with"
+        ],
+        "obj": "200 www.yahoo.com!\u0000"
+      },
+      {
+        "sub": "controller",
+        "rel": "responds with the string",
+        "rel_type": [
+          "responds with"
+        ],
+        "obj": "RESPONSE 200 OK!!"
+      },
+      {
+        "sub": "controller",
+        "rel": "sends the byte",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "!"
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "includes functionality such as",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "file transfer"
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "includes functionality such as",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "system survey"
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "includes functionality such as",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "process manipulation"
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "includes functionality such as",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "file time matching"
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "includes functionality such as",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "proxy capability"
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "can perform",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "arbitrary code execution"
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "can execute",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "commands on the command line"
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "includes functionality to open ports in",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "victim host's firewall"
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "includes functionality to take advantage of",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "universal Plug and Play (UPNP) mechanisms"
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "allows inbound connections to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "victim hosts on Network Address Translated (NAT) private networks"
+      },
+      {
+        "sub": "Proxy Tool",
+        "rel": "is loaded via a dropper installed as a service",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "dropper"
+      },
+      {
+        "sub": "Proxy Tool",
+        "rel": "is configured to listen on",
+        "rel_type": [
+          "listens for connections on"
+        ],
+        "obj": "TCP port 443"
+      },
+      {
+        "sub": "Proxy Tool",
+        "rel": "has basic backdoor functionality, including the ability to fingerprint",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "victim machine"
+      },
+      {
+        "sub": "Proxy Tool",
+        "rel": "has basic backdoor functionality, including the ability to",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "run remote commands"
+      },
+      {
+        "sub": "Proxy Tool",
+        "rel": "has basic backdoor functionality, including the ability to perform",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "directory listings"
+      },
+      {
+        "sub": "Proxy Tool",
+        "rel": "has basic backdoor functionality, including the ability to perform",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "process listings"
+      },
+      {
+        "sub": "Proxy Tool",
+        "rel": "has basic backdoor functionality, including the ability to transfer",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "files"
+      },
+      {
+        "sub": "Destructive Hard Drive Tool",
+        "rel": "is a tailored hard-drive wiping tool that is intended to destroy data",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "past the point of recovery"
+      },
+      {
+        "sub": "Destructive Hard Drive Tool",
+        "rel": "is intended to complicate",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "victim machine’s recovery"
+      },
+      {
+        "sub": "Destructive Hard Drive Tool",
+        "rel": "if the CNE operator has administrator-level privileges on the host",
+        "rel_type": [
+          "if"
+        ],
+        "obj": "will over-write portions of up to the first four physical drives"
+      },
+      {
+        "sub": "Destructive Hard Drive Tool",
+        "rel": "will over-write",
+        "rel_type": [
+          "overwrites"
+        ],
+        "obj": "master boot record (MBR)"
+      },
+      {
+        "sub": "Destructive Hard Drive Tool",
+        "rel": "will cause further damage if the hard drive is re-booted",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "hard drive is re-booted"
+      },
+      {
+        "sub": "Destructive Hard Drive Tool",
+        "rel": "The further result includes",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "victim machine being non-operational with irrecoverable data"
+      },
+      {
+        "sub": "Destructive Target Cleaning Tool",
+        "rel": "renders victim machines inoperable by overwriting",
+        "rel_type": [
+          "overwrites"
+        ],
+        "obj": "Master Boot Record"
+      },
+      {
+        "sub": "Destructive Target Cleaning Tool",
+        "rel": "is dropped and installed by",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "another executable"
+      },
+      {
+        "sub": "Destructive Target Cleaning Tool",
+        "rel": "consists of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "an executable"
+      },
+      {
+        "sub": "Destructive Target Cleaning Tool",
+        "rel": "consists of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a dll"
+      },
+      {
+        "sub": "Destructive Target Cleaning Tool",
+        "rel": "consists of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "an encoded command file"
+      },
+      {
+        "sub": "Network Propagation Wiper",
+        "rel": "is able to propagate throughout the target network",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "target network"
+      },
+      {
+        "sub": "Network Propagation Wiper",
+        "rel": "accesses remote network shares in order to upload",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "wiper"
+      },
+      {
+        "sub": "Network Propagation Wiper",
+        "rel": "uploads a copy of the wiper file",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "taskhostXX.exe"
+      },
+      {
+        "sub": "Network Propagation Wiper",
+        "rel": "changes the file-time to match that of",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "built-in file calc.exe"
+      },
+      {
+        "sub": "Network Propagation Wiper",
+        "rel": "starts the remote process",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "remote process"
+      },
+      {
+        "sub": "Network Propagation Wiper",
+        "rel": "reports its status back to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "one of the four C2 IP addresses"
+      },
+      {
+        "sub": "diskpartmg16.exe",
+        "rel": "serves as a dropper",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "dropper"
+      },
+      {
+        "sub": "diskpartmg16.exe",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "destructive malware"
+      },
+      {
+        "sub": "diskpartmg16.exe",
+        "rel": "started a second instance of itself with",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "-i"
+      },
+      {
+        "sub": "diskpartmg16.exe",
+        "rel": "installed itself as the",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "WinsSchMgmt service"
+      },
+      {
+        "sub": "WinsSchMgmt service",
+        "rel": "executed the file with",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "-k"
+      },
+      {
+        "sub": "WinsSchMgmt service",
+        "rel": "started",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "the file"
+      },
+      {
+        "sub": "diskpartmg16.exe",
+        "rel": "started another instance of the file using",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "-s"
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "drops and executed",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "igfxtrayex.exe"
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "created",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "net_ver.dat"
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "executed",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "itself with the –i argument"
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "makes three copies of itself and places them in the same directory from which it was executed",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "three copies of itself"
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "executed, each with a different argument",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "copies"
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "Network connection attempts are made to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "one of three hard-coded IP addresses"
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "executed the following command-line string",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "cmd.exe /c net stop MSExchangeIS /y"
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "issued a 120-minute (2 hour) sleep command",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "sleep command"
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "computer is shut down and rebooted",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "computer"
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "starts a listener on localhost port 80",
+        "rel_type": [
+          "listens for connections on"
+        ],
+        "obj": "localhost port 80"
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "dropped",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "usbdrv3_32bit.sys"
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "dropped",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "usbdrv3_64bit.sys"
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "is dropped from resource ID",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "0x81"
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "is dropped from resource ID",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "0x83"
+      },
+      {
+        "sub": "US-CERT",
+        "rel": "recommends reviewing",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Security Tip Handling Destructive Malware #ST13-003"
+      },
+      {
+        "sub": "anti-virus software",
+        "rel": "recognizes and protects against",
+        "rel_type": [
+          "protects"
+        ],
+        "obj": "most known viruses"
+      },
+      {
+        "sub": "anti-virus software",
+        "rel": "is up to date",
+        "rel_type": [
+          "protects"
+        ],
+        "obj": "your computer"
+      },
+      {
+        "sub": "operating system and application software",
+        "rel": "is up-to-date",
+        "rel_type": [
+          "protects"
+        ],
+        "obj": "attackers"
+      },
+      {
+        "sub": "US-CERT recommends",
+        "rel": "review",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Security Tip Handling Destructive Malware #ST13-003"
+      },
+      {
+        "sub": "US-CERT recommends",
+        "rel": "review",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Recommended Practices for Control Systems"
+      },
+      {
+        "sub": "organization infected with the malware",
+        "rel": "could experience operational impacts including",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "loss of intellectual property"
+      },
+      {
+        "sub": "organization infected with the malware",
+        "rel": "could experience operational impacts including",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "disruption of critical systems"
+      },
+      {
+        "sub": "cyber threat actors",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "SMB worm"
+      },
+      {
+        "sub": "SMB worm",
+        "rel": "conduct cyber exploitation activities",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "a major entertainment company"
+      }
+    ]
+  }
+}

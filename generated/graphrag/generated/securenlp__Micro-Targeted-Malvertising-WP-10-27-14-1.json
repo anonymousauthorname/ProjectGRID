@@ -1,0 +1,272 @@
+{
+  "sample_id": "securenlp__Micro-Targeted-Malvertising-WP-10-27-14-1",
+  "sample_index": 184,
+  "source": "securenlp",
+  "file_name": "Micro-Targeted-Malvertising-WP-10-27-14-1",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "INVINCEA INC.",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "OPERATION DEATHCLICK",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "CRYPTO WALL",
+        "type": "MALWARE"
+      },
+      {
+        "name": "REAL-TIME AD BIDDING (RTB)",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "PUBMATIC",
+        "type": "TOOL"
+      },
+      {
+        "name": "FIRST-IMPRESSION.COM",
+        "type": "TOOL"
+      },
+      {
+        "name": "DOUBLECLICK.NET",
+        "type": "TOOL"
+      },
+      {
+        "name": "ZEDO",
+        "type": "TOOL"
+      },
+      {
+        "name": "NEUSTAR.BIZ",
+        "type": "TOOL"
+      },
+      {
+        "name": "GPOKR.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "FLEAFLICKER.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "WEBMAIL.EARTHLINK.NET",
+        "type": "LOCATION"
+      },
+      {
+        "name": "SPORTS.YAHOO.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "THREAT ACTORS",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "EXPLOIT KIT",
+        "type": "TOOL"
+      },
+      {
+        "name": "POLISH WEBSITE",
+        "type": "LOCATION"
+      },
+      {
+        "name": "UNCONFIGURED NGINX HOST",
+        "type": "LOCATION"
+      },
+      {
+        "name": "UA.IN",
+        "type": "LOCATION"
+      },
+      {
+        "name": "GOVERNMENT AND NEWS PAGES IN POLAND",
+        "type": "LOCATION"
+      },
+      {
+        "name": "WORLDPRESS BLOGS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "UNCONFIGURED APACHE HOSTS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "CLOUD-BASED NGINX SUBDIRECTORIES",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "AD EXCHANGE",
+        "type": "TOOL"
+      },
+      {
+        "name": "TOR NETWORK",
+        "type": "TOOL"
+      },
+      {
+        "name": "CLICK FRAUD",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "IP BASED TARGETING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "USER-AGENT STRINGS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "GEOGRAPHIC REGION TARGETING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "COOKIES",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "CORPORATE IP RANGES",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "INTEREST-BASED TARGETING",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "OPERATION DEATHCLICK",
+        "rel": "related_to",
+        "obj": "CRYPTO WALL"
+      },
+      {
+        "sub": "REAL-TIME AD BIDDING (RTB)",
+        "rel": "related_to",
+        "obj": "PUBMATIC"
+      },
+      {
+        "sub": "REAL-TIME AD BIDDING (RTB)",
+        "rel": "related_to",
+        "obj": "FIRST-IMPRESSION.COM"
+      },
+      {
+        "sub": "REAL-TIME AD BIDDING (RTB)",
+        "rel": "related_to",
+        "obj": "ZEDO"
+      },
+      {
+        "sub": "REAL-TIME AD BIDDING (RTB)",
+        "rel": "related_to",
+        "obj": "NEUSTAR.BIZ"
+      },
+      {
+        "sub": "THREAT ACTORS",
+        "rel": "related_to",
+        "obj": "OPERATION DEATHCLICK"
+      },
+      {
+        "sub": "THREAT ACTORS",
+        "rel": "related_to",
+        "obj": "CRYPTO WALL"
+      },
+      {
+        "sub": "PUBMATIC",
+        "rel": "related_to",
+        "obj": "FLEAFLICKER.COM"
+      },
+      {
+        "sub": "FIRST-IMPRESSION.COM",
+        "rel": "related_to",
+        "obj": "SPORTS.YAHOO.COM"
+      },
+      {
+        "sub": "REAL-TIME AD BIDDING (RTB)",
+        "rel": "related_to",
+        "obj": "EXPLOIT KIT"
+      },
+      {
+        "sub": "EXPLOIT KIT",
+        "rel": "related_to",
+        "obj": "POLISH WEBSITE"
+      },
+      {
+        "sub": "EXPLOIT KIT",
+        "rel": "related_to",
+        "obj": "UNCONFIGURED NGINX HOST"
+      },
+      {
+        "sub": "EXPLOIT KIT",
+        "rel": "related_to",
+        "obj": "UA.IN"
+      },
+      {
+        "sub": "EXPLOIT KIT",
+        "rel": "related_to",
+        "obj": "GOVERNMENT AND NEWS PAGES IN POLAND"
+      },
+      {
+        "sub": "EXPLOIT KIT",
+        "rel": "related_to",
+        "obj": "WORLDPRESS BLOGS"
+      },
+      {
+        "sub": "EXPLOIT KIT",
+        "rel": "related_to",
+        "obj": "UNCONFIGURED APACHE HOSTS"
+      },
+      {
+        "sub": "EXPLOIT KIT",
+        "rel": "related_to",
+        "obj": "CLOUD-BASED NGINX SUBDIRECTORIES"
+      },
+      {
+        "sub": "IP BASED TARGETING",
+        "rel": "related_to",
+        "obj": "CORPORATE IP RANGES"
+      },
+      {
+        "sub": "USER-AGENT STRINGS",
+        "rel": "related_to",
+        "obj": "REAL-TIME AD BIDDING (RTB)"
+      },
+      {
+        "sub": "INTEREST-BASED TARGETING",
+        "rel": "related_to",
+        "obj": "REAL-TIME AD BIDDING (RTB)"
+      },
+      {
+        "sub": "GEOGRAPHIC REGION TARGETING",
+        "rel": "related_to",
+        "obj": "REAL-TIME AD BIDDING (RTB)"
+      },
+      {
+        "sub": "COOKIES",
+        "rel": "related_to",
+        "obj": "REAL-TIME AD BIDDING (RTB)"
+      },
+      {
+        "sub": "REAL-TIME AD BIDDING (RTB)",
+        "rel": "related_to",
+        "obj": "CLICK FRAUD"
+      },
+      {
+        "sub": "INVINCEA INC.",
+        "rel": "related_to",
+        "obj": "OPERATION DEATHCLICK"
+      }
+    ]
+  }
+}

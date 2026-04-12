@@ -1,0 +1,340 @@
+{
+  "sample_id": "ctinexus__new-iranian-apt-data-extraction-tool.json",
+  "sample_index": 92,
+  "source": "ctinexus",
+  "file_name": "new-iranian-apt-data-extraction-tool.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TAG",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the organization"
+        ]
+      },
+      {
+        "name": "APT35",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "APT35"
+        ]
+      },
+      {
+        "name": "Charming Kitten",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Iranian government-backed group",
+          "the group"
+        ]
+      },
+      {
+        "name": "HYPERSCRAPE",
+        "type": "hacker-tool",
+        "alias": [
+          "the tool"
+        ]
+      },
+      {
+        "name": "Gmail",
+        "type": "email-address",
+        "alias": [
+          "Gmail"
+        ]
+      },
+      {
+        "name": "Yahoo!",
+        "type": "email-address",
+        "alias": [
+          "Yahoo!"
+        ]
+      },
+      {
+        "name": "Microsoft Outlook",
+        "type": "email-address",
+        "alias": [
+          "Microsoft Outlook"
+        ]
+      },
+      {
+        "name": "December 2021",
+        "type": "date",
+        "alias": [
+          "December 2021"
+        ]
+      },
+      {
+        "name": "2020",
+        "type": "date",
+        "alias": [
+          "2020"
+        ]
+      },
+      {
+        "name": "Iran",
+        "type": "location",
+        "alias": [
+          "Iran"
+        ]
+      },
+      {
+        "name": "victims",
+        "type": "user-account",
+        "alias": [
+          "victims"
+        ]
+      },
+      {
+        "name": "Government Backed Attacker Warnings",
+        "type": "security-product",
+        "alias": [
+          "Government Backed Attacker Warnings"
+        ]
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the attacker"
+        ]
+      },
+      {
+        "name": "the tool",
+        "type": "hacker-tool",
+        "alias": [
+          "the tool"
+        ]
+      },
+      {
+        "name": "victims’ inboxes",
+        "type": "file",
+        "alias": [
+          "victims’ inboxes"
+        ]
+      },
+      {
+        "name": "previously acquired credentials",
+        "type": "credential-value",
+        "alias": [
+          "previously acquired credentials"
+        ]
+      },
+      {
+        "name": "accounts",
+        "type": "user-account",
+        "alias": [
+          "accounts"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TAG",
+        "rel": "analyzed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "APT35"
+      },
+      {
+        "sub": "TAG",
+        "rel": "analyzed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Charming Kitten"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "is an",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Iranian government-backed group"
+      },
+      {
+        "sub": "TAG",
+        "rel": "has mission to counter",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "serious threats to Google and our users"
+      },
+      {
+        "sub": "TAG",
+        "rel": "has been countering",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "this group’s efforts to hijack accounts"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "high risk users"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "efforts to hijack",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "accounts"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "deploys",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "malware"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "conducts",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "espionage"
+      },
+      {
+        "sub": "TAG",
+        "rel": "discovered",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "HYPERSCRAPE"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "is used to steal user data from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Gmail"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "is used to steal user data from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Yahoo!"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "is used to steal user data from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Microsoft Outlook accounts"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "runs",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "HYPERSCRAPE"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "runs",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "HYPERSCRAPE on their own machine"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "victims’ inboxes"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "previously acquired credentials"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "deployed against",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "fewer than two dozen accounts"
+      },
+      {
+        "sub": "fewer than two dozen accounts",
+        "rel": "located in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Iran"
+      },
+      {
+        "sub": "the oldest known sample",
+        "rel": "is from",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "2020"
+      },
+      {
+        "sub": "the tool",
+        "rel": "is still under active development",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "active development"
+      },
+      {
+        "sub": "TAG",
+        "rel": "has taken actions to re-secure",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "these accounts"
+      },
+      {
+        "sub": "TAG",
+        "rel": "has notified",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "the victims"
+      },
+      {
+        "sub": "Government Backed Attacker Warnings",
+        "rel": "notified the victims through",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "victims"
+      }
+    ]
+  }
+}

@@ -1,0 +1,783 @@
+{
+  "sample_id": "malkg__201306FireEyeSeinUp.txt",
+  "sample_index": 123,
+  "source": "malkg",
+  "file_name": "201306FireEyeSeinUp.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "FireEye research team",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "spear phishing activities",
+        "type": "attack-pattern",
+        "alias": [
+          "spear phishing documents"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "potentially stolen document",
+        "type": "file",
+        "alias": [
+          "decoy document",
+          "spear phishing document"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Brunei",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Cambodia",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Indonesia",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Laos",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Malaysia",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Myanmar",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Philippines",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Singapore",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Thailand",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Vietnam",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Trojan.APT.Seinup",
+        "type": "malware",
+        "alias": [
+          "this malware",
+          "the malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Google Docs",
+        "type": "general-software",
+        "alias": [
+          "the legitimate SSL provided by Google Docs"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Backdoor.Makadocs",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "exp1ore.exe",
+        "type": "file",
+        "alias": [
+          "iexp1ore.exe"
+        ],
+        "mother entity": [
+          "Trojan.APT.Seinup"
+        ]
+      },
+      {
+        "name": "wab.exe",
+        "type": "file",
+        "alias": [
+          "Benign Address Book Application"
+        ],
+        "mother entity": [
+          "exp1ore.exe"
+        ]
+      },
+      {
+        "name": "wab32res.dll",
+        "type": "file",
+        "alias": [
+          "malicious DLL",
+          "msnetrsvw.exe"
+        ],
+        "mother entity": [
+          "exp1ore.exe"
+        ]
+      },
+      {
+        "name": "msnetrsvw.exe",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "wab32res.dll"
+        ]
+      },
+      {
+        "name": "temp folder",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "windows directory",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "elizabearden.com",
+        "type": "domain-name",
+        "alias": [
+          "www.elizabearden.com"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "dnsserviceonline.com",
+        "type": "domain-name",
+        "alias": [
+          "www.dnsserviceonline.com"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "waterphp/BYyH.php",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "elizabearden.com"
+        ]
+      },
+      {
+        "name": "salt",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "shellcode",
+        "type": "malware",
+        "alias": [],
+        "mother entity": [
+          "Trojan.APT.Seinup"
+        ]
+      },
+      {
+        "name": "XOR key 0x9E",
+        "type": "other",
+        "alias": [],
+        "mother entity": [
+          "shellcode"
+        ]
+      },
+      {
+        "name": "XOR key 0xFC",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Wor.doc",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Trojan.APT.Seinup"
+        ]
+      },
+      {
+        "name": "spear phishing document",
+        "type": "file",
+        "alias": [
+          "document"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "137F3D11559E9D986D510AF34CB61FBC",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "spear phishing document"
+        ]
+      },
+      {
+        "name": "CE67AAA163A4915BA408B2C1D5CCC7CC",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "iexp1ore.exe"
+        ]
+      },
+      {
+        "name": "FB2FA42F052D0A86CBDCE03F5C46DD4D",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "wab32res.dll"
+        ]
+      },
+      {
+        "name": "baf227a9f0b21e710c65d01f2ab01244",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "exp1ore.exe"
+        ]
+      },
+      {
+        "name": "0845f03d669e24144df785ee54f6ad74",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "d64a22ea3accc712aebaa047ab818b07",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "56e6c27f9952e79d57d0b32d16c26811",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "cdd969121a2e755ef3dc1a7bf7f18b24",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Mersenne Twister Algorithm",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": [
+          "Trojan.APT.Seinup"
+        ]
+      },
+      {
+        "name": "custom Base64 map",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": [
+          "Trojan.APT.Seinup"
+        ]
+      },
+      {
+        "name": "digital thumbprint",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "Trojan.APT.Seinup"
+        ]
+      },
+      {
+        "name": "FireEye",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Darien Kindlund",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Ned Moran",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Nart Villeneuve",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Thoufique Haq",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Takashi Katsuki",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "symteconline.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "winshell.net",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "philnewsonline.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "go-twitter.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "info-week.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "124.172.243.211",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "symteconline.com"
+        ]
+      },
+      {
+        "name": "50.117.115.83",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "symteconline.com"
+        ]
+      },
+      {
+        "name": "50.117.115.84",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "symteconline.com"
+        ]
+      },
+      {
+        "name": "50.117.120.235",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "symteconline.com"
+        ]
+      },
+      {
+        "name": "69.46.84.51",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "symteconline.com"
+        ]
+      },
+      {
+        "name": "175.100.206.183",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "symteconline.com"
+        ]
+      },
+      {
+        "name": "58.64.190.34",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "winshell.net"
+        ]
+      },
+      {
+        "name": "50.93.198.128",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "philnewsonline.com"
+        ]
+      },
+      {
+        "name": "173.254.197.213",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "go-twitter.com"
+        ]
+      },
+      {
+        "name": "50.93.198.113",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "go-twitter.com"
+        ]
+      },
+      {
+        "name": "XIN NET TECHNOLOGY CORPORATION",
+        "type": "organization",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "GODADDY.COM, LLCEmail: woooyeahh11@yahoo.com",
+        "type": "organization",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "SHANGHAI MEICHENG TECHNOLOGY INFORMATION DEVELOPMENT CO., LTD.",
+        "type": "organization",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "FireEye research team",
+        "rel": "analyzed",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Trojan.APT.Seinup"
+      },
+      {
+        "sub": "spear phishing activities",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Brunei"
+      },
+      {
+        "sub": "spear phishing activities",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Cambodia"
+      },
+      {
+        "sub": "spear phishing activities",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Indonesia"
+      },
+      {
+        "sub": "spear phishing activities",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Laos"
+      },
+      {
+        "sub": "spear phishing activities",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Malaysia"
+      },
+      {
+        "sub": "spear phishing activities",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Myanmar"
+      },
+      {
+        "sub": "spear phishing activities",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Philippines"
+      },
+      {
+        "sub": "spear phishing activities",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Singapore"
+      },
+      {
+        "sub": "spear phishing activities",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Thailand"
+      },
+      {
+        "sub": "spear phishing activities",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Vietnam"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "leverages",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Google Docs"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "exploits",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "spear phishing document",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "potentially stolen document"
+      },
+      {
+        "sub": "spear phishing document",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "exp1ore.exe"
+      },
+      {
+        "sub": "exp1ore.exe",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "wab.exe"
+      },
+      {
+        "sub": "exp1ore.exe",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "wab32res.dll"
+      },
+      {
+        "sub": "wab.exe",
+        "rel": "loads",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "wab32res.dll"
+      },
+      {
+        "sub": "wab32res.dll",
+        "rel": "install as",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "msnetrsvw.exe"
+      },
+      {
+        "sub": "msnetrsvw.exe",
+        "rel": "persists on",
+        "rel_type": [
+          "persists"
+        ],
+        "obj": "infected system"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "allows remote control",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "infected system"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Mersenne Twister Algorithm"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "custom Base64 map"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "digital thumbprint"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "elizabearden.com"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "dnsserviceonline.com"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "waterphp/BYyH.php"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "encrypts",
+        "rel_type": [
+          "encrypts"
+        ],
+        "obj": "shellcode"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "XOR key 0x9E"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "XOR key 0xFC"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "Wor.doc"
+      },
+      {
+        "sub": "spear phishing document",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "exp1ore.exe"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Backdoor.Makadocs"
+      },
+      {
+        "sub": "exp1ore.exe",
+        "rel": "calls",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "elizabearden.com"
+      },
+      {
+        "sub": "exp1ore.exe",
+        "rel": "calls",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "dnsserviceonline.com"
+      }
+    ]
+  }
+}

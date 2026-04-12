@@ -1,0 +1,86 @@
+{
+  "sample_id": "ctinexus__kimsuky-hackers-deploying-appleseed.json",
+  "sample_index": 72,
+  "source": "ctinexus",
+  "file_name": "kimsuky-hackers-deploying-appleseed.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "North Korea",
+        "type": "Location"
+      },
+      {
+        "name": "Kimsuky",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "AppleSeed",
+        "type": "Malware"
+      },
+      {
+        "name": "Meterpreter",
+        "type": "Malware"
+      },
+      {
+        "name": "TinyNuke",
+        "type": "Malware"
+      },
+      {
+        "name": "AhnLab",
+        "type": "Organization"
+      },
+      {
+        "name": "United States government",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "North Korea",
+        "rel": "affiliated to",
+        "obj": "Kimsuky"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "USES",
+        "obj": "AppleSeed"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "USES",
+        "obj": "Meterpreter"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "USES",
+        "obj": "TinyNuke"
+      },
+      {
+        "sub": "AhnLab",
+        "rel": "attributed to",
+        "obj": "Kimsuky"
+      },
+      {
+        "sub": "United States government",
+        "rel": "SANCTIONED",
+        "obj": "Kimsuky"
+      }
+    ]
+  }
+}

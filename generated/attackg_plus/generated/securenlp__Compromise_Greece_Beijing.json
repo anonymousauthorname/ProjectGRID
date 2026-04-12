@@ -1,0 +1,252 @@
+{
+  "sample_id": "securenlp__Compromise_Greece_Beijing",
+  "sample_index": 180,
+  "source": "securenlp",
+  "file_name": "Compromise_Greece_Beijing",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Java file",
+        "rel": "Has URL",
+        "obj": "http://www.grpressbeijing.com/1.jar"
+      },
+      {
+        "sub": "Java file",
+        "rel": "Modify",
+        "obj": "csfn"
+      },
+      {
+        "sub": "csfn",
+        "rel": "Write",
+        "obj": "'pack'"
+      },
+      {
+        "sub": "Java file",
+        "rel": "Construct",
+        "obj": "PE executable"
+      },
+      {
+        "sub": "PE executable",
+        "rel": "Use",
+        "obj": "malicious code"
+      },
+      {
+        "sub": "Java file",
+        "rel": "Operate",
+        "obj": "system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "'spoolsv.exe'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System startup"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "'%%temp%%\\spoolsv.exe'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Disable",
+        "obj": "Phishing filter"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Disable",
+        "obj": "First-run customization"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Disable",
+        "obj": "Warning on post-redirect and zone crossing"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "'reg add' command"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Security tools"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Security features"
+      },
+      {
+        "sub": "Registry",
+        "rel": "Has value",
+        "obj": "Anti-virus warning"
+      },
+      {
+        "sub": "Registry",
+        "rel": "Has value",
+        "obj": "Security prompts"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Registry modification"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Query",
+        "obj": "AntiVirusProduct"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Enumerate",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Enumerate",
+        "obj": "Windows Internet settings"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "COM interface"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Download from",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Has value",
+        "obj": "base64-encoded data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Decode",
+        "obj": "executable"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect data",
+        "obj": "anti-virus products"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Retrieve information",
+        "obj": "installed anti-virus products"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "HTTP GET requests"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Communicate with",
+        "obj": "defense.miraclecz.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Communicate with",
+        "obj": "buy.miraclecz.com"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Access via",
+        "obj": "dynamic URL pattern"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Generate",
+        "obj": "dynamic parameters"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "via"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Have",
+        "obj": "URL pattern %s/?id1=blank%d&id2=%d%d"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Have",
+        "obj": "URL pattern %s/?id1=%d%d"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Evade",
+        "obj": "detection through"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Download",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Decode",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Data exfiltration potential"
+      }
+    ]
+  }
+}

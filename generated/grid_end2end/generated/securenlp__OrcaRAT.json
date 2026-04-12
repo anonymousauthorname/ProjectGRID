@@ -1,0 +1,496 @@
+{
+  "sample_id": "securenlp__OrcaRAT",
+  "sample_index": 172,
+  "source": "securenlp",
+  "file_name": "OrcaRAT",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "OrcaRAT",
+        "type": "malware",
+        "alias": []
+      },
+      {
+        "name": "the AV community",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "Comfoo malware",
+        "type": "malware",
+        "alias": []
+      },
+      {
+        "name": "malware sample (253a704acd7952677c70e0c2d787791b8359efe2c92a5e77acea028393a85613)",
+        "type": "file",
+        "alias": [
+          "the malware"
+        ]
+      },
+      {
+        "name": "threat intelligence analyst",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "sandbox environment",
+        "type": "infrastructure",
+        "alias": []
+      },
+      {
+        "name": "Windows Crypto API",
+        "type": "general-software",
+        "alias": []
+      },
+      {
+        "name": "Windows Crypto API functions",
+        "type": "detailed-part-of-general-software",
+        "mother entity": [
+          "Windows Crypto API"
+        ]
+      },
+      {
+        "name": "RC4 algorithm",
+        "type": "hacker-tool",
+        "alias": []
+      },
+      {
+        "name": "MD5 hash",
+        "type": "hacker-tool",
+        "alias": []
+      },
+      {
+        "name": "randomly generated 6-byte value",
+        "type": "generic-noun",
+        "alias": [
+          "the randomly generated values"
+        ]
+      },
+      {
+        "name": "OrcaKiller string",
+        "type": "generic-noun",
+        "alias": [
+          "the ‘OrcaKiller’ string"
+        ]
+      },
+      {
+        "name": "encryption key",
+        "type": "credential-value",
+        "alias": [
+          "the encryption key"
+        ]
+      },
+      {
+        "name": "base64 encoded data",
+        "type": "indicator",
+        "alias": [
+          "the base64 string"
+        ]
+      },
+      {
+        "name": "forward slashes",
+        "type": "generic-noun",
+        "alias": []
+      },
+      {
+        "name": "tilde (~)",
+        "type": "other",
+        "alias": []
+      },
+      {
+        "name": "campaign ID value",
+        "type": "indicator",
+        "alias": [
+          "hidden string value"
+        ]
+      },
+      {
+        "name": "wHaLe",
+        "type": "generic-noun",
+        "alias": [
+          "the second component"
+        ]
+      },
+      {
+        "name": "command and control server",
+        "type": "infrastructure",
+        "alias": [
+          "C2 server"
+        ]
+      },
+      {
+        "name": "C2 routine",
+        "type": "hacker-tool",
+        "alias": [
+          "command and control routines"
+        ]
+      },
+      {
+        "name": "webpage",
+        "type": "url",
+        "alias": [
+          "HTML page"
+        ]
+      },
+      {
+        "name": "HTML tags",
+        "type": "other",
+        "alias": [
+          "HTML tag strings"
+        ]
+      },
+      {
+        "name": "disassembler / decompiler",
+        "type": "security-product",
+        "alias": [
+          "sandbox"
+        ]
+      },
+      {
+        "name": "Yara rule",
+        "type": "course-of-action",
+        "alias": [
+          "OrcaRAT detection rule"
+        ]
+      },
+      {
+        "name": "Snort rule",
+        "type": "course-of-action",
+        "alias": [
+          "network detection rule"
+        ]
+      },
+      {
+        "name": "Suricata rule",
+        "type": "course-of-action",
+        "alias": [
+          "network detection rule"
+        ]
+      },
+      {
+        "name": "hashes in Appendix A",
+        "type": "file",
+        "alias": [
+          "OrcaRAT samples"
+        ]
+      },
+      {
+        "name": "IP addresses in Appendix B",
+        "type": "ipv4-addr",
+        "alias": [
+          "C2 IPs"
+        ]
+      },
+      {
+        "name": "domains in Appendix B",
+        "type": "domain-name",
+        "alias": [
+          "C2 domains"
+        ]
+      },
+      {
+        "name": "Comment Crew",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": []
+      },
+      {
+        "name": "kill chain",
+        "type": "abstract-concept",
+        "alias": []
+      },
+      {
+        "name": "operator",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the attacker"
+        ]
+      },
+      {
+        "name": "victim system",
+        "type": "identity",
+        "alias": [
+          "compromised system"
+        ]
+      },
+      {
+        "name": "network level detection",
+        "type": "course-of-action",
+        "alias": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "the AV community",
+        "rel": "does not detect",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "OrcaRAT"
+      },
+      {
+        "sub": "threat intelligence analyst",
+        "rel": "analyses",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "malware sample (253a704acd7952677c70e0c2d787791b8359efe2c92a5e77acea028393a85613)"
+      },
+      {
+        "sub": "malware sample (253a704acd7952677c70e0c2d787791b8359efe2c92a5e77acea028393a85613)",
+        "rel": "is run in",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "sandbox environment"
+      },
+      {
+        "sub": "malware sample (253a704acd7952677c70e0c2d787791b8359efe2c92a5e77acea028393a85613)",
+        "rel": "was handed to",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "threat intelligence analyst"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "imports",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Windows Crypto API"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Windows Crypto API functions"
+      },
+      {
+        "sub": "malware sample (253a704acd7952677c70e0c2d787791b8359efe2c92a5e77acea028393a85613)",
+        "rel": "generates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "randomly generated 6-byte value"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "appends",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "OrcaKiller string"
+      },
+      {
+        "sub": "malware sample (253a704acd7952677c70e0c2d787791b8359efe2c92a5e77acea028393a85613)",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Windows Crypto API"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "RC4 algorithm"
+      },
+      {
+        "sub": "RC4 encryption key",
+        "rel": "is derived from",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "MD5 hash"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "encrypts",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "system data"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "produces",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "base64 encoded data"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "replaces",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "forward slashes"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "replaces",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "forward slashes"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "command and control server"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "drops the malware into",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "C2 routine"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "parses",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "webpage"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "extracts payload text between",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "HTML tags"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "treats decrypted payload as",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "executable file"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "sends",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "command and control server"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "generates new",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "encryption key"
+      },
+      {
+        "sub": "operator",
+        "rel": "issues commands to",
+        "rel_type": [
+          "controls"
+        ],
+        "obj": "victim system"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "is detected by",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Yara rule"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "is detected by",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Snort rule"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "is detected by",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Suricata rule"
+      },
+      {
+        "sub": "hashes in Appendix A",
+        "rel": "are samples of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "OrcaRAT"
+      },
+      {
+        "sub": "IP addresses in Appendix B",
+        "rel": "are used by",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "command and control server"
+      },
+      {
+        "sub": "domains in Appendix B",
+        "rel": "are used by",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "command and control server"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "C2 routine"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "is used to perform tasks on",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "victim system"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "is a",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "first stage implant"
+      }
+    ]
+  }
+}

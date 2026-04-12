@@ -1,0 +1,395 @@
+{
+  "sample_id": "casie__10191.json",
+  "sample_index": 26,
+  "source": "casie",
+  "file_name": "10191.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "AMD",
+        "type": "identity",
+        "alias": [
+          "the chipmaker",
+          "AMD device owners",
+          "AMD",
+          "the chipmaker"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Ryzen and EPYC chips",
+        "type": "general-software",
+        "alias": [
+          "its Ryzen and EPYC chips"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "13 vulnerabilities",
+        "type": "vulnerability",
+        "alias": [
+          "the issues",
+          "the issues cited",
+          "the flaws"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "firmware patches",
+        "type": "course-of-action",
+        "alias": [
+          "firmware patches and a standard BIOS update"
+        ],
+        "mother entity": [
+          "AMD"
+        ]
+      },
+      {
+        "name": "standard BIOS update",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "CTS Labs",
+        "type": "identity",
+        "alias": [
+          "the security company CTS Labs",
+          "we",
+          "our"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "researchers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hackers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Standard vulnerability disclosure practices",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "90 days' notice",
+        "type": "generic-noun",
+        "alias": [
+          "the more standard 90-day notification window"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Papermaster",
+        "type": "identity",
+        "alias": [
+          "Papermaster said in a statement"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "administrative access",
+        "type": "generic-noun",
+        "alias": [
+          "unauthorized administrative access"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Intel",
+        "type": "identity",
+        "alias": [
+          "Intel or AMD"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Yaron Luk-Zilberman",
+        "type": "identity",
+        "alias": [
+          "CTS Labs' chief financial officer and co-founder"
+        ],
+        "mother entity": [
+          "CTS Labs"
+        ]
+      },
+      {
+        "name": "long or short investment",
+        "type": "other",
+        "alias": [],
+        "mother entity": [
+          "CTS Labs"
+        ]
+      },
+      {
+        "name": "securities",
+        "type": "financial-asset",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "millions of devices",
+        "type": "infrastructure",
+        "alias": [
+          "its devices"
+        ],
+        "mother entity": [
+          "AMD"
+        ]
+      },
+      {
+        "name": "firmware",
+        "type": "detailed-part-of-general-software",
+        "alias": [
+          "software that's embedded in hardware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "biometric authentication",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "exploits",
+        "type": "attack-pattern",
+        "alias": [
+          "the exploits identified in this research"
+        ],
+        "mother entity": [
+          "13 vulnerabilities"
+        ]
+      },
+      {
+        "name": "further attacks",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": [
+          "administrative access"
+        ]
+      },
+      {
+        "name": "CTSLabs report",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "original vulnerability report"
+        ],
+        "mother entity": [
+          "CTS Labs"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "AMD",
+        "rel": "is addressing",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "13 vulnerabilities"
+      },
+      {
+        "sub": "AMD",
+        "rel": "delivers fixes through",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "firmware patches"
+      },
+      {
+        "sub": "AMD",
+        "rel": "delivers fixes through",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "standard BIOS update"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "released information to",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "AMD"
+      },
+      {
+        "sub": "Standard vulnerability disclosure practices",
+        "rel": "call for giving companies at least 90 days' notice so they can fix the flaws",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "13 vulnerabilities"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "would have addressed the issues",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "13 vulnerabilities",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Sarah Youngbauer",
+        "rel": "spoke for AMD regarding mitigation",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "AMD"
+      },
+      {
+        "sub": "AMD",
+        "rel": "will provide more information in several weeks",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "13 vulnerabilities"
+      },
+      {
+        "sub": "AMD",
+        "rel": "says the issues were not with its hardware",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "13 vulnerabilities",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "AMD",
+        "rel": "sending fixes for all 13 vulnerabilities through firmware patches",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "firmware patches"
+      },
+      {
+        "sub": "each of the flaws",
+        "rel": "required",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "administrative access"
+      },
+      {
+        "sub": "Any attacker gaining unauthorized administrative access",
+        "rel": "would have a wide range of attacks",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "further attacks",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Papermaster",
+        "rel": "commented on the CTS Labs report",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "CTSLabs report"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "may have an economic interest in",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "securities"
+      },
+      {
+        "sub": "Yaron Luk-Zilberman",
+        "rel": "said no investment (long or short) in",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "Intel or AMD",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "CTSLabs report",
+        "rel": "claimed it would take several months to fix the issues",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "13 vulnerabilities"
+      },
+      {
+        "sub": "AMD",
+        "rel": "disagreed with that timeline",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "CTSLabs report",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "firmware",
+        "rel": "is embedded in",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "hardware"
+      },
+      {
+        "sub": "exploits",
+        "rel": "identified in this research",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "further attacks",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "90 days' notice",
+        "rel": "allowing companies to fix the flaws before researchers go public",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "13 vulnerabilities"
+      },
+      {
+        "sub": "firmware",
+        "rel": "embedded in",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "millions of devices"
+      }
+    ]
+  }
+}

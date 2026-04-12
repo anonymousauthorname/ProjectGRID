@@ -1,0 +1,206 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_26.json",
+  "sample_index": 218,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_26.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Harvester",
+        "type": "Unknown"
+      },
+      {
+        "name": "Organization",
+        "type": "Unknown"
+      },
+      {
+        "name": "Domain",
+        "type": "Unknown"
+      },
+      {
+        "name": "Sector",
+        "type": "Unknown"
+      },
+      {
+        "name": "Malware",
+        "type": "Unknown"
+      },
+      {
+        "name": "custom downloader",
+        "type": "Unknown"
+      },
+      {
+        "name": "Registry Key",
+        "type": "Unknown"
+      },
+      {
+        "name": "URL",
+        "type": "Unknown"
+      },
+      {
+        "name": "File",
+        "type": "Unknown"
+      },
+      {
+        "name": "Backdoor.Graphon",
+        "type": "Unknown"
+      },
+      {
+        "name": "Infrastructure",
+        "type": "Unknown"
+      },
+      {
+        "name": "custom screenshotter",
+        "type": "Unknown"
+      },
+      {
+        "name": "Time",
+        "type": "Unknown"
+      },
+      {
+        "name": "C&C activity",
+        "type": "Unknown"
+      },
+      {
+        "name": "Espionage campaign",
+        "type": "Unknown"
+      },
+      {
+        "name": "decoy URL",
+        "type": "Unknown"
+      },
+      {
+        "name": "URL hxxps://perfect-couple.com/perfectcouple[.]exe",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Harvester",
+        "rel": "targets",
+        "obj": "Organization"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "targets",
+        "obj": "Domain"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "targets",
+        "obj": "Sector"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "Malware"
+      },
+      {
+        "sub": "custom downloader",
+        "rel": "uses",
+        "obj": "Malware"
+      },
+      {
+        "sub": "custom downloader",
+        "rel": "checks for existence of",
+        "obj": "Registry Key"
+      },
+      {
+        "sub": "custom downloader",
+        "rel": "downloads from",
+        "obj": "URL"
+      },
+      {
+        "sub": "custom downloader",
+        "rel": "creates file",
+        "obj": "File"
+      },
+      {
+        "sub": "custom downloader",
+        "rel": "sets registry value",
+        "obj": "Registry Key"
+      },
+      {
+        "sub": "custom downloader",
+        "rel": "opens embedded web browser at",
+        "obj": "URL"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "uses",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "communicates with",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "sends data to",
+        "obj": "URL"
+      },
+      {
+        "sub": "custom screenshotter",
+        "rel": "saves screenshots to",
+        "obj": "File"
+      },
+      {
+        "sub": "custom screenshotter",
+        "rel": "deletes archives older than",
+        "obj": "Time"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "began activity in",
+        "obj": "Time"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "had recent activity in",
+        "obj": "Time"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses legitimate infrastructure for",
+        "obj": "C&C activity"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "is associated with",
+        "obj": "Espionage campaign"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "decoy URL"
+      },
+      {
+        "sub": "URL hxxps://perfect-couple.com/perfectcouple[.]exe",
+        "rel": "was used to download",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "is suspected of being state-sponsored",
+        "obj": "Organization"
+      }
+    ]
+  }
+}

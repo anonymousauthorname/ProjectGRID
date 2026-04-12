@@ -1,0 +1,355 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_4.json",
+  "sample_index": 229,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_4.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "RedLine",
+        "type": "Malware"
+      },
+      {
+        "name": "MakiseKurisu",
+        "type": "Malware"
+      },
+      {
+        "name": "download.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "upload.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "cool.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "AutoRun.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "nir.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "YouTube",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "GitHub",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "APB Reloaded",
+        "type": "Software"
+      },
+      {
+        "name": "CrossFire",
+        "type": "Software"
+      },
+      {
+        "name": "DayZ",
+        "type": "Software"
+      },
+      {
+        "name": "Dying Light 2",
+        "type": "Software"
+      },
+      {
+        "name": "F1® 22",
+        "type": "Software"
+      },
+      {
+        "name": "Farming Simulator",
+        "type": "Software"
+      },
+      {
+        "name": "Farthest Frontier",
+        "type": "Software"
+      },
+      {
+        "name": "FIFA 22",
+        "type": "Software"
+      },
+      {
+        "name": "Final Fantasy XIV",
+        "type": "Software"
+      },
+      {
+        "name": "Forza",
+        "type": "Software"
+      },
+      {
+        "name": "Lego Star Wars",
+        "type": "Software"
+      },
+      {
+        "name": "Osu!",
+        "type": "Software"
+      },
+      {
+        "name": "Point Blank",
+        "type": "Software"
+      },
+      {
+        "name": "Project Zomboid",
+        "type": "Software"
+      },
+      {
+        "name": "Rust",
+        "type": "Software"
+      },
+      {
+        "name": "Sniper Elite",
+        "type": "Software"
+      },
+      {
+        "name": "Spider-Man",
+        "type": "Software"
+      },
+      {
+        "name": "Stray",
+        "type": "Software"
+      },
+      {
+        "name": "Thymesia",
+        "type": "Software"
+      },
+      {
+        "name": "VRChat",
+        "type": "Software"
+      },
+      {
+        "name": "Walken",
+        "type": "Software"
+      },
+      {
+        "name": "45.150.108.67:80",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "NodeJS",
+        "type": "Tool"
+      },
+      {
+        "name": "Puppeteer",
+        "type": "Tool"
+      },
+      {
+        "name": "7-Zip",
+        "type": "Tool"
+      },
+      {
+        "name": "C2",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Miner",
+        "type": "Malware"
+      },
+      {
+        "name": "Trojan-stealer",
+        "type": "Malware"
+      },
+      {
+        "name": "Oleg Kupreev",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "RedLine",
+        "rel": "MODIFIES",
+        "obj": "MakiseKurisu"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "spreads through",
+        "obj": "YouTube"
+      },
+      {
+        "sub": "download.exe",
+        "rel": "downloads from",
+        "obj": "GitHub"
+      },
+      {
+        "sub": "upload.exe",
+        "rel": "uploads to",
+        "obj": "YouTube"
+      },
+      {
+        "sub": "upload.exe",
+        "rel": "notifies through",
+        "obj": "Discord"
+      },
+      {
+        "sub": "MakiseKurisu",
+        "rel": "STEALS",
+        "obj": "Browser_Cookies"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "F1® 22"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "CrossFire"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "DayZ"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Dying Light 2"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Farming Simulator"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Farthest Frontier"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "FIFA 22"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Final Fantasy XIV"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Forza"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Lego Star Wars"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Osu!"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Point Blank"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Project Zomboid"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Rust"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Sniper Elite"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Spider-Man"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Stray"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Thymesia"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "VRChat"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "TARGETS",
+        "obj": "Walken"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "INCLUDES",
+        "obj": "Miner"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "is a",
+        "obj": "Trojan-stealer"
+      },
+      {
+        "sub": "download.exe",
+        "rel": "USES",
+        "obj": "7-Zip"
+      },
+      {
+        "sub": "upload.exe",
+        "rel": "USES",
+        "obj": "Puppeteer"
+      },
+      {
+        "sub": "nir.exe",
+        "rel": "runs without window",
+        "obj": "Malicious_Executables"
+      },
+      {
+        "sub": "cool.exe",
+        "rel": "is part of",
+        "obj": "RedLine"
+      },
+      {
+        "sub": "AutoRun.exe",
+        "rel": "is part of",
+        "obj": "RedLine"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "communicates with",
+        "obj": "45.150.108.67:80"
+      },
+      {
+        "sub": "RedLine",
+        "rel": "USES",
+        "obj": "NodeJS"
+      }
+    ]
+  }
+}

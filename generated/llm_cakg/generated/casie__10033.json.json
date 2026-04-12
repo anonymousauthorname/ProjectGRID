@@ -1,0 +1,200 @@
+{
+  "sample_id": "casie__10033.json",
+  "sample_index": 16,
+  "source": "casie",
+  "file_name": "10033.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "vulnerability in the web server",
+        "type": "Entity"
+      },
+      {
+        "name": "ABTA",
+        "type": "Entity"
+      },
+      {
+        "name": "UK's largest holiday and travel association",
+        "type": "Entity"
+      },
+      {
+        "name": "43,000 people",
+        "type": "Entity"
+      },
+      {
+        "name": "external infiltrator",
+        "type": "Entity"
+      },
+      {
+        "name": "data uploaded to website",
+        "type": "Entity"
+      },
+      {
+        "name": "abta.com",
+        "type": "Entity"
+      },
+      {
+        "name": "email addresses and encrypted passwords",
+        "type": "Entity"
+      },
+      {
+        "name": "online form with basic contact details",
+        "type": "Entity"
+      },
+      {
+        "name": "personal identity information",
+        "type": "Entity"
+      },
+      {
+        "name": "1,000 files",
+        "type": "Entity"
+      },
+      {
+        "name": "650 files",
+        "type": "Entity"
+      },
+      {
+        "name": "complaints uploaded to ABTA",
+        "type": "Entity"
+      },
+      {
+        "name": "after 11 January 2017",
+        "type": "Entity"
+      },
+      {
+        "name": "third-party suppliers of the abta.com website",
+        "type": "Entity"
+      },
+      {
+        "name": "web developer and hosting company",
+        "type": "Entity"
+      },
+      {
+        "name": "27 February 2017",
+        "type": "Entity"
+      },
+      {
+        "name": "Information Commissioner",
+        "type": "Entity"
+      },
+      {
+        "name": "police",
+        "type": "Entity"
+      },
+      {
+        "name": "change their password",
+        "type": "Entity"
+      },
+      {
+        "name": "online self-service facility",
+        "type": "Entity"
+      },
+      {
+        "name": "supporting documentation",
+        "type": "Entity"
+      },
+      {
+        "name": "online and identity fraud",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "external infiltrator",
+        "rel": "exploits",
+        "obj": "vulnerability in the web server"
+      },
+      {
+        "sub": "external infiltrator",
+        "rel": "accesses",
+        "obj": "data uploaded to website"
+      },
+      {
+        "sub": "external infiltrator",
+        "rel": "accesses",
+        "obj": "email addresses and encrypted passwords"
+      },
+      {
+        "sub": "external infiltrator",
+        "rel": "accesses",
+        "obj": "online form with basic contact details"
+      },
+      {
+        "sub": "external infiltrator",
+        "rel": "accesses",
+        "obj": "personal identity information"
+      },
+      {
+        "sub": "external infiltrator",
+        "rel": "accesses",
+        "obj": "complaints uploaded to ABTA"
+      },
+      {
+        "sub": "external infiltrator",
+        "rel": "accesses",
+        "obj": "650 files"
+      },
+      {
+        "sub": "external infiltrator",
+        "rel": "accesses",
+        "obj": "1,000 files"
+      },
+      {
+        "sub": "external infiltrator",
+        "rel": "accesses",
+        "obj": "personal identity information relating to customers of ABTA members"
+      },
+      {
+        "sub": "external infiltrator",
+        "rel": "accesses",
+        "obj": "personal identity information of ABTA members"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "notifies",
+        "obj": "third-party suppliers of the abta.com website"
+      },
+      {
+        "sub": "third-party suppliers of the abta.com website",
+        "rel": "fixes",
+        "obj": "vulnerability in the web server"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "alerts",
+        "obj": "Information Commissioner"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "alerts",
+        "obj": "police"
+      },
+      {
+        "sub": "ABTA members who have used ABTA's online self-service facility",
+        "rel": "should remain vigilant regarding",
+        "obj": "online and identity fraud"
+      },
+      {
+        "sub": "complaints uploaded to ABTA",
+        "rel": "are submitted after",
+        "obj": "11 January 2017"
+      }
+    ]
+  }
+}

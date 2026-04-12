@@ -1,0 +1,952 @@
+{
+  "sample_id": "securenlp__The_Epic_Turla_Operation",
+  "sample_index": 157,
+  "source": "securenlp",
+  "file_name": "The_Epic_Turla_Operation",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Adobe PDF"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "spearphishing e-mails"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "social engineering techniques"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "watering hole attacks"
+      },
+      {
+        "sub": "Website",
+        "rel": "Has URL",
+        "obj": "https://pinor.es"
+      },
+      {
+        "sub": "Website",
+        "rel": "Inject",
+        "obj": "'sitenavigatoin.js'"
+      },
+      {
+        "sub": "Website",
+        "rel": "Inject",
+        "obj": "'wreq.php'"
+      },
+      {
+        "sub": "Website",
+        "rel": "Has URL",
+        "obj": "https://entrepreneurship.ro"
+      },
+      {
+        "sub": "Website",
+        "rel": "Has URL",
+        "obj": "https://mfa.palestine.org"
+      },
+      {
+        "sub": "Website",
+        "rel": "Locate at",
+        "obj": "Spain"
+      },
+      {
+        "sub": "Website",
+        "rel": "Locate at",
+        "obj": "Romania"
+      },
+      {
+        "sub": "Website",
+        "rel": "Locate at",
+        "obj": "Palestine"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Mures region, Romania"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "local governments in Spain"
+      },
+      {
+        "sub": "IP range",
+        "rel": "Modify",
+        "obj": "'task.css'"
+      },
+      {
+        "sub": "IP range",
+        "rel": "Modify",
+        "obj": "'except.css'"
+      },
+      {
+        "sub": "'except.css'",
+        "rel": "Has value",
+        "obj": "Windows 7"
+      },
+      {
+        "sub": "'except.css'",
+        "rel": "Has value",
+        "obj": "MSIE 8.0"
+      },
+      {
+        "sub": "'except.css'",
+        "rel": "Has value",
+        "obj": "Adobe Reader 10.1.0.0"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "'sitenavigatoin.js'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "'wreq.php'"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Detect",
+        "obj": "browser configurations"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Detect",
+        "obj": "victim's operating system"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Detect",
+        "obj": "victim's environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Fake Microsoft Security Essentials app"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "PHP webshell"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Hacked servers"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Command and control  infrastructure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Websites"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Proxy servers"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has value",
+        "obj": "MD5 hash 'af3e8be26c63c4dd066935629cf9bac8'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "Fake Microsoft Security Essentials app"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Belong to",
+        "obj": "Sysprint AG"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Exploitation sites"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "Hacked servers"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Malicious payloads"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "Websites"
+      },
+      {
+        "sub": "Initial Access: Spearphishing",
+        "rel": "Use",
+        "obj": "Malicious PDF and SCR attachments"
+      },
+      {
+        "sub": "Initial Access: Watering hole attack",
+        "rel": "Use",
+        "obj": "Java"
+      },
+      {
+        "sub": "Initial Access: Watering hole attack",
+        "rel": "Use",
+        "obj": "Flash exploits"
+      },
+      {
+        "sub": "Initial Access: Exploit",
+        "rel": "Unpatched system",
+        "obj": "CVE-2013-5065"
+      },
+      {
+        "sub": "Initial Access: Exploit",
+        "rel": "Unpatched system",
+        "obj": "CVE-2013-3346"
+      },
+      {
+        "sub": "Initial Access: Social engineering",
+        "rel": "Trick",
+        "obj": "User"
+      },
+      {
+        "sub": "Initial Access: Social engineering",
+        "rel": "Trick",
+        "obj": "User into running malicious installer with .SCR extension"
+      },
+      {
+        "sub": "Initial Access: Malicious installer",
+        "rel": "Pack",
+        "obj": "RAR"
+      },
+      {
+        "sub": "Initial Access: Fake Flash Player",
+        "rel": "Has hash",
+        "obj": "030f5fdb78bfc1ce7b459d3cc2cf1877"
+      },
+      {
+        "sub": "Initial Access: Fake Microsoft Security Essentials app",
+        "rel": "Has hash",
+        "obj": "89b0f1a3a667e5cd43f5670e12dba411"
+      },
+      {
+        "sub": "Initial Access: Fake Flash Player and fake Microsoft Security Essentials app",
+        "rel": "Distribute via",
+        "obj": "Ministry of Foreign Affairs of Tajikistan's website"
+      },
+      {
+        "sub": "WorldCupSec",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2013-5065"
+      },
+      {
+        "sub": "WorldCupSec",
+        "rel": "Use",
+        "obj": "UPX-packed binary 'winrs.exe'"
+      },
+      {
+        "sub": "winrs.exe",
+        "rel": "Has hash",
+        "obj": "1369fee289fe7798a02cde100a5e91d8"
+      },
+      {
+        "sub": "winrs.exe",
+        "rel": "Unpack to",
+        "obj": "dnsquery.exe"
+      },
+      {
+        "sub": "dnsquery.exe",
+        "rel": "Belong to",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "WorldCupSec",
+        "rel": "Operate",
+        "obj": "via HTTP C&C protocol"
+      },
+      {
+        "sub": "WorldCupSec",
+        "rel": "Write",
+        "obj": "encrypted commands using hardcoded secret key"
+      },
+      {
+        "sub": "WorldCupSec",
+        "rel": "Run with",
+        "obj": "administrator privileges"
+      },
+      {
+        "sub": "WorldCupSec",
+        "rel": "Modify",
+        "obj": "system behavior through C&C communication"
+      },
+      {
+        "sub": "TadjMakhal",
+        "rel": "Belong to",
+        "obj": "WorldCupSec"
+      },
+      {
+        "sub": "Wipbot",
+        "rel": "Belong to",
+        "obj": "WorldCupSec"
+      },
+      {
+        "sub": "Tavdig",
+        "rel": "Belong to",
+        "obj": "WorldCupSec"
+      },
+      {
+        "sub": "winrs.exe",
+        "rel": "Has filename",
+        "obj": "winrs.exe"
+      },
+      {
+        "sub": "dnsquery.exe",
+        "rel": "Has filename",
+        "obj": "dnsquery.exe"
+      },
+      {
+        "sub": "WorldCupSec",
+        "rel": "Has value",
+        "obj": "60KB in size"
+      },
+      {
+        "sub": "WorldCupSec",
+        "rel": "Has platform",
+        "obj": "Windows XP"
+      },
+      {
+        "sub": "CVE-2013-5065",
+        "rel": "Has vulnerable software",
+        "obj": "Windows XP"
+      },
+      {
+        "sub": "Windows XP",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2013-5065"
+      },
+      {
+        "sub": "WorldCupSec",
+        "rel": "Detect",
+        "obj": "via encrypted replies from C&C server"
+      },
+      {
+        "sub": "→ Threat Actor",
+        "rel": "Operate",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "→ Epic Turla",
+        "rel": "Detect",
+        "obj": "tcpdump.exe"
+      },
+      {
+        "sub": "→ Epic Turla",
+        "rel": "Detect",
+        "obj": "windump.exe"
+      },
+      {
+        "sub": "→ Epic Turla",
+        "rel": "Detect",
+        "obj": "wireshark.exe"
+      },
+      {
+        "sub": "→ Threat Actor",
+        "rel": "Upload",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "→ Backdoor",
+        "rel": "Has value",
+        "obj": "C&C URL"
+      },
+      {
+        "sub": "→ Backdoor",
+        "rel": "Update",
+        "obj": "C&C"
+      },
+      {
+        "sub": "→ Backdoor",
+        "rel": "Send",
+        "obj": "System Information"
+      },
+      {
+        "sub": "→ Backdoor",
+        "rel": "Encrypt",
+        "obj": "System Information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Epic Turla",
+        "rel": "Detect",
+        "obj": "tcpdump.exe"
+      },
+      {
+        "sub": "Epic Turla",
+        "rel": "Detect",
+        "obj": "windump.exe"
+      },
+      {
+        "sub": "Epic Turla",
+        "rel": "Detect",
+        "obj": "wireshark.exe"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Upload",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Has value",
+        "obj": "C&C URL"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Update",
+        "obj": "C&C"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Send",
+        "obj": "System Information"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Encrypt",
+        "obj": "System Information"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "System"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Windows XP"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Windows 2003"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has value",
+        "obj": "CVE-2013-5065"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Perform",
+        "obj": "Lateral movement"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Perform",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Perform",
+        "obj": "Command execution"
+      },
+      {
+        "sub": "Initial infection",
+        "rel": "Use",
+        "obj": "PDF"
+      },
+      {
+        "sub": "Initial infection",
+        "rel": "Use",
+        "obj": "SCR"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Gain",
+        "obj": "Administrator privileges"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Run",
+        "obj": "Unrestricted code"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Belong to",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Privilege escalation",
+        "rel": "Enable",
+        "obj": "Full control"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Obfuscation"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "RSA encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Encrypted C&C logs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Encrypted communication channels"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Public key frameworks"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Encrypt",
+        "obj": "Commands with hardcoded secret key"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Behavior by terminating itself"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "tcpdump.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "windump.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "wireshark.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Custom loader"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encrypted payloads"
+      },
+      {
+        "sub": "winsvclg.exe",
+        "rel": "Construct",
+        "obj": "%temp%\\~DFD3O8.tmp"
+      },
+      {
+        "sub": "winsvclg.exe",
+        "rel": "Use",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "winsvclg.exe",
+        "rel": "Modify",
+        "obj": "Temporary file"
+      },
+      {
+        "sub": "winsvclg.exe",
+        "rel": "Has hash",
+        "obj": "a3cbf6179d437909eb532b7319b3dafe"
+      },
+      {
+        "sub": "PDF attachment",
+        "rel": "Use",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "SCR attachment",
+        "rel": "Use",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Operate",
+        "obj": "Foothold Establishment"
+      },
+      {
+        "sub": "Foothold Establishment",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Legitimate system tools",
+        "rel": "Use",
+        "obj": "Credential Extraction"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Enable",
+        "obj": "Credential Extraction"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Belong to",
+        "obj": "Lateral Movement"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Use",
+        "obj": "Legitimate system tools"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Perform",
+        "obj": "Recursive file searches"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Send",
+        "obj": "Packet to C&C server"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Conduct",
+        "obj": "File searches for '*NATO*.msg'"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Conduct",
+        "obj": "File searches for 'eu energy dialogue*.*'"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Conduct",
+        "obj": "File searches for 'EU*.msg'"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Conduct",
+        "obj": "File searches for 'Budapest*.msg'"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Operate",
+        "obj": "System information gathering"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Has value",
+        "obj": "System information"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Locate at",
+        "obj": "Victim system"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Use",
+        "obj": "winsvclg.exe"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Use",
+        "obj": "winrs.exe"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Use",
+        "obj": "dnsquery.exe"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Operate",
+        "obj": "Network"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Explore",
+        "obj": "Network"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Access",
+        "obj": "Sensitive Data"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Search",
+        "obj": "File related to NATO"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Search",
+        "obj": "File related to EU energy dialogue"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Search",
+        "obj": "File related to diplomatic communications"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Have goal",
+        "obj": "Gather intelligence"
+      },
+      {
+        "sub": "winsvclg.exe",
+        "rel": "Use",
+        "obj": "Keylogging"
+      },
+      {
+        "sub": "winsvclg.exe",
+        "rel": "Write",
+        "obj": "Keystrokes"
+      },
+      {
+        "sub": "winsvclg.exe",
+        "rel": "Has value",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "winsvclg.exe",
+        "rel": "Has value",
+        "obj": "Credentials"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "File searches"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Construct",
+        "obj": "Search for .msg files"
+      },
+      {
+        "sub": ".msg files",
+        "rel": "Belong to",
+        "obj": "Email communications"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Locate at",
+        "obj": "NATO"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Locate at",
+        "obj": "EU energy policy"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Locate at",
+        "obj": "Diplomatic discussions"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Have goal",
+        "obj": "Gather intelligence on government and international affairs"
+      },
+      {
+        "sub": "C&C Infrastructure",
+        "rel": "Operate",
+        "obj": "Proxy"
+      },
+      {
+        "sub": "Proxy",
+        "rel": "Communicate with",
+        "obj": "Second Level"
+      },
+      {
+        "sub": "Second Level",
+        "rel": "Communicate with",
+        "obj": "Mothership VPS"
+      },
+      {
+        "sub": "Mothership VPS",
+        "rel": "Host",
+        "obj": "Exploitation Scripts"
+      },
+      {
+        "sub": "Mothership VPS",
+        "rel": "Host",
+        "obj": "C&C Payloads"
+      },
+      {
+        "sub": "Mothership VPS",
+        "rel": "Run",
+        "obj": "Control Panel"
+      },
+      {
+        "sub": "Control Panel",
+        "rel": "Have",
+        "obj": "Password Protection"
+      },
+      {
+        "sub": "C&C Infrastructure",
+        "rel": "Use",
+        "obj": "Custom C&C Protocol"
+      },
+      {
+        "sub": "C&C Infrastructure",
+        "rel": "Use",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "C&C Infrastructure",
+        "rel": "Use",
+        "obj": "RSA Encryption"
+      },
+      {
+        "sub": "C&C Infrastructure",
+        "rel": "Implement",
+        "obj": "Fallback Mechanism"
+      },
+      {
+        "sub": "C&C Infrastructure",
+        "rel": "Implement",
+        "obj": "Tunneling Mechanism"
+      },
+      {
+        "sub": "C&C URL",
+        "rel": "Have",
+        "obj": "Domain www.arshinmalalan.com"
+      },
+      {
+        "sub": "C&C URL",
+        "rel": "Have",
+        "obj": "Domain hxxp://homaxcompany.com/components/com_sitemap/"
+      },
+      {
+        "sub": "C&C URL",
+        "rel": "Be",
+        "obj": "Hardcoded in Configuration Block"
+      },
+      {
+        "sub": "C&C Payload",
+        "rel": "Use",
+        "obj": "Java Exploits"
+      },
+      {
+        "sub": "C&C Payload",
+        "rel": "Use",
+        "obj": "IE Exploits"
+      },
+      {
+        "sub": "**Backdoor",
+        "rel": "Use",
+        "obj": "Command and Control channel**"
+      },
+      {
+        "sub": "**Backdoor",
+        "rel": "Write",
+        "obj": "System information**"
+      },
+      {
+        "sub": "**Backdoor",
+        "rel": "Transmit",
+        "obj": "Data collected**"
+      },
+      {
+        "sub": "**Backdoor",
+        "rel": "Operate",
+        "obj": "Encrypted data transfer**"
+      },
+      {
+        "sub": "**Backdoor",
+        "rel": "Modify",
+        "obj": "Scheduled transfers**"
+      },
+      {
+        "sub": "**Backdoor",
+        "rel": "Has value",
+        "obj": "NATO**"
+      },
+      {
+        "sub": "**Backdoor",
+        "rel": "Has value",
+        "obj": "EU energy dialogue**"
+      },
+      {
+        "sub": "**Backdoor",
+        "rel": "Operate",
+        "obj": "Compressed data transfer**"
+      },
+      {
+        "sub": "**Backdoor",
+        "rel": "Locate at",
+        "obj": "C&C server**"
+      },
+      {
+        "sub": "Note: \"Exfiltration\" is not an entity type per the defined list, so it is not used as a subject. All entities are constrained to the approved types (e.g., Backdoor is a Malware",
+        "rel": "Command and Control channel is a Domain or Infrastructure",
+        "obj": "Data collected is inferred as part of Malware behavior). The relations follow active voice and are present tense."
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Intelligence Gathering"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Data Collection"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Lateral Movement"
+      }
+    ]
+  }
+}

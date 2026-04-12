@@ -1,0 +1,135 @@
+{
+  "sample_id": "casie__10287.json",
+  "sample_index": 27,
+  "source": "casie",
+  "file_name": "10287.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "WHATSAPP",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "NATALIE SILVANOVICH",
+        "type": "PERSON"
+      },
+      {
+        "name": "MEMORY HEAP OVERFLOW",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "GOOGLE PROJECT ZERO",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "TAVIS ORMANDY",
+        "type": "PERSON"
+      },
+      {
+        "name": "RTP PACKET",
+        "type": "TOOL"
+      },
+      {
+        "name": "ANDROID",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "IPHON",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "WHATSAPP UPDATE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "OCTOBER SECURITY PATCHES",
+        "type": "EVENT"
+      },
+      {
+        "name": "MICROSOFT PATCH TUESDAY",
+        "type": "EVENT"
+      },
+      {
+        "name": "ADOBE PATCH BUNDLE",
+        "type": "EVENT"
+      },
+      {
+        "name": "GOOGLE ANDROID MONTHLY UPDATE",
+        "type": "EVENT"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "NATALIE SILVANOVICH",
+        "rel": "related_to",
+        "obj": "WHATSAPP"
+      },
+      {
+        "sub": "MEMORY HEAP OVERFLOW",
+        "rel": "related_to",
+        "obj": "WHATSAPP"
+      },
+      {
+        "sub": "MEMORY HEAP OVERFLOW",
+        "rel": "related_to",
+        "obj": "RTP PACKET"
+      },
+      {
+        "sub": "MEMORY HEAP OVERFLOW",
+        "rel": "related_to",
+        "obj": "ANDROID"
+      },
+      {
+        "sub": "MEMORY HEAP OVERFLOW",
+        "rel": "related_to",
+        "obj": "IPHON"
+      },
+      {
+        "sub": "NATALIE SILVANOVICH",
+        "rel": "related_to",
+        "obj": "GOOGLE PROJECT ZERO"
+      },
+      {
+        "sub": "TAVIS ORMANDY",
+        "rel": "related_to",
+        "obj": "MEMORY HEAP OVERFLOW"
+      },
+      {
+        "sub": "WHATSAPP",
+        "rel": "related_to",
+        "obj": "OCTOBER SECURITY PATCHES"
+      },
+      {
+        "sub": "OCTOBER SECURITY PATCHES",
+        "rel": "related_to",
+        "obj": "MICROSOFT PATCH TUESDAY"
+      },
+      {
+        "sub": "OCTOBER SECURITY PATCHES",
+        "rel": "related_to",
+        "obj": "ADOBE PATCH BUNDLE"
+      },
+      {
+        "sub": "OCTOBER SECURITY PATCHES",
+        "rel": "related_to",
+        "obj": "GOOGLE ANDROID MONTHLY UPDATE"
+      }
+    ]
+  }
+}

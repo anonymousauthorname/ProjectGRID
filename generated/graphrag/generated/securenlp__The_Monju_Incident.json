@@ -1,0 +1,185 @@
+{
+  "sample_id": "securenlp__The_Monju_Incident",
+  "sample_index": 185,
+  "source": "securenlp",
+  "file_name": "The_Monju_Incident",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "MONJU FACILITY",
+        "type": "LOCATION"
+      },
+      {
+        "name": "JAPANESE ATOMIC ENERGY AGENCY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "GOM PLAYER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "APP.GOMLAB.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "WWW.FUDOUSANKAITORI.JP",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "TESTQWEASD.TK",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "GH0ST RAT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "MIANSHA",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "VOHO CAMPAIGN",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "CHINESE STATE INTELLIGENCE",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "PHOTO-RELATED WEBSHELL",
+        "type": "MALWARE"
+      },
+      {
+        "name": "INSTRUCTIONS.PDF",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "INSTRUCTIONS64.PDF",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "INSTALL.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "DLL.TMP",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "DLL64.TMP",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SERVER(壳)",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "BACKDOOR.MIANCHA",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "WATERING HOLE ATTACK",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "SYSTEMS ADMINISTRATOR",
+        "type": "PERSON"
+      },
+      {
+        "name": "CONTEXT THREAT INTELLIGENCE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "TLP: WHITE",
+        "type": "EVENT"
+      },
+      {
+        "name": "MONJU INCIDENT",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "GOM PLAYER",
+        "rel": "related_to",
+        "obj": "APP.GOMLAB.COM"
+      },
+      {
+        "sub": "APP.GOMLAB.COM",
+        "rel": "related_to",
+        "obj": "WWW.FUDOUSANKAITORI.JP"
+      },
+      {
+        "sub": "WWW.FUDOUSANKAITORI.JP",
+        "rel": "related_to",
+        "obj": "GH0ST RAT"
+      },
+      {
+        "sub": "GH0ST RAT",
+        "rel": "related_to",
+        "obj": "TESTQWEASD.TK"
+      },
+      {
+        "sub": "GH0ST RAT",
+        "rel": "related_to",
+        "obj": "MIANSHA"
+      },
+      {
+        "sub": "GH0ST RAT",
+        "rel": "related_to",
+        "obj": "VOHO CAMPAIGN"
+      },
+      {
+        "sub": "CHINESE STATE INTELLIGENCE",
+        "rel": "related_to",
+        "obj": "GH0ST RAT"
+      },
+      {
+        "sub": "CHINESE STATE INTELLIGENCE",
+        "rel": "related_to",
+        "obj": "VOHO CAMPAIGN"
+      },
+      {
+        "sub": "MONJU FACILITY",
+        "rel": "related_to",
+        "obj": "JAPANESE ATOMIC ENERGY AGENCY"
+      },
+      {
+        "sub": "SYSTEMS ADMINISTRATOR",
+        "rel": "related_to",
+        "obj": "MONJU FACILITY"
+      },
+      {
+        "sub": "CONTEXT THREAT INTELLIGENCE",
+        "rel": "related_to",
+        "obj": "MONJU INCIDENT"
+      },
+      {
+        "sub": "WATERING HOLE ATTACK",
+        "rel": "related_to",
+        "obj": "GOM PLAYER"
+      },
+      {
+        "sub": "WATERING HOLE ATTACK",
+        "rel": "related_to",
+        "obj": "APP.GOMLAB.COM"
+      }
+    ]
+  }
+}

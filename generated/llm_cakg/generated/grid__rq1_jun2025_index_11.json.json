@@ -1,0 +1,432 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_11.json",
+  "sample_index": 203,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_11.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2014-1776",
+        "type": "Entity"
+      },
+      {
+        "name": "Internet Explorer",
+        "type": "Entity"
+      },
+      {
+        "name": "Flash",
+        "type": "Entity"
+      },
+      {
+        "name": "SWF file",
+        "type": "Entity"
+      },
+      {
+        "name": "DEP",
+        "type": "Entity"
+      },
+      {
+        "name": "ASLR",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows XP",
+        "type": "Entity"
+      },
+      {
+        "name": "zero day",
+        "type": "Entity"
+      },
+      {
+        "name": "Internet Explorer zeroday vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "exploit pack",
+        "type": "Entity"
+      },
+      {
+        "name": "Metasploit",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious code",
+        "type": "Entity"
+      },
+      {
+        "name": "process memory",
+        "type": "Entity"
+      },
+      {
+        "name": "memory location",
+        "type": "Entity"
+      },
+      {
+        "name": "Enhanced Protected Mode",
+        "type": "Entity"
+      },
+      {
+        "name": "64bit process mode",
+        "type": "Entity"
+      },
+      {
+        "name": "x64bit Windows XP",
+        "type": "Entity"
+      },
+      {
+        "name": "IE10",
+        "type": "Entity"
+      },
+      {
+        "name": "IE11",
+        "type": "Entity"
+      },
+      {
+        "name": "antivirus",
+        "type": "Entity"
+      },
+      {
+        "name": "exploit detection",
+        "type": "Entity"
+      },
+      {
+        "name": "Safepay",
+        "type": "Entity"
+      },
+      {
+        "name": "thirdparty browser",
+        "type": "Entity"
+      },
+      {
+        "name": "browser choice update",
+        "type": "Entity"
+      },
+      {
+        "name": "custom applications",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows OS",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows XP users",
+        "type": "Entity"
+      },
+      {
+        "name": "unsupported operating system",
+        "type": "Entity"
+      },
+      {
+        "name": "automatic update",
+        "type": "Entity"
+      },
+      {
+        "name": "security update",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "patch",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows XP end of life",
+        "type": "Entity"
+      },
+      {
+        "name": "Internet Explorer in Windows",
+        "type": "Entity"
+      },
+      {
+        "name": "browser exploitation",
+        "type": "Entity"
+      },
+      {
+        "name": "memory corruption",
+        "type": "Entity"
+      },
+      {
+        "name": "security mechanisms",
+        "type": "Entity"
+      },
+      {
+        "name": "unprotected users",
+        "type": "Entity"
+      },
+      {
+        "name": "payload execution",
+        "type": "Entity"
+      },
+      {
+        "name": "exploit framework",
+        "type": "Entity"
+      },
+      {
+        "name": "penetration testing framework",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Internet Explorer zeroday vulnerability",
+        "rel": "exploits",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Internet Explorer zeroday vulnerability",
+        "rel": "affects",
+        "obj": "Internet Explorer versions 6 through 8"
+      },
+      {
+        "sub": "Internet Explorer zeroday vulnerability",
+        "rel": "affects",
+        "obj": "Windows XP"
+      },
+      {
+        "sub": "CVE-2014-1776",
+        "rel": "is also known as",
+        "obj": "Internet Explorer zeroday vulnerability"
+      },
+      {
+        "sub": "CVE-2014-1776",
+        "rel": "leverages",
+        "obj": "Flash"
+      },
+      {
+        "sub": "Flash",
+        "rel": "loads",
+        "obj": "SWF file"
+      },
+      {
+        "sub": "SWF file",
+        "rel": "corrupts",
+        "obj": "process memory"
+      },
+      {
+        "sub": "SWF file",
+        "rel": "redirects program flow to",
+        "obj": "memory location"
+      },
+      {
+        "sub": "memory location",
+        "rel": "contains",
+        "obj": "malicious code"
+      },
+      {
+        "sub": "Internet Explorer zeroday vulnerability",
+        "rel": "bypasses",
+        "obj": "DEP"
+      },
+      {
+        "sub": "Internet Explorer zeroday vulnerability",
+        "rel": "bypasses",
+        "obj": "ASLR"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issues",
+        "obj": "patch"
+      },
+      {
+        "sub": "patch",
+        "rel": "is available for",
+        "obj": "Windows XP users"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "shipped",
+        "obj": "last security update for Windows XP"
+      },
+      {
+        "sub": "last security update",
+        "rel": "is the final one",
+        "obj": "for Windows XP users"
+      },
+      {
+        "sub": "Windows XP",
+        "rel": "is closely tied to",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Internet Explorer",
+        "rel": "is hardcoded in",
+        "obj": "every edition of Windows OS"
+      },
+      {
+        "sub": "Browser Choice update",
+        "rel": "is EU-friendly",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Windows XP users",
+        "rel": "believe",
+        "obj": "they use anything but Internet Explorer"
+      },
+      {
+        "sub": "enterprise environments",
+        "rel": "have opposite situation",
+        "obj": "to regular users"
+      },
+      {
+        "sub": "custom applications",
+        "rel": "are incompatible with",
+        "obj": "Internet Explorer versions 7 and up"
+      },
+      {
+        "sub": "custom applications",
+        "rel": "cause",
+        "obj": "delay in Windows XP upgrade process"
+      },
+      {
+        "sub": "Windows XP",
+        "rel": "remains",
+        "obj": "second most popular operating system"
+      },
+      {
+        "sub": "exploit pack",
+        "rel": "contains",
+        "obj": "malicious code"
+      },
+      {
+        "sub": "exploit pack",
+        "rel": "is pushed into",
+        "obj": "penetration testing framework"
+      },
+      {
+        "sub": "penetration testing framework",
+        "rel": "includes",
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "exploit pack",
+        "rel": "is updated to",
+        "obj": "automatically throw malicious code"
+      },
+      {
+        "sub": "malicious code",
+        "rel": "is thrown at",
+        "obj": "unprotected users"
+      },
+      {
+        "sub": "supported versions of Windows",
+        "rel": "will receive",
+        "obj": "fix from Microsoft"
+      },
+      {
+        "sub": "Windows XP users",
+        "rel": "remain vulnerable",
+        "obj": "forever"
+      },
+      {
+        "sub": "64bit version of Windows",
+        "rel": "allows",
+        "obj": "Internet Explorer in Enhanced Protected Mode"
+      },
+      {
+        "sub": "64bit version of Windows",
+        "rel": "enables",
+        "obj": "64bit process mode"
+      },
+      {
+        "sub": "x64bit Windows XP",
+        "rel": "is rare",
+        "obj": "due to historical reasons"
+      },
+      {
+        "sub": "Enhanced Protected Mode",
+        "rel": "is only available for",
+        "obj": "IE10 and IE11"
+      },
+      {
+        "sub": "antivirus",
+        "rel": "detects",
+        "obj": "exploitation"
+      },
+      {
+        "sub": "antivirus",
+        "rel": "blocks",
+        "obj": "payload execution"
+      },
+      {
+        "sub": "regular users",
+        "rel": "should install",
+        "obj": "alternative browser"
+      },
+      {
+        "sub": "Windows XP users",
+        "rel": "should adopt",
+        "obj": "thirdparty browser"
+      },
+      {
+        "sub": "sysadmin",
+        "rel": "must run",
+        "obj": "antivirus with exploit detection"
+      },
+      {
+        "sub": "sysadmin",
+        "rel": "must disallow",
+        "obj": "Internet access from vulnerable browser machines"
+      },
+      {
+        "sub": "Bitdefender",
+        "rel": "offers",
+        "obj": "Safepay"
+      },
+      {
+        "sub": "Safepay",
+        "rel": "is immune to",
+        "obj": "exploitation"
+      },
+      {
+        "sub": "Safepay",
+        "rel": "functions on",
+        "obj": "all versions of Windows"
+      },
+      {
+        "sub": "Safepay",
+        "rel": "can be downloaded",
+        "obj": "as standalone product"
+      },
+      {
+        "sub": "Safepay",
+        "rel": "can be used",
+        "obj": "with Bitdefender Internet Security or Total Security"
+      },
+      {
+        "sub": "Windows XP",
+        "rel": "will face",
+        "obj": "long series of security issues"
+      },
+      {
+        "sub": "Windows XP",
+        "rel": "has ended its good run",
+        "obj": "after 12 years"
+      },
+      {
+        "sub": "Windows XP",
+        "rel": "should be retired",
+        "obj": "and migrated away from"
+      }
+    ]
+  }
+}

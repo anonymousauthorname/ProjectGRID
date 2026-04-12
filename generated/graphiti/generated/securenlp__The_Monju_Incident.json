@@ -1,0 +1,354 @@
+{
+  "sample_id": "securenlp__The_Monju_Incident",
+  "sample_index": 185,
+  "source": "securenlp",
+  "file_name": "The_Monju_Incident",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "GOM Player",
+        "type": "Software"
+      },
+      {
+        "name": "Gh0st RAT",
+        "type": "Malware"
+      },
+      {
+        "name": "Miǎnshā",
+        "type": "Person"
+      },
+      {
+        "name": "Backdoor.Miancha",
+        "type": "Indicator"
+      },
+      {
+        "name": "app.gomlab.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "www.fudousankaitori.jp",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "203.189.101.35",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "testqweasd.tk",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Monju fast breeder reactor facility",
+        "type": "Organization"
+      },
+      {
+        "name": "Japanese Atomic Energy Agency",
+        "type": "Organization"
+      },
+      {
+        "name": "Chinese state",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "People’s Republic of China",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "East Asia Cyber Threat Intelligence Researcher",
+        "type": "Person"
+      },
+      {
+        "name": "Symantec",
+        "type": "Organization"
+      },
+      {
+        "name": "Miancha Gh0st",
+        "type": "Malware"
+      },
+      {
+        "name": "VOHO campaign",
+        "type": "Campaign"
+      },
+      {
+        "name": "211.43.220.89",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "instructions.pdf",
+        "type": "Indicator"
+      },
+      {
+        "name": "instructions64.pdf",
+        "type": "Indicator"
+      },
+      {
+        "name": "dll.tmp",
+        "type": "Indicator"
+      },
+      {
+        "name": "dll64.tmp",
+        "type": "Indicator"
+      },
+      {
+        "name": "install.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "install.ocx",
+        "type": "Indicator"
+      },
+      {
+        "name": "White on Black",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "PlugX trojan",
+        "type": "Malware"
+      },
+      {
+        "name": "DLL load order hijacking",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Chinese actors",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "financial services companies",
+        "type": "Organization"
+      },
+      {
+        "name": "technology companies",
+        "type": "Organization"
+      },
+      {
+        "name": "Antivirus avoidance",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "signed (trusted) executable",
+        "type": "Tool"
+      },
+      {
+        "name": "shell",
+        "type": "Tool"
+      },
+      {
+        "name": "JXNcc2hlbGxcb3Blblxjb21tYW5k",
+        "type": "Indicator"
+      },
+      {
+        "name": "SEFSRFdBUkVcREVTQ1JJUFRJT05cU3lzdGVtXENlbnRyYWxQcm9jZXNzb3JcMA==",
+        "type": "Indicator"
+      },
+      {
+        "name": "C:\\Users\\why\\",
+        "type": "Indicator"
+      },
+      {
+        "name": "g:\\ykcx\\",
+        "type": "Indicator"
+      },
+      {
+        "name": "(miansha)",
+        "type": "Indicator"
+      },
+      {
+        "name": "server(壳)",
+        "type": "Indicator"
+      },
+      {
+        "name": "contextis.co.uk",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "GOM Player",
+        "rel": "has update server",
+        "obj": "app.gomlab.com"
+      },
+      {
+        "sub": "app.gomlab.com",
+        "rel": "redirects to",
+        "obj": "www.fudousankaitori.jp"
+      },
+      {
+        "sub": "www.fudousankaitori.jp",
+        "rel": "has command and control",
+        "obj": "testqweasd.tk"
+      },
+      {
+        "sub": "Gh0st RAT",
+        "rel": "ATTACKED",
+        "obj": "Monju fast breeder reactor facility"
+      },
+      {
+        "sub": "Gh0st RAT",
+        "rel": "used by",
+        "obj": "Chinese state"
+      },
+      {
+        "sub": "Gh0st RAT",
+        "rel": "used by",
+        "obj": "People’s Republic of China"
+      },
+      {
+        "sub": "Miǎnshā",
+        "rel": "is alternative name for",
+        "obj": "Backdoor.Miancha"
+      },
+      {
+        "sub": "Backdoor.Miancha",
+        "rel": "named by",
+        "obj": "Symantec"
+      },
+      {
+        "sub": "GOM Player",
+        "rel": "delivered to",
+        "obj": "Monju fast breeder reactor facility"
+      },
+      {
+        "sub": "GOM Player",
+        "rel": "ATTACKED",
+        "obj": "Japanese Atomic Energy Agency"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "variant of",
+        "obj": "Gh0st RAT"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "used in",
+        "obj": "VOHO campaign"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "communicates with",
+        "obj": "testqweasd.tk"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "CONTAINS",
+        "obj": "instructions.pdf"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "CONTAINS",
+        "obj": "instructions64.pdf"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "USES",
+        "obj": "dll.tmp"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "USES",
+        "obj": "dll64.tmp"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "USES",
+        "obj": "install.exe"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "USES",
+        "obj": "install.ocx"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "PRACTICES",
+        "obj": "White on Black"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "PRACTICES",
+        "obj": "Antivirus avoidance"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "UTILIZES",
+        "obj": "signed (trusted) executable"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "USES",
+        "obj": "shell"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "attacked by",
+        "obj": "Chinese actors"
+      },
+      {
+        "sub": "instructions.pdf",
+        "rel": "CONTAINS",
+        "obj": "JXNcc2hlbGxcb3Blblxjb21tYW5k"
+      },
+      {
+        "sub": "instructions.pdf",
+        "rel": "CONTAINS",
+        "obj": "SEFSRFdBUkVcREVTQ1JJUFRJT05cU3lzdGVtXENlbnRyYWxQcm9jZXNzb3JcMA=="
+      },
+      {
+        "sub": "instructions64.pdf",
+        "rel": "CONTAINS",
+        "obj": "JXNcc2hlbGxcb3Blblxjb21tYW5k"
+      },
+      {
+        "sub": "instructions64.pdf",
+        "rel": "CONTAINS",
+        "obj": "SEFSRFdBUkVcREVTQ1JJUFRJT05cU3lzdGVtXENlbnRyYWxQcm9jZXNzb3JcMA=="
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "stores in",
+        "obj": "C:\\Users\\why\\"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "stores in",
+        "obj": "g:\\ykcx\\"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "USES",
+        "obj": "(miansha)"
+      },
+      {
+        "sub": "Miancha Gh0st",
+        "rel": "USES",
+        "obj": "server(壳)"
+      },
+      {
+        "sub": "PlugX trojan",
+        "rel": "exemplar of",
+        "obj": "White on Black"
+      },
+      {
+        "sub": "DLL load order hijacking",
+        "rel": "PRACTICES",
+        "obj": "White on Black"
+      }
+    ]
+  }
+}

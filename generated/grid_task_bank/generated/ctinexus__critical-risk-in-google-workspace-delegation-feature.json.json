@@ -1,0 +1,216 @@
+{
+  "sample_id": "ctinexus__critical-risk-in-google-workspace-delegation-feature.json",
+  "sample_index": 94,
+  "source": "ctinexus",
+  "file_name": "critical-risk-in-google-workspace-delegation-feature.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Unit 42",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "researchers"
+        ]
+      },
+      {
+        "name": "Google Workspace",
+        "type": "general-software",
+        "alias": [
+          "Google Workspace",
+          "formerly known as G Suite"
+        ]
+      },
+      {
+        "name": "G Suite",
+        "type": "general-software",
+        "alias": [
+          "formerly known as Google Workspace"
+        ]
+      },
+      {
+        "name": "Google Cloud Platform (GCP)",
+        "type": "infrastructure",
+        "alias": [
+          "GCP"
+        ]
+      },
+      {
+        "name": "domain-wide delegation feature",
+        "type": "attack-pattern",
+        "alias": [
+          "feature"
+        ]
+      },
+      {
+        "name": "access token",
+        "type": "indicator",
+        "alias": [
+          "token"
+        ]
+      },
+      {
+        "name": "GCP identity",
+        "type": "identity",
+        "alias": [
+          "identity"
+        ]
+      },
+      {
+        "name": "delegated user",
+        "type": "identity",
+        "alias": [
+          "user"
+        ]
+      },
+      {
+        "name": "malicious insider",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "insider"
+        ]
+      },
+      {
+        "name": "external attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attacker"
+        ]
+      },
+      {
+        "name": "stolen credentials",
+        "type": "credential-value",
+        "alias": [
+          "credentials"
+        ]
+      },
+      {
+        "name": "Google Workspace domain data",
+        "type": "data",
+        "alias": [
+          "data"
+        ]
+      },
+      {
+        "name": "Google Workspace users",
+        "type": "identity",
+        "alias": [
+          "users"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Unit 42 researchers",
+        "rel": "discovered",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "security risk in the Google Workspace domain-wide delegation feature"
+      },
+      {
+        "sub": "Google Workspace",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "domain-wide delegation feature"
+      },
+      {
+        "sub": "Google Workspace domain-wide delegation feature",
+        "rel": "enables",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "gaining access to the Google Workspace domain data"
+      },
+      {
+        "sub": "Google Workspace domain data",
+        "rel": "can be accessed from",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Google Cloud Platform (GCP)"
+      },
+      {
+        "sub": "GCP identity",
+        "rel": "can generate",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "access token"
+      },
+      {
+        "sub": "delegated user",
+        "rel": "receives",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "access token"
+      },
+      {
+        "sub": "malicious insider",
+        "rel": "can use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "access token"
+      },
+      {
+        "sub": "external attacker",
+        "rel": "can use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "access token"
+      },
+      {
+        "sub": "access token",
+        "rel": "can be used to",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "Google Workspace users"
+      },
+      {
+        "sub": "access token",
+        "rel": "grants unauthorized access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Google Workspace domain data"
+      },
+      {
+        "sub": "access token",
+        "rel": "allows to perform",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "operations on behalf of Google Workspace users"
+      },
+      {
+        "sub": "Google Workspace users",
+        "rel": "are impersonated by",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "access token"
+      }
+    ]
+  }
+}

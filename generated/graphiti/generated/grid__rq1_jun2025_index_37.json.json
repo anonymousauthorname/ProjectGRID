@@ -1,0 +1,211 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_37.json",
+  "sample_index": 227,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_37.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "NACHA",
+        "type": "Organization"
+      },
+      {
+        "name": "ACH Network",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Zeus botnet",
+        "type": "Malware"
+      },
+      {
+        "name": "Zbot",
+        "type": "Malware"
+      },
+      {
+        "name": "Verizon",
+        "type": "Organization"
+      },
+      {
+        "name": "DDoS attacks",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "electronic funds transfer",
+        "type": "Software"
+      },
+      {
+        "name": "antivirus",
+        "type": "Tool"
+      },
+      {
+        "name": "antispam software",
+        "type": "Tool"
+      },
+      {
+        "name": "web protection",
+        "type": "Tool"
+      },
+      {
+        "name": "firewall policy",
+        "type": "Tool"
+      },
+      {
+        "name": "data retention policy",
+        "type": "Software"
+      },
+      {
+        "name": "encryption policy",
+        "type": "Software"
+      },
+      {
+        "name": "Data Loss Prevention",
+        "type": "Software"
+      },
+      {
+        "name": "malicious eCards",
+        "type": "Indicator"
+      },
+      {
+        "name": "online banking notifications",
+        "type": "Indicator"
+      },
+      {
+        "name": "personal banking information",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "NACHA",
+        "rel": "OVERSEES",
+        "obj": "ACH Network"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "PERFORMS",
+        "obj": "DDoS attacks"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "SENDS",
+        "obj": "malicious eCards"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "SENDS",
+        "obj": "online banking notifications"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "COLLECTS",
+        "obj": "personal banking information"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "COLLECTS",
+        "obj": "ACH transactions"
+      },
+      {
+        "sub": "Verizon",
+        "rel": "COMPILED",
+        "obj": "Top 15 Threat Action Types"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "IS",
+        "obj": "Zbot"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "INCLUDES",
+        "obj": "electronic funds transfer"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "INCLUDES",
+        "obj": "cheque cashing"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "INCLUDES",
+        "obj": "money transfers"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "INCLUDES",
+        "obj": "international wires"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "INCLUDES",
+        "obj": "banks"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "INCLUDES",
+        "obj": "healthcare providers"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "INCLUDES",
+        "obj": "online boutiques"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "INCLUDES",
+        "obj": "local corner store"
+      },
+      {
+        "sub": "organizations involved in electronic funds transfer",
+        "rel": "should use",
+        "obj": "antivirus"
+      },
+      {
+        "sub": "organizations involved in electronic funds transfer",
+        "rel": "should use",
+        "obj": "antispam software"
+      },
+      {
+        "sub": "organizations involved in electronic funds transfer",
+        "rel": "should use",
+        "obj": "web protection"
+      },
+      {
+        "sub": "organizations involved in electronic funds transfer",
+        "rel": "should use",
+        "obj": "firewall policy"
+      },
+      {
+        "sub": "organizations involved in electronic funds transfer",
+        "rel": "should have",
+        "obj": "data retention policy"
+      },
+      {
+        "sub": "organizations involved in electronic funds transfer",
+        "rel": "should have",
+        "obj": "encryption policy"
+      },
+      {
+        "sub": "organizations involved in electronic funds transfer",
+        "rel": "should have",
+        "obj": "Data Loss Prevention"
+      }
+    ]
+  }
+}

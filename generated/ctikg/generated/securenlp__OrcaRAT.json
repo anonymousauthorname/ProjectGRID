@@ -1,0 +1,407 @@
+{
+  "sample_id": "securenlp__OrcaRAT",
+  "sample_index": 172,
+  "source": "securenlp",
+  "file_name": "OrcaRAT",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "malware",
+        "rel": "is associated with",
+        "obj": "Comfoo"
+      },
+      {
+        "sub": "malware",
+        "rel": "is recognized as",
+        "obj": "unknown"
+      },
+      {
+        "sub": "malware",
+        "rel": "is analyzed",
+        "obj": "sandbox environment"
+      },
+      {
+        "sub": "sandbox report",
+        "rel": "contains",
+        "obj": "URI structure"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "produces",
+        "obj": "URI structure"
+      },
+      {
+        "sub": "RAT",
+        "rel": "produces",
+        "obj": "URI structure"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "obj": "crypto API"
+      },
+      {
+        "sub": "malware",
+        "rel": "generates",
+        "obj": "6 bytes"
+      },
+      {
+        "sub": "malware",
+        "rel": "appends",
+        "obj": "OrcaKiller"
+      },
+      {
+        "sub": "OrcaKiller",
+        "rel": "is",
+        "obj": "malware"
+      },
+      {
+        "sub": "malware",
+        "rel": "constructs",
+        "obj": "URI structure"
+      },
+      {
+        "sub": "URI structure",
+        "rel": "is associated with",
+        "obj": "OrcaRAT"
+      },
+      {
+        "sub": "server",
+        "rel": "communicates with",
+        "obj": "victim"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "has C2 routine",
+        "obj": "two purposes"
+      },
+      {
+        "sub": "command and control routine",
+        "rel": "has",
+        "obj": "two purposes"
+      },
+      {
+        "sub": "each branch",
+        "rel": "is determined by",
+        "obj": "unique response from remote server"
+      },
+      {
+        "sub": "each branch",
+        "rel": "is determined by",
+        "obj": "response from remote server"
+      },
+      {
+        "sub": "command and control",
+        "rel": "is represented as",
+        "obj": "webpage"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "different from",
+        "obj": "malware"
+      },
+      {
+        "sub": "malware",
+        "rel": "does not hide",
+        "obj": "commands in comments"
+      },
+      {
+        "sub": "malware",
+        "rel": "exposes",
+        "obj": "commands"
+      },
+      {
+        "sub": "malware",
+        "rel": "looks for",
+        "obj": "HTML tags"
+      },
+      {
+        "sub": "malware",
+        "rel": "finds",
+        "obj": "<P>"
+      },
+      {
+        "sub": "malware",
+        "rel": "finds",
+        "obj": "</P>"
+      },
+      {
+        "sub": "malware",
+        "rel": "drops into",
+        "obj": "command and control routine"
+      },
+      {
+        "sub": "encryption key",
+        "rel": "is used",
+        "obj": "URI string"
+      },
+      {
+        "sub": "malware",
+        "rel": "processes",
+        "obj": "payload text"
+      },
+      {
+        "sub": "malware",
+        "rel": "writes",
+        "obj": "binary executable file"
+      },
+      {
+        "sub": "malware",
+        "rel": "executes",
+        "obj": "binary executable file"
+      },
+      {
+        "sub": "malware",
+        "rel": "searches for",
+        "obj": "<H1> tag"
+      },
+      {
+        "sub": "malware",
+        "rel": "extracts",
+        "obj": "payload text"
+      },
+      {
+        "sub": "malware",
+        "rel": "extracts",
+        "obj": "content in H1 tag"
+      },
+      {
+        "sub": "malware",
+        "rel": "decrypts",
+        "obj": "payload text"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "obj": "encryption key from URI string"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "obj": "encryption key"
+      },
+      {
+        "sub": "malware",
+        "rel": "points to",
+        "obj": "command function"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "sends",
+        "obj": "HTTP POST message"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "provides",
+        "obj": "access to filesystem"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "provides",
+        "obj": "access to command line"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "allows",
+        "obj": "executing commands"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "allows",
+        "obj": "uploading and downloading files"
+      },
+      {
+        "sub": "command and control server",
+        "rel": "serves",
+        "obj": "dynamic content"
+      },
+      {
+        "sub": "command and control server",
+        "rel": "requires",
+        "obj": "operator"
+      },
+      {
+        "sub": "command and control server",
+        "rel": "issues",
+        "obj": "specific commands"
+      },
+      {
+        "sub": "command and control server",
+        "rel": "issues",
+        "obj": "commands"
+      },
+      {
+        "sub": "command and control server",
+        "rel": "receives",
+        "obj": "commands from victim workstation"
+      },
+      {
+        "sub": "command and control server",
+        "rel": "receives",
+        "obj": "commands"
+      },
+      {
+        "sub": "command and control server",
+        "rel": "receives from",
+        "obj": "victim workstation"
+      },
+      {
+        "sub": "first stage implant",
+        "rel": "allows",
+        "obj": "operator"
+      },
+      {
+        "sub": "first stage implant",
+        "rel": "provides",
+        "obj": "access"
+      },
+      {
+        "sub": "first stage implant",
+        "rel": "enables",
+        "obj": "operator to survey victim"
+      },
+      {
+        "sub": "first stage implant",
+        "rel": "leads to",
+        "obj": "deployment"
+      },
+      {
+        "sub": "first stage implant",
+        "rel": "leads to",
+        "obj": "malware"
+      },
+      {
+        "sub": "Orca",
+        "rel": "is delivered to",
+        "obj": "system"
+      },
+      {
+        "sub": "Orca",
+        "rel": "can be detected by",
+        "obj": "Yara"
+      },
+      {
+        "sub": "Orca",
+        "rel": "is detected by",
+        "obj": "Yara"
+      },
+      {
+        "sub": "Orca",
+        "rel": "is detected by",
+        "obj": "Yara rule"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "can be detected",
+        "obj": "Snort"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "can be detected",
+        "obj": "Suricata IDS rule"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "can be detected",
+        "obj": "Suricata rule"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "communicates with",
+        "obj": "command and control server"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "communicates with",
+        "obj": "command and control server"
+      },
+      {
+        "sub": "11.38.64.251",
+        "rel": "is a",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "123.120.115.77",
+        "rel": "is a",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "123.120.99.228",
+        "rel": "is a",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "142.0.134.20",
+        "rel": "is a",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "147.96.68.184",
+        "rel": "is a",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "176.31.24.182",
+        "rel": "is a",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "176.31.24.184",
+        "rel": "is a",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "190.114.241.170",
+        "rel": "is a",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "200.78.201.24",
+        "rel": "is a",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "202.124.151.94",
+        "rel": "is a",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "202.2.108.142",
+        "rel": "is a",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "203.146.251.11",
+        "rel": "is a",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "204.152.209.74",
+        "rel": "is a",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "adda.lengendport.com",
+        "rel": "is",
+        "obj": "Domain"
+      }
+    ]
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_46.json",
+  "sample_index": 235,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_46.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "WannaCry",
+        "type": "Entity"
+      },
+      {
+        "name": "Wanna",
+        "type": "Entity"
+      },
+      {
+        "name": "WanaCrypt",
+        "type": "Entity"
+      },
+      {
+        "name": "WanaCrypt0r",
+        "type": "Entity"
+      },
+      {
+        "name": "Wana DeCrypt0r",
+        "type": "Entity"
+      },
+      {
+        "name": "Wanna Decrypt0r",
+        "type": "Entity"
+      },
+      {
+        "name": "EternalBlue Exploit",
+        "type": "Entity"
+      },
+      {
+        "name": "CC1353",
+        "type": "Entity"
+      },
+      {
+        "name": "Shadow Brokers",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution (RCE)",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows Server Message Block (SMB) service",
+        "type": "Entity"
+      },
+      {
+        "name": "MS17010",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Security Bulletin MS17010",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows XP",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows 8",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows Server 2003",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows Server 2003 SP2 x64",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows Server 2003 SP2 x86",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows 8 x64",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows 8 x86",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows XP SP2 x64",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows XP SP3 x86",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows XP Embedded SP3 x86",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious email attachment",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious link",
+        "type": "Entity"
+      },
+      {
+        "name": "unpatched machines",
+        "type": "Entity"
+      },
+      {
+        "name": "file encryption",
+        "type": "Entity"
+      },
+      {
+        "name": "file extensions .wnry",
+        "type": "Entity"
+      },
+      {
+        "name": "file extensions .wcry",
+        "type": "Entity"
+      },
+      {
+        "name": "file extensions .wncry",
+        "type": "Entity"
+      },
+      {
+        "name": "file extensions .wncrypt",
+        "type": "Entity"
+      },
+      {
+        "name": "ransom demand",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware splash screen",
+        "type": "Entity"
+      },
+      {
+        "name": "CryptoGuard",
+        "type": "Entity"
+      },
+      {
+        "name": "Intercept X",
+        "type": "Entity"
+      },
+      {
+        "name": "Sophos EXP",
+        "type": "Entity"
+      },
+      {
+        "name": "patching",
+        "type": "Entity"
+      },
+      {
+        "name": "custom support",
+        "type": "Entity"
+      },
+      {
+        "name": "Slammer",
+        "type": "Entity"
+      },
+      {
+        "name": "Conficker",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2017-0144",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "WannaCry",
+        "rel": "uses",
+        "obj": "EternalBlue Exploit"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "uses",
+        "obj": "CC1353"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "exploits",
+        "obj": "remote code execution (RCE)"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "exploits",
+        "obj": "Windows Server Message Block (SMB) service"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "exploits",
+        "obj": "MS17010"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "encrypts",
+        "obj": "victims files"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "changes file extensions to",
+        "obj": ".wnry"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "changes file extensions to",
+        "obj": ".wcry"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "changes file extensions to",
+        "obj": ".wncry"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "changes file extensions to",
+        "obj": ".wncrypt"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "presents",
+        "obj": "ransom demand"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "uses",
+        "obj": "strong encryption"
+      },
+      {
+        "sub": "Shadow Brokers",
+        "rel": "leaked",
+        "obj": "EternalBlue Exploit"
+      },
+      {
+        "sub": "EternalBlue Exploit",
+        "rel": "was used in",
+        "obj": "WannaCry"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "spread via",
+        "obj": "unpatched machines"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "spread in fashion similar to",
+        "obj": "Slammer"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "spread in fashion similar to",
+        "obj": "Conficker"
+      },
+      {
+        "sub": "Microsoft Security Bulletin MS17010",
+        "rel": "addresses",
+        "obj": "Windows SMB service vulnerability"
+      },
+      {
+        "sub": "Microsoft Security Bulletin MS17010",
+        "rel": "provides security update for",
+        "obj": "Windows XP"
+      },
+      {
+        "sub": "Microsoft Security Bulletin MS17010",
+        "rel": "provides security update for",
+        "obj": "Windows 8"
+      },
+      {
+        "sub": "Microsoft Security Bulletin MS17010",
+        "rel": "provides security update for",
+        "obj": "Windows Server 2003"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "made security update broadly available for",
+        "obj": "Windows XP SP2 x64"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "made security update broadly available for",
+        "obj": "Windows XP SP3 x86"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "made security update broadly available for",
+        "obj": "Windows XP Embedded SP3 x86"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "made security update broadly available for",
+        "obj": "Windows Server 2003 SP2 x64"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "made security update broadly available for",
+        "obj": "Windows Server 2003 SP2 x86"
+      },
+      {
+        "sub": "Windows 8 x64",
+        "rel": "was affected by",
+        "obj": "WannaCry"
+      },
+      {
+        "sub": "Windows 8 x86",
+        "rel": "was affected by",
+        "obj": "WannaCry"
+      },
+      {
+        "sub": "Windows XP SP2 x64",
+        "rel": "was affected by",
+        "obj": "WannaCry"
+      },
+      {
+        "sub": "Windows XP SP3 x86",
+        "rel": "was affected by",
+        "obj": "WannaCry"
+      },
+      {
+        "sub": "Windows XP Embedded SP3 x86",
+        "rel": "was affected by",
+        "obj": "WannaCry"
+      },
+      {
+        "sub": "Windows Server 2003 SP2 x64",
+        "rel": "was affected by",
+        "obj": "WannaCry"
+      },
+      {
+        "sub": "Windows Server 2003 SP2 x86",
+        "rel": "was affected by",
+        "obj": "WannaCry"
+      },
+      {
+        "sub": "Sophos Intercept X",
+        "rel": "blocks",
+        "obj": "WannaCry"
+      },
+      {
+        "sub": "Sophos EXP",
+        "rel": "blocks",
+        "obj": "WannaCry"
+      },
+      {
+        "sub": "CryptoGuard",
+        "rel": "restores",
+        "obj": "deleted or encrypted files"
+      },
+      {
+        "sub": "Sophos",
+        "rel": "updates protections against",
+        "obj": "WannaCry"
+      },
+      {
+        "sub": "Sophos",
+        "rel": "issues updates in",
+        "obj": "Wana Decrypt0r 2.0 Ransomware Knowledge Base"
+      }
+    ]
+  }
+}

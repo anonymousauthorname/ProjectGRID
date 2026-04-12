@@ -1,0 +1,326 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-clop.json",
+  "sample_index": 97,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-clop.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Clop",
+        "type": "Entity"
+      },
+      {
+        "name": "SolarWinds",
+        "type": "Entity"
+      },
+      {
+        "name": "Serv-U",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-35211",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "RCE",
+        "type": "Entity"
+      },
+      {
+        "name": "maritime services giant",
+        "type": "Entity"
+      },
+      {
+        "name": "Singapore",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Security",
+        "type": "Entity"
+      },
+      {
+        "name": "DEV-0950",
+        "type": "Entity"
+      },
+      {
+        "name": "FIN11",
+        "type": "Entity"
+      },
+      {
+        "name": "TA505",
+        "type": "Entity"
+      },
+      {
+        "name": "Raspberry Robin worm",
+        "type": "Entity"
+      },
+      {
+        "name": "corporate networks",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware",
+        "type": "Entity"
+      },
+      {
+        "name": "proprietary commercial information",
+        "type": "Entity"
+      },
+      {
+        "name": "employee data",
+        "type": "Entity"
+      },
+      {
+        "name": "bank account details",
+        "type": "Entity"
+      },
+      {
+        "name": "payroll information",
+        "type": "Entity"
+      },
+      {
+        "name": "passports",
+        "type": "Entity"
+      },
+      {
+        "name": "email addresses",
+        "type": "Entity"
+      },
+      {
+        "name": "internal correspondence",
+        "type": "Entity"
+      },
+      {
+        "name": "November 2021",
+        "type": "Entity"
+      },
+      {
+        "name": "October 2022",
+        "type": "Entity"
+      },
+      {
+        "name": "cybercriminal group",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious activity",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "payload",
+        "type": "Entity"
+      },
+      {
+        "name": "IT systems",
+        "type": "Entity"
+      },
+      {
+        "name": "breach",
+        "type": "Entity"
+      },
+      {
+        "name": "data theft",
+        "type": "Entity"
+      },
+      {
+        "name": "attack campaign",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Clop",
+        "rel": "exploits",
+        "obj": "CVE-2021-35211"
+      },
+      {
+        "sub": "Serv-U",
+        "rel": "has vulnerability",
+        "obj": "CVE-2021-35211"
+      },
+      {
+        "sub": "CVE-2021-35211",
+        "rel": "is a remote code execution vulnerability",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "Clop",
+        "rel": "used to execute",
+        "obj": "Serv-U"
+      },
+      {
+        "sub": "Clop",
+        "rel": "detected in November 2021",
+        "obj": "November 2021"
+      },
+      {
+        "sub": "Clop",
+        "rel": "caused breach",
+        "obj": "IT systems"
+      },
+      {
+        "sub": "Clop",
+        "rel": "resulted in data theft",
+        "obj": "breach"
+      },
+      {
+        "sub": "Clop",
+        "rel": "targets corporate networks",
+        "obj": "corporate networks"
+      },
+      {
+        "sub": "Clop",
+        "rel": "stole",
+        "obj": "proprietary commercial information"
+      },
+      {
+        "sub": "Clop",
+        "rel": "stole",
+        "obj": "employee data"
+      },
+      {
+        "sub": "Clop",
+        "rel": "targets bank account details",
+        "obj": "bank account details"
+      },
+      {
+        "sub": "Clop",
+        "rel": "targets payroll information",
+        "obj": "payroll information"
+      },
+      {
+        "sub": "Clop",
+        "rel": "targets passports",
+        "obj": "passports"
+      },
+      {
+        "sub": "Clop",
+        "rel": "targets email addresses",
+        "obj": "email addresses"
+      },
+      {
+        "sub": "Clop",
+        "rel": "targets internal correspondence",
+        "obj": "internal correspondence"
+      },
+      {
+        "sub": "Clop",
+        "rel": "targets maritime services giant",
+        "obj": "maritime services giant"
+      },
+      {
+        "sub": "Clop",
+        "rel": "operates in",
+        "obj": "Singapore"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "distributed by",
+        "obj": "Clop"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "is associated with",
+        "obj": "FIN11"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "is linked to",
+        "obj": "TA505"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "is part of a cyberattack",
+        "obj": "Raspberry Robin worm"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "reported in October 2022",
+        "obj": "October 2022"
+      },
+      {
+        "sub": "Clop",
+        "rel": "delivered as payload",
+        "obj": "payload"
+      },
+      {
+        "sub": "Clop",
+        "rel": "uses vulnerability",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "Clop",
+        "rel": "uses RCE",
+        "obj": "Serv-U"
+      },
+      {
+        "sub": "Clop",
+        "rel": "initiated breach of IT systems",
+        "obj": "IT systems"
+      },
+      {
+        "sub": "Clop",
+        "rel": "involves data exfiltration",
+        "obj": "breach"
+      },
+      {
+        "sub": "Clop",
+        "rel": "affected",
+        "obj": "corporate networks"
+      },
+      {
+        "sub": "Serv-U",
+        "rel": "is a vulnerability in",
+        "obj": "CVE-2021-35211"
+      },
+      {
+        "sub": "CVE-2021-35211",
+        "rel": "is used to gain access",
+        "obj": "Serv-U"
+      },
+      {
+        "sub": "Clop",
+        "rel": "has malicious activity",
+        "obj": "malicious activity"
+      },
+      {
+        "sub": "Raspberry Robin worm",
+        "rel": "is part of Raspberry Robin worm campaign",
+        "obj": "DEV-0950"
+      },
+      {
+        "sub": "Clop",
+        "rel": "initiated attack",
+        "obj": "November 2021"
+      },
+      {
+        "sub": "Clop",
+        "rel": "used in attack campaign",
+        "obj": "October 2022"
+      }
+    ]
+  }
+}

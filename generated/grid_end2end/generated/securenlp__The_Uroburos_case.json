@@ -1,0 +1,667 @@
+{
+  "sample_id": "securenlp__The_Uroburos_case",
+  "sample_index": 183,
+  "source": "securenlp",
+  "file_name": "The_Uroburos_case",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Uroburos",
+        "type": "malware",
+        "alias": [
+          "the rootkit with Russian roots",
+          "Snake",
+          "Turla"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Agent.BTZ",
+        "type": "malware",
+        "alias": [
+          "the most significant breach of U.S. military computers ever",
+          "the Real Thing"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ComRAT",
+        "type": "malware",
+        "alias": [
+          "the malware",
+          "this version",
+          "the malware version"
+        ],
+        "mother entity": [
+          "Agent.BTZ"
+        ]
+      },
+      {
+        "name": "v3.25",
+        "type": "file",
+        "alias": [
+          "the latest version of ComRAT",
+          "older version(s)",
+          "the malware version"
+        ],
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "v3.26",
+        "type": "file",
+        "alias": [
+          "the latest version of ComRAT known to us",
+          "version 3.26"
+        ],
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "credprov.tlb",
+        "type": "file",
+        "alias": [
+          "the main payload of the malware",
+          "the real payload"
+        ],
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "shdocvw.tlp",
+        "type": "file",
+        "alias": [
+          "Microsoft Windows dynamic libraries",
+          "the library"
+        ],
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "hacker-tool",
+        "alias": [
+          "the malware"
+        ],
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "%APPDATA%\\Microsoft\\credprov.tlb",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "%APPDATA%\\Microsoft\\shdocvw.tlp",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "HKCU\\Software\\Classes\\CLSID\\{42aedc87-2188-41fd-b9a3-0c966feabec1}\\InprocServer32",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "winview.ocx",
+        "type": "file",
+        "alias": [
+          "the file name used by Agent.BTZ",
+          "the decoded log file content"
+        ],
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "1dM3uu4j7Fw4sjnbcwlDqet4F7JyuUi4m5Imnxl1pzxI6as80cbLnmz54cs5Ldn4ri3do5L6gs923HL34x2f5cvd0fk6c1a0s",
+        "type": "credential-value",
+        "alias": [
+          "the same key"
+        ],
+        "mother entity": [
+          "Uroburos",
+          "Agent.BTZ"
+        ]
+      },
+      {
+        "name": "weather-online.hopto.org",
+        "type": "domain-name",
+        "alias": [
+          "C&C server domain for the Uroburos malware"
+        ],
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "webonline.mefound.com",
+        "type": "domain-name",
+        "alias": [
+          "the command and control server information"
+        ],
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "sportacademy.my03.com",
+        "type": "domain-name",
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "easport-news.publicvm.com",
+        "type": "domain-name",
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "new-book.linkpc.net",
+        "type": "domain-name",
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "51e7e58a1e654b6e586fe36e10c67a73",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "dropper v3.25"
+        ]
+      },
+      {
+        "name": "e6ce1f962a47479a86ff2e67129f4ecc",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "lib1 v3.25"
+        ]
+      },
+      {
+        "name": "ec7e3cfaeaac0401316d66e964be684e",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "lib2 v3.25"
+        ]
+      },
+      {
+        "name": "0ae421691579ff6b27f65f49e79e88f6",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "dropper v3.26"
+        ]
+      },
+      {
+        "name": "255118ac14a9e66124f7110acd16f2cd",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "lib1 v3.26"
+        ]
+      },
+      {
+        "name": "b407b6e5b4046da226d6e189a67f62ca",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "lib2 v3.26"
+        ]
+      },
+      {
+        "name": "8ebf7f768d7214f99905c99b6f8242dc",
+        "type": "indicator",
+        "mother entity": [
+          "dropper, unknown version"
+        ]
+      },
+      {
+        "name": "9d481769de63789d571805009cbf709a",
+        "type": "indicator",
+        "mother entity": [
+          "dropper, unknown version"
+        ]
+      },
+      {
+        "name": "%APPDATA%\\Microsoft\\shdocvw.tlp",
+        "type": "file",
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "%APPDATA%\\Microsoft\\oleaut32.dll",
+        "type": "file",
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "%APPDATA%\\Microsoft\\oleaut32.tlb",
+        "type": "file",
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "%APPDATA%\\Microsoft\\credprov.tlb",
+        "type": "file",
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "%APPDATA%\\Microsoft\\libadcodec.dll",
+        "type": "file",
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "%APPDATA%\\Microsoft\\libadcodec.tlb",
+        "type": "file",
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\SessionMRU\\IPlace",
+        "type": "windows-registry-key",
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "March 3rd 2014",
+        "type": "date",
+        "mother entity": [
+          "Uroburos"
+        ]
+      },
+      {
+        "name": "February 28th 2014",
+        "type": "date",
+        "mother entity": [
+          "Uroburos"
+        ]
+      },
+      {
+        "name": "G DATA SecurityLabs",
+        "type": "security-product",
+        "mother entity": []
+      },
+      {
+        "name": "COMpfun",
+        "type": "malware",
+        "mother entity": []
+      },
+      {
+        "name": "named pipe",
+        "type": "abstract-concept",
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "explorer.exe",
+        "type": "process",
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "malware version",
+        "type": "generic-noun",
+        "mother entity": [
+          "ComRAT"
+        ]
+      },
+      {
+        "name": "Russian roots",
+        "type": "location",
+        "mother entity": [
+          "Uroburos"
+        ]
+      },
+      {
+        "name": "Microsoft Windows",
+        "type": "general-software",
+        "mother entity": []
+      },
+      {
+        "name": "Windows dynamic libraries",
+        "type": "file",
+        "mother entity": [
+          "shdocvw.tlp",
+          "credprov.tlb"
+        ]
+      },
+      {
+        "name": "January 3rd 2013",
+        "type": "date",
+        "mother entity": [
+          "ComRAT v3.26"
+        ]
+      },
+      {
+        "name": "February 6th 2014",
+        "type": "date",
+        "mother entity": [
+          "ComRAT v3.25"
+        ]
+      },
+      {
+        "name": "www.foreignaffairs.com",
+        "type": "url",
+        "mother entity": []
+      },
+      {
+        "name": "xml",
+        "type": "file",
+        "mother entity": [
+          "mskfp32.ocx"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Uroburos",
+        "rel": "has link with",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Agent.BTZ"
+      },
+      {
+        "sub": "Agent.BTZ",
+        "rel": "responsible for breach of U.S. military computers",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "U.S. military computers"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "uses same encoding key and installation log file name as",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "uses same C&C domain as",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "uses a new key and does not create the installation log file",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "uses the same persistence mechanism as",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "COMpfun"
+      },
+      {
+        "sub": "the group behind Agent.BTZ and Uroburos",
+        "rel": "is still active and is pursuing the Agent.BTZ path",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "Agent.BTZ"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "consists-of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "v3.26"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "credprov.tlb"
+      },
+      {
+        "sub": "rundll32.exe",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "shdocvw.tlp"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "creates registry key",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "HKCU\\Software\\Classes\\CLSID\\{42aedc87-2188-41fd-b9a3-0c966feabec1}\\InprocServer32"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "winview.ocx"
+      },
+      {
+        "sub": "winview.ocx",
+        "rel": "indicates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "log begin: 06.11.2014 22:55:55"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "removes older version",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "older version of dlls"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "credprov.tlb"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "loads",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "credprov.tlb"
+      },
+      {
+        "sub": "named pipe",
+        "rel": "used for communication between processes",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "ComRAT"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "uses",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "weather-online.hopto.org"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "webonline.mefound.com"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "hosts",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\SessionMRU\\IPlace"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "creates-or-generates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "mskfp32.ocx"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "uses",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "malware version"
+      },
+      {
+        "sub": "v3.26",
+        "rel": "uses new non-ASCII key",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "v3.25"
+      },
+      {
+        "sub": "v3.26",
+        "rel": "uses new key",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "v3.25"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "variant-of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "lib64"
+      },
+      {
+        "sub": "51e7e58a1e654b6e586fe36e10c67a73",
+        "rel": "indicates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "dropper v3.25"
+      },
+      {
+        "sub": "e6ce1f962a47479a86ff2e67129f4ecc",
+        "rel": "indicates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "lib1 v3.25"
+      },
+      {
+        "sub": "ec7e3cfaeaac0401316d66e964be684e",
+        "rel": "indicates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "lib2 v3.25"
+      },
+      {
+        "sub": "0ae421691579ff6b27f65f49e79e88f6",
+        "rel": "indicates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "dropper v3.26"
+      },
+      {
+        "sub": "255118ac14a9e66124f7110acd16f2cd",
+        "rel": "indicates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "lib1 v3.26"
+      },
+      {
+        "sub": "b407b6e5b4046da226d6e189a67f62ca",
+        "rel": "indicates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "lib2 v3.26"
+      },
+      {
+        "sub": "8ebf7f768d7214f99905c99b6f8242dc",
+        "rel": "indicates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "dropper, unknown version"
+      },
+      {
+        "sub": "9d481769de63789d571805009cbf709a",
+        "rel": "indicates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "dropper, unknown version"
+      }
+    ]
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_16.json",
+  "sample_index": 208,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_16.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Europcar",
+        "type": "Entity"
+      },
+      {
+        "name": "EuropCar Invoice.zip",
+        "type": "Entity"
+      },
+      {
+        "name": "Troj/InvoZip",
+        "type": "Entity"
+      },
+      {
+        "name": "http://www.europcar.co.uk",
+        "type": "Entity"
+      },
+      {
+        "name": "CustomerServicesUKeuropcar.com",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "ZIP file",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious payload",
+        "type": "Entity"
+      },
+      {
+        "name": "remote hackers",
+        "type": "Entity"
+      },
+      {
+        "name": "credit card",
+        "type": "Entity"
+      },
+      {
+        "name": "antivirus defences",
+        "type": "Entity"
+      },
+      {
+        "name": "unsolicited emails",
+        "type": "Entity"
+      },
+      {
+        "name": "attack",
+        "type": "Entity"
+      },
+      {
+        "name": "hijack",
+        "type": "Entity"
+      },
+      {
+        "name": "spam",
+        "type": "Entity"
+      },
+      {
+        "name": "information theft",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Entity"
+      },
+      {
+        "name": "email forgery",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "file attachment",
+        "type": "Entity"
+      },
+      {
+        "name": "automated message",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "phishing emails",
+        "rel": "uses",
+        "obj": "Europcar"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "contain",
+        "obj": "EuropCar Invoice.zip"
+      },
+      {
+        "sub": "EuropCar Invoice.zip",
+        "rel": "contains",
+        "obj": "malicious payload"
+      },
+      {
+        "sub": "malicious payload",
+        "rel": "is identified as",
+        "obj": "Troj/InvoZip"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "forge",
+        "obj": "email address"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "contain",
+        "obj": "file attachment"
+      },
+      {
+        "sub": "remote hackers",
+        "rel": "can take control of",
+        "obj": "Windows computers"
+      },
+      {
+        "sub": "remote hackers",
+        "rel": "can use",
+        "obj": "infected computer"
+      },
+      {
+        "sub": "infected computer",
+        "rel": "is used for",
+        "obj": "spam"
+      },
+      {
+        "sub": "infected computer",
+        "rel": "is used for",
+        "obj": "information theft"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "target",
+        "obj": "credit card"
+      },
+      {
+        "sub": "antivirus defences",
+        "rel": "detect",
+        "obj": "EuropCar Invoice.zip"
+      },
+      {
+        "sub": "unsolicited emails",
+        "rel": "are suspicious",
+        "obj": "malicious payload"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "attempt to",
+        "obj": "hijack"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "are sent via",
+        "obj": "email forgery"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "are associated with",
+        "obj": "automated message"
+      }
+    ]
+  }
+}

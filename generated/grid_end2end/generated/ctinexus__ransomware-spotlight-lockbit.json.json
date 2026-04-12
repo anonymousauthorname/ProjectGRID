@@ -1,0 +1,364 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-lockbit.json",
+  "sample_index": 77,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-lockbit.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "LockBit",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ransomware-as-a-service (RaaS) model",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "double extortion methods",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": [
+          "LockBit"
+        ]
+      },
+      {
+        "name": "StealBit",
+        "type": "malware",
+        "alias": [
+          "the malware StealBit"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "LockBit 2.0",
+        "type": "general-software",
+        "alias": [
+          "its competition",
+          "LockBit 2.0"
+        ],
+        "mother entity": [
+          "LockBit"
+        ]
+      },
+      {
+        "name": "Linux-ESXI Locker version 1.0",
+        "type": "malware",
+        "alias": [
+          "this variant"
+        ],
+        "mother entity": [
+          "LockBit"
+        ]
+      },
+      {
+        "name": "Linux hosts",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ESXi servers",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "network access brokers",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": [
+          "LockBit"
+        ]
+      },
+      {
+        "name": "other criminal groups",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the now defunct Maze"
+        ],
+        "mother entity": [
+          "LockBit"
+        ]
+      },
+      {
+        "name": "Maze",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the now defunct Maze"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "company insiders",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "LockBit"
+        ]
+      },
+      {
+        "name": "underground technical writing contests",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "LockBit"
+        ]
+      },
+      {
+        "name": "data exfiltration",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": [
+          "StealBit"
+        ]
+      },
+      {
+        "name": "encryption",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "October 2021",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "targeted organizations",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "Linux-ESXI Locker version 1.0"
+        ]
+      },
+      {
+        "name": "fastest and most efficient encryption",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": [
+          "LockBit 2.0"
+        ]
+      },
+      {
+        "name": "affiliates",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "LockBit"
+        ]
+      },
+      {
+        "name": "marketing to affiliates",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "LockBit"
+        ]
+      },
+      {
+        "name": "talented hackers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "LockBit"
+        ]
+      },
+      {
+        "name": "LockBit group",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the LockBit group"
+        ],
+        "mother entity": [
+          "LockBit"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "LockBit",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "ransomware-as-a-service (RaaS) model"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "consistently conceived new ways to stay ahead of its competitors",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "competitors"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "double extortion methods"
+      },
+      {
+        "sub": "double extortion methods",
+        "rel": "adds more pressure to victims",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "victims"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "created and used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "StealBit"
+      },
+      {
+        "sub": "StealBit",
+        "rel": "automates data exfiltration",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "data exfiltration"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "expanded to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Linux hosts"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "released",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Linux-ESXI Locker version 1.0"
+      },
+      {
+        "sub": "Linux-ESXI Locker version 1.0",
+        "rel": "capable of targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Linux hosts"
+      },
+      {
+        "sub": "Linux-ESXI Locker version 1.0",
+        "rel": "could have a big impact on",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "targeted organizations",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "LockBit",
+        "rel": "recruitment of and marketing to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "affiliates"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "hires",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "network access brokers"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "cooperates with",
+        "rel_type": [
+          "cooperates-with"
+        ],
+        "obj": "other criminal groups"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "recruits",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "company insiders"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "sponsors",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "underground technical writing contests"
+      },
+      {
+        "sub": "LockBit group",
+        "rel": "has built itself into one of the most professional organized criminal gangs",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "one of the most professional organized criminal gangs in the criminal underground"
+      },
+      {
+        "sub": "LockBit 2.0",
+        "rel": "has been touted for having",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "fastest and most efficient encryption"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "released",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "LockBit 2.0"
+      },
+      {
+        "sub": "LockBit 2.0",
+        "rel": "has the fastest and most efficient encryption among",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "its competition"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "cooperate with",
+        "rel_type": [
+          "cooperates-with"
+        ],
+        "obj": "Maze"
+      }
+    ]
+  }
+}

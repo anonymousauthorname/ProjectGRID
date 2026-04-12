@@ -1,0 +1,361 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_45.json",
+  "sample_index": 234,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_45.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Virus.Win32.Induc.a",
+        "type": "malware",
+        "alias": [
+          "a file infector",
+          "the malware",
+          "it"
+        ]
+      },
+      {
+        "name": "Delphi",
+        "type": "general-software",
+        "alias": [
+          "Delphi 4.0",
+          "Delphi 5.0",
+          "Delphi 6.0",
+          "Delphi 7.0"
+        ]
+      },
+      {
+        "name": "Delphi 4.0",
+        "type": "general-software",
+        "alias": []
+      },
+      {
+        "name": "Delphi 5.0",
+        "type": "general-software",
+        "alias": []
+      },
+      {
+        "name": "Delphi 6.0",
+        "type": "general-software",
+        "alias": []
+      },
+      {
+        "name": "Delphi 7.0",
+        "type": "general-software",
+        "alias": []
+      },
+      {
+        "name": "SysConst.pas",
+        "type": "file",
+        "alias": []
+      },
+      {
+        "name": "Lib",
+        "type": "windows-registry-key",
+        "alias": []
+      },
+      {
+        "name": "SysConst.dcu",
+        "type": "file",
+        "alias": []
+      },
+      {
+        "name": "SysConst.bak",
+        "type": "file",
+        "alias": []
+      },
+      {
+        "name": "LibSysConst.pas",
+        "type": "file",
+        "alias": []
+      },
+      {
+        "name": "dbak",
+        "type": "file",
+        "alias": []
+      },
+      {
+        "name": "uses windows",
+        "type": "general-software",
+        "alias": []
+      },
+      {
+        "name": "function x(s:string):string",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": []
+      },
+      {
+        "name": "procedure re(s,d,e:string)",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": []
+      },
+      {
+        "name": "the malware",
+        "type": "malware",
+        "alias": []
+      },
+      {
+        "name": "the result",
+        "type": "abstract-concept",
+        "alias": []
+      },
+      {
+        "name": "Windows",
+        "type": "general-software",
+        "alias": []
+      },
+      {
+        "name": "we",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": []
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "is alias of",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "a file infector"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "does not have",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "malicious payload"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "does not directly infect",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": ".exe files"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "checks if",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Delphi"
+      },
+      {
+        "sub": "Delphi",
+        "rel": "is version of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Delphi 4.0"
+      },
+      {
+        "sub": "Delphi",
+        "rel": "is version of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Delphi 5.0"
+      },
+      {
+        "sub": "Delphi",
+        "rel": "is version of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Delphi 6.0"
+      },
+      {
+        "sub": "Delphi",
+        "rel": "is version of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Delphi 7.0"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "copies",
+        "rel_type": [
+          "copies"
+        ],
+        "obj": "SysConst.pas"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "copies to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Lib"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "writes",
+        "rel_type": [
+          "writes"
+        ],
+        "obj": "its code"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "writes",
+        "rel_type": [
+          "writes"
+        ],
+        "obj": "its code to it"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "makes a backup of",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "SysConst.dcu"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "calls it",
+        "rel_type": [
+          "renames"
+        ],
+        "obj": "SysConst.bak"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "compiles",
+        "rel_type": [
+          "compiles"
+        ],
+        "obj": "LibSysConst.pas"
+      },
+      {
+        "sub": "LibSysConst.pas",
+        "rel": "gives",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "infected version of SysConst.dcu"
+      },
+      {
+        "sub": "LibSysConst.pas",
+        "rel": "gets deleted",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "modified .pas file"
+      },
+      {
+        "sub": "uses windows;",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Windows"
+      },
+      {
+        "sub": "function x(s:string):string",
+        "rel": "is part of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "uses windows;"
+      },
+      {
+        "sub": "procedure re(s,d,e:string)",
+        "rel": "is part of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "uses windows;"
+      },
+      {
+        "sub": "the result",
+        "rel": "results in",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "any Delphi program compiled on the computer gets infected"
+      },
+      {
+        "sub": "we",
+        "rel": "have had",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a company contacting us"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "is not a threat",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "that much of a threat"
+      },
+      {
+        "sub": "we",
+        "rel": "have seen",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "this propagation method"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "primitive code"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "does not have",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "other payload"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "is less effective than",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "far easier ways to infect machines"
+      },
+      {
+        "sub": "we",
+        "rel": "will be keeping an eye on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Virus.Win32.Induc.a"
+      }
+    ]
+  }
+}

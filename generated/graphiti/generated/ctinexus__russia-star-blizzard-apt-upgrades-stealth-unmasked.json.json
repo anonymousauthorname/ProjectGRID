@@ -1,0 +1,167 @@
+{
+  "sample_id": "ctinexus__russia-star-blizzard-apt-upgrades-stealth-unmasked.json",
+  "sample_index": 96,
+  "source": "ctinexus",
+  "file_name": "russia-star-blizzard-apt-upgrades-stealth-unmasked.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Star Blizzard",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Seaborgium",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "BlueCharlie",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Callisto Group",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Coldriver",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "NATO member countries",
+        "type": "Location"
+      },
+      {
+        "name": "politics",
+        "type": "Organization"
+      },
+      {
+        "name": "defense",
+        "type": "Organization"
+      },
+      {
+        "name": "NGOs",
+        "type": "Organization"
+      },
+      {
+        "name": "think tanks",
+        "type": "Organization"
+      },
+      {
+        "name": "journalists",
+        "type": "Organization"
+      },
+      {
+        "name": "academic institutions",
+        "type": "Organization"
+      },
+      {
+        "name": "intergovernmental organizations",
+        "type": "Organization"
+      },
+      {
+        "name": "organizations providing support for Ukraine",
+        "type": "Organization"
+      },
+      {
+        "name": "password-protected PDF lure documents",
+        "type": "Indicator"
+      },
+      {
+        "name": "cloud-based file sharing platforms",
+        "type": "Infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Star Blizzard",
+        "rel": "USES",
+        "obj": "password-protected PDF lure documents"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "USES",
+        "obj": "cloud-based file sharing platforms"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "TARGETS",
+        "obj": "NATO member countries"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "TARGETS",
+        "obj": "politics"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "TARGETS",
+        "obj": "defense"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "TARGETS",
+        "obj": "NGOs"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "TARGETS",
+        "obj": "think tanks"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "TARGETS",
+        "obj": "journalists"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "TARGETS",
+        "obj": "academic institutions"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "TARGETS",
+        "obj": "intergovernmental organizations"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "TARGETS",
+        "obj": "organizations providing support for Ukraine"
+      },
+      {
+        "sub": "Seaborgium",
+        "rel": "is alias of",
+        "obj": "Star Blizzard"
+      },
+      {
+        "sub": "BlueCharlie",
+        "rel": "is alias of",
+        "obj": "Star Blizzard"
+      },
+      {
+        "sub": "Callisto Group",
+        "rel": "is alias of",
+        "obj": "Star Blizzard"
+      },
+      {
+        "sub": "Coldriver",
+        "rel": "is alias of",
+        "obj": "Star Blizzard"
+      }
+    ]
+  }
+}

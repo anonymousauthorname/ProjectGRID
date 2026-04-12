@@ -1,0 +1,274 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_22.json",
+  "sample_index": 214,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_22.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "UPATRE",
+        "type": "Malware"
+      },
+      {
+        "name": "BARTALEX",
+        "type": "Malware"
+      },
+      {
+        "name": "Cryptowall 3.0",
+        "type": "Malware"
+      },
+      {
+        "name": "TorrentLocker",
+        "type": "Malware"
+      },
+      {
+        "name": "FAREIT",
+        "type": "Malware"
+      },
+      {
+        "name": "PLUGX",
+        "type": "Malware"
+      },
+      {
+        "name": "EMDIVI",
+        "type": "Malware"
+      },
+      {
+        "name": "CUTWAIL",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Home Depot",
+        "type": "Organization"
+      },
+      {
+        "name": "Target",
+        "type": "Organization"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Software"
+      },
+      {
+        "name": "Dropbox",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Bolletta",
+        "type": "Location"
+      },
+      {
+        "name": "Fatura",
+        "type": "Location"
+      },
+      {
+        "name": "DHL",
+        "type": "Location"
+      },
+      {
+        "name": "FedEx",
+        "type": "Location"
+      },
+      {
+        "name": "Deep Discovery Email Inspector",
+        "type": "Indicator"
+      },
+      {
+        "name": "Trend Micro Smart Protection Complete Suite",
+        "type": "Indicator"
+      },
+      {
+        "name": "Trend Micro WorryFree Business Security",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "UPATRE",
+        "rel": "dispatched by",
+        "obj": "CUTWAIL"
+      },
+      {
+        "sub": "UPATRE",
+        "rel": "has upgraded version",
+        "obj": "Macro"
+      },
+      {
+        "sub": "UPATRE",
+        "rel": "dropped as",
+        "obj": "CHM"
+      },
+      {
+        "sub": "Cryptowall 3.0",
+        "rel": "delivered through",
+        "obj": "Resume"
+      },
+      {
+        "sub": "Cryptowall 3.0",
+        "rel": "downloaded along with",
+        "obj": "FAREIT"
+      },
+      {
+        "sub": "TorrentLocker",
+        "rel": "TARGETS",
+        "obj": "Bolletta"
+      },
+      {
+        "sub": "TorrentLocker",
+        "rel": "TARGETS",
+        "obj": "Fatura"
+      },
+      {
+        "sub": "TorrentLocker",
+        "rel": "TARGETS",
+        "obj": "Australia"
+      },
+      {
+        "sub": "TorrentLocker",
+        "rel": "TARGETS",
+        "obj": "New Zealand"
+      },
+      {
+        "sub": "TorrentLocker",
+        "rel": "TARGETS",
+        "obj": "Europe"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "TARGETS",
+        "obj": "Government-related institutions"
+      },
+      {
+        "sub": "EMDIVI",
+        "rel": "TARGETS",
+        "obj": "Japanese companies"
+      },
+      {
+        "sub": "Macro",
+        "rel": "embedded in",
+        "obj": "PDF"
+      },
+      {
+        "sub": "PDF",
+        "rel": "CONTAINS",
+        "obj": "DOC"
+      },
+      {
+        "sub": "DOC",
+        "rel": "DOWNLOADS",
+        "obj": "EXE"
+      },
+      {
+        "sub": "Macro",
+        "rel": "delivered through",
+        "obj": "Dropbox"
+      },
+      {
+        "sub": "Macro",
+        "rel": "delivered through",
+        "obj": "Social networking notifications"
+      },
+      {
+        "sub": "Macro",
+        "rel": "delivered through",
+        "obj": "Banking notifications"
+      },
+      {
+        "sub": "Macro",
+        "rel": "delivered through",
+        "obj": "DHL"
+      },
+      {
+        "sub": "Macro",
+        "rel": "delivered through",
+        "obj": "FedEx"
+      },
+      {
+        "sub": "Macro",
+        "rel": "USES",
+        "obj": "Holidays"
+      },
+      {
+        "sub": "BARTALEX",
+        "rel": "is a",
+        "obj": "Malware"
+      },
+      {
+        "sub": "FAREIT",
+        "rel": "steals from",
+        "obj": "FTP clients"
+      },
+      {
+        "sub": "FAREIT",
+        "rel": "steals from",
+        "obj": "Web browsers"
+      },
+      {
+        "sub": "FAREIT",
+        "rel": "steals from",
+        "obj": "Email clients"
+      },
+      {
+        "sub": "FAREIT",
+        "rel": "steals from",
+        "obj": "Bitcoin wallets"
+      },
+      {
+        "sub": "Deep Discovery Email Inspector",
+        "rel": "detects and blocks",
+        "obj": "Targeted emails"
+      },
+      {
+        "sub": "Trend Micro Smart Protection Complete Suite",
+        "rel": "protects at",
+        "obj": "Endpoint"
+      },
+      {
+        "sub": "Trend Micro Smart Protection Complete Suite",
+        "rel": "protects at",
+        "obj": "Application"
+      },
+      {
+        "sub": "Trend Micro Smart Protection Complete Suite",
+        "rel": "protects at",
+        "obj": "Network"
+      },
+      {
+        "sub": "Trend Micro WorryFree Business Security",
+        "rel": "USES",
+        "obj": "Smart Protection Network"
+      },
+      {
+        "sub": "Trend Micro WorryFree Business Security",
+        "rel": "proactively stops",
+        "obj": "Threats"
+      },
+      {
+        "sub": "Home Depot",
+        "rel": "LOST",
+        "obj": "US62M"
+      },
+      {
+        "sub": "Target",
+        "rel": "LOST",
+        "obj": "US229M"
+      }
+    ]
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "sample_id": "malkg__201411FSecureOnionDuke.txt",
+  "sample_index": 134,
+  "source": "malkg",
+  "file_name": "201411FSecureOnionDuke.txt",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "OnionDuke",
+        "rel": "uses",
+        "obj": "Tor exit node"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "modifies",
+        "obj": "Windows executables"
+      },
+      {
+        "sub": "Tor exit node",
+        "rel": "modifies",
+        "obj": "Windows executables"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "is related to",
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "is used in",
+        "obj": "targeted attacks against government agencies"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "is a family of malware",
+        "obj": "malware"
+      },
+      {
+        "sub": "actor",
+        "rel": "bypass",
+        "obj": "integrity checks"
+      },
+      {
+        "sub": "wrapper",
+        "rel": "embeds",
+        "obj": "executable"
+      },
+      {
+        "sub": "wrapper",
+        "rel": "embeds",
+        "obj": "executable"
+      },
+      {
+        "sub": "binary",
+        "rel": "contains",
+        "obj": "wrapper"
+      },
+      {
+        "sub": "wrapper",
+        "rel": "writes to disk",
+        "obj": "original executable"
+      },
+      {
+        "sub": "wrapper",
+        "rel": "executes",
+        "obj": "original executable"
+      },
+      {
+        "sub": "wrapper",
+        "rel": "writes to disk",
+        "obj": "executable"
+      },
+      {
+        "sub": "wrapper",
+        "rel": "executes",
+        "obj": "executable"
+      },
+      {
+        "sub": "wrapper",
+        "rel": "writes to disk",
+        "obj": "second executable"
+      },
+      {
+        "sub": "wrapper",
+        "rel": "executes",
+        "obj": "second executable"
+      },
+      {
+        "sub": "malicious executable",
+        "rel": "has SHA1 hash",
+        "obj": "a75995f94854dea8799650a2f4a97980b71199d2"
+      },
+      {
+        "sub": "malicious executable",
+        "rel": "is detected as",
+        "obj": "Trojan"
+      },
+      {
+        "sub": "malicious executable",
+        "rel": "is a",
+        "obj": "dropper"
+      },
+      {
+        "sub": "malicious executable",
+        "rel": "has the same binary as",
+        "obj": "binary"
+      },
+      {
+        "sub": "executable",
+        "rel": "has SHA1 hash",
+        "obj": "a75995f94854dea8799650a2f4a97980b71199d2"
+      },
+      {
+        "sub": "executable",
+        "rel": "is detected as",
+        "obj": "Trojan"
+      },
+      {
+        "sub": "executable",
+        "rel": "is a",
+        "obj": "dropper"
+      },
+      {
+        "sub": "executable",
+        "rel": "has the same binary as",
+        "obj": "binary"
+      },
+      {
+        "sub": "dropper",
+        "rel": "contains",
+        "obj": "PE"
+      },
+      {
+        "sub": "malicious executable",
+        "rel": "attempts to connect",
+        "obj": "C&C URLs"
+      },
+      {
+        "sub": "malicious executable",
+        "rel": "attempts to connect",
+        "obj": "C&C URLs"
+      },
+      {
+        "sub": "system",
+        "rel": "has",
+        "obj": "antivirus software"
+      },
+      {
+        "sub": "system",
+        "rel": "has",
+        "obj": "firewall"
+      },
+      {
+        "sub": "backdoor process",
+        "rel": "downloads",
+        "obj": "component"
+      },
+      {
+        "sub": "backdoor process",
+        "rel": "executes",
+        "obj": "component"
+      },
+      {
+        "sub": "backdoor process",
+        "rel": "communicates with",
+        "obj": "controller"
+      },
+      {
+        "sub": "DLL file",
+        "rel": "contains",
+        "obj": "Backdoor:W32/OnionDuke.A"
+      },
+      {
+        "sub": "DLL file",
+        "rel": "contains",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "overpict.com",
+        "rel": "is a C&C domain",
+        "obj": "a component"
+      },
+      {
+        "sub": "a C&C component",
+        "rel": "may abuse",
+        "obj": "Twitter"
+      },
+      {
+        "sub": "overpict.com",
+        "rel": "is registered with",
+        "obj": "John Kasai"
+      },
+      {
+        "sub": "leveldelta.com",
+        "rel": "is a",
+        "obj": "C&C domain"
+      },
+      {
+        "sub": "grouptumbler.com",
+        "rel": "is a",
+        "obj": "C&C domain"
+      },
+      {
+        "sub": "OnionDuke operator",
+        "rel": "infects",
+        "obj": "downloaded executables"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "is used in",
+        "obj": "targeted attacks"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "is used against",
+        "obj": "European government agencies"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "targets",
+        "obj": "government agency"
+      },
+      {
+        "sub": "a75995f94854dea8799650a2f4a97980b71199d2 • b491c14d8cfb48636f6095b7b16555e9a575d57f • d433f281cf56015941a1c2cb87066ca62ea1db37",
+        "rel": "detected as",
+        "obj": "Backdoor:W32/OnionDuke"
+      }
+    ]
+  }
+}

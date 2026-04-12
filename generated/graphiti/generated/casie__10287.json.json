@@ -1,0 +1,121 @@
+{
+  "sample_id": "casie__10287.json",
+  "sample_index": 27,
+  "source": "casie",
+  "file_name": "10287.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "WhatsApp",
+        "type": "Organization"
+      },
+      {
+        "name": "Natalie Silvanovich",
+        "type": "Person"
+      },
+      {
+        "name": "Tavis Ormandy",
+        "type": "Person"
+      },
+      {
+        "name": "Google Project Zero",
+        "type": "Organization"
+      },
+      {
+        "name": "memory heap overflow",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "RTP packet",
+        "type": "Indicator"
+      },
+      {
+        "name": "Android",
+        "type": "Software"
+      },
+      {
+        "name": "iPhone",
+        "type": "Software"
+      },
+      {
+        "name": "desktop app",
+        "type": "Software"
+      },
+      {
+        "name": "WhatsApp smartphone code",
+        "type": "Software"
+      },
+      {
+        "name": "malformed RTP packet",
+        "type": "Indicator"
+      },
+      {
+        "name": "call request",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "WhatsApp",
+        "rel": "has vulnerability to",
+        "obj": "memory heap overflow"
+      },
+      {
+        "sub": "Natalie Silvanovich",
+        "rel": "reported vulnerability to",
+        "obj": "WhatsApp"
+      },
+      {
+        "sub": "Natalie Silvanovich",
+        "rel": "works with",
+        "obj": "Google Project Zero"
+      },
+      {
+        "sub": "malformed RTP packet",
+        "rel": "triggers crash in",
+        "obj": "WhatsApp"
+      },
+      {
+        "sub": "call request",
+        "rel": "can be sent as",
+        "obj": "malformed RTP packet"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "AFFECTS",
+        "obj": "Android"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "AFFECTS",
+        "obj": "iPhone"
+      },
+      {
+        "sub": "Tavis Ormandy",
+        "rel": "notified about",
+        "obj": "memory heap overflow"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "may be affected by",
+        "obj": "desktop app"
+      }
+    ]
+  }
+}

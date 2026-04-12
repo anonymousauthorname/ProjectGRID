@@ -1,0 +1,135 @@
+{
+  "sample_id": "ctinexus__kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "sample_index": 57,
+  "source": "ctinexus",
+  "file_name": "kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "KASSEIKA",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "BRING YOUR OWN VULNERABLE DRIVER",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "MARTINI DRIVER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "TG SOFT",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "WINDOWS PSEXEC",
+        "type": "TOOL"
+      },
+      {
+        "name": "PHISHING EMAIL",
+        "type": "EVENT"
+      },
+      {
+        "name": "MARTINI.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MARTINI.SYS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "VIRIT AGENT SYSTEM",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ANTIVIRUS PRODUCTS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "CORPORATE NETWORK",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MALWARE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BYOVD",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "KASSEIKA",
+        "rel": "related_to",
+        "obj": "BYOVD"
+      },
+      {
+        "sub": "KASSEIKA",
+        "rel": "related_to",
+        "obj": "MARTINI DRIVER"
+      },
+      {
+        "sub": "KASSEIKA",
+        "rel": "related_to",
+        "obj": "TG SOFT"
+      },
+      {
+        "sub": "KASSEIKA",
+        "rel": "related_to",
+        "obj": "WINDOWS PSEXEC"
+      },
+      {
+        "sub": "PHISHING EMAIL",
+        "rel": "related_to",
+        "obj": "KASSEIKA"
+      },
+      {
+        "sub": "MARTINI.SYS",
+        "rel": "related_to",
+        "obj": "BYOVD"
+      },
+      {
+        "sub": "MARTINI.EXE",
+        "rel": "related_to",
+        "obj": "MALWARE"
+      },
+      {
+        "sub": "MARTINI.EXE",
+        "rel": "related_to",
+        "obj": "MARTINI DRIVER"
+      },
+      {
+        "sub": "VIRIT AGENT SYSTEM",
+        "rel": "related_to",
+        "obj": "MARTINI DRIVER"
+      },
+      {
+        "sub": "ANTIVIRUS PRODUCTS",
+        "rel": "related_to",
+        "obj": "MALWARE"
+      },
+      {
+        "sub": "CORPORATE NETWORK",
+        "rel": "related_to",
+        "obj": "KASSEIKA"
+      }
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "sample_id": "ctinexus__critical-risk-in-google-workspace-delegation-feature.json",
+  "sample_index": 94,
+  "source": "ctinexus",
+  "file_name": "critical-risk-in-google-workspace-delegation-feature.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Unit 42 researchers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Google Workspace (formerly known as G Suite)",
+        "type": "general-software",
+        "alias": [
+          "Google Workspace (formerly known as G Suite)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "domain-wide delegation feature",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": [
+          "Google Workspace (formerly known as G Suite)"
+        ]
+      },
+      {
+        "name": "Google Cloud Platform (GCP)",
+        "type": "infrastructure",
+        "alias": [
+          "Google Cloud Platform (GCP)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "a GCP identity with the necessary permission",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "Google Cloud Platform (GCP)"
+        ]
+      },
+      {
+        "name": "an access token",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "a GCP identity with the necessary permission"
+        ]
+      },
+      {
+        "name": "delegated user",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "Google Workspace (formerly known as G Suite)"
+        ]
+      },
+      {
+        "name": "a malicious insider",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "an external attacker with stolen credentials",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Google Workspace users",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "their data",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": [
+          "Google Workspace users"
+        ]
+      },
+      {
+        "name": "operations",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": [
+          "Google Workspace users"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Unit 42 researchers",
+        "rel": "discovered a security risk in",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Google Workspace (formerly known as G Suite)",
+        "special_factuality": []
+      },
+      {
+        "sub": "Google Workspace (formerly known as G Suite)",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "domain-wide delegation feature",
+        "special_factuality": []
+      },
+      {
+        "sub": "Google Workspace (formerly known as G Suite)",
+        "rel": "exposed unexpected way to gain access to data from",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Google Cloud Platform (GCP)",
+        "special_factuality": []
+      },
+      {
+        "sub": "a GCP identity with the necessary permission",
+        "rel": "generate",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "an access token",
+        "special_factuality": []
+      },
+      {
+        "sub": "a GCP identity with the necessary permission",
+        "rel": "generate an access token to",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "delegated user",
+        "special_factuality": []
+      },
+      {
+        "sub": "a malicious insider",
+        "rel": "use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "an access token",
+        "special_factuality": []
+      },
+      {
+        "sub": "an external attacker with stolen credentials",
+        "rel": "use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "an access token",
+        "special_factuality": []
+      },
+      {
+        "sub": "a malicious insider",
+        "rel": "impersonate",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "Google Workspace users",
+        "special_factuality": []
+      },
+      {
+        "sub": "an external attacker with stolen credentials",
+        "rel": "impersonate",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "Google Workspace users",
+        "special_factuality": []
+      },
+      {
+        "sub": "a malicious insider",
+        "rel": "grant unauthorized access to",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "their data",
+        "special_factuality": []
+      },
+      {
+        "sub": "a malicious insider",
+        "rel": "perform operations on their behalf",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Google Workspace users",
+        "special_factuality": []
+      },
+      {
+        "sub": "an external attacker with stolen credentials",
+        "rel": "perform operations on their behalf",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Google Workspace users",
+        "special_factuality": []
+      }
+    ]
+  }
+}

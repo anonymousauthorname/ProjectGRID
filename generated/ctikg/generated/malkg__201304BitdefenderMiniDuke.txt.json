@@ -1,0 +1,557 @@
+{
+  "sample_id": "malkg__201304BitdefenderMiniDuke.txt",
+  "sample_index": 127,
+  "source": "malkg",
+  "file_name": "201304BitdefenderMiniDuke.txt",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "MiniDuke",
+        "rel": "is made of",
+        "obj": "pdf"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "is made of",
+        "obj": "main"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "is made of",
+        "obj": "payload"
+      },
+      {
+        "sub": "exploit code",
+        "rel": "writes",
+        "obj": "main DLL"
+      },
+      {
+        "sub": "malicious PDF file",
+        "rel": "opens",
+        "obj": "Adobe process"
+      },
+      {
+        "sub": "malicious PDF file",
+        "rel": "exploits",
+        "obj": "Adobe process"
+      },
+      {
+        "sub": "dropper",
+        "rel": "runs",
+        "obj": "Adobe process"
+      },
+      {
+        "sub": "dropper",
+        "rel": "executes",
+        "obj": "host process"
+      },
+      {
+        "sub": "dropper",
+        "rel": "kills",
+        "obj": "host process"
+      },
+      {
+        "sub": "clean PDF file",
+        "rel": "is displayed",
+        "obj": "user"
+      },
+      {
+        "sub": "malware",
+        "rel": "runs",
+        "obj": "inconspicuously"
+      },
+      {
+        "sub": "malware",
+        "rel": "calls back home using",
+        "obj": "URL from search"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "obj": "malicious PDF files"
+      },
+      {
+        "sub": "malware",
+        "rel": "installs",
+        "obj": "payload"
+      },
+      {
+        "sub": "malicious binary",
+        "rel": "checks",
+        "obj": "rundll32"
+      },
+      {
+        "sub": "malicious binary",
+        "rel": "checks",
+        "obj": "run via .lnk file in Startup folder"
+      },
+      {
+        "sub": "malicious binary",
+        "rel": "checks",
+        "obj": "run from the environment variable"
+      },
+      {
+        "sub": "malicious binary",
+        "rel": "creates",
+        "obj": "thread"
+      },
+      {
+        "sub": "malicious binary",
+        "rel": "calls",
+        "obj": "OpenInputDesktop() function"
+      },
+      {
+        "sub": "malicious binary",
+        "rel": "waits for",
+        "obj": "user interaction"
+      },
+      {
+        "sub": "malicious binary",
+        "rel": "checks",
+        "obj": "current date"
+      },
+      {
+        "sub": "malicious binary",
+        "rel": "uses",
+        "obj": "current week"
+      },
+      {
+        "sub": "malicious binary",
+        "rel": "uses",
+        "obj": "current month"
+      },
+      {
+        "sub": "malicious binary",
+        "rel": "uses",
+        "obj": "year"
+      },
+      {
+        "sub": "malware",
+        "rel": "connects to",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "malware",
+        "rel": "sends data",
+        "obj": "system"
+      },
+      {
+        "sub": "malware",
+        "rel": "waits for response",
+        "obj": "C2 center"
+      },
+      {
+        "sub": "malware",
+        "rel": "extracts",
+        "obj": "payload"
+      },
+      {
+        "sub": "malware",
+        "rel": "runs",
+        "obj": "payload"
+      },
+      {
+        "sub": "payload",
+        "rel": "is",
+        "obj": "update"
+      },
+      {
+        "sub": "malware",
+        "rel": "stops after",
+        "obj": "task completes"
+      },
+      {
+        "sub": "malware",
+        "rel": "exits after",
+        "obj": "Twitter account"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "overwrites",
+        "obj": "data"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "triggers",
+        "obj": "behavior"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "uses",
+        "obj": "volume API"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "uses",
+        "obj": "CPUID instruction"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "computes",
+        "obj": "hash"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "uses",
+        "obj": "40 bytes"
+      },
+      {
+        "sub": "malware",
+        "rel": "interchange",
+        "obj": "first DWORD"
+      },
+      {
+        "sub": "malware",
+        "rel": "interchange",
+        "obj": "second DWORD"
+      },
+      {
+        "sub": "malware",
+        "rel": "re-compute",
+        "obj": "SHA-1 hash"
+      },
+      {
+        "sub": "malware",
+        "rel": "perform",
+        "obj": "checksum computation via CheckSumMappedFile()"
+      },
+      {
+        "sub": "malware",
+        "rel": "use",
+        "obj": "CheckSumMappedFile()"
+      },
+      {
+        "sub": "malware",
+        "rel": "re-compute",
+        "obj": "SHA-1 hash"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "generates",
+        "obj": "URLs"
+      },
+      {
+        "sub": "GET request",
+        "rel": "generates random variable name",
+        "obj": "variable name"
+      },
+      {
+        "sub": "variable",
+        "rel": "holds",
+        "obj": "CRC value"
+      },
+      {
+        "sub": "server",
+        "rel": "responds with",
+        "obj": "GIF file"
+      },
+      {
+        "sub": "GIF file",
+        "rel": "holds",
+        "obj": "executable file"
+      },
+      {
+        "sub": "malware",
+        "rel": "receives",
+        "obj": "GIF header file"
+      },
+      {
+        "sub": "GIF header file",
+        "rel": "has appended",
+        "obj": "encrypted payload"
+      },
+      {
+        "sub": "malware",
+        "rel": "checks for",
+        "obj": "GIF8 magic"
+      },
+      {
+        "sub": "malware",
+        "rel": "looks for",
+        "obj": "3b00"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "obj": "LoadLibrary"
+      },
+      {
+        "sub": "repfault.exe",
+        "rel": "is part of",
+        "obj": "file"
+      },
+      {
+        "sub": "wuapreport.exe",
+        "rel": "is part of",
+        "obj": "file"
+      },
+      {
+        "sub": "lanmgr.exe",
+        "rel": "is part of",
+        "obj": "file"
+      },
+      {
+        "sub": "file",
+        "rel": "is digitally signed with",
+        "obj": "RSA 2048"
+      },
+      {
+        "sub": "file",
+        "rel": "has signature located at",
+        "obj": "end of file"
+      },
+      {
+        "sub": "file",
+        "rel": "uses hash algorithm",
+        "obj": "SHA-1"
+      },
+      {
+        "sub": "encryption algorithm",
+        "rel": "is",
+        "obj": "XOR"
+      },
+      {
+        "sub": "encryption algorithm",
+        "rel": "uses",
+        "obj": "rotating key"
+      },
+      {
+        "sub": "buf",
+        "rel": "is",
+        "obj": "file"
+      },
+      {
+        "sub": "buf",
+        "rel": "is read from",
+        "obj": "file"
+      },
+      {
+        "sub": "pattern",
+        "rel": "is found at",
+        "obj": "index"
+      },
+      {
+        "sub": "C&C",
+        "rel": "is located at",
+        "obj": "http://hottraveljobs.com/forum/docs/info.php"
+      },
+      {
+        "sub": "C&C",
+        "rel": "holds",
+        "obj": "log files"
+      },
+      {
+        "sub": "C&C",
+        "rel": "contains",
+        "obj": "60 entries"
+      },
+      {
+        "sub": "data",
+        "rel": "is sent to",
+        "obj": "C&C"
+      },
+      {
+        "sub": "format",
+        "rel": "includes",
+        "obj": "CRC"
+      },
+      {
+        "sub": "format",
+        "rel": "includes",
+        "obj": "base64"
+      },
+      {
+        "sub": "format",
+        "rel": "includes",
+        "obj": "size"
+      },
+      {
+        "sub": "format",
+        "rel": "includes",
+        "obj": "md5"
+      },
+      {
+        "sub": "CRC",
+        "rel": "is",
+        "obj": "decimal"
+      },
+      {
+        "sub": "size field",
+        "rel": "represents",
+        "obj": "the size of a payload"
+      },
+      {
+        "sub": "payload",
+        "rel": "is sent to",
+        "obj": "C&C"
+      },
+      {
+        "sub": "year 2011",
+        "rel": "is",
+        "obj": "one of the most active periods for this family of malware"
+      },
+      {
+        "sub": "loader",
+        "rel": "decodes",
+        "obj": "information in .data section"
+      },
+      {
+        "sub": "loader",
+        "rel": "uses",
+        "obj": "UCL algorithm"
+      },
+      {
+        "sub": "loader",
+        "rel": "passes control to",
+        "obj": "code"
+      },
+      {
+        "sub": "code",
+        "rel": "holds",
+        "obj": "loader stub"
+      },
+      {
+        "sub": "code",
+        "rel": "follows",
+        "obj": "executable file"
+      },
+      {
+        "sub": "executable file",
+        "rel": "is",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "stub",
+        "rel": "overwrites",
+        "obj": "memory image of executable file"
+      },
+      {
+        "sub": "stub",
+        "rel": "replaces",
+        "obj": "executable file"
+      },
+      {
+        "sub": "stub",
+        "rel": "replaces",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "malware",
+        "rel": "creates",
+        "obj": "Registry key"
+      },
+      {
+        "sub": "malware",
+        "rel": "performs request to",
+        "obj": "C&C"
+      },
+      {
+        "sub": "malware",
+        "rel": "checks host internet connection via proxy",
+        "obj": "proxy server"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "obj": "proxy settings"
+      },
+      {
+        "sub": "malware",
+        "rel": "connects to",
+        "obj": "C&C"
+      },
+      {
+        "sub": "malware",
+        "rel": "creates",
+        "obj": "unique identifier"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "obj": "XOR operation"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "obj": "stack value"
+      },
+      {
+        "sub": "malware",
+        "rel": "sends",
+        "obj": "unique identifier"
+      },
+      {
+        "sub": "malware",
+        "rel": "receives",
+        "obj": "16 bytes"
+      },
+      {
+        "sub": "malware",
+        "rel": "creates",
+        "obj": "MD5 hash"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "obj": "MD5 hash as key"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "obj": "MD5 hash for AES algorithm"
+      },
+      {
+        "sub": "malware",
+        "rel": "receives",
+        "obj": "4 bytes"
+      },
+      {
+        "sub": "malware",
+        "rel": "allocates",
+        "obj": "memory"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "obj": "malloc(val XOR user_id)"
+      },
+      {
+        "sub": "MD5 checksums",
+        "rel": "belong to",
+        "obj": "main component"
+      },
+      {
+        "sub": "MD5 checksums",
+        "rel": "exclude",
+        "obj": "payload"
+      },
+      {
+        "sub": "MD5 checksums",
+        "rel": "exclude",
+        "obj": "dropper"
+      },
+      {
+        "sub": "MD5 checksums",
+        "rel": "exclude",
+        "obj": "PDF"
+      }
+    ]
+  }
+}

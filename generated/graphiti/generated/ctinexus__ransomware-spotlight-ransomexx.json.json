@@ -1,0 +1,87 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-ransomexx.json",
+  "sample_index": 95,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-ransomexx.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "RansomExx",
+        "type": "Malware"
+      },
+      {
+        "name": "LockBit",
+        "type": "Malware"
+      },
+      {
+        "name": "Conti",
+        "type": "Malware"
+      },
+      {
+        "name": "government agencies",
+        "type": "Organization"
+      },
+      {
+        "name": "manufacturers",
+        "type": "Organization"
+      },
+      {
+        "name": "Scottish mental health charity",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "RansomExx",
+        "rel": "ATTACKED",
+        "obj": "government agencies"
+      },
+      {
+        "sub": "RansomExx",
+        "rel": "ATTACKED",
+        "obj": "manufacturers"
+      },
+      {
+        "sub": "RansomExx",
+        "rel": "ATTACKED",
+        "obj": "Scottish mental health charity"
+      },
+      {
+        "sub": "RansomExx",
+        "rel": "competes with",
+        "obj": "LockBit"
+      },
+      {
+        "sub": "RansomExx",
+        "rel": "competes with",
+        "obj": "Conti"
+      },
+      {
+        "sub": "RansomExx",
+        "rel": "stole data from",
+        "obj": "Scottish mental health charity"
+      },
+      {
+        "sub": "RansomExx",
+        "rel": "stole data from",
+        "obj": "government agencies"
+      }
+    ]
+  }
+}

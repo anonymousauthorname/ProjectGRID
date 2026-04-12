@@ -1,0 +1,197 @@
+{
+  "sample_id": "casie__1103.json",
+  "sample_index": 38,
+  "source": "casie",
+  "file_name": "1103.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "WhatsApp Web",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Telegram Web",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "WhatsApp",
+        "type": "Organization"
+      },
+      {
+        "name": "Telegram",
+        "type": "Organization"
+      },
+      {
+        "name": "Check Point",
+        "type": "Organization"
+      },
+      {
+        "name": "end-to-end message encryption",
+        "type": "Software"
+      },
+      {
+        "name": "malicious code",
+        "type": "Malware"
+      },
+      {
+        "name": "image",
+        "type": "Indicator"
+      },
+      {
+        "name": "personal and group conversations",
+        "type": "Indicator"
+      },
+      {
+        "name": "photos",
+        "type": "Indicator"
+      },
+      {
+        "name": "videos",
+        "type": "Indicator"
+      },
+      {
+        "name": "shared files",
+        "type": "Indicator"
+      },
+      {
+        "name": "contact lists",
+        "type": "Indicator"
+      },
+      {
+        "name": "vulnerability",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "malicious file",
+        "type": "Indicator"
+      },
+      {
+        "name": "web clients",
+        "type": "Infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Check Point",
+        "rel": "disclosed vulnerability to",
+        "obj": "WhatsApp Web"
+      },
+      {
+        "sub": "Check Point",
+        "rel": "disclosed vulnerability to",
+        "obj": "Telegram Web"
+      },
+      {
+        "sub": "WhatsApp Web",
+        "rel": "is blind to",
+        "obj": "end-to-end message encryption"
+      },
+      {
+        "sub": "Telegram Web",
+        "rel": "is blind to",
+        "obj": "end-to-end message encryption"
+      },
+      {
+        "sub": "end-to-end message encryption",
+        "rel": "allowed to be sent",
+        "obj": "malicious code"
+      },
+      {
+        "sub": "malicious code",
+        "rel": "is hidden within",
+        "obj": "image"
+      },
+      {
+        "sub": "image",
+        "rel": "can trigger access to",
+        "obj": "WhatsApp Web"
+      },
+      {
+        "sub": "image",
+        "rel": "can trigger access to",
+        "obj": "Telegram Web"
+      },
+      {
+        "sub": "malicious file",
+        "rel": "can access",
+        "obj": "personal and group conversations"
+      },
+      {
+        "sub": "malicious file",
+        "rel": "can access",
+        "obj": "photos"
+      },
+      {
+        "sub": "malicious file",
+        "rel": "can access",
+        "obj": "videos"
+      },
+      {
+        "sub": "malicious file",
+        "rel": "can access",
+        "obj": "shared files"
+      },
+      {
+        "sub": "malicious file",
+        "rel": "can access",
+        "obj": "contact lists"
+      },
+      {
+        "sub": "malicious file",
+        "rel": "can be sent to all contacts",
+        "obj": "WhatsApp"
+      },
+      {
+        "sub": "malicious file",
+        "rel": "can be sent to all contacts",
+        "obj": "Telegram"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "developed fixes for",
+        "obj": "web clients"
+      },
+      {
+        "sub": "Telegram",
+        "rel": "developed fixes for",
+        "obj": "web clients"
+      },
+      {
+        "sub": "end-to-end message encryption",
+        "rel": "allowed to be sent",
+        "obj": "malicious file"
+      },
+      {
+        "sub": "WhatsApp Web",
+        "rel": "fully synchronized with",
+        "obj": "mobile app"
+      },
+      {
+        "sub": "Telegram Web",
+        "rel": "fully synchronized with",
+        "obj": "mobile app"
+      },
+      {
+        "sub": "end-to-end message encryption",
+        "rel": "validates before encryption",
+        "obj": "content"
+      }
+    ]
+  }
+}

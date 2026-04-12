@@ -1,0 +1,187 @@
+{
+  "sample_id": "casie__10227.json",
+  "sample_index": 43,
+  "source": "casie",
+  "file_name": "10227.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Kubernetes' discovery API calls"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "malicious code"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "container environment"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "Kubernetes' discovery API calls"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "malicious code"
+      },
+      {
+        "sub": "System",
+        "rel": "Write",
+        "obj": "any process in a container"
+      },
+      {
+        "sub": "System",
+        "rel": "Locate at",
+        "obj": "container environment"
+      },
+      {
+        "sub": "Kubernetes",
+        "rel": "Has vulnerability",
+        "obj": "Privilege Escalation"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Allows",
+        "obj": "Unauthenticated user"
+      },
+      {
+        "sub": "Unauthenticated user",
+        "rel": "Operate",
+        "obj": "Discovery API calls"
+      },
+      {
+        "sub": "Discovery API calls",
+        "rel": "Enable",
+        "obj": "Arbitrary processes"
+      },
+      {
+        "sub": "Kubernetes",
+        "rel": "Has vulnerability",
+        "obj": "Default configurations"
+      },
+      {
+        "sub": "Default configurations",
+        "rel": "Allow",
+        "obj": "Discovery API calls"
+      },
+      {
+        "sub": "Kubernetes",
+        "rel": "Has value",
+        "obj": "Cluster-admin level privileges"
+      },
+      {
+        "sub": "Kubernetes",
+        "rel": "Has value",
+        "obj": "Compute nodes"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Kubernetes environment"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Use",
+        "obj": "Discovery API calls"
+      },
+      {
+        "sub": "Discovery API calls",
+        "rel": "Operate",
+        "obj": "Nodes"
+      },
+      {
+        "sub": "Discovery API calls",
+        "rel": "Operate",
+        "obj": "Pods"
+      },
+      {
+        "sub": "Discovery API calls",
+        "rel": "Operate",
+        "obj": "Services"
+      },
+      {
+        "sub": "Discovery API calls",
+        "rel": "Enable",
+        "obj": "Mapping of network"
+      },
+      {
+        "sub": "Discovery API calls",
+        "rel": "Support",
+        "obj": "Identification of potential targets"
+      },
+      {
+        "sub": "Malicious actor",
+        "rel": "Has vulnerability",
+        "obj": "Kubernetes environment"
+      },
+      {
+        "sub": "Malicious actor",
+        "rel": "Operate",
+        "obj": "Kubernetes environment"
+      },
+      {
+        "sub": "Kubernetes environment",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Kubernetes environment",
+        "rel": "Has geolocation",
+        "obj": "Cluster-admin access"
+      },
+      {
+        "sub": "Malicious actor",
+        "rel": "Use",
+        "obj": "Cluster-admin access"
+      },
+      {
+        "sub": "Malicious actor",
+        "rel": "Modify",
+        "obj": "Data"
+      },
+      {
+        "sub": "Malicious actor",
+        "rel": "Write",
+        "obj": "Malicious code"
+      },
+      {
+        "sub": "Malicious actor",
+        "rel": "Conduct",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Production applications and services"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Modify",
+        "obj": "Critical operations and services"
+      }
+    ]
+  }
+}

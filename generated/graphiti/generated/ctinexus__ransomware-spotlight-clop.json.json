@@ -1,0 +1,82 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-clop.json",
+  "sample_index": 97,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-clop.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Clop",
+        "type": "Malware"
+      },
+      {
+        "name": "SolarWinds Serv-U",
+        "type": "Software"
+      },
+      {
+        "name": "CVE-2021-35211",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "FIN11",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "TA505",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Raspberry Robin",
+        "type": "Campaign"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Clop",
+        "rel": "EXPLOITS",
+        "obj": "SolarWinds Serv-U"
+      },
+      {
+        "sub": "Clop",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2021-35211"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "DISTRIBUTES",
+        "obj": "Clop"
+      },
+      {
+        "sub": "FIN11",
+        "rel": "associated with",
+        "obj": "DEV-0950"
+      },
+      {
+        "sub": "TA505",
+        "rel": "is a",
+        "obj": "FIN11"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "TARGETS",
+        "obj": "Raspberry Robin"
+      }
+    ]
+  }
+}

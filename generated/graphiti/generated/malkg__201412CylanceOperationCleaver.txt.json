@@ -1,0 +1,328 @@
+{
+  "sample_id": "malkg__201412CylanceOperationCleaver.txt",
+  "sample_index": 118,
+  "source": "malkg",
+  "file_name": "201412CylanceOperationCleaver.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Operation Cleaver",
+        "type": "Campaign"
+      },
+      {
+        "name": "Notepad",
+        "type": "Malware"
+      },
+      {
+        "name": "NOTEPAD2.EXE",
+        "type": "Malware"
+      },
+      {
+        "name": "Notepad3.exe",
+        "type": "Malware"
+      },
+      {
+        "name": "Notepad4.exe",
+        "type": "Malware"
+      },
+      {
+        "name": "notepad10.exe",
+        "type": "Malware"
+      },
+      {
+        "name": "Windows 7 Notepad",
+        "type": "Malware"
+      },
+      {
+        "name": "Windows XP/2003 Notepad",
+        "type": "Malware"
+      },
+      {
+        "name": "VirtualAlloc",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Metasploit",
+        "type": "Malware"
+      },
+      {
+        "name": "shikata ga nai",
+        "type": "Malware"
+      },
+      {
+        "name": "C2",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Brian Wallace",
+        "type": "Person"
+      },
+      {
+        "name": "Cylance",
+        "type": "Organization"
+      },
+      {
+        "name": "Derek Soeder",
+        "type": "Person"
+      },
+      {
+        "name": "x86/shikata_ga_nai",
+        "type": "Tool"
+      },
+      {
+        "name": "ws2_32",
+        "type": "Software"
+      },
+      {
+        "name": "kernel32",
+        "type": "Software"
+      },
+      {
+        "name": "AF_INET",
+        "type": "Software"
+      },
+      {
+        "name": "SOCK_STREAM",
+        "type": "Software"
+      },
+      {
+        "name": "108.175.152.230",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "12345",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "msfvenom",
+        "type": "Tool"
+      },
+      {
+        "name": "reverse_tcp",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Cleaver",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Operation Cleaver",
+        "rel": "INVESTIGATED",
+        "obj": "Notepad"
+      },
+      {
+        "sub": "Operation Cleaver",
+        "rel": "INVESTIGATED",
+        "obj": "NOTEPAD2.EXE"
+      },
+      {
+        "sub": "Operation Cleaver",
+        "rel": "INVESTIGATED",
+        "obj": "Notepad3.exe"
+      },
+      {
+        "sub": "Operation Cleaver",
+        "rel": "INVESTIGATED",
+        "obj": "Notepad4.exe"
+      },
+      {
+        "sub": "Operation Cleaver",
+        "rel": "INVESTIGATED",
+        "obj": "notepad10.exe"
+      },
+      {
+        "sub": "Operation Cleaver",
+        "rel": "INVESTIGATED",
+        "obj": "Windows 7 Notepad"
+      },
+      {
+        "sub": "Operation Cleaver",
+        "rel": "INVESTIGATED",
+        "obj": "Windows XP/2003 Notepad"
+      },
+      {
+        "sub": "Brian Wallace",
+        "rel": "LED",
+        "obj": "Operation Cleaver"
+      },
+      {
+        "sub": "Cylance",
+        "rel": "has member",
+        "obj": "Derek Soeder"
+      },
+      {
+        "sub": "Derek Soeder",
+        "rel": "writing about",
+        "obj": "Operation Cleaver"
+      },
+      {
+        "sub": "Notepad4.exe",
+        "rel": "USES",
+        "obj": "VirtualAlloc"
+      },
+      {
+        "sub": "Notepad4.exe",
+        "rel": "CONTAINS",
+        "obj": "shikata ga nai"
+      },
+      {
+        "sub": "Notepad4.exe",
+        "rel": "derived from",
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "Notepad",
+        "rel": "is derived from",
+        "obj": "Windows 7 Notepad"
+      },
+      {
+        "sub": "Notepad",
+        "rel": "is derived from",
+        "obj": "Windows XP/2003 Notepad"
+      },
+      {
+        "sub": "Metasploit",
+        "rel": "GENERATES",
+        "obj": "Notepad3.exe"
+      },
+      {
+        "sub": "Metasploit",
+        "rel": "GENERATES",
+        "obj": "Notepad4.exe"
+      },
+      {
+        "sub": "Metasploit",
+        "rel": "GENERATES",
+        "obj": "notepad10.exe"
+      },
+      {
+        "sub": "msfvenom",
+        "rel": "USES",
+        "obj": "x86/shikata_ga_nai"
+      },
+      {
+        "sub": "msfvenom",
+        "rel": "GENERATES",
+        "obj": "windows/shell/reverse_tcp"
+      },
+      {
+        "sub": "Notepad3.exe",
+        "rel": "CALLS",
+        "obj": "ws2_32"
+      },
+      {
+        "sub": "Notepad4.exe",
+        "rel": "CALLS",
+        "obj": "ws2_32"
+      },
+      {
+        "sub": "notepad10.exe",
+        "rel": "CALLS",
+        "obj": "ws2_32"
+      },
+      {
+        "sub": "Notepad3.exe",
+        "rel": "CALLS",
+        "obj": "kernel32"
+      },
+      {
+        "sub": "Notepad4.exe",
+        "rel": "CALLS",
+        "obj": "kernel32"
+      },
+      {
+        "sub": "notepad10.exe",
+        "rel": "CALLS",
+        "obj": "kernel32"
+      },
+      {
+        "sub": "Notepad3.exe",
+        "rel": "USES",
+        "obj": "AF_INET"
+      },
+      {
+        "sub": "Notepad4.exe",
+        "rel": "USES",
+        "obj": "AF_INET"
+      },
+      {
+        "sub": "notepad10.exe",
+        "rel": "USES",
+        "obj": "AF_INET"
+      },
+      {
+        "sub": "Notepad3.exe",
+        "rel": "USES",
+        "obj": "SOCK_STREAM"
+      },
+      {
+        "sub": "Notepad4.exe",
+        "rel": "USES",
+        "obj": "SOCK_STREAM"
+      },
+      {
+        "sub": "notepad10.exe",
+        "rel": "USES",
+        "obj": "SOCK_STREAM"
+      },
+      {
+        "sub": "Notepad3.exe",
+        "rel": "connects to",
+        "obj": "108.175.152.230"
+      },
+      {
+        "sub": "Notepad4.exe",
+        "rel": "connects to",
+        "obj": "108.175.152.230"
+      },
+      {
+        "sub": "notepad10.exe",
+        "rel": "connects to",
+        "obj": "108.175.152.230"
+      },
+      {
+        "sub": "Notepad3.exe",
+        "rel": "uses port",
+        "obj": "12345"
+      },
+      {
+        "sub": "Notepad4.exe",
+        "rel": "uses port",
+        "obj": "12345"
+      },
+      {
+        "sub": "notepad10.exe",
+        "rel": "uses port",
+        "obj": "12345"
+      },
+      {
+        "sub": "Operation Cleaver",
+        "rel": "USED",
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "Cleaver",
+        "rel": "LEADS",
+        "obj": "Operation Cleaver"
+      }
+    ]
+  }
+}

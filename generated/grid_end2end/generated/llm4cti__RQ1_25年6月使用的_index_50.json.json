@@ -1,0 +1,631 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_50.json",
+  "sample_index": 239,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_50.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Earth Aughisky",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "APT group Earth Aughisky",
+          "APT group",
+          "the group",
+          "APT group Earth Aughisky"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Roudan",
+        "type": "malware",
+        "alias": [
+          "the classic Earth Aughisky malware",
+          "backdoor",
+          "backdoor and backdoor builder",
+          "malware family Roudan",
+          "the backdoor"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Taidoor",
+        "type": "malware",
+        "alias": [
+          "the group"
+        ],
+        "mother entity": [
+          "Earth Aughisky"
+        ]
+      },
+      {
+        "name": "LuckDLL",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "GrubbyRAT",
+        "type": "malware",
+        "alias": [
+          "this RAT"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Taikite",
+        "type": "malware",
+        "alias": [
+          "SVCMONDR",
+          "dropped file observed in Taiwan",
+          "malware Taikite"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "SiyBot",
+        "type": "malware",
+        "alias": [
+          "this tool"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "public key",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": [
+          "LuckDLL"
+        ]
+      },
+      {
+        "name": "C&C server",
+        "type": "infrastructure",
+        "alias": [
+          "the C&C"
+        ],
+        "mother entity": [
+          "LuckDLL"
+        ]
+      },
+      {
+        "name": "session key",
+        "type": "credential-value",
+        "alias": [
+          "random session key"
+        ],
+        "mother entity": [
+          "LuckDLL"
+        ]
+      },
+      {
+        "name": "initialization vector (IV)",
+        "type": "other",
+        "alias": [],
+        "mother entity": [
+          "LuckDLL"
+        ]
+      },
+      {
+        "name": "encrypted traffic",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": [
+          "LuckDLL"
+        ]
+      },
+      {
+        "name": "ASRWEC downloader",
+        "type": "hacker-tool",
+        "alias": [
+          "payload"
+        ],
+        "mother entity": [
+          "Earth Aughisky"
+        ]
+      },
+      {
+        "name": "Taleret",
+        "type": "malware",
+        "alias": [],
+        "mother entity": [
+          "Earth Aughisky"
+        ]
+      },
+      {
+        "name": ".pdb file",
+        "type": "file",
+        "alias": [
+          "Taikite .pdb string"
+        ],
+        "mother entity": [
+          "Taikite"
+        ]
+      },
+      {
+        "name": "Base64 encoded traffic",
+        "type": "network-traffic",
+        "alias": [
+          "encoded traffic"
+        ],
+        "mother entity": [
+          "Taikite"
+        ]
+      },
+      {
+        "name": "blog hosts",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": [
+          "Taleret",
+          "Roudan"
+        ]
+      },
+      {
+        "name": "Gubb",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": [
+          "SiyBot"
+        ]
+      },
+      {
+        "name": "30 Boxes",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": [
+          "SiyBot"
+        ]
+      },
+      {
+        "name": "malware configuration",
+        "type": "file",
+        "alias": [
+          "configuration"
+        ],
+        "mother entity": [
+          "SiyBot"
+        ]
+      },
+      {
+        "name": "embedded credentials",
+        "type": "credential-value",
+        "alias": [
+          "30 Boxes credential"
+        ],
+        "mother entity": [
+          "SiyBot"
+        ]
+      },
+      {
+        "name": "repository",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": [
+          "Roudan",
+          "SiyBot",
+          "ASRWEC downloader"
+        ]
+      },
+      {
+        "name": "special log file",
+        "type": "file",
+        "alias": [
+          "Roudan’s earlier version"
+        ],
+        "mother entity": [
+          "Taleret"
+        ]
+      },
+      {
+        "name": "Comeon downloader",
+        "type": "hacker-tool",
+        "alias": [
+          "Roudan payload"
+        ],
+        "mother entity": [
+          "Roudan"
+        ]
+      },
+      {
+        "name": "malware analysis",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "research paper",
+          "our research paper"
+        ],
+        "mother entity": [
+          "Earth Aughisky"
+        ]
+      },
+      {
+        "name": "malware families and tools",
+        "type": "other",
+        "alias": [
+          "components that have yet to be identified"
+        ],
+        "mother entity": [
+          "Earth Aughisky"
+        ]
+      },
+      {
+        "name": "network traffic",
+        "type": "network-traffic",
+        "alias": [
+          "MAC addresses"
+        ],
+        "mother entity": [
+          "Roudan"
+        ]
+      },
+      {
+        "name": "MAC address",
+        "type": "hardware-address",
+        "alias": [
+          "encoded MAC address"
+        ],
+        "mother entity": [
+          "Roudan"
+        ]
+      },
+      {
+        "name": "configuration file",
+        "type": "file",
+        "alias": [
+          "same file name as the component"
+        ],
+        "mother entity": [
+          "GrubbyRAT"
+        ]
+      },
+      {
+        "name": "infected system",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "GrubbyRAT"
+        ]
+      },
+      {
+        "name": "real-world changes",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": [
+          "Earth Aughisky"
+        ]
+      },
+      {
+        "name": "public services",
+        "type": "general-software",
+        "alias": [
+          "public services"
+        ],
+        "mother entity": [
+          "SiyBot"
+        ]
+      },
+      {
+        "name": "downloaders",
+        "type": "hacker-tool",
+        "alias": [
+          "downloader"
+        ],
+        "mother entity": [
+          "Earth Aughisky"
+        ]
+      },
+      {
+        "name": "vulnerability",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": [
+          "Taikite"
+        ]
+      },
+      {
+        "name": "Figure X",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "Figure 1",
+          "Figure 2",
+          "Figure 3",
+          "Figure 4",
+          "Figure 5",
+          "Figure 6",
+          "Figure 7",
+          "Figure 8",
+          "Figure 9",
+          "Figure 10"
+        ],
+        "mother entity": [
+          "Roudan",
+          "Taikite",
+          "SiyBot",
+          "Taleret"
+        ]
+      },
+      {
+        "name": "CH Lei",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Indicators of Compromise (IOCs)",
+        "type": "indicator",
+        "alias": [
+          "IOCs"
+        ],
+        "mother entity": [
+          "Earth Aughisky"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT group Earth Aughisky",
+        "rel": "observing and keeping tabs of",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "malware families and tools"
+      },
+      {
+        "sub": "Taidoor",
+        "rel": "used to refer to the group",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "APT group Earth Aughisky"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "named this malware family Roudan",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "malware family Roudan"
+      },
+      {
+        "sub": "malware family Roudan",
+        "rel": "employed for callback traffic",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "callback traffic"
+      },
+      {
+        "sub": "malware family Roudan",
+        "rel": "contained an encoded MAC address",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "encoded MAC address"
+      },
+      {
+        "sub": "public key",
+        "rel": "embedded inside the malware configuration",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "LuckDLL"
+      },
+      {
+        "sub": "LuckDLL",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "C&C server"
+      },
+      {
+        "sub": "LuckDLL",
+        "rel": "proceeds to generate a random session key",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "session key"
+      },
+      {
+        "sub": "LuckDLL",
+        "rel": "proceeds to generate initialization vector (IV)",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "initialization vector (IV)"
+      },
+      {
+        "sub": "LuckDLL",
+        "rel": "encrypts the traffic",
+        "rel_type": [
+          "encrypts"
+        ],
+        "obj": "encrypted traffic"
+      },
+      {
+        "sub": "public key",
+        "rel": "encrypts",
+        "rel_type": [
+          "encrypts"
+        ],
+        "obj": "session key"
+      },
+      {
+        "sub": "public key",
+        "rel": "encrypts",
+        "rel_type": [
+          "encrypts"
+        ],
+        "obj": "initialization vector (IV)"
+      },
+      {
+        "sub": "GrubbyRAT",
+        "rel": "deployed on important targets",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "infected system"
+      },
+      {
+        "sub": "GrubbyRAT",
+        "rel": "uses the same configuration file",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "configuration file"
+      },
+      {
+        "sub": "Taikite",
+        "rel": "identified a vulnerability",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "Taikite",
+        "rel": "had a .pdb file",
+        "rel_type": [
+          "has"
+        ],
+        "obj": ".pdb file"
+      },
+      {
+        "sub": "Taikite",
+        "rel": "has Base64 encoded traffic",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Base64 encoded traffic"
+      },
+      {
+        "sub": "SiyBot",
+        "rel": "abuses Gubb",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Gubb"
+      },
+      {
+        "sub": "SiyBot",
+        "rel": "abuses 30 Boxes",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "30 Boxes"
+      },
+      {
+        "sub": "SiyBot",
+        "rel": "has embedded credentials",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "embedded credentials"
+      },
+      {
+        "sub": "ASRWEC downloader",
+        "rel": "hosted in the same repository",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "repository"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "uses blog hosts",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "blog hosts"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "has a special log file",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "special log file"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "shares C&C servers with Taikite",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Taikite"
+      },
+      {
+        "sub": "Comeon downloader",
+        "rel": "is a Roudan payload",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Roudan"
+      },
+      {
+        "sub": "malware analysis",
+        "rel": "lists all the malware attributed to Earth Aughisky",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Earth Aughisky"
+      },
+      {
+        "sub": "Indicators of Compromise (IOCs)",
+        "rel": "list of IOCs from Earth Aughisky",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "Earth Aughisky"
+      },
+      {
+        "sub": "CH Lei",
+        "rel": "authored the research paper",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "malware analysis"
+      },
+      {
+        "sub": "Figure 1",
+        "rel": "shows Roudan builders",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Roudan"
+      },
+      {
+        "sub": "Figure 5",
+        "rel": "shows Taikite .pdb string",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Taikite"
+      },
+      {
+        "sub": "Figure 7",
+        "rel": "shows embedded 30 Boxes credential",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "SiyBot"
+      }
+    ]
+  }
+}

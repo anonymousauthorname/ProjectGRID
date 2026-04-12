@@ -1,0 +1,527 @@
+{
+  "sample_id": "ctinexus__evasive-jupyter-infostealer-campaign-dangerous-variant.json",
+  "sample_index": 53,
+  "source": "ctinexus",
+  "file_name": "evasive-jupyter-infostealer-campaign-dangerous-variant.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Jupyter",
+        "type": "malware",
+        "alias": [
+          "Yellow Cockatoo",
+          "Solarmarker",
+          "Polazert"
+        ]
+      },
+      {
+        "name": "Chrome",
+        "type": "general-software",
+        "alias": [
+          "Chrome browser"
+        ]
+      },
+      {
+        "name": "Edge",
+        "type": "general-software",
+        "alias": [
+          "Edge browser"
+        ]
+      },
+      {
+        "name": "Firefox",
+        "type": "general-software",
+        "alias": [
+          "Firefox browser"
+        ]
+      },
+      {
+        "name": "PowerShell",
+        "type": "general-software",
+        "alias": [
+          "PowerShell command"
+        ]
+      },
+      {
+        "name": "VMware's Carbon Black",
+        "type": "security-product",
+        "alias": [
+          "Carbon Black"
+        ]
+      },
+      {
+        "name": "Morpheus",
+        "type": "security-product",
+        "alias": [
+          "Morphisec"
+        ]
+      },
+      {
+        "name": "BlackBerry",
+        "type": "security-product",
+        "alias": [
+          "BlackBerry"
+        ]
+      },
+      {
+        "name": "Ethereum Wallet",
+        "type": "crypto-wallet",
+        "alias": [
+          "Ethereum Wallet"
+        ]
+      },
+      {
+        "name": "MyMonero Wallet",
+        "type": "crypto-wallet",
+        "alias": [
+          "MyMonero Wallet"
+        ]
+      },
+      {
+        "name": "Atomic Wallet",
+        "type": "crypto-wallet",
+        "alias": [
+          "Atomic Wallet"
+        ]
+      },
+      {
+        "name": "OpenVPN",
+        "type": "remote access application",
+        "alias": [
+          "OpenVPN"
+        ]
+      },
+      {
+        "name": "Remote Desktop Protocol",
+        "type": "remote access application",
+        "alias": [
+          "RDP"
+        ]
+      },
+      {
+        "name": "command and control (C2) communications",
+        "type": "attack-pattern",
+        "alias": [
+          "C2"
+        ]
+      },
+      {
+        "name": "dropper",
+        "type": "attack-pattern",
+        "alias": [
+          "dropper and loader"
+        ]
+      },
+      {
+        "name": "loader",
+        "type": "attack-pattern",
+        "alias": [
+          "loader"
+        ]
+      },
+      {
+        "name": "hollowing shell code",
+        "type": "attack-pattern",
+        "alias": [
+          "hollowing"
+        ]
+      },
+      {
+        "name": "PowerShell scripts",
+        "type": "file",
+        "alias": [
+          "PowerShell scripts and commands"
+        ]
+      },
+      {
+        "name": "computer name",
+        "type": "credential-value",
+        "alias": [
+          "computer name"
+        ]
+      },
+      {
+        "name": "user's admin privileges",
+        "type": "credential-value",
+        "alias": [
+          "admin privileges"
+        ]
+      },
+      {
+        "name": "cookies",
+        "type": "credential-value",
+        "alias": [
+          "cookies"
+        ]
+      },
+      {
+        "name": "Web data",
+        "type": "credential-value",
+        "alias": [
+          "Web data"
+        ]
+      },
+      {
+        "name": "browser password manager information",
+        "type": "credential-value",
+        "alias": [
+          "password manager information"
+        ]
+      },
+      {
+        "name": "logins for crypto-wallets",
+        "type": "credential-value",
+        "alias": [
+          "crypto-wallet logins"
+        ]
+      },
+      {
+        "name": "remote access apps",
+        "type": "remote access application",
+        "alias": [
+          "remote access applications"
+        ]
+      },
+      {
+        "name": "legitimate-looking, digitally signed payloads",
+        "type": "hacker-tool",
+        "alias": [
+          "digitally signed payloads"
+        ]
+      },
+      {
+        "name": "late October",
+        "type": "date",
+        "alias": [
+          "October 2023"
+        ]
+      },
+      {
+        "name": "researchers",
+        "type": "identity",
+        "alias": [
+          "Security researchers"
+        ]
+      },
+      {
+        "name": "information stealer",
+        "type": "malware",
+        "alias": [
+          "information stealer"
+        ]
+      },
+      {
+        "name": "backdoor",
+        "type": "malware",
+        "alias": [
+          "full-fledged backdoor"
+        ]
+      },
+      {
+        "name": "vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "vulnerability"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "researchers",
+        "rel": "have spotted",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "attacks involving Jupyter"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "is a variant of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Jupyter"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Chrome"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Edge"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Firefox"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "has been targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Chrome, Edge, and Firefox browsers since at least 2020"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "is also referred to as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Yellow Cockatoo"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "is also referred to as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Solarmarker"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "is also referred to as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Polazert"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "can backdoor",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "machines"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvests",
+        "rel_type": [
+          "harvests"
+        ],
+        "obj": "computer name"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvests",
+        "rel_type": [
+          "harvests"
+        ],
+        "obj": "user's admin privileges"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvests",
+        "rel_type": [
+          "harvests"
+        ],
+        "obj": "cookies"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvests",
+        "rel_type": [
+          "harvests"
+        ],
+        "obj": "Web data"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvests",
+        "rel_type": [
+          "harvests"
+        ],
+        "obj": "browser password manager information"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvests",
+        "rel_type": [
+          "harvests"
+        ],
+        "obj": "logins for crypto-wallets"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvests",
+        "rel_type": [
+          "harvests"
+        ],
+        "obj": "remote access apps"
+      },
+      {
+        "sub": "researchers from VMware's Carbon Black",
+        "rel": "observed",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "the new version of the malware"
+      },
+      {
+        "sub": "the new version of the malware",
+        "rel": "leveraging",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "PowerShell command modifications"
+      },
+      {
+        "sub": "the new version of the malware",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "legitimate-looking, digitally signed payloads"
+      },
+      {
+        "sub": "the new version of the malware",
+        "rel": "infecting",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "a steadily rising number of systems"
+      },
+      {
+        "sub": "the new version of the malware",
+        "rel": "infecting",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "systems since late October"
+      },
+      {
+        "sub": "Morphisec and BlackBerry",
+        "rel": "have previously tracked",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Jupyter"
+      },
+      {
+        "sub": "Morphisec and BlackBerry",
+        "rel": "identified",
+        "rel_type": [
+          "identified"
+        ],
+        "obj": "Jupyter as capable of functioning as a full-fledged backdoor"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "is capable of functioning as",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "a full-fledged backdoor"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "supports",
+        "rel_type": [
+          "supports"
+        ],
+        "obj": "command and control (C2) communications"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "acts as",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "a dropper and loader for other malware"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "hollowing shell code to evade detection",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "hollowing shell code"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "PowerShell scripts and commands"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Ethereum Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "MyMonero Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Atomic Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "accessing",
+        "rel_type": [
+          "accesses"
+        ],
+        "obj": "OpenVPN"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "accessing",
+        "rel_type": [
+          "accesses"
+        ],
+        "obj": "Remote Desktop Protocol"
+      },
+      {
+        "sub": "BlackBerry",
+        "rel": "has reported observing",
+        "rel_type": [
+          "observes"
+        ],
+        "obj": "Jupyter"
+      }
+    ]
+  }
+}

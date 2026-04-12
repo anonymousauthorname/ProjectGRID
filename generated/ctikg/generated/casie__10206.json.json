@@ -1,0 +1,102 @@
+{
+  "sample_id": "casie__10206.json",
+  "sample_index": 37,
+  "source": "casie",
+  "file_name": "10206.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "remote attacker",
+        "rel": "execute",
+        "obj": "malware"
+      },
+      {
+        "sub": "remote attacker",
+        "rel": "uses",
+        "obj": "malicious container image"
+      },
+      {
+        "sub": "remote attacker",
+        "rel": "is tricked to",
+        "obj": "import container image"
+      },
+      {
+        "sub": "administrator",
+        "rel": "is tricked to",
+        "obj": "import container image"
+      },
+      {
+        "sub": "Docker",
+        "rel": "uses",
+        "obj": "hcsshim"
+      },
+      {
+        "sub": "attacker",
+        "rel": "exploits",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "attacker",
+        "rel": "executes",
+        "obj": "arbitrary code"
+      },
+      {
+        "sub": "arbitrary code",
+        "rel": "runs on",
+        "obj": "operating system"
+      },
+      {
+        "sub": "filepath.Join function",
+        "rel": "enables",
+        "obj": "create files in the host file system"
+      },
+      {
+        "sub": "filepath.Join function",
+        "rel": "enables",
+        "obj": "remove files in the host file system"
+      },
+      {
+        "sub": "filepath.Join function",
+        "rel": "enables",
+        "obj": "replace files in the host file system"
+      },
+      {
+        "sub": "input",
+        "rel": "leads to",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "create files in the host file system",
+        "rel": "leads to",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "remove files in the host file system",
+        "rel": "leads to",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "replace files in the host file system",
+        "rel": "leads to",
+        "obj": "remote code execution"
+      }
+    ]
+  }
+}

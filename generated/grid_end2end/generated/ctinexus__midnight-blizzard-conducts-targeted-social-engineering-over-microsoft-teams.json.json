@@ -1,0 +1,327 @@
+{
+  "sample_id": "ctinexus__midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams.json",
+  "sample_index": 60,
+  "source": "ctinexus",
+  "file_name": "midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Microsoft Threat Intelligence",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "highly targeted social engineering attacks",
+        "type": "attack-pattern",
+        "alias": [
+          "This latest attack"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "credential theft phishing lures",
+        "type": "campaign",
+        "alias": [
+          "lures"
+        ],
+        "mother entity": [
+          "highly targeted social engineering attacks"
+        ]
+      },
+      {
+        "name": "Microsoft Teams chats",
+        "type": "general-software",
+        "alias": [
+          "Teams messages"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the threat actor",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Midnight Blizzard",
+          "Midnight Blizzard (previously tracked as NOBELIUM)",
+          "the attacker"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Midnight Blizzard",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "previously tracked as NOBELIUM"
+        ],
+        "mother entity": [
+          "the threat actor"
+        ]
+      },
+      {
+        "name": "NOBELIUM",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": [
+          "Midnight Blizzard"
+        ]
+      },
+      {
+        "name": "previously compromised Microsoft 365 tenants",
+        "type": "identity",
+        "alias": [
+          "tenants owned by small businesses"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "small businesses",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "new domains",
+        "type": "domain-name",
+        "alias": [
+          "domains from compromised tenants"
+        ],
+        "mother entity": [
+          "the threat actor"
+        ]
+      },
+      {
+        "name": "technical support entities",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": [
+          "new domains"
+        ]
+      },
+      {
+        "name": "Teams messages",
+        "type": "general-software",
+        "alias": [
+          "Teams chats"
+        ],
+        "mother entity": [
+          "the threat actor"
+        ]
+      },
+      {
+        "name": "lures that attempt to steal credentials",
+        "type": "campaign",
+        "alias": [
+          "lures"
+        ],
+        "mother entity": [
+          "the threat actor"
+        ]
+      },
+      {
+        "name": "a targeted organization",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "multifactor authentication (MFA) prompts",
+        "type": "course-of-action",
+        "alias": [
+          "MFA prompts"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "authentication requests not initiated by the user",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "organizations",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "security best practices",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the real thing",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": [
+          "technical support entities"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft Threat Intelligence",
+        "rel": "has identified",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "highly targeted social engineering attacks"
+      },
+      {
+        "sub": "highly targeted social engineering attacks",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "credential theft phishing lures"
+      },
+      {
+        "sub": "credential theft phishing lures",
+        "rel": "sent as",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Microsoft Teams chats"
+      },
+      {
+        "sub": "the threat actor",
+        "rel": "tracks as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Midnight Blizzard"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "previously tracked as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "NOBELIUM"
+      },
+      {
+        "sub": "the threat actor",
+        "rel": "uses",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "previously compromised Microsoft 365 tenants"
+      },
+      {
+        "sub": "previously compromised Microsoft 365 tenants",
+        "rel": "owned by",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "small businesses"
+      },
+      {
+        "sub": "the threat actor",
+        "rel": "create",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "new domains"
+      },
+      {
+        "sub": "new domains",
+        "rel": "appear as",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "technical support entities"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "leverages",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Teams messages"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "send",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "lures that attempt to steal credentials"
+      },
+      {
+        "sub": "lures that attempt to steal credentials",
+        "rel": "attempt to steal credentials from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a targeted organization"
+      },
+      {
+        "sub": "lures that attempt to steal credentials",
+        "rel": "engage",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "user"
+      },
+      {
+        "sub": "lures that attempt to steal credentials",
+        "rel": "elicit approval of",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "multifactor authentication (MFA) prompts"
+      },
+      {
+        "sub": "Microsoft Threat Intelligence",
+        "rel": "encourage",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "organizations"
+      },
+      {
+        "sub": "organizations",
+        "rel": "reinforce",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "security best practices"
+      },
+      {
+        "sub": "authentication requests not initiated by the user",
+        "rel": "should be treated as",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "malicious",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "technical support entities",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the real thing"
+      }
+    ]
+  }
+}

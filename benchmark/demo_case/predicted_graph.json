@@ -1,0 +1,62 @@
+{
+  "entities": [
+    {
+      "name": "APT28",
+      "type": "threat-actor-or-intrusion-set"
+    },
+    {
+      "name": "phishing email",
+      "type": "file"
+    },
+    {
+      "name": "Outlook users",
+      "type": "identity"
+    },
+    {
+      "name": "CVE-2023-23397",
+      "type": "vulnerability"
+    },
+    {
+      "name": "malicious attachment",
+      "type": "file"
+    },
+    {
+      "name": "backdoor",
+      "type": "malware"
+    }
+  ],
+  "relations": [
+    {
+      "sub": "APT28",
+      "rel": "used",
+      "rel_type": [
+        "uses"
+      ],
+      "obj": "phishing email"
+    },
+    {
+      "sub": "APT28",
+      "rel": "targeted",
+      "rel_type": [
+        "targets"
+      ],
+      "obj": "Outlook users"
+    },
+    {
+      "sub": "phishing email",
+      "rel": "delivered",
+      "rel_type": [
+        "delivers"
+      ],
+      "obj": "malicious attachment"
+    },
+    {
+      "sub": "malicious attachment",
+      "rel": "downloaded",
+      "rel_type": [
+        "downloads"
+      ],
+      "obj": "backdoor"
+    }
+  ]
+}

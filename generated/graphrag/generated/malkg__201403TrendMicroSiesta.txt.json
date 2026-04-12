@@ -1,0 +1,375 @@
+{
+  "sample_id": "malkg__201403TrendMicroSiesta.txt",
+  "sample_index": 124,
+  "source": "malkg",
+  "file_name": "201403TrendMicroSiesta.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SIESTA CAMPAIGN",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "TROJ_SLOTH",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BKDR_SLOTH.B",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BKDR_SLOTH.A",
+        "type": "MALWARE"
+      },
+      {
+        "name": "google{BLOCKED}.exe",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "micro{BLOCKED}.com",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "sky{BLOCKED}.com",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "ifued{BLOCKED}.net",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "Li Ning",
+        "type": "PERSON"
+      },
+      {
+        "name": "xiaomao{BLOCKED}@163.com",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "SPEAR-PHISHING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "SLEEP COMMAND",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "DOWNLOAD COMMAND",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "RUN1",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "RUN2",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "RUN3",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "HTTP COMMAND",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "X_ COMMAND",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "DOWNLOAD: URL",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "TREND MICRO",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CONSUMER GOODS AND SERVICES",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "ENERGY",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "FINANCE",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "HEALTHCARE",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "MEDIA AND TELECOMMUNICATIONS",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "PUBLIC ADMINISTRATION",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "SECURITY AND DEFENSE",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "TRANSPORT AND TRAFFIC",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "SPEAR-PHISHING EMAIL",
+        "type": "EVENT"
+      },
+      {
+        "name": "FILE DOWNLOAD LINK",
+        "type": "LOCATION"
+      },
+      {
+        "name": "LEGITIMATE ARCHIVE NAME",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "UIODsevr.exe",
+        "type": "MALWARE"
+      },
+      {
+        "name": "TREND MICRO DEEP DISCOVERY",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "TROJ_SLOTH"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "BKDR_SLOTH.B"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "BKDR_SLOTH.A"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "SPEAR-PHISHING"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "SLEEP COMMAND"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "DOWNLOAD COMMAND"
+      },
+      {
+        "sub": "TROJ_SLOTH",
+        "rel": "related_to",
+        "obj": "google{BLOCKED}.exe"
+      },
+      {
+        "sub": "TROJ_SLOTH",
+        "rel": "related_to",
+        "obj": "micro{BLOCKED}.com"
+      },
+      {
+        "sub": "BKDR_SLOTH.B",
+        "rel": "related_to",
+        "obj": "micro{BLOCKED}.com"
+      },
+      {
+        "sub": "BKDR_SLOTH.A",
+        "rel": "related_to",
+        "obj": "sky{BLOCKED}.com"
+      },
+      {
+        "sub": "BKDR_SLOTH.A",
+        "rel": "related_to",
+        "obj": "UIODsevr.exe"
+      },
+      {
+        "sub": "Li Ning",
+        "rel": "related_to",
+        "obj": "sky{BLOCKED}.com"
+      },
+      {
+        "sub": "Li Ning",
+        "rel": "related_to",
+        "obj": "micro{BLOCKED}.com"
+      },
+      {
+        "sub": "Li Ning",
+        "rel": "related_to",
+        "obj": "ifued{BLOCKED}.net"
+      },
+      {
+        "sub": "Li Ning",
+        "rel": "related_to",
+        "obj": "xiaomao{BLOCKED}@163.com"
+      },
+      {
+        "sub": "xiaomao{BLOCKED}@163.com",
+        "rel": "related_to",
+        "obj": "sky{BLOCKED}.com"
+      },
+      {
+        "sub": "xiaomao{BLOCKED}@163.com",
+        "rel": "related_to",
+        "obj": "micro{BLOCKED}.com"
+      },
+      {
+        "sub": "xiaomao{BLOCKED}@163.com",
+        "rel": "related_to",
+        "obj": "ifued{BLOCKED}.net"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "SPEAR-PHISHING EMAIL"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "FILE DOWNLOAD LINK"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "LEGITIMATE ARCHIVE NAME"
+      },
+      {
+        "sub": "TREND MICRO",
+        "rel": "related_to",
+        "obj": "SIESTA CAMPAIGN"
+      },
+      {
+        "sub": "TREND MICRO",
+        "rel": "related_to",
+        "obj": "TREND MICRO DEEP DISCOVERY"
+      },
+      {
+        "sub": "SLEEP COMMAND",
+        "rel": "related_to",
+        "obj": "SIESTA CAMPAIGN"
+      },
+      {
+        "sub": "DOWNLOAD COMMAND",
+        "rel": "related_to",
+        "obj": "SIESTA CAMPAIGN"
+      },
+      {
+        "sub": "RUN1",
+        "rel": "related_to",
+        "obj": "SIESTA CAMPAIGN"
+      },
+      {
+        "sub": "RUN2",
+        "rel": "related_to",
+        "obj": "SIESTA CAMPAIGN"
+      },
+      {
+        "sub": "RUN3",
+        "rel": "related_to",
+        "obj": "SIESTA CAMPAIGN"
+      },
+      {
+        "sub": "HTTP COMMAND",
+        "rel": "related_to",
+        "obj": "SIESTA CAMPAIGN"
+      },
+      {
+        "sub": "X_ COMMAND",
+        "rel": "related_to",
+        "obj": "SIESTA CAMPAIGN"
+      },
+      {
+        "sub": "DOWNLOAD: URL",
+        "rel": "related_to",
+        "obj": "SIESTA CAMPAIGN"
+      },
+      {
+        "sub": "TROJ_SLOTH",
+        "rel": "related_to",
+        "obj": "SLEEP COMMAND"
+      },
+      {
+        "sub": "TROJ_SLOTH",
+        "rel": "related_to",
+        "obj": "DOWNLOAD COMMAND"
+      },
+      {
+        "sub": "BKDR_SLOTH.B",
+        "rel": "related_to",
+        "obj": "SLEEP COMMAND"
+      },
+      {
+        "sub": "BKDR_SLOTH.A",
+        "rel": "related_to",
+        "obj": "SLEEP COMMAND"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "CONSUMER GOODS AND SERVICES"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "ENERGY"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "FINANCE"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "HEALTHCARE"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "MEDIA AND TELECOMMUNICATIONS"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "PUBLIC ADMINISTRATION"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "SECURITY AND DEFENSE"
+      },
+      {
+        "sub": "SIESTA CAMPAIGN",
+        "rel": "related_to",
+        "obj": "TRANSPORT AND TRAFFIC"
+      }
+    ]
+  }
+}

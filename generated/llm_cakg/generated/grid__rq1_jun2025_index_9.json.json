@@ -1,0 +1,236 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_9.json",
+  "sample_index": 248,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_9.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2014-1761",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Word",
+        "type": "Entity"
+      },
+      {
+        "name": "RTF file",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Outlook",
+        "type": "Entity"
+      },
+      {
+        "name": "Protected View",
+        "type": "Entity"
+      },
+      {
+        "name": "HEURRTFEXP.A",
+        "type": "Entity"
+      },
+      {
+        "name": "TROJARTIEF.NSA",
+        "type": "Entity"
+      },
+      {
+        "name": "TROJARTIEF.NSB",
+        "type": "Entity"
+      },
+      {
+        "name": "zero-day vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "exploit code",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Office 2003",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Word 2003",
+        "type": "Entity"
+      },
+      {
+        "name": "Trend Micro Deep Security",
+        "type": "Entity"
+      },
+      {
+        "name": "deep packet inspection (DPI) rule",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Word 2010",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Outlook 2007",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Outlook 2010",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Outlook 2013",
+        "type": "Entity"
+      },
+      {
+        "name": "fixtool",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability exploitation",
+        "type": "Entity"
+      },
+      {
+        "name": "specially crafted files",
+        "type": "Entity"
+      },
+      {
+        "name": "email messages",
+        "type": "Entity"
+      },
+      {
+        "name": "RTF email message",
+        "type": "Entity"
+      },
+      {
+        "name": "disable opening of RTF files",
+        "type": "Entity"
+      },
+      {
+        "name": "enforce Protected View",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2014-1761",
+        "rel": "affects",
+        "obj": "Microsoft Word"
+      },
+      {
+        "sub": "CVE-2014-1761",
+        "rel": "affects",
+        "obj": "Microsoft Word 2010"
+      },
+      {
+        "sub": "CVE-2014-1761",
+        "rel": "affects",
+        "obj": "Microsoft Office 2003"
+      },
+      {
+        "sub": "CVE-2014-1761",
+        "rel": "allows",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "CVE-2014-1761",
+        "rel": "is exploited by",
+        "obj": "specially crafted files"
+      },
+      {
+        "sub": "CVE-2014-1761",
+        "rel": "is exploited via",
+        "obj": "email messages"
+      },
+      {
+        "sub": "RTF file",
+        "rel": "is opened in",
+        "obj": "Microsoft Word"
+      },
+      {
+        "sub": "RTF email message",
+        "rel": "is opened in",
+        "obj": "Microsoft Outlook"
+      },
+      {
+        "sub": "Microsoft Outlook 2007",
+        "rel": "uses",
+        "obj": "Microsoft Word as default email viewer"
+      },
+      {
+        "sub": "Microsoft Outlook 2010",
+        "rel": "uses",
+        "obj": "Microsoft Word as default email viewer"
+      },
+      {
+        "sub": "Microsoft Outlook 2013",
+        "rel": "uses",
+        "obj": "Microsoft Word as default email viewer"
+      },
+      {
+        "sub": "CVE-2014-1761",
+        "rel": "is exploited through",
+        "obj": "exploit code"
+      },
+      {
+        "sub": "CVE-2014-1761",
+        "rel": "is mitigated by",
+        "obj": "disable opening of RTF files"
+      },
+      {
+        "sub": "CVE-2014-1761",
+        "rel": "is mitigated by",
+        "obj": "enforce Protected View"
+      },
+      {
+        "sub": "CVE-2014-1761",
+        "rel": "is mitigated by",
+        "obj": "fixtool"
+      },
+      {
+        "sub": "HEURRTFEXP.A",
+        "rel": "is associated with",
+        "obj": "CVE-2014-1761"
+      },
+      {
+        "sub": "TROJARTIEF.NSA",
+        "rel": "is associated with",
+        "obj": "CVE-2014-1761"
+      },
+      {
+        "sub": "TROJARTIEF.NSB",
+        "rel": "is associated with",
+        "obj": "CVE-2014-1761"
+      },
+      {
+        "sub": "Trend Micro Deep Security",
+        "rel": "has released",
+        "obj": "deep packet inspection (DPI) rule"
+      },
+      {
+        "sub": "deep packet inspection (DPI) rule",
+        "rel": "detects",
+        "obj": "exploits of CVE-2014-1761"
+      }
+    ]
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_21.json",
+  "sample_index": 213,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_21.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "spammers",
+        "type": "Unknown"
+      },
+      {
+        "name": "malicious macros",
+        "type": "Unknown"
+      },
+      {
+        "name": "IcedID",
+        "type": "Unknown"
+      },
+      {
+        "name": "Qbot",
+        "type": "Unknown"
+      },
+      {
+        "name": "zipped Excel file",
+        "type": "Unknown"
+      },
+      {
+        "name": "CompensationClaim",
+        "type": "Unknown"
+      },
+      {
+        "name": "seemingly important documents",
+        "type": "Unknown"
+      },
+      {
+        "name": "business correspondence",
+        "type": "Unknown"
+      },
+      {
+        "name": "link to hacked website",
+        "type": "Unknown"
+      },
+      {
+        "name": "hacked website",
+        "type": "Unknown"
+      },
+      {
+        "name": "archive containing document",
+        "type": "Unknown"
+      },
+      {
+        "name": "bank card details",
+        "type": "Unknown"
+      },
+      {
+        "name": "login credentials",
+        "type": "Unknown"
+      },
+      {
+        "name": "ransomware",
+        "type": "Unknown"
+      },
+      {
+        "name": "passwords",
+        "type": "Unknown"
+      },
+      {
+        "name": "email threads",
+        "type": "Unknown"
+      },
+      {
+        "name": "victim's computer",
+        "type": "Unknown"
+      },
+      {
+        "name": "users' machines",
+        "type": "Unknown"
+      },
+      {
+        "name": "spam campaigns",
+        "type": "Unknown"
+      },
+      {
+        "name": "July 9, 2021",
+        "type": "Unknown"
+      },
+      {
+        "name": "malicious attachments",
+        "type": "Unknown"
+      },
+      {
+        "name": "macro execution",
+        "type": "Unknown"
+      },
+      {
+        "name": "download of IcedID or Qbot",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "spammers",
+        "rel": "use",
+        "obj": "malicious macros"
+      },
+      {
+        "sub": "malicious macros",
+        "rel": "distribute",
+        "obj": "IcedID"
+      },
+      {
+        "sub": "malicious macros",
+        "rel": "distribute",
+        "obj": "Qbot"
+      },
+      {
+        "sub": "malicious macros",
+        "rel": "embedded in",
+        "obj": "zipped Excel file"
+      },
+      {
+        "sub": "zipped Excel file",
+        "rel": "named",
+        "obj": "CompensationClaim"
+      },
+      {
+        "sub": "spammers",
+        "rel": "send",
+        "obj": "seemingly important documents"
+      },
+      {
+        "sub": "seemingly important documents",
+        "rel": "disguised as",
+        "obj": "business correspondence"
+      },
+      {
+        "sub": "spammers",
+        "rel": "include",
+        "obj": "link to hacked website"
+      },
+      {
+        "sub": "hacked website",
+        "rel": "host",
+        "obj": "archive containing document"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "steals",
+        "obj": "bank card details"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "steals",
+        "obj": "login credentials"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "can download",
+        "obj": "ransomware"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "logs keystrokes",
+        "obj": "passwords"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "steals",
+        "obj": "email threads"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "provides remote access to",
+        "obj": "victim's computer"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "infects",
+        "obj": "users' machines"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "infects",
+        "obj": "users' machines"
+      },
+      {
+        "sub": "spammers",
+        "rel": "conduct",
+        "obj": "spam campaigns"
+      },
+      {
+        "sub": "spam campaigns",
+        "rel": "first observed",
+        "obj": "July 9, 2021"
+      },
+      {
+        "sub": "malicious attachments",
+        "rel": "trigger",
+        "obj": "macro execution"
+      },
+      {
+        "sub": "macro execution",
+        "rel": "leads to",
+        "obj": "download of IcedID or Qbot"
+      },
+      {
+        "sub": "archive containing document",
+        "rel": "contains",
+        "obj": "Qbot"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "can be delivered via",
+        "obj": "macro execution"
+      }
+    ]
+  }
+}

@@ -1,0 +1,651 @@
+{
+  "sample_id": "securenlp__BlackEnergy2_Plugins_Router",
+  "sample_index": 188,
+  "source": "securenlp",
+  "file_name": "BlackEnergy2_Plugins_Router",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "BlackEnergy",
+        "type": "malware"
+      },
+      {
+        "name": "BlackEnergy2",
+        "type": "malware"
+      },
+      {
+        "name": "BlackEnergy3",
+        "type": "malware"
+      },
+      {
+        "name": "BlackEnergy2 APT",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Sandworm Team",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "custom plugins",
+        "type": "detailed-part-of-malware-or-hackertool"
+      },
+      {
+        "name": "ARM platforms",
+        "type": "platform"
+      },
+      {
+        "name": "MIPS platforms",
+        "type": "platform"
+      },
+      {
+        "name": "Cisco network devices",
+        "type": "infrastructure"
+      },
+      {
+        "name": "SCADA networks",
+        "type": "location"
+      },
+      {
+        "name": "main.dll",
+        "type": "general-software"
+      },
+      {
+        "name": "CnC server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "configuration files",
+        "type": "file"
+      },
+      {
+        "name": "weap_hwi",
+        "type": "plugin"
+      },
+      {
+        "name": "ps",
+        "type": "plugin"
+      },
+      {
+        "name": "vsnet",
+        "type": "plugin"
+      },
+      {
+        "name": "weap_msl",
+        "type": "plugin"
+      },
+      {
+        "name": "weap_mps",
+        "type": "plugin"
+      },
+      {
+        "name": "nm_hwi",
+        "type": "plugin"
+      },
+      {
+        "name": "nm_mps",
+        "type": "plugin"
+      },
+      {
+        "name": "nm_msl",
+        "type": "plugin"
+      },
+      {
+        "name": "ddos plugin",
+        "type": "plugin"
+      },
+      {
+        "name": "hook main module",
+        "type": "general-software"
+      },
+      {
+        "name": "Linux Hook main module",
+        "type": "general-software"
+      },
+      {
+        "name": "Windows main.dll",
+        "type": "general-software"
+      },
+      {
+        "name": "cert",
+        "type": "plugin"
+      },
+      {
+        "name": "sn",
+        "type": "plugin"
+      },
+      {
+        "name": "tv",
+        "type": "plugin"
+      },
+      {
+        "name": "prx",
+        "type": "plugin"
+      },
+      {
+        "name": "dstr",
+        "type": "plugin"
+      },
+      {
+        "name": "kl",
+        "type": "plugin"
+      },
+      {
+        "name": "upd",
+        "type": "plugin"
+      },
+      {
+        "name": "usb",
+        "type": "plugin"
+      },
+      {
+        "name": "bios",
+        "type": "plugin"
+      },
+      {
+        "name": "fs",
+        "type": "plugin"
+      },
+      {
+        "name": "ss",
+        "type": "plugin"
+      },
+      {
+        "name": "rd",
+        "type": "plugin"
+      },
+      {
+        "name": "scan",
+        "type": "plugin"
+      },
+      {
+        "name": "grc",
+        "type": "plugin"
+      },
+      {
+        "name": "jn",
+        "type": "plugin"
+      },
+      {
+        "name": "hook",
+        "type": "plugin"
+      },
+      {
+        "name": "uper",
+        "type": "plugin"
+      },
+      {
+        "name": "die",
+        "type": "command"
+      },
+      {
+        "name": "kill",
+        "type": "command"
+      },
+      {
+        "name": "lexec",
+        "type": "command"
+      },
+      {
+        "name": "rexec",
+        "type": "command"
+      },
+      {
+        "name": "update",
+        "type": "command"
+      },
+      {
+        "name": "migrate",
+        "type": "command"
+      },
+      {
+        "name": "188.128.123.52",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "212.175.109.10",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "94.185.85.122",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "46.165.222.28",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "plus.google.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "115125387226417117030",
+        "type": "email-address"
+      },
+      {
+        "name": "116769597454024178039",
+        "type": "email-address"
+      },
+      {
+        "name": "Russian Ministry of Defense",
+        "type": "organization"
+      },
+      {
+        "name": "Turkish Ministry of Interior",
+        "type": "organization"
+      },
+      {
+        "name": "Siemens SCADA software",
+        "type": "software"
+      },
+      {
+        "name": "ccprojectmgr.exe",
+        "type": "file"
+      },
+      {
+        "name": "95.211.122.36",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "46.165.222.101",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "46.165.222.6",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "89.149.223.205",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "85.17.94.134",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "46.4.28.218",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "78.46.40.239",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "95.143.193.182",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "188.227.176.74",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "93.170.127.100",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "37.220.34.56",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "194.28.172.58",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "124.217.253.10",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "84.19.161.123",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "109.236.88.12",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "212.124.110.62",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "5.61.38.31",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "5.255.87.39",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "build_id",
+        "type": "technical-attribute"
+      },
+      {
+        "name": "0C0703hji",
+        "type": "technical-attribute"
+      },
+      {
+        "name": "100914_mg",
+        "type": "technical-attribute"
+      },
+      {
+        "name": "winntd_.dat",
+        "type": "file"
+      },
+      {
+        "name": "winntd.dat",
+        "type": "file"
+      },
+      {
+        "name": "wincache.dat",
+        "type": "file"
+      },
+      {
+        "name": "mlang.dat",
+        "type": "file"
+      },
+      {
+        "name": "osver32nt.dat",
+        "type": "file"
+      },
+      {
+        "name": "wind002.dat",
+        "type": "file"
+      },
+      {
+        "name": "settings.sol",
+        "type": "file"
+      },
+      {
+        "name": "winver.dat",
+        "type": "file"
+      },
+      {
+        "name": "cache.dat",
+        "type": "file"
+      },
+      {
+        "name": "flashplayerapp.exe",
+        "type": "file"
+      },
+      {
+        "name": "FONTCACHE.DAT",
+        "type": "file"
+      },
+      {
+        "name": "Ciscoapi.tcl",
+        "type": "file"
+      },
+      {
+        "name": "Killint.tcl",
+        "type": "file"
+      },
+      {
+        "name": "telnetapi2.tcl",
+        "type": "file"
+      },
+      {
+        "name": "telnetu.tcl",
+        "type": "file"
+      },
+      {
+        "name": "stub.tcl",
+        "type": "file"
+      },
+      {
+        "name": "stub1.tcl",
+        "type": "file"
+      },
+      {
+        "name": "Zip archive",
+        "type": "file"
+      },
+      {
+        "name": "EXE file",
+        "type": "file"
+      },
+      {
+        "name": "WinRAR flaw",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Metasploit module",
+        "type": "tool"
+      },
+      {
+        "name": "SCADA networks",
+        "type": "location"
+      },
+      {
+        "name": "power generation site owners",
+        "type": "victim-profile"
+      },
+      {
+        "name": "power facilities construction",
+        "type": "victim-profile"
+      },
+      {
+        "name": "power generation operators",
+        "type": "victim-profile"
+      },
+      {
+        "name": "large suppliers and manufacturers of heavy power related materials",
+        "type": "victim-profile"
+      },
+      {
+        "name": "investors",
+        "type": "victim-profile"
+      },
+      {
+        "name": "high level government",
+        "type": "victim-profile"
+      },
+      {
+        "name": "other ICS construction",
+        "type": "victim-profile"
+      },
+      {
+        "name": "federal land holding agencies",
+        "type": "victim-profile"
+      },
+      {
+        "name": "municipal offices",
+        "type": "victim-profile"
+      },
+      {
+        "name": "federal emergency services",
+        "type": "victim-profile"
+      },
+      {
+        "name": "space and earth measurement and assessment labs",
+        "type": "victim-profile"
+      },
+      {
+        "name": "national standards body",
+        "type": "victim-profile"
+      },
+      {
+        "name": "banks",
+        "type": "victim-profile"
+      },
+      {
+        "name": "high-tech transportation",
+        "type": "victim-profile"
+      },
+      {
+        "name": "academic research",
+        "type": "victim-profile"
+      },
+      {
+        "name": "geopolitical operations",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "DDoS attacks",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "exploits",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "lateral movement",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "hardcoded ip C2 addresses",
+        "type": "indicator"
+      },
+      {
+        "name": "Tor exit node",
+        "type": "infrastructure"
+      },
+      {
+        "name": "plain text http",
+        "type": "security-product"
+      },
+      {
+        "name": "encrypted https",
+        "type": "security-product"
+      },
+      {
+        "name": "traffic logs",
+        "type": "data"
+      },
+      {
+        "name": "CDP neighbors",
+        "type": "data"
+      },
+      {
+        "name": "Russia",
+        "type": "location"
+      },
+      {
+        "name": "Ukraine",
+        "type": "location"
+      },
+      {
+        "name": "Poland",
+        "type": "location"
+      },
+      {
+        "name": "Lithuania",
+        "type": "location"
+      },
+      {
+        "name": "Belarus",
+        "type": "location"
+      },
+      {
+        "name": "Azerbaijan",
+        "type": "location"
+      },
+      {
+        "name": "Kyrgyzstan",
+        "type": "location"
+      },
+      {
+        "name": "Kazakhstan",
+        "type": "location"
+      },
+      {
+        "name": "Iran",
+        "type": "location"
+      },
+      {
+        "name": "Israel",
+        "type": "location"
+      },
+      {
+        "name": "Turkey",
+        "type": "location"
+      },
+      {
+        "name": "Libya",
+        "type": "location"
+      },
+      {
+        "name": "Kuwait",
+        "type": "location"
+      },
+      {
+        "name": "Taiwan",
+        "type": "location"
+      },
+      {
+        "name": "Vietnam",
+        "type": "location"
+      },
+      {
+        "name": "India",
+        "type": "location"
+      },
+      {
+        "name": "Croatia",
+        "type": "location"
+      },
+      {
+        "name": "Germany",
+        "type": "location"
+      },
+      {
+        "name": "Belgium",
+        "type": "location"
+      },
+      {
+        "name": "Sweden",
+        "type": "location"
+      },
+      {
+        "name": "Kaspersky Lab",
+        "type": "security-product"
+      },
+      {
+        "name": "vulnerability",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Cisco",
+        "type": "organization"
+      },
+      {
+        "name": "Siemens",
+        "type": "organization"
+      },
+      {
+        "name": "Botnet History Illustrated by BlackEnergy 2",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "BlackEnergy and Quedagh",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "Sandworm, iSIGHT Partners",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "ICS-ALERT-14-281-01A",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      }
+    ],
+    "relations": []
+  }
+}

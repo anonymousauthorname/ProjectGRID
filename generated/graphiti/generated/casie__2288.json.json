@@ -1,0 +1,157 @@
+{
+  "sample_id": "casie__2288.json",
+  "sample_index": 31,
+  "source": "casie",
+  "file_name": "2288.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DocuSign",
+        "type": "Organization"
+      },
+      {
+        "name": "malware",
+        "type": "Malware"
+      },
+      {
+        "name": "phishing",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Microsoft Word",
+        "type": "Software"
+      },
+      {
+        "name": "docusign.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "docusgn.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "https://www.docusign.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "https://www.docusign.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "email addresses",
+        "type": "Indicator"
+      },
+      {
+        "name": "attackers",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "malicious third party",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "non-core system",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "service-related announcements",
+        "type": "Indicator"
+      },
+      {
+        "name": "Office document",
+        "type": "Software"
+      },
+      {
+        "name": "PDF",
+        "type": "Software"
+      },
+      {
+        "name": "ZIP file",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "malware",
+        "rel": "injected into",
+        "obj": "Microsoft Word"
+      },
+      {
+        "sub": "malicious third party",
+        "rel": "ACCESSED",
+        "obj": "non-core system"
+      },
+      {
+        "sub": "malicious third party",
+        "rel": "STOLEN",
+        "obj": "email addresses"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "enabled phishing attacks for",
+        "obj": "malware"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "targeted by",
+        "obj": "phishing"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "USES",
+        "obj": "docusign.com"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "IMITATED",
+        "obj": "docusgn.com"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "valid links to",
+        "obj": "https://www.docusign.com"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "valid links to",
+        "obj": "https://www.docusign.net"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "attached in",
+        "obj": "Office document"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "never asks to open",
+        "obj": "PDF"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "never asks to open",
+        "obj": "ZIP file"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "sent through",
+        "obj": "service-related announcements"
+      }
+    ]
+  }
+}

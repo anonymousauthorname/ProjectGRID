@@ -1,0 +1,247 @@
+{
+  "sample_id": "casie__1077.json",
+  "sample_index": 4,
+  "source": "casie",
+  "file_name": "1077.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "sendCCNumber()",
+        "type": "Entity"
+      },
+      {
+        "name": "SF9 Realex",
+        "type": "Entity"
+      },
+      {
+        "name": "Realex RealAuth Remote and Redirect",
+        "type": "Entity"
+      },
+      {
+        "name": "binlist.net",
+        "type": "Entity"
+      },
+      {
+        "name": "Magento",
+        "type": "Entity"
+      },
+      {
+        "name": "e-commerce platform",
+        "type": "Entity"
+      },
+      {
+        "name": "credit card information",
+        "type": "Entity"
+      },
+      {
+        "name": "JSON",
+        "type": "Entity"
+      },
+      {
+        "name": "attacker",
+        "type": "Entity"
+      },
+      {
+        "name": "researcher",
+        "type": "Entity"
+      },
+      {
+        "name": "Bruno Zanelato",
+        "type": "Entity"
+      },
+      {
+        "name": "Sucuri",
+        "type": "Entity"
+      },
+      {
+        "name": "Cesar Anjos",
+        "type": "Entity"
+      },
+      {
+        "name": "Powerfront CMS",
+        "type": "Entity"
+      },
+      {
+        "name": "OpenCart",
+        "type": "Entity"
+      },
+      {
+        "name": "web-based keylogger",
+        "type": "Entity"
+      },
+      {
+        "name": "man-in-the-middle attack",
+        "type": "Entity"
+      },
+      {
+        "name": "image files",
+        "type": "Entity"
+      },
+      {
+        "name": "RiskIQ",
+        "type": "Entity"
+      },
+      {
+        "name": "hacking group",
+        "type": "Entity"
+      },
+      {
+        "name": ".php file",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious function",
+        "type": "Entity"
+      },
+      {
+        "name": "script injection",
+        "type": "Entity"
+      },
+      {
+        "name": "module",
+        "type": "Entity"
+      },
+      {
+        "name": "one-click checkout",
+        "type": "Entity"
+      },
+      {
+        "name": "customer credit card data",
+        "type": "Entity"
+      },
+      {
+        "name": "issuer identification numbers (IIN)",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE",
+        "type": "Entity"
+      },
+      {
+        "name": "registry key",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled task",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanism",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "sendCCNumber()",
+        "rel": "uses",
+        "obj": "SF9 Realex"
+      },
+      {
+        "sub": "sendCCNumber()",
+        "rel": "reroutes",
+        "obj": "credit card information"
+      },
+      {
+        "sub": "credit card information",
+        "rel": "is encoded in",
+        "obj": "JSON"
+      },
+      {
+        "sub": "credit card information",
+        "rel": "is sent to",
+        "obj": "attacker"
+      },
+      {
+        "sub": "attacker",
+        "rel": "uses",
+        "obj": "binlist.net"
+      },
+      {
+        "sub": "binlist.net",
+        "rel": "is used to",
+        "obj": "identify issuer identification numbers (IIN)"
+      },
+      {
+        "sub": "SF9 Realex",
+        "rel": "interacts with",
+        "obj": "Realex RealAuth Remote and Redirect"
+      },
+      {
+        "sub": "attacker",
+        "rel": "injects",
+        "obj": ".php file"
+      },
+      {
+        "sub": "attacker",
+        "rel": "takes over",
+        "obj": "SF9 Realex"
+      },
+      {
+        "sub": "attacker",
+        "rel": "performs",
+        "obj": "man-in-the-middle attack"
+      },
+      {
+        "sub": "attacker",
+        "rel": "exfiltrates",
+        "obj": "credit card numbers"
+      },
+      {
+        "sub": "credit card numbers",
+        "rel": "are exfiltrated in",
+        "obj": "image files"
+      },
+      {
+        "sub": "researcher",
+        "rel": "found",
+        "obj": "malicious function"
+      },
+      {
+        "sub": "researcher",
+        "rel": "observed",
+        "obj": "credit card stealers"
+      },
+      {
+        "sub": "RiskIQ",
+        "rel": "monitored",
+        "obj": "attacks"
+      },
+      {
+        "sub": "hacking group",
+        "rel": "targets",
+        "obj": "Powerfront CMS"
+      },
+      {
+        "sub": "hacking group",
+        "rel": "targets",
+        "obj": "OpenCart"
+      },
+      {
+        "sub": "hacking group",
+        "rel": "uses",
+        "obj": "web-based keylogger"
+      },
+      {
+        "sub": "hacking group",
+        "rel": "was active in",
+        "obj": "March 2016"
+      }
+    ]
+  }
+}

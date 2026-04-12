@@ -1,0 +1,615 @@
+{
+  "sample_id": "malkg__201411FSecureOnionDuke.txt",
+  "sample_index": 134,
+  "source": "malkg",
+  "file_name": "201411FSecureOnionDuke.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "a Tor exit node, located in Russia",
+        "type": "infrastructure",
+        "alias": [
+          "Tor exit node",
+          "malicious Tor exit node"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "uncompressed Windows executables",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "MiniDuke",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Russian APT family MiniDuke",
+          "notorious Russian APT family MiniDuke"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "European government agencies",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "OnionDuke",
+        "type": "malware",
+        "alias": [
+          "the malware used in this case",
+          "the OnionDuke malware family"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "executable wrapper",
+        "type": "hacker-tool",
+        "alias": [
+          "the wrapper"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "original executable",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "second, malicious executable",
+        "type": "malware",
+        "alias": [
+          "the malicious executable",
+          "this executable"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Trojan-Dropper:W32/OnionDuke.A",
+        "type": "malware",
+        "alias": [
+          "a dropper containing a PE resource",
+          "malicious executable (SHA1: a75995f94854dea8799650a2f4a97980b71199d2)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "PE resource",
+        "type": "file",
+        "alias": [
+          "an embedded GIF image file",
+          "the resource"
+        ],
+        "mother entity": [
+          "Trojan-Dropper:W32/OnionDuke.A"
+        ]
+      },
+      {
+        "name": "encrypted dynamically linked library (DLL) file",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Trojan-Dropper:W32/OnionDuke.A"
+        ]
+      },
+      {
+        "name": "DLL file (SHA1: b491c14d8cfb48636f6095b7b16555e9a575d57f)",
+        "type": "malware",
+        "alias": [
+          "Backdoor:W32/OnionDuke.B"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "embedded configuration",
+        "type": "file",
+        "alias": [
+          "the embedded configuration data"
+        ],
+        "mother entity": [
+          "DLL file (SHA1: b491c14d8cfb48636f6095b7b16555e9a575d57f)"
+        ]
+      },
+      {
+        "name": "hardcoded C&C URLs",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "DLL file (SHA1: b491c14d8cfb48636f6095b7b16555e9a575d57f)"
+        ]
+      },
+      {
+        "name": "overpict.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "John Kasai",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "login credentials",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "information on the compromised system",
+        "type": "abstract-concept",
+        "alias": [
+          "presence of antivirus software",
+          "presence of a firewall"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "original backdoor process",
+        "type": "process",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Twitter",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "compilation timestamps",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Freedome VPN",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "samples",
+        "type": "file",
+        "alias": [
+          "samples (SHA1s)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "get-logon-history.ps1",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "airtravelabroad.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "John Kasai"
+        ]
+      },
+      {
+        "name": "beijingnewsblog.net",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "John Kasai"
+        ]
+      },
+      {
+        "name": "grouptumbler.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "John Kasai"
+        ]
+      },
+      {
+        "name": "leveldelta.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "nasdaqblog.net",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "John Kasai"
+        ]
+      },
+      {
+        "name": "natureinhome.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "John Kasai"
+        ]
+      },
+      {
+        "name": "nestedmail.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "John Kasai"
+        ]
+      },
+      {
+        "name": "nostressjob.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "John Kasai"
+        ]
+      },
+      {
+        "name": "nytunion.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "John Kasai"
+        ]
+      },
+      {
+        "name": "oilnewsblog.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "John Kasai"
+        ]
+      },
+      {
+        "name": "sixsquare.net",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "John Kasai"
+        ]
+      },
+      {
+        "name": "ustradecomp.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "John Kasai"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "a Tor exit node, located in Russia",
+        "rel": "maliciously modifying",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "uncompressed Windows executables"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "used in targeted attacks against",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "European government agencies"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "executable wrapper"
+      },
+      {
+        "sub": "executable wrapper",
+        "rel": "embeds",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "original executable"
+      },
+      {
+        "sub": "executable wrapper",
+        "rel": "embeds",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "second, malicious executable"
+      },
+      {
+        "sub": "executable wrapper",
+        "rel": "bypasses integrity checks of",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "original executable"
+      },
+      {
+        "sub": "executable wrapper",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "original executable"
+      },
+      {
+        "sub": "executable wrapper",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "second, malicious executable"
+      },
+      {
+        "sub": "second, malicious executable",
+        "rel": "is the same binary as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Trojan-Dropper:W32/OnionDuke.A"
+      },
+      {
+        "sub": "Trojan-Dropper:W32/OnionDuke.A",
+        "rel": "containing",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "PE resource"
+      },
+      {
+        "sub": "PE resource",
+        "rel": "pretends to be",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "an embedded GIF image file"
+      },
+      {
+        "sub": "Trojan-Dropper:W32/OnionDuke.A",
+        "rel": "decrypts",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "encrypted dynamically linked library (DLL) file"
+      },
+      {
+        "sub": "Trojan-Dropper:W32/OnionDuke.A",
+        "rel": "writes to disk and executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "encrypted dynamically linked library (DLL) file"
+      },
+      {
+        "sub": "DLL file (SHA1: b491c14d8cfb48636f6095b7b16555e9a575d57f)",
+        "rel": "decrypts",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "embedded configuration"
+      },
+      {
+        "sub": "DLL file (SHA1: b491c14d8cfb48636f6095b7b16555e9a575d57f)",
+        "rel": "attempts to connect to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "hardcoded C&C URLs"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "overpict.com"
+      },
+      {
+        "sub": "overpict.com",
+        "rel": "registered with alias of",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "John Kasai"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "airtravelabroad.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "beijingnewsblog.net"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "grouptumbler.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "leveldelta.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "nasdaqblog.net"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "natureinhome.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "nestedmail.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "nostressjob.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "nytunion.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "oilnewsblog.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "sixsquare.net"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "ustradecomp.com"
+      },
+      {
+        "sub": "leveldelta.com",
+        "rel": "used as C&C domains by",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "infecting via",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "malicious Tor exit node"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "infecting executables in",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": ".torrent files"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "steals",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "login credentials"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "gathers",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "information on the compromised system"
+      },
+      {
+        "sub": "some components",
+        "rel": "communicate with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "original backdoor process"
+      },
+      {
+        "sub": "DLL file (SHA1: d433f281cf56015941a1c2cb87066ca62ea1db37)",
+        "rel": "uses",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Twitter"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "connected to actors of",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "Freedome VPN",
+        "rel": "encrypts connection through",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Tor network"
+      },
+      {
+        "sub": "samples",
+        "rel": "include",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "get-logon-history.ps1"
+      }
+    ]
+  }
+}

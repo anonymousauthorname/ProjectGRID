@@ -1,0 +1,449 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_21.json",
+  "sample_index": 213,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_21.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "banking trojans",
+        "type": "malware",
+        "alias": [
+          "banking malware"
+        ]
+      },
+      {
+        "name": "IcedID",
+        "type": "malware",
+        "alias": [
+          "IcedID banking Trojan"
+        ]
+      },
+      {
+        "name": "Qbot",
+        "type": "malware",
+        "alias": [
+          "Qbot banking Trojan"
+        ]
+      },
+      {
+        "name": "malicious macros",
+        "type": "hacker-tool",
+        "alias": [
+          "malicious macro"
+        ]
+      },
+      {
+        "name": "malicious attachments",
+        "type": "file",
+        "alias": [
+          "malicious document"
+        ]
+      },
+      {
+        "name": "Excel file",
+        "type": "file",
+        "alias": [
+          "zipped Excel file"
+        ]
+      },
+      {
+        "name": "CompensationClaim",
+        "type": "file",
+        "alias": [
+          "CompensationClaim file"
+        ]
+      },
+      {
+        "name": "PNG image",
+        "type": "file",
+        "alias": [
+          "image"
+        ]
+      },
+      {
+        "name": "steganography",
+        "type": "attack-pattern",
+        "alias": [
+          "trick"
+        ]
+      },
+      {
+        "name": "shadow market",
+        "type": "infrastructure"
+      },
+      {
+        "name": "Web page",
+        "type": "general-software"
+      },
+      {
+        "name": "fake login page",
+        "type": "general-software"
+      },
+      {
+        "name": "e-mail threads",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "remote access",
+        "type": "course-of-action"
+      },
+      {
+        "name": "ransomware",
+        "type": "malware",
+        "alias": [
+          "other malware"
+        ]
+      },
+      {
+        "name": "online banking users",
+        "type": "identity"
+      },
+      {
+        "name": "business accounts",
+        "type": "identity"
+      },
+      {
+        "name": "Gmail address",
+        "type": "email-address"
+      },
+      {
+        "name": "domain name",
+        "type": "domain-name"
+      },
+      {
+        "name": "Kaspersky",
+        "type": "security-product",
+        "alias": [
+          "Kaspersky products"
+        ]
+      },
+      {
+        "name": "hacked website",
+        "type": "infrastructure"
+      },
+      {
+        "name": "archive",
+        "type": "file"
+      },
+      {
+        "name": "contractor or corporate client",
+        "type": "identity"
+      },
+      {
+        "name": "work machines",
+        "type": "location"
+      },
+      {
+        "name": "the attackers",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "spammers",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "cybercriminals",
+        "type": "threat-actor-or-intrusion-set"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Spammers",
+        "rel": "are using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "malicious macros"
+      },
+      {
+        "sub": "malicious macros",
+        "rel": "to distribute",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "IcedID and Qbot"
+      },
+      {
+        "sub": "Spam with malicious documents",
+        "rel": "contains",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "malicious documents"
+      },
+      {
+        "sub": "Both e-mails",
+        "rel": "were disguised as",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "business correspondence"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "demanded compensation for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "some bogus reason"
+      },
+      {
+        "sub": "the message",
+        "rel": "was attached to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "CompensationClaim"
+      },
+      {
+        "sub": "the second spam mailing",
+        "rel": "had to do with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "payments and contracts"
+      },
+      {
+        "sub": "the second spam mailing",
+        "rel": "included",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a link to the hacked website"
+      },
+      {
+        "sub": "the archive",
+        "rel": "was stored",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "the document"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "aimed to persuade",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "recipient"
+      },
+      {
+        "sub": "the malicious Excel file",
+        "rel": "to open and run the macro in it",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "IcedID or Qbot"
+      },
+      {
+        "sub": "IcedID and Qbot",
+        "rel": "have been around for years",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "researchers"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "first came to researchers’ attention in",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "2017"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "in service since",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "2008"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "hid the main component of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "IcedID"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "in a PNG image",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "PNG image"
+      },
+      {
+        "sub": "using a trick called",
+        "rel": "called",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "steganography"
+      },
+      {
+        "sub": "IcedID and Qbot",
+        "rel": "available on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "shadow market"
+      },
+      {
+        "sub": "numerous clients",
+        "rel": "distribute",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the Trojans"
+      },
+      {
+        "sub": "The malware",
+        "rel": "is to steal",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "bank card details and login credentials"
+      },
+      {
+        "sub": "The malware",
+        "rel": "preferably targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "business accounts"
+      },
+      {
+        "sub": "The Trojans",
+        "rel": "may inject",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a malicious script into a Web page"
+      },
+      {
+        "sub": "The Trojans",
+        "rel": "may redirect",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "online banking users to a fake login page"
+      },
+      {
+        "sub": "The Trojans",
+        "rel": "may steal",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "data saved in the browser"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "can also log",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "keystrokes"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "can download",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "ransomware"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "tricks include stealing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "e-mail threads"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "providing its operators with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "remote access"
+      },
+      {
+        "sub": "the consequences",
+        "rel": "can be serious",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "on work machines"
+      },
+      {
+        "sub": "the scheme",
+        "rel": "will not work if",
+        "rel_type": [
+          "negated"
+        ],
+        "obj": "they don’t open the malicious file and let it execute the macro"
+      },
+      {
+        "sub": "you",
+        "rel": "should check",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "sender's identity, including the domain name"
+      },
+      {
+        "sub": "Someone claiming to be a contractor",
+        "rel": "may be suspicious for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "using a Gmail address"
+      },
+      {
+        "sub": "you",
+        "rel": "should prohibit",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "macros by default"
+      },
+      {
+        "sub": "you",
+        "rel": "should install",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a reliable security solution"
+      },
+      {
+        "sub": "Our products",
+        "rel": "detect",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "both IcedID and Qbot"
+      }
+    ]
+  }
+}

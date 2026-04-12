@@ -1,0 +1,91 @@
+{
+  "sample_id": "ctinexus__threat-group-using-rare-data-transfer-tactic-in-new-remcosrat-campaign.json",
+  "sample_index": 78,
+  "source": "ctinexus",
+  "file_name": "threat-group-using-rare-data-transfer-tactic-in-new-remcosrat-campaign.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Threat Actor",
+        "type": "Unknown"
+      },
+      {
+        "name": "Organization",
+        "type": "Unknown"
+      },
+      {
+        "name": "Malware",
+        "type": "Unknown"
+      },
+      {
+        "name": "Malware Characteristic",
+        "type": "Unknown"
+      },
+      {
+        "name": "UNC-0050",
+        "type": "Unknown"
+      },
+      {
+        "name": "Information",
+        "type": "Unknown"
+      },
+      {
+        "name": "Infrastructure",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "is known for targeting",
+        "obj": "Organization"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "uses",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "uses new tactic for",
+        "obj": "Malware Characteristic"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "is tracked as",
+        "obj": "Threat Actor"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "focuses on",
+        "obj": "Organization"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "may be motivated by",
+        "obj": "Information"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "poses risk to",
+        "obj": "Infrastructure"
+      }
+    ]
+  }
+}

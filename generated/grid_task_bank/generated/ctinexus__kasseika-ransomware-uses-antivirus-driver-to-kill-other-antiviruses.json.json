@@ -1,0 +1,277 @@
+{
+  "sample_id": "ctinexus__kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "sample_index": 57,
+  "source": "ctinexus",
+  "file_name": "kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Kasseika",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "a recently uncovered ransomware operation"
+        ]
+      },
+      {
+        "name": "Bring Your Own Vulnerable Driver (BYOVD)",
+        "type": "attack-pattern",
+        "alias": [
+          "BYOVD attacks"
+        ]
+      },
+      {
+        "name": "Martini.sys/viragt64.sys",
+        "type": "hacker-tool",
+        "alias": [
+          "Martini driver"
+        ]
+      },
+      {
+        "name": "TG Soft",
+        "type": "general-software",
+        "alias": [
+          "TG Soft's VirtIT Agent System"
+        ]
+      },
+      {
+        "name": "VirtIT Agent System",
+        "type": "general-software"
+      },
+      {
+        "name": "phishing email",
+        "type": "email-address",
+        "alias": [
+          "email sent to employees"
+        ]
+      },
+      {
+        "name": "employees",
+        "type": "user-account"
+      },
+      {
+        "name": "account credentials",
+        "type": "credential-value"
+      },
+      {
+        "name": "corporate network",
+        "type": "location"
+      },
+      {
+        "name": "Windows PsExec tool",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "malicious .bat files",
+        "type": "file"
+      },
+      {
+        "name": "Martini.exe",
+        "type": "process"
+      },
+      {
+        "name": "driver",
+        "type": "general-software",
+        "alias": [
+          "vulnerable driver"
+        ]
+      },
+      {
+        "name": "991 processes",
+        "type": "process",
+        "alias": [
+          "hardcoded list of 991 processes"
+        ]
+      },
+      {
+        "name": "antivirus products",
+        "type": "security-product"
+      },
+      {
+        "name": "security tools",
+        "type": "security-product"
+      },
+      {
+        "name": "analysis tools",
+        "type": "security-product"
+      },
+      {
+        "name": "system utilities",
+        "type": "general-software"
+      },
+      {
+        "name": "targeted organization",
+        "type": "identity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Kasseika",
+        "rel": "employs",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "Bring Your Own Vulnerable Driver (BYOVD)"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "abuses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Martini.sys/viragt64.sys"
+      },
+      {
+        "sub": "Martini.sys/viragt64.sys",
+        "rel": "is-part-of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "VirtIT Agent System"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "attacks start with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "phishing email"
+      },
+      {
+        "sub": "phishing email",
+        "rel": "sent to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "employees"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "attempting to steal",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "account credentials"
+      },
+      {
+        "sub": "account credentials",
+        "rel": "will be used for",
+        "rel_type": [
+          "access"
+        ],
+        "obj": "initial access to the corporate network"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "abuse[d]",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Windows PsExec tool"
+      },
+      {
+        "sub": "Windows PsExec tool",
+        "rel": "execute",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "malicious .bat files"
+      },
+      {
+        "sub": "malicious .bat files",
+        "rel": "checks for the presence of",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "Martini.exe"
+      },
+      {
+        "sub": "malicious .bat files",
+        "rel": "terminates",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Martini.exe"
+      },
+      {
+        "sub": "malicious .bat files",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "Martini.sys"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "BYOVD attacks"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "exploiting flaws in the loaded driver",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "driver"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "gains the privileges to terminate",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "991 processes"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "antivirus products"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "security tools"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "analysis tools"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "system utilities"
+      }
+    ]
+  }
+}

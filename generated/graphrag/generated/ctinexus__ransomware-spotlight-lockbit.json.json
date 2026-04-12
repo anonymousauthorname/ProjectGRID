@@ -1,0 +1,100 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-lockbit.json",
+  "sample_index": 77,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-lockbit.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "LOCKBIT",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "STEALBIT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "LOCKBIT 2.0",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "LINUX-ESXI LOCKER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "MAZE",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "NETWORK ACCESS BROKERS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "UNDERGROUND TECHNICAL WRITING CONTESTS",
+        "type": "EVENT"
+      },
+      {
+        "name": "ESXI SERVERS",
+        "type": "INFRASTRUCTURE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "LOCKBIT",
+        "rel": "related_to",
+        "obj": "STEALBIT"
+      },
+      {
+        "sub": "LOCKBIT",
+        "rel": "related_to",
+        "obj": "LOCKBIT 2.0"
+      },
+      {
+        "sub": "LOCKBIT",
+        "rel": "related_to",
+        "obj": "LINUX-ESXI LOCKER"
+      },
+      {
+        "sub": "LOCKBIT",
+        "rel": "related_to",
+        "obj": "MAZE"
+      },
+      {
+        "sub": "LOCKBIT",
+        "rel": "related_to",
+        "obj": "NETWORK ACCESS BROKERS"
+      },
+      {
+        "sub": "LOCKBIT",
+        "rel": "related_to",
+        "obj": "UNDERGROUND TECHNICAL WRITING CONTESTS"
+      },
+      {
+        "sub": "STEALBIT",
+        "rel": "related_to",
+        "obj": "LOCKBIT"
+      },
+      {
+        "sub": "LINUX-ESXI LOCKER",
+        "rel": "related_to",
+        "obj": "ESXI SERVERS"
+      }
+    ]
+  }
+}

@@ -1,0 +1,672 @@
+{
+  "sample_id": "securenlp__BlackEnergy2_Plugins_Router",
+  "sample_index": 188,
+  "source": "securenlp",
+  "file_name": "BlackEnergy2_Plugins_Router",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "BlackEnergy",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the BE2/SandWorm gang",
+          "the BE2 APT",
+          "the BE2/SandWorm actor",
+          "the BE/SandWorm APT",
+          "the BE2/SandWorm gang"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "BlackEnergy2",
+        "type": "malware",
+        "alias": [
+          "BE2",
+          "the BE2 APT",
+          "BE2 APT",
+          "the BE2/SandWorm actor",
+          "the BE2/SandWorm gang"
+        ],
+        "mother entity": [
+          "BlackEnergy"
+        ]
+      },
+      {
+        "name": "BlackEnergy3",
+        "type": "malware",
+        "alias": [
+          "Backdoor.Win32.Fonten",
+          "BlackEnergy-like malware"
+        ],
+        "mother entity": [
+          "BlackEnergy"
+        ]
+      },
+      {
+        "name": "custom plugins",
+        "type": "hacker-tool",
+        "alias": [
+          "custom crimeware plugins",
+          "plugins",
+          "new, xml formatted plugin names",
+          "additional BE2 tools",
+          "BlackEnergy2 plugins"
+        ],
+        "mother entity": [
+          "BlackEnergy"
+        ]
+      },
+      {
+        "name": "ARM and MIPS platforms",
+        "type": "general-software",
+        "alias": [
+          "ARM systems",
+          "ARM/MIPS platforms",
+          "MIPS/ARM devices",
+          "different architectures"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Cisco network devices",
+        "type": "general-software",
+        "alias": [
+          "Cisco routers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "certificate stealer",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": [
+          "BlackEnergy"
+        ]
+      },
+      {
+        "name": "main.dll",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": [
+          "BlackEnergy2"
+        ]
+      },
+      {
+        "name": "configuration files",
+        "type": "file",
+        "alias": [
+          "xml formatted plugin names",
+          "config files",
+          "BlackEnergy configuration files",
+          "config files within BE2",
+          "config files within BE2 main.dll"
+        ],
+        "mother entity": [
+          "BlackEnergy2"
+        ]
+      },
+      {
+        "name": "CnC servers",
+        "type": "infrastructure",
+        "alias": [
+          "CnC",
+          "server",
+          "servers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ddos plugin",
+        "type": "hacker-tool",
+        "alias": [
+          "version 1 ddos plugin",
+          "ddos plugin (version 2)",
+          "version 2 ddos plugin"
+        ],
+        "mother entity": [
+          "BlackEnergy2"
+        ]
+      },
+      {
+        "name": "ps plugin",
+        "type": "hacker-tool",
+        "alias": [
+          "password stealer",
+          "custom plugin for stealing passwords"
+        ],
+        "mother entity": [
+          "BlackEnergy2"
+        ]
+      },
+      {
+        "name": "vsnet plugin",
+        "type": "hacker-tool",
+        "alias": [
+          "plugin intended to spread and launch a payload",
+          "BlackEnergy2 dropper"
+        ],
+        "mother entity": [
+          "BlackEnergy2"
+        ]
+      },
+      {
+        "name": "weap_hwi plugin",
+        "type": "hacker-tool",
+        "alias": [
+          "ARM plugin",
+          "the ARM module",
+          "ARM object"
+        ],
+        "mother entity": [
+          "BlackEnergy2"
+        ]
+      },
+      {
+        "name": "Linux Hook main module",
+        "type": "general-software",
+        "alias": [
+          "Linux main module",
+          "Linux Hook module"
+        ],
+        "mother entity": [
+          "BlackEnergy2"
+        ]
+      },
+      {
+        "name": "hardcoded ip C2 addresses",
+        "type": "ipv4-addr",
+        "alias": [
+          "C2 IP address"
+        ],
+        "mother entity": [
+          "CnC servers"
+        ]
+      },
+      {
+        "name": "plus.google.com",
+        "type": "domain-name",
+        "alias": [
+          "GooglePlus IDs"
+        ],
+        "mother entity": [
+          "grc plugin"
+        ]
+      },
+      {
+        "name": "router access plugin",
+        "type": "hacker-tool",
+        "alias": [
+          "router plugin"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "decryption plugin",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ZIP archive",
+        "type": "file",
+        "alias": [
+          "EXE file",
+          "malicious ZIP"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "WinRAR flaw",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Ciscoapi.tcl",
+        "type": "file",
+        "alias": [
+          "Ciscoapi.tcl fragment"
+        ],
+        "mother entity": [
+          "Cisco routers"
+        ]
+      },
+      {
+        "name": "killint.tcl",
+        "type": "file",
+        "alias": [
+          "destroying functions"
+        ],
+        "mother entity": [
+          "Cisco routers"
+        ]
+      },
+      {
+        "name": "Siemens SCADA software",
+        "type": "general-software",
+        "alias": [
+          "SCADA software"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "94.185.85.122/favicon.ico",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "Siemens SCADA software"
+        ]
+      },
+      {
+        "name": "build_id",
+        "type": "indicator",
+        "alias": [
+          "0C0703hji",
+          "100914_mg",
+          "OB020Ad0V"
+        ],
+        "mother entity": [
+          "BlackEnergy2"
+        ]
+      },
+      {
+        "name": "FONTCACHE.DAT",
+        "type": "file",
+        "alias": [
+          "BE3 files"
+        ],
+        "mother entity": [
+          "BlackEnergy3"
+        ]
+      },
+      {
+        "name": "dstr plugin",
+        "type": "hacker-tool",
+        "alias": [
+          "Destroys hard disk",
+          "destructive module"
+        ],
+        "mother entity": [
+          "BlackEnergy2"
+        ]
+      },
+      {
+        "name": "metasploit module",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "router plugin scripts",
+        "type": "file",
+        "alias": [
+          "scripts",
+          "BE2 scripts"
+        ],
+        "mother entity": [
+          "Cisco routers"
+        ]
+      },
+      {
+        "name": "CDP neighbors",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": [
+          "Cisco routers"
+        ]
+      },
+      {
+        "name": "95.143.193.182",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "hardcoded ip C2 addresses"
+        ]
+      },
+      {
+        "name": "46.165.222.28",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "hardcoded ip C2 addresses"
+        ]
+      },
+      {
+        "name": "632bba51133284f9efe91ce126eda12d",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "BlackEnergy2"
+        ]
+      },
+      {
+        "name": "7740a9e5e3feecd3b7274f929d37bccf",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "BlackEnergy2"
+        ]
+      },
+      {
+        "name": "fda6f18cf72e479570e8205b0103a0d3",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "BlackEnergy2"
+        ]
+      },
+      {
+        "name": "95.211.122.36",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "hardcoded ip C2 addresses"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "BlackEnergy",
+        "rel": "is used in significant geopolitical operations",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the attacker"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "careful to hide and defend their long-term presence",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "compromised environments"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "is known tools",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "BlackEnergy"
+      },
+      {
+        "sub": "cybercriminals",
+        "rel": "used BlackEnergy custom plugins for launching DDoS attacks",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "custom plugins"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "downloading more crimeware plugins",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "custom spam plugin"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "downloading more crimeware plugins",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "banking information stealer custom plugin"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "assumed into the toolset of",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "the BE2/SandWorm actor"
+      },
+      {
+        "sub": "Ciscoapi.tcl",
+        "rel": "implements destroying functions",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Cisco routers"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "CnC servers"
+      },
+      {
+        "sub": "Linux Hook main module",
+        "rel": "communicated with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "CnC servers"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Russia"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Ukraine"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Poland"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Lithuania"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Belarus"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Azerbaijan"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Kyrgyzstan"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Kazakhstan"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Iran"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Israel"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Turkey"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "compromises",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Siemens SCADA software"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "downloads and executes payloads from",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "94.185.85.122/favicon.ico"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "delivered via",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "ZIP archive"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "exploited",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "WinRAR flaw"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "pushed",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "dstr plugin"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "metasploit module"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "downloaded and executed BE2 files from",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "FTP server"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "stores the downloaded plugins in encrypted files on the system",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "encrypted files"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "contained the settings of",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "internal web proxy"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "has field",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "build_id"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "uses hardcoded ip address",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "hardcoded ip C2 addresses"
+      },
+      {
+        "sub": "BlackEnergy2",
+        "rel": "includes",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "certificate stealer"
+      },
+      {
+        "sub": "vsnet plugin",
+        "rel": "spread and launch payload",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "BlackEnergy2 dropper"
+      },
+      {
+        "sub": "ps plugin",
+        "rel": "steal passwords",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "passwords"
+      }
+    ]
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "sample_id": "securenlp__OperationDoubleTap",
+  "sample_index": 192,
+  "source": "securenlp",
+  "file_name": "OperationDoubleTap",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT3",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "OPERATION CLANDESTINE FOX",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "SPEARPHISHING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "CVE-2014-6332",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "CVE-2014-4113",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "PLAYBOY CLUB",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "JOIN.PLAYBOYSPLUS.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "INSTALL.EXE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "DOC.EXE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "TEST.EXE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "SOCKS5 CONNECTION TO 192.157.198.103:1913",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "SOCKS5 CONNECTION TO 192.184.60.229:81",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "SECURITYWAP.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "INFORM.BEDIRCATI.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "PN.LAMB-SITE.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "210.109.99.64",
+        "type": "LOCATION"
+      },
+      {
+        "name": "104.151.248.173",
+        "type": "LOCATION"
+      },
+      {
+        "name": "WALTERCLEAN.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "BACKDOOR.APT.COOKIECUTTER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "POWERShell",
+        "type": "TOOL"
+      },
+      {
+        "name": "VBSCRIPT",
+        "type": "TOOL"
+      },
+      {
+        "name": "MShell",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "4113",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "PLAYBOYSPLUS.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "OPERATION DOUBLE TAP",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "192.184.60.229",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "OPERATION CLANDESTINE FOX"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "OPERATION DOUBLE TAP"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "SPEARPHISHING"
+      },
+      {
+        "sub": "SPEARPHISHING",
+        "rel": "related_to",
+        "obj": "JOIN.PLAYBOYSPLUS.COM"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "related_to",
+        "obj": "APT3"
+      },
+      {
+        "sub": "CVE-2014-4113",
+        "rel": "related_to",
+        "obj": "APT3"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "related_to",
+        "obj": "INSTALL.EXE"
+      },
+      {
+        "sub": "CVE-2014-4113",
+        "rel": "related_to",
+        "obj": "DOC.EXE"
+      },
+      {
+        "sub": "INSTALL.EXE",
+        "rel": "related_to",
+        "obj": "DOC.EXE"
+      },
+      {
+        "sub": "INSTALL.EXE",
+        "rel": "related_to",
+        "obj": "TEST.EXE"
+      },
+      {
+        "sub": "TEST.EXE",
+        "rel": "related_to",
+        "obj": "SOCKS5 CONNECTION TO 192.157.198.103:1913"
+      },
+      {
+        "sub": "TEST.EXE",
+        "rel": "related_to",
+        "obj": "SOCKS5 CONNECTION TO 192.184.60.229:81"
+      },
+      {
+        "sub": "TEST.EXE",
+        "rel": "related_to",
+        "obj": "BACKDOOR.APT.COOKIECUTTER"
+      },
+      {
+        "sub": "JOIN.PLAYBOYSPLUS.COM",
+        "rel": "related_to",
+        "obj": "104.151.248.173"
+      },
+      {
+        "sub": "104.151.248.173",
+        "rel": "related_to",
+        "obj": "WALTERCLEAN.COM"
+      },
+      {
+        "sub": "192.184.60.229",
+        "rel": "related_to",
+        "obj": "SECURITYWAP.COM"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "INFORM.BEDIRCATI.COM"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "PN.LAMB-SITE.COM"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "210.109.99.64"
+      },
+      {
+        "sub": "INSTALL.EXE",
+        "rel": "related_to",
+        "obj": "POWERShell"
+      },
+      {
+        "sub": "VBSCRIPT",
+        "rel": "related_to",
+        "obj": "INSTALL.EXE"
+      },
+      {
+        "sub": "MShell",
+        "rel": "related_to",
+        "obj": "INSTALL.EXE"
+      },
+      {
+        "sub": "4113",
+        "rel": "related_to",
+        "obj": "DOC.EXE"
+      },
+      {
+        "sub": "PLAYBOY CLUB",
+        "rel": "related_to",
+        "obj": "SPEARPHISHING"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "POWERShell"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "VBSCRIPT"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "OPERATION CLANDESTINE FOX"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "OPERATION DOUBLE TAP"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "SPEARPHISHING"
+      },
+      {
+        "sub": "SPEARPHISHING",
+        "rel": "related_to",
+        "obj": "JOIN.PLAYBOYSPLUS.COM"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "related_to",
+        "obj": "APT3"
+      },
+      {
+        "sub": "CVE-2014-4113",
+        "rel": "related_to",
+        "obj": "APT3"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "related_to",
+        "obj": "INSTALL.EXE"
+      },
+      {
+        "sub": "CVE-2014-4113",
+        "rel": "related_to",
+        "obj": "DOC.EXE"
+      },
+      {
+        "sub": "INSTALL.EXE",
+        "rel": "related_to",
+        "obj": "DOC.EXE"
+      },
+      {
+        "sub": "INSTALL.EXE",
+        "rel": "related_to",
+        "obj": "TEST.EXE"
+      },
+      {
+        "sub": "TEST.EXE",
+        "rel": "related_to",
+        "obj": "SOCKS5 CONNECTION TO 192.157.198.103:1913"
+      },
+      {
+        "sub": "TEST.EXE",
+        "rel": "related_to",
+        "obj": "SOCKS5 CONNECTION TO 192.184.60.229:81"
+      },
+      {
+        "sub": "TEST.EXE",
+        "rel": "related_to",
+        "obj": "BACKDOOR.APT.COOKIECUTTER"
+      },
+      {
+        "sub": "JOIN.PLAYBOYSPLUS.COM",
+        "rel": "related_to",
+        "obj": "104.151.248.173"
+      },
+      {
+        "sub": "104.151.248.173",
+        "rel": "related_to",
+        "obj": "WALTERCLEAN.COM"
+      },
+      {
+        "sub": "192.184.60.229",
+        "rel": "related_to",
+        "obj": "SECURITYWAP.COM"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "INFORM.BEDIRCATI.COM"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "PN.LAMB-SITE.COM"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "210.109.99.64"
+      },
+      {
+        "sub": "INSTALL.EXE",
+        "rel": "related_to",
+        "obj": "POWERShell"
+      },
+      {
+        "sub": "VBSCRIPT",
+        "rel": "related_to",
+        "obj": "INSTALL.EXE"
+      },
+      {
+        "sub": "MShell",
+        "rel": "related_to",
+        "obj": "INSTALL.EXE"
+      },
+      {
+        "sub": "4113",
+        "rel": "related_to",
+        "obj": "DOC.EXE"
+      },
+      {
+        "sub": "PLAYBOY CLUB",
+        "rel": "related_to",
+        "obj": "SPEARPHISHING"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "POWERShell"
+      },
+      {
+        "sub": "APT3",
+        "rel": "related_to",
+        "obj": "VBSCRIPT"
+      }
+    ]
+  }
+}

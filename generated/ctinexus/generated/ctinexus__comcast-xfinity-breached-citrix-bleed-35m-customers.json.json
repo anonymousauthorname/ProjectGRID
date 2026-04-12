@@ -1,0 +1,171 @@
+{
+  "sample_id": "ctinexus__comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "sample_index": 98,
+  "source": "ctinexus",
+  "file_name": "comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "attackers",
+        "type": "Unknown"
+      },
+      {
+        "name": "CVE-2023-4966",
+        "type": "Unknown"
+      },
+      {
+        "name": "CitrixBleed",
+        "type": "Unknown"
+      },
+      {
+        "name": "Citrix Systems' NetScaler ADC and Gateway networking products",
+        "type": "Unknown"
+      },
+      {
+        "name": "August",
+        "type": "Unknown"
+      },
+      {
+        "name": "October",
+        "type": "Unknown"
+      },
+      {
+        "name": "many organizations",
+        "type": "Unknown"
+      },
+      {
+        "name": "after CVE-2023-4966 was brought to light",
+        "type": "Unknown"
+      },
+      {
+        "name": "Comcast Xfinity",
+        "type": "Unknown"
+      },
+      {
+        "name": "a CitrixBleed-enabled breach",
+        "type": "Unknown"
+      },
+      {
+        "name": "customer data",
+        "type": "Unknown"
+      },
+      {
+        "name": "usernames and hashed passwords",
+        "type": "Unknown"
+      },
+      {
+        "name": "names",
+        "type": "Unknown"
+      },
+      {
+        "name": "contact information",
+        "type": "Unknown"
+      },
+      {
+        "name": "last four digits of Social Security numbers",
+        "type": "Unknown"
+      },
+      {
+        "name": "dates of birth",
+        "type": "Unknown"
+      },
+      {
+        "name": "security questions and answers",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "attackers",
+        "rel": "have been exploiting",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "is known as",
+        "obj": "CitrixBleed"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "affects",
+        "obj": "Citrix Systems' NetScaler ADC and Gateway networking products"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "has been exploited since",
+        "obj": "August"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "was brought to light in",
+        "obj": "October"
+      },
+      {
+        "sub": "many organizations",
+        "rel": "have struggled to comprehensively shore up their systems",
+        "obj": "after CVE-2023-4966 was brought to light"
+      },
+      {
+        "sub": "Comcast Xfinity",
+        "rel": "experienced",
+        "obj": "a CitrixBleed-enabled breach"
+      },
+      {
+        "sub": "a CitrixBleed-enabled breach",
+        "rel": "compromised",
+        "obj": "customer data"
+      },
+      {
+        "sub": "customer data",
+        "rel": "includes",
+        "obj": "usernames and hashed passwords"
+      },
+      {
+        "sub": "customer data",
+        "rel": "includes",
+        "obj": "names"
+      },
+      {
+        "sub": "customer data",
+        "rel": "includes",
+        "obj": "contact information"
+      },
+      {
+        "sub": "customer data",
+        "rel": "includes",
+        "obj": "last four digits of Social Security numbers"
+      },
+      {
+        "sub": "customer data",
+        "rel": "includes",
+        "obj": "dates of birth"
+      },
+      {
+        "sub": "customer data",
+        "rel": "includes",
+        "obj": "security questions and answers"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "led_to_breach_of",
+        "obj": "customer data"
+      }
+    ]
+  }
+}

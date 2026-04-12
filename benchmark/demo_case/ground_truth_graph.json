@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "APT28",
+      "type": "threat-actor-or-intrusion-set"
+    },
+    {
+      "name": "phishing email",
+      "type": "file"
+    },
+    {
+      "name": "Outlook users",
+      "type": "identity"
+    },
+    {
+      "name": "CVE-2023-23397",
+      "type": "vulnerability"
+    },
+    {
+      "name": "malicious attachment",
+      "type": "file"
+    },
+    {
+      "name": "backdoor",
+      "type": "malware"
+    },
+    {
+      "name": "attacker-controlled infrastructure",
+      "type": "infrastructure"
+    }
+  ],
+  "relations": [
+    {
+      "sub": "APT28",
+      "rel": "used",
+      "rel_type": [
+        "uses"
+      ],
+      "obj": "phishing email"
+    },
+    {
+      "sub": "APT28",
+      "rel": "targeted",
+      "rel_type": [
+        "targets"
+      ],
+      "obj": "Outlook users"
+    },
+    {
+      "sub": "campaign",
+      "rel": "exploited",
+      "rel_type": [
+        "exploits"
+      ],
+      "obj": "CVE-2023-23397"
+    },
+    {
+      "sub": "phishing email",
+      "rel": "delivered",
+      "rel_type": [
+        "delivers"
+      ],
+      "obj": "malicious attachment"
+    },
+    {
+      "sub": "malicious attachment",
+      "rel": "downloaded",
+      "rel_type": [
+        "downloads"
+      ],
+      "obj": "backdoor"
+    },
+    {
+      "sub": "backdoor",
+      "rel": "communicated with",
+      "rel_type": [
+        "communicates-with"
+      ],
+      "obj": "attacker-controlled infrastructure"
+    }
+  ]
+}

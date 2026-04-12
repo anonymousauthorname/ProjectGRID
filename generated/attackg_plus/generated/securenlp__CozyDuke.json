@@ -1,0 +1,722 @@
+{
+  "sample_id": "securenlp__CozyDuke",
+  "sample_index": 197,
+  "source": "securenlp",
+  "file_name": "CozyDuke",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Reconnaissance",
+        "rel": "Operate",
+        "obj": "Victim host"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Operate",
+        "obj": "Victim identity"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Operate",
+        "obj": "Victim network information"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Phishing for information"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Send",
+        "obj": "Email containing links to compromised websites"
+      },
+      {
+        "sub": "Compromised website",
+        "rel": "Has URL",
+        "obj": "Link to ZIP files"
+      },
+      {
+        "sub": "ZIP file",
+        "rel": "Contain",
+        "obj": "Decoy"
+      },
+      {
+        "sub": "ZIP file",
+        "rel": "Contain",
+        "obj": "Self-extracting RAR archive"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Write",
+        "obj": "To disk"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Initiate",
+        "obj": "CozyDuke dropper"
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "Extract",
+        "obj": "Microsoft cabinet archive"
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "Decrypt",
+        "obj": "CozyDuke components"
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "Extract",
+        "obj": "XML configuration file"
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "Have",
+        "obj": "Instructions for installation and persistence"
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "Detect",
+        "obj": "Anti-virus software"
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "Detect",
+        "obj": "Virtual machine environments"
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "Exit",
+        "obj": "If detected"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Target",
+        "obj": "High-profile organizations"
+      },
+      {
+        "sub": "Governmental entities",
+        "rel": "Belong to",
+        "obj": "High-profile organizations"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Gather",
+        "obj": "Information about victim organization"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Locate at",
+        "obj": "Victim organization"
+      },
+      {
+        "sub": "Report Type",
+        "rel": "Use",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Author",
+        "rel": "Use",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "C2 Server"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "CozyDuke"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Dropper"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "String encryption algorithm"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "DLL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "File and export names reminiscent of OnionDuke"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Shared resource development strategy"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "C2 Server"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Malicious payloads"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "nostressjob.com"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "grouptumbler.com"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "overpict.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "nostressjob.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "grouptumbler.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "overpict.com"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Belong to",
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Belong to",
+        "obj": "OnionDuke"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "C2 Server"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "String encryption algorithm"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "DLL"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "File and export names reminiscent of OnionDuke"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "Shared resource development strategy"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Spearphishing"
+      },
+      {
+        "sub": "Malicious link",
+        "rel": "Has URL",
+        "obj": "Email"
+      },
+      {
+        "sub": "ZIP file",
+        "rel": "Contains",
+        "obj": "Self-extracting RAR archive"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Extract",
+        "obj": "Decoy"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Extract",
+        "obj": "CozyDuke dropper"
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "Write",
+        "obj": "CozyDuke components"
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "Use",
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "rundll32.exe",
+        "rel": "Execute",
+        "obj": "Main CozyDuke component"
+      },
+      {
+        "sub": "Phishing vector",
+        "rel": "Mimic",
+        "obj": "Legitimate content"
+      },
+      {
+        "sub": "Malicious payload",
+        "rel": "Cause",
+        "obj": "User execution"
+      },
+      {
+        "sub": "Email",
+        "rel": "Contain",
+        "obj": "Malicious link"
+      },
+      {
+        "sub": "Decoy",
+        "rel": "Belong to",
+        "obj": "Self-extracting RAR archive"
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "Belong to",
+        "obj": "Self-extracting RAR archive"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Belong to",
+        "obj": "Dropper component"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Has value",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Spearphishing",
+        "rel": "Operate",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Phishing vector",
+        "rel": "Lead to",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "ZIP file",
+        "rel": "Construct",
+        "obj": "Self-extracting RAR archive"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Use",
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Load",
+        "obj": "Password Stealer"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Load",
+        "obj": "NTLM Stealer"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Load",
+        "obj": "System Information Gatherer"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Load",
+        "obj": "Screenshot Module"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Execute",
+        "obj": "PE Executable"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Operate",
+        "obj": "C2 Server"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Modify",
+        "obj": "Embedded Resources"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Decrypt",
+        "obj": "Embedded Resources"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Construct",
+        "obj": "Additional Modules or Executables"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Write",
+        "obj": "Malware or Scripts"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Use",
+        "obj": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Use",
+        "obj": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Construct",
+        "obj": "Windows service"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Construct",
+        "obj": "Scheduled task"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Modify",
+        "obj": "SharedTaskScheduler COM object registry entry"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Operate",
+        "obj": "System restarts"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Has value",
+        "obj": "Filename of CozyDuke main component"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Belong to",
+        "obj": "Threat Actor"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Write",
+        "obj": "Registry entry"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "RC4-encrypted configuration file"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Obfuscated strings"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Obfuscated payloads"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Detect",
+        "obj": "Anti-virus software"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Detect",
+        "obj": "Sandbox environment"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Operate",
+        "obj": "Decoy document"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Modify",
+        "obj": "Configuration data"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has value",
+        "obj": "Encrypted configuration data"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has value",
+        "obj": "Obfuscated strings"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Write",
+        "obj": "Decoy document"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Password stealer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "NTLM stealer"
+      },
+      {
+        "sub": "NTLM stealer",
+        "rel": "Has vulnerability",
+        "obj": "Windows NTLM authentication"
+      },
+      {
+        "sub": "NTLM stealer",
+        "rel": "Operate",
+        "obj": "Active Directory"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Enable",
+        "obj": "Lateral movement"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Use",
+        "obj": "System info module"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Use",
+        "obj": "Network shares"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Use",
+        "obj": "Services"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Use",
+        "obj": "System processes"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Operate",
+        "obj": "Victim host"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Mimikatz"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "PSExec"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Script"
+      },
+      {
+        "sub": "Script",
+        "rel": "Operate",
+        "obj": "Active Directory"
+      },
+      {
+        "sub": "Script",
+        "rel": "Collect",
+        "obj": "Credentials"
+      },
+      {
+        "sub": "Script",
+        "rel": "Gain",
+        "obj": "Access"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Network"
+      },
+      {
+        "sub": "Script",
+        "rel": "Has value",
+        "obj": "Credentials"
+      },
+      {
+        "sub": "Script",
+        "rel": "Modify",
+        "obj": "Active Directory Environment"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Screenshot module"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Credential collection tool"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "System information collection tool"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Transfer",
+        "obj": "Command and control server"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Microsoft OneDrive account"
+      },
+      {
+        "sub": "Microsoft OneDrive account",
+        "rel": "Has URL",
+        "obj": "C2 server URL"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Microsoft OneDrive account"
+      },
+      {
+        "sub": "Microsoft OneDrive account",
+        "rel": "Has value",
+        "obj": "Steady exfiltration method"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has URL",
+        "obj": "www.sanjosemaristas.com"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has URL",
+        "obj": "www.cifss.org"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has IP",
+        "obj": "200.119.128.45"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Belong to",
+        "obj": "CozyDuke"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has URL",
+        "obj": "@US2515"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has URL",
+        "obj": "@monkey_drive"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Operate via",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Operate via",
+        "obj": "HTTPS"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Modify",
+        "obj": "Add"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Modify",
+        "obj": "Delete"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Modify",
+        "obj": "Stop"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Modify",
+        "obj": "Upload"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Modify",
+        "obj": "Download"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Use",
+        "obj": "Data Exfiltration"
+      },
+      {
+        "sub": "Microsoft OneDrive",
+        "rel": "Has URL",
+        "obj": "Data Transfer"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Write",
+        "obj": "Compressed or Encrypted Data"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Modify",
+        "obj": "Data from Victim Host"
+      },
+      {
+        "sub": "Microsoft OneDrive",
+        "rel": "Has value",
+        "obj": "Legitimate Channel"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "Has vulnerability",
+        "obj": "Data Detection Avoidance"
+      }
+    ]
+  }
+}

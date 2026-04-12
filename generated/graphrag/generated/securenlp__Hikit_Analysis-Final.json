@@ -1,0 +1,315 @@
+{
+  "sample_id": "securenlp__Hikit_Analysis-Final",
+  "sample_index": 168,
+  "source": "securenlp",
+  "file_name": "Hikit_Analysis-Final",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "HIKIT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "GEN 1",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "GEN 2",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "GEN 1.0",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "GEN 1.1",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "GEN 1.2",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "GEN 2.0 ALPHA",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "GEN 2.0 BETA",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "GEN 2.1",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "GEN 2.2",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "GEN 2.3",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "DRIVER",
+        "type": "TOOL"
+      },
+      {
+        "name": "DLL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "LOADER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PROXY",
+        "type": "TOOL"
+      },
+      {
+        "name": "COMMAND SHELL",
+        "type": "TOOL"
+      },
+      {
+        "name": "FILE MANAGEMENT",
+        "type": "TOOL"
+      },
+      {
+        "name": "CONNECT",
+        "type": "TOOL"
+      },
+      {
+        "name": "INFORMATION",
+        "type": "TOOL"
+      },
+      {
+        "name": "XOR ENCRYPTION",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "SSL CERTIFICATE",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "PDB FILE PATH",
+        "type": "LOCATION"
+      },
+      {
+        "name": "HITKIT SUPPORT CONSOLE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "AGONY ROOTKIT",
+        "type": "TOOL"
+      },
+      {
+        "name": "PASSTHRU DRIVER",
+        "type": "TOOL"
+      },
+      {
+        "name": "C2 SERVER",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "NETWORK INTERFACING",
+        "type": "TOOL"
+      },
+      {
+        "name": "CONFIGURATION FILE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MUTEX STRING",
+        "type": "LOCATION"
+      },
+      {
+        "name": "YARA SIGNATURE",
+        "type": "TOOL"
+      },
+      {
+        "name": "SNORT SIGNATURE",
+        "type": "TOOL"
+      },
+      {
+        "name": "HITKIT EVOLUTION",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "HIKIT EVOLUTION",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "HIKIT",
+        "rel": "related_to",
+        "obj": "GEN 1"
+      },
+      {
+        "sub": "HIKIT",
+        "rel": "related_to",
+        "obj": "GEN 2"
+      },
+      {
+        "sub": "GEN 1",
+        "rel": "related_to",
+        "obj": "DRIVER"
+      },
+      {
+        "sub": "GEN 1",
+        "rel": "related_to",
+        "obj": "DLL"
+      },
+      {
+        "sub": "GEN 2",
+        "rel": "related_to",
+        "obj": "DRIVER"
+      },
+      {
+        "sub": "GEN 2",
+        "rel": "related_to",
+        "obj": "LOADER"
+      },
+      {
+        "sub": "GEN 2",
+        "rel": "related_to",
+        "obj": "DLL"
+      },
+      {
+        "sub": "GEN 1.0",
+        "rel": "related_to",
+        "obj": "GEN 1.1"
+      },
+      {
+        "sub": "GEN 1.1",
+        "rel": "related_to",
+        "obj": "GEN 1.2"
+      },
+      {
+        "sub": "GEN 2.0 ALPHA",
+        "rel": "related_to",
+        "obj": "GEN 2.0 BETA"
+      },
+      {
+        "sub": "GEN 2.0 BETA",
+        "rel": "related_to",
+        "obj": "GEN 2.1"
+      },
+      {
+        "sub": "GEN 2.1",
+        "rel": "related_to",
+        "obj": "GEN 2.2"
+      },
+      {
+        "sub": "GEN 2.2",
+        "rel": "related_to",
+        "obj": "GEN 2.3"
+      },
+      {
+        "sub": "DRIVER",
+        "rel": "related_to",
+        "obj": "AGONY ROOTKIT"
+      },
+      {
+        "sub": "DRIVER",
+        "rel": "related_to",
+        "obj": "PASSTHRU DRIVER"
+      },
+      {
+        "sub": "LOADER",
+        "rel": "related_to",
+        "obj": "DLL"
+      },
+      {
+        "sub": "COMMAND SHELL",
+        "rel": "related_to",
+        "obj": "DLL"
+      },
+      {
+        "sub": "FILE MANAGEMENT",
+        "rel": "related_to",
+        "obj": "DLL"
+      },
+      {
+        "sub": "CONNECT",
+        "rel": "related_to",
+        "obj": "DLL"
+      },
+      {
+        "sub": "INFORMATION",
+        "rel": "related_to",
+        "obj": "DLL"
+      },
+      {
+        "sub": "HIKIT",
+        "rel": "related_to",
+        "obj": "YARA SIGNATURE"
+      },
+      {
+        "sub": "HIKIT",
+        "rel": "related_to",
+        "obj": "SNORT SIGNATURE"
+      },
+      {
+        "sub": "GEN 1",
+        "rel": "related_to",
+        "obj": "PDB FILE PATH"
+      },
+      {
+        "sub": "GEN 2",
+        "rel": "related_to",
+        "obj": "PDB FILE PATH"
+      },
+      {
+        "sub": "HITKIT SUPPORT CONSOLE",
+        "rel": "related_to",
+        "obj": "GEN 1.0"
+      },
+      {
+        "sub": "HITKIT SUPPORT CONSOLE",
+        "rel": "related_to",
+        "obj": "GEN 1.2"
+      },
+      {
+        "sub": "C2 SERVER",
+        "rel": "related_to",
+        "obj": "DLL"
+      },
+      {
+        "sub": "CONFIGURATION FILE",
+        "rel": "related_to",
+        "obj": "DLL"
+      },
+      {
+        "sub": "MUTEX STRING",
+        "rel": "related_to",
+        "obj": "GEN 2"
+      },
+      {
+        "sub": "HIKIT EVOLUTION",
+        "rel": "related_to",
+        "obj": "GEN 1"
+      },
+      {
+        "sub": "HIKIT EVOLUTION",
+        "rel": "related_to",
+        "obj": "GEN 2"
+      }
+    ]
+  }
+}

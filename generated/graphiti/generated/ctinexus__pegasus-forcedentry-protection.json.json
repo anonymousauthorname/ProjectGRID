@@ -1,0 +1,77 @@
+{
+  "sample_id": "ctinexus__pegasus-forcedentry-protection.json",
+  "sample_index": 83,
+  "source": "ctinexus",
+  "file_name": "pegasus-forcedentry-protection.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "FORCEDENTRY",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Pegasus",
+        "type": "Malware"
+      },
+      {
+        "name": "iMessage",
+        "type": "Software"
+      },
+      {
+        "name": "NSO Group",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Apple",
+        "type": "Organization"
+      },
+      {
+        "name": "iOS",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "resides in",
+        "obj": "iMessage"
+      },
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "is used to push",
+        "obj": "Pegasus"
+      },
+      {
+        "sub": "NSO Group",
+        "rel": "DEVELOPS",
+        "obj": "Pegasus"
+      },
+      {
+        "sub": "Apple",
+        "rel": "PRODUCES",
+        "obj": "iOS"
+      },
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "AFFECTS",
+        "obj": "iOS"
+      }
+    ]
+  }
+}

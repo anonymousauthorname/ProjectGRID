@@ -1,0 +1,174 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_48.json",
+  "sample_index": 237,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_48.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Win32.Worm.Stuxnet",
+        "type": "Entity"
+      },
+      {
+        "name": "rootkit drivers",
+        "type": "Entity"
+      },
+      {
+        "name": "SCADA systems",
+        "type": "Entity"
+      },
+      {
+        "name": "Siemens WinCC software",
+        "type": "Entity"
+      },
+      {
+        "name": "0day exploits",
+        "type": "Entity"
+      },
+      {
+        "name": ".lnk file",
+        "type": "Entity"
+      },
+      {
+        "name": ".tmp files",
+        "type": "Entity"
+      },
+      {
+        "name": "backdoor",
+        "type": "Entity"
+      },
+      {
+        "name": "BitDefender removal tool",
+        "type": "Entity"
+      },
+      {
+        "name": "July 19",
+        "type": "Entity"
+      },
+      {
+        "name": "32bit installations",
+        "type": "Entity"
+      },
+      {
+        "name": "64bit installations",
+        "type": "Entity"
+      },
+      {
+        "name": "Rzvan Benchea",
+        "type": "Entity"
+      },
+      {
+        "name": "Bogdan Timofte",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "BitDefender",
+        "rel": "released",
+        "obj": "BitDefender removal tool"
+      },
+      {
+        "sub": "BitDefender removal tool",
+        "rel": "removes",
+        "obj": "Win32.Worm.Stuxnet"
+      },
+      {
+        "sub": "BitDefender removal tool",
+        "rel": "removes",
+        "obj": "rootkit drivers"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "emerged",
+        "obj": "midJuly"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "targets",
+        "obj": "SCADA systems"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "infects",
+        "obj": "Windows-based systems"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "uses",
+        "obj": "0day exploits"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "executes",
+        "obj": ".lnk file"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "injects",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "installs",
+        "obj": "rootkit drivers"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "conceals",
+        "obj": ".lnk files"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "conceals",
+        "obj": ".tmp files"
+      },
+      {
+        "sub": "BitDefender",
+        "rel": "added",
+        "obj": "generic detection"
+      },
+      {
+        "sub": "BitDefender",
+        "rel": "protects",
+        "obj": "customers"
+      },
+      {
+        "sub": "BitDefender removal tool",
+        "rel": "can be run on",
+        "obj": "32bit installations"
+      },
+      {
+        "sub": "BitDefender removal tool",
+        "rel": "can be run on",
+        "obj": "64bit installations"
+      },
+      {
+        "sub": "Rzvan Benchea",
+        "rel": "provided",
+        "obj": "information"
+      },
+      {
+        "sub": "Bogdan Timofte",
+        "rel": "made available",
+        "obj": "removal tool"
+      }
+    ]
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "sample_id": "casie__10209.json",
+  "sample_index": 3,
+  "source": "casie",
+  "file_name": "10209.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Adobe Acrobat/Reader",
+        "type": "Entity"
+      },
+      {
+        "name": "Adobe Flash Player",
+        "type": "Entity"
+      },
+      {
+        "name": "Adobe Photoshop CC",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2018-15980",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2018-4993",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2018-15979",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2018-15978",
+        "type": "Entity"
+      },
+      {
+        "name": "out-of-bounds read",
+        "type": "Entity"
+      },
+      {
+        "name": "information disclosure",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows",
+        "type": "Entity"
+      },
+      {
+        "name": "MacOS",
+        "type": "Entity"
+      },
+      {
+        "name": "Linux",
+        "type": "Entity"
+      },
+      {
+        "name": "version 19.1.6",
+        "type": "Entity"
+      },
+      {
+        "name": "version 19.1.7",
+        "type": "Entity"
+      },
+      {
+        "name": "version 20.0",
+        "type": "Entity"
+      },
+      {
+        "name": "version 31.0.0.122",
+        "type": "Entity"
+      },
+      {
+        "name": "version 31.0.0.148",
+        "type": "Entity"
+      },
+      {
+        "name": "version 2019.008.20081",
+        "type": "Entity"
+      },
+      {
+        "name": "version 2017.011.30106",
+        "type": "Entity"
+      },
+      {
+        "name": "version 2015.006.30457",
+        "type": "Entity"
+      },
+      {
+        "name": "Adobe Acrobat DC",
+        "type": "Entity"
+      },
+      {
+        "name": "Adobe Reader DC",
+        "type": "Entity"
+      },
+      {
+        "name": "Acrobat 2017",
+        "type": "Entity"
+      },
+      {
+        "name": "Acrobat Reader DC 2017",
+        "type": "Entity"
+      },
+      {
+        "name": "Acrobat DC (Classic 2015)",
+        "type": "Entity"
+      },
+      {
+        "name": "Check Point Research",
+        "type": "Entity"
+      },
+      {
+        "name": "EdgeSpot",
+        "type": "Entity"
+      },
+      {
+        "name": "Adobe Patch Tuesday November updates",
+        "type": "Entity"
+      },
+      {
+        "name": "critical severity impact",
+        "type": "Entity"
+      },
+      {
+        "name": "47 critical vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "86 different vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "6 critical flaws",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Adobe Patch Tuesday November updates",
+        "rel": "fixes",
+        "obj": "CVE-2018-15980"
+      },
+      {
+        "sub": "Adobe Patch Tuesday November updates",
+        "rel": "fixes",
+        "obj": "CVE-2018-15979"
+      },
+      {
+        "sub": "Adobe Patch Tuesday November updates",
+        "rel": "fixes",
+        "obj": "CVE-2018-15978"
+      },
+      {
+        "sub": "CVE-2018-15980",
+        "rel": "exists in",
+        "obj": "Adobe Photoshop CC"
+      },
+      {
+        "sub": "Adobe Photoshop CC",
+        "rel": "has version",
+        "obj": "version 19.1.6"
+      },
+      {
+        "sub": "Adobe Photoshop CC",
+        "rel": "has version",
+        "obj": "version 19.1.7"
+      },
+      {
+        "sub": "Adobe Photoshop CC",
+        "rel": "has version",
+        "obj": "version 20.0"
+      },
+      {
+        "sub": "CVE-2018-15980",
+        "rel": "is an",
+        "obj": "out-of-bounds read"
+      },
+      {
+        "sub": "CVE-2018-4993",
+        "rel": "is initially reported by",
+        "obj": "Check Point Research"
+      },
+      {
+        "sub": "CVE-2018-4993",
+        "rel": "is patched as",
+        "obj": "CVE-2018-15979"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "is patched in",
+        "obj": "Adobe Acrobat DC"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "is patched in",
+        "obj": "Adobe Reader DC"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "is patched in",
+        "obj": "Acrobat 2017"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "is patched in",
+        "obj": "Acrobat Reader DC 2017"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "is patched in",
+        "obj": "Acrobat DC (Classic 2015)"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "is patched in",
+        "obj": "version 2019.008.20081"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "is patched in",
+        "obj": "version 2017.011.30106"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "is patched in",
+        "obj": "version 2015.006.30457"
+      },
+      {
+        "sub": "CVE-2018-15978",
+        "rel": "exists in",
+        "obj": "Adobe Flash Player"
+      },
+      {
+        "sub": "Adobe Flash Player",
+        "rel": "has version",
+        "obj": "version 31.0.0.122"
+      },
+      {
+        "sub": "Adobe Flash Player",
+        "rel": "has version",
+        "obj": "version 31.0.0.148"
+      },
+      {
+        "sub": "CVE-2018-15978",
+        "rel": "is an",
+        "obj": "out-of-bounds read"
+      },
+      {
+        "sub": "CVE-2018-4993",
+        "rel": "results in",
+        "obj": "information disclosure"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "results in",
+        "obj": "information disclosure"
+      },
+      {
+        "sub": "CVE-2018-15978",
+        "rel": "results in",
+        "obj": "information disclosure"
+      },
+      {
+        "sub": "Adobe Reader",
+        "rel": "is affected by",
+        "obj": "CVE-2018-4993"
+      },
+      {
+        "sub": "Adobe Acrobat",
+        "rel": "is affected by",
+        "obj": "CVE-2018-4993"
+      },
+      {
+        "sub": "CVE-2018-4993",
+        "rel": "leads to",
+        "obj": "inadvertent leak of user's hashed NTLM password"
+      },
+      {
+        "sub": "Adobe Patch Tuesday November updates",
+        "rel": "addresses fewer bugs than",
+        "obj": "Adobe Patch Tuesday October updates"
+      },
+      {
+        "sub": "Adobe Patch Tuesday October updates",
+        "rel": "addresses",
+        "obj": "86 different vulnerabilities"
+      },
+      {
+        "sub": "Adobe Patch Tuesday October updates",
+        "rel": "includes",
+        "obj": "47 critical vulnerabilities"
+      },
+      {
+        "sub": "Adobe Patch Tuesday September updates",
+        "rel": "addresses",
+        "obj": "6 critical flaws"
+      }
+    ]
+  }
+}

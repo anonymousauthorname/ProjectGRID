@@ -1,0 +1,186 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_41.json",
+  "sample_index": 231,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_41.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "GhostClicker",
+        "type": "Malware"
+      },
+      {
+        "name": "Google Mobile Services",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Facebook Ads SDK",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "AdMob",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Startapp",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Aladdins Adventures World",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Google Play",
+        "type": "Organization"
+      },
+      {
+        "name": "Android",
+        "type": "Software"
+      },
+      {
+        "name": "Trend Micro",
+        "type": "Organization"
+      },
+      {
+        "name": "UserAgent string",
+        "type": "Indicator"
+      },
+      {
+        "name": "device administration permission",
+        "type": "Indicator"
+      },
+      {
+        "name": "command and control (CC) server",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "interstitial advertisements",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "screen dimensions",
+        "type": "Indicator"
+      },
+      {
+        "name": "XY coordinates",
+        "type": "Indicator"
+      },
+      {
+        "name": "MotionEvent",
+        "type": "Indicator"
+      },
+      {
+        "name": "http.agent",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "GhostClicker",
+        "rel": "hides in",
+        "obj": "Google Mobile Services"
+      },
+      {
+        "sub": "GhostClicker",
+        "rel": "hides in",
+        "obj": "Facebook Ads SDK"
+      },
+      {
+        "sub": "GhostClicker",
+        "rel": "inserts code into",
+        "obj": "AdMob"
+      },
+      {
+        "sub": "GhostClicker",
+        "rel": "USES",
+        "obj": "Startapp"
+      },
+      {
+        "sub": "GhostClicker",
+        "rel": "communicates with",
+        "obj": "command and control (CC) server"
+      },
+      {
+        "sub": "GhostClicker",
+        "rel": "REQUESTS",
+        "obj": "device administration permission"
+      },
+      {
+        "sub": "GhostClicker",
+        "rel": "GENERATES",
+        "obj": "interstitial advertisements"
+      },
+      {
+        "sub": "GhostClicker",
+        "rel": "RETRIEVES",
+        "obj": "screen dimensions"
+      },
+      {
+        "sub": "GhostClicker",
+        "rel": "CALCULATES",
+        "obj": "XY coordinates"
+      },
+      {
+        "sub": "GhostClicker",
+        "rel": "USES",
+        "obj": "MotionEvent"
+      },
+      {
+        "sub": "GhostClicker",
+        "rel": "checks for",
+        "obj": "http.agent"
+      },
+      {
+        "sub": "Aladdins Adventures World",
+        "rel": "EMBEDS",
+        "obj": "GhostClicker"
+      },
+      {
+        "sub": "GhostClicker",
+        "rel": "was detected on",
+        "obj": "Google Play"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "disclosed findings to",
+        "obj": "Google Play"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "OFFERS",
+        "obj": "Trend Micro Mobile Security for Android"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "OFFERS",
+        "obj": "Trend Micro Mobile Security for Enterprise"
+      },
+      {
+        "sub": "GhostClicker",
+        "rel": "depends on",
+        "obj": "UserAgent string"
+      },
+      {
+        "sub": "GhostClicker",
+        "rel": "runs on",
+        "obj": "Android"
+      }
+    ]
+  }
+}

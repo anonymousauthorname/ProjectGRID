@@ -1,0 +1,224 @@
+{
+  "sample_id": "ctinexus__cloaked-ursa-phishing.json",
+  "sample_index": 74,
+  "source": "ctinexus",
+  "file_name": "cloaked-ursa-phishing.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Cloaked Ursa",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "APT29",
+          "UAC-0004",
+          "Midnight Blizzard/Nobelium",
+          "Cozy Bear"
+        ]
+      },
+      {
+        "name": "Russia's Foreign Intelligence Service",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "SVR"
+        ]
+      },
+      {
+        "name": "diplomatic missions",
+        "type": "vulnerability",
+        "alias": [
+          "foreign missions"
+        ]
+      },
+      {
+        "name": "Notes verbale",
+        "type": "attack-pattern",
+        "alias": []
+      },
+      {
+        "name": "Embassies' operating status updates",
+        "type": "attack-pattern",
+        "alias": []
+      },
+      {
+        "name": "Schedules for diplomats",
+        "type": "attack-pattern",
+        "alias": []
+      },
+      {
+        "name": "Invitations to embassy events",
+        "type": "attack-pattern",
+        "alias": []
+      },
+      {
+        "name": "phishing lures",
+        "type": "hacker-tool",
+        "alias": []
+      },
+      {
+        "name": "Unit 42 researchers",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "diplomats",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "Kyiv",
+        "type": "location",
+        "alias": []
+      },
+      {
+        "name": "vehicle",
+        "type": "abstract-concept",
+        "alias": []
+      },
+      {
+        "name": "United States",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "United Kingdom",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "advanced persistent threat (APT)",
+        "type": "vulnerability",
+        "alias": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "are well known for targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "diplomatic missions"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "have predominantly used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "phishing lures"
+      },
+      {
+        "sub": "phishing lures",
+        "rel": "with a theme of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Notes verbale"
+      },
+      {
+        "sub": "phishing lures",
+        "rel": "with a theme of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Embassies' operating status updates"
+      },
+      {
+        "sub": "phishing lures",
+        "rel": "with a theme of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Schedules for diplomats"
+      },
+      {
+        "sub": "phishing lures",
+        "rel": "with a theme of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Invitations to embassy events"
+      },
+      {
+        "sub": "phishing lures",
+        "rel": "are meant to entice targets to open",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "files"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "observed instances of using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "lures focusing on the diplomats themselves"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "diplomatic missions within Ukraine"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "leveraging",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a vehicle"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "at least 22 of over 80 foreign missions located in Kyiv"
+      },
+      {
+        "sub": "Unit 42 researchers",
+        "rel": "observed",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Cloaked Ursa"
+      },
+      {
+        "sub": "United States",
+        "rel": "publicly attribute",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "Russia's Foreign Intelligence Service"
+      },
+      {
+        "sub": "United Kingdom",
+        "rel": "publicly attribute",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "Russia's Foreign Intelligence Service"
+      }
+    ]
+  }
+}

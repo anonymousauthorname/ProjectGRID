@@ -1,0 +1,172 @@
+{
+  "sample_id": "casie__216.json",
+  "sample_index": 39,
+  "source": "casie",
+  "file_name": "216.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "WhatsApp",
+        "type": "Organization"
+      },
+      {
+        "name": "Facebook",
+        "type": "Organization"
+      },
+      {
+        "name": "Signal protocol",
+        "type": "Software"
+      },
+      {
+        "name": "Open Whisper Systems",
+        "type": "Organization"
+      },
+      {
+        "name": "Tobias Boelter",
+        "type": "Person"
+      },
+      {
+        "name": "Kirstie Ball",
+        "type": "Person"
+      },
+      {
+        "name": "Moxie Marlinspike",
+        "type": "Person"
+      },
+      {
+        "name": "Frederic Jacobs",
+        "type": "Person"
+      },
+      {
+        "name": "The Guardian",
+        "type": "Organization"
+      },
+      {
+        "name": "End-to-end encryption",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Encryption keys",
+        "type": "Indicator"
+      },
+      {
+        "name": "Re-encryption",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Cryptography researcher",
+        "type": "Person"
+      },
+      {
+        "name": "Security vulnerability",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Backdoor",
+        "type": "Malware"
+      },
+      {
+        "name": "WhatsApp messaging service",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "WhatsApp",
+        "rel": "USES",
+        "obj": "Signal protocol"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "MANAGES",
+        "obj": "Encryption keys"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "PERFORMS",
+        "obj": "Re-encryption"
+      },
+      {
+        "sub": "Tobias Boelter",
+        "rel": "reported to",
+        "obj": "The Guardian"
+      },
+      {
+        "sub": "Tobias Boelter",
+        "rel": "disclosed findings to",
+        "obj": "WhatsApp"
+      },
+      {
+        "sub": "Kirstie Ball",
+        "rel": "verified research",
+        "obj": "The Guardian"
+      },
+      {
+        "sub": "Moxie Marlinspike",
+        "rel": "disagrees with",
+        "obj": "The Guardian"
+      },
+      {
+        "sub": "Moxie Marlinspike",
+        "rel": "founder of",
+        "obj": "Open Whisper Systems"
+      },
+      {
+        "sub": "Frederic Jacobs",
+        "rel": "DEVELOPED",
+        "obj": "Signal"
+      },
+      {
+        "sub": "Frederic Jacobs",
+        "rel": "rejected reporting",
+        "obj": "The Guardian"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "acquired by",
+        "obj": "Facebook"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "does not have",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "IMPLEMENTED",
+        "obj": "End-to-end encryption"
+      },
+      {
+        "sub": "Open Whisper Systems",
+        "rel": "DEVELOPED",
+        "obj": "Signal protocol"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "HAS",
+        "obj": "Security vulnerability"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "GENERATES",
+        "obj": "Encryption keys"
+      }
+    ]
+  }
+}

@@ -1,0 +1,432 @@
+{
+  "sample_id": "ctinexus__volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques.json",
+  "sample_index": 75,
+  "source": "ctinexus",
+  "file_name": "volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Operate",
+        "obj": "Fortinet FortiGuard device"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Use",
+        "obj": "Active Directory account"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Gather",
+        "obj": "victim organization information"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Gather",
+        "obj": "victim network information"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Extract",
+        "obj": "credentials"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Conduct",
+        "obj": "reconnaissance"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Operate",
+        "obj": "ASUS router"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Operate",
+        "obj": "Cisco router"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Operate",
+        "obj": "D-Link router"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Operate",
+        "obj": "NETGEAR router"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Operate",
+        "obj": "Zyxel router"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Use",
+        "obj": "HTTP management interface"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Use",
+        "obj": "SSH management interface"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Construct",
+        "obj": "network proxy through SOHO edge devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Locate at",
+        "obj": "network edge devices"
+      },
+      {
+        "sub": "Fortinet FortiGuard device",
+        "rel": "Has vulnerability",
+        "obj": "Publicly exposed management interface"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Use",
+        "obj": "Publicly exposed management interface"
+      },
+      {
+        "sub": "Fortinet FortiGuard device",
+        "rel": "Locate at",
+        "obj": "Internet-facing network edge"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Modify",
+        "obj": "Network access privileges"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Write",
+        "obj": "Persistent access"
+      },
+      {
+        "sub": "Fortinet FortiGuard device",
+        "rel": "Has value",
+        "obj": "Management interface exposure"
+      },
+      {
+        "sub": "Volts Typhoon",
+        "rel": "Operate",
+        "obj": "FortiGuard device"
+      },
+      {
+        "sub": "FortiGuard device",
+        "rel": "Use",
+        "obj": "Remote services"
+      },
+      {
+        "sub": "FortiGuard device",
+        "rel": "Write",
+        "obj": "Network-based command execution"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Use",
+        "obj": "Network-based command execution"
+      },
+      {
+        "sub": "FortiGuard device",
+        "rel": "Modify",
+        "obj": "Network traffic routing"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Construct",
+        "obj": "Malicious code"
+      },
+      {
+        "sub": "FortiGuard device",
+        "rel": "Locate at",
+        "obj": "Edge device"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Operate",
+        "obj": "FortiGuard device"
+      },
+      {
+        "sub": "FortiGuard device",
+        "rel": "Has value",
+        "obj": "Persistent proxy"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Use",
+        "obj": "FortiGuard device"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Maintain access",
+        "obj": "Network"
+      },
+      {
+        "sub": "FortiGuard device",
+        "rel": "Belong to",
+        "obj": "Volt Typhoon"
+      },
+      {
+        "sub": "FortiGuard device",
+        "rel": "Locate at",
+        "obj": "Network"
+      },
+      {
+        "sub": "FortiGuard",
+        "rel": "Has vulnerability",
+        "obj": "Active Directory account"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Operate",
+        "obj": "network devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Modify",
+        "obj": "network access permissions"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Write",
+        "obj": "credentials"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Detect",
+        "obj": "higher-level permissions"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Locate at",
+        "obj": "network devices"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Proxying through compromised SOHO network edge devices"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Network traffic routing"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Security tools"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Reduce",
+        "obj": "Digital footprint"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Indirect command and control channels"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Avoid",
+        "obj": "Direct detection by security tools"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Mimic",
+        "obj": "Normal network traffic patterns"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "Compromised SOHO network edge devices"
+      },
+      {
+        "sub": "FortiGuard device",
+        "rel": "Has vulnerability",
+        "obj": "management interface"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Operate",
+        "obj": "network systems"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Authenticate",
+        "obj": "other devices"
+      },
+      {
+        "sub": "FortiGuard device",
+        "rel": "Operate",
+        "obj": "Active Directory account"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "FortiGuard device"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Network service discovery"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "System information discovery"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Network topology"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "Network"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "Device information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has value",
+        "obj": "System configurations"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Operate",
+        "obj": "remote services"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Use",
+        "obj": "authentication protocols"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Modify",
+        "obj": "network access"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Operate",
+        "obj": "internal systems"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Move",
+        "obj": "host"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Operate",
+        "obj": "authentication protocols"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Network shares"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Store",
+        "obj": "Sensitive information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Internal systems"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Access",
+        "obj": "Compromised devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Use",
+        "obj": "SOHO network edge device"
+      },
+      {
+        "sub": "SOHO network edge device",
+        "rel": "Operate",
+        "obj": "Command and Control"
+      },
+      {
+        "sub": "SOHO network edge device",
+        "rel": "Modify",
+        "obj": "Network traffic"
+      },
+      {
+        "sub": "SOHO network edge device",
+        "rel": "Write",
+        "obj": "Encrypted communication"
+      },
+      {
+        "sub": "SOHO network edge device",
+        "rel": "Has value",
+        "obj": "Proxying"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Use",
+        "obj": "Proxy path"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Operate",
+        "obj": "Command and control channel"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Write",
+        "obj": "Data"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Transfer",
+        "obj": "External locations"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "Operate",
+        "obj": "Network-based channels"
+      }
+    ]
+  }
+}

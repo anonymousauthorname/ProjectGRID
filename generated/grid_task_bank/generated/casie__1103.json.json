@@ -1,0 +1,416 @@
+{
+  "sample_id": "casie__1103.json",
+  "sample_index": 38,
+  "source": "casie",
+  "file_name": "1103.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "WhatsApp Web",
+        "type": "platform",
+        "alias": [
+          "WhatsApp Web platform"
+        ]
+      },
+      {
+        "name": "Telegram Web",
+        "type": "platform",
+        "alias": [
+          "Telegram Web platform"
+        ]
+      },
+      {
+        "name": "vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "security issue"
+        ]
+      },
+      {
+        "name": "malicious code",
+        "type": "malware",
+        "alias": [
+          "malicious file",
+          "malicious content"
+        ]
+      },
+      {
+        "name": "innocent looking image",
+        "type": "file",
+        "alias": [
+          "image"
+        ]
+      },
+      {
+        "name": "personal and group conversations",
+        "type": "abstract-concept",
+        "alias": [
+          "conversations"
+        ]
+      },
+      {
+        "name": "photos",
+        "type": "file",
+        "alias": [
+          "images"
+        ]
+      },
+      {
+        "name": "videos",
+        "type": "file",
+        "alias": [
+          "media"
+        ]
+      },
+      {
+        "name": "shared files",
+        "type": "file",
+        "alias": [
+          "files"
+        ]
+      },
+      {
+        "name": "contact lists",
+        "type": "data",
+        "alias": [
+          "contact list"
+        ]
+      },
+      {
+        "name": "user accounts",
+        "type": "user-account",
+        "alias": [
+          "victim accounts"
+        ]
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attackers"
+        ]
+      },
+      {
+        "name": "Check Point researchers",
+        "type": "researchers",
+        "alias": [
+          "research team"
+        ]
+      },
+      {
+        "name": "Oded Vanunu",
+        "type": "identity",
+        "alias": [
+          "head of product vulnerability research"
+        ]
+      },
+      {
+        "name": "March 8, 2017",
+        "type": "date",
+        "alias": [
+          "March 8",
+          "2017"
+        ]
+      },
+      {
+        "name": "WhatsApp and Telegram",
+        "type": "platform",
+        "alias": [
+          "WhatsApp",
+          "Telegram"
+        ]
+      },
+      {
+        "name": "end-to-end message encryption",
+        "type": "security-product",
+        "alias": [
+          "end-to-end encryption"
+        ]
+      },
+      {
+        "name": "WhatsApp Web users",
+        "type": "identity",
+        "alias": [
+          "users"
+        ]
+      },
+      {
+        "name": "mobile app",
+        "type": "general-software",
+        "alias": [
+          "WhatsApp mobile app"
+        ]
+      },
+      {
+        "name": "web clients",
+        "type": "infrastructure",
+        "alias": [
+          "web versions"
+        ]
+      },
+      {
+        "name": "content validation",
+        "type": "course-of-action",
+        "alias": [
+          "validation before encryption"
+        ]
+      },
+      {
+        "name": "mitigation",
+        "type": "course-of-action",
+        "alias": [
+          "fix",
+          "patch"
+        ]
+      },
+      {
+        "name": "restart their browser",
+        "type": "course-of-action",
+        "alias": [
+          "browser restart"
+        ]
+      },
+      {
+        "name": "messages",
+        "type": "abstract-concept",
+        "alias": [
+          "messages sent and received"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Check Point researchers",
+        "rel": "revealed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "WhatsApp and Telegram’s online platforms"
+      },
+      {
+        "sub": "attackers",
+        "rel": "could take over",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "user accounts"
+      },
+      {
+        "sub": "attackers",
+        "rel": "could access",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "personal and group conversations"
+      },
+      {
+        "sub": "attackers",
+        "rel": "could access",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "photos"
+      },
+      {
+        "sub": "attackers",
+        "rel": "could access",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "videos"
+      },
+      {
+        "sub": "attackers",
+        "rel": "could access",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "shared files"
+      },
+      {
+        "sub": "attackers",
+        "rel": "could access",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "contact lists"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "allows",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "attackers"
+      },
+      {
+        "sub": "attackers",
+        "rel": "send",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malicious code"
+      },
+      {
+        "sub": "malicious code",
+        "rel": "hidden within",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "innocent looking image"
+      },
+      {
+        "sub": "innocent looking image",
+        "rel": "clicked on by",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "user"
+      },
+      {
+        "sub": "attackers",
+        "rel": "gain full access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "victim’s WhatsApp or Telegram storage data"
+      },
+      {
+        "sub": "attackers",
+        "rel": "send",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malicious file"
+      },
+      {
+        "sub": "malicious file",
+        "rel": "to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "victim’s contacts"
+      },
+      {
+        "sub": "Check Point researchers",
+        "rel": "disclosed this information to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "WhatsApp and Telegram security teams"
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "acknowledged",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "security issue"
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "developed fixes for",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "worldwide web clients"
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "deploy",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "mitigation"
+      },
+      {
+        "sub": "WhatsApp Web users",
+        "rel": "advised to",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "restart their browser"
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "end-to-end message encryption"
+      },
+      {
+        "sub": "end-to-end message encryption",
+        "rel": "was the source of",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "this vulnerability"
+      },
+      {
+        "sub": "messages",
+        "rel": "were encrypted on the side of",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "sender"
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "were blind to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "content"
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "developed",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "content validation"
+      },
+      {
+        "sub": "content validation",
+        "rel": "will now be applied before",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "encryption"
+      },
+      {
+        "sub": "web versions",
+        "rel": "mirror",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "messages sent and received by the user on the mobile app"
+      },
+      {
+        "sub": "web versions",
+        "rel": "are fully synced with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "users’ devices"
+      }
+    ]
+  }
+}

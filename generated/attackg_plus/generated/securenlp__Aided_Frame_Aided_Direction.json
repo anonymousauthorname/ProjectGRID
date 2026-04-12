@@ -1,0 +1,717 @@
+{
+  "sample_id": "securenlp__Aided_Frame_Aided_Direction",
+  "sample_index": 150,
+  "source": "securenlp",
+  "file_name": "Aided_Frame_Aided_Direction",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "FireEye",
+        "rel": "Belong to",
+        "obj": "Report Type"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "Operate",
+        "obj": "Strategic Web Compromise"
+      },
+      {
+        "sub": "Strategic Web Compromise",
+        "rel": "Has tactic",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Strategic Web Compromise",
+        "rel": "Use",
+        "obj": "Iframe"
+      },
+      {
+        "sub": "Iframe",
+        "rel": "Locate at",
+        "obj": "Legitimate Website"
+      },
+      {
+        "sub": "Iframe",
+        "rel": "Direct to",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "IP Address",
+        "rel": "Host",
+        "obj": "Java Exploits"
+      },
+      {
+        "sub": "Java Exploits",
+        "rel": "Write",
+        "obj": "Malicious Payload"
+      },
+      {
+        "sub": "Malicious Payload",
+        "rel": "Decode",
+        "obj": "Java Exploits"
+      },
+      {
+        "sub": "Legitimate Website",
+        "rel": "Has geolocation",
+        "obj": "China"
+      },
+      {
+        "sub": "Environmental Advocacy Organization",
+        "rel": "Has vulnerability",
+        "obj": "Public-Facing Content"
+      },
+      {
+        "sub": "Democracy Organization",
+        "rel": "Has vulnerability",
+        "obj": "Public-Facing Content"
+      },
+      {
+        "sub": "Human Rights Organization",
+        "rel": "Has vulnerability",
+        "obj": "Public-Facing Content"
+      },
+      {
+        "sub": "Public-Facing Content",
+        "rel": "Locate at",
+        "obj": "Organization with Employees in China"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Conduct",
+        "obj": "Active Reconnaissance"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Identify",
+        "obj": "Organizations with China-Based Operations"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Target",
+        "obj": "NGOs"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Public Websites for Information Gathering"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Lateral Movement"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Seek",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Malicious iframe infrastructure"
+      },
+      {
+        "sub": "Malicious iframe infrastructure",
+        "rel": "Host on",
+        "obj": "Website of international environmental advocacy group"
+      },
+      {
+        "sub": "Malicious iframe infrastructure",
+        "rel": "Host on",
+        "obj": "Website of NGO promoting democracy and human rights"
+      },
+      {
+        "sub": "Malicious iframe infrastructure",
+        "rel": "Host on",
+        "obj": "Website of NGO promoting human rights"
+      },
+      {
+        "sub": "Malicious iframe infrastructure",
+        "rel": "Use",
+        "obj": "Java exploit at 103.27.108.45"
+      },
+      {
+        "sub": "Java exploit at 103.27.108.45",
+        "rel": "Download and decode",
+        "obj": "Payload from hxxp://103.27.108.45/img/js.php"
+      },
+      {
+        "sub": "Payload from hxxp://103.27.108.45/img/js.php",
+        "rel": "Is",
+        "obj": "Poison Ivy remote access tool  variant"
+      },
+      {
+        "sub": "Poison Ivy remote access tool  variant",
+        "rel": "Have C2 settings",
+        "obj": "C2: quakegoogle.servequake.com"
+      },
+      {
+        "sub": "Poison Ivy remote access tool  variant",
+        "rel": "Use",
+        "obj": "C2 domain quakegoogle.servequake.com"
+      },
+      {
+        "sub": "quakegoogle.servequake.com",
+        "rel": "Resolve to",
+        "obj": "115.126.62.100"
+      },
+      {
+        "sub": "C2 domain quakegoogle.servequake.com",
+        "rel": "Share infrastructure with",
+        "obj": "Other domains"
+      },
+      {
+        "sub": "Shared RT_MANIFEST PE resource with SHA256 fingerprint 82a98c88d3dd57a6ebc0fe7167a86875ed52ebddc6374ad640407efec01b1393",
+        "rel": "Is known as",
+        "obj": "Sunshop Manifest"
+      },
+      {
+        "sub": "Sunshop Manifest",
+        "rel": "Used by",
+        "obj": "China-based APT groups"
+      },
+      {
+        "sub": "Sunshop Manifest",
+        "rel": "Belong to",
+        "obj": "Builder toolkit"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Malicious iframe"
+      },
+      {
+        "sub": "Malicious iframe",
+        "rel": "Redirect to",
+        "obj": "Java exploit"
+      },
+      {
+        "sub": "Java exploit",
+        "rel": "Hosted at",
+        "obj": "103.27.108.45"
+      },
+      {
+        "sub": "Java exploit",
+        "rel": "Download and execute",
+        "obj": "Poison Ivy remote access tool"
+      },
+      {
+        "sub": "Poison Ivy remote access tool",
+        "rel": "Belong to",
+        "obj": "Threat Actor"
+      },
+      {
+        "sub": "Public-facing websites",
+        "rel": "Operate",
+        "obj": "Malicious iframe"
+      },
+      {
+        "sub": "Public-facing websites",
+        "rel": "Have geolocation",
+        "obj": "Non-profits and NGOs"
+      },
+      {
+        "sub": "Exploit Public-Facing Application",
+        "rel": "Belong to",
+        "obj": "MITRE ATT&CK"
+      },
+      {
+        "sub": "Drive-by Compromise",
+        "rel": "Belong to",
+        "obj": "MITRE ATT&CK"
+      },
+      {
+        "sub": "Malicious iframe",
+        "rel": "Has URL",
+        "obj": "https://103.27.108.45"
+      },
+      {
+        "sub": "103.27.108.45",
+        "rel": "Has value",
+        "obj": "IP"
+      },
+      {
+        "sub": "Poison Ivy remote access tool",
+        "rel": "Has value",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Public-facing web servers",
+        "rel": "Use",
+        "obj": "Exploit Public-Facing Application"
+      },
+      {
+        "sub": "Public-facing web servers",
+        "rel": "Use",
+        "obj": "Drive-by Compromise"
+      },
+      {
+        "sub": "Poison Ivy RAT variant",
+        "rel": "Has URL",
+        "obj": "hxxp://103.27.108.45/img/js.php"
+      },
+      {
+        "sub": "Poison Ivy RAT variant",
+        "rel": "Use",
+        "obj": "Java-based exploit"
+      },
+      {
+        "sub": "Poison Ivy RAT variant",
+        "rel": "Operate",
+        "obj": "Windows system environment"
+      },
+      {
+        "sub": "Poison Ivy RAT variant",
+        "rel": "Has value",
+        "obj": "C2 domain"
+      },
+      {
+        "sub": "Poison Ivy RAT variant",
+        "rel": "Has value",
+        "obj": "password"
+      },
+      {
+        "sub": "Poison Ivy RAT variant",
+        "rel": "Has value",
+        "obj": "mutex"
+      },
+      {
+        "sub": "Poison Ivy RAT variant",
+        "rel": "Construct",
+        "obj": "persistent backdoor"
+      },
+      {
+        "sub": "Java-based exploit",
+        "rel": "Facilitate",
+        "obj": "execution of malicious payload"
+      },
+      {
+        "sub": "Java-based exploit",
+        "rel": "Enable",
+        "obj": "client execution"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has vulnerability",
+        "obj": "Mutex"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "C2 domain"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Password"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Operate",
+        "obj": "Background process"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Modify",
+        "obj": "System configuration"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Write",
+        "obj": "Mutex"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Construct",
+        "obj": "Persistence mechanism"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Maintain access",
+        "obj": "System restarts"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Locate at",
+        "obj": "Victim’s system"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has value",
+        "obj": "Continuous communication with threat actor’s infrastructure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "'FileVersion: 34.0.1847.131'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "'CompanyName: Google Inc.'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "'ProductShortName: Chrome'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "'ProcuctShortName'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "'InternalName'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "'ProductName'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Obfuscation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Security tool"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Detection by forensic analysis"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Poison Ivy backdoor"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Belong to",
+        "obj": "Defense Evasion tactic"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Masquerade as",
+        "obj": "Legitimate Google Chrome file"
+      },
+      {
+        "sub": "Security tool",
+        "rel": "Detect",
+        "obj": "Misspelled versioning data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Versioning information in file metadata"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Gather",
+        "obj": "System time"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Gather",
+        "obj": "Network connections"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Gather",
+        "obj": "System services"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Discover",
+        "obj": "Network configurations"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Identify",
+        "obj": "Potential lateral movement paths"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Legitimate system tools"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Native operating system features"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Perform",
+        "obj": "Remote system discovery"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Poison Ivy RAT"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Legitimate credentials"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Remote access tools"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Belong to",
+        "obj": "SWC campaign"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Target",
+        "obj": "Organizations with China-based operations"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Has geolocation",
+        "obj": "China"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Public-facing websites"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Move laterally",
+        "obj": "Already compromised networks"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Move laterally",
+        "obj": "New networks"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Employee and stakeholder connections"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Monitor",
+        "obj": "Activity related to domestic unrest"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Monitor",
+        "obj": "Government embarrassment"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has vulnerability",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Keyboard input"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Screen captures"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "User activity"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Operate",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Modify",
+        "obj": "Configuration"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Write",
+        "obj": "Collected data"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Detect",
+        "obj": "User input"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has value",
+        "obj": "Monitoring of organizational programs"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Locate at",
+        "obj": "China-based operations"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "command and control  infrastructure"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Operate",
+        "obj": "domain quakegoogle.servequake.com"
+      },
+      {
+        "sub": "domain quakegoogle.servequake.com",
+        "rel": "Resolve to",
+        "obj": "IP 115.126.62.100"
+      },
+      {
+        "sub": "IP 115.126.62.100",
+        "rel": "Share with",
+        "obj": "other domains"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "HTTP protocol"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "password qeTGd3485fF"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "mutex ')!VoqA.I4'"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Communicate with",
+        "obj": "C2 server over unencrypted channel"
+      },
+      {
+        "sub": "domain quakegoogle.servequake.com",
+        "rel": "Mimic",
+        "obj": "legitimate service servequake.com"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has value",
+        "obj": "password qeTGd3485fF"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has value",
+        "obj": "mutex ')!VoqA.I4'"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has URL",
+        "obj": "http://quakegoogle.servequake.com"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Locate at",
+        "obj": "IP 115.126.62.100"
+      },
+      {
+        "sub": "domain quakegoogle.servequake.com",
+        "rel": "Has hostname",
+        "obj": "quakegoogle"
+      },
+      {
+        "sub": "domain quakegoogle.servequake.com",
+        "rel": "Has value",
+        "obj": "servequake.com"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has vulnerability",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "quakegoogle.servequake.com"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Operate",
+        "obj": "exfiltration"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Write",
+        "obj": "sensitive data"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Transfer",
+        "obj": "grant applications"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Transfer",
+        "obj": "activity reports"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Transfer",
+        "obj": "internal communications"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Modify",
+        "obj": "data transfer schedule"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "China"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Interest",
+        "obj": "programmatic data"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has URL",
+        "obj": "quakegoogle.servequake.com"
+      }
+    ]
+  }
+}

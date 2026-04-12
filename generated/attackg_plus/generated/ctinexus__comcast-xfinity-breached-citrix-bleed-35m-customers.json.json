@@ -1,0 +1,272 @@
+{
+  "sample_id": "ctinexus__comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "sample_index": 98,
+  "source": "ctinexus",
+  "file_name": "comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Citrix Systems",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "Has severity",
+        "obj": "7.5"
+      },
+      {
+        "sub": "Citrix Systems",
+        "rel": "Operate",
+        "obj": "NetScaler ADC"
+      },
+      {
+        "sub": "Citrix Systems",
+        "rel": "Operate",
+        "obj": "Gateway"
+      },
+      {
+        "sub": "NetScaler ADC",
+        "rel": "Belong to",
+        "obj": "Citrix Systems"
+      },
+      {
+        "sub": "Gateway",
+        "rel": "Belong to",
+        "obj": "Citrix Systems"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Conduct",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Involve",
+        "obj": "Gathering information about infrastructure"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Identify",
+        "obj": "Use of Citrix networking products"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "Has vulnerability",
+        "obj": "NetScaler ADC and Gateway products"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "Has vulnerability",
+        "obj": "Citrix Systems"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "Has vulnerability",
+        "obj": "NetScaler ADC and Gateway products"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "NetScaler ADC and Gateway products"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "CitrixBleed"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Modify",
+        "obj": "network resources"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Acquire",
+        "obj": "compromised infrastructure"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "System"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "Has vulnerability",
+        "obj": "NetScaler ADC and Gateway"
+      },
+      {
+        "sub": "Citrix Systems",
+        "rel": "Belong to",
+        "obj": "NetScaler ADC and Gateway"
+      },
+      {
+        "sub": "Citrix Systems",
+        "rel": "Has product",
+        "obj": "NetScaler ADC and Gateway"
+      },
+      {
+        "sub": "Comcast Xfinity",
+        "rel": "Operate",
+        "obj": "NetScaler ADC and Gateway"
+      },
+      {
+        "sub": "Comcast Xfinity",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "Belong to",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "Modify",
+        "obj": "Customer data"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "Write",
+        "obj": "Hashed passwords"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "Detect",
+        "obj": "Usernames"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "Operate",
+        "obj": "Customer data"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "Use",
+        "obj": "NetScaler ADC and Gateway"
+      },
+      {
+        "sub": "- CVE-2023-4966",
+        "rel": "Has vulnerability",
+        "obj": "NetScaler ADC and Gateway"
+      },
+      {
+        "sub": "- Comcast Xfinity",
+        "rel": "Operate",
+        "obj": "NetScaler ADC and Gateway"
+      },
+      {
+        "sub": "- Comcast Xfinity",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Execution"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "Has value",
+        "obj": "CitrixBleed"
+      },
+      {
+        "sub": "Execution",
+        "rel": "Belong to",
+        "obj": "Adversary lifecycle"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Has tactic",
+        "obj": "CitrixBleed vulnerability"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Involves",
+        "obj": "Username and hashed passwords"
+      },
+      {
+        "sub": "CitrixBleed vulnerability",
+        "rel": "Leads to",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "CitrixBleed vulnerability",
+        "rel": "Exploited to",
+        "obj": "Gain access to credentials"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Discover",
+        "obj": "System"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Discover",
+        "obj": "User Account"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Discover",
+        "obj": "System Configuration"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "Location"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerable Software"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Location"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Collection",
+        "rel": "Technique",
+        "obj": "Gather data of interest"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Use",
+        "obj": "Comcast Xfinity's systems"
+      }
+    ]
+  }
+}

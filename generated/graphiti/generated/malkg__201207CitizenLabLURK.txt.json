@@ -1,0 +1,509 @@
+{
+  "sample_id": "malkg__201207CitizenLabLURK.txt",
+  "sample_index": 148,
+  "source": "malkg",
+  "file_name": "201207CitizenLabLURK.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Citizen Lab",
+        "type": "Organization"
+      },
+      {
+        "name": "LURK",
+        "type": "Malware"
+      },
+      {
+        "name": "Gh0stRAT",
+        "type": "Malware"
+      },
+      {
+        "name": "dtl.dnsd.me",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "dtl.eatuo.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "184.105.64.183",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "3322.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "EIDHR",
+        "type": "Organization"
+      },
+      {
+        "name": "Tibetan organizations",
+        "type": "Organization"
+      },
+      {
+        "name": "Droeshi final.doc",
+        "type": "Indicator"
+      },
+      {
+        "name": "July6thFinal.doc",
+        "type": "Indicator"
+      },
+      {
+        "name": "EIDHR_action_plan.xlsx",
+        "type": "Indicator"
+      },
+      {
+        "name": "Dharamsala August 2012 Full program.xls",
+        "type": "Indicator"
+      },
+      {
+        "name": "set.xls",
+        "type": "Indicator"
+      },
+      {
+        "name": "Microsoft Office",
+        "type": "Software"
+      },
+      {
+        "name": "passwording technique",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "remote access trojan",
+        "type": "Malware"
+      },
+      {
+        "name": "command-and-control server",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Office Open XML",
+        "type": "Software"
+      },
+      {
+        "name": "OLE file",
+        "type": "Software"
+      },
+      {
+        "name": "Tibetan uprising",
+        "type": "Location"
+      },
+      {
+        "name": "March 10",
+        "type": "Location"
+      },
+      {
+        "name": "European Instrument for Democracy and Human Rights",
+        "type": "Organization"
+      },
+      {
+        "name": "Kashag",
+        "type": "Organization"
+      },
+      {
+        "name": "Dalai Lama",
+        "type": "Organization"
+      },
+      {
+        "name": "South African group",
+        "type": "Organization"
+      },
+      {
+        "name": "walkinnet",
+        "type": "Person"
+      },
+      {
+        "name": "yahoo.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Troj~Agent-XAT",
+        "type": "Malware"
+      },
+      {
+        "name": "TROJ_MDROP.TPB",
+        "type": "Malware"
+      },
+      {
+        "name": "TROJ_MDROP.TPC",
+        "type": "Malware"
+      },
+      {
+        "name": "Generic PWS.y",
+        "type": "Malware"
+      },
+      {
+        "name": "IconCacheEt.DAT",
+        "type": "Indicator"
+      },
+      {
+        "name": "IconConfigEt.DAT",
+        "type": "Indicator"
+      },
+      {
+        "name": "iexplore.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "TIBET",
+        "type": "Campaign"
+      },
+      {
+        "name": "T706",
+        "type": "Campaign"
+      },
+      {
+        "name": "T801",
+        "type": "Campaign"
+      },
+      {
+        "name": "IE_0day",
+        "type": "Campaign"
+      },
+      {
+        "name": "DbxUpdateET",
+        "type": "Campaign"
+      },
+      {
+        "name": "C2",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "53",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "63",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "81",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "8080",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "135",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "1026",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "3322.org",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Command Five",
+        "type": "ThreatActor"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Citizen Lab",
+        "rel": "ANALYZES",
+        "obj": "LURK"
+      },
+      {
+        "sub": "LURK",
+        "rel": "variant of",
+        "obj": "Gh0stRAT"
+      },
+      {
+        "sub": "LURK",
+        "rel": "connects to",
+        "obj": "command-and-control server"
+      },
+      {
+        "sub": "LURK",
+        "rel": "connects to",
+        "obj": "dtl.dnsd.me"
+      },
+      {
+        "sub": "LURK",
+        "rel": "connects to",
+        "obj": "dtl.eatuo.com"
+      },
+      {
+        "sub": "dtl.eatuo.com",
+        "rel": "has same domain registration info as",
+        "obj": "3322.net"
+      },
+      {
+        "sub": "Droeshi final.doc",
+        "rel": "DELIVERS",
+        "obj": "LURK"
+      },
+      {
+        "sub": "July6thFinal.doc",
+        "rel": "DELIVERS",
+        "obj": "LURK"
+      },
+      {
+        "sub": "EIDHR_action_plan.xlsx",
+        "rel": "DELIVERS",
+        "obj": "LURK"
+      },
+      {
+        "sub": "Dharamsala August 2012 Full program.xls",
+        "rel": "DELIVERS",
+        "obj": "LURK"
+      },
+      {
+        "sub": "Droeshi final.doc",
+        "rel": "USES",
+        "obj": "passwording technique"
+      },
+      {
+        "sub": "July6thFinal.doc",
+        "rel": "USES",
+        "obj": "passwording technique"
+      },
+      {
+        "sub": "EIDHR_action_plan.xlsx",
+        "rel": "USES",
+        "obj": "passwording technique"
+      },
+      {
+        "sub": "Dharamsala August 2012 Full program.xls",
+        "rel": "USES",
+        "obj": "passwording technique"
+      },
+      {
+        "sub": "LURK",
+        "rel": "delivers through",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "EIDHR_action_plan.xlsx",
+        "rel": "is not",
+        "obj": "Office Open XML"
+      },
+      {
+        "sub": "EIDHR_action_plan.xlsx",
+        "rel": "IS",
+        "obj": "OLE file"
+      },
+      {
+        "sub": "Dharamsala August 2012 Full program.xls",
+        "rel": "IS",
+        "obj": "OLE file"
+      },
+      {
+        "sub": "LURK",
+        "rel": "DROPS",
+        "obj": "set.xls"
+      },
+      {
+        "sub": "LURK",
+        "rel": "has author metadata",
+        "obj": "walkinnet"
+      },
+      {
+        "sub": "EIDHR_action_plan.xlsx",
+        "rel": "replicates content from",
+        "obj": "European Instrument for Democracy and Human Rights"
+      },
+      {
+        "sub": "Dharamsala August 2012 Full program.xls",
+        "rel": "replicates content from",
+        "obj": "South African group"
+      },
+      {
+        "sub": "Droeshi final.doc",
+        "rel": "TARGETS",
+        "obj": "Tibetan organizations"
+      },
+      {
+        "sub": "July6thFinal.doc",
+        "rel": "TARGETS",
+        "obj": "Tibetan organizations"
+      },
+      {
+        "sub": "EIDHR_action_plan.xlsx",
+        "rel": "TARGETS",
+        "obj": "Tibetan organizations"
+      },
+      {
+        "sub": "Dharamsala August 2012 Full program.xls",
+        "rel": "TARGETS",
+        "obj": "Tibetan organizations"
+      },
+      {
+        "sub": "Tibetan uprising",
+        "rel": "ocurred in",
+        "obj": "1959"
+      },
+      {
+        "sub": "March 10",
+        "rel": "is commemorated on",
+        "obj": "1959"
+      },
+      {
+        "sub": "Tibetan organizations",
+        "rel": "has office of",
+        "obj": "Kashag"
+      },
+      {
+        "sub": "Tibetan organizations",
+        "rel": "has relationship with",
+        "obj": "Dalai Lama"
+      },
+      {
+        "sub": "Tibetan organizations",
+        "rel": "submits application to",
+        "obj": "EIDHR"
+      },
+      {
+        "sub": "Droeshi final.doc",
+        "rel": "sent from",
+        "obj": "yahoo.com"
+      },
+      {
+        "sub": "July6thFinal.doc",
+        "rel": "sent from",
+        "obj": "gmx.com"
+      },
+      {
+        "sub": "EIDHR_action_plan.xlsx",
+        "rel": "sent from",
+        "obj": "gmx.com"
+      },
+      {
+        "sub": "Dharamsala August 2012 Full program.xls",
+        "rel": "sent from",
+        "obj": "gmx.com"
+      },
+      {
+        "sub": "LURK",
+        "rel": "DROPS",
+        "obj": "iexplore.exe"
+      },
+      {
+        "sub": "LURK",
+        "rel": "USES",
+        "obj": "IconCacheEt.DAT"
+      },
+      {
+        "sub": "LURK",
+        "rel": "USES",
+        "obj": "IconConfigEt.DAT"
+      },
+      {
+        "sub": "LURK",
+        "rel": "communicates with",
+        "obj": "dtl.dnsd.me"
+      },
+      {
+        "sub": "LURK",
+        "rel": "communicates with",
+        "obj": "dtl.eatuo.com"
+      },
+      {
+        "sub": "LURK",
+        "rel": "communicates with",
+        "obj": "184.105.64.183"
+      },
+      {
+        "sub": "LURK",
+        "rel": "has campaign",
+        "obj": "TIBET"
+      },
+      {
+        "sub": "LURK",
+        "rel": "has campaign",
+        "obj": "T706"
+      },
+      {
+        "sub": "LURK",
+        "rel": "has campaign",
+        "obj": "T801"
+      },
+      {
+        "sub": "LURK",
+        "rel": "is also known as",
+        "obj": "Troj~Agent-XAT"
+      },
+      {
+        "sub": "LURK",
+        "rel": "is also known as",
+        "obj": "TROJ_MDROP.TPB"
+      },
+      {
+        "sub": "LURK",
+        "rel": "is also known as",
+        "obj": "TROJ_MDROP.TPC"
+      },
+      {
+        "sub": "LURK",
+        "rel": "is detected by",
+        "obj": "Generic PWS.y"
+      },
+      {
+        "sub": "LURK",
+        "rel": "has communication protocol described by",
+        "obj": "Command Five"
+      },
+      {
+        "sub": "dtl.eatuo.com",
+        "rel": "has same domain registration info as",
+        "obj": "3322.org"
+      },
+      {
+        "sub": "LURK",
+        "rel": "stores campaign name in",
+        "obj": "DbxUpdateET"
+      },
+      {
+        "sub": "LURK",
+        "rel": "uses port",
+        "obj": "53"
+      },
+      {
+        "sub": "LURK",
+        "rel": "uses port",
+        "obj": "63"
+      },
+      {
+        "sub": "LURK",
+        "rel": "uses port",
+        "obj": "81"
+      },
+      {
+        "sub": "LURK",
+        "rel": "uses port",
+        "obj": "8080"
+      },
+      {
+        "sub": "LURK",
+        "rel": "uses port",
+        "obj": "135"
+      },
+      {
+        "sub": "LURK",
+        "rel": "uses port",
+        "obj": "1026"
+      }
+    ]
+  }
+}

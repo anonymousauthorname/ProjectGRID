@@ -1,0 +1,218 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_15.json",
+  "sample_index": 207,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_15.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Troj/JSRedirBV",
+        "type": "Entity"
+      },
+      {
+        "name": "Mal/IframeQ",
+        "type": "Entity"
+      },
+      {
+        "name": "Canadian Pharmacy",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Entity"
+      },
+      {
+        "name": "shellcode",
+        "type": "Entity"
+      },
+      {
+        "name": "JavaScript",
+        "type": "Entity"
+      },
+      {
+        "name": "minified",
+        "type": "Entity"
+      },
+      {
+        "name": "junk code",
+        "type": "Entity"
+      },
+      {
+        "name": "setTimeOut",
+        "type": "Entity"
+      },
+      {
+        "name": "XOR decryption",
+        "type": "Entity"
+      },
+      {
+        "name": "emulation tools",
+        "type": "Entity"
+      },
+      {
+        "name": "location.href",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious IFRAME",
+        "type": "Entity"
+      },
+      {
+        "name": "remote web page",
+        "type": "Entity"
+      },
+      {
+        "name": "legitimate but compromised site",
+        "type": "Entity"
+      },
+      {
+        "name": "deobfuscated",
+        "type": "Entity"
+      },
+      {
+        "name": "attack vectors",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "HTML attachments",
+        "type": "Entity"
+      },
+      {
+        "name": "script redirection",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious JavaScript",
+        "type": "Entity"
+      },
+      {
+        "name": "attack evasion",
+        "type": "Entity"
+      },
+      {
+        "name": "automated analysis",
+        "type": "Entity"
+      },
+      {
+        "name": "technical indicators",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Troj/JSRedirBV",
+        "rel": "is blocked by",
+        "obj": "Sophos products"
+      },
+      {
+        "sub": "HTML attachment",
+        "rel": "contains",
+        "obj": "malicious JavaScript"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "redirects to",
+        "obj": "remote web page"
+      },
+      {
+        "sub": "remote web page",
+        "rel": "is hosted on",
+        "obj": "legitimate but compromised site"
+      },
+      {
+        "sub": "remote web page",
+        "rel": "is blocked as",
+        "obj": "Mal/IframeQ"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "uses",
+        "obj": "minified"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "contains",
+        "obj": "junk code"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "uses",
+        "obj": "setTimeOut"
+      },
+      {
+        "sub": "setTimeOut",
+        "rel": "triggers",
+        "obj": "XOR decryption"
+      },
+      {
+        "sub": "XOR decryption",
+        "rel": "uses",
+        "obj": "simple xor"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "designed to",
+        "obj": "break JavaScript emulation tools"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "causes",
+        "obj": "incorrect xor key generation"
+      },
+      {
+        "sub": "incorrect xor key generation",
+        "rel": "leads to",
+        "obj": "decryption failure"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "uses",
+        "obj": "location.href"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "redirects victim to",
+        "obj": "Canadian Pharmacy"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "loads content from",
+        "obj": "another site"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "is used to",
+        "obj": "evade automated analysis"
+      },
+      {
+        "sub": "attack vectors",
+        "rel": "include",
+        "obj": "phishing emails with HTML attachments"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1482 @@
+{
+  "sample_id": "casie__1662.json",
+  "sample_index": 0,
+  "source": "casie",
+  "file_name": "1662.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Magento e-commerce platform"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "PHP script"
+      },
+      {
+        "sub": "PHP script",
+        "rel": "Operate",
+        "obj": "Server"
+      },
+      {
+        "sub": "PHP script",
+        "rel": "Write",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Has value",
+        "obj": "Database password"
+      },
+      {
+        "sub": "Database password",
+        "rel": "Has geolocation",
+        "obj": "Online shops"
+      },
+      {
+        "sub": "Magento e-commerce platform",
+        "rel": "Has vulnerability",
+        "obj": "Unpatched vulnerability in video preview image feature"
+      },
+      {
+        "sub": "Magento e-commerce platform",
+        "rel": "Has URL",
+        "obj": "Vimeo-hosted videos"
+      },
+      {
+        "sub": "Magento e-commerce platform",
+        "rel": "Belong to",
+        "obj": "DefenseCode"
+      },
+      {
+        "sub": "DefenseCode",
+        "rel": "Report Type",
+        "obj": "Advisory"
+      },
+      {
+        "sub": "DefenseCode",
+        "rel": "Author",
+        "obj": "Researchers"
+      },
+      {
+        "sub": "Magento e-commerce platform",
+        "rel": "Has vulnerability",
+        "obj": "Arbitrary file upload"
+      },
+      {
+        "sub": "Arbitrary file upload",
+        "rel": "Modify",
+        "obj": ".htaccess configuration file"
+      },
+      {
+        "sub": "Arbitrary file upload",
+        "rel": "Write",
+        "obj": "Malicious PHP file"
+      },
+      {
+        "sub": "Malicious PHP file",
+        "rel": "Detect",
+        "obj": "External access via browser"
+      },
+      {
+        "sub": "Malicious PHP file",
+        "rel": "Locate at",
+        "obj": "Download directory"
+      },
+      {
+        "sub": "Magento e-commerce platform",
+        "rel": "Has URL",
+        "obj": "<img src=… in email or public message board"
+      },
+      {
+        "sub": "User",
+        "rel": "Operate",
+        "obj": "Magento session"
+      },
+      {
+        "sub": "User",
+        "rel": "Click",
+        "obj": "CSRF link"
+      },
+      {
+        "sub": "CSRF attack",
+        "rel": "Belong to",
+        "obj": "Cross-site request forgery"
+      },
+      {
+        "sub": "Magento Community Edition",
+        "rel": "Has vulnerability",
+        "obj": "All versions"
+      },
+      {
+        "sub": "Magento Community Edition",
+        "rel": "Locate at",
+        "obj": "Online retailers"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Vender",
+        "obj": "Magento developers"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has URL",
+        "obj": "Public message board"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has URL",
+        "obj": "Email"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has URL",
+        "obj": "Social engineering"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Authentication bypass"
+      },
+      {
+        "sub": "Authentication bypass",
+        "rel": "Overcome",
+        "obj": "When 'Add Secret Key to URLs' is disabled"
+      },
+      {
+        "sub": "'Add Secret Key to URLs'",
+        "rel": "Has value",
+        "obj": "Prevent CSRF attacks"
+      },
+      {
+        "sub": "'Add Secret Key to URLs'",
+        "rel": "Has value",
+        "obj": "Default enabled"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Remote code execution"
+      },
+      {
+        "sub": "Remote code execution",
+        "rel": "Requires",
+        "obj": "User authentication"
+      },
+      {
+        "sub": "Remote code execution",
+        "rel": "Can be triggered by",
+        "obj": "Social engineering"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "File type validation bypass"
+      },
+      {
+        "sub": "File type validation bypass",
+        "rel": "Return",
+        "obj": "'Disallowed file type' error"
+      },
+      {
+        "sub": "File type validation bypass",
+        "rel": "Not remove",
+        "obj": "File from server"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has geolocation",
+        "obj": "Over 250,000 online retailers"
+      },
+      {
+        "sub": "Online retailers",
+        "rel": "Have",
+        "obj": "Customer information"
+      },
+      {
+        "sub": "Customer information",
+        "rel": "Stored in",
+        "obj": "Database"
+      },
+      {
+        "sub": "Malicious code",
+        "rel": "Infected",
+        "obj": "Thousands of Magento-based online shops"
+      },
+      {
+        "sub": "Malicious code",
+        "rel": "Skim",
+        "obj": "Payment card details"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In feature retrieving preview images from Vimeo"
+      },
+      {
+        "sub": "Vimeo",
+        "rel": "Has URL",
+        "obj": "Hosted videos"
+      },
+      {
+        "sub": "DefenseCode",
+        "rel": "Report Type",
+        "obj": "Security advisory"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has URL",
+        "obj": "Vimeo"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has URL",
+        "obj": "Social engineering link"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "When 'Add Secret Key to URLs' is off"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has URL",
+        "obj": "CSRF link"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has URL",
+        "obj": "<img src=…"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Requires authentication"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Cannot be exploited directly"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Exploitable via user session"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Via social engineering"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In video-linking functionality"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In image URL handling"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "File download without validation"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Server-side execution of non-image files"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Arbitrary file upload"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Backdoor access"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Database access"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Customer data exposure"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Server directory browsing"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Configuration file reading"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Payment card data theft"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "CSRF attack vector"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "When authentication is not enforced"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "When 'Add Secret Key to URLs' is disabled"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In preview image retrieval"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In video integration"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In file validation logic"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In server response handling"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In file download behavior"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In image validation"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In file type enforcement"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In server directory access"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In user session exploitation"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In social engineering attack"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In user interaction with image URLs"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In video link handling"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In unpatched feature"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In default configuration"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In authentication flow"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In CSRF protection"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In file upload mechanism"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In image URL parsing"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In file download execution"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In server-side execution"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In arbitrary file handling"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In lack of file type enforcement"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In absence of .htaccess restriction"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In lack of access control"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In user session hijacking"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In unauthorized file access"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In configuration file exposure"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In database exposure"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In customer data exposure"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In payment data exposure"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In remote code execution"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In backdoor deployment"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In server compromise"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In data exfiltration"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In session-based attack"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In CSRF-based attack"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In image-based exploit"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In URL-based exploit"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In user-triggered exploit"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In unauthenticated exploit"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In privileged user access"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In lower-privileged user access"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In non-administrator access"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In authentication bypass"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In lack of secret key enforcement"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In default settings"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In missing patch"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In unpatched state"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In absence of patching plans"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In delayed patching response"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In no communication from developers"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In no update on patching"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In lack of transparency"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In slow response to report"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In no action after report"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In no patch release"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In ongoing vulnerability"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In persistent flaw"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In long-standing issue"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In unresolved issue"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In unaddressed flaw"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In uncorrected vulnerability"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In unpatched flaw"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In unremediated issue"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In unmitigated risk"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In unsecured feature"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure file handling"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure server behavior"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure authentication"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure session management"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure file validation"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure download process"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure server response"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure access control"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure configuration"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure user interaction"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure input handling"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure URL parsing"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure file type enforcement"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure server-side execution"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure user session exploitation"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure social engineering"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure CSRF handling"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure image retrieval"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure video integration"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure file upload"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure file download"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure file execution"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure server configuration"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure default settings"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure default behavior"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure default configuration"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure default flow"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure default access"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure default execution"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure default response"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "In insecure default handling"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Magento e-commerce platform"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has URL",
+        "obj": "<img src=…"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Modify",
+        "obj": "Magento's configuration file"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has value",
+        "obj": "Disallowed file type error"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Operate",
+        "obj": "Arbitrary file upload"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Write",
+        "obj": ".htaccess configuration file"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Write",
+        "obj": "Malicious PHP file"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Use",
+        "obj": "PHP script"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has geolocation",
+        "obj": "Online shops"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Belong to",
+        "obj": "Magento Community Edition"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Locate at",
+        "obj": "Download directory"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has hostname",
+        "obj": "External location"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has filename",
+        "obj": ".htaccess"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has filename",
+        "obj": "PHP script"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has file extension",
+        "obj": ".htaccess"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has file extension",
+        "obj": ".php"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Social engineering"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "CSRF attack"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "CSRF link"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Remote code execution"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Detect",
+        "obj": "Magento session"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Access",
+        "obj": "Customer information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Access",
+        "obj": "Database password"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Server directories"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Has value",
+        "obj": "Add Secret Key to URLs"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Mitigate",
+        "obj": "CSRF attack"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Prevent",
+        "obj": "Remote code execution"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Configure",
+        "obj": "Disallow .htaccess files"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Operate",
+        "obj": "Magento e-commerce platform"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Has vulnerability",
+        "obj": "Magento Community Edition"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Has location",
+        "obj": "Over 250,000 online retailers"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Has URL",
+        "obj": "Public message board"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Has URL",
+        "obj": "Email"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Payment card details"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Skim",
+        "obj": "Payment card details"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Magento-based online shops"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has vulnerability",
+        "obj": "Magento e-commerce platform"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has file type",
+        "obj": "PHP script"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has file type",
+        "obj": "Image"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has feature",
+        "obj": "Video preview image retrieval"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Require authentication",
+        "obj": "Video-linking functionality"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has tactic",
+        "obj": "Arbitrary file upload"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has technique",
+        "obj": "CSRF attack"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has technique",
+        "obj": "Remote code execution"
+      },
+      {
+        "sub": "Vender",
+        "rel": "Author",
+        "obj": "DefenseCode"
+      },
+      {
+        "sub": "Vender",
+        "rel": "Report Type",
+        "obj": "Advisory"
+      },
+      {
+        "sub": "Vender",
+        "rel": "Has URL",
+        "obj": "DefenseCode advisory"
+      },
+      {
+        "sub": "Vender",
+        "rel": "Has date",
+        "obj": "November"
+      },
+      {
+        "sub": "Vender",
+        "rel": "Has filename",
+        "obj": "DefenseCode advisory"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has IP",
+        "obj": "External location"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has URL",
+        "obj": "External location"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has domain",
+        "obj": "Magento"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has hostname",
+        "obj": "Magento server"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "Magento CE versions"
+      },
+      {
+        "sub": "System",
+        "rel": "Has version",
+        "obj": "2.1.6"
+      },
+      {
+        "sub": "System",
+        "rel": "Has file",
+        "obj": ".htaccess"
+      },
+      {
+        "sub": "System",
+        "rel": "Has file",
+        "obj": "PHP script"
+      },
+      {
+        "sub": "System",
+        "rel": "Has directory",
+        "obj": "Download directory"
+      },
+      {
+        "sub": "System",
+        "rel": "Has configuration",
+        "obj": "Magento configuration file"
+      },
+      {
+        "sub": "System",
+        "rel": "Has platform",
+        "obj": "Web server"
+      },
+      {
+        "sub": "System",
+        "rel": "Operate",
+        "obj": "Remote code execution"
+      },
+      {
+        "sub": "System",
+        "rel": "Detect",
+        "obj": "Active Magento session"
+      },
+      {
+        "sub": "System",
+        "rel": "Write",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "System",
+        "rel": "Access",
+        "obj": "Database password"
+      },
+      {
+        "sub": "System",
+        "rel": "Access",
+        "obj": "Customer information"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Has vulnerability",
+        "obj": "CSRF attack"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Has technique",
+        "obj": "Cross-site request forgery"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Prevent",
+        "obj": "Arbitrary file upload"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Email"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Public message board"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Entice",
+        "obj": "User to open link"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Trigger",
+        "obj": "Arbitrary file upload"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Exploit",
+        "obj": "Unpatched vulnerability"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Access",
+        "obj": "Website account"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Access",
+        "obj": "Lower-privileged user"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Overcome",
+        "obj": "Authentication obstacle"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Access",
+        "obj": "Customer data"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Access",
+        "obj": "Payment card details"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Server browsing"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Read",
+        "obj": "Database password"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "Online shop server"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Malicious code injection"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Deploy",
+        "obj": "Malicious PHP file"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Image URL redirection"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Trigger",
+        "obj": "Magento session activation"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Perform",
+        "obj": "Unauthorized request"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Exploit",
+        "obj": "Video-linking functionality"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Access",
+        "obj": "Magento configuration file"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Access",
+        "obj": "Server directories"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Access",
+        "obj": "Database"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "External browser access"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Access",
+        "obj": "Web server files"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Access",
+        "obj": "E-commerce platform"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Exploit",
+        "obj": "Unauthenticated access"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Email-based phishing"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Public forum post"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "PHP script",
+        "rel": "Access",
+        "obj": "External location"
+      },
+      {
+        "sub": "PHP script",
+        "rel": "Read",
+        "obj": "Database password"
+      },
+      {
+        "sub": "Database password",
+        "rel": "Expose",
+        "obj": "Customer information"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Locate at",
+        "obj": "Online shop"
+      },
+      {
+        "sub": "Customer information",
+        "rel": "Be sensitive",
+        "obj": "Online shop"
+      },
+      {
+        "sub": "Note: The extracted triplets follow the required format: Subject",
+        "rel": "Relation",
+        "obj": "Object, using only valid entity types and relation types as defined. \"Malware\" is inferred from the context of the backdoor PHP script, and \"Vulnerability\" is the flaw exploited. \"Customer information\" is treated as a data entity, and the relationships reflect the described actions and exposures."
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Magento"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has geolocation",
+        "obj": "Online shops"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Modify",
+        "obj": "Server directories"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Read",
+        "obj": "Database password"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Server directories"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Read",
+        "obj": "Database password"
+      },
+      {
+        "sub": "Database",
+        "rel": "Store",
+        "obj": "Customer information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Magento's configuration file"
+      },
+      {
+        "sub": "Magento's configuration file",
+        "rel": "Has value",
+        "obj": "Database password"
+      },
+      {
+        "sub": "Customer information",
+        "rel": "Locate at",
+        "obj": "Online shops"
+      },
+      {
+        "sub": "Online shops",
+        "rel": "Has vulnerability",
+        "obj": "Magento"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Configuration file"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Database password exposure"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Operate",
+        "obj": "Server directories"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Read",
+        "obj": "Database password"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Expose",
+        "obj": "Customer information"
+      },
+      {
+        "sub": "PHP Script",
+        "rel": "Operate",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "PHP Script",
+        "rel": "Has URL",
+        "obj": "External Location"
+      },
+      {
+        "sub": "PHP Script",
+        "rel": "Modify",
+        "obj": "Server"
+      }
+    ]
+  }
+}

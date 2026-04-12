@@ -1,0 +1,112 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_38.json",
+  "sample_index": 228,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_38.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "honeypots",
+        "rel": "recorded",
+        "obj": "PDoS attempts"
+      },
+      {
+        "sub": "PDoS attempts",
+        "rel": "performed from",
+        "obj": "global locations"
+      },
+      {
+        "sub": "BrickerBot",
+        "rel": "started",
+        "obj": "PDoS attempt"
+      },
+      {
+        "sub": "BrickerBot",
+        "rel": "is discovered",
+        "obj": "within one hour"
+      },
+      {
+        "sub": "BrickerBot",
+        "rel": "is discovered",
+        "obj": "within one hour"
+      },
+      {
+        "sub": "BrickerBot",
+        "rel": "conceals location",
+        "obj": "TOR nodes"
+      },
+      {
+        "sub": "end sequence",
+        "rel": "disrupts",
+        "obj": "connectivity"
+      },
+      {
+        "sub": "end sequence",
+        "rel": "removes",
+        "obj": "default route"
+      },
+      {
+        "sub": "end sequence",
+        "rel": "disables",
+        "obj": "TCP timestamps"
+      },
+      {
+        "sub": "end sequence",
+        "rel": "wipes",
+        "obj": "root"
+      },
+      {
+        "sub": "end sequence",
+        "rel": "limits",
+        "obj": "number of kernel threats"
+      },
+      {
+        "sub": "end sequence",
+        "rel": "limits",
+        "obj": "kernel threats to one"
+      },
+      {
+        "sub": "ZoomEye",
+        "rel": "revealed",
+        "obj": "outdated Dropbear SSH server"
+      },
+      {
+        "sub": "Shodan",
+        "rel": "revealed",
+        "obj": "outdated Dropbear SSH server"
+      },
+      {
+        "sub": "attack",
+        "rel": "used",
+        "obj": "outdated Dropbear SSH server"
+      },
+      {
+        "sub": "BrickerBot",
+        "rel": "is detected by",
+        "obj": "honeypot"
+      },
+      {
+        "sub": "UEBA",
+        "rel": "detects",
+        "obj": "anomalies in traffic"
+      }
+    ]
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "sample_id": "casie__10242.json",
+  "sample_index": 11,
+  "source": "casie",
+  "file_name": "10242.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Fingerlings toys",
+        "type": "Entity"
+      },
+      {
+        "name": "iPhones",
+        "type": "Entity"
+      },
+      {
+        "name": "fashion",
+        "type": "Entity"
+      },
+      {
+        "name": "Apple MacBooks",
+        "type": "Entity"
+      },
+      {
+        "name": "Ugg boots",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "fake websites",
+        "type": "Entity"
+      },
+      {
+        "name": "Facebook",
+        "type": "Entity"
+      },
+      {
+        "name": "Gumtree",
+        "type": "Entity"
+      },
+      {
+        "name": "eBay",
+        "type": "Entity"
+      },
+      {
+        "name": "mobile phones",
+        "type": "Entity"
+      },
+      {
+        "name": "Apple iPhones",
+        "type": "Entity"
+      },
+      {
+        "name": "Christmas shoppers",
+        "type": "Entity"
+      },
+      {
+        "name": "Cyber Monday",
+        "type": "Entity"
+      },
+      {
+        "name": "online auction websites",
+        "type": "Entity"
+      },
+      {
+        "name": "social media websites",
+        "type": "Entity"
+      },
+      {
+        "name": "re-selling websites",
+        "type": "Entity"
+      },
+      {
+        "name": "fake competition",
+        "type": "Entity"
+      },
+      {
+        "name": "Tesco",
+        "type": "Entity"
+      },
+      {
+        "name": "scammers",
+        "type": "Entity"
+      },
+      {
+        "name": "too good to be true offers",
+        "type": "Entity"
+      },
+      {
+        "name": "card details",
+        "type": "Entity"
+      },
+      {
+        "name": "payment details",
+        "type": "Entity"
+      },
+      {
+        "name": "online safety tips",
+        "type": "Entity"
+      },
+      {
+        "name": "Black Friday",
+        "type": "Entity"
+      },
+      {
+        "name": "Cyber Monday scams",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "scammers",
+        "rel": "uses",
+        "obj": "fake websites"
+      },
+      {
+        "sub": "scammers",
+        "rel": "lure",
+        "obj": "Cyber Monday shoppers"
+      },
+      {
+        "sub": "scammers",
+        "rel": "lure",
+        "obj": "Christmas shoppers"
+      },
+      {
+        "sub": "scammers",
+        "rel": "target",
+        "obj": "Fingerlings toys"
+      },
+      {
+        "sub": "scammers",
+        "rel": "target",
+        "obj": "iPhones"
+      },
+      {
+        "sub": "scammers",
+        "rel": "target",
+        "obj": "fashion"
+      },
+      {
+        "sub": "scammers",
+        "rel": "offer",
+        "obj": "too good to be true offers"
+      },
+      {
+        "sub": "scammers",
+        "rel": "sell",
+        "obj": "counterfeit items"
+      },
+      {
+        "sub": "scammers",
+        "rel": "collect",
+        "obj": "card details"
+      },
+      {
+        "sub": "scammers",
+        "rel": "collect",
+        "obj": "payment details"
+      },
+      {
+        "sub": "scammers",
+        "rel": "use",
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "scammers",
+        "rel": "send",
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "contain",
+        "obj": "tempting deals"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "entice",
+        "obj": "shoppers"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "contain",
+        "obj": "links to fake websites"
+      },
+      {
+        "sub": "scammers",
+        "rel": "use",
+        "obj": "social media websites"
+      },
+      {
+        "sub": "scammers",
+        "rel": "use",
+        "obj": "Facebook"
+      },
+      {
+        "sub": "scammers",
+        "rel": "use",
+        "obj": "re-selling websites"
+      },
+      {
+        "sub": "scammers",
+        "rel": "use",
+        "obj": "Gumtree"
+      },
+      {
+        "sub": "scammers",
+        "rel": "use",
+        "obj": "online auction websites"
+      },
+      {
+        "sub": "scammers",
+        "rel": "use",
+        "obj": "eBay"
+      },
+      {
+        "sub": "scammers",
+        "rel": "target",
+        "obj": "mobile phones"
+      },
+      {
+        "sub": "scammers",
+        "rel": "target",
+        "obj": "Apple iPhones"
+      },
+      {
+        "sub": "scammers",
+        "rel": "sell",
+        "obj": "Apple MacBooks"
+      },
+      {
+        "sub": "scammers",
+        "rel": "sell",
+        "obj": "Ugg boots"
+      },
+      {
+        "sub": "scammers",
+        "rel": "sell",
+        "obj": "Fingerlings toys"
+      },
+      {
+        "sub": "scammers",
+        "rel": "run",
+        "obj": "fake competition"
+      },
+      {
+        "sub": "scammers",
+        "rel": "claim",
+        "obj": "to be from Tesco"
+      },
+      {
+        "sub": "scammers",
+        "rel": "use",
+        "obj": "fake competition"
+      },
+      {
+        "sub": "scammers",
+        "rel": "steal",
+        "obj": "bank details"
+      },
+      {
+        "sub": "women aged between 20 and 29",
+        "rel": "are most likely to be caught out by",
+        "obj": "scammers"
+      },
+      {
+        "sub": "fraud reports",
+        "rel": "come from",
+        "obj": "young women"
+      },
+      {
+        "sub": "shoppers",
+        "rel": "lose",
+        "obj": "money to scammers"
+      },
+      {
+        "sub": "shoppers",
+        "rel": "lose",
+        "obj": "£11million to scammers"
+      },
+      {
+        "sub": "Detective Chief Superintendent Pete O’Doherty",
+        "rel": "warns",
+        "obj": "be cautious of where and from whom you’re buying"
+      },
+      {
+        "sub": "Detective Chief Superintendent Pete O’Doherty",
+        "rel": "warns",
+        "obj": "be cautious of technology at reduced price"
+      },
+      {
+        "sub": "Tony Neate",
+        "rel": "says",
+        "obj": "taking a few minutes to check online safety tips can prevent fraud"
+      },
+      {
+        "sub": "online safety tips",
+        "rel": "can prevent",
+        "obj": "online fraud"
+      }
+    ]
+  }
+}

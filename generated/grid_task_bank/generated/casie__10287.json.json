@@ -1,0 +1,388 @@
+{
+  "sample_id": "casie__10287.json",
+  "sample_index": 27,
+  "source": "casie",
+  "file_name": "10287.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "WhatsApp",
+        "type": "general-software",
+        "alias": [
+          "its smartphone code",
+          "the chat app"
+        ]
+      },
+      {
+        "name": "vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "flaw",
+          "memory heap overflow issue"
+        ]
+      },
+      {
+        "name": "smartphone code",
+        "type": "general-software",
+        "alias": [
+          "WhatsApp's smartphone code"
+        ]
+      },
+      {
+        "name": "miscreants",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "chat app",
+        "type": "general-software"
+      },
+      {
+        "name": "Google Project Zero",
+        "type": "security-product",
+        "alias": [
+          "Google Project Zero"
+        ]
+      },
+      {
+        "name": "Natalie Silvanovich",
+        "type": "identity",
+        "alias": [
+          "Google Project Zero whizkid",
+          "Tamagotchi whisperer"
+        ]
+      },
+      {
+        "name": "RTP packet",
+        "type": "network-traffic"
+      },
+      {
+        "name": "malformed RTP packet",
+        "type": "network-traffic"
+      },
+      {
+        "name": "corruption error",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Android",
+        "type": "operating-system"
+      },
+      {
+        "name": "iPhone",
+        "type": "operating-system"
+      },
+      {
+        "name": "desktop app",
+        "type": "general-software"
+      },
+      {
+        "name": "October security patches",
+        "type": "course-of-action"
+      },
+      {
+        "name": "Microsoft",
+        "type": "organization"
+      },
+      {
+        "name": "Adobe",
+        "type": "organization"
+      },
+      {
+        "name": "Patch Tuesday",
+        "type": "course-of-action"
+      },
+      {
+        "name": "Tavis Ormandy",
+        "type": "identity",
+        "alias": [
+          "fellow Google researcher"
+        ]
+      },
+      {
+        "name": "WhatsApp on Android and iOS",
+        "type": "general-software"
+      },
+      {
+        "name": "the latest version of WhatsApp",
+        "type": "general-software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "WhatsApp",
+        "rel": "has patched",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "could have been exploited by",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "miscreants"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "could crash",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "chat app"
+      },
+      {
+        "sub": "Natalie Silvanovich",
+        "rel": "discovered and reported",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "Natalie Silvanovich",
+        "rel": "reported",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "is located in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "smartphone code"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "patched",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "is triggered when a user receives",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "malformed RTP packet"
+      },
+      {
+        "sub": "malformed RTP packet",
+        "rel": "triggers",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "corruption error"
+      },
+      {
+        "sub": "corruption error",
+        "rel": "crashes",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "chat app"
+      },
+      {
+        "sub": "malformed RTP packet",
+        "rel": "could be sent via",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "simple call request"
+      },
+      {
+        "sub": "WhatsApp user",
+        "rel": "accepts a call from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "malicious peer"
+      },
+      {
+        "sub": "malicious peer",
+        "rel": "can trigger",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "corruption error"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "affects",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Android"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "affects",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "iPhone"
+      },
+      {
+        "sub": "WhatsApp user",
+        "rel": "accepts a call from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "malicious peer"
+      },
+      {
+        "sub": "flaw",
+        "rel": "could be possible to pull off",
+        "rel_type": [
+          "targets",
+          "possible"
+        ],
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "fellow Google researcher Tavis Ormandy",
+        "rel": "was drawn to by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "flaw"
+      },
+      {
+        "sub": "users",
+        "rel": "will be able to get a fix for",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "users",
+        "rel": "by updating to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "latest version of WhatsApp"
+      },
+      {
+        "sub": "the latest version of WhatsApp",
+        "rel": "is on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Android and iOS"
+      },
+      {
+        "sub": "the latest version of WhatsApp",
+        "rel": "updates",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "disclosure",
+        "rel": "will add another to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "growing list of apps that will need to be updated"
+      },
+      {
+        "sub": "growing list of apps that will need to be updated",
+        "rel": "thanks to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "October security patches"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "delivered",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Patch Tuesday security bundle"
+      },
+      {
+        "sub": "Adobe",
+        "rel": "dropped",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "second major patch bundle"
+      },
+      {
+        "sub": "Google",
+        "rel": "posted",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Android monthly update"
+      },
+      {
+        "sub": "Tavis Ormandy",
+        "rel": "was drawn to by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "flaw"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "could be possible to pull off",
+        "rel_type": [
+          "targets",
+          "possible"
+        ],
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "WhatsApp on Android and iOS",
+        "rel": "is affected by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "desktop app",
+        "rel": "could be affected by",
+        "rel_type": [
+          "targets",
+          "possible"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "Google",
+        "rel": "has posted",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Android monthly update"
+      }
+    ]
+  }
+}

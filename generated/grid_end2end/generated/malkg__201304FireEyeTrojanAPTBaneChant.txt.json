@@ -1,0 +1,447 @@
+{
+  "sample_id": "malkg__201304FireEyeTrojanAPTBaneChant.txt",
+  "sample_index": 108,
+  "source": "malkg",
+  "file_name": "201304FireEyeTrojanAPTBaneChant.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Trojan.APT.BaneChant",
+        "type": "malware",
+        "alias": [
+          "this malware",
+          "the malware",
+          "the real thing",
+          "the downloaded code",
+          "the malware was observed",
+          "the malware was observed to send information",
+          "this malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Mr. Abhishek Singh",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Islamic Jihad.doc",
+        "type": "file",
+        "alias": [
+          "the spear phishing document",
+          "malicious document",
+          "weaponized document"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Middle East and Central Asia",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "spear phishing document",
+        "type": "file",
+        "alias": [
+          "the spear phishing document",
+          "malicious document"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "mouse clicks",
+        "type": "abstract-concept",
+        "alias": [
+          "human behaviors",
+          "left clicks"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "legitimate URL",
+        "type": "url",
+        "alias": [
+          "URL shortening service"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CnC server",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Internet connection",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "stage one payload",
+        "type": "file",
+        "alias": [
+          "decrypted executable file",
+          "malware husk"
+        ],
+        "mother entity": [
+          "Trojan.APT.BaneChant"
+        ]
+      },
+      {
+        "name": "stage two payload",
+        "type": "file",
+        "alias": [
+          "true malicious code",
+          "malicious code"
+        ],
+        "mother entity": [
+          "Trojan.APT.BaneChant"
+        ]
+      },
+      {
+        "name": "fake JPEG file",
+        "type": "file",
+        "alias": [
+          "malicious server",
+          "malicious content"
+        ],
+        "mother entity": [
+          "stage two payload"
+        ]
+      },
+      {
+        "name": "NO-IP",
+        "type": "general-software",
+        "alias": [
+          "dynamic DNS service"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://ow.ly/iGKKT",
+        "type": "url",
+        "alias": [
+          "URL shortening server"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://symbisecure.com/update/winword.pkg",
+        "type": "url",
+        "alias": [
+          "the downloaded executable"
+        ],
+        "mother entity": [
+          "stage two payload"
+        ]
+      },
+      {
+        "name": "hxxp://kibber.no-ip.org/adserv/logo.jpg",
+        "type": "url",
+        "alias": [
+          "malicious domain"
+        ],
+        "mother entity": [
+          "stage two payload"
+        ]
+      },
+      {
+        "name": "moo” prefixed file,\n    \"type\": \"file\",\n    \"alias\": [\n      \"moo1.tmp\"\n    ],\n    \"mother entity\": [\n      \"stage one payload\"\n    ]\n  },\n  {\n    \"name\": \"winword.pkg\",\n    \"type\": \"file\",\n    \"alias\": [\n      \"the downloaded executable\"\n    ],\n    \"mother entity\": [\n      \"stage two payload\"\n    ]\n  },\n  {\n    \"name\": \"JPG file\",\n    \"type\": \"file\",\n    \"alias\": [\n      \"executable content\",\n      \"malicious code\"\n    ],\n    \"mother entity\": [\n      \"stage two payload\"\n    ]\n  },\n  {\n    \"name\": “C:\\ProgramData\\Google2\\GoogleUpdate.exe”,\n    \"type\": \"file\",\n    \"alias\": [\n      \"GoogleUpdate.exe\"\n    ],\n    \"mother entity\": [\n      \"malware\"\n    ]\n  },\n  {\n    \"name\": “program files”,\n    \"type\": \"location\",\n    \"alias\": [],\n    \"mother entity\": []\n  },\n  {\n    \"name\": “BaneChant”,\n    \"type\": \"indicator\",\n    \"alias\": [\n      \"sound track composed by Hans Zimmer\"\n    ],\n    \"mother entity\": [\n      \"Trojan.APT.BaneChant\"\n    ]\n  },\n  {\n    \"name\": \"hxxp://symbisecure.com/adserv/get.php\",\n    \"type\": \"url\",\n    \"alias\": [],\n    \"mother entity\": [\n      \"malware\"\n    ]\n  },\n  {\n    \"name\": \"return at 0x27606EFF\",\n    \"type\": \"command\",\n    \"alias\": [],\n    \"mother entity\": [\n      \"shellcode\"\n    ]\n  },\n  {\n    \"name\": \"CVE 2012-0158\",\n    \"type\": \"vulnerability\",\n    \"alias\": [],\n    \"mother entity\": [\n      \"MSCOMCTL.ocx\"\n    ]\n  },\n  {\n    \"name\": \"MSCOMCTL.ocx\",\n    \"type\": \"general-software\",\n    \"alias\": [],\n    \"mother entity\": []\n  },\n  {\n    \"name\": “g”,\n    \"type\": \"course-of-action\",\n    \"alias\": [],\n    \"mother entity\": [\n      \"Trojan.APT.BaneChant\"\n    ]\n  },\n  {\n    \"name\": “i”,\n    \"type\": \"course-of-action\",\n    \"alias\": [],\n    \"mother entity\": [\n      \"Trojan.APT.BaneChant\"\n    ]\n  },\n  {\n    \"name\": “x”,\n    \"type\": \"course-of-action\",\n    \"alias\": [],\n    \"mother entity\": [\n      \"Trojan.APT.BaneChant\"\n    ]\n  },\n  {\n    \"name\": “u",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "Trojan.APT.BaneChant"
+        ]
+      },
+      {
+        "name": "Mozilla/4.0",
+        "type": "string-value",
+        "alias": [],
+        "mother entity": [
+          "Trojan.APT.BaneChant"
+        ]
+      },
+      {
+        "name": "Mozilla/5.0",
+        "type": "string-value",
+        "alias": [],
+        "mother entity": [
+          "Trojan.APT.BaneChant"
+        ]
+      },
+      {
+        "name": "Chong Rong Hwa",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Advanced Malware",
+        "type": "category",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Mr. Abhishek Singh",
+        "rel": "researched and posted about",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Trojan.APT.BaneChant"
+      },
+      {
+        "sub": "Islamic Jihad.doc",
+        "rel": "downloads",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Trojan.APT.BaneChant"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Middle East and Central Asia"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "detects",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "mouse clicks"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "uses",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "legitimate URL"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "communicates-with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "CnC server"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "requires",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "Internet connection"
+      },
+      {
+        "sub": "spear phishing document",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "stage one payload"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "hxxp://ow.ly/iGKKT"
+      },
+      {
+        "sub": "stage one payload",
+        "rel": "leads to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "stage two payload"
+      },
+      {
+        "sub": "stage two payload",
+        "rel": "delivered as",
+        "rel_type": [
+          "delivered-by"
+        ],
+        "obj": "fake JPEG file"
+      },
+      {
+        "sub": "stage two payload",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "NO-IP"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "hxxp://symbisecure.com/update/winword.pkg"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "hxxp://kibber.no-ip.org/adserv/logo.jpg"
+      },
+      {
+        "sub": "shellcode",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "return at 0x27606EFF"
+      },
+      {
+        "sub": "shellcode",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "hxxp://ow.ly/iGKKT"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "stage two payload"
+      },
+      {
+        "sub": "JPG file",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Trojan.APT.BaneChant"
+      },
+      {
+        "sub": "JPG file",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "C:\\ProgramData\\Google2\\GoogleUpdate.exe"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "exfiltrate-to",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "hxxp://symbisecure.com/adserv/get.php"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "g"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "i"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "x"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "u"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "exploits",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE 2012-0158"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "exploits",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "MSCOMCTL.ocx"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "exfiltrates via",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "BaneChant"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "located-at",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "program files"
+      },
+      {
+        "sub": "Chong Rong Hwa",
+        "rel": "authored",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Trojan.APT.BaneChant"
+      },
+      {
+        "sub": "Advanced Malware",
+        "rel": "categorized",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Trojan.APT.BaneChant"
+      }
+    ]
+  }
+}

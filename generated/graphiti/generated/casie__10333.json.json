@@ -1,0 +1,183 @@
+{
+  "sample_id": "casie__10333.json",
+  "sample_index": 24,
+  "source": "casie",
+  "file_name": "10333.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "phishing",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "malicious URLs",
+        "type": "Indicator"
+      },
+      {
+        "name": "deceptive domains",
+        "type": "Indicator"
+      },
+      {
+        "name": "HMRC",
+        "type": "Organization"
+      },
+      {
+        "name": "UK National Cyber Crime Centre",
+        "type": "Organization"
+      },
+      {
+        "name": "GCHQ",
+        "type": "Organization"
+      },
+      {
+        "name": "Active Cyber Defence programme",
+        "type": "Campaign"
+      },
+      {
+        "name": "tax refund scams",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Indicator"
+      },
+      {
+        "name": "phishing websites",
+        "type": "Indicator"
+      },
+      {
+        "name": "government tax collectors",
+        "type": "Location"
+      },
+      {
+        "name": "cybercriminals",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "UK-hosted sites",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "malicious IPs",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "phishing attacks",
+        "type": "AttackPattern"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "cybercriminals",
+        "rel": "USE",
+        "obj": "malicious URLs"
+      },
+      {
+        "sub": "cybercriminals",
+        "rel": "USE",
+        "obj": "deceptive domains"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "link to",
+        "obj": "deceptive domains"
+      },
+      {
+        "sub": "phishing attacks",
+        "rel": "INVOKE",
+        "obj": "phishing websites"
+      },
+      {
+        "sub": "phishing",
+        "rel": "IMITATE",
+        "obj": "government tax collectors"
+      },
+      {
+        "sub": "phishing",
+        "rel": "IMITATE",
+        "obj": "HMRC"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "CONSTITUTE",
+        "obj": "tax refund scams"
+      },
+      {
+        "sub": "UK National Cyber Crime Centre",
+        "rel": "LAUNCH",
+        "obj": "Active Cyber Defence programme"
+      },
+      {
+        "sub": "Active Cyber Defence programme",
+        "rel": "TAKEDOWN",
+        "obj": "phishing websites"
+      },
+      {
+        "sub": "Active Cyber Defence programme",
+        "rel": "TARGET",
+        "obj": "malicious IPs"
+      },
+      {
+        "sub": "Active Cyber Defence programme",
+        "rel": "reduce attack duration on",
+        "obj": "UK-hosted sites"
+      },
+      {
+        "sub": "Active Cyber Defence programme",
+        "rel": "decrease lifespan of",
+        "obj": "phishing domains"
+      },
+      {
+        "sub": "Active Cyber Defence programme",
+        "rel": "focus on",
+        "obj": "government tax collectors"
+      },
+      {
+        "sub": "UK National Cyber Crime Centre",
+        "rel": "belongs to",
+        "obj": "GCHQ"
+      },
+      {
+        "sub": "phishing attacks",
+        "rel": "performed by",
+        "obj": "cybercriminals"
+      },
+      {
+        "sub": "phishing websites",
+        "rel": "SPOOF",
+        "obj": "HMRC"
+      },
+      {
+        "sub": "phishing websites",
+        "rel": "SPOOF",
+        "obj": "government tax collectors"
+      },
+      {
+        "sub": "Active Cyber Defence programme",
+        "rel": "reduce success rate of",
+        "obj": "phishing attacks"
+      },
+      {
+        "sub": "Active Cyber Defence programme",
+        "rel": "PROTECT",
+        "obj": "UK"
+      }
+    ]
+  }
+}

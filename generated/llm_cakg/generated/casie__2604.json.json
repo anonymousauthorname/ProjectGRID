@@ -1,0 +1,193 @@
+{
+  "sample_id": "casie__2604.json",
+  "sample_index": 9,
+  "source": "casie",
+  "file_name": "2604.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Pirates of the Caribbean: Dead Men Tell No Tales",
+        "type": "Entity"
+      },
+      {
+        "name": "Pirate Bay",
+        "type": "Entity"
+      },
+      {
+        "name": "Bob Iger",
+        "type": "Entity"
+      },
+      {
+        "name": "Walt Disney",
+        "type": "Entity"
+      },
+      {
+        "name": "extortionists",
+        "type": "Entity"
+      },
+      {
+        "name": "ransom demand",
+        "type": "Entity"
+      },
+      {
+        "name": "intellectual property",
+        "type": "Entity"
+      },
+      {
+        "name": "security breach",
+        "type": "Entity"
+      },
+      {
+        "name": "threat of a hack",
+        "type": "Entity"
+      },
+      {
+        "name": "blackmail threats",
+        "type": "Entity"
+      },
+      {
+        "name": "hacked movie",
+        "type": "Entity"
+      },
+      {
+        "name": "torrents",
+        "type": "Entity"
+      },
+      {
+        "name": "Johnny Depp",
+        "type": "Entity"
+      },
+      {
+        "name": "Javier Bardem",
+        "type": "Entity"
+      },
+      {
+        "name": "Geoffrey Rush",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "extortionists",
+        "rel": "threaten",
+        "obj": "ransom demand"
+      },
+      {
+        "sub": "extortionists",
+        "rel": "threaten",
+        "obj": "hacked movie"
+      },
+      {
+        "sub": "extortionists",
+        "rel": "threaten",
+        "obj": "security breach"
+      },
+      {
+        "sub": "extortionists",
+        "rel": "threaten",
+        "obj": "intellectual property"
+      },
+      {
+        "sub": "extortionists",
+        "rel": "threaten",
+        "obj": "release of Pirates of the Caribbean: Dead Men Tell No Tales"
+      },
+      {
+        "sub": "Pirates of the Caribbean: Dead Men Tell No Tales",
+        "rel": "is targeted by",
+        "obj": "extortionists"
+      },
+      {
+        "sub": "Pirate Bay",
+        "rel": "contains",
+        "obj": "torrents"
+      },
+      {
+        "sub": "torrents",
+        "rel": "contain",
+        "obj": "Pirates of the Caribbean: Dead Men Tell No Tales"
+      },
+      {
+        "sub": "Pirate Bay",
+        "rel": "has",
+        "obj": "torrents of Pirates of the Caribbean: Dead Men Tell No Tales"
+      },
+      {
+        "sub": "Walt Disney",
+        "rel": "receives",
+        "obj": "threat of a hack"
+      },
+      {
+        "sub": "Walt Disney",
+        "rel": "does not confirm",
+        "obj": "hacked movie"
+      },
+      {
+        "sub": "Walt Disney",
+        "rel": "refuses to pay",
+        "obj": "ransom demand"
+      },
+      {
+        "sub": "Walt Disney",
+        "rel": "denies",
+        "obj": "security breach"
+      },
+      {
+        "sub": "Bob Iger",
+        "rel": "is contacted by",
+        "obj": "extortionists"
+      },
+      {
+        "sub": "Bob Iger",
+        "rel": "does not specify",
+        "obj": "hacked movie"
+      },
+      {
+        "sub": "extortionists",
+        "rel": "claim to have stolen",
+        "obj": "Pirates of the Caribbean: Dead Men Tell No Tales"
+      },
+      {
+        "sub": "extortionists",
+        "rel": "claim to have",
+        "obj": "intellectual property"
+      },
+      {
+        "sub": "torrents",
+        "rel": "are spotted on",
+        "obj": "Pirate Bay"
+      },
+      {
+        "sub": "torrents",
+        "rel": "feature",
+        "obj": "Johnny Depp"
+      },
+      {
+        "sub": "torrents",
+        "rel": "feature",
+        "obj": "Javier Bardem"
+      },
+      {
+        "sub": "torrents",
+        "rel": "feature",
+        "obj": "Geoffrey Rush"
+      }
+    ]
+  }
+}

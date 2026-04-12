@@ -1,0 +1,776 @@
+{
+  "sample_id": "securenlp__The_Uroburos_case",
+  "sample_index": 183,
+  "source": "securenlp",
+  "file_name": "The_Uroburos_case",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Uroburos",
+        "type": "malware",
+        "alias": [
+          "Snake",
+          "Turla",
+          "the rootkit with Russian roots"
+        ]
+      },
+      {
+        "name": "Agent.BTZ",
+        "type": "malware",
+        "alias": [
+          "the Agent.BTZ malware"
+        ]
+      },
+      {
+        "name": "ComRAT",
+        "type": "malware",
+        "alias": [
+          "a new generation of Agent.BTZ",
+          "the RAT ComRAT"
+        ]
+      },
+      {
+        "name": "v3.25",
+        "type": "variant-of",
+        "alias": [
+          "version 3.25"
+        ]
+      },
+      {
+        "name": "v3.26",
+        "type": "variant-of",
+        "alias": [
+          "version 3.26"
+        ]
+      },
+      {
+        "name": "credprov.tlb",
+        "type": "file",
+        "alias": [
+          "the main payload of the malware",
+          "the real payload"
+        ]
+      },
+      {
+        "name": "shdocvw.tlp",
+        "type": "file",
+        "alias": [
+          "the second file",
+          "Microsoft Windows dynamic library"
+        ]
+      },
+      {
+        "name": "winview.ocx",
+        "type": "file",
+        "alias": [
+          "the dropper creates an additional file"
+        ]
+      },
+      {
+        "name": "mskfp32.ocx",
+        "type": "file"
+      },
+      {
+        "name": "msvcrtd.tlb",
+        "type": "file"
+      },
+      {
+        "name": "oleaut32.dll",
+        "type": "file"
+      },
+      {
+        "name": "oleaut32.tlb",
+        "type": "file"
+      },
+      {
+        "name": "libadcodec.dll",
+        "type": "file"
+      },
+      {
+        "name": "libadcodec.tlb",
+        "type": "file"
+      },
+      {
+        "name": "HKCU\\Software\\Classes\\CLSID\\{42aedc87-2188-41fd-b9a3-0c966feabec1}\\InprocServer32",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "general-software"
+      },
+      {
+        "name": "explorer.exe",
+        "type": "process"
+      },
+      {
+        "name": "named pipe",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "G DATA SecurityLabs",
+        "type": "security-product",
+        "alias": [
+          "the experts of the G DATA SecurityLabs"
+        ]
+      },
+      {
+        "name": "COM Object hijacking",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "COMpfun",
+        "type": "malware"
+      },
+      {
+        "name": "the attackers",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the group behind Agent.BTZ",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the RAT ComRAT",
+        "type": "malware"
+      },
+      {
+        "name": "the rootkit Uroburos",
+        "type": "malware"
+      },
+      {
+        "name": "February 2014",
+        "type": "date"
+      },
+      {
+        "name": "January 3rd 2013",
+        "type": "date"
+      },
+      {
+        "name": "06.11.2014",
+        "type": "date"
+      },
+      {
+        "name": "the dropper",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "the dropper v3.25",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "the dropper v3.26",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "the installation log file name",
+        "type": "indicator"
+      },
+      {
+        "name": "the file name used by Agent.BTZ in the past",
+        "type": "indicator"
+      },
+      {
+        "name": "1dM3uu4j7Fw4sjnbcwlDqet4F7JyuUi4m5Imnxl1pzxI6as80cbLnmz54cs5Ldn4ri3do5L6gs923HL34x2f5cvd0fk6c1a0s",
+        "type": "credential-value"
+      },
+      {
+        "name": "weather-online.hopto.org",
+        "type": "domain-name"
+      },
+      {
+        "name": "webonline.mefound.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "sportacademy.my03.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "easport-news.publicvm.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "new-book.linkpc.net",
+        "type": "domain-name"
+      },
+      {
+        "name": "x86",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Agent.BTZ path",
+        "type": "course-of-action"
+      },
+      {
+        "name": "command and control server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "%APPDATA%\\Microsoft\\shdocvw.tlp",
+        "type": "path"
+      },
+      {
+        "name": "%APPDATA%\\Microsoft\\oleaut32.dll",
+        "type": "path"
+      },
+      {
+        "name": "%APPDATA%\\Microsoft\\oleaut32.tlb",
+        "type": "path"
+      },
+      {
+        "name": "%APPDATA%\\Microsoft\\credprov.tlb",
+        "type": "path"
+      },
+      {
+        "name": "%APPDATA%\\Microsoft\\libadcodec.dll",
+        "type": "path"
+      },
+      {
+        "name": "%APPDATA%\\Microsoft\\libadcodec.tlb",
+        "type": "path"
+      },
+      {
+        "name": "the same xor key",
+        "type": "indicator"
+      },
+      {
+        "name": "the same file name for the log",
+        "type": "indicator"
+      },
+      {
+        "name": "the malware version",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the PVer flag",
+        "type": "indicator"
+      },
+      {
+        "name": "the registry",
+        "type": "infrastructure"
+      },
+      {
+        "name": "the URL",
+        "type": "url"
+      },
+      {
+        "name": "the C&C domain",
+        "type": "indicator"
+      },
+      {
+        "name": "The Uroburos case",
+        "type": "campaign"
+      },
+      {
+        "name": "February 6th 2014",
+        "type": "date"
+      },
+      {
+        "name": "May 13th 2014",
+        "type": "date"
+      },
+      {
+        "name": "October 30th 2014",
+        "type": "date"
+      },
+      {
+        "name": "March 3rd 2014",
+        "type": "date"
+      },
+      {
+        "name": "February 28th 2014",
+        "type": "date"
+      },
+      {
+        "name": "the G DATA SecurityLabs",
+        "type": "security-product"
+      },
+      {
+        "name": "the analysis",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "the Uroburos publication",
+        "type": "event"
+      },
+      {
+        "name": "The conclusion",
+        "type": "conclusion"
+      },
+      {
+        "name": "COM Object hijacking: the discreet way of persistence",
+        "type": "research-describes-analysis-of-characterizes-detects"
+      },
+      {
+        "name": "Analysis of Uroburos, using WinDbg",
+        "type": "research-describes-analysis-of-characterizes-detects"
+      },
+      {
+        "name": "Uroburos rootkit: Belgian Foreign Ministry stricken",
+        "type": "research-describes-analysis-of-characterizes-detects"
+      },
+      {
+        "name": "Uroburos - highly complex espionage software with Russian roots",
+        "type": "research-describes-analysis-of-characterizes-detects"
+      },
+      {
+        "name": "Uroburos - Deeper travel into kernel protection mitigation",
+        "type": "research-describes-analysis-of-characterizes-detects"
+      },
+      {
+        "name": "The Uroburos case",
+        "type": "campaign"
+      },
+      {
+        "name": "the close connection",
+        "type": "indicator"
+      },
+      {
+        "name": "the same code",
+        "type": "indicator"
+      },
+      {
+        "name": "the same code was used",
+        "type": "indicator"
+      },
+      {
+        "name": "the same dll loaded",
+        "type": "indicator"
+      },
+      {
+        "name": "the command and control server domains are shared",
+        "type": "indicator"
+      },
+      {
+        "name": "the main difference is the design",
+        "type": "indicator"
+      },
+      {
+        "name": "the malware is loaded into each and every process",
+        "type": "indicator"
+      },
+      {
+        "name": "the library is the real payload",
+        "type": "indicator"
+      },
+      {
+        "name": "the RAT ComRAT",
+        "type": "malware"
+      },
+      {
+        "name": "the RAT Agent.BTZ",
+        "type": "malware"
+      },
+      {
+        "name": "the group behind this piece of malware",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the developers",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the persistence mechanism",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "the compilation date",
+        "type": "date"
+      },
+      {
+        "name": "spoofed",
+        "type": "action"
+      },
+      {
+        "name": "the connection",
+        "type": "indicator"
+      },
+      {
+        "name": "the new mechanisms",
+        "type": "course-of-action"
+      },
+      {
+        "name": "the command and control server information",
+        "type": "indicator"
+      },
+      {
+        "name": "the malware version",
+        "type": "variant-of"
+      },
+      {
+        "name": "the XML log file",
+        "type": "file"
+      },
+      {
+        "name": "the registry key",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "the presence of the malware",
+        "type": "indicator"
+      },
+      {
+        "name": "the same behavior",
+        "type": "indicator"
+      },
+      {
+        "name": "the file is xored",
+        "type": "action"
+      },
+      {
+        "name": "the log file content",
+        "type": "indicator"
+      },
+      {
+        "name": "the log begin",
+        "type": "indicator"
+      },
+      {
+        "name": "the malware checks",
+        "type": "action"
+      },
+      {
+        "name": "the system",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the functionality of the RAT",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the analysis of the dropper",
+        "type": "research-describes-analysis-of-characterizes-detects"
+      },
+      {
+        "name": "the unique design",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the new features",
+        "type": "indicator"
+      },
+      {
+        "name": "the infection",
+        "type": "indicator"
+      },
+      {
+        "name": "the stealth",
+        "type": "indicator"
+      },
+      {
+        "name": "the execution flow",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the infrastructure of the attack",
+        "type": "infrastructure"
+      },
+      {
+        "name": "the stealthy approach",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the insider threat",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the future trend",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the actors",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the G DATA SecurityLabs experts",
+        "type": "security-product"
+      },
+      {
+        "name": "Uroburos - highly complex espionage software with Russian roots",
+        "type": "research-describes-analysis-of-characterizes-detects"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Uroburos",
+        "rel": "a link exists between",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Agent.BTZ"
+      },
+      {
+        "sub": "G DATA SecurityLabs",
+        "rel": "published an analysis of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "identified",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "ComRAT"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "is a new generation of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Agent.BTZ"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "analyzed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "v3.25"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "analyzed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "v3.26"
+      },
+      {
+        "sub": "Agent.BTZ",
+        "rel": "used the same encoding key as",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "Agent.BTZ",
+        "rel": "used the same file name for the log as",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "ComRAT v3.25",
+        "rel": "shows same behavior as",
+        "rel_type": [
+          "shows"
+        ],
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "shared a C&C domain with",
+        "rel_type": [
+          "shares"
+        ],
+        "obj": "ComRAT"
+      },
+      {
+        "sub": "ComRAT v3.26",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a new key"
+      },
+      {
+        "sub": "ComRAT v3.26",
+        "rel": "does not create",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "installation log file"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "COM Object hijacking"
+      },
+      {
+        "sub": "COM Object hijacking",
+        "rel": "is the persistence mechanism for",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "COMpfun"
+      },
+      {
+        "sub": "the dropper",
+        "rel": "installs",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "credprov.tlb"
+      },
+      {
+        "sub": "the dropper",
+        "rel": "executes command to install",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "shdocvw.tlp"
+      },
+      {
+        "sub": "shdocvw.tlp",
+        "rel": "is",
+        "rel_type": [
+          "is"
+        ],
+        "obj": "Microsoft Windows dynamic library"
+      },
+      {
+        "sub": "the malware",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "HKCU\\Software\\Classes\\CLSID\\{42aedc87-2188-41fd-b9a3-0c966feabec1}\\InprocServer32"
+      },
+      {
+        "sub": "the registry key",
+        "rel": "associates",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "shdocvw.tlp"
+      },
+      {
+        "sub": "shdocvw.tlp",
+        "rel": "is loaded into",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "each and every process"
+      },
+      {
+        "sub": "the dropper",
+        "rel": "creates",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "winview.ocx"
+      },
+      {
+        "sub": "winview.ocx",
+        "rel": "is xored with",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "1dM3uu4j7Fw4sjnbcwlDqet4F7JyuUi4m5Imnxl1pzxI6as80cbLnmz54cs5Ldn4ri3do5L6gs923HL34x2f5cvd0fk6c1a0s"
+      },
+      {
+        "sub": "the malware",
+        "rel": "checks if",
+        "rel_type": [
+          "checks"
+        ],
+        "obj": "an older version is installed"
+      },
+      {
+        "sub": "ComRAT v3.26",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a new non-ASCII key"
+      },
+      {
+        "sub": "the malware",
+        "rel": "stores",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "command and control server information"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "command and control server via browser process"
+      },
+      {
+        "sub": "the malware",
+        "rel": "communicates via",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "named pipe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "creates",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "log files"
+      },
+      {
+        "sub": "the log file",
+        "rel": "contains",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "PVer flag"
+      },
+      {
+        "sub": "the C&C server",
+        "rel": "is",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "weather-online.hopto.org"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "are still active and are pursuing",
+        "rel_type": [
+          "pursues"
+        ],
+        "obj": "Agent.BTZ path"
+      },
+      {
+        "sub": "the dropper v3.25",
+        "rel": "has compilation date",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "February 6th 2014"
+      },
+      {
+        "sub": "the dropper v3.26",
+        "rel": "has compilation date",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "January 3rd 2013"
+      }
+    ]
+  }
+}

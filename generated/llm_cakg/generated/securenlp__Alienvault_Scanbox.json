@@ -1,0 +1,340 @@
+{
+  "sample_id": "securenlp__Alienvault_Scanbox",
+  "sample_index": 173,
+  "source": "securenlp",
+  "file_name": "Alienvault_Scanbox",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Scanbox",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious Javascript file",
+        "type": "Entity"
+      },
+      {
+        "name": "remote C&C server",
+        "type": "Entity"
+      },
+      {
+        "name": "Referer",
+        "type": "Entity"
+      },
+      {
+        "name": "User-Agent",
+        "type": "Entity"
+      },
+      {
+        "name": "Location",
+        "type": "Entity"
+      },
+      {
+        "name": "Cookie",
+        "type": "Entity"
+      },
+      {
+        "name": "Title",
+        "type": "Entity"
+      },
+      {
+        "name": "Domain",
+        "type": "Entity"
+      },
+      {
+        "name": "Charset",
+        "type": "Entity"
+      },
+      {
+        "name": "Screen width and height",
+        "type": "Entity"
+      },
+      {
+        "name": "Operating System",
+        "type": "Entity"
+      },
+      {
+        "name": "Language",
+        "type": "Entity"
+      },
+      {
+        "name": "encryption",
+        "type": "Entity"
+      },
+      {
+        "name": "decryption",
+        "type": "Entity"
+      },
+      {
+        "name": "Pluginid 1",
+        "type": "Entity"
+      },
+      {
+        "name": "Pluginid 2",
+        "type": "Entity"
+      },
+      {
+        "name": "Pluginid 5",
+        "type": "Entity"
+      },
+      {
+        "name": "Pluginid 6",
+        "type": "Entity"
+      },
+      {
+        "name": "Pluginid 8",
+        "type": "Entity"
+      },
+      {
+        "name": "Pluginid 21",
+        "type": "Entity"
+      },
+      {
+        "name": "keylogger",
+        "type": "Entity"
+      },
+      {
+        "name": "Internet Explorer",
+        "type": "Entity"
+      },
+      {
+        "name": "EMET",
+        "type": "Entity"
+      },
+      {
+        "name": "Adobe Flash",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Office",
+        "type": "Entity"
+      },
+      {
+        "name": "Acrobat Reader",
+        "type": "Entity"
+      },
+      {
+        "name": "Java",
+        "type": "Entity"
+      },
+      {
+        "name": "web forms",
+        "type": "Entity"
+      },
+      {
+        "name": "122.10.9.109",
+        "type": "Entity"
+      },
+      {
+        "name": "mail.webmailgoogle.com",
+        "type": "Entity"
+      },
+      {
+        "name": "js.webmailgoogle.com",
+        "type": "Entity"
+      },
+      {
+        "name": "Metasploit",
+        "type": "Entity"
+      },
+      {
+        "name": "Java vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "watering hole attack",
+        "type": "Entity"
+      },
+      {
+        "name": "reconnaissance framework",
+        "type": "Entity"
+      },
+      {
+        "name": "keystroke logging",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Scanbox",
+        "rel": "uses",
+        "obj": "malicious Javascript file"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "configures",
+        "obj": "remote C&C server"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "collects",
+        "obj": "Referer"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "collects",
+        "obj": "User-Agent"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "collects",
+        "obj": "Location"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "collects",
+        "obj": "Cookie"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "collects",
+        "obj": "Title"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "collects",
+        "obj": "Domain"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "collects",
+        "obj": "Charset"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "collects",
+        "obj": "Screen width and height"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "collects",
+        "obj": "Operating System"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "collects",
+        "obj": "Language"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "encrypts",
+        "obj": "collected data"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "sends",
+        "obj": "encrypted data to remote C&C server"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "includes",
+        "obj": "Pluginid 1"
+      },
+      {
+        "sub": "Pluginid 1",
+        "rel": "enumerates",
+        "obj": "software installed in the system"
+      },
+      {
+        "sub": "Pluginid 1",
+        "rel": "checks",
+        "obj": "EMET versions"
+      },
+      {
+        "sub": "Pluginid 2",
+        "rel": "enumerates",
+        "obj": "Adobe Flash versions"
+      },
+      {
+        "sub": "Pluginid 5",
+        "rel": "enumerates",
+        "obj": "Microsoft Office versions"
+      },
+      {
+        "sub": "Pluginid 6",
+        "rel": "enumerates",
+        "obj": "Acrobat Reader versions"
+      },
+      {
+        "sub": "Pluginid 8",
+        "rel": "enumerates",
+        "obj": "Java versions"
+      },
+      {
+        "sub": "Pluginid 21",
+        "rel": "implements",
+        "obj": "keylogger"
+      },
+      {
+        "sub": "Pluginid 21",
+        "rel": "logs",
+        "obj": "keystrokes typed by victim"
+      },
+      {
+        "sub": "Pluginid 21",
+        "rel": "sends",
+        "obj": "keystrokes to remote C&C server"
+      },
+      {
+        "sub": "Pluginid 21",
+        "rel": "sends",
+        "obj": "web form submissions to remote C&C server"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "is used in",
+        "obj": "watering hole attack"
+      },
+      {
+        "sub": "Metasploit",
+        "rel": "targets",
+        "obj": "Java vulnerabilities"
+      },
+      {
+        "sub": "Metasploit",
+        "rel": "exploits",
+        "obj": "Java versions"
+      },
+      {
+        "sub": "Metasploit",
+        "rel": "is used against",
+        "obj": "122.10.9.109"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "is hosted on",
+        "obj": "122.10.9.109"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "is associated with",
+        "obj": "mail.webmailgoogle.com"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "is associated with",
+        "obj": "js.webmailgoogle.com"
+      }
+    ]
+  }
+}

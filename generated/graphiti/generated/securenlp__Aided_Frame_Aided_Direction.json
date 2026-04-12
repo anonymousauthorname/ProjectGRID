@@ -1,0 +1,221 @@
+{
+  "sample_id": "securenlp__Aided_Frame_Aided_Direction",
+  "sample_index": 150,
+  "source": "securenlp",
+  "file_name": "Aided_Frame_Aided_Direction",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Sunshop Digital Quartermaster",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Poison Ivy",
+        "type": "Malware"
+      },
+      {
+        "name": "103.27.108.45",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "quakegoogle.servequake.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "assign.ddnsking.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "hxxp://103.27.108.45/img/js.php",
+        "type": "Indicator"
+      },
+      {
+        "name": "SOGU",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Google Chrome",
+        "type": "Software"
+      },
+      {
+        "name": "international non-profit organization",
+        "type": "Organization"
+      },
+      {
+        "name": "environmental advocacy NGO",
+        "type": "Organization"
+      },
+      {
+        "name": "democracy and human rights NGO",
+        "type": "Organization"
+      },
+      {
+        "name": "China-based APT groups",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "non-profit organizations",
+        "type": "Organization"
+      },
+      {
+        "name": "non-governmental organizations (NGO)",
+        "type": "Organization"
+      },
+      {
+        "name": "FireEye",
+        "type": "Organization"
+      },
+      {
+        "name": "Google Inc.",
+        "type": "Organization"
+      },
+      {
+        "name": "Billy Leonard",
+        "type": "Person"
+      },
+      {
+        "name": "Mike Oppenheim",
+        "type": "Person"
+      },
+      {
+        "name": "Ned Moran",
+        "type": "Person"
+      },
+      {
+        "name": "Steve Stone",
+        "type": "Person"
+      },
+      {
+        "name": "Sarah Engle",
+        "type": "Person"
+      },
+      {
+        "name": "Ben Withnell",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "FireEye",
+        "rel": "has link",
+        "obj": "Sunshop Digital Quartermaster"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "downloads from",
+        "obj": "103.27.108.45"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "downloads from",
+        "obj": "hxxp://103.27.108.45/img/js.php"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "uses c2",
+        "obj": "quakegoogle.servequake.com"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "masquerades as",
+        "obj": "Google Chrome"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "has callback traffic to",
+        "obj": "SOGU"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "has callback traffic to",
+        "obj": "assign.ddnsking.com"
+      },
+      {
+        "sub": "Sunshop Digital Quartermaster",
+        "rel": "SUPPORTS",
+        "obj": "China-based APT groups"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "observed activity on",
+        "obj": "international non-profit organization"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "observed activity on",
+        "obj": "environmental advocacy NGO"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "observed activity on",
+        "obj": "democracy and human rights NGO"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "believes targets",
+        "obj": "non-profit organizations"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "believes targets",
+        "obj": "non-governmental organizations (NGO)"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "observes activity",
+        "obj": "China-based APT groups"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "has version info in malware",
+        "obj": "Google Inc."
+      },
+      {
+        "sub": "FireEye",
+        "rel": "received research from",
+        "obj": "Billy Leonard"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "contributed to",
+        "obj": "Mike Oppenheim"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "contributed to",
+        "obj": "Ned Moran"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "contributed to",
+        "obj": "Steve Stone"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "writes entry",
+        "obj": "Sarah Engle"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "writes entry",
+        "obj": "Ben Withnell"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1068 @@
+{
+  "sample_id": "securenlp__Regis_The_Intercept",
+  "sample_index": 187,
+  "source": "securenlp",
+  "file_name": "Regis_The_Intercept",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Regin",
+        "type": "malware",
+        "alias": [
+          "the malware",
+          "the Regin malware",
+          "Regin",
+          "the Regin toolkit",
+          "the real thing"
+        ]
+      },
+      {
+        "name": "U.S. and British intelligence agencies",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "U.S. intelligence agencies",
+          "British intelligence agencies"
+        ]
+      },
+      {
+        "name": "European Union",
+        "type": "victims/targets",
+        "alias": [
+          "the European Union"
+        ]
+      },
+      {
+        "name": "Belgacom",
+        "type": "company",
+        "alias": [
+          "Belgacom",
+          "the company"
+        ]
+      },
+      {
+        "name": "Government Communications Headquarters (GCHQ)",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "GCHQ"
+        ]
+      },
+      {
+        "name": "National Security Agency (NSA)",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "NSA"
+        ]
+      },
+      {
+        "name": "Edward Snowden",
+        "type": "identity",
+        "alias": [
+          "Snowden"
+        ]
+      },
+      {
+        "name": "Symantec",
+        "type": "security-product",
+        "alias": [
+          "Symantec"
+        ]
+      },
+      {
+        "name": "Ronald Prins",
+        "type": "identity",
+        "alias": [
+          "Prins"
+        ]
+      },
+      {
+        "name": "Fox IT",
+        "type": "general-software",
+        "alias": [
+          "Fox IT"
+        ]
+      },
+      {
+        "name": "Jan Margot",
+        "type": "identity",
+        "alias": [
+          "Margot"
+        ]
+      },
+      {
+        "name": "Microsoft",
+        "type": "general-software",
+        "alias": [
+          "Microsoft"
+        ]
+      },
+      {
+        "name": "VirusTotal",
+        "type": "infrastructure",
+        "alias": [
+          "VirusTotal",
+          "the website"
+        ]
+      },
+      {
+        "name": "LinkedIn",
+        "type": "infrastructure",
+        "alias": [
+          "fake LinkedIn page"
+        ]
+      },
+      {
+        "name": "Operation Socialist",
+        "type": "campaign",
+        "alias": [
+          "Operation Socialist"
+        ]
+      },
+      {
+        "name": "Malware 'implants'",
+        "type": "hacker-tool",
+        "alias": [
+          "implants"
+        ]
+      },
+      {
+        "name": "Stealth Implant",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "stealth functionality"
+        ]
+      },
+      {
+        "name": "Information Harvesters",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "information harvesters"
+        ]
+      },
+      {
+        "name": "Orchestrator",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "service orchestrator"
+        ]
+      },
+      {
+        "name": "Loaders",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "first stage are drivers",
+          "second stage loader"
+        ]
+      },
+      {
+        "name": "serial.sys",
+        "type": "file",
+        "alias": [
+          "Microsoft driver"
+        ]
+      },
+      {
+        "name": "cdaudio.sys",
+        "type": "file",
+        "alias": [
+          "Microsoft driver"
+        ]
+      },
+      {
+        "name": "atdisk.sys",
+        "type": "file",
+        "alias": [
+          "Microsoft driver"
+        ]
+      },
+      {
+        "name": "parclass.sys",
+        "type": "file",
+        "alias": [
+          "Microsoft driver"
+        ]
+      },
+      {
+        "name": "usbclass.sys",
+        "type": "file",
+        "alias": [
+          "Microsoft driver"
+        ]
+      },
+      {
+        "name": "Stage 1",
+        "type": "abstract-concept",
+        "alias": [
+          "first stage"
+        ]
+      },
+      {
+        "name": "Stage 2",
+        "type": "abstract-concept",
+        "alias": [
+          "second stage"
+        ]
+      },
+      {
+        "name": "0xfedcbafe",
+        "type": "indicator",
+        "alias": [
+          "magic marker"
+        ]
+      },
+      {
+        "name": "svcsstat.exe",
+        "type": "file",
+        "alias": [
+          "64bit variant of loader"
+        ]
+      },
+      {
+        "name": "GetThis",
+        "type": "security-product",
+        "alias": [
+          "forensic tool"
+        ]
+      },
+      {
+        "name": "ProcMon",
+        "type": "security-product",
+        "alias": [
+          "Process Monitor"
+        ]
+      },
+      {
+        "name": "Windows kernel driver",
+        "type": "general-software",
+        "alias": [
+          "driver"
+        ]
+      },
+      {
+        "name": "Windows PE header",
+        "type": "abstract-concept",
+        "alias": [
+          "PE headers"
+        ]
+      },
+      {
+        "name": "Windows NT4 Terminal Server",
+        "type": "os",
+        "alias": [
+          "Windows NT4"
+        ]
+      },
+      {
+        "name": "Windows 2000",
+        "type": "os",
+        "alias": [
+          "Windows 2000"
+        ]
+      },
+      {
+        "name": "PASSIVE_LEVEL",
+        "type": "abstract-concept",
+        "alias": [
+          "priority level"
+        ]
+      },
+      {
+        "name": "HIGH_LEVEL",
+        "type": "abstract-concept",
+        "alias": [
+          "priority level"
+        ]
+      },
+      {
+        "name": "KeGetCurrentIrql()",
+        "type": "function",
+        "alias": [
+          "KeGetCurrentIrql"
+        ]
+      },
+      {
+        "name": "ExAllocatePoolWithTag()",
+        "type": "function",
+        "alias": [
+          "ExAllocatePoolWithTag"
+        ]
+      },
+      {
+        "name": "ddk",
+        "type": "abstract-concept",
+        "alias": [
+          "generic tag"
+        ]
+      },
+      {
+        "name": "ExFreePool()",
+        "type": "function",
+        "alias": [
+          "ExFreePool"
+        ]
+      },
+      {
+        "name": "IRQL confusion",
+        "type": "attack-pattern",
+        "alias": [
+          "IRQL confusion"
+        ]
+      },
+      {
+        "name": "Microsoft Malware Encyclopedia",
+        "type": "infrastructure",
+        "alias": [
+          "Malware Encyclopedia"
+        ]
+      },
+      {
+        "name": "Regin.B",
+        "type": "variant-of-malware",
+        "alias": [
+          "variant"
+        ]
+      },
+      {
+        "name": "Regin.C",
+        "type": "variant-of-malware",
+        "alias": [
+          "variant"
+        ]
+      },
+      {
+        "name": "Prax.A",
+        "type": "variant-of-malware",
+        "alias": [
+          "variant"
+        ]
+      },
+      {
+        "name": "Prax.B",
+        "type": "variant-of-malware",
+        "alias": [
+          "variant"
+        ]
+      },
+      {
+        "name": "Infected",
+        "type": "credential-value",
+        "alias": [
+          "password"
+        ]
+      },
+      {
+        "name": "2003",
+        "type": "year",
+        "alias": [
+          "date"
+        ]
+      },
+      {
+        "name": "2010",
+        "type": "year",
+        "alias": [
+          "date"
+        ]
+      },
+      {
+        "name": "2011",
+        "type": "year",
+        "alias": [
+          "date"
+        ]
+      },
+      {
+        "name": "2012",
+        "type": "year",
+        "alias": [
+          "date"
+        ]
+      },
+      {
+        "name": "2013",
+        "type": "year",
+        "alias": [
+          "date"
+        ]
+      },
+      {
+        "name": "Luxembourg",
+        "type": "location",
+        "alias": [
+          "Luxembourg"
+        ]
+      },
+      {
+        "name": "Russia",
+        "type": "location",
+        "alias": [
+          "Russia"
+        ]
+      },
+      {
+        "name": "Saudi Arabia",
+        "type": "location",
+        "alias": [
+          "Saudi Arabia"
+        ]
+      },
+      {
+        "name": "Mexico",
+        "type": "location",
+        "alias": [
+          "Mexico"
+        ]
+      },
+      {
+        "name": "Ireland",
+        "type": "location",
+        "alias": [
+          "Ireland"
+        ]
+      },
+      {
+        "name": "Iran",
+        "type": "location",
+        "alias": [
+          "Iran"
+        ]
+      },
+      {
+        "name": "The Intercept",
+        "type": "media",
+        "alias": [
+          "The Intercept"
+        ]
+      },
+      {
+        "name": "De Standaard",
+        "type": "media",
+        "alias": [
+          "De Standaard"
+        ]
+      },
+      {
+        "name": "NRC Handelsblad",
+        "type": "media",
+        "alias": [
+          "NRC Handelsblad"
+        ]
+      },
+      {
+        "name": "Winfried Rothermel",
+        "type": "identity",
+        "alias": [
+          "Rothermel"
+        ]
+      },
+      {
+        "name": "European Parliament",
+        "type": "victims/targets",
+        "alias": [
+          "the European Parliament"
+        ]
+      },
+      {
+        "name": "European Council",
+        "type": "victims/targets",
+        "alias": [
+          "the European Council"
+        ]
+      },
+      {
+        "name": "Microsoft SQL server",
+        "type": "infrastructure",
+        "alias": [
+          "SQL server"
+        ]
+      },
+      {
+        "name": "Microsoft Exchange server",
+        "type": "infrastructure",
+        "alias": [
+          "Exchange server"
+        ]
+      },
+      {
+        "name": "C:\\Windows\\System32\\",
+        "type": "path",
+        "alias": [
+          "System32"
+        ]
+      },
+      {
+        "name": "internal computer systems",
+        "type": "infrastructure",
+        "alias": [
+          "computer systems"
+        ]
+      },
+      {
+        "name": "email servers",
+        "type": "infrastructure",
+        "alias": [
+          "servers"
+        ]
+      },
+      {
+        "name": "Microsoft software",
+        "type": "general-software",
+        "alias": [
+          "legitimate Microsoft software"
+        ]
+      },
+      {
+        "name": "Stuxnet",
+        "type": "malware",
+        "alias": [
+          "a state-sponsored malware program"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Regin",
+        "rel": "is the suspected technology behind",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "sophisticated cyberattacks conducted by U.S. and British intelligence agencies on the European Union"
+      },
+      {
+        "sub": "U.S. and British intelligence agencies",
+        "rel": "conducted cyberattacks on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the European Union"
+      },
+      {
+        "sub": "U.S. and British intelligence agencies",
+        "rel": "conducted cyberattacks on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Belgacom"
+      },
+      {
+        "sub": "Regin",
+        "rel": "was found on",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "infected internal computer systems"
+      },
+      {
+        "sub": "Regin",
+        "rel": "was found on",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "email servers at Belgacom"
+      },
+      {
+        "sub": "Regin",
+        "rel": "steals data from",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "infected systems"
+      },
+      {
+        "sub": "Regin",
+        "rel": "disguises itself as",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "legitimate Microsoft software"
+      },
+      {
+        "sub": "Regin",
+        "rel": "was identified on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "same European Union computer systems"
+      },
+      {
+        "sub": "Regin",
+        "rel": "was used by",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "British and American intelligence services"
+      },
+      {
+        "sub": "U.S. and British intelligence agencies",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "European Union"
+      },
+      {
+        "sub": "U.S. and British intelligence agencies",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Belgacom"
+      },
+      {
+        "sub": "Edward Snowden",
+        "rel": "leaked documents by",
+        "rel_type": [
+          "leaks"
+        ],
+        "obj": "NSA whistleblower"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "first reported",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "the existence of Regin"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "compared",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "Regin to Stuxnet"
+      },
+      {
+        "sub": "Regin",
+        "rel": "is among the most sophisticated ever discovered",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "ever discovered by researchers"
+      },
+      {
+        "sub": "Ronald Prins",
+        "rel": "said",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "I’m convinced Regin is used by British and American intelligence services"
+      },
+      {
+        "sub": "GCHQ",
+        "rel": "gained access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Belgacom’s internal systems"
+      },
+      {
+        "sub": "GCHQ",
+        "rel": "secretly installed",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "malware ‘implants’ on employees’ computers"
+      },
+      {
+        "sub": "GCHQ",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "engineers at the company"
+      },
+      {
+        "sub": "GCHQ",
+        "rel": "sent internet connection to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "fake LinkedIn page"
+      },
+      {
+        "sub": "malware ‘implants’",
+        "rel": "infecting",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "employees’ computers"
+      },
+      {
+        "sub": "GCHQ",
+        "rel": "gave spies total control of",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "systems"
+      },
+      {
+        "sub": "GCHQ",
+        "rel": "can conduct surveillance of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "internal Belgacom company communications"
+      },
+      {
+        "sub": "GCHQ",
+        "rel": "gave spies the ability to gather data from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "company’s network and customers"
+      },
+      {
+        "sub": "malware ‘implants’",
+        "rel": "were part of the suite of malware now known as",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Regin"
+      },
+      {
+        "sub": "Regin",
+        "rel": "has stealth",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "stealth functionality"
+      },
+      {
+        "sub": "Regin",
+        "rel": "is deployed in",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "stages"
+      },
+      {
+        "sub": "Regin",
+        "rel": "appears to have been developed over the course of",
+        "rel_type": [
+          "developed-over"
+        ],
+        "obj": "more than a decade"
+      },
+      {
+        "sub": "Regin",
+        "rel": "was mentioned at a recent Hack.lu conference in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Luxembourg"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "identified",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Regin on infected systems operated by private companies, government entities, and research institutes in countries such as Russia, Saudi Arabia, Mexico, Ireland, Belgium, and Iran"
+      },
+      {
+        "sub": "The Intercept",
+        "rel": "provided samples of the malware",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "from sources in the security community"
+      },
+      {
+        "sub": "The Intercept",
+        "rel": "is making available for public download",
+        "rel_type": [
+          "publishes"
+        ],
+        "obj": "the malware"
+      },
+      {
+        "sub": "Regin loaders",
+        "rel": "act as loaders for",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "a second stage"
+      },
+      {
+        "sub": "Regin loaders",
+        "rel": "disguise themselves as",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "Microsoft drivers with names such as serial.sys"
+      },
+      {
+        "sub": "Stage 2 loader",
+        "rel": "cleans traces of",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the initial loader"
+      },
+      {
+        "sub": "the malware",
+        "rel": "zeroes out its PE headers in memory",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "PE headers"
+      },
+      {
+        "sub": "Orchestrator",
+        "rel": "initializes",
+        "rel_type": [
+          "initializes"
+        ],
+        "obj": "core components of the architecture"
+      },
+      {
+        "sub": "Information Harvesters",
+        "rel": "can include",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "data collectors"
+      },
+      {
+        "sub": "Stealth Implant",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "unique 0xfedcbafe header"
+      },
+      {
+        "sub": "Stealth Implant",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "stealth functionality"
+      },
+      {
+        "sub": "Regin loader",
+        "rel": "repeatedly uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "generic ‘Ddk’ tag"
+      },
+      {
+        "sub": "ExAllocatePoolWithTag()",
+        "rel": "used when allocating all kernel pools",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "when allocating all kernel pools"
+      },
+      {
+        "sub": "ExFreePool()",
+        "rel": "used to free memory",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "to free memory"
+      },
+      {
+        "sub": "Regin driver",
+        "rel": "checks that the current IRQL is set to",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "PASSIVE_LEVEL"
+      },
+      {
+        "sub": "Regin driver",
+        "rel": "recurrently checks",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "IRQL"
+      },
+      {
+        "sub": "Regin driver",
+        "rel": "removes remaining traces",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "artifacts"
+      },
+      {
+        "sub": "Belgacom",
+        "rel": "identified the attack on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "June 21, 2013"
+      },
+      {
+        "sub": "systems",
+        "rel": "included",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "staff workstations as well as email servers"
+      },
+      {
+        "sub": "The Intercept",
+        "rel": "developed unique signatures which could identify",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "this toolkit"
+      },
+      {
+        "sub": "The Intercept",
+        "rel": "found the output of",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "a forensic tool, GetThis"
+      },
+      {
+        "sub": "GetThis",
+        "rel": "was run on",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "target systems looking for malware"
+      },
+      {
+        "sub": "ProcMon",
+        "rel": "is a system monitoring tool distributed by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "The system",
+        "rel": "identifies",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "the infected system"
+      },
+      {
+        "sub": "The system",
+        "rel": "has environment variable",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Microsoft SQL server"
+      },
+      {
+        "sub": "The system",
+        "rel": "has environment variable",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Microsoft Exchange server"
+      },
+      {
+        "sub": "svcsstat.exe",
+        "rel": "was collected and a copy of it was stored",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "from target systems"
+      },
+      {
+        "sub": "svcsstat.exe",
+        "rel": "is a",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "64bit variant of the first stage Regin loader"
+      },
+      {
+        "sub": "The Intercept",
+        "rel": "made it available for download",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "via 'click here'"
+      },
+      {
+        "sub": "Regin loaders",
+        "rel": "have an encrypted block which points to the location of",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "2nd stage payload"
+      },
+      {
+        "sub": "Regin loaders",
+        "rel": "operate on",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Windows NT4 Terminal Server"
+      },
+      {
+        "sub": "Regin loaders",
+        "rel": "adapt behavior accordingly",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "to very old versions such as Windows 2000"
+      },
+      {
+        "sub": "The Intercept",
+        "rel": "obtained samples of",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "the malware"
+      },
+      {
+        "sub": "Regin.B",
+        "rel": "is a variant of",
+        "rel_type": [
+          "variant-of-malware"
+        ],
+        "obj": "Regin"
+      },
+      {
+        "sub": "Regin.C",
+        "rel": "is a variant of",
+        "rel_type": [
+          "variant-of-malware"
+        ],
+        "obj": "Regin"
+      },
+      {
+        "sub": "Prax.A",
+        "rel": "is a variant of",
+        "rel_type": [
+          "variant-of-malware"
+        ],
+        "obj": "Regin"
+      },
+      {
+        "sub": "Prax.B",
+        "rel": "is a variant of",
+        "rel_type": [
+          "variant-of-malware"
+        ],
+        "obj": "Regin"
+      }
+    ]
+  }
+}

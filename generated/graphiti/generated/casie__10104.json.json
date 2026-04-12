@@ -1,0 +1,122 @@
+{
+  "sample_id": "casie__10104.json",
+  "sample_index": 6,
+  "source": "casie",
+  "file_name": "10104.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "GandCrab",
+        "type": "Malware"
+      },
+      {
+        "name": "RIG EK",
+        "type": "Tool"
+      },
+      {
+        "name": "GrandSoft EK",
+        "type": "Tool"
+      },
+      {
+        "name": "Internet Explorer",
+        "type": "Software"
+      },
+      {
+        "name": "Flash Player",
+        "type": "Software"
+      },
+      {
+        "name": "Java Runtime Environment",
+        "type": "Software"
+      },
+      {
+        "name": "Dash",
+        "type": "Indicator"
+      },
+      {
+        "name": "Malwarebytes",
+        "type": "Organization"
+      },
+      {
+        "name": "Princess ransomware",
+        "type": "Malware"
+      },
+      {
+        "name": "Magniber",
+        "type": "Malware"
+      },
+      {
+        "name": "RSA algorithm",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "GandCrab",
+        "rel": "is distributed by",
+        "obj": "RIG EK"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "is distributed by",
+        "obj": "GrandSoft EK"
+      },
+      {
+        "sub": "RIG EK",
+        "rel": "EXPLOITS",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "RIG EK",
+        "rel": "EXPLOITS",
+        "obj": "Flash Player"
+      },
+      {
+        "sub": "GrandSoft EK",
+        "rel": "EXPLOITS",
+        "obj": "Java Runtime Environment"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "USES",
+        "obj": "RSA algorithm"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "demands payment in",
+        "obj": "Dash"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "is researched by",
+        "obj": "Malwarebytes"
+      },
+      {
+        "sub": "Princess ransomware",
+        "rel": "USES",
+        "obj": "RIG EK"
+      },
+      {
+        "sub": "Magniber",
+        "rel": "is distributed by",
+        "obj": "Exploit kit"
+      }
+    ]
+  }
+}

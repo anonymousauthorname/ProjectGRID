@@ -1,0 +1,395 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_26.json",
+  "sample_index": 218,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_26.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Harvester",
+        "type": "Entity"
+      },
+      {
+        "name": "Backdoor.Graphon",
+        "type": "Entity"
+      },
+      {
+        "name": "Custom Downloader",
+        "type": "Entity"
+      },
+      {
+        "name": "Custom Screenshotter",
+        "type": "Entity"
+      },
+      {
+        "name": "Cobalt Strike Beacon",
+        "type": "Entity"
+      },
+      {
+        "name": "Metasploit",
+        "type": "Entity"
+      },
+      {
+        "name": "Costura Assembly Loader",
+        "type": "Entity"
+      },
+      {
+        "name": "winser.dll",
+        "type": "Entity"
+      },
+      {
+        "name": "[ARTEFACTS_FOLDER]\\Microsoft Services.vbs",
+        "type": "Entity"
+      },
+      {
+        "name": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MicrosoftSystemServices",
+        "type": "Entity"
+      },
+      {
+        "name": "hxxps://outportal.azurewebsites.net/api/Values_V2/Getting3210",
+        "type": "Entity"
+      },
+      {
+        "name": "hxxps://usedust.com",
+        "type": "Entity"
+      },
+      {
+        "name": "D:\\OfficeProjects\\Updated Working Due to Submission\\4.5\\Outlook_4.5\\Outlook 4.5.2 32 bit New without presistancy\\NPServices\\bin\\x86\\Debug\\NPServices.pdb",
+        "type": "Entity"
+      },
+      {
+        "name": "hxxps://microsoftmsdn.azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "type": "Entity"
+      },
+      {
+        "name": "hxxps://microsoftsgraphapi.azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "type": "Entity"
+      },
+      {
+        "name": "hxxps://msdnmicrosoft.azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "type": "Entity"
+      },
+      {
+        "name": "hxxps://perfect-couple.com/perfectcouple.exe",
+        "type": "Entity"
+      },
+      {
+        "name": "telecommunications",
+        "type": "Entity"
+      },
+      {
+        "name": "government",
+        "type": "Entity"
+      },
+      {
+        "name": "information technology (IT)",
+        "type": "Entity"
+      },
+      {
+        "name": "South Asia",
+        "type": "Entity"
+      },
+      {
+        "name": "Afghanistan",
+        "type": "Entity"
+      },
+      {
+        "name": "nation-state-backed",
+        "type": "Entity"
+      },
+      {
+        "name": "espionage campaign",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "USB devices",
+        "type": "Entity"
+      },
+      {
+        "name": "initial infection vector",
+        "type": "Entity"
+      },
+      {
+        "name": "command and control (C&C)",
+        "type": "Entity"
+      },
+      {
+        "name": "CloudFront",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft infrastructure",
+        "type": "Entity"
+      },
+      {
+        "name": "registry keys",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled tasks",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanisms",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious URL",
+        "type": "Entity"
+      },
+      {
+        "name": "file-based",
+        "type": "Entity"
+      },
+      {
+        "name": "Indicators of Compromise",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "Backdoor.Graphon"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "Custom Downloader"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "Custom Screenshotter"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "Cobalt Strike Beacon"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "leverages",
+        "obj": "Costura Assembly Loader"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "checks",
+        "obj": "[ARTEFACTS_FOLDER]\\winser.dll"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "downloads",
+        "obj": "hxxps://outportal.azurewebsites.net/api/Values_V2/Getting3210"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "creates",
+        "obj": "[ARTEFACTS_FOLDER]\\Microsoft Services.vbs"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "sets",
+        "obj": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MicrosoftSystemServices"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "opens",
+        "obj": "hxxps://usedust.com"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "is compiled as",
+        "obj": ".NET PE DLL with export \"Main"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "uses",
+        "obj": "D:\\OfficeProjects\\Updated Working Due to Submission\\4.5\\Outlook_4.5\\Outlook 4.5.2 32 bit New without presistancy\\NPServices\\bin\\x86\\Debug\\NPServices.pdb"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "communicates with",
+        "obj": "hxxps://microsoftmsdn.azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "communicates with",
+        "obj": "hxxps://microsoftsgraphapi.azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "communicates with",
+        "obj": "hxxps://msdnmicrosoft.azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "runs commands to",
+        "obj": "control input stream"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "captures",
+        "obj": "output and error streams"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "sends",
+        "obj": "GET requests to C&C server"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "extracts and deletes",
+        "obj": "returned messages from C&C server"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "encrypts and sends",
+        "obj": "data from output and error streams"
+      },
+      {
+        "sub": "Custom Screenshotter",
+        "rel": "saves",
+        "obj": "photos to password-protected ZIP archive"
+      },
+      {
+        "sub": "Custom Screenshotter",
+        "rel": "deletes",
+        "obj": "archives older than a week"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "targets",
+        "obj": "telecommunications"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "targets",
+        "obj": "government"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "targets",
+        "obj": "information technology (IT)"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "targets",
+        "obj": "South Asia"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "targets",
+        "obj": "Afghanistan"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "is associated with",
+        "obj": "nation-state-backed"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "conducts",
+        "obj": "espionage campaign"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "malicious URL"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "CloudFront"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "Microsoft infrastructure"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "registry keys"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "scheduled tasks"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "persistence mechanisms"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "file-based"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "Indicators of Compromise"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "CVE-2021-44228"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "Log4Shell vulnerability"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "initially infects via",
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "USB devices"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "uses",
+        "obj": "initial infection vector"
+      }
+    ]
+  }
+}

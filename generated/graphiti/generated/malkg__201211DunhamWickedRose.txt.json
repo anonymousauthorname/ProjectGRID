@@ -1,0 +1,530 @@
+{
+  "sample_id": "malkg__201211DunhamWickedRose.txt",
+  "sample_index": 138,
+  "source": "malkg",
+  "file_name": "201211DunhamWickedRose.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Wicked Rose",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "NCPH",
+        "type": "Campaign"
+      },
+      {
+        "name": "GinWui",
+        "type": "Malware"
+      },
+      {
+        "name": "RipGof",
+        "type": "Malware"
+      },
+      {
+        "name": "Microsoft Word",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Excel",
+        "type": "Software"
+      },
+      {
+        "name": "MS06-027",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Sichuan University of Science and Engineering",
+        "type": "Organization"
+      },
+      {
+        "name": "Evil Octal",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Evil Security Team",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Dasher worm",
+        "type": "Tool"
+      },
+      {
+        "name": "PcShares Trojan",
+        "type": "Tool"
+      },
+      {
+        "name": "Mdropper.F",
+        "type": "Tool"
+      },
+      {
+        "name": "Mdropper.G",
+        "type": "Tool"
+      },
+      {
+        "name": "Booli.A",
+        "type": "Tool"
+      },
+      {
+        "name": "Booli.B",
+        "type": "Tool"
+      },
+      {
+        "name": "Flux.E",
+        "type": "Tool"
+      },
+      {
+        "name": "PPDropper.A",
+        "type": "Tool"
+      },
+      {
+        "name": "PPDropper.F",
+        "type": "Tool"
+      },
+      {
+        "name": "windowsupdates.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "enjoy.irdet.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "enjoy.bmwsee.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "ncph.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "mghacker.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "rodag.blogbus.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "cppblog.com/charles",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "kungbim.blogbus.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "NCPH Studio",
+        "type": "Organization"
+      },
+      {
+        "name": "WHG",
+        "type": "Person"
+      },
+      {
+        "name": "WZT",
+        "type": "Person"
+      },
+      {
+        "name": "CHM",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Office",
+        "type": "Software"
+      },
+      {
+        "name": "Sichuan University of Science & Engineering",
+        "type": "Organization"
+      },
+      {
+        "name": "Zigong",
+        "type": "Location"
+      },
+      {
+        "name": "Sichuan Province",
+        "type": "Location"
+      },
+      {
+        "name": "Jiangsu Province",
+        "type": "Location"
+      },
+      {
+        "name": "www.mghacker.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "www.cppblog.com/charles",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "http://rodag.blogbus.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "http://kungbim.blogbus.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "tthacker.cublog.cn",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "cnasm.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Li0n",
+        "type": "Person"
+      },
+      {
+        "name": "Honker Union (HUC)",
+        "type": "Organization"
+      },
+      {
+        "name": "rootkit",
+        "type": "Malware"
+      },
+      {
+        "name": "zero-day attacks",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "PowerPoint",
+        "type": "Software"
+      },
+      {
+        "name": "social engineering",
+        "type": "AttackPattern"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Wicked Rose",
+        "rel": "AUTHOR",
+        "obj": "GinWui"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "AUTHOR",
+        "obj": "RipGof"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "DEVELOPS",
+        "obj": "GinWui"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "DEVELOPS",
+        "obj": "RipGof"
+      },
+      {
+        "sub": "GinWui",
+        "rel": "EXPLOITS",
+        "obj": "Microsoft Word"
+      },
+      {
+        "sub": "RipGof",
+        "rel": "EXPLOITS",
+        "obj": "Microsoft Word"
+      },
+      {
+        "sub": "RipGof",
+        "rel": "EXPLOITS",
+        "obj": "MS06-027"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "studied at",
+        "obj": "Sichuan University of Science and Engineering"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "associates with",
+        "obj": "Evil Octal"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "recommends tool",
+        "obj": "Evil Security Team"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "operates on",
+        "obj": "ncph.net"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "maintains website",
+        "obj": "mghacker.com"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "uses domain",
+        "obj": "windowsupdates.net"
+      },
+      {
+        "sub": "RipGof.B",
+        "rel": "phones home to",
+        "obj": "enjoy.irdet.com"
+      },
+      {
+        "sub": "RipGof.B",
+        "rel": "phones home to",
+        "obj": "enjoy.bmwsee.com"
+      },
+      {
+        "sub": "GinWui",
+        "rel": "EXPLOITS",
+        "obj": "Microsoft Excel"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "recommends tool",
+        "obj": "Dasher worm"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "recommends tool",
+        "obj": "PcShares Trojan"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "attacks with",
+        "obj": "Mdropper.F"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "attacks with",
+        "obj": "Mdropper.G"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "attacks with",
+        "obj": "Booli.A"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "attacks with",
+        "obj": "Booli.B"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "attacks with",
+        "obj": "Flux.E"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "attacks with",
+        "obj": "PPDropper.A"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "attacks with",
+        "obj": "PPDropper.F"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "attacks with",
+        "obj": "GinWui.G"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "EXPLOITS",
+        "obj": "RipGof.A"
+      },
+      {
+        "sub": "Evil Security Team",
+        "rel": "USES",
+        "obj": "Dasher worm"
+      },
+      {
+        "sub": "Evil Security Team",
+        "rel": "USES",
+        "obj": "PcShares Trojan"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "LEADS",
+        "obj": "NCPH"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "AUTHORS",
+        "obj": "GinWui"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "AUTHORS",
+        "obj": "RipGof.B"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "AUTHORS",
+        "obj": "RipGof.A"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "EXPLOITS",
+        "obj": "Microsoft Word"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "EXPLOITS",
+        "obj": "CHM"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "EXPLOITS",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "EXPLOITS",
+        "obj": "PowerPoint"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "USES",
+        "obj": "windowsupdates.net"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "has website",
+        "obj": "www.mghacker.com"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "has member website",
+        "obj": "http://rodag.blogbus.com"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "has member website",
+        "obj": "http://kungbim.blogbus.com"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "has member website",
+        "obj": "www.cppblog.com/charles"
+      },
+      {
+        "sub": "WHG",
+        "rel": "AUTHORS",
+        "obj": "GinWui"
+      },
+      {
+        "sub": "WZT",
+        "rel": "was member of",
+        "obj": "NCPH"
+      },
+      {
+        "sub": "WZT",
+        "rel": "gives credit to",
+        "obj": "Li0n"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "studied at",
+        "obj": "Sichuan University of Science & Engineering"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "resides in",
+        "obj": "Zigong"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "based in",
+        "obj": "Zigong"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "based in",
+        "obj": "Sichuan Province"
+      },
+      {
+        "sub": "WHG",
+        "rel": "resides in",
+        "obj": "Sichuan Province"
+      },
+      {
+        "sub": "WZT",
+        "rel": "resides in",
+        "obj": "Sichuan Province"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "has registrant linked to",
+        "obj": "Jiangsu Province"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "CONDUCTS",
+        "obj": "zero-day attacks"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "CONDUCTS",
+        "obj": "zero-day attacks"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "USES",
+        "obj": "social engineering"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "USES",
+        "obj": "social engineering"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "DEVELOPS",
+        "obj": "rootkit"
+      },
+      {
+        "sub": "NCPH",
+        "rel": "DEVELOPS",
+        "obj": "rootkit"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "is associated with",
+        "obj": "Honker Union (HUC)"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "dropped out of school on",
+        "obj": "April 30, 2006"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "returned to school by",
+        "obj": "September 2006"
+      },
+      {
+        "sub": "Wicked Rose",
+        "rel": "reports pay increase on",
+        "obj": "October 9, 2006"
+      }
+    ]
+  }
+}

@@ -1,0 +1,658 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_51.json",
+  "sample_index": 240,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_51.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Cheerscrypt",
+        "type": "malware",
+        "alias": [
+          "the new Linux-based ransomware variant",
+          "the new Linux-based ransomware",
+          "Cheerscrypt, the new Linux-based ransomware",
+          "a new ransomware family",
+          "the ransomware",
+          "the ransomware executable"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Babuk",
+        "type": "malware",
+        "alias": [
+          "the Linux version of the Babuk ransomware",
+          "Babuk’s malware version"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ESXi servers",
+        "type": "general-software",
+        "alias": [
+          "VMware ESXi servers",
+          "a bare-metal hypervisor",
+          "the customer’s EXSi server",
+          "the hypervisor"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "LockBit",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Hive",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "RansomEXX",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Linux version of Babuk ransomware",
+        "type": "malware",
+        "alias": [
+          "the Babuk source code"
+        ],
+        "mother entity": "Babuk"
+      },
+      {
+        "name": "leaked Babuk source code",
+        "type": "indicator",
+        "alias": [
+          "the Babuk source code"
+        ],
+        "mother entity": "Babuk"
+      },
+      {
+        "name": "Cheerscrypt executable file",
+        "type": "file",
+        "alias": [
+          "the ransomware executable"
+        ],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "SOSEMANUK stream cipher",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "ECDH",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "Linux’s /dev/urandom",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "VMware-related files",
+        "type": "file",
+        "alias": [
+          "VMware files"
+        ],
+        "mother entity": "ESXi servers"
+      },
+      {
+        "name": ".log",
+        "type": "file",
+        "alias": [],
+        "mother entity": "VMware-related files"
+      },
+      {
+        "name": ".vmdk",
+        "type": "file",
+        "alias": [],
+        "mother entity": "VMware-related files"
+      },
+      {
+        "name": ".vmem",
+        "type": "file",
+        "alias": [],
+        "mother entity": "VMware-related files"
+      },
+      {
+        "name": ".vswp",
+        "type": "file",
+        "alias": [],
+        "mother entity": "VMware-related files"
+      },
+      {
+        "name": ".vmsn",
+        "type": "file",
+        "alias": [],
+        "mother entity": "VMware-related files"
+      },
+      {
+        "name": "public key",
+        "type": "x509-certificate",
+        "alias": [
+          "embedded public key"
+        ],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "private key",
+        "type": "credential-value",
+        "alias": [
+          "generated private key"
+        ],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "ECDH public-private key pair",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "VM processes",
+        "type": "process",
+        "alias": [
+          "VM processes using ESXCLI"
+        ],
+        "mother entity": "ESXi servers"
+      },
+      {
+        "name": "esxcli vm process list",
+        "type": "command-line",
+        "alias": [],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "World ID",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": "VM processes"
+      },
+      {
+        "name": "esxcli vm process kill",
+        "type": "command-line",
+        "alias": [],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": ".Cheers extension",
+        "type": "file",
+        "alias": [
+          "renamed files"
+        ],
+        "mother entity": "Successfully encrypted files"
+      },
+      {
+        "name": "How to Restore Your Files.txt",
+        "type": "file",
+        "alias": [
+          "ransom note"
+        ],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "Arianne Dela Cruz, Byron Gelera, McJustine De Guzman, Warren Sto.Tomas",
+        "type": "identity",
+        "alias": [
+          "Sr. Threat Research Engineer"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Center of Internet Security (CIS)",
+        "type": "organization",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "National Institute of Standards and Technology (NIST)",
+        "type": "organization",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "malicious actor"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the ransomware goals",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "Figure 1",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Figure 2",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Figure 3",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Figure 4",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Figure 5",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Figure 6",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Figure 7",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "VMware files",
+        "type": "file",
+        "alias": [],
+        "mother entity": "ESXi servers"
+      },
+      {
+        "name": "ransom note",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "double extortion scheme"
+        ],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "data statistics",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "malicious actor’s private key",
+        "type": "credential-value",
+        "alias": [
+          "the private key"
+        ],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "infection routine",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "virtual machines (VMs)",
+        "type": "general-software",
+        "alias": [
+          "VMs"
+        ],
+        "mother entity": "ESXi servers"
+      },
+      {
+        "name": "hard drive storage",
+        "type": "location",
+        "alias": [
+          "storage"
+        ],
+        "mother entity": "ESXi servers"
+      },
+      {
+        "name": "malicious actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "other malicious actors"
+        ],
+        "mother entity": "the attacker"
+      },
+      {
+        "name": "source code",
+        "type": "file",
+        "alias": [
+          "codebase"
+        ],
+        "mother entity": "Babuk"
+      },
+      {
+        "name": "public key embedded in the ransomware",
+        "type": "x509-certificate",
+        "alias": [
+          "public key of a matching key pair"
+        ],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "Linux-based environment",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": "Cheerscrypt"
+      },
+      {
+        "name": "encrypted files",
+        "type": "file",
+        "alias": [
+          "target files"
+        ],
+        "mother entity": "VMware-related files"
+      },
+      {
+        "name": "access permission",
+        "type": "credential-value",
+        "alias": [
+          "file permissions"
+        ],
+        "mother entity": "files"
+      },
+      {
+        "name": "researchers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cheerscrypt",
+        "rel": "compromises",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "ESXi servers"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "derived from",
+        "rel_type": [
+          "derived-from"
+        ],
+        "obj": "leaked Babuk source code"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "based on",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "leaked Babuk source code"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "modified and customized to suit the malicious actor’s ransomware goals",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the attacker"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "employs the double extortion scheme",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "ransom note"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "renamed successfully encrypted files",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "encrypted files"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "terminates VM processes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "VM processes"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "esxcli vm process kill"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "esxcli vm process list"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "World ID"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "uses SOSEMANUK stream cipher to encrypt files",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "files"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "uses ECDH to generate SOSEMANUK key",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "SOSEMANUK stream cipher"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "generates an ECDH public-private key pair on the machine through Linux’s /dev/urandom",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "ECDH public-private key pair"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "uses its embedded public key and the generated private key to create a secret key",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "ECDH public-private key pair"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "appends generated public key to it",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "encrypted files"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "uses the malicious actor’s private key for decryption",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "malicious actor’s private key",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "drops the ransom note named, How to Restore Your Files.txt",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "How to Restore Your Files.txt"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "targets log files and VMware-related files with the following extensions",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": [
+          ".log",
+          ".vmdk",
+          ".vmem",
+          ".vswp",
+          ".vmsn"
+        ]
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "encrypts the files",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "encrypted files"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "generates data statistics after encryption",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "data statistics"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "was based on Babuk’s source code",
+        "rel_type": [
+          "derived-from"
+        ],
+        "obj": "source code"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "VMware-related files"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "ESXi servers"
+      },
+      {
+        "sub": "malicious actors",
+        "rel": "build upon the source code they leaked",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "leaked Babuk source code"
+      },
+      {
+        "sub": "researchers",
+        "rel": "gathered information on Cheerscrypt",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Cheerscrypt"
+      },
+      {
+        "sub": "Center of Internet Security (CIS)",
+        "rel": "established security frameworks",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "sub": "National Institute of Standards and Technology (NIST)",
+        "rel": "established security frameworks",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "holds",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "private key"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Linux-based environment"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "compromises",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "hard drive storage"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "targets VMs",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "virtual machines (VMs)"
+      }
+    ]
+  }
+}

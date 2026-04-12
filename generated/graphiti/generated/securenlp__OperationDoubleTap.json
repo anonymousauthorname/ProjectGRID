@@ -1,0 +1,300 @@
+{
+  "sample_id": "securenlp__OperationDoubleTap",
+  "sample_index": 192,
+  "source": "securenlp",
+  "file_name": "OperationDoubleTap",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT3",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "UPS",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Operation Clandestine Fox",
+        "type": "Campaign"
+      },
+      {
+        "name": "CVE-2014-6332",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "CVE-2014-4113",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Backdoor.APT.CookieCutter",
+        "type": "Malware"
+      },
+      {
+        "name": "Pirpi",
+        "type": "Malware"
+      },
+      {
+        "name": "MShell",
+        "type": "Software"
+      },
+      {
+        "name": "4113",
+        "type": "Software"
+      },
+      {
+        "name": "MyRat",
+        "type": "Software"
+      },
+      {
+        "name": "inform.bedircati.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "pn.lamb-site.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "210.109.99.64",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "192.157.198.103",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "192.184.60.229",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "securitywap.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "www.securitywap.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "join.playboysplus.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "104.151.248.173",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "walterclean.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "www.walterclean.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "install.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "doc.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "test.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "notepad1.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "notepad.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "newnotepad.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "note.txt",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT3",
+        "rel": "responsible for",
+        "obj": "Operation Clandestine Fox"
+      },
+      {
+        "sub": "APT3",
+        "rel": "LEVERAGES",
+        "obj": "CVE-2014-6332"
+      },
+      {
+        "sub": "APT3",
+        "rel": "LEVERAGES",
+        "obj": "CVE-2014-4113"
+      },
+      {
+        "sub": "APT3",
+        "rel": "deployed as",
+        "obj": "Backdoor.APT.CookieCutter"
+      },
+      {
+        "sub": "APT3",
+        "rel": "deployed as",
+        "obj": "Pirpi"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "contains exploit code for",
+        "obj": "CVE-2014-6332"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "contains exploit for",
+        "obj": "CVE-2014-4113"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "runs with privileges",
+        "obj": "System"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "creates persistence using",
+        "obj": "schtasks"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "establishes socks5 connection to",
+        "obj": "192.157.198.103"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "establishes connection to",
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "join.playboysplus.com",
+        "rel": "resolves to",
+        "obj": "104.151.248.173"
+      },
+      {
+        "sub": "walterclean.com",
+        "rel": "resolves to",
+        "obj": "104.151.248.173"
+      },
+      {
+        "sub": "www.walterclean.com",
+        "rel": "resolves to",
+        "obj": "104.151.248.173"
+      },
+      {
+        "sub": "securitywap.com",
+        "rel": "resolves to",
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "www.securitywap.com",
+        "rel": "resolves to",
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "derived from",
+        "obj": "MShell"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "derived from",
+        "obj": "4113"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "derived from",
+        "obj": "MyRat"
+      },
+      {
+        "sub": "APT3",
+        "rel": "uses domain",
+        "obj": "inform.bedircati.com"
+      },
+      {
+        "sub": "APT3",
+        "rel": "uses domain",
+        "obj": "pn.lamb-site.com"
+      },
+      {
+        "sub": "APT3",
+        "rel": "uses ip",
+        "obj": "210.109.99.64"
+      },
+      {
+        "sub": "APT3",
+        "rel": "uses ip",
+        "obj": "192.157.198.103"
+      },
+      {
+        "sub": "APT3",
+        "rel": "uses ip",
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "APT3",
+        "rel": "uses domain",
+        "obj": "securitywap.com"
+      },
+      {
+        "sub": "join.playboysplus.com",
+        "rel": "delivers payload to",
+        "obj": "install.exe"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "executes before",
+        "obj": "test.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "writes to",
+        "obj": "notepad1.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "DELETES",
+        "obj": "notepad.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "CREATES",
+        "obj": "newnotepad.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "reads content from",
+        "obj": "note.txt"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "executes commands using",
+        "obj": "cmd.exe"
+      }
+    ]
+  }
+}

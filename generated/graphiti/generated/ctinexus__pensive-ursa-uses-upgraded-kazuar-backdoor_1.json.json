@@ -1,0 +1,113 @@
+{
+  "sample_id": "ctinexus__pensive-ursa-uses-upgraded-kazuar-backdoor_1.json",
+  "sample_index": 69,
+  "source": "ctinexus",
+  "file_name": "pensive-ursa-uses-upgraded-kazuar-backdoor_1.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Pensive Ursa",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Turla",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Uroburos",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Kazuar",
+        "type": "Malware"
+      },
+      {
+        "name": "Russian Federal Security Service",
+        "type": "Organization"
+      },
+      {
+        "name": "Ukrainian CERT",
+        "type": "Organization"
+      },
+      {
+        "name": "Signal",
+        "type": "Software"
+      },
+      {
+        "name": "source control",
+        "type": "Software"
+      },
+      {
+        "name": "cloud platforms",
+        "type": "Software"
+      },
+      {
+        "name": "Sunburst",
+        "type": "Malware"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Pensive Ursa",
+        "rel": "USES",
+        "obj": "Kazuar"
+      },
+      {
+        "sub": "Pensive Ursa",
+        "rel": "is also known as",
+        "obj": "Turla"
+      },
+      {
+        "sub": "Pensive Ursa",
+        "rel": "is also known as",
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "has code resemblance with",
+        "obj": "Sunburst"
+      },
+      {
+        "sub": "Ukrainian CERT",
+        "rel": "reported targeting",
+        "obj": "Kazuar"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "TARGETS",
+        "obj": "Signal"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "TARGETS",
+        "obj": "source control"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "TARGETS",
+        "obj": "cloud platforms"
+      },
+      {
+        "sub": "Russian Federal Security Service",
+        "rel": "is linked to",
+        "obj": "Pensive Ursa"
+      }
+    ]
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "sample_id": "securenlp__Operation_Poisoned_Handover",
+  "sample_index": 182,
+  "source": "securenlp",
+  "file_name": "Operation_Poisoned_Handover",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Hong Kong",
+        "rel": "Has geolocation",
+        "obj": "Location"
+      },
+      {
+        "sub": "Next Media",
+        "rel": "Vender",
+        "obj": "Organization"
+      },
+      {
+        "sub": "Apple Daily",
+        "rel": "Filename",
+        "obj": "\"Apple Daily\""
+      },
+      {
+        "sub": "Apple Daily",
+        "rel": "Has URL",
+        "obj": "\"https://www.appledaily.com.hk\""
+      },
+      {
+        "sub": "HKGolden",
+        "rel": "Filename",
+        "obj": "\"HKGolden\""
+      },
+      {
+        "sub": "HKGolden",
+        "rel": "Has URL",
+        "obj": "\"https://www.hkgolden.com\""
+      },
+      {
+        "sub": "Apple Daily",
+        "rel": "Has hostname",
+        "obj": "\"www.appledaily.com.hk\""
+      },
+      {
+        "sub": "HKGolden",
+        "rel": "Has hostname",
+        "obj": "\"www.hkgolden.com\""
+      },
+      {
+        "sub": "Apple Daily",
+        "rel": "Has value",
+        "obj": "\"pro-democracy movement\""
+      },
+      {
+        "sub": "HKGolden",
+        "rel": "Has value",
+        "obj": "\"pro-democracy movement\""
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Apple Daily"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "HKGolden"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Domain"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "IP"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Locate at",
+        "obj": "Hong Kong"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Gather information",
+        "obj": "Domain"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Gather information",
+        "obj": "IP"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Construct",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Write",
+        "obj": "Reconnaissance plan"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Detect",
+        "obj": "Accessible domains"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Detect",
+        "obj": "Relevant attack vectors"
+      },
+      {
+        "sub": "W32 Cabinet binary",
+        "rel": "Construct",
+        "obj": "Self-extracting binary"
+      },
+      {
+        "sub": "W32 Cabinet binary",
+        "rel": "Use",
+        "obj": "Malware deployment"
+      },
+      {
+        "sub": "W32 Cabinet binary",
+        "rel": "Has digital certificate",
+        "obj": "QTI International"
+      },
+      {
+        "sub": "W32 Cabinet binary",
+        "rel": "Has digital certificate",
+        "obj": "CallTogether"
+      },
+      {
+        "sub": "libssp-0.dll",
+        "rel": "Side-load",
+        "obj": "Infected system"
+      },
+      {
+        "sub": "ctfmon.exe",
+        "rel": "Side-load",
+        "obj": "Infected system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "DDoS operations"
+      },
+      {
+        "sub": "Botnet",
+        "rel": "Operate",
+        "obj": "Compromised systems"
+      },
+      {
+        "sub": "Digital certificate",
+        "rel": "Belong to",
+        "obj": "QTI International"
+      },
+      {
+        "sub": "Digital certificate",
+        "rel": "Belong to",
+        "obj": "CallTogether"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has component",
+        "obj": "libssp-0.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has component",
+        "obj": "ctfmon.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "java-se.com/o.js"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "JavaScript"
+      },
+      {
+        "sub": "Malicious JavaScript",
+        "rel": "Operate",
+        "obj": "Browser"
+      },
+      {
+        "sub": "Hong Kong Association for Democracy and People’s Livelihood",
+        "rel": "Has URL",
+        "obj": "adpl.org.hk"
+      },
+      {
+        "sub": "Democratic Party of Hong Kong",
+        "rel": "Has URL",
+        "obj": "democraticparty.hk"
+      },
+      {
+        "sub": "Drive-by compromise",
+        "rel": "Modify",
+        "obj": "Legitimate website"
+      },
+      {
+        "sub": "Drive-by compromise",
+        "rel": "Construct",
+        "obj": "Malicious JavaScript"
+      },
+      {
+        "sub": "Malicious JavaScript",
+        "rel": "Write",
+        "obj": "Browser execution"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Belong to",
+        "obj": "Drive-by compromise"
+      },
+      {
+        "sub": "KernelBot",
+        "rel": "Has vulnerability",
+        "obj": "ctfmon.exe"
+      },
+      {
+        "sub": "ctfmon.exe",
+        "rel": "Write",
+        "obj": "libssp-0.dll"
+      },
+      {
+        "sub": "libssp-0.dll",
+        "rel": "Use",
+        "obj": "KernelBot"
+      },
+      {
+        "sub": "KernelBot",
+        "rel": "Operate",
+        "obj": "DDoS"
+      },
+      {
+        "sub": "W32 Cabinet",
+        "rel": "Construct",
+        "obj": "libssp-0.dll"
+      },
+      {
+        "sub": "W32 Cabinet",
+        "rel": "Deliver",
+        "obj": "KernelBot"
+      },
+      {
+        "sub": "ctfmon.exe",
+        "rel": "Side-load",
+        "obj": "libssp-0.dll"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "nxapi.appledaily.com.hk"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "hkgolden.com"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "java-se.com"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Configuration files"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Browser-based scripts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Malicious content"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Network structure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "IP addresses"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has value",
+        "obj": "Domains"
+      },
+      {
+        "sub": "C2 domain",
+        "rel": "Has URL",
+        "obj": "sapporo-digital-photoclub.com"
+      },
+      {
+        "sub": "C2 domain",
+        "rel": "Has URL",
+        "obj": "wakayamasatei.com"
+      },
+      {
+        "sub": "C2 domain",
+        "rel": "Has URL",
+        "obj": "tommo.jp"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Use",
+        "obj": "Encrypted and XOR-encoded payloads"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Operate",
+        "obj": "HTTP protocol"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Modify",
+        "obj": "Configuration files"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Issue",
+        "obj": "Encoded configuration files"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Instruct",
+        "obj": "Botnet"
+      },
+      {
+        "sub": "Botnet",
+        "rel": "Operate",
+        "obj": "DDoS attacks"
+      },
+      {
+        "sub": "C2 communication",
+        "rel": "Mimic",
+        "obj": "Normal traffic"
+      },
+      {
+        "sub": "Next Media's Apple Daily",
+        "rel": "Has vulnerability",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "DDoS attack",
+        "rel": "Operate",
+        "obj": "Next Media's Apple Daily"
+      },
+      {
+        "sub": "Next Media's Apple Daily",
+        "rel": "Locate at",
+        "obj": "Hong Kong"
+      },
+      {
+        "sub": "Pro-democracy websites",
+        "rel": "Has geolocation",
+        "obj": "Hong Kong"
+      },
+      {
+        "sub": "DDoS attack",
+        "rel": "Modify",
+        "obj": "online services"
+      },
+      {
+        "sub": "Online services",
+        "rel": "Have",
+        "obj": "network failure"
+      }
+    ]
+  }
+}

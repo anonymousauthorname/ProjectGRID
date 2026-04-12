@@ -1,0 +1,397 @@
+{
+  "sample_id": "casie__410.json",
+  "sample_index": 2,
+  "source": "casie",
+  "file_name": "410.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Samsung Galaxy devices",
+        "type": "general-software",
+        "alias": [
+          "older Samsung Galaxy phones and tablets",
+          "vulnerable devices",
+          "S4, S5 and Note 4",
+          "newer Samsung devices",
+          "S6 and S7"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "SMS",
+        "type": "network-traffic",
+        "alias": [
+          "maliciously crafted configuration messages",
+          "the malicious configuration message",
+          "the configuration message",
+          "a malicious app"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "bugs",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerabilities",
+          "these types of messages",
+          "these specific issues"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2016-7988 and CVE-2016-7989",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerabilities in question",
+          "these specific issues"
+        ],
+        "mother entity": [
+          "bugs"
+        ]
+      },
+      {
+        "name": "S4, S4 Mini, S5 and Note 4",
+        "type": "general-software",
+        "alias": [
+          "older Samsung Galaxy phones and tablets"
+        ],
+        "mother entity": [
+          "Samsung Galaxy devices"
+        ]
+      },
+      {
+        "name": "newer Samsung devices",
+        "type": "general-software",
+        "alias": [
+          "S6 and S7"
+        ],
+        "mother entity": [
+          "Samsung Galaxy devices"
+        ]
+      },
+      {
+        "name": "malicious app",
+        "type": "hacker-tool",
+        "alias": [
+          "a malicious app"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Android telephony framework",
+        "type": "detailed-part-of-general-software",
+        "alias": [
+          "the Android telephony framework"
+        ],
+        "mother entity": [
+          "Samsung-specific application for handling carrier messages"
+        ]
+      },
+      {
+        "name": "Samsung-specific application for handling carrier messages",
+        "type": "general-software",
+        "alias": [
+          "Samsung-specific application"
+        ],
+        "mother entity": [
+          "Samsung Galaxy devices"
+        ]
+      },
+      {
+        "name": "ContextIS researchers",
+        "type": "identity",
+        "alias": [
+          "the researchers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "crooks",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attackers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ransom note",
+        "type": "file",
+        "alias": [
+          "First a ransom note is sent"
+        ],
+        "mother entity": [
+          "malicious configuration message"
+        ]
+      },
+      {
+        "name": "Android update process",
+        "type": "course-of-action",
+        "alias": [
+          "the Android update process"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "HTC diagram",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "this HTC diagram"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "other vendors",
+        "type": "identity",
+        "alias": [
+          "vendors"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Samsung",
+        "type": "identity",
+        "alias": [
+          "Samsung who handle the patching process"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "carriers",
+        "type": "identity",
+        "mother entity": [
+          "Samsung"
+        ]
+      },
+      {
+        "name": "patches",
+        "type": "course-of-action",
+        "alias": [
+          "the patches"
+        ],
+        "mother entity": [
+          "vulnerabilities"
+        ]
+      },
+      {
+        "name": "Help Net Security",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "Help Net Security"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SMS",
+        "rel": "force Samsung Galaxy devices into a crash and reboot loop",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Samsung Galaxy devices"
+      },
+      {
+        "sub": "SMS",
+        "rel": "leave the owner with no other option than to reset it to factory settings",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Samsung Galaxy devices"
+      },
+      {
+        "sub": "bugs",
+        "rel": "can be triggered via SMS",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "SMS",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "attackers",
+        "rel": "force maliciously crafted configuration messages onto the users’ device",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "SMS"
+      },
+      {
+        "sub": "bugs",
+        "rel": "allow these types of messages to be executed without user interaction",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "maliciously crafted configuration messages"
+      },
+      {
+        "sub": "ContextIS researchers",
+        "rel": "discovered the vulnerabilities",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "bugs"
+      },
+      {
+        "sub": "crooks",
+        "rel": "hold users’ devices for ransom",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Samsung Galaxy devices"
+      },
+      {
+        "sub": "ransom note",
+        "rel": "is sent",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Samsung Galaxy devices"
+      },
+      {
+        "sub": "maliciously crafted configuration message",
+        "rel": "can be sent if ignored",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Samsung Galaxy devices",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "victim",
+        "rel": "pays up",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "maliciously crafted configuration message",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "maliciously crafted configuration message",
+        "rel": "can be sent to stop the rebooting",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Samsung Galaxy devices",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "CVE-2016-7988 and CVE-2016-7989",
+        "rel": "can be triggered through SMS on S4, S4 Mini, S5 and Note 4",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "SMS"
+      },
+      {
+        "sub": "CVE-2016-7988 and CVE-2016-7989",
+        "rel": "not on newer Samsung devices",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "newer Samsung devices",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "malicious app",
+        "rel": "abusing CVE-2016-7988",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2016-7988 and CVE-2016-7989"
+      },
+      {
+        "sub": "CVE-2016-7988 and CVE-2016-7989",
+        "rel": "related to modifications to the Android telephony framework",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "CVE-2016-7988 and CVE-2016-7989",
+        "rel": "found in a Samsung-specific application for handling carrier messages",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Samsung-specific application for handling carrier messages"
+      },
+      {
+        "sub": "ContextIS researchers",
+        "rel": "responsibly disclosed vulnerabilities to Samsung",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Samsung"
+      },
+      {
+        "sub": "Samsung",
+        "rel": "handle the patching process with carriers",
+        "rel_type": [
+          "cooperates-with"
+        ],
+        "obj": "carriers"
+      },
+      {
+        "sub": "Samsung",
+        "rel": "arrange for the patches to be made available",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "patches"
+      },
+      {
+        "sub": "Android update process",
+        "rel": "is a bit of a minefield",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Samsung Galaxy devices"
+      },
+      {
+        "sub": "HTC diagram",
+        "rel": "illustrates the Android update process",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Android update process"
+      },
+      {
+        "sub": "same avenue of attack",
+        "rel": "could be abused to target other vendors",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "other vendors",
+        "special_factuality": [
+          "possible"
+        ]
+      }
+    ]
+  }
+}

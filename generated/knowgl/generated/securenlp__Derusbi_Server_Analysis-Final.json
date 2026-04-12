@@ -1,0 +1,402 @@
+{
+  "sample_id": "securenlp__Derusbi_Server_Analysis-Final",
+  "sample_index": 153,
+  "source": "securenlp",
+  "file_name": "Derusbi_Server_Analysis-Final",
+  "method_name": "KnowGL",
+  "method_file": "Approach_knowgl.py",
+  "approach_instance_key": "Approach_knowgl__799485be3cdf7d2b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.271968472913566,
+    "attempt_count": 1,
+    "model": "Unknown",
+    "backend_type": "native",
+    "token": 32768,
+    "temperature": null
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Derusbi",
+        "rel": "instance of",
+        "obj": "malware"
+      },
+      {
+        "sub": "directionality",
+        "rel": "facet of",
+        "obj": "communication"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "instance of",
+        "obj": "RAT"
+      },
+      {
+        "sub": "remote command shell",
+        "rel": "subclass of",
+        "obj": "RAT"
+      },
+      {
+        "sub": "device driver",
+        "rel": "subclass of",
+        "obj": "installs"
+      },
+      {
+        "sub": "Windows Firewall hooking techniques",
+        "rel": "facet of",
+        "obj": "Windows firewall"
+      },
+      {
+        "sub": "packet",
+        "rel": "part of",
+        "obj": "network"
+      },
+      {
+        "sub": "network",
+        "rel": "subclass of",
+        "obj": "traffic"
+      },
+      {
+        "sub": "web server",
+        "rel": "implementation of",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "DLL",
+        "rel": "part of",
+        "obj": "standard service"
+      },
+      {
+        "sub": "DllEntryPoint",
+        "rel": "use",
+        "obj": "startup sequence"
+      },
+      {
+        "sub": "LoadLibrary",
+        "rel": "subclass of",
+        "obj": "function call"
+      },
+      {
+        "sub": "GetCommandLineW",
+        "rel": "instance of",
+        "obj": "API"
+      },
+      {
+        "sub": "NT Authority",
+        "rel": "part of",
+        "obj": "server variant"
+      },
+      {
+        "sub": "HKLM\\SOFTWARE\\Microsoft\\Rpc\\Security",
+        "rel": "part of",
+        "obj": "HKLM\\SOFTWARE\\Microsoft\\Rpc\\Security"
+      },
+      {
+        "sub": "XXXXXXXXXXXXXXXXXXX",
+        "rel": "instance of",
+        "obj": "static string"
+      },
+      {
+        "sub": "infection ID",
+        "rel": "part of",
+        "obj": "unique infection ID"
+      },
+      {
+        "sub": "infection ID",
+        "rel": "part of",
+        "obj": "registry location"
+      },
+      {
+        "sub": "mainLoop",
+        "rel": "use",
+        "obj": "load the driver portion"
+      },
+      {
+        "sub": "360",
+        "rel": "instance of",
+        "obj": "antivirus"
+      },
+      {
+        "sub": "binary",
+        "rel": "subclass of",
+        "obj": "file"
+      },
+      {
+        "sub": "DerusbiThread",
+        "rel": "uses",
+        "obj": "PCC_SOCK"
+      },
+      {
+        "sub": "PCC_SOCK",
+        "rel": "instance of",
+        "obj": "abstraction"
+      },
+      {
+        "sub": "Figure 1",
+        "rel": "use",
+        "obj": "PCC_SOCK"
+      },
+      {
+        "sub": "DWORD dwLastError",
+        "rel": "instance of",
+        "obj": "member variables"
+      },
+      {
+        "sub": "IOCTL",
+        "rel": "part of",
+        "obj": "driver"
+      },
+      {
+        "sub": "Firewall Hook",
+        "rel": "instance of",
+        "obj": "Windows Device Driver"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "instance of",
+        "obj": "device driver"
+      },
+      {
+        "sub": "Windows 2000",
+        "rel": "subclass of",
+        "obj": "Windows"
+      },
+      {
+        "sub": "Windows 2000",
+        "rel": "instance of",
+        "obj": "operating system"
+      },
+      {
+        "sub": "Windows",
+        "rel": "has edition or translation",
+        "obj": "Windows 2000"
+      },
+      {
+        "sub": "Windows",
+        "rel": "instance of",
+        "obj": "operating system"
+      },
+      {
+        "sub": "network traffic",
+        "rel": "subclass of",
+        "obj": "traffic"
+      },
+      {
+        "sub": "TCP",
+        "rel": "uses",
+        "obj": "connections"
+      },
+      {
+        "sub": "DWORD",
+        "rel": "followed by",
+        "obj": "DWORD"
+      },
+      {
+        "sub": "DWORD",
+        "rel": "part of",
+        "obj": "server variant"
+      },
+      {
+        "sub": "DWORD",
+        "rel": "instance of",
+        "obj": "DWORD"
+      },
+      {
+        "sub": "HTTP/1.0 400 Bad Request",
+        "rel": "part of",
+        "obj": "Apache/2.2.3"
+      },
+      {
+        "sub": "dwPktType",
+        "rel": "part of",
+        "obj": "VictimInfoPacket"
+      },
+      {
+        "sub": "DWORD XOR",
+        "rel": "use",
+        "obj": "encoded"
+      },
+      {
+        "sub": "PacketHeader",
+        "rel": "subclass of",
+        "obj": "struct"
+      },
+      {
+        "sub": "dwEncryptionKey",
+        "rel": "instance of",
+        "obj": "encryption key"
+      },
+      {
+        "sub": "LZO compression",
+        "rel": "opposite of",
+        "obj": "XOR encoding"
+      },
+      {
+        "sub": "LZO",
+        "rel": "subclass of",
+        "obj": "compressed"
+      },
+      {
+        "sub": "Figure 4",
+        "rel": "instance of",
+        "obj": "graphical representation"
+      },
+      {
+        "sub": "CommLoop",
+        "rel": "instance of",
+        "obj": "command handler"
+      },
+      {
+        "sub": "modules",
+        "rel": "subclass of",
+        "obj": "malware"
+      },
+      {
+        "sub": "PCC_CMD",
+        "rel": "use",
+        "obj": "Remote command shell"
+      },
+      {
+        "sub": "CommLoop",
+        "rel": "subclass of",
+        "obj": "infinite loop"
+      },
+      {
+        "sub": "CommLoop",
+        "rel": "uses",
+        "obj": "ReadWaitingData"
+      },
+      {
+        "sub": "CommLoop",
+        "rel": "uses",
+        "obj": "dwPacketIdentifierCode"
+      },
+      {
+        "sub": "ProcessPacket",
+        "rel": "subclass of",
+        "obj": "ProcessPacket"
+      },
+      {
+        "sub": "ProcessPacketEx",
+        "rel": "instance of",
+        "obj": "stub function"
+      },
+      {
+        "sub": "PCCCMDPacketHeader",
+        "rel": "part of",
+        "obj": "PCC_CMD"
+      },
+      {
+        "sub": "dwCommandType",
+        "rel": "instance of",
+        "obj": "CommandType"
+      },
+      {
+        "sub": "ProcessPacketEx",
+        "rel": "uses",
+        "obj": "PCC_CMD"
+      },
+      {
+        "sub": "ProcessPacketEx",
+        "rel": "part of",
+        "obj": "PCC_CMD"
+      },
+      {
+        "sub": "PCCCMDPacketHeader",
+        "rel": "subclass of",
+        "obj": "PacketHeader"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "instance of",
+        "obj": "file system"
+      },
+      {
+        "sub": "Kofi Annan",
+        "rel": "position held",
+        "obj": "President of Finland"
+      },
+      {
+        "sub": "PCC_CMD",
+        "rel": "subclass of",
+        "obj": "ProcessPacket"
+      },
+      {
+        "sub": "ProcessPacketEx",
+        "rel": "use",
+        "obj": "file management"
+      },
+      {
+        "sub": "PCC_FILE::ReadWaitingData member function",
+        "rel": "instance of",
+        "obj": "stub function"
+      },
+      {
+        "sub": "data blob",
+        "rel": "subclass of",
+        "obj": "data"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "instance of",
+        "obj": "command"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "instance of",
+        "obj": "server variant"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "use",
+        "obj": "tunneling"
+      },
+      {
+        "sub": "PCC_BASEMOD",
+        "rel": "followed by",
+        "obj": "PCC_PROXY"
+      },
+      {
+        "sub": "Kathmandu River",
+        "rel": "mouth of the watercourse",
+        "obj": "Kathmandu Bay"
+      },
+      {
+        "sub": "ProcessPacket",
+        "rel": "uses",
+        "obj": "PCC_PROXY"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "based on",
+        "obj": "PCC_BASEMOD"
+      },
+      {
+        "sub": "PCCFilePacketHeader",
+        "rel": "instance of",
+        "obj": "packet header"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "uses",
+        "obj": "PCC_BASEMOD"
+      },
+      {
+        "sub": "infection ID",
+        "rel": "has cause",
+        "obj": "repetitive"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "use",
+        "obj": "heuristic"
+      }
+    ]
+  }
+}

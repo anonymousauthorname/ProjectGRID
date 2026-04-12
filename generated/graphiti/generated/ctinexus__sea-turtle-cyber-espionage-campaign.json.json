@@ -1,0 +1,79 @@
+{
+  "sample_id": "ctinexus__sea-turtle-cyber-espionage-campaign.json",
+  "sample_index": 50,
+  "source": "ctinexus",
+  "file_name": "sea-turtle-cyber-espionage-campaign.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Sea Turtle",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Cosmic Wolf",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Marbled Dust",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Silicon",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Teal Kurma",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "UNC1326",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "DNS hijacking",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "SnappyTCP",
+        "type": "Malware"
+      },
+      {
+        "name": "PricewaterhouseCoopers",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Sea Turtle",
+        "rel": "LEVERAGES",
+        "obj": "DNS hijacking"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "USES",
+        "obj": "SnappyTCP"
+      },
+      {
+        "sub": "PricewaterhouseCoopers",
+        "rel": "REVEALED",
+        "obj": "Sea Turtle"
+      }
+    ]
+  }
+}

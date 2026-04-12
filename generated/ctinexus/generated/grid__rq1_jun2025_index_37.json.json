@@ -1,0 +1,266 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_37.json",
+  "sample_index": 227,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_37.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "NACHA",
+        "type": "Unknown"
+      },
+      {
+        "name": "Organization",
+        "type": "Unknown"
+      },
+      {
+        "name": "Infrastructure",
+        "type": "Unknown"
+      },
+      {
+        "name": "ACH Network",
+        "type": "Unknown"
+      },
+      {
+        "name": "Service",
+        "type": "Unknown"
+      },
+      {
+        "name": "Financial Entity",
+        "type": "Unknown"
+      },
+      {
+        "name": "Volume",
+        "type": "Unknown"
+      },
+      {
+        "name": "email messages purporting to be from NACHA",
+        "type": "Unknown"
+      },
+      {
+        "name": "Attacker",
+        "type": "Unknown"
+      },
+      {
+        "name": "Zeus botnet",
+        "type": "Unknown"
+      },
+      {
+        "name": "Malware Characteristic",
+        "type": "Unknown"
+      },
+      {
+        "name": "Information",
+        "type": "Unknown"
+      },
+      {
+        "name": "Time",
+        "type": "Unknown"
+      },
+      {
+        "name": "Vulnerability",
+        "type": "Unknown"
+      },
+      {
+        "name": "Malware",
+        "type": "Unknown"
+      },
+      {
+        "name": "Tool",
+        "type": "Unknown"
+      },
+      {
+        "name": "Event",
+        "type": "Unknown"
+      },
+      {
+        "name": "individuals",
+        "type": "Unknown"
+      },
+      {
+        "name": "Policy",
+        "type": "Unknown"
+      },
+      {
+        "name": "Behavior",
+        "type": "Unknown"
+      },
+      {
+        "name": "Action",
+        "type": "Unknown"
+      },
+      {
+        "name": "botnet activity",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "NACHA",
+        "rel": "is a",
+        "obj": "Organization"
+      },
+      {
+        "sub": "NACHA",
+        "rel": "is led by",
+        "obj": "Organization"
+      },
+      {
+        "sub": "NACHA",
+        "rel": "is responsible for",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "includes",
+        "obj": "Service"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "serves",
+        "obj": "Organization"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "handles",
+        "obj": "Financial Entity"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "handles",
+        "obj": "Volume"
+      },
+      {
+        "sub": "email messages purporting to be from NACHA",
+        "rel": "are used to socially engineer",
+        "obj": "Attacker"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "is designed to",
+        "obj": "Malware Characteristic"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "silently collects",
+        "obj": "Information"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "collects",
+        "obj": "Malware Characteristic"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "uses the same distribution method",
+        "obj": "Time"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "targets",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "exploits",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "fails to exploit",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "bundled with",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "can be remotely controlled",
+        "obj": "Tool"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "sends",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "adds victims to",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "gathers",
+        "obj": "Information"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "impacts",
+        "obj": "Event"
+      },
+      {
+        "sub": "individuals",
+        "rel": "should run",
+        "obj": "Tool"
+      },
+      {
+        "sub": "individuals",
+        "rel": "should have",
+        "obj": "Tool"
+      },
+      {
+        "sub": "individuals",
+        "rel": "should have",
+        "obj": "Policy"
+      },
+      {
+        "sub": "individuals",
+        "rel": "should implement",
+        "obj": "Tool"
+      },
+      {
+        "sub": "individuals",
+        "rel": "should avoid",
+        "obj": "Behavior"
+      },
+      {
+        "sub": "individuals",
+        "rel": "should verify suspicious activity",
+        "obj": "Action"
+      },
+      {
+        "sub": "botnet activity",
+        "rel": "leads to",
+        "obj": "Event"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "is targeted by",
+        "obj": "Zeus botnet"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "uses",
+        "obj": "Zeus botnet"
+      }
+    ]
+  }
+}

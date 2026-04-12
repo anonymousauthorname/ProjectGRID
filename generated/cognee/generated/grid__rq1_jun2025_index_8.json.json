@@ -1,0 +1,386 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_8.json",
+  "sample_index": 247,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_8.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Flash 0-Day",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2018-4878",
+        "type": "Entity"
+      },
+      {
+        "name": "use after free",
+        "type": "Entity"
+      },
+      {
+        "name": "Remote Code Execute",
+        "type": "Entity"
+      },
+      {
+        "name": "malformed Flash object",
+        "type": "Entity"
+      },
+      {
+        "name": "Adobe",
+        "type": "Entity"
+      },
+      {
+        "name": "Talos Group",
+        "type": "Entity"
+      },
+      {
+        "name": "KISA",
+        "type": "Entity"
+      },
+      {
+        "name": "Korean CERT",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Excel",
+        "type": "Entity"
+      },
+      {
+        "name": "compromised website",
+        "type": "Entity"
+      },
+      {
+        "name": "additional payload",
+        "type": "Entity"
+      },
+      {
+        "name": "February 2, 2018",
+        "type": "Entity"
+      },
+      {
+        "name": "Threat Research",
+        "type": "Entity"
+      },
+      {
+        "name": "Cisco Blogs",
+        "type": "Entity"
+      },
+      {
+        "name": "Security",
+        "type": "Entity"
+      },
+      {
+        "name": "exploit",
+        "type": "Entity"
+      },
+      {
+        "name": "Flash vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "embedded Flash object",
+        "type": "Entity"
+      },
+      {
+        "name": "document exploitation",
+        "type": "Entity"
+      },
+      {
+        "name": "attack group 123",
+        "type": "Entity"
+      },
+      {
+        "name": "zero-day exploit",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a type of",
+        "obj": "use after free"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "leads to",
+        "obj": "Remote Code Execute"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "requires",
+        "obj": "malformed Flash object"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a vulnerability in",
+        "obj": "Flash vulnerability"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a form of",
+        "obj": "Flash 0-Day"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a zero-day exploit",
+        "obj": "zero-day exploit"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is associated with",
+        "obj": "Adobe"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is published on",
+        "obj": "February 2, 2018"
+      },
+      {
+        "sub": "Adobe",
+        "rel": "published by",
+        "obj": "CVE-2018-4878"
+      },
+      {
+        "sub": "KISA",
+        "rel": "is associated with",
+        "obj": "Flash 0-Day"
+      },
+      {
+        "sub": "KISA",
+        "rel": "published by",
+        "obj": "CVE-2018-4878"
+      },
+      {
+        "sub": "Talos Group",
+        "rel": "identified by",
+        "obj": "attack group 123"
+      },
+      {
+        "sub": "Talos Group",
+        "rel": "identified by",
+        "obj": "CVE-2018-4878"
+      },
+      {
+        "sub": "attack group 123",
+        "rel": "exploited by",
+        "obj": "CVE-2018-4878"
+      },
+      {
+        "sub": "Microsoft Excel",
+        "rel": "contains",
+        "obj": "embedded Flash object"
+      },
+      {
+        "sub": "embedded Flash object",
+        "rel": "exploits",
+        "obj": "CVE-2018-4878"
+      },
+      {
+        "sub": "embedded Flash object",
+        "rel": "is used to trigger",
+        "obj": "exploit"
+      },
+      {
+        "sub": "exploit",
+        "rel": "results in",
+        "obj": "Remote Code Execute"
+      },
+      {
+        "sub": "exploit",
+        "rel": "is a component of",
+        "obj": "malicious document"
+      },
+      {
+        "sub": "malicious document",
+        "rel": "is a method of",
+        "obj": "document exploitation"
+      },
+      {
+        "sub": "malicious document",
+        "rel": "contains",
+        "obj": "embedded Flash object"
+      },
+      {
+        "sub": "exploit",
+        "rel": "is a method of",
+        "obj": "document exploitation"
+      },
+      {
+        "sub": "exploit",
+        "rel": "results in",
+        "obj": "compromised website"
+      },
+      {
+        "sub": "additional payload",
+        "rel": "is downloaded from",
+        "obj": "compromised website"
+      },
+      {
+        "sub": "additional payload",
+        "rel": "is used to achieve",
+        "obj": "exploit"
+      },
+      {
+        "sub": "attack group 123",
+        "rel": "is part of",
+        "obj": "attack chain"
+      },
+      {
+        "sub": "attack group 123",
+        "rel": "uses",
+        "obj": "CVE-2018-4878"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is exploited via a document",
+        "obj": "Microsoft Excel"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is exploited through",
+        "obj": "document exploitation"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is part of",
+        "obj": "Security"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is published in",
+        "obj": "Cisco Blogs"
+      },
+      {
+        "sub": "Cisco Blogs",
+        "rel": "is a part of",
+        "obj": "Security"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "allows",
+        "obj": "Remote Code Execute"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is embedded in",
+        "obj": "embedded Flash object"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is used in real-world attacks",
+        "obj": "attack group 123"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a known vulnerability",
+        "obj": "Flash 0-Day"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is associated with date",
+        "obj": "February 2, 2018"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a known exploit scenario",
+        "obj": "zero-day exploit"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a vulnerability in Adobe Flash",
+        "obj": "Flash vulnerability"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is exploited by",
+        "obj": "attack group 123"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is part of a larger attack campaign",
+        "obj": "attack chain"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a software exploit",
+        "obj": "exploit"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a file-based exploit",
+        "obj": "exploit"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a method of initial access",
+        "obj": "document exploitation"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is linked to a specific organization",
+        "obj": "attack group 123"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is used in real-world attacks",
+        "obj": "Flash 0-Day"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a remote attack vector",
+        "obj": "exploit"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a vector for code execution",
+        "obj": "document exploitation"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a component of a malicious document",
+        "obj": "embedded Flash object"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a component of an attack chain",
+        "obj": "malicious document"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is associated with attack",
+        "obj": "attack group 123"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is associated with a specific date",
+        "obj": "February 2, 2018"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a vulnerability in a widely used software",
+        "obj": "Flash 0-Day"
+      },
+      {
+        "sub": "CVE-2018-4878",
+        "rel": "is a vulnerability in a software product",
+        "obj": "Flash vulnerability"
+      }
+    ]
+  }
+}

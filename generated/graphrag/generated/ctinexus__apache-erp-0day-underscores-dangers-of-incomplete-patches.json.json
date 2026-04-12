@@ -1,0 +1,102 @@
+{
+  "sample_id": "ctinexus__apache-erp-0day-underscores-dangers-of-incomplete-patches.json",
+  "sample_index": 86,
+  "source": "ctinexus",
+  "file_name": "apache-erp-0day-underscores-dangers-of-incomplete-patches.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APACHE OFBIZ",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CVE-2023-51467",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "SONICWALL",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "APACHE SOFTWARE FOUNDATION",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CVE-2023-49070",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "UNKNOWN GROUPS",
+        "type": "THREAT_ACTOR"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "UNKNOWN GROUPS",
+        "rel": "related_to",
+        "obj": "CVE-2023-51467"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "related_to",
+        "obj": "APACHE OFBIZ"
+      },
+      {
+        "sub": "SONICWALL",
+        "rel": "related_to",
+        "obj": "CVE-2023-51467"
+      },
+      {
+        "sub": "APACHE SOFTWARE FOUNDATION",
+        "rel": "related_to",
+        "obj": "CVE-2023-49070"
+      },
+      {
+        "sub": "APACHE SOFTWARE FOUNDATION",
+        "rel": "related_to",
+        "obj": "CVE-2023-51467"
+      },
+      {
+        "sub": "UNKNOWN GROUPS",
+        "rel": "related_to",
+        "obj": "CVE-2023-51467"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "related_to",
+        "obj": "APACHE OFBIZ"
+      },
+      {
+        "sub": "SONICWALL",
+        "rel": "related_to",
+        "obj": "CVE-2023-51467"
+      },
+      {
+        "sub": "APACHE SOFTWARE FOUNDATION",
+        "rel": "related_to",
+        "obj": "CVE-2023-49070"
+      },
+      {
+        "sub": "APACHE SOFTWARE FOUNDATION",
+        "rel": "related_to",
+        "obj": "CVE-2023-51467"
+      }
+    ]
+  }
+}

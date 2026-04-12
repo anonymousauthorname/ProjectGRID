@@ -1,0 +1,402 @@
+{
+  "sample_id": "casie__10151.json",
+  "sample_index": 21,
+  "source": "casie",
+  "file_name": "10151.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Microsoft",
+        "type": "general-software",
+        "alias": []
+      },
+      {
+        "name": "Meltdown vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "the Meltdown patches",
+          "the Meltdown patches for Windows 10",
+          "Meltdown patches for Windows 10"
+        ]
+      },
+      {
+        "name": "Windows 10",
+        "type": "general-software",
+        "alias": [
+          "Windows 10 Redstone 4 (v1803)",
+          "older Windows 10 versions",
+          "vulnerable systems"
+        ]
+      },
+      {
+        "name": "Windows 10 Redstone 4 (v1803)",
+        "type": "general-software",
+        "alias": [
+          "the April 2018 Update"
+        ]
+      },
+      {
+        "name": "April 2018 Update",
+        "type": "general-software",
+        "alias": [
+          "Windows 10 Redstone 4 (v1803)"
+        ]
+      },
+      {
+        "name": "Alex Ionescu",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "Crowdstrike",
+        "type": "general-software",
+        "alias": []
+      },
+      {
+        "name": "NtCallEnclave",
+        "type": "detailed-part-of-general-software",
+        "alias": [
+          "NtCallEnclave"
+        ]
+      },
+      {
+        "name": "user space",
+        "type": "location",
+        "alias": []
+      },
+      {
+        "name": "kernel page table directory",
+        "type": "abstract-concept",
+        "alias": []
+      },
+      {
+        "name": "mitigation",
+        "type": "course-of-action",
+        "alias": []
+      },
+      {
+        "name": "CVE-2018-8115",
+        "type": "vulnerability",
+        "alias": [
+          "critical issues"
+        ]
+      },
+      {
+        "name": "Windows Host Compute Service Shim (hcsshim)",
+        "type": "general-software",
+        "alias": [
+          "the Windows Host Compute Service Shim (hcsshim) library"
+        ]
+      },
+      {
+        "name": "GitHub",
+        "type": "infrastructure",
+        "alias": []
+      },
+      {
+        "name": "Microsoft spokesperson",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "Patch Tuesday",
+        "type": "campaign",
+        "alias": [
+          "May 2018 Patch Tuesday"
+        ]
+      },
+      {
+        "name": "Spectre vulnerabilities",
+        "type": "vulnerability",
+        "alias": [
+          "Spectre"
+        ]
+      },
+      {
+        "name": "Intel CPU microcode updates",
+        "type": "course-of-action",
+        "alias": []
+      },
+      {
+        "name": "Intel",
+        "type": "general-software",
+        "alias": []
+      },
+      {
+        "name": "Redmond-based OS maker",
+        "type": "identity",
+        "alias": [
+          "Microsoft"
+        ]
+      },
+      {
+        "name": "emergency update",
+        "type": "course-of-action",
+        "alias": []
+      },
+      {
+        "name": "security researchers",
+        "type": "identity",
+        "alias": [
+          "research researchers"
+        ]
+      },
+      {
+        "name": "protected areas of modern CPUs",
+        "type": "location",
+        "alias": []
+      },
+      {
+        "name": "original Spectre mitigations",
+        "type": "course-of-action",
+        "alias": []
+      },
+      {
+        "name": "Meltdown patches for older Windows 10 versions",
+        "type": "course-of-action",
+        "alias": [
+          "the 'fixed' Meltdown patches for older Windows 10 versions"
+        ]
+      },
+      {
+        "name": "out-of-band update",
+        "type": "course-of-action",
+        "alias": []
+      },
+      {
+        "name": "May 2018 Patch Tuesday",
+        "type": "campaign",
+        "alias": []
+      },
+      {
+        "name": "January 4",
+        "type": "date",
+        "alias": []
+      },
+      {
+        "name": "Redmond",
+        "type": "location",
+        "alias": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft",
+        "rel": "authored patches for",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Meltdown vulnerability"
+      },
+      {
+        "sub": "Meltdown vulnerability",
+        "rel": "affected",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Windows 10"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "fixed the issue on",
+        "rel_type": [
+          "fixes"
+        ],
+        "obj": "Windows 10 Redstone 4 (v1803)"
+      },
+      {
+        "sub": "Meltdown vulnerability",
+        "rel": "had a fatal flaw in",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Windows 10 Redstone 4 (v1803)"
+      },
+      {
+        "sub": "NtCallEnclave",
+        "rel": "returned back to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "user space"
+      },
+      {
+        "sub": "NtCallEnclave",
+        "rel": "returned with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "kernel page table directory"
+      },
+      {
+        "sub": "Meltdown vulnerability",
+        "rel": "undermining",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "mitigation"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issued an security update",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "emergency update"
+      },
+      {
+        "sub": "emergency update",
+        "rel": "fixed a vulnerability in",
+        "rel_type": [
+          "fixes"
+        ],
+        "obj": "Windows Host Compute Service Shim (hcsshim)"
+      },
+      {
+        "sub": "Windows Host Compute Service Shim (hcsshim)",
+        "rel": "has vulnerability",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2018-8115"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "allows execution on",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "vulnerable systems"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "classified as",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "CVE-2018-8115"
+      },
+      {
+        "sub": "GitHub",
+        "rel": "available for download from",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "Windows Host Compute Service Shim (hcsshim)"
+      },
+      {
+        "sub": "Microsoft spokesperson",
+        "rel": "spokesperson of",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "arrive in",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Patch Tuesday",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "released patches on",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "January 4"
+      },
+      {
+        "sub": "security researchers",
+        "rel": "disclosed",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Spectre vulnerabilities"
+      },
+      {
+        "sub": "Redmond-based OS maker",
+        "rel": "patching the two flaws",
+        "rel_type": [
+          "handles"
+        ],
+        "obj": "Meltdown and Spectre patches"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "fixed",
+        "rel_type": [
+          "fixes"
+        ],
+        "obj": "original Spectre mitigations"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "deliver",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Intel CPU microcode updates"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "did not backport",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "Meltdown patches for older Windows 10 versions",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "out-of-band update",
+        "rel": "bundle in an",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "emergency update",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "January 4",
+        "rel": "released patches on",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "Meltdown patches"
+      },
+      {
+        "sub": "Spectre vulnerabilities",
+        "rel": "allow retrieval from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "protected areas of modern CPUs"
+      }
+    ]
+  }
+}

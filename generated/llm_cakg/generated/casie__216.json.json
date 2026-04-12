@@ -1,0 +1,296 @@
+{
+  "sample_id": "casie__216.json",
+  "sample_index": 39,
+  "source": "casie",
+  "file_name": "216.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "WhatsApp",
+        "type": "Entity"
+      },
+      {
+        "name": "Signal protocol",
+        "type": "Entity"
+      },
+      {
+        "name": "Open Whisper Systems",
+        "type": "Entity"
+      },
+      {
+        "name": "Tobias Boelter",
+        "type": "Entity"
+      },
+      {
+        "name": "Facebook",
+        "type": "Entity"
+      },
+      {
+        "name": "end-to-end encryption",
+        "type": "Entity"
+      },
+      {
+        "name": "encryption keys",
+        "type": "Entity"
+      },
+      {
+        "name": "re-encryption",
+        "type": "Entity"
+      },
+      {
+        "name": "key renegotiation",
+        "type": "Entity"
+      },
+      {
+        "name": "offline users",
+        "type": "Entity"
+      },
+      {
+        "name": "message re-sending",
+        "type": "Entity"
+      },
+      {
+        "name": "encryption warnings",
+        "type": "Entity"
+      },
+      {
+        "name": "government requests",
+        "type": "Entity"
+      },
+      {
+        "name": "Facebook Government Requests Report",
+        "type": "Entity"
+      },
+      {
+        "name": "cryptography researcher",
+        "type": "Entity"
+      },
+      {
+        "name": "Kirstie Ball",
+        "type": "Entity"
+      },
+      {
+        "name": "Centre for Research into Information, Surveillance and Privacy",
+        "type": "Entity"
+      },
+      {
+        "name": "Moxie Marlinspike",
+        "type": "Entity"
+      },
+      {
+        "name": "Frederic Jacobs",
+        "type": "Entity"
+      },
+      {
+        "name": "SMS encryption",
+        "type": "Entity"
+      },
+      {
+        "name": "TextSecure",
+        "type": "Entity"
+      },
+      {
+        "name": "security flaw",
+        "type": "Entity"
+      },
+      {
+        "name": "feature",
+        "type": "Entity"
+      },
+      {
+        "name": "public key cryptography",
+        "type": "Entity"
+      },
+      {
+        "name": "key authenticity",
+        "type": "Entity"
+      },
+      {
+        "name": "message interception",
+        "type": "Entity"
+      },
+      {
+        "name": "security notifications",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Tobias Boelter",
+        "rel": "discovered",
+        "obj": "security flaw in WhatsApp's end-to-end encryption"
+      },
+      {
+        "sub": "Tobias Boelter",
+        "rel": "reported",
+        "obj": "backdoor in WhatsApp's messaging platform"
+      },
+      {
+        "sub": "Tobias Boelter",
+        "rel": "asserted",
+        "obj": "WhatsApp can read messages due to implementation of end-to-end encryption protocol"
+      },
+      {
+        "sub": "Kirstie Ball",
+        "rel": "verified",
+        "obj": "Tobias Boelter's research"
+      },
+      {
+        "sub": "Kirstie Ball",
+        "rel": "stated",
+        "obj": "WhatsApp is an extremely insecure platform"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "uses",
+        "obj": "Signal protocol"
+      },
+      {
+        "sub": "Signal protocol",
+        "rel": "is developed by",
+        "obj": "Open Whisper Systems"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "allows",
+        "obj": "re-encryption of messages for offline users"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "forces",
+        "obj": "generation of new encryption keys for offline users"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "makes sender re-encrypt",
+        "obj": "messages with new keys"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "re-sends",
+        "obj": "messages after re-encryption"
+      },
+      {
+        "sub": "recipient",
+        "rel": "is not notified",
+        "obj": "of encryption key change"
+      },
+      {
+        "sub": "sender",
+        "rel": "is notified",
+        "obj": "of encryption key change only if opted-in to encryption warnings"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "implements",
+        "obj": "key renegotiation"
+      },
+      {
+        "sub": "key renegotiation",
+        "rel": "enables",
+        "obj": "continuity of WhatsApp conversations"
+      },
+      {
+        "sub": "Moxie Marlinspike",
+        "rel": "disagrees with",
+        "obj": "Guardian's claim of a backdoor"
+      },
+      {
+        "sub": "Moxie Marlinspike",
+        "rel": "states",
+        "obj": "there is no 'backdoor' in WhatsApp encryption"
+      },
+      {
+        "sub": "Moxie Marlinspike",
+        "rel": "explains",
+        "obj": "what Boelter found is a feature of public key cryptography"
+      },
+      {
+        "sub": "Moxie Marlinspike",
+        "rel": "calls",
+        "obj": "claim of a backdoor hyperbole"
+      },
+      {
+        "sub": "Frederic Jacobs",
+        "rel": "calls",
+        "obj": "claims of a backdoor ridiculous"
+      },
+      {
+        "sub": "Frederic Jacobs",
+        "rel": "states",
+        "obj": "key authenticity is not guaranteed if keys are not verified"
+      },
+      {
+        "sub": "Frederic Jacobs",
+        "rel": "explains",
+        "obj": "'backdoor' is a feature for conversation continuity"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "supports",
+        "obj": "end-to-end encryption"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "publishes",
+        "obj": "Facebook Government Requests Report"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "offers",
+        "obj": "security notifications to alert users to potential security risks"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "has a feature",
+        "obj": "that allows message re-sending after key renegotiation"
+      },
+      {
+        "sub": "TextSecure",
+        "rel": "originally had",
+        "obj": "SMS encryption"
+      },
+      {
+        "sub": "Moxie Marlinspike",
+        "rel": "removed",
+        "obj": "SMS encryption from TextSecure"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "uses",
+        "obj": "public key cryptography"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "relies on",
+        "obj": "unique security keys generated via Signal protocol"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "trades and verifies",
+        "obj": "security keys between users"
+      },
+      {
+        "sub": "WhatsApp",
+        "rel": "prevents",
+        "obj": "message loss for millions of messages"
+      }
+    ]
+  }
+}

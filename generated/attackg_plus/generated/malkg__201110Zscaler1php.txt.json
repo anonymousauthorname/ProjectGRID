@@ -1,0 +1,317 @@
+{
+  "sample_id": "malkg__201110Zscaler1php.txt",
+  "sample_index": 128,
+  "source": "malkg",
+  "file_name": "201110Zscaler1php.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Reconnaissance",
+        "rel": "Operate",
+        "obj": "Spear-phishing emails"
+      },
+      {
+        "sub": "Spear-phishing emails",
+        "rel": "Has URL",
+        "obj": "Malicious PDF attachments"
+      },
+      {
+        "sub": "Spear-phishing emails",
+        "rel": "Has URL",
+        "obj": "Web links to binary executables"
+      },
+      {
+        "sub": "Malicious PDF attachments",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2009-4324"
+      },
+      {
+        "sub": "Web links to binary executables",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2010-2883"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Target",
+        "obj": "Individuals and organizations in China/US relations"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Target",
+        "obj": "Defense entities"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Target",
+        "obj": "Geospatial industry"
+      },
+      {
+        "sub": "Phishing campaigns",
+        "rel": "Gather",
+        "obj": "Victim identity"
+      },
+      {
+        "sub": "Phishing campaigns",
+        "rel": "Gather",
+        "obj": "Organizational information"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has vulnerability",
+        "obj": "Phishing emails"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has vulnerability",
+        "obj": "Malicious PDF attachments"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has vulnerability",
+        "obj": "Direct links to binary executables"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Maintain persistent access"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Enable further operations"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Malicious PDF attachment"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Binary executable"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Poison Ivy RAT"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Exploit",
+        "obj": "CVE-2009-4324"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Exploit",
+        "obj": "CVE-2010-2883"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Install",
+        "obj": "Victim's system"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "HTTP GET requests"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Operate",
+        "obj": "FREE.COFFEELAUCH.COM"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Operate",
+        "obj": "FIREHAPPY.SYTES.NET"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has URL",
+        "obj": "FREE.COFFEELAUCH.COM"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has URL",
+        "obj": "FIREHAPPY.SYTES.NET"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Construct",
+        "obj": "remote control capability"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Persistence"
+      },
+      {
+        "sub": "Infected host",
+        "rel": "Perform",
+        "obj": "Beaconing"
+      },
+      {
+        "sub": "Infected host",
+        "rel": "Send",
+        "obj": "HTTP GET request"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Receive",
+        "obj": "HTTP GET request"
+      },
+      {
+        "sub": "HTTP GET request",
+        "rel": "Contain",
+        "obj": "IP"
+      },
+      {
+        "sub": "HTTP GET request",
+        "rel": "Contain",
+        "obj": "Hostname"
+      },
+      {
+        "sub": "HTTP GET request",
+        "rel": "Contain",
+        "obj": "MAC address"
+      },
+      {
+        "sub": "HTTP GET request",
+        "rel": "Contain",
+        "obj": "Username"
+      },
+      {
+        "sub": "HTTP GET request",
+        "rel": "Contain",
+        "obj": "OS version"
+      },
+      {
+        "sub": "Beaconing",
+        "rel": "Enable",
+        "obj": "Long-term access"
+      },
+      {
+        "sub": "Infected host",
+        "rel": "Remain",
+        "obj": "Active"
+      },
+      {
+        "sub": "Infected host",
+        "rel": "Detect",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Beaconing traffic"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Transmit",
+        "obj": "HTTP GET requests"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Base64 encoded data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Data by XORing with keys"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "C2 domains"
+      },
+      {
+        "sub": "C2 domain",
+        "rel": "Has URL",
+        "obj": "/1.php?id=[data1]&id=[data2]&id=[data3]&id=[data4]&id=&id="
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "IP address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "hostname"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "MAC address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "username"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "OS version"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Use",
+        "obj": "FREE.COFFEELAUCH.COM"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Use",
+        "obj": "FIREHAPPY.SYTES.NET"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Use",
+        "obj": "HOUSE.SUPERDOGDREAM.COM"
+      },
+      {
+        "sub": "C2 Traffic",
+        "rel": "Has URL",
+        "obj": "/1.php?id=[data1]&id=[data2]&id=[data3]&id=[data4]&id=&id="
+      },
+      {
+        "sub": "C2 Traffic",
+        "rel": "Operate",
+        "obj": "HTTPS CONNECT"
+      },
+      {
+        "sub": "C2 Traffic",
+        "rel": "Operate",
+        "obj": "Port 443"
+      },
+      {
+        "sub": "C2 Traffic",
+        "rel": "Has value",
+        "obj": "Microsoft Internet Explorer 6.0"
+      },
+      {
+        "sub": "C2 Traffic",
+        "rel": "Modify",
+        "obj": "Parameter pattern with multiple id fields"
+      }
+    ]
+  }
+}

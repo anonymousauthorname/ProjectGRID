@@ -1,0 +1,252 @@
+{
+  "sample_id": "malkg__201403TrendMicroSiesta.txt",
+  "sample_index": 124,
+  "source": "malkg",
+  "file_name": "201403TrendMicroSiesta.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Spear-phishing"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Spoofed email address"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "URL path"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has value",
+        "obj": "Organization name"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has value",
+        "obj": "Victim identity information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "High-level executives"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Legitimate archive name"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Malicious domain"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Construct",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has value",
+        "obj": "malicious payload"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Locate at",
+        "obj": "Li Ning"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Belong to",
+        "obj": "xiaomao{BLOCKED}@163.com"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Operate",
+        "obj": "command-and-control  servers"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has vulnerability",
+        "obj": "malicious payload"
+      },
+      {
+        "sub": "TROJ_SLOTH",
+        "rel": "Has vulnerability",
+        "obj": "Spear-phishing emails"
+      },
+      {
+        "sub": "TROJ_SLOTH",
+        "rel": "Modify",
+        "obj": "Victim's system"
+      },
+      {
+        "sub": "TROJ_SLOTH",
+        "rel": "Use",
+        "obj": "Malware delivery"
+      },
+      {
+        "sub": "TROJ_SLOTH",
+        "rel": "Locate at",
+        "obj": "PDF document"
+      },
+      {
+        "sub": "TROJ_SLOTH",
+        "rel": "Has URL",
+        "obj": "Malicious archive link"
+      },
+      {
+        "sub": "TROJ_SLOTH",
+        "rel": "Construct",
+        "obj": "Legitimate-looking file download link"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Drop",
+        "obj": "google{BLOCKED}.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Drop",
+        "obj": "UIODsevr.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "BKDR_SLOTH.B"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "BKDR_SLOTH.A"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "C2 servers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "backdoor component"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has filename",
+        "obj": "google{BLOCKED}.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has filename",
+        "obj": "UIODsevr.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has tactic",
+        "obj": "Remote Access"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "Execution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Win32 executable"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Sleep command"
+      },
+      {
+        "sub": "Sleep command",
+        "rel": "Belong to",
+        "obj": "Command structure"
+      },
+      {
+        "sub": "Command structure",
+        "rel": "Operate",
+        "obj": "Avoid detection"
+      },
+      {
+        "sub": "Command structure",
+        "rel": "Operate",
+        "obj": "Avoid analysis"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Valid PDF file"
+      },
+      {
+        "sub": "Valid PDF file",
+        "rel": "Has value",
+        "obj": "Internal content or system information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Valid PDF file"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Discovery through exploitation of trusted resources"
+      },
+      {
+        "sub": "Valid PDF file",
+        "rel": "Belong to",
+        "obj": "Target organization’s website"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has URL",
+        "obj": "http://www.micro{BLOCKED}.com/index.html"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has URL",
+        "obj": "http://skys{BLOCKED}.com"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Use",
+        "obj": "HTTP-based commands"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Serve",
+        "obj": "dynamic content with keywords >SC< or longDesc=..."
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Operate",
+        "obj": "through encrypted commands served via HTML pages"
+      }
+    ]
+  }
+}

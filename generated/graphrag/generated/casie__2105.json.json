@@ -1,0 +1,165 @@
+{
+  "sample_id": "casie__2105.json",
+  "sample_index": 40,
+  "source": "casie",
+  "file_name": "2105.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SS7",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "GERMAN NEWSPAPER THE SÜDDENSCHE ZEITUNG",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "KARSTEN NOHL",
+        "type": "PERSON"
+      },
+      {
+        "name": "LIEU",
+        "type": "PERSON"
+      },
+      {
+        "name": "FEDERAL COMMUNICATIONS COMMISSION (FCC)",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "TELECOM INDUSTRY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "SOCIAL MEDIA COMPANIES",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "TWITTER",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "GOOGLE AUTHENTICATOR",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "BANK ACCOUNTS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "FINANCIALLY-MOTIVATED HACKERS",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "SMS-BASED TWO-FACTOR AUTHENTICATION",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "DATA-ROAMING",
+        "type": "LOCATION"
+      },
+      {
+        "name": "1000 EUROSS7 ACCESS",
+        "type": "TOOL"
+      },
+      {
+        "name": "NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST)",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "THE SÜDDENSCHE ZEITUNG",
+        "type": "Unknown"
+      },
+      {
+        "name": "FCC",
+        "type": "Unknown"
+      },
+      {
+        "name": "NIST",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SS7",
+        "rel": "related_to",
+        "obj": "FINANCIALLY-MOTIVATED HACKERS"
+      },
+      {
+        "sub": "SS7",
+        "rel": "related_to",
+        "obj": "BANK ACCOUNTS"
+      },
+      {
+        "sub": "SS7",
+        "rel": "related_to",
+        "obj": "SMS-BASED TWO-FACTOR AUTHENTICATION"
+      },
+      {
+        "sub": "SS7",
+        "rel": "related_to",
+        "obj": "DATA-ROAMING"
+      },
+      {
+        "sub": "SS7",
+        "rel": "related_to",
+        "obj": "GOOGLE AUTHENTICATOR"
+      },
+      {
+        "sub": "FINANCIALLY-MOTIVATED HACKERS",
+        "rel": "related_to",
+        "obj": "THE SÜDDENSCHE ZEITUNG"
+      },
+      {
+        "sub": "KARSTEN NOHL",
+        "rel": "related_to",
+        "obj": "SS7"
+      },
+      {
+        "sub": "LIEU",
+        "rel": "related_to",
+        "obj": "FCC"
+      },
+      {
+        "sub": "LIEU",
+        "rel": "related_to",
+        "obj": "TELECOM INDUSTRY"
+      },
+      {
+        "sub": "SOCIAL MEDIA COMPANIES",
+        "rel": "related_to",
+        "obj": "SMS-BASED TWO-FACTOR AUTHENTICATION"
+      },
+      {
+        "sub": "TWITTER",
+        "rel": "related_to",
+        "obj": "SMS-BASED TWO-FACTOR AUTHENTICATION"
+      },
+      {
+        "sub": "NIST",
+        "rel": "related_to",
+        "obj": "SMS-BASED TWO-FACTOR AUTHENTICATION"
+      },
+      {
+        "sub": "FCC",
+        "rel": "related_to",
+        "obj": "TELECOM INDUSTRY"
+      }
+    ]
+  }
+}

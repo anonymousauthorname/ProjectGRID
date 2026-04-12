@@ -1,0 +1,190 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_38.json",
+  "sample_index": 228,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_38.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "BRICKERBOT.1",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "BRICKERBOT.2",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "BRICKERBOT.3",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "BRICKERBOT.4",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "DROPBEAR SSH SERVER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MIRAI",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "TOR EGRESS NODES",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "SRICAM AP003 METAL GUN TYPE WATERPROOF OUTDOOR BULLET IP CAMERA",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CATALIN CIMPANY",
+        "type": "PERSON"
+      },
+      {
+        "name": "ROB THE JANIT0R",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "VICTOR GEVERS",
+        "type": "PERSON"
+      },
+      {
+        "name": "HACKERFORUMS",
+        "type": "LOCATION"
+      },
+      {
+        "name": "APRIL 21ST",
+        "type": "EVENT"
+      },
+      {
+        "name": "APRIL 14TH",
+        "type": "EVENT"
+      },
+      {
+        "name": "BRICKERBOT CAMPAIGN",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "GEOGRAPHIC DISTRIBUTION OF BRICKERBOT.2",
+        "type": "LOCATION"
+      },
+      {
+        "name": "RADWARES EMERGENCY RESPONSE TEAM",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "HONEYPOT",
+        "type": "INFRASTRUCTURE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "BRICKERBOT.3",
+        "rel": "related_to",
+        "obj": "DROPBEAR SSH SERVER"
+      },
+      {
+        "sub": "BRICKERBOT.2",
+        "rel": "related_to",
+        "obj": "TOR EGRESS NODES"
+      },
+      {
+        "sub": "BRICKERBOT.1",
+        "rel": "related_to",
+        "obj": "MIRAI"
+      },
+      {
+        "sub": "BRICKERBOT.4",
+        "rel": "related_to",
+        "obj": "DROPBEAR SSH SERVER"
+      },
+      {
+        "sub": "BRICKERBOT.1",
+        "rel": "related_to",
+        "obj": "SRICAM AP003 METAL GUN TYPE WATERPROOF OUTDOOR BULLET IP CAMERA"
+      },
+      {
+        "sub": "ROB THE JANIT0R",
+        "rel": "related_to",
+        "obj": "BRICKERBOT.1"
+      },
+      {
+        "sub": "ROB THE JANIT0R",
+        "rel": "related_to",
+        "obj": "HACKERFORUMS"
+      },
+      {
+        "sub": "CATALIN CIMPANY",
+        "rel": "related_to",
+        "obj": "ROB THE JANIT0R"
+      },
+      {
+        "sub": "BRICKERBOT.3",
+        "rel": "related_to",
+        "obj": "APRIL 21ST"
+      },
+      {
+        "sub": "BRICKERBOT.2",
+        "rel": "related_to",
+        "obj": "APRIL 14TH"
+      },
+      {
+        "sub": "BRICKERBOT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "MIRAI"
+      },
+      {
+        "sub": "BRICKERBOT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "DROPBEAR SSH SERVER"
+      },
+      {
+        "sub": "BRICKERBOT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "ROB THE JANIT0R"
+      },
+      {
+        "sub": "RADWARES EMERGENCY RESPONSE TEAM",
+        "rel": "related_to",
+        "obj": "BRICKERBOT CAMPAIGN"
+      },
+      {
+        "sub": "HONEYPOT",
+        "rel": "related_to",
+        "obj": "BRICKERBOT.1"
+      },
+      {
+        "sub": "HONEYPOT",
+        "rel": "related_to",
+        "obj": "BRICKERBOT.2"
+      },
+      {
+        "sub": "HONEYPOT",
+        "rel": "related_to",
+        "obj": "BRICKERBOT.3"
+      },
+      {
+        "sub": "HONEYPOT",
+        "rel": "related_to",
+        "obj": "BRICKERBOT.4"
+      }
+    ]
+  }
+}

@@ -1,0 +1,373 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_40.json",
+  "sample_index": 230,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_40.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Malwarebytes",
+        "type": "security-product"
+      },
+      {
+        "name": "PUP Friday",
+        "type": "campaign"
+      },
+      {
+        "name": "TopFlix",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "DNS hijacker",
+          "mediaplayer"
+        ]
+      },
+      {
+        "name": "DNSUnlocker",
+        "type": "malware",
+        "alias": [
+          "family of adware"
+        ]
+      },
+      {
+        "name": "SoftPulse",
+        "type": "hacker-tool",
+        "alias": [
+          "bundle wrapper"
+        ]
+      },
+      {
+        "name": "Java",
+        "type": "general-software"
+      },
+      {
+        "name": "Flash Player",
+        "type": "general-software"
+      },
+      {
+        "name": "EULA",
+        "type": "document-or-publication-or-conference"
+      },
+      {
+        "name": "Privacy Policy",
+        "type": "document-or-publication-or-conference"
+      },
+      {
+        "name": "DNS settings",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "thirdparty content",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "text popups",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "new browser tab or window",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "OneSafe PC Cleaner",
+        "type": "malware",
+        "alias": [
+          "potentially unwanted program"
+        ]
+      },
+      {
+        "name": "Avanquest",
+        "type": "identity"
+      },
+      {
+        "name": "adsupply",
+        "type": "identity"
+      },
+      {
+        "name": "PUP.Optional.SoftPulse",
+        "type": "indicator"
+      },
+      {
+        "name": "Adware.TopGuard",
+        "type": "indicator"
+      },
+      {
+        "name": "Malwarebytes AntiMalware",
+        "type": "security-product"
+      },
+      {
+        "name": "the forums",
+        "type": "infrastructure"
+      },
+      {
+        "name": "Total Uninstall",
+        "type": "security-product"
+      },
+      {
+        "name": "Ashampoo Uninstaller",
+        "type": "security-product"
+      },
+      {
+        "name": "geolocation",
+        "type": "location"
+      },
+      {
+        "name": "bundle wrapper",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "install procedures",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "extra ingredients",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "Pieter Arntz",
+        "type": "identity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Malwarebytes",
+        "rel": "continue to do our part in educating",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "product users"
+      },
+      {
+        "sub": "PUP Friday",
+        "rel": "offers an in-depth look at",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "potentially unwanted programs (PUPs)"
+      },
+      {
+        "sub": "TopFlix",
+        "rel": "belongs to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "DNSUnlocker"
+      },
+      {
+        "sub": "TopFlix",
+        "rel": "is pushed by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "SoftPulse"
+      },
+      {
+        "sub": "SoftPulse",
+        "rel": "uses advertisements to lure users into downloading and installing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Java"
+      },
+      {
+        "sub": "SoftPulse",
+        "rel": "uses advertisements to lure users into downloading and installing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Flash Player"
+      },
+      {
+        "sub": "SoftPulse",
+        "rel": "adds",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "extra ingredients"
+      },
+      {
+        "sub": "geolocation",
+        "rel": "could influence",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "additional offers"
+      },
+      {
+        "sub": "TopFlix",
+        "rel": "was presented as",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "mediaplayer"
+      },
+      {
+        "sub": "SoftPulse",
+        "rel": "triggers the installation of",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "TopFlix"
+      },
+      {
+        "sub": "EULA",
+        "rel": "you'd be able to read",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "their EULA"
+      },
+      {
+        "sub": "EULA",
+        "rel": "its not always shown",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "shown"
+      },
+      {
+        "sub": "SoftPulse",
+        "rel": "does not need to ask for your permission to install",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "extras"
+      },
+      {
+        "sub": "the Service",
+        "rel": "may contain",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "unsupervised thirdparty content"
+      },
+      {
+        "sub": "thirdparty content",
+        "rel": "comes as",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "text popups"
+      },
+      {
+        "sub": "text popups",
+        "rel": "are little advertisements",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "that show up"
+      },
+      {
+        "sub": "thirdparty content",
+        "rel": "also comes as",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a new browser tab or window"
+      },
+      {
+        "sub": "OneSafe PC Cleaner",
+        "rel": "led to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the potentially unwanted program"
+      },
+      {
+        "sub": "the SoftPulse bundle wrapper",
+        "rel": "is detected as",
+        "rel_type": [
+          "detected-by"
+        ],
+        "obj": "PUP.Optional.SoftPulse"
+      },
+      {
+        "sub": "TopFlix installer",
+        "rel": "is detected as",
+        "rel_type": [
+          "detected-by"
+        ],
+        "obj": "Adware.TopGuard"
+      },
+      {
+        "sub": "A full removal guide and logs of the install",
+        "rel": "can be found on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "our forums"
+      },
+      {
+        "sub": "Download software",
+        "rel": "from",
+        "rel_type": [
+          "based-on"
+        ],
+        "obj": "publishers own site"
+      },
+      {
+        "sub": "Review the extra offers",
+        "rel": "carefully",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "Skip or Deny them"
+      },
+      {
+        "sub": "Create a Restore Point",
+        "rel": "before you install or use software that can undo the changes",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Total Uninstall"
+      },
+      {
+        "sub": "Create a Restore Point",
+        "rel": "before you install or use software that can undo the changes",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Ashampoo Uninstaller"
+      },
+      {
+        "sub": "the Service",
+        "rel": "may trust me, it will contain",
+        "rel_type": [
+          "contains"
+        ],
+        "obj": "unsupervised thirdparty content"
+      },
+      {
+        "sub": "adsupply",
+        "rel": "marked as Ad by",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "OneSafe PC Cleaner"
+      },
+      {
+        "sub": "Pieter Arntz",
+        "rel": "is the author of",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "this article"
+      }
+    ]
+  }
+}

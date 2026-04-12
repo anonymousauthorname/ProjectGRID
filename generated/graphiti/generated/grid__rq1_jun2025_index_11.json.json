@@ -1,0 +1,118 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_11.json",
+  "sample_index": 203,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_11.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2014-1776",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Internet Explorer",
+        "type": "Software"
+      },
+      {
+        "name": "Windows XP",
+        "type": "Location"
+      },
+      {
+        "name": "DEP",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "ASLR",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Flash",
+        "type": "Software"
+      },
+      {
+        "name": "Metasploit",
+        "type": "Tool"
+      },
+      {
+        "name": "Safepay",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Organization"
+      },
+      {
+        "name": "Bitdefender",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2014-1776",
+        "rel": "AFFECTS",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "CVE-2014-1776",
+        "rel": "LEVERAGES",
+        "obj": "Flash"
+      },
+      {
+        "sub": "CVE-2014-1776",
+        "rel": "BYPASSES",
+        "obj": "DEP"
+      },
+      {
+        "sub": "CVE-2014-1776",
+        "rel": "BYPASSES",
+        "obj": "ASLR"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issued patch for",
+        "obj": "CVE-2014-1776"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "shipped last security update for",
+        "obj": "Windows XP"
+      },
+      {
+        "sub": "Metasploit",
+        "rel": "INCLUDES",
+        "obj": "CVE-2014-1776"
+      },
+      {
+        "sub": "Bitdefender",
+        "rel": "OFFERS",
+        "obj": "Safepay"
+      },
+      {
+        "sub": "Safepay",
+        "rel": "is immune to",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Internet Explorer",
+        "rel": "is hardcoded in",
+        "obj": "Windows XP"
+      }
+    ]
+  }
+}

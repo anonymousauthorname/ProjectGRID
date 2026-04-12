@@ -1,0 +1,182 @@
+{
+  "sample_id": "ctinexus__threat-group-using-rare-data-transfer-tactic-in-new-remcosrat-campaign.json",
+  "sample_index": 78,
+  "source": "ctinexus",
+  "file_name": "threat-group-using-rare-data-transfer-tactic-in-new-remcosrat-campaign.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "A threat actor known for repeatedly targeting organizations in Ukraine with the RemcosRAT remote surveillance and control tool",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the adversary",
+          "the actor",
+          "the group"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "RemcosRAT remote surveillance and control tool",
+        "type": "hacker-tool",
+        "alias": [
+          "the RemcosRAT remote surveillance and control tool",
+          "RemcosRAT"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "UNC-0050",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the adversary",
+          "the group"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Ukrainian government entities",
+        "type": "identity",
+        "alias": [
+          "Ukrainian government agencies",
+          "government sectors"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Researchers at Uptycs",
+        "type": "identity",
+        "alias": [
+          "Uptycs",
+          "they"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "politically motivated",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "endpoint detection and response systems",
+        "type": "security-product",
+        "alias": [
+          "these systems"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "government sectors reliant on Windows systems",
+        "type": "location",
+        "alias": [
+          "government sectors"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "A threat actor known for repeatedly targeting organizations in Ukraine with the RemcosRAT remote surveillance and control tool",
+        "rel": "targeting organizations in Ukraine with",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "RemcosRAT remote surveillance and control tool"
+      },
+      {
+        "sub": "the adversary",
+        "rel": "focused on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Ukrainian government entities"
+      },
+      {
+        "sub": "Researchers at Uptycs",
+        "rel": "spotted it",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "the adversary"
+      },
+      {
+        "sub": "the attacks",
+        "rel": "may be politically motivated",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "politically motivated",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "the attacks",
+        "rel": "collecting specific intelligence from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Ukrainian government agencies"
+      },
+      {
+        "sub": "the adversary",
+        "rel": "is focused on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Ukrainian government agencies"
+      },
+      {
+        "sub": "the adversary",
+        "rel": "poses an undeniable risk to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "government sectors reliant on Windows systems"
+      },
+      {
+        "sub": "the possibility of state sponsorship",
+        "rel": "remains speculative",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "the adversary",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "the adversary",
+        "rel": "transferring data without triggering",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "endpoint detection and response systems"
+      },
+      {
+        "sub": "Researchers at Uptycs",
+        "rel": "spotted it",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "the attacks"
+      }
+    ]
+  }
+}

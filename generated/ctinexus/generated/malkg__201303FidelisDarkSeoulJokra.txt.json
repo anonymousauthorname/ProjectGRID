@@ -1,0 +1,284 @@
+{
+  "sample_id": "malkg__201303FidelisDarkSeoulJokra.txt",
+  "sample_index": 111,
+  "source": "malkg",
+  "file_name": "201303FidelisDarkSeoulJokra.txt",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DarkSeoul/Jokra malware",
+        "type": "Unknown"
+      },
+      {
+        "name": "Master Boot Record",
+        "type": "Unknown"
+      },
+      {
+        "name": "Volume Boot Record",
+        "type": "Unknown"
+      },
+      {
+        "name": "HASTATI",
+        "type": "Unknown"
+      },
+      {
+        "name": "PR!NCPES",
+        "type": "Unknown"
+      },
+      {
+        "name": "512-byte pattern",
+        "type": "Unknown"
+      },
+      {
+        "name": "1023-byte pattern",
+        "type": "Unknown"
+      },
+      {
+        "name": "physical drives",
+        "type": "Unknown"
+      },
+      {
+        "name": "fixed drives",
+        "type": "Unknown"
+      },
+      {
+        "name": "pasvc.exe",
+        "type": "Unknown"
+      },
+      {
+        "name": "Clisvc.exe",
+        "type": "Unknown"
+      },
+      {
+        "name": "shutdown -r -t 0",
+        "type": "Unknown"
+      },
+      {
+        "name": "South Korean broadcasting and banking infrastructure",
+        "type": "Unknown"
+      },
+      {
+        "name": "Fidelis XPS sensors",
+        "type": "Unknown"
+      },
+      {
+        "name": "Trojan.Win32.EraseMBR.b",
+        "type": "Unknown"
+      },
+      {
+        "name": "Shamoon malware",
+        "type": "Unknown"
+      },
+      {
+        "name": "Fidelis Threat Advisory #1007",
+        "type": "Unknown"
+      },
+      {
+        "name": "uses backup VBR",
+        "type": "Unknown"
+      },
+      {
+        "name": "backup VBR",
+        "type": "Unknown"
+      },
+      {
+        "name": "file system recovery",
+        "type": "Unknown"
+      },
+      {
+        "name": "EnCase",
+        "type": "Unknown"
+      },
+      {
+        "name": "manual NTFS partition addition",
+        "type": "Unknown"
+      },
+      {
+        "name": "quickly",
+        "type": "Unknown"
+      },
+      {
+        "name": "recoverable",
+        "type": "Unknown"
+      },
+      {
+        "name": "zip files",
+        "type": "Unknown"
+      },
+      {
+        "name": "XOR'ed MS Office documents",
+        "type": "Unknown"
+      },
+      {
+        "name": "weaponized Adobe PDF files",
+        "type": "Unknown"
+      },
+      {
+        "name": "Fidelis Threat Research and Network Forensics and Incident Response teams",
+        "type": "Unknown"
+      },
+      {
+        "name": "evolving threat landscape",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "overwrites",
+        "obj": "Master Boot Record"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "overwrites",
+        "obj": "Volume Boot Record"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "uses pattern",
+        "obj": "HASTATI"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "uses pattern",
+        "obj": "PR!NCPES"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "writes",
+        "obj": "512-byte pattern"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "writes",
+        "obj": "1023-byte pattern"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "creates threads for",
+        "obj": "physical drives"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "detects",
+        "obj": "fixed drives"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "kills process",
+        "obj": "pasvc.exe"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "kills process",
+        "obj": "Clisvc.exe"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "executes",
+        "obj": "shutdown -r -t 0"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "targets",
+        "obj": "South Korean broadcasting and banking infrastructure"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "is detected by",
+        "obj": "Fidelis XPS sensors"
+      },
+      {
+        "sub": "Fidelis XPS sensors",
+        "rel": "detect",
+        "obj": "Trojan.Win32.EraseMBR.b"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "is similar in behavior to",
+        "obj": "Shamoon malware"
+      },
+      {
+        "sub": "Shamoon malware",
+        "rel": "was covered in",
+        "obj": "Fidelis Threat Advisory #1007"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "recovery method",
+        "obj": "uses backup VBR"
+      },
+      {
+        "sub": "backup VBR",
+        "rel": "enables",
+        "obj": "file system recovery"
+      },
+      {
+        "sub": "EnCase",
+        "rel": "allows",
+        "obj": "manual NTFS partition addition"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "corrupts file systems",
+        "obj": "quickly"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "leaves many files untouched",
+        "obj": "recoverable"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "can be detected in",
+        "obj": "zip files"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "can be detected in",
+        "obj": "XOR'ed MS Office documents"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "can be detected in",
+        "obj": "weaponized Adobe PDF files"
+      },
+      {
+        "sub": "Fidelis Threat Research and Network Forensics and Incident Response teams",
+        "rel": "monitor",
+        "obj": "evolving threat landscape"
+      },
+      {
+        "sub": "DarkSeoul/Jokra malware",
+        "rel": "affects",
+        "obj": "file system recovery"
+      },
+      {
+        "sub": "manual NTFS partition addition",
+        "rel": "enables recovery from",
+        "obj": "DarkSeoul/Jokra malware"
+      },
+      {
+        "sub": "evolving threat landscape",
+        "rel": "is influenced by",
+        "obj": "DarkSeoul/Jokra malware"
+      }
+    ]
+  }
+}

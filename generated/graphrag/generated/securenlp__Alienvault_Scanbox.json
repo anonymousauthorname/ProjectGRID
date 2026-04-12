@@ -1,0 +1,163 @@
+{
+  "sample_id": "securenlp__Alienvault_Scanbox",
+  "sample_index": 173,
+  "source": "securenlp",
+  "file_name": "Alienvault_Scanbox",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SCANBOX",
+        "type": "TOOL"
+      },
+      {
+        "name": "WATERING HOLE ATTACK",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "INDUSTRIAL COMPANY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "122.10.9.109",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MAIL.WEBMAILGOOGLE.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "JS.WEBMAILGOOGLE.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "INTERNET EXPLORER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "EMET",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ADOBE FLASH",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MICROSOFT OFFICE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ACROBAT READER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "JAVA",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "KEYLOGGER",
+        "type": "TOOL"
+      },
+      {
+        "name": "METASPLOIT",
+        "type": "TOOL"
+      },
+      {
+        "name": "SIMULATION AND SYSTEM ENGINEERING SOFTWARE",
+        "type": "SOFTWARE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SCANBOX",
+        "rel": "related_to",
+        "obj": "WATERING HOLE ATTACK"
+      },
+      {
+        "sub": "SCANBOX",
+        "rel": "related_to",
+        "obj": "INDUSTRIAL COMPANY"
+      },
+      {
+        "sub": "SCANBOX",
+        "rel": "related_to",
+        "obj": "122.10.9.109"
+      },
+      {
+        "sub": "SCANBOX",
+        "rel": "related_to",
+        "obj": "MAIL.WEBMAILGOOGLE.COM"
+      },
+      {
+        "sub": "SCANBOX",
+        "rel": "related_to",
+        "obj": "JS.WEBMAILGOOGLE.COM"
+      },
+      {
+        "sub": "SCANBOX",
+        "rel": "related_to",
+        "obj": "INTERNET EXPLORER"
+      },
+      {
+        "sub": "SCANBOX",
+        "rel": "related_to",
+        "obj": "EMET"
+      },
+      {
+        "sub": "SCANBOX",
+        "rel": "related_to",
+        "obj": "ADOBE FLASH"
+      },
+      {
+        "sub": "SCANBOX",
+        "rel": "related_to",
+        "obj": "MICROSOFT OFFICE"
+      },
+      {
+        "sub": "SCANBOX",
+        "rel": "related_to",
+        "obj": "ACROBAT READER"
+      },
+      {
+        "sub": "SCANBOX",
+        "rel": "related_to",
+        "obj": "JAVA"
+      },
+      {
+        "sub": "SCANBOX",
+        "rel": "related_to",
+        "obj": "KEYLOGGER"
+      },
+      {
+        "sub": "METASPLOIT",
+        "rel": "related_to",
+        "obj": "122.10.9.109"
+      },
+      {
+        "sub": "JAVA",
+        "rel": "related_to",
+        "obj": "122.10.9.109"
+      },
+      {
+        "sub": "SIMULATION AND SYSTEM ENGINEERING SOFTWARE",
+        "rel": "related_to",
+        "obj": "INDUSTRIAL COMPANY"
+      }
+    ]
+  }
+}

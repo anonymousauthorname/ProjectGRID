@@ -1,0 +1,171 @@
+{
+  "sample_id": "casie__10242.json",
+  "sample_index": 11,
+  "source": "casie",
+  "file_name": "10242.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Fingerlings",
+        "type": "Software"
+      },
+      {
+        "name": "iPhones",
+        "type": "Software"
+      },
+      {
+        "name": "Apple MacBooks",
+        "type": "Software"
+      },
+      {
+        "name": "Ugg boots",
+        "type": "Software"
+      },
+      {
+        "name": "Gumtree",
+        "type": "Tool"
+      },
+      {
+        "name": "eBay",
+        "type": "Tool"
+      },
+      {
+        "name": "Facebook",
+        "type": "Tool"
+      },
+      {
+        "name": "Tesco",
+        "type": "Organization"
+      },
+      {
+        "name": "Action Fraud",
+        "type": "Organization"
+      },
+      {
+        "name": "City of London Police",
+        "type": "Organization"
+      },
+      {
+        "name": "Get Safe Online",
+        "type": "Organization"
+      },
+      {
+        "name": "Cyber Monday",
+        "type": "Campaign"
+      },
+      {
+        "name": "Christmas",
+        "type": "Campaign"
+      },
+      {
+        "name": "Phishing",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "fake websites",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "fake competition",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "scammers",
+        "type": "ThreatActor"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "scammers",
+        "rel": "USES",
+        "obj": "fake websites"
+      },
+      {
+        "sub": "scammers",
+        "rel": "USES",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "scammers",
+        "rel": "USES",
+        "obj": "Facebook"
+      },
+      {
+        "sub": "scammers",
+        "rel": "USES",
+        "obj": "Gumtree"
+      },
+      {
+        "sub": "scammers",
+        "rel": "USES",
+        "obj": "eBay"
+      },
+      {
+        "sub": "scammers",
+        "rel": "RUNS",
+        "obj": "fake competition"
+      },
+      {
+        "sub": "scammers",
+        "rel": "SELLS",
+        "obj": "Fingerlings"
+      },
+      {
+        "sub": "scammers",
+        "rel": "SELLS",
+        "obj": "iPhones"
+      },
+      {
+        "sub": "scammers",
+        "rel": "SELLS",
+        "obj": "Apple MacBooks"
+      },
+      {
+        "sub": "scammers",
+        "rel": "SELLS",
+        "obj": "Ugg boots"
+      },
+      {
+        "sub": "Action Fraud",
+        "rel": "COAUTHORS",
+        "obj": "City of London Police"
+      },
+      {
+        "sub": "City of London Police",
+        "rel": "warned about",
+        "obj": "Cyber Monday"
+      },
+      {
+        "sub": "City of London Police",
+        "rel": "warned about",
+        "obj": "Christmas"
+      },
+      {
+        "sub": "Get Safe Online",
+        "rel": "offers advice against",
+        "obj": "scammers"
+      },
+      {
+        "sub": "Tesco",
+        "rel": "claims to be",
+        "obj": "fake competition"
+      }
+    ]
+  }
+}

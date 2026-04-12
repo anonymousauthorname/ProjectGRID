@@ -1,0 +1,233 @@
+{
+  "sample_id": "casie__364.json",
+  "sample_index": 33,
+  "source": "casie",
+  "file_name": "364.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "AlphaBay",
+        "type": "Entity"
+      },
+      {
+        "name": "Cipher0007",
+        "type": "Entity"
+      },
+      {
+        "name": "Reddit",
+        "type": "Entity"
+      },
+      {
+        "name": "PasteBin",
+        "type": "Entity"
+      },
+      {
+        "name": "218,000 messages",
+        "type": "Entity"
+      },
+      {
+        "name": "private messages",
+        "type": "Entity"
+      },
+      {
+        "name": "first and last names",
+        "type": "Entity"
+      },
+      {
+        "name": "nicknames",
+        "type": "Entity"
+      },
+      {
+        "name": "addresses",
+        "type": "Entity"
+      },
+      {
+        "name": "tracking IDs",
+        "type": "Entity"
+      },
+      {
+        "name": "PGP keys",
+        "type": "Entity"
+      },
+      {
+        "name": "unencrypted messages",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "high-risk bugs",
+        "type": "Entity"
+      },
+      {
+        "name": "security flaws",
+        "type": "Entity"
+      },
+      {
+        "name": "compromise",
+        "type": "Entity"
+      },
+      {
+        "name": "support tickets",
+        "type": "Entity"
+      },
+      {
+        "name": "loopholes",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence of messages",
+        "type": "Entity"
+      },
+      {
+        "name": "30 days",
+        "type": "Entity"
+      },
+      {
+        "name": "automatic purging",
+        "type": "Entity"
+      },
+      {
+        "name": "anonymity",
+        "type": "Entity"
+      },
+      {
+        "name": "law enforcement agencies",
+        "type": "Entity"
+      },
+      {
+        "name": "illegal trading",
+        "type": "Entity"
+      },
+      {
+        "name": "personal encryption",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cipher0007",
+        "rel": "discloses",
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "discloses",
+        "obj": "high-risk bugs"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "exploits",
+        "obj": "security flaws"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "steals",
+        "obj": "private messages"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "steals",
+        "obj": "first and last names"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "steals",
+        "obj": "nicknames"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "steals",
+        "obj": "addresses"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "steals",
+        "obj": "tracking IDs"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "downloads",
+        "obj": "screenshots of private messages"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "reveals",
+        "obj": "unencrypted messages"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "opens",
+        "obj": "support tickets"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "warns",
+        "obj": "AlphaBay"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "validates",
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "allows",
+        "obj": "slurp of 218,000 messages"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "purges",
+        "obj": "older messages"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "has persistence of messages",
+        "obj": "for up to 30 days"
+      },
+      {
+        "sub": "vulnerabilities",
+        "rel": "can compromise",
+        "obj": "user privacy"
+      },
+      {
+        "sub": "vulnerabilities",
+        "rel": "can compromise",
+        "obj": "user identities"
+      },
+      {
+        "sub": "vulnerabilities",
+        "rel": "are of interest to",
+        "obj": "law enforcement agencies"
+      },
+      {
+        "sub": "users",
+        "rel": "must use",
+        "obj": "PGP keys"
+      },
+      {
+        "sub": "users",
+        "rel": "must use",
+        "obj": "personal encryption"
+      }
+    ]
+  }
+}

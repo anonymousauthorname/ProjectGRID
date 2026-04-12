@@ -1,0 +1,760 @@
+{
+  "sample_id": "securenlp__CozyDuke",
+  "sample_index": 197,
+  "source": "securenlp",
+  "file_name": "CozyDuke",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CozyDuke",
+        "type": "malware",
+        "alias": [
+          "a set of tools used by one or more malicious actors",
+          "the CozyDuke toolset",
+          "CozyDuke main dropper",
+          "CozyDuke main component",
+          "the CozyDuke toolset is used by at least one malicious actor",
+          "the CozyDuke toolset includes tools and scripts",
+          "the CozyDuke toolset also includes multiple kinds of droppers",
+          "the CozyDuke toolset consists of tools for infecting targeted hosts",
+          "the CozyDuke toolset is used by CozyDuke"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malicious actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "governmental organizations and entities that work closely with these institutions",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "MiniDuke and OnionDuke",
+        "type": "malware",
+        "alias": [
+          "known threats",
+          "MiniDuke C&C infrastructure",
+          "OnionDuke"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "nostressjob.com",
+        "type": "domain-name",
+        "alias": [
+          "a C&C server at nostressjob.com"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "grouptumbler.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "overpict.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "John Kasai",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ZIP file",
+        "type": "file",
+        "alias": [
+          "a ZIP file",
+          "malicious link",
+          "compromised website",
+          "Single executable"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "RAR file",
+        "type": "file",
+        "alias": [
+          "self-extracting RAR archive",
+          "a single executable, usually a self-extracting RAR archive"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "executable",
+        "type": "file",
+        "alias": [
+          "The executable",
+          "a CozyDuke dropper"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "decoy",
+        "type": "file",
+        "alias": [
+          "a decoy",
+          "uninteresting PDF",
+          "Flash video of monkeys",
+          "PDF document",
+          "decoy document"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CozyDuke dropper",
+        "type": "hacker-tool",
+        "alias": [
+          "the CozyDuke dropper",
+          "the dropper"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CozyDuke main component",
+        "type": "malware",
+        "alias": [
+          "the main component",
+          "DLL file",
+          "CozyDuke main component of CozyDuke"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "general-software",
+        "alias": [
+          "the copy of rundll32.exe",
+          "system file rundll32.exe"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "encrypted configuration file",
+        "type": "file",
+        "alias": [
+          "the encrypted configuration file",
+          "separate RC4-encrypted file",
+          "encrypted configuration file on disk"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CozyDuke dropper configuration",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "the droppers configuration file"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "PE resources",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "two PE resources embedded in the executable",
+          "the first resource, 0x000A",
+          "the second resource, 0x000B"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft cabinet archive",
+        "type": "file",
+        "alias": [
+          "the CozyDuke components that the dropper will later install on the victim system"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "XML file",
+        "type": "file",
+        "alias": [
+          "an XML file with instructions for the dropper on where to install the dropped components"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "registry keys",
+        "type": "windows-registry-key",
+        "alias": [
+          "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+          "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+          "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run",
+          "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "COM object SharedTaskScheduler",
+        "type": "general-software",
+        "alias": [
+          "the registry entries for the COM object SharedTaskScheduler",
+          "SharedTaskScheduler COM object"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "special CozyDuke module",
+        "type": "malware",
+        "alias": [
+          "special CozyDuke module"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Password stealer module",
+        "type": "malware",
+        "alias": [
+          "Password stealer"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "NTLM stealer module",
+        "type": "malware",
+        "alias": [
+          "NTLM stealer"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "System info module",
+        "type": "malware",
+        "alias": [
+          "System info"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Screenshot module",
+        "type": "malware",
+        "alias": [
+          "Screenshot"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "scripts",
+        "type": "file",
+        "alias": [
+          "scripts for collecting information and credentials",
+          "scripts for further penetrating the victim organization"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Mimikatz",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PSExec",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "additional malware",
+        "type": "malware",
+        "alias": [
+          "additional malware with the same file and export naming conventions as OnionDuke",
+          "additional malware with the same string encryption algorithm as OnionDuke"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Twitter",
+        "type": "service",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "backup Twitter account",
+        "type": "identity",
+        "alias": [
+          "@US2515",
+          "@monkey_drive"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "strings",
+        "type": "credential-value",
+        "alias": [
+          "encrypted strings"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "RC4 key",
+        "type": "credential-value",
+        "alias": [
+          "RC4 key B5 78 62 52 98 3E 24 D7 3B C6 EE 7C B9 ED 91 62"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "PDB strings",
+        "type": "other",
+        "alias": [
+          "PDB string"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Agent",
+        "type": "alias-of",
+        "alias": [
+          "the internal name for CozyDuke",
+          "Agent_NextGen"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "tasks",
+        "type": "attack-pattern",
+        "alias": [
+          "6 COZYDUKE C&C SERVER COMMANDS"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "modules",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "executables",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "OneDrive accounts",
+        "type": "identity",
+        "alias": [
+          "Microsoft OneDrive accounts"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Command and Control (C&C) server",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "HTTP",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "HTTPS",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "droppers",
+        "type": "hacker-tool",
+        "alias": [
+          "DLL files",
+          "PE executable files"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Agent2011",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Agent2011v3",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hashes",
+        "type": "indicator",
+        "alias": [
+          "Sample hashes"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "User agent strings",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Mutexes",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ZIP file",
+        "type": "file",
+        "alias": [
+          "Malicious link"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Pugi-XML library",
+        "type": "general-software",
+        "alias": [
+          "open-source Pugi-XML library"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "MSXML 3.0",
+        "type": "general-software",
+        "alias": [
+          "Microsoft’s MSXML 3.0"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CozyDuke",
+        "rel": "used-by",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "malicious actors",
+        "special_factuality": []
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "governmental organizations and entities that work closely with these institutions",
+        "special_factuality": []
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "used-by",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "malicious actors",
+        "special_factuality": []
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "shares-infrastructure-with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "MiniDuke and OnionDuke",
+        "special_factuality": []
+      },
+      {
+        "sub": "ZIP file",
+        "rel": "contains",
+        "rel_type": [
+          "contains"
+        ],
+        "obj": "executable",
+        "special_factuality": []
+      },
+      {
+        "sub": "executable",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "CozyDuke",
+        "special_factuality": []
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "decoy",
+        "special_factuality": []
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "CozyDuke main component",
+        "special_factuality": []
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "decrypts",
+        "rel_type": [
+          "decrypts"
+        ],
+        "obj": "PE resources",
+        "special_factuality": []
+      },
+      {
+        "sub": "PE resources",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Microsoft cabinet archive",
+        "special_factuality": []
+      },
+      {
+        "sub": "PE resources",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "XML file",
+        "special_factuality": []
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "copies-to",
+        "rel_type": [
+          "copies-to"
+        ],
+        "obj": "rundll32.exe",
+        "special_factuality": []
+      },
+      {
+        "sub": "rundll32.exe",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "CozyDuke main component",
+        "special_factuality": []
+      },
+      {
+        "sub": "CozyDuke main component",
+        "rel": "modifies-or-removes-or-replaces",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "registry keys",
+        "special_factuality": []
+      },
+      {
+        "sub": "encrypted configuration file",
+        "rel": "stores",
+        "rel_type": [
+          "stores"
+        ],
+        "obj": "CozyDuke dropper configuration",
+        "special_factuality": []
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "communicates-with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Command and Control (C&C) server",
+        "special_factuality": []
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Twitter",
+        "special_factuality": []
+      },
+      {
+        "sub": "backup Twitter account",
+        "rel": "specified-in",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "CozyDuke dropper configuration",
+        "special_factuality": []
+      },
+      {
+        "sub": "CozyDuke main component",
+        "rel": "provides",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "tasks",
+        "special_factuality": []
+      },
+      {
+        "sub": "CozyDuke main component",
+        "rel": "provides",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "modules",
+        "special_factuality": []
+      },
+      {
+        "sub": "CozyDuke main component",
+        "rel": "provides",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "executables",
+        "special_factuality": []
+      },
+      {
+        "sub": "executables",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "scripts",
+        "special_factuality": []
+      },
+      {
+        "sub": "scripts",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Mimikatz",
+        "special_factuality": []
+      },
+      {
+        "sub": "scripts",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "PSExec",
+        "special_factuality": []
+      },
+      {
+        "sub": "executables",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "OneDrive accounts",
+        "special_factuality": []
+      },
+      {
+        "sub": "CozyDuke dropper",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "droppers",
+        "special_factuality": []
+      },
+      {
+        "sub": "additional malware",
+        "rel": "variant-of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "OnionDuke",
+        "special_factuality": []
+      },
+      {
+        "sub": "strings",
+        "rel": "encrypted-using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "RC4 key",
+        "special_factuality": []
+      },
+      {
+        "sub": "Agent",
+        "rel": "is-part-of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "CozyDuke",
+        "special_factuality": []
+      },
+      {
+        "sub": "tasks",
+        "rel": "executed-by",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "CozyDuke main component",
+        "special_factuality": []
+      },
+      {
+        "sub": "modules",
+        "rel": "executed-by",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "CozyDuke main component",
+        "special_factuality": []
+      },
+      {
+        "sub": "agent_wininet_dl.exe",
+        "rel": "is-part-of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "CozyDuke",
+        "special_factuality": []
+      },
+      {
+        "sub": "Windows Registry Keys",
+        "rel": "is-part-of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "CozyDuke main component",
+        "special_factuality": []
+      },
+      {
+        "sub": "PDB strings",
+        "rel": "indicates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "Agent",
+        "special_factuality": []
+      }
+    ]
+  }
+}

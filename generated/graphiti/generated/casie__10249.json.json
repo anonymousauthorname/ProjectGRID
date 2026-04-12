@@ -1,0 +1,251 @@
+{
+  "sample_id": "casie__10249.json",
+  "sample_index": 42,
+  "source": "casie",
+  "file_name": "10249.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SamSam",
+        "type": "Malware"
+      },
+      {
+        "name": "Amanda Noble",
+        "type": "Person"
+      },
+      {
+        "name": "Atlanta City Auditor",
+        "type": "Organization"
+      },
+      {
+        "name": "City of Atlanta",
+        "type": "Organization"
+      },
+      {
+        "name": "Department of Watershed Management",
+        "type": "Organization"
+      },
+      {
+        "name": "Department of Finance",
+        "type": "Organization"
+      },
+      {
+        "name": "Atlanta Municipal Court",
+        "type": "Organization"
+      },
+      {
+        "name": "Hancock Regional Hospital",
+        "type": "Organization"
+      },
+      {
+        "name": "Atlanta Information Management (AIM)",
+        "type": "Organization"
+      },
+      {
+        "name": "FBI",
+        "type": "Organization"
+      },
+      {
+        "name": "Department of Homeland Security",
+        "type": "Organization"
+      },
+      {
+        "name": "Secret Service",
+        "type": "Organization"
+      },
+      {
+        "name": "Rendition Infosec",
+        "type": "Organization"
+      },
+      {
+        "name": "New York University",
+        "type": "Organization"
+      },
+      {
+        "name": "Hartsfield–Jackson Atlanta International Airport",
+        "type": "Location"
+      },
+      {
+        "name": "311 Web site portal",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "bitcoin",
+        "type": "Indicator"
+      },
+      {
+        "name": "weapologize",
+        "type": "Indicator"
+      },
+      {
+        "name": "imsorry",
+        "type": "Indicator"
+      },
+      {
+        "name": "SamSam ransomware",
+        "type": "Malware"
+      },
+      {
+        "name": "Jake Williams",
+        "type": "Person"
+      },
+      {
+        "name": "Justin Cappos",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Amanda Noble",
+        "rel": "served as auditor of",
+        "obj": "City of Atlanta"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "attacked by",
+        "obj": "SamSam"
+      },
+      {
+        "sub": "SamSam",
+        "rel": "encrypted data in",
+        "obj": "Department of Watershed Management"
+      },
+      {
+        "sub": "SamSam",
+        "rel": "encrypted data in",
+        "obj": "Department of Finance"
+      },
+      {
+        "sub": "SamSam",
+        "rel": "encrypted data in",
+        "obj": "Atlanta Municipal Court"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "disabled wifi network at",
+        "obj": "Hartsfield–Jackson Atlanta International Airport"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "disabled service access to",
+        "obj": "311 Web site portal"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "cooperated with",
+        "obj": "Atlanta Information Management (AIM)"
+      },
+      {
+        "sub": "Atlanta Information Management (AIM)",
+        "rel": "CONTACTED",
+        "obj": "FBI"
+      },
+      {
+        "sub": "Atlanta Information Management (AIM)",
+        "rel": "CONTACTED",
+        "obj": "Department of Homeland Security"
+      },
+      {
+        "sub": "Atlanta Information Management (AIM)",
+        "rel": "CONTACTED",
+        "obj": "Secret Service"
+      },
+      {
+        "sub": "Atlanta Information Management (AIM)",
+        "rel": "engaged investigative help from",
+        "obj": "Rendition Infosec"
+      },
+      {
+        "sub": "SamSam",
+        "rel": "used previously to attack",
+        "obj": "Hancock Regional Hospital"
+      },
+      {
+        "sub": "Hancock Regional Hospital",
+        "rel": "paid ransom in",
+        "obj": "bitcoin"
+      },
+      {
+        "sub": "Jake Williams",
+        "rel": "ANALYZED",
+        "obj": "SamSam"
+      },
+      {
+        "sub": "Justin Cappos",
+        "rel": "offered analysis on",
+        "obj": "City of Atlanta"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "renamed files with",
+        "obj": "weapologize"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "renamed files with",
+        "obj": "imsorry"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "was offered ransom in",
+        "obj": "bitcoin"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "attacked with",
+        "obj": "SamSam ransomware"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "could not process ticket payments due to",
+        "obj": "Atlanta Municipal Court"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "could not accept payments due to",
+        "obj": "Department of Watershed Management"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "could not issue business licenses due to",
+        "obj": "Department of Finance"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "restored wifi network at",
+        "obj": "Hartsfield–Jackson Atlanta International Airport"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "restored access to",
+        "obj": "311 Web site portal"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "recovered systems with backups",
+        "obj": "SamSam"
+      },
+      {
+        "sub": "City of Atlanta",
+        "rel": "engaged investigative help from",
+        "obj": "Rendition Infosec"
+      }
+    ]
+  }
+}

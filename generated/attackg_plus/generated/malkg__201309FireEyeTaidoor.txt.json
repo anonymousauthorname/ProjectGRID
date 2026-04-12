@@ -1,0 +1,252 @@
+{
+  "sample_id": "malkg__201309FireEyeTaidoor.txt",
+  "sample_index": 149,
+  "source": "malkg",
+  "file_name": "201309FireEyeTaidoor.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Taiwan"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Government agencies"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Corporate entities"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Think tanks"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Spear-phishing campaigns"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Victim organization information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Yahoo Blogs"
+      },
+      {
+        "sub": "Downloader",
+        "rel": "Retrieve",
+        "obj": "Taidoor malware"
+      },
+      {
+        "sub": "Taidoor malware",
+        "rel": "Locate at",
+        "obj": "Blog posts"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has vulnerability",
+        "obj": "Compromised infrastructure"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Construct",
+        "obj": "Compromised infrastructure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "Microsoft Office",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "Malware dropper",
+        "rel": "Construct",
+        "obj": "malicious Word document"
+      },
+      {
+        "sub": "malicious Word document",
+        "rel": "Has filename",
+        "obj": "Word document"
+      },
+      {
+        "sub": "malicious Word document",
+        "rel": "Has filepath",
+        "obj": "Word document"
+      },
+      {
+        "sub": "malicious Word document",
+        "rel": "Has URL",
+        "obj": "spear-phishing email"
+      },
+      {
+        "sub": "spear-phishing email",
+        "rel": "Modify",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "Microsoft Office",
+        "rel": "Operate",
+        "obj": "target system"
+      },
+      {
+        "sub": "malware dropper",
+        "rel": "Write",
+        "obj": "target system"
+      },
+      {
+        "sub": "malware dropper",
+        "rel": "Detect",
+        "obj": "target system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Download",
+        "obj": "Dropper"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Exploit",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Traditional Taidoor"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "Yahoo Blog post"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Base64 encoded"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "RC4 encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Modified version of Taidoor"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Network traffic patterns"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Change",
+        "obj": "File extension"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Alter",
+        "obj": "Request path"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Defense evasion techniques"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Compromised system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Connect",
+        "obj": "CnC servers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Encrypted MAC addresses"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "System-specific data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Internal network"
+      },
+      {
+        "sub": "CnC servers",
+        "rel": "Have value",
+        "obj": "Encrypted MAC addresses"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Encrypted MAC addresses"
+      },
+      {
+        "sub": "CnC Server",
+        "rel": "Has URL",
+        "obj": "roudan.serveftp.com"
+      },
+      {
+        "sub": "CnC Server",
+        "rel": "Has URL",
+        "obj": "mac.gov.hpc.tw"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": ".jsp"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Encrypted MAC addresses"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "CnC communication"
+      }
+    ]
+  }
+}

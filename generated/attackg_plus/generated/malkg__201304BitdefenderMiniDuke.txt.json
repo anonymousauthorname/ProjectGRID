@@ -1,0 +1,632 @@
+{
+  "sample_id": "malkg__201304BitdefenderMiniDuke.txt",
+  "sample_index": 127,
+  "source": "malkg",
+  "file_name": "201304BitdefenderMiniDuke.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Adobe Reader"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "Malicious code"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Display",
+        "obj": "Clean PDF"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "Network information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Enumerate",
+        "obj": "Network interfaces"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Extract",
+        "obj": "Computer name"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Extract",
+        "obj": "Serial number"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Extract",
+        "obj": "CPU ID"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Perform",
+        "obj": "Google search queries"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Generate",
+        "obj": "Secondary Twitter handles"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Google search queries based on system information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Malicious PDF file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "Dropper component"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Exploit",
+        "obj": "Vulnerability in public-facing applications"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System's default settings"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Command and control  channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Victim’s system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Public-facing applications"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Victim’s system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "CVE-2011-2462"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "CVE-2013-0640"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "PDF file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Social engineering"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Dropper"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Write",
+        "obj": "Malicious code"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Install",
+        "obj": "Main DLL component"
+      },
+      {
+        "sub": "PDF file",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2011-2462"
+      },
+      {
+        "sub": "PDF file",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2013-0640"
+      },
+      {
+        "sub": "Adobe Reader",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2011-2462"
+      },
+      {
+        "sub": "Adobe Reader",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2013-0640"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Belong to",
+        "obj": "Spearphishing campaign"
+      },
+      {
+        "sub": "Spearphishing campaign",
+        "rel": "Operate",
+        "obj": "Email"
+      },
+      {
+        "sub": "Email",
+        "rel": "Has URL",
+        "obj": "Malicious PDF file"
+      },
+      {
+        "sub": "Malicious PDF file",
+        "rel": "Has filename",
+        "obj": "PDF"
+      },
+      {
+        "sub": "Malicious PDF file",
+        "rel": "Has filepath",
+        "obj": "Email attachment"
+      },
+      {
+        "sub": "Malicious PDF file",
+        "rel": "Has value",
+        "obj": "Exploit CVE-2011-2462 and CVE-2013-0640"
+      },
+      {
+        "sub": "Malicious PDF file",
+        "rel": "Has hostname",
+        "obj": "Victim's system"
+      },
+      {
+        "sub": "Victim's system",
+        "rel": "Has software",
+        "obj": "Adobe Reader"
+      },
+      {
+        "sub": "Victim's system",
+        "rel": "Has platform",
+        "obj": "Windows"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Command and scripting interpreters"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Native API calls"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "User interaction"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Main DLL component"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Decrypted code"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Code through packer algorithm"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": ".data or .rdata sections"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Memory execution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Dropper to execute main DLL component"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Create",
+        "obj": "Startup entry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Shell key"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Set",
+        "obj": "Environment variable"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Create",
+        "obj": ".lnk file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Delete",
+        "obj": "Old version of malware"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "New combination of names and startup entries"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "User level"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "None"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not",
+        "obj": "Perform privilege escalation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not",
+        "obj": "Exploit system vulnerabilities"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not",
+        "obj": "Exploit misconfigurations"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Anti-reverse technique"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Executable file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Monitor",
+        "obj": "User interaction"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Delay",
+        "obj": "Execution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Obfuscation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Base64-encoded string"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Rotate",
+        "obj": "Decryption key"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Fallback mechanism"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Google search queries"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Network interfaces"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Google search queries"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Secondary Twitter handles"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Current date"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Time"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "System configuration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Generate",
+        "obj": "Unique identifiers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Unique identifiers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Communication with command and control servers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Backdoor command 'get'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Backdoor command 'dir'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Backdoor command 'ls'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Backdoor command 'ps'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Backdoor command 'pslist'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Read files in chunks of 0x400 bytes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Compute SHA1 hashes on files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "List files in current directory"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Gather information about running processes and their modules"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Data to command and control server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encrypted channels"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "SHA1 hashes of collected files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Twitter account"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Base64-encoded tweet"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Rotated bytes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Subtract 0x5A"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "Decoded URI"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Google search query"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "GET request"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "System information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Encrypted payload"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Respond",
+        "obj": "Encrypted payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Backdoor command"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "File reading"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Compute",
+        "obj": "SHA1 hash"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "Data to command and control server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encrypted channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Base64 encoding"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "XOR encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Automated exfiltration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "Data in regular intervals"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Apply",
+        "obj": "Size limit to avoid detection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has objective",
+        "obj": "Establish backdoor"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has objective",
+        "obj": "Exfiltrate data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not",
+        "obj": "Manipulate systems"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not",
+        "obj": "Interrupt systems"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not",
+        "obj": "Destroy data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not",
+        "obj": "Cause system shutdown"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not",
+        "obj": "Compromise system integrity"
+      }
+    ]
+  }
+}

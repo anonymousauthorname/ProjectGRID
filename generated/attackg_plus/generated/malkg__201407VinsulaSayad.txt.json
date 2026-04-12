@@ -1,0 +1,552 @@
+{
+  "sample_id": "malkg__201407VinsulaSayad.txt",
+  "sample_index": 120,
+  "source": "malkg",
+  "file_name": "201407VinsulaSayad.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "Host computer name"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "Internal IP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "External IP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "Languages installed"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "User name"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "Running processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "Open ports"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "System network configuration"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Is a form of",
+        "obj": "Active reconnaissance"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Victim environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Victim host information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Self-extracting executable"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Binder executable"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Client"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Without relying on external infrastructure"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Phishing email"
+      },
+      {
+        "sub": "WEXTRACT.exe",
+        "rel": "Modify",
+        "obj": "Binder"
+      },
+      {
+        "sub": "Binder",
+        "rel": "Construct",
+        "obj": "Client"
+      },
+      {
+        "sub": "Client",
+        "rel": "Has filename",
+        "obj": "DiagnosticsService.dll"
+      },
+      {
+        "sub": "WEXTRACT.exe",
+        "rel": "Has filename",
+        "obj": "WEXTRACT.exe"
+      },
+      {
+        "sub": "Phishing email",
+        "rel": "Belong to",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "WEXTRACT.exe",
+        "rel": "Execute",
+        "obj": "Binder"
+      },
+      {
+        "sub": "Binder",
+        "rel": "Drop and run",
+        "obj": "Client"
+      },
+      {
+        "sub": "Client",
+        "rel": "Load via",
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "rundll32.exe",
+        "rel": "Use",
+        "obj": "32-bit DLLs"
+      },
+      {
+        "sub": "Client",
+        "rel": "Initialize and run",
+        "obj": "Data collection components"
+      },
+      {
+        "sub": "WEXTRACT.exe",
+        "rel": "Use",
+        "obj": ".NET managed code"
+      },
+      {
+        "sub": "Binder",
+        "rel": "Use",
+        "obj": "native API calls"
+      },
+      {
+        "sub": "Client",
+        "rel": "Has value",
+        "obj": "Data collection components"
+      },
+      {
+        "sub": "Client",
+        "rel": "Operate",
+        "obj": "Data collection components"
+      },
+      {
+        "sub": "Binder",
+        "rel": "Modify",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Binder",
+        "rel": "Write",
+        "obj": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
+      },
+      {
+        "sub": "Binder",
+        "rel": "Use",
+        "obj": "DiagnosticsService.dll"
+      },
+      {
+        "sub": "DiagnosticsService.dll",
+        "rel": "Has value",
+        "obj": "\"rundll32.exe \\\"C:\\\\[Path omitted]\\\\DiagnosticsService.dll\\\",78121\""
+      },
+      {
+        "sub": "DiagnosticsService.dll",
+        "rel": "Belong to",
+        "obj": "Binder"
+      },
+      {
+        "sub": "Binder",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Binder",
+        "rel": "Has vulnerability",
+        "obj": "Persistence"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Base64 encoding"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Simple Base64 encoding"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not implement",
+        "obj": "Advanced obfuscation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not implement",
+        "obj": "Defense evasion techniques"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not implement",
+        "obj": "Hiding artifacts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not implement",
+        "obj": "Impersonation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not implement",
+        "obj": "Techniques to avoid detection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "FTP client credentials"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "VPN configurations"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "Remote desktop accounts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Credential access"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Host system information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Browser information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Messaging application data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "VPN account information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Host system information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Browser information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Messaging application data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "VPN account information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Computer name"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "IPs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Languages"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "User name"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Running processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Open ports"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "Bookmarks"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "History"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "Cookies"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "Skype chat history"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "Yahoo Messenger chat history"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "Pidgin chat history"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "GTalk chat history"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "Proxifier account information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "WinVPN account information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "Keystrokes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "Screenshots"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "Clipboard data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "Browser bookmarks"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "Browser history"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "Cookies"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "Chat logs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "Configuration files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "FileZilla configuration files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "WinSCP configuration files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "Chrome configuration files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "Firefox configuration files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "Skype configuration files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "FTP client data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "FTP server data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "Remote desktop data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collects",
+        "obj": "VPN client data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has URL",
+        "obj": "hxxp://0o0o0o0o0.com"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has IP",
+        "obj": "107.6.182.179"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Encrypted data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Client's HTTP client"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "PostURL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Public RSA key"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Public RSA key"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "TCP connection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "encrypted data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "RSA public key"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "compression"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "encryption"
+      }
+    ]
+  }
+}

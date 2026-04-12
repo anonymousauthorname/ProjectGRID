@@ -1,0 +1,187 @@
+{
+  "sample_id": "securenlp__Compromise_Greece_Beijing",
+  "sample_index": 180,
+  "source": "securenlp",
+  "file_name": "Compromise_Greece_Beijing",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "csfn",
+        "rel": "decrypts",
+        "obj": "all strings"
+      },
+      {
+        "sub": "csfn",
+        "rel": "decrypts",
+        "obj": "strings"
+      },
+      {
+        "sub": "csfn",
+        "rel": "operates on",
+        "obj": "string parameter"
+      },
+      {
+        "sub": "csfn",
+        "rel": "removes",
+        "obj": "numbers from string parameter"
+      },
+      {
+        "sub": "csfn",
+        "rel": "removes",
+        "obj": "numbers"
+      },
+      {
+        "sub": "init",
+        "rel": "contains",
+        "obj": "actual payload"
+      },
+      {
+        "sub": "malware",
+        "rel": "modifies registry key",
+        "obj": "HKCU\\\\\\\\Software\\\\\\\\Microsoft\\\\\\\\Windows\\\\\\\\CurrentVersion\\\\\\\\Internet Settings"
+      },
+      {
+        "sub": "malware",
+        "rel": "sets value",
+        "obj": "PrivDiscUiShown"
+      },
+      {
+        "sub": "malware",
+        "rel": "modifies registry key",
+        "obj": "HKCU\\\\\\\\Software\\\\\\\\Microsoft\\\\\\\\Internet Explorer\\\\\\\\Main"
+      },
+      {
+        "sub": "malware",
+        "rel": "sets value",
+        "obj": "DEPOff"
+      },
+      {
+        "sub": "malware",
+        "rel": "sets value",
+        "obj": "DisableFirstRunCustomize"
+      },
+      {
+        "sub": "malware",
+        "rel": "sets value",
+        "obj": "Check_Associations"
+      },
+      {
+        "sub": "reg add",
+        "rel": "modifies",
+        "obj": "HKCU\\\\Software\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Internet Settings"
+      },
+      {
+        "sub": "reg add",
+        "rel": "sets",
+        "obj": "WarnOnPostRedirect"
+      },
+      {
+        "sub": "reg add",
+        "rel": "sets",
+        "obj": "WarnonZoneCrossing"
+      },
+      {
+        "sub": "reg add",
+        "rel": "sets",
+        "obj": "AutoRecover"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "obj": "COM to launch Internet Explorer"
+      },
+      {
+        "sub": "Base64 data",
+        "rel": "is decoded into",
+        "obj": "executable"
+      },
+      {
+        "sub": "executable",
+        "rel": "has SHA256 hash",
+        "obj": "a4863f44f48d1c4c050dd7baad767a86b348dd4d33924acf4e0a3cd40c6ae29f"
+      },
+      {
+        "sub": "executable",
+        "rel": "is encoded in",
+        "obj": "Base64"
+      },
+      {
+        "sub": "PE viewer",
+        "rel": "is used to analyze",
+        "obj": "strings"
+      },
+      {
+        "sub": "Base64 data",
+        "rel": "decoded using",
+        "obj": "Base64 decoder tool"
+      },
+      {
+        "sub": "executable",
+        "rel": "is",
+        "obj": "Base64 encoded and not encrypted"
+      },
+      {
+        "sub": "http://buy.miraclecz.com",
+        "rel": "contains",
+        "obj": "strings"
+      },
+      {
+        "sub": "executable",
+        "rel": "is not encrypted",
+        "obj": "encryption"
+      },
+      {
+        "sub": "reg add",
+        "rel": "modifies",
+        "obj": "HKCU\\\\Software\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Internet Settings"
+      },
+      {
+        "sub": "URL parameter",
+        "rel": "contains",
+        "obj": "%s/?id1=blank%d&id2=%d%d"
+      },
+      {
+        "sub": "malware sample",
+        "rel": "performs",
+        "obj": "Base64 encoding/decoding"
+      },
+      {
+        "sub": "malware sample",
+        "rel": "contacted",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "malware sample",
+        "rel": "does not send",
+        "obj": "URL parameter"
+      },
+      {
+        "sub": "URL parameter",
+        "rel": "include",
+        "obj": "id1"
+      },
+      {
+        "sub": "URL parameter",
+        "rel": "include",
+        "obj": "id2"
+      }
+    ]
+  }
+}

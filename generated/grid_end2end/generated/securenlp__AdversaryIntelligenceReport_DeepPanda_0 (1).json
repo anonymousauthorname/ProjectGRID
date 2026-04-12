@@ -1,0 +1,668 @@
+{
+  "sample_id": "securenlp__AdversaryIntelligenceReport_DeepPanda_0 (1)",
+  "sample_index": 177,
+  "source": "securenlp",
+  "file_name": "AdversaryIntelligenceReport_DeepPanda_0 (1)",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CrowdStrike Intelligence Team",
+        "type": "generic-noun",
+        "alias": [
+          "CrowdStrike"
+        ],
+        "mother entity": [
+          "the samples"
+        ]
+      },
+      {
+        "name": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "type": "hacker-tool",
+        "alias": [
+          "the dropper",
+          "the dropper code",
+          "the samples"
+        ],
+        "mother entity": [
+          "the samples"
+        ]
+      },
+      {
+        "name": "Remote Access Tool (RAT)",
+        "type": "hacker-tool",
+        "alias": [
+          "DLL",
+          "the malicious DLL",
+          "the RAT"
+        ],
+        "mother entity": [
+          "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)"
+        ]
+      },
+      {
+        "name": "Dynamic-Link Library (DLL)",
+        "type": "general-software",
+        "alias": [
+          "the malicious DLL",
+          "the dropped DLL"
+        ],
+        "mother entity": [
+          "Remote Access Tool (RAT)"
+        ]
+      },
+      {
+        "name": "CSIDL_COMMON_DOCUMENTS",
+        "type": "windows-registry-key",
+        "alias": [
+          "A typical path is C:\\Documents and Settings\\All Users\\Documents"
+        ],
+        "mother entity": [
+          "the dropper"
+        ]
+      },
+      {
+        "name": "infoadmn.dll",
+        "type": "file",
+        "alias": [
+          "the malicious DLL file",
+          "the dropped DLL"
+        ],
+        "mother entity": [
+          "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)"
+        ]
+      },
+      {
+        "name": "infoctrs.dll",
+        "type": "file",
+        "alias": [
+          "the malicious DLL file",
+          "the dropped DLL"
+        ],
+        "mother entity": [
+          "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)"
+        ]
+      },
+      {
+        "name": "infocardapi.dll",
+        "type": "file",
+        "alias": [
+          "the malicious DLL file",
+          "the dropped DLL"
+        ],
+        "mother entity": [
+          "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)"
+        ]
+      },
+      {
+        "name": "C:\\Documents and Settings\\All Users\\Documents",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "CSIDL_COMMON_DOCUMENTS"
+        ]
+      },
+      {
+        "name": "Computer Name",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": [
+          "the beacon"
+        ]
+      },
+      {
+        "name": "Username",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": [
+          "the beacon"
+        ]
+      },
+      {
+        "name": "Machine's uptime",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": [
+          "the beacon"
+        ]
+      },
+      {
+        "name": "Windows Version",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": [
+          "the beacon"
+        ]
+      },
+      {
+        "name": "Service Pack level",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": [
+          "the beacon"
+        ]
+      },
+      {
+        "name": "Amount of available Physical Memory in MB",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": [
+          "the beacon"
+        ]
+      },
+      {
+        "name": "Current Remote Desktop sessions",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": [
+          "the beacon"
+        ]
+      },
+      {
+        "name": "FBI20111024",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": [
+          "the beacon"
+        ]
+      },
+      {
+        "name": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "type": "hacker-tool",
+        "alias": [
+          "the backdoor",
+          "the backdoor DLL",
+          "the backdoor DLL dropped by the dropper"
+        ],
+        "mother entity": [
+          "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)"
+        ]
+      },
+      {
+        "name": "msupdate",
+        "type": "identity",
+        "alias": [
+          "a service called ‘msupdate’"
+        ],
+        "mother entity": [
+          "the backdoor"
+        ]
+      },
+      {
+        "name": "Registry Artifacts",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "the backdoor"
+        ]
+      },
+      {
+        "name": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\msupdate\\Parameters",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": [
+          "the backdoor"
+        ]
+      },
+      {
+        "name": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Svchost",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": [
+          "the backdoor"
+        ]
+      },
+      {
+        "name": "OpenSCManager(), CreateService()",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": [
+          "the backdoor"
+        ]
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "general-software",
+        "alias": [
+          "the executable"
+        ],
+        "mother entity": [
+          "the backdoor"
+        ]
+      },
+      {
+        "name": "NOD32_%d",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": [
+          "the backdoor"
+        ]
+      },
+      {
+        "name": "Command and Control (C2) servers",
+        "type": "infrastructure",
+        "alias": [
+          "C2 servers",
+          "C2 location",
+          "C2"
+        ],
+        "mother entity": [
+          "the backdoor"
+        ]
+      },
+      {
+        "name": "1.9.5.38:443",
+        "type": "ipv4-addr",
+        "alias": [
+          "C2 Server 1.9.5.38:443"
+        ],
+        "mother entity": [
+          "Command and Control (C2) servers"
+        ]
+      },
+      {
+        "name": "202.86.190.3:80",
+        "type": "ipv4-addr",
+        "alias": [
+          "C2 Server 202.86.190.3:80"
+        ],
+        "mother entity": [
+          "Command and Control (C2) servers"
+        ]
+      },
+      {
+        "name": "Post Exploitation Tool Sample (MD5: 2dce7fc3f52a692d8a84a0c182519133)",
+        "type": "hacker-tool",
+        "alias": [
+          "the backdoor functionality",
+          "the post exploitation tool"
+        ],
+        "mother entity": [
+          "the samples"
+        ]
+      },
+      {
+        "name": "IP address string resource",
+        "type": "indicator",
+        "alias": [
+          "t = 14mJqYhJKchJuTmoSZkJKa42C7885997B523F63566F407F3834BCC54AAA32524"
+        ],
+        "mother entity": [
+          "Post Exploitation Tool Sample (MD5: 2dce7fc3f52a692d8a84a0c182519133)"
+        ]
+      },
+      {
+        "name": "AES encryption",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "Post Exploitation Tool Sample (MD5: 2dce7fc3f52a692d8a84a0c182519133)"
+        ]
+      },
+      {
+        "name": "Machine ID",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": [
+          "the authentication packet"
+        ]
+      },
+      {
+        "name": "System Driver (MD5: dae6b9b3b8e39b08b10a51a6457444d8)",
+        "type": "malware",
+        "alias": [
+          "the kernel driver",
+          "the component",
+          "the system driver"
+        ],
+        "mother entity": [
+          "the backdoor"
+        ]
+      },
+      {
+        "name": "Kernel Driver Sample",
+        "type": "malware",
+        "alias": [],
+        "mother entity": [
+          "the backdoor"
+        ]
+      },
+      {
+        "name": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Rpc\\Security",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": [
+          "System Driver"
+        ]
+      },
+      {
+        "name": "ZwSaveKey(), ZwQueryValueKey(), ZwEnumerateValueKey()",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": [
+          "System Driver"
+        ]
+      },
+      {
+        "name": "ZwLoadDriver()",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": [
+          "System Driver"
+        ]
+      },
+      {
+        "name": "Edward Sun’s kernel network hook code",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "his code",
+          "the code posted by Edward Sun"
+        ],
+        "mother entity": [
+          "System Driver"
+        ]
+      },
+      {
+        "name": "Steven Lai (embedlinux)",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "embedlinux",
+          "Steven Lai",
+          "email address hqulyc@126.com"
+        ],
+        "mother entity": [
+          "System Driver"
+        ]
+      },
+      {
+        "name": "Derusbi Trojan",
+        "type": "malware",
+        "alias": [],
+        "mother entity": [
+          "the samples"
+        ]
+      },
+      {
+        "name": "Quikoo 360 Technology Co., LTD",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "the samples"
+        ]
+      },
+      {
+        "name": "ZhuDongFangYu.exe",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": [
+          "the samples"
+        ]
+      },
+      {
+        "name": "360 360 (product)",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": [
+          "the samples"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "analyzed",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "the samples"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "resolves library functions",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "resolves CSIDL_COMMON_DOCUMENTS",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "CSIDL_COMMON_DOCUMENTS"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "attempts to write malicious payload to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "infoadmn.dll"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "attempts to write malicious payload to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "infoctrs.dll"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "attempts to write malicious payload to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "infocardapi.dll"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "sets creation and last written timestamp to 2007-03-07",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "infoadmn.dll"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "writes malicious DLL to disk",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "infoadmn.dll"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "opens the dropped file and corrects the header",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "infoadmn.dll"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "loads the dropped DLL into its own process space",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Dynamic-Link Library (DLL)"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "dropped a Dynamic-Link Library (DLL)",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Remote Access Tool (RAT)"
+      },
+      {
+        "sub": "Remote Access Tool (RAT)",
+        "rel": "is a Dynamic-Link Library (DLL) installed as a service",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "Dynamic-Link Library (DLL)"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "stops a service called msupdate",
+        "rel_type": [
+          "stops"
+        ],
+        "obj": "msupdate"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "replaces previous instances of msupdate",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "msupdate"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "installs itself as a service named msupdate",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "msupdate"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "writes settings to registry keys",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\msupdate\\Parameters"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "writes settings to registry keys",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Svchost"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "uses documented APIs OpenSCManager() and CreateService()",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "OpenSCManager(), CreateService()"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "spawns a new process using rundll32.exe",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "sends an initial beacon to the C2",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "1.9.5.38:443"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "communicates with C2 via HTTP",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Command and Control (C2) servers"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "avoids installing driver on systems with 360 360 (product)",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "ZhuDongFangYu.exe"
+      },
+      {
+        "sub": "Post Exploitation Tool Sample (MD5: 2dce7fc3f52a692d8a84a0c182519133)",
+        "rel": "uses encrypted IP address stored in string resource",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "202.86.190.3:80"
+      },
+      {
+        "sub": "Post Exploitation Tool Sample (MD5: 2dce7fc3f52a692d8a84a0c182519133)",
+        "rel": "uses AES encryption to protect C2 communications",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "AES encryption"
+      },
+      {
+        "sub": "System Driver (MD5: dae6b9b3b8e39b08b10a51a6457444d8)",
+        "rel": "drops a kernel driver",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Kernel Driver Sample"
+      },
+      {
+        "sub": "System Driver (MD5: dae6b9b3b8e39b08b10a51a6457444d8)",
+        "rel": "hooks registry keys",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Rpc\\Security"
+      },
+      {
+        "sub": "System Driver (MD5: dae6b9b3b8e39b08b10a51a6457444d8)",
+        "rel": "hooks APIs",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "ZwQueryValueKey()"
+      },
+      {
+        "sub": "System Driver (MD5: dae6b9b3b8e39b08b10a51a6457444d8)",
+        "rel": "uses ZwLoadDriver() to load itself",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "ZwLoadDriver()"
+      },
+      {
+        "sub": "System Driver (MD5: dae6b9b3b8e39b08b10a51a6457444d8)",
+        "rel": "is a line-for-line copy of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Edward Sun’s kernel network hook code"
+      },
+      {
+        "sub": "System Driver (MD5: dae6b9b3b8e39b08b10a51a6457444d8)",
+        "rel": "authored by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Steven Lai (embedlinux)"
+      }
+    ]
+  }
+}

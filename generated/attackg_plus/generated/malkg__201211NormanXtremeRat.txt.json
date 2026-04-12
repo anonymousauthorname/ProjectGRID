@@ -1,0 +1,432 @@
+{
+  "sample_id": "malkg__201211NormanXtremeRat.txt",
+  "sample_index": 102,
+  "source": "malkg",
+  "file_name": "201211NormanXtremeRat.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Palestinian targets"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Israeli targets"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Bait documents"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Arabic language"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "References to Mahmoud Abbas"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "References to prisoner exchange deal with Israel over Gilad Shalit"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Metadata in Word documents"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Fake or fabricated information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "Palestinian targets initially"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Shift focus to",
+        "obj": "Israeli targets"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "'IDF strikes militants in Gaza Strip following rocket barrage.doc----------------------------------------------.scr'"
+      },
+      {
+        "sub": "'IDF strikes militants in Gaza Strip following rocket barrage.doc----------------------------------------------.scr'",
+        "rel": "Construct",
+        "obj": "XtremeRat backdoor executable"
+      },
+      {
+        "sub": "XtremeRat backdoor executable",
+        "rel": "Belong to",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Spearphishing",
+        "rel": "Operate",
+        "obj": "Email"
+      },
+      {
+        "sub": "Email",
+        "rel": "Has URL",
+        "obj": "URL"
+      },
+      {
+        "sub": "Malicious email attachment",
+        "rel": "Has value",
+        "obj": "Document icon"
+      },
+      {
+        "sub": "Malicious email attachment",
+        "rel": "Has filename",
+        "obj": "'IDF strikes militants in Gaza Strip following rocket barrage.doc----------------------------------------------.scr'"
+      },
+      {
+        "sub": "Spearphishing",
+        "rel": "Has vulnerability",
+        "obj": "Target users in Israeli and Palestinian organizations"
+      },
+      {
+        "sub": "Target users in Israeli and Palestinian organizations",
+        "rel": "Locate at",
+        "obj": "Israeli organizations"
+      },
+      {
+        "sub": "Target users in Israeli and Palestinian organizations",
+        "rel": "Locate at",
+        "obj": "Palestinian organizations"
+      },
+      {
+        "sub": "Spearphishing",
+        "rel": "Modify",
+        "obj": "Target users in Israeli and Palestinian organizations"
+      },
+      {
+        "sub": "WinRAR",
+        "rel": "Has vulnerability",
+        "obj": "XtremeRat"
+      },
+      {
+        "sub": "XtremeRat",
+        "rel": "Use",
+        "obj": "Self-extracting archive"
+      },
+      {
+        "sub": "Self-extracting archive",
+        "rel": "Write",
+        "obj": "Malicious payload"
+      },
+      {
+        "sub": "Self-extracting archive",
+        "rel": "Operate",
+        "obj": "Victim's system"
+      },
+      {
+        "sub": "XtremeRat",
+        "rel": "Modify",
+        "obj": "Victim's system"
+      },
+      {
+        "sub": "XtremeRat",
+        "rel": "Has value",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Self-extracting archive",
+        "rel": "Construct",
+        "obj": "Malicious payload"
+      },
+      {
+        "sub": "Malicious payload",
+        "rel": "Execute",
+        "obj": "Upon opening"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Metadata in Word documents"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Creator field in Word documents"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Last saved by field in Word documents"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "False sense of authenticity"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Political events"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Political figure Mahmoud Abbas"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Political figure Nabil Amr"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Prisoner exchange deal"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "Target's environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "Target's interests"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Bait document"
+      },
+      {
+        "sub": "Bait document",
+        "rel": "Has value",
+        "obj": "Political sentiment"
+      },
+      {
+        "sub": "Bait document",
+        "rel": "Has value",
+        "obj": "Sensitive information"
+      },
+      {
+        "sub": "Bait document",
+        "rel": "Has URL",
+        "obj": "Video"
+      },
+      {
+        "sub": "Video",
+        "rel": "Has filename",
+        "obj": "\"Mahmoud Abbas being threatened by Mossad\""
+      },
+      {
+        "sub": "Video",
+        "rel": "Has hostname",
+        "obj": "\"Mahmoud Abbas being threatened by Mossad\""
+      },
+      {
+        "sub": "Image",
+        "rel": "Has filename",
+        "obj": "\"Gilad Shalit in his hostage cell\""
+      },
+      {
+        "sub": "Image",
+        "rel": "Has hostname",
+        "obj": "\"Gilad Shalit in his hostage cell\""
+      },
+      {
+        "sub": "Bait document",
+        "rel": "Modify",
+        "obj": "Political statement"
+      },
+      {
+        "sub": "Bait document",
+        "rel": "Modify",
+        "obj": "Video"
+      },
+      {
+        "sub": "Bait document",
+        "rel": "Modify",
+        "obj": "Image"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Bait document"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Detect",
+        "obj": "Political sentiment"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Detect",
+        "obj": "Sensitive information"
+      },
+      {
+        "sub": "Bait document",
+        "rel": "Locate at",
+        "obj": "Political sentiment"
+      },
+      {
+        "sub": "Bait document",
+        "rel": "Locate at",
+        "obj": "Sensitive information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Command-and-control  server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Resolve to",
+        "obj": "IP address"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Locate at",
+        "obj": "United States"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has hostname",
+        "obj": "hint.zapto.org"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has hostname",
+        "obj": "natco4.no-ip.net"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has hostname",
+        "obj": "menu.dyndns.biz"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Resolve to",
+        "obj": "US-based hosting service"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Modify",
+        "obj": "IP address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "faked Microsoft certificate"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Belong to",
+        "obj": "coordinated and sustained operation"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Share across",
+        "obj": "multiple malware samples"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has URL",
+        "obj": "DynDNS service"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Operate",
+        "obj": "data exfiltration"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Receive",
+        "obj": "commands"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "C2 infrastructure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "C2 infrastructure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Communicate with",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Has hostname",
+        "obj": "Domain"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Has value",
+        "obj": "IP address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Exfiltrate data through",
+        "obj": "C2 channels"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has content",
+        "obj": "Political content"
+      },
+      {
+        "sub": "Political content",
+        "rel": "Belong to",
+        "obj": "Surveillance or intelligence gathering"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has URL",
+        "obj": "Domain"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has value",
+        "obj": "IP address"
+      }
+    ]
+  }
+}

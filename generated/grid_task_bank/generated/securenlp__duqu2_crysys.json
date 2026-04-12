@@ -1,0 +1,418 @@
+{
+  "sample_id": "securenlp__duqu2_crysys",
+  "sample_index": 194,
+  "source": "securenlp",
+  "file_name": "duqu2_crysys",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Duqu",
+        "type": "campaign",
+        "alias": [
+          "the original Duqu",
+          "Duqu (2011)"
+        ]
+      },
+      {
+        "name": "Duqu 2.0",
+        "type": "campaign",
+        "alias": [
+          "the new threat",
+          "new Duqu samples"
+        ]
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "c7c647a14cb1b8bc141b089775130834",
+        "type": "file",
+        "alias": [
+          "c7c647"
+        ]
+      },
+      {
+        "name": "3f52ea949f2bd98f1e6ee4ea1320e80d",
+        "type": "file",
+        "alias": [
+          "3f52ea"
+        ]
+      },
+      {
+        "name": "main module",
+        "type": "file"
+      },
+      {
+        "name": "configuration file",
+        "type": "file"
+      },
+      {
+        "name": "string decryption routine",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "AES encryption",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "CBC mode",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "magic numbers",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "user agent string",
+        "type": "indicator"
+      },
+      {
+        "name": "843-byte GIF file",
+        "type": "file"
+      },
+      {
+        "name": "self signed certificate",
+        "type": "indicator"
+      },
+      {
+        "name": "gpl3.selfsigned.org",
+        "type": "domain-name"
+      },
+      {
+        "name": "0xDEADBABE",
+        "type": "indicator"
+      },
+      {
+        "name": "0x248561EF",
+        "type": "indicator"
+      },
+      {
+        "name": "0x86F186F1",
+        "type": "indicator"
+      },
+      {
+        "name": "0xB31FB31F",
+        "type": "indicator"
+      },
+      {
+        "name": "CrySyS Lab",
+        "type": "security-product"
+      },
+      {
+        "name": "Technical Report",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "Duqu: A Stuxnet-like malware found in the wild",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "The Mystery of Duqu 2.0",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "Stuxnet",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Flame",
+        "type": "malware"
+      },
+      {
+        "name": "Regin",
+        "type": "malware"
+      },
+      {
+        "name": "Kaspersky Lab",
+        "type": "organization"
+      },
+      {
+        "name": "Boldizsár Bencsáth",
+        "type": "identity"
+      },
+      {
+        "name": "Gábor Ács-Kurucz",
+        "type": "identity"
+      },
+      {
+        "name": "Gábor Molnár",
+        "type": "identity"
+      },
+      {
+        "name": "Gábor Vaspöri",
+        "type": "identity"
+      },
+      {
+        "name": "Levente Buttyán",
+        "type": "identity"
+      },
+      {
+        "name": "Roland Kamarás",
+        "type": "identity"
+      },
+      {
+        "name": "Laboratory of Cryptography and System Security (CrySyS)",
+        "type": "organization"
+      },
+      {
+        "name": "Budapest University of Technology and Economics",
+        "type": "organization"
+      },
+      {
+        "name": "www.crysys.hu",
+        "type": "url"
+      },
+      {
+        "name": "http://www.crysys.hu/",
+        "type": "url"
+      },
+      {
+        "name": "http://www.crysys.hu/publications/files/bencsathPBF11duqu.pdf",
+        "type": "url"
+      },
+      {
+        "name": "http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/w32_duqu_the_precursor_to_the_next_stuxnet.pdf",
+        "type": "url"
+      },
+      {
+        "name": "http://www.kaspersky.com/about/press/major_malware_outbreaks/duqu",
+        "type": "url"
+      },
+      {
+        "name": "http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/w32_stuxnet_dossier.pdf",
+        "type": "url"
+      },
+      {
+        "name": "https://securelist.com/blog/research/70504/the-mystery-of-duqu-2-0-a-sophisticated-cyberespionage-actor-returns/",
+        "type": "url"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Duqu",
+        "rel": "analyzed-by",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "CrySyS Lab"
+      },
+      {
+        "sub": "Duqu",
+        "rel": "has",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Stuxnet"
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "might-be-related-to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Duqu"
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "is-dubbed-by",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "CrySyS Lab"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "is-behind",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Duqu"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "modified",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "tools"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "strongly-reused",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "codes"
+      },
+      {
+        "sub": "Duqu",
+        "rel": "has-similarity-to",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "Duqu 2.0"
+      },
+      {
+        "sub": "string decryption routine",
+        "rel": "related-to",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Anti-Virus product strings"
+      },
+      {
+        "sub": "magic number",
+        "rel": "related-to",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "files encrypted with AES"
+      },
+      {
+        "sub": "CBC mode",
+        "rel": "used-by",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Duqu"
+      },
+      {
+        "sub": "logging module",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "magic numbers"
+      },
+      {
+        "sub": "Duqu",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Similar C++-like coding and compiling style"
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "main module"
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "reads-from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "configuration file"
+      },
+      {
+        "sub": "configuration file",
+        "rel": "encrypted-using",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "AES block cipher"
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "configuration file"
+      },
+      {
+        "sub": "original Duqu",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "string decryption routine"
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has-difference-from",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Duqu"
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "hash method"
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "transmits",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "information"
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "contacts",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "gpl3.selfsigned.org"
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "uses",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "<5 random numbers>.gif"
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "actual image"
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has-detection-rules-for",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Yara rules"
+      },
+      {
+        "sub": "Duqu",
+        "rel": "strong-connection-to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Duqu 2.0"
+      }
+    ]
+  }
+}

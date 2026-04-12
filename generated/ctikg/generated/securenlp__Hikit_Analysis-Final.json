@@ -1,0 +1,797 @@
+{
+  "sample_id": "securenlp__Hikit_Analysis-Final",
+  "sample_index": 168,
+  "source": "securenlp",
+  "file_name": "Hikit_Analysis-Final",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Hikit",
+        "rel": "consists of",
+        "obj": "Gen 1"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "consists of",
+        "obj": "Gen 2"
+      },
+      {
+        "sub": "Gen 1",
+        "rel": "operates as",
+        "obj": "server"
+      },
+      {
+        "sub": "Gen 1",
+        "rel": "requires",
+        "obj": "exposed network interface"
+      },
+      {
+        "sub": "Gen 2",
+        "rel": "uses",
+        "obj": "traditional client model"
+      },
+      {
+        "sub": "Gen 2",
+        "rel": "beacons to",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "retains",
+        "obj": "RAT function"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "consists of",
+        "obj": "remote command shell"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "consists of",
+        "obj": "file management"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "consists of",
+        "obj": "network proxy"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "consists of",
+        "obj": "port forwarding"
+      },
+      {
+        "sub": "Gen 1",
+        "rel": "consists of",
+        "obj": "main DLL"
+      },
+      {
+        "sub": "Gen 1",
+        "rel": "consists of",
+        "obj": "kernel driver"
+      },
+      {
+        "sub": "Gen 2",
+        "rel": "consists of",
+        "obj": "main DLL"
+      },
+      {
+        "sub": "Gen 2",
+        "rel": "consists of",
+        "obj": "kernel driver"
+      },
+      {
+        "sub": "Gen 2",
+        "rel": "employs",
+        "obj": "loader executable"
+      },
+      {
+        "sub": "network driver",
+        "rel": "is responsible for interfacing",
+        "obj": "DLL"
+      },
+      {
+        "sub": "network driver",
+        "rel": "prevents",
+        "obj": "WinSock interface"
+      },
+      {
+        "sub": "Gen 1 Driver",
+        "rel": "listens to",
+        "obj": "network traffic"
+      },
+      {
+        "sub": "Gen 1 Driver",
+        "rel": "waits for",
+        "obj": "trigger string"
+      },
+      {
+        "sub": "trigger string",
+        "rel": "varies by",
+        "obj": "Driver and DLL"
+      },
+      {
+        "sub": "Gen 2 Driver",
+        "rel": "acts as",
+        "obj": "rootkit"
+      },
+      {
+        "sub": "Gen 2 Driver",
+        "rel": "hides",
+        "obj": "process"
+      },
+      {
+        "sub": "Gen 2 Driver",
+        "rel": "hides",
+        "obj": "registry key"
+      },
+      {
+        "sub": "Gen 2 Driver",
+        "rel": "hides",
+        "obj": "network connection"
+      },
+      {
+        "sub": "Gen 2 Driver",
+        "rel": "uses",
+        "obj": "malware model"
+      },
+      {
+        "sub": "Gen 2 Driver",
+        "rel": "is",
+        "obj": "rootkit"
+      },
+      {
+        "sub": "Gen 1 Driver",
+        "rel": "waits for",
+        "obj": "trigger string"
+      },
+      {
+        "sub": "Gen 2",
+        "rel": "hides",
+        "obj": "network connection"
+      },
+      {
+        "sub": "Gen 2",
+        "rel": "hides",
+        "obj": "registry key"
+      },
+      {
+        "sub": "Gen",
+        "rel": "has compile date",
+        "obj": "26 July 2013"
+      },
+      {
+        "sub": "Gen",
+        "rel": "begins",
+        "obj": "12 December 2013"
+      },
+      {
+        "sub": "Gen",
+        "rel": "uses",
+        "obj": "SSL certificate"
+      },
+      {
+        "sub": "DLL",
+        "rel": "sends",
+        "obj": "SSL certificate"
+      },
+      {
+        "sub": "SSL certificate",
+        "rel": "used in",
+        "obj": "handshake with attackers C2"
+      },
+      {
+        "sub": "SSL certificate",
+        "rel": "used to",
+        "obj": "disrupt IDS"
+      },
+      {
+        "sub": "Gen",
+        "rel": "retain configuration in",
+        "obj": "DLL"
+      },
+      {
+        "sub": "WinSock API",
+        "rel": "could potentially reveal",
+        "obj": "Hikit"
+      },
+      {
+        "sub": "DLL",
+        "rel": "uses",
+        "obj": "function to send commands to the Driver"
+      },
+      {
+        "sub": "DLL",
+        "rel": "sends commands to",
+        "obj": "Driver"
+      },
+      {
+        "sub": "DLL",
+        "rel": "accesses",
+        "obj": "Driver"
+      },
+      {
+        "sub": "DLL",
+        "rel": "performs",
+        "obj": "w7fw"
+      },
+      {
+        "sub": "Driver",
+        "rel": "registers at",
+        "obj": "both"
+      },
+      {
+        "sub": "Driver",
+        "rel": "supports",
+        "obj": "OID Function 0x12C828"
+      },
+      {
+        "sub": "Driver",
+        "rel": "supports",
+        "obj": "OID Function 0x12C82C"
+      },
+      {
+        "sub": "Driver",
+        "rel": "supports",
+        "obj": "OID Function 0x12C830"
+      },
+      {
+        "sub": "Driver",
+        "rel": "supports",
+        "obj": "OID Function 0x12C838"
+      },
+      {
+        "sub": "The Driver",
+        "rel": "is based on",
+        "obj": "NDIS example source code PassThru"
+      },
+      {
+        "sub": "The Driver",
+        "rel": "uses",
+        "obj": "version"
+      },
+      {
+        "sub": "The Driver",
+        "rel": "uses",
+        "obj": "PassThruEx"
+      },
+      {
+        "sub": "The Driver",
+        "rel": "is derived from",
+        "obj": "PassThruEx"
+      },
+      {
+        "sub": "PassThruEx",
+        "rel": "is created by",
+        "obj": "James Antognini and Thomas Devine"
+      },
+      {
+        "sub": "0x22C000",
+        "rel": "adds",
+        "obj": "driver"
+      },
+      {
+        "sub": "0x22C000",
+        "rel": "adds",
+        "obj": "system module"
+      },
+      {
+        "sub": "0x22C000",
+        "rel": "uses",
+        "obj": "hide"
+      },
+      {
+        "sub": "0x22C004",
+        "rel": "reveals",
+        "obj": "hidden items"
+      },
+      {
+        "sub": "0x22C008",
+        "rel": "adds",
+        "obj": "endpoint"
+      },
+      {
+        "sub": "0x22C008",
+        "rel": "uses",
+        "obj": "hide"
+      },
+      {
+        "sub": "0x22E000",
+        "rel": "performs",
+        "obj": "No-Op"
+      },
+      {
+        "sub": "Registry Value",
+        "rel": "hooks",
+        "obj": "ZwDeviceIoControlFile"
+      },
+      {
+        "sub": "Registry Value",
+        "rel": "hooks",
+        "obj": "ZwEnumerateValueKey"
+      },
+      {
+        "sub": "exit",
+        "rel": "terminates",
+        "obj": "channel"
+      },
+      {
+        "sub": "malware",
+        "rel": "rely on",
+        "obj": "configuration"
+      },
+      {
+        "sub": "malware",
+        "rel": "knows",
+        "obj": "C2 server location"
+      },
+      {
+        "sub": "malware",
+        "rel": "knows",
+        "obj": "service name"
+      },
+      {
+        "sub": "malware",
+        "rel": "knows",
+        "obj": "operational times"
+      },
+      {
+        "sub": "DllEntryPoint",
+        "rel": "generates",
+        "obj": "mainThread"
+      },
+      {
+        "sub": "DllRegisterServer",
+        "rel": "generates",
+        "obj": "mainThread"
+      },
+      {
+        "sub": "DllRegisterServer",
+        "rel": "has command line argument",
+        "obj": "uninstall argument"
+      },
+      {
+        "sub": "uninstall argument",
+        "rel": "instructs",
+        "obj": "main thread to uninstall"
+      },
+      {
+        "sub": "uninstall argument",
+        "rel": "instructs",
+        "obj": "main thread"
+      },
+      {
+        "sub": "main thread",
+        "rel": "is instructed to",
+        "obj": "uninstall"
+      },
+      {
+        "sub": "uninstall argument",
+        "rel": "instructs",
+        "obj": "main thread to uninstall"
+      },
+      {
+        "sub": "uninstall argument",
+        "rel": "causes",
+        "obj": "removal of driver"
+      },
+      {
+        "sub": "uninstall argument",
+        "rel": "leads to",
+        "obj": "termination of driver"
+      },
+      {
+        "sub": "uninstall argument",
+        "rel": "causes",
+        "obj": "termination of process"
+      },
+      {
+        "sub": "DLL",
+        "rel": "verifies",
+        "obj": "Driver version on victim’s machine"
+      },
+      {
+        "sub": "DLL",
+        "rel": "sends",
+        "obj": "0x12C850"
+      },
+      {
+        "sub": "DLL",
+        "rel": "compares",
+        "obj": "32-bit value"
+      },
+      {
+        "sub": "DLL",
+        "rel": "compares",
+        "obj": "required driver version"
+      },
+      {
+        "sub": "DLL",
+        "rel": "installs",
+        "obj": "Driver version from DLL’s resource section"
+      },
+      {
+        "sub": "DLL",
+        "rel": "activates",
+        "obj": "Driver"
+      },
+      {
+        "sub": "LoadEmbeddedImage",
+        "rel": "uses",
+        "obj": "first 12 bytes"
+      },
+      {
+        "sub": "LoadEmbeddedImage",
+        "rel": "uses",
+        "obj": "ImageHeader"
+      },
+      {
+        "sub": "LoadEmbeddedImage",
+        "rel": "uses",
+        "obj": "dwImageEncodedSize"
+      },
+      {
+        "sub": "LoadEmbeddedImage",
+        "rel": "uses",
+        "obj": "dwImageSizeDecompressed"
+      },
+      {
+        "sub": "LoadEmbeddedImage",
+        "rel": "uses",
+        "obj": "EncodingKey"
+      },
+      {
+        "sub": "Loader",
+        "rel": "interprets",
+        "obj": "PE/COFF header"
+      },
+      {
+        "sub": "Loader",
+        "rel": "loads",
+        "obj": "image into memory"
+      },
+      {
+        "sub": "Loader",
+        "rel": "performs",
+        "obj": "relocation"
+      },
+      {
+        "sub": "Loader",
+        "rel": "calls",
+        "obj": "DLL entry point function"
+      },
+      {
+        "sub": "Loader",
+        "rel": "calls",
+        "obj": "DLL function"
+      },
+      {
+        "sub": "Loader",
+        "rel": "use",
+        "obj": "function"
+      },
+      {
+        "sub": "Loader",
+        "rel": "call",
+        "obj": "function"
+      },
+      {
+        "sub": "Loader",
+        "rel": "call",
+        "obj": "StopServer function"
+      },
+      {
+        "sub": "DLL",
+        "rel": "exposes",
+        "obj": "exported functions"
+      },
+      {
+        "sub": "MatrixMain",
+        "rel": "activates",
+        "obj": "RAT"
+      },
+      {
+        "sub": "MatrixMain",
+        "rel": "activates",
+        "obj": "RAT"
+      },
+      {
+        "sub": "MatrixMain",
+        "rel": "activates",
+        "obj": "RAT"
+      },
+      {
+        "sub": "RAT functionality",
+        "rel": "provides",
+        "obj": "network port forwarding"
+      },
+      {
+        "sub": "RAT functionality",
+        "rel": "provides",
+        "obj": "file transfer"
+      },
+      {
+        "sub": "RAT functionality",
+        "rel": "provides",
+        "obj": "remote command shell"
+      },
+      {
+        "sub": "RAT functionality",
+        "rel": "enables",
+        "obj": "establish a phantom network"
+      },
+      {
+        "sub": "Gen 2 DLL",
+        "rel": "listen for",
+        "obj": "incoming connections"
+      },
+      {
+        "sub": "Gen 2 DLL",
+        "rel": "accepts",
+        "obj": "commands from"
+      },
+      {
+        "sub": "the inbound connection",
+        "rel": "allows",
+        "obj": "an attacker to establish Gen2 infections"
+      },
+      {
+        "sub": "the inbound connection",
+        "rel": "allows",
+        "obj": "infections in victim infrastructure"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can route commands to",
+        "obj": "the pseudo-isolated infections"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can route commands to",
+        "obj": "infections"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can route commands through",
+        "obj": "accessible infected machines"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can route commands through",
+        "obj": "infected machines"
+      },
+      {
+        "sub": "each Gen 2 infection",
+        "rel": "can support",
+        "obj": "up to 10 listening ports"
+      },
+      {
+        "sub": "Gen2 infection",
+        "rel": "can support",
+        "obj": "10 listening ports"
+      },
+      {
+        "sub": "the communication between the Gen 2 malware and the C2",
+        "rel": "is encrypted using",
+        "obj": "a simple DWORD XOR scheme"
+      },
+      {
+        "sub": "Gen2 malware",
+        "rel": "communicates with",
+        "obj": "C2"
+      },
+      {
+        "sub": "Gen2 malware",
+        "rel": "uses",
+        "obj": "DWORD XOR scheme"
+      },
+      {
+        "sub": "communication burst",
+        "rel": "begins with",
+        "obj": "24-byte header"
+      },
+      {
+        "sub": "24-byte header",
+        "rel": "is identical to",
+        "obj": "header found in Gen 1.2"
+      },
+      {
+        "sub": "24-byte header",
+        "rel": "is identical to",
+        "obj": "header"
+      },
+      {
+        "sub": "communication burst",
+        "rel": "immediately following",
+        "obj": "type-specific payload data"
+      },
+      {
+        "sub": "type-specific payload data",
+        "rel": "is indicated by",
+        "obj": "dwPayloadType field"
+      },
+      {
+        "sub": "payload data",
+        "rel": "is indicated by",
+        "obj": "dwPayloadType field"
+      },
+      {
+        "sub": "payload value",
+        "rel": "is NOT encoded with",
+        "obj": "XOR value"
+      },
+      {
+        "sub": "payload",
+        "rel": "is NOT encoded with",
+        "obj": "XOR value"
+      },
+      {
+        "sub": "payload value",
+        "rel": "is used for",
+        "obj": "encoding the header and payload"
+      },
+      {
+        "sub": "payload",
+        "rel": "is used for",
+        "obj": "encoding"
+      },
+      {
+        "sub": "Each DLL",
+        "rel": "includes",
+        "obj": "hardcoded default configuration"
+      },
+      {
+        "sub": "DLL",
+        "rel": "includes",
+        "obj": "configuration"
+      },
+      {
+        "sub": "DLL",
+        "rel": "drops",
+        "obj": "configuration"
+      },
+      {
+        "sub": "RAT",
+        "rel": "uses",
+        "obj": "file version"
+      },
+      {
+        "sub": "configuration data structure",
+        "rel": "doubles as",
+        "obj": "state record"
+      },
+      {
+        "sub": "configuration",
+        "rel": "is preceded by",
+        "obj": "GUID"
+      },
+      {
+        "sub": "configuration",
+        "rel": "is XOR encoded using",
+        "obj": "first 4 bytes of GUID"
+      },
+      {
+        "sub": "RAT",
+        "rel": "extracts",
+        "obj": "device driver image"
+      },
+      {
+        "sub": "RAT",
+        "rel": "creates",
+        "obj": "service"
+      },
+      {
+        "sub": "RAT",
+        "rel": "activates",
+        "obj": "service"
+      },
+      {
+        "sub": "RAT",
+        "rel": "opens handle",
+        "obj": "device driver interface"
+      },
+      {
+        "sub": "RAT",
+        "rel": "deletes",
+        "obj": "service"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "is used in",
+        "obj": "Gen 1.0 and Gen 1.2 operator consoles"
+      },
+      {
+        "sub": "console",
+        "rel": "collects",
+        "obj": "IP address"
+      },
+      {
+        "sub": "console",
+        "rel": "connects to",
+        "obj": "server"
+      },
+      {
+        "sub": "operator",
+        "rel": "has access to",
+        "obj": "functionalities"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "is detected on",
+        "obj": "disk"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "is detected in",
+        "obj": "memory"
+      },
+      {
+        "sub": "YARA signature",
+        "rel": "is developed by",
+        "obj": "Symantec"
+      },
+      {
+        "sub": "network activity",
+        "rel": "is problematic for",
+        "obj": "detection"
+      },
+      {
+        "sub": "network traffic",
+        "rel": "has",
+        "obj": "encrypted traffic"
+      },
+      {
+        "sub": "Snort signature 30948",
+        "rel": "may detect",
+        "obj": "Hikit traffic"
+      },
+      {
+        "sub": "samples",
+        "rel": "have",
+        "obj": "common event names"
+      },
+      {
+        "sub": "samples",
+        "rel": "have",
+        "obj": "mutex strings"
+      },
+      {
+        "sub": "__SHOW__",
+        "rel": "is",
+        "obj": "mutex string"
+      },
+      {
+        "sub": "__HIDE__",
+        "rel": "is",
+        "obj": "mutex string"
+      },
+      {
+        "sub": "__STOP__",
+        "rel": "is",
+        "obj": "mutex string"
+      },
+      {
+        "sub": "Gen 2.3",
+        "rel": "introduces",
+        "obj": "authentication"
+      }
+    ]
+  }
+}

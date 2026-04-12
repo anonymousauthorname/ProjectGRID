@@ -1,0 +1,77 @@
+{
+  "sample_id": "ctinexus__malicious-operations-of-exposed-iam-keys-cryptojacking.json",
+  "sample_index": 62,
+  "source": "ctinexus",
+  "file_name": "malicious-operations-of-exposed-iam-keys-cryptojacking.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "EleKtra-Leak",
+        "type": "Campaign"
+      },
+      {
+        "name": "AWS",
+        "type": "Organization"
+      },
+      {
+        "name": "GitHub",
+        "type": "Organization"
+      },
+      {
+        "name": "IAM credentials",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "AWS Elastic Compute (EC2)",
+        "type": "Software"
+      },
+      {
+        "name": "cryptojacking",
+        "type": "AttackPattern"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "TARGETS",
+        "obj": "IAM credentials"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "CREATES",
+        "obj": "AWS Elastic Compute (EC2)"
+      },
+      {
+        "sub": "AWS Elastic Compute (EC2)",
+        "rel": "PERFORMS",
+        "obj": "cryptojacking"
+      },
+      {
+        "sub": "AWS",
+        "rel": "applies quarantine policy to",
+        "obj": "GitHub"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "PERFORMS",
+        "obj": "cryptojacking"
+      }
+    ]
+  }
+}

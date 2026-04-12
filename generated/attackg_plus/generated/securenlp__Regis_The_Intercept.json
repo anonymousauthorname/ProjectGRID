@@ -1,0 +1,507 @@
+{
+  "sample_id": "securenlp__Regis_The_Intercept",
+  "sample_index": 187,
+  "source": "securenlp",
+  "file_name": "Regis_The_Intercept",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Fake LinkedIn Page"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Social Engineering"
+      },
+      {
+        "sub": "Fake LinkedIn Page",
+        "rel": "Has URL",
+        "obj": "LinkedIn"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Internal Systems"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Staff Workstations"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Email Servers"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Victim Identity"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Network Information"
+      },
+      {
+        "sub": "Belgacom",
+        "rel": "Has location",
+        "obj": "Belgium"
+      },
+      {
+        "sub": "Fake LinkedIn Page",
+        "rel": "Construct",
+        "obj": "Malware Attack"
+      },
+      {
+        "sub": "Malware Attack",
+        "rel": "Launch",
+        "obj": "Fake LinkedIn Page"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Conduct",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Regin"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Employee computer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Internal systems"
+      },
+      {
+        "sub": "Regin",
+        "rel": "Has vulnerability",
+        "obj": "Belgacom"
+      },
+      {
+        "sub": "Regin",
+        "rel": "Operate",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Regin",
+        "rel": "Locate at",
+        "obj": "Belgacom"
+      },
+      {
+        "sub": "Regin",
+        "rel": "Locate at",
+        "obj": "European Union"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Spearphishing"
+      },
+      {
+        "sub": "Spearphishing",
+        "rel": "Has URL",
+        "obj": "Fake LinkedIn page"
+      },
+      {
+        "sub": "Malware attack",
+        "rel": "Infect",
+        "obj": "Employees' computers"
+      },
+      {
+        "sub": "Employees' computers",
+        "rel": "Operate",
+        "obj": "Adversary"
+      },
+      {
+        "sub": "Operation Socialist",
+        "rel": "Belong to",
+        "obj": "Adversary"
+      },
+      {
+        "sub": "Operation Socialist",
+        "rel": "Has tactic",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "serial.sys"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "cdaudio.sys"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "atdisk.sys"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Driver"
+      },
+      {
+        "sub": "Driver",
+        "rel": "Modify",
+        "obj": "Second stage of malware"
+      },
+      {
+        "sub": "Second stage of malware",
+        "rel": "Construct",
+        "obj": "Attack capabilities"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Infected systems"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Kernel-level driver"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "PASSIVE_LEVEL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Avoid",
+        "obj": "IRQL confusion"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Memory headers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Generic memory tags"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Avoid",
+        "obj": "Detection during forensic analysis"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Kernel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System Function"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Adapt",
+        "obj": "Windows NT4 Terminal Server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Adapt",
+        "obj": "Windows 2000"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Maintain",
+        "obj": "Control"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "Elevated Privileges"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Modular design"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Disguise as",
+        "obj": "Legitimate Microsoft driver"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Zero out",
+        "obj": "Memory contents"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Make it difficult for",
+        "obj": "Forensic analysts to identify"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "During pool scanning"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Username"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Domain name"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "System path"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Microsoft SQL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Exchange server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "User session"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "System memory"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "User domains"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Usernames"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "User profiles"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System configurations"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Microsoft SQL servers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Exchange servers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Critical corporate infrastructure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Enable",
+        "obj": "Lateral Movement"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Implants"
+      },
+      {
+        "sub": "Implants",
+        "rel": "Allow",
+        "obj": "Access to internal communications"
+      },
+      {
+        "sub": "Implants",
+        "rel": "Allow",
+        "obj": "Access to customer data"
+      },
+      {
+        "sub": "European Commission",
+        "rel": "Has vulnerability",
+        "obj": "Malware"
+      },
+      {
+        "sub": "European Parliament",
+        "rel": "Has vulnerability",
+        "obj": "Malware"
+      },
+      {
+        "sub": "European Council",
+        "rel": "Has vulnerability",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "User credentials"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System paths"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Network service details"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Support",
+        "obj": "Surveillance"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Support",
+        "obj": "Intelligence gathering"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encrypted communications"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Network capture"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Remote control"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Compromised systems"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encrypted communication channels"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Remote control modules"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Command and control channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Stealth techniques"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Network monitoring tools"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Surveillance"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Integrity of systems"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Data integrity"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Impact on",
+        "obj": "Operational processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Impact on",
+        "obj": "Business processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Integrity of systems"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Data integrity"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Operational processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Business processes"
+      }
+    ]
+  }
+}

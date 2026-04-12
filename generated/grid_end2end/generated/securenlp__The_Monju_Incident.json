@@ -1,0 +1,528 @@
+{
+  "sample_id": "securenlp__The_Monju_Incident",
+  "sample_index": 185,
+  "source": "securenlp",
+  "file_name": "The_Monju_Incident",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Monju fast breeder reactor facility in Japan",
+        "type": "location",
+        "alias": [
+          "the Monju nuclear facility"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Systems Administrator",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "GOM Player update server",
+        "type": "general-software",
+        "alias": [
+          "the GOM Player update server",
+          "app.gomlab.com"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "app.gomlab.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PHP-based webshell",
+        "type": "hacker-tool",
+        "alias": [
+          "a PHP-based webshell"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "image",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "www.fudousankaitori.jp",
+        "type": "domain-name",
+        "alias": [
+          "another compromised server"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "203.189.101.35",
+        "type": "ipv4-addr",
+        "alias": [
+          "the compromised server"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malware",
+        "type": "malware",
+        "alias": [
+          "a variant of a Trojan",
+          "the Gh0st RAT",
+          "the implant on the compromised machine",
+          "the malware",
+          "the Gh0stMiancha variant"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "self-extracting RAR archive",
+        "type": "file",
+        "alias": [
+          "the self-extracting RAR archive containing the malicious files"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "GOM Player setup binary",
+        "type": "file",
+        "alias": [
+          "the official GOM Player setup binary"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Malware installer component",
+        "type": "hacker-tool",
+        "alias": [
+          "the installer component",
+          "the installer",
+          "the installer component (0ae82fd94836815a1e8d284ccb75109d)",
+          "miansha",
+          "install.exe"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Miǎnshā",
+        "type": "abstract-concept",
+        "alias": [
+          "Antivirus avoidance",
+          "Antivirus avoidance (AV avoidance)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Backdoor.Miancha",
+        "type": "indicator",
+        "alias": [
+          "the detection for this code"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Miancha Persistence Registry Keys",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "HKEY_USERS\\.default\\Software\\Classes\\CLSID\\{ECD4FC4D-5213-11D0-B792-00A0C90312E1}\\InProcServer32\\@",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "HKEY_USERS\\.default\\Software\\Classes\\CLSID\\{B12AE898-D056-4378-A844-6D393FE37956}\\InProcServer32\\@",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "C:\\WINDOWS\\temp\\install.ocx",
+        "type": "file",
+        "alias": [
+          "the path C:\\WINDOWS\\temp\\install.ocx"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "dll.tmp",
+        "type": "file",
+        "alias": [
+          "the loader DLL",
+          "the obfuscated TrojanLoader:W32/Gh0stMiancha",
+          "dll.tmp (d5548e1913950a42a04debcac4222bd2)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "dll64.tmp",
+        "type": "file",
+        "alias": [
+          "the 64-bit loader DLL",
+          "Obfuscated TrojanLoader:W64/Gh0stMiancha",
+          "dll64.tmp (01f7b465242237bd3d31d39767aa68e0)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "instructions.pdf",
+        "type": "file",
+        "alias": [
+          "the main implant code",
+          "the DLLs obfuscated with a one-byte XOR with 0x14",
+          "instructions.pdf (569071c45f47b7fb7a75f30bc07d5739)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "instructions64.pdf",
+        "type": "file",
+        "alias": [
+          "the 64-bit version of the implant code",
+          "instructions64.pdf (55474f8e26f2b6fc3b5d78ce9a77b0b0)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "testqweasd.tk",
+        "type": "domain-name",
+        "alias": [
+          "the attacker-controlled server"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "211.43.220.89",
+        "type": "ipv4-addr",
+        "alias": [
+          "TCP port 443"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Gh0st RAT",
+        "type": "malware",
+        "alias": [
+          "the Gh0st RAT",
+          "Gh0st RAT often used by Chinese actors"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "VOHO campaign",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "financial services and technology companies",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Snort signature",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Yara signature",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PlugX trojan",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "compressed bundle",
+        "type": "file",
+        "alias": [
+          "compressed bundle containing the official GOM Player setup binary"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "g:\\ykcx\\install(miansha)\\Release\\install.pdb",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "h:\\2013.11.25\\server(壳)\\Release\\server.pdb",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "C:\\Users\\why\\Desktop\\server(壳)\\x64\\Release\\server.pdb",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PDB String",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Systems Administrator",
+        "rel": "noticed suspicious connections emanating from",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Monju fast breeder reactor facility in Japan"
+      },
+      {
+        "sub": "attacker",
+        "rel": "compromised the GOM Player update server (app.gomlab.com)",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "GOM Player update server"
+      },
+      {
+        "sub": "PHP-based webshell",
+        "rel": "hidden within",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "image"
+      },
+      {
+        "sub": "PHP-based webshell",
+        "rel": "was present on the host since October 2011",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "the Monju nuclear facility"
+      },
+      {
+        "sub": "GOM Player update server",
+        "rel": "modified to redirect the GOM Player update process to another compromised server",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "www.fudousankaitori.jp"
+      },
+      {
+        "sub": "www.fudousankaitori.jp",
+        "rel": "delivered a file containing",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malware"
+      },
+      {
+        "sub": "malware",
+        "rel": "consists of a number of individual pieces",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Malware installer component"
+      },
+      {
+        "sub": "Malware installer component",
+        "rel": "was launched alongside the GOM Player update",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "GOM Player"
+      },
+      {
+        "sub": "Malware installer component",
+        "rel": "is referred to as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "miansha"
+      },
+      {
+        "sub": "Miǎnshā",
+        "rel": "means",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Antivirus avoidance (AV avoidance)"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "named the detection for this code",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Backdoor.Miancha"
+      },
+      {
+        "sub": "Malware installer component",
+        "rel": "is responsible for the malware persistence mechanism",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "malware"
+      },
+      {
+        "sub": "Malware installer component",
+        "rel": "added entries to",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Miancha Persistence Registry Keys"
+      },
+      {
+        "sub": "Malware installer component",
+        "rel": "deobfuscates the",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "dll.tmp"
+      },
+      {
+        "sub": "dll.tmp",
+        "rel": "is an obfuscated TrojanLoader:W32/Gh0stMiancha",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "dll.tmp"
+      },
+      {
+        "sub": "dll64.tmp",
+        "rel": "is an Obfuscated TrojanLoader:W64/Gh0stMiancha",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "dll64.tmp"
+      },
+      {
+        "sub": "dll.tmp",
+        "rel": "reads and deobfuscates",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "instructions.pdf"
+      },
+      {
+        "sub": "instructions.pdf",
+        "rel": "communicates with the attacker-controlled server at",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "testqweasd.tk"
+      },
+      {
+        "sub": "instructions.pdf",
+        "rel": "is a variant of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Gh0st RAT"
+      },
+      {
+        "sub": "Gh0st RAT",
+        "rel": "shows similarities to",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "VOHO campaign"
+      },
+      {
+        "sub": "VOHO campaign",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Gh0st RAT"
+      },
+      {
+        "sub": "Gh0st RAT",
+        "rel": "was spread via watering hole attacks on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "financial services and technology companies"
+      },
+      {
+        "sub": "Snort signature",
+        "rel": "detect",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Gh0st RAT"
+      },
+      {
+        "sub": "Yara signature",
+        "rel": "identify",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Gh0st RAT"
+      },
+      {
+        "sub": "compressed bundle",
+        "rel": "contained",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "malware"
+      },
+      {
+        "sub": "compressed bundle",
+        "rel": "contained",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "GOM Player setup binary"
+      },
+      {
+        "sub": "GOM Player setup binary",
+        "rel": "extracted",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "self-extracting RAR archive"
+      },
+      {
+        "sub": "self-extracting RAR archive",
+        "rel": "extracted",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Malware installer component"
+      },
+      {
+        "sub": "Malware installer component",
+        "rel": "is the",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "install.exe"
+      }
+    ]
+  }
+}

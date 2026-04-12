@@ -1,0 +1,275 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_15.json",
+  "sample_index": 207,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_15.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SophosLabs",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Richard",
+        "type": "identity"
+      },
+      {
+        "name": "malicious HTML attachments",
+        "type": "file"
+      },
+      {
+        "name": "Troj/JSRedirBV",
+        "type": "indicator"
+      },
+      {
+        "name": "embedded script",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "browser",
+        "type": "general-software"
+      },
+      {
+        "name": "remote web page",
+        "type": "url"
+      },
+      {
+        "name": "Mal/IframeQ",
+        "type": "indicator"
+      },
+      {
+        "name": "Canadian Pharmacy and similar",
+        "type": "domain-name"
+      },
+      {
+        "name": "malicious IFRAME",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "JavaScript",
+        "type": "general-software"
+      },
+      {
+        "name": "minified and peppered with junk code",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "deobfuscated",
+        "type": "course-of-action"
+      },
+      {
+        "name": "setTimeOut",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "decryption function",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "xor",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "JavaScript emulation tools",
+        "type": "security-product"
+      },
+      {
+        "name": "location.href",
+        "type": "command"
+      },
+      {
+        "name": "Sophos products",
+        "type": "security-product"
+      },
+      {
+        "name": "generic detection",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "automated analysis techniques",
+        "type": "abstract-concept"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SophosLabs",
+        "rel": "posted a blog about",
+        "rel_type": [
+          "authorizes"
+        ],
+        "obj": "malicious HTML attachments"
+      },
+      {
+        "sub": "Richard",
+        "rel": "posted a blog about",
+        "rel_type": [
+          "authorizes"
+        ],
+        "obj": "malicious HTML attachments"
+      },
+      {
+        "sub": "Current attachments",
+        "rel": "are being blocked as",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Troj/JSRedirBV"
+      },
+      {
+        "sub": "the victim opens the HTML attachment",
+        "rel": "the embedded script will run",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the embedded script"
+      },
+      {
+        "sub": "the embedded script",
+        "rel": "will run within",
+        "rel_type": [
+          "executes-in"
+        ],
+        "obj": "the browser"
+      },
+      {
+        "sub": "the embedded script",
+        "rel": "redirect them to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "a remote web page"
+      },
+      {
+        "sub": "Sophos products",
+        "rel": "block this page as",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Mal/IframeQ"
+      },
+      {
+        "sub": "the attack",
+        "rel": "is twofold",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": [
+          "META redirect to some spammy site (Canadian Pharmacy and similar)",
+          "malicious IFRAME loading further content from another site"
+        ]
+      },
+      {
+        "sub": "Canadian Pharmacy and similar",
+        "rel": "is a target of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "META redirect"
+      },
+      {
+        "sub": "the script",
+        "rel": "is minified and peppered with",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "junk code"
+      },
+      {
+        "sub": "after prettifying and removing the junk code",
+        "rel": "it is fairly simple",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the script"
+      },
+      {
+        "sub": "the decryption function",
+        "rel": "is called via",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "setTimeOut"
+      },
+      {
+        "sub": "the decryption function",
+        "rel": "consists of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "xor"
+      },
+      {
+        "sub": "the script",
+        "rel": "is designed to break",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "JavaScript emulation tools"
+      },
+      {
+        "sub": "the script",
+        "rel": "is able to ensure there has been a sufficient delay",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "setTimeOut delay"
+      },
+      {
+        "sub": "Most emulation tools",
+        "rel": "will tend to ignore",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "setTimeOut delay"
+      },
+      {
+        "sub": "resulting in an incorrect xor key being generated",
+        "rel": "decryption failing",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "decryption failing"
+      },
+      {
+        "sub": "When correctly deobfuscated",
+        "rel": "you can see that",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the script redirects the victim with a location.href"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "is used to evade",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "generic detection"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "is used to hinder",
+        "rel_type": [
+          "hinders"
+        ],
+        "obj": "automated analysis techniques"
+      }
+    ]
+  }
+}

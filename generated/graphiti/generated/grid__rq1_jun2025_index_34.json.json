@@ -1,0 +1,86 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_34.json",
+  "sample_index": 224,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_34.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Dorf",
+        "type": "Malware"
+      },
+      {
+        "name": "Troj/DorfBP",
+        "type": "Malware"
+      },
+      {
+        "name": "Mal/ObfJSAY",
+        "type": "Malware"
+      },
+      {
+        "name": "fireworks.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "ind.php",
+        "type": "Indicator"
+      },
+      {
+        "name": "Happy99",
+        "type": "Malware"
+      },
+      {
+        "name": "Spanska",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Dorf",
+        "rel": "USES",
+        "obj": "fireworks.exe"
+      },
+      {
+        "sub": "Dorf",
+        "rel": "LAUNCHES",
+        "obj": "ind.php"
+      },
+      {
+        "sub": "Troj/DorfBP",
+        "rel": "is detected as",
+        "obj": "Dorf"
+      },
+      {
+        "sub": "Mal/ObfJSAY",
+        "rel": "is detected as",
+        "obj": "Dorf"
+      },
+      {
+        "sub": "Spanska",
+        "rel": "CREATED",
+        "obj": "Happy99"
+      },
+      {
+        "sub": "Happy99",
+        "rel": "USES",
+        "obj": "fireworks"
+      }
+    ]
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "sample_id": "ctinexus__evasive-jupyter-infostealer-campaign-dangerous-variant.json",
+  "sample_index": 53,
+  "source": "ctinexus",
+  "file_name": "evasive-jupyter-infostealer-campaign-dangerous-variant.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Jupyter",
+        "rel": "Has vulnerability",
+        "obj": "Chrome"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Has vulnerability",
+        "obj": "Edge"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Has vulnerability",
+        "obj": "Firefox"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Operate",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Write",
+        "obj": "Legitimate-looking, digitally signed payloads"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Construct",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Has value",
+        "obj": "Computer name"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Has value",
+        "obj": "User's admin privileges"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Has value",
+        "obj": "Cookies"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Has value",
+        "obj": "Web data"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Has value",
+        "obj": "Browser password manager information"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Has value",
+        "obj": "Logins for crypto-wallets"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Has value",
+        "obj": "Remote access app logins"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Operate",
+        "obj": "Command and control  communications"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Act as",
+        "obj": "Dropper"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Act as",
+        "obj": "Loader"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Execute",
+        "obj": "Hollowed shell code"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Execute",
+        "obj": "PowerShell scripts and commands"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Target",
+        "obj": "Ethereum Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Target",
+        "obj": "MyMonero Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Target",
+        "obj": "Atomic Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Access",
+        "obj": "OpenVPN"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Access",
+        "obj": "Remote Desktop Protocol"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Belong to",
+        "obj": "Yellow Cockatoo"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Belong to",
+        "obj": "Solarmarker"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Belong to",
+        "obj": "Polazert"
+      },
+      {
+        "sub": "VMware's Carbon Black MDR",
+        "rel": "Detect",
+        "obj": "Jupyter"
+      },
+      {
+        "sub": "Morphisec",
+        "rel": "Identify",
+        "obj": "Jupyter"
+      },
+      {
+        "sub": "BlackBerry",
+        "rel": "Identify",
+        "obj": "Jupyter"
+      },
+      {
+        "sub": "BlackBerry",
+        "rel": "Report",
+        "obj": "Jupyter targeting crypto-wallets"
+      },
+      {
+        "sub": "BlackBerry",
+        "rel": "Report",
+        "obj": "Jupyter accessing OpenVPN"
+      },
+      {
+        "sub": "BlackBerry",
+        "rel": "Report",
+        "obj": "Jupyter accessing Remote Desktop Protocol"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "PowerShell command"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "digitally signed payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Infect",
+        "obj": "system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "system"
+      },
+      {
+        "sub": "Morphisec",
+        "rel": "Has vulnerability",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "BlackBerry",
+        "rel": "Has vulnerability",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Command and control  communications"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Act as",
+        "obj": "Dropper"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Act as",
+        "obj": "Loader"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "PowerShell scripts and commands"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Hollow shell code to",
+        "obj": "Evade detection"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Execute",
+        "obj": "PowerShell scripts"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "Execute",
+        "obj": "PowerShell commands"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Computer name"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "User's admin privileges"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Cookies"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Web data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Browser password manager information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Logins for crypto-wallets"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Logins for remote access apps"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Victim systems"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Credential harvesting"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Computer name"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "User's admin privileges"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Cookies"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Web data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Browser password manager information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Logins for crypto-wallets"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Logins for remote access apps"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Backdoor",
+        "obj": "Machines"
+      },
+      {
+        "sub": "Morphisec",
+        "rel": "Has vulnerability",
+        "obj": "Command and Control"
+      },
+      {
+        "sub": "BlackBerry",
+        "rel": "Has vulnerability",
+        "obj": "Command and Control"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Command and Control"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "PowerShell scripts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Shell code"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Dropper"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Loader"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Hollow shell code"
+      }
+    ]
+  }
+}

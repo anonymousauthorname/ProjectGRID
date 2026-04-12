@@ -1,0 +1,336 @@
+{
+  "sample_id": "casie__2288.json",
+  "sample_index": 31,
+  "source": "casie",
+  "file_name": "2288.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DocuSign",
+        "type": "Entity"
+      },
+      {
+        "name": "malware phishing attacks",
+        "type": "Entity"
+      },
+      {
+        "name": "data breach",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Word document",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious email campaign",
+        "type": "Entity"
+      },
+      {
+        "name": "subject line: \"Completed: docusign.com – Wire Transfer Instructions for recipient-name Document Ready for Signature",
+        "type": "Entity"
+      },
+      {
+        "name": "link to a downloadable Microsoft Word document",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "third-party",
+        "type": "Entity"
+      },
+      {
+        "name": "DocuSign branding",
+        "type": "Entity"
+      },
+      {
+        "name": "email addresses",
+        "type": "Entity"
+      },
+      {
+        "name": "non-core system",
+        "type": "Entity"
+      },
+      {
+        "name": "service-related announcements",
+        "type": "Entity"
+      },
+      {
+        "name": "suspicious emails",
+        "type": "Entity"
+      },
+      {
+        "name": "spam@docusign.com",
+        "type": "Entity"
+      },
+      {
+        "name": "docusgn.com",
+        "type": "Entity"
+      },
+      {
+        "name": "@docus.com",
+        "type": "Entity"
+      },
+      {
+        "name": "link that starts with anything other than https://www.docusign.com or https://www.docusign.net",
+        "type": "Entity"
+      },
+      {
+        "name": "clicking a link in the message",
+        "type": "Entity"
+      },
+      {
+        "name": "access your documents directly by visiting docusign.com",
+        "type": "Entity"
+      },
+      {
+        "name": "unique security code",
+        "type": "Entity"
+      },
+      {
+        "name": "PDF",
+        "type": "Entity"
+      },
+      {
+        "name": "Office document",
+        "type": "Entity"
+      },
+      {
+        "name": "ZIP file",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing",
+        "type": "Entity"
+      },
+      {
+        "name": "malware writers",
+        "type": "Entity"
+      },
+      {
+        "name": "100 million users",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "malware phishing attacks",
+        "rel": "uses",
+        "obj": "malicious email campaign"
+      },
+      {
+        "sub": "malicious email campaign",
+        "rel": "has subject line",
+        "obj": "Completed: docusign.com – Wire Transfer Instructions for recipient-name Document Ready for Signature"
+      },
+      {
+        "sub": "malicious email campaign",
+        "rel": "contains",
+        "obj": "link to a downloadable Microsoft Word document"
+      },
+      {
+        "sub": "link to a downloadable Microsoft Word document",
+        "rel": "harbors",
+        "obj": "malware"
+      },
+      {
+        "sub": "malicious third-party",
+        "rel": "sent",
+        "obj": "malicious email campaign"
+      },
+      {
+        "sub": "malicious third-party",
+        "rel": "used",
+        "obj": "DocuSign branding"
+      },
+      {
+        "sub": "malicious third-party",
+        "rel": "gained access to",
+        "obj": "non-core system"
+      },
+      {
+        "sub": "malicious third-party",
+        "rel": "stole",
+        "obj": "email addresses"
+      },
+      {
+        "sub": "malicious third-party",
+        "rel": "targeted",
+        "obj": "users expecting to click on links in emails from DocuSign"
+      },
+      {
+        "sub": "malicious third-party",
+        "rel": "sent emails with",
+        "obj": "link that starts with anything other than https://www.docusign.com or https://www.docusign.net"
+      },
+      {
+        "sub": "malicious third-party",
+        "rel": "sent emails with",
+        "obj": "misspellings such as docusgn.com or @docus.com"
+      },
+      {
+        "sub": "malicious third-party",
+        "rel": "used",
+        "obj": "suspicious emails"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "acknowledged",
+        "obj": "data breach"
+      },
+      {
+        "sub": "data breach",
+        "rel": "resulted in",
+        "obj": "malware phishing attacks"
+      },
+      {
+        "sub": "malware phishing attacks",
+        "rel": "target",
+        "obj": "email addresses"
+      },
+      {
+        "sub": "malware phishing attacks",
+        "rel": "exploits",
+        "obj": "users expecting to click on links"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "warned",
+        "obj": "malicious email campaign"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "confirmed",
+        "obj": "malicious third-party gained access to non-core system"
+      },
+      {
+        "sub": "malicious third-party",
+        "rel": "broke in",
+        "obj": "non-core system"
+      },
+      {
+        "sub": "non-core system",
+        "rel": "allows",
+        "obj": "service-related announcements via email"
+      },
+      {
+        "sub": "malicious third-party",
+        "rel": "did not access",
+        "obj": "names, physical addresses, passwords, social security numbers, credit card data, or other customer information"
+      },
+      {
+        "sub": "malicious third-party",
+        "rel": "did not access",
+        "obj": "content or customer documents in eSignature system"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "advises users to forward",
+        "obj": "suspicious emails to spam@docusign.com"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "advises users to delete",
+        "obj": "suspicious emails"
+      },
+      {
+        "sub": "suspicious emails",
+        "rel": "contain",
+        "obj": "attachment"
+      },
+      {
+        "sub": "suspicious emails",
+        "rel": "direct to",
+        "obj": "link that starts with anything other than https://www.docusign.com or https://www.docusign.net"
+      },
+      {
+        "sub": "suspicious emails",
+        "rel": "contain",
+        "obj": "misspellings such as docusgn.com or @docus.com"
+      },
+      {
+        "sub": "suspicious emails",
+        "rel": "appear suspicious because",
+        "obj": "user does not recognize sender"
+      },
+      {
+        "sub": "suspicious emails",
+        "rel": "appear suspicious because",
+        "obj": "user was not expecting to sign a document"
+      },
+      {
+        "sub": "suspicious emails",
+        "rel": "appear suspicious because",
+        "obj": "contain misspellings"
+      },
+      {
+        "sub": "suspicious emails",
+        "rel": "appear suspicious because",
+        "obj": "contain an attachment"
+      },
+      {
+        "sub": "users",
+        "rel": "are advised not to",
+        "obj": "click a link in the message"
+      },
+      {
+        "sub": "users",
+        "rel": "should access documents directly by visiting",
+        "obj": "docusign.com"
+      },
+      {
+        "sub": "users",
+        "rel": "should enter",
+        "obj": "unique security code"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "will never ask recipients to open",
+        "obj": "PDF"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "will never ask recipients to open",
+        "obj": "Office document"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "will never ask recipients to open",
+        "obj": "ZIP file"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "has more than",
+        "obj": "100 million users"
+      },
+      {
+        "sub": "malware writers",
+        "rel": "target",
+        "obj": "DocuSign"
+      },
+      {
+        "sub": "malware writers",
+        "rel": "intensified attacks",
+        "obj": "against DocuSign users and customers"
+      }
+    ]
+  }
+}

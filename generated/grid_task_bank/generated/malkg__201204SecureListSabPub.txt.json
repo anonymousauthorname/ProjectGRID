@@ -1,0 +1,644 @@
+{
+  "sample_id": "malkg__201204SecureListSabPub.txt",
+  "sample_index": 129,
+  "source": "malkg",
+  "file_name": "201204SecureListSabPub.txt",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SabPub",
+        "type": "malware",
+        "alias": [
+          "the bot",
+          "the SabPub bot",
+          "SabPub backdoor"
+        ]
+      },
+      {
+        "name": "MaControl",
+        "type": "malware",
+        "alias": [
+          "backdoor MaControl"
+        ]
+      },
+      {
+        "name": "LuckyCat",
+        "type": "campaign",
+        "alias": [
+          "the APT attack known as LuckyCat"
+        ]
+      },
+      {
+        "name": "199.192.152.*",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "rt*****.onedumb.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "onedumb.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "Fremont, U.S.",
+        "type": "location"
+      },
+      {
+        "name": "port 80",
+        "type": "network-traffic"
+      },
+      {
+        "name": "April 13",
+        "type": "date-time"
+      },
+      {
+        "name": "April 15",
+        "type": "date-time"
+      },
+      {
+        "name": "February 25, 2012",
+        "type": "date-time"
+      },
+      {
+        "name": "40C8786A4887A763D8F3E5243724D1C9",
+        "type": "hash",
+        "alias": [
+          "MD5"
+        ]
+      },
+      {
+        "name": "10th March Statemnet",
+        "type": "file-name",
+        "alias": [
+          "original file name",
+          "document name"
+        ]
+      },
+      {
+        "name": "CVE-2009-0563.a",
+        "type": "vulnerability",
+        "alias": [
+          "Exploit.MSWord.CVE-2009-0563.a"
+        ]
+      },
+      {
+        "name": "Java exploits",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "Mac OS X",
+        "type": "general-software"
+      },
+      {
+        "name": "Microsoft Word documents",
+        "type": "file",
+        "alias": [
+          "Word documents"
+        ]
+      },
+      {
+        "name": "the fake infected system",
+        "type": "infrastructure",
+        "alias": [
+          "goat infected machine",
+          "fake victim machine"
+        ]
+      },
+      {
+        "name": "the C&C server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "the VPS",
+        "type": "infrastructure"
+      },
+      {
+        "name": "the attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "APT controllers"
+        ]
+      },
+      {
+        "name": "the bot",
+        "type": "malware"
+      },
+      {
+        "name": "the malware",
+        "type": "malware"
+      },
+      {
+        "name": "the container DOC",
+        "type": "file"
+      },
+      {
+        "name": "the root and home folders",
+        "type": "windows-registry-key",
+        "alias": [
+          "root and home folders"
+        ]
+      },
+      {
+        "name": "the infection vector",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the original file name",
+        "type": "file-name"
+      },
+      {
+        "name": "the creation date",
+        "type": "date-time"
+      },
+      {
+        "name": "the update date",
+        "type": "date-time"
+      },
+      {
+        "name": "the second variant of SabPub",
+        "type": "malware",
+        "alias": [
+          "variant of SabPub"
+        ]
+      },
+      {
+        "name": "8958.doc",
+        "type": "file",
+        "alias": [
+          "the second SabPub variant"
+        ]
+      },
+      {
+        "name": "the Dalai-Lama",
+        "type": "identity"
+      },
+      {
+        "name": "Tibetan community",
+        "type": "identity"
+      },
+      {
+        "name": "Anniversary of the Tibetan People’s National Uprising Day",
+        "type": "event"
+      },
+      {
+        "name": "Duqu",
+        "type": "malware"
+      },
+      {
+        "name": "the operation",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the APT behind SabPub",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the C&C domain",
+        "type": "domain-name"
+      },
+      {
+        "name": "the media attention",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the free DNS service",
+        "type": "infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SabPub",
+        "rel": "connects to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "199.192.152.*"
+      },
+      {
+        "sub": "199.192.152.*",
+        "rel": "was used in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "other Windows malware samples during 2011"
+      },
+      {
+        "sub": "we",
+        "rel": "have been monitoring",
+        "rel_type": [
+          "monitors"
+        ],
+        "obj": "a fake infected system"
+      },
+      {
+        "sub": "the APT controllers",
+        "rel": "took over",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "our goat infected machine"
+      },
+      {
+        "sub": "port 80",
+        "rel": "was closed on",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "April 13"
+      },
+      {
+        "sub": "port 80",
+        "rel": "was opened on",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Saturday"
+      },
+      {
+        "sub": "the bot",
+        "rel": "started communicating with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "the C&C server"
+      },
+      {
+        "sub": "the traffic",
+        "rel": "was just",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "basic handshakes and exchanges"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "took over",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the connection"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "started analysing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "our fake victim machine"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "listed the contents of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the root and home folders"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "stole",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "some of the goat documents"
+      },
+      {
+        "sub": "the operation of the bot",
+        "rel": "was done manually",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a real attacker"
+      },
+      {
+        "sub": "we",
+        "rel": "confirmed",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "SabPub as APT in active stage"
+      },
+      {
+        "sub": "the C&C domain",
+        "rel": "was shutdown on",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Sunday"
+      },
+      {
+        "sub": "the free DNS service",
+        "rel": "appears to be an initiative from",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "the C&C domain"
+      },
+      {
+        "sub": "the VPS",
+        "rel": "is still active",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "the C&C server"
+      },
+      {
+        "sub": "the second variant of SabPub",
+        "rel": "differs from the original one only slightly",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "the original SabPub"
+      },
+      {
+        "sub": "this version",
+        "rel": "has hardcoded C&C address",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "the IP address of the VPS"
+      },
+      {
+        "sub": "this one",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "the IP address of the VPS"
+      },
+      {
+        "sub": "the second variant of SabPub",
+        "rel": "is",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "SabPub"
+      },
+      {
+        "sub": "Six Microsoft Word documents",
+        "rel": "we detect as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "Exploit.MSWord.CVE-2009-0563.a"
+      },
+      {
+        "sub": "four documents",
+        "rel": "dropped",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "the MaControl bot"
+      },
+      {
+        "sub": "the remaining two",
+        "rel": "drop",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "SabPub"
+      },
+      {
+        "sub": "the second variant of SabPub",
+        "rel": "is named",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "8958.doc"
+      },
+      {
+        "sub": "the second variant of SabPub",
+        "rel": "was extracted from",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "a Word document"
+      },
+      {
+        "sub": "the second variant of SabPub",
+        "rel": "was distributed as",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "a Doc-file"
+      },
+      {
+        "sub": "the sample",
+        "rel": "was uploaded to",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "VirusTotal on February 25, 2012"
+      },
+      {
+        "sub": "the original file name",
+        "rel": "was",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "10th March Statemnet"
+      },
+      {
+        "sub": "the name of the file",
+        "rel": "is directly linked with",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "the Dalai-Lama"
+      },
+      {
+        "sub": "the name of the file",
+        "rel": "related to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Anniversary of the Tibetan People’s National Uprising Day"
+      },
+      {
+        "sub": "the container DOC",
+        "rel": "was created in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "August 2010"
+      },
+      {
+        "sub": "the container DOC",
+        "rel": "was updated in",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "2012"
+      },
+      {
+        "sub": "SabPub",
+        "rel": "was created as far back as",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "February 2012"
+      },
+      {
+        "sub": "SabPub",
+        "rel": "was distributed via",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "spearphishing emails"
+      },
+      {
+        "sub": "SabPub",
+        "rel": "remained undetected for",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "almost two months"
+      },
+      {
+        "sub": "the second variant of SabPub",
+        "rel": "was created in",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "March"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "are using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Java exploits to infect target Mac OS X machines"
+      },
+      {
+        "sub": "SabPub",
+        "rel": "is still an active attack",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "at the time of writing"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "will release",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "new variants of the bot"
+      },
+      {
+        "sub": "the bot",
+        "rel": "exists in at least two variants",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "the second variant of SabPub"
+      },
+      {
+        "sub": "the earliest version of the bot",
+        "rel": "appeared to have been created and used in",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "February 2012"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is being spread through",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Word documents that exploit the CVE-2009-0563 vulnerability"
+      },
+      {
+        "sub": "SabPub",
+        "rel": "is different from",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "MaControl"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "are using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Java exploits"
+      },
+      {
+        "sub": "SabPub",
+        "rel": "was the more effective attack",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "because it remained undetected for more than 1.5 months"
+      },
+      {
+        "sub": "the APT behind SabPub",
+        "rel": "is active",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "at the time of writing"
+      },
+      {
+        "sub": "the C&C domain",
+        "rel": "was shutdown",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "by the free DNS service"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "will release",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "new variants of the bot with new C2s"
+      },
+      {
+        "sub": "the second variant of SabPub",
+        "rel": "was created",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "in March"
+      },
+      {
+        "sub": "SabPub",
+        "rel": "is active",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "an active attack"
+      },
+      {
+        "sub": "we",
+        "rel": "think the above facts show",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "a direct connection between the SabPub and LuckyCat APT attacks"
+      }
+    ]
+  }
+}

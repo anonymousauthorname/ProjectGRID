@@ -1,0 +1,144 @@
+{
+  "sample_id": "casie__638.json",
+  "sample_index": 20,
+  "source": "casie",
+  "file_name": "638.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "QATAR",
+        "type": "GEO"
+      },
+      {
+        "name": "2022 FIFA SOCCER WORLD CUP",
+        "type": "EVENT"
+      },
+      {
+        "name": "MIGRANT WORKERS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "SALEENA MALIK",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "CLAUDIO GUARNERI",
+        "type": "PERSON"
+      },
+      {
+        "name": "AMNESTY INTERNATIONAL",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "PHISHING ATTACK",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "GOVERNMENT OF QATAR",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "QATAR INTERNET SERVICE PROVIDER",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "FIFA",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "PHISHING PAGE",
+        "type": "TOOL"
+      },
+      {
+        "name": "SOCIAL ENGINEERING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "CONSTRUCTION FIRMS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "JOURNALISTS AND ACTIVISTS",
+        "type": "IDENTITY"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SALEENA MALIK",
+        "rel": "related_to",
+        "obj": "PHISHING ATTACK"
+      },
+      {
+        "sub": "CLAUDIO GUARNERI",
+        "rel": "related_to",
+        "obj": "PHISHING ATTACK"
+      },
+      {
+        "sub": "AMNESTY INTERNATIONAL",
+        "rel": "related_to",
+        "obj": "PHISHING ATTACK"
+      },
+      {
+        "sub": "GOVERNMENT OF QATAR",
+        "rel": "related_to",
+        "obj": "PHISHING ATTACK"
+      },
+      {
+        "sub": "FIFA",
+        "rel": "related_to",
+        "obj": "2022 FIFA SOCCER WORLD CUP"
+      },
+      {
+        "sub": "SALEENA MALIK",
+        "rel": "related_to",
+        "obj": "JOURNALISTS AND ACTIVISTS"
+      },
+      {
+        "sub": "PHISHING PAGE",
+        "rel": "related_to",
+        "obj": "PHISHING ATTACK"
+      },
+      {
+        "sub": "PHISHING ATTACK",
+        "rel": "related_to",
+        "obj": "SOCIAL ENGINEERING"
+      },
+      {
+        "sub": "QATAR INTERNET SERVICE PROVIDER",
+        "rel": "related_to",
+        "obj": "PHISHING PAGE"
+      },
+      {
+        "sub": "MIGRANT WORKERS",
+        "rel": "related_to",
+        "obj": "QATAR"
+      },
+      {
+        "sub": "CONSTRUCTION FIRMS",
+        "rel": "related_to",
+        "obj": "QATAR"
+      },
+      {
+        "sub": "PHISHING ATTACK",
+        "rel": "related_to",
+        "obj": "SALEENA MALIK"
+      }
+    ]
+  }
+}

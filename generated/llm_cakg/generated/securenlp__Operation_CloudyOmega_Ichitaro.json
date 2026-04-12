@@ -1,0 +1,311 @@
+{
+  "sample_id": "securenlp__Operation_CloudyOmega_Ichitaro",
+  "sample_index": 171,
+  "source": "securenlp",
+  "file_name": "Operation_CloudyOmega_Ichitaro",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Malware names",
+        "type": "Entity"
+      },
+      {
+        "name": "backdoor programs",
+        "type": "Entity"
+      },
+      {
+        "name": "Dropper files",
+        "type": "Entity"
+      },
+      {
+        "name": "scripts",
+        "type": "Entity"
+      },
+      {
+        "name": "URLs",
+        "type": "Entity"
+      },
+      {
+        "name": "IP addresses",
+        "type": "Entity"
+      },
+      {
+        "name": "domain names",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Entity"
+      },
+      {
+        "name": "filenames",
+        "type": "Entity"
+      },
+      {
+        "name": "file paths",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious scripts",
+        "type": "Entity"
+      },
+      {
+        "name": "tools",
+        "type": "Entity"
+      },
+      {
+        "name": "encoding methods",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actors or organizations",
+        "type": "Entity"
+      },
+      {
+        "name": "attack vectors",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "exploits",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE numbers",
+        "type": "Entity"
+      },
+      {
+        "name": "registry keys",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled tasks",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanisms",
+        "type": "Entity"
+      },
+      {
+        "name": "technical identifiers",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Operation CloudyOmega",
+        "rel": "exploits",
+        "obj": "CVE-2012-5054"
+      },
+      {
+        "sub": "Operation CloudyOmega",
+        "rel": "exploits",
+        "obj": "Ichitaro zero-day vulnerability"
+      },
+      {
+        "sub": "Operation CloudyOmega",
+        "rel": "uses",
+        "obj": "Backdoor.Emdivi"
+      },
+      {
+        "sub": "Operation CloudyOmega",
+        "rel": "uses",
+        "obj": "Backdoor.Korplug"
+      },
+      {
+        "sub": "Operation CloudyOmega",
+        "rel": "uses",
+        "obj": "Backdoor.ZXshell"
+      },
+      {
+        "sub": "Operation CloudyOmega",
+        "rel": "targets",
+        "obj": "Japanese organizations"
+      },
+      {
+        "sub": "Operation CloudyOmega",
+        "rel": "uses",
+        "obj": "email as attack vector"
+      },
+      {
+        "sub": "Operation CloudyOmega",
+        "rel": "downloads",
+        "obj": "malicious Ichitaro document"
+      },
+      {
+        "sub": "malicious Ichitaro document",
+        "rel": "contains",
+        "obj": "Bloodhound.Exploit.557"
+      },
+      {
+        "sub": "Bloodhound.Exploit.557",
+        "rel": "drops",
+        "obj": "Backdoor.Emdivi"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "connects to",
+        "obj": "C2 infrastructure"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "uses",
+        "obj": "HTTP protocol"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "steals",
+        "obj": "credentials stored by Internet Explorer"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "executes code through",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "Backdoor.Emdivi (Type T)",
+        "rel": "is written in",
+        "obj": "C++"
+      },
+      {
+        "sub": "Backdoor.Emdivi (Type T)",
+        "rel": "detects",
+        "obj": "VirtualMachine"
+      },
+      {
+        "sub": "Backdoor.Emdivi (Type T)",
+        "rel": "detects",
+        "obj": "Debugger"
+      },
+      {
+        "sub": "Backdoor.Emdivi (Type T)",
+        "rel": "detects",
+        "obj": "Sandbox"
+      },
+      {
+        "sub": "Backdoor.Emdivi (Type S)",
+        "rel": "uses",
+        "obj": "Japanese sentences from internet"
+      },
+      {
+        "sub": "Backdoor.Emdivi (Type S)",
+        "rel": "generates",
+        "obj": "file hash"
+      },
+      {
+        "sub": "Backdoor.Emdivi (Type S)",
+        "rel": "lacks",
+        "obj": "protection mechanisms"
+      },
+      {
+        "sub": "Backdoor.Emdivi (Type S)",
+        "rel": "lacks",
+        "obj": "encryption"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "is hosted on",
+        "obj": "compromised Japanese websites"
+      },
+      {
+        "sub": "compromised Japanese websites",
+        "rel": "are hosted on",
+        "obj": "cloud-hosting service in Japan"
+      },
+      {
+        "sub": "cloud-hosting service in Japan",
+        "rel": "hosts",
+        "obj": "50 unique domains"
+      },
+      {
+        "sub": "CloudyOmega attackers",
+        "rel": "exploits",
+        "obj": "CVE-2013-0634"
+      },
+      {
+        "sub": "CloudyOmega attackers",
+        "rel": "shares zero-day exploit with",
+        "obj": "subgroups"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "is connected to",
+        "obj": "Hidden Lynx"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "is connected to",
+        "obj": "LadyBoyle group"
+      },
+      {
+        "sub": "malicious SWF file",
+        "rel": "exploits",
+        "obj": "CVE-2012-5054"
+      },
+      {
+        "sub": "malicious SWF file",
+        "rel": "installs",
+        "obj": "Backdoor.Emdivi"
+      },
+      {
+        "sub": "malicious SWF file",
+        "rel": "is contained in",
+        "obj": "Microsoft Word file"
+      },
+      {
+        "sub": "Operation CloudyOmega",
+        "rel": "has been active since",
+        "obj": "2011"
+      },
+      {
+        "sub": "Operation CloudyOmega",
+        "rel": "is persistent in",
+        "obj": "targeting Japanese organizations"
+      },
+      {
+        "sub": "Ichitaro product line",
+        "rel": "has zero-day vulnerability",
+        "obj": "CVE-2012-5054"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "detects",
+        "obj": "Bloodhound.Exploit.557"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "offers IPS signature for",
+        "obj": "Backdoor.Emdivi Activity"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "offers IPS signature for",
+        "obj": "Backdoor.Emdivi Activity 2"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "recommends patching",
+        "obj": "Ichitaro products"
+      }
+    ]
+  }
+}

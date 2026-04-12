@@ -1,0 +1,86 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_16.json",
+  "sample_index": 208,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_16.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Europcar",
+        "type": "Organization"
+      },
+      {
+        "name": "EuropCar Invoice.zip",
+        "type": "Indicator"
+      },
+      {
+        "name": "Troj/InvoZip",
+        "type": "Malware"
+      },
+      {
+        "name": "Sophos",
+        "type": "Organization"
+      },
+      {
+        "name": "CustomerServicesUKeuropcar.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "http://www.europcar.co.uk",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Windows",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Europcar",
+        "rel": "FORGES",
+        "obj": "EuropCar Invoice.zip"
+      },
+      {
+        "sub": "EuropCar Invoice.zip",
+        "rel": "CONTAINS",
+        "obj": "Troj/InvoZip"
+      },
+      {
+        "sub": "Sophos",
+        "rel": "DETECTS",
+        "obj": "EuropCar Invoice.zip"
+      },
+      {
+        "sub": "EuropCar Invoice.zip",
+        "rel": "inflicts infection on",
+        "obj": "Windows"
+      },
+      {
+        "sub": "CustomerServicesUKeuropcar.com",
+        "rel": "is contact point for",
+        "obj": "Europcar"
+      },
+      {
+        "sub": "http://www.europcar.co.uk",
+        "rel": "is official website of",
+        "obj": "Europcar"
+      }
+    ]
+  }
+}

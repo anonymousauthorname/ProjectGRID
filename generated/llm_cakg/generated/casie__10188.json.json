@@ -1,0 +1,302 @@
+{
+  "sample_id": "casie__10188.json",
+  "sample_index": 25,
+  "source": "casie",
+  "file_name": "10188.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2018-17144",
+        "type": "Entity"
+      },
+      {
+        "name": "Bitcoin Core",
+        "type": "Entity"
+      },
+      {
+        "name": "denial-of-service (DoS)",
+        "type": "Entity"
+      },
+      {
+        "name": "51% Attacks",
+        "type": "Entity"
+      },
+      {
+        "name": "Bitcoin network",
+        "type": "Entity"
+      },
+      {
+        "name": "Bitcoin miners",
+        "type": "Entity"
+      },
+      {
+        "name": "full-node operators",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "attack",
+        "type": "Entity"
+      },
+      {
+        "name": "exploit",
+        "type": "Entity"
+      },
+      {
+        "name": "Bitcoin Core client",
+        "type": "Entity"
+      },
+      {
+        "name": "version 0.16.3",
+        "type": "Entity"
+      },
+      {
+        "name": "version 0.14.0",
+        "type": "Entity"
+      },
+      {
+        "name": "Bitcoin Knots",
+        "type": "Entity"
+      },
+      {
+        "name": "litecoin (LTC) network",
+        "type": "Entity"
+      },
+      {
+        "name": "copycat currencies",
+        "type": "Entity"
+      },
+      {
+        "name": "Bitcoin Private (BTCP) network",
+        "type": "Entity"
+      },
+      {
+        "name": "Crypto51",
+        "type": "Entity"
+      },
+      {
+        "name": "Emin Gün Sirer",
+        "type": "Entity"
+      },
+      {
+        "name": "APT",
+        "type": "Entity"
+      },
+      {
+        "name": "bad actor",
+        "type": "Entity"
+      },
+      {
+        "name": "remote exploitation",
+        "type": "Entity"
+      },
+      {
+        "name": "software bug",
+        "type": "Entity"
+      },
+      {
+        "name": "critical patch",
+        "type": "Entity"
+      },
+      {
+        "name": "advisory notice",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanism",
+        "type": "Entity"
+      },
+      {
+        "name": "registry key",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled task",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing email",
+        "type": "Entity"
+      },
+      {
+        "name": "USB device",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Entity"
+      },
+      {
+        "name": "shellcode",
+        "type": "Entity"
+      },
+      {
+        "name": "macro",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious script",
+        "type": "Entity"
+      },
+      {
+        "name": "dropper file",
+        "type": "Entity"
+      },
+      {
+        "name": "backdoor program",
+        "type": "Entity"
+      },
+      {
+        "name": "URL",
+        "type": "Entity"
+      },
+      {
+        "name": "IP address",
+        "type": "Entity"
+      },
+      {
+        "name": "domain name",
+        "type": "Entity"
+      },
+      {
+        "name": "file path",
+        "type": "Entity"
+      },
+      {
+        "name": "filename",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2018-17144",
+        "rel": "is classified as",
+        "obj": "denial-of-service (DoS)"
+      },
+      {
+        "sub": "CVE-2018-17144",
+        "rel": "can take down",
+        "obj": "Bitcoin network"
+      },
+      {
+        "sub": "CVE-2018-17144",
+        "rel": "affects",
+        "obj": "full-node operators"
+      },
+      {
+        "sub": "CVE-2018-17144",
+        "rel": "could have been remotely exploited by",
+        "obj": "attacker"
+      },
+      {
+        "sub": "attacker",
+        "rel": "could launch",
+        "obj": "51% Attack"
+      },
+      {
+        "sub": "51% Attack",
+        "rel": "requires control of",
+        "obj": "majority of hashing power"
+      },
+      {
+        "sub": "Bitcoin Core",
+        "rel": "contains",
+        "obj": "software bug"
+      },
+      {
+        "sub": "Bitcoin Core",
+        "rel": "is used by",
+        "obj": "Bitcoin miners"
+      },
+      {
+        "sub": "Bitcoin Core",
+        "rel": "validates transactions on",
+        "obj": "Bitcoin network blockchain"
+      },
+      {
+        "sub": "Bitcoin Core",
+        "rel": "has vulnerability in version",
+        "obj": "version 0.14.0 to version 0.16.3"
+      },
+      {
+        "sub": "Bitcoin Core",
+        "rel": "was patched in version",
+        "obj": "version 0.16.3"
+      },
+      {
+        "sub": "Bitcoin Core developers",
+        "rel": "posted",
+        "obj": "advisory notice"
+      },
+      {
+        "sub": "advisory notice",
+        "rel": "was issued on",
+        "obj": "September 19th"
+      },
+      {
+        "sub": "advisory notice",
+        "rel": "instructs users to upgrade to",
+        "obj": "version 0.16.3"
+      },
+      {
+        "sub": "Bitcoin Knots",
+        "rel": "was considered vulnerable",
+        "obj": "CVE-2018-17144"
+      },
+      {
+        "sub": "CVE-2018-17144",
+        "rel": "could have affected",
+        "obj": "litecoin (LTC) network"
+      },
+      {
+        "sub": "Emin Gün Sirer",
+        "rel": "stated that",
+        "obj": "copycat currencies are at risk"
+      },
+      {
+        "sub": "copycat currencies",
+        "rel": "are vulnerable to",
+        "obj": "51% Attack"
+      },
+      {
+        "sub": "copycat currencies",
+        "rel": "are less secure than",
+        "obj": "Bitcoin network"
+      },
+      {
+        "sub": "Crypto51",
+        "rel": "estimated it would cost",
+        "obj": "$490,000 to launch a 51% attack on Bitcoin network (for 1 hour)"
+      },
+      {
+        "sub": "Crypto51",
+        "rel": "estimated it would cost",
+        "obj": "$122 to launch a 51% attack on Bitcoin Private (BTCP) network"
+      },
+      {
+        "sub": "Bitcoin Private (BTCP) network",
+        "rel": "is vulnerable to",
+        "obj": "51% Attack"
+      }
+    ]
+  }
+}

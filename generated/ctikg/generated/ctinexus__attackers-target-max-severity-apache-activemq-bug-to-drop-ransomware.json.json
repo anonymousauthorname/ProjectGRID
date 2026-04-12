@@ -1,0 +1,102 @@
+{
+  "sample_id": "ctinexus__attackers-target-max-severity-apache-activemq-bug-to-drop-ransomware.json",
+  "sample_index": 51,
+  "source": "ctinexus",
+  "file_name": "attackers-target-max-severity-apache-activemq-bug-to-drop-ransomware.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Apache ActiveMQ Servers",
+        "rel": "exposed to",
+        "obj": "remote code execution vulnerability"
+      },
+      {
+        "sub": "attacker",
+        "rel": "targets",
+        "obj": "Apache ActiveMQ Servers"
+      },
+      {
+        "sub": "attacker",
+        "rel": "targets",
+        "obj": "remote code execution vulnerability"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "allows",
+        "obj": "arbitrary command execution"
+      },
+      {
+        "sub": "attacker",
+        "rel": "can execute",
+        "obj": "arbitrary commands"
+      },
+      {
+        "sub": "attacker",
+        "rel": "has access to",
+        "obj": "ActiveMQ"
+      },
+      {
+        "sub": "Apache Software Foundation",
+        "rel": "disclosed",
+        "obj": "CVE"
+      },
+      {
+        "sub": "CVE",
+        "rel": "is associated with",
+        "obj": "Apache Software Foundation"
+      },
+      {
+        "sub": "bug",
+        "rel": "allows",
+        "obj": "arbitrary command execution"
+      },
+      {
+        "sub": "bug",
+        "rel": "is associated with",
+        "obj": "Apache ActiveMQ Servers"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "enables",
+        "obj": "ransomware"
+      },
+      {
+        "sub": "targeted organization",
+        "rel": "running",
+        "obj": "Apache ActiveMQ Servers"
+      },
+      {
+        "sub": "HelloKitty ransomware",
+        "rel": "leverage",
+        "obj": "remote code execution vulnerability"
+      },
+      {
+        "sub": "threat actor",
+        "rel": "attempts to encrypt",
+        "obj": "data"
+      },
+      {
+        "sub": "threat actor",
+        "rel": "targets",
+        "obj": "data"
+      }
+    ]
+  }
+}

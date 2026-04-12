@@ -1,0 +1,192 @@
+{
+  "sample_id": "ctinexus__apache-erp-0day-underscores-dangers-of-incomplete-patches.json",
+  "sample_index": 86,
+  "source": "ctinexus",
+  "file_name": "apache-erp-0day-underscores-dangers-of-incomplete-patches.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "zero-day vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2023-51467",
+        "type": "Entity"
+      },
+      {
+        "name": "Apache OFBiz",
+        "type": "Entity"
+      },
+      {
+        "name": "enterprise resource planning (ERP) framework",
+        "type": "Entity"
+      },
+      {
+        "name": "Apache Software Foundation",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2023-49070",
+        "type": "Entity"
+      },
+      {
+        "name": "SonicWall",
+        "type": "Entity"
+      },
+      {
+        "name": "cybersecurity firm",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "sensitive information access",
+        "type": "Entity"
+      },
+      {
+        "name": "software patch",
+        "type": "Entity"
+      },
+      {
+        "name": "attack vector",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability disclosure",
+        "type": "Entity"
+      },
+      {
+        "name": "security analysis",
+        "type": "Entity"
+      },
+      {
+        "name": "software fix",
+        "type": "Entity"
+      },
+      {
+        "name": "attack variation",
+        "type": "Entity"
+      },
+      {
+        "name": "enterprise software",
+        "type": "Entity"
+      },
+      {
+        "name": "open-source software",
+        "type": "Entity"
+      },
+      {
+        "name": "patch failure",
+        "type": "Entity"
+      },
+      {
+        "name": "remote access",
+        "type": "Entity"
+      },
+      {
+        "name": "information exposure",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "is a known vulnerability in",
+        "obj": "Apache OFBiz"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "enables",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "exposes",
+        "obj": "sensitive information access"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "is an example of",
+        "obj": "attack vector"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "was disclosed by",
+        "obj": "vulnerability disclosure"
+      },
+      {
+        "sub": "CVE-2023-49070",
+        "rel": "originally patched by",
+        "obj": "Apache OFBiz"
+      },
+      {
+        "sub": "CVE-2023-49070",
+        "rel": "failed to prevent",
+        "obj": "patch failure"
+      },
+      {
+        "sub": "patch failure",
+        "rel": "is a consequence of",
+        "obj": "CVE-2023-51467"
+      },
+      {
+        "sub": "SonicWall",
+        "rel": "performed security analysis on",
+        "obj": "CVE-2023-51467"
+      },
+      {
+        "sub": "Apache OFBiz",
+        "rel": "is a type of",
+        "obj": "enterprise resource planning (ERP) framework"
+      },
+      {
+        "sub": "Apache OFBiz",
+        "rel": "is associated with",
+        "obj": "Apache Software Foundation"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "is a variation of",
+        "obj": "attack variation"
+      },
+      {
+        "sub": "Apache Software Foundation",
+        "rel": "released a patch for",
+        "obj": "CVE-2023-49070"
+      },
+      {
+        "sub": "SonicWall",
+        "rel": "is associated with",
+        "obj": "vulnerability disclosure"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "is a form of",
+        "obj": "attack variation"
+      },
+      {
+        "sub": "attack variation",
+        "rel": "is a variation of an attack",
+        "obj": "CVE-2023-51467"
+      }
+    ]
+  }
+}

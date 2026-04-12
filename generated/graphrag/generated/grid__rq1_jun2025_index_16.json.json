@@ -1,0 +1,121 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_16.json",
+  "sample_index": 208,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_16.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SOPHOSLABS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "EUROPCAR",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "EUROPCAR UK LTD",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "EUROPCAR INVOICE.ZIP",
+        "type": "MALWARE"
+      },
+      {
+        "name": "TROJ/INVOZIP",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CYBERCRIMINALS",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "WINDOWS COMPUTERS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ANTIVIRUS DEFENCES",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PHISHING EMAIL",
+        "type": "EVENT"
+      },
+      {
+        "name": "CAR RENTAL",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "EUROPCAR.CO.UK",
+        "type": "LOCATION"
+      },
+      {
+        "name": "GREG CLULEY",
+        "type": "PERSON"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "EUROPCAR UK LTD",
+        "rel": "related_to",
+        "obj": "EUROPCAR INVOICE.ZIP"
+      },
+      {
+        "sub": "CYBERCRIMINALS",
+        "rel": "related_to",
+        "obj": "EUROPCAR INVOICE.ZIP"
+      },
+      {
+        "sub": "EUROPCAR INVOICE.ZIP",
+        "rel": "related_to",
+        "obj": "TROJ/INVOZIP"
+      },
+      {
+        "sub": "TROJ/INVOZIP",
+        "rel": "related_to",
+        "obj": "WINDOWS COMPUTERS"
+      },
+      {
+        "sub": "SOPHOSLABS",
+        "rel": "related_to",
+        "obj": "EUROPCAR INVOICE.ZIP"
+      },
+      {
+        "sub": "PHISHING EMAIL",
+        "rel": "related_to",
+        "obj": "CYBERCRIMINALS"
+      },
+      {
+        "sub": "PHISHING EMAIL",
+        "rel": "related_to",
+        "obj": "EUROPCAR INVOICE.ZIP"
+      },
+      {
+        "sub": "PHISHING EMAIL",
+        "rel": "related_to",
+        "obj": "EUROPCAR UK LTD"
+      },
+      {
+        "sub": "GREG CLULEY",
+        "rel": "related_to",
+        "obj": "SOPHOSLABS"
+      }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-targetcompany.json",
+  "sample_index": 68,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-targetcompany.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Malware",
+        "type": "Unknown"
+      },
+      {
+        "name": "Time",
+        "type": "Unknown"
+      },
+      {
+        "name": "Malware Characteristic",
+        "type": "Unknown"
+      },
+      {
+        "name": "Event",
+        "type": "Unknown"
+      },
+      {
+        "name": "File",
+        "type": "Unknown"
+      },
+      {
+        "name": "Vulnerability",
+        "type": "Unknown"
+      },
+      {
+        "name": "Domain",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "changed encryption algorithm in",
+        "obj": "Time"
+      },
+      {
+        "sub": "Malware",
+        "rel": "has different decryptor characteristics in",
+        "obj": "Time"
+      },
+      {
+        "sub": "Malware",
+        "rel": "changed file name extensions in",
+        "obj": "Malware Characteristic"
+      },
+      {
+        "sub": "Malware",
+        "rel": "provided a .onion contact site for",
+        "obj": "Event"
+      },
+      {
+        "sub": "Malware",
+        "rel": "dropped ransom notes named",
+        "obj": "File"
+      },
+      {
+        "sub": "Malware",
+        "rel": "no longer uses",
+        "obj": "Malware Characteristic"
+      },
+      {
+        "sub": "Malware",
+        "rel": "was given the name Fargo due to",
+        "obj": "Time"
+      },
+      {
+        "sub": "Malware",
+        "rel": "uses file extensions including",
+        "obj": "File"
+      },
+      {
+        "sub": "Malware",
+        "rel": "uses encryption algorithms including",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Malware",
+        "rel": "established a data leak site named",
+        "obj": "Domain"
+      }
+    ]
+  }
+}

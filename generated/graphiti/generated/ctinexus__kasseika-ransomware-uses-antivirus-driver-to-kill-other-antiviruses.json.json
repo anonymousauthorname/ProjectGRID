@@ -1,0 +1,105 @@
+{
+  "sample_id": "ctinexus__kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "sample_index": 57,
+  "source": "ctinexus",
+  "file_name": "kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Kasseika",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Martini.sys",
+        "type": "Malware"
+      },
+      {
+        "name": "viragt64.sys",
+        "type": "Malware"
+      },
+      {
+        "name": "TG Soft",
+        "type": "Organization"
+      },
+      {
+        "name": "VirtIT Agent System",
+        "type": "Software"
+      },
+      {
+        "name": "Windows PsExec",
+        "type": "Tool"
+      },
+      {
+        "name": "Martini.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "Bring Your Own Vulnerable Driver",
+        "type": "AttackPattern"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Kasseika",
+        "rel": "USES",
+        "obj": "Bring Your Own Vulnerable Driver"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "ABUSES",
+        "obj": "Martini.sys"
+      },
+      {
+        "sub": "Martini.sys",
+        "rel": "part of",
+        "obj": "VirtIT Agent System"
+      },
+      {
+        "sub": "TG Soft",
+        "rel": "DEVELOPS",
+        "obj": "VirtIT Agent System"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "USES",
+        "obj": "Windows PsExec"
+      },
+      {
+        "sub": "Windows PsExec",
+        "rel": "TERMINATES",
+        "obj": "Martini.exe"
+      },
+      {
+        "sub": "Martini.exe",
+        "rel": "checks for",
+        "obj": "Bring Your Own Vulnerable Driver"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "TERMINATES",
+        "obj": "antivirus products"
+      },
+      {
+        "sub": "Bring Your Own Vulnerable Driver",
+        "rel": "TERMINATES",
+        "obj": "antivirus products"
+      }
+    ]
+  }
+}

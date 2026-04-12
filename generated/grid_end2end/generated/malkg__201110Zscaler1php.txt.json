@@ -1,0 +1,710 @@
+{
+  "sample_id": "malkg__201110Zscaler1php.txt",
+  "sample_index": 128,
+  "source": "malkg",
+  "file_name": "201110Zscaler1php.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "1.php Group",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "this Group",
+          "this intrusion set",
+          "these intrusion sets",
+          "this Group’s methods",
+          "this Group’s targeted victims",
+          "the attacker"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "spear-phishing emails",
+        "type": "attack-pattern",
+        "alias": [
+          "malicious PDF attachments or web links"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malicious PDF attachments",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "web links to binary executables",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Poison Ivy remote administration tool (RAT)",
+        "type": "malware",
+        "alias": [
+          "Poison Ivy RAT",
+          "the malware",
+          "the RAT payload",
+          "malware variants",
+          "generic Trojan",
+          "Backdoor"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "China/US relations experts",
+        "type": "identity",
+        "alias": [
+          "experts on Japan, China, Taiwan / USA relationships"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Defense entities",
+        "type": "identity",
+        "alias": [
+          "Defense Industrial Base (DIB) entities"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Geospatial industry",
+        "type": "identity",
+        "alias": [
+          "commercial entities within the Geospatial industry"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Zscaler",
+        "type": "security-product",
+        "alias": [
+          "Zscaler ThreatLabZ",
+          "Zscaler ThreatLabZ researchers",
+          "Zscaler’s comprehensive logging repository"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "United States troop deployment in Afghanistan",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "WWW.DREAMLIFES.NET/Afghanistan/Afghanistan.zip",
+        "type": "file",
+        "alias": [
+          "malicious link",
+          "the malware",
+          "Windows executable with an SCR extension"
+        ],
+        "mother entity": [
+          "malicious PDF attachments"
+        ]
+      },
+      {
+        "name": "CECON.FLOWER-SHOW.ORG",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "FLOWER-SHOW.ORG",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2009-4324",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Request.pdf",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "SUCHOST.EXE",
+        "type": "file",
+        "alias": [
+          "an example of one of the Poison Ivy RAT payloads"
+        ],
+        "mother entity": [
+          "spear-phishing emails"
+        ]
+      },
+      {
+        "name": "Halloween.scr",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "FREE.COFFEELAUCH.COM",
+        "type": "domain-name",
+        "alias": [
+          "98.126.69.3"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "FIREHAPPY.SYTES.NET",
+        "type": "domain-name",
+        "alias": [
+          "98.126.69.3"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "1.php?id=[data]",
+        "type": "url",
+        "alias": [
+          "The “1.php?=” HTTP GET request",
+          "initial C&C checkin",
+          "the “1.php” HTTP path"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "2.php, 3.php, 4.php",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Cleared Defense Contractor",
+        "type": "identity",
+        "alias": [
+          "a sensitive customer",
+          "the entity involved"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "FQDN/css.ashx?sc=[data]",
+        "type": "url",
+        "alias": [
+          "HTTP GET request check-ins"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "HOUSE.SUPERDOGDREAM.COM",
+        "type": "domain-name",
+        "alias": [
+          "June 2010 – 1st C&C observed in infection"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "SATELLITE.QUICKSEARCHMOVIE.COM",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "GOOGLETIME.SERVEIRC.COM",
+        "type": "domain-name",
+        "alias": [
+          "No-IP6 dynamic DNS domains",
+          "No-IP dynamic DNS domains"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "www.savagecounty.net",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "LOOK.CAPTAINSABERTOOTH.NET",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "GEOINFO.SERVEHTTP.COM",
+        "type": "domain-name",
+        "alias": [
+          "46.4.209.130"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "QinetiQ",
+        "type": "identity",
+        "alias": [
+          "QNAO",
+          "QinetiQ North America Operations",
+          "the victim"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "HBGary",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Soysauce",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Comment Crew",
+          "GIF89a"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Comment Crew",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "GIF89a",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "steganography",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "No-IP",
+        "type": "infrastructure",
+        "alias": [
+          "No-IP6",
+          "dynamic DNS"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Internet Explorer 6.0",
+        "type": "general-software",
+        "alias": [
+          "hard-coded into malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Aurora",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Night Dragon",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "HBGary’s Incident Response Technical Report Supplement for QinetiQ",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "HBGary’s Incident Response Technical Report Supplement"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "IBM",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "SANS ISC Diary",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "SANS ISC Handler’s Diary"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Contagio",
+        "type": "identity",
+        "alias": [
+          "Contagiodump.blogspot.com"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Contagiodump.blogspot.com",
+        "type": "url",
+        "alias": [
+          "Contagio"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Securelist",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Trojan.Win32.Buzus.cvdu7",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Trojan.Win32.Agent.eevf8",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "www.zscaler.com",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "threatlabz@zscaler.com",
+        "type": "email-address",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "IBM APT research paper",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "bakerhughes.thruthere.net",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Night Dragon attack",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "RSA APT summit",
+        "type": "event",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "1.php Group",
+        "rel": "methods tend to be",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "spear-phishing emails"
+      },
+      {
+        "sub": "spear-phishing emails",
+        "rel": "with",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malicious PDF attachments"
+      },
+      {
+        "sub": "spear-phishing emails",
+        "rel": "with",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "web links to binary executables"
+      },
+      {
+        "sub": "web links to binary executables",
+        "rel": "with a Poison Ivy remote administration tool (RAT) payload",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Poison Ivy remote administration tool (RAT)"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "targeted victims included",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "China/US relations experts"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "targeted victims included",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Defense entities"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "targeted victims included",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Geospatial industry"
+      },
+      {
+        "sub": "Zscaler",
+        "rel": "detected repeated infections from",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "1.php Group"
+      },
+      {
+        "sub": "malicious PDF attachments",
+        "rel": "provides a malicious link to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "WWW.DREAMLIFES.NET/Afghanistan/Afghanistan.zip"
+      },
+      {
+        "sub": "Once unzipped, the malware is a Windows executable with an SCR extension",
+        "rel": "identified as a",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "Poison Ivy remote administration tool (RAT)"
+      },
+      {
+        "sub": "SUCHOST.EXE",
+        "rel": "dropped from",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Request.pdf"
+      },
+      {
+        "sub": "SUCHOST.EXE",
+        "rel": "received commands from",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "CECON.FLOWER-SHOW.ORG"
+      },
+      {
+        "sub": "Halloween.scr",
+        "rel": "Communicates with C&Cs:",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "FREE.COFFEELAUCH.COM"
+      },
+      {
+        "sub": "Halloween.scr",
+        "rel": "Communicates with C&Cs:",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "FIREHAPPY.SYTES.NET"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "campaign exploiting",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2009-4324"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "exploiting PDF vulnerabilities in attached spear-phishing emails targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "FLOWER-SHOW.ORG"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "observed using GET Beacons with Modified XOR Parameters to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "FQDN/css.ashx?sc=[data]"
+      },
+      {
+        "sub": "Cleared Defense Contractor",
+        "rel": "Zscaler believes that ongoing attacks against are directly related to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "1.php Group"
+      },
+      {
+        "sub": "Cleared Defense Contractor",
+        "rel": "observed communicating via",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "HOUSE.SUPERDOGDREAM.COM"
+      },
+      {
+        "sub": "Cleared Defense Contractor",
+        "rel": "observed communicating via",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "SATELLITE.QUICKSEARCHMOVIE.COM"
+      },
+      {
+        "sub": "Cleared Defense Contractor",
+        "rel": "observed communicating via",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "GOOGLETIME.SERVEIRC.COM"
+      },
+      {
+        "sub": "Soysauce",
+        "rel": "uses technique known as",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "steganography"
+      },
+      {
+        "sub": "Poison Ivy remote administration tool (RAT)",
+        "rel": "detected/labeled as a generic Trojan or Backdoor",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "generic Trojan"
+      },
+      {
+        "sub": "Poison Ivy remote administration tool (RAT)",
+        "rel": "detected/labeled as a generic Trojan or Backdoor",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Zscaler",
+        "rel": "research-describes-analysis-of-characterizes-detects",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "1.php Group"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "attacks against",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "QinetiQ"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "attacks against",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "HBGary"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "used No-IP6 dynamic DNS domains",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "No-IP"
+      },
+      {
+        "sub": "Poison Ivy remote administration tool (RAT)",
+        "rel": "uses user-agent string of",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Microsoft Internet Explorer 6.0"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "related to documented APT incidents such as",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Aurora"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "related to documented APT incidents such as",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Night Dragon"
+      },
+      {
+        "sub": "HBGary’s Incident Response Technical Report Supplement for QinetiQ",
+        "rel": "has code-named this threat group as",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Soysauce"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "directly related to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Cleared Defense Contractor"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "targeted entities related to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Defense Industrial Base"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "targeted entities related to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Geospatial industry"
+      },
+      {
+        "sub": "1.php Group",
+        "rel": "used in phishing email regarding",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "United States troop deployment in Afghanistan"
+      }
+    ]
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "sample_id": "ctinexus__evasive-jupyter-infostealer-campaign-dangerous-variant.json",
+  "sample_index": 53,
+  "source": "ctinexus",
+  "file_name": "evasive-jupyter-infostealer-campaign-dangerous-variant.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "JUPYTER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "YELLOW COCKATOO",
+        "type": "MALWARE"
+      },
+      {
+        "name": "SOLARMARKER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "POLAZERT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "VMWARE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CARBON BLACK",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MORPHISEC",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "BLACKBERRY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "ETHEREUM WALLET",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MYSYMONERO WALLET",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ATOMIC WALLET",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "OPENVPN",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "REMOTE DESKTOP PROTOCOL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "POWER SHELL",
+        "type": "TOOL"
+      },
+      {
+        "name": "COMMAND AND CONTROL",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "BACKDOOR",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "DROPPER AND LOADER",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "HOLLOWING SHELL CODE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "CREDENTIAL HARVESTING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "JUPYTER CAMPAIGN",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "CHROME",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "EDGE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "FIREFOX",
+        "type": "SOFTWARE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "VMWARE"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "CARBON BLACK"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "MORPHISEC"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "BLACKBERRY"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "POWER SHELL"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "CREDENTIAL HARVESTING"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "COMMAND AND CONTROL"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "BACKDOOR"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "DROPPER AND LOADER"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "HOLLOWING SHELL CODE"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "JUPYTER CAMPAIGN"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "CHROME"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "EDGE"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "FIREFOX"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "ETHEREUM WALLET"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "MYSYMONERO WALLET"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "ATOMIC WALLET"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "OPENVPN"
+      },
+      {
+        "sub": "JUPYTER",
+        "rel": "related_to",
+        "obj": "REMOTE DESKTOP PROTOCOL"
+      },
+      {
+        "sub": "MORPHISEC",
+        "rel": "related_to",
+        "obj": "JUPYTER"
+      },
+      {
+        "sub": "BLACKBERRY",
+        "rel": "related_to",
+        "obj": "JUPYTER"
+      },
+      {
+        "sub": "VMWARE",
+        "rel": "related_to",
+        "obj": "CARBON BLACK"
+      },
+      {
+        "sub": "POWER SHELL",
+        "rel": "related_to",
+        "obj": "JUPYTER"
+      }
+    ]
+  }
+}

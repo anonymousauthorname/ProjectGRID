@@ -1,0 +1,245 @@
+{
+  "sample_id": "ctinexus__two-campaigns-by-north-korea-bad-actors-target-job-hunters.json",
+  "sample_index": 52,
+  "source": "ctinexus",
+  "file_name": "two-campaigns-by-north-korea-bad-actors-target-job-hunters.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Contagious Interview",
+        "type": "campaign",
+        "alias": [
+          "the first campaign"
+        ]
+      },
+      {
+        "name": "Wagemole",
+        "type": "campaign",
+        "alias": [
+          "the second campaign"
+        ]
+      },
+      {
+        "name": "Democratic People's Republic of Korea (DPRK)",
+        "type": "location",
+        "alias": [
+          "North Korea"
+        ]
+      },
+      {
+        "name": "threat actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "state-sponsored threat actors",
+          "North Korea state-sponsored threat actor",
+          "North Korea state-sponsored threat"
+        ]
+      },
+      {
+        "name": "software developers",
+        "type": "victims/targets",
+        "alias": [
+          "job-seeking software developers"
+        ]
+      },
+      {
+        "name": "employers",
+        "type": "identity",
+        "alias": [
+          "the employers"
+        ]
+      },
+      {
+        "name": "malware",
+        "type": "malware",
+        "alias": [
+          "the malware"
+        ]
+      },
+      {
+        "name": "interview process",
+        "type": "attack-pattern",
+        "alias": [
+          "interview process"
+        ]
+      },
+      {
+        "name": "US",
+        "type": "location"
+      },
+      {
+        "name": "other parts of the world",
+        "type": "location"
+      },
+      {
+        "name": "state-sponsored threat actors",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "North Korea",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "DPRK"
+        ]
+      },
+      {
+        "name": "financial gain",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "espionage",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "job-seeking activities",
+        "type": "activity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Contagious Interview",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "job-seeking activities"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "pose as",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "employers"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "lure",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "software developers"
+      },
+      {
+        "sub": "software developers",
+        "rel": "install",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "malware"
+      },
+      {
+        "sub": "malware",
+        "rel": "creates the potential for",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "theft"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "is run by",
+        "rel_type": [
+          "controlled-by"
+        ],
+        "obj": "a North Korea state-sponsored threat actor"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "organizations based in the US"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "organizations based in other parts of the world"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "has potential for",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "financial gain"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "has potential for",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "espionage"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "are associated with",
+        "rel_type": [
+          "associated-with"
+        ],
+        "obj": "DPRK"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "is attributed to",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "a North Korea state-sponsored threat"
+      },
+      {
+        "sub": "Unit 42 researchers",
+        "rel": "discovered",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "Contagious Interview"
+      },
+      {
+        "sub": "Unit 42 researchers",
+        "rel": "discovered",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "Wagemole"
+      },
+      {
+        "sub": "Activity from both campaigns",
+        "rel": "remains an ongoing",
+        "rel_type": [
+          "persistent"
+        ],
+        "obj": "active threat"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "associated with",
+        "rel_type": [
+          "associated-with"
+        ],
+        "obj": "North Korea"
+      }
+    ]
+  }
+}

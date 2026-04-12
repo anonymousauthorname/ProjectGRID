@@ -1,0 +1,149 @@
+{
+  "sample_id": "casie__2105.json",
+  "sample_index": 40,
+  "source": "casie",
+  "file_name": "2105.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SS7",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Karsten Nohl",
+        "type": "Person"
+      },
+      {
+        "name": "Motherboard",
+        "type": "Organization"
+      },
+      {
+        "name": "The Süddeutsche Zeitung",
+        "type": "Organization"
+      },
+      {
+        "name": "FCC",
+        "type": "Organization"
+      },
+      {
+        "name": "Twitter",
+        "type": "Organization"
+      },
+      {
+        "name": "Google Authenticator",
+        "type": "Software"
+      },
+      {
+        "name": "National Institute of Standards and Technology",
+        "type": "Organization"
+      },
+      {
+        "name": "telcos",
+        "type": "Organization"
+      },
+      {
+        "name": "bank accounts",
+        "type": "Organization"
+      },
+      {
+        "name": "SMS-based authentication",
+        "type": "Software"
+      },
+      {
+        "name": "two-factor authentication",
+        "type": "Software"
+      },
+      {
+        "name": "data-roaming",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "SMS",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SS7",
+        "rel": "is used for",
+        "obj": "data-roaming"
+      },
+      {
+        "sub": "SS7",
+        "rel": "enables attack on",
+        "obj": "SMS-based authentication"
+      },
+      {
+        "sub": "SS7",
+        "rel": "poses threat to",
+        "obj": "bank accounts"
+      },
+      {
+        "sub": "Karsten Nohl",
+        "rel": "has highlighted vulnerabilities in",
+        "obj": "SS7"
+      },
+      {
+        "sub": "The Süddeutsche Zeitung",
+        "rel": "reported on",
+        "obj": "SS7"
+      },
+      {
+        "sub": "FCC",
+        "rel": "has not acted to protect",
+        "obj": "telcos"
+      },
+      {
+        "sub": "FCC",
+        "rel": "has not acted to protect",
+        "obj": "SMS-based authentication"
+      },
+      {
+        "sub": "Twitter",
+        "rel": "USES",
+        "obj": "SMS-based authentication"
+      },
+      {
+        "sub": "Twitter",
+        "rel": "allows sign in with",
+        "obj": "Google Authenticator"
+      },
+      {
+        "sub": "National Institute of Standards and Technology",
+        "rel": "is no longer recommending",
+        "obj": "SMS-based authentication"
+      },
+      {
+        "sub": "telcos",
+        "rel": "have taken steps to mitigate",
+        "obj": "SS7"
+      },
+      {
+        "sub": "SS7",
+        "rel": "can be used to redirect messages to",
+        "obj": "SMS"
+      },
+      {
+        "sub": "SS7",
+        "rel": "poses threat to",
+        "obj": "two-factor authentication"
+      }
+    ]
+  }
+}

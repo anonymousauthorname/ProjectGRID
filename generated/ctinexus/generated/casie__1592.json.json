@@ -1,0 +1,238 @@
+{
+  "sample_id": "casie__1592.json",
+  "sample_index": 7,
+  "source": "casie",
+  "file_name": "1592.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TP-Link M5350 router",
+        "type": "Unknown"
+      },
+      {
+        "name": "SMS message handling feature",
+        "type": "Unknown"
+      },
+      {
+        "name": "admin password",
+        "type": "Unknown"
+      },
+      {
+        "name": "Wi-Fi network SSID",
+        "type": "Unknown"
+      },
+      {
+        "name": "Wi-Fi network password",
+        "type": "Unknown"
+      },
+      {
+        "name": "SIM card to connect to mobile network",
+        "type": "Unknown"
+      },
+      {
+        "name": "SIM card",
+        "type": "Unknown"
+      },
+      {
+        "name": "router's mobile number",
+        "type": "Unknown"
+      },
+      {
+        "name": "attacker",
+        "type": "Unknown"
+      },
+      {
+        "name": "router SIM card's phone number",
+        "type": "Unknown"
+      },
+      {
+        "name": "Jan Hörsch",
+        "type": "Unknown"
+      },
+      {
+        "name": "vulnerability in TP-Link M5350 router SMS feature",
+        "type": "Unknown"
+      },
+      {
+        "name": "Securai",
+        "type": "Unknown"
+      },
+      {
+        "name": "Heise.de",
+        "type": "Unknown"
+      },
+      {
+        "name": "Kaspersky Security Analyst Summit",
+        "type": "Unknown"
+      },
+      {
+        "name": "last week",
+        "type": "Unknown"
+      },
+      {
+        "name": "Hörsch's presentation",
+        "type": "Unknown"
+      },
+      {
+        "name": "root access vulnerability in Hootoo Travelmate router",
+        "type": "Unknown"
+      },
+      {
+        "name": "root access vulnerability in Trendnet TEW714TRU router",
+        "type": "Unknown"
+      },
+      {
+        "name": "hardcoded Telnet password in Startech modems",
+        "type": "Unknown"
+      },
+      {
+        "name": "authentication bypass in Panasonic BM ET200 retina scanners",
+        "type": "Unknown"
+      },
+      {
+        "name": "Panasonic BM ET200 retina scanners",
+        "type": "Unknown"
+      },
+      {
+        "name": "deleting parameters in URL",
+        "type": "Unknown"
+      },
+      {
+        "name": "Western Digital MyCloud NAS hard drives",
+        "type": "Unknown"
+      },
+      {
+        "name": "disclosed in March by another researcher",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TP-Link M5350 router",
+        "rel": "has vulnerability in",
+        "obj": "SMS message handling feature"
+      },
+      {
+        "sub": "SMS message handling feature",
+        "rel": "reveals in cleartext",
+        "obj": "admin password"
+      },
+      {
+        "sub": "SMS message handling feature",
+        "rel": "reveals",
+        "obj": "Wi-Fi network SSID"
+      },
+      {
+        "sub": "SMS message handling feature",
+        "rel": "reveals",
+        "obj": "Wi-Fi network password"
+      },
+      {
+        "sub": "TP-Link M5350 router",
+        "rel": "uses",
+        "obj": "SIM card to connect to mobile network"
+      },
+      {
+        "sub": "SIM card",
+        "rel": "has telephone number",
+        "obj": "router's mobile number"
+      },
+      {
+        "sub": "attacker",
+        "rel": "needs to know",
+        "obj": "router SIM card's phone number"
+      },
+      {
+        "sub": "Jan Hörsch",
+        "rel": "discovered",
+        "obj": "vulnerability in TP-Link M5350 router SMS feature"
+      },
+      {
+        "sub": "Jan Hörsch",
+        "rel": "is researcher for",
+        "obj": "Securai"
+      },
+      {
+        "sub": "Jan Hörsch",
+        "rel": "shared findings with",
+        "obj": "Heise.de"
+      },
+      {
+        "sub": "Jan Hörsch",
+        "rel": "presented vulnerabilities at",
+        "obj": "Kaspersky Security Analyst Summit"
+      },
+      {
+        "sub": "Kaspersky Security Analyst Summit",
+        "rel": "was held",
+        "obj": "last week"
+      },
+      {
+        "sub": "Hörsch's presentation",
+        "rel": "includes",
+        "obj": "root access vulnerability in Hootoo Travelmate router"
+      },
+      {
+        "sub": "Hörsch's presentation",
+        "rel": "includes",
+        "obj": "root access vulnerability in Trendnet TEW714TRU router"
+      },
+      {
+        "sub": "Hörsch's presentation",
+        "rel": "includes",
+        "obj": "hardcoded Telnet password in Startech modems"
+      },
+      {
+        "sub": "Hörsch's presentation",
+        "rel": "includes",
+        "obj": "authentication bypass in Panasonic BM ET200 retina scanners"
+      },
+      {
+        "sub": "Panasonic BM ET200 retina scanners",
+        "rel": "allow access to admin panel by",
+        "obj": "deleting parameters in URL"
+      },
+      {
+        "sub": "Western Digital MyCloud NAS hard drives",
+        "rel": "have vulnerabilities",
+        "obj": "disclosed in March by another researcher"
+      },
+      {
+        "sub": "router's mobile number",
+        "rel": "used to trigger",
+        "obj": "SMS message handling feature"
+      },
+      {
+        "sub": "router SIM card's phone number",
+        "rel": "required to exploit",
+        "obj": "SMS message handling feature"
+      },
+      {
+        "sub": "Jan Hörsch",
+        "rel": "discovered a vulnerability in",
+        "obj": "SMS message handling feature"
+      },
+      {
+        "sub": "Hörsch's presentation",
+        "rel": "discovers and reveals a vulnerability in",
+        "obj": "SMS message handling feature"
+      }
+    ]
+  }
+}

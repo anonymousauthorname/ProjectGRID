@@ -1,0 +1,611 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_37.json",
+  "sample_index": 227,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_37.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Andrew Ludgate",
+        "type": "identity"
+      },
+      {
+        "name": "email",
+        "type": "general-software"
+      },
+      {
+        "name": "ACH membership",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "NACHA",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "ACH Network",
+        "type": "infrastructure"
+      },
+      {
+        "name": "financial institutions",
+        "type": "general-software"
+      },
+      {
+        "name": "payments associations",
+        "type": "general-software"
+      },
+      {
+        "name": "online payments",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "cheque cashing",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "money transfers",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "international wires",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "banks",
+        "type": "identity"
+      },
+      {
+        "name": "healthcare providers",
+        "type": "identity"
+      },
+      {
+        "name": "online boutiques",
+        "type": "identity"
+      },
+      {
+        "name": "local corner store",
+        "type": "identity"
+      },
+      {
+        "name": "large sums of money",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "large volumes of transactions",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Sophos Threat Spotlight",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "Zeus botnet",
+        "type": "malware"
+      },
+      {
+        "name": "Zbot",
+        "type": "alias-of",
+        "alias": [
+          "Zeus botnet"
+        ]
+      },
+      {
+        "name": "DDoS attacks",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "email saying your ACH membership has expired",
+        "type": "email-address"
+      },
+      {
+        "name": "Zeus botnet node",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "internet and business infrastructure",
+        "type": "infrastructure"
+      },
+      {
+        "name": "Verizon",
+        "type": "security-product"
+      },
+      {
+        "name": "top fifteen Threat Action Types",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Page 26, Table 8",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "manual (personally attended) attack mechanisms",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "antivirus and antispam software",
+        "type": "security-product"
+      },
+      {
+        "name": "web protection",
+        "type": "security-product"
+      },
+      {
+        "name": "firewall policy",
+        "type": "course-of-action"
+      },
+      {
+        "name": "data retention and encryption policy",
+        "type": "course-of-action"
+      },
+      {
+        "name": "DLP (Data Loss Prevention) technology",
+        "type": "security-product"
+      },
+      {
+        "name": "malicious eCards",
+        "type": "lure"
+      },
+      {
+        "name": "online banking notifications",
+        "type": "lure"
+      },
+      {
+        "name": "personal banking information",
+        "type": "credential-value"
+      },
+      {
+        "name": "Fear, Uncertainty and Doubt (FUD)",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "dedicated information security team",
+        "type": "identity"
+      },
+      {
+        "name": "user groups",
+        "type": "infrastructure"
+      },
+      {
+        "name": "secure computing system",
+        "type": "course-of-action"
+      },
+      {
+        "name": "links you arent expecting",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "software you dont trust",
+        "type": "general-software"
+      },
+      {
+        "name": "Facebook",
+        "type": "location"
+      },
+      {
+        "name": "telephone",
+        "type": "network-traffic"
+      },
+      {
+        "name": "personal information",
+        "type": "credential-value"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Andrew Ludgate",
+        "rel": "authored",
+        "rel_type": [
+          "course-of-action"
+        ],
+        "obj": "this article"
+      },
+      {
+        "sub": "email",
+        "rel": "purporting to be from",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "NACHA"
+      },
+      {
+        "sub": "NACHA",
+        "rel": "is responsible for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "ACH Network"
+      },
+      {
+        "sub": "NACHA",
+        "rel": "led by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "financial institutions"
+      },
+      {
+        "sub": "NACHA",
+        "rel": "led by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "payments associations"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "responsible for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "online payments"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "responsible for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cheque cashing"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "responsible for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "money transfers"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "responsible for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "international wires"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "includes",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "banks"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "includes",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "healthcare providers"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "includes",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "online boutiques"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "includes",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "local corner store"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "involves",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "large sums of money"
+      },
+      {
+        "sub": "ACH Network",
+        "rel": "involves",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "large volumes of transactions"
+      },
+      {
+        "sub": "NACHA",
+        "rel": "sends",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "email saying your ACH membership has expired"
+      },
+      {
+        "sub": "these emails",
+        "rel": "are being used to socially engineer",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "recipients"
+      },
+      {
+        "sub": "recipients",
+        "rel": "into installing",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "Zeus botnet node"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "can perform",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "DDoS attacks"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "sends",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "email saying your ACH membership has expired"
+      },
+      {
+        "sub": "Zeus botnet",
+        "rel": "silently collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "financial information"
+      },
+      {
+        "sub": "financial information",
+        "rel": "includes",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "ACH transactions"
+      },
+      {
+        "sub": "Zbot",
+        "rel": "variant-of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Zeus botnet"
+      },
+      {
+        "sub": "Zbot",
+        "rel": "uses method of distribution and information collection from",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "2009"
+      },
+      {
+        "sub": "Zbot",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "internet and business infrastructure"
+      },
+      {
+        "sub": "Verizon",
+        "rel": "compiled list of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "top fifteen Threat Action Types"
+      },
+      {
+        "sub": "Zbot",
+        "rel": "makes use of",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "threat action types"
+      },
+      {
+        "sub": "Zbot",
+        "rel": "fails to take advantage of",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "manual (personally attended) attack mechanisms"
+      },
+      {
+        "sub": "manual (personally attended) attack mechanisms",
+        "rel": "not used by",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "Zbot"
+      },
+      {
+        "sub": "most of these threats",
+        "rel": "are bundled into",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "malwares functionality"
+      },
+      {
+        "sub": "the others",
+        "rel": "can be leveraged through",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "remote control of the system"
+      },
+      {
+        "sub": "you should have",
+        "rel": "have",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "antivirus and antispam software"
+      },
+      {
+        "sub": "you should have",
+        "rel": "have",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "web protection"
+      },
+      {
+        "sub": "you should have",
+        "rel": "have",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "firewall policy"
+      },
+      {
+        "sub": "you should have",
+        "rel": "have",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "data retention and encryption policy"
+      },
+      {
+        "sub": "you should have",
+        "rel": "have",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "DLP (Data Loss Prevention) technology"
+      },
+      {
+        "sub": "Zbot",
+        "rel": "sends",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "malicious eCards"
+      },
+      {
+        "sub": "Zbot",
+        "rel": "sends",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "online banking notifications"
+      },
+      {
+        "sub": "Zbot",
+        "rel": "gathers",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "personal banking information"
+      },
+      {
+        "sub": "Zbot",
+        "rel": "adds to botnet",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "your computer"
+      },
+      {
+        "sub": "Zbot",
+        "rel": "gathers",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "personal banking information"
+      },
+      {
+        "sub": "citizens",
+        "rel": "can join",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "user groups"
+      },
+      {
+        "sub": "user groups",
+        "rel": "have members who would be happy to help you set up",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "secure computing system"
+      },
+      {
+        "sub": "do not click on",
+        "rel": "click on",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "links you arent expecting"
+      },
+      {
+        "sub": "do not run",
+        "rel": "run",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "software you dont trust"
+      },
+      {
+        "sub": "do not store",
+        "rel": "store",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "personal information"
+      },
+      {
+        "sub": "Facebook",
+        "rel": "can be used to store",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "personal information"
+      },
+      {
+        "sub": "calling someone on the telephone",
+        "rel": "is recommended over",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "keeping silent"
+      },
+      {
+        "sub": "Zbot",
+        "rel": "impacts",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "everyone"
+      },
+      {
+        "sub": "user groups",
+        "rel": "can be used to set up",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "secure computing system"
+      }
+    ]
+  }
+}

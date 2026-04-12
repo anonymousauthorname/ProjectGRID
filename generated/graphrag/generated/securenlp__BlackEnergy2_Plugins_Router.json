@@ -1,0 +1,656 @@
+{
+  "sample_id": "securenlp__BlackEnergy2_Plugins_Router",
+  "sample_index": 188,
+  "source": "securenlp",
+  "file_name": "BlackEnergy2_Plugins_Router",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "BLACKENERGY",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BLACKENERGY2",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BLACKENERGY3",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BE2_APT",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "SANDWORM_TEAM",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "CISCO_NETWORK_DEVICES",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "SIEMENS_SCADA_SOFTWARE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ARM_PLATFORMS",
+        "type": "LOCATION"
+      },
+      {
+        "name": "MIPS_PLATFORMS",
+        "type": "LOCATION"
+      },
+      {
+        "name": "ROUTER_ACCESS_PLUGIN",
+        "type": "TOOL"
+      },
+      {
+        "name": "WEAP_HWI",
+        "type": "TOOL"
+      },
+      {
+        "name": "PS_PLUGIN",
+        "type": "TOOL"
+      },
+      {
+        "name": "VSNET_PLUGIN",
+        "type": "TOOL"
+      },
+      {
+        "name": "DSTR_PLUGIN",
+        "type": "TOOL"
+      },
+      {
+        "name": "GRPC_PLUGIN",
+        "type": "TOOL"
+      },
+      {
+        "name": "HOOK_MAIN_MODULE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CISCOAPI_TCL",
+        "type": "TOOL"
+      },
+      {
+        "name": "KILLINT_TCL",
+        "type": "TOOL"
+      },
+      {
+        "name": "TELNETAPI2_TCL",
+        "type": "TOOL"
+      },
+      {
+        "name": "STUB_TCL",
+        "type": "TOOL"
+      },
+      {
+        "name": "C2_SERVER_188_128_123_52",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_212_175_109_10",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_184_22_205_194",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_5_79_80_166",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_46_165_222_28",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_95_211_122_36",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_89_149_223_205",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_46_4_28_218",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_78_46_40_239",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_95_143_193_182",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_188_227_176_74",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_93_170_127_100",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_37_220_34_56",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_194_28_172_58",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_124_217_253_10",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_84_19_161_123",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_109_236_88_12",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_212_124_110_62",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_5_61_38_31",
+        "type": "LOCATION"
+      },
+      {
+        "name": "C2_SERVER_5_255_87_39",
+        "type": "LOCATION"
+      },
+      {
+        "name": "POWER_GENERATION_SITE",
+        "type": "LOCATION"
+      },
+      {
+        "name": "POWER_FACILITIES_CONSTRUCTION",
+        "type": "LOCATION"
+      },
+      {
+        "name": "POWER_GENERATION_OPERATORS",
+        "type": "LOCATION"
+      },
+      {
+        "name": "HEAVY_POWER_MATERIAL_SUPPLIERS",
+        "type": "LOCATION"
+      },
+      {
+        "name": "INVESTORS",
+        "type": "LOCATION"
+      },
+      {
+        "name": "HIGH_LEVEL_GOVERNMENT",
+        "type": "LOCATION"
+      },
+      {
+        "name": "FEDERAL_LAND_HOLDING_AGENCIES",
+        "type": "LOCATION"
+      },
+      {
+        "name": "MUNICIPAL_OFFICES",
+        "type": "LOCATION"
+      },
+      {
+        "name": "FEDERAL_EMERGENCY_SERVICES",
+        "type": "LOCATION"
+      },
+      {
+        "name": "SPACE_AND_EARTH_MEASUREMENT_LABS",
+        "type": "LOCATION"
+      },
+      {
+        "name": "NATIONAL_STANDARDS_BODY",
+        "type": "LOCATION"
+      },
+      {
+        "name": "BANKS",
+        "type": "LOCATION"
+      },
+      {
+        "name": "HIGH_TECH_TRANSPORTATION",
+        "type": "LOCATION"
+      },
+      {
+        "name": "ACADEMIC_RESEARCH",
+        "type": "LOCATION"
+      },
+      {
+        "name": "ARM_PLUGIN",
+        "type": "TOOL"
+      },
+      {
+        "name": "MIPS_PLUGIN",
+        "type": "TOOL"
+      },
+      {
+        "name": "BUILD_ID_0C0703hji",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "BUILD_ID_100914_mg",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "BUILD_ID_100929nrT",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "BUILD_ID_OB020Ad0V",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_WINRAR",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_CISCO_IOS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_ICP",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_USB_DEVICE",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_BIOS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_HTTP_PROTOCOL",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_CISCO_TCL_SCRIPTS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_CONFIG_FILE_FORMAT",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_FILE_EXTENSION",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_NETWORK_PROXIES",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_DEVICE_INSTANCE_ID",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_NETWORK_BANNERS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_USER_ACCESS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_SYSTEM_INFO",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_LOGGING",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_FILE_INFECTING",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_DRIVER_LOADING",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_PLUGIN_ENCRYPTION",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_COMMAND_EXECUTION",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_NETWORK_COMMUNICATION",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_PLUGIN_VERSIONING",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_PLUGIN_DECRYPTION",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_PLUGIN_LOADING_ORDER",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_PLUGIN_COMMANDS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_PLUGIN_CONFIG_FORMAT",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_PLUGIN_COMMANDS_FORMAT",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "VULNERABILITY_IN_PLUGIN_LOADING",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "BLACKENERGY2"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "BLACKENERGY3"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "ARM_PLATFORMS"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "MIPS_PLATFORMS"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "CISCO_NETWORK_DEVICES"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "POWER_GENERATION_SITE"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "POWER_FACILITIES_CONSTRUCTION"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "POWER_GENERATION_OPERATORS"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "HEAVY_POWER_MATERIAL_SUPPLIERS"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "INVESTORS"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "HIGH_LEVEL_GOVERNMENT"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "FEDERAL_LAND_HOLDING_AGENCIES"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "MUNICIPAL_OFFICES"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "FEDERAL_EMERGENCY_SERVICES"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "SPACE_AND_EARTH_MEASUREMENT_LABS"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "NATIONAL_STANDARDS_BODY"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "BANKS"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "HIGH_TECH_TRANSPORTATION"
+      },
+      {
+        "sub": "BE2_APT",
+        "rel": "related_to",
+        "obj": "ACADEMIC_RESEARCH"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "WEAP_HWI"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "PS_PLUGIN"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VSNET_PLUGIN"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "DSTR_PLUGIN"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "GRPC_PLUGIN"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "HOOK_MAIN_MODULE"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "CISCOAPI_TCL"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "KILLINT_TCL"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "TELNETAPI2_TCL"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "STUB_TCL"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_WINRAR"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_CISCO_IOS"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_ICP"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_USB_DEVICE"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_BIOS"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_HTTP_PROTOCOL"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_CISCO_TCL_SCRIPTS"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_PLUGIN_LOADING"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_CONFIG_FILE_FORMAT"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_FILE_EXTENSION"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_NETWORK_PROXIES"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_DEVICE_INSTANCE_ID"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_NETWORK_BANNERS"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_USER_ACCESS"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_SYSTEM_INFO"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_LOGGING"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_FILE_INFECTING"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_DRIVER_LOADING"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_PLUGIN_ENCRYPTION"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_COMMAND_EXECUTION"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_NETWORK_COMMUNICATION"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_PLUGIN_VERSIONING"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_PLUGIN_DECRYPTION"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_PLUGIN_LOADING_ORDER"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_PLUGIN_COMMANDS"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_PLUGIN_CONFIG_FORMAT"
+      },
+      {
+        "sub": "BLACKENERGY2",
+        "rel": "related_to",
+        "obj": "VULNERABILITY_IN_PLUGIN_COMMANDS_FORMAT"
+      }
+    ]
+  }
+}

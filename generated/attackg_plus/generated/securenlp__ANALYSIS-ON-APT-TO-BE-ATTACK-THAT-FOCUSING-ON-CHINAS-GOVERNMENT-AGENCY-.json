@@ -1,0 +1,637 @@
+{
+  "sample_id": "securenlp__ANALYSIS-ON-APT-TO-BE-ATTACK-THAT-FOCUSING-ON-CHINAS-GOVERNMENT-AGENCY-",
+  "sample_index": 181,
+  "source": "securenlp",
+  "file_name": "ANALYSIS-ON-APT-TO-BE-ATTACK-THAT-FOCUSING-ON-CHINAS-GOVERNMENT-AGENCY-",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Reconnaissance",
+        "rel": "Operate",
+        "obj": "Network services"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Operate",
+        "obj": "System processes"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Use",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Use",
+        "obj": "HTTP GET requests"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Locate at",
+        "obj": "http://146.0.43.107/hfYn"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Gather",
+        "obj": "IP addresses"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Gather",
+        "obj": "System version"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Gather",
+        "obj": "Computer name"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Gather",
+        "obj": "Account information"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Gather",
+        "obj": "Process ID"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Modify",
+        "obj": "Target system profile"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Map",
+        "obj": "Internal network structure"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Identify",
+        "obj": "Potential entry points"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "Construct",
+        "obj": "Beacon"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "Use",
+        "obj": "Backdoor module"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "Operate",
+        "obj": "Compromised systems"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "Has value",
+        "obj": "Persistent control"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "Modify",
+        "obj": "Payloads"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "Belong to",
+        "obj": "Commercial attack platform"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "WinExec"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "ab.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Social engineering"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Exploit",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Network"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has geolocation",
+        "obj": "System"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has filename",
+        "obj": "ab.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Script"
+      },
+      {
+        "sub": "Script",
+        "rel": "Detect",
+        "obj": "System"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Modify",
+        "obj": "System"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Construct",
+        "obj": "Phishing email"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "File bundling"
+      },
+      {
+        "sub": "PowerShell",
+        "rel": "Use",
+        "obj": "Malicious code"
+      },
+      {
+        "sub": "PowerShell",
+        "rel": "Execute",
+        "obj": "Encrypted script"
+      },
+      {
+        "sub": "Encrypted script",
+        "rel": "Decrypt",
+        "obj": "In memory"
+      },
+      {
+        "sub": "Encrypted script",
+        "rel": "Decompress",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Use",
+        "obj": "Base64 encoding"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Use",
+        "obj": "Gzip encoding"
+      },
+      {
+        "sub": "Execution",
+        "rel": "Avoid",
+        "obj": "Disk writing"
+      },
+      {
+        "sub": "Execution",
+        "rel": "Operate",
+        "obj": "In memory"
+      },
+      {
+        "sub": "Execution",
+        "rel": "Evade",
+        "obj": "Security software"
+      },
+      {
+        "sub": "Execution",
+        "rel": "Evade",
+        "obj": "Firewalls"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Modify",
+        "obj": "Beacon-based backdoor"
+      },
+      {
+        "sub": "Beacon-based backdoor",
+        "rel": "Use",
+        "obj": "Remote command and control  server"
+      },
+      {
+        "sub": "Beacon-based backdoor",
+        "rel": "Write",
+        "obj": "Heartbeat packages"
+      },
+      {
+        "sub": "Heartbeat packages",
+        "rel": "Has value",
+        "obj": "Process ID"
+      },
+      {
+        "sub": "Heartbeat packages",
+        "rel": "Has value",
+        "obj": "System version"
+      },
+      {
+        "sub": "Heartbeat packages",
+        "rel": "Has value",
+        "obj": "IP address"
+      },
+      {
+        "sub": "Heartbeat packages",
+        "rel": "Has value",
+        "obj": "Computer name"
+      },
+      {
+        "sub": "Heartbeat packages",
+        "rel": "Has value",
+        "obj": "Account"
+      },
+      {
+        "sub": "Heartbeat packages",
+        "rel": "Has value",
+        "obj": "64-bit process"
+      },
+      {
+        "sub": "Beacon-based backdoor",
+        "rel": "Operate",
+        "obj": "Compromised system"
+      },
+      {
+        "sub": "Beacon-based backdoor",
+        "rel": "Construct",
+        "obj": "System-level processes"
+      },
+      {
+        "sub": "Beacon-based backdoor",
+        "rel": "Use",
+        "obj": "Encrypted data transmission"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Memory-based execution"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Avoid",
+        "obj": "Writing to hard disk"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "XOR encryption"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Base64 encoding"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Encryption of heartbeat packages"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "RSA encryption"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Transmission via Cookie field"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Modify",
+        "obj": "Communication data"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Operate",
+        "obj": "Heartbeat packages"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has value",
+        "obj": "Encrypted traffic"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has URL",
+        "obj": "Cookie field"
+      },
+      {
+        "sub": "Compromised system",
+        "rel": "Use",
+        "obj": "Gather detailed information about the internal network environment"
+      },
+      {
+        "sub": "HTTP GET request",
+        "rel": "Use",
+        "obj": "Retrieve information about system processes"
+      },
+      {
+        "sub": "HTTP GET request",
+        "rel": "Retrieve",
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "System's built-in tools",
+        "rel": "Use",
+        "obj": "Discover network shares"
+      },
+      {
+        "sub": "System's built-in tools",
+        "rel": "Use",
+        "obj": "Discover system services"
+      },
+      {
+        "sub": "System's built-in tools",
+        "rel": "Use",
+        "obj": "Discover other network resources"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Identify",
+        "obj": "Target's system version"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Identify",
+        "obj": "Target's IP address"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Identify",
+        "obj": "Target's computer name"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Identify",
+        "obj": "Target's account information"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Construct",
+        "obj": "Detailed map of the internal network"
+      },
+      {
+        "sub": "Beacon backdoor",
+        "rel": "Use",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Beacon backdoor",
+        "rel": "Use",
+        "obj": "Internal network"
+      },
+      {
+        "sub": "Beacon backdoor",
+        "rel": "Enable",
+        "obj": "Communication with other systems"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Operate",
+        "obj": "Internal network"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Send",
+        "obj": "GET requests to internal systems"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Detect",
+        "obj": "Additional network resources"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Identify",
+        "obj": "Potential targets"
+      },
+      {
+        "sub": "Beacon mechanism",
+        "rel": "Maintain",
+        "obj": "Persistent access"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Write",
+        "obj": "Process ID"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Write",
+        "obj": "System version"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Write",
+        "obj": "IP address"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Write",
+        "obj": "Account details"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Use",
+        "obj": "Encrypted heartbeat packages"
+      },
+      {
+        "sub": "Encrypted heartbeat packages",
+        "rel": "Has value",
+        "obj": "Process ID"
+      },
+      {
+        "sub": "Encrypted heartbeat packages",
+        "rel": "Has value",
+        "obj": "System version"
+      },
+      {
+        "sub": "Encrypted heartbeat packages",
+        "rel": "Has value",
+        "obj": "System-specific information"
+      },
+      {
+        "sub": "Encrypted heartbeat packages",
+        "rel": "Transmit to",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Store",
+        "obj": "Data"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Analyze",
+        "obj": "Data"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Operate",
+        "obj": "Compromised system"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Modify",
+        "obj": "Data transmission"
+      },
+      {
+        "sub": "Data transmission",
+        "rel": "Operate",
+        "obj": "Network monitoring tools"
+      },
+      {
+        "sub": "Data transmission",
+        "rel": "Avoid",
+        "obj": "Detection by network monitoring tools"
+      },
+      {
+        "sub": "Beacon-based backdoor",
+        "rel": "Use",
+        "obj": "Command and control"
+      },
+      {
+        "sub": "146.0.43.107",
+        "rel": "Locate at",
+        "obj": "Romania"
+      },
+      {
+        "sub": "dc.******69.info",
+        "rel": "Locate at",
+        "obj": "Romania"
+      },
+      {
+        "sub": "Cookie field",
+        "rel": "Has value",
+        "obj": "Encrypted heartbeat data"
+      },
+      {
+        "sub": "Encrypted heartbeat data",
+        "rel": "Include",
+        "obj": "System information"
+      },
+      {
+        "sub": "System information",
+        "rel": "Include",
+        "obj": "Process ID"
+      },
+      {
+        "sub": "System information",
+        "rel": "Include",
+        "obj": "System version"
+      },
+      {
+        "sub": "System information",
+        "rel": "Include",
+        "obj": "IP address"
+      },
+      {
+        "sub": "System information",
+        "rel": "Include",
+        "obj": "Computer name"
+      },
+      {
+        "sub": "System information",
+        "rel": "Include",
+        "obj": "Account"
+      },
+      {
+        "sub": "System information",
+        "rel": "Include",
+        "obj": "64-bit process status"
+      },
+      {
+        "sub": "Heartbeat packages",
+        "rel": "Send",
+        "obj": "Every 60 seconds"
+      },
+      {
+        "sub": "C2 channel",
+        "rel": "Operate",
+        "obj": "Multiple connections"
+      },
+      {
+        "sub": "C2 channel",
+        "rel": "Enable",
+        "obj": "Persistent control"
+      },
+      {
+        "sub": "C2 communication",
+        "rel": "Use",
+        "obj": "RSA encryption"
+      },
+      {
+        "sub": "C2 communication",
+        "rel": "Use",
+        "obj": "Base64 encoding"
+      },
+      {
+        "sub": "C2 communication",
+        "rel": "Modify",
+        "obj": "Traffic detectability"
+      },
+      {
+        "sub": "C2 servers",
+        "rel": "Use",
+        "obj": "Beacon-based backdoor"
+      },
+      {
+        "sub": "C2 servers",
+        "rel": "Write",
+        "obj": "Heartbeat data"
+      }
+    ]
+  }
+}

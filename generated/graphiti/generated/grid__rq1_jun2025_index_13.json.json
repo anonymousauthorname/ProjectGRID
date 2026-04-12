@@ -1,0 +1,122 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_13.json",
+  "sample_index": 205,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_13.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TDSS",
+        "type": "Malware"
+      },
+      {
+        "name": "NetWorm.Win32.Rorpian",
+        "type": "Malware"
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "setup.lnk",
+        "type": "Indicator"
+      },
+      {
+        "name": "myporno.avi.lnk",
+        "type": "Indicator"
+      },
+      {
+        "name": "pornmovs.lnk",
+        "type": "Indicator"
+      },
+      {
+        "name": "autorun.inf",
+        "type": "Indicator"
+      },
+      {
+        "name": "DHCP",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "DNS",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Google",
+        "type": "Organization"
+      },
+      {
+        "name": "Evgeny Aseev",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "loader for",
+        "obj": "TDSS"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "USES",
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "CREATES",
+        "obj": "setup.lnk"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "CREATES",
+        "obj": "myporno.avi.lnk"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "CREATES",
+        "obj": "pornmovs.lnk"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "CREATES",
+        "obj": "autorun.inf"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "EXPLOITS",
+        "obj": "DHCP"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "MODIFIES",
+        "obj": "DNS"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "replaces dns with",
+        "obj": "Google"
+      },
+      {
+        "sub": "Evgeny Aseev",
+        "rel": "helped in preparing",
+        "obj": "NetWorm.Win32.Rorpian"
+      }
+    ]
+  }
+}

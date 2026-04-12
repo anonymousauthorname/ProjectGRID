@@ -1,0 +1,566 @@
+{
+  "sample_id": "securenlp__ASERT-Threat-Intelligence-Brief-2014-07-Illuminating-Etumbot-APT",
+  "sample_index": 159,
+  "source": "securenlp",
+  "file_name": "ASERT-Threat-Intelligence-Brief-2014-07-Illuminating-Etumbot-APT",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Etumbot",
+        "type": "malware",
+        "alias": [
+          "Etumbot backdoor",
+          "Etumbot APT backdoor",
+          "backdoor",
+          "malware",
+          "backdoor malware"
+        ]
+      },
+      {
+        "name": "IXESHE",
+        "type": "malware",
+        "alias": [
+          "IXESHE malware"
+        ]
+      },
+      {
+        "name": "Numbered Panda",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "APT12",
+          "DYNCALC/CALC Team"
+        ]
+      },
+      {
+        "name": "Chinese threat actor group",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "WTO^XPiii20140303 _slx.scr",
+        "type": "file",
+        "alias": [
+          "installer",
+          "dropper"
+        ]
+      },
+      {
+        "name": "~taste3.doc",
+        "type": "file"
+      },
+      {
+        "name": "kb71271.log",
+        "type": "windows-registry-key",
+        "alias": [
+          "kb71271.log file",
+          "temporary file",
+          "data exchange file"
+        ]
+      },
+      {
+        "name": "ka4a8213.log",
+        "type": "windows-registry-key",
+        "alias": [
+          "ka4a8213.log file",
+          "temporary file"
+        ]
+      },
+      {
+        "name": "tst3.tmp",
+        "type": "file"
+      },
+      {
+        "name": "JavaSvc.exe",
+        "type": "file",
+        "alias": [
+          "backdoor binary",
+          "backdoor component"
+        ]
+      },
+      {
+        "name": "ntprint.exe",
+        "type": "file"
+      },
+      {
+        "name": "byte strings technique",
+        "type": "attack-pattern",
+        "alias": [
+          "String Stacking"
+        ]
+      },
+      {
+        "name": "HTran",
+        "type": "hacker-tool",
+        "alias": [
+          "HUC Packet Transmit Tool",
+          "connection bouncer"
+        ]
+      },
+      {
+        "name": "143.89.47.132",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "decoy documents",
+        "type": "file"
+      },
+      {
+        "name": "Command & Control servers",
+        "type": "infrastructure"
+      },
+      {
+        "name": "spear phishing emails",
+        "type": "network-traffic"
+      },
+      {
+        "name": "right-to-left override",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "Taiwanese and Japanese topics",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "C&C server",
+        "type": "infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Etumbot",
+        "rel": "is",
+        "rel_type": [
+          "malware"
+        ],
+        "obj": "backdoor"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "used in",
+        "rel_type": [
+          "targeted attacks"
+        ],
+        "obj": "targeted attacks"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "has been associated with",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "Chinese threat actor group"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "has been observed using",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "decoy documents"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "referred to as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Exploz"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "referred to as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Specfix"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "has two primary components",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "two primary components"
+      },
+      {
+        "sub": "WTO^XPiii20140303 _slx.scr",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "JavaSvc.exe"
+      },
+      {
+        "sub": "WTO^XPiii20140303 _slx.scr",
+        "rel": "is",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "dropper"
+      },
+      {
+        "sub": "WTO^XPiii20140303 _slx.scr",
+        "rel": "loads up",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "BINARY"
+      },
+      {
+        "sub": "WTO^XPiii20140303 _slx.scr",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "directory"
+      },
+      {
+        "sub": "WTO^XPiii20140303 _slx.scr",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "C:\\DOCUME~1\\User\\LOCALS~1\\Temp\\ka4281x3.log"
+      },
+      {
+        "sub": "WTO^XPiii20140303 _slx.scr",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "C:\\Documents and Settings\\User\\Application Data\\JAVA\\JavaSvc.exe"
+      },
+      {
+        "sub": "JavaSvc.exe",
+        "rel": "is running",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "backdoor component"
+      },
+      {
+        "sub": "ASERT",
+        "rel": "has observed",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Etumbot samples"
+      },
+      {
+        "sub": "Numbered Panda",
+        "rel": "is known for using",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "screen saver files (.scr)"
+      },
+      {
+        "sub": "Numbered Panda",
+        "rel": "used",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "targeted emails with malicious PDF attachments"
+      },
+      {
+        "sub": "Numbered Panda",
+        "rel": "used",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "targeted emails with malicious PDF attachments to compromise East Asian governments"
+      },
+      {
+        "sub": "Numbered Panda",
+        "rel": "has been observed using",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "screen saver files (.scr)"
+      },
+      {
+        "sub": "Numbered Panda",
+        "rel": "has been active since",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "July 2009"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "documents"
+      },
+      {
+        "sub": "WTO^XPiii20140303 _slx.scr",
+        "rel": "posing as",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "Word Document"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "appears to be sent via",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "spear phishing emails"
+      },
+      {
+        "sub": "ASERT",
+        "rel": "has observed",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": ".7z and .rar formats"
+      },
+      {
+        "sub": "archive filename",
+        "rel": "of interest to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "victim"
+      },
+      {
+        "sub": "RTLO technique",
+        "rel": "disguises",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "names of malicious files"
+      },
+      {
+        "sub": "WTO^XPiii20140303 _slx.scr",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "decoy document"
+      },
+      {
+        "sub": "WTO^XPiii20140303 _slx.scr",
+        "rel": "installs",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "JavaSvc.exe"
+      },
+      {
+        "sub": "WTO^XPiii20140303 _slx.scr",
+        "rel": "calls",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "regedit"
+      },
+      {
+        "sub": "kb71271.log",
+        "rel": "is then deleted",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "kb71271.log"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "sends",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "registration callback to C&C"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "discovers",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "proxy settings of local machine"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "relays",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "message when receives sleep command"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "will relay",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "“I will sleep %d minutes!”"
+      },
+      {
+        "sub": "C&C responses",
+        "rel": "include",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "command"
+      },
+      {
+        "sub": "C&C responses",
+        "rel": "contain",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "ASCII string"
+      },
+      {
+        "sub": "C&C",
+        "rel": "responds with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "full contents of file"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "makes initial call to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "/manage/asp/item.asp"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "expects",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "'OK' from C&C"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "sends",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "periodic pings to ask for new commands"
+      },
+      {
+        "sub": "ping requests",
+        "rel": "URI is",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "/history/<encrypted NetBIOS name>.asp"
+      },
+      {
+        "sub": "ASERT",
+        "rel": "provides",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "IDApython script"
+      },
+      {
+        "sub": "98.188.111.244",
+        "rel": "used as",
+        "rel_type": [
+          "controls"
+        ],
+        "obj": "C&C for IXESHE samples"
+      },
+      {
+        "sub": "HTran",
+        "rel": "also called",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "HUC Packet Transmit Tool"
+      },
+      {
+        "sub": "response string",
+        "rel": "indicates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "presence of HTran"
+      },
+      {
+        "sub": "alice yoker",
+        "rel": "registrant for",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "yesplusno.com"
+      },
+      {
+        "sub": "C&C IP addresses",
+        "rel": "used by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "IXESHE-related malware"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "used by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "143.89.47.132"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "documents"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "decoy document"
+      },
+      {
+        "sub": "ASERT",
+        "rel": "has observed",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "documents"
+      },
+      {
+        "sub": "ASERT",
+        "rel": "has observed",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "decoy documents"
+      }
+    ]
+  }
+}

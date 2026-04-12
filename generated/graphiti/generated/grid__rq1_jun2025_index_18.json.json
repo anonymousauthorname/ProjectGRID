@@ -1,0 +1,353 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_18.json",
+  "sample_index": 210,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_18.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TSPYSPCESEND.A",
+        "type": "Malware"
+      },
+      {
+        "name": "FAKEAV",
+        "type": "Malware"
+      },
+      {
+        "name": "FakeHDD",
+        "type": "Malware"
+      },
+      {
+        "name": "sendspace.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "BLOCKED28889.ru",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "BLOCKED8483825.ru",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "BLOCKED372721.ru",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "31.184.237.143",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "31.184.237.142",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "BFBot (Palevo)",
+        "type": "Malware"
+      },
+      {
+        "name": "NgrBot",
+        "type": "Malware"
+      },
+      {
+        "name": "IRCBot",
+        "type": "Malware"
+      },
+      {
+        "name": "PayPerSell (PPS)",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Fedex",
+        "type": "Organization"
+      },
+      {
+        "name": "BestAV",
+        "type": "Organization"
+      },
+      {
+        "name": "Yamba",
+        "type": "Organization"
+      },
+      {
+        "name": "Trend Micro",
+        "type": "Organization"
+      },
+      {
+        "name": "sendspace",
+        "type": "Organization"
+      },
+      {
+        "name": "United States",
+        "type": "Location"
+      },
+      {
+        "name": "United Kingdom",
+        "type": "Location"
+      },
+      {
+        "name": "India",
+        "type": "Location"
+      },
+      {
+        "name": "Canada",
+        "type": "Location"
+      },
+      {
+        "name": "Australia",
+        "type": "Location"
+      },
+      {
+        "name": "Spain",
+        "type": "Location"
+      },
+      {
+        "name": "China",
+        "type": "Location"
+      },
+      {
+        "name": "Mexico",
+        "type": "Location"
+      },
+      {
+        "name": "Turkey",
+        "type": "Location"
+      },
+      {
+        "name": "Colombia",
+        "type": "Location"
+      },
+      {
+        "name": "Germany",
+        "type": "Location"
+      },
+      {
+        "name": "United Arab Emirates",
+        "type": "Location"
+      },
+      {
+        "name": "South Africa",
+        "type": "Location"
+      },
+      {
+        "name": "France",
+        "type": "Location"
+      },
+      {
+        "name": "The Netherlands",
+        "type": "Location"
+      },
+      {
+        "name": "Nart Villeneuve",
+        "type": "Person"
+      },
+      {
+        "name": "Martin Amps",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "uploads to",
+        "obj": "sendspace.com"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "disguised as",
+        "obj": "Fedex"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "INSTALLED",
+        "obj": "FAKEAV"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "INSTALLED",
+        "obj": "FakeHDD"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "operates under",
+        "obj": "PayPerSell (PPS)"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "communicates with",
+        "obj": "BLOCKED28889.ru"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "communicates with",
+        "obj": "BLOCKED8483825.ru"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "communicates with",
+        "obj": "BLOCKED372721.ru"
+      },
+      {
+        "sub": "BLOCKED28889.ru",
+        "rel": "points to",
+        "obj": "31.184.237.143"
+      },
+      {
+        "sub": "BLOCKED8483825.ru",
+        "rel": "points to",
+        "obj": "31.184.237.142"
+      },
+      {
+        "sub": "BLOCKED372721.ru",
+        "rel": "points to",
+        "obj": "31.184.237.142"
+      },
+      {
+        "sub": "31.184.237.143",
+        "rel": "HOSTS",
+        "obj": "BFBot (Palevo)"
+      },
+      {
+        "sub": "31.184.237.142",
+        "rel": "HOSTS",
+        "obj": "NgrBot"
+      },
+      {
+        "sub": "31.184.237.142",
+        "rel": "HOSTS",
+        "obj": "IRCBot"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "cooperated with",
+        "obj": "sendspace"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "assisted in",
+        "obj": "sendspace.com"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "operates on",
+        "obj": "sendspace.com"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has been abused by",
+        "obj": "TSPYSPCESEND.A"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "downloaded from",
+        "obj": "BestAV"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "downloaded from",
+        "obj": "Yamba"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "United States"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "United Kingdom"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "India"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "Canada"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "Australia"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "Spain"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "China"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "Mexico"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "Turkey"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "Colombia"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "Germany"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "United Arab Emirates"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "South Africa"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "France"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "has victims in",
+        "obj": "The Netherlands"
+      },
+      {
+        "sub": "Nart Villeneuve",
+        "rel": "researched for",
+        "obj": "Trend Micro"
+      },
+      {
+        "sub": "Martin Amps",
+        "rel": "assisted in data collection",
+        "obj": "Trend Micro"
+      }
+    ]
+  }
+}

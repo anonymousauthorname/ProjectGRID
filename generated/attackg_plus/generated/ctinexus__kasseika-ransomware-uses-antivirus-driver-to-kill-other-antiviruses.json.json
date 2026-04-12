@@ -1,0 +1,247 @@
+{
+  "sample_id": "ctinexus__kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "sample_index": 57,
+  "source": "ctinexus",
+  "file_name": "kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Phishing email"
+      },
+      {
+        "sub": "Phishing email",
+        "rel": "Has value",
+        "obj": "Account credentials"
+      },
+      {
+        "sub": "Account credentials",
+        "rel": "Enable",
+        "obj": "Initial access to corporate network"
+      },
+      {
+        "sub": "Martini.exe",
+        "rel": "Has value",
+        "obj": "Process"
+      },
+      {
+        "sub": "Martini.sys",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerable Software"
+      },
+      {
+        "sub": "Martini.sys",
+        "rel": "Use",
+        "obj": "BYOVD attacks"
+      },
+      {
+        "sub": "BYOVD attacks",
+        "rel": "Modify",
+        "obj": "Privileges"
+      },
+      {
+        "sub": "Martini.sys",
+        "rel": "Write",
+        "obj": "Driver"
+      },
+      {
+        "sub": "Martini.exe",
+        "rel": "Operate",
+        "obj": "Terminate"
+      },
+      {
+        "sub": "Martini.sys",
+        "rel": "Operate",
+        "obj": "Terminate"
+      },
+      {
+        "sub": "Martini.sys",
+        "rel": "Operate",
+        "obj": "991 processes"
+      },
+      {
+        "sub": "Martini.sys",
+        "rel": "Has value",
+        "obj": "Driver"
+      },
+      {
+        "sub": "Martini.sys",
+        "rel": "Locate at",
+        "obj": "Machine"
+      },
+      {
+        "sub": "Note: The original article does not explicitly mention a \"Report Type\", \"Author\", \"Vender\", \"Date\", \"Location\", \"Security Tool\", \"Vulnerability\", \"System\", \"Platform\", \"Threat Actor\", \"Tactic\", \"Technique\", \"Filename\", \"Filepath\", \"URL\", \"Registry\", \"Domain\", \"Hash\", \"IP\" — so only relevant entities and relations derived from the text are included. The triplet \"Martini.sys",
+        "rel": "Use",
+        "obj": "BYOVD attacks\" reflects the exploitation method, and \"BYOVD attacks\" is treated as a technique. \"Terminate\" is used as an operation on processes. All entities and relations are grounded in the provided text and follow the specified rules."
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Privilege Escalation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Terminate",
+        "obj": "991 processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Antivirus products"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Security tools"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Analysis tools"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System utilities"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Exploit",
+        "obj": "Flaws in the loaded driver"
+      },
+      {
+        "sub": "BYOVD attacks",
+        "rel": "Are a type of",
+        "obj": "Privilege Escalation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "BYOVD attacks"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Martini.sys/viragt64.sys"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "BYOVD attacks"
+      },
+      {
+        "sub": "Martini.sys/viragt64.sys",
+        "rel": "Belong to",
+        "obj": "TG Soft's VirtIT Agent System"
+      },
+      {
+        "sub": "BYOVD attacks",
+        "rel": "Exploit",
+        "obj": "Loaded driver"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Security tools"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Analysis tools"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "System utilities"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Has tactic",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Use",
+        "obj": "Account credentials"
+      },
+      {
+        "sub": "Account credentials",
+        "rel": "Belong to",
+        "obj": "Employee"
+      },
+      {
+        "sub": "Employee",
+        "rel": "Operate",
+        "obj": "Corporate network"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "'Martini.exe'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Terminate",
+        "obj": "'Martini.exe'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Download",
+        "obj": "'Martini.sys'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "BYOVD attacks"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "'Martini.sys'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "991 processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Terminate",
+        "obj": "antivirus products"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Terminate",
+        "obj": "security tools"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Terminate",
+        "obj": "analysis tools"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Terminate",
+        "obj": "system utilities"
+      }
+    ]
+  }
+}

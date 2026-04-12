@@ -1,0 +1,90 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-akira.json",
+  "sample_index": 91,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-akira.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Akira",
+        "type": "Malware"
+      },
+      {
+        "name": "CVE-2023-20269",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Cisco Adaptive Security Appliance (ASA) software",
+        "type": "Software"
+      },
+      {
+        "name": "Cisco Firepower Threat Defense (FTD) software",
+        "type": "Software"
+      },
+      {
+        "name": "Megazord",
+        "type": "Malware"
+      },
+      {
+        "name": "POWERRANGES",
+        "type": "Indicator"
+      },
+      {
+        "name": "powerranges.txt",
+        "type": "Indicator"
+      },
+      {
+        "name": "TOX messenger",
+        "type": "Infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Akira",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "Cisco Adaptive Security Appliance (ASA) software",
+        "rel": "has vulnerability",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "Cisco Firepower Threat Defense (FTD) software",
+        "rel": "has vulnerability",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "uses file extension",
+        "obj": "POWERRANGES"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "leaves ransom note",
+        "obj": "powerranges.txt"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "contacts via",
+        "obj": "TOX messenger"
+      }
+    ]
+  }
+}

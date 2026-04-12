@@ -1,0 +1,517 @@
+{
+  "sample_id": "securenlp__ANALYSIS-ON-APT-TO-BE-ATTACK-THAT-FOCUSING-ON-CHINAS-GOVERNMENT-AGENCY-",
+  "sample_index": 181,
+  "source": "securenlp",
+  "file_name": "ANALYSIS-ON-APT-TO-BE-ATTACK-THAT-FOCUSING-ON-CHINAS-GOVERNMENT-AGENCY-",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "ANTIY Labs",
+        "rel": "detected",
+        "obj": "APT attack"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "targets",
+        "obj": "government agency"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "operates in",
+        "obj": "Beacon mode"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "disguises as",
+        "obj": "legitimate file"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "sends",
+        "obj": "network heartbeat package"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "sends",
+        "obj": "data information"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "evades",
+        "obj": "detection"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "evades",
+        "obj": "interception"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "related to",
+        "obj": "Cobalt Strike"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "is downloaded by",
+        "obj": "powershell.exe"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "generates",
+        "obj": "Shellcode"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "runs in",
+        "obj": "memory"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "communicates via",
+        "obj": "Beacon"
+      },
+      {
+        "sub": "Beacon",
+        "rel": "enables",
+        "obj": "beacon communication"
+      },
+      {
+        "sub": "Beacon",
+        "rel": "allows",
+        "obj": "multiple Beacons"
+      },
+      {
+        "sub": "Beacon",
+        "rel": "allows",
+        "obj": "simultaneous operation"
+      },
+      {
+        "sub": "attack",
+        "rel": "does not require",
+        "obj": "vector file"
+      },
+      {
+        "sub": "attack",
+        "rel": "depends on",
+        "obj": "network"
+      },
+      {
+        "sub": "APT-TOCS",
+        "rel": "used",
+        "obj": "powershell.exe"
+      },
+      {
+        "sub": "APT-TOCS",
+        "rel": "executed",
+        "obj": "Shellcode"
+      },
+      {
+        "sub": "APT-TOCS",
+        "rel": "executed",
+        "obj": "shellcode"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "is used in",
+        "obj": "attacks"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "has virus name",
+        "obj": "Trojan/Win32.MSShell"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "has original file name",
+        "obj": "ab.exe"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "has MD5",
+        "obj": "44BCF2DD262F12222ADEAB6F59B2975B"
+      },
+      {
+        "sub": "script",
+        "rel": "decrypts",
+        "obj": "base64 content"
+      },
+      {
+        "sub": "script",
+        "rel": "decompresses",
+        "obj": "Gzip"
+      },
+      {
+        "sub": "script",
+        "rel": "results in",
+        "obj": "module"
+      },
+      {
+        "sub": "script",
+        "rel": "uses",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "script",
+        "rel": "downloads",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "script",
+        "rel": "executes",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "wininet",
+        "rel": "has function",
+        "obj": "network access"
+      },
+      {
+        "sub": "wininet",
+        "rel": "is called by",
+        "obj": "module"
+      },
+      {
+        "sub": "HTTP GET",
+        "rel": "get",
+        "obj": "http://146.0.43.107/hfYn"
+      },
+      {
+        "sub": "Figure 6",
+        "rel": "shows",
+        "obj": "using request of HTTP GET to get http://146.0.43.107/hfYn"
+      },
+      {
+        "sub": "Figure 6",
+        "rel": "shows",
+        "obj": "HTTP GET request"
+      },
+      {
+        "sub": "backdoor program",
+        "rel": "can send GET request to",
+        "obj": "designated addresses"
+      },
+      {
+        "sub": "backdoor program",
+        "rel": "send GET request to",
+        "obj": "addresses"
+      },
+      {
+        "sub": "backdoor program",
+        "rel": "send",
+        "obj": "heartbeat packages"
+      },
+      {
+        "sub": "backdoor program",
+        "rel": "send",
+        "obj": "heartbeat"
+      },
+      {
+        "sub": "backdoor program",
+        "rel": "uses",
+        "obj": "Cookie fields"
+      },
+      {
+        "sub": "backdoor program",
+        "rel": "uses",
+        "obj": "fields"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "is",
+        "obj": "penetration tool"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "is based on",
+        "obj": "metasploit"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "integrates",
+        "obj": "service scan"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "integrates",
+        "obj": "overflow"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "integrates",
+        "obj": "port espionage"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "integrates",
+        "obj": "Trojan generation"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "integrates",
+        "obj": "phishing attack"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "integrates",
+        "obj": "site clone"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "integrates",
+        "obj": "target information"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "integrates",
+        "obj": "browser attack"
+      },
+      {
+        "sub": "APT-TOCS",
+        "rel": "is classified as",
+        "obj": "APT incidents"
+      },
+      {
+        "sub": "APT-TOCS",
+        "rel": "has",
+        "obj": "anti-detection functions"
+      },
+      {
+        "sub": "APT-TOCS",
+        "rel": "has",
+        "obj": "concealment"
+      },
+      {
+        "sub": "APT-TOCS",
+        "rel": "is a kind of",
+        "obj": "targeted attack"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "has",
+        "obj": "anti-detection functions"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "has",
+        "obj": "concealment"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "costs",
+        "obj": "low cost"
+      },
+      {
+        "sub": "attackers",
+        "rel": "do not develop",
+        "obj": "code"
+      },
+      {
+        "sub": "commercial attack platform",
+        "rel": "is applied by",
+        "obj": "attackers"
+      },
+      {
+        "sub": "attack platform",
+        "rel": "is used by",
+        "obj": "attackers"
+      },
+      {
+        "sub": "attackers",
+        "rel": "save",
+        "obj": "cost"
+      },
+      {
+        "sub": "attack",
+        "rel": "enables",
+        "obj": "injection"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "provides",
+        "obj": "joint function"
+      },
+      {
+        "sub": "attack platform",
+        "rel": "provides",
+        "obj": "joint function"
+      },
+      {
+        "sub": "attack platform",
+        "rel": "enables",
+        "obj": "attacker"
+      },
+      {
+        "sub": "attack platform",
+        "rel": "enables",
+        "obj": "injection"
+      },
+      {
+        "sub": "nation or organization",
+        "rel": "can launch",
+        "obj": "APT attack"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "uses",
+        "obj": "attack pattern"
+      },
+      {
+        "sub": "attack",
+        "rel": "is difficult to trace",
+        "obj": "us"
+      },
+      {
+        "sub": "attacker",
+        "rel": "can perform",
+        "obj": "injection"
+      },
+      {
+        "sub": "attack capabilities",
+        "rel": "are widely distributed",
+        "obj": "attackers"
+      },
+      {
+        "sub": "computer technology",
+        "rel": "make",
+        "obj": "attack more powerful and automated"
+      },
+      {
+        "sub": "computer technology",
+        "rel": "make",
+        "obj": "attack more powerful"
+      },
+      {
+        "sub": "computer technology",
+        "rel": "make",
+        "obj": "attack automated"
+      },
+      {
+        "sub": "computer technology",
+        "rel": "make",
+        "obj": "automated attack"
+      },
+      {
+        "sub": "commercial platform",
+        "rel": "realized",
+        "obj": "high speed of spread of this attack capability"
+      },
+      {
+        "sub": "commercial platform",
+        "rel": "realized",
+        "obj": "rapid spread"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "updated",
+        "obj": "build.sh tool"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "started",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "added",
+        "obj": "timestamp"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "regenerates",
+        "obj": "HTTPS certificate"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "is founder of",
+        "obj": "Strategic Cyber LLC"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "created",
+        "obj": "Armitage"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "created",
+        "obj": "Sleep"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "created",
+        "obj": "jIRCii"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "works as",
+        "obj": "security researcher"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "works for",
+        "obj": "US Air Force"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "works as",
+        "obj": "penetration tester"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "invented",
+        "obj": "grammar checker"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "published in",
+        "obj": "Hakin9"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "published in",
+        "obj": "USENIX login"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "published in",
+        "obj": "Dr. Dobbs"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "speaks on",
+        "obj": "security topics"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "provides red team support to",
+        "obj": "cyber defense competition"
+      },
+      {
+        "sub": "US Air Force",
+        "rel": "supports",
+        "obj": "Collegiate Cyber Defense Competition (CCDC)"
+      },
+      {
+        "sub": "jIRCii",
+        "rel": "is licensed under",
+        "obj": "artistic license"
+      }
+    ]
+  }
+}

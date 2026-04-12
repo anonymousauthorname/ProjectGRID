@@ -1,0 +1,97 @@
+{
+  "sample_id": "casie__10179.json",
+  "sample_index": 15,
+  "source": "casie",
+  "file_name": "10179.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CTS Labs",
+        "type": "Organization"
+      },
+      {
+        "name": "AMD",
+        "type": "Organization"
+      },
+      {
+        "name": "Ryzenfall",
+        "type": "Campaign"
+      },
+      {
+        "name": "Ryzen",
+        "type": "Software"
+      },
+      {
+        "name": "EPYC",
+        "type": "Software"
+      },
+      {
+        "name": "Chimera",
+        "type": "Vulnerability"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CTS Labs",
+        "rel": "REVEALED",
+        "obj": "Ryzenfall"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "identified vulnerabilities in",
+        "obj": "Ryzen"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "identified vulnerabilities in",
+        "obj": "EPYC"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "IDENTIFIED",
+        "obj": "Chimera"
+      },
+      {
+        "sub": "AMD",
+        "rel": "released patches for",
+        "obj": "EPYC"
+      },
+      {
+        "sub": "AMD",
+        "rel": "released patches for",
+        "obj": "Chimera"
+      },
+      {
+        "sub": "AMD",
+        "rel": "responded to",
+        "obj": "Ryzenfall"
+      },
+      {
+        "sub": "AMD",
+        "rel": "was notified by",
+        "obj": "CTS Labs"
+      },
+      {
+        "sub": "AMD",
+        "rel": "releasing patches for",
+        "obj": "Ryzen"
+      }
+    ]
+  }
+}

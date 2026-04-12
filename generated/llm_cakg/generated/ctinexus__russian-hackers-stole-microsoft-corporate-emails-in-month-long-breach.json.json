@@ -1,0 +1,112 @@
+{
+  "sample_id": "ctinexus__russian-hackers-stole-microsoft-corporate-emails-in-month-long-breach.json",
+  "sample_index": 64,
+  "source": "ctinexus",
+  "file_name": "russian-hackers-stole-microsoft-corporate-emails-in-month-long-breach.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Midnight Blizzard",
+        "type": "Entity"
+      },
+      {
+        "name": "Nobelium",
+        "type": "Entity"
+      },
+      {
+        "name": "APT29",
+        "type": "Entity"
+      },
+      {
+        "name": "password spray attack",
+        "type": "Entity"
+      },
+      {
+        "name": "legacy non-production test tenant account",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft leadership team",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft cybersecurity department",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft legal department",
+        "type": "Entity"
+      },
+      {
+        "name": "email accounts",
+        "type": "Entity"
+      },
+      {
+        "name": "emails",
+        "type": "Entity"
+      },
+      {
+        "name": "attachments",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "uses",
+        "obj": "password spray attack"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "breaches",
+        "obj": "legacy non-production test tenant account"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "targets",
+        "obj": "email accounts"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "steals",
+        "obj": "emails"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "steals",
+        "obj": "attachments"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "attacks",
+        "obj": "Microsoft leadership team"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "attacks",
+        "obj": "Microsoft cybersecurity department"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "attacks",
+        "obj": "Microsoft legal department"
+      }
+    ]
+  }
+}

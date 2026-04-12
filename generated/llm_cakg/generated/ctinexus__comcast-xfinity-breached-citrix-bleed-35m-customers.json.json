@@ -1,0 +1,217 @@
+{
+  "sample_id": "ctinexus__comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "sample_index": 98,
+  "source": "ctinexus",
+  "file_name": "comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2023-4966",
+        "type": "Entity"
+      },
+      {
+        "name": "CitrixBleed",
+        "type": "Entity"
+      },
+      {
+        "name": "Citrix Systems",
+        "type": "Entity"
+      },
+      {
+        "name": "NetScaler ADC",
+        "type": "Entity"
+      },
+      {
+        "name": "Gateway",
+        "type": "Entity"
+      },
+      {
+        "name": "Comcast Xfinity",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "USB devices",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "backdoor programs",
+        "type": "Entity"
+      },
+      {
+        "name": "Dropper files",
+        "type": "Entity"
+      },
+      {
+        "name": "scripts",
+        "type": "Entity"
+      },
+      {
+        "name": "URLs",
+        "type": "Entity"
+      },
+      {
+        "name": "IP addresses",
+        "type": "Entity"
+      },
+      {
+        "name": "domain names",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Entity"
+      },
+      {
+        "name": "filenames",
+        "type": "Entity"
+      },
+      {
+        "name": "file paths",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious scripts",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Entity"
+      },
+      {
+        "name": "shellcode",
+        "type": "Entity"
+      },
+      {
+        "name": "macros",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actors",
+        "type": "Entity"
+      },
+      {
+        "name": "organizations",
+        "type": "Entity"
+      },
+      {
+        "name": "attack vectors",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "exploits",
+        "type": "Entity"
+      },
+      {
+        "name": "registry keys",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled tasks",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanisms",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "exploits",
+        "obj": "NetScaler ADC"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "exploits",
+        "obj": "Gateway"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "exploits",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "uses",
+        "obj": "CitrixBleed"
+      },
+      {
+        "sub": "Comcast Xfinity",
+        "rel": "is affected by",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "Comcast Xfinity",
+        "rel": "experienced",
+        "obj": "breach"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposed",
+        "obj": "usernames"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposed",
+        "obj": "hashed passwords"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposed",
+        "obj": "names"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposed",
+        "obj": "contact information"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposed",
+        "obj": "last four digits of Social Security numbers"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposed",
+        "obj": "dates of birth"
+      },
+      {
+        "sub": "breach",
+        "rel": "exposed",
+        "obj": "security questions and answers"
+      }
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "sample_id": "ctinexus__malicious-operations-of-exposed-iam-keys-cryptojacking.json",
+  "sample_index": 62,
+  "source": "ctinexus",
+  "file_name": "malicious-operations-of-exposed-iam-keys-cryptojacking.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Unit 42 researchers",
+        "type": "Unknown"
+      },
+      {
+        "name": "EleKtra-Leak",
+        "type": "Unknown"
+      },
+      {
+        "name": "exposed identity and access management (IAM) credentials within public GitHub repositories",
+        "type": "Unknown"
+      },
+      {
+        "name": "AWS",
+        "type": "Unknown"
+      },
+      {
+        "name": "exposed credentials in popular source code repositories",
+        "type": "Unknown"
+      },
+      {
+        "name": "threat actor associated with EleKtra-Leak",
+        "type": "Unknown"
+      },
+      {
+        "name": "multiple AWS Elastic Compute (EC2) instances",
+        "type": "Unknown"
+      },
+      {
+        "name": "AWS Elastic Compute (EC2) instances",
+        "type": "Unknown"
+      },
+      {
+        "name": "cryptojacking operations",
+        "type": "Unknown"
+      },
+      {
+        "name": "at least two years",
+        "type": "Unknown"
+      },
+      {
+        "name": "today",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Unit 42 researchers",
+        "rel": "identified",
+        "obj": "EleKtra-Leak"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "targets",
+        "obj": "exposed identity and access management (IAM) credentials within public GitHub repositories"
+      },
+      {
+        "sub": "AWS",
+        "rel": "detects and auto-remediates",
+        "obj": "exposed credentials in popular source code repositories"
+      },
+      {
+        "sub": "threat actor associated with EleKtra-Leak",
+        "rel": "creates",
+        "obj": "multiple AWS Elastic Compute (EC2) instances"
+      },
+      {
+        "sub": "AWS Elastic Compute (EC2) instances",
+        "rel": "are used for",
+        "obj": "cryptojacking operations"
+      },
+      {
+        "sub": "cryptojacking operations",
+        "rel": "have been active for",
+        "obj": "at least two years"
+      },
+      {
+        "sub": "cryptojacking operations",
+        "rel": "are still active",
+        "obj": "today"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "leads_to",
+        "obj": "cryptojacking operations"
+      },
+      {
+        "sub": "exposed credentials in popular source code repositories",
+        "rel": "enable access to",
+        "obj": "cryptojacking operations"
+      },
+      {
+        "sub": "multiple AWS Elastic Compute (EC2) instances",
+        "rel": "used for",
+        "obj": "cryptojacking operations"
+      }
+    ]
+  }
+}

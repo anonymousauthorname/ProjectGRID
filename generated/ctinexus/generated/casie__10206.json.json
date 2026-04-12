@@ -1,0 +1,235 @@
+{
+  "sample_id": "casie__10206.json",
+  "sample_index": 37,
+  "source": "casie",
+  "file_name": "10206.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-201808115",
+        "type": "Unknown"
+      },
+      {
+        "name": "Windows Host Compute Service Shim",
+        "type": "Unknown"
+      },
+      {
+        "name": "remote code execution on host operating system",
+        "type": "Unknown"
+      },
+      {
+        "name": "hcsshim not properly validating input from container images",
+        "type": "Unknown"
+      },
+      {
+        "name": "hcsshim",
+        "type": "Unknown"
+      },
+      {
+        "name": "Docker for Windows",
+        "type": "Unknown"
+      },
+      {
+        "name": "Host Compute Service",
+        "type": "Unknown"
+      },
+      {
+        "name": "Linux kernel features on Windows",
+        "type": "Unknown"
+      },
+      {
+        "name": "Go's filepath.Join function",
+        "type": "Unknown"
+      },
+      {
+        "name": "remote code execution",
+        "type": "Unknown"
+      },
+      {
+        "name": "remote attacker",
+        "type": "Unknown"
+      },
+      {
+        "name": "malware on Windows host",
+        "type": "Unknown"
+      },
+      {
+        "name": "authenticated administrator to import malicious container image",
+        "type": "Unknown"
+      },
+      {
+        "name": "hcsshim library",
+        "type": "Unknown"
+      },
+      {
+        "name": "version 0.6.10 of hcsshim",
+        "type": "Unknown"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Unknown"
+      },
+      {
+        "name": "security advisory",
+        "type": "Unknown"
+      },
+      {
+        "name": "GitHub page",
+        "type": "Unknown"
+      },
+      {
+        "name": "HCS abstraction layer",
+        "type": "Unknown"
+      },
+      {
+        "name": "Docker containers to use Linux Namespaces and Control Groups",
+        "type": "Unknown"
+      },
+      {
+        "name": "fatal flaw in initial Windows 10 fix for Meltdown CPU vulnerability",
+        "type": "Unknown"
+      },
+      {
+        "name": "Windows 10 April 2018 Update",
+        "type": "Unknown"
+      },
+      {
+        "name": "Meltdown CPU vulnerability",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-201808115",
+        "rel": "affects",
+        "obj": "Windows Host Compute Service Shim"
+      },
+      {
+        "sub": "CVE-201808115",
+        "rel": "allows",
+        "obj": "remote code execution on host operating system"
+      },
+      {
+        "sub": "CVE-201808115",
+        "rel": "is due to",
+        "obj": "hcsshim not properly validating input from container images"
+      },
+      {
+        "sub": "hcsshim",
+        "rel": "is used in",
+        "obj": "Docker for Windows"
+      },
+      {
+        "sub": "hcsshim",
+        "rel": "is a wrapper for",
+        "obj": "Host Compute Service"
+      },
+      {
+        "sub": "hcsshim",
+        "rel": "enables",
+        "obj": "Linux kernel features on Windows"
+      },
+      {
+        "sub": "hcsshim",
+        "rel": "uses",
+        "obj": "Go's filepath.Join function"
+      },
+      {
+        "sub": "Go's filepath.Join function",
+        "rel": "with unsanitized input leads to",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "CVE-201808115",
+        "rel": "can be exploited by",
+        "obj": "remote attacker"
+      },
+      {
+        "sub": "remote attacker",
+        "rel": "could execute",
+        "obj": "malware on Windows host"
+      },
+      {
+        "sub": "CVE-201808115",
+        "rel": "requires",
+        "obj": "authenticated administrator to import malicious container image"
+      },
+      {
+        "sub": "Docker for Windows",
+        "rel": "uses",
+        "obj": "hcsshim library"
+      },
+      {
+        "sub": "CVE-201808115",
+        "rel": "is patched by",
+        "obj": "version 0.6.10 of hcsshim"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "released patch for",
+        "obj": "CVE-201808115"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "provides patch via",
+        "obj": "security advisory"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "provides patch via",
+        "obj": "GitHub page"
+      },
+      {
+        "sub": "HCS abstraction layer",
+        "rel": "allows",
+        "obj": "Docker containers to use Linux Namespaces and Control Groups"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "is working on fix for",
+        "obj": "fatal flaw in initial Windows 10 fix for Meltdown CPU vulnerability"
+      },
+      {
+        "sub": "Windows 10 April 2018 Update",
+        "rel": "contains patch for",
+        "obj": "Meltdown CPU vulnerability"
+      },
+      {
+        "sub": "Meltdown CPU vulnerability",
+        "rel": "was fixed in",
+        "obj": "Windows 10 April 2018 Update"
+      },
+      {
+        "sub": "hcsshim",
+        "rel": "is affected by",
+        "obj": "CVE-201808115"
+      },
+      {
+        "sub": "Docker containers to use Linux Namespaces and Control Groups",
+        "rel": "enables",
+        "obj": "CVE-201808115"
+      },
+      {
+        "sub": "CVE-201808115",
+        "rel": "is unrelated to",
+        "obj": "Meltdown CPU vulnerability"
+      }
+    ]
+  }
+}

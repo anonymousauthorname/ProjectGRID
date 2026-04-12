@@ -1,0 +1,501 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_26.json",
+  "sample_index": 218,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_26.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Harvester",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the Harvester group",
+          "Harvester’s activity",
+          "the campaign",
+          "this campaign"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "previously unseen attack group",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "a previously unseen actor",
+          "the attackers",
+          "the group",
+          "Harvester"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "South Asia",
+        "type": "location",
+        "alias": [
+          "organizations in South Asia",
+          "the sectors and geographies mentioned",
+          "Afghanistan"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "IT, telecoms, and government sectors",
+        "type": "identity",
+        "alias": [
+          "telecommunications, government, and information technology (IT)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "information-stealing campaign",
+        "type": "campaign",
+        "alias": [
+          "espionage campaign"
+        ],
+        "mother entity": [
+          "Harvester"
+        ]
+      },
+      {
+        "name": "custom malware",
+        "type": "malware",
+        "alias": [
+          "custom backdoors",
+          "the malware"
+        ],
+        "mother entity": [
+          "Harvester"
+        ]
+      },
+      {
+        "name": "publicly available tools",
+        "type": "hacker-tool",
+        "alias": [
+          "downloaders",
+          "screenshot tools"
+        ],
+        "mother entity": [
+          "Harvester"
+        ]
+      },
+      {
+        "name": "Backdoor.Graphon",
+        "type": "malware",
+        "alias": [
+          "custom backdoor",
+          "the custom Graphon backdoor",
+          "Backdoor.Graphon"
+        ],
+        "mother entity": [
+          "Harvester"
+        ]
+      },
+      {
+        "name": "Microsoft infrastructure",
+        "type": "infrastructure",
+        "alias": [
+          "Microsoft Azure infrastructure",
+          "legitimate CloudFront and Microsoft infrastructure"
+        ],
+        "mother entity": [
+          "Backdoor.Graphon",
+          "Custom Downloader",
+          "Custom Screenshotter",
+          "Cobalt Strike Beacon"
+        ]
+      },
+      {
+        "name": "malicious URL",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Custom Downloader",
+        "type": "hacker-tool",
+        "alias": [
+          "the custom downloader"
+        ],
+        "mother entity": [
+          "Harvester"
+        ]
+      },
+      {
+        "name": "Custom Screenshotter",
+        "type": "hacker-tool",
+        "alias": [
+          "the custom screenshot tool"
+        ],
+        "mother entity": [
+          "Harvester"
+        ]
+      },
+      {
+        "name": "Cobalt Strike Beacon",
+        "type": "hacker-tool",
+        "alias": [
+          "off-the-shelf tool"
+        ],
+        "mother entity": [
+          "Harvester"
+        ]
+      },
+      {
+        "name": "Metasploit",
+        "type": "hacker-tool",
+        "alias": [
+          "off-the-shelf modular framework"
+        ],
+        "mother entity": [
+          "Harvester"
+        ]
+      },
+      {
+        "name": "Costura Assembly Loader",
+        "type": "hacker-tool",
+        "alias": [
+          "the Costura Assembly Loader"
+        ],
+        "mother entity": [
+          "Custom Downloader",
+          "Custom Screenshotter"
+        ]
+      },
+      {
+        "name": "winser.dll",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Custom Downloader"
+        ]
+      },
+      {
+        "name": "hxxps://outportal[.]azurewebsites.net/api/Values_V2/Getting3210",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "Custom Downloader"
+        ]
+      },
+      {
+        "name": "Microsoft Services[.]vbs",
+        "type": "file",
+        "alias": [
+          "[ARTEFACTS_FOLDER]\\Microsoft Services[.]vbs"
+        ],
+        "mother entity": [
+          "Custom Downloader"
+        ]
+      },
+      {
+        "name": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MicrosoftSystemServices",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": [
+          "Custom Downloader"
+        ]
+      },
+      {
+        "name": "hxxps://usedust[.]com",
+        "type": "url",
+        "alias": [
+          "decoy",
+          "URL may have been a loadpoint"
+        ],
+        "mother entity": [
+          "Custom Downloader"
+        ]
+      },
+      {
+        "name": "D:\\OfficeProjects\\Updated Working Due to Submission\\4.5\\Outlook_4.5\\Outlook 4.5.2 32 bit New without presistancy\\NPServices\\bin\\x86\\Debug\\NPServices[.]pdb",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Backdoor.Graphon"
+        ]
+      },
+      {
+        "name": "hxxps://microsoftmsdn[.]azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "Backdoor.Graphon"
+        ]
+      },
+      {
+        "name": "hxxps://microsoftsgraphapi[.]azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "Backdoor.Graphon"
+        ]
+      },
+      {
+        "name": "hxxps://msdnmicrosoft.azurewebsites[.]net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "Backdoor.Graphon"
+        ]
+      },
+      {
+        "name": "password-protected ZIP archive",
+        "type": "file",
+        "alias": [
+          "archives",
+          "ZIP archive"
+        ],
+        "mother entity": [
+          "Custom Screenshotter"
+        ]
+      },
+      {
+        "name": "Indicators of Compromise",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "Harvester"
+        ]
+      },
+      {
+        "name": "hxxps://perfect-couple.com/perfectcouple[.]exe",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "Harvester"
+        ]
+      },
+      {
+        "name": "the Threat Hunter Team",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Harvester group",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "custom malware"
+      },
+      {
+        "sub": "Harvester group",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "publicly available tools"
+      },
+      {
+        "sub": "previously unseen attack group",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "South Asia"
+      },
+      {
+        "sub": "previously unseen attack group",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "IT, telecoms, and government sectors"
+      },
+      {
+        "sub": "The Harvester group",
+        "rel": "used both custom malware and publicly available tools",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the Harvester group"
+      },
+      {
+        "sub": "The Harvester group",
+        "rel": "deploys",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Backdoor.Graphon"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "uses Microsoft infrastructure for its C&C activity",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Microsoft infrastructure"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "uses Microsoft infrastructure for its C&C activity",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Microsoft infrastructure"
+      },
+      {
+        "sub": "Custom Screenshotter",
+        "rel": "periodically logs screenshots to a file",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "a file"
+      },
+      {
+        "sub": "Cobalt Strike Beacon",
+        "rel": "uses CloudFront infrastructure for its C&C activity",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "CloudFront infrastructure"
+      },
+      {
+        "sub": "Metasploit",
+        "rel": "used for a variety of malicious purposes on victim machines",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "victim machines"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "checks if the following file exists: [ARTEFACTS_FOLDER]\\winser.dll",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "winser.dll"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "downloads a copy from the following URL: hxxps://outportal[.]azurewebsites.net/api/Values_V2/Getting3210",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "winser.dll"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "creates the following file if it does not exist: [ARTEFACTS_FOLDER]\\Microsoft Services[.]vbs",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "Microsoft Services[.]vbs"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "sets the following registry value to create a loadpoint: HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MicrosoftSystemServices",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MicrosoftSystemServices"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "opens an embedded web browser within its own UI using the following URL: hxxps://usedust[.]com",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "hxxps://usedust[.]com"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "attempts to communicate with the attackers’ C&C servers, which are hosted on Microsoft infrastructure",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Microsoft infrastructure"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "attempts to communicate with the attackers’ C&C servers at hxxps://microsoftmsdn[.]azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "hxxps://microsoftmsdn[.]azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "attempts to communicate with the attackers’ C&C servers at hxxps://microsoftsgraphapi[.]azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "hxxps://microsoftsgraphapi[.]azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "attempts to communicate with the attackers’ C&C servers at hxxps://msdnmicrosoft.azurewebsites[.]net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "hxxps://msdnmicrosoft.azurewebsites[.]net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]"
+      },
+      {
+        "sub": "Custom Screenshotter",
+        "rel": "saves photos that it saves to a password-protected ZIP archive",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "a password-protected ZIP archive"
+      },
+      {
+        "sub": "Custom Screenshotter",
+        "rel": "deletes all archives older than a week",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "archives"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "used Indicators of Compromise",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Indicators of Compromise"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "downloaded from hxxps://perfect-couple.com/perfectcouple[.]exe",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "hxxps://perfect-couple.com/perfectcouple[.]exe"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "leverages the Costura Assembly Loader",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Costura Assembly Loader"
+      },
+      {
+        "sub": "Custom Screenshotter",
+        "rel": "was also packed with the Costura Assembly Loader",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Costura Assembly Loader"
+      }
+    ]
+  }
+}

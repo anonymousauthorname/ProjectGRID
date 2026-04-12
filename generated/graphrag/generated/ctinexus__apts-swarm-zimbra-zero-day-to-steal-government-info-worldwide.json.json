@@ -1,0 +1,95 @@
+{
+  "sample_id": "ctinexus__apts-swarm-zimbra-zero-day-to-steal-government-info-worldwide.json",
+  "sample_index": 82,
+  "source": "ctinexus",
+  "file_name": "apts-swarm-zimbra-zero-day-to-steal-government-info-worldwide.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "ZIMBRA COLLABORATION SUITE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CVE-2023-37580",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "GOOGLE THREAT ANALYSIS GROUP",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "JAPAN ADVANCED INSTITUTE OF SCIENCE AND TECHNOLOGY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "GERMANY'S MAX PLANCK INSTITUTE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "GUNUNG SEWU",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CYBERATTACK GROUPS",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "REFLECTED CROSS-SITE SCRIPTING",
+        "type": "ATTACK_PATTERN"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CYBERATTACK GROUPS",
+        "rel": "related_to",
+        "obj": "CVE-2023-37580"
+      },
+      {
+        "sub": "CVE-2023-37580",
+        "rel": "related_to",
+        "obj": "ZIMBRA COLLABORATION SUITE"
+      },
+      {
+        "sub": "ZIMBRA COLLABORATION SUITE",
+        "rel": "related_to",
+        "obj": "JAPAN ADVANCED INSTITUTE OF SCIENCE AND TECHNOLOGY"
+      },
+      {
+        "sub": "ZIMBRA COLLABORATION SUITE",
+        "rel": "related_to",
+        "obj": "GERMANY'S MAX PLANCK INSTITUTE"
+      },
+      {
+        "sub": "ZIMBRA COLLABORATION SUITE",
+        "rel": "related_to",
+        "obj": "GUNUNG SEWU"
+      },
+      {
+        "sub": "GOOGLE THREAT ANALYSIS GROUP",
+        "rel": "related_to",
+        "obj": "CVE-2023-37580"
+      },
+      {
+        "sub": "CYBERATTACK GROUPS",
+        "rel": "related_to",
+        "obj": "GOOGLE THREAT ANALYSIS GROUP"
+      }
+    ]
+  }
+}

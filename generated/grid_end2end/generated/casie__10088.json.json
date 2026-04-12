@@ -1,0 +1,385 @@
+{
+  "sample_id": "casie__10088.json",
+  "sample_index": 35,
+  "source": "casie",
+  "file_name": "10088.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Robert Gren",
+        "type": "identity",
+        "alias": [
+          "Mr. Gren"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Robert Gren’s laptop",
+        "type": "file",
+        "alias": [
+          "his computer",
+          "the machines",
+          "affected machine"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "kink in his computer’s software",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "global ransomware attack",
+        "type": "campaign",
+        "alias": [
+          "the digital attack",
+          "the attack"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "more than 200,000 computers",
+        "type": "file",
+        "alias": [
+          "machines",
+          "global victims"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "China to Britain",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "digital information",
+        "type": "abstract-concept",
+        "alias": [
+          "personal photos",
+          "hospital patient records",
+          "priceless data"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "online entertainment business",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Krakow, Poland",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "bitcoin",
+        "type": "credential-value",
+        "alias": [
+          "digital currency",
+          "virtual currencies"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "bitcoin addresses",
+        "type": "indicator",
+        "alias": [
+          "similar to a traditional bank routing number"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Elliptic",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "F-Secure",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "200 individuals",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hospital patient records",
+        "type": "data",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Kim Peretti",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Department of Justice’s computer crime and intellectual property division",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Alston & Bird",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malware attachment",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "encrypted email",
+        "type": "email-address",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ransom fee",
+        "type": "credential-value",
+        "alias": [
+          "the digital fees",
+          "combined ransom fees"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ransomware attacks",
+        "type": "campaign",
+        "alias": [
+          "such attacks"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "money paid into bitcoin",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "public’s awareness of people potentially not getting their files back",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Robert Gren",
+        "rel": "initially thought was just a kink in",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "kink in his computer’s software"
+      },
+      {
+        "sub": "kink in his computer’s software",
+        "rel": "was in fact part of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "global ransomware attack"
+      },
+      {
+        "sub": "global ransomware attack",
+        "rel": "has affected",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "more than 200,000 computers"
+      },
+      {
+        "sub": "global ransomware attack",
+        "rel": "spread from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "China to Britain"
+      },
+      {
+        "sub": "global ransomware attack",
+        "rel": "caused loss of",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "digital information"
+      },
+      {
+        "sub": "Robert Gren",
+        "rel": "is a manager of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "online entertainment business"
+      },
+      {
+        "sub": "Robert Gren",
+        "rel": "is located in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Krakow, Poland"
+      },
+      {
+        "sub": "victims",
+        "rel": "hand over",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "ransom fee"
+      },
+      {
+        "sub": "victims",
+        "rel": "potentially lose",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "digital information"
+      },
+      {
+        "sub": "cybersecurity experts",
+        "rel": "warned against paying",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "victims"
+      },
+      {
+        "sub": "attackers",
+        "rel": "receive payment in",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "bitcoin"
+      },
+      {
+        "sub": "attackers",
+        "rel": "provided",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "bitcoin addresses"
+      },
+      {
+        "sub": "money paid into bitcoin",
+        "rel": "deposited into",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "ransomware attacks"
+      },
+      {
+        "sub": "Elliptic",
+        "rel": "tracks",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "bitcoin addresses"
+      },
+      {
+        "sub": "F-Secure",
+        "rel": "confirmed successful decryption for",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "ransomware attacks"
+      },
+      {
+        "sub": "F-Secure",
+        "rel": "identified",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "200 individuals"
+      },
+      {
+        "sub": "Kim Peretti",
+        "rel": "predicted the attack may be an epic failure",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "ransomware attacks"
+      },
+      {
+        "sub": "public’s awareness of people potentially not getting their files back",
+        "rel": "reduces expected impact of",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "ransomware attacks",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "assailants",
+        "rel": "send",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "encrypted email"
+      },
+      {
+        "sub": "assailants",
+        "rel": "include in",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malware attachment"
+      },
+      {
+        "sub": "malware attachment",
+        "rel": "takes over",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Robert Gren’s laptop"
+      },
+      {
+        "sub": "victims",
+        "rel": "pay",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "ransom fee"
+      },
+      {
+        "sub": "victims",
+        "rel": "lose",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "digital information"
+      }
+    ]
+  }
+}

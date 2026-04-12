@@ -1,0 +1,632 @@
+{
+  "sample_id": "securenlp__Elephantosis",
+  "sample_index": 154,
+  "source": "securenlp",
+  "file_name": "Elephantosis",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Windows Management Instrumentation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Query 'SELECT * FROM AntiVirusProduct'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Retrieve",
+        "obj": "Attribute 'productState'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Retrieve",
+        "obj": "Attribute 'DisplayName'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Retrieve",
+        "obj": "Attribute 'VersionNumber'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Retrieve",
+        "obj": "Attribute 'productUptoDate'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Victim host"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Assess",
+        "obj": "Security posture of target system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Plan",
+        "obj": "Further attacks"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Dropper"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Implant"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Has URL",
+        "obj": "External source"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Use",
+        "obj": "regsvr32.exe"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Modify",
+        "obj": "Encrypted DLL"
+      },
+      {
+        "sub": "Encrypted DLL",
+        "rel": "Decrypt",
+        "obj": "AES with specific keys"
+      },
+      {
+        "sub": "Implant",
+        "rel": "Use",
+        "obj": "Persistent access"
+      },
+      {
+        "sub": "Implant",
+        "rel": "Operate",
+        "obj": "Espionage activities"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "regsvr32.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "'perf585.dll'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "'dump21cb.dll'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Decrypt",
+        "obj": "AES"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Windows desktop environment"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Has value",
+        "obj": "'perf585.dll'"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Has value",
+        "obj": "'dump21cb.dll'"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Modify",
+        "obj": "registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "malicious DLL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Belong to",
+        "obj": "Babar"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "DLL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Function stub"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Function stub"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Remote thread"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "LoadLibraryA"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "Export in shared memory"
+      },
+      {
+        "sub": "DLL",
+        "rel": "Has value",
+        "obj": "32-bit"
+      },
+      {
+        "sub": "DLL",
+        "rel": "Modify",
+        "obj": "Remote process space"
+      },
+      {
+        "sub": "DLL",
+        "rel": "Locate at",
+        "obj": "Process space"
+      },
+      {
+        "sub": "DLL",
+        "rel": "Has hostname",
+        "obj": "Victim system"
+      },
+      {
+        "sub": "DLL",
+        "rel": "Inject",
+        "obj": "Running processes"
+      },
+      {
+        "sub": "DLL",
+        "rel": "Has vulnerability",
+        "obj": "Memory mapping"
+      },
+      {
+        "sub": "DLL",
+        "rel": "Write",
+        "obj": "Mapped memory object"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Belong to",
+        "obj": "Babar's implant"
+      },
+      {
+        "sub": "Registry",
+        "rel": "Create",
+        "obj": "HKU\\..\\CurrentVersion\\Run"
+      },
+      {
+        "sub": "Registry",
+        "rel": "Has value",
+        "obj": "MSSecurity"
+      },
+      {
+        "sub": "Registry",
+        "rel": "Execute",
+        "obj": "regsvr32.exe /s /n /i \"%APPDATA%\\%DLLNAME%\""
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System boot"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has persistence",
+        "obj": "System"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Use",
+        "obj": "RegisterRawInputDevices"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Use",
+        "obj": "GetRawInputData"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Use",
+        "obj": "GetClipboardData"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Construct",
+        "obj": "SHA-1-based hashing algorithm"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Modify",
+        "obj": "API name"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Operate",
+        "obj": "API resolution routine"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Has value",
+        "obj": "hardcoded hash"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Use",
+        "obj": "WMI"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Enumerate",
+        "obj": "anti-virus products"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Avoid",
+        "obj": "detection by security tools"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Has vulnerability",
+        "obj": "static analysis"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Has vulnerability",
+        "obj": "API call heuristics"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Belong to",
+        "obj": "Defense Evasion"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Use",
+        "obj": "Windows RAWINPUT model"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Write",
+        "obj": "update.msi"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Capture",
+        "obj": "clipboard data"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Exfiltrate",
+        "obj": "command and control server"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Has vulnerability",
+        "obj": "credential theft"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Belong to",
+        "obj": "Babar"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Operate",
+        "obj": "desktop"
+      },
+      {
+        "sub": "update.msi",
+        "rel": "Has filename",
+        "obj": "update.msi"
+      },
+      {
+        "sub": "update.msi",
+        "rel": "Has value",
+        "obj": "encrypted keystroke data"
+      },
+      {
+        "sub": "clipboard data",
+        "rel": "Has value",
+        "obj": "sensitive information such as passwords or credentials"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Has malware",
+        "obj": "keylogger"
+      },
+      {
+        "sub": "Keystroke data",
+        "rel": "Has value",
+        "obj": "user input"
+      },
+      {
+        "sub": "Keystroke data",
+        "rel": "Modify",
+        "obj": "encryption process"
+      },
+      {
+        "sub": "Credential access",
+        "rel": "Has tactic",
+        "obj": "keylogging"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "WH_KEYBOARD"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "WH_GETMESSAGE"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Monitor",
+        "obj": "Keyboard events"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Capture",
+        "obj": "Window names"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Capture",
+        "obj": "User default language"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Capture",
+        "obj": "Keyboard layout"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Capture",
+        "obj": "Desktop window names"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Identify",
+        "obj": "Internet browsers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Identify",
+        "obj": "Office applications"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Identify",
+        "obj": "Softphones"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Processes of interest"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Use",
+        "obj": "Keylogger"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Use",
+        "obj": "OpenCORE AMR"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Perform",
+        "obj": "Screen capture"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Use",
+        "obj": "Deflate"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Use",
+        "obj": "128-bit AES"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Store",
+        "obj": "update.msi"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Store",
+        "obj": "48fe7f28.msi"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Store",
+        "obj": "0c6b5d2d.msi"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Collect",
+        "obj": "Keystrokes"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Collect",
+        "obj": "Screen captures"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Collect",
+        "obj": "Audio streams"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Collect",
+        "obj": "Clipboard content"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "C&C Server Domain"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Use",
+        "obj": "http://www.horizons-tourisme.com/_vti_bin/_vti_msc/bb/index.php"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Use",
+        "obj": "http://www.gezelimmi.com/wp-includes/misc/bb/index.php"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Operate",
+        "obj": "Compromised System"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Write",
+        "obj": "Remote Thread Injection"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Modify",
+        "obj": "Data Exfiltration"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Has URL",
+        "obj": "http://www.horizons-tourisme.com/_vti_bin/_vti_msc/bb/index.php"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Has URL",
+        "obj": "http://www.gezelimmi.com/wp-includes/misc/bb/index.php"
+      },
+      {
+        "sub": "horizons-tourisme.com",
+        "rel": "Locate at",
+        "obj": "France"
+      },
+      {
+        "sub": "horizons-tourisme.com",
+        "rel": "Locate at",
+        "obj": "Algeria"
+      },
+      {
+        "sub": "gezelimmi.com",
+        "rel": "Has geolocation",
+        "obj": "Turkey"
+      },
+      {
+        "sub": "gezelimmi.com",
+        "rel": "Has value",
+        "obj": "HTTP 403 Error"
+      },
+      {
+        "sub": "Babar",
+        "rel": "Detect",
+        "obj": "Time-Triggered Data Exfiltration"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Deflate"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "128-bit AES"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "24 FE C5 AD 34 56 F7 F8 12 01 00 AE B6 7C DE AB"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "'update.msi'"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "'48fe7f28.msi'"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "%APPDATA%\\MSI"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "C&C servers"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "internet communication module"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "remote thread injection"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "exfiltration process"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has value",
+        "obj": "time-triggered"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has URL",
+        "obj": "%APPDATA%\\MSI"
+      }
+    ]
+  }
+}

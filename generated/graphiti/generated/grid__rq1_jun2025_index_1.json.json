@@ -1,0 +1,363 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_1.json",
+  "sample_index": 201,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_1.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CERBER",
+        "type": "Malware"
+      },
+      {
+        "name": "loader",
+        "type": "Tool"
+      },
+      {
+        "name": "Visual Basic script",
+        "type": "Indicator"
+      },
+      {
+        "name": "DLL file",
+        "type": "Indicator"
+      },
+      {
+        "name": "binary file",
+        "type": "Indicator"
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "Tool"
+      },
+      {
+        "name": "configuration file",
+        "type": "Indicator"
+      },
+      {
+        "name": "Msconfig",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Sandboxes",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Regedit",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Task Manager",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Virtual Machines",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Wireshark",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "360",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "AVG",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Bitdefender",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Dr. Web",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Kaspersky",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Norton",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Trend Micro",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "csc.exe",
+        "type": "Software"
+      },
+      {
+        "name": "regasm.exe",
+        "type": "Software"
+      },
+      {
+        "name": "WerFault.exe",
+        "type": "Software"
+      },
+      {
+        "name": "Dropbox",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "SHA256 hash",
+        "type": "Indicator"
+      },
+      {
+        "name": "machine learning",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "static machine learning",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "behavioral monitoring",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "selfextracting archive",
+        "type": "Indicator"
+      },
+      {
+        "name": "file injection",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Trend Micro Smart Protection Suites",
+        "type": "Organization"
+      },
+      {
+        "name": "WorryFree Business Security",
+        "type": "Organization"
+      },
+      {
+        "name": "Trend Micro Deep Discovery",
+        "type": "Organization"
+      },
+      {
+        "name": "Trend Micro OfficeScan",
+        "type": "Organization"
+      },
+      {
+        "name": "XGen endpoint security",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CERBER",
+        "rel": "USES",
+        "obj": "loader"
+      },
+      {
+        "sub": "loader",
+        "rel": "runs from",
+        "obj": "selfextracting archive"
+      },
+      {
+        "sub": "selfextracting archive",
+        "rel": "CONTAINS",
+        "obj": "Visual Basic script"
+      },
+      {
+        "sub": "selfextracting archive",
+        "rel": "CONTAINS",
+        "obj": "DLL file"
+      },
+      {
+        "sub": "selfextracting archive",
+        "rel": "CONTAINS",
+        "obj": "binary file"
+      },
+      {
+        "sub": "Visual Basic script",
+        "rel": "USES",
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "DLL file",
+        "rel": "READS",
+        "obj": "configuration file"
+      },
+      {
+        "sub": "DLL file",
+        "rel": "decrypts and executes",
+        "obj": "malicious code"
+      },
+      {
+        "sub": "loader",
+        "rel": "checks for",
+        "obj": "Virtual Machines"
+      },
+      {
+        "sub": "loader",
+        "rel": "checks for",
+        "obj": "sandboxes"
+      },
+      {
+        "sub": "loader",
+        "rel": "checks for",
+        "obj": "Msconfig"
+      },
+      {
+        "sub": "loader",
+        "rel": "checks for",
+        "obj": "Regedit"
+      },
+      {
+        "sub": "loader",
+        "rel": "checks for",
+        "obj": "Task Manager"
+      },
+      {
+        "sub": "loader",
+        "rel": "checks for",
+        "obj": "Wireshark"
+      },
+      {
+        "sub": "loader",
+        "rel": "checks for",
+        "obj": "360"
+      },
+      {
+        "sub": "loader",
+        "rel": "checks for",
+        "obj": "AVG"
+      },
+      {
+        "sub": "loader",
+        "rel": "checks for",
+        "obj": "Bitdefender"
+      },
+      {
+        "sub": "loader",
+        "rel": "checks for",
+        "obj": "Dr. Web"
+      },
+      {
+        "sub": "loader",
+        "rel": "checks for",
+        "obj": "Kaspersky"
+      },
+      {
+        "sub": "loader",
+        "rel": "checks for",
+        "obj": "Norton"
+      },
+      {
+        "sub": "loader",
+        "rel": "checks for",
+        "obj": "Trend Micro"
+      },
+      {
+        "sub": "loader",
+        "rel": "injects code into",
+        "obj": "csc.exe"
+      },
+      {
+        "sub": "loader",
+        "rel": "injects code into",
+        "obj": "regasm.exe"
+      },
+      {
+        "sub": "loader",
+        "rel": "injects code into",
+        "obj": "WerFault.exe"
+      },
+      {
+        "sub": "CERBER",
+        "rel": "evades detection by",
+        "obj": "machine learning"
+      },
+      {
+        "sub": "static machine learning",
+        "rel": "is evasive against",
+        "obj": "selfextracting archive"
+      },
+      {
+        "sub": "CERBER",
+        "rel": "evades detection by",
+        "obj": "behavioral monitoring"
+      },
+      {
+        "sub": "Trend Micro Smart Protection Suites",
+        "rel": "detects and blocks",
+        "obj": "CERBER"
+      },
+      {
+        "sub": "WorryFree Business Security",
+        "rel": "detects and blocks",
+        "obj": "CERBER"
+      },
+      {
+        "sub": "Trend Micro Deep Discovery",
+        "rel": "detects and blocks",
+        "obj": "CERBER"
+      },
+      {
+        "sub": "Trend Micro OfficeScan",
+        "rel": "detects and blocks",
+        "obj": "CERBER"
+      },
+      {
+        "sub": "Trend Micro OfficeScan",
+        "rel": "USES",
+        "obj": "XGen endpoint security"
+      },
+      {
+        "sub": "Trend Micro OfficeScan",
+        "rel": "INFUSES",
+        "obj": "machine learning"
+      },
+      {
+        "sub": "CERBER",
+        "rel": "delivers through",
+        "obj": "Dropbox"
+      },
+      {
+        "sub": "SHA256 hash",
+        "rel": "has hash",
+        "obj": "VBSCERBER.DLCYG"
+      },
+      {
+        "sub": "SHA256 hash",
+        "rel": "has hash",
+        "obj": "RansomCERBER.ENC"
+      },
+      {
+        "sub": "SHA256 hash",
+        "rel": "has hash",
+        "obj": "RansomCERBER.VSAGD"
+      },
+      {
+        "sub": "SHA256 hash",
+        "rel": "has hash",
+        "obj": "TROJCERBER.AL"
+      },
+      {
+        "sub": "file injection",
+        "rel": "is used for",
+        "obj": "CERBER"
+      }
+    ]
+  }
+}

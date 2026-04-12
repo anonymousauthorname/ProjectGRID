@@ -1,0 +1,298 @@
+{
+  "sample_id": "malkg__201201TrendMicroHeartBeat.txt",
+  "sample_index": 105,
+  "source": "malkg",
+  "file_name": "201201TrendMicroHeartBeat.txt",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "HeartBeat",
+        "type": "Unknown"
+      },
+      {
+        "name": "Campaign",
+        "type": "Unknown"
+      },
+      {
+        "name": "Organization",
+        "type": "Unknown"
+      },
+      {
+        "name": "Malware",
+        "type": "Unknown"
+      },
+      {
+        "name": "bundled files",
+        "type": "Unknown"
+      },
+      {
+        "name": "decoy documents",
+        "type": "Unknown"
+      },
+      {
+        "name": "File",
+        "type": "Unknown"
+      },
+      {
+        "name": "Information",
+        "type": "Unknown"
+      },
+      {
+        "name": "RAT installer",
+        "type": "Unknown"
+      },
+      {
+        "name": ".DLL file",
+        "type": "Unknown"
+      },
+      {
+        "name": "Process",
+        "type": "Unknown"
+      },
+      {
+        "name": "Service",
+        "type": "Unknown"
+      },
+      {
+        "name": "RAT component",
+        "type": "Unknown"
+      },
+      {
+        "name": "Behavior",
+        "type": "Unknown"
+      },
+      {
+        "name": "Infrastructure",
+        "type": "Unknown"
+      },
+      {
+        "name": "Malware Characteristic",
+        "type": "Unknown"
+      },
+      {
+        "name": "IP",
+        "type": "Unknown"
+      },
+      {
+        "name": "C&C domains",
+        "type": "Unknown"
+      },
+      {
+        "name": "Attacker",
+        "type": "Unknown"
+      },
+      {
+        "name": "Domain",
+        "type": "Unknown"
+      },
+      {
+        "name": "campaign codes",
+        "type": "Unknown"
+      },
+      {
+        "name": "User Agent",
+        "type": "Unknown"
+      },
+      {
+        "name": "Time",
+        "type": "Unknown"
+      },
+      {
+        "name": "Event",
+        "type": "Unknown"
+      },
+      {
+        "name": "Indicator",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "HeartBeat",
+        "rel": "is a",
+        "obj": "Campaign"
+      },
+      {
+        "sub": "HeartBeat",
+        "rel": "targets",
+        "obj": "Organization"
+      },
+      {
+        "sub": "HeartBeat",
+        "rel": "uses",
+        "obj": "Malware"
+      },
+      {
+        "sub": "HeartBeat",
+        "rel": "delivers via",
+        "obj": "Malware"
+      },
+      {
+        "sub": "bundled files",
+        "rel": "contain",
+        "obj": "Malware"
+      },
+      {
+        "sub": "decoy documents",
+        "rel": "use file formats",
+        "obj": "File"
+      },
+      {
+        "sub": "decoy documents",
+        "rel": "include",
+        "obj": "Information"
+      },
+      {
+        "sub": "RAT installer",
+        "rel": "drops",
+        "obj": "File"
+      },
+      {
+        "sub": ".DLL file",
+        "rel": "is injected into",
+        "obj": "Process"
+      },
+      {
+        "sub": ".DLL file",
+        "rel": "registers as",
+        "obj": "Service"
+      },
+      {
+        "sub": ".DLL file",
+        "rel": "uses fake file properties",
+        "obj": "Information"
+      },
+      {
+        "sub": "RAT component",
+        "rel": "allows remote execution of",
+        "obj": "Behavior"
+      },
+      {
+        "sub": "RAT component",
+        "rel": "communicates with",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "RAT component",
+        "rel": "sends to C&C server",
+        "obj": "Information"
+      },
+      {
+        "sub": "RAT component",
+        "rel": "uses XOR encryption",
+        "obj": "Malware Characteristic"
+      },
+      {
+        "sub": "RAT component",
+        "rel": "transfers data of size",
+        "obj": "Information"
+      },
+      {
+        "sub": "RAT component",
+        "rel": "uses port",
+        "obj": "IP"
+      },
+      {
+        "sub": "C&C domains",
+        "rel": "redirect to",
+        "obj": "IP"
+      },
+      {
+        "sub": "C&C domains",
+        "rel": "are hosted on",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "C&C domains",
+        "rel": "are used to hide",
+        "obj": "Attacker"
+      },
+      {
+        "sub": "C&C domains",
+        "rel": "include",
+        "obj": "Domain"
+      },
+      {
+        "sub": "campaign codes",
+        "rel": "contain",
+        "obj": "Information"
+      },
+      {
+        "sub": "campaign codes",
+        "rel": "describe",
+        "obj": "Malware"
+      },
+      {
+        "sub": "campaign codes",
+        "rel": "include",
+        "obj": "Information"
+      },
+      {
+        "sub": "campaign codes",
+        "rel": "use password",
+        "obj": "User Agent"
+      },
+      {
+        "sub": "HeartBeat",
+        "rel": "first seen in",
+        "obj": "Time"
+      },
+      {
+        "sub": "HeartBeat",
+        "rel": "active period",
+        "obj": "Time"
+      },
+      {
+        "sub": "HeartBeat",
+        "rel": "has variants",
+        "obj": "Malware"
+      },
+      {
+        "sub": "HeartBeat",
+        "rel": "is persistent",
+        "obj": "Information"
+      },
+      {
+        "sub": "HeartBeat",
+        "rel": "is isolated",
+        "obj": "Information"
+      },
+      {
+        "sub": "HeartBeat",
+        "rel": "is not related to",
+        "obj": "Event"
+      },
+      {
+        "sub": "HeartBeat",
+        "rel": "has indicators of compromise",
+        "obj": "Indicator"
+      },
+      {
+        "sub": "HeartBeat",
+        "rel": "has indicators of compromise",
+        "obj": "Malware"
+      },
+      {
+        "sub": "HeartBeat",
+        "rel": "was compiled in",
+        "obj": "Time"
+      }
+    ]
+  }
+}

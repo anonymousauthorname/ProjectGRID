@@ -1,0 +1,211 @@
+{
+  "sample_id": "ctinexus__apache-erp-0day-underscores-dangers-of-incomplete-patches.json",
+  "sample_index": 86,
+  "source": "ctinexus",
+  "file_name": "apache-erp-0day-underscores-dangers-of-incomplete-patches.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Unknown groups",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "zero-day vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "the 0-day vulnerability (CVE-2023-51467)",
+          "the vulnerability",
+          "the zero-day vulnerability"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Apache's OfBiz enterprise resource planning (ERP) framework",
+        "type": "general-software",
+        "alias": [
+          "Apache OFBiz",
+          "the ERP framework",
+          "the framework"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2023-51467",
+        "type": "indicator",
+        "alias": [
+          "the 0-day vulnerability (CVE-2023-51467)"
+        ],
+        "mother entity": [
+          "zero-day vulnerability"
+        ]
+      },
+      {
+        "name": "CVE-2023-49070",
+        "type": "indicator",
+        "alias": [
+          "a related issue"
+        ],
+        "mother entity": [
+          "zero-day vulnerability"
+        ]
+      },
+      {
+        "name": "cybersecurity firm SonicWall",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "sensitive information",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "remote execution",
+        "type": "attack-pattern",
+        "alias": [
+          "remotely execute code"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "applications using the ERP framework",
+        "type": "process",
+        "alias": [
+          "applications",
+          "the applications"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "patch",
+        "type": "course-of-action",
+        "alias": [
+          "a patch",
+          "the fix"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "attack variations",
+        "type": "attack-pattern",
+        "alias": [
+          "other variations of the attack"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Unknown groups",
+        "rel": "launched probes against",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "zero-day vulnerability"
+      },
+      {
+        "sub": "zero-day vulnerability",
+        "rel": "identified in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Apache's OfBiz enterprise resource planning (ERP) framework"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "allows an attacker to access",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "sensitive information"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "allows an attacker to remotely execute code against",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "applications using the ERP framework"
+      },
+      {
+        "sub": "cybersecurity firm SonicWall",
+        "rel": "analysis of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "zero-day vulnerability"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "disclosed on",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "zero-day vulnerability"
+      },
+      {
+        "sub": "CVE-2023-49070",
+        "rel": "related issue for",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "zero-day vulnerability"
+      },
+      {
+        "sub": "Apache Software Foundation",
+        "rel": "released a patch for",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "CVE-2023-49070"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "failed to protect against",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "attack variations",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "allows remote execution",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "remote execution"
+      },
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "exploits",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2023-49070"
+      }
+    ]
+  }
+}

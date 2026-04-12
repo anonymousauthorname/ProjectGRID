@@ -1,0 +1,312 @@
+{
+  "sample_id": "casie__1024.json",
+  "sample_index": 8,
+  "source": "casie",
+  "file_name": "1024.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Apache Software Foundation",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "remote code execution vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "the issue",
+          "the vulnerability (CVE-2017-5638)",
+          "the flaw",
+          "the Jakarta Multipart parser"
+        ],
+        "mother entity": [
+          "Jakarta Multipart parser"
+        ]
+      },
+      {
+        "name": "Jakarta Multipart parser",
+        "type": "detailed-part-of-general-software",
+        "alias": [
+          "the parser",
+          "malformed Content-Type HTTP header"
+        ],
+        "mother entity": [
+          "Apache Struts"
+        ]
+      },
+      {
+        "name": "Apache Struts",
+        "type": "general-software",
+        "alias": [
+          "the popular Java application framework",
+          "Struts"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "versions 2.3.5 through 2.3.31 and versions 2.5 through 2.5.10",
+        "type": "version",
+        "alias": [],
+        "mother entity": [
+          "Apache Struts"
+        ]
+      },
+      {
+        "name": "Cisco Talos",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Nick Biasini",
+        "type": "identity",
+        "alias": [
+          "Cisco threat researcher"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Content-Type header",
+        "type": "generic-noun",
+        "alias": [
+          "the Content-Type HTTP header"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "POST or PUT request",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "response",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "workarounds",
+        "type": "course-of-action",
+        "alias": [
+          "the workaround"
+        ],
+        "mother entity": [
+          "Apache Struts"
+        ]
+      },
+      {
+        "name": "CVE-2017-5638",
+        "type": "indicator",
+        "alias": [
+          "the vulnerability (CVE-2017-5638)"
+        ],
+        "mother entity": [
+          "remote code execution vulnerability"
+        ]
+      },
+      {
+        "name": "server",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "client",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "system",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the exploit",
+          "attackers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "exploitation events",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": [
+          "remote code execution vulnerability"
+        ]
+      },
+      {
+        "name": "emergency security advisory",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "authentication",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Apache Software Foundation",
+        "rel": "patched",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "remote code execution vulnerability"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "affecting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Jakarta Multipart parser"
+      },
+      {
+        "sub": "Jakarta Multipart parser",
+        "rel": "part of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "Apache Struts"
+      },
+      {
+        "sub": "Apache Struts",
+        "rel": "affected by",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "versions 2.3.5 through 2.3.31 and versions 2.5 through 2.5.10"
+      },
+      {
+        "sub": "Cisco Talos",
+        "rel": "found",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "exploitation events"
+      },
+      {
+        "sub": "attackers",
+        "rel": "exploit",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "remote code execution vulnerability"
+      },
+      {
+        "sub": "attackers",
+        "rel": "remotely take complete control of",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "system"
+      },
+      {
+        "sub": "remote code execution vulnerability",
+        "rel": "is actively being targeted in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "attackers"
+      },
+      {
+        "sub": "CVE-2017-5638",
+        "rel": "is in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Jakarta Multipart parser"
+      },
+      {
+        "sub": "CVE-2017-5638",
+        "rel": "improper handling of",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "Content-Type header"
+      },
+      {
+        "sub": "Content-Type header",
+        "rel": "indicates media type in",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "POST or PUT request"
+      },
+      {
+        "sub": "Content-Type header",
+        "rel": "indicates media type in",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "response"
+      },
+      {
+        "sub": "Struts",
+        "rel": "parses",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "malformed Content-Type HTTP header"
+      },
+      {
+        "sub": "Apache Software Foundation",
+        "rel": "issued",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "emergency security advisory"
+      },
+      {
+        "sub": "Nick Biasini",
+        "rel": "is researcher at",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Cisco Talos"
+      },
+      {
+        "sub": "workarounds",
+        "rel": "put in place for",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "remote code execution vulnerability"
+      },
+      {
+        "sub": "Apache Software Foundation",
+        "rel": "said in",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "emergency security advisory"
+      }
+    ]
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "sample_id": "malkg__201306FireEyeSeinUp.txt",
+  "sample_index": 123,
+  "source": "malkg",
+  "file_name": "201306FireEyeSeinUp.txt",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Trojan.APT.Seinup",
+        "type": "Unknown"
+      },
+      {
+        "name": "backdoor",
+        "type": "Malware Type"
+      },
+      {
+        "name": "Google Docs to perform redirection",
+        "type": "Unknown"
+      },
+      {
+        "name": "DLL side-loading technique",
+        "type": "Unknown"
+      },
+      {
+        "name": "exp1ore.exe",
+        "type": "Malware"
+      },
+      {
+        "name": "wab.exe",
+        "type": "Application"
+      },
+      {
+        "name": "wab32res.dll",
+        "type": "Malware"
+      },
+      {
+        "name": "wab32res.dll",
+        "type": "Unknown"
+      },
+      {
+        "name": "to hide from DLL listing",
+        "type": "Unknown"
+      },
+      {
+        "name": "msnetrsvw.exe",
+        "type": "Windows service"
+      },
+      {
+        "name": "msnetrsvw.exe",
+        "type": "Unknown"
+      },
+      {
+        "name": "malware to survive every reboot",
+        "type": "Unknown"
+      },
+      {
+        "name": "zero-skipping XOR encryption",
+        "type": "Unknown"
+      },
+      {
+        "name": "custom Base64 map to encode data",
+        "type": "Unknown"
+      },
+      {
+        "name": "salted digital thumbprint to validate data",
+        "type": "Unknown"
+      },
+      {
+        "name": "Mersenne Twister algorithm to generate random callback intervals",
+        "type": "Unknown"
+      },
+      {
+        "name": "secure callback mechanism",
+        "type": "Unknown"
+      },
+      {
+        "name": "ASEAN countries",
+        "type": "Unknown"
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "Unknown"
+      },
+      {
+        "name": "Address Book Application",
+        "type": "Unknown"
+      },
+      {
+        "name": "spear phishing document as a decoy",
+        "type": "Unknown"
+      },
+      {
+        "name": "spear phishing document",
+        "type": "Unknown"
+      },
+      {
+        "name": "maliciously encrypted content",
+        "type": "Unknown"
+      },
+      {
+        "name": "www.elizabearden.com",
+        "type": "Unknown"
+      },
+      {
+        "name": "www.dnsserviceonline.com",
+        "type": "Unknown"
+      },
+      {
+        "name": "a custom encoded URL format for callbacks",
+        "type": "Unknown"
+      },
+      {
+        "name": "callback at random intervals",
+        "type": "Unknown"
+      },
+      {
+        "name": "FireEye research team",
+        "type": "Unknown"
+      },
+      {
+        "name": "Backdoor.Makadocs",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "is a",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "uses",
+        "obj": "Google Docs to perform redirection"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "leverages",
+        "obj": "DLL side-loading technique"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "drops",
+        "obj": "exp1ore.exe"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "drops",
+        "obj": "wab.exe"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "drops",
+        "obj": "wab32res.dll"
+      },
+      {
+        "sub": "wab32res.dll",
+        "rel": "is manually loaded into memory",
+        "obj": "to hide from DLL listing"
+      },
+      {
+        "sub": "wab32res.dll",
+        "rel": "is installed as",
+        "obj": "msnetrsvw.exe"
+      },
+      {
+        "sub": "msnetrsvw.exe",
+        "rel": "allows",
+        "obj": "malware to survive every reboot"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "uses",
+        "obj": "zero-skipping XOR encryption"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "uses",
+        "obj": "custom Base64 map to encode data"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "uses",
+        "obj": "salted digital thumbprint to validate data"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "uses",
+        "obj": "Mersenne Twister algorithm to generate random callback intervals"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "uses",
+        "obj": "secure callback mechanism"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "targets",
+        "obj": "ASEAN countries"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "exploits",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "CVE-2012-0158",
+        "rel": "is a vulnerability in",
+        "obj": "Address Book Application"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "uses",
+        "obj": "spear phishing document as a decoy"
+      },
+      {
+        "sub": "spear phishing document",
+        "rel": "contains",
+        "obj": "maliciously encrypted content"
+      },
+      {
+        "sub": "spear phishing document",
+        "rel": "exploits",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "communicates with",
+        "obj": "www.elizabearden.com"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "communicates with",
+        "obj": "www.dnsserviceonline.com"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "uses",
+        "obj": "a custom encoded URL format for callbacks"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "performs",
+        "obj": "callback at random intervals"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "is associated with",
+        "obj": "FireEye research team"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "is related to",
+        "obj": "Backdoor.Makadocs"
+      },
+      {
+        "sub": "wab32res.dll",
+        "rel": "is_a_component_of",
+        "obj": "Trojan.APT.Seinup"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "enables",
+        "obj": "malware to survive every reboot"
+      },
+      {
+        "sub": "spear phishing document",
+        "rel": "contains and delivers",
+        "obj": "Trojan.APT.Seinup"
+      }
+    ]
+  }
+}

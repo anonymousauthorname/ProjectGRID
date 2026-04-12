@@ -1,0 +1,86 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-lockbit.json",
+  "sample_index": 77,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-lockbit.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "LockBit",
+        "type": "Malware"
+      },
+      {
+        "name": "StealBit",
+        "type": "Tool"
+      },
+      {
+        "name": "LockBit 2.0",
+        "type": "Malware"
+      },
+      {
+        "name": "Linux-ESXI Locker",
+        "type": "Malware"
+      },
+      {
+        "name": "Maze",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "network access brokers",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "underground technical writing contests",
+        "type": "Tool"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "LockBit",
+        "rel": "USES",
+        "obj": "StealBit"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "HAS",
+        "obj": "LockBit 2.0"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "HAS",
+        "obj": "Linux-ESXI Locker"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "cooperates with",
+        "obj": "network access brokers"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "cooperates with",
+        "obj": "Maze"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "SPONSORS",
+        "obj": "underground technical writing contests"
+      }
+    ]
+  }
+}

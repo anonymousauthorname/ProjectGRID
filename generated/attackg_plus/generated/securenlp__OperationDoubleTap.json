@@ -1,0 +1,297 @@
+{
+  "sample_id": "securenlp__OperationDoubleTap",
+  "sample_index": 192,
+  "source": "securenlp",
+  "file_name": "OperationDoubleTap",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "APT3",
+        "rel": "Use",
+        "obj": "Phishing message promoting 'Free Membership' for The PLAYBOY ClUB"
+      },
+      {
+        "sub": "APT3",
+        "rel": "Exploit",
+        "obj": "CVE-2014-6332"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "Has vulnerability",
+        "obj": "Windows OLE Automation Array Remote Code Execution"
+      },
+      {
+        "sub": "APT3",
+        "rel": "Operate",
+        "obj": "Victim systems"
+      },
+      {
+        "sub": "Malicious link",
+        "rel": "Has URL",
+        "obj": "Phishing message promoting 'Free Membership' for The PLAYBOY ClUB"
+      },
+      {
+        "sub": "Malicious link",
+        "rel": "Exploit",
+        "obj": "CVE-2014-6332"
+      },
+      {
+        "sub": "Windows OLE Automation Array Remote Code Execution",
+        "rel": "Belong to",
+        "obj": "Windows"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "http://www.playboysplus.com/install/install.exe"
+      },
+      {
+        "sub": "VBScript",
+        "rel": "Use",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "PowerShell",
+        "rel": "Execute",
+        "obj": "install.exe"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "Has filename",
+        "obj": "install.exe"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "Has filepath",
+        "obj": "install.exe"
+      },
+      {
+        "sub": "VBScript",
+        "rel": "Construct",
+        "obj": "'New-Object System.Net.WebClient').DownloadFile"
+      },
+      {
+        "sub": "PowerShell",
+        "rel": "Invoke",
+        "obj": "Install.exe"
+      },
+      {
+        "sub": "VBScript",
+        "rel": "Write",
+        "obj": "'New-Object System.Net.WebClient').DownloadFile"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "Construct",
+        "obj": "scheduled task"
+      },
+      {
+        "sub": "scheduled task",
+        "rel": "Use",
+        "obj": "C:\\Users\\Public\\test.exe"
+      },
+      {
+        "sub": "scheduled task",
+        "rel": "Operate",
+        "obj": "ONLOGON"
+      },
+      {
+        "sub": "scheduled task",
+        "rel": "Has value",
+        "obj": "\"mysc\""
+      },
+      {
+        "sub": "scheduled task",
+        "rel": "Has hostname",
+        "obj": "\"System\""
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "CVE-2014-4113",
+        "rel": "Has vulnerability",
+        "obj": "Local kernel privilege escalation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "SYSTEM-level access"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Full administrative control"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "SOCKS5 proxy"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "custom protocol"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "encrypted data transfer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "command IDs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "command and control server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "cmd.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "File in C:\\Users\\Public"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Access",
+        "obj": "User paths"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Access",
+        "obj": "Environment variables"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System configuration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Command"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Read",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "Command"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "SOCKS5 connection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "custom protocol"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "192.157.198.103"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "securitywap.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "192.157.198.103"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "command identifiers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "File"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System command"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Data via custom command protocol"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Custom command protocol"
+      }
+    ]
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "sample_id": "malkg__201402CrowdStrikeSakula.txt",
+  "sample_index": 146,
+  "source": "malkg",
+  "file_name": "201402CrowdStrikeSakula.txt",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2014-0322",
+        "type": "Entity"
+      },
+      {
+        "name": "ZxShell",
+        "type": "Entity"
+      },
+      {
+        "name": "Sakula",
+        "type": "Entity"
+      },
+      {
+        "name": "savmpet[.]com",
+        "type": "Entity"
+      },
+      {
+        "name": "gifas[.]assso[.]net",
+        "type": "Entity"
+      },
+      {
+        "name": "include.html",
+        "type": "Entity"
+      },
+      {
+        "name": "Tope.swf",
+        "type": "Entity"
+      },
+      {
+        "name": "Erido.jpg",
+        "type": "Entity"
+      },
+      {
+        "name": "oa[.]ameteksen[.]com",
+        "type": "Entity"
+      },
+      {
+        "name": "173.252.252.204",
+        "type": "Entity"
+      },
+      {
+        "name": "secure[.]safran-group[.]com",
+        "type": "Entity"
+      },
+      {
+        "name": "icbcqsz[.]com",
+        "type": "Entity"
+      },
+      {
+        "name": "snecma[.]fr",
+        "type": "Entity"
+      },
+      {
+        "name": "217.108.170.0/24",
+        "type": "Entity"
+      },
+      {
+        "name": "web[.]vipreclod[.]com",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2012-4792",
+        "type": "Entity"
+      },
+      {
+        "name": "Capstone Turbine",
+        "type": "Entity"
+      },
+      {
+        "name": "GIFAS",
+        "type": "Entity"
+      },
+      {
+        "name": "Groupement des industries françaises aéronautiques et spatiales",
+        "type": "Entity"
+      },
+      {
+        "name": "AURORA PANDA",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing via compromised website",
+        "type": "Entity"
+      },
+      {
+        "name": "zero-day vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious iframe",
+        "type": "Entity"
+      },
+      {
+        "name": "registry key modification",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled task addition",
+        "type": "Entity"
+      },
+      {
+        "name": "DNS compromise",
+        "type": "Entity"
+      },
+      {
+        "name": "malware persistence",
+        "type": "Entity"
+      },
+      {
+        "name": "Apple SSL vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "iOS 7.0.6",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Entity"
+      },
+      {
+        "name": "shellcode",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious script",
+        "type": "Entity"
+      },
+      {
+        "name": "attack vector: web compromise",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability exploitation",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Entity"
+      },
+      {
+        "name": "domain hijacking",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious file hosting",
+        "type": "Entity"
+      },
+      {
+        "name": "payload delivery",
+        "type": "Entity"
+      },
+      {
+        "name": "targeted attack",
+        "type": "Entity"
+      },
+      {
+        "name": "French aerospace sector",
+        "type": "Entity"
+      },
+      {
+        "name": "aerospace and defense organizations",
+        "type": "Entity"
+      },
+      {
+        "name": "Safran",
+        "type": "Entity"
+      },
+      {
+        "name": "Snecma",
+        "type": "Entity"
+      },
+      {
+        "name": "malware variant",
+        "type": "Entity"
+      },
+      {
+        "name": "MD5 hash: 61fe6f4cb2c54511f0804b1417ab3bd2",
+        "type": "Entity"
+      },
+      {
+        "name": "MD5 hash: c869c75ed1998294af3c676bdbd56851",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2014-0322",
+        "rel": "exploits",
+        "obj": "ZxShell"
+      },
+      {
+        "sub": "AURORA PANDA",
+        "rel": "uses",
+        "obj": "CVE-2014-0322"
+      },
+      {
+        "sub": "CVE-2012-4792",
+        "rel": "exploits",
+        "obj": "Sakula"
+      },
+      {
+        "sub": "Capstone Turbine",
+        "rel": "was compromised",
+        "obj": "CVE-2012-4792"
+      },
+      {
+        "sub": "savmpet[.]com",
+        "rel": "redirects to",
+        "obj": "gifas[.]assso[.]net"
+      },
+      {
+        "sub": "gifas[.]assso[.]net",
+        "rel": "hosts",
+        "obj": "include.html"
+      },
+      {
+        "sub": "gifas[.]assso[.]net",
+        "rel": "hosts",
+        "obj": "Tope.swf"
+      },
+      {
+        "sub": "gifas[.]assso[.]net",
+        "rel": "hosts",
+        "obj": "Erido.jpg"
+      },
+      {
+        "sub": "gifas[.]assso[.]net",
+        "rel": "hosts",
+        "obj": "malicious payload"
+      },
+      {
+        "sub": "GIFAS",
+        "rel": "has website content",
+        "obj": "savmpet[.]com"
+      },
+      {
+        "sub": "173.252.252.204",
+        "rel": "hosts",
+        "obj": "savmpet[.]com"
+      },
+      {
+        "sub": "173.252.252.204",
+        "rel": "hosts",
+        "obj": "gifas[.]assso[.]net"
+      },
+      {
+        "sub": "173.252.252.204",
+        "rel": "hosts",
+        "obj": "secure[.]safran-group[.]com"
+      },
+      {
+        "sub": "173.252.252.204",
+        "rel": "hosts",
+        "obj": "icbcqsz[.]com"
+      },
+      {
+        "sub": "secure[.]safran-group[.]com",
+        "rel": "was compromised via DNS",
+        "obj": "173.252.252.204"
+      },
+      {
+        "sub": "Safran",
+        "rel": "suffers DNS compromise",
+        "obj": "173.252.252.204"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "connects to",
+        "obj": "oa[.]ameteksen[.]com"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "adds domains to victim machine",
+        "obj": "snecma[.]fr"
+      },
+      {
+        "sub": "snecma[.]fr",
+        "rel": "belongs to",
+        "obj": "Snecma"
+      },
+      {
+        "sub": "snecma[.]fr",
+        "rel": "is used for",
+        "obj": "remote access to employees and contractors"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "uses",
+        "obj": "malicious script"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "uses",
+        "obj": "shellcode"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "has MD5 hash",
+        "obj": "c869c75ed1998294af3c676bdbd56851"
+      },
+      {
+        "sub": "Sakula (MD5: 61fe6f4cb2c54511f0804b1417ab3bd2)",
+        "rel": "connects to",
+        "obj": "web[.]vipreclod[.]com"
+      },
+      {
+        "sub": "Capstone Turbine",
+        "rel": "was targeted in",
+        "obj": "2012 SWC attack"
+      },
+      {
+        "sub": "Capstone Turbine",
+        "rel": "was compromised via",
+        "obj": "CVE-2012-4792"
+      },
+      {
+        "sub": "Capstone Turbine",
+        "rel": "uses",
+        "obj": "GIFAS-based domains"
+      },
+      {
+        "sub": "Capstone Turbine attack",
+        "rel": "shares similarity with",
+        "obj": "French aerospace attack"
+      },
+      {
+        "sub": "French aerospace sector",
+        "rel": "is targeted",
+        "obj": "Sakula"
+      },
+      {
+        "sub": "French aerospace sector",
+        "rel": "is targeted via",
+        "obj": "GIFAS-based domains"
+      },
+      {
+        "sub": "French aerospace sector",
+        "rel": "is targeted via",
+        "obj": "zero-day vulnerability"
+      },
+      {
+        "sub": "French aerospace sector",
+        "rel": "is targeted via",
+        "obj": "web compromise"
+      },
+      {
+        "sub": "French aerospace sector",
+        "rel": "is targeted via",
+        "obj": "malicious iframe"
+      },
+      {
+        "sub": "malicious iframe",
+        "rel": "is hosted at",
+        "obj": "savmpet[.]com"
+      },
+      {
+        "sub": "malicious iframe",
+        "rel": "redirects to",
+        "obj": "gifas[.]assso[.]net"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "is used in",
+        "obj": "targeted attack"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "is used in",
+        "obj": "vulnerability exploitation"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "is used in",
+        "obj": "payload delivery"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "modifies registry key",
+        "obj": "malware persistence"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "adds scheduled task",
+        "obj": "malware persistence"
+      }
+    ]
+  }
+}

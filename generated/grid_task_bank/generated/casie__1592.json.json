@@ -1,0 +1,542 @@
+{
+  "sample_id": "casie__1592.json",
+  "sample_index": 7,
+  "source": "casie",
+  "file_name": "1592.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TP-Link",
+        "type": "general-software",
+        "alias": [
+          "TP-Link router model"
+        ]
+      },
+      {
+        "name": "M5350",
+        "type": "general-software",
+        "alias": [
+          "TP-Link M5350",
+          "3G mobile Wi-Fi router"
+        ]
+      },
+      {
+        "name": "3G mobile Wi-Fi router",
+        "type": "general-software",
+        "alias": [
+          "TP-Link M5350"
+        ]
+      },
+      {
+        "name": "SMS message",
+        "type": "network-traffic",
+        "alias": [
+          "SMS"
+        ]
+      },
+      {
+        "name": "SIM card",
+        "type": "infrastructure",
+        "alias": [
+          "router's SIM card"
+        ]
+      },
+      {
+        "name": "German security researcher",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Jan Hörsch"
+        ]
+      },
+      {
+        "name": "Jan Hörsch",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "researcher for Securai",
+          "security researcher"
+        ]
+      },
+      {
+        "name": "Heise.de",
+        "type": "media",
+        "alias": [
+          "German newspaper"
+        ]
+      },
+      {
+        "name": "Bleeping Computer",
+        "type": "media",
+        "alias": [
+          "online conversation"
+        ]
+      },
+      {
+        "name": "Securai",
+        "type": "security-product",
+        "alias": [
+          "cyber-security firm"
+        ]
+      },
+      {
+        "name": "firmware",
+        "type": "general-software"
+      },
+      {
+        "name": "SMS feature",
+        "type": "attack-pattern",
+        "alias": [
+          "incoming SMS messages feature"
+        ]
+      },
+      {
+        "name": "router's SIM card",
+        "type": "infrastructure",
+        "alias": [
+          "SIM card"
+        ]
+      },
+      {
+        "name": "telephone number",
+        "type": "indicator",
+        "alias": [
+          "router's phone number"
+        ]
+      },
+      {
+        "name": "admin account password",
+        "type": "credential-value",
+        "alias": [
+          "admin password"
+        ]
+      },
+      {
+        "name": "Wi-Fi network SSID",
+        "type": "indicator",
+        "alias": [
+          "SSID"
+        ]
+      },
+      {
+        "name": "Wi-Fi network's password",
+        "type": "indicator",
+        "alias": [
+          "Wi-Fi password"
+        ]
+      },
+      {
+        "name": "Kaspersky Security Analyst Summit (SAS)",
+        "type": "event",
+        "alias": [
+          "Kaspersky Security Analyst Summit"
+        ]
+      },
+      {
+        "name": "Hootoo Travelmate",
+        "type": "general-software"
+      },
+      {
+        "name": "Trendnet TEW714TRU",
+        "type": "general-software"
+      },
+      {
+        "name": "Vstarcam",
+        "type": "general-software",
+        "alias": [
+          "webcams"
+        ]
+      },
+      {
+        "name": "Startech modems",
+        "type": "general-software"
+      },
+      {
+        "name": "Panasonic BM ET200 retina scanners",
+        "type": "general-software"
+      },
+      {
+        "name": "Western Digital MyCloud NAS hard drives",
+        "type": "general-software"
+      },
+      {
+        "name": "hardcoded Telnet password",
+        "type": "indicator",
+        "alias": [
+          "Telnet password"
+        ]
+      },
+      {
+        "name": "authentication bypass",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "URL",
+        "type": "url"
+      },
+      {
+        "name": "admin panel",
+        "type": "security-product"
+      },
+      {
+        "name": "disclosure",
+        "type": "course-of-action"
+      },
+      {
+        "name": "mobile telco providers",
+        "type": "organization"
+      },
+      {
+        "name": "mobile operator's network",
+        "type": "infrastructure"
+      },
+      {
+        "name": "router's telephone number",
+        "type": "indicator"
+      },
+      {
+        "name": "TP-Link model M5350",
+        "type": "general-software",
+        "alias": [
+          "M5350"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TP-Link router model",
+        "rel": "will spew out",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "admin password"
+      },
+      {
+        "sub": "anyone that sends an SMS message",
+        "rel": "sends",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "SMS message"
+      },
+      {
+        "sub": "SMS message",
+        "rel": "sent to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "router's SIM card"
+      },
+      {
+        "sub": "a particular script inside",
+        "rel": "inside",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "TP-Link router model"
+      },
+      {
+        "sub": "German security researcher Jan Hörsch",
+        "rel": "shared his findings with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Heise.de"
+      },
+      {
+        "sub": "The vulnerability",
+        "rel": "affects",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "TP-Link model M5350"
+      },
+      {
+        "sub": "mobile telco providers",
+        "rel": "distribute",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "TP-Link model M5350"
+      },
+      {
+        "sub": "mobile telco providers",
+        "rel": "to their customers",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "TP-Link model M5350"
+      },
+      {
+        "sub": "a SIM card",
+        "rel": "inserted in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "router"
+      },
+      {
+        "sub": "SIM card",
+        "rel": "allows",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "router to connect to"
+      },
+      {
+        "sub": "router",
+        "rel": "connect to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "mobile operator's network"
+      },
+      {
+        "sub": "SIM card",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "telephone number"
+      },
+      {
+        "sub": "Jan Hörsch",
+        "rel": "is a researcher for",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Securai"
+      },
+      {
+        "sub": "Jan Hörsch",
+        "rel": "analyzed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "router's firmware"
+      },
+      {
+        "sub": "router's firmware",
+        "rel": "analyzed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Jan Hörsch"
+      },
+      {
+        "sub": "Jan Hörsch",
+        "rel": "discovered",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "SMS feature"
+      },
+      {
+        "sub": "SMS message",
+        "rel": "sent",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "router"
+      },
+      {
+        "sub": "router",
+        "rel": "would answer back with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "admin account password"
+      },
+      {
+        "sub": "router",
+        "rel": "would answer back with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Wi-Fi network SSID"
+      },
+      {
+        "sub": "router",
+        "rel": "would answer back with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Wi-Fi network's password"
+      },
+      {
+        "sub": "Jan Hörsch",
+        "rel": "told",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Bleeping Computer"
+      },
+      {
+        "sub": "attacker",
+        "rel": "needs to know",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "router SIM card's phone number"
+      },
+      {
+        "sub": "attacker",
+        "rel": "exploit with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "issue"
+      },
+      {
+        "sub": "researcher",
+        "rel": "discovered",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "issue"
+      },
+      {
+        "sub": "researcher",
+        "rel": "discovered",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "various devices"
+      },
+      {
+        "sub": "findings",
+        "rel": "presented in a talk at",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Kaspersky Security Analyst Summit (SAS)"
+      },
+      {
+        "sub": "Hörsch",
+        "rel": "presented",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "several other vulnerabilities"
+      },
+      {
+        "sub": "vulnerabilities",
+        "rel": "allowed him to obtain root access to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Hootoo Travelmate"
+      },
+      {
+        "sub": "vulnerabilities",
+        "rel": "allowed him to obtain root access to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Trendnet TEW714TRU routers"
+      },
+      {
+        "sub": "vulnerabilities",
+        "rel": "allowed him to obtain root access to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Vstarcam webcams"
+      },
+      {
+        "sub": "vulnerabilities",
+        "rel": "include",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "hardcoded Telnet password"
+      },
+      {
+        "sub": "hardcoded Telnet password",
+        "rel": "in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Startech modems"
+      },
+      {
+        "sub": "authentication bypass",
+        "rel": "for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Panasonic BM ET200 retina scanners"
+      },
+      {
+        "sub": "authentication bypass",
+        "rel": "allowed anyone access to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "admin panel"
+      },
+      {
+        "sub": "authentication bypass",
+        "rel": "just by deleting a few parameters in",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "URL"
+      },
+      {
+        "sub": "presentation",
+        "rel": "detailed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "several flaws"
+      },
+      {
+        "sub": "several flaws",
+        "rel": "in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Western Digital MyCloud NAS hard drives"
+      },
+      {
+        "sub": "bugs",
+        "rel": "made public",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "another researcher"
+      },
+      {
+        "sub": "another researcher",
+        "rel": "disclosed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "bugs"
+      }
+    ]
+  }
+}

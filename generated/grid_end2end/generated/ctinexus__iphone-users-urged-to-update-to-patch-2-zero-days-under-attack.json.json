@@ -1,0 +1,498 @@
+{
+  "sample_id": "ctinexus__iphone-users-urged-to-update-to-patch-2-zero-days-under-attack.json",
+  "sample_index": 93,
+  "source": "ctinexus",
+  "file_name": "iphone-users-urged-to-update-to-patch-2-zero-days-under-attack.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Apple",
+        "type": "security-product",
+        "alias": [
+          "None"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "macOS",
+        "type": "general-software",
+        "alias": [
+          "its desktop OS"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "iPhone",
+        "type": "general-software",
+        "alias": [
+          "None"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "iPad",
+        "type": "general-software",
+        "alias": [
+          "None"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "updates",
+        "type": "course-of-action",
+        "alias": [
+          "the patches"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "two zero-days",
+        "type": "vulnerability",
+        "alias": [
+          "two flaws"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "arbitrary code",
+        "type": "file",
+        "alias": [
+          "code"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "devices",
+        "type": "infrastructure",
+        "alias": [
+          "effected devices"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "iOS 15.6.1",
+        "type": "general-software",
+        "alias": [
+          "iOS"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "macOS Monterey 12.5.1",
+        "type": "general-software",
+        "alias": [
+          "Monterey version of its desktop OS"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "two flaws",
+        "type": "vulnerability",
+        "alias": [
+          "one of the flaws"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2022-32894",
+        "type": "vulnerability",
+        "alias": [
+          "kernel bug"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "iOS",
+        "type": "general-software",
+        "alias": [
+          "the iOS"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "macOS",
+        "type": "general-software",
+        "alias": [
+          "the Monterey version of its desktop OS"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "out-of-bounds write issue",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerability"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "improved bounds checking",
+        "type": "course-of-action",
+        "alias": [
+          "None"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "application",
+        "type": "general-software",
+        "alias": [
+          "the application"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "kernel privileges",
+        "type": "credential-value",
+        "alias": [
+          "None"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "report",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "it"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attackers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Apple Wednesday",
+        "type": "location",
+        "alias": [
+          "None"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "kernel",
+        "type": "general-software",
+        "alias": [
+          "None"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Monterey version of its desktop OS",
+        "type": "general-software",
+        "alias": [
+          "macOS Monterey 12.5.1"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "iOS 15",
+        "type": "general-software",
+        "alias": [
+          "iOS"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Apple devices",
+        "type": "infrastructure",
+        "alias": [
+          "the real thing"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "it",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerability"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "actively exploited",
+        "type": "attack-pattern",
+        "alias": [
+          "actively exploited"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "vulnerable devices",
+        "type": "infrastructure",
+        "alias": [
+          "None"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "fixes",
+        "type": "course-of-action",
+        "alias": [
+          "the patches"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "15.6.1",
+        "type": "generic-noun",
+        "alias": [
+          "None"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "12.5.1",
+        "type": "generic-noun",
+        "alias": [
+          "None"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "zero-days",
+        "type": "vulnerability",
+        "alias": [
+          "two zero-days"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "patches",
+        "type": "course-of-action",
+        "alias": [
+          "the patches"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "impacted Apple devices",
+        "type": "infrastructure",
+        "alias": [
+          "any Apple device that can run either iOS 15 or the Monterey version of its desktop OS"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Apple",
+        "rel": "urging",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "macOS"
+      },
+      {
+        "sub": "Apple",
+        "rel": "urging",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "iPhone"
+      },
+      {
+        "sub": "Apple",
+        "rel": "urging",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "iPad"
+      },
+      {
+        "sub": "updates",
+        "rel": "includes fixes for",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "two zero-days"
+      },
+      {
+        "sub": "two zero-days",
+        "rel": "allow attackers to execute",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "arbitrary code"
+      },
+      {
+        "sub": "arbitrary code",
+        "rel": "take over",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "devices"
+      },
+      {
+        "sub": "updates",
+        "rel": "available for",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "devices"
+      },
+      {
+        "sub": "updates",
+        "rel": "available for",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "iOS 15.6.1"
+      },
+      {
+        "sub": "updates",
+        "rel": "available for",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "macOS Monterey 12.5.1"
+      },
+      {
+        "sub": "updates",
+        "rel": "address",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "two flaws"
+      },
+      {
+        "sub": "two flaws",
+        "rel": "impact",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "impacted Apple devices"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "present in",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "iOS"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "present in",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "macOS"
+      },
+      {
+        "sub": "out-of-bounds write issue",
+        "rel": "was addressed with",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "improved bounds checking"
+      },
+      {
+        "sub": "application",
+        "rel": "execute arbitrary code with",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "kernel privileges"
+      },
+      {
+        "sub": "report",
+        "rel": "said it may have been actively exploited",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "actively exploited",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "attackers",
+        "rel": "exploit",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "two zero-days"
+      },
+      {
+        "sub": "Apple",
+        "rel": "released",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "updates"
+      },
+      {
+        "sub": "Apple",
+        "rel": "released",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "Apple Wednesday"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "is a",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "out-of-bounds write issue"
+      },
+      {
+        "sub": "out-of-bounds write issue",
+        "rel": "allows",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "application"
+      },
+      {
+        "sub": "two zero-days",
+        "rel": "under active attack",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "attackers"
+      },
+      {
+        "sub": "two zero-days",
+        "rel": "may have been actively exploited",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "vulnerable devices",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "updates",
+        "rel": "includes fixes for",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "two zero-days"
+      }
+    ]
+  }
+}

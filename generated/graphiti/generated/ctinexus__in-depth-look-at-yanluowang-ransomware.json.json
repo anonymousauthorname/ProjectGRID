@@ -1,0 +1,139 @@
+{
+  "sample_id": "ctinexus__in-depth-look-at-yanluowang-ransomware.json",
+  "sample_index": 54,
+  "source": "ctinexus",
+  "file_name": "in-depth-look-at-yanluowang-ransomware.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Yanluowang",
+        "type": "Malware"
+      },
+      {
+        "name": "Fivehands",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Thieflock",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "AdFind",
+        "type": "Tool"
+      },
+      {
+        "name": "United States",
+        "type": "Location"
+      },
+      {
+        "name": "financial sector",
+        "type": "Organization"
+      },
+      {
+        "name": "manufacturing",
+        "type": "Location"
+      },
+      {
+        "name": "IT services",
+        "type": "Organization"
+      },
+      {
+        "name": "consultancy",
+        "type": "Organization"
+      },
+      {
+        "name": "engineering",
+        "type": "Organization"
+      },
+      {
+        "name": "Symantec",
+        "type": "Organization"
+      },
+      {
+        "name": "Broadcom Software",
+        "type": "Organization"
+      },
+      {
+        "name": "U.S. corporations",
+        "type": "Organization"
+      },
+      {
+        "name": "Active Directory",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Yanluowang",
+        "rel": "shares ttps with",
+        "obj": "Thieflock"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "USES",
+        "obj": "AdFind"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "DISCOVERED",
+        "obj": "Yanluowang"
+      },
+      {
+        "sub": "United States",
+        "rel": "attacked by",
+        "obj": "Yanluowang"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "TARGETS",
+        "obj": "financial sector"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "TARGETS",
+        "obj": "manufacturing"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "TARGETS",
+        "obj": "IT services"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "TARGETS",
+        "obj": "consultancy"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "TARGETS",
+        "obj": "engineering"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "ATTACKED",
+        "obj": "U.S. corporations"
+      },
+      {
+        "sub": "AdFind",
+        "rel": "RECONNOITERS",
+        "obj": "Active Directory"
+      }
+    ]
+  }
+}

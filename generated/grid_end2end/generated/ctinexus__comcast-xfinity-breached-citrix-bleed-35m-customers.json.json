@@ -1,0 +1,254 @@
+{
+  "sample_id": "ctinexus__comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "sample_index": 98,
+  "source": "ctinexus",
+  "file_name": "comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2023-4966",
+        "type": "vulnerability",
+        "alias": [
+          "CitrixBleed",
+          "the vulnerability",
+          "this vulnerability",
+          "the vulnerability affecting Citrix Systems"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Citrix Systems",
+        "type": "general-software",
+        "alias": [
+          "Citrix Systems' NetScaler ADC and Gateway"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "NetScaler ADC and Gateway",
+        "type": "general-software",
+        "alias": [
+          "Citrix Systems' NetScaler ADC and Gateway"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attackers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "October",
+        "type": "date/time",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "many organizations",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Comcast Xfinity",
+        "type": "identity",
+        "alias": [
+          "the cable giant",
+          "one such organization"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "a CitrixBleed-enabled breach",
+        "type": "campaign",
+        "alias": [
+          "the breach"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "usernames",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hashed passwords",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "names",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "contact information",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "last four digits of Social Security numbers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "dates of birth",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "security questions and answers",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "the attacker",
+        "rel": "exploiting",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "affecting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Citrix Systems"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "affecting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "NetScaler ADC and Gateway"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "exploiting CVE-2023-4966 since at least August",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "exploiting CVE-2023-4966 even after October",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "many organizations",
+        "rel": "struggled to shore up their systems",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "Comcast Xfinity",
+        "rel": "was the victim of",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "a CitrixBleed-enabled breach"
+      },
+      {
+        "sub": "a CitrixBleed-enabled breach",
+        "rel": "breached customer data",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Comcast Xfinity"
+      },
+      {
+        "sub": "a CitrixBleed-enabled breach",
+        "rel": "exfiltrated",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "usernames"
+      },
+      {
+        "sub": "a CitrixBleed-enabled breach",
+        "rel": "exfiltrated",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "hashed passwords"
+      },
+      {
+        "sub": "a CitrixBleed-enabled breach",
+        "rel": "exfiltrated",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "names"
+      },
+      {
+        "sub": "a CitrixBleed-enabled breach",
+        "rel": "exfiltrated",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "contact information"
+      },
+      {
+        "sub": "a CitrixBleed-enabled breach",
+        "rel": "exfiltrated",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "last four digits of Social Security numbers"
+      },
+      {
+        "sub": "a CitrixBleed-enabled breach",
+        "rel": "exfiltrated",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "dates of birth"
+      },
+      {
+        "sub": "a CitrixBleed-enabled breach",
+        "rel": "exfiltrated",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "security questions and answers"
+      }
+    ]
+  }
+}

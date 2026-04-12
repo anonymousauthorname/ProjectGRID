@@ -1,0 +1,310 @@
+{
+  "sample_id": "securenlp__Aided_Frame_Aided_Direction",
+  "sample_index": 150,
+  "source": "securenlp",
+  "file_name": "Aided_Frame_Aided_Direction",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Poison Ivy",
+        "type": "Entity"
+      },
+      {
+        "name": "iframe",
+        "type": "Entity"
+      },
+      {
+        "name": "103.27.108.45",
+        "type": "Entity"
+      },
+      {
+        "name": "hxxp://103.27.108.45/img/js.php",
+        "type": "Entity"
+      },
+      {
+        "name": "Java exploit",
+        "type": "Entity"
+      },
+      {
+        "name": "Google Chrome",
+        "type": "Entity"
+      },
+      {
+        "name": "Sunshop Digital Quartermaster",
+        "type": "Entity"
+      },
+      {
+        "name": "APT",
+        "type": "Entity"
+      },
+      {
+        "name": "C2: quakegoogle.servequake.com",
+        "type": "Entity"
+      },
+      {
+        "name": "Port: 80",
+        "type": "Entity"
+      },
+      {
+        "name": "Password: qeTGd3485fF",
+        "type": "Entity"
+      },
+      {
+        "name": "Mutex: )!VoqA.I4",
+        "type": "Entity"
+      },
+      {
+        "name": "115.126.62.100",
+        "type": "Entity"
+      },
+      {
+        "name": "assign.ddnsking.com",
+        "type": "Entity"
+      },
+      {
+        "name": "Port: 443",
+        "type": "Entity"
+      },
+      {
+        "name": "SOGU (aka Kaba)",
+        "type": "Entity"
+      },
+      {
+        "name": "SHA256: 82a98c88d3dd57a6ebc0fe7167a86875ed52ebddc6374ad640407efec01b1393",
+        "type": "Entity"
+      },
+      {
+        "name": "RT_MANIFEST",
+        "type": "Entity"
+      },
+      {
+        "name": "Sunshop Manifest",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing",
+        "type": "Entity"
+      },
+      {
+        "name": "non-profit organizations",
+        "type": "Entity"
+      },
+      {
+        "name": "non-governmental organizations (NGO)",
+        "type": "Entity"
+      },
+      {
+        "name": "environmental advocacy",
+        "type": "Entity"
+      },
+      {
+        "name": "democracy and human rights",
+        "type": "Entity"
+      },
+      {
+        "name": "public facing websites",
+        "type": "Entity"
+      },
+      {
+        "name": "lateral movement",
+        "type": "Entity"
+      },
+      {
+        "name": "programmatic data",
+        "type": "Entity"
+      },
+      {
+        "name": "China-based threat actors",
+        "type": "Entity"
+      },
+      {
+        "name": "domestic unrest",
+        "type": "Entity"
+      },
+      {
+        "name": "Chinese government",
+        "type": "Entity"
+      },
+      {
+        "name": "grant applications",
+        "type": "Entity"
+      },
+      {
+        "name": "activity reports",
+        "type": "Entity"
+      },
+      {
+        "name": "China-based operations",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "iframe",
+        "rel": "directs to",
+        "obj": "103.27.108.45"
+      },
+      {
+        "sub": "iframe",
+        "rel": "hosts",
+        "obj": "Java exploit"
+      },
+      {
+        "sub": "Java exploit",
+        "rel": "downloads",
+        "obj": "hxxp://103.27.108.45/img/js.php"
+      },
+      {
+        "sub": "Java exploit",
+        "rel": "decodes",
+        "obj": "payload"
+      },
+      {
+        "sub": "payload",
+        "rel": "is identified as",
+        "obj": "Poison Ivy"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "has configuration",
+        "obj": "C2: quakegoogle.servequake.com"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "has configuration",
+        "obj": "Port: 80"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "has configuration",
+        "obj": "Password: qeTGd3485fF"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "has configuration",
+        "obj": "Mutex: )!VoqA.I4"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "contains",
+        "obj": "RT_MANIFEST"
+      },
+      {
+        "sub": "RT_MANIFEST",
+        "rel": "has SHA256",
+        "obj": "SHA256: 82a98c88d3dd57a6ebc0fe7167a86875ed52ebddc6374ad640407efec01b1393"
+      },
+      {
+        "sub": "RT_MANIFEST",
+        "rel": "is known as",
+        "obj": "Sunshop Manifest"
+      },
+      {
+        "sub": "Sunshop Digital Quartermaster",
+        "rel": "supports",
+        "obj": "China-based threat actors"
+      },
+      {
+        "sub": "Sunshop Digital Quartermaster",
+        "rel": "is linked to",
+        "obj": "APT"
+      },
+      {
+        "sub": "Sunshop Digital Quartermaster",
+        "rel": "is associated with",
+        "obj": "SOGU (aka Kaba)"
+      },
+      {
+        "sub": "SOGU (aka Kaba)",
+        "rel": "sends callback traffic to",
+        "obj": "assign.ddnsking.com"
+      },
+      {
+        "sub": "SOGU (aka Kaba)",
+        "rel": "uses port",
+        "obj": "Port: 443"
+      },
+      {
+        "sub": "non-profit organizations",
+        "rel": "are targeted by",
+        "obj": "China-based threat actors"
+      },
+      {
+        "sub": "non-governmental organizations (NGO)",
+        "rel": "are targeted by",
+        "obj": "China-based threat actors"
+      },
+      {
+        "sub": "environmental advocacy",
+        "rel": "is targeted by",
+        "obj": "China-based threat actors"
+      },
+      {
+        "sub": "democracy and human rights",
+        "rel": "is targeted by",
+        "obj": "China-based threat actors"
+      },
+      {
+        "sub": "public facing websites",
+        "rel": "are compromised by",
+        "obj": "China-based threat actors"
+      },
+      {
+        "sub": "public facing websites",
+        "rel": "are used for",
+        "obj": "lateral movement"
+      },
+      {
+        "sub": "grant applications",
+        "rel": "is stolen",
+        "obj": "China-based threat actors"
+      },
+      {
+        "sub": "activity reports",
+        "rel": "is stolen",
+        "obj": "China-based threat actors"
+      },
+      {
+        "sub": "China-based threat actors",
+        "rel": "seek to monitor",
+        "obj": "domestic unrest"
+      },
+      {
+        "sub": "China-based threat actors",
+        "rel": "seek to embarrass",
+        "obj": "Chinese government"
+      },
+      {
+        "sub": "China-based threat actors",
+        "rel": "target",
+        "obj": "organizations with operations in China"
+      },
+      {
+        "sub": "China-based threat actors",
+        "rel": "are motivated to steal",
+        "obj": "programmatic data"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "may use",
+        "obj": "phishing"
+      }
+    ]
+  }
+}

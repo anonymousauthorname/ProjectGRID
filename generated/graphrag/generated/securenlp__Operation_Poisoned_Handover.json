@@ -1,0 +1,272 @@
+{
+  "sample_id": "securenlp__Operation_Poisoned_Handover",
+  "sample_index": 182,
+  "source": "securenlp",
+  "file_name": "Operation_Poisoned_Handover",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "OPERATION POISONED HANDOVER",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "OPERATION POISONED HURRICANE",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "HONG KONG",
+        "type": "GEO"
+      },
+      {
+        "name": "NEXT MEDIA",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "APPLE DAILY",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "HK GOLDEN",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "KERNELBOT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "W32 CABINET",
+        "type": "TOOL"
+      },
+      {
+        "name": "QTI INTERNATIONAL",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CALLTOGETHER",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "C2 SERVERS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "JAVA-SE.COM",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "P.JAVA-SEC.COM",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "HKGOLDEN.COM",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "FIREEYE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CHINESE GOVERNMENT",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "PRO-DEMOCRACY MOVEMENT",
+        "type": "EVENT"
+      },
+      {
+        "name": "DDoS ATTACKS",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "BACKDOOR.APT.PRESHIN",
+        "type": "MALWARE"
+      },
+      {
+        "name": "10.0.1.151",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "124.217.214.149",
+        "type": "LOCATION"
+      },
+      {
+        "name": "202.85.162.90",
+        "type": "LOCATION"
+      },
+      {
+        "name": "58.64.139.10",
+        "type": "LOCATION"
+      },
+      {
+        "name": "198.41.222.6",
+        "type": "LOCATION"
+      },
+      {
+        "name": "124.248.237.26",
+        "type": "LOCATION"
+      },
+      {
+        "name": "223.29.248.9",
+        "type": "LOCATION"
+      },
+      {
+        "name": "211.233.89.182",
+        "type": "LOCATION"
+      },
+      {
+        "name": "112.175.143.2",
+        "type": "LOCATION"
+      },
+      {
+        "name": "112.175.143.9",
+        "type": "LOCATION"
+      },
+      {
+        "name": "BACKDOOR.APT.PISCES",
+        "type": "Unknown"
+      },
+      {
+        "name": "MALICIOUS JAVASCRIPT",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "OPERATION POISONED HANDOVER",
+        "rel": "related_to",
+        "obj": "OPERATION POISONED HURRICANE"
+      },
+      {
+        "sub": "KERNELBOT",
+        "rel": "related_to",
+        "obj": "DDoS ATTACKS"
+      },
+      {
+        "sub": "QTI INTERNATIONAL",
+        "rel": "related_to",
+        "obj": "BACKDOOR.APT.PRESHIN"
+      },
+      {
+        "sub": "QTI INTERNATIONAL",
+        "rel": "related_to",
+        "obj": "BACKDOOR.APT.PISCES"
+      },
+      {
+        "sub": "CALLTOGETHER",
+        "rel": "related_to",
+        "obj": "BACKDOOR.APT.PISCES"
+      },
+      {
+        "sub": "CHINESE GOVERNMENT",
+        "rel": "related_to",
+        "obj": "PRO-DEMOCRACY MOVEMENT"
+      },
+      {
+        "sub": "CHINESE GOVERNMENT",
+        "rel": "related_to",
+        "obj": "OPERATION POISONED HURRICANE"
+      },
+      {
+        "sub": "CHINESE GOVERNMENT",
+        "rel": "related_to",
+        "obj": "OPERATION POISONED HANDOVER"
+      },
+      {
+        "sub": "HONG KONG",
+        "rel": "related_to",
+        "obj": "PRO-DEMOCRACY MOVEMENT"
+      },
+      {
+        "sub": "NEXT MEDIA",
+        "rel": "related_to",
+        "obj": "APPLE DAILY"
+      },
+      {
+        "sub": "HK GOLDEN",
+        "rel": "related_to",
+        "obj": "PRO-DEMOCRACY MOVEMENT"
+      },
+      {
+        "sub": "KERNELBOT",
+        "rel": "related_to",
+        "obj": "C2 SERVERS"
+      },
+      {
+        "sub": "C2 SERVERS",
+        "rel": "related_to",
+        "obj": "DDoS ATTACKS"
+      },
+      {
+        "sub": "JAVA-SE.COM",
+        "rel": "related_to",
+        "obj": "MALICIOUS JAVASCRIPT"
+      },
+      {
+        "sub": "HKGOLDEN.COM",
+        "rel": "related_to",
+        "obj": "MALICIOUS JAVASCRIPT"
+      },
+      {
+        "sub": "P.JAVA-SEC.COM",
+        "rel": "related_to",
+        "obj": "DDoS ATTACKS"
+      },
+      {
+        "sub": "FIREEYE",
+        "rel": "related_to",
+        "obj": "OPERATION POISONED HURRICANE"
+      },
+      {
+        "sub": "FIREEYE",
+        "rel": "related_to",
+        "obj": "OPERATION POISONED HANDOVER"
+      },
+      {
+        "sub": "DDoS ATTACKS",
+        "rel": "related_to",
+        "obj": "PRO-DEMOCRACY MOVEMENT"
+      },
+      {
+        "sub": "BACKDOOR.APT.PISCES",
+        "rel": "related_to",
+        "obj": "JAVA-SE.COM"
+      },
+      {
+        "sub": "10.0.1.151",
+        "rel": "related_to",
+        "obj": "C2 SERVERS"
+      },
+      {
+        "sub": "124.217.214.149",
+        "rel": "related_to",
+        "obj": "P.JAVA-SEC.COM"
+      },
+      {
+        "sub": "58.64.139.10",
+        "rel": "related_to",
+        "obj": "HK GOLDEN"
+      },
+      {
+        "sub": "202.85.162.90",
+        "rel": "related_to",
+        "obj": "APPLE DAILY"
+      }
+    ]
+  }
+}

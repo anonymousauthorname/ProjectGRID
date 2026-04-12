@@ -1,0 +1,357 @@
+{
+  "sample_id": "casie__10047.json",
+  "sample_index": 49,
+  "source": "casie",
+  "file_name": "10047.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "a series of phishing campaigns",
+        "type": "campaign",
+        "alias": [
+          "A wave string of phishing campaigns",
+          "these campaigns",
+          "phishing campaigns",
+          "email-based phishing campaigns",
+          "airline phishing attack",
+          "phishing attacks"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "airline consumers",
+        "type": "identity",
+        "alias": [
+          "victims",
+          "employees",
+          "target firm",
+          "targets",
+          "target individuals",
+          "users",
+          "customers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "messages",
+        "type": "file",
+        "alias": [
+          "the phishing messages",
+          "email"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "travel agency",
+        "type": "identity",
+        "alias": [
+          "someone inside the target firm",
+          "a travel agency"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "someone inside the target firm",
+        "type": "identity",
+        "alias": [
+          "someone inside a company"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "weaponized document",
+        "type": "file",
+        "alias": [
+          "the document",
+          "the real thing",
+          "an airline ticket or e-ticket"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malicious link",
+        "type": "url",
+        "alias": [
+          "links to spoofed airline sites",
+          "spoofed airline sites"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "spoofed airline sites",
+        "type": "url",
+        "alias": [
+          "the phishing page"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "threat actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attackers",
+          "hackers",
+          "parties not affiliated with us"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "logistic, manufacturing and shipping industries",
+        "type": "identity",
+        "alias": [
+          "these companies"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Asaf Cidon",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Barracuda Networks",
+        "type": "identity",
+        "alias": [
+          "Barracuda"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "US-CERT",
+        "type": "identity",
+        "alias": [
+          "U.S. Computer Emergency Readiness Team"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "airline Security Advisory",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "a security advisory published by Delta Air Lines"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "US-CERT’s Security Tip ST04-014",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Delta Air Lines",
+        "type": "identity",
+        "alias": [
+          "us",
+          "Delta"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "fraudulent emails",
+        "type": "hacker-tool",
+        "alias": [
+          "attempt"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "social media sites",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "postcards",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Gift Card promotional websites",
+        "type": "url",
+        "alias": [
+          "websites claiming to be from Delta Air Lines"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "letters or prize notifications",
+        "type": "generic-noun",
+        "alias": [
+          "letters or prize notifications promising free travel"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "fraudulent activities",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "airline impersonation emails",
+        "type": "file",
+        "alias": [
+          "emails"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "a series of phishing campaigns",
+        "rel": "is targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "airline consumers"
+      },
+      {
+        "sub": "messages",
+        "rel": "crafted to trick",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "victims"
+      },
+      {
+        "sub": "messages",
+        "rel": "pretend to be sent from",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "travel agency"
+      },
+      {
+        "sub": "messages",
+        "rel": "pretend to be sent from",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "someone inside the target firm"
+      },
+      {
+        "sub": "messages",
+        "rel": "include",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "weaponized document"
+      },
+      {
+        "sub": "messages",
+        "rel": "embed",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "malicious link"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "impersonates",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "travel agency"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "impersonates",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "someone inside a company"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "show a deep knowledge of",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "targets"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "are targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "logistic, manufacturing and shipping industries"
+      },
+      {
+        "sub": "phishing campaigns",
+        "rel": "act as an entry point for",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "attackers"
+      },
+      {
+        "sub": "US-CERT",
+        "rel": "issued an alert of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "phishing campaigns"
+      },
+      {
+        "sub": "US-CERT",
+        "rel": "encourages users to review",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "airline Security Advisory"
+      },
+      {
+        "sub": "Delta Air Lines",
+        "rel": "warned its consumers of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "fraudulent activities"
+      },
+      {
+        "sub": "parties not affiliated with us",
+        "rel": "fraudulently gather",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "customer information"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "are successful over 90 percent of the time in getting employees to open",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "airline impersonation emails"
+      },
+      {
+        "sub": "phishing campaigns",
+        "rel": "have a high success rate",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "attackers"
+      }
+    ]
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "sample_id": "malkg__201102McAfeeNightDragon.txt",
+  "sample_index": 114,
+  "source": "malkg",
+  "file_name": "201102McAfeeNightDragon.txt",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Night Dragon",
+        "type": "Unknown"
+      },
+      {
+        "name": "Event",
+        "type": "Unknown"
+      },
+      {
+        "name": "Exploit Target",
+        "type": "Unknown"
+      },
+      {
+        "name": "Social Engineering",
+        "type": "Unknown"
+      },
+      {
+        "name": "Spear-Phishing Attacks",
+        "type": "Unknown"
+      },
+      {
+        "name": "Vulnerability",
+        "type": "Unknown"
+      },
+      {
+        "name": "Infrastructure",
+        "type": "Unknown"
+      },
+      {
+        "name": "Tool",
+        "type": "Unknown"
+      },
+      {
+        "name": "Malware Characteristic",
+        "type": "Unknown"
+      },
+      {
+        "name": "Registry Key",
+        "type": "Unknown"
+      },
+      {
+        "name": "Email",
+        "type": "Unknown"
+      },
+      {
+        "name": "File",
+        "type": "Unknown"
+      },
+      {
+        "name": "zwShell",
+        "type": "Unknown"
+      },
+      {
+        "name": "RAT",
+        "type": "Unknown"
+      },
+      {
+        "name": "Control Compromised Machines",
+        "type": "Unknown"
+      },
+      {
+        "name": "Exfiltrate Sensitive Data",
+        "type": "Unknown"
+      },
+      {
+        "name": "Password",
+        "type": "Unknown"
+      },
+      {
+        "name": "Port",
+        "type": "Unknown"
+      },
+      {
+        "name": "Dynamic DNS",
+        "type": "Unknown"
+      },
+      {
+        "name": "ASPXSpy",
+        "type": "Unknown"
+      },
+      {
+        "name": "Organization",
+        "type": "Unknown"
+      },
+      {
+        "name": "Time",
+        "type": "Unknown"
+      },
+      {
+        "name": "Indicator: Hash",
+        "type": "Unknown"
+      },
+      {
+        "name": "Indicator: Registry Key",
+        "type": "Unknown"
+      },
+      {
+        "name": "Information",
+        "type": "Unknown"
+      },
+      {
+        "name": "Indicator: Network Logs",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Night Dragon",
+        "rel": "is a type of",
+        "obj": "Event"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "targets",
+        "obj": "Exploit Target"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "involves",
+        "obj": "Social Engineering"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "involves",
+        "obj": "Spear-Phishing Attacks"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "exploits",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "compromises",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "uses",
+        "obj": "Tool"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "uses",
+        "obj": "Malware Characteristic"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "disables",
+        "obj": "Registry Key"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "exfiltrates",
+        "obj": "Email"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "exfiltrates",
+        "obj": "Malware Characteristic"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "exfiltrates",
+        "obj": "File"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "is a type of",
+        "obj": "RAT"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "was used to",
+        "obj": "Malware Characteristic"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "is used to",
+        "obj": "Control Compromised Machines"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "is used to",
+        "obj": "Exfiltrate Sensitive Data"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "is launched with",
+        "obj": "Password"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "listens for connections on",
+        "obj": "Port"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "creates a temporary file",
+        "obj": "File"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "uses",
+        "obj": "Dynamic DNS"
+      },
+      {
+        "sub": "ASPXSpy",
+        "rel": "is a type of",
+        "obj": "Tool"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "originates from",
+        "obj": "Organization"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "has C&C infrastructure provided by",
+        "obj": "Organization"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "occurs during",
+        "obj": "Time"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "uses",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "is associated with",
+        "obj": "Organization"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "is detected via",
+        "obj": "Indicator: Hash"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "is detected via",
+        "obj": "Indicator: Registry Key"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "is detected via",
+        "obj": "Information"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "is detected via",
+        "obj": "Indicator: Network Logs"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "is prevented by",
+        "obj": "Tool"
+      }
+    ]
+  }
+}

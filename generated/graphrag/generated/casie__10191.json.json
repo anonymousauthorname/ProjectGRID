@@ -1,0 +1,186 @@
+{
+  "sample_id": "casie__10191.json",
+  "sample_index": 26,
+  "source": "casie",
+  "file_name": "10191.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "AMD",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CTS LABS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "RYZEN CHIPS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "EPYC CHIPS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "13 VULNERABILITIES",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "FIRMWARE PATCHES",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "BIOS UPDATE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SARAH YOUNGBAUE",
+        "type": "PERSON"
+      },
+      {
+        "name": "YARON LUK-ZILBERMAN",
+        "type": "PERSON"
+      },
+      {
+        "name": "VULNERABILITY DISCLOSURE PRACTICE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "ADMINISTRATIVE ACCESS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "FIRMWARE",
+        "type": "SOFTWARE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CTS LABS",
+        "rel": "related_to",
+        "obj": "AMD"
+      },
+      {
+        "sub": "AMD",
+        "rel": "related_to",
+        "obj": "13 VULNERABILITIES"
+      },
+      {
+        "sub": "13 VULNERABILITIES",
+        "rel": "related_to",
+        "obj": "FIRMWARE PATCHES"
+      },
+      {
+        "sub": "13 VULNERABILITIES",
+        "rel": "related_to",
+        "obj": "BIOS UPDATE"
+      },
+      {
+        "sub": "SARAH YOUNGBAUE",
+        "rel": "related_to",
+        "obj": "AMD"
+      },
+      {
+        "sub": "YARON LUK-ZILBERMAN",
+        "rel": "related_to",
+        "obj": "CTS LABS"
+      },
+      {
+        "sub": "VULNERABILITY DISCLOSURE PRACTICE",
+        "rel": "related_to",
+        "obj": "CTS LABS"
+      },
+      {
+        "sub": "VULNERABILITY DISCLOSURE PRACTICE",
+        "rel": "related_to",
+        "obj": "AMD"
+      },
+      {
+        "sub": "ADMINISTRATIVE ACCESS",
+        "rel": "related_to",
+        "obj": "13 VULNERABILITIES"
+      },
+      {
+        "sub": "FIRMWARE",
+        "rel": "related_to",
+        "obj": "RYZEN CHIPS"
+      },
+      {
+        "sub": "FIRMWARE",
+        "rel": "related_to",
+        "obj": "EPYC CHIPS"
+      },
+      {
+        "sub": "CTS LABS",
+        "rel": "related_to",
+        "obj": "AMD"
+      },
+      {
+        "sub": "AMD",
+        "rel": "related_to",
+        "obj": "13 VULNERABILITIES"
+      },
+      {
+        "sub": "13 VULNERABILITIES",
+        "rel": "related_to",
+        "obj": "FIRMWARE PATCHES"
+      },
+      {
+        "sub": "13 VULNERABILITIES",
+        "rel": "related_to",
+        "obj": "BIOS UPDATE"
+      },
+      {
+        "sub": "SARAH YOUNGBAUE",
+        "rel": "related_to",
+        "obj": "AMD"
+      },
+      {
+        "sub": "YARON LUK-ZILBERMAN",
+        "rel": "related_to",
+        "obj": "CTS LABS"
+      },
+      {
+        "sub": "VULNERABILITY DISCLOSURE PRACTICE",
+        "rel": "related_to",
+        "obj": "CTS LABS"
+      },
+      {
+        "sub": "VULNERABILITY DISCLOSURE PRACTICE",
+        "rel": "related_to",
+        "obj": "AMD"
+      },
+      {
+        "sub": "ADMINISTRATIVE ACCESS",
+        "rel": "related_to",
+        "obj": "13 VULNERABILITIES"
+      },
+      {
+        "sub": "FIRMWARE",
+        "rel": "related_to",
+        "obj": "RYZEN CHIPS"
+      },
+      {
+        "sub": "FIRMWARE",
+        "rel": "related_to",
+        "obj": "EPYC CHIPS"
+      }
+    ]
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "sample_id": "securenlp__Miniduke_twitter",
+  "sample_index": 186,
+  "source": "securenlp",
+  "file_name": "Miniduke_twitter",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "MICROSOFT",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CVE-2014-1761",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "MINIDUKE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "WIN32/SAUNDEVA.G",
+        "type": "MALWARE"
+      },
+      {
+        "name": "WIN32/EXPLOIT.CVE-2014-1761.D",
+        "type": "MALWARE"
+      },
+      {
+        "name": "PROPOSAL-COVER-SHEET-ENGLISH.RTF",
+        "type": "DOCUMENT"
+      },
+      {
+        "name": "FLOYDLSCHWARTZ",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "TWEETERSJS",
+        "type": "TOOL"
+      },
+      {
+        "name": "TWEETERSJS MODULE",
+        "type": "TOOL"
+      },
+      {
+        "name": "C&C SERVER",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "RTF EXPLOIT DOCUMENT",
+        "type": "TOOL"
+      },
+      {
+        "name": "SHA-1 HASHING ALGORITHM",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "DYNAMIC GENERATION ALGORITHM (DGA)",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "TWEETERSJS ACCOUNT",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "ESET RESEARCH",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "GITHUB",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "TWEETERSJS SCRIPT",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "COUNTRY CODES",
+        "type": "LOCATION"
+      },
+      {
+        "name": "TEMP DIRECTORY",
+        "type": "LOCATION"
+      },
+      {
+        "name": "ALLUSERSPROFILE",
+        "type": "LOCATION"
+      },
+      {
+        "name": "STARTUP DIRECTORY",
+        "type": "LOCATION"
+      },
+      {
+        "name": "RUNDLL32.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "KERNEL32.DLL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "URLMON!URLDOWNLOADTOFILEA",
+        "type": "TOOL"
+      },
+      {
+        "name": "RSA-2048",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "MINIDUKE MAIN MODULE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MINIDUKE TWITTERJS MODULE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MINIDUKE WATERMARKING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "MINIDUKE SYSTEM INFORMATION COLLECTION",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "MINIDUKE PAYLOAD",
+        "type": "MALWARE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "MICROSOFT",
+        "rel": "related_to",
+        "obj": "CVE-2014-1761"
+      },
+      {
+        "sub": "CVE-2014-1761",
+        "rel": "related_to",
+        "obj": "MINIDUKE"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "WIN32/SAUNDEVA.G"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "WIN32/EXPLOIT.CVE-2014-1761.D"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "FLOYDLSCHWARTZ"
+      },
+      {
+        "sub": "MINIDUKE TWITTERJS MODULE",
+        "rel": "related_to",
+        "obj": "TWEETERSJS"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "DYNAMIC GENERATION ALGORITHM (DGA)"
+      },
+      {
+        "sub": "MINIDUKE TWITTERJS MODULE",
+        "rel": "related_to",
+        "obj": "TWEETERSJS ACCOUNT"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "C&C SERVER"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "SHA-1 HASHING ALGORITHM"
+      },
+      {
+        "sub": "ESET RESEARCH",
+        "rel": "related_to",
+        "obj": "MINIDUKE"
+      },
+      {
+        "sub": "ESET RESEARCH",
+        "rel": "related_to",
+        "obj": "GITHUB"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "COUNTRY CODES"
+      },
+      {
+        "sub": "MINIDUKE MAIN MODULE",
+        "rel": "related_to",
+        "obj": "RUNDLL32.EXE"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "KERNEL32.DLL"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "URLMON!URLDOWNLOADTOFILEA"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "RSA-2048"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "MINIDUKE WATERMARKING"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "MINIDUKE SYSTEM INFORMATION COLLECTION"
+      },
+      {
+        "sub": "MINIDUKE TWITTERJS MODULE",
+        "rel": "related_to",
+        "obj": "TWEETERSJS SCRIPT"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "TEMP DIRECTORY"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "ALLUSERSPROFILE"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "STARTUP DIRECTORY"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "MINIDUKE PAYLOAD"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "MINIDUKE MAIN MODULE"
+      },
+      {
+        "sub": "MINIDUKE",
+        "rel": "related_to",
+        "obj": "MINIDUKE TWITTERJS MODULE"
+      }
+    ]
+  }
+}

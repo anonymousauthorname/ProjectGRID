@@ -1,0 +1,472 @@
+{
+  "sample_id": "casie__2073.json",
+  "sample_index": 30,
+  "source": "casie",
+  "file_name": "2073.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Dawid Golunski",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "independent security researcher",
+          "researcher"
+        ]
+      },
+      {
+        "name": "WordPress 4.6",
+        "type": "general-software",
+        "alias": [
+          "vulnerable version of WordPress",
+          "WordPress Core version 4.6"
+        ]
+      },
+      {
+        "name": "CVE-2016-10033",
+        "type": "vulnerability",
+        "alias": [
+          "unauthenticated remote code execution vulnerability"
+        ]
+      },
+      {
+        "name": "unauthenticated remote code execution vulnerability",
+        "type": "attack-pattern",
+        "alias": [
+          "vulnerability in WordPress 4.6"
+        ]
+      },
+      {
+        "name": "unauthorized password reset zero-day vulnerability",
+        "type": "attack-pattern",
+        "alias": [
+          "password reset flaw"
+        ]
+      },
+      {
+        "name": "CVE-2017-8295",
+        "type": "vulnerability",
+        "alias": [
+          "password reset vulnerability"
+        ]
+      },
+      {
+        "name": "PHPMailer library",
+        "type": "general-software",
+        "alias": [
+          "library",
+          "component"
+        ]
+      },
+      {
+        "name": "WordPress Foundation",
+        "type": "organization",
+        "alias": [
+          "WordPress developers"
+        ]
+      },
+      {
+        "name": "BeyondSecurity",
+        "type": "organization",
+        "alias": [
+          "security firm"
+        ]
+      },
+      {
+        "name": "SecuriTeam",
+        "type": "organization",
+        "alias": [
+          "team under BeyondSecurity"
+        ]
+      },
+      {
+        "name": "target application server",
+        "type": "network-traffic",
+        "alias": [
+          "vulnerable server"
+        ]
+      },
+      {
+        "name": "e-mail associated with the owner’s account",
+        "type": "email-address",
+        "alias": [
+          "intended recipient"
+        ]
+      },
+      {
+        "name": "password reset e-mail",
+        "type": "email-address",
+        "alias": [
+          "reset email"
+        ]
+      },
+      {
+        "name": "UseCanonicalName",
+        "type": "general-software",
+        "alias": [
+          "configuration option"
+        ]
+      },
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "unauthenticated remote attackers"
+        ]
+      },
+      {
+        "name": "admin",
+        "type": "identity",
+        "alias": [
+          "WordPress admin"
+        ]
+      },
+      {
+        "name": "vulnerable WordPress Core version",
+        "type": "general-software",
+        "alias": [
+          "WordPress version 4.6"
+        ]
+      },
+      {
+        "name": "non-standard settings",
+        "type": "other",
+        "alias": [
+          "settings not required"
+        ]
+      },
+      {
+        "name": "January",
+        "type": "date",
+        "alias": [
+          "release date"
+        ]
+      },
+      {
+        "name": "mid-2016",
+        "type": "date",
+        "alias": [
+          "discovery date"
+        ]
+      },
+      {
+        "name": "11 percent",
+        "type": "quantity",
+        "alias": [
+          "percentage of vulnerable installations"
+        ]
+      },
+      {
+        "name": "users",
+        "type": "identity",
+        "alias": [
+          "WordPress users"
+        ]
+      },
+      {
+        "name": "CMS",
+        "type": "general-software",
+        "alias": [
+          "Content Management System"
+        ]
+      },
+      {
+        "name": "remote attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "unauthenticated attackers"
+        ]
+      },
+      {
+        "name": "WordPress security team",
+        "type": "identity",
+        "alias": [
+          "security team"
+        ]
+      },
+      {
+        "name": "patched",
+        "type": "course-of-action",
+        "alias": [
+          "patched state"
+        ]
+      },
+      {
+        "name": "flaw",
+        "type": "vulnerability",
+        "alias": [
+          "vulnerability"
+        ]
+      },
+      {
+        "name": "disclosure",
+        "type": "course-of-action",
+        "alias": [
+          "coordinated disclosure"
+        ]
+      },
+      {
+        "name": "discovery",
+        "type": "abstract-concept",
+        "alias": [
+          "finding of CVE-2017-8295"
+        ]
+      },
+      {
+        "name": "compromise",
+        "type": "attack-pattern",
+        "alias": [
+          "gain unauthorized access"
+        ]
+      },
+      {
+        "name": "password reset link",
+        "type": "indicator",
+        "alias": [
+          "reset link"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Dawid Golunski",
+        "rel": "has released a proof-of-concept exploit code for",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "unauthenticated remote code execution vulnerability in WordPress 4.6 (CVE-2016-10033)"
+      },
+      {
+        "sub": "Dawid Golunski",
+        "rel": "released information about",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "unauthorized password reset zero-day vulnerability (CVE-2017-8295)"
+      },
+      {
+        "sub": "unauthenticated remote code execution vulnerability in WordPress 4.6 (CVE-2016-10033)",
+        "rel": "exists in",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "PHPMailer library"
+      },
+      {
+        "sub": "unauthenticated remote attackers",
+        "rel": "can be exploited by",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "unauthenticated remote code execution vulnerability in WordPress 4.6 (CVE-2016-10033)"
+      },
+      {
+        "sub": "unauthenticated remote attackers",
+        "rel": "to gain access to and compromise",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "target application server"
+      },
+      {
+        "sub": "target application server",
+        "rel": "on which",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "vulnerable WordPress Core version is installed"
+      },
+      {
+        "sub": "vulnerable WordPress Core version",
+        "rel": "is installed",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "target application server"
+      },
+      {
+        "sub": "Golunski",
+        "rel": "noted",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "No plugins or non-standard settings are required to exploit the vulnerability"
+      },
+      {
+        "sub": "unauthenticated remote code execution vulnerability in WordPress 4.6 (CVE-2016-10033)",
+        "rel": "has been responsibly disclosed to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "WordPress Foundation"
+      },
+      {
+        "sub": "unauthenticated remote code execution vulnerability in WordPress 4.6 (CVE-2016-10033)",
+        "rel": "has been plugged in",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "January"
+      },
+      {
+        "sub": "WordPress Foundation",
+        "rel": "released",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "WordPress 4.7.1"
+      },
+      {
+        "sub": "nearly 11 percent of all WordPress installations",
+        "rel": "are still stuck on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "vulnerable version 4.6"
+      },
+      {
+        "sub": "older WordPress versions",
+        "rel": "are also affected by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "same flaw"
+      },
+      {
+        "sub": "Admins who still run these older versions",
+        "rel": "should upgrade to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "newer versions"
+      },
+      {
+        "sub": "newer versions",
+        "rel": "ideally to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "WordPress 4.7.4"
+      },
+      {
+        "sub": "unauthorized password reset zero-day vulnerability (CVE-2017-8295)",
+        "rel": "that",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "WordPress Foundation is yet to patch"
+      },
+      {
+        "sub": "SecuriTeam",
+        "rel": "coordinated the disclosure of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "unauthorized password reset vulnerability (CVE-2017-8295)"
+      },
+      {
+        "sub": "unauthorized password reset vulnerability (CVE-2017-8295)",
+        "rel": "dates back to",
+        "rel_type": [
+          "discovery"
+        ],
+        "obj": "mid-2016"
+      },
+      {
+        "sub": "Golunski",
+        "rel": "found it in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "version 4.3.1 of the CMS"
+      },
+      {
+        "sub": "password reset feature",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "might allow attackers to get hold of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "password reset link"
+      },
+      {
+        "sub": "attacker",
+        "rel": "could lead to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "gain unauthorized access to a victim’s WordPress account"
+      },
+      {
+        "sub": "password reset e-mail",
+        "rel": "is supposed to be delivered only to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "e-mail associated with the owner’s account"
+      },
+      {
+        "sub": "Golunski",
+        "rel": "says that",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "the issue was reported to the WordPress security team multiple times"
+      },
+      {
+        "sub": "Golunski",
+        "rel": "did not confirm whether",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "it has been patched"
+      },
+      {
+        "sub": "Golunski",
+        "rel": "decided to publish",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "his findings"
+      },
+      {
+        "sub": "Golunski",
+        "rel": "offer a temporary solution",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "users can enable UseCanonicalName to enforce static SERVER_NAME value"
+      },
+      {
+        "sub": "password reset e-mail",
+        "rel": "is supposed to be delivered only to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "e-mail associated with the owner’s account"
+      }
+    ]
+  }
+}

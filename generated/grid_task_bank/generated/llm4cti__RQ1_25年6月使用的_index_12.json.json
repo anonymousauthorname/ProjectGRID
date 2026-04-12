@@ -1,0 +1,663 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_12.json",
+  "sample_index": 204,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_12.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2022-30190",
+        "type": "vulnerability",
+        "alias": [
+          "Follina",
+          "CVE-2022-30190"
+        ]
+      },
+      {
+        "name": "Microsoft Support Diagnostic Tool",
+        "type": "general-software",
+        "alias": [
+          "MSDT"
+        ]
+      },
+      {
+        "name": "Microsoft Office documents",
+        "type": "file",
+        "alias": [
+          "MS Office documents"
+        ]
+      },
+      {
+        "name": "Microsoft Word",
+        "type": "file",
+        "alias": [
+          "Microsoft Word (.docx)"
+        ]
+      },
+      {
+        "name": "Rich Text Format",
+        "type": "file",
+        "alias": [
+          "Rich Text Format (.rtf)"
+        ]
+      },
+      {
+        "name": "OLE object",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "external malicious OLE object",
+          "word/_rels/document.xml.rels"
+        ]
+      },
+      {
+        "name": "HTML file",
+        "type": "file",
+        "alias": [
+          "malicious HTML file"
+        ]
+      },
+      {
+        "name": "malicious script",
+        "type": "hacker-tool",
+        "alias": [
+          "special URI scheme",
+          "the real thing"
+        ]
+      },
+      {
+        "name": "Microsoft Registry Key",
+        "type": "windows-registry-key",
+        "alias": [
+          "HKEY_CLASSES_ROOT\\ms-msdt"
+        ]
+      },
+      {
+        "name": "Kaspersky",
+        "type": "security-product",
+        "alias": [
+          "our solutions",
+          "Kaspersky solutions"
+        ]
+      },
+      {
+        "name": "Microsoft",
+        "type": "general-software",
+        "alias": [
+          "Microsoft Support Diagnostic Tool",
+          "Microsoft Office"
+        ]
+      },
+      {
+        "name": "Protected Mode",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "remote server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "nao_sec team",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Windows systems",
+        "type": "location"
+      },
+      {
+        "name": "Windows Explorer",
+        "type": "general-software"
+      },
+      {
+        "name": "Command Prompt",
+        "type": "general-software"
+      },
+      {
+        "name": "reg export",
+        "type": "course-of-action"
+      },
+      {
+        "name": "reg delete",
+        "type": "course-of-action"
+      },
+      {
+        "name": "Microsoft’s own guidelines",
+        "type": "document-or-publication-or-conference"
+      },
+      {
+        "name": "the set of parameters",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the command",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "a special URI scheme",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "the link",
+        "type": "url"
+      },
+      {
+        "name": "Target attribute",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Type attribute",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the data used to describe the link",
+        "type": "data"
+      },
+      {
+        "name": "Windows",
+        "type": "location"
+      },
+      {
+        "name": "IT threat evolution",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Spring4Shell",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2022-22965"
+        ]
+      },
+      {
+        "name": "Zimbra 0-day",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2022-41352"
+        ]
+      },
+      {
+        "name": "Dirty Pipe vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2022-0847"
+        ]
+      },
+      {
+        "name": "Emotet modules",
+        "type": "malware"
+      },
+      {
+        "name": "LofyLife",
+        "type": "malware"
+      },
+      {
+        "name": "PyPI",
+        "type": "infrastructure"
+      },
+      {
+        "name": "npm packages",
+        "type": "infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "the attacker",
+        "rel": "creates",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "MS Office documents"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "can be exploited using",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Microsoft Office documents"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "creates",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "an MS Office document"
+      },
+      {
+        "sub": "an MS Office document",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a link to an external malicious OLE object"
+      },
+      {
+        "sub": "the link",
+        "rel": "points to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "an HTML file located on a remote server"
+      },
+      {
+        "sub": "the data used to describe the link",
+        "rel": "is placed in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "the tag"
+      },
+      {
+        "sub": "the link",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "Target attribute"
+      },
+      {
+        "sub": "Target attribute",
+        "rel": "points to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the HTML file"
+      },
+      {
+        "sub": "an HTML file",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a malicious script"
+      },
+      {
+        "sub": "a malicious script",
+        "rel": "is written using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a special URI scheme"
+      },
+      {
+        "sub": "the attacker-created document",
+        "rel": "runs",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "MSDT"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can pass",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a set of parameters"
+      },
+      {
+        "sub": "a set of parameters",
+        "rel": "can be passed to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "MSDT"
+      },
+      {
+        "sub": "MSDT",
+        "rel": "can execute",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "any command"
+      },
+      {
+        "sub": "the command",
+        "rel": "can be passed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "MSDT"
+      },
+      {
+        "sub": "the document",
+        "rel": "can be opened in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Protected Mode"
+      },
+      {
+        "sub": "the document",
+        "rel": "can be opened in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Protected Mode"
+      },
+      {
+        "sub": "Microsoft Word (.docx)",
+        "rel": "was known to allow",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2022-30190"
+      },
+      {
+        "sub": "Rich Text Format (.rtf)",
+        "rel": "was known to allow",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2022-30190"
+      },
+      {
+        "sub": "Rich Text Format (.rtf)",
+        "rel": "allows execution of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a malicious command"
+      },
+      {
+        "sub": "Windows Explorer",
+        "rel": "can allow execution of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a malicious command"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "is aware of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "attempts to exploit CVE-2022-30190"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "protects against",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "CVE-2022-30190"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Behavior Detection and Exploit Prevention tools"
+      },
+      {
+        "sub": "Microsoft’s own guidelines",
+        "rel": "are advised to be followed",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "CVE-2022-30190"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can exploit",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "CVE-2022-30190"
+      },
+      {
+        "sub": "Command Prompt",
+        "rel": "is executed in",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "as Administrator"
+      },
+      {
+        "sub": "reg export",
+        "rel": "is executed as",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "reg export HKEY_CLASSES_ROOT\\ms-msdt filename"
+      },
+      {
+        "sub": "reg delete",
+        "rel": "is executed as",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "reg delete HKEY_CLASSES_ROOT\\ms-msdt /f"
+      },
+      {
+        "sub": "the link",
+        "rel": "is described using",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "the data used to describe the link"
+      },
+      {
+        "sub": "Microsoft Support Diagnostic Tool",
+        "rel": "is vulnerable to",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2022-30190"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "allows",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "remote execution of code on Windows systems"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can gain access to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "corporate resources"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "can detect",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "vulnerability exploitation"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "can investigate",
+        "rel_type": [
+          "investigates"
+        ],
+        "obj": "attacks"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "can provide",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "threat-related information"
+      },
+      {
+        "sub": "nao_sec team",
+        "rel": "reported",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a new zero-day vulnerability in MSDT"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "owns",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "Microsoft Support Diagnostic Tool"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "owns",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "Microsoft Office",
+        "rel": "allows",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "CVE-2022-30190 exploitation"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "was dubbed",
+        "rel_type": [
+          "is alias-of"
+        ],
+        "obj": "Follina"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "later received identifier",
+        "rel_type": [
+          "is alias-of"
+        ],
+        "obj": "CVE-2022-30190"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can gain access to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "corporate resources"
+      },
+      {
+        "sub": "Emotet modules",
+        "rel": "are involved in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "recent attacks"
+      },
+      {
+        "sub": "LofyLife",
+        "rel": "steals",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Discord tokens and bank card data"
+      },
+      {
+        "sub": "Spring4Shell",
+        "rel": "details and mitigations for",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "CVE-2022-22965"
+      },
+      {
+        "sub": "Zimbra 0-day",
+        "rel": "Ongoing exploitation of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "CVE-2022-41352"
+      },
+      {
+        "sub": "Two more malicious Python packages in the PyPI",
+        "rel": "are mentioned in",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "PyPI"
+      },
+      {
+        "sub": "LofyLife",
+        "rel": "is associated with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "npm packages"
+      },
+      {
+        "sub": "PyPI",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "malicious Python packages"
+      },
+      {
+        "sub": "LofyLife",
+        "rel": "steals",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Discord tokens"
+      },
+      {
+        "sub": "LofyLife",
+        "rel": "steals",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "bank card data"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "can improve detection of",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "vulnerability exploitation"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "guides on",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "CVE-2022-30190 Microsoft Support Diagnostic Tool Vulnerability"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "is a vulnerability in",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "MSDT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1163 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_57.json",
+  "sample_index": 244,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_57.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Large Language Model (LLM)",
+        "type": "Entity"
+      },
+      {
+        "name": "LLM-generated code",
+        "type": "Entity"
+      },
+      {
+        "name": "Phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": ".zip archives",
+        "type": "Entity"
+      },
+      {
+        "name": ".lnk files",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell scripts",
+        "type": "Entity"
+      },
+      {
+        "name": "LLM-generated PowerShell scripts",
+        "type": "Entity"
+      },
+      {
+        "name": "HTML files",
+        "type": "Entity"
+      },
+      {
+        "name": "embedded JavaScript",
+        "type": "Entity"
+      },
+      {
+        "name": "LLM-generated HTML file",
+        "type": "Entity"
+      },
+      {
+        "name": "Rhadamanthys",
+        "type": "Entity"
+      },
+      {
+        "name": "NetSupport",
+        "type": "Entity"
+      },
+      {
+        "name": "CleanUpLoader",
+        "type": "Entity"
+      },
+      {
+        "name": "Broomstick",
+        "type": "Entity"
+      },
+      {
+        "name": "Oyster",
+        "type": "Entity"
+      },
+      {
+        "name": "ModiLoader",
+        "type": "Entity"
+      },
+      {
+        "name": "DBatLoader",
+        "type": "Entity"
+      },
+      {
+        "name": "LokiBot",
+        "type": "Entity"
+      },
+      {
+        "name": "Dunihi",
+        "type": "Entity"
+      },
+      {
+        "name": "H-Worm",
+        "type": "Entity"
+      },
+      {
+        "name": "password-protected ZIP file",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious attachment",
+        "type": "Entity"
+      },
+      {
+        "name": "initial access",
+        "type": "Entity"
+      },
+      {
+        "name": "payload delivery",
+        "type": "Entity"
+      },
+      {
+        "name": "malware campaigns",
+        "type": "Entity"
+      },
+      {
+        "name": "AI-powered tools",
+        "type": "Entity"
+      },
+      {
+        "name": "attack chain",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability exploitation",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious code generation",
+        "type": "Entity"
+      },
+      {
+        "name": "ChatGPT",
+        "type": "Entity"
+      },
+      {
+        "name": "simple prompts",
+        "type": "Entity"
+      },
+      {
+        "name": "user receives phishing email",
+        "type": "Entity"
+      },
+      {
+        "name": "HR notification",
+        "type": "Entity"
+      },
+      {
+        "name": "browser download permission",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious scripts",
+        "type": "Entity"
+      },
+      {
+        "name": "registry keys",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled tasks",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanisms",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Large Language Model (LLM)",
+        "rel": "is used to generate",
+        "obj": "malicious code"
+      },
+      {
+        "sub": "Large Language Model (LLM)",
+        "rel": "is used to generate",
+        "obj": "LLM-generated code"
+      },
+      {
+        "sub": "Large Language Model (LLM)",
+        "rel": "is used to generate",
+        "obj": "PowerShell scripts"
+      },
+      {
+        "sub": "Large Language Model (LLM)",
+        "rel": "is used to generate",
+        "obj": "LLM-generated PowerShell scripts"
+      },
+      {
+        "sub": "Large Language Model (LLM)",
+        "rel": "is used to generate",
+        "obj": "HTML files"
+      },
+      {
+        "sub": "Large Language Model (LLM)",
+        "rel": "is used to generate",
+        "obj": "LLM-generated HTML file"
+      },
+      {
+        "sub": "Large Language Model (LLM)",
+        "rel": "is used to generate",
+        "obj": "malicious scripts"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used in",
+        "obj": "malware campaigns"
+      },
+      {
+        "sub": "Phishing emails",
+        "rel": "contain",
+        "obj": "malicious attachment"
+      },
+      {
+        "sub": "Phishing emails",
+        "rel": "contain",
+        "obj": "password-protected ZIP file"
+      },
+      {
+        "sub": "password-protected ZIP file",
+        "rel": "contains",
+        "obj": ".lnk files"
+      },
+      {
+        "sub": ".lnk files",
+        "rel": "when executed",
+        "obj": "run a PowerShell script"
+      },
+      {
+        "sub": "PowerShell script",
+        "rel": "is generated using",
+        "obj": "Large Language Model (LLM)"
+      },
+      {
+        "sub": "PowerShell script",
+        "rel": "is generated using",
+        "obj": "ChatGPT"
+      },
+      {
+        "sub": "simple prompts",
+        "rel": "are used with",
+        "obj": "ChatGPT"
+      },
+      {
+        "sub": "ChatGPT",
+        "rel": "is used to produce",
+        "obj": "PowerShell script"
+      },
+      {
+        "sub": "ChatGPT",
+        "rel": "is used to produce",
+        "obj": "LLM-generated HTML file"
+      },
+      {
+        "sub": "Phishing emails",
+        "rel": "mimic",
+        "obj": "HR notification"
+      },
+      {
+        "sub": "HTML files",
+        "rel": "contain",
+        "obj": "embedded JavaScript"
+      },
+      {
+        "sub": "embedded JavaScript",
+        "rel": "is used to",
+        "obj": "download and execute additional payloads"
+      },
+      {
+        "sub": "HTML files",
+        "rel": "are highly likely generated by",
+        "obj": "Large Language Model (LLM)"
+      },
+      {
+        "sub": "embedded JavaScript",
+        "rel": "is generated by",
+        "obj": "Large Language Model (LLM)"
+      },
+      {
+        "sub": "user",
+        "rel": "receives",
+        "obj": "phishing email"
+      },
+      {
+        "sub": "user",
+        "rel": "configures browser to",
+        "obj": "ask for download permission"
+      },
+      {
+        "sub": "browser download permission",
+        "rel": "is required before",
+        "obj": "payload download"
+      },
+      {
+        "sub": "malicious attachment",
+        "rel": "when opened",
+        "obj": "executes HTML file"
+      },
+      {
+        "sub": "LLM-generated HTML file",
+        "rel": "facilitates",
+        "obj": "attack chain"
+      },
+      {
+        "sub": "LLM-generated HTML file",
+        "rel": "is produced automatically using",
+        "obj": "Large Language Model (LLM)"
+      },
+      {
+        "sub": "LLM-generated HTML file",
+        "rel": "is produced automatically using",
+        "obj": "ChatGPT"
+      },
+      {
+        "sub": "LLM-generated PowerShell script",
+        "rel": "leads to",
+        "obj": "deployment of malware"
+      },
+      {
+        "sub": "final payloads",
+        "rel": "include",
+        "obj": "Rhadamanthys"
+      },
+      {
+        "sub": "final payloads",
+        "rel": "include",
+        "obj": "CleanUpLoader"
+      },
+      {
+        "sub": "CleanUpLoader",
+        "rel": "is also known as",
+        "obj": "Broomstick"
+      },
+      {
+        "sub": "CleanUpLoader",
+        "rel": "is also known as",
+        "obj": "Oyster"
+      },
+      {
+        "sub": "final payloads",
+        "rel": "include",
+        "obj": "ModiLoader"
+      },
+      {
+        "sub": "ModiLoader",
+        "rel": "is also known as",
+        "obj": "DBatLoader"
+      },
+      {
+        "sub": "final payloads",
+        "rel": "include",
+        "obj": "LokiBot"
+      },
+      {
+        "sub": "final payloads",
+        "rel": "include",
+        "obj": "Dunihi"
+      },
+      {
+        "sub": "Dunihi",
+        "rel": "is also known as",
+        "obj": "H-Worm"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "payload delivery"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "phishing"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used in",
+        "obj": "initial access"
+      },
+      {
+        "sub": "initial access",
+        "rel": "involves",
+        "obj": "user receives phishing email"
+      },
+      {
+        "sub": "payload delivery",
+        "rel": "involves",
+        "obj": "download and execution of malicious scripts"
+      },
+      {
+        "sub": "malicious scripts",
+        "rel": "are generated using",
+        "obj": "LLM"
+      },
+      {
+        "sub": "malicious scripts",
+        "rel": "are generated using",
+        "obj": "LLM-generated code"
+      },
+      {
+        "sub": "attack chain",
+        "rel": "includes",
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "attack chain",
+        "rel": "includes",
+        "obj": "malicious script execution"
+      },
+      {
+        "sub": "attack chain",
+        "rel": "includes",
+        "obj": "payload delivery"
+      },
+      {
+        "sub": "attack chain",
+        "rel": "includes",
+        "obj": "malware deployment"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is abused for",
+        "obj": "malicious code generation"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is abused for",
+        "obj": "phishing email creation"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is abused for",
+        "obj": "vulnerability exploitation"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used in",
+        "obj": "malicious code generation"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used in",
+        "obj": "attack chain"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used in",
+        "obj": "vulnerability exploitation"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used in",
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used in",
+        "obj": "initial access"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used in",
+        "obj": "payload delivery"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used in",
+        "obj": "malware campaigns"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used in",
+        "obj": "code generation"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used in",
+        "obj": "HTML file generation"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used in",
+        "obj": "PowerShell script generation"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "create convincing phishing emails"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate sophisticated malicious code"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "automate code generation"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "lower barrier to entry for threat actors"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "increase sophistication of attacks"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "enable faster and larger-scale attacks"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate human-like text"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "assist in writing"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "automate customer service"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate malicious code for malware campaigns"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for payload delivery"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for phishing emails"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for initial access"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for attack chain execution"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for malware deployment"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for vulnerability exploitation"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for malicious scripts"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for HTML files"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for PowerShell scripts"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for LLM-generated HTML file"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for LLM-generated PowerShell script"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for malicious attachment"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for phishing email attachment"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for password-protected ZIP file"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for .lnk file"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for embedded JavaScript"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for HTML file with embedded JavaScript"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for final payload delivery"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for Dunihi (H-Worm) loader"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for LokiBot"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for ModiLoader"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for NetSupport"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for CleanUpLoader"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for Rhadamanthys"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for malicious scripts in phishing emails"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for attack chain components"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for initial access vectors"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for payload delivery mechanisms"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for persistence mechanisms"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scheduled tasks"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for registry keys"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for malicious code generation"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for AI-powered tools"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for phishing email content"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for user-facing webpages"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for automated phishing workflows"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for automated attack chains"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for malicious payloads"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for attack chain stages"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for initial access stage"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for payload delivery stage"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for malware campaign execution"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for phishing email mimicry"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for HR notification mimicry"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for password-protected ZIP file content"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for .zip archives"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for .lnk files"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for HTML files with embedded JavaScript"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for malicious scripts that download payloads"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that execute upon opening"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that trigger malware deployment"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that exploit vulnerabilities"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that use human-like grammar"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts with leading single-line comments"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts with accurate grammar"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts with formatted functions and variables"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that are easily producible automatically"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that require little human effort"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that are highly convincing"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that are targeted and personalized"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that are difficult to detect"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that automate attack workflows"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that enable rapid attack scaling"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that reduce attack complexity"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that improve attack success rates"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that increase attack sophistication"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that are used in real-world attacks"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that are observed in Symantec campaigns"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that are analyzed by Symantec"
+      },
+      {
+        "sub": "LLM",
+        "rel": "is used to",
+        "obj": "generate code for scripts that are produced using ChatGPT"
+      },
+      {
+        "sub": "ChatGPT",
+        "rel": "is used with",
+        "obj": "simple prompts"
+      },
+      {
+        "sub": "simple prompts",
+        "rel": "are used to",
+        "obj": "produce PowerShell script using ChatGPT"
+      },
+      {
+        "sub": "simple prompts",
+        "rel": "are used to",
+        "obj": "produce LLM-generated HTML file using ChatGPT"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "initial access"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "attack chain execution"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "malware deployment"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "vulnerability exploitation"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "malicious script generation"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "HTML file generation"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "PowerShell script generation"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "attack chain components"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "initial access vectors"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "payload delivery mechanisms"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "persistence mechanisms"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scheduled tasks"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "registry keys"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "malicious code generation"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "AI-powered tools"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "phishing email content"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "user-facing webpages"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "automated phishing workflows"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "automated attack chains"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "malware campaign execution"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "phishing email mimicry"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "HR notification mimicry"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "password-protected ZIP file content"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": ".zip archives"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": ".lnk files"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "HTML files with embedded JavaScript"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "malicious scripts that download payloads"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that execute upon opening"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that trigger malware deployment"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that exploit vulnerabilities"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts with human-like grammar"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts with leading single-line comments"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts with accurate grammar"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts with formatted functions and variables"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that are easily producible automatically"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that require little human effort"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that are highly convincing"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that are targeted and personalized"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that are difficult to detect"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that automate attack workflows"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that enable rapid attack scaling"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that reduce attack complexity"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that improve attack success rates"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that increase attack sophistication"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that are used in real-world attacks"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that are observed in Symantec campaigns"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that are analyzed by Symantec"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "scripts that are produced using ChatGPT"
+      },
+      {
+        "sub": "LLM-generated code",
+        "rel": "is used for",
+        "obj": "attack chain stages"
+      }
+    ]
+  }
+}

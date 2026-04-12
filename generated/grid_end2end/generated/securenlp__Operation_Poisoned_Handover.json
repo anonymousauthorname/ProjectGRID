@@ -1,0 +1,683 @@
+{
+  "sample_id": "securenlp__Operation_Poisoned_Handover",
+  "sample_index": 182,
+  "source": "securenlp",
+  "file_name": "Operation_Poisoned_Handover",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "pro-democracy movement in Hong Kong",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "DDoS attacks",
+        "type": "attack-pattern",
+        "alias": [
+          "a series of Distributed Denial of Service attacks",
+          "ongoing DDoS attack",
+          "DDoS attacks against the HKGolden forum"
+        ]
+      },
+      {
+        "name": "websites promoting democracy in Hong Kong",
+        "type": "infrastructure",
+        "alias": []
+      },
+      {
+        "name": "Next Media’s Apple Daily publication",
+        "type": "identity",
+        "alias": [
+          "Next Media",
+          "Apple Daily"
+        ]
+      },
+      {
+        "name": "Next Media",
+        "type": "identity",
+        "alias": [
+          "large media company in Hong Kong"
+        ]
+      },
+      {
+        "name": "HKGolden forum",
+        "type": "infrastructure",
+        "alias": [
+          "popular online forum HKGolden"
+        ]
+      },
+      {
+        "name": "Operation Poisoned Hurricane",
+        "type": "campaign",
+        "alias": [
+          "previously observed APT activity"
+        ]
+      },
+      {
+        "name": "China-based advanced persistent threat (APT) actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "APT actors",
+          "patriotic hacker activities"
+        ]
+      },
+      {
+        "name": "FireEye",
+        "type": "security-product",
+        "alias": []
+      },
+      {
+        "name": "command and control (C2) servers",
+        "type": "infrastructure",
+        "alias": [
+          "C2 servers"
+        ]
+      },
+      {
+        "name": "binaries",
+        "type": "file",
+        "alias": [
+          "these binaries",
+          "the samples"
+        ]
+      },
+      {
+        "name": "W32 Cabinet self-extracting files",
+        "type": "hacker-tool",
+        "alias": [
+          "W32 Cabinet"
+        ],
+        "mother entity": [
+          "binaries"
+        ]
+      },
+      {
+        "name": "KernelBot",
+        "type": "malware",
+        "alias": [
+          "older DDoS tool",
+          "KernelBot variant"
+        ]
+      },
+      {
+        "name": "ctfmon.exe",
+        "type": "general-software",
+        "alias": [
+          "legitimate, signed copy of the Pidgin IM client"
+        ],
+        "mother entity": [
+          "binaries"
+        ]
+      },
+      {
+        "name": "libssp-0.dll",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "malware DLL"
+        ],
+        "mother entity": [
+          "binaries"
+        ]
+      },
+      {
+        "name": "readme.txt",
+        "type": "file",
+        "alias": [
+          "binary file"
+        ],
+        "mother entity": [
+          "binaries"
+        ]
+      },
+      {
+        "name": "digital certificates",
+        "type": "x509-certificate",
+        "alias": [
+          "QTI International certificate",
+          "CallTogether certificate"
+        ]
+      },
+      {
+        "name": "QTI International",
+        "type": "identity",
+        "alias": [
+          "QTI International Inc"
+        ]
+      },
+      {
+        "name": "CallTogether",
+        "type": "identity",
+        "alias": [
+          "CallTogether, Inc."
+        ]
+      },
+      {
+        "name": "PlugX variant",
+        "type": "malware",
+        "alias": [
+          "PlugX"
+        ]
+      },
+      {
+        "name": "Google Code project at code.google.com/p/udom/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "PlugX variant"
+        ]
+      },
+      {
+        "name": "sample 0b54ae49fd5a841970b98a078968cb6b",
+        "type": "malware",
+        "alias": [
+          "Backdoor.APT.Preshin"
+        ]
+      },
+      {
+        "name": "java-se.com/jp.jpg",
+        "type": "url",
+        "alias": [
+          "malicious javascript"
+        ],
+        "mother entity": [
+          "sample 0b54ae49fd5a841970b98a078968cb6b"
+        ]
+      },
+      {
+        "name": "luxscena.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "sample 0b54ae49fd5a841970b98a078968cb6b"
+        ]
+      },
+      {
+        "name": "e2a4b96cce9de4fb126cfd5f5c73c3ed",
+        "type": "malware",
+        "alias": [
+          "Backdoor.APT.PISCES"
+        ]
+      },
+      {
+        "name": "hk.java-se.com",
+        "type": "domain-name",
+        "alias": [
+          "malicious javascript"
+        ],
+        "mother entity": [
+          "e2a4b96cce9de4fb126cfd5f5c73c3ed"
+        ]
+      },
+      {
+        "name": "Hong Kong Association for Democracy and People’s Livelihood",
+        "type": "identity",
+        "alias": [
+          "ADPL"
+        ]
+      },
+      {
+        "name": "Democratic Party of Hong Kong",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "p.java-sec.com",
+        "type": "domain-name",
+        "alias": [
+          "attacker controlled domain"
+        ]
+      },
+      {
+        "name": "124.217.214.149",
+        "type": "ipv4-addr",
+        "alias": [
+          "attacked IP"
+        ]
+      },
+      {
+        "name": "124.248.237.26",
+        "type": "ipv4-addr",
+        "alias": [
+          "shared hosting IP"
+        ]
+      },
+      {
+        "name": "10.0.1.151",
+        "type": "ipv4-addr",
+        "alias": [
+          "C2 server IP"
+        ]
+      },
+      {
+        "name": "nxapi.appledaily.com.hk",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "hkgolden.com",
+        "type": "domain-name",
+        "alias": [
+          "HKGolden forum"
+        ],
+        "mother entity": [
+          "HKGolden forum"
+        ]
+      },
+      {
+        "name": "198.41.222.6",
+        "type": "ipv4-addr",
+        "alias": []
+      },
+      {
+        "name": "202.85.162.130",
+        "type": "ipv4-addr",
+        "alias": []
+      },
+      {
+        "name": "202.85.162.140",
+        "type": "ipv4-addr",
+        "alias": []
+      },
+      {
+        "name": "202.85.162.180",
+        "type": "ipv4-addr",
+        "alias": []
+      },
+      {
+        "name": "202.85.162.101",
+        "type": "ipv4-addr",
+        "alias": []
+      },
+      {
+        "name": "202.85.162.95",
+        "type": "ipv4-addr",
+        "alias": []
+      },
+      {
+        "name": "202.85.162.81",
+        "type": "ipv4-addr",
+        "alias": []
+      },
+      {
+        "name": "202.85.162.90",
+        "type": "ipv4-addr",
+        "alias": []
+      },
+      {
+        "name": "202.85.162.97",
+        "type": "ipv4-addr",
+        "alias": []
+      },
+      {
+        "name": "58.64.139.10",
+        "type": "ipv4-addr",
+        "alias": [
+          "IP that hosted hkgolden.com"
+        ],
+        "mother entity": [
+          "hkgolden.com"
+        ]
+      },
+      {
+        "name": "jre76.java-se.com",
+        "type": "domain-name",
+        "alias": [
+          "malicious javascript host"
+        ]
+      },
+      {
+        "name": "java-se.com",
+        "type": "domain-name",
+        "alias": [
+          "shared hosting for malicious javascript"
+        ]
+      },
+      {
+        "name": "u.java-se.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "sapporo-digital-photoclub.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "wakayamasatei.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "tommo.jp",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "mizma.co.jp",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "sp.you-maga.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "nitori-tour.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "ninekobe.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "shinzenho.jp",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "wizapply.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "www.credo-biz.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "www.sapporo-digital-photoclub.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "Great Firewall of China",
+        "type": "infrastructure",
+        "alias": []
+      },
+      {
+        "name": "appledaily.com.hk",
+        "type": "domain-name",
+        "alias": [
+          "Apple Daily"
+        ],
+        "mother entity": [
+          "Next Media"
+        ]
+      },
+      {
+        "name": "nextmedia.com",
+        "type": "domain-name",
+        "alias": [
+          "Next Media"
+        ],
+        "mother entity": [
+          "Next Media"
+        ]
+      },
+      {
+        "name": "223.29.248.9",
+        "type": "ipv4-addr",
+        "alias": []
+      },
+      {
+        "name": "211.233.89.182",
+        "type": "ipv4-addr",
+        "alias": []
+      },
+      {
+        "name": "112.175.143.2",
+        "type": "ipv4-addr",
+        "alias": []
+      },
+      {
+        "name": "112.175.143.9",
+        "type": "ipv4-addr",
+        "alias": []
+      },
+      {
+        "name": "Oct. 23, 2014",
+        "type": "date",
+        "alias": []
+      },
+      {
+        "name": "Oct. 24, 2014",
+        "type": "date",
+        "alias": []
+      },
+      {
+        "name": "Nov 19, 2014",
+        "type": "date",
+        "alias": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DDoS attacks",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "websites promoting democracy in Hong Kong"
+      },
+      {
+        "sub": "DDoS attacks",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Next Media’s Apple Daily publication"
+      },
+      {
+        "sub": "DDoS attacks",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "HKGolden forum"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "identified",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "binaries"
+      },
+      {
+        "sub": "binaries",
+        "rel": "receive instructions from",
+        "rel_type": [
+          "communimates-with"
+        ],
+        "obj": "command and control (C2) servers"
+      },
+      {
+        "sub": "binaries",
+        "rel": "drop",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "KernelBot"
+      },
+      {
+        "sub": "KernelBot",
+        "rel": "connects to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "sapporo-digital-photoclub.com"
+      },
+      {
+        "sub": "KernelBot",
+        "rel": "connects to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "wakayamasatei.com"
+      },
+      {
+        "sub": "C2 servers",
+        "rel": "hosting",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "nxapi.appledaily.com.hk"
+      },
+      {
+        "sub": "C2 servers",
+        "rel": "issued commands to attack",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "binaries"
+      },
+      {
+        "sub": "sample 0b54ae49fd5a841970b98a078968cb6b",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "luxscena.com"
+      },
+      {
+        "sub": "sample 0b54ae49fd5a841970b98a078968cb6b",
+        "rel": "downloaded from",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "java-se.com/jp.jpg"
+      },
+      {
+        "sub": "e2a4b96cce9de4fb126cfd5f5c73c3ed",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "hk.java-se.com"
+      },
+      {
+        "sub": "Great Firewall of China",
+        "rel": "blocked",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "hkgolden.com"
+      },
+      {
+        "sub": "PlugX variant",
+        "rel": "signed with",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "QTI International digital certificate"
+      },
+      {
+        "sub": "digital certificates",
+        "rel": "signed by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "QTI International"
+      },
+      {
+        "sub": "digital certificates",
+        "rel": "signed by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "CallTogether"
+      },
+      {
+        "sub": "digital certificates",
+        "rel": "used to sign",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "sample 0b54ae49fd5a841970b98a078968cb6b"
+      },
+      {
+        "sub": "digital certificates",
+        "rel": "used to sign",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "e2a4b96cce9de4fb126cfd5f5c73c3ed"
+      },
+      {
+        "sub": "CallTogether certificate",
+        "rel": "used to sign",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "ecf21054ab515946a812d1aa5c408ca5"
+      },
+      {
+        "sub": "binaries",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "readme.txt"
+      },
+      {
+        "sub": "binaries",
+        "rel": "is-part-of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "W32 Cabinet self-extracting files"
+      },
+      {
+        "sub": "C2 servers",
+        "rel": "issued commands to attack",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "124.217.214.149"
+      },
+      {
+        "sub": "C2 servers",
+        "rel": "issued commands to attack",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "p.java-sec.com"
+      },
+      {
+        "sub": "attacker",
+        "rel": "attacked",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "124.217.214.149"
+      },
+      {
+        "sub": "attacker",
+        "rel": "mistakenly issued commands to attack",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "124.217.214.149"
+      }
+    ]
+  }
+}

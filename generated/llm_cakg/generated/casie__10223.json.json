@@ -1,0 +1,283 @@
+{
+  "sample_id": "casie__10223.json",
+  "sample_index": 13,
+  "source": "casie",
+  "file_name": "10223.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DJI Forum",
+        "type": "Entity"
+      },
+      {
+        "name": "DJI web platform",
+        "type": "Entity"
+      },
+      {
+        "name": "DJI store",
+        "type": "Entity"
+      },
+      {
+        "name": "DJI Cloud server data",
+        "type": "Entity"
+      },
+      {
+        "name": "DJI GO",
+        "type": "Entity"
+      },
+      {
+        "name": "DJI GO 4",
+        "type": "Entity"
+      },
+      {
+        "name": "DJI FlightHub",
+        "type": "Entity"
+      },
+      {
+        "name": "user identification process",
+        "type": "Entity"
+      },
+      {
+        "name": "token",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious links",
+        "type": "Entity"
+      },
+      {
+        "name": "login credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "account access",
+        "type": "Entity"
+      },
+      {
+        "name": "personal data",
+        "type": "Entity"
+      },
+      {
+        "name": "flight logs",
+        "type": "Entity"
+      },
+      {
+        "name": "photos",
+        "type": "Entity"
+      },
+      {
+        "name": "videos",
+        "type": "Entity"
+      },
+      {
+        "name": "live camera feed",
+        "type": "Entity"
+      },
+      {
+        "name": "map during missions",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability in DJI’s infrastructure",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2018-XXXXX",
+        "type": "Entity"
+      },
+      {
+        "name": "high risk",
+        "type": "Entity"
+      },
+      {
+        "name": "low probability",
+        "type": "Entity"
+      },
+      {
+        "name": "Check Point",
+        "type": "Entity"
+      },
+      {
+        "name": "Bug Bounty Program",
+        "type": "Entity"
+      },
+      {
+        "name": "exploit",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious link",
+        "type": "Entity"
+      },
+      {
+        "name": "registry key",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled task",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanism",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "vulnerability in DJI’s infrastructure",
+        "rel": "exploits",
+        "obj": "user identification process"
+      },
+      {
+        "sub": "vulnerability in DJI’s infrastructure",
+        "rel": "allows access to",
+        "obj": "user accounts"
+      },
+      {
+        "sub": "vulnerability in DJI’s infrastructure",
+        "rel": "allows access to",
+        "obj": "personal data"
+      },
+      {
+        "sub": "vulnerability in DJI’s infrastructure",
+        "rel": "allows access to",
+        "obj": "flight logs"
+      },
+      {
+        "sub": "vulnerability in DJI’s infrastructure",
+        "rel": "allows access to",
+        "obj": "photos"
+      },
+      {
+        "sub": "vulnerability in DJI’s infrastructure",
+        "rel": "allows access to",
+        "obj": "videos"
+      },
+      {
+        "sub": "vulnerability in DJI’s infrastructure",
+        "rel": "allows access to",
+        "obj": "live camera feed"
+      },
+      {
+        "sub": "vulnerability in DJI’s infrastructure",
+        "rel": "allows access to",
+        "obj": "map during missions"
+      },
+      {
+        "sub": "DJI Forum",
+        "rel": "is used to access",
+        "obj": "vulnerability in DJI’s infrastructure"
+      },
+      {
+        "sub": "attacker",
+        "rel": "plants",
+        "obj": "malicious links"
+      },
+      {
+        "sub": "malicious links",
+        "rel": "compromise",
+        "obj": "login credentials"
+      },
+      {
+        "sub": "login credentials",
+        "rel": "enable access to",
+        "obj": "account access"
+      },
+      {
+        "sub": "login credentials",
+        "rel": "enable access to",
+        "obj": "DJI web platform"
+      },
+      {
+        "sub": "login credentials",
+        "rel": "enable access to",
+        "obj": "DJI store"
+      },
+      {
+        "sub": "login credentials",
+        "rel": "enable access to",
+        "obj": "DJI Forum"
+      },
+      {
+        "sub": "login credentials",
+        "rel": "enable access to",
+        "obj": "Cloud server data"
+      },
+      {
+        "sub": "Cloud server data",
+        "rel": "is synced from",
+        "obj": "DJI GO"
+      },
+      {
+        "sub": "Cloud server data",
+        "rel": "is synced from",
+        "obj": "DJI GO 4"
+      },
+      {
+        "sub": "DJI FlightHub",
+        "rel": "provides access to",
+        "obj": "live camera feed"
+      },
+      {
+        "sub": "DJI FlightHub",
+        "rel": "provides access to",
+        "obj": "map during missions"
+      },
+      {
+        "sub": "Check Point",
+        "rel": "submitted a report to",
+        "obj": "Bug Bounty Program"
+      },
+      {
+        "sub": "Check Point",
+        "rel": "identified",
+        "obj": "vulnerability in DJI’s infrastructure"
+      },
+      {
+        "sub": "Check Point",
+        "rel": "notified DJI about",
+        "obj": "vulnerability in DJI’s infrastructure"
+      },
+      {
+        "sub": "DJI",
+        "rel": "classified vulnerability as",
+        "obj": "high risk"
+      },
+      {
+        "sub": "DJI",
+        "rel": "classified vulnerability as",
+        "obj": "low probability"
+      },
+      {
+        "sub": "vulnerability in DJI’s infrastructure",
+        "rel": "was discovered in",
+        "obj": "user identification process"
+      },
+      {
+        "sub": "vulnerability in DJI’s infrastructure",
+        "rel": "is associated with",
+        "obj": "CVE-2018-XXXXX"
+      }
+    ]
+  }
+}

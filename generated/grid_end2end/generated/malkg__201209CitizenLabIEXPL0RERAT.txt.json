@@ -1,0 +1,760 @@
+{
+  "sample_id": "malkg__201209CitizenLabIEXPL0RERAT.txt",
+  "sample_index": 103,
+  "source": "malkg",
+  "file_name": "201209CitizenLabIEXPL0RERAT.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "IEXPL0RE RAT",
+        "type": "malware",
+        "alias": [
+          "a remote access trojan (RAT)",
+          "RAT",
+          "Sharky RAT",
+          "c0d0so0",
+          "Backdoor.Briba",
+          "the RAT",
+          "the IEXPL0RE RAT"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "launcher program",
+        "type": "hacker-tool",
+        "alias": [
+          "the launcher program",
+          "the launcher program on the computer",
+          "the IEXPL0RE.EXE (or other launcher) program",
+          "the launcher"
+        ],
+        "mother entity": [
+          "IEXPL0RE RAT"
+        ]
+      },
+      {
+        "name": "custom-generated executable program or document",
+        "type": "file",
+        "alias": [
+          "the attached file",
+          "the program",
+          "the document",
+          "an executable program or document"
+        ],
+        "mother entity": [
+          "IEXPL0RE RAT"
+        ]
+      },
+      {
+        "name": "executable attachment",
+        "type": "file",
+        "alias": [
+          "attachment",
+          "password-protected archive",
+          "RAR file"
+        ],
+        "mother entity": [
+          "IEXPL0RE RAT"
+        ]
+      },
+      {
+        "name": "password",
+        "type": "credential-value",
+        "alias": [
+          "the password",
+          "the password in the email address"
+        ],
+        "mother entity": [
+          "executable attachment"
+        ]
+      },
+      {
+        "name": "emails",
+        "type": "email-address",
+        "alias": [
+          "the emails",
+          "tailored emails",
+          "unique email and delivery method"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Organization 1",
+        "type": "identity",
+        "alias": [
+          "a human rights NGO",
+          "the NGO"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Organization 2",
+        "type": "identity",
+        "alias": [
+          "a news organization operating a website that reports on developments in China",
+          "the news organization"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Organization 3",
+        "type": "identity",
+        "alias": [
+          "a Tibet-related organization"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "configuration file",
+        "type": "file",
+        "alias": [
+          "the configuration file",
+          "RAT configuration file"
+        ],
+        "mother entity": [
+          "launcher program"
+        ]
+      },
+      {
+        "name": "perf*.dat",
+        "type": "file",
+        "alias": [
+          "perf*.dat file",
+          "perf*.dat code",
+          "the contained file (the actual RAT)",
+          "the actual RAT"
+        ],
+        "mother entity": [
+          "launcher program"
+        ]
+      },
+      {
+        "name": "%temp% folder",
+        "type": "location",
+        "alias": [
+          "the %temp% folder",
+          "C:\\Documents and Settings\\user\\Local Settings\\Temp"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "svchost.exe",
+        "type": "process",
+        "alias": [
+          "a Windows program",
+          "svchost process"
+        ],
+        "mother entity": [
+          "launcher program"
+        ]
+      },
+      {
+        "name": "ContainerV2",
+        "type": "hacker-tool",
+        "alias": [
+          "an intermediary stage",
+          "an internal component of the IEXPL0RE launcher"
+        ],
+        "mother entity": [
+          "launcher program"
+        ]
+      },
+      {
+        "name": "client",
+        "type": "malware",
+        "alias": [
+          "the client program",
+          "the final stage of the RAT",
+          "the IEXPL0RE binary",
+          "the client program (which does all of the IEXPL0RE RAT work)"
+        ],
+        "mother entity": [
+          "launcher program"
+        ]
+      },
+      {
+        "name": "command and control (C2) server",
+        "type": "infrastructure",
+        "alias": [
+          "the C2 server",
+          "C2 servers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "C2 server IP or hostname",
+        "type": "indicator",
+        "alias": [
+          "the C2 IP",
+          "the C2 hostname"
+        ],
+        "mother entity": [
+          "command and control (C2) server"
+        ]
+      },
+      {
+        "name": "MD5 hashes",
+        "type": "indicator",
+        "alias": [
+          "message digests",
+          "file hashes"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "StrokeIt",
+        "type": "general-software",
+        "alias": [
+          "a program for using mouse gestures"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "config.dll",
+        "type": "file",
+        "alias": [
+          "the legitimate program’s config.dll"
+        ],
+        "mother entity": [
+          "StrokeIt"
+        ]
+      },
+      {
+        "name": "DLL injection",
+        "type": "attack-pattern",
+        "alias": [
+          "technique exploiting DLL injection"
+        ],
+        "mother entity": [
+          "StrokeIt"
+        ]
+      },
+      {
+        "name": "keylogger data",
+        "type": "abstract-concept",
+        "alias": [
+          "captured keystrokes",
+          "email addresses and passwords"
+        ],
+        "mother entity": [
+          "client"
+        ]
+      },
+      {
+        "name": "C:\\WINDOWS\\system\\lock.dat",
+        "type": "file",
+        "alias": [
+          "the lock.dat file"
+        ],
+        "mother entity": [
+          "IEXPL0RE RAT"
+        ]
+      },
+      {
+        "name": "C:\\WINDOWS\\system\\MSMAPI32.SRG",
+        "type": "file",
+        "alias": [
+          "the MSMAPI32.SRG file"
+        ],
+        "mother entity": [
+          "IEXPL0RE RAT"
+        ]
+      },
+      {
+        "name": "C:\\WINDOWS\\system32\\STREAM.SYS",
+        "type": "file",
+        "alias": [
+          "the STREAM.SYS file"
+        ],
+        "mother entity": [
+          "IEXPL0RE RAT"
+        ]
+      },
+      {
+        "name": "HTTP POST / GET",
+        "type": "network-traffic",
+        "alias": [
+          "HTTP communication",
+          "C2 communication protocol"
+        ],
+        "mother entity": [
+          "client"
+        ]
+      },
+      {
+        "name": "XOR key 0xCD",
+        "type": "indicator",
+        "alias": [
+          "one-byte XOR encryption"
+        ],
+        "mother entity": [
+          "client"
+        ]
+      },
+      {
+        "name": "C:\\Documents and Settings\\All Users\\Start Menu\\Programs\\Startup\\IEXPL0RE.LNK",
+        "type": "file",
+        "alias": [
+          "the startup link"
+        ],
+        "mother entity": [
+          "IEXPL0RE RAT"
+        ]
+      },
+      {
+        "name": "C:\\Documents and Settings\\user\\Application Data\\Microsoft\\Internet Explorer\\IEXPL0RE.EXE",
+        "type": "file",
+        "alias": [
+          "the legitimate IEXPL0RE.EXE"
+        ],
+        "mother entity": [
+          "IEXPL0RE RAT"
+        ]
+      },
+      {
+        "name": "C:\\Documents and Settings\\user\\Local Settings\\Temp\\31A.tmp",
+        "type": "file",
+        "alias": [
+          "the .tmp file"
+        ],
+        "mother entity": [
+          "IEXPL0RE RAT"
+        ]
+      },
+      {
+        "name": "C:\\Documents and Settings\\user\\Local Settings\\Temp\\perf6cd2e5e9.dat",
+        "type": "file",
+        "alias": [
+          "the perf*.dat file"
+        ],
+        "mother entity": [
+          "IEXPL0RE RAT"
+        ]
+      },
+      {
+        "name": "email address",
+        "type": "email-address",
+        "alias": [
+          "email addresses"
+        ],
+        "mother entity": [
+          "keylogger data"
+        ]
+      },
+      {
+        "name": "C:\\Documents and Settings\\user\\Local Settings\\Temp\\",
+        "type": "location",
+        "alias": [
+          "the Temp directory"
+        ],
+        "mother entity": [
+          "IEXPL0RE RAT"
+        ]
+      },
+      {
+        "name": "Host header: update.microsoft.com",
+        "type": "url",
+        "alias": [
+          "the Host header value"
+        ],
+        "mother entity": [
+          "C2 server IP or hostname"
+        ]
+      },
+      {
+        "name": "domain or IP for C2 servers",
+        "type": "indicator",
+        "alias": [
+          "primary and alternate C2 servers"
+        ],
+        "mother entity": [
+          "C2 server IP or hostname"
+        ]
+      },
+      {
+        "name": "localhost address",
+        "type": "ipv4-addr",
+        "alias": [
+          "the localhost backup"
+        ],
+        "mother entity": [
+          "domain or IP for C2 servers"
+        ]
+      },
+      {
+        "name": "Microsoft’s website",
+        "type": "url",
+        "alias": [
+          "Microsoft’s website URL"
+        ],
+        "mother entity": [
+          "C2 server IP or hostname"
+        ]
+      },
+      {
+        "name": "Microsoft’s website redirect",
+        "type": "network-traffic",
+        "alias": [
+          "the redirect behavior"
+        ],
+        "mother entity": [
+          "Microsoft’s website"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Organization 1",
+        "rel": "received",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "IEXPL0RE RAT"
+      },
+      {
+        "sub": "emails",
+        "rel": "contained",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "IEXPL0RE RAT"
+      },
+      {
+        "sub": "emails",
+        "rel": "tailored specifically for the target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "IEXPL0RE RAT"
+      },
+      {
+        "sub": "executable attachment",
+        "rel": "in a password-protected archive",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "IEXPL0RE RAT"
+      },
+      {
+        "sub": "password",
+        "rel": "included in the email address",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "executable attachment"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "installs a launcher program on the computer",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "launcher program"
+      },
+      {
+        "sub": "launcher program",
+        "rel": "custom built for each specific target",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "antivirus programs"
+      },
+      {
+        "sub": "launcher program",
+        "rel": "contains a configuration file unique to the target",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "configuration file"
+      },
+      {
+        "sub": "launcher program",
+        "rel": "unpacks a contained file (the actual RAT)",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "perf*.dat"
+      },
+      {
+        "sub": "launcher program",
+        "rel": "saved to the %temp% folder",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "perf*.dat"
+      },
+      {
+        "sub": "launcher program",
+        "rel": "runs (via injection into svchost.exe)",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "perf*.dat"
+      },
+      {
+        "sub": "perf*.dat",
+        "rel": "extracts another DLL into memory",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "ContainerV2"
+      },
+      {
+        "sub": "ContainerV2",
+        "rel": "downloads another DLL called ‘client’",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "client"
+      },
+      {
+        "sub": "ContainerV2",
+        "rel": "connects to the Internet",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "command and control (C2) server"
+      },
+      {
+        "sub": "client",
+        "rel": "does all of the IEXPL0RE RAT work",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "IEXPL0RE RAT"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "connects to a command and control (C2) server",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "command and control (C2) server"
+      },
+      {
+        "sub": "client",
+        "rel": "sends keylogger data",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "command and control (C2) server"
+      },
+      {
+        "sub": "C2 server IP or hostname",
+        "rel": "specifies which server to connect to",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "command and control (C2) server"
+      },
+      {
+        "sub": "MD5 hashes",
+        "rel": "identify a file",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "IEXPL0RE components"
+      },
+      {
+        "sub": "client",
+        "rel": "is encrypted with XOR key 0xCD",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "XOR key 0xCD"
+      },
+      {
+        "sub": "launcher program",
+        "rel": "leaves traces... in %temp%",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "C:\\Documents and Settings\\user\\Local Settings\\Temp\\31A.tmp"
+      },
+      {
+        "sub": "launcher program",
+        "rel": "leaves traces... in %temp%",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "C:\\Documents and Settings\\user\\Local Settings\\Temp\\perf6cd2e5e9.dat"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "leaves traces of the extracted binary and the link file",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "C:\\Documents and Settings\\All Users\\Start Menu\\Programs\\Startup\\IEXPL0RE.LNK"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "leaves traces of the extracted binary and the link file",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "C:\\Documents and Settings\\user\\Application Data\\Microsoft\\Internet Explorer\\IEXPL0RE.EXE"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "uses files for configuration",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "C:\\WINDOWS\\system\\lock.dat"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "uses files for configuration",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "C:\\WINDOWS\\system\\MSMAPI32.SRG"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "uses files for configuration",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "C:\\WINDOWS\\system32\\STREAM.SYS"
+      },
+      {
+        "sub": "client",
+        "rel": "communicates with the C2 server using HTTP POST / GET",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "command and control (C2) server"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "uses a Host header of update.microsoft.com",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Host header: update.microsoft.com"
+      },
+      {
+        "sub": "IEXPL0RE RAT",
+        "rel": "uses a localhost address as backup",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "localhost address"
+      },
+      {
+        "sub": "client",
+        "rel": "downloads a file and runs it",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "malware"
+      },
+      {
+        "sub": "client",
+        "rel": "sends a list of all video capture devices",
+        "rel_type": [
+          "leaks"
+        ],
+        "obj": "targets"
+      },
+      {
+        "sub": "C2 server IP or hostname",
+        "rel": "is currently down",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "C2 server IP or hostname"
+      },
+      {
+        "sub": "client",
+        "rel": "downloads and runs additional programs",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "malware"
+      },
+      {
+        "sub": "client",
+        "rel": "finds and exfiltrate data",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "targets"
+      },
+      {
+        "sub": "MD5 hashes",
+        "rel": "detect the client",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "client"
+      },
+      {
+        "sub": "StrokeIt",
+        "rel": "uses a file named config.dll",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "config.dll"
+      },
+      {
+        "sub": "DLL injection",
+        "rel": "exploiting DLL injection",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "antivirus programs"
+      },
+      {
+        "sub": "config.dll",
+        "rel": "replaced with the RAT downloader",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "IEXPL0RE RAT"
+      },
+      {
+        "sub": "client",
+        "rel": "communicates with the C2 server",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "command and control (C2) server"
+      },
+      {
+        "sub": "client",
+        "rel": "downloads the client",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "command and control (C2) server"
+      },
+      {
+        "sub": "Microsoft’s website",
+        "rel": "redirect to Microsoft’s website",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "C2 server IP or hostname"
+      }
+    ]
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_0.json",
+  "sample_index": 200,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_0.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SophosLabs",
+        "type": "security-product",
+        "alias": [
+          "SophosLabs"
+        ]
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "hackers"
+        ]
+      },
+      {
+        "name": "Search Engine results",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "queries regarding the exPrime Minister of Pakistan Ms Benazir Bhutto",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Ms Benazir Bhutto",
+        "type": "identity"
+      },
+      {
+        "name": "websites in Pakistan and India",
+        "type": "vulnerability",
+        "alias": [
+          "websites in Pakistan",
+          "websites in India"
+        ]
+      },
+      {
+        "name": "the script that people would download",
+        "type": "file",
+        "alias": [
+          "the script"
+        ]
+      },
+      {
+        "name": "Mal/JessyA",
+        "type": "malware",
+        "alias": [
+          "Mal/JessyA"
+        ]
+      },
+      {
+        "name": "Troj/IframeM",
+        "type": "malware",
+        "alias": [
+          "Troj/IframeM"
+        ]
+      },
+      {
+        "name": "Mal/WSshlA",
+        "type": "malware",
+        "alias": [
+          "Mal/WSshlA"
+        ]
+      },
+      {
+        "name": "Mal/BasineC",
+        "type": "malware",
+        "alias": [
+          "Mal/BasineC"
+        ]
+      },
+      {
+        "name": "the same site",
+        "type": "url",
+        "alias": [
+          "the site"
+        ]
+      },
+      {
+        "name": "expatriate Pakistanis",
+        "type": "user-account",
+        "alias": [
+          "Pakistanis"
+        ]
+      },
+      {
+        "name": "those of Pakistani origin with relatives in Pakistan",
+        "type": "user-account",
+        "alias": [
+          "Pakistani origin",
+          "relatives in Pakistan"
+        ]
+      },
+      {
+        "name": "the region",
+        "type": "location"
+      },
+      {
+        "name": "WS1000",
+        "type": "security-product",
+        "alias": [
+          "WS1000"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SophosLabs",
+        "rel": "authored",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "the blog"
+      },
+      {
+        "sub": "hackers",
+        "rel": "poisoning",
+        "rel_type": [
+          "bypasses",
+          "exploits"
+        ],
+        "obj": "Search Engine results"
+      },
+      {
+        "sub": "queries regarding the exPrime Minister of Pakistan Ms Benazir Bhutto",
+        "rel": "targeted by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "hackers"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "was not targeting",
+        "rel_type": [
+          "targets",
+          "negation"
+        ],
+        "obj": "Ms Benazir Bhutto",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "hackers",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "websites in Pakistan and India"
+      },
+      {
+        "sub": "the script that people would download",
+        "rel": "is now detected as",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Mal/JessyA"
+      },
+      {
+        "sub": "Mal/JessyA",
+        "rel": "would attempt to download",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "Troj/IframeM"
+      },
+      {
+        "sub": "Troj/IframeM",
+        "rel": "from",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "the same site"
+      },
+      {
+        "sub": "Mal/JessyA",
+        "rel": "would attempt to download",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "Mal/WSshlA"
+      },
+      {
+        "sub": "Mal/WSshlA",
+        "rel": "ultimately",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Mal/BasineC"
+      },
+      {
+        "sub": "expatriate Pakistanis or those of Pakistani origin with relatives in Pakistan",
+        "rel": "will be hungry for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "news from the region"
+      },
+      {
+        "sub": "This malware seeding",
+        "rel": "will add to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "their miseries"
+      },
+      {
+        "sub": "people browsing behind a WS1000",
+        "rel": "are safe",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "the malware"
+      }
+    ]
+  }
+}

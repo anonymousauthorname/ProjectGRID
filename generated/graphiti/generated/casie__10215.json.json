@@ -1,0 +1,133 @@
+{
+  "sample_id": "casie__10215.json",
+  "sample_index": 47,
+  "source": "casie",
+  "file_name": "10215.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2018-0171",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "CVE-2018-0150",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "CVE-2018-0151",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Smart Install",
+        "type": "Malware"
+      },
+      {
+        "name": "TCP port 4786",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "UDP port 18999",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "IOS",
+        "type": "Software"
+      },
+      {
+        "name": "IOS XE",
+        "type": "Software"
+      },
+      {
+        "name": "Cisco",
+        "type": "Organization"
+      },
+      {
+        "name": "Embedi",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2018-0171",
+        "rel": "AFFECTS",
+        "obj": "Smart Install"
+      },
+      {
+        "sub": "Smart Install",
+        "rel": "USES",
+        "obj": "TCP port 4786"
+      },
+      {
+        "sub": "CVE-2018-0150",
+        "rel": "AFFECTS",
+        "obj": "IOS XE"
+      },
+      {
+        "sub": "CVE-2018-0151",
+        "rel": "AFFECTS",
+        "obj": "IOS"
+      },
+      {
+        "sub": "CVE-2018-0151",
+        "rel": "AFFECTS",
+        "obj": "IOS XE"
+      },
+      {
+        "sub": "CVE-2018-0151",
+        "rel": "exploits via",
+        "obj": "UDP port 18999"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "DISCOVERED",
+        "obj": "CVE-2018-0171"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "DISCOVERED",
+        "obj": "CVE-2018-0150"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "PATCHED",
+        "obj": "CVE-2018-0171"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "PATCHED",
+        "obj": "CVE-2018-0150"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "PATCHED",
+        "obj": "CVE-2018-0151"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "DEVELOPS",
+        "obj": "IOS"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "DEVELOPS",
+        "obj": "IOS XE"
+      }
+    ]
+  }
+}

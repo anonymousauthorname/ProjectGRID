@@ -1,0 +1,148 @@
+{
+  "sample_id": "casie__365.json",
+  "sample_index": 18,
+  "source": "casie",
+  "file_name": "365.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Cipher0007",
+        "type": "Entity"
+      },
+      {
+        "name": "AlphaBay",
+        "type": "Entity"
+      },
+      {
+        "name": "PGP keys",
+        "type": "Entity"
+      },
+      {
+        "name": "Reddit",
+        "type": "Entity"
+      },
+      {
+        "name": "Pastebin",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "private messages",
+        "type": "Entity"
+      },
+      {
+        "name": "200,000 private messages",
+        "type": "Entity"
+      },
+      {
+        "name": "218,000 messages",
+        "type": "Entity"
+      },
+      {
+        "name": "30 days",
+        "type": "Entity"
+      },
+      {
+        "name": "hacked messages",
+        "type": "Entity"
+      },
+      {
+        "name": "infiltrate AlphaBay",
+        "type": "Entity"
+      },
+      {
+        "name": "exploit AlphaBay",
+        "type": "Entity"
+      },
+      {
+        "name": "fix the flaws",
+        "type": "Entity"
+      },
+      {
+        "name": "Dark Web domain",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cipher0007",
+        "rel": "identifies",
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "reveals",
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "posts",
+        "obj": "Reddit"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "steals",
+        "obj": "200,000 private messages"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "exploits",
+        "obj": "AlphaBay"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "infiltrates",
+        "obj": "AlphaBay"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "discloses",
+        "obj": "methods to exploit AlphaBay"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "admits",
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "confirms",
+        "obj": "218,000 messages were hacked"
+      },
+      {
+        "sub": "hacked messages",
+        "rel": "are not protected by",
+        "obj": "PGP keys"
+      },
+      {
+        "sub": "developers at the trading platform",
+        "rel": "fix",
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "posts",
+        "obj": "Pastebin"
+      }
+    ]
+  }
+}

@@ -1,0 +1,607 @@
+{
+  "sample_id": "malkg__201303itrustPoisonIvy.txt",
+  "sample_index": 126,
+  "source": "malkg",
+  "file_name": "201303itrustPoisonIvy.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Poison Ivy Remote Administration Tool",
+        "rel": "Has vulnerability",
+        "obj": "IP"
+      },
+      {
+        "sub": "Poison Ivy Remote Administration Tool",
+        "rel": "Operate",
+        "obj": "Hong Kong"
+      },
+      {
+        "sub": "Poison Ivy Remote Administration Tool",
+        "rel": "Use",
+        "obj": "Port 3460"
+      },
+      {
+        "sub": "Poison Ivy Remote Administration Tool",
+        "rel": "Use",
+        "obj": "Port 80"
+      },
+      {
+        "sub": "Poison Ivy Remote Administration Tool",
+        "rel": "Use",
+        "obj": "Port 443"
+      },
+      {
+        "sub": "Poison Ivy Remote Administration Tool",
+        "rel": "Use",
+        "obj": "Port 8080"
+      },
+      {
+        "sub": "Poison Ivy Remote Administration Tool",
+        "rel": "Detect",
+        "obj": "100 null bytes"
+      },
+      {
+        "sub": "Poison Ivy Remote Administration Tool",
+        "rel": "Detect",
+        "obj": "Response with 100 bytes and signature 0x000015D0"
+      },
+      {
+        "sub": "Poison Ivy Remote Administration Tool",
+        "rel": "Modify",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Locate at",
+        "obj": "Hong Kong"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Modify",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Proxy server"
+      },
+      {
+        "sub": "Proxy server",
+        "rel": "Operate",
+        "obj": "Command and control  activities"
+      },
+      {
+        "sub": "Proxy server",
+        "rel": "Forward",
+        "obj": "Network packets"
+      },
+      {
+        "sub": "Proxy server",
+        "rel": "Locate at",
+        "obj": "Machine managed by attackers"
+      },
+      {
+        "sub": "Poison Ivy C&C server",
+        "rel": "Belong to",
+        "obj": "Attackers"
+      },
+      {
+        "sub": "Dedicated server",
+        "rel": "Operate",
+        "obj": "Proxy and Poison Ivy server"
+      },
+      {
+        "sub": "Dedicated server",
+        "rel": "Belong to",
+        "obj": "Each target"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Construct",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Poison Ivy C&C server"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Manage",
+        "obj": "Dedicated server"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has vulnerability",
+        "obj": "Remote Code Execution"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has value",
+        "obj": "Encryption Key"
+      },
+      {
+        "sub": "Encryption Key",
+        "rel": "Based on",
+        "obj": "CRC Algorithm"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Operate",
+        "obj": "Infected Machines"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Write",
+        "obj": "Remote Connection"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Modify",
+        "obj": "Communication Encryption"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Poison Ivy RAT"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Gain",
+        "obj": "Foothold"
+      },
+      {
+        "sub": "Poison Ivy Server",
+        "rel": "Has vulnerability",
+        "obj": "Remote Code Execution"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has vulnerability",
+        "obj": "Buffer overflow vulnerability"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Meterpreter"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Enable",
+        "obj": "Remote code execution"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Operate",
+        "obj": "Target systems"
+      },
+      {
+        "sub": "Buffer overflow vulnerability",
+        "rel": "Exploit",
+        "obj": "Custom Metasploit module"
+      },
+      {
+        "sub": "Crafted HTTP request",
+        "rel": "Trigger",
+        "obj": "Buffer overflow vulnerability"
+      },
+      {
+        "sub": "Crafted HTTP request",
+        "rel": "Deliver",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Metasploit module",
+        "rel": "Construct",
+        "obj": "Custom payload"
+      },
+      {
+        "sub": "Poison Ivy server",
+        "rel": "Has vulnerability",
+        "obj": "Buffer overflow vulnerability"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Has vulnerability",
+        "obj": "Poison Ivy RAT"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Background service"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Construct",
+        "obj": "Custom exploit"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Operate",
+        "obj": "Proxy server"
+      },
+      {
+        "sub": "Proxy server",
+        "rel": "Has value",
+        "obj": "C&C server IP address hiding"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Modify",
+        "obj": "System components"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Locate at",
+        "obj": "Infected machines"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has URL",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Use of proxy server"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Encryption with Camellia cipher"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Use of password-based encryption key"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Execution of custom shellcode"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Modify",
+        "obj": "Poison Ivy daemon's socket"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Write",
+        "obj": "Own socket to mimic infected target"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Operate",
+        "obj": "Communication between infected machines and C&C server"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Construct",
+        "obj": "Hidden C&C infrastructure through proxy"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Locate at",
+        "obj": "Infected target system"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has vulnerability",
+        "obj": "Password pattern [a-z]{3,4}[0-9]{3,4}"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Password brute-forcing technique"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Construct",
+        "obj": "Custom brute-forcer"
+      },
+      {
+        "sub": "Custom brute-forcer",
+        "rel": "Operate",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Password-based encryption key"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has value",
+        "obj": "CRC algorithm derived key"
+      },
+      {
+        "sub": "Password pattern [a-z]{3,4}[0-9]{3,4]",
+        "rel": "Modify",
+        "obj": "Password encryption key derivation"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "System"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Network configurations"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Open ports"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Running processes"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Services"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Retrieve",
+        "obj": "IP address"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Retrieve",
+        "obj": "Hostname"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Retrieve",
+        "obj": "Installed software"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Operate",
+        "obj": "Infected machine"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Network"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Map",
+        "obj": "Network"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Identify",
+        "obj": "Potential targets"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Lateral Movement"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Enable",
+        "obj": "Remote Access"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Enable",
+        "obj": "Command Execution"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Enable",
+        "obj": "File Transfer"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Enable",
+        "obj": "Information Gathering"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Enable",
+        "obj": "Service Management"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Enable",
+        "obj": "Persistent Presence"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Gather information"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Capture screenshots"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Capture audio"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Capture keyboard input"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Collect files"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Collect documents"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Collect configuration files"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Collect network logs"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Write",
+        "obj": "Data into directories on C&C server"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Locate at",
+        "obj": "Directories where data is stored"
+      },
+      {
+        "sub": "Data",
+        "rel": "Organize by",
+        "obj": "Target and machine"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Command and Control"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Has value",
+        "obj": "Camellia cipher"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Construct",
+        "obj": "Custom protocol"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Operate",
+        "obj": "Through proxy server"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Hide",
+        "obj": "Behind proxy server"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "Exfiltration"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Write",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Package",
+        "obj": "Data"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Compress",
+        "obj": "Data"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Network diagrams"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Internal IP/user/password combinations"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Security policies"
+      },
+      {
+        "sub": "Data",
+        "rel": "Locate at",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Data",
+        "rel": "Organize by",
+        "obj": "Target"
+      },
+      {
+        "sub": "Data",
+        "rel": "Organize by",
+        "obj": "Machine"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Use",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Write",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Package",
+        "obj": "Data"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Compress",
+        "obj": "Data"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Use",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "Operate",
+        "obj": "Machine"
+      }
+    ]
+  }
+}

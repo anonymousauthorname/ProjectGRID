@@ -1,0 +1,240 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_21.json",
+  "sample_index": 213,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_21.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "IcedID",
+        "type": "Malware"
+      },
+      {
+        "name": "Qbot",
+        "type": "Malware"
+      },
+      {
+        "name": "malicious macros",
+        "type": "Tool"
+      },
+      {
+        "name": "malicious attachments",
+        "type": "Indicator"
+      },
+      {
+        "name": "spammer",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "banking Trojans",
+        "type": "Malware"
+      },
+      {
+        "name": "Excel file",
+        "type": "Indicator"
+      },
+      {
+        "name": "CompensationClaim",
+        "type": "Indicator"
+      },
+      {
+        "name": "hacked website",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "phishing links",
+        "type": "Indicator"
+      },
+      {
+        "name": "fake login page",
+        "type": "Indicator"
+      },
+      {
+        "name": "steganography",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "shadow market",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "remote access",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "ransomware",
+        "type": "Malware"
+      },
+      {
+        "name": "email threads",
+        "type": "Indicator"
+      },
+      {
+        "name": "business correspondence",
+        "type": "Organization"
+      },
+      {
+        "name": "corporate client",
+        "type": "Organization"
+      },
+      {
+        "name": "Gmail",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Kaspersky",
+        "type": "Organization"
+      },
+      {
+        "name": "REvil",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "APT28",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Apex Legends",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "spammer",
+        "rel": "DISTRIBUTES",
+        "obj": "IcedID"
+      },
+      {
+        "sub": "spammer",
+        "rel": "DISTRIBUTES",
+        "obj": "Qbot"
+      },
+      {
+        "sub": "malicious macros",
+        "rel": "are in",
+        "obj": "Excel file"
+      },
+      {
+        "sub": "Excel file",
+        "rel": "is named as",
+        "obj": "CompensationClaim"
+      },
+      {
+        "sub": "malicious attachments",
+        "rel": "CONTAIN",
+        "obj": "banking Trojans"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "STEALS",
+        "obj": "bank card details"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "STEALS",
+        "obj": "login credentials"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "STEALS",
+        "obj": "login credentials"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "DOWNLOADS",
+        "obj": "ransomware"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "STEALS",
+        "obj": "email threads"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "PROVIDES",
+        "obj": "remote access"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "USES",
+        "obj": "steganography"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "available on",
+        "obj": "shadow market"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "available on",
+        "obj": "shadow market"
+      },
+      {
+        "sub": "malicious macros",
+        "rel": "are in",
+        "obj": "business correspondence"
+      },
+      {
+        "sub": "hacked website",
+        "rel": "HOSTS",
+        "obj": "malicious attachments"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "DETECTS",
+        "obj": "IcedID"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "DETECTS",
+        "obj": "Qbot"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "LOGS",
+        "obj": "keystrokes"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "TARGETS",
+        "obj": "business accounts"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "TARGETS",
+        "obj": "business accounts"
+      },
+      {
+        "sub": "malicious macros",
+        "rel": "can be",
+        "obj": "phishing links"
+      },
+      {
+        "sub": "fake login page",
+        "rel": "redirects to",
+        "obj": "online banking users"
+      },
+      {
+        "sub": "malicious attachments",
+        "rel": "CONTAIN",
+        "obj": "malicious macros"
+      }
+    ]
+  }
+}

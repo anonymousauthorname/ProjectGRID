@@ -1,0 +1,254 @@
+{
+  "sample_id": "casie__10151.json",
+  "sample_index": 21,
+  "source": "casie",
+  "file_name": "10151.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Meltdown",
+        "type": "Entity"
+      },
+      {
+        "name": "Spectre",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2018-8115",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows 10 Redstone 4",
+        "type": "Entity"
+      },
+      {
+        "name": "April 2018 Update",
+        "type": "Entity"
+      },
+      {
+        "name": "NtCallEnclave",
+        "type": "Entity"
+      },
+      {
+        "name": "kernel page table directory",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows Host Compute Service Shim (hcsshim)",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "USB devices",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Entity"
+      },
+      {
+        "name": "Crowdstrike",
+        "type": "Entity"
+      },
+      {
+        "name": "Alex Ionescu",
+        "type": "Entity"
+      },
+      {
+        "name": "attackers",
+        "type": "Entity"
+      },
+      {
+        "name": "victim",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "critical vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "patch",
+        "type": "Entity"
+      },
+      {
+        "name": "security update",
+        "type": "Entity"
+      },
+      {
+        "name": "out-of-band update",
+        "type": "Entity"
+      },
+      {
+        "name": "Patch Tuesday",
+        "type": "Entity"
+      },
+      {
+        "name": "Intel CPU microcode updates",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "backdoor",
+        "type": "Entity"
+      },
+      {
+        "name": "dropper",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious script",
+        "type": "Entity"
+      },
+      {
+        "name": "file path",
+        "type": "Entity"
+      },
+      {
+        "name": "registry key",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled task",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanism",
+        "type": "Entity"
+      },
+      {
+        "name": "exploit",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Meltdown",
+        "rel": "has fatal flaw in",
+        "obj": "patches for Windows 10"
+      },
+      {
+        "sub": "Meltdown",
+        "rel": "was patched in",
+        "obj": "Windows 10 Redstone 4"
+      },
+      {
+        "sub": "Windows 10 Redstone 4",
+        "rel": "is also known as",
+        "obj": "April 2018 Update"
+      },
+      {
+        "sub": "Meltdown patches",
+        "rel": "return to user space with",
+        "obj": "kernel page table directory"
+      },
+      {
+        "sub": "Meltdown patches",
+        "rel": "undermine",
+        "obj": "mitigation"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issued",
+        "obj": "security update"
+      },
+      {
+        "sub": "security update",
+        "rel": "fixes",
+        "obj": "vulnerability in Windows Host Compute Service Shim (hcsshim)"
+      },
+      {
+        "sub": "vulnerability in Windows Host Compute Service Shim (hcsshim)",
+        "rel": "is identified as",
+        "obj": "CVE-2018-8115"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is classified as",
+        "obj": "critical vulnerability"
+      },
+      {
+        "sub": "patched hcsshim file",
+        "rel": "is available for download from",
+        "obj": "GitHub"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "is aware of",
+        "obj": "vulnerability in hcsshim"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "plans to provide",
+        "obj": "update to customers"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "speculates update may arrive in",
+        "obj": "May 2018 Patch Tuesday"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "released",
+        "obj": "Meltdown and Spectre patches"
+      },
+      {
+        "sub": "Meltdown and Spectre patches",
+        "rel": "allow",
+        "obj": "attackers to retrieve data from protected areas of modern CPUs"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issued additional security updates to fix",
+        "obj": "original Spectre mitigations"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "delivered",
+        "obj": "Intel CPU microcode updates"
+      },
+      {
+        "sub": "Intel CPU microcode updates",
+        "rel": "are provided as",
+        "obj": "favor to Intel"
+      }
+    ]
+  }
+}

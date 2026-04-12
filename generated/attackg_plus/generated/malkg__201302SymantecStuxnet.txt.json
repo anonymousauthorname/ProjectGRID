@@ -1,0 +1,742 @@
+{
+  "sample_id": "malkg__201302SymantecStuxnet.txt",
+  "sample_index": 107,
+  "source": "malkg",
+  "file_name": "201302SymantecStuxnet.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Operate",
+        "obj": "Step 7 DLLs"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Monitor",
+        "obj": "PLC program"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Detect",
+        "obj": "symbol labels"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Identify",
+        "obj": "valves and devices"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Determine",
+        "obj": "SIMATIC 400 Station"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Determine",
+        "obj": "SIMATIC H-Station"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Verify",
+        "obj": "function identifiers"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Match",
+        "obj": "device types"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Match",
+        "obj": "device names"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Confirm",
+        "obj": "expected parameters"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Check",
+        "obj": "cascade configuration"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Check",
+        "obj": "presence of specific devices"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Has vulnerability",
+        "obj": "ANSI/ISA S5.1 standard"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Construct",
+        "obj": "MRXCLS.SYS"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Construct",
+        "obj": "USBACC11.SYS"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Construct",
+        "obj": "PCIBUS.SYS"
+      },
+      {
+        "sub": "MRXCLS.SYS",
+        "rel": "Has value",
+        "obj": "decrypt configuration data"
+      },
+      {
+        "sub": "MRXCLS.SYS",
+        "rel": "Inject into",
+        "obj": "Explorer"
+      },
+      {
+        "sub": "MRXCLS.SYS",
+        "rel": "Inject into",
+        "obj": "Step 7"
+      },
+      {
+        "sub": "USBACC11.SYS",
+        "rel": "Enable",
+        "obj": "peer-to-peer communication"
+      },
+      {
+        "sub": "USBACC11.SYS",
+        "rel": "Enable",
+        "obj": "C&C updates"
+      },
+      {
+        "sub": "PCIBUS.SYS",
+        "rel": "Generate",
+        "obj": "Blue Screen of Death"
+      },
+      {
+        "sub": "PCIBUS.SYS",
+        "rel": "Operate at",
+        "obj": "20 days after installation"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Write",
+        "obj": "system drivers directory"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Write",
+        "obj": "Windows INF folder"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Use",
+        "obj": "MRXCLS.SYS"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Use",
+        "obj": "USBACC11.SYS"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Use",
+        "obj": "PCIBUS.SYS"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Operate",
+        "obj": "system"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Modify",
+        "obj": "infected Siemens Step 7 project files"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Use",
+        "obj": "CVE-2012-3015"
+      },
+      {
+        "sub": "CVE-2012-3015",
+        "rel": "Has vulnerability",
+        "obj": "Multiple Siemens SIMATIC Products DLL Loading Arbitrary Code Execution"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Write",
+        "obj": "s7hkimdb.dll"
+      },
+      {
+        "sub": "s7hkimdb.dll",
+        "rel": "Decrypt",
+        "obj": "outbreak.dll"
+      },
+      {
+        "sub": "outbreak.dll",
+        "rel": "Inject",
+        "obj": "services.exe"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Operate",
+        "obj": "Step 7 project archives"
+      },
+      {
+        "sub": "Step 7 project archives",
+        "rel": "Have extension",
+        "obj": ".s7p"
+      },
+      {
+        "sub": "Step 7 project archives",
+        "rel": "Have extension",
+        "obj": ".zip"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Spread through",
+        "obj": "removable drive"
+      },
+      {
+        "sub": "removable drive",
+        "rel": "Infect",
+        "obj": "files with .s7p or .zip extension"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Spread through",
+        "obj": "human-initiated sharing"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Spread through",
+        "obj": "physical media"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Use",
+        "obj": "LoadLibrary mimicry"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Write",
+        "obj": "outbreak.dll"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Write",
+        "obj": "installation.dll"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Write",
+        "obj": "oem7a.pnf"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Write",
+        "obj": "oem7w.pnf"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Operate",
+        "obj": "services.exe"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Operate",
+        "obj": "Explorer"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Modify",
+        "obj": "registry"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Has value",
+        "obj": "oem7a.pnf"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Has value",
+        "obj": "oem7w.pnf"
+      },
+      {
+        "sub": "MRXCLS.SYS",
+        "rel": "Detect",
+        "obj": "LoadLibrary mimicry"
+      },
+      {
+        "sub": "MRXCLS.SYS",
+        "rel": "Operate",
+        "obj": "registry"
+      },
+      {
+        "sub": "MRXCLS.SYS",
+        "rel": "Decrypt",
+        "obj": "configuration data"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Has vulnerability",
+        "obj": "detection evasion"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Belong to",
+        "obj": "Stuxnet family"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Construct",
+        "obj": "encrypted binary"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Has vulnerability",
+        "obj": "Blue Screen of Death"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Use",
+        "obj": "MRXCLS.SYS driver"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Use",
+        "obj": "USBACC11.SYS driver"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Use",
+        "obj": "PCIBUS.SYS driver"
+      },
+      {
+        "sub": "MRXCLS.SYS driver",
+        "rel": "Modify",
+        "obj": "configuration data"
+      },
+      {
+        "sub": "MRXCLS.SYS driver",
+        "rel": "Inject",
+        "obj": "Stuxnet binary"
+      },
+      {
+        "sub": "MRXCLS.SYS driver",
+        "rel": "Operate",
+        "obj": "Explorer process"
+      },
+      {
+        "sub": "MRXCLS.SYS driver",
+        "rel": "Operate",
+        "obj": "Step 7 process"
+      },
+      {
+        "sub": "USBACC11.SYS driver",
+        "rel": "Enable",
+        "obj": "peer-to-peer communication"
+      },
+      {
+        "sub": "USBACC11.SYS driver",
+        "rel": "Enable",
+        "obj": "C&C updates"
+      },
+      {
+        "sub": "PCIBUS.SYS driver",
+        "rel": "Generate",
+        "obj": "Blue Screen of Death"
+      },
+      {
+        "sub": "PCIBUS.SYS driver",
+        "rel": "Operate",
+        "obj": "system operations"
+      },
+      {
+        "sub": "MRXCLS.SYS driver",
+        "rel": "Locate at",
+        "obj": "system startup"
+      },
+      {
+        "sub": "USBACC11.SYS driver",
+        "rel": "Locate at",
+        "obj": "system startup"
+      },
+      {
+        "sub": "PCIBUS.SYS driver",
+        "rel": "Locate at",
+        "obj": "system startup"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Construct",
+        "obj": "drivers"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Write",
+        "obj": "drivers"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Persist",
+        "obj": "system boot"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Remain active",
+        "obj": "after restarts"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Uses",
+        "obj": "Obfuscated or encrypted code"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Injects into",
+        "obj": "services.exe"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Injects into",
+        "obj": "Explorer"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Mimics",
+        "obj": "LoadLibrary"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Avoids",
+        "obj": "Creating or loading certain modules"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Operate by",
+        "obj": "Avoiding detection by security software"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Has technique",
+        "obj": "Defense evasion"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Uses",
+        "obj": "Malware module that mimics LoadLibrary"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Conceals",
+        "obj": "Presence and activities from security monitoring systems"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Operate",
+        "obj": "Step 7 DLL"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Parse",
+        "obj": "Symbol table of PLC program"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Identify",
+        "obj": "Device types"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Identify",
+        "obj": "Cascade modules"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Identify",
+        "obj": "Device numbers"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Verify",
+        "obj": "SIMATIC 400 Station"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Verify",
+        "obj": "H-Station"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Verify",
+        "obj": "417 PLCs"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Check",
+        "obj": "Format of device labels"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Monitor",
+        "obj": "Pressure readings"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Monitor",
+        "obj": "Device states"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Determine",
+        "obj": "Steady state of system"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Assess",
+        "obj": "Suitability for attack"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Use",
+        "obj": "Windows mailslots"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Operate",
+        "obj": "Enumeration of network machines"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Write",
+        "obj": "Callback mailslot named \\[LOCAL MACHINE NAME]\\mailslot\\imnotify"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Write",
+        "obj": "Mailslot named \\[REMOTE MACHINE NAME]\\mailslot\\svchost"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Enable",
+        "obj": "Anonymous logins"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Provide access to",
+        "obj": "Shared files such as temp$, msagent$, SYSADMIN$, and WebFiles$"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Enable",
+        "obj": "Lateral movement between systems"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Has value",
+        "obj": "\\[REMOTE MACHINE NAME]\\mailslot\\svchost"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Has value",
+        "obj": "\\[LOCAL MACHINE NAME]\\mailslot\\imnotify"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Has vulnerability",
+        "obj": "Anonymous login access"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Operate",
+        "obj": "File retrieval from shared directories"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Modify",
+        "obj": "PLC valves"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Modify",
+        "obj": "flow of uranium hexafluoride"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Modify",
+        "obj": "system pressure"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Operate",
+        "obj": "uranium enrichment facility"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Cause",
+        "obj": "damage to centrifuges"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Cause",
+        "obj": "damage to enrichment system"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Collect",
+        "obj": "system state"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Collect",
+        "obj": "operational integrity"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Use",
+        "obj": "smartclick.org"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Use",
+        "obj": "best-advertising.net"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Use",
+        "obj": "internetadvertising4u.com"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Use",
+        "obj": "ad-marketing.net"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Send request to",
+        "obj": "http://<domain>/cgi/link.php?site=xx"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Send request to",
+        "obj": "http://<domain>/cgi/click.php?xite=xx&num=yy&c=1&j=%x&k=%x&l=%x"
+      },
+      {
+        "sub": "smartclick.org",
+        "rel": "Has value",
+        "obj": "Media Suffix"
+      },
+      {
+        "sub": "best-advertising.net",
+        "rel": "Has value",
+        "obj": "Media Suffix"
+      },
+      {
+        "sub": "internetadvertising4u.com",
+        "rel": "Has value",
+        "obj": "Media Suffix"
+      },
+      {
+        "sub": "ad-marketing.net",
+        "rel": "Has value",
+        "obj": "Media Suffix"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Modify",
+        "obj": "C&C server contact after January 11, 2009"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Operate",
+        "obj": "peer-to-peer communication via mailslots"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Has vulnerability",
+        "obj": "C&C server contact after January 11, 2009"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Cause physical harm to",
+        "obj": "Centrifuges"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Cause physical harm to",
+        "obj": "Uranium enrichment system"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Alter",
+        "obj": "Flow of uranium hexafluoride"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Cause",
+        "obj": "Pressure increase in UF6 gas"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Cause",
+        "obj": "Reversion of UF6 gas to solid"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Damage to",
+        "obj": "Industrial infrastructure"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Impact on",
+        "obj": "Operational integrity of facility"
+      },
+      {
+        "sub": "Stuxnet 0.5",
+        "rel": "Impact on",
+        "obj": "Safety of facility"
+      },
+      {
+        "sub": "Natanz",
+        "rel": "Locate at",
+        "obj": "Iran"
+      },
+      {
+        "sub": "Natanz",
+        "rel": "Has vulnerability",
+        "obj": "Stuxnet 0.5"
+      },
+      {
+        "sub": "Uranium enrichment facility",
+        "rel": "Operate by",
+        "obj": "Centrifuges"
+      },
+      {
+        "sub": "Centrifuges",
+        "rel": "Belong to",
+        "obj": "Uranium enrichment system"
+      }
+    ]
+  }
+}

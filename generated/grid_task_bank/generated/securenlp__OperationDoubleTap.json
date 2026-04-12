@@ -1,0 +1,1044 @@
+{
+  "sample_id": "securenlp__OperationDoubleTap",
+  "sample_index": 192,
+  "source": "securenlp",
+  "file_name": "OperationDoubleTap",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT3",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "UPS",
+          "the attacker"
+        ]
+      },
+      {
+        "name": "Operation Clandestine Fox",
+        "type": "campaign"
+      },
+      {
+        "name": "Operation Double Tap",
+        "type": "campaign"
+      },
+      {
+        "name": "CVE-2014-6332",
+        "type": "vulnerability"
+      },
+      {
+        "name": "CVE-2014-4113",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Windows OLE Automation Array Remote Code Execution",
+        "type": "vulnerability"
+      },
+      {
+        "name": "privilege escalation vulnerability",
+        "type": "vulnerability"
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "One Month's Free Membership for The PLAYBOY ClUB 1080P HD VIDEOS 100,000 PHOTOS",
+        "type": "textual lure"
+      },
+      {
+        "name": "4,000 MODELS Nude Celebrities,Playmates,Cybergirls & More!",
+        "type": "textual lure"
+      },
+      {
+        "name": "Click",
+        "type": "instruction"
+      },
+      {
+        "name": "hxxp://join.playboysplus.com/signup/",
+        "type": "url"
+      },
+      {
+        "name": "Your Member referrals must remain active",
+        "type": "instruction"
+      },
+      {
+        "name": "Promotion not available",
+        "type": "textual condition"
+      },
+      {
+        "name": "Clear out cookies or use another browser or use another PC",
+        "type": "instruction"
+      },
+      {
+        "name": "exploit code",
+        "type": "file"
+      },
+      {
+        "name": "VBScript",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "PowerShell",
+        "type": "general-software"
+      },
+      {
+        "name": "install.exe",
+        "type": "file"
+      },
+      {
+        "name": "doc.exe",
+        "type": "file"
+      },
+      {
+        "name": "test.exe",
+        "type": "file"
+      },
+      {
+        "name": "MShell.pdb",
+        "type": "x509-certificate"
+      },
+      {
+        "name": "4113.pdb",
+        "type": "x509-certificate"
+      },
+      {
+        "name": "Client.pdb",
+        "type": "x509-certificate"
+      },
+      {
+        "name": "cmd.exe",
+        "type": "general-software"
+      },
+      {
+        "name": "whoami",
+        "type": "command"
+      },
+      {
+        "name": "schtasks /create /tn 'mysc' /tr C:\\Users\\Public\\test.exe /sc ONLOGON /ru 'System'",
+        "type": "command"
+      },
+      {
+        "name": "SOCKS5 connection",
+        "type": "network-traffic"
+      },
+      {
+        "name": "192.157.198.103",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "TCP port 1913",
+        "type": "network-traffic"
+      },
+      {
+        "name": "192.184.60.229",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "TCP port 81",
+        "type": "network-traffic"
+      },
+      {
+        "name": "05 01 00",
+        "type": "network-traffic"
+      },
+      {
+        "name": "05 00",
+        "type": "network-traffic"
+      },
+      {
+        "name": "05 01 00 01 c0 b8 3c e5 00 51",
+        "type": "network-traffic"
+      },
+      {
+        "name": "c0 b8 3c e5",
+        "type": "network-traffic"
+      },
+      {
+        "name": "00 51",
+        "type": "network-traffic"
+      },
+      {
+        "name": "00 00 00",
+        "type": "network-traffic"
+      },
+      {
+        "name": "00 00 01",
+        "type": "network-traffic"
+      },
+      {
+        "name": "00 00 02",
+        "type": "network-traffic"
+      },
+      {
+        "name": "00 00 03",
+        "type": "network-traffic"
+      },
+      {
+        "name": "00 00 04",
+        "type": "network-traffic"
+      },
+      {
+        "name": "00 00 05",
+        "type": "network-traffic"
+      },
+      {
+        "name": "00 00 06",
+        "type": "network-traffic"
+      },
+      {
+        "name": "00 00 07",
+        "type": "network-traffic"
+      },
+      {
+        "name": "C:\\Users\\Public",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "Windows XP",
+        "type": "general-software"
+      },
+      {
+        "name": "C:\\Users\\Public\\test.exe",
+        "type": "file"
+      },
+      {
+        "name": "C:\\Users\\Public\\doc.exe",
+        "type": "file"
+      },
+      {
+        "name": "C:\\Users\\Public\\install.exe",
+        "type": "file"
+      },
+      {
+        "name": "C:\\Users\\[Username]\\AppData\\Local\\Temp\\notepad1.exe",
+        "type": "file"
+      },
+      {
+        "name": "C:\\Users\\[Username]\\AppData\\Local\\Temp\\notepad.exe",
+        "type": "file"
+      },
+      {
+        "name": "C:\\Users\\[Username]\\AppData\\Local\\Temp\\newnotepad.exe",
+        "type": "file"
+      },
+      {
+        "name": "C:\\Users\\[Username]\\AppData\\Local\\Temp\\note.txt",
+        "type": "file"
+      },
+      {
+        "name": "join.playboysplus.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "www.securitywap.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "securitywap.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "210.109.99.64",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "198.55.115.71",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "inform.bedircati.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "pn.lamb-site.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "104.151.248.173",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "walterclean.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "www.walterclean.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "Plugx/Kaba command and control server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "Metasploit project",
+        "type": "infrastructure"
+      },
+      {
+        "name": "http://www.exploit-db.com/exploits/35230/",
+        "type": "url"
+      },
+      {
+        "name": "Backdoor.APT.CookieCutter",
+        "type": "malware"
+      },
+      {
+        "name": "Pirpi",
+        "type": "malware"
+      },
+      {
+        "name": "newnotepad.exe (MD5 8849538ef1c3471640230605c2623c67)",
+        "type": "file"
+      },
+      {
+        "name": "MD5 5a0c4e1925c76a959ab0588f683ab437",
+        "type": "indicator"
+      },
+      {
+        "name": "Size 46592 bytes",
+        "type": "file metadata"
+      },
+      {
+        "name": "Compile Time 2014-11-19 08:55:10Z",
+        "type": "file metadata"
+      },
+      {
+        "name": "Import Hash 6b8611f8148a6b51e37fd68e75b6a81c",
+        "type": "file metadata"
+      },
+      {
+        "name": "MD5 492a839a3bf9c61b7065589a18c5aa8d",
+        "type": "indicator"
+      },
+      {
+        "name": "Size 12288 bytes",
+        "type": "file metadata"
+      },
+      {
+        "name": "Compile Time 2014-11-19 08:25:45Z",
+        "type": "file metadata"
+      },
+      {
+        "name": "Import Hash 9342d18e7d315117f23db7553d59a9d1",
+        "type": "file metadata"
+      },
+      {
+        "name": "MD5 5c08957f05377004376e6a622406f9aa",
+        "type": "indicator"
+      },
+      {
+        "name": "Size 11264 bytes",
+        "type": "file metadata"
+      },
+      {
+        "name": "Compile Time 2014-11-18 10:49:23Z",
+        "type": "file metadata"
+      },
+      {
+        "name": "Import Hash f34d5f2d4577ed6d9ceec516c1f5a744",
+        "type": "file metadata"
+      },
+      {
+        "name": "c:\\Users\\aa\\Documents\\Visual Studio 2008\\Projects\\MShell\\Release\\MShell.pdb",
+        "type": "x509-certificate"
+      },
+      {
+        "name": "c:\\Users\\aa\\Documents\\Visual Studio 2008\\Projects\\4113\\Release\\4113.pdb",
+        "type": "x509-certificate"
+      },
+      {
+        "name": "C:\\Users\\aa\\Documents\\Visual Studio 2010\\Projects\\MyRat\\Client\\Client\\obj\\x86\\Release\\Client.pdb",
+        "type": "x509-certificate"
+      },
+      {
+        "name": "the 192.184.60.229 IP address",
+        "type": "network-traffic"
+      },
+      {
+        "name": "the join.playboysplus.com exploit",
+        "type": "exploit"
+      },
+      {
+        "name": "the payload",
+        "type": "file"
+      },
+      {
+        "name": "the downloader",
+        "type": "malware"
+      },
+      {
+        "name": "the script",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "the campaign",
+        "type": "campaign"
+      },
+      {
+        "name": "the use of CVE-2014-6332",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "the use of both CVE-2014-6332 and CVE-2014-4113",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "the attacker leveraged",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "targets",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "the system",
+        "type": "target"
+      },
+      {
+        "name": "the path",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "the command",
+        "type": "command"
+      },
+      {
+        "name": "the malware",
+        "type": "malware"
+      },
+      {
+        "name": "the malware component",
+        "type": "malware"
+      },
+      {
+        "name": "the command identifier",
+        "type": "network-traffic"
+      },
+      {
+        "name": "the file",
+        "type": "file"
+      },
+      {
+        "name": "the server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "the content",
+        "type": "indicator"
+      },
+      {
+        "name": "the action",
+        "type": "course-of-action"
+      },
+      {
+        "name": "the string",
+        "type": "textual content"
+      },
+      {
+        "name": "the group",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "variant of the same downloader",
+        "type": "file"
+      },
+      {
+        "name": "known vulnerabilities",
+        "type": "vulnerability"
+      },
+      {
+        "name": "zero-day vulnerabilities",
+        "type": "vulnerability"
+      },
+      {
+        "name": "social engineering",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "sustained operational tempo",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "change in strategy",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "lack of zero-day exploits",
+        "type": "textual condition"
+      },
+      {
+        "name": "IOCs for this threat",
+        "type": "course-of-action"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT3",
+        "rel": "initiated",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Operation Double Tap"
+      },
+      {
+        "sub": "APT3",
+        "rel": "leveraged",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2014-6332"
+      },
+      {
+        "sub": "APT3",
+        "rel": "leveraged",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2014-4113"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "is a",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Windows OLE Automation Array Remote Code Execution"
+      },
+      {
+        "sub": "CVE-2014-4113",
+        "rel": "is a",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "privilege escalation vulnerability"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "was disclosed publicly on",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "2014-11-11"
+      },
+      {
+        "sub": "CVE-2014-4113",
+        "rel": "was disclosed publicly on",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "2014-10-14"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "initiated",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Operation Double Tap"
+      },
+      {
+        "sub": "the body of the message",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "One Month's Free Membership for The PLAYBOY ClUB 1080P HD VIDEOS 100,000 PHOTOS"
+      },
+      {
+        "sub": "the body of the message",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "4,000 MODELS Nude Celebrities,Playmates,Cybergirls & More!"
+      },
+      {
+        "sub": "the body of the message",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Click"
+      },
+      {
+        "sub": "the body of the message",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "hxxp://join.playboysplus.com/signup/"
+      },
+      {
+        "sub": "the body of the message",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Your Member referrals must remain active"
+      },
+      {
+        "sub": "the body of the message",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Promotion not available"
+      },
+      {
+        "sub": "the body of the message",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Clear out cookies or use another browser or use another PC"
+      },
+      {
+        "sub": "the webpage",
+        "rel": "contained",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "CVE-2014-6332 exploit code"
+      },
+      {
+        "sub": "the webpage",
+        "rel": "contained",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a VBScript"
+      },
+      {
+        "sub": "the VBScript",
+        "rel": "invokes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "CVE-2014-6332 exploit code",
+        "rel": "is derived from",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "http://www.exploit-db.com/exploits/35230/"
+      },
+      {
+        "sub": "CVE-2014-6332 exploit code",
+        "rel": "has been incorporated in",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Metasploit project"
+      },
+      {
+        "sub": "function runmumaa()",
+        "rel": "invokes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "powershell.exe"
+      },
+      {
+        "sub": "the system",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "install.exe"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "doc.exe"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "test.exe"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "CVE-2014-4113 exploit"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "attempts to execute",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "test.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "cmd.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "whoami"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "creates persistence by creating",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "schtasks /create /tn 'mysc' /tr C:\\Users\\Public\\test.exe /sc ONLOGON /ru 'System'"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "establishes a",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "SOCKS5 connection"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "sends request",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "05 01 00"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "verifies server response starts with",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "05 00"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "requests connection to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "uses command",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "05 01 00 01 c0 b8 3c e5 00 51"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "verifies first two bytes are",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "05 00"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "expects at least three bytes from",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "the server"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "supports command",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "00 00 00"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "writes content to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "C:\\Users\\[Username]\\AppData\\Local\\Temp\\notepad1.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "deletes files",
+        "rel_type": [
+          "leaks"
+        ],
+        "obj": "C:\\Users\\[Username]\\AppData\\Local\\Temp\\notepad.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "deletes files",
+        "rel_type": [
+          "leaks"
+        ],
+        "obj": "C:\\Users\\[Username]\\AppData\\Local\\Temp\\newnotepad.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "exits on",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "00 00 02"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "downloads URL on",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "00 00 03"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "writes content to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "C:\\Users\\[Username]\\AppData\\Local\\Temp\\notepad2.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "concatenates notepad1.exe and notepad2.exe",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "newnotepad.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "sends contents of",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "C:\\Users\\[Username]\\AppData\\Local\\Temp\\note.txt"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "executes string via",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "cmd /C"
+      },
+      {
+        "sub": "APT3",
+        "rel": "sent out",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "spearphishing messages containing a compressed executable attachment"
+      },
+      {
+        "sub": "APT3",
+        "rel": "observed sending",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "spearphishing messages"
+      },
+      {
+        "sub": "APT3",
+        "rel": "connected to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "198.55.115.71"
+      },
+      {
+        "sub": "APT3",
+        "rel": "detected as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "Backdoor.APT.CookieCutter"
+      },
+      {
+        "sub": "APT3",
+        "rel": "detected as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "Pirpi"
+      },
+      {
+        "sub": "APT3",
+        "rel": "connected to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "192.184.60.229",
+        "rel": "hosts",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "securitywap.com"
+      },
+      {
+        "sub": "192.184.60.229",
+        "rel": "hosts",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "www.securitywap.com"
+      },
+      {
+        "sub": "join.playboysplus.com",
+        "rel": "resolves to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "104.151.248.173"
+      },
+      {
+        "sub": "join.playboysplus.com",
+        "rel": "has hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "walterclean.com"
+      },
+      {
+        "sub": "APT3",
+        "rel": "has used",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "walterclean.com"
+      },
+      {
+        "sub": "walterclean.com",
+        "rel": "served as",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "Plugx/Kaba command and control server"
+      },
+      {
+        "sub": "APT3",
+        "rel": "has changed strategy",
+        "rel_type": [
+          "change in strategy"
+        ],
+        "obj": "sustained operational tempo"
+      },
+      {
+        "sub": "APT3",
+        "rel": "has changed strategy",
+        "rel_type": [
+          "change in strategy"
+        ],
+        "obj": "lack of zero-day exploits"
+      },
+      {
+        "sub": "APT3",
+        "rel": "is known for employing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "zero-day exploits"
+      },
+      {
+        "sub": "APT3",
+        "rel": "has demonstrated",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "known exploits"
+      },
+      {
+        "sub": "APT3",
+        "rel": "has demonstrated",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "social engineering"
+      },
+      {
+        "sub": "APT3",
+        "rel": "demonstrates",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "sustained operational tempo"
+      },
+      {
+        "sub": "APT3",
+        "rel": "demonstrates",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "lack of zero-day exploits"
+      },
+      {
+        "sub": "APT3",
+        "rel": "indicates changed strategy through",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "sustained operational tempo"
+      },
+      {
+        "sub": "APT3",
+        "rel": "indicates changed strategy through",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "lack of zero-day exploits"
+      },
+      {
+        "sub": "Operation Clandestine Fox",
+        "rel": "is referenced in",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "the blog"
+      },
+      {
+        "sub": "IOCs for this threat",
+        "rel": "can be found",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "here"
+      }
+    ]
+  }
+}

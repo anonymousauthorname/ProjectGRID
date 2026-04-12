@@ -1,0 +1,366 @@
+{
+  "sample_id": "malkg__201203ContextInformationSecurityCrouchingTiger.txt",
+  "sample_index": 117,
+  "source": "malkg",
+  "file_name": "201203ContextInformationSecurityCrouchingTiger.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CONTEXT INFORMATION SECURITY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CHINESE STATE",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "THIRD DEPARTMENT OF THE PEOPLE'S LIBERATION ARMY",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "FIFTH YEAR PLAN",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "NATIONAL OUTLINE FOR MEDIUM AND LONG TERM S&T DEVELOPMENT",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "AURORA ATTACKS",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "NIGHT DRAGON ATTACKS",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "SHADY RAT ATTACKS",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "RSA BREACH",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "COMAC",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CHINESE STATE-OWNED ENTERPRISES (SOEs)",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CHINESE FIVE POISONS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "ENERGY SECTOR",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "AEROSPACE SECTOR",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "MANUFACTURING INDUSTRY",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "DEFENSE SECTOR",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "WATER AND MINERAL RESOURCES",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "PHARMACEUTICALS",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "BIO-TECHNOLOGY",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "HIGH-SPEED RAIL",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "NORTEL",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "GHOSTNET",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "ELECTRONIC COMPONENTS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "LARGE-SCALE INTEGRATED CIRCUIT MANUFACTURING",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "ADVANCED NUMERIC-CONTROLLED MACHINERY",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "HYDROPOWER",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "HUMAN INTELLIGENCE (HUMINT)",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "SIGNAL INTELLIGENCE (SIGINT)",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "GOVERNMENT ORGANIZATIONS",
+        "type": "Unknown"
+      },
+      {
+        "name": "ENERGY SECTOR COMPANIES",
+        "type": "Unknown"
+      },
+      {
+        "name": "STEEL AND CONSTRUCTION INDUSTRY COMPANIES",
+        "type": "Unknown"
+      },
+      {
+        "name": "DEFENSE CONTRACTORS",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "THIRD DEPARTMENT OF THE PEOPLE'S LIBERATION ARMY"
+      },
+      {
+        "sub": "THIRD DEPARTMENT OF THE PEOPLE'S LIBERATION ARMY",
+        "rel": "related_to",
+        "obj": "CHINESE STATE"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "FIFTH YEAR PLAN"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "NATIONAL OUTLINE FOR MEDIUM AND LONG TERM S&T DEVELOPMENT"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "CHINESE STATE-OWNED ENTERPRISES (SOEs)"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "CHINESE FIVE POISONS"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "AURORA ATTACKS"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON ATTACKS"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "SHADY RAT ATTACKS"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "RSA BREACH"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "COMAC"
+      },
+      {
+        "sub": "AURORA ATTACKS",
+        "rel": "related_to",
+        "obj": "GOVERNMENT ORGANIZATIONS"
+      },
+      {
+        "sub": "NIGHT DRAGON ATTACKS",
+        "rel": "related_to",
+        "obj": "ENERGY SECTOR COMPANIES"
+      },
+      {
+        "sub": "SHADY RAT ATTACKS",
+        "rel": "related_to",
+        "obj": "STEEL AND CONSTRUCTION INDUSTRY COMPANIES"
+      },
+      {
+        "sub": "RSA BREACH",
+        "rel": "related_to",
+        "obj": "DEFENSE CONTRACTORS"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "ELECTRONIC COMPONENTS"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "LARGE-SCALE INTEGRATED CIRCUIT MANUFACTURING"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "ADVANCED NUMERIC-CONTROLLED MACHINERY"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "HYDROPOWER"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "HUMAN INTELLIGENCE (HUMINT)"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "SIGNAL INTELLIGENCE (SIGINT)"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "THIRD DEPARTMENT OF THE PEOPLE'S LIBERATION ARMY"
+      },
+      {
+        "sub": "THIRD DEPARTMENT OF THE PEOPLE'S LIBERATION ARMY",
+        "rel": "related_to",
+        "obj": "CHINESE STATE"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "FIFTH YEAR PLAN"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "NATIONAL OUTLINE FOR MEDIUM AND LONG TERM S&T DEVELOPMENT"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "CHINESE STATE-OWNED ENTERPRISES (SOEs)"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "CHINESE FIVE POISONS"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "AURORA ATTACKS"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON ATTACKS"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "SHADY RAT ATTACKS"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "RSA BREACH"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "COMAC"
+      },
+      {
+        "sub": "AURORA ATTACKS",
+        "rel": "related_to",
+        "obj": "GOVERNMENT ORGANIZATIONS"
+      },
+      {
+        "sub": "NIGHT DRAGON ATTACKS",
+        "rel": "related_to",
+        "obj": "ENERGY SECTOR COMPANIES"
+      },
+      {
+        "sub": "SHADY RAT ATTACKS",
+        "rel": "related_to",
+        "obj": "STEEL AND CONSTRUCTION INDUSTRY COMPANIES"
+      },
+      {
+        "sub": "RSA BREACH",
+        "rel": "related_to",
+        "obj": "DEFENSE CONTRACTORS"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "ELECTRONIC COMPONENTS"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "LARGE-SCALE INTEGRATED CIRCUIT MANUFACTURING"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "ADVANCED NUMERIC-CONTROLLED MACHINERY"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "HYDROPOWER"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "HUMAN INTELLIGENCE (HUMINT)"
+      },
+      {
+        "sub": "CHINESE STATE",
+        "rel": "related_to",
+        "obj": "SIGNAL INTELLIGENCE (SIGINT)"
+      }
+    ]
+  }
+}

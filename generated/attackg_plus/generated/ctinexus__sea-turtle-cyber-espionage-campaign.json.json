@@ -1,0 +1,177 @@
+{
+  "sample_id": "ctinexus__sea-turtle-cyber-espionage-campaign.json",
+  "sample_index": 50,
+  "source": "ctinexus",
+  "file_name": "sea-turtle-cyber-espionage-campaign.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Sea Turtle",
+        "rel": "Operate",
+        "obj": "DNS hijacking"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Use",
+        "obj": "DNS hijacking"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Has tactic",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Modify",
+        "obj": "Domain query routing"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Detect",
+        "obj": "network behavior"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Harvest",
+        "obj": "credentials"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Gather",
+        "obj": "information about victim infrastructure"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Locate at",
+        "obj": "actor-controlled server"
+      },
+      {
+        "sub": "DNS hijacking",
+        "rel": "Modify",
+        "obj": "Domain queries"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Has tactic",
+        "obj": "DNS hijacking"
+      },
+      {
+        "sub": "Persistence: SnappyTCP",
+        "rel": "Use",
+        "obj": "Linux/Unix system"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Use",
+        "obj": "domain queries"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Obtain",
+        "obj": "account names"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Obtain",
+        "obj": "passwords"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Use",
+        "obj": "DNS hijacking to discover victim network configurations"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Use",
+        "obj": "DNS hijacking to obtain domain-related information"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Operate",
+        "obj": "redirection of queries"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Use",
+        "obj": "redirection of queries to gain insight into network structure"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Use",
+        "obj": "redirection of queries to identify operational domains"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has tactic",
+        "obj": "Data gathering"
+      },
+      {
+        "sub": "DNS hijacking",
+        "rel": "Has technique",
+        "obj": "Data gathering"
+      },
+      {
+        "sub": "Credentials",
+        "rel": "Are harvested",
+        "obj": "by Threat Actor"
+      },
+      {
+        "sub": "Credentials",
+        "rel": "Are collected",
+        "obj": "by Threat Actor"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "in victim environment"
+      },
+      {
+        "sub": "Sea Turtle",
+        "rel": "Use",
+        "obj": "SnappyTCP"
+      },
+      {
+        "sub": "SnappyTCP",
+        "rel": "Has value",
+        "obj": "Reverse TCP shell"
+      },
+      {
+        "sub": "SnappyTCP",
+        "rel": "Operate",
+        "obj": "Linux/Unix systems"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "SnappyTCP"
+      },
+      {
+        "sub": "Credentials",
+        "rel": "Exfiltrate via",
+        "obj": "Command-and-control channel"
+      },
+      {
+        "sub": "DNS hijacking",
+        "rel": "Lead to",
+        "obj": "Credential exfiltration"
+      }
+    ]
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "sample_id": "malkg__201412CylanceOperationCleaver.txt",
+  "sample_index": 118,
+  "source": "malkg",
+  "file_name": "201412CylanceOperationCleaver.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "OPERATION CLEVER",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "NOTEPAD",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "NOTEPAD2.EXE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "NOTEPAD3.EXE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "NOTEPAD4.EXE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "NOTEPAD10.EXE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "METASPLOIT",
+        "type": "TOOL"
+      },
+      {
+        "name": "MSFVENOM",
+        "type": "TOOL"
+      },
+      {
+        "name": "BRIAN WALLACE",
+        "type": "PERSON"
+      },
+      {
+        "name": "DEREK SOEDER",
+        "type": "PERSON"
+      },
+      {
+        "name": "US FTP SERVER",
+        "type": "LOCATION"
+      },
+      {
+        "name": "108.175.152.230",
+        "type": "LOCATION"
+      },
+      {
+        "name": "12345",
+        "type": "PORT"
+      },
+      {
+        "name": "CYLANCE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "WINDOWS XP",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "WINDOWS 7",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "VIRTUALALLOC",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SHIKATA GA NAI",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "REVERSE TCP",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "BACKDOOR",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "MODULE NAME HASHING",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "EXPORT NAME HASHING",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "NOTEPAD FILES",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "OPERATION CLEVER",
+        "rel": "related_to",
+        "obj": "NOTEPAD2.EXE"
+      },
+      {
+        "sub": "OPERATION CLEVER",
+        "rel": "related_to",
+        "obj": "NOTEPAD3.EXE"
+      },
+      {
+        "sub": "OPERATION CLEVER",
+        "rel": "related_to",
+        "obj": "NOTEPAD4.EXE"
+      },
+      {
+        "sub": "OPERATION CLEVER",
+        "rel": "related_to",
+        "obj": "NOTEPAD10.EXE"
+      },
+      {
+        "sub": "NOTEPAD2.EXE",
+        "rel": "related_to",
+        "obj": "METASPLOIT"
+      },
+      {
+        "sub": "NOTEPAD3.EXE",
+        "rel": "related_to",
+        "obj": "METASPLOIT"
+      },
+      {
+        "sub": "NOTEPAD4.EXE",
+        "rel": "related_to",
+        "obj": "METASPLOIT"
+      },
+      {
+        "sub": "NOTEPAD10.EXE",
+        "rel": "related_to",
+        "obj": "METASPLOIT"
+      },
+      {
+        "sub": "METASPLOIT",
+        "rel": "related_to",
+        "obj": "MSFVENOM"
+      },
+      {
+        "sub": "BRIAN WALLACE",
+        "rel": "related_to",
+        "obj": "OPERATION CLEVER"
+      },
+      {
+        "sub": "DEREK SOEDER",
+        "rel": "related_to",
+        "obj": "OPERATION CLEVER"
+      },
+      {
+        "sub": "US FTP SERVER",
+        "rel": "related_to",
+        "obj": "NOTEPAD2.EXE"
+      },
+      {
+        "sub": "US FTP SERVER",
+        "rel": "related_to",
+        "obj": "NOTEPAD3.EXE"
+      },
+      {
+        "sub": "US FTP SERVER",
+        "rel": "related_to",
+        "obj": "NOTEPAD4.EXE"
+      },
+      {
+        "sub": "US FTP SERVER",
+        "rel": "related_to",
+        "obj": "NOTEPAD10.EXE"
+      },
+      {
+        "sub": "NOTEPAD FILES",
+        "rel": "related_to",
+        "obj": "REVERSE TCP"
+      },
+      {
+        "sub": "NOTEPAD FILES",
+        "rel": "related_to",
+        "obj": "BACKDOOR"
+      },
+      {
+        "sub": "NOTEPAD FILES",
+        "rel": "related_to",
+        "obj": "SHIKATA GA NAI"
+      },
+      {
+        "sub": "NOTEPAD FILES",
+        "rel": "related_to",
+        "obj": "VIRTUALALLOC"
+      },
+      {
+        "sub": "NOTEPAD FILES",
+        "rel": "related_to",
+        "obj": "MODULE NAME HASHING"
+      },
+      {
+        "sub": "NOTEPAD FILES",
+        "rel": "related_to",
+        "obj": "EXPORT NAME HASHING"
+      },
+      {
+        "sub": "108.175.152.230",
+        "rel": "related_to",
+        "obj": "REVERSE TCP"
+      },
+      {
+        "sub": "12345",
+        "rel": "related_to",
+        "obj": "REVERSE TCP"
+      },
+      {
+        "sub": "CYLANCE",
+        "rel": "related_to",
+        "obj": "OPERATION CLEVER"
+      },
+      {
+        "sub": "WINDOWS 7",
+        "rel": "related_to",
+        "obj": "NOTEPAD FILES"
+      },
+      {
+        "sub": "WINDOWS XP",
+        "rel": "related_to",
+        "obj": "NOTEPAD FILES"
+      }
+    ]
+  }
+}

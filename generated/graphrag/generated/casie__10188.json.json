@@ -1,0 +1,159 @@
+{
+  "sample_id": "casie__10188.json",
+  "sample_index": 25,
+  "source": "casie",
+  "file_name": "10188.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "BITCOIN CORE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CVE-2018-17144",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "DENIAL-OF-SERVICE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "CASABA SECURITY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "JASON GLASSBERG",
+        "type": "PERSON"
+      },
+      {
+        "name": "CRYPTO51",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "BITCOIN PRIVATE (BTCP)",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "BITCOIN KNOTS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "LITECOIN",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "EMIN GÜN SIRER",
+        "type": "PERSON"
+      },
+      {
+        "name": "51% ATTACK",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "BITCOIN FORKS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "ADVISORY NOTICE",
+        "type": "EVENT"
+      },
+      {
+        "name": "BITCOIN",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2018-17144",
+        "rel": "related_to",
+        "obj": "BITCOIN CORE"
+      },
+      {
+        "sub": "CVE-2018-17144",
+        "rel": "related_to",
+        "obj": "DENIAL-OF-SERVICE"
+      },
+      {
+        "sub": "CASABA SECURITY",
+        "rel": "related_to",
+        "obj": "JASON GLASSBERG"
+      },
+      {
+        "sub": "JASON GLASSBERG",
+        "rel": "related_to",
+        "obj": "CVE-2018-17144"
+      },
+      {
+        "sub": "CRYPTO51",
+        "rel": "related_to",
+        "obj": "51% ATTACK"
+      },
+      {
+        "sub": "CRYPTO51",
+        "rel": "related_to",
+        "obj": "BITCOIN"
+      },
+      {
+        "sub": "CRYPTO51",
+        "rel": "related_to",
+        "obj": "BITCOIN PRIVATE (BTCP)"
+      },
+      {
+        "sub": "BITCOIN CORE",
+        "rel": "related_to",
+        "obj": "51% ATTACK"
+      },
+      {
+        "sub": "BITCOIN FORKS",
+        "rel": "related_to",
+        "obj": "51% ATTACK"
+      },
+      {
+        "sub": "BITCOIN KNOTS",
+        "rel": "related_to",
+        "obj": "CVE-2018-17144"
+      },
+      {
+        "sub": "LITECOIN",
+        "rel": "related_to",
+        "obj": "CVE-2018-17144"
+      },
+      {
+        "sub": "EMIN GÜN SIRER",
+        "rel": "related_to",
+        "obj": "51% ATTACK"
+      },
+      {
+        "sub": "EMIN GÜN SIRER",
+        "rel": "related_to",
+        "obj": "BITCOIN FORKS"
+      },
+      {
+        "sub": "ADVISORY NOTICE",
+        "rel": "related_to",
+        "obj": "BITCOIN CORE"
+      },
+      {
+        "sub": "ADVISORY NOTICE",
+        "rel": "related_to",
+        "obj": "CVE-2018-17144"
+      }
+    ]
+  }
+}

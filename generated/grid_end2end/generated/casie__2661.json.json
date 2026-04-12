@@ -1,0 +1,425 @@
+{
+  "sample_id": "casie__2661.json",
+  "sample_index": 29,
+  "source": "casie",
+  "file_name": "2661.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Insecure backend databases and mobile apps",
+        "type": "other",
+        "alias": []
+      },
+      {
+        "name": "estimated 280 million records",
+        "type": "credential-value",
+        "alias": []
+      },
+      {
+        "name": "private user data",
+        "type": "credential-value",
+        "alias": []
+      },
+      {
+        "name": "Appthority",
+        "type": "security-product",
+        "alias": []
+      },
+      {
+        "name": "more than 1,000 apps",
+        "type": "general-software",
+        "alias": [
+          "mobile apps"
+        ]
+      },
+      {
+        "name": "personally identifiable information",
+        "type": "credential-value",
+        "alias": [
+          "PII",
+          "passwords, location, VPN PINs, emails and phone numbers"
+        ]
+      },
+      {
+        "name": "HospitalGown",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerability",
+          "the threat"
+        ]
+      },
+      {
+        "name": "misconfigured backend storage platforms",
+        "type": "infrastructure",
+        "alias": [
+          "backend servers"
+        ]
+      },
+      {
+        "name": "Elasticsearch",
+        "type": "general-software",
+        "alias": [
+          "backend storage platforms"
+        ]
+      },
+      {
+        "name": "Redis",
+        "type": "general-software",
+        "alias": [
+          "backend storage platforms"
+        ]
+      },
+      {
+        "name": "MongoDB",
+        "type": "general-software",
+        "alias": [
+          "backend storage platforms"
+        ]
+      },
+      {
+        "name": "MySQL",
+        "type": "general-software",
+        "alias": [
+          "backend storage platforms"
+        ]
+      },
+      {
+        "name": "Appthority Mobile Threat Team",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": []
+      },
+      {
+        "name": "backend servers with which the app communicates",
+        "type": "infrastructure",
+        "alias": [
+          "app’s server side components"
+        ]
+      },
+      {
+        "name": "21,000 open Elasticsearch servers",
+        "type": "infrastructure",
+        "alias": [
+          "open Elasticsearch servers"
+        ]
+      },
+      {
+        "name": "43 terabytes of exposed data",
+        "type": "credential-value",
+        "alias": [
+          "exposed data"
+        ]
+      },
+      {
+        "name": "vendor’s mobile application",
+        "type": "general-software",
+        "alias": [
+          "mobile application"
+        ]
+      },
+      {
+        "name": "app’s server side components",
+        "type": "infrastructure",
+        "alias": [
+          "servers"
+        ]
+      },
+      {
+        "name": "cloud based servers",
+        "type": "infrastructure",
+        "alias": [
+          "servers"
+        ]
+      },
+      {
+        "name": "bad actor",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "hackers",
+          "attackers"
+        ]
+      },
+      {
+        "name": "enterprise",
+        "type": "identity",
+        "alias": [
+          "companies"
+        ]
+      },
+      {
+        "name": "Pulse Workspace",
+        "type": "general-software",
+        "alias": [
+          "mobile VPN app"
+        ]
+      },
+      {
+        "name": "API",
+        "type": "hacker-tool",
+        "alias": [
+          "front-end Elasticsearch access"
+        ]
+      },
+      {
+        "name": "backend",
+        "type": "detailed-part-of-general-software",
+        "alias": [
+          "all of the app’s data records"
+        ]
+      },
+      {
+        "name": "Pulse customer data",
+        "type": "credential-value",
+        "alias": [
+          "leaked data"
+        ]
+      },
+      {
+        "name": "advertising components",
+        "type": "hacker-tool",
+        "alias": [
+          "components"
+        ]
+      },
+      {
+        "name": "phishing or ransomware attacks",
+        "type": "attack-pattern",
+        "alias": [
+          "spear phishing attack",
+          "brute force attack"
+        ]
+      },
+      {
+        "name": "App developers and system administrators",
+        "type": "identity",
+        "alias": [
+          "they"
+        ]
+      },
+      {
+        "name": "secure data stores",
+        "type": "abstract-concept",
+        "alias": [
+          "best practices"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Insecure backend databases and mobile apps",
+        "rel": "exposing",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "estimated 280 million records"
+      },
+      {
+        "sub": "Appthority",
+        "rel": "looked at",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "more than 1,000 apps"
+      },
+      {
+        "sub": "more than 1,000 apps",
+        "rel": "leaked",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "personally identifiable information"
+      },
+      {
+        "sub": "Appthority Mobile Threat Team",
+        "rel": "called the vulnerability",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "HospitalGown"
+      },
+      {
+        "sub": "Appthority Mobile Threat Team",
+        "rel": "said the culprit behind the threat are",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "misconfigured backend storage platforms"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "caused data exposure",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "data exposure"
+      },
+      {
+        "sub": "app developers",
+        "rel": "failure to properly secure",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "backend servers with which the app communicates"
+      },
+      {
+        "sub": "21,000 open Elasticsearch servers",
+        "rel": "revealing",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "43 terabytes of exposed data"
+      },
+      {
+        "sub": "attacker",
+        "rel": "looks for vulnerabilities in the space between",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "vendor’s mobile application and app’s server side components"
+      },
+      {
+        "sub": "bad actor",
+        "rel": "accessing",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "company data"
+      },
+      {
+        "sub": "Pulse Workspace",
+        "rel": "leaked",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "Pulse customer data"
+      },
+      {
+        "sub": "Pulse Workspace",
+        "rel": "created an API to secure",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "API"
+      },
+      {
+        "sub": "Pulse Workspace",
+        "rel": "exposed",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "backend"
+      },
+      {
+        "sub": "Appthority",
+        "rel": "notified",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Pulse Workspace"
+      },
+      {
+        "sub": "advertising components",
+        "rel": "collect",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "personally identifiable data"
+      },
+      {
+        "sub": "advertising components",
+        "rel": "mined for",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "phishing or ransomware attacks"
+      },
+      {
+        "sub": "App developers and system administrators",
+        "rel": "need to secure",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "data"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "has",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "security and data protection capabilities"
+      },
+      {
+        "sub": "bad actor",
+        "rel": "scanning for",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "vulnerable servers"
+      },
+      {
+        "sub": "Hadoop",
+        "rel": "target of extortion",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "extortion"
+      },
+      {
+        "sub": "MongoDB",
+        "rel": "target of extortion",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "extortion"
+      },
+      {
+        "sub": "enterprise",
+        "rel": "cannot secure",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "data"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "is a vulnerability for",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "data exposure"
+      },
+      {
+        "sub": "apps",
+        "rel": "have",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "advertising components"
+      },
+      {
+        "sub": "many apps",
+        "rel": "shared",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "shared user data"
+      }
+    ]
+  }
+}

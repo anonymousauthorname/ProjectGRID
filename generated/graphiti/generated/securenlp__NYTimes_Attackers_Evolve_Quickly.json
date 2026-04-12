@@ -1,0 +1,167 @@
+{
+  "sample_id": "securenlp__NYTimes_Attackers_Evolve_Quickly",
+  "sample_index": 193,
+  "source": "securenlp",
+  "file_name": "NYTimes_Attackers_Evolve_Quickly",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Aumlib",
+        "type": "Malware"
+      },
+      {
+        "name": "Ixeshe",
+        "type": "Malware"
+      },
+      {
+        "name": "Backdoor.APT.Aumlib",
+        "type": "Malware"
+      },
+      {
+        "name": "Backdoor.APT.Ixeshe",
+        "type": "Malware"
+      },
+      {
+        "name": "New York Times",
+        "type": "Organization"
+      },
+      {
+        "name": "China",
+        "type": "Location"
+      },
+      {
+        "name": "ACMETOY",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "documents.myPicture.info",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "www.documents.myPicture.info",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "status.acmetoy.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "myPicture.info",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Taiwan",
+        "type": "Location"
+      },
+      {
+        "name": "APT12",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "FireEye",
+        "type": "Organization"
+      },
+      {
+        "name": "Trend Micro",
+        "type": "Organization"
+      },
+      {
+        "name": "Economic policy organization",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "New York Times",
+        "rel": "breached by",
+        "obj": "APT12"
+      },
+      {
+        "sub": "APT12",
+        "rel": "USES",
+        "obj": "Aumlib"
+      },
+      {
+        "sub": "APT12",
+        "rel": "USES",
+        "obj": "Ixeshe"
+      },
+      {
+        "sub": "Backdoor.APT.Aumlib",
+        "rel": "is a",
+        "obj": "Aumlib"
+      },
+      {
+        "sub": "Backdoor.APT.Ixeshe",
+        "rel": "is a",
+        "obj": "Ixeshe"
+      },
+      {
+        "sub": "Backdoor.APT.Aumlib",
+        "rel": "downloads from",
+        "obj": "status.acmetoy.com"
+      },
+      {
+        "sub": "Backdoor.APT.Aumlib",
+        "rel": "connects to",
+        "obj": "documents.myPicture.info"
+      },
+      {
+        "sub": "Backdoor.APT.Aumlib",
+        "rel": "connects to",
+        "obj": "www.documents.myPicture.info"
+      },
+      {
+        "sub": "Backdoor.APT.Ixeshe",
+        "rel": "TARGETS",
+        "obj": "Taiwan"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "SPOTTED",
+        "obj": "Aumlib"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "ANALYZED",
+        "obj": "Ixeshe"
+      },
+      {
+        "sub": "Backdoor.APT.Aumlib",
+        "rel": "ATTACKED",
+        "obj": "Economic policy organization"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "based in",
+        "obj": "China"
+      },
+      {
+        "sub": "Ixeshe",
+        "rel": "based in",
+        "obj": "China"
+      },
+      {
+        "sub": "APT12",
+        "rel": "based in",
+        "obj": "China"
+      }
+    ]
+  }
+}

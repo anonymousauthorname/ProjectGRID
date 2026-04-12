@@ -1,0 +1,150 @@
+{
+  "sample_id": "ctinexus__fortra-warns-of-new-critical-goanywhere-mft-auth-bypass-patch-now.json",
+  "sample_index": 66,
+  "source": "ctinexus",
+  "file_name": "fortra-warns-of-new-critical-goanywhere-mft-auth-bypass-patch-now.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Clop ransomware",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2023-0669",
+        "type": "Entity"
+      },
+      {
+        "name": "zero-day vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "GoAnywhere MFT",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution flaw",
+        "type": "Entity"
+      },
+      {
+        "name": "Fortra",
+        "type": "Entity"
+      },
+      {
+        "name": "Crown Resorts",
+        "type": "Entity"
+      },
+      {
+        "name": "CHS",
+        "type": "Entity"
+      },
+      {
+        "name": "Hatch Bank",
+        "type": "Entity"
+      },
+      {
+        "name": "Rubrik",
+        "type": "Entity"
+      },
+      {
+        "name": "City of Toronto",
+        "type": "Entity"
+      },
+      {
+        "name": "Hitachi Energy",
+        "type": "Entity"
+      },
+      {
+        "name": "Procter & Gamble",
+        "type": "Entity"
+      },
+      {
+        "name": "Saks Fifth Avenue",
+        "type": "Entity"
+      },
+      {
+        "name": "data theft attacks",
+        "type": "Entity"
+      },
+      {
+        "name": "data leaks",
+        "type": "Entity"
+      },
+      {
+        "name": "reputational damage",
+        "type": "Entity"
+      },
+      {
+        "name": "operational disruptions",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Clop ransomware",
+        "rel": "uses",
+        "obj": "remote code execution flaw"
+      },
+      {
+        "sub": "Clop ransomware",
+        "rel": "exploits",
+        "obj": "CVE-2023-0669"
+      },
+      {
+        "sub": "Clop ransomware",
+        "rel": "leverages",
+        "obj": "zero-day vulnerability"
+      },
+      {
+        "sub": "Clop ransomware",
+        "rel": "conducts",
+        "obj": "data theft attacks"
+      },
+      {
+        "sub": "Clop ransomware",
+        "rel": "causes",
+        "obj": "data leaks"
+      },
+      {
+        "sub": "Clop ransomware",
+        "rel": "causes",
+        "obj": "reputational damage"
+      },
+      {
+        "sub": "Clop ransomware",
+        "rel": "causes",
+        "obj": "operational disruptions"
+      },
+      {
+        "sub": "Clop ransomware",
+        "rel": "breaches",
+        "obj": "GoAnywhere MFT"
+      },
+      {
+        "sub": "Fortra",
+        "rel": "discovered",
+        "obj": "exploitation of CVE-2023-0669"
+      },
+      {
+        "sub": "Fortra",
+        "rel": "releases",
+        "obj": "patches for CVE-2023-0669"
+      }
+    ]
+  }
+}

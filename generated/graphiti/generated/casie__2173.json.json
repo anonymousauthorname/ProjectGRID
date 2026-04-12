@@ -1,0 +1,107 @@
+{
+  "sample_id": "casie__2173.json",
+  "sample_index": 17,
+  "source": "casie",
+  "file_name": "2173.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SS7",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "two-factor authentication",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "SMS messages",
+        "type": "Indicator"
+      },
+      {
+        "name": "German victims",
+        "type": "Organization"
+      },
+      {
+        "name": "O2 Telefonica",
+        "type": "Organization"
+      },
+      {
+        "name": "Karsten Nohl",
+        "type": "Person"
+      },
+      {
+        "name": "U.S. Rep. Ted Lieu",
+        "type": "Person"
+      },
+      {
+        "name": "FCC",
+        "type": "Organization"
+      },
+      {
+        "name": "telecom industry",
+        "type": "Organization"
+      },
+      {
+        "name": "bank login credentials",
+        "type": "Software"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Tool"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SS7",
+        "rel": "BYPASSES",
+        "obj": "two-factor authentication"
+      },
+      {
+        "sub": "SS7",
+        "rel": "REDIRECTS",
+        "obj": "SMS messages"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "STEALS",
+        "obj": "bank login credentials"
+      },
+      {
+        "sub": "O2 Telefonica",
+        "rel": "EXPLOITS",
+        "obj": "SS7"
+      },
+      {
+        "sub": "U.S. Rep. Ted Lieu",
+        "rel": "calls for action on",
+        "obj": "SS7"
+      },
+      {
+        "sub": "FCC",
+        "rel": "calls for action on",
+        "obj": "SS7"
+      },
+      {
+        "sub": "telecom industry",
+        "rel": "calls for action on",
+        "obj": "SS7"
+      }
+    ]
+  }
+}

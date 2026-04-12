@@ -1,0 +1,391 @@
+{
+  "sample_id": "casie__10033.json",
+  "sample_index": 16,
+  "source": "casie",
+  "file_name": "10033.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Hacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "flaw in web server",
+        "type": "vulnerability",
+        "alias": [
+          "a flaw in the web server",
+          "vulnerability in the firm's web server",
+          "the vulnerability",
+          "it"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "website of holiday and travel association",
+        "type": "infrastructure",
+        "alias": [
+          "website of ABTA",
+          "abta.com",
+          "web server for abta.com",
+          "the firm's web server"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ABTA",
+        "type": "identity",
+        "alias": [
+          "the UK's largest holiday and travel association",
+          "the firm",
+          "the association",
+          "ABTA members",
+          "ABTA members' customers",
+          "the travel trade association"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Mark Tanzer",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "external infiltrator",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "an external infiltrator"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "data of as many as 43,000 people",
+        "type": "credential-value",
+        "alias": [
+          "the data of as many as 43,000 people",
+          "the data provided by its members",
+          "the unauthorised access",
+          "the 43,000",
+          "data uploaded to website"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "personal identity information",
+        "type": "credential-value",
+        "alias": [
+          "personal identity information relating to customers",
+          "ID information",
+          "basic contact details"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "customers of ABTA members",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "third-party suppliers of the abta.com website",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "risk consultants",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Information Commissioner",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "police",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "web developer and hosting company",
+        "type": "infrastructure",
+        "alias": [
+          "third party web developer and hosting company"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "abta.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "encrypted passwords",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "online form with basic contact details",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "supporting documentation relating to their membership",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "43,000 individuals",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "1,000 of the accessed files",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "650 files",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "password",
+        "type": "credential-value",
+        "alias": [
+          "any variation of it"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "online self-service facility",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "external infiltrator",
+          "the real thing",
+          "the infiltrator"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "11 January 2017",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "vulnerability",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Hacker",
+        "rel": "used flaw in web server to access",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "data of as many as 43,000 people"
+      },
+      {
+        "sub": "Hackers",
+        "rel": "used a flaw in the web server running the website of ABTA, the UK's largest holiday and travel association, to access",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "data of as many as 43,000 people"
+      },
+      {
+        "sub": "external infiltrator",
+        "rel": "used a vulnerability in the firm's web server to access",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "data of as many as 43,000 people"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "representing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "travel agents"
+      },
+      {
+        "sub": "the unauthorised access",
+        "rel": "may have affected",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "43,000 individuals",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "1,000 of the accessed files",
+        "rel": "may include",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "personal identity information relating to customers of ABTA members",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "These files",
+        "rel": "relate to complaints uploaded to ABTA after 11 January 2017",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "complaints uploaded to ABTA"
+      },
+      {
+        "sub": "650 files",
+        "rel": "may include",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "personal identity information of ABTA members",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "We",
+        "rel": "not aware of any information being shared beyond the infiltrator",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "information being shared beyond the infiltrator",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "ABTA",
+        "rel": "notified",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "third-party suppliers of the abta.com website"
+      },
+      {
+        "sub": "third-party suppliers of the abta.com website",
+        "rel": "fixed",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "hired",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "risk consultants"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "alerted",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Information Commissioner"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "alerted",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "police"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "compromised",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "web server for abta.com"
+      },
+      {
+        "sub": "it",
+        "rel": "remained secure",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "its own systems",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "ABTA members",
+        "rel": "used ABTA's online self-service facility to upload",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "supporting documentation relating to their membership"
+      },
+      {
+        "sub": "supporting documentation relating to their membership",
+        "rel": "may have had their data accessed",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "data",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "ABTA members",
+        "rel": "change their password or any variation of it",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "password"
+      }
+    ]
+  }
+}

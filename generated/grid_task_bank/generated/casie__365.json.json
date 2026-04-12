@@ -1,0 +1,282 @@
+{
+  "sample_id": "casie__365.json",
+  "sample_index": 18,
+  "source": "casie",
+  "file_name": "365.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "the hacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Cipher0007",
+          "the hacker"
+        ]
+      },
+      {
+        "name": "high-risk bugs",
+        "type": "vulnerability",
+        "alias": [
+          "two high-risk bugs",
+          "the flaws"
+        ]
+      },
+      {
+        "name": "AlphaBay",
+        "type": "infrastructure",
+        "alias": [
+          "the site",
+          "AlphaBay platform"
+        ]
+      },
+      {
+        "name": "private messages",
+        "type": "file",
+        "alias": [
+          "the messages"
+        ]
+      },
+      {
+        "name": "users/buyers and sellers",
+        "type": "identity",
+        "alias": [
+          "users and sellers"
+        ]
+      },
+      {
+        "name": "PGP keys",
+        "type": "security-product",
+        "alias": [
+          "PGP"
+        ]
+      },
+      {
+        "name": "Reddit",
+        "type": "infrastructure",
+        "alias": [
+          "Reddit’s forum posts"
+        ]
+      },
+      {
+        "name": "ZDNet",
+        "type": "security-product",
+        "alias": [
+          "ZDNet reports"
+        ]
+      },
+      {
+        "name": "Pastebin",
+        "type": "infrastructure",
+        "alias": [
+          "Pastebin",
+          "official statement"
+        ]
+      },
+      {
+        "name": "200,000",
+        "type": "quantity/money",
+        "alias": [
+          "200,000 private messages"
+        ]
+      },
+      {
+        "name": "218,000",
+        "type": "quantity/money",
+        "alias": [
+          "218,000 messages"
+        ]
+      },
+      {
+        "name": "30 days",
+        "type": "time/date",
+        "alias": [
+          "messages not older than 30 days"
+        ]
+      },
+      {
+        "name": "Dark Web",
+        "type": "location",
+        "alias": [
+          "Dark Web domain"
+        ]
+      },
+      {
+        "name": "the company",
+        "type": "identity",
+        "alias": [
+          "AlphaBay",
+          "the trading platform"
+        ]
+      },
+      {
+        "name": "the developers",
+        "type": "identity",
+        "alias": [
+          "developers at the trading platform"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "a hacker",
+        "rel": "identified the existence of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "two high-risk bugs"
+      },
+      {
+        "sub": "the hacker",
+        "rel": "revealed this information on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Reddit’s forum posts"
+      },
+      {
+        "sub": "the hacker",
+        "rel": "managed to steal",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "200,000 private messages"
+      },
+      {
+        "sub": "private messages",
+        "rel": "were exchanged between",
+        "rel_type": [
+          "exchanged between"
+        ],
+        "obj": "users/buyers and sellers"
+      },
+      {
+        "sub": "ZDNet",
+        "rel": "reports that",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Cipher0007 disclosed the vulnerabilities"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "disclosed",
+        "rel_type": [
+          "discloses"
+        ],
+        "obj": "the vulnerabilities"
+      },
+      {
+        "sub": "the vulnerabilities",
+        "rel": "could be used to steal",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "private messages on AlphaBay"
+      },
+      {
+        "sub": "private messages",
+        "rel": "weren’t protected by",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "PGP keys"
+      },
+      {
+        "sub": "not being protected by",
+        "rel": "made it easier for",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "Cipher0007 to steal them"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "posted an official statement on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Pastebin"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "admitted",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "the presence of these bugs"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "confirmed that",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "Cipher0007 has hacked around 218,000 messages"
+      },
+      {
+        "sub": "messages",
+        "rel": "weren’t older than",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "30 days"
+      },
+      {
+        "sub": "the site’s system",
+        "rel": "automatically purges",
+        "rel_type": [
+          "purges"
+        ],
+        "obj": "messages that are more than 30 days old"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "posted",
+        "rel_type": [
+          "posts"
+        ],
+        "obj": "numerous screenshots"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "rewarded",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Cipher0007"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "disclosed",
+        "rel_type": [
+          "discloses"
+        ],
+        "obj": "the methods he used to exploit AlphaBay"
+      },
+      {
+        "sub": "the developers at the trading platform",
+        "rel": "managed to fix",
+        "rel_type": [
+          "fixes"
+        ],
+        "obj": "the flaws"
+      }
+    ]
+  }
+}

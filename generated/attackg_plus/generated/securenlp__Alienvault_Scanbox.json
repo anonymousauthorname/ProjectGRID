@@ -1,0 +1,537 @@
+{
+  "sample_id": "securenlp__Alienvault_Scanbox",
+  "sample_index": 173,
+  "source": "securenlp",
+  "file_name": "Alienvault_Scanbox",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Scanbox",
+        "rel": "Use",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Operate",
+        "obj": "Website"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Write",
+        "obj": "Malicious JavaScript file"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Collect",
+        "obj": "Referer"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Collect",
+        "obj": "User-Agent"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Collect",
+        "obj": "Location"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Collect",
+        "obj": "Cookie"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Collect",
+        "obj": "Title"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Collect",
+        "obj": "Domain"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Collect",
+        "obj": "Charset"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Collect",
+        "obj": "Screen width and height"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Collect",
+        "obj": "Operating System"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Collect",
+        "obj": "Language"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Activate",
+        "obj": "Pluginid 1"
+      },
+      {
+        "sub": "Pluginid 1",
+        "rel": "Enumerate",
+        "obj": "Installed software"
+      },
+      {
+        "sub": "Pluginid 1",
+        "rel": "Check",
+        "obj": "EMET version"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Activate",
+        "obj": "Pluginid 2"
+      },
+      {
+        "sub": "Pluginid 2",
+        "rel": "Enumerate",
+        "obj": "Adobe Flash versions"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Activate",
+        "obj": "Pluginid 5"
+      },
+      {
+        "sub": "Pluginid 5",
+        "rel": "Enumerate",
+        "obj": "Microsoft Office versions"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Activate",
+        "obj": "Pluginid 6"
+      },
+      {
+        "sub": "Pluginid 6",
+        "rel": "Enumerate",
+        "obj": "Acrobat Reader versions"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Activate",
+        "obj": "Pluginid 8"
+      },
+      {
+        "sub": "Pluginid 8",
+        "rel": "Enumerate",
+        "obj": "Java versions"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Activate",
+        "obj": "Pluginid 21"
+      },
+      {
+        "sub": "Pluginid 21",
+        "rel": "Implement",
+        "obj": "Keylogger"
+      },
+      {
+        "sub": "Pluginid 21",
+        "rel": "Log",
+        "obj": "Keystrokes"
+      },
+      {
+        "sub": "Pluginid 21",
+        "rel": "Send",
+        "obj": "Data periodically"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Encode",
+        "obj": "Data"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Encrypt",
+        "obj": "Data"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Send",
+        "obj": "Data to C&C server"
+      },
+      {
+        "sub": "Website",
+        "rel": "Has URL",
+        "obj": "Remote server"
+      },
+      {
+        "sub": "Malicious JavaScript file",
+        "rel": "Has value",
+        "obj": "Keystrokes"
+      },
+      {
+        "sub": "Malicious JavaScript file",
+        "rel": "Has value",
+        "obj": "Form submissions"
+      },
+      {
+        "sub": "Website",
+        "rel": "Belong to",
+        "obj": "Industrial company"
+      },
+      {
+        "sub": "Website",
+        "rel": "Locate at",
+        "obj": "Automotive, aerospace, and manufacturing industries"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Construct",
+        "obj": "Remote C&C server"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Modify",
+        "obj": "Victim-specific information"
+      },
+      {
+        "sub": "Malicious JavaScript file",
+        "rel": "Has filename",
+        "obj": "JavaScript"
+      },
+      {
+        "sub": "Malicious JavaScript file",
+        "rel": "Has filepath",
+        "obj": "Remote server"
+      },
+      {
+        "sub": "Malicious JavaScript file",
+        "rel": "Has URL",
+        "obj": "Remote server"
+      },
+      {
+        "sub": "Pluginid 21",
+        "rel": "Has technique",
+        "obj": "Keylogging"
+      },
+      {
+        "sub": "Pluginid 1",
+        "rel": "Has technique",
+        "obj": "Software enumeration"
+      },
+      {
+        "sub": "Pluginid 2",
+        "rel": "Has technique",
+        "obj": "Flash version enumeration"
+      },
+      {
+        "sub": "Pluginid 5",
+        "rel": "Has technique",
+        "obj": "Office version enumeration"
+      },
+      {
+        "sub": "Pluginid 6",
+        "rel": "Has technique",
+        "obj": "Acrobat Reader version enumeration"
+      },
+      {
+        "sub": "Pluginid 8",
+        "rel": "Has technique",
+        "obj": "Java version enumeration"
+      },
+      {
+        "sub": "Plugin",
+        "rel": "Has vulnerability",
+        "obj": "Keylogger functionality"
+      },
+      {
+        "sub": "Keylogger functionality",
+        "rel": "Use",
+        "obj": "Input capture"
+      },
+      {
+        "sub": "Input capture",
+        "rel": "Write",
+        "obj": "Keystrokes"
+      },
+      {
+        "sub": "Keystrokes",
+        "rel": "Has value",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "Keylogger functionality",
+        "rel": "Operate",
+        "obj": "Compromised website"
+      },
+      {
+        "sub": "Keylogger functionality",
+        "rel": "Send data to",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Receive data from",
+        "obj": "Keylogger functionality"
+      },
+      {
+        "sub": "Keylogger functionality",
+        "rel": "Construct",
+        "obj": "JavaScript plugin"
+      },
+      {
+        "sub": "Report Type",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerable Software"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Use",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Collect",
+        "obj": "Operating System"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Collect",
+        "obj": "Screen Resolution"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Collect",
+        "obj": "Language"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Collect",
+        "obj": "Browser Details"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Construct",
+        "obj": "Software Enumeration"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Modify",
+        "obj": "System-level Information"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Locate at",
+        "obj": "Victim's System"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Has value",
+        "obj": "Screen Resolution"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Has value",
+        "obj": "Language"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Has value",
+        "obj": "Browser Details"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Has value",
+        "obj": "Operating System"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Has geolocation",
+        "obj": "Victim's System"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Use",
+        "obj": "Adobe Flash"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Use",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Use",
+        "obj": "Acrobat Reader"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Use",
+        "obj": "Java"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Write",
+        "obj": "System-level Information"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Detect",
+        "obj": "Potential Vulnerabilities"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "Belong to",
+        "obj": "Discovery Phase"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Keystroke capture"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Keylogger"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Keystroke data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Transmit",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Compromised website"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Keystroke input"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Web forms"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Sensitive credentials"
+      },
+      {
+        "sub": "C&C Server",
+        "rel": "Has value",
+        "obj": "122.10.9.109"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Operate",
+        "obj": "C&C Server"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Use",
+        "obj": "Encrypted channel communication"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Write",
+        "obj": "Encoded and encrypted data"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Send",
+        "obj": "User information"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Send",
+        "obj": "System details"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "Send",
+        "obj": "Keystrokes"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Use",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Operate",
+        "obj": "Keystroke data"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Receive",
+        "obj": "Keystroke data"
+      },
+      {
+        "sub": "Keystroke data",
+        "rel": "Contain",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "Keystroke data",
+        "rel": "Transmit",
+        "obj": "Network"
+      },
+      {
+        "sub": "Transmission",
+        "rel": "Be",
+        "obj": "Scheduled"
+      },
+      {
+        "sub": "Transmission",
+        "rel": "Be",
+        "obj": "Continuous"
+      },
+      {
+        "sub": "Keystroke data",
+        "rel": "Have",
+        "obj": "Sensitive user input"
+      }
+    ]
+  }
+}

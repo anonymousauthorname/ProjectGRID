@@ -1,0 +1,637 @@
+{
+  "sample_id": "securenlp__Aided_Frame_Aided_Direction",
+  "sample_index": 150,
+  "source": "securenlp",
+  "file_name": "Aided_Frame_Aided_Direction",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "FireEye",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "non-profit organizations",
+        "type": "victims/targets"
+      },
+      {
+        "name": "non-governmental organizations (NGO)",
+        "type": "victims/targets"
+      },
+      {
+        "name": "strategic web compromise (SWC) campaign",
+        "type": "campaign"
+      },
+      {
+        "name": "iframe",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "Java exploits",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "103.27.108.45",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "hxxp://103.27.108.45/img/js.php",
+        "type": "url"
+      },
+      {
+        "name": "Poison Ivy remote access tool (RAT)",
+        "type": "malware"
+      },
+      {
+        "name": "Poison Ivy variant",
+        "type": "malware"
+      },
+      {
+        "name": "Sunshop Digital Quartermaster",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "China-based advanced persistent threat (APT) groups",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Google Chrome",
+        "type": "general-software"
+      },
+      {
+        "name": "RT_VERSION",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "RT_MANIFEST",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "PE resource",
+        "type": "detailed-part-of-malware-or-hackertool"
+      },
+      {
+        "name": "82a98c88d3dd57a6ebc0fe7167a86875ed52ebddc6374ad640407efec01b1393",
+        "type": "indicator"
+      },
+      {
+        "name": "assign.ddnsking.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "quakegoogle.servequake.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "115.126.62.100",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "September 24, 2014",
+        "type": "date"
+      },
+      {
+        "name": "two different NGOs",
+        "type": "victims/targets"
+      },
+      {
+        "name": "international non-profit organization",
+        "type": "victims/targets"
+      },
+      {
+        "name": "Google Inc.",
+        "type": "organization"
+      },
+      {
+        "name": "Billy Leonard",
+        "type": "identity"
+      },
+      {
+        "name": "Mike Oppenheim",
+        "type": "identity"
+      },
+      {
+        "name": "Ned Moran",
+        "type": "identity"
+      },
+      {
+        "name": "Steve Stone",
+        "type": "identity"
+      },
+      {
+        "name": "Sarah Engle",
+        "type": "identity"
+      },
+      {
+        "name": "Ben Withnell",
+        "type": "identity"
+      },
+      {
+        "name": "SWCs",
+        "type": "campaign"
+      },
+      {
+        "name": "build 34.0.1847.131",
+        "type": "versioning-info"
+      },
+      {
+        "name": "265687",
+        "type": "versioning-info"
+      },
+      {
+        "name": "http://103.27.108.45",
+        "type": "url"
+      },
+      {
+        "name": "Java exploit",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "obfuscated",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "threat actor-controlled IP address",
+        "type": "infrastructure"
+      },
+      {
+        "name": "China-based operations",
+        "type": "location"
+      },
+      {
+        "name": "2013",
+        "type": "date"
+      },
+      {
+        "name": "grant applications",
+        "type": "victims/targets"
+      },
+      {
+        "name": "activity reports",
+        "type": "victims/targets"
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the malware",
+        "type": "malware"
+      },
+      {
+        "name": "the payload",
+        "type": "file"
+      },
+      {
+        "name": "the real thing",
+        "type": "malware"
+      },
+      {
+        "name": "the iframe",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "the backdoor",
+        "type": "malware"
+      },
+      {
+        "name": "the exploit",
+        "type": "attack-pattern"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "FireEye",
+        "rel": "observed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "strategic web compromise (SWC) campaign"
+      },
+      {
+        "sub": "strategic web compromise (SWC) campaign",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "non-profit organizations"
+      },
+      {
+        "sub": "strategic web compromise (SWC) campaign",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "non-governmental organizations (NGO)"
+      },
+      {
+        "sub": "compromised websites",
+        "rel": "contained",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "iframe"
+      },
+      {
+        "sub": "iframe",
+        "rel": "directed visitors to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "threat actor-controlled IP address"
+      },
+      {
+        "sub": "threat actor-controlled IP address",
+        "rel": "dropped",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Poison Ivy remote access tool (RAT)"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "has not yet attributed",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "this activity"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "identified links to",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "Sunshop Digital Quartermaster"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "established detection measures for",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "this threat activity"
+      },
+      {
+        "sub": "SWCs",
+        "rel": "on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "at least three different websites"
+      },
+      {
+        "sub": "two different NGOs",
+        "rel": "that promote",
+        "rel_type": [
+          "promotes"
+        ],
+        "obj": "democracy and human rights"
+      },
+      {
+        "sub": "group",
+        "rel": "compromised",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "these websites"
+      },
+      {
+        "sub": "group",
+        "rel": "inserted",
+        "rel_type": [
+          "inserts"
+        ],
+        "obj": "malicious iframes"
+      },
+      {
+        "sub": "iframes",
+        "rel": "obfuscated",
+        "rel_type": [
+          "obfuscated"
+        ],
+        "obj": "two of the compromised websites"
+      },
+      {
+        "sub": "iframes",
+        "rel": "directed visitors to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Java exploits"
+      },
+      {
+        "sub": "Java exploits",
+        "rel": "hosted at",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "103.27.108.45"
+      },
+      {
+        "sub": "Java exploits",
+        "rel": "downloaded and decoded",
+        "rel_type": [
+          "downloads",
+          "executes"
+        ],
+        "obj": "a payload"
+      },
+      {
+        "sub": "a payload",
+        "rel": "hosted at",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "hxxp://103.27.108.45/img/js.php"
+      },
+      {
+        "sub": "Java exploit",
+        "rel": "decoded",
+        "rel_type": [
+          "decodes"
+        ],
+        "obj": "the 'bin' param"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "identified",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "the payload as a Poison Ivy variant"
+      },
+      {
+        "sub": "Poison Ivy variant",
+        "rel": "had",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "versioning info embedded in RT_VERSION"
+      },
+      {
+        "sub": "versioning info",
+        "rel": "contained",
+        "rel_type": [
+          "contains"
+        ],
+        "obj": "Google Chrome build details"
+      },
+      {
+        "sub": "malware author",
+        "rel": "misspelled words in",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "versioning information"
+      },
+      {
+        "sub": "Poison Ivy implant",
+        "rel": "had",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "C2: quakegoogle.servequake.com"
+      },
+      {
+        "sub": "quakegoogle.servequake.com",
+        "rel": "resolved to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "115.126.62.100"
+      },
+      {
+        "sub": "other domains",
+        "rel": "resolved to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "115.126.62.100"
+      },
+      {
+        "sub": "SOGU (aka Kaba)",
+        "rel": "sent callback traffic to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "assign.ddnsking.com"
+      },
+      {
+        "sub": "Poison Ivy backdoor",
+        "rel": "had",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "RT_MANIFEST PE resource"
+      },
+      {
+        "sub": "RT_MANIFEST PE resource",
+        "rel": "had",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "SHA256 fingerprint of 82a98c88d3dd57a6ebc0fe7167a86875ed52ebddc6374ad640407efec01b1393"
+      },
+      {
+        "sub": "RT_MANIFEST PE resource",
+        "rel": "was documented in",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Sunshop Digital Quartermaster report"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "believes",
+        "rel_type": [
+          "believes"
+        ],
+        "obj": "RT_MANIFEST is artifact of a builder toolkit"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "leveraging",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "access to compromised websites"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "other organizations in the same industries"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "SWCs to achieve this goal"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "suspects",
+        "rel_type": [
+          "suspects"
+        ],
+        "obj": "China-based threat actors target NGOs and non-profits"
+      },
+      {
+        "sub": "China-based threat actors",
+        "rel": "steal",
+        "rel_type": [
+          "steals"
+        ],
+        "obj": "grant applications"
+      },
+      {
+        "sub": "China-based threat actors",
+        "rel": "steal",
+        "rel_type": [
+          "steals"
+        ],
+        "obj": "activity reports"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "sought to monitor",
+        "rel_type": [
+          "monitor"
+        ],
+        "obj": "programs and involved individuals"
+      },
+      {
+        "sub": "three organizations",
+        "rel": "hosting",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "malicious iframes"
+      },
+      {
+        "sub": "three organizations",
+        "rel": "have",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "China-based operations"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "released information on",
+        "rel_type": [
+          "publishes"
+        ],
+        "obj": "this campaign"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "believes",
+        "rel_type": [
+          "believes"
+        ],
+        "obj": "non-profits and NGOs remain at elevated risk"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "does not discount possibility of",
+        "rel_type": [
+          "possible"
+        ],
+        "obj": "phishing"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "expects",
+        "rel_type": [
+          "expects"
+        ],
+        "obj": "threat actors to steal programmatic data"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "expects",
+        "rel_type": [
+          "expects"
+        ],
+        "obj": "China-based threat actors target organizations in China"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "has detection measures in place that should allow",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "users of FireEye products to detect this SWC activity"
+      },
+      {
+        "sub": "Google",
+        "rel": "provided",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "additional information and research"
+      },
+      {
+        "sub": "Mike Oppenheim",
+        "rel": "contributed",
+        "rel_type": [
+          "contributed"
+        ],
+        "obj": "to this entry"
+      },
+      {
+        "sub": "Ned Moran",
+        "rel": "contributed",
+        "rel_type": [
+          "contributed"
+        ],
+        "obj": "to this entry"
+      },
+      {
+        "sub": "Steve Stone",
+        "rel": "contributed",
+        "rel_type": [
+          "contributed"
+        ],
+        "obj": "to this entry"
+      },
+      {
+        "sub": "Sarah Engle",
+        "rel": "authored",
+        "rel_type": [
+          "authored"
+        ],
+        "obj": "this entry"
+      },
+      {
+        "sub": "Ben Withnell",
+        "rel": "authored",
+        "rel_type": [
+          "authored"
+        ],
+        "obj": "this entry"
+      }
+    ]
+  }
+}

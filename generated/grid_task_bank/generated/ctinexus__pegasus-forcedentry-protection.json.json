@@ -1,0 +1,250 @@
+{
+  "sample_id": "ctinexus__pegasus-forcedentry-protection.json",
+  "sample_index": 83,
+  "source": "ctinexus",
+  "file_name": "pegasus-forcedentry-protection.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "FORCEDENTRY",
+        "type": "attack-pattern",
+        "alias": [
+          "the flaw"
+        ]
+      },
+      {
+        "name": "CVE-2021-30860",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerability"
+        ]
+      },
+      {
+        "name": "iOS 14.8 update",
+        "type": "general-software",
+        "alias": [
+          "the recent iOS 14.8 update"
+        ]
+      },
+      {
+        "name": "zero-day",
+        "type": "vulnerability",
+        "alias": [
+          "a zero-day"
+        ]
+      },
+      {
+        "name": "zero-click attack",
+        "type": "attack-pattern",
+        "alias": [
+          "what is called a zero-click attack"
+        ]
+      },
+      {
+        "name": "mobile iOS device",
+        "type": "device",
+        "alias": [
+          "mobile iOS devices"
+        ]
+      },
+      {
+        "name": "Apple's iMessage",
+        "type": "general-software",
+        "alias": [
+          "iMessage"
+        ]
+      },
+      {
+        "name": "The Citizen Lab",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "a report by The Citizen Lab"
+        ]
+      },
+      {
+        "name": "NSO Group",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Pegasus spyware",
+        "type": "malware",
+        "alias": [
+          "Pegasus",
+          "the spyware"
+        ]
+      },
+      {
+        "name": "February 2021",
+        "type": "date-time"
+      },
+      {
+        "name": "journalists",
+        "type": "victims/targets"
+      },
+      {
+        "name": "activists",
+        "type": "victims/targets"
+      },
+      {
+        "name": "Apple ID",
+        "type": "credential-value"
+      },
+      {
+        "name": "attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "an attacker"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "the recent iOS 14.8 update",
+        "rel": "fixes",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "a zero-day, zero-click exploit for a vulnerability affecting every mobile iOS device"
+      },
+      {
+        "sub": "the flaw",
+        "rel": "resided in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Apple's iMessage"
+      },
+      {
+        "sub": "the flaw",
+        "rel": "was used to push",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "NSO Group's Pegasus spyware"
+      },
+      {
+        "sub": "the flaw",
+        "rel": "was used to push",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "mobile iOS devices"
+      },
+      {
+        "sub": "the flaw",
+        "rel": "can be used in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "what is called a zero-click attack",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "a zero-day, zero-click exploit for a vulnerability",
+        "rel": "affects",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "every mobile iOS device"
+      },
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "dubbed",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "CVE-2021-30860"
+      },
+      {
+        "sub": "a report by The Citizen Lab",
+        "rel": "was used to report",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "the flaw"
+      },
+      {
+        "sub": "Pegasus spyware",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "journalists"
+      },
+      {
+        "sub": "Pegasus spyware",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "activists"
+      },
+      {
+        "sub": "Pegasus spyware",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "others"
+      },
+      {
+        "sub": "Pegasus spyware",
+        "rel": "has been around",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "for some years now"
+      },
+      {
+        "sub": "Pegasus spyware",
+        "rel": "is back in the spotlight",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "following reports from both The Citizen Lab and Amnesty International"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "exploiting",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "the flaw"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "only needs",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the Apple ID of a device"
+      },
+      {
+        "sub": "the Apple ID of a device",
+        "rel": "in order to silently compromise",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "it"
+      }
+    ]
+  }
+}

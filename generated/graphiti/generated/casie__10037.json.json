@@ -1,0 +1,151 @@
+{
+  "sample_id": "casie__10037.json",
+  "sample_index": 19,
+  "source": "casie",
+  "file_name": "10037.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Turkish Crime Family",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Apple",
+        "type": "Organization"
+      },
+      {
+        "name": "iCloud",
+        "type": "Software"
+      },
+      {
+        "name": "Apple ID",
+        "type": "Software"
+      },
+      {
+        "name": "LinkedIn",
+        "type": "Organization"
+      },
+      {
+        "name": "The Real Deal",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Motherboard",
+        "type": "Organization"
+      },
+      {
+        "name": "The Next Web",
+        "type": "Organization"
+      },
+      {
+        "name": "BGR",
+        "type": "Organization"
+      },
+      {
+        "name": "Bitcoin",
+        "type": "Software"
+      },
+      {
+        "name": "Ethereum",
+        "type": "Software"
+      },
+      {
+        "name": "iTunes gift cards",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Turkish Crime Family",
+        "rel": "threatens extortion",
+        "obj": "Apple"
+      },
+      {
+        "sub": "Turkish Crime Family",
+        "rel": "trades login data",
+        "obj": "The Real Deal"
+      },
+      {
+        "sub": "LinkedIn",
+        "rel": "sells login data",
+        "obj": "The Real Deal"
+      },
+      {
+        "sub": "Turkish Crime Family",
+        "rel": "communicates with",
+        "obj": "Motherboard"
+      },
+      {
+        "sub": "The Next Web",
+        "rel": "receives login data",
+        "obj": "Turkish Crime Family"
+      },
+      {
+        "sub": "The Next Web",
+        "rel": "cross references with",
+        "obj": "Have I Been Pwned"
+      },
+      {
+        "sub": "Apple",
+        "rel": "PROTECTS",
+        "obj": "iCloud"
+      },
+      {
+        "sub": "Apple",
+        "rel": "PROTECTS",
+        "obj": "Apple ID"
+      },
+      {
+        "sub": "Turkish Crime Family",
+        "rel": "has alleged access to",
+        "obj": "iCloud"
+      },
+      {
+        "sub": "Turkish Crime Family",
+        "rel": "has alleged access to",
+        "obj": "Apple ID"
+      },
+      {
+        "sub": "Turkish Crime Family",
+        "rel": "requests payment in",
+        "obj": "Bitcoin"
+      },
+      {
+        "sub": "Turkish Crime Family",
+        "rel": "requests payment in",
+        "obj": "Ethereum"
+      },
+      {
+        "sub": "Turkish Crime Family",
+        "rel": "requests payment in",
+        "obj": "iTunes gift cards"
+      },
+      {
+        "sub": "Apple",
+        "rel": "statement not breached",
+        "obj": "Turkish Crime Family"
+      },
+      {
+        "sub": "Turkish Crime Family",
+        "rel": "assumed breach reported by",
+        "obj": "BGR"
+      }
+    ]
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "sample_id": "malkg__201403FireEyeSiesta.txt",
+  "sample_index": 139,
+  "source": "malkg",
+  "file_name": "201403FireEyeSiesta.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Siesta Campaign",
+        "type": "campaign",
+        "alias": []
+      },
+      {
+        "name": "TrendMicro",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "APT1",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the Chinese cyber-espionage unit APT1",
+          "legacy APT1",
+          "previous activity attributed to APT1",
+          "APT1 samples"
+        ]
+      },
+      {
+        "name": "Comment Crew",
+        "type": "identity",
+        "alias": [
+          "Comment Crew"
+        ],
+        "mother entity": [
+          "APT1"
+        ]
+      },
+      {
+        "name": "PDFmyURL",
+        "type": "url",
+        "alias": [
+          "online url to pdf conversion"
+        ]
+      },
+      {
+        "name": "Healthcare_Questionnaire.zip",
+        "type": "file",
+        "alias": [
+          "this zip file"
+        ]
+      },
+      {
+        "name": "MD5 61249bf64fa270931570b8a5eba06afa",
+        "type": "indicator",
+        "alias": []
+      },
+      {
+        "name": "www.microsofthomes.com",
+        "type": "domain-name",
+        "alias": [
+          "CnC server"
+        ]
+      },
+      {
+        "name": "MD5 68f73d81c814ab2f70eed02c0be3b67d",
+        "type": "indicator",
+        "alias": []
+      },
+      {
+        "name": "MD5 0f3031412d255336a102bbc1dcd43812",
+        "type": "file",
+        "alias": [
+          "related dropper"
+        ]
+      },
+      {
+        "name": "MD5 185e930a19ad1a99c226d59ef563e28c",
+        "type": "malware",
+        "alias": [
+          "backdoor"
+        ],
+        "mother entity": [
+          "MD5 0f3031412d255336a102bbc1dcd43812"
+        ]
+      },
+      {
+        "name": "custom base64 alphabet",
+        "type": "abstract-concept",
+        "alias": []
+      },
+      {
+        "name": "PE resource with PDF icon",
+        "type": "file",
+        "alias": [
+          "PE resource",
+          "the dropper"
+        ],
+        "mother entity": [
+          "MD5 61249bf64fa270931570b8a5eba06afa",
+          "MD5 0f3031412d255336a102bbc1dcd43812"
+        ]
+      },
+      {
+        "name": "MD5 fb080cef60846528c409f60400f334100a16a5bd77b953c864b23a945fcf26fd",
+        "type": "indicator",
+        "alias": [
+          "SHA256 of fb080cef60846528c409f60400f334100a16a5bd77b953c864b23a945fcf26fd"
+        ],
+        "mother entity": [
+          "PE resource with PDF icon"
+        ]
+      },
+      {
+        "name": "Menupass group",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "previous Menupass samples"
+        ]
+      },
+      {
+        "name": "binder tool",
+        "type": "hacker-tool",
+        "alias": [
+          "malicious actor to bind an innocuous-looking icon"
+        ]
+      },
+      {
+        "name": "Figure 1: Binder tool for disguising executable files as JPGs",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": []
+      },
+      {
+        "name": "www.drgeorges.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "meeting.toh.info",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "www.kayauto.net",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "www.army.xxuz.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "www.nasa.xxuz.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "www.tw.2012yearleft.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "apple.cmdnetview.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "www.cvnx.zyns.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "fbi.sexxxy.biz",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "scrlk.exprenum.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "www.worldwide.chickenkiller.com",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "www.freetrade.allowed.org",
+        "type": "domain-name",
+        "alias": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TrendMicro",
+        "rel": "reported on",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Siesta Campaign"
+      },
+      {
+        "sub": "APT1",
+        "rel": "perpetrating this activity",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Siesta Campaign"
+      },
+      {
+        "sub": "APT1",
+        "rel": "known as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Comment Crew"
+      },
+      {
+        "sub": "APT1",
+        "rel": "relied on the Siesta campaign",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Siesta Campaign"
+      },
+      {
+        "sub": "Siesta Campaign",
+        "rel": "delivered a link to",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "PDFmyURL"
+      },
+      {
+        "sub": "PDFmyURL",
+        "rel": "points to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "Healthcare_Questionnaire.zip"
+      },
+      {
+        "sub": "Healthcare_Questionnaire.zip",
+        "rel": "contained",
+        "rel_type": [
+          "contains"
+        ],
+        "obj": "MD5 61249bf64fa270931570b8a5eba06afa"
+      },
+      {
+        "sub": "MD5 61249bf64fa270931570b8a5eba06afa",
+        "rel": "initiated a callback to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "www.microsofthomes.com"
+      },
+      {
+        "sub": "MD5 68f73d81c814ab2f70eed02c0be3b67d",
+        "rel": "callback to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "www.microsofthomes.com"
+      },
+      {
+        "sub": "MD5 0f3031412d255336a102bbc1dcd43812",
+        "rel": "dropped",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "MD5 185e930a19ad1a99c226d59ef563e28c"
+      },
+      {
+        "sub": "MD5 185e930a19ad1a99c226d59ef563e28c",
+        "rel": "dropped",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "MD5 61249bf64fa270931570b8a5eba06afa"
+      },
+      {
+        "sub": "MD5 185e930a19ad1a99c226d59ef563e28c",
+        "rel": "used to decode commands and Base64 encode reverse shell",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "custom base64 alphabet"
+      },
+      {
+        "sub": "PE resource with PDF icon",
+        "rel": "had as a PE resource",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "MD5 61249bf64fa270931570b8a5eba06afa"
+      },
+      {
+        "sub": "PE resource with PDF icon",
+        "rel": "had as a PE resource",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "MD5 0f3031412d255336a102bbc1dcd43812"
+      },
+      {
+        "sub": "PE resource with PDF icon",
+        "rel": "has SHA256 of",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "MD5 fb080cef60846528c409f60400f334100a16a5bd77b953c864b23a945fcf26fd"
+      },
+      {
+        "sub": "Menupass group",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "PE resource with PDF icon"
+      },
+      {
+        "sub": "binder tool",
+        "rel": "used by APT1",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "APT1"
+      },
+      {
+        "sub": "binder tool",
+        "rel": "used by Menupass",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Menupass group"
+      },
+      {
+        "sub": "Figure 1: Binder tool for disguising executable files as JPGs",
+        "rel": "describes",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "binder tool"
+      },
+      {
+        "sub": "APT1",
+        "rel": "responsible for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Siesta Campaign",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "unknown group",
+        "rel": "executed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Siesta Campaign",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "MD5 fb080cef60846528c409f60400f334100a16a5bd77b953c864b23a945fcf26fd",
+        "rel": "detect",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "APT1 samples"
+      }
+    ]
+  }
+}

@@ -1,0 +1,694 @@
+{
+  "sample_id": "casie__10057.json",
+  "sample_index": 41,
+  "source": "casie",
+  "file_name": "10057.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Ralf-Phillip Weinmann",
+        "type": "identity",
+        "alias": [
+          "the researcher Ralf-Phillip Weinmann",
+          "the researcher",
+          "Weinmann",
+          "the expert",
+          "Weinmann presented",
+          "the expert revealed"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Comsecuris",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "zero-day baseband vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "the flaw",
+          "the vulnerability",
+          "this baseband vulnerability",
+          "the Balong vulnerability",
+          "the vulnerability could be exploited",
+          "baseband vulnerability"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Huawei smartphones",
+        "type": "general-software",
+        "alias": [
+          "Huawei smartphones",
+          "Honor smartphones",
+          "Huawei Honor smartphones"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "laptop WWAN modules",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "IoT components",
+        "type": "general-software",
+        "alias": [
+          "IoT devices"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "baseband",
+        "type": "general-software",
+        "alias": [
+          "the baseband",
+          "the baseband is",
+          "this baseband",
+          "the baseband implantation"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "HiSilicon Balong integrated 4G LTE modems",
+        "type": "detailed-part-of-general-software",
+        "alias": [
+          "Balong modems",
+          "Balong integrated modem",
+          "the Balong application processor",
+          "the Balong modem"
+        ],
+        "mother entity": [
+          "baseband"
+        ]
+      },
+      {
+        "name": "Kirin",
+        "type": "detailed-part-of-general-software",
+        "alias": [
+          "the Balong application processor",
+          "the Kirin application processor",
+          "Kirin source code",
+          "Kirin source code was released"
+        ],
+        "mother entity": [
+          "HiSilicon Balong integrated 4G LTE modems"
+        ]
+      },
+      {
+        "name": "Hisilicon Technologies",
+        "type": "identity",
+        "alias": [
+          "Hisilicon",
+          "Hisilicon Technologies"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Huawei Technologies",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "firmware",
+        "type": "general-software",
+        "alias": [
+          "the affected firmware",
+          "baseband firmware"
+        ],
+        "mother entity": [
+          "Huawei smartphones"
+        ]
+      },
+      {
+        "name": "P10",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Huawei smartphones"
+        ]
+      },
+      {
+        "name": "Huawei Mate 9",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Huawei smartphones"
+        ]
+      },
+      {
+        "name": "Honor 9",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Huawei smartphones"
+        ]
+      },
+      {
+        "name": "7",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Huawei smartphones"
+        ]
+      },
+      {
+        "name": "5c",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Huawei smartphones"
+        ]
+      },
+      {
+        "name": "6",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Huawei smartphones"
+        ]
+      },
+      {
+        "name": "Infiltrate Conference",
+        "type": "event",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "memory-corruption attack",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": [
+          "zero-day baseband vulnerability"
+        ]
+      },
+      {
+        "name": "attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attackers",
+          "an attacker",
+          "the attacker",
+          "the attacker with a physical access"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "OpenLTE",
+        "type": "hacker-tool",
+        "alias": [
+          "an attacker to simulate a network operator"
+        ],
+        "mother entity": [
+          "attacker"
+        ]
+      },
+      {
+        "name": "LTE stack",
+        "type": "detailed-part-of-general-software",
+        "alias": [],
+        "mother entity": [
+          "baseband"
+        ]
+      },
+      {
+        "name": "specially crafted packets",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": [
+          "attacker"
+        ]
+      },
+      {
+        "name": "rootkit",
+        "type": "malware",
+        "alias": [],
+        "mother entity": [
+          "attacker"
+        ]
+      },
+      {
+        "name": "physical access to the phone",
+        "type": "abstract-concept",
+        "alias": [
+          "physical access to the phone"
+        ],
+        "mother entity": [
+          "attacker"
+        ]
+      },
+      {
+        "name": "private key pair data",
+        "type": "credential-value",
+        "alias": [
+          "key material",
+          "the key material",
+          "this key material"
+        ],
+        "mother entity": [
+          "attacker"
+        ]
+      },
+      {
+        "name": "carrier",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "SIM card",
+        "type": "hardware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "VxWorks build environment",
+        "type": "general-software",
+        "alias": [
+          "his own VxWorks build environment",
+          "evaluation version of VxWorks 7.0"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Intel Galileo",
+        "type": "hardware",
+        "alias": [],
+        "mother entity": [
+          "VxWorks build environment"
+        ]
+      },
+      {
+        "name": "Lua scripting interpreter",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": [
+          "baseband"
+        ]
+      },
+      {
+        "name": "Huawei H60 Linux kernel data",
+        "type": "file",
+        "alias": [
+          "developer tar archive associated with the Huawei H60 Linux kernel data"
+        ],
+        "mother entity": [
+          "Kirin source code"
+        ]
+      },
+      {
+        "name": "threat actors in the wild",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "threat actors",
+          "attackers in the wild"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "lower-severity findings",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "higher severity findings",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "cellular networks",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "voice calls",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "SMS messages to premium numbers",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "device reboot",
+        "type": "event",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "mutual authentication",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Ralf-Phillip Weinmann",
+        "rel": "disclosed",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "zero-day baseband vulnerability"
+      },
+      {
+        "sub": "zero-day baseband vulnerability",
+        "rel": "affecting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Huawei smartphones"
+      },
+      {
+        "sub": "zero-day baseband vulnerability",
+        "rel": "affecting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "laptop WWAN modules"
+      },
+      {
+        "sub": "zero-day baseband vulnerability",
+        "rel": "affecting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "IoT components"
+      },
+      {
+        "sub": "baseband",
+        "rel": "is",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "firmware"
+      },
+      {
+        "sub": "baseband",
+        "rel": "used to connect to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "cellular networks"
+      },
+      {
+        "sub": "baseband",
+        "rel": "used to make",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "voice calls"
+      },
+      {
+        "sub": "baseband",
+        "rel": "transmit data",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "cellular networks"
+      },
+      {
+        "sub": "attacker",
+        "rel": "can exploit",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "baseband"
+      },
+      {
+        "sub": "attacker",
+        "rel": "eavesdrop on",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "mobile communications"
+      },
+      {
+        "sub": "attacker",
+        "rel": "take over",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the device"
+      },
+      {
+        "sub": "attacker",
+        "rel": "take over making",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "voice calls"
+      },
+      {
+        "sub": "attacker",
+        "rel": "send SMS messages to premium numbers",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the device"
+      },
+      {
+        "sub": "attacker",
+        "rel": "exfiltrate data",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "the device"
+      },
+      {
+        "sub": "Ralf-Phillip Weinmann",
+        "rel": "revealed the flaw at",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Infiltrate Conference"
+      },
+      {
+        "sub": "zero-day baseband vulnerability",
+        "rel": "could be exploited by attackers to execute",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "memory-corruption attack"
+      },
+      {
+        "sub": "zero-day baseband vulnerability",
+        "rel": "resides in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "HiSilicon Balong integrated 4G LTE modems"
+      },
+      {
+        "sub": "Balong application processor",
+        "rel": "is called",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Kirin"
+      },
+      {
+        "sub": "Kirin",
+        "rel": "produced by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Hisilicon Technologies"
+      },
+      {
+        "sub": "Hisilicon Technologies",
+        "rel": "is subsidiary of",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Huawei Technologies"
+      },
+      {
+        "sub": "firmware",
+        "rel": "is present in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Huawei smartphones"
+      },
+      {
+        "sub": "Ralf-Phillip Weinmann",
+        "rel": "believes that millions of Honor smartphones could be exposed to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the attack"
+      },
+      {
+        "sub": "Ralf-Phillip Weinmann",
+        "rel": "presented multiple baseband vulnerabilities in",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Kirin"
+      },
+      {
+        "sub": "many laptops",
+        "rel": "leverage",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "HiSilicon Balong integrated 4G LTE modems"
+      },
+      {
+        "sub": "this baseband",
+        "rel": "is much easier to exploit than other basebands",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "other basebands"
+      },
+      {
+        "sub": "vendor",
+        "rel": "published source code for",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "baseband"
+      },
+      {
+        "sub": "this baseband implantation",
+        "rel": "is malleable",
+        "rel_type": [
+          "used-for"
+        ],
+        "obj": "device experimenting"
+      },
+      {
+        "sub": "Weinmann",
+        "rel": "speculates HiSilicon may have wrong released",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Kirin source code"
+      },
+      {
+        "sub": "Kirin source code",
+        "rel": "associated with",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Huawei H60 Linux kernel data"
+      },
+      {
+        "sub": "attacker",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "OpenLTE"
+      },
+      {
+        "sub": "attacker",
+        "rel": "send specially crafted packets that trigger stack buffer overflow in",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "LTE stack"
+      },
+      {
+        "sub": "phone",
+        "rel": "rebooted",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "attacker"
+      },
+      {
+        "sub": "attacker",
+        "rel": "gain persistence by installing",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "rootkit"
+      },
+      {
+        "sub": "attacker with a physical access to the phone",
+        "rel": "install malicious tools on",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "firmware"
+      },
+      {
+        "sub": "attacker",
+        "rel": "needs to pass mutual authentication with",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "carrier"
+      },
+      {
+        "sub": "Weinmann",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "VxWorks build environment"
+      },
+      {
+        "sub": "VxWorks build environment",
+        "rel": "shipped with",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Intel Galileo"
+      },
+      {
+        "sub": "Lua scripting interpreter",
+        "rel": "running in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "baseband"
+      },
+      {
+        "sub": "Weinmann",
+        "rel": "choose to disclose",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "lower-severity findings"
+      },
+      {
+        "sub": "Weinmann",
+        "rel": "disclose",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "higher severity findings"
+      }
+    ]
+  }
+}

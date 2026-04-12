@@ -1,0 +1,167 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_46.json",
+  "sample_index": 235,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_46.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "WannaCry",
+        "type": "Malware"
+      },
+      {
+        "name": "Wanna Decrypt0r",
+        "type": "Malware"
+      },
+      {
+        "name": "EternalBlue",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Shadow Brokers",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Organization"
+      },
+      {
+        "name": "Windows",
+        "type": "Software"
+      },
+      {
+        "name": "Windows Server Message Block",
+        "type": "Software"
+      },
+      {
+        "name": "Windows XP",
+        "type": "Software"
+      },
+      {
+        "name": "Windows 8",
+        "type": "Software"
+      },
+      {
+        "name": "Windows Server 2003",
+        "type": "Software"
+      },
+      {
+        "name": "SMB",
+        "type": "Software"
+      },
+      {
+        "name": "MS17010",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Sophos",
+        "type": "Organization"
+      },
+      {
+        "name": "Intercept X",
+        "type": "Tool"
+      },
+      {
+        "name": "Sophos EXP",
+        "type": "Tool"
+      },
+      {
+        "name": "CryptoGuard",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "WannaCry",
+        "rel": "USES",
+        "obj": "EternalBlue"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "EXPLOITS",
+        "obj": "Windows Server Message Block"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "derived from",
+        "obj": "Shadow Brokers"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "RELEASSED",
+        "obj": "MS17010"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "provided security update for",
+        "obj": "Windows XP"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "provided security update for",
+        "obj": "Windows 8"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "provided security update for",
+        "obj": "Windows Server 2003"
+      },
+      {
+        "sub": "Sophos",
+        "rel": "offers protection through",
+        "obj": "Intercept X"
+      },
+      {
+        "sub": "Sophos",
+        "rel": "offers protection through",
+        "obj": "Sophos EXP"
+      },
+      {
+        "sub": "Sophos",
+        "rel": "INTEGRATES",
+        "obj": "CryptoGuard"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "EXPLOITS",
+        "obj": "Windows"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "EXPLOITS",
+        "obj": "SMB"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "AFFECTS",
+        "obj": "Windows XP"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "AFFECTS",
+        "obj": "Windows 8"
+      },
+      {
+        "sub": "WannaCry",
+        "rel": "AFFECTS",
+        "obj": "Windows Server 2003"
+      }
+    ]
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "sample_id": "malkg__201402FireEyeSnowMan.txt",
+  "sample_index": 145,
+  "source": "malkg",
+  "file_name": "201402FireEyeSnowMan.txt",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "hacking operation",
+        "rel": "compromises",
+        "obj": "US Veterans of Foreign Wars website"
+      },
+      {
+        "sub": "hacking operation",
+        "rel": "uses",
+        "obj": "zero-day exploit (CVE-2014-0322)"
+      },
+      {
+        "sub": "hacking operation",
+        "rel": "targets",
+        "obj": "military personnel"
+      },
+      {
+        "sub": "hacking operation",
+        "rel": "occurs",
+        "obj": "storm at U.S. Capitol"
+      },
+      {
+        "sub": "hacking operation",
+        "rel": "associated with",
+        "obj": "a previously identified campaign"
+      },
+      {
+        "sub": "attacker",
+        "rel": "compromise",
+        "obj": "VFW website"
+      },
+      {
+        "sub": "attacker",
+        "rel": "add",
+        "obj": "iframe"
+      },
+      {
+        "sub": "attacker",
+        "rel": "load",
+        "obj": "page"
+      },
+      {
+        "sub": "page",
+        "rel": "runs",
+        "obj": "Flash object"
+      },
+      {
+        "sub": "Flash object",
+        "rel": "orchestrates",
+        "obj": "exploit"
+      },
+      {
+        "sub": "exploit",
+        "rel": "calls back to",
+        "obj": "vulnerability trigger"
+      },
+      {
+        "sub": "vulnerability trigger",
+        "rel": "is embedded in",
+        "obj": "JavaScript"
+      },
+      {
+        "sub": "VFW website",
+        "rel": "compromised",
+        "obj": "attacker"
+      },
+      {
+        "sub": "iframe",
+        "rel": "is used to redirect",
+        "obj": "exploit"
+      },
+      {
+        "sub": "exploit",
+        "rel": "targets",
+        "obj": "IE 10"
+      },
+      {
+        "sub": "exploit",
+        "rel": "targets",
+        "obj": "Adobe Flash"
+      },
+      {
+        "sub": "exploit",
+        "rel": "aborts if",
+        "obj": "user uses different IE version"
+      },
+      {
+        "sub": "exploit",
+        "rel": "aborts if",
+        "obj": "user has installed EMET"
+      },
+      {
+        "sub": "installing EMET or updating to IE 11",
+        "rel": "prevents",
+        "obj": "exploit"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "is a",
+        "obj": "use-after-free bug"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "allows attacker to",
+        "obj": "memory corruption"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "bypasses",
+        "obj": "ASLR"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "bypasses",
+        "obj": "DEP"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "allows pivot to",
+        "obj": "ROP"
+      },
+      {
+        "sub": "exploit",
+        "rel": "proceeds only if",
+        "obj": "EMET DLL is not present"
+      },
+      {
+        "sub": "Flash code",
+        "rel": "downloads",
+        "obj": "file"
+      },
+      {
+        "sub": "file",
+        "rel": "contains",
+        "obj": "malware payload"
+      },
+      {
+        "sub": "file",
+        "rel": "starts with",
+        "obj": "JPG image"
+      },
+      {
+        "sub": "file",
+        "rel": "ends with",
+        "obj": "payload"
+      },
+      {
+        "sub": "payload",
+        "rel": "is encoded with",
+        "obj": "XOR"
+      },
+      {
+        "sub": "SnowMan",
+        "rel": "has objective",
+        "obj": "targeting military service members"
+      },
+      {
+        "sub": "SnowMan",
+        "rel": "aims to steal",
+        "obj": "military intelligence"
+      },
+      {
+        "sub": "VFW website",
+        "rel": "is used by",
+        "obj": "active military personnel"
+      },
+      {
+        "sub": "SnowMan",
+        "rel": "targets",
+        "obj": "military service member"
+      },
+      {
+        "sub": "SnowMan",
+        "rel": "steals",
+        "obj": "military intelligence"
+      },
+      {
+        "sub": "VFW website",
+        "rel": "is used by",
+        "obj": "military personnel"
+      },
+      {
+        "sub": "ZxShell backdoor",
+        "rel": "used by",
+        "obj": "threat actors"
+      },
+      {
+        "sub": "ZxShell backdoor",
+        "rel": "links to",
+        "obj": "cyber espionage operations"
+      },
+      {
+        "sub": "ZxShell backdoor",
+        "rel": "connects to",
+        "obj": "command and control server"
+      },
+      {
+        "sub": "command and control server",
+        "rel": "is located at",
+        "obj": "newss[."
+      }
+    ]
+  }
+}

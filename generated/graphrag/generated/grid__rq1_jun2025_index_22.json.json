@@ -1,0 +1,347 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_22.json",
+  "sample_index": 214,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_22.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "EMAIL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "BUSINESS EMAIL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MACROBASED MALWARE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "UPATRE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BARTALEX",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CRYPTOWALL 3.0",
+        "type": "MALWARE"
+      },
+      {
+        "name": "TORRENTLOCKER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "FAREIT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "PLUGX",
+        "type": "TOOL"
+      },
+      {
+        "name": "EMDIVI",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CUTWAIL",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "DEEP DISCOVERY EMAIL INSPECTOR",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "TREND MICRO SMART PROTECTION COMPLETE SUITE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "TREND MICRO WORRYFREE BUSINESS SECURITY",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "HOME DEPOT BREACH",
+        "type": "EVENT"
+      },
+      {
+        "name": "TARGET BREACH",
+        "type": "EVENT"
+      },
+      {
+        "name": "FIRST HALF OF 2015",
+        "type": "EVENT"
+      },
+      {
+        "name": "DHL",
+        "type": "GEO"
+      },
+      {
+        "name": "FEDEX",
+        "type": "GEO"
+      },
+      {
+        "name": "AUSTRALIA",
+        "type": "GEO"
+      },
+      {
+        "name": "NEW ZEALAND",
+        "type": "GEO"
+      },
+      {
+        "name": "EUROPE",
+        "type": "GEO"
+      },
+      {
+        "name": "JAPAN",
+        "type": "GEO"
+      },
+      {
+        "name": "CUTWAIL BOTNET",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "SPAM CAMPAIGNS",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "RESUME ATTACHMENT",
+        "type": "TOOL"
+      },
+      {
+        "name": "INVOICE NOTIFICATION",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "POSTAL TRACKING NOTIFICATION",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "SOCIAL ENGINEERING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "MALWARE DELIVERY VIA LINKS",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "MALWARE DELIVERY VIA ATTACHMENTS",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "MICROSOFT OFFICE FILES",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PDF ATTACHMENT",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CHM FILE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "DROPBOX",
+        "type": "LOCATION"
+      },
+      {
+        "name": "HONEYPOAT DATA",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "GOVERNMENT-RELATED INSTITUTIONS",
+        "type": "Unknown"
+      },
+      {
+        "name": "EMAIL THREATS",
+        "type": "Unknown"
+      },
+      {
+        "name": "ENTERPRISES",
+        "type": "Unknown"
+      },
+      {
+        "name": "SMALL BUSINESSES",
+        "type": "Unknown"
+      },
+      {
+        "name": "SPAM TRENDS",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "UPATRE",
+        "rel": "related_to",
+        "obj": "CUTWAIL"
+      },
+      {
+        "sub": "CUTWAIL",
+        "rel": "related_to",
+        "obj": "MACROBASED MALWARE"
+      },
+      {
+        "sub": "CRYPTOWALL 3.0",
+        "rel": "related_to",
+        "obj": "SPAM CAMPAIGNS"
+      },
+      {
+        "sub": "FAREIT",
+        "rel": "related_to",
+        "obj": "RESUME ATTACHMENT"
+      },
+      {
+        "sub": "TORRENTLOCKER",
+        "rel": "related_to",
+        "obj": "AUSTRALIA"
+      },
+      {
+        "sub": "TORRENTLOCKER",
+        "rel": "related_to",
+        "obj": "NEW ZEALAND"
+      },
+      {
+        "sub": "TORRENTLOCKER",
+        "rel": "related_to",
+        "obj": "EUROPE"
+      },
+      {
+        "sub": "EMDIVI",
+        "rel": "related_to",
+        "obj": "JAPAN"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "GOVERNMENT-RELATED INSTITUTIONS"
+      },
+      {
+        "sub": "SPAM CAMPAIGNS",
+        "rel": "related_to",
+        "obj": "SOCIAL ENGINEERING"
+      },
+      {
+        "sub": "SPAM CAMPAIGNS",
+        "rel": "related_to",
+        "obj": "MACROBASED MALWARE"
+      },
+      {
+        "sub": "EMAIL",
+        "rel": "related_to",
+        "obj": "MALWARE DELIVERY VIA ATTACHMENTS"
+      },
+      {
+        "sub": "EMAIL",
+        "rel": "related_to",
+        "obj": "MALWARE DELIVERY VIA LINKS"
+      },
+      {
+        "sub": "RESUME ATTACHMENT",
+        "rel": "related_to",
+        "obj": "FAREIT"
+      },
+      {
+        "sub": "INVOICE NOTIFICATION",
+        "rel": "related_to",
+        "obj": "TORRENTLOCKER"
+      },
+      {
+        "sub": "POSTAL TRACKING NOTIFICATION",
+        "rel": "related_to",
+        "obj": "TORRENTLOCKER"
+      },
+      {
+        "sub": "DHL",
+        "rel": "related_to",
+        "obj": "SPAM CAMPAIGNS"
+      },
+      {
+        "sub": "FEDEX",
+        "rel": "related_to",
+        "obj": "SPAM CAMPAIGNS"
+      },
+      {
+        "sub": "DEEP DISCOVERY EMAIL INSPECTOR",
+        "rel": "related_to",
+        "obj": "EMAIL THREATS"
+      },
+      {
+        "sub": "TREND MICRO SMART PROTECTION COMPLETE SUITE",
+        "rel": "related_to",
+        "obj": "ENTERPRISES"
+      },
+      {
+        "sub": "TREND MICRO WORRYFREE BUSINESS SECURITY",
+        "rel": "related_to",
+        "obj": "SMALL BUSINESSES"
+      },
+      {
+        "sub": "UPATRE",
+        "rel": "related_to",
+        "obj": "MACROBASED MALWARE"
+      },
+      {
+        "sub": "UPATRE",
+        "rel": "related_to",
+        "obj": "SPAM CAMPAIGNS"
+      },
+      {
+        "sub": "BARTALEX",
+        "rel": "related_to",
+        "obj": "MACROBASED MALWARE"
+      },
+      {
+        "sub": "CUTWAIL",
+        "rel": "related_to",
+        "obj": "SPAM CAMPAIGNS"
+      },
+      {
+        "sub": "EMAIL",
+        "rel": "related_to",
+        "obj": "BUSINESS EMAIL"
+      },
+      {
+        "sub": "EMAIL",
+        "rel": "related_to",
+        "obj": "SOCIAL ENGINEERING"
+      },
+      {
+        "sub": "MACROBASED MALWARE",
+        "rel": "related_to",
+        "obj": "PDF ATTACHMENT"
+      },
+      {
+        "sub": "CHM FILE",
+        "rel": "related_to",
+        "obj": "UPATRE"
+      },
+      {
+        "sub": "DROPBOX",
+        "rel": "related_to",
+        "obj": "MALWARE DELIVERY VIA LINKS"
+      },
+      {
+        "sub": "HONEYPOAT DATA",
+        "rel": "related_to",
+        "obj": "SPAM TRENDS"
+      }
+    ]
+  }
+}

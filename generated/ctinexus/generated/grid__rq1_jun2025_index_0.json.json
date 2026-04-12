@@ -1,0 +1,122 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_0.json",
+  "sample_index": 200,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_0.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SophosLabs",
+        "type": "Unknown"
+      },
+      {
+        "name": "malware seeding campaign targeting websites in Pakistan and India",
+        "type": "Unknown"
+      },
+      {
+        "name": "Mal/JessyA",
+        "type": "Unknown"
+      },
+      {
+        "name": "Troj/IframeM",
+        "type": "Unknown"
+      },
+      {
+        "name": "Mal/WSshlA",
+        "type": "Unknown"
+      },
+      {
+        "name": "Mal/BasineC",
+        "type": "Unknown"
+      },
+      {
+        "name": "Malware Type",
+        "type": "Unknown"
+      },
+      {
+        "name": "Malware",
+        "type": "Unknown"
+      },
+      {
+        "name": "WS1000",
+        "type": "Unknown"
+      },
+      {
+        "name": "malware seeding",
+        "type": "Unknown"
+      },
+      {
+        "name": "expatriate Pakistanis",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SophosLabs",
+        "rel": "reported",
+        "obj": "malware seeding campaign targeting websites in Pakistan and India"
+      },
+      {
+        "sub": "Mal/JessyA",
+        "rel": "attempts to download",
+        "obj": "Troj/IframeM"
+      },
+      {
+        "sub": "Mal/JessyA",
+        "rel": "attempts to download",
+        "obj": "Mal/WSshlA"
+      },
+      {
+        "sub": "Mal/WSshlA",
+        "rel": "attempts to download",
+        "obj": "Mal/BasineC"
+      },
+      {
+        "sub": "Mal/JessyA",
+        "rel": "is detected as",
+        "obj": "Malware Type"
+      },
+      {
+        "sub": "Troj/IframeM",
+        "rel": "is a type of",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Mal/WSshlA",
+        "rel": "is a type of",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Mal/BasineC",
+        "rel": "is a type of",
+        "obj": "Malware"
+      },
+      {
+        "sub": "WS1000",
+        "rel": "provides protection against",
+        "obj": "malware seeding"
+      },
+      {
+        "sub": "expatriate Pakistanis",
+        "rel": "are at risk of",
+        "obj": "malware seeding"
+      }
+    ]
+  }
+}

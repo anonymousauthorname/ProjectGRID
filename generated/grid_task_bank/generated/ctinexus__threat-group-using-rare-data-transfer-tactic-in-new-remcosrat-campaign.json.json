@@ -1,0 +1,159 @@
+{
+  "sample_id": "ctinexus__threat-group-using-rare-data-transfer-tactic-in-new-remcosrat-campaign.json",
+  "sample_index": 78,
+  "source": "ctinexus",
+  "file_name": "threat-group-using-rare-data-transfer-tactic-in-new-remcosrat-campaign.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "UNC-0050",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the attacker",
+          "the adversary"
+        ]
+      },
+      {
+        "name": "RemcosRAT remote surveillance and control tool",
+        "type": "malware",
+        "alias": [
+          "RemcosRAT"
+        ]
+      },
+      {
+        "name": "Ukraine",
+        "type": "location"
+      },
+      {
+        "name": "government entities",
+        "type": "victims/targets"
+      },
+      {
+        "name": "Ukraine government agencies",
+        "type": "victims/targets"
+      },
+      {
+        "name": "Researchers at Uptycs",
+        "type": "security-product",
+        "alias": [
+          "Uptycs researchers"
+        ]
+      },
+      {
+        "name": "endpoint detection and response systems",
+        "type": "security-product"
+      },
+      {
+        "name": "state sponsorship",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Windows systems",
+        "type": "general-software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "a threat actor",
+        "rel": "is known as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "UNC-0050"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "organizations in Ukraine"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "RemcosRAT remote surveillance and control tool"
+      },
+      {
+        "sub": "RemcosRAT remote surveillance and control tool",
+        "rel": "transferring data",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "data"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "is focused on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Ukrainian government entities"
+      },
+      {
+        "sub": "Researchers at Uptycs",
+        "rel": "spotted it",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "the attacker"
+      },
+      {
+        "sub": "the attacks",
+        "rel": "may be politically motivated",
+        "rel_type": [
+          "impersonates",
+          "compares-to"
+        ],
+        "obj": "politically motivated"
+      },
+      {
+        "sub": "the group's activities",
+        "rel": "pose an undeniable risk",
+        "rel_type": [
+          "compromises",
+          "targets"
+        ],
+        "obj": "government sectors"
+      },
+      {
+        "sub": "government sectors",
+        "rel": "are reliant on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Windows systems"
+      },
+      {
+        "sub": "the possibility of state sponsorship",
+        "rel": "remains speculative",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "state sponsorship",
+        "special_factuality": [
+          "possible"
+        ]
+      }
+    ]
+  }
+}

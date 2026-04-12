@@ -1,0 +1,639 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_35.json",
+  "sample_index": 225,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_35.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Gumblar malware",
+        "type": "malware",
+        "alias": [
+          "Gumblar",
+          "the malware"
+        ]
+      },
+      {
+        "name": "FTP access",
+        "type": "attack-pattern",
+        "alias": [
+          "FTP"
+        ]
+      },
+      {
+        "name": "infected websites",
+        "type": "website",
+        "alias": [
+          "websites"
+        ]
+      },
+      {
+        "name": "HTML pages",
+        "type": "file",
+        "alias": [
+          "pages"
+        ]
+      },
+      {
+        "name": "script",
+        "type": "hacker-tool",
+        "alias": [
+          "injected script",
+          "script",
+          "the injected script"
+        ]
+      },
+      {
+        "name": "exploits",
+        "type": "indicator",
+        "alias": [
+          "the exploits"
+        ]
+      },
+      {
+        "name": "malicious code injection",
+        "type": "attack-pattern",
+        "alias": [
+          "code injection"
+        ]
+      },
+      {
+        "name": "backdoor",
+        "type": "hacker-tool",
+        "alias": [
+          "generic php backdoor"
+        ]
+      },
+      {
+        "name": "php",
+        "type": "general-software",
+        "alias": [
+          "the backend"
+        ]
+      },
+      {
+        "name": "Windows executable",
+        "type": "malware",
+        "alias": [
+          "malicious Windows executable"
+        ]
+      },
+      {
+        "name": "FTP credentials",
+        "type": "credential-value",
+        "alias": [
+          "FTP accounts"
+        ]
+      },
+      {
+        "name": "webservers",
+        "type": "website",
+        "alias": [
+          "servers",
+          "webpages"
+        ]
+      },
+      {
+        "name": "serverside scripting",
+        "type": "general-software",
+        "alias": [
+          "scripting"
+        ]
+      },
+      {
+        "name": "log files",
+        "type": "file",
+        "alias": [
+          "FTP log files"
+        ]
+      },
+      {
+        "name": "redirectors",
+        "type": "website",
+        "alias": [
+          "websites modified in this way"
+        ]
+      },
+      {
+        "name": "infectors",
+        "type": "website",
+        "alias": [
+          "websites hosting exploits"
+        ]
+      },
+      {
+        "name": "injectors",
+        "type": "website",
+        "alias": [
+          "set of compromised websites",
+          "compromised websites"
+        ]
+      },
+      {
+        "name": "dispatchers",
+        "type": "machine",
+        "alias": [
+          "set of machines"
+        ]
+      },
+      {
+        "name": "system",
+        "type": "course-of-action",
+        "alias": [
+          "the system",
+          "the Gumblar system"
+        ]
+      },
+      {
+        "name": "visitor",
+        "type": "identity",
+        "alias": [
+          "website visitors"
+        ]
+      },
+      {
+        "name": "Trojan executable",
+        "type": "malware",
+        "alias": [
+          "the Trojan executable"
+        ]
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the Gumblar group"
+        ]
+      },
+      {
+        "name": "the operation",
+        "type": "abstract-concept",
+        "alias": [
+          "the entire process"
+        ]
+      },
+      {
+        "name": "the process",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the loop",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the backend",
+        "type": "general-software"
+      },
+      {
+        "name": "the owner",
+        "type": "identity"
+      },
+      {
+        "name": "the malware's operation",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the system's owner",
+        "type": "identity"
+      },
+      {
+        "name": "the compromised hosts",
+        "type": "infrastructure"
+      },
+      {
+        "name": "the infection",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "the websites from all tiers",
+        "type": "website"
+      },
+      {
+        "name": "the attacker's goal",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the visitor",
+        "type": "identity"
+      },
+      {
+        "name": "the infected pages",
+        "type": "file"
+      },
+      {
+        "name": "the new webservers",
+        "type": "website"
+      },
+      {
+        "name": "the new computers",
+        "type": "identity"
+      },
+      {
+        "name": "the browser",
+        "type": "general-software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Gumblar malware",
+        "rel": "has infrastructure",
+        "rel_type": [
+          "infrastructure"
+        ],
+        "obj": "infrastructure of the Gumblar malware"
+      },
+      {
+        "sub": "Gumblar malware",
+        "rel": "operates with",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "how Gumblar operates"
+      },
+      {
+        "sub": "infected websites",
+        "rel": "can inject the infection of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Gumblar malware"
+      },
+      {
+        "sub": "FTP access",
+        "rel": "is the only way to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "inject the infection of Gumblar"
+      },
+      {
+        "sub": "infected websites",
+        "rel": "have no",
+        "rel_type": [
+          "lacks"
+        ],
+        "obj": "serverside scripting"
+      },
+      {
+        "sub": "FTP log files",
+        "rel": "were analyzed as proof of",
+        "rel_type": [
+          "supports"
+        ],
+        "obj": "the only way to inject the infection of Gumblar"
+      },
+      {
+        "sub": "HTML pages",
+        "rel": "are the target of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "malicious code injection"
+      },
+      {
+        "sub": "The malicious code injection",
+        "rel": "did",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "download all files from the server"
+      },
+      {
+        "sub": "The malicious code injection",
+        "rel": "did",
+        "rel_type": [
+          "modifies"
+        ],
+        "obj": "changing them"
+      },
+      {
+        "sub": "The malicious code injection",
+        "rel": "did",
+        "rel_type": [
+          "uploads"
+        ],
+        "obj": "uploading back"
+      },
+      {
+        "sub": "websites modified in this way",
+        "rel": "are called",
+        "rel_type": [
+          "named-as"
+        ],
+        "obj": "redirectors"
+      },
+      {
+        "sub": "injected script",
+        "rel": "refers to",
+        "rel_type": [
+          "refers-to"
+        ],
+        "obj": "another website hosting exploits"
+      },
+      {
+        "sub": "websites hosting exploits",
+        "rel": "have to support",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "php"
+      },
+      {
+        "sub": "the backend",
+        "rel": "is implemented in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "php"
+      },
+      {
+        "sub": "websites hosting exploits",
+        "rel": "are called",
+        "rel_type": [
+          "named-as"
+        ],
+        "obj": "infectors"
+      },
+      {
+        "sub": "infectors",
+        "rel": "host",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "exploits"
+      },
+      {
+        "sub": "infectors",
+        "rel": "host",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "malicious Windows executable"
+      },
+      {
+        "sub": "malicious Windows executable",
+        "rel": "is pushed when",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "attack is successful"
+      },
+      {
+        "sub": "executable",
+        "rel": "waits for",
+        "rel_type": [
+          "waits-for"
+        ],
+        "obj": "user to enter FTP credentials"
+      },
+      {
+        "sub": "redirectors and infectors websites",
+        "rel": "had server code coming from",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "infrastructure"
+      },
+      {
+        "sub": "a set of compromised websites",
+        "rel": "are called",
+        "rel_type": [
+          "named-as"
+        ],
+        "obj": "injectors"
+      },
+      {
+        "sub": "injectors",
+        "rel": "host",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "generic php backdoor"
+      },
+      {
+        "sub": "php backdoor",
+        "rel": "lets the owner",
+        "rel_type": [
+          "enables"
+        ],
+        "obj": "execute any php code on the webserver"
+      },
+      {
+        "sub": "websites from all tiers",
+        "rel": "seem to be",
+        "rel_type": [
+          "describes-as"
+        ],
+        "obj": "legitimate"
+      },
+      {
+        "sub": "websites from all tiers",
+        "rel": "are",
+        "rel_type": [
+          "describes-as"
+        ],
+        "obj": "compromised websites not connected to the Gumblar group"
+      },
+      {
+        "sub": "set of compromised hosts",
+        "rel": "was split into",
+        "rel_type": [
+          "split-into"
+        ],
+        "obj": "at least 3 nonintersecting groups"
+      },
+      {
+        "sub": "injectors",
+        "rel": "seems to be used to",
+        "rel_type": [
+          "used-to"
+        ],
+        "obj": "proxify the injection tasks"
+      },
+      {
+        "sub": "another set of machines",
+        "rel": "issue code and commands to",
+        "rel_type": [
+          "issues"
+        ],
+        "obj": "infect the webpages on the compromised webservers"
+      },
+      {
+        "sub": "machines",
+        "rel": "are called",
+        "rel_type": [
+          "named-as"
+        ],
+        "obj": "dispatchers"
+      },
+      {
+        "sub": "dispatchers",
+        "rel": "is unclear if theyre",
+        "rel_type": [
+          "unclear-status"
+        ],
+        "obj": "compromised as well"
+      },
+      {
+        "sub": "Gumblar malware",
+        "rel": "is",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "fully automated system"
+      },
+      {
+        "sub": "Gumblar malware",
+        "rel": "is a",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "selfbuilding botnet"
+      },
+      {
+        "sub": "system",
+        "rel": "is actively attacking",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "visitor"
+      },
+      {
+        "sub": "visitor",
+        "rel": "have been infected with",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Windows executable"
+      },
+      {
+        "sub": "system",
+        "rel": "grabs",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "FTP credentials from the victim machines"
+      },
+      {
+        "sub": "FTP accounts",
+        "rel": "are then used to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "infect every webpage on new webservers"
+      },
+      {
+        "sub": "system",
+        "rel": "extends",
+        "rel_type": [
+          "extends"
+        ],
+        "obj": "number of infected pages"
+      },
+      {
+        "sub": "entire process",
+        "rel": "is",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "automated"
+      },
+      {
+        "sub": "owner",
+        "rel": "just needs to adjust",
+        "rel_type": [
+          "modifies"
+        ],
+        "obj": "system"
+      },
+      {
+        "sub": "Trojan executable",
+        "rel": "steals",
+        "rel_type": [
+          "steals"
+        ],
+        "obj": "passwords"
+      },
+      {
+        "sub": "exploits",
+        "rel": "are used to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "attack the browser"
+      },
+      {
+        "sub": "system",
+        "rel": "attacking",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "new computers"
+      },
+      {
+        "sub": "system",
+        "rel": "gets",
+        "rel_type": [
+          "gathers"
+        ],
+        "obj": "new FTP accounts"
+      },
+      {
+        "sub": "system",
+        "rel": "infecting",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "new servers"
+      },
+      {
+        "sub": "system",
+        "rel": "works in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "constant loop of attacking new computers"
+      },
+      {
+        "sub": "system",
+        "rel": "works in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "constant loop of getting new FTP accounts"
+      },
+      {
+        "sub": "system",
+        "rel": "works in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "constant loop of infecting new servers"
+      },
+      {
+        "sub": "illustration",
+        "rel": "includes the roles of",
+        "rel_type": [
+          "includes"
+        ],
+        "obj": "compromised hosts"
+      }
+    ]
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "sample_id": "casie__10330.json",
+  "sample_index": 1,
+  "source": "casie",
+  "file_name": "10330.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Microsoft",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Outlook 2010",
+        "type": "general-software",
+        "alias": [
+          "the 64-bit version of the security update",
+          "the security update",
+          "the fixed update",
+          "Office 2010"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "KB 4461529",
+        "type": "indicator",
+        "alias": [
+          "the 64-bit version of the security update KB 4461529"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "KB 4461585",
+        "type": "indicator",
+        "alias": [
+          "the fixed update"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "four remote code execution flaws",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Outlook Web Access",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Update Catalog",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": ".msi edition of Office 2010",
+        "type": "general-software",
+        "alias": [
+          "the Microsoft Installer (.msi)-based edition of Office 2010"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Office 365 Home",
+        "type": "general-software",
+        "alias": [
+          "Microsoft Office 365 Home"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "KB4461522",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "KB2863821",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Access",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Blogpost",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Download Center",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "crashes",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "November Patch Tuesday",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Woody Leonhard",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Installer (.msi)",
+        "type": "general-software",
+        "alias": [
+          "Microsoft Installer (.msi)-based edition"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Click-to-Run editions",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft",
+        "rel": "released a new update for",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Outlook 2010"
+      },
+      {
+        "sub": "KB 4461529",
+        "rel": "was causing",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Outlook 2010 crashes"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "warned users not to remove",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "KB 4461529"
+      },
+      {
+        "sub": "KB 4461529",
+        "rel": "plugged",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "four remote code execution flaws"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "recommended users try",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Outlook Web Access"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "released",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "KB 4461585"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "includes patches for",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "four remote code execution flaws"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "shouldn't trigger",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "Outlook 2010 crashes"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "confirmed it does fix",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "KB 4461529 crash issues"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "downloaded from",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "Microsoft Download Center"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "applies to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": ".msi edition of Office 2010"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "doesn't apply to",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "Office 365 Home"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "set out instructions in",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Microsoft Blogpost"
+      },
+      {
+        "sub": "KB4461522",
+        "rel": "causing crashes in",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Access"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "recommended users uninstall",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "KB4461522"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "pulled",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "KB4461522"
+      }
+    ]
+  }
+}

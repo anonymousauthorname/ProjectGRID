@@ -1,0 +1,127 @@
+{
+  "sample_id": "ctinexus__comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "sample_index": 98,
+  "source": "ctinexus",
+  "file_name": "comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "attacker",
+        "rel": "exploit",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "affects",
+        "obj": "NetScaler ADC"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "affects",
+        "obj": "Gateway networking products"
+      },
+      {
+        "sub": "Citrix Systems",
+        "rel": "has product",
+        "obj": "NetScaler ADC"
+      },
+      {
+        "sub": "Citrix Systems",
+        "rel": "has product",
+        "obj": "Gateway networking products"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "affects",
+        "obj": "NetScaler"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "affects",
+        "obj": "gateway products"
+      },
+      {
+        "sub": "Citrix Systems",
+        "rel": "has product",
+        "obj": "NetScaler"
+      },
+      {
+        "sub": "Citrix Systems",
+        "rel": "has product",
+        "obj": "gateway products"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "enabled",
+        "obj": "breach"
+      },
+      {
+        "sub": "cable giant",
+        "rel": "experienced",
+        "obj": "breach"
+      },
+      {
+        "sub": "customer data",
+        "rel": "compromised",
+        "obj": "CitrixBleed"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "compromised",
+        "obj": "customer data"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "exposed",
+        "obj": "username"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "exposed",
+        "obj": "passwords"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "exposed",
+        "obj": "name"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "exposed",
+        "obj": "contact info"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "exposed",
+        "obj": "SSN last four digits"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "exposed",
+        "obj": "date of birth"
+      },
+      {
+        "sub": "CitrixBleed",
+        "rel": "exposed",
+        "obj": "security questions and answers"
+      }
+    ]
+  }
+}

@@ -1,0 +1,528 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_29.json",
+  "sample_index": 220,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_29.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CrowdStrike 2018 Global Threat Report",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "the CrowdStrike 2018 Global Threat Report"
+        ]
+      },
+      {
+        "name": "supply chain attacks",
+        "type": "attack-pattern",
+        "alias": [
+          "software as a supply chain attack"
+        ]
+      },
+      {
+        "name": "Chinanexus threat actors",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "nationstate threat actors",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "NetSarang",
+        "type": "malware",
+        "alias": [
+          "backdoor attack"
+        ]
+      },
+      {
+        "name": "CCleaner",
+        "type": "malware",
+        "alias": [
+          "backdoor attack"
+        ]
+      },
+      {
+        "name": "M.E. Doc",
+        "type": "software",
+        "alias": [
+          "taxaccounting application"
+        ]
+      },
+      {
+        "name": "PyPi",
+        "type": "infrastructure",
+        "alias": [
+          "PyPi servers"
+        ]
+      },
+      {
+        "name": "NotPetya",
+        "type": "malware"
+      },
+      {
+        "name": "XDATA ransomware",
+        "type": "malware"
+      },
+      {
+        "name": "PlugX",
+        "type": "malware",
+        "alias": [
+          "PlugX linked to WICKED PANDA"
+        ]
+      },
+      {
+        "name": "WICKED PANDA",
+        "type": "malware"
+      },
+      {
+        "name": "software",
+        "type": "general-software"
+      },
+      {
+        "name": "security development lifecycle (SDLC)",
+        "type": "vulnerability",
+        "alias": [
+          "SDLC process"
+        ]
+      },
+      {
+        "name": "update server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "update services",
+        "type": "infrastructure"
+      },
+      {
+        "name": "microprocessors",
+        "type": "general-software"
+      },
+      {
+        "name": "thirdparty software",
+        "type": "general-software"
+      },
+      {
+        "name": "accounting",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "HR",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "specialized functions",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "small vendors",
+        "type": "general-software"
+      },
+      {
+        "name": "commandandcontrol tactics",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "code overlaps",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "Python programming language",
+        "type": "general-software"
+      },
+      {
+        "name": "libraries",
+        "type": "detailed-part-of-general-software"
+      },
+      {
+        "name": "checkin beacon",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "Adam Meyers",
+        "type": "identity"
+      },
+      {
+        "name": "Dmitri Alperovitch",
+        "type": "identity"
+      },
+      {
+        "name": "CrowdStrike VP of Intelligence",
+        "type": "identity"
+      },
+      {
+        "name": "CTO",
+        "type": "identity"
+      },
+      {
+        "name": "2017",
+        "type": "location"
+      },
+      {
+        "name": "the industry",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the findings in this years report",
+        "type": "course-of-action"
+      },
+      {
+        "name": "the effectiveness of software supply chain attacks",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "usercurated systems",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "taxaccounting application",
+        "type": "software"
+      },
+      {
+        "name": "Ukrainian company",
+        "type": "organization"
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "legitimate software",
+        "type": "software"
+      },
+      {
+        "name": "automatic updates",
+        "type": "course-of-action"
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "vulnerability"
+      },
+      {
+        "name": "trust",
+        "type": "abstract-concept"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CrowdStrike 2018 Global Threat Report",
+        "rel": "is discussed in",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "supply chain attacks"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "exploits",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "software"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "exploits",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "trust"
+      },
+      {
+        "sub": "Meyers",
+        "rel": "commented on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "supply chain attacks"
+      },
+      {
+        "sub": "the industry",
+        "rel": "talked about",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "supply chain attacks"
+      },
+      {
+        "sub": "microprocessors",
+        "rel": "were thinking of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "supply chain attacks"
+      },
+      {
+        "sub": "software as a supply chain attack",
+        "rel": "became",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "realistic and viable"
+      },
+      {
+        "sub": "supply chain attacks",
+        "rel": "are",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "terrifying in magnitude"
+      },
+      {
+        "sub": "virtually every organization",
+        "rel": "depends on",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "thirdparty software"
+      },
+      {
+        "sub": "software",
+        "rel": "used for",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "accounting"
+      },
+      {
+        "sub": "software",
+        "rel": "used for",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "HR"
+      },
+      {
+        "sub": "software",
+        "rel": "used for",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "specialized functions"
+      },
+      {
+        "sub": "small vendors",
+        "rel": "are not using",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "security development lifecycle (SDLC) process"
+      },
+      {
+        "sub": "security development lifecycle (SDLC) process",
+        "rel": "is a",
+        "rel_type": [
+          "defined-as"
+        ],
+        "obj": "stepbystep process"
+      },
+      {
+        "sub": "vulnerabilities",
+        "rel": "are difficult to detect",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "detect"
+      },
+      {
+        "sub": "attackers",
+        "rel": "are exploiting",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "software"
+      },
+      {
+        "sub": "attackers",
+        "rel": "are exploiting",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "trust"
+      },
+      {
+        "sub": "organizations",
+        "rel": "use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "automatic updates"
+      },
+      {
+        "sub": "the effectiveness of software supply chain attacks",
+        "rel": "puts at risk",
+        "rel_type": [
+          "threatens"
+        ],
+        "obj": "the supply chain"
+      },
+      {
+        "sub": "nationstate threat actors",
+        "rel": "are leveraging",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "commandandcontrol tactics"
+      },
+      {
+        "sub": "NetSarang",
+        "rel": "is a",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "backdoor attack"
+      },
+      {
+        "sub": "CCleaner",
+        "rel": "is a",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "backdoor attack"
+      },
+      {
+        "sub": "NetSarang",
+        "rel": "delivered",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "PlugX"
+      },
+      {
+        "sub": "PlugX",
+        "rel": "linked to",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "WICKED PANDA"
+      },
+      {
+        "sub": "NetSarang/CCleaner attacks",
+        "rel": "have",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "commandandcontrol tactics"
+      },
+      {
+        "sub": "NetSarang/CCleaner attacks",
+        "rel": "have",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "code overlaps"
+      },
+      {
+        "sub": "NetSarang/CCleaner attacks",
+        "rel": "are connected to",
+        "rel_type": [
+          "cooperates-with"
+        ],
+        "obj": "Chinanexus threat actors"
+      },
+      {
+        "sub": "M.E. Doc",
+        "rel": "was aimed at",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "taxaccounting application"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "compromised",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "update server"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "sent",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "NotPetya"
+      },
+      {
+        "sub": "M.E. Doc",
+        "rel": "distributed",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "XDATA ransomware"
+      },
+      {
+        "sub": "PyPi",
+        "rel": "replaced",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "libraries"
+      },
+      {
+        "sub": "packages",
+        "rel": "include",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "checkin beacon"
+      },
+      {
+        "sub": "PyPi attack",
+        "rel": "possibly was",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "proof of concept"
+      },
+      {
+        "sub": "PyPi attack",
+        "rel": "possibly is",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "grayhat incident"
+      },
+      {
+        "sub": "CrowdStrike Falcon Intelligence team",
+        "rel": "analyzed",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "software supply chain attacks"
+      },
+      {
+        "sub": "CrowdStrike 2018 Global Threat Report",
+        "rel": "featuring",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Adam Meyers"
+      },
+      {
+        "sub": "CrowdStrike 2018 Global Threat Report",
+        "rel": "featuring",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Dmitri Alperovitch"
+      }
+    ]
+  }
+}

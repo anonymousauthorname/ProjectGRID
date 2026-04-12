@@ -1,0 +1,705 @@
+{
+  "sample_id": "malkg__201306Rapid7KeyBoy.txt",
+  "sample_index": 137,
+  "source": "malkg",
+  "file_name": "201306Rapid7KeyBoy.txt",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attackers"
+        ]
+      },
+      {
+        "name": "Vietnam",
+        "type": "location"
+      },
+      {
+        "name": "India",
+        "type": "location"
+      },
+      {
+        "name": "THAM luan- GD- NCKH2.doc",
+        "type": "file",
+        "alias": [
+          "the first document exploit"
+        ]
+      },
+      {
+        "name": "MS12-060",
+        "type": "vulnerability"
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "vulnerability"
+      },
+      {
+        "name": "iafbsnl.doc",
+        "type": "file",
+        "alias": [
+          "the document exploiting CVE-2012-0158"
+        ]
+      },
+      {
+        "name": "KeyBoy",
+        "type": "malware",
+        "alias": [
+          "the custom backdoor",
+          "the backdoor",
+          "the real thing"
+        ]
+      },
+      {
+        "name": "CREDRIVER.dll",
+        "type": "file",
+        "alias": [
+          "the actual backdoor"
+        ]
+      },
+      {
+        "name": "svchost.exe",
+        "type": "file",
+        "alias": [
+          "the dropper"
+        ]
+      },
+      {
+        "name": "MdAdum",
+        "type": "process",
+        "alias": [
+          "the Windows service"
+        ]
+      },
+      {
+        "name": "Internet Explorer",
+        "type": "general-software"
+      },
+      {
+        "name": "Mozilla Firefox",
+        "type": "general-software"
+      },
+      {
+        "name": "Google Chrome",
+        "type": "general-software"
+      },
+      {
+        "name": "silence.phdns01.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "cpnet.phmail.us",
+        "type": "domain-name"
+      },
+      {
+        "name": "imlang.phmail.org",
+        "type": "domain-name"
+      },
+      {
+        "name": "cresy.zyns.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "preter.epac.to",
+        "type": "domain-name"
+      },
+      {
+        "name": "backto.ddns.name",
+        "type": "domain-name"
+      },
+      {
+        "name": "ChangeIP.com",
+        "type": "infrastructure"
+      },
+      {
+        "name": "HURRICANE Electric, Inc.",
+        "type": "infrastructure"
+      },
+      {
+        "name": "199.193.66.51",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "1.235.10.28",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "113.160.44.154",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "192.168.56.101",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "192.168.56.110",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "443",
+        "type": "port"
+      },
+      {
+        "name": "April 1st 2013",
+        "type": "date"
+      },
+      {
+        "name": "0x69",
+        "type": "x509-certificate",
+        "alias": [
+          "multiply with 0x69"
+        ]
+      },
+      {
+        "name": "0x93",
+        "type": "x509-certificate",
+        "alias": [
+          "multiply with 0x93"
+        ]
+      },
+      {
+        "name": "0xd9",
+        "type": "x509-certificate"
+      },
+      {
+        "name": "0x56",
+        "type": "x509-certificate"
+      },
+      {
+        "name": "$login$",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Sysinfo",
+        "type": "course-of-action"
+      },
+      {
+        "name": "FileManager",
+        "type": "course-of-action"
+      },
+      {
+        "name": "Download",
+        "type": "course-of-action"
+      },
+      {
+        "name": "UploadFileOk",
+        "type": "course-of-action"
+      },
+      {
+        "name": "Shell",
+        "type": "course-of-action"
+      },
+      {
+        "name": "Snort rule",
+        "type": "course-of-action"
+      },
+      {
+        "name": "Yara rules",
+        "type": "course-of-action"
+      },
+      {
+        "name": "Python snippet",
+        "type": "script"
+      },
+      {
+        "name": "preliminary Python script",
+        "type": "script"
+      },
+      {
+        "name": "Nguyen Anh Tuan",
+        "type": "identity"
+      },
+      {
+        "name": "Amir Kumar Gupta",
+        "type": "identity"
+      },
+      {
+        "name": "Microsoft Word",
+        "type": "general-software"
+      },
+      {
+        "name": "system32",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "%Temp%",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "vtt.phdns01.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "policy-negotiation",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "credentials from Internet Explorer",
+        "type": "credential-value"
+      },
+      {
+        "name": "credentials from Mozilla Firefox",
+        "type": "credential-value"
+      },
+      {
+        "name": "keystroke interception",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "dynamic DNS service",
+        "type": "infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "the attacker",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Vietnam"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "India"
+      },
+      {
+        "sub": "THAM luan- GD- NCKH2.doc",
+        "rel": "leverages",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "MS12-060"
+      },
+      {
+        "sub": "iafbsnl.doc",
+        "rel": "exploits",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "THAM luan- GD- NCKH2.doc",
+        "rel": "initiates infection routine when opened with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a vulnerable version of Microsoft Word"
+      },
+      {
+        "sub": "svchost.exe",
+        "rel": "creates and launches",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "the dropper"
+      },
+      {
+        "sub": "svchost.exe",
+        "rel": "creates",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "CREDRIVER.dll"
+      },
+      {
+        "sub": "CREDRIVER.dll",
+        "rel": "is",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "the actual backdoor"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "is used by",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the attacker"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "steals credentials from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "steals credentials from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Mozilla Firefox"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "installs a keylogger for intercepting credentials from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Google Chrome"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "operates in an interactive mode",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "additional investigation on the compromised system"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "exfiltrates data",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "the compromised system"
+      },
+      {
+        "sub": "svchost.exe",
+        "rel": "launches",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "MdAdum"
+      },
+      {
+        "sub": "MdAdum",
+        "rel": "is",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "the Windows service"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "tries to contact",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "silence.phdns01.com"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "tries to contact",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "cpnet.phmail.us"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "tries to contact",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "imlang.phmail.org"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "tries to contact",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "cresy.zyns.com"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "tries to contact",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "preter.epac.to"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "tries to contact",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "backto.ddns.name"
+      },
+      {
+        "sub": "the backdoor",
+        "rel": "sends request on",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "port 443"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "multiply with 0x69"
+      },
+      {
+        "sub": "the malware",
+        "rel": "expects",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "the following messages from the C&C server"
+      },
+      {
+        "sub": "Sysinfo",
+        "rel": "is a command sent to",
+        "rel_type": [
+          "commands"
+        ],
+        "obj": "the bot"
+      },
+      {
+        "sub": "FileManager",
+        "rel": "is a command sent to",
+        "rel_type": [
+          "commands"
+        ],
+        "obj": "the bot"
+      },
+      {
+        "sub": "Download",
+        "rel": "is a command sent to",
+        "rel_type": [
+          "commands"
+        ],
+        "obj": "the bot"
+      },
+      {
+        "sub": "UploadFileOk",
+        "rel": "is a command sent to",
+        "rel_type": [
+          "commands"
+        ],
+        "obj": "the bot"
+      },
+      {
+        "sub": "Shell",
+        "rel": "is a command sent to",
+        "rel_type": [
+          "commands"
+        ],
+        "obj": "the bot"
+      },
+      {
+        "sub": "the bot",
+        "rel": "responds with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "$sysinfo$"
+      },
+      {
+        "sub": "the bot",
+        "rel": "responds with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "$fileManager$"
+      },
+      {
+        "sub": "the bot",
+        "rel": "responds with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "$fileDownload$"
+      },
+      {
+        "sub": "the bot",
+        "rel": "responds with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "$fileUpload$"
+      },
+      {
+        "sub": "the bot",
+        "rel": "responds with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "$shell$"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "can detect outbound traffic via",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "Snort rule"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "can be detected by",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "looking for C:\\WINDOWS\\system32\\CREDRIVER.dll"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "can be detected by",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "looking for a service called MdAdum"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Yara rules"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Snort rule"
+      },
+      {
+        "sub": "Nguyen Anh Tuan",
+        "rel": "is presented as author of",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "the crafted text"
+      },
+      {
+        "sub": "Amir Kumar Gupta",
+        "rel": "is presented as author of",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "the crafted text"
+      },
+      {
+        "sub": "Microsoft Word",
+        "rel": "opens",
+        "rel_type": [
+          "opens"
+        ],
+        "obj": "THAM luan- GD- NCKH2.doc"
+      },
+      {
+        "sub": "system32",
+        "rel": "is located at",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "C:\\WINDOWS\\system32\\CREDRIVER.dll"
+      },
+      {
+        "sub": "%Temp%",
+        "rel": "is located at",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "%Temp%\\svchost.exe"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "compiles on",
+        "rel_type": [
+          "compiles"
+        ],
+        "obj": "April 1st 2013"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "compiles on",
+        "rel_type": [
+          "compiles"
+        ],
+        "obj": "April 1st 2013"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "is installed and launches",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "the Windows service"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "intercepts keystrokes",
+        "rel_type": [
+          "intercepts"
+        ],
+        "obj": "keystroke interception"
+      },
+      {
+        "sub": "ChangeIP.com",
+        "rel": "is used by",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "preter.epac.to"
+      },
+      {
+        "sub": "HURRICANE Electric, Inc.",
+        "rel": "is registered with",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "silence.phdns01.com"
+      },
+      {
+        "sub": "HURRICANE Electric, Inc.",
+        "rel": "is registered with",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "cpnet.phmail.us"
+      },
+      {
+        "sub": "HURRICANE Electric, Inc.",
+        "rel": "is registered with",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "imlang.phmail.org"
+      },
+      {
+        "sub": "HURRICANE Electric, Inc.",
+        "rel": "is registered with",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "vtt.phdns01.com"
+      }
+    ]
+  }
+}

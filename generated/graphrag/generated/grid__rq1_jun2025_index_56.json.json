@@ -1,0 +1,182 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_56.json",
+  "sample_index": 243,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_56.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SMARTLOADER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "LUMMA STEALER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "WATER KURITA",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "GITHUB",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MALWARE-AS-A-SERVICE (MAAS)",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "AI-GENERATED FAKE REPOSITORIES",
+        "type": "TOOL"
+      },
+      {
+        "name": "FREE OR ILICIT FUNCTIONALITY PROMISES",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "RELEASE.ZIP",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SOFTWARE.ZIP",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "GAME CHEATS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CRACKED SOFTWARE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CRYPTOCURRENCY UTILITIES",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "TREND MICRO THREAT HUNTING TEAM",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "X/TWITTER",
+        "type": "LOCATION"
+      },
+      {
+        "name": "README FILES",
+        "type": "DOCUMENTATION"
+      },
+      {
+        "name": "FAKE REPOSITORIES",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "WATER KURITA",
+        "rel": "related_to",
+        "obj": "LUMMA STEALER"
+      },
+      {
+        "sub": "SMARTLOADER",
+        "rel": "related_to",
+        "obj": "LUMMA STEALER"
+      },
+      {
+        "sub": "GITHUB",
+        "rel": "related_to",
+        "obj": "FAKE REPOSITORIES"
+      },
+      {
+        "sub": "FAKE REPOSITORIES",
+        "rel": "related_to",
+        "obj": "SMARTLOADER"
+      },
+      {
+        "sub": "FAKE REPOSITORIES",
+        "rel": "related_to",
+        "obj": "LUMMA STEALER"
+      },
+      {
+        "sub": "AI-GENERATED FAKE REPOSITORIES",
+        "rel": "related_to",
+        "obj": "README FILES"
+      },
+      {
+        "sub": "FREE OR ILICIT FUNCTIONALITY PROMISES",
+        "rel": "related_to",
+        "obj": "FAKE REPOSITORIES"
+      },
+      {
+        "sub": "FREE OR ILICIT FUNCTIONALITY PROMISES",
+        "rel": "related_to",
+        "obj": "GAME CHEATS"
+      },
+      {
+        "sub": "FREE OR ILICIT FUNCTIONALITY PROMISES",
+        "rel": "related_to",
+        "obj": "CRACKED SOFTWARE"
+      },
+      {
+        "sub": "FREE OR ILICIT FUNCTIONALITY PROMISES",
+        "rel": "related_to",
+        "obj": "CRYPTOCURRENCY UTILITIES"
+      },
+      {
+        "sub": "TREND MICRO THREAT HUNTING TEAM",
+        "rel": "related_to",
+        "obj": "MALWARE-AS-A-SERVICE (MAAS)"
+      },
+      {
+        "sub": "X/TWITTER",
+        "rel": "related_to",
+        "obj": "FAKE REPOSITORIES"
+      },
+      {
+        "sub": "AI-GENERATED FAKE REPOSITORIES",
+        "rel": "related_to",
+        "obj": "GITHUB"
+      },
+      {
+        "sub": "RELEASE.ZIP",
+        "rel": "related_to",
+        "obj": "SMARTLOADER"
+      },
+      {
+        "sub": "SOFTWARE.ZIP",
+        "rel": "related_to",
+        "obj": "SMARTLOADER"
+      },
+      {
+        "sub": "GAME CHEATS",
+        "rel": "related_to",
+        "obj": "FAKE REPOSITORIES"
+      },
+      {
+        "sub": "CRACKED SOFTWARE",
+        "rel": "related_to",
+        "obj": "FAKE REPOSITORIES"
+      },
+      {
+        "sub": "CRYPTOCURRENCY UTILITIES",
+        "rel": "related_to",
+        "obj": "FAKE REPOSITORIES"
+      }
+    ]
+  }
+}

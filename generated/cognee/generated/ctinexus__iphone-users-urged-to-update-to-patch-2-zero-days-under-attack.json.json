@@ -1,0 +1,371 @@
+{
+  "sample_id": "ctinexus__iphone-users-urged-to-update-to-patch-2-zero-days-under-attack.json",
+  "sample_index": 93,
+  "source": "ctinexus",
+  "file_name": "iphone-users-urged-to-update-to-patch-2-zero-days-under-attack.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Apple",
+        "type": "Entity"
+      },
+      {
+        "name": "macOS",
+        "type": "Entity"
+      },
+      {
+        "name": "iPhone",
+        "type": "Entity"
+      },
+      {
+        "name": "iPad",
+        "type": "Entity"
+      },
+      {
+        "name": "iOS 15.6.1",
+        "type": "Entity"
+      },
+      {
+        "name": "macOS Monterey 12.5.1",
+        "type": "Entity"
+      },
+      {
+        "name": "zero-day vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "arbitrary code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "device takeover",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2022-32894",
+        "type": "Entity"
+      },
+      {
+        "name": "kernel bug",
+        "type": "Entity"
+      },
+      {
+        "name": "out-of-bounds write issue",
+        "type": "Entity"
+      },
+      {
+        "name": "bounds checking",
+        "type": "Entity"
+      },
+      {
+        "name": "application privilege escalation",
+        "type": "Entity"
+      },
+      {
+        "name": "active exploitation",
+        "type": "Entity"
+      },
+      {
+        "name": "security updates",
+        "type": "Entity"
+      },
+      {
+        "name": "iOS",
+        "type": "Entity"
+      },
+      {
+        "name": "macOS Monterey",
+        "type": "Entity"
+      },
+      {
+        "name": "Apple device",
+        "type": "Entity"
+      },
+      {
+        "name": "iOS 15",
+        "type": "Entity"
+      },
+      {
+        "name": "desktop OS",
+        "type": "Entity"
+      },
+      {
+        "name": "Apple Wednesday",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability patch",
+        "type": "Entity"
+      },
+      {
+        "name": "attack vector",
+        "type": "Entity"
+      },
+      {
+        "name": "software update",
+        "type": "Entity"
+      },
+      {
+        "name": "security patch",
+        "type": "Entity"
+      },
+      {
+        "name": "kernel privileges",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability report",
+        "type": "Entity"
+      },
+      {
+        "name": "exploitation",
+        "type": "Entity"
+      },
+      {
+        "name": "operating system",
+        "type": "Entity"
+      },
+      {
+        "name": "security flaw",
+        "type": "Entity"
+      },
+      {
+        "name": "Apple security updates",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Apple",
+        "rel": "issues_security_update_for",
+        "obj": "iPhone"
+      },
+      {
+        "sub": "Apple",
+        "rel": "issues_security_update_for",
+        "obj": "iPad"
+      },
+      {
+        "sub": "Apple",
+        "rel": "has_patch_available_for",
+        "obj": "iOS 15.6.1"
+      },
+      {
+        "sub": "Apple",
+        "rel": "has_patch_available_for",
+        "obj": "macOS Monterey 12.5.1"
+      },
+      {
+        "sub": "Apple",
+        "rel": "provides_security_update",
+        "obj": "zero-day vulnerabilities"
+      },
+      {
+        "sub": "Apple",
+        "rel": "has_update_release_date",
+        "obj": "Apple Wednesday"
+      },
+      {
+        "sub": "iOS 15.6.1",
+        "rel": "has_vulnerability",
+        "obj": "zero-day vulnerabilities"
+      },
+      {
+        "sub": "macOS Monterey 12.5.1",
+        "rel": "has_vulnerability",
+        "obj": "zero-day vulnerabilities"
+      },
+      {
+        "sub": "iOS",
+        "rel": "has_vulnerability",
+        "obj": "zero-day vulnerabilities"
+      },
+      {
+        "sub": "macOS Monterey",
+        "rel": "has_vulnerability",
+        "obj": "zero-day vulnerabilities"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "is_a_form_of_exploitation",
+        "obj": "arbitrary code execution"
+      },
+      {
+        "sub": "arbitrary code execution",
+        "rel": "leads_to_device_takeover",
+        "obj": "device takeover"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "is_a_kernel_bug",
+        "obj": "kernel bug"
+      },
+      {
+        "sub": "kernel bug",
+        "rel": "is_caused_by",
+        "obj": "out-of-bounds write issue"
+      },
+      {
+        "sub": "out-of-bounds write issue",
+        "rel": "is_fixed_by",
+        "obj": "bounds checking"
+      },
+      {
+        "sub": "kernel bug",
+        "rel": "allows_arbitrary_code_execution",
+        "obj": "application privilege escalation"
+      },
+      {
+        "sub": "kernel bug",
+        "rel": "involves_kernel_privileges",
+        "obj": "kernel privileges"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "is_reported_as_active_exploitation",
+        "obj": "active exploitation"
+      },
+      {
+        "sub": "Apple",
+        "rel": "provides_security_update",
+        "obj": "vulnerability patch"
+      },
+      {
+        "sub": "vulnerability patch",
+        "rel": "is_a_patch_release",
+        "obj": "CVE-2022-32894"
+      },
+      {
+        "sub": "vulnerability patch",
+        "rel": "is_available_for",
+        "obj": "iOS 15.6.1"
+      },
+      {
+        "sub": "vulnerability patch",
+        "rel": "is_available_for",
+        "obj": "macOS Monterey 12.5.1"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "is_a_vulnerability_report",
+        "obj": "vulnerability report"
+      },
+      {
+        "sub": "kernel bug",
+        "rel": "is_a_flaw_in",
+        "obj": "iOS"
+      },
+      {
+        "sub": "kernel bug",
+        "rel": "is_a_flaw_in",
+        "obj": "macOS Monterey"
+      },
+      {
+        "sub": "out-of-bounds write issue",
+        "rel": "is_a_flaw_in_operating_system",
+        "obj": "iOS"
+      },
+      {
+        "sub": "out-of-bounds write issue",
+        "rel": "is_a_flaw_in_operating_system",
+        "obj": "macOS Monterey"
+      },
+      {
+        "sub": "iOS",
+        "rel": "is_a_version_of",
+        "obj": "iOS 15"
+      },
+      {
+        "sub": "Apple",
+        "rel": "is_a_product_of",
+        "obj": "Apple device"
+      },
+      {
+        "sub": "iPhone",
+        "rel": "is_a_device_type",
+        "obj": "Apple device"
+      },
+      {
+        "sub": "iPad",
+        "rel": "is_a_device_type",
+        "obj": "Apple device"
+      },
+      {
+        "sub": "iOS 15.6.1",
+        "rel": "is_a_version_of",
+        "obj": "iOS"
+      },
+      {
+        "sub": "macOS Monterey 12.5.1",
+        "rel": "is_a_version_of",
+        "obj": "macOS Monterey"
+      },
+      {
+        "sub": "zero-day vulnerabilities",
+        "rel": "is_a_security_flaw",
+        "obj": "security flaw"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "is_a_security_flaw",
+        "obj": "security flaw"
+      },
+      {
+        "sub": "kernel bug",
+        "rel": "is_a_security_flaw",
+        "obj": "security flaw"
+      },
+      {
+        "sub": "out-of-bounds write issue",
+        "rel": "is_a_security_flaw",
+        "obj": "security flaw"
+      },
+      {
+        "sub": "active exploitation",
+        "rel": "is_exploited_in_active_attack",
+        "obj": "zero-day vulnerabilities"
+      },
+      {
+        "sub": "Apple",
+        "rel": "has_update_release_date",
+        "obj": "security update event"
+      },
+      {
+        "sub": "security update event",
+        "rel": "is_a_security_update_event",
+        "obj": "Apple Wednesday"
+      },
+      {
+        "sub": "zero-day vulnerabilities",
+        "rel": "is_an_attack_vector",
+        "obj": "attack vector"
+      },
+      {
+        "sub": "arbitrary code execution",
+        "rel": "is_an_attack_vector",
+        "obj": "attack vector"
+      },
+      {
+        "sub": "device takeover",
+        "rel": "is_an_attack_vector",
+        "obj": "attack vector"
+      }
+    ]
+  }
+}

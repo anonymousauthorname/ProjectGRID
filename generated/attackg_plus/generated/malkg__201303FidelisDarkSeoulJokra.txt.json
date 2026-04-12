@@ -1,0 +1,217 @@
+{
+  "sample_id": "malkg__201303FidelisDarkSeoulJokra.txt",
+  "sample_index": 111,
+  "source": "malkg",
+  "file_name": "201303FidelisDarkSeoulJokra.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Sector 0x7000"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "512-byte pattern"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "1023-byte pattern"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Physical drive"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "VBR location of Windows XP system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Pattern 'HASTATI' or 'PR!NCPES'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "102,400d bytes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Windows XP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Windows 7"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "PhysicalDrive[0-9]"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Fixed drive"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Create",
+        "obj": "Thread"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Removable device"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Fixed device"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Overwrite",
+        "obj": "Master Boot Record"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Overwrite",
+        "obj": "Volume Boot Record"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Wipe",
+        "obj": "Files using pattern 'HASTATI'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Wipe",
+        "obj": "Files using pattern 'PR!NCPES'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Shut down",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "In sequence: first VBR, then MBR and other files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Not overwrite",
+        "obj": "Backup VBR"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "Same as Shamoon"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Can be recovered from",
+        "obj": "Backup VBR in EnCase"
+      },
+      {
+        "sub": "EnCase",
+        "rel": "Has value",
+        "obj": "Manual NTFS partition addition"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Allows recovery of",
+        "obj": "Logical file system and forensic artifacts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Leaves untouched",
+        "obj": "Many system files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Corrupts",
+        "obj": "File systems quickly"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Results in",
+        "obj": "More files recoverable"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Requires manual recovery with",
+        "obj": "Hex editor when multiple partitions are suspected"
+      },
+      {
+        "sub": "Hex editor",
+        "rel": "Can repair",
+        "obj": "Image using backup VBR"
+      },
+      {
+        "sub": "Hex editor",
+        "rel": "Can build",
+        "obj": "New MBR to boot affected computer"
+      },
+      {
+        "sub": "Repaired system",
+        "rel": "Has missing",
+        "obj": "Start button"
+      },
+      {
+        "sub": "Repaired system",
+        "rel": "Has malfunctioning",
+        "obj": "Desktop shortcuts to executables"
+      },
+      {
+        "sub": "Repaired XP system",
+        "rel": "Always prompts",
+        "obj": "chkdisk cycle"
+      },
+      {
+        "sub": "Repaired XP system",
+        "rel": "Operates",
+        "obj": "Abnormally"
+      },
+      {
+        "sub": "Windows 7 system",
+        "rel": "Operates",
+        "obj": "Normally after malware infection"
+      },
+      {
+        "sub": "Windows recovery CD",
+        "rel": "Fails to repair",
+        "obj": "XP system, resulting in bluescreen error"
+      }
+    ]
+  }
+}

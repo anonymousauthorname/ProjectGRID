@@ -1,0 +1,412 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_9.json",
+  "sample_index": 248,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_9.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Microsoft",
+        "type": "general-software",
+        "alias": [
+          "Microsoft"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "zeroday vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerability",
+          "the vulnerability (CVE20141761)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CVE20141761",
+        "type": "vulnerability",
+        "alias": [
+          "this vulnerability"
+        ],
+        "mother entity": "zeroday vulnerability"
+      },
+      {
+        "name": "Microsoft Word",
+        "type": "general-software",
+        "alias": [
+          "Microsoft Word 2010",
+          "Microsoft Word as the email viewer",
+          "Microsoft Office 2003",
+          "Word"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Word 2010",
+        "type": "general-software",
+        "alias": [
+          "Microsoft Word 2010"
+        ],
+        "mother entity": "Microsoft Word"
+      },
+      {
+        "name": "Microsoft Outlook 2007",
+        "type": "general-software",
+        "alias": [
+          "Microsoft Outlook"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Outlook 2010",
+        "type": "general-software",
+        "alias": [
+          "Microsoft Outlook"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Outlook 2013",
+        "type": "general-software",
+        "alias": [
+          "Microsoft Outlook"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "RTF file",
+        "type": "file",
+        "alias": [
+          "specially crafted files",
+          "RTF email message",
+          "said type of file"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "RTF email message",
+        "type": "file",
+        "alias": [
+          "RTF email message"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Office 2003",
+        "type": "general-software",
+        "alias": [
+          "affected software",
+          "later versions of the software"
+        ],
+        "mother entity": "Microsoft Word"
+      },
+      {
+        "name": "exploit code",
+        "type": "hacker-tool",
+        "alias": [
+          "exploit code",
+          "malicious code"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "preliminary details",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Trend Micro Deep Security",
+        "type": "security-product",
+        "alias": [
+          "Trend Micro"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "deep packet inspection (DPI) rule",
+        "type": "course-of-action",
+        "alias": [
+          "new deep packet inspection (DPI) rule"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "HEURRTFEXP.A",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "TROJARTIEF.NSA",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "TROJARTIEF.NSB",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Protected View",
+        "type": "general-software",
+        "alias": [
+          "Word to always open said type of file in Protected View"
+        ],
+        "mother entity": "Microsoft Word"
+      },
+      {
+        "name": "fixtool",
+        "type": "hacker-tool",
+        "alias": [
+          "a fixtool"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Microsofts initial bulletin",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "security bulletin"
+        ],
+        "mother entity": "Microsoft"
+      },
+      {
+        "name": "users",
+        "type": "identity",
+        "alias": [
+          "users"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "April Patch Tuesday",
+        "type": "campaign",
+        "alias": [
+          "Microsofts April Patch Tuesday"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Fonts and Keyboard",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ransomware",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Connected Home",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "April 8th",
+        "type": "date",
+        "alias": [
+          "April 8th"
+        ],
+        "mother entity": "Microsoft Office 2003"
+      },
+      {
+        "name": "later versions of the software",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": "Microsoft Office 2003"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft",
+        "rel": "released a security bulletin announcing",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "zeroday vulnerability"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "targeted attacks directed at",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Microsoft Word 2010"
+      },
+      {
+        "sub": "CVE20141761",
+        "rel": "could allow a remote attacker to execute commands remotely via",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "RTF file"
+      },
+      {
+        "sub": "user",
+        "rel": "opens",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "RTF file"
+      },
+      {
+        "sub": "Microsoft Word",
+        "rel": "opens",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "RTF email message"
+      },
+      {
+        "sub": "Trend Micro Deep Security",
+        "rel": "released",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "deep packet inspection (DPI) rule"
+      },
+      {
+        "sub": "deep packet inspection (DPI) rule",
+        "rel": "protect against",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "exploit code"
+      },
+      {
+        "sub": "deep packet inspection (DPI) rule",
+        "rel": "detects",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "HEURRTFEXP.A"
+      },
+      {
+        "sub": "deep packet inspection (DPI) rule",
+        "rel": "detects",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "TROJARTIEF.NSA"
+      },
+      {
+        "sub": "deep packet inspection (DPI) rule",
+        "rel": "detects",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "TROJARTIEF.NSB"
+      },
+      {
+        "sub": "Microsoft Word",
+        "rel": "is the default email reader for",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Microsoft Outlook 2007"
+      },
+      {
+        "sub": "Microsoft Word",
+        "rel": "is the default email reader for",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Microsoft Outlook 2010"
+      },
+      {
+        "sub": "Microsoft Word",
+        "rel": "is the default email reader for",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Microsoft Outlook 2013"
+      },
+      {
+        "sub": "Microsoft Office 2003",
+        "rel": "ends support on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "April 8th"
+      },
+      {
+        "sub": "Microsofts initial bulletin",
+        "rel": "included",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "preliminary details"
+      },
+      {
+        "sub": "fixtool",
+        "rel": "address",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "CVE20141761"
+      },
+      {
+        "sub": "April Patch Tuesday",
+        "rel": "Fixes",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "CVE20141761"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "list as affected software for",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "CVE20141761"
+      },
+      {
+        "sub": "users",
+        "rel": "upgrade to",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "later versions of the software"
+      },
+      {
+        "sub": "CVE20141761",
+        "rel": "exploited via",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "RTF file"
+      },
+      {
+        "sub": "Fonts and Keyboard",
+        "rel": "has vulnerabilities",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE20141761"
+      }
+    ]
+  }
+}

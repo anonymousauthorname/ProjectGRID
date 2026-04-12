@@ -1,0 +1,686 @@
+{
+  "sample_id": "securenlp__Derusbi_Server_Analysis-Final",
+  "sample_index": 153,
+  "source": "securenlp",
+  "file_name": "Derusbi_Server_Analysis-Final",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Derusbi",
+        "type": "Malware"
+      },
+      {
+        "name": "Windows Firewall",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Windows Filtering Platform",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "svchost",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "ZhuDongFangYu.exe",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "PCC_SOCK",
+        "type": "Tool"
+      },
+      {
+        "name": "IOCTL_IP_SET_FIREWALL_HOOK",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "HKLM\\SOFTWARE\\Microsoft\\Rpc\\Security",
+        "type": "Indicator"
+      },
+      {
+        "name": "SeDebugPrivilege",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "SeLoadDriverPrivilege",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "SeShutdownPrivilege",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "SeTcbPrivilege",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "40,000 to 45,000",
+        "type": "Indicator"
+      },
+      {
+        "name": "93144EB0-8E3E-4591-B307-8EEBFE7DB28F",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "XOR",
+        "type": "Tool"
+      },
+      {
+        "name": "ROR",
+        "type": "Tool"
+      },
+      {
+        "name": "PCC_CMD",
+        "type": "Tool"
+      },
+      {
+        "name": "PCC_PROXY",
+        "type": "Tool"
+      },
+      {
+        "name": "PCC_FILE",
+        "type": "Tool"
+      },
+      {
+        "name": "LZO",
+        "type": "Malware"
+      },
+      {
+        "name": "VictimInfoPacket",
+        "type": "Indicator"
+      },
+      {
+        "name": "PacketHeader",
+        "type": "Indicator"
+      },
+      {
+        "name": "PCCCMDPacketHeader",
+        "type": "Indicator"
+      },
+      {
+        "name": "Apache/2.2.3 (Red Hat)",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "handshake",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "remote shell",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "network tunneling",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "file management",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "CommLoop",
+        "type": "Tool"
+      },
+      {
+        "name": "PCC_BASEMOD",
+        "type": "Tool"
+      },
+      {
+        "name": "PCC_FILE::ProcessPacket",
+        "type": "Software"
+      },
+      {
+        "name": "PCC_FILE::ProcessPacketEx",
+        "type": "Software"
+      },
+      {
+        "name": "PCC_FILE::ReadWaitingData",
+        "type": "Software"
+      },
+      {
+        "name": "PCC_PROXY::ProcessPacket",
+        "type": "Software"
+      },
+      {
+        "name": "PCC_PROXY::ReadWaitingData",
+        "type": "Software"
+      },
+      {
+        "name": "PCC_PROXY::MainThread",
+        "type": "Software"
+      },
+      {
+        "name": "PCC_PROXY::fShutdown",
+        "type": "Software"
+      },
+      {
+        "name": "PCC_PROXY::fNetworkEnabled",
+        "type": "Software"
+      },
+      {
+        "name": "PCCFilePacketHeader",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x0C",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x10",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x14",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x18",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x1C",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x20",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x24",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x28",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x2C",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x30",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x34",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x38",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x3C",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x40",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x44",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x48",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x4C",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x08",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x04",
+        "type": "Indicator"
+      },
+      {
+        "name": "ZwLoadDriver",
+        "type": "Indicator"
+      },
+      {
+        "name": "{93144EB0-8E3E-4591-B307-8EEBFE7DB28F}",
+        "type": "Indicator"
+      },
+      {
+        "name": "tmp1.dat",
+        "type": "Indicator"
+      },
+      {
+        "name": "Derusbi server variant",
+        "type": "ThreatActor"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Derusbi",
+        "rel": "HOOKS",
+        "obj": "Windows Firewall"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "HOOKS",
+        "obj": "Windows Filtering Platform"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "runs as",
+        "obj": "svchost"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "avoids driver installation if present",
+        "obj": "ZhuDongFangYu.exe"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "USES",
+        "obj": "PCC_SOCK"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "USES",
+        "obj": "IOCTL_IP_SET_FIREWALL_HOOK"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "reades infection id from",
+        "obj": "HKLM\\SOFTWARE\\Microsoft\\Rpc\\Security"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "REQUESTS",
+        "obj": "SeDebugPrivilege"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "REQUESTS",
+        "obj": "SeLoadDriverPrivilege"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "REQUESTS",
+        "obj": "SeShutdownPrivilege"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "REQUESTS",
+        "obj": "SeTcbPrivilege"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "listens on port range",
+        "obj": "40,000 to 45,000"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "instances driver with device path",
+        "obj": "93144EB0-8E3E-4591-B307-8EEBFE7DB28F"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "USES",
+        "obj": "XOR"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "USES",
+        "obj": "ROR"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "has module",
+        "obj": "PCC_CMD"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "has module",
+        "obj": "PCC_PROXY"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "has module",
+        "obj": "PCC_FILE"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "USES",
+        "obj": "CommLoop"
+      },
+      {
+        "sub": "PCC_CMD",
+        "rel": "PERFORMS",
+        "obj": "remote shell"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "PERFORMS",
+        "obj": "network tunneling"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "PERFORMS",
+        "obj": "file management"
+      },
+      {
+        "sub": "VictimInfoPacket",
+        "rel": "FOLLOWS",
+        "obj": "PacketHeader"
+      },
+      {
+        "sub": "PacketHeader",
+        "rel": "FOLLOWS",
+        "obj": "PCCCMDPacketHeader"
+      },
+      {
+        "sub": "PCC_CMD",
+        "rel": "derives from",
+        "obj": "PCC_BASEMOD"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "derives from",
+        "obj": "PCC_BASEMOD"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "derives from",
+        "obj": "PCC_BASEMOD"
+      },
+      {
+        "sub": "PCC_CMD",
+        "rel": "USES",
+        "obj": "XOR"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "USES",
+        "obj": "XOR"
+      },
+      {
+        "sub": "PacketHeader",
+        "rel": "USES",
+        "obj": "LZO"
+      },
+      {
+        "sub": "handshake",
+        "rel": "validates with",
+        "obj": "Derusbi"
+      },
+      {
+        "sub": "handshake",
+        "rel": "USES",
+        "obj": "ROR"
+      },
+      {
+        "sub": "handshake",
+        "rel": "USES",
+        "obj": "XOR"
+      },
+      {
+        "sub": "Apache/2.2.3 (Red Hat)",
+        "rel": "EMULATES",
+        "obj": "Derusbi"
+      },
+      {
+        "sub": "CommLoop",
+        "rel": "USES",
+        "obj": "PCC_BASEMOD"
+      },
+      {
+        "sub": "PCC_BASEMOD",
+        "rel": "is base class of",
+        "obj": "PCC_CMD"
+      },
+      {
+        "sub": "PCC_BASEMOD",
+        "rel": "is base class of",
+        "obj": "PCC_PROXY"
+      },
+      {
+        "sub": "PCC_BASEMOD",
+        "rel": "is base class of",
+        "obj": "PCC_FILE"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "has member function",
+        "obj": "PCC_FILE::ProcessPacket"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "has member function",
+        "obj": "PCC_FILE::ProcessPacketEx"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "has member function",
+        "obj": "PCC_FILE::ReadWaitingData"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "has member function",
+        "obj": "PCC_PROXY::ProcessPacket"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "has member function",
+        "obj": "PCC_PROXY::ReadWaitingData"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "has member function",
+        "obj": "PCC_PROXY::MainThread"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "has member variable",
+        "obj": "PCC_PROXY::fShutdown"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "has member variable",
+        "obj": "PCC_PROXY::fNetworkEnabled"
+      },
+      {
+        "sub": "PCC_CMD",
+        "rel": "has member function",
+        "obj": "PCC_CMD::ProcessPacket"
+      },
+      {
+        "sub": "PCC_CMD",
+        "rel": "has member function",
+        "obj": "PCC_CMD::ProcessPacketEx"
+      },
+      {
+        "sub": "PCC_BASEMOD",
+        "rel": "is derived from",
+        "obj": "PCC_FILE"
+      },
+      {
+        "sub": "PCC_BASEMOD",
+        "rel": "is derived from",
+        "obj": "PCC_CMD"
+      },
+      {
+        "sub": "PCC_BASEMOD",
+        "rel": "is derived from",
+        "obj": "PCC_PROXY"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "uses packet header",
+        "obj": "PCCFilePacketHeader"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "uses packet header",
+        "obj": "PCCFilePacketHeader"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x0C"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x10"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x14"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x18"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x1C"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x20"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x24"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x28"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x2C"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x30"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x34"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x38"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x3C"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x40"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x44"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x48"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "supports command",
+        "obj": "0x4C"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "supports command",
+        "obj": "0x04"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "supports command",
+        "obj": "0x08"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "supports command",
+        "obj": "0x0C"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "supports command",
+        "obj": "0x10"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "supports command",
+        "obj": "0x14"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "USES",
+        "obj": "PCC_BASEMOD"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "USES",
+        "obj": "PCC_CMD"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "USES",
+        "obj": "PCC_FILE"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "USES",
+        "obj": "PCC_PROXY"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "drops file",
+        "obj": "tmp1.dat"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "uses device driver",
+        "obj": "{93144EB0-8E3E-4591-B307-8EEBFE7DB28F}"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "uses function",
+        "obj": "ZwLoadDriver"
+      }
+    ]
+  }
+}

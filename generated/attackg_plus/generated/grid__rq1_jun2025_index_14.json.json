@@ -1,0 +1,457 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_14.json",
+  "sample_index": 206,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_14.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Mal/BadSrcC",
+        "rel": "Has vulnerability",
+        "obj": "SQL injection"
+      },
+      {
+        "sub": "Facebook",
+        "rel": "Operate",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "MySpace",
+        "rel": "Operate",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Bebo",
+        "rel": "Operate",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "hi5",
+        "rel": "Operate",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "GeoCities",
+        "rel": "Operate",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Facebook",
+        "rel": "Has URL",
+        "obj": "\"your friends name sent you a message: is it u there?\""
+      },
+      {
+        "sub": "Mal/BadSrcC",
+        "rel": "Use",
+        "obj": "Cached Google page"
+      },
+      {
+        "sub": "Mal/BadSrcC",
+        "rel": "Write",
+        "obj": "Malicious script"
+      },
+      {
+        "sub": "Mal/BadSrcC",
+        "rel": "Modify",
+        "obj": "Redirect users to a different site"
+      },
+      {
+        "sub": "Social media platforms",
+        "rel": "Locate at",
+        "obj": "Initial message"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Conduct",
+        "obj": "Active reconnaissance"
+      },
+      {
+        "sub": "Mal/BadSrcC",
+        "rel": "Construct",
+        "obj": "SQL-injected website"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Construct",
+        "obj": "redirect script"
+      },
+      {
+        "sub": "Mal/VidHtmlA",
+        "rel": "Construct",
+        "obj": "fake video page"
+      },
+      {
+        "sub": "Mal/VidHtmlB",
+        "rel": "Construct",
+        "obj": "fake video page"
+      },
+      {
+        "sub": "Mal/VidHtmlC",
+        "rel": "Construct",
+        "obj": "fake video page"
+      },
+      {
+        "sub": "Mal/EncPkGA",
+        "rel": "Use",
+        "obj": "remote download from malicious site"
+      },
+      {
+        "sub": "Mal/EncPkGA",
+        "rel": "Belong to",
+        "obj": "Zlob family"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "compromised websites"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "stolen or compromised infrastructure"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Spearphishing-like method"
+      },
+      {
+        "sub": "Spearphishing-like method",
+        "rel": "Has value",
+        "obj": "Facebook message"
+      },
+      {
+        "sub": "Facebook message",
+        "rel": "Has URL",
+        "obj": "Malicious link"
+      },
+      {
+        "sub": "Malicious link",
+        "rel": "Redirect to",
+        "obj": "Compromised page"
+      },
+      {
+        "sub": "Compromised page",
+        "rel": "Use",
+        "obj": "SQL injection"
+      },
+      {
+        "sub": "SQL injection",
+        "rel": "Leverage",
+        "obj": "Social engineering"
+      },
+      {
+        "sub": "Social engineering",
+        "rel": "Operate",
+        "obj": "Trusted communication channels"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Belong to",
+        "obj": "Tactic"
+      },
+      {
+        "sub": "Mal/VidHtmlA",
+        "rel": "Use",
+        "obj": "flashupdate.exe"
+      },
+      {
+        "sub": "flashupdate.exe",
+        "rel": "Has value",
+        "obj": "W32/KoobfaGen"
+      },
+      {
+        "sub": "Mal/VidHtmlA",
+        "rel": "Execute",
+        "obj": "malicious code"
+      },
+      {
+        "sub": "flashupdate.exe",
+        "rel": "Operate",
+        "obj": "background"
+      },
+      {
+        "sub": "flashupdate.exe",
+        "rel": "Modify",
+        "obj": "worm's lifecycle"
+      },
+      {
+        "sub": "flashupdate.exe",
+        "rel": "Use",
+        "obj": "legitimate browser-based processes"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Use",
+        "obj": "document.referrer"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Modify",
+        "obj": "redirections"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Use",
+        "obj": "fake video content"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Use",
+        "obj": "\"heres a video\""
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Has value",
+        "obj": "defense evasion"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Use",
+        "obj": "obfuscated or misleading content"
+      },
+      {
+        "sub": "The adversary",
+        "rel": "Operate",
+        "obj": "Browser"
+      },
+      {
+        "sub": "The adversary",
+        "rel": "Operate",
+        "obj": "Network traffic"
+      },
+      {
+        "sub": "The adversary",
+        "rel": "Use",
+        "obj": "document.referrer"
+      },
+      {
+        "sub": "The adversary",
+        "rel": "Infer",
+        "obj": "User behavior"
+      },
+      {
+        "sub": "The adversary",
+        "rel": "Infer",
+        "obj": "Network context"
+      },
+      {
+        "sub": "The adversary",
+        "rel": "Tailor",
+        "obj": "Subsequent attacks"
+      },
+      {
+        "sub": "The adversary",
+        "rel": "Base",
+        "obj": "User's online activity"
+      },
+      {
+        "sub": "The adversary",
+        "rel": "Base",
+        "obj": "User's environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has filename",
+        "obj": "flashupdate.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Fake antivirus program"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "User behavior"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Capture",
+        "obj": "System interactions"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Capture",
+        "obj": "User activity patterns"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Redirect users"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Collect",
+        "obj": "User habits"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Collect",
+        "obj": "System configurations"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Use",
+        "obj": "Mal/VidHtmlA"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Use",
+        "obj": "Mal/VidHtmlB"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Use",
+        "obj": "Mal/VidHtmlC"
+      },
+      {
+        "sub": "Mal/JSHtmlA",
+        "rel": "Operate",
+        "obj": "Remote server"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Operate",
+        "obj": "Remote server"
+      },
+      {
+        "sub": "Mal/VidHtmlA",
+        "rel": "Operate",
+        "obj": "Remote server"
+      },
+      {
+        "sub": "Mal/VidHtmlB",
+        "rel": "Operate",
+        "obj": "Remote server"
+      },
+      {
+        "sub": "Mal/VidHtmlC",
+        "rel": "Operate",
+        "obj": "Remote server"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Modify",
+        "obj": "Chain of 302 redirects"
+      },
+      {
+        "sub": "Mal/VidHtmlA",
+        "rel": "Modify",
+        "obj": "Chain of 302 redirects"
+      },
+      {
+        "sub": "Mal/VidHtmlB",
+        "rel": "Modify",
+        "obj": "Chain of 302 redirects"
+      },
+      {
+        "sub": "Mal/VidHtmlC",
+        "rel": "Modify",
+        "obj": "Chain of 302 redirects"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Has value",
+        "obj": "Dynamic redirects"
+      },
+      {
+        "sub": "Mal/VidHtmlA",
+        "rel": "Has value",
+        "obj": "Dynamic redirects"
+      },
+      {
+        "sub": "Mal/VidHtmlB",
+        "rel": "Has value",
+        "obj": "Dynamic redirects"
+      },
+      {
+        "sub": "Mal/VidHtmlC",
+        "rel": "Has value",
+        "obj": "Dynamic redirects"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Has value",
+        "obj": "Remote file downloads"
+      },
+      {
+        "sub": "Mal/VidHtmlA",
+        "rel": "Has value",
+        "obj": "Remote file downloads"
+      },
+      {
+        "sub": "Mal/VidHtmlB",
+        "rel": "Has value",
+        "obj": "Remote file downloads"
+      },
+      {
+        "sub": "Mal/VidHtmlC",
+        "rel": "Has value",
+        "obj": "Remote file downloads"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "Construct",
+        "obj": "Chain of 302 redirects"
+      },
+      {
+        "sub": "Mal/VidHtmlA",
+        "rel": "Construct",
+        "obj": "Chain of 302 redirects"
+      },
+      {
+        "sub": "Mal/VidHtmlB",
+        "rel": "Construct",
+        "obj": "Chain of 302 redirects"
+      },
+      {
+        "sub": "Mal/VidHtmlC",
+        "rel": "Construct",
+        "obj": "Chain of 302 redirects"
+      },
+      {
+        "sub": "Mal/EncPkGA",
+        "rel": "Use",
+        "obj": "Remote downloads"
+      },
+      {
+        "sub": "Mal/EncPkGA",
+        "rel": "Use",
+        "obj": "Redirects"
+      },
+      {
+        "sub": "Mal/EncPkGA",
+        "rel": "Has value",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "Mal/EncPkGA",
+        "rel": "Write",
+        "obj": "External servers"
+      },
+      {
+        "sub": "Mal/EncPkGA",
+        "rel": "Operate",
+        "obj": "Background data exfiltration"
+      }
+    ]
+  }
+}

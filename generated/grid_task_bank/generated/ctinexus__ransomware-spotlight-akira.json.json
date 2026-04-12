@@ -1,0 +1,209 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-akira.json",
+  "sample_index": 91,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-akira.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Cisco",
+        "type": "security-product",
+        "alias": [
+          "Cisco"
+        ]
+      },
+      {
+        "name": "Sept. 6, 2023",
+        "type": "date"
+      },
+      {
+        "name": "Akira ransomware operators",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "malicious actors"
+        ]
+      },
+      {
+        "name": "CVE-2023-20269",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Cisco Adaptive Security Appliance (ASA) software",
+        "type": "general-software"
+      },
+      {
+        "name": "Cisco Firepower Thread Defense (FTD) software",
+        "type": "general-software"
+      },
+      {
+        "name": "clientless SSL VPN session",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Sentinel One",
+        "type": "security-product"
+      },
+      {
+        "name": "a video analyzing an Akira ransomware variant",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "Megazord",
+        "type": "malware",
+        "alias": [
+          "Akira ransomware variant"
+        ]
+      },
+      {
+        "name": "August 2023",
+        "type": "date"
+      },
+      {
+        "name": "Power Rangers formation",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "POWERRANGES",
+        "type": "file-extension"
+      },
+      {
+        "name": "powerranges.txt",
+        "type": "file"
+      },
+      {
+        "name": "TOX messenger",
+        "type": "infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cisco",
+        "rel": "released a security advisory on",
+        "rel_type": [
+          "course-of-action"
+        ],
+        "obj": "Sept. 6, 2023"
+      },
+      {
+        "sub": "Akira ransomware operators",
+        "rel": "exploited",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "is a zero-day vulnerability in",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "two of their products' remote access VPN feature"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "reported that",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "malicious actors who exploit CVE-2023-20269"
+      },
+      {
+        "sub": "malicious actors who exploit CVE-2023-20269",
+        "rel": "can identify",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "valid credentials"
+      },
+      {
+        "sub": "valid credentials",
+        "rel": "could be abused to establish",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "unauthorized remote access VPN sessions"
+      },
+      {
+        "sub": "victims running Cisco ASA Software Release 9.16 or earlier",
+        "rel": "can establish",
+        "rel_type": [
+          "establishes"
+        ],
+        "obj": "clientless SSL VPN session"
+      },
+      {
+        "sub": "Sentinel One",
+        "rel": "released",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "a video analyzing an Akira ransomware variant"
+      },
+      {
+        "sub": "a video analyzing an Akira ransomware variant",
+        "rel": "analyzing",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "an Akira ransomware variant"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "emerged in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "August 2023"
+      },
+      {
+        "sub": "this variant",
+        "rel": "appears to be referencing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a Power Rangers formation"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "encrypts files with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the \"POWERRANGES\" file extension"
+      },
+      {
+        "sub": "the ransom note",
+        "rel": "is named",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "powerranges.txt"
+      },
+      {
+        "sub": "the ransom note",
+        "rel": "instructs victims to contact",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the ransomware actor via TOX messenger"
+      }
+    ]
+  }
+}

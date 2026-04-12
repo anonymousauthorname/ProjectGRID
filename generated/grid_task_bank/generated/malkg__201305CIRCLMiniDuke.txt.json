@@ -1,0 +1,1014 @@
+{
+  "sample_id": "malkg__201305CIRCLMiniDuke.txt",
+  "sample_index": 130,
+  "source": "malkg",
+  "file_name": "201305CIRCLMiniDuke.txt",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Sample A",
+        "type": "file",
+        "alias": [
+          "Stage 3 sample from Kaspersky reports"
+        ]
+      },
+      {
+        "name": "Sample B",
+        "type": "file",
+        "alias": [
+          "Derrived from Sample A",
+          "exhaustive backdoor"
+        ]
+      },
+      {
+        "name": "Miniduke",
+        "type": "malware",
+        "alias": [
+          "malware labeled as Miniduke by Kaspersky Labs"
+        ]
+      },
+      {
+        "name": "Kaspersky Labs",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "CIRCL",
+        "type": "research-group",
+        "alias": [
+          "Computer Incident Response Center Luxembourg"
+        ]
+      },
+      {
+        "name": "Computer Incident Response Center Luxembourg",
+        "type": "research-group"
+      },
+      {
+        "name": "HTTP controlled backdoor",
+        "type": "malware",
+        "alias": [
+          "backdoor"
+        ]
+      },
+      {
+        "name": "UCL decompression",
+        "type": "hacker-tool",
+        "alias": [
+          "deobfuscation"
+        ]
+      },
+      {
+        "name": "v1.ex_",
+        "type": "file"
+      },
+      {
+        "name": "1e1b0d16a16cf5c7f3a7c053ce78f515",
+        "type": "hash",
+        "alias": [
+          "MD5 of Sample A"
+        ]
+      },
+      {
+        "name": "de8e9def2553f4d211cc0b34a3972d9814f156aa",
+        "type": "hash",
+        "alias": [
+          "SHA1 of Sample A"
+        ]
+      },
+      {
+        "name": "a1015f0b99106ae2852d740f366e15c1d5c711f57680a2f04be0283e8310f69e",
+        "type": "hash",
+        "alias": [
+          "SHA-256 of Sample A"
+        ]
+      },
+      {
+        "name": "175767 Bytes (172KB)",
+        "type": "filesize"
+      },
+      {
+        "name": "b61d409b6c1066e0c1fc4fe15f6f367be31fa2cc555cfc0ef7eeb8e5759380c0",
+        "type": "hash",
+        "alias": [
+          "SHA-256 of Sample B"
+        ]
+      },
+      {
+        "name": "1a2edd2db71fd41e963011da8caf26cc",
+        "type": "hash",
+        "alias": [
+          "MD5 of Sample B"
+        ]
+      },
+      {
+        "name": "f344becb220de6ﬀa4d7223bdb82146d3b1c93ed",
+        "type": "hash",
+        "alias": [
+          "SHA1 of Sample B"
+        ]
+      },
+      {
+        "name": "news.grouptumbler.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "http://news.grouptumbler.com/",
+        "type": "url"
+      },
+      {
+        "name": "/news/feed.php?i=",
+        "type": "url-path"
+      },
+      {
+        "name": "i=",
+        "type": "variable-part-of-url"
+      },
+      {
+        "name": "Mozilla/4.0",
+        "type": "user-agent"
+      },
+      {
+        "name": "Accept: */*",
+        "type": "http-header"
+      },
+      {
+        "name": "wininet.dll",
+        "type": "file",
+        "alias": [
+          "decrypted module name"
+        ]
+      },
+      {
+        "name": "InternetOpenA",
+        "type": "function"
+      },
+      {
+        "name": "InternetConnectA",
+        "type": "function"
+      },
+      {
+        "name": "InternetSetOptionA",
+        "type": "function"
+      },
+      {
+        "name": "HttpOpenRequestA",
+        "type": "function"
+      },
+      {
+        "name": "HttpSendRequestA",
+        "type": "function"
+      },
+      {
+        "name": "HttpQueryInfoA",
+        "type": "function"
+      },
+      {
+        "name": "InternetReadFile",
+        "type": "function"
+      },
+      {
+        "name": "InternetCloseHandle",
+        "type": "function"
+      },
+      {
+        "name": "80",
+        "type": "port-number"
+      },
+      {
+        "name": "61",
+        "type": "timeout"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\ApplicationManager",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "AppID",
+        "type": "value",
+        "alias": [
+          "value created in registry"
+        ]
+      },
+      {
+        "name": "GetTickcount()",
+        "type": "function"
+      },
+      {
+        "name": "custom BASE64 encoding",
+        "type": "encoding-method"
+      },
+      {
+        "name": "200.63.46.33",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "173.194.70.101",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "dvdform.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "www.dvdform.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "www.p90xprice.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "dexterseason.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "www.dexterseason.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "news.grouptumbler.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "www.babylearningdvd.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "turbofirecoupon.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "www.turbofirecoupon.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "smallvillagedvdset.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "www.smallvillagedvdset.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "miamivicedvdboxset.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "www.miamivicedvdboxset.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "www.sexandthecityondvd.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "www.sherlockholmesondvd.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "trxforcekitoriginal.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "www.trxforcekitoriginal.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "weddingdressestoday.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "www.maxheadroomdvdseries.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "Panamaserver.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "404 Not Found",
+        "type": "error-response"
+      },
+      {
+        "name": "CosmicDuke",
+        "type": "malware",
+        "alias": [
+          "latest MiniDuke evolution"
+        ]
+      },
+      {
+        "name": "F-Secure",
+        "type": "research-group"
+      },
+      {
+        "name": "BGP Ranking",
+        "type": "information-source"
+      },
+      {
+        "name": "Columbus network",
+        "type": "ISP"
+      },
+      {
+        "name": "Advanced Communication Network, S.A.",
+        "type": "ISP"
+      },
+      {
+        "name": "Ch Group Corp.",
+        "type": "organization"
+      },
+      {
+        "name": "Manuel I. Cabrera Ch.",
+        "type": "person"
+      },
+      {
+        "name": "http://bgpranking.circl.lu/",
+        "type": "url"
+      },
+      {
+        "name": "http://www.securelist.com/en/downloads/vlpdfs/themysteryofthepdf0-dayassemblermicrobackdoor.pdf",
+        "type": "url"
+      },
+      {
+        "name": "http://www.oberhumer.com/opensource/ucl/",
+        "type": "url"
+      },
+      {
+        "name": "http://www.f-secure.com/static/doc/labs_global/Whitepapers/cosmicduke_whitepaper.pdf",
+        "type": "url"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CIRCL",
+        "rel": "conducted analysis of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Miniduke sample"
+      },
+      {
+        "sub": "Kaspersky Labs",
+        "rel": "labeled as",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Miniduke"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "is from",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Kaspersky reports"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "is derived from",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Sample A"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "is a",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "HTTP controlled backdoor"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "is contained in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Sample A"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "can be categorized as",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "container"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "obfuscating and compressing",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the real payload"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "was debugged until",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Sample B’s decompression finished"
+      },
+      {
+        "sub": "The memory segment",
+        "rel": "was dumped to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "disk"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Sample B execution"
+      },
+      {
+        "sub": "The attacker",
+        "rel": "controls the remote computer via",
+        "rel_type": [
+          "controls"
+        ],
+        "obj": "HTTP GET and POST requests"
+      },
+      {
+        "sub": "The request",
+        "rel": "is encoded in",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "custom BASE64 encoding"
+      },
+      {
+        "sub": "news.grouptumbler.com",
+        "rel": "resolves to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "173.194.70.101"
+      },
+      {
+        "sub": "news.grouptumbler.com",
+        "rel": "previously resolved to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "200.63.46.33"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "dvdform.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "www.p90xprice.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "dexterseason.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "www.dexterseason.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "news.grouptumbler.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "www.babylearningdvd.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "turbofirecoupon.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "www.turbofirecoupon.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "smallvillagedvdset.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "www.smallvillagedvdset.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "miamivicedvdboxset.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "www.miamivicedvdboxset.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "www.sexandthecityondvd.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "www.sherlockholmesondvd.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "trxforcekitoriginal.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "www.trxforcekitoriginal.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "weddingdressestoday.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosted",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "www.maxheadroomdvdseries.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "was announced by",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "Panamaserver.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "was announced by",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "Columbus network"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "was announced by",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "Advanced Communication Network, S.A."
+      },
+      {
+        "sub": "Manuel I. Cabrera Ch.",
+        "rel": "is a person at",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Panamaserver.com"
+      },
+      {
+        "sub": "F-Secure",
+        "rel": "released an analysis of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "CosmicDuke"
+      },
+      {
+        "sub": "CosmicDuke",
+        "rel": "is a",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "custom BASE64 encoding"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "InternetOpenA"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "InternetConnectA"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "InternetSetOptionA"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "HttpOpenRequestA"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "HttpSendRequestA"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "HttpQueryInfoA"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "InternetReadFile"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "InternetCloseHandle"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "GetTickcount()"
+      },
+      {
+        "sub": "The malware",
+        "rel": "creates in",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "HKCU\\Software\\Microsoft\\ApplicationManager"
+      },
+      {
+        "sub": "The malware",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "value 'AppID'"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "move a file"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "copy a file"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "delete a file"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "get current directory"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "change current directory"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "delete directory"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "create directory"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "kill a process"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "execute command"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "show backdoor configuration"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "change to temp directory"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "get a list of device drives"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "get uptime of machine"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "get path to the backdoor, computer name, username, process information"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "exit"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "get the content of a directory"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "execute command interactively"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "execute command interactively as specified domain user"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "upload a file"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "download a file"
+      },
+      {
+        "sub": "The malware",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "get a list of running processes"
+      },
+      {
+        "sub": "The malware",
+        "rel": "connects via",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "HTTP GET and POST requests"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a domain with a fixed path"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "user agent Mozilla/4.0"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "accept header */*"
+      },
+      {
+        "sub": "The malware",
+        "rel": "creates",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "value 'AppID'"
+      },
+      {
+        "sub": "The malware",
+        "rel": "creates",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "HKCU\\Software\\Microsoft\\ApplicationManager"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "80"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "61"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the registry key HKCU\\Software\\Microsoft\\ApplicationManager"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the value AppID"
+      }
+    ]
+  }
+}

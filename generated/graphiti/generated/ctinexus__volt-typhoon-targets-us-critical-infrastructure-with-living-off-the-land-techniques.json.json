@@ -1,0 +1,122 @@
+{
+  "sample_id": "ctinexus__volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques.json",
+  "sample_index": 75,
+  "source": "ctinexus",
+  "file_name": "volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Volt Typhoon",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Fortinet FortiGuard",
+        "type": "Software"
+      },
+      {
+        "name": "Active Directory",
+        "type": "Software"
+      },
+      {
+        "name": "ASUS",
+        "type": "Organization"
+      },
+      {
+        "name": "Cisco",
+        "type": "Organization"
+      },
+      {
+        "name": "D-Link",
+        "type": "Organization"
+      },
+      {
+        "name": "NETGEAR",
+        "type": "Organization"
+      },
+      {
+        "name": "Zyxel",
+        "type": "Organization"
+      },
+      {
+        "name": "SOHO network edge devices",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "HTTP",
+        "type": "Software"
+      },
+      {
+        "name": "SSH",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Volt Typhoon",
+        "rel": "achieves initial access through",
+        "obj": "Fortinet FortiGuard"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "extracts credentials from",
+        "obj": "Active Directory"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "proxies network traffic through",
+        "obj": "SOHO network edge devices"
+      },
+      {
+        "sub": "ASUS",
+        "rel": "MANUFACTURES",
+        "obj": "SOHO network edge devices"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "MANUFACTURES",
+        "obj": "SOHO network edge devices"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "MANUFACTURES",
+        "obj": "SOHO network edge devices"
+      },
+      {
+        "sub": "NETGEAR",
+        "rel": "MANUFACTURES",
+        "obj": "SOHO network edge devices"
+      },
+      {
+        "sub": "Zyxel",
+        "rel": "MANUFACTURES",
+        "obj": "SOHO network edge devices"
+      },
+      {
+        "sub": "SOHO network edge devices",
+        "rel": "exposes management interface",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "SOHO network edge devices",
+        "rel": "exposes management interface",
+        "obj": "SSH"
+      }
+    ]
+  }
+}

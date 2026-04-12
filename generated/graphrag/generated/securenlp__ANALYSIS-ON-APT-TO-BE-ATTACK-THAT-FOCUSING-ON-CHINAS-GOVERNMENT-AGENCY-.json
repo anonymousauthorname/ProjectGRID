@@ -1,0 +1,157 @@
+{
+  "sample_id": "securenlp__ANALYSIS-ON-APT-TO-BE-ATTACK-THAT-FOCUSING-ON-CHINAS-GOVERNMENT-AGENCY-",
+  "sample_index": 181,
+  "source": "securenlp",
+  "file_name": "ANALYSIS-ON-APT-TO-BE-ATTACK-THAT-FOCUSING-ON-CHINAS-GOVERNMENT-AGENCY-",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT-TOCS",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "COBALT STRIKE",
+        "type": "TOOL"
+      },
+      {
+        "name": "ANTII LABS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "RAPEL MUDGE",
+        "type": "PERSON"
+      },
+      {
+        "name": "CHINA'S GOVERNMENT AGENCY",
+        "type": "GEO"
+      },
+      {
+        "name": "POWERSHELL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "RUNDLL32.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "HTTP GET REQUEST",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "BEACON",
+        "type": "TOOL"
+      },
+      {
+        "name": "MSSHELL",
+        "type": "MALWARE"
+      },
+      {
+        "name": "146.0.43.107",
+        "type": "LOCATION"
+      },
+      {
+        "name": "dc.******69.info",
+        "type": "LOCATION"
+      },
+      {
+        "name": "XOR 0x69",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "MEMORY EXECUTION",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "SANDBOX ESCAPE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "LATERAL MOVEMENT",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT-TOCS",
+        "rel": "related_to",
+        "obj": "COBALT STRIKE"
+      },
+      {
+        "sub": "COBALT STRIKE",
+        "rel": "related_to",
+        "obj": "BEACON"
+      },
+      {
+        "sub": "APT-TOCS",
+        "rel": "related_to",
+        "obj": "POWERSHELL"
+      },
+      {
+        "sub": "APT-TOCS",
+        "rel": "related_to",
+        "obj": "MEMORY EXECUTION"
+      },
+      {
+        "sub": "APT-TOCS",
+        "rel": "related_to",
+        "obj": "LATERAL MOVEMENT"
+      },
+      {
+        "sub": "APT-TOCS",
+        "rel": "related_to",
+        "obj": "SANDBOX ESCAPE"
+      },
+      {
+        "sub": "BEACON",
+        "rel": "related_to",
+        "obj": "HTTP GET REQUEST"
+      },
+      {
+        "sub": "POWERSHELL",
+        "rel": "related_to",
+        "obj": "MEMORY EXECUTION"
+      },
+      {
+        "sub": "RUNDLL32.EXE",
+        "rel": "related_to",
+        "obj": "BEACON"
+      },
+      {
+        "sub": "146.0.43.107",
+        "rel": "related_to",
+        "obj": "dc.******69.info"
+      },
+      {
+        "sub": "XOR 0x69",
+        "rel": "related_to",
+        "obj": "HTTP GET REQUEST"
+      },
+      {
+        "sub": "RAPEL MUDGE",
+        "rel": "related_to",
+        "obj": "COBALT STRIKE"
+      },
+      {
+        "sub": "ANTII LABS",
+        "rel": "related_to",
+        "obj": "APT-TOCS"
+      }
+    ]
+  }
+}

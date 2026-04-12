@@ -1,0 +1,234 @@
+{
+  "sample_id": "malkg__201411CrowdStrikeDeepPanda.txt",
+  "sample_index": 133,
+  "source": "malkg",
+  "file_name": "201411CrowdStrikeDeepPanda.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DEEP PANDA",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Sakula",
+        "type": "Malware"
+      },
+      {
+        "name": "DTOPTOOLZ Co., Ltd.",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Career Credit Co., Ltd.",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "180.210.206.246",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "198.200.45.112",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "vpn.foundationssl.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "news.foundationssl.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "www.xha-mster.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "MediaSoft.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "msi.dll",
+        "type": "Indicator"
+      },
+      {
+        "name": "Adobe Reader",
+        "type": "Software"
+      },
+      {
+        "name": "Juniper VPN",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft ActiveX Control",
+        "type": "Software"
+      },
+      {
+        "name": "Derusbi",
+        "type": "Malware"
+      },
+      {
+        "name": "Strategic Web Compromise (SWC)",
+        "type": "Campaign"
+      },
+      {
+        "name": "U.S. Defense Industrial Base (DIB)",
+        "type": "Organization"
+      },
+      {
+        "name": "healthcare",
+        "type": "Organization"
+      },
+      {
+        "name": "government",
+        "type": "Organization"
+      },
+      {
+        "name": "technology sectors",
+        "type": "Organization"
+      },
+      {
+        "name": "Mongolian government entity",
+        "type": "Organization"
+      },
+      {
+        "name": "U.S. university",
+        "type": "Organization"
+      },
+      {
+        "name": "U.S.-based IT company",
+        "type": "Organization"
+      },
+      {
+        "name": "think tank",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DEEP PANDA",
+        "rel": "USES",
+        "obj": "Sakula"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "USES",
+        "obj": "Derusbi"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "signed with",
+        "obj": "DTOPTOOLZ Co., Ltd."
+      },
+      {
+        "sub": "Sakula",
+        "rel": "signed with",
+        "obj": "Career Credit Co., Ltd."
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "uses c2",
+        "obj": "vpn.foundationssl.com"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "uses c2",
+        "obj": "news.foundationssl.com"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "uses c2",
+        "obj": "www.xha-mster.com"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "TARGETS",
+        "obj": "U.S. Defense Industrial Base (DIB)"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "TARGETS",
+        "obj": "healthcare"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "TARGETS",
+        "obj": "government"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "TARGETS",
+        "obj": "technology sectors"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "TARGETS",
+        "obj": "Mongolian government entity"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "TARGETS",
+        "obj": "U.S. university"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "TARGETS",
+        "obj": "U.S.-based IT company"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "TARGETS",
+        "obj": "think tank"
+      },
+      {
+        "sub": "MediaSoft.exe",
+        "rel": "LOADS",
+        "obj": "msi.dll"
+      },
+      {
+        "sub": "msi.dll",
+        "rel": "LOADS",
+        "obj": "Sakula"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "dropped as",
+        "obj": "Adobe Reader"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "dropped as",
+        "obj": "Juniper VPN"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "dropped as",
+        "obj": "Microsoft ActiveX Control"
+      },
+      {
+        "sub": "180.210.206.246",
+        "rel": "uses c2",
+        "obj": "Sakula"
+      },
+      {
+        "sub": "198.200.45.112",
+        "rel": "used in",
+        "obj": "DEEP PANDA"
+      }
+    ]
+  }
+}

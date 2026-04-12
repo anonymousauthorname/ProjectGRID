@@ -1,0 +1,169 @@
+{
+  "sample_id": "ctinexus__ryuk-2020-distributing-ransomware-via-trickbot-and-bazarloader.json",
+  "sample_index": 85,
+  "source": "ctinexus",
+  "file_name": "ryuk-2020-distributing-ransomware-via-trickbot-and-bazarloader.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Ryuk",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "BazarLoader",
+        "type": "hacker-tool",
+        "alias": [
+          "another dropper",
+          "BazarBackdoor"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Trickbot",
+        "type": "malware",
+        "alias": [
+          "the threat actor behind TrickBot"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "phishing emails",
+        "type": "email-address",
+        "alias": [
+          "malicious attachments or links to websites",
+          "normal social engineering techniques"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malicious attachments",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "links to websites",
+        "type": "url",
+        "alias": [
+          "websites that host malware",
+          "free, online file-hosting solutions"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "websites that host malware",
+        "type": "infrastructure",
+        "alias": [
+          "free, online file-hosting solutions"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "command-and-control (C&C) server",
+        "type": "infrastructure",
+        "alias": [
+          "C&C server"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the threat actor behind TrickBot",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Ryuk",
+        "rel": "began using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "BazarLoader"
+      },
+      {
+        "sub": "BazarLoader",
+        "rel": "is also primarily distributed via",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "contain",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malicious attachments"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "contain",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "links to websites"
+      },
+      {
+        "sub": "links to websites",
+        "rel": "host",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "malware"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "disguised as",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "business correspondence"
+      },
+      {
+        "sub": "command-and-control (C&C) server",
+        "rel": "used to deploy and install",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "the backdoor"
+      },
+      {
+        "sub": "the threat actor behind TrickBot",
+        "rel": "connected to",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "BazarLoader"
+      },
+      {
+        "sub": "BazarLoader",
+        "rel": "is also primarily distributed via",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "phishing emails"
+      }
+    ]
+  }
+}

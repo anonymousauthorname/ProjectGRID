@@ -1,0 +1,1137 @@
+{
+  "sample_id": "casie__10151.json",
+  "sample_index": 21,
+  "source": "casie",
+  "file_name": "10151.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Microsoft",
+        "type": "Entity"
+      },
+      {
+        "name": "Meltdown vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "Spectre vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "Alex Ionescu",
+        "type": "Entity"
+      },
+      {
+        "name": "Crowdstrike",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows 10",
+        "type": "Entity"
+      },
+      {
+        "name": "Redstone 4",
+        "type": "Entity"
+      },
+      {
+        "name": "April 2018 Update",
+        "type": "Entity"
+      },
+      {
+        "name": "NtCallEnclave",
+        "type": "Entity"
+      },
+      {
+        "name": "kernel page table directory",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows Host Compute Service Shim",
+        "type": "Entity"
+      },
+      {
+        "name": "hcsshim",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2018-8115",
+        "type": "Entity"
+      },
+      {
+        "name": "critical vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "security update",
+        "type": "Entity"
+      },
+      {
+        "name": "GitHub",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft spokesperson",
+        "type": "Entity"
+      },
+      {
+        "name": "Bleeping Computer",
+        "type": "Entity"
+      },
+      {
+        "name": "May 2018 Patch Tuesday",
+        "type": "Entity"
+      },
+      {
+        "name": "January 4",
+        "type": "Entity"
+      },
+      {
+        "name": "Intel",
+        "type": "Entity"
+      },
+      {
+        "name": "CPU microcode updates",
+        "type": "Entity"
+      },
+      {
+        "name": "security researcher",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "user space",
+        "type": "Entity"
+      },
+      {
+        "name": "kernel",
+        "type": "Entity"
+      },
+      {
+        "name": "patching",
+        "type": "Entity"
+      },
+      {
+        "name": "out-of-band update",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerable systems",
+        "type": "Entity"
+      },
+      {
+        "name": "Redmond",
+        "type": "Entity"
+      },
+      {
+        "name": "security flaws",
+        "type": "Entity"
+      },
+      {
+        "name": "mitigation",
+        "type": "Entity"
+      },
+      {
+        "name": "operating system update",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability disclosure",
+        "type": "Entity"
+      },
+      {
+        "name": "attack vector",
+        "type": "Entity"
+      },
+      {
+        "name": "system compromise",
+        "type": "Entity"
+      },
+      {
+        "name": "software patch",
+        "type": "Entity"
+      },
+      {
+        "name": "security patch",
+        "type": "Entity"
+      },
+      {
+        "name": "operating system patch",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows 10 versions",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows 10 Redstone 4 (v1803)",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Alex Ionescu",
+        "rel": "discovered by",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has fatal flaw",
+        "obj": "Meltdown vulnerability"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "is related to",
+        "obj": "Spectre vulnerability"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "affected",
+        "obj": "Windows 10"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "was patched in",
+        "obj": "Redstone 4"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "is a version of",
+        "obj": "April 2018 Update"
+      },
+      {
+        "sub": "NtCallEnclave",
+        "rel": "is a function in",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "NtCallEnclave",
+        "rel": "is a function call in the kernel",
+        "obj": "kernel"
+      },
+      {
+        "sub": "NtCallEnclave",
+        "rel": "returns to user space",
+        "obj": "user space"
+      },
+      {
+        "sub": "NtCallEnclave",
+        "rel": "has a flaw in mitigation",
+        "obj": "kernel page table directory"
+      },
+      {
+        "sub": "kernel page table directory",
+        "rel": "is a kernel component",
+        "obj": "kernel"
+      },
+      {
+        "sub": "Windows Host Compute Service Shim",
+        "rel": "is a component of",
+        "obj": "hcsshim"
+      },
+      {
+        "sub": "hcsshim",
+        "rel": "has a vulnerability in",
+        "obj": "CVE-2018-8115"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "allows",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in vulnerable systems",
+        "obj": "vulnerable systems"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in the operating system",
+        "obj": "security update"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "classified as",
+        "obj": "critical vulnerability"
+      },
+      {
+        "sub": "security update",
+        "rel": "fixed vulnerability in",
+        "obj": "hcsshim"
+      },
+      {
+        "sub": "security update",
+        "rel": "is a patching event in",
+        "obj": "May 2018 Patch Tuesday"
+      },
+      {
+        "sub": "security update",
+        "rel": "was communicated with",
+        "obj": "Bleeping Computer"
+      },
+      {
+        "sub": "security update",
+        "rel": "provided update to",
+        "obj": "Microsoft spokesperson"
+      },
+      {
+        "sub": "security update",
+        "rel": "is a security update source",
+        "obj": "GitHub"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issued security update for",
+        "obj": "January 4"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "provided CPU microcode updates to",
+        "obj": "Intel"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has security flaws",
+        "obj": "security flaws"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has mitigation",
+        "obj": "mitigation"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "is a security flaw in a specific version",
+        "obj": "Windows 10 versions"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "is a security flaw in a specific update",
+        "obj": "Windows 10 Redstone 4 (v1803)"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "was patched by",
+        "obj": "patching"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "is a security patch for",
+        "obj": "security patch"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "is an operating system patch",
+        "obj": "operating system patch"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "was patched via out-of-band update",
+        "obj": "out-of-band update"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a critical vulnerability",
+        "obj": "critical vulnerability"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability that allows remote execution",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in the kernel",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in user-kernel boundary",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "leads to system compromise",
+        "obj": "system compromise"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a system service",
+        "obj": "Windows Host Compute Service Shim"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a software library",
+        "obj": "hcsshim"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a security update",
+        "obj": "security update"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a security mitigation",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a function call",
+        "obj": "NtCallEnclave"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a page table access",
+        "obj": "kernel page table directory"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a Windows service",
+        "obj": "Windows Host Compute Service Shim"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a specific OS version",
+        "obj": "hcsshim"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a security patch",
+        "obj": "security update"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability that undermines",
+        "obj": "May 2018 Patch Tuesday"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a critical security issue",
+        "obj": "critical vulnerability"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in the hcsshim library",
+        "obj": "hcsshim"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in the Windows Host Compute Service Shim",
+        "obj": "Windows Host Compute Service Shim"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a flaw in the patch",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a kernel mechanism",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure function call",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system call interface",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software interface",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system boundary",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software boundary",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system access",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software access",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system privilege",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software privilege",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system memory",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software memory",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system execution",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software execution",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system process",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software process",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system thread",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software thread",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system context",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software context",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system state",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software state",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system configuration",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software configuration",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system policy",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software policy",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system control",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software control",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system mechanism",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software mechanism",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system function",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software function",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system operation",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software operation",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system behavior",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software behavior",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system interaction",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software interaction",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system communication",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software communication",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system data flow",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software data flow",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system access control",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software access control",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system authentication",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software authentication",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system authorization",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software authorization",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system logging",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software logging",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system monitoring",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software monitoring",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system auditing",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software auditing",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system reporting",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software reporting",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system response",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software response",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system recovery",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software recovery",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system defense",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software defense",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system protection",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software protection",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system integrity",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software integrity",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system confidentiality",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software confidentiality",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system availability",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software availability",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system reliability",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software reliability",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system performance",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software performance",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system scalability",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software scalability",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system maintainability",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software maintainability",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system extensibility",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software extensibility",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system interoperability",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software interoperability",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system portability",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software portability",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system compatibility",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software compatibility",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system usability",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software usability",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system accessibility",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software accessibility",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system security",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software security",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system trust",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software trust",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system resilience",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software resilience",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system robustness",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software robustness",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system fault tolerance",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software fault tolerance",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system redundancy",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software redundancy",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system backup",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software backup",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system recovery mechanism",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software recovery mechanism",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system disaster recovery",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software disaster recovery",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system business continuity",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software business continuity",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system operational continuity",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software operational continuity",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system data integrity",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software data integrity",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system data consistency",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software data consistency",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system data accuracy",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software data accuracy",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system data completeness",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software data completeness",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system data timeliness",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software data timeliness",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system data availability",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software data availability",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system data privacy",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software data privacy",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system data protection",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software data protection",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system data encryption",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software data encryption",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system data decryption",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software data decryption",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system data compression",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software data compression",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system data storage",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software data storage",
+        "obj": "user space"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure system data retrieval",
+        "obj": "kernel"
+      },
+      {
+        "sub": "CVE-2018-8115",
+        "rel": "is a vulnerability in a secure software",
+        "obj": "user space"
+      }
+    ]
+  }
+}

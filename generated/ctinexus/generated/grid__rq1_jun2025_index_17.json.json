@@ -1,0 +1,167 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_17.json",
+  "sample_index": 209,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_17.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "malware authors",
+        "type": "Unknown"
+      },
+      {
+        "name": "virustotal.TLD",
+        "type": "Unknown"
+      },
+      {
+        "name": "domain spoofing legitimate virustotal.com",
+        "type": "Unknown"
+      },
+      {
+        "name": "forum message",
+        "type": "Unknown"
+      },
+      {
+        "name": "http://www.virustotal.[TLD removed]/detected/[Redacted]",
+        "type": "Unknown"
+      },
+      {
+        "name": "link in forum message",
+        "type": "Unknown"
+      },
+      {
+        "name": "page /scanning/ on virustotal.TLD",
+        "type": "Unknown"
+      },
+      {
+        "name": "page /scanning/",
+        "type": "Unknown"
+      },
+      {
+        "name": "fake scanning page",
+        "type": "Unknown"
+      },
+      {
+        "name": "timedelayed Windows Security Alert popup",
+        "type": "Unknown"
+      },
+      {
+        "name": "prompts user to download",
+        "type": "Unknown"
+      },
+      {
+        "name": "securitytoolsetup.exe",
+        "type": "Unknown"
+      },
+      {
+        "name": "Mal/FakeVirPkA",
+        "type": "Unknown"
+      },
+      {
+        "name": "legitimate security tool",
+        "type": "Unknown"
+      },
+      {
+        "name": "legitimate service name virustotal",
+        "type": "Unknown"
+      },
+      {
+        "name": "Windows XP security alert",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "malware authors",
+        "rel": "register domain",
+        "obj": "virustotal.TLD"
+      },
+      {
+        "sub": "virustotal.TLD",
+        "rel": "is malicious",
+        "obj": "domain spoofing legitimate virustotal.com"
+      },
+      {
+        "sub": "forum message",
+        "rel": "contains link to",
+        "obj": "http://www.virustotal.[TLD removed]/detected/[Redacted]"
+      },
+      {
+        "sub": "link in forum message",
+        "rel": "redirects to",
+        "obj": "page /scanning/ on virustotal.TLD"
+      },
+      {
+        "sub": "page /scanning/",
+        "rel": "displays",
+        "obj": "fake scanning page"
+      },
+      {
+        "sub": "fake scanning page",
+        "rel": "contains",
+        "obj": "timedelayed Windows Security Alert popup"
+      },
+      {
+        "sub": "fake scanning page",
+        "rel": "after completion",
+        "obj": "prompts user to download"
+      },
+      {
+        "sub": "securitytoolsetup.exe",
+        "rel": "is",
+        "obj": "Mal/FakeVirPkA"
+      },
+      {
+        "sub": "securitytoolsetup.exe",
+        "rel": "is disguised as",
+        "obj": "legitimate security tool"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "abuse",
+        "obj": "legitimate service name virustotal"
+      },
+      {
+        "sub": "fake scanning page",
+        "rel": "mimics",
+        "obj": "Windows XP security alert"
+      },
+      {
+        "sub": "virustotal.TLD",
+        "rel": "hosts",
+        "obj": "fake scanning page"
+      },
+      {
+        "sub": "http://www.virustotal.[TLD removed]/detected/[Redacted]",
+        "rel": "leads_to",
+        "obj": "fake scanning page"
+      },
+      {
+        "sub": "page /scanning/ on virustotal.TLD",
+        "rel": "is",
+        "obj": "fake scanning page"
+      },
+      {
+        "sub": "securitytoolsetup.exe",
+        "rel": "is downloaded from",
+        "obj": "fake scanning page"
+      }
+    ]
+  }
+}

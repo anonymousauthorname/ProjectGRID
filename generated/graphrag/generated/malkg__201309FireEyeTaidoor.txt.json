@@ -1,0 +1,262 @@
+{
+  "sample_id": "malkg__201309FireEyeTaidoor.txt",
+  "sample_index": 149,
+  "source": "malkg",
+  "file_name": "201309FireEyeTaidoor.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TAIDOR MALWARE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "TAIDOR VARIANTS",
+        "type": "MALWARE"
+      },
+      {
+        "name": "YAHOO BLOGS",
+        "type": "LOCATION"
+      },
+      {
+        "name": "TALERET MALWARE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CNC SERVERS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MICROSOFT OFFICE VULNERABILITY CVE-2012-0158",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "SPEAR-PHISHING EMAIL",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "TAIWAN",
+        "type": "GEO"
+      },
+      {
+        "name": "FIREEYE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "NART VILLENEUVE",
+        "type": "PERSON"
+      },
+      {
+        "name": "THOUFIQUE HAQ",
+        "type": "PERSON"
+      },
+      {
+        "name": "NED MORAN",
+        "type": "PERSON"
+      },
+      {
+        "name": "GOVERNMENT AGENCIES",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CORPORATE ENTITIES",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "THINK TANKS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MAC.GOV.HPC.TW",
+        "type": "LOCATION"
+      },
+      {
+        "name": "OPP.GOV.TAIWANS.TW",
+        "type": "LOCATION"
+      },
+      {
+        "name": "NNSCNET.GOV.MEDICARE.TW",
+        "type": "LOCATION"
+      },
+      {
+        "name": "KLSERVER.SERVEHTTP.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "KLLSERVER.SERVEFTP.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "202.142.153.154",
+        "type": "LOCATION"
+      },
+      {
+        "name": "80.149.239.139",
+        "type": "LOCATION"
+      },
+      {
+        "name": "202.142.172.131",
+        "type": "LOCATION"
+      },
+      {
+        "name": "WWW.FACEBOOK.TRICKIP.NET",
+        "type": "LOCATION"
+      },
+      {
+        "name": "WWW.BRAINTRUST.ALMOSTMY.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "SPEECH-TO-TEXT FILE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SCREENSAVER FILE (.SCR)",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "RC4 CIPHER",
+        "type": "TOOL"
+      },
+      {
+        "name": "XOR ENCODING",
+        "type": "TOOL"
+      },
+      {
+        "name": "BASE64 ENCODING",
+        "type": "TOOL"
+      },
+      {
+        "name": "DECOY DOCUMENT",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TAIDOR MALWARE",
+        "rel": "related_to",
+        "obj": "SPEAR-PHISHING EMAIL"
+      },
+      {
+        "sub": "SPEAR-PHISHING EMAIL",
+        "rel": "related_to",
+        "obj": "DECOY DOCUMENT"
+      },
+      {
+        "sub": "TAIDOR MALWARE",
+        "rel": "related_to",
+        "obj": "MICROSOFT OFFICE VULNERABILITY CVE-2012-0158"
+      },
+      {
+        "sub": "TAIDOR VARIANTS",
+        "rel": "related_to",
+        "obj": "YAHOO BLOGS"
+      },
+      {
+        "sub": "TALERET MALWARE",
+        "rel": "related_to",
+        "obj": "YAHOO BLOGS"
+      },
+      {
+        "sub": "TAIDOR MALWARE",
+        "rel": "related_to",
+        "obj": "CNC SERVERS"
+      },
+      {
+        "sub": "TALERET MALWARE",
+        "rel": "related_to",
+        "obj": "CNC SERVERS"
+      },
+      {
+        "sub": "TAIDOR MALWARE",
+        "rel": "related_to",
+        "obj": "TAIWAN"
+      },
+      {
+        "sub": "TALERET MALWARE",
+        "rel": "related_to",
+        "obj": "TAIWAN"
+      },
+      {
+        "sub": "YAHOO BLOGS",
+        "rel": "related_to",
+        "obj": "CNC SERVERS"
+      },
+      {
+        "sub": "RC4 CIPHER",
+        "rel": "related_to",
+        "obj": "TAIDOR MALWARE"
+      },
+      {
+        "sub": "XOR ENCODING",
+        "rel": "related_to",
+        "obj": "DECOY DOCUMENT"
+      },
+      {
+        "sub": "BASE64 ENCODING",
+        "rel": "related_to",
+        "obj": "YAHOO BLOGS"
+      },
+      {
+        "sub": "TAIDOR MALWARE",
+        "rel": "related_to",
+        "obj": "FIREEYE"
+      },
+      {
+        "sub": "NART VILLENEUVE",
+        "rel": "related_to",
+        "obj": "FIREEYE"
+      },
+      {
+        "sub": "THOUFIQUE HAQ",
+        "rel": "related_to",
+        "obj": "FIREEYE"
+      },
+      {
+        "sub": "NED MORAN",
+        "rel": "related_to",
+        "obj": "FIREEYE"
+      },
+      {
+        "sub": "TAIDOR MALWARE",
+        "rel": "related_to",
+        "obj": "GOVERNMENT AGENCIES"
+      },
+      {
+        "sub": "TAIDOR MALWARE",
+        "rel": "related_to",
+        "obj": "CORPORATE ENTITIES"
+      },
+      {
+        "sub": "TAIDOR MALWARE",
+        "rel": "related_to",
+        "obj": "THINK TANKS"
+      },
+      {
+        "sub": "SCREENSAVER FILE (.SCR)",
+        "rel": "related_to",
+        "obj": "TAIDOR VARIANTS"
+      },
+      {
+        "sub": "DECOY DOCUMENT",
+        "rel": "related_to",
+        "obj": "TAIDOR MALWARE"
+      }
+    ]
+  }
+}

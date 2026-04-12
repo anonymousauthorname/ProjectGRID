@@ -1,0 +1,144 @@
+{
+  "sample_id": "securenlp__Alienvault_Scanbox",
+  "sample_index": 173,
+  "source": "securenlp",
+  "file_name": "Alienvault_Scanbox",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Scanbox",
+        "type": "Tool"
+      },
+      {
+        "name": "watering hole attack",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Internet Explorer",
+        "type": "Software"
+      },
+      {
+        "name": "EMET",
+        "type": "Software"
+      },
+      {
+        "name": "Adobe Flash",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Office",
+        "type": "Software"
+      },
+      {
+        "name": "Acrobat Reader",
+        "type": "Software"
+      },
+      {
+        "name": "Java",
+        "type": "Software"
+      },
+      {
+        "name": "keylogger",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "122.10.9.109",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "mail.webmailgoogle.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "js.webmailgoogle.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "C2 server",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Metasploit",
+        "type": "Malware"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Scanbox",
+        "rel": "is used in",
+        "obj": "watering hole attack"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "ABUSES",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "checks for",
+        "obj": "EMET"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "ENUMERATES",
+        "obj": "Adobe Flash"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "ENUMERATES",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "ENUMERATES",
+        "obj": "Acrobat Reader"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "ENUMERATES",
+        "obj": "Java"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "IMPLEMENTS",
+        "obj": "keylogger"
+      },
+      {
+        "sub": "Metasploit",
+        "rel": "has exploits targeting",
+        "obj": "122.10.9.109"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "USES",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "is associated with",
+        "obj": "mail.webmailgoogle.com"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "is associated with",
+        "obj": "js.webmailgoogle.com"
+      }
+    ]
+  }
+}

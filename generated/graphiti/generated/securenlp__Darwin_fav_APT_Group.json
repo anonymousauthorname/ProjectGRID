@@ -1,0 +1,340 @@
+{
+  "sample_id": "securenlp__Darwin_fav_APT_Group",
+  "sample_index": 191,
+  "source": "securenlp",
+  "file_name": "Darwin_fav_APT_Group",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT12",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "IXESHE",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "DynCalc",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "DNSCALC",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Chinese People’s Liberation Army",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "PRC",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "HIGHTIDE",
+        "type": "Malware"
+      },
+      {
+        "name": "RIPTIDE",
+        "type": "Malware"
+      },
+      {
+        "name": "THREEBYTE",
+        "type": "Malware"
+      },
+      {
+        "name": "WATERSPOUT",
+        "type": "Malware"
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Tran Duy Linh",
+        "type": "Tool"
+      },
+      {
+        "name": "141.108.2.157",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "video.csmcpr.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "icc.ignorelist.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Japan",
+        "type": "Location"
+      },
+      {
+        "name": "Taiwan",
+        "type": "Location"
+      },
+      {
+        "name": "New York Times",
+        "type": "Organization"
+      },
+      {
+        "name": "Arbor Networks",
+        "type": "Organization"
+      },
+      {
+        "name": "FireEye",
+        "type": "Organization"
+      },
+      {
+        "name": "Taiwanese Government",
+        "type": "Organization"
+      },
+      {
+        "name": "technology company in Taiwan",
+        "type": "Organization"
+      },
+      {
+        "name": "Asia-Pacific Region",
+        "type": "Location"
+      },
+      {
+        "name": "Mandiant",
+        "type": "Organization"
+      },
+      {
+        "name": "Ned Moran",
+        "type": "Person"
+      },
+      {
+        "name": "Mike Oppenheim",
+        "type": "Person"
+      },
+      {
+        "name": "Sarah Engle",
+        "type": "Person"
+      },
+      {
+        "name": "Richard Wartell",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT12",
+        "rel": "USES",
+        "obj": "HIGHTIDE"
+      },
+      {
+        "sub": "APT12",
+        "rel": "USES",
+        "obj": "THREEBYTE"
+      },
+      {
+        "sub": "APT12",
+        "rel": "possibly uses",
+        "obj": "WATERSPOUT"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "APT12",
+        "rel": "USES",
+        "obj": "Tran Duy Linh"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "connects to",
+        "obj": "141.108.2.157"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "connects to",
+        "obj": "video.csmcpr.com"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "connects to",
+        "obj": "icc.ignorelist.com"
+      },
+      {
+        "sub": "APT12",
+        "rel": "has links to",
+        "obj": "PRC"
+      },
+      {
+        "sub": "APT12",
+        "rel": "has links to",
+        "obj": "Chinese People’s Liberation Army"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "TARGETS",
+        "obj": "New York Times"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "TARGETS",
+        "obj": "Taiwanese Government"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "TARGETS",
+        "obj": "Taiwanese Government"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "TARGETS",
+        "obj": "Japan"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "TARGETS",
+        "obj": "Asia-Pacific Region"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "TARGETS",
+        "obj": "technology company in Taiwan"
+      },
+      {
+        "sub": "Arbor Networks",
+        "rel": "DISCLOSES",
+        "obj": "RIPTIDE"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "OBSERVES",
+        "obj": "RIPTIDE"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "OBSERVES",
+        "obj": "HIGHTIDE"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "OBSERVES",
+        "obj": "THREEBYTE"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "OBSERVES",
+        "obj": "WATERSPOUT"
+      },
+      {
+        "sub": "APT12",
+        "rel": "reacts to",
+        "obj": "Arbor Networks"
+      },
+      {
+        "sub": "APT12",
+        "rel": "reacts to",
+        "obj": "FireEye"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "evolves from",
+        "obj": "RIPTIDE"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "evolves from",
+        "obj": "RIPTIDE"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "evolves from",
+        "obj": "RIPTIDE"
+      },
+      {
+        "sub": "APT12",
+        "rel": "is also known as",
+        "obj": "IXESHE"
+      },
+      {
+        "sub": "APT12",
+        "rel": "is also known as",
+        "obj": "DynCalc"
+      },
+      {
+        "sub": "APT12",
+        "rel": "is also known as",
+        "obj": "DNSCALC"
+      },
+      {
+        "sub": "APT12",
+        "rel": "may use",
+        "obj": "WATERSPOUT"
+      },
+      {
+        "sub": "APT12",
+        "rel": "has previously used",
+        "obj": "THREEBYTE"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "OBSERVED",
+        "obj": "APT12"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "observed intrusion at",
+        "obj": "New York Times"
+      },
+      {
+        "sub": "APT12",
+        "rel": "TARGETS",
+        "obj": "Taiwan"
+      },
+      {
+        "sub": "APT12",
+        "rel": "TARGETS",
+        "obj": "Japan"
+      },
+      {
+        "sub": "APT12",
+        "rel": "has paused activity after public disclosure",
+        "obj": "Mandiant"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "REFERENCED",
+        "obj": "Mandiant"
+      },
+      {
+        "sub": "APT12",
+        "rel": "COMPROMISED",
+        "obj": "New York Times"
+      }
+    ]
+  }
+}

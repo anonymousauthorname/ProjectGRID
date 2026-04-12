@@ -1,0 +1,257 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_10.json",
+  "sample_index": 202,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_10.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Spring4Shell",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2022-22965",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2022-22963",
+        "type": "Entity"
+      },
+      {
+        "name": "Java",
+        "type": "Entity"
+      },
+      {
+        "name": "Apache Tomcat",
+        "type": "Entity"
+      },
+      {
+        "name": "Spring Framework",
+        "type": "Entity"
+      },
+      {
+        "name": "JDK 9+",
+        "type": "Entity"
+      },
+      {
+        "name": "Spring Cloud Function",
+        "type": "Entity"
+      },
+      {
+        "name": "Spring Expression Language (SpEL)",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "data leakage",
+        "type": "Entity"
+      },
+      {
+        "name": "JSP web shell",
+        "type": "Entity"
+      },
+      {
+        "name": "shell.jsp",
+        "type": "Entity"
+      },
+      {
+        "name": "exploit.py",
+        "type": "Entity"
+      },
+      {
+        "name": "PDM:Exploit",
+        "type": "Entity"
+      },
+      {
+        "name": "Win32.Generic",
+        "type": "Entity"
+      },
+      {
+        "name": "UMIDS:Intrusion.Generic.Agent.gen",
+        "type": "Entity"
+      },
+      {
+        "name": "Intrusion.Generic.CVE-*.*",
+        "type": "Entity"
+      },
+      {
+        "name": "7e46801dd171bb5bf1771df1239d760c",
+        "type": "Entity"
+      },
+      {
+        "name": "3de4e174c2c8612aebb3adef10027679",
+        "type": "Entity"
+      },
+      {
+        "name": "Java 9 Platform Module System",
+        "type": "Entity"
+      },
+      {
+        "name": "Spring Framework versions 5.3.0 to 5.3.17 and 5.2.0 to 5.2.19 and below",
+        "type": "Entity"
+      },
+      {
+        "name": "WAR file",
+        "type": "Entity"
+      },
+      {
+        "name": "Spring Cloud Function 3.1.6, 3.2.2 and older versions",
+        "type": "Entity"
+      },
+      {
+        "name": "Advanced Exploit Prevention",
+        "type": "Entity"
+      },
+      {
+        "name": "Network Attack Blocker",
+        "type": "Entity"
+      },
+      {
+        "name": "Kaspersky EDR Expert",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "unknown agent",
+        "type": "Entity"
+      },
+      {
+        "name": "sites people",
+        "type": "Entity"
+      },
+      {
+        "name": "technical questions",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Spring4Shell",
+        "rel": "exploits",
+        "obj": "CVE-2022-22965"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "enables",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "leads to",
+        "obj": "data leakage"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "allows",
+        "obj": "overwriting of Tomcat logging configuration"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "enables",
+        "obj": "upload of JSP web shell"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "requires",
+        "obj": "JDK 9+"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "requires",
+        "obj": "Apache Tomcat"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "requires",
+        "obj": "Spring Framework versions 5.3.0 to 5.3.17 and 5.2.0 to 5.2.19 and below"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "requires",
+        "obj": "WAR file"
+      },
+      {
+        "sub": "CVE-2022-22963",
+        "rel": "allows",
+        "obj": "code injection via Spring Expression Language (SpEL)"
+      },
+      {
+        "sub": "CVE-2022-22963",
+        "rel": "leads to",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "CVE-2022-22963",
+        "rel": "requires",
+        "obj": "Spring Cloud Function 3.1.6, 3.2.2 and older versions"
+      },
+      {
+        "sub": "PDM:Exploit",
+        "rel": "is associated with",
+        "obj": "CVE-2022-22965"
+      },
+      {
+        "sub": "Win32.Generic",
+        "rel": "is detected during",
+        "obj": "exploitation of CVE-2022-22965"
+      },
+      {
+        "sub": "UMIDS:Intrusion.Generic.Agent.gen",
+        "rel": "is detected during",
+        "obj": "exploitation of CVE-2022-22965"
+      },
+      {
+        "sub": "Intrusion.Generic.CVE-*.*",
+        "rel": "is detected during",
+        "obj": "exploitation of CVE-2022-22965"
+      },
+      {
+        "sub": "7e46801dd171bb5bf1771df1239d760c",
+        "rel": "is the MD5 hash of",
+        "obj": "shell.jsp"
+      },
+      {
+        "sub": "3de4e174c2c8612aebb3adef10027679",
+        "rel": "is the MD5 hash of",
+        "obj": "exploit.py"
+      },
+      {
+        "sub": "Kaspersky EDR Expert",
+        "rel": "detects",
+        "obj": "exploitation process"
+      },
+      {
+        "sub": "Spring Framework",
+        "rel": "is vulnerable to",
+        "obj": "CVE-2022-22965"
+      },
+      {
+        "sub": "Spring Cloud Function",
+        "rel": "is vulnerable to",
+        "obj": "CVE-2022-22963"
+      }
+    ]
+  }
+}

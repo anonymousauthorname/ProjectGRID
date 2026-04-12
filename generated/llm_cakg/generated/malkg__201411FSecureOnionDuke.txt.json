@@ -1,0 +1,495 @@
+{
+  "sample_id": "malkg__201411FSecureOnionDuke.txt",
+  "sample_index": 134,
+  "source": "malkg",
+  "file_name": "201411FSecureOnionDuke.txt",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "OnionDuke",
+        "type": "Entity"
+      },
+      {
+        "name": "MiniDuke",
+        "type": "Entity"
+      },
+      {
+        "name": "Trojan-Dropper:W32/OnionDuke.A",
+        "type": "Entity"
+      },
+      {
+        "name": "Backdoor:W32/OnionDuke.A",
+        "type": "Entity"
+      },
+      {
+        "name": "Backdoor:W32/OnionDuke.B",
+        "type": "Entity"
+      },
+      {
+        "name": "a75995f94854dea8799650a2f4a97980b71199d2",
+        "type": "Entity"
+      },
+      {
+        "name": "b491c14d8cfb48636f6095b7b16555e9a575d57f",
+        "type": "Entity"
+      },
+      {
+        "name": "d433f281cf56015941a1c2cb87066ca62ea1db37",
+        "type": "Entity"
+      },
+      {
+        "name": "overpict.com",
+        "type": "Entity"
+      },
+      {
+        "name": "airtravelabroad.com",
+        "type": "Entity"
+      },
+      {
+        "name": "beijingnewsblog.net",
+        "type": "Entity"
+      },
+      {
+        "name": "grouptumbler.com",
+        "type": "Entity"
+      },
+      {
+        "name": "leveldelta.com",
+        "type": "Entity"
+      },
+      {
+        "name": "nasdaqblog.net",
+        "type": "Entity"
+      },
+      {
+        "name": "natureinhome.com",
+        "type": "Entity"
+      },
+      {
+        "name": "nestedmail.com",
+        "type": "Entity"
+      },
+      {
+        "name": "nostressjob.com",
+        "type": "Entity"
+      },
+      {
+        "name": "nytunion.com",
+        "type": "Entity"
+      },
+      {
+        "name": "oilnewsblog.com",
+        "type": "Entity"
+      },
+      {
+        "name": "sixsquare.net",
+        "type": "Entity"
+      },
+      {
+        "name": "ustradecomp.com",
+        "type": "Entity"
+      },
+      {
+        "name": "Tor exit node",
+        "type": "Entity"
+      },
+      {
+        "name": "maliciously modifying",
+        "type": "Entity"
+      },
+      {
+        "name": "executable wrapper",
+        "type": "Entity"
+      },
+      {
+        "name": "uncompressed Windows executables",
+        "type": "Entity"
+      },
+      {
+        "name": "integrity checks",
+        "type": "Entity"
+      },
+      {
+        "name": "PE resource",
+        "type": "Entity"
+      },
+      {
+        "name": "encrypted dynamically linked library (DLL)",
+        "type": "Entity"
+      },
+      {
+        "name": "decrypt",
+        "type": "Entity"
+      },
+      {
+        "name": "write to disk",
+        "type": "Entity"
+      },
+      {
+        "name": "execute",
+        "type": "Entity"
+      },
+      {
+        "name": "hardcoded C&C URLs",
+        "type": "Entity"
+      },
+      {
+        "name": "C&C domains",
+        "type": "Entity"
+      },
+      {
+        "name": "login credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "system information",
+        "type": "Entity"
+      },
+      {
+        "name": "antivirus software",
+        "type": "Entity"
+      },
+      {
+        "name": "firewall",
+        "type": "Entity"
+      },
+      {
+        "name": "infection vector",
+        "type": "Entity"
+      },
+      {
+        "name": "downloaded executables",
+        "type": "Entity"
+      },
+      {
+        "name": ".torrent files",
+        "type": "Entity"
+      },
+      {
+        "name": "pirated software",
+        "type": "Entity"
+      },
+      {
+        "name": "European government agencies",
+        "type": "Entity"
+      },
+      {
+        "name": "targeted attacks",
+        "type": "Entity"
+      },
+      {
+        "name": "mass-infection strategy",
+        "type": "Entity"
+      },
+      {
+        "name": "surgical targeting",
+        "type": "Entity"
+      },
+      {
+        "name": "APT operations",
+        "type": "Entity"
+      },
+      {
+        "name": "Tor network",
+        "type": "Entity"
+      },
+      {
+        "name": "VPN",
+        "type": "Entity"
+      },
+      {
+        "name": "Freedome VPN",
+        "type": "Entity"
+      },
+      {
+        "name": "compilation timestamps",
+        "type": "Entity"
+      },
+      {
+        "name": "discovery dates",
+        "type": "Entity"
+      },
+      {
+        "name": "version number 4",
+        "type": "Entity"
+      },
+      {
+        "name": "shared infrastructure",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Tor exit node",
+        "rel": "maliciously modifies",
+        "obj": "uncompressed Windows executables"
+      },
+      {
+        "sub": "malicious Tor exit node",
+        "rel": "uses",
+        "obj": "executable wrapper"
+      },
+      {
+        "sub": "executable wrapper",
+        "rel": "embeds",
+        "obj": "original executable"
+      },
+      {
+        "sub": "executable wrapper",
+        "rel": "embeds",
+        "obj": "malicious executable"
+      },
+      {
+        "sub": "executable wrapper",
+        "rel": "bypasses",
+        "obj": "integrity checks"
+      },
+      {
+        "sub": "executable wrapper",
+        "rel": "writes to disk",
+        "obj": "original executable"
+      },
+      {
+        "sub": "executable wrapper",
+        "rel": "executes",
+        "obj": "original executable"
+      },
+      {
+        "sub": "executable wrapper",
+        "rel": "writes to disk",
+        "obj": "malicious executable"
+      },
+      {
+        "sub": "malicious executable",
+        "rel": "is",
+        "obj": "Trojan-Dropper:W32/OnionDuke.A"
+      },
+      {
+        "sub": "Trojan-Dropper:W32/OnionDuke.A",
+        "rel": "contains",
+        "obj": "PE resource"
+      },
+      {
+        "sub": "PE resource",
+        "rel": "pretends to be",
+        "obj": "embedded GIF image file"
+      },
+      {
+        "sub": "PE resource",
+        "rel": "is actually",
+        "obj": "encrypted dynamically linked library (DLL)"
+      },
+      {
+        "sub": "Trojan-Dropper:W32/OnionDuke.A",
+        "rel": "decrypts",
+        "obj": "encrypted dynamically linked library (DLL)"
+      },
+      {
+        "sub": "Trojan-Dropper:W32/OnionDuke.A",
+        "rel": "writes to disk",
+        "obj": "encrypted dynamically linked library (DLL)"
+      },
+      {
+        "sub": "encrypted dynamically linked library (DLL)",
+        "rel": "is executed",
+        "obj": "Backdoor:W32/OnionDuke.B"
+      },
+      {
+        "sub": "Backdoor:W32/OnionDuke.B",
+        "rel": "decrypts",
+        "obj": "embedded configuration"
+      },
+      {
+        "sub": "Backdoor:W32/OnionDuke.B",
+        "rel": "attempts to connect to",
+        "obj": "hardcoded C&C URLs"
+      },
+      {
+        "sub": "Backdoor:W32/OnionDuke.B",
+        "rel": "receives instructions from",
+        "obj": "C&C domains"
+      },
+      {
+        "sub": "Backdoor:W32/OnionDuke.B",
+        "rel": "downloads and executes",
+        "obj": "additional malicious components"
+      },
+      {
+        "sub": "Backdoor:W32/OnionDuke.A",
+        "rel": "contains",
+        "obj": "hardcoded C&C domain"
+      },
+      {
+        "sub": "Backdoor:W32/OnionDuke.A",
+        "rel": "uses",
+        "obj": "overpict.com"
+      },
+      {
+        "sub": "Backdoor:W32/OnionDuke.A",
+        "rel": "abuses",
+        "obj": "Twitter"
+      },
+      {
+        "sub": "overpict.com",
+        "rel": "was registered by",
+        "obj": "John Kasai"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "obj": "airtravelabroad.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "obj": "beijingnewsblog.net"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "obj": "grouptumbler.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "obj": "leveldelta.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "obj": "nasdaqblog.net"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "obj": "natureinhome.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "obj": "nestedmail.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "obj": "nostressjob.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "obj": "nytunion.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "obj": "oilnewsblog.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "obj": "sixsquare.net"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "registered",
+        "obj": "ustradecomp.com"
+      },
+      {
+        "sub": "grouptumbler.com",
+        "rel": "was previously used as",
+        "obj": "C&C domain by MiniDuke"
+      },
+      {
+        "sub": "leveldelta.com",
+        "rel": "was previously used as",
+        "obj": "C&C domain by MiniDuke"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "has been used in",
+        "obj": "targeted attacks against European government agencies"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "spreads by",
+        "obj": "modifying downloaded executables"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "spreads by",
+        "obj": "infecting executables in .torrent files"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "has been active since",
+        "obj": "end of October 2013"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "has been active since",
+        "obj": "February 2014"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "contains reference to",
+        "obj": "version number 4"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "uses",
+        "obj": "mass-infection strategy"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "uses",
+        "obj": "surgical targeting"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "uses",
+        "obj": "Tor network"
+      },
+      {
+        "sub": "Tor network",
+        "rel": "is used to",
+        "obj": "bypass monitoring"
+      },
+      {
+        "sub": "Freedome VPN",
+        "rel": "encrypts connection",
+        "obj": "through Tor network"
+      },
+      {
+        "sub": "Freedome VPN",
+        "rel": "prevents",
+        "obj": "malicious tampering by Tor exit node maintainers"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "is distinct from",
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "shares infrastructure with",
+        "obj": "MiniDuke"
+      }
+    ]
+  }
+}

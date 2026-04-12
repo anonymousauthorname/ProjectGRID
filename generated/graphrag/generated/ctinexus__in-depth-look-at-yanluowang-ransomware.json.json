@@ -1,0 +1,119 @@
+{
+  "sample_id": "ctinexus__in-depth-look-at-yanluowang-ransomware.json",
+  "sample_index": 54,
+  "source": "ctinexus",
+  "file_name": "in-depth-look-at-yanluowang-ransomware.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "YANLUOWANG",
+        "type": "MALWARE"
+      },
+      {
+        "name": "FIVEHANDS",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "THIEFLOCK",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "SYMANTEC",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "BROADCOM SOFTWARE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "ADFIND",
+        "type": "TOOL"
+      },
+      {
+        "name": "U.S. CORPORATIONS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "FINANCIAL SECTOR",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "MANUFACTURING SECTOR",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "IT SERVICES SECTOR",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "CONSULTANCY SECTOR",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "ENGINEERING SECTOR",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "U.S.",
+        "type": "GEO"
+      },
+      {
+        "name": "OCTOBER 2021",
+        "type": "EVENT"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "YANLUOWANG",
+        "rel": "related_to",
+        "obj": "FIVEHANDS"
+      },
+      {
+        "sub": "YANLUOWANG",
+        "rel": "related_to",
+        "obj": "THIEFLOCK"
+      },
+      {
+        "sub": "SYMANTEC",
+        "rel": "related_to",
+        "obj": "YANLUOWANG"
+      },
+      {
+        "sub": "ADFIND",
+        "rel": "related_to",
+        "obj": "YANLUOWANG"
+      },
+      {
+        "sub": "YANLUOWANG",
+        "rel": "related_to",
+        "obj": "U.S. CORPORATIONS"
+      },
+      {
+        "sub": "THIEFLOCK",
+        "rel": "related_to",
+        "obj": "YANLUOWANG"
+      },
+      {
+        "sub": "FIVEHANDS",
+        "rel": "related_to",
+        "obj": "YANLUOWANG"
+      }
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "sample_id": "ctinexus__pegasus-forcedentry-protection.json",
+  "sample_index": 83,
+  "source": "ctinexus",
+  "file_name": "pegasus-forcedentry-protection.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "FORCEDENTRY",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "iOS 14.8",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PEGASUS",
+        "type": "MALWARE"
+      },
+      {
+        "name": "NSO GROUP",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "THE CITIZEN LAB",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "AMNESTY INTERNATIONAL",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "ZERO-CYCLE ATTACK",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "iMessage",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "FEBRUARY 2021",
+        "type": "EVENT"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "related_to",
+        "obj": "PEGASUS"
+      },
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "related_to",
+        "obj": "ZERO-CYCLE ATTACK"
+      },
+      {
+        "sub": "NSO GROUP",
+        "rel": "related_to",
+        "obj": "PEGASUS"
+      },
+      {
+        "sub": "THE CITIZEN LAB",
+        "rel": "related_to",
+        "obj": "FORCEDENTRY"
+      },
+      {
+        "sub": "AMNESTY INTERNATIONAL",
+        "rel": "related_to",
+        "obj": "PEGASUS"
+      },
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "related_to",
+        "obj": "iOS 14.8"
+      },
+      {
+        "sub": "iMessage",
+        "rel": "related_to",
+        "obj": "FORCEDENTRY"
+      },
+      {
+        "sub": "NSO GROUP",
+        "rel": "related_to",
+        "obj": "THE CITIZEN LAB"
+      },
+      {
+        "sub": "NSO GROUP",
+        "rel": "related_to",
+        "obj": "AMNESTY INTERNATIONAL"
+      }
+    ]
+  }
+}

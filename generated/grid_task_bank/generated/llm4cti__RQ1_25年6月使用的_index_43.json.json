@@ -1,0 +1,440 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_43.json",
+  "sample_index": 233,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_43.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "distributed denialofservice attack",
+        "type": "attack-pattern",
+        "alias": [
+          "DDoS attack"
+        ]
+      },
+      {
+        "name": "John Zorabedian",
+        "type": "identity",
+        "alias": [
+          "John Zorabedian"
+        ]
+      },
+      {
+        "name": "Anonymous",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "hacktivist groups like Anonymous"
+        ]
+      },
+      {
+        "name": "Lizard Squad",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the Lizard Squad"
+        ]
+      },
+      {
+        "name": "Armada Collective",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "cybergang calling itself the Armada Collective"
+        ]
+      },
+      {
+        "name": "ProtonMail",
+        "type": "general-software",
+        "alias": [
+          "Swiss company",
+          "encrypted webmail provider ProtonMail"
+        ]
+      },
+      {
+        "name": "6000",
+        "type": "credential-value",
+        "alias": [
+          "6000 in bitcoins"
+        ]
+      },
+      {
+        "name": "bitcoins",
+        "type": "currency",
+        "alias": [
+          "a ransom in bitcoins"
+        ]
+      },
+      {
+        "name": "Graham Cluley",
+        "type": "identity",
+        "alias": [
+          "former Naked Security writer Graham Cluley"
+        ]
+      },
+      {
+        "name": "Naked Security",
+        "type": "publication",
+        "alias": [
+          "Naked Security"
+        ]
+      },
+      {
+        "name": "Christmas Day last year",
+        "type": "date",
+        "alias": [
+          "Christmas Day last year"
+        ]
+      },
+      {
+        "name": "money",
+        "type": "abstract-concept",
+        "alias": [
+          "they just want money"
+        ]
+      },
+      {
+        "name": "web server",
+        "type": "general-software",
+        "alias": [
+          "the web server"
+        ]
+      },
+      {
+        "name": "website",
+        "type": "general-software",
+        "alias": [
+          "your targets website"
+        ]
+      },
+      {
+        "name": "customers",
+        "type": "victims/targets",
+        "alias": [
+          "your customers"
+        ]
+      },
+      {
+        "name": "ad revenue",
+        "type": "abstract-concept",
+        "alias": [
+          "ad revenue"
+        ]
+      },
+      {
+        "name": "extortionists",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "internet extortionists"
+        ]
+      },
+      {
+        "name": "blackmailers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "blackmailers"
+        ]
+      },
+      {
+        "name": "ransomtakers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "ransomtakers"
+        ]
+      },
+      {
+        "name": "Grahams article",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "Grahams article about how ProtonMail initially caved"
+        ]
+      },
+      {
+        "name": "Shutterstock.com",
+        "type": "domain-name",
+        "alias": [
+          "Shutterstock.com"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "A distributed denialofservice attack",
+        "rel": "is a way to take out",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "your targets website"
+      },
+      {
+        "sub": "DDoS attack",
+        "rel": "floods",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "the web server"
+      },
+      {
+        "sub": "DDoS attack",
+        "rel": "overwhelms",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "the web server"
+      },
+      {
+        "sub": "DDoS attack",
+        "rel": "crashes",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "the website"
+      },
+      {
+        "sub": "hacktivist groups like Anonymous",
+        "rel": "use",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "DDoS attacks"
+      },
+      {
+        "sub": "Lizard Squad",
+        "rel": "took out",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "Playstation and Xbox servers"
+      },
+      {
+        "sub": "Lizard Squad",
+        "rel": "did it to",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "amuse themselves"
+      },
+      {
+        "sub": "cybergang calling itself the Armada Collective",
+        "rel": "has been attempting to extort",
+        "rel_type": [
+          "threat-actor-or-intrusion-set"
+        ],
+        "obj": "money"
+      },
+      {
+        "sub": "Armada Collective",
+        "rel": "threatening",
+        "rel_type": [
+          "threat-actor-or-intrusion-set"
+        ],
+        "obj": "DDoS attacks"
+      },
+      {
+        "sub": "Armada Collective",
+        "rel": "unless",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "a ransom is paid in bitcoins"
+      },
+      {
+        "sub": "ProtonMail",
+        "rel": "recently paid",
+        "rel_type": [
+          "general-software"
+        ],
+        "obj": "6000 in bitcoins"
+      },
+      {
+        "sub": "ProtonMail",
+        "rel": "received",
+        "rel_type": [
+          "general-software"
+        ],
+        "obj": "a ransom from the Armada Collective"
+      },
+      {
+        "sub": "the latest site to fall victim",
+        "rel": "is that of",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "Graham Cluley"
+      },
+      {
+        "sub": "Graham Cluley",
+        "rel": "was targeted",
+        "rel_type": [
+          "identity"
+        ],
+        "obj": "by DDoS attack"
+      },
+      {
+        "sub": "Graham Cluley",
+        "rel": "did not receive",
+        "rel_type": [
+          "identity"
+        ],
+        "obj": "a ransom demand"
+      },
+      {
+        "sub": "Graham Cluley",
+        "rel": "noted on Twitter",
+        "rel_type": [
+          "identity"
+        ],
+        "obj": "he didnt receive a ransom demand"
+      },
+      {
+        "sub": "anybody with a little bit of money",
+        "rel": "can launch",
+        "rel_type": [
+          "identity"
+        ],
+        "obj": "DDoS attacks"
+      },
+      {
+        "sub": "anybody with a little bit of money",
+        "rel": "can launch",
+        "rel_type": [
+          "identity"
+        ],
+        "obj": "DDoS for hire web tools"
+      },
+      {
+        "sub": "DDoS for hire web tools",
+        "rel": "harness",
+        "rel_type": [
+          "general-software"
+        ],
+        "obj": "armies of zombified computers"
+      },
+      {
+        "sub": "DDoS for hire web tools",
+        "rel": "bombard",
+        "rel_type": [
+          "attack-pattern"
+        ],
+        "obj": "your website"
+      },
+      {
+        "sub": "your website",
+        "rel": "goes down",
+        "rel_type": [
+          "general-software"
+        ],
+        "obj": "for any period of time"
+      },
+      {
+        "sub": "your website down",
+        "rel": "your customers cant get through",
+        "rel_type": [
+          "victims/targets"
+        ],
+        "obj": "your customers"
+      },
+      {
+        "sub": "your website down",
+        "rel": "you lose new sales",
+        "rel_type": [
+          "victims/targets"
+        ],
+        "obj": "new sales"
+      },
+      {
+        "sub": "your website down",
+        "rel": "you lose customers",
+        "rel_type": [
+          "victims/targets"
+        ],
+        "obj": "customers"
+      },
+      {
+        "sub": "your website down",
+        "rel": "you miss out on",
+        "rel_type": [
+          "victims/targets"
+        ],
+        "obj": "ad revenue"
+      },
+      {
+        "sub": "Graham",
+        "rel": "wrote something sensible about",
+        "rel_type": [
+          "identity"
+        ],
+        "obj": "extortionists, blackmailers and ransomtakers"
+      },
+      {
+        "sub": "extortionists",
+        "rel": "are not to be paid to",
+        "rel_type": [
+          "threat-actor-or-intrusion-set"
+        ],
+        "obj": "internet extortionists"
+      },
+      {
+        "sub": "if we pay",
+        "rel": "that will only give them more reason to do it again",
+        "rel_type": [
+          "abstract-concept"
+        ],
+        "obj": "extortionists"
+      },
+      {
+        "sub": "Image of attacking cursor arrows",
+        "rel": "courtesy of",
+        "rel_type": [
+          "image"
+        ],
+        "obj": "Shutterstock.com"
+      },
+      {
+        "sub": "Grahams article",
+        "rel": "about how ProtonMail initially caved",
+        "rel_type": [
+          "malware-analysis-document-or-publication-or-conference"
+        ],
+        "obj": "to the extortion demands"
+      },
+      {
+        "sub": "ProtonMail",
+        "rel": "initially caved to",
+        "rel_type": [
+          "general-software"
+        ],
+        "obj": "extortion demands"
+      },
+      {
+        "sub": "ProtonMail",
+        "rel": "had a change of heart",
+        "rel_type": [
+          "general-software"
+        ],
+        "obj": "change of heart"
+      },
+      {
+        "sub": "cybergang calling itself the Armada Collective",
+        "rel": "attempts to extort",
+        "rel_type": [
+          "threat-actor-or-intrusion-set"
+        ],
+        "obj": "money"
+      }
+    ]
+  }
+}

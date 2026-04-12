@@ -1,0 +1,834 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_27.json",
+  "sample_index": 219,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_27.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Thrip",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the attacker",
+          "this group of attackers",
+          "the group",
+          "Thrip’s"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Symantec",
+        "type": "security-product",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Targeted Attack Analytics (TAA)",
+        "type": "security-product",
+        "alias": [
+          "TAA",
+          "Symantec’s data lake of telemetry",
+          "advanced AI",
+          "machine learning",
+          "our Advanced Threat Protection (ATP) customers’ tools"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "PsExec",
+        "type": "hacker-tool",
+        "alias": [
+          "a Microsoft Sysinternals tool",
+          "legitimate pieces of software used by attackers"
+        ],
+        "mother entity": [
+          "Microsoft Sysinternals"
+        ]
+      },
+      {
+        "name": "Infostealer.Catchamas",
+        "type": "malware",
+        "alias": [
+          "previously unknown piece of malware (Infostealer.Catchamas)",
+          "custom Trojan",
+          "the malware"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "large telecoms operator in Southeast Asia",
+        "type": "identity",
+        "alias": [
+          "a large telecoms operator in Southeast Asia",
+          "the victim’s network",
+          "telecoms companies themselves"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "three computers in China",
+        "type": "infrastructure",
+        "alias": [
+          "three computers in China",
+          "computers within China"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "satellite communications operator",
+        "type": "identity",
+        "alias": [
+          "the company"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "computers running software that monitors and controls satellites",
+        "type": "process",
+        "alias": [
+          "operational side of the company"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "geospatial imaging and mapping organization",
+        "type": "identity",
+        "alias": [
+          "the company"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "MapXtreme Geographic Information System (GIS) software",
+        "type": "general-software",
+        "alias": [
+          "software used for tasks such as developing custom geospatial applications"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Google Earth Server",
+        "type": "general-software",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Garmin imaging software",
+        "type": "general-software",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "three different telecoms operators",
+        "type": "identity",
+        "alias": [
+          "telecoms companies themselves"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "defense contractor",
+        "type": "identity",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "PowerShell",
+        "type": "hacker-tool",
+        "alias": [
+          "Microsoft scripting tool"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Mimikatz",
+        "type": "hacker-tool",
+        "alias": [
+          "this tool"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "WinSCP",
+        "type": "hacker-tool",
+        "alias": [
+          "FTP client"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "LogMeIn",
+        "type": "hacker-tool",
+        "alias": [
+          "Cloud-based remote access software",
+          "LogMeIn accounts"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Microsoft Sysinternals",
+        "type": "general-software",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "Microsoft"
+        ]
+      },
+      {
+        "name": "Microsoft",
+        "type": "identity",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "DeepSight Intelligence Managed Adversary and Threat Intelligence (MATI) service",
+        "type": "course-of-action",
+        "alias": [
+          "customers of the DeepSight… service"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "File-based protection",
+        "type": "course-of-action",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Network protection products",
+        "type": "security-product",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Malware Analysis Appliance",
+        "type": "security-product",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Webpulse-enabled products",
+        "type": "security-product",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Symantec Enterprise Blogs",
+        "type": "other",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Figure 1",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Figure 2",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Thrip IOC list",
+        "type": "indicator",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Spyder Loader",
+        "type": "malware",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "BlackByte Ransomware Attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Cranefly",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Exbyte",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Billbug",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "State-sponsored Actor"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "United States, Southeast Asia",
+        "type": "location",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "operational systems",
+        "type": "general-software",
+        "alias": [
+          "operational side of the company"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "victims’ networks",
+        "type": "network-traffic",
+        "alias": [
+          "company’s network"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Telegram",
+        "type": "communication-tool",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Britney Spears",
+        "type": "identity",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "cybercriminal",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "cybercriminals"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Telegram account",
+        "type": "account",
+        "alias": [
+          "Hacked Telegram account"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "broadcaster",
+        "type": "identity",
+        "alias": [
+          "popular broadcaster"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Britney Spears’ manager",
+        "type": "identity",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Britney Spears’ fan",
+        "type": "identity",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "British Telecoms company",
+        "type": "identity",
+        "alias": [
+          "BT"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "government agencies",
+        "type": "identity",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "hypothetical attacks",
+        "type": "campaign",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Symantec Threat Hunter Team",
+        "type": "identity",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Targeted Attack Analytics: Using Cloud-based Artificial Intelligence for Enterprise-Focused Advanced Threat Protection",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "whitepaper Targeted Attack Analytics…"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Symantec",
+        "rel": "created",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Targeted Attack Analytics (TAA)"
+      },
+      {
+        "sub": "Targeted Attack Analytics (TAA)",
+        "rel": "led us to",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Thrip"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "using PsExec to move laterally",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "large telecoms operator in Southeast Asia"
+      },
+      {
+        "sub": "PsExec",
+        "rel": "is a tool of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "Microsoft Sysinternals"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "attempting to remotely install",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Infostealer.Catchamas"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "three computers in China"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "satellite communications operator"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targeting and infecting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "computers running software that monitors and controls satellites"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "geospatial imaging and mapping organization"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "MapXtreme Geographic Information System (GIS) software"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Google Earth Server"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Garmin imaging software"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "three different telecoms operators"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "defense contractor"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Mimikatz"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "WinSCP"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "LogMeIn",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Thrip",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "PsExec"
+      },
+      {
+        "sub": "Targeted Attack Analytics (TAA)",
+        "rel": "trained to spot patterns of malicious activity associated with",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Thrip"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "employs",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Infostealer.Catchamas"
+      },
+      {
+        "sub": "File-based protection",
+        "rel": "protects against",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Infostealer.Catchamas"
+      },
+      {
+        "sub": "Malware Analysis Appliance",
+        "rel": "detects activity associated with",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Thrip"
+      },
+      {
+        "sub": "DeepSight Intelligence Managed Adversary and Threat Intelligence (MATI) service",
+        "rel": "provided reports on",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Thrip"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "originates from",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "three computers in China"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targets organizations in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "United States, Southeast Asia"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Telegram account",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "hypothetical attacks",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Britney Spears",
+        "special_factuality": [
+          "hypothetical"
+        ]
+      },
+      {
+        "sub": "cybercriminal",
+        "rel": "gaining access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Telegram account",
+        "special_factuality": [
+          "hypothetical"
+        ]
+      },
+      {
+        "sub": "BlackByte Ransomware Attackers",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "government agencies"
+      },
+      {
+        "sub": "Cranefly",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "government agencies"
+      },
+      {
+        "sub": "Exbyte",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "government agencies"
+      },
+      {
+        "sub": "Billbug",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "government agencies"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "operational systems"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "compromising",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "victims’ networks"
+      }
+    ]
+  }
+}

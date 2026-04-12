@@ -1,0 +1,368 @@
+{
+  "sample_id": "casie__1077.json",
+  "sample_index": 4,
+  "source": "casie",
+  "file_name": "1077.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the attacker",
+          "attackers"
+        ]
+      },
+      {
+        "name": "Magento",
+        "type": "general-software",
+        "alias": [
+          "the e-commerce platform Magento"
+        ]
+      },
+      {
+        "name": "SF9 Realex",
+        "type": "general-software",
+        "alias": [
+          "a module that helps sites store customer credit card data",
+          "the module"
+        ]
+      },
+      {
+        "name": "Realex RealAuth Remote and Redirect systems",
+        "type": "general-software",
+        "alias": [
+          "the Realex RealAuth Remote and Redirect systems"
+        ]
+      },
+      {
+        "name": "sendCCNumber()",
+        "type": "hacker-tool",
+        "alias": [
+          "the function",
+          "a malicious function"
+        ]
+      },
+      {
+        "name": ".php file",
+        "type": "file",
+        "alias": [
+          "a .php file"
+        ]
+      },
+      {
+        "name": "binlist.net",
+        "type": "domain-name",
+        "alias": [
+          "the public web service binlist.net"
+        ]
+      },
+      {
+        "name": "one-click checkout functionality",
+        "type": "abstract-concept",
+        "alias": [
+          "the one-click checkout functionality"
+        ]
+      },
+      {
+        "name": "credit card information",
+        "type": "credential-value",
+        "alias": [
+          "credit card data"
+        ]
+      },
+      {
+        "name": "JSON",
+        "type": "general-software",
+        "alias": [
+          "encoded in JSON"
+        ]
+      },
+      {
+        "name": "Bruno Zanelato",
+        "type": "identity",
+        "alias": [
+          "Zanelato",
+          "a researcher with the firm Sucuri"
+        ]
+      },
+      {
+        "name": "Sucuri",
+        "type": "security-product",
+        "alias": [
+          "the firm Sucuri"
+        ]
+      },
+      {
+        "name": "Cesar Anjos",
+        "type": "identity",
+        "alias": [
+          "Cesar Anjos",
+          "a researcher with the firm"
+        ]
+      },
+      {
+        "name": "Ben Martin",
+        "type": "identity",
+        "alias": [
+          "Ben Martin",
+          "a different researcher with the firm"
+        ]
+      },
+      {
+        "name": "RiskIQ",
+        "type": "security-product",
+        "alias": [
+          "Researchers with RiskIQ"
+        ]
+      },
+      {
+        "name": "Powerfront CMS",
+        "type": "general-software",
+        "alias": [
+          "Powerfront CMS"
+        ]
+      },
+      {
+        "name": "OpenCart",
+        "type": "general-software",
+        "alias": [
+          "OpenCart"
+        ]
+      },
+      {
+        "name": "web-based keylogger",
+        "type": "hacker-tool",
+        "alias": [
+          "a web-based keylogger"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Attackers",
+        "rel": "continue to take aim at",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Magento"
+      },
+      {
+        "sub": "Researchers",
+        "rel": "came across",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "a malicious function"
+      },
+      {
+        "sub": "the malicious function",
+        "rel": "was injected into",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": ".php file"
+      },
+      {
+        "sub": "SF9 Realex",
+        "rel": "helps sites store",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "customer credit card data"
+      },
+      {
+        "sub": "the module",
+        "rel": "interacts with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "the Realex RealAuth Remote and Redirect systems"
+      },
+      {
+        "sub": "Realex RealAuth Remote and Redirect systems",
+        "rel": "are",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "very popular solutions in the Magento community"
+      },
+      {
+        "sub": "the function",
+        "rel": "reroutes",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "credit card information"
+      },
+      {
+        "sub": "the function",
+        "rel": "reroutes",
+        "rel_type": [
+          "leaks"
+        ],
+        "obj": "credit card information"
+      },
+      {
+        "sub": "the data",
+        "rel": "arrives in",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "the attacker's inbox"
+      },
+      {
+        "sub": "the data",
+        "rel": "is encoded in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "JSON"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "binlist.net"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "credit card data"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "is going greater lengths to target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "credit card data"
+      },
+      {
+        "sub": "Zanelato",
+        "rel": "wrote",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "attackers are going greater lengths to target credit card data"
+      },
+      {
+        "sub": "Zanelato",
+        "rel": "said",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "there wasn't a vulnerability in Magento that enabled the theft of credit card data"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "injected script and takeover",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "SF9 Realex"
+      },
+      {
+        "sub": "Sucuri researchers",
+        "rel": "have observed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "credit card stealers"
+      },
+      {
+        "sub": "Cesar Anjos",
+        "rel": "looked at",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "one stealer"
+      },
+      {
+        "sub": "the stealer",
+        "rel": "performed a man-in-the-middle attack",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "between the user and the checkout page"
+      },
+      {
+        "sub": "Ben Martin",
+        "rel": "discovered",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "attackers scraping credit card numbers"
+      },
+      {
+        "sub": "Researchers with RiskIQ",
+        "rel": "monitored",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "attacks similar to ones described by Sucuri"
+      },
+      {
+        "sub": "the attacks",
+        "rel": "originated from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a single hacking group"
+      },
+      {
+        "sub": "a single hacking group",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "e-commerce platforms such as Powerfront CMS and OpenCart"
+      },
+      {
+        "sub": "a single hacking group",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a web-based keylogger"
+      },
+      {
+        "sub": "a single hacking group",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Powerfront CMS"
+      },
+      {
+        "sub": "a single hacking group",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "OpenCart"
+      }
+    ]
+  }
+}

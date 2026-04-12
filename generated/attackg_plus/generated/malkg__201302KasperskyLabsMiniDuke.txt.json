@@ -1,0 +1,652 @@
+{
+  "sample_id": "malkg__201302KasperskyLabsMiniDuke.txt",
+  "sample_index": 125,
+  "source": "malkg",
+  "file_name": "201302KasperskyLabsMiniDuke.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Adobe Reader"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "JavaScript exploit code"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Compress",
+        "obj": "JavaScript exploit code"
+      },
+      {
+        "sub": "PDF document",
+        "rel": "Use",
+        "obj": "Adobe Reader"
+      },
+      {
+        "sub": "PDF document",
+        "rel": "Construct",
+        "obj": "Fake content related to ASEM and Ukraine’s foreign policy and NATO membership plans"
+      },
+      {
+        "sub": "PDF document",
+        "rel": "Tailor",
+        "obj": "Target country"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Gather",
+        "obj": "Victim organization and identity information"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Refine",
+        "obj": "Information for targeting"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Anti-malware products"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Custom 0-day exploit toolkit"
+      },
+      {
+        "sub": "Custom 0-day exploit toolkit",
+        "rel": "Use",
+        "obj": "Malicious PDFs"
+      },
+      {
+        "sub": "Malicious PDFs",
+        "rel": "Have variant",
+        "obj": "Different content and signatures"
+      },
+      {
+        "sub": "Malware dropper",
+        "rel": "Has value",
+        "obj": "'c:\\src\\dlldropper\\Release\\L2P.pdb'"
+      },
+      {
+        "sub": "Malware dropper",
+        "rel": "Has value",
+        "obj": "'C:\\src\\hellodll\\Release\\hellodll.pdb'"
+      },
+      {
+        "sub": "Malware dropper",
+        "rel": "Modify",
+        "obj": "Original 'Visaform Turkey.pdf' exploit"
+      },
+      {
+        "sub": "Custom 0-day exploit toolkit",
+        "rel": "Operate",
+        "obj": "Initial access"
+      },
+      {
+        "sub": "Custom 0-day exploit toolkit",
+        "rel": "Support",
+        "obj": "Persistence phase"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Construct",
+        "obj": "New infrastructure components"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "PDF"
+      },
+      {
+        "sub": "PDF",
+        "rel": "Exploit",
+        "obj": "JavaScript"
+      },
+      {
+        "sub": "JavaScript",
+        "rel": "Trigger",
+        "obj": "Payload delivery"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Modify",
+        "obj": "Compression"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Evasion",
+        "obj": "Detection"
+      },
+      {
+        "sub": "PDF",
+        "rel": "Contain",
+        "obj": "JavaScript"
+      },
+      {
+        "sub": "PDF",
+        "rel": "Appear",
+        "obj": "Legitimate documents"
+      },
+      {
+        "sub": "Legitimate documents",
+        "rel": "Relate to",
+        "obj": "ASEM"
+      },
+      {
+        "sub": "Legitimate documents",
+        "rel": "Relate to",
+        "obj": "Foreign policy"
+      },
+      {
+        "sub": "Phishing-like attack",
+        "rel": "Rely on",
+        "obj": "Social engineering"
+      },
+      {
+        "sub": "Phishing-like attack",
+        "rel": "Exploit",
+        "obj": "Zero-day vulnerability"
+      },
+      {
+        "sub": "Zero-day vulnerability",
+        "rel": "Belong to",
+        "obj": "Adobe Reader"
+      },
+      {
+        "sub": "Adobe Reader",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2013-0640"
+      },
+      {
+        "sub": "Adobe Reader",
+        "rel": "Has vulnerability",
+        "obj": "Publicly exposed vulnerability"
+      },
+      {
+        "sub": "Adobe Reader",
+        "rel": "Operate on",
+        "obj": "Widely used application"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Adobe Reader"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "RtlDecompressBuffer API"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "LZNT1"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Temporary location"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Load",
+        "obj": "LoadLibrary API"
+      },
+      {
+        "sub": "Backdoor DLL",
+        "rel": "Deploy",
+        "obj": "%AppData% directory"
+      },
+      {
+        "sub": "Backdoor DLL",
+        "rel": "Load",
+        "obj": "LoadLibrary API"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Decoy PDF"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "BAT file"
+      },
+      {
+        "sub": "BAT file",
+        "rel": "Terminate",
+        "obj": "Adobe Reader processes"
+      },
+      {
+        "sub": "BAT file",
+        "rel": "Open",
+        "obj": "Decoy PDF"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Adobe Reader"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "'@34fZ7E*p\\'"
+      },
+      {
+        "sub": "Registry",
+        "rel": "Locate at",
+        "obj": "%AppData%"
+      },
+      {
+        "sub": "Filepath",
+        "rel": "Has value",
+        "obj": "'%AppData%'"
+      },
+      {
+        "sub": "Filename",
+        "rel": "Has value",
+        "obj": "'resource 101'"
+      },
+      {
+        "sub": "Filename",
+        "rel": "Has value",
+        "obj": "'resource 102'"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "Adobe Reader"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Operate",
+        "obj": "Adobe Reader"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Startup folder"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Write",
+        "obj": "LNK file"
+      },
+      {
+        "sub": "LNK file",
+        "rel": "Has value",
+        "obj": "'stat.bin'"
+      },
+      {
+        "sub": "LNK file",
+        "rel": "Locate at",
+        "obj": "'Adobe' folder"
+      },
+      {
+        "sub": "LNK file",
+        "rel": "Call",
+        "obj": "main backdoor component"
+      },
+      {
+        "sub": "main backdoor component",
+        "rel": "Use",
+        "obj": "rundll32"
+      },
+      {
+        "sub": "main backdoor component",
+        "rel": "Has vulnerability",
+        "obj": "obfuscation"
+      },
+      {
+        "sub": "main backdoor component",
+        "rel": "Has vulnerability",
+        "obj": "encryption"
+      },
+      {
+        "sub": "main backdoor component",
+        "rel": "Operate",
+        "obj": "system reboot"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Minimal privileges"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Standard user context"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not",
+        "obj": "Use process injection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not",
+        "obj": "Perform token manipulation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not",
+        "obj": "Exploit system vulnerabilities"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not",
+        "obj": "Escalate privileges"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Obfuscated code"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encrypted payloads"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Dynamic loading"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Dynamic API resolution by hash values"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "ProcMon"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "WinDbg"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "VMware"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Functionality"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Decryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Anti-analysis features"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "Defense evasion"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "GetAsyncKeyState"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Search",
+        "obj": "*.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Search",
+        "obj": "*.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "%temp%"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Retrieve",
+        "obj": "CPU information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Retrieve",
+        "obj": "drive information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Retrieve",
+        "obj": "computer name"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Calculate",
+        "obj": "SHA-1 hash"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "SHA-1 hash for command and control communication"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Derive",
+        "obj": "encryption key"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "on victim’s system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Steganography"
+      },
+      {
+        "sub": "C2 Server",
+        "rel": "Has URL",
+        "obj": "Hidden encrypted PE file at offset 0x6a4"
+      },
+      {
+        "sub": "GIF file",
+        "rel": "Contains",
+        "obj": "Hidden encrypted PE file"
+      },
+      {
+        "sub": "GIF file",
+        "rel": "Has value",
+        "obj": "8-byte XOR key"
+      },
+      {
+        "sub": "Encrypted payload",
+        "rel": "Decrypt using",
+        "obj": "8-byte XOR key"
+      },
+      {
+        "sub": "Encrypted payload",
+        "rel": "Write",
+        "obj": "Stage 2 backdoor"
+      },
+      {
+        "sub": "Stage 2 backdoor",
+        "rel": "Operate",
+        "obj": "As a backdoor"
+      },
+      {
+        "sub": "Data",
+        "rel": "Exfiltrate",
+        "obj": "Stealthily via steganography"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Has value",
+        "obj": "arabooks.ch"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Has value",
+        "obj": "artas.org"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Has value",
+        "obj": "tsoftonline.com"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Has value",
+        "obj": "www.eamtm.com"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Has value",
+        "obj": "news.grouptumbler.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "fake GIF file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "encrypted payload hidden in GIF"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Perform",
+        "obj": "Google search for 'lUFEfiHKljfLKWPR'"
+      },
+      {
+        "sub": "C2 Server",
+        "rel": "Locate at",
+        "obj": "Switzerland"
+      },
+      {
+        "sub": "C2 Server",
+        "rel": "Locate at",
+        "obj": "France"
+      },
+      {
+        "sub": "C2 Server",
+        "rel": "Locate at",
+        "obj": "United States"
+      },
+      {
+        "sub": "C2 Server",
+        "rel": "Locate at",
+        "obj": "Germany"
+      },
+      {
+        "sub": "C2 Server",
+        "rel": "Locate at",
+        "obj": "Panama"
+      },
+      {
+        "sub": "Steganographic technique",
+        "rel": "Modify",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has URL",
+        "obj": "Fake GIF file"
+      },
+      {
+        "sub": "Fake GIF file",
+        "rel": "Contains",
+        "obj": "Hidden encrypted PE file"
+      },
+      {
+        "sub": "Hidden encrypted PE file",
+        "rel": "Decrypt",
+        "obj": "Victim’s system"
+      },
+      {
+        "sub": "Hidden encrypted PE file",
+        "rel": "Execute",
+        "obj": "Victim’s system"
+      },
+      {
+        "sub": "Steganographic technique",
+        "rel": "Use",
+        "obj": "Duqu’s steganography"
+      },
+      {
+        "sub": "Data",
+        "rel": "Embed",
+        "obj": "Image file"
+      },
+      {
+        "sub": "Image file",
+        "rel": "Has value",
+        "obj": "Hidden data"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Operate",
+        "obj": "Victim’s system"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Initial access"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Execution"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Persistence"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Data collection"
+      }
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "sample_id": "casie__10209.json",
+  "sample_index": 3,
+  "source": "casie",
+  "file_name": "10209.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Adobe Acrobat/Reader",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Adobe Flash Player",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Adobe Photoshop CC",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "CVE-2018-15978",
+        "type": "Indicator"
+      },
+      {
+        "name": "CVE-2018-15979",
+        "type": "Indicator"
+      },
+      {
+        "name": "CVE-2018-15980",
+        "type": "Indicator"
+      },
+      {
+        "name": "Out-of-bounds read",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Information disclosure",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Adobe",
+        "type": "Organization"
+      },
+      {
+        "name": "Check Point Research",
+        "type": "Organization"
+      },
+      {
+        "name": "EdgeSpot",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Adobe",
+        "rel": "releassed update for",
+        "obj": "Adobe Acrobat/Reader"
+      },
+      {
+        "sub": "Adobe",
+        "rel": "released update for",
+        "obj": "Adobe Flash Player"
+      },
+      {
+        "sub": "Adobe",
+        "rel": "released update for",
+        "obj": "Adobe Photoshop CC"
+      },
+      {
+        "sub": "CVE-2018-15980",
+        "rel": "AFFECTS",
+        "obj": "Adobe Photoshop CC"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "AFFECTS",
+        "obj": "Adobe Acrobat DC"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "AFFECTS",
+        "obj": "Adobe Reader DC"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "AFFECTS",
+        "obj": "Acrobat 2017"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "AFFECTS",
+        "obj": "Adobe Reader DC 2017"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "AFFECTS",
+        "obj": "Adobe Acrobat DC (Classic 2015)"
+      },
+      {
+        "sub": "CVE-2018-15978",
+        "rel": "AFFECTS",
+        "obj": "Adobe Flash Player"
+      },
+      {
+        "sub": "CVE-2018-15978",
+        "rel": "AFFECTS",
+        "obj": "Adobe Flash Player 31.0.0.122"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "original reported by",
+        "obj": "Check Point Research"
+      },
+      {
+        "sub": "CVE-2018-15979",
+        "rel": "discovered variants by",
+        "obj": "EdgeSpot"
+      },
+      {
+        "sub": "Adobe",
+        "rel": "fixed vulnerability",
+        "obj": "Out-of-bounds read"
+      },
+      {
+        "sub": "Adobe",
+        "rel": "fixed vulnerability",
+        "obj": "Information disclosure"
+      },
+      {
+        "sub": "Adobe",
+        "rel": "fixed vulnerability in",
+        "obj": "Out-of-bounds read"
+      },
+      {
+        "sub": "Adobe",
+        "rel": "fixed vulnerability in",
+        "obj": "Information disclosure"
+      }
+    ]
+  }
+}

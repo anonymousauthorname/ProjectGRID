@@ -1,0 +1,280 @@
+{
+  "sample_id": "securenlp__Aided_Frame_Aided_Direction",
+  "sample_index": 150,
+  "source": "securenlp",
+  "file_name": "Aided_Frame_Aided_Direction",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "AIDED FRAME",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "STRATEGIC WEB COMPROMISE",
+        "type": "EVENT"
+      },
+      {
+        "name": "FIREEYE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "SUNSHOP DIGITAL QUARTELMASTER",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "POISON IVY",
+        "type": "MALWARE"
+      },
+      {
+        "name": "JAVA EXPLOIT",
+        "type": "TOOL"
+      },
+      {
+        "name": "103.27.108.45",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "QUAKEGOOGLE.SERVEQUAKE.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "115.126.62.100",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "ASSIGN.DDNSKING.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "SOGU",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "INTERNATIONAL NON-PROFIT ORGANIZATION",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "DEMOCRACY AND HUMAN RIGHTS NGO",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "GOOGLE CHROME",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "RT_MANIFEST",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "SUNSHOP MANIFEST",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "CHINA-BASED APT GROUPS",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "BILLY LEONARD",
+        "type": "PERSON"
+      },
+      {
+        "name": "MIKE OPPEINHEIM",
+        "type": "PERSON"
+      },
+      {
+        "name": "NED MORAN",
+        "type": "PERSON"
+      },
+      {
+        "name": "STEVE STONE",
+        "type": "PERSON"
+      },
+      {
+        "name": "SARAH ENGLE",
+        "type": "PERSON"
+      },
+      {
+        "name": "BEN WITHNELL",
+        "type": "PERSON"
+      },
+      {
+        "name": "CHINA",
+        "type": "GEO"
+      },
+      {
+        "name": "NON-PROFIT ORGANIZATIONS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "HUMAN RIGHTS NGOs",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "ENVIRONMENTAL ADVOCACY ORGANIZATION",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "SWC CAMPAIGN",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "AIDED FRAME",
+        "rel": "related_to",
+        "obj": "STRATEGIC WEB COMPROMISE"
+      },
+      {
+        "sub": "STRATEGIC WEB COMPROMISE",
+        "rel": "related_to",
+        "obj": "POISON IVY"
+      },
+      {
+        "sub": "FIREEYE",
+        "rel": "related_to",
+        "obj": "STRATEGIC WEB COMPROMISE"
+      },
+      {
+        "sub": "FIREEYE",
+        "rel": "related_to",
+        "obj": "SUNSHOP DIGITAL QUARTELMASTER"
+      },
+      {
+        "sub": "SUNSHOP DIGITAL QUARTELMASTER",
+        "rel": "related_to",
+        "obj": "POISON IVY"
+      },
+      {
+        "sub": "POISON IVY",
+        "rel": "related_to",
+        "obj": "JAVA EXPLOIT"
+      },
+      {
+        "sub": "JAVA EXPLOIT",
+        "rel": "related_to",
+        "obj": "103.27.108.45"
+      },
+      {
+        "sub": "POISON IVY",
+        "rel": "related_to",
+        "obj": "QUAKEGOOGLE.SERVEQUAKE.COM"
+      },
+      {
+        "sub": "POISON IVY",
+        "rel": "related_to",
+        "obj": "115.126.62.100"
+      },
+      {
+        "sub": "SOGU",
+        "rel": "related_to",
+        "obj": "ASSIGN.DDNSKING.COM"
+      },
+      {
+        "sub": "ASSIGN.DDNSKING.COM",
+        "rel": "related_to",
+        "obj": "115.126.62.100"
+      },
+      {
+        "sub": "CHINA-BASED APT GROUPS",
+        "rel": "related_to",
+        "obj": "SUNSHOP DIGITAL QUARTELMASTER"
+      },
+      {
+        "sub": "CHINA-BASED APT GROUPS",
+        "rel": "related_to",
+        "obj": "POISON IVY"
+      },
+      {
+        "sub": "CHINA-BASED APT GROUPS",
+        "rel": "related_to",
+        "obj": "NON-PROFIT ORGANIZATIONS"
+      },
+      {
+        "sub": "CHINA-BASED APT GROUPS",
+        "rel": "related_to",
+        "obj": "HUMAN RIGHTS NGOs"
+      },
+      {
+        "sub": "CHINA-BASED APT GROUPS",
+        "rel": "related_to",
+        "obj": "ENVIRONMENTAL ADVOCACY ORGANIZATION"
+      },
+      {
+        "sub": "POISON IVY",
+        "rel": "related_to",
+        "obj": "GOOGLE CHROME"
+      },
+      {
+        "sub": "RT_MANIFEST",
+        "rel": "related_to",
+        "obj": "SUNSHOP MANIFEST"
+      },
+      {
+        "sub": "FIREEYE",
+        "rel": "related_to",
+        "obj": "BILLY LEONARD"
+      },
+      {
+        "sub": "FIREEYE",
+        "rel": "related_to",
+        "obj": "MIKE OPPEINHEIM"
+      },
+      {
+        "sub": "FIREEYE",
+        "rel": "related_to",
+        "obj": "NED MORAN"
+      },
+      {
+        "sub": "FIREEYE",
+        "rel": "related_to",
+        "obj": "STEVE STONE"
+      },
+      {
+        "sub": "SARAH ENGLE",
+        "rel": "related_to",
+        "obj": "FIREEYE"
+      },
+      {
+        "sub": "BEN WITHNELL",
+        "rel": "related_to",
+        "obj": "FIREEYE"
+      },
+      {
+        "sub": "STRATEGIC WEB COMPROMISE",
+        "rel": "related_to",
+        "obj": "INTERNATIONAL NON-PROFIT ORGANIZATION"
+      },
+      {
+        "sub": "STRATEGIC WEB COMPROMISE",
+        "rel": "related_to",
+        "obj": "DEMOCRACY AND HUMAN RIGHTS NGO"
+      },
+      {
+        "sub": "STRATEGIC WEB COMPROMISE",
+        "rel": "related_to",
+        "obj": "CHINA"
+      },
+      {
+        "sub": "CHINA-BASED APT GROUPS",
+        "rel": "related_to",
+        "obj": "SWC CAMPAIGN"
+      }
+    ]
+  }
+}

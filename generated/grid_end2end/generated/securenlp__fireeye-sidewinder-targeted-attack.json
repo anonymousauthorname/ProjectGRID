@@ -1,0 +1,790 @@
+{
+  "sample_id": "securenlp__fireeye-sidewinder-targeted-attack",
+  "sample_index": 190,
+  "source": "securenlp",
+  "file_name": "fireeye-sidewinder-targeted-attack",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Android users",
+        "type": "identity",
+        "alias": [
+          "the number of Android users",
+          "Android users",
+          "victims"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Android devices",
+        "type": "identity",
+        "alias": [
+          "Android devices",
+          "Android application context"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Google Play",
+        "type": "general-software",
+        "alias": [
+          "Google Play",
+          "popular Google Play apps"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Android apps",
+        "type": "general-software",
+        "alias": [
+          "Android apps"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Android system",
+        "type": "general-software",
+        "alias": [
+          "Android system"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Ad libraries",
+        "type": "hacker-tool",
+        "alias": [
+          "ad libraries",
+          "Android ad libraries",
+          "ad libraries in the popular Google Play apps",
+          "ad libraries’ included in Google Play apps"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "JavaScript-binding-over-HTTP (JBOH)",
+        "type": "vulnerability",
+        "alias": [
+          "JBOH",
+          "vulnerabilities in ad libraries",
+          "JBOH issue"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "dynamic-loading-over-HTTP",
+        "type": "vulnerability",
+        "alias": [
+          "DLOH",
+          "DEX loading over HTTP (DLOH)"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Android API 16",
+        "type": "other",
+        "alias": [
+          "Android API 16 (Android 4.1) or below"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "JavaScript interface",
+        "type": "general-software",
+        "alias": [
+          "addJavascriptInterface"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "WebView",
+        "type": "general-software",
+        "alias": [
+          "WebView"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Android permissions",
+        "type": "vulnerability",
+        "alias": [
+          "sensitive Android permissions",
+          "dangerous permissions"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Camera",
+        "type": "hardware",
+        "alias": [
+          "access to the camera"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Clipboard",
+        "type": "windows-registry-key",
+        "alias": [
+          "the clipboard",
+          "clipboard content"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "GPS location",
+        "type": "location",
+        "alias": [
+          "victim’s GPS location",
+          "GPS location intercepted",
+          "latitude, longitude and the location precision"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Intel’s BYOD program",
+        "type": "infrastructure",
+        "alias": [
+          "Intel’s BYOD program"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Android 4.4.3",
+        "type": "general-software",
+        "alias": [
+          "Android 4.4.3",
+          "Android 4.4",
+          "Android 4.4.2"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "launcher READ SETTINGS",
+        "type": "attack-pattern",
+        "alias": [
+          "READ SETTINGS permissions",
+          "WRITE SETTINGS permissions"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Android Open Source Project (AOSP)",
+        "type": "security-product",
+        "alias": [
+          "AOSP"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Samsung devices",
+        "type": "identity",
+        "alias": [
+          "most Android phone models"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "MWR",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "MWR"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Black Hat",
+        "type": "location",
+        "alias": [
+          "Black Hat"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Google",
+        "type": "identity",
+        "alias": [
+          "Google",
+          "Google Ad",
+          "Google Play apps",
+          "Google’s OEM partners"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Certificate Authority (CA) implementations",
+        "type": "infrastructure",
+        "alias": [
+          "SSL certificate",
+          "server’s certificate"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "DNS servers",
+        "type": "infrastructure",
+        "alias": [
+          "Google and Godaddy",
+          "ad servers"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "BGP sessions",
+        "type": "infrastructure",
+        "alias": [
+          "BGP sessions",
+          "BGP hijacking attacks"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "ARP packets",
+        "type": "network-traffic",
+        "alias": [
+          "fake ARP packets"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "FireEye Mobile Threat Prevention (MTP) engine",
+        "type": "security-product",
+        "alias": [
+          "FireEye MTP engine"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Ad1",
+        "type": "hacker-tool",
+        "alias": [
+          "Ad1",
+          "top five Android ad libraries"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Ad2",
+        "type": "hacker-tool",
+        "alias": [
+          "Ad2"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Ad3",
+        "type": "hacker-tool",
+        "alias": [
+          "Ad3"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Ad4",
+        "type": "hacker-tool",
+        "alias": [
+          "Ad4"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Ad5",
+        "type": "hacker-tool",
+        "alias": [
+          "Ad5",
+          "some versions of Ad5"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "FireEye",
+        "type": "security-product",
+        "alias": [
+          "FireEye"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Google Ad",
+        "type": "general-software",
+        "alias": [
+          "Google Ad"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Ad libraries’ publishers",
+        "type": "identity",
+        "alias": [
+          "ad libraries’ publishers"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "SSL certificate",
+        "type": "indicator",
+        "alias": [
+          "proper SSL certificate validation"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "an attacker",
+          "the attacker",
+          "attackers"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Google Play apps",
+        "type": "file",
+        "alias": [
+          "popular Google Play apps",
+          "apps from Google Play"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Host app",
+        "type": "general-software",
+        "alias": [
+          "the victim’s device",
+          "the victim’s app",
+          "host app"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Android developers",
+        "type": "identity",
+        "alias": [
+          "many Android developers"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Root exploits",
+        "type": "course-of-action",
+        "alias": [
+          "rooting"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Code injection",
+        "type": "attack-pattern",
+        "alias": [
+          "Code injection via ptrace"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "ptrace",
+        "type": "hacker-tool",
+        "alias": [
+          "child processes able to ptrace their parents"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Runtime.load()",
+        "type": "hacker-tool",
+        "alias": [
+          "Runtime.load()"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "DexClassLoader",
+        "type": "hacker-tool",
+        "alias": [
+          "DexClassLoaderload"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Android users",
+        "rel": "has grown",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Android devices"
+      },
+      {
+        "sub": "Ad libraries",
+        "rel": "leak private information",
+        "rel_type": [
+          "leaks"
+        ],
+        "obj": "Android users"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "intercept and use private information uploaded from ad libraries",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Ad libraries"
+      },
+      {
+        "sub": "Ad libraries",
+        "rel": "leak the user’s private information",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "Android users"
+      },
+      {
+        "sub": "Ad libraries",
+        "rel": "loads content in the WebView over HTTP",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "WebView"
+      },
+      {
+        "sub": "Ad libraries",
+        "rel": "intercept GPS location",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "GPS location"
+      },
+      {
+        "sub": "Ad libraries",
+        "rel": "has the JBOH issue",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Android API 16"
+      },
+      {
+        "sub": "Ad libraries",
+        "rel": "leaks GPS location",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "GPS location"
+      },
+      {
+        "sub": "Ad libraries",
+        "rel": "have JBOH issue",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "JBOH"
+      },
+      {
+        "sub": "Ad libraries",
+        "rel": "are prone to DLOH attacks",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "dynamic-loading-over-HTTP"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "hijack network where victim resides",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "Android devices"
+      },
+      {
+        "sub": "Ad1",
+        "rel": "subject to JBOH",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "JBOH"
+      },
+      {
+        "sub": "Ad2",
+        "rel": "subject to JBOH",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "JBOH"
+      },
+      {
+        "sub": "Ad3",
+        "rel": "subject to JBOH",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "JBOH"
+      },
+      {
+        "sub": "Ad4",
+        "rel": "subject to JBOH",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "JBOH"
+      },
+      {
+        "sub": "Ad5",
+        "rel": "subject to JBOH",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "JBOH"
+      },
+      {
+        "sub": "Ad1",
+        "rel": "included in popular Google Play apps",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Google Play apps"
+      },
+      {
+        "sub": "Ad2",
+        "rel": "included in popular Google Play apps",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Google Play apps"
+      },
+      {
+        "sub": "Ad3",
+        "rel": "included in popular Google Play apps",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Google Play apps"
+      },
+      {
+        "sub": "Ad4",
+        "rel": "included in popular Google Play apps",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Google Play apps"
+      },
+      {
+        "sub": "Ad5",
+        "rel": "included in popular Google Play apps",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Google Play apps"
+      },
+      {
+        "sub": "Ad5",
+        "rel": "has DLOH",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "dynamic-loading-over-HTTP"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "identify potential victims",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Android users"
+      },
+      {
+        "sub": "Ad libraries",
+        "rel": "upload local information",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "Android devices"
+      },
+      {
+        "sub": "Ad libraries",
+        "rel": "fail to check the server’s certificate",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "Certificate Authority (CA) implementations"
+      },
+      {
+        "sub": "DNS servers",
+        "rel": "serve fake DNS information",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "ad servers"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "use fake ARP packets to direct traffic",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "ARP packets"
+      },
+      {
+        "sub": "Runtime.load()",
+        "rel": "load executables from attackers’ DEX files",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "Ad libraries"
+      },
+      {
+        "sub": "DexClassLoader",
+        "rel": "inject new classes from attackers’ DEX files",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Ad libraries"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "modify clipboard content",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Clipboard"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "modify launcher configuration settings",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "launcher READ SETTINGS"
+      },
+      {
+        "sub": "Ad libraries",
+        "rel": "use HTTPS with proper SSL certificate validation",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Certificate Authority (CA) implementations"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "install phishing apps on victim’s devices",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Google Play apps"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "use user’s Google account credentials",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Google"
+      }
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_43.json",
+  "sample_index": 233,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_43.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DDoS attack",
+        "type": "Entity"
+      },
+      {
+        "name": "hacktivist groups",
+        "type": "Entity"
+      },
+      {
+        "name": "Anonymous",
+        "type": "Entity"
+      },
+      {
+        "name": "Lizard Squad",
+        "type": "Entity"
+      },
+      {
+        "name": "cybercriminals",
+        "type": "Entity"
+      },
+      {
+        "name": "Armada Collective",
+        "type": "Entity"
+      },
+      {
+        "name": "ProtonMail",
+        "type": "Entity"
+      },
+      {
+        "name": "6000 in bitcoins",
+        "type": "Entity"
+      },
+      {
+        "name": "Graham Cluley",
+        "type": "Entity"
+      },
+      {
+        "name": "ransom demand",
+        "type": "Entity"
+      },
+      {
+        "name": "DDoS for hire web tools",
+        "type": "Entity"
+      },
+      {
+        "name": "zombified computers",
+        "type": "Entity"
+      },
+      {
+        "name": "illegitimate web requests",
+        "type": "Entity"
+      },
+      {
+        "name": "internet extortionists",
+        "type": "Entity"
+      },
+      {
+        "name": "blackmailers",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomtakers",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "hacktivist groups",
+        "rel": "uses",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "Anonymous",
+        "rel": "uses",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "Lizard Squad",
+        "rel": "uses",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "cybercriminals",
+        "rel": "uses",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "Armada Collective",
+        "rel": "threatens",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "Armada Collective",
+        "rel": "issues",
+        "obj": "ransom demand"
+      },
+      {
+        "sub": "ProtonMail",
+        "rel": "pays",
+        "obj": "6000 in bitcoins"
+      },
+      {
+        "sub": "Armada Collective",
+        "rel": "targets",
+        "obj": "ProtonMail"
+      },
+      {
+        "sub": "Armada Collective",
+        "rel": "launches",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "Graham Cluley",
+        "rel": "is targeted by",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "DDoS for hire web tools",
+        "rel": "harnesses",
+        "obj": "zombified computers"
+      },
+      {
+        "sub": "DDoS for hire web tools",
+        "rel": "generates",
+        "obj": "illegitimate web requests"
+      },
+      {
+        "sub": "internet extortionists",
+        "rel": "are threatened with",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "blackmailers",
+        "rel": "are associated with",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "ransomtakers",
+        "rel": "are associated with",
+        "obj": "DDoS attack"
+      }
+    ]
+  }
+}

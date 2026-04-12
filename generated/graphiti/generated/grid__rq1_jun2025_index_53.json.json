@@ -1,0 +1,267 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_53.json",
+  "sample_index": 241,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_53.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "JIGSAW",
+        "type": "Malware"
+      },
+      {
+        "name": "1fichier",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "waldorftrust",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "PETYA",
+        "type": "Malware"
+      },
+      {
+        "name": "CERBER",
+        "type": "Malware"
+      },
+      {
+        "name": "FAREIT",
+        "type": "Malware"
+      },
+      {
+        "name": "COINSTEALER",
+        "type": "Malware"
+      },
+      {
+        "name": "MAKTUBLOCKER",
+        "type": "Malware"
+      },
+      {
+        "name": "Confuser",
+        "type": "Tool"
+      },
+      {
+        "name": "Taskmgr",
+        "type": "Tool"
+      },
+      {
+        "name": "Procexp",
+        "type": "Tool"
+      },
+      {
+        "name": "Regedit",
+        "type": "Tool"
+      },
+      {
+        "name": "Autoruns",
+        "type": "Tool"
+      },
+      {
+        "name": "cmd",
+        "type": "Tool"
+      },
+      {
+        "name": "Saw",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Billy",
+        "type": "Person"
+      },
+      {
+        "name": "red digitalclock",
+        "type": "Indicator"
+      },
+      {
+        "name": ".fun",
+        "type": "Indicator"
+      },
+      {
+        "name": ".KKK",
+        "type": "Indicator"
+      },
+      {
+        "name": ".BTC",
+        "type": "Indicator"
+      },
+      {
+        "name": ".GWS",
+        "type": "Indicator"
+      },
+      {
+        "name": "US20150",
+        "type": "Indicator"
+      },
+      {
+        "name": "Trend Micro Security",
+        "type": "Software"
+      },
+      {
+        "name": "Trend Micro Smart Protection Suites",
+        "type": "Software"
+      },
+      {
+        "name": "Trend Micro WorryFreeBusiness Security",
+        "type": "Software"
+      },
+      {
+        "name": "Trend Micro Endpoint Application Control",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "JIGSAW",
+        "rel": "distributed through",
+        "obj": "1fichier"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "distributed through",
+        "obj": "waldorftrust"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "belongs to the same family as",
+        "obj": "PETYA"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "belongs to the same family as",
+        "obj": "CERBER"
+      },
+      {
+        "sub": "1fichier",
+        "rel": "HOSTED",
+        "obj": "FAREIT"
+      },
+      {
+        "sub": "1fichier",
+        "rel": "HOSTED",
+        "obj": "COINSTEALER"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "is reminiscent of",
+        "obj": "Saw"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "DISPLAYS",
+        "obj": "Billy"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "DISPLAYS",
+        "obj": "red digitalclock"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "encrypts files with extension",
+        "obj": ".fun"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "encrypts files with extension",
+        "obj": ".KKK"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "encrypts files with extension",
+        "obj": ".BTC"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "encrypts files with extension",
+        "obj": ".GWS"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "sets minimum ransom amount",
+        "obj": "US20150"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "is in the same threat category as",
+        "obj": "MAKTUBLOCKER"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "USES",
+        "obj": "Confuser"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "terminates or disables",
+        "obj": "Taskmgr"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "terminates or disables",
+        "obj": "Procexp"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "terminates or disables",
+        "obj": "Regedit"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "terminates or disables",
+        "obj": "Autoruns"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "terminates or disables",
+        "obj": "cmd"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "is protected by",
+        "obj": "Trend Micro Security"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "is protected by",
+        "obj": "Trend Micro Smart Protection Suites"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "is protected by",
+        "obj": "Trend Micro WorryFreeBusiness Security"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "is protected by",
+        "obj": "Trend Micro Endpoint Application Control"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "can infection through",
+        "obj": "porn sites"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "displays alternate background image",
+        "obj": "pink flowers"
+      }
+    ]
+  }
+}

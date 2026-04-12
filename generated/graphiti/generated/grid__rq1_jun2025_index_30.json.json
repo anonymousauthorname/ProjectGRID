@@ -1,0 +1,207 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_30.json",
+  "sample_index": 221,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_30.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Lizard Squad",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Google.com.vn",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Lenovo.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Webnic.cc",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Hacked by Lizard Squad, greetz from antichrist, Brian Krebs, sp3c, Komodo, ryan, HTP Rory Andrew Godfrey (holding it down in Texas)",
+        "type": "Indicator"
+      },
+      {
+        "name": "Lizard Stresser",
+        "type": "Tool"
+      },
+      {
+        "name": "Superfish",
+        "type": "Software"
+      },
+      {
+        "name": "Hack The Planet",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Julius Zeekill Kivimaki",
+        "type": "Person"
+      },
+      {
+        "name": "Rory Andrew Godfrey",
+        "type": "Person"
+      },
+      {
+        "name": "Ryan King",
+        "type": "Person"
+      },
+      {
+        "name": "Starfall",
+        "type": "Person"
+      },
+      {
+        "name": "Eevon Soh",
+        "type": "Person"
+      },
+      {
+        "name": "Web Commerce Communications Ltd",
+        "type": "Organization"
+      },
+      {
+        "name": "The Verge",
+        "type": "Organization"
+      },
+      {
+        "name": "Brian Krebs",
+        "type": "Person"
+      },
+      {
+        "name": "sp3c",
+        "type": "Person"
+      },
+      {
+        "name": "Komodo",
+        "type": "Person"
+      },
+      {
+        "name": "rootkit",
+        "type": "Malware"
+      },
+      {
+        "name": "command injection vulnerability",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "EPP codes",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Lizard Squad",
+        "rel": "HACKED",
+        "obj": "Google.com.vn"
+      },
+      {
+        "sub": "Lizard Squad",
+        "rel": "HACKED",
+        "obj": "Lenovo.com"
+      },
+      {
+        "sub": "Lizard Squad",
+        "rel": "seized control over",
+        "obj": "Webnic.cc"
+      },
+      {
+        "sub": "Webnic.cc",
+        "rel": "allows redirect of",
+        "obj": "Google.com.vn"
+      },
+      {
+        "sub": "Webnic.cc",
+        "rel": "allows redirect of",
+        "obj": "Lenovo.com"
+      },
+      {
+        "sub": "Lizard Squad",
+        "rel": "offers for hire through",
+        "obj": "Lizard Stresser"
+      },
+      {
+        "sub": "Lizard Squad",
+        "rel": "DEPLOYED",
+        "obj": "rootkit"
+      },
+      {
+        "sub": "Lizard Squad",
+        "rel": "access to",
+        "obj": "EPP codes"
+      },
+      {
+        "sub": "Lizard Squad",
+        "rel": "previous member of",
+        "obj": "Hack The Planet"
+      },
+      {
+        "sub": "Ryan King",
+        "rel": "previous member of",
+        "obj": "Hack The Planet"
+      },
+      {
+        "sub": "Rory Andrew Godfrey",
+        "rel": "previous member of",
+        "obj": "Hack The Planet"
+      },
+      {
+        "sub": "Julius Zeekill Kivimaki",
+        "rel": "previous member of",
+        "obj": "Hack The Planet"
+      },
+      {
+        "sub": "Ryan King",
+        "rel": "alias of",
+        "obj": "Starfall"
+      },
+      {
+        "sub": "Rory Andrew Godfrey",
+        "rel": "alias of",
+        "obj": "KMS"
+      },
+      {
+        "sub": "Webnic.cc",
+        "rel": "is a",
+        "obj": "Web Commerce Communications Ltd"
+      },
+      {
+        "sub": "The Verge",
+        "rel": "reported change to",
+        "obj": "Lenovo.com"
+      },
+      {
+        "sub": "Lizard Squad",
+        "rel": "EXPLOITED",
+        "obj": "command injection vulnerability"
+      },
+      {
+        "sub": "Webnic.cc",
+        "rel": "hosted site",
+        "obj": "rescator.so"
+      },
+      {
+        "sub": "Webnic.cc",
+        "rel": "hosted site",
+        "obj": "ssndob"
+      }
+    ]
+  }
+}

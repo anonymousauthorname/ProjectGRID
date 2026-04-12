@@ -1,0 +1,354 @@
+{
+  "sample_id": "casie__10227.json",
+  "sample_index": 43,
+  "source": "casie",
+  "file_name": "10227.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2018-1002105",
+        "type": "Entity"
+      },
+      {
+        "name": "Kubernetes",
+        "type": "Entity"
+      },
+      {
+        "name": "Kubelet",
+        "type": "Entity"
+      },
+      {
+        "name": "API",
+        "type": "Entity"
+      },
+      {
+        "name": "pod",
+        "type": "Entity"
+      },
+      {
+        "name": "node",
+        "type": "Entity"
+      },
+      {
+        "name": "cluster",
+        "type": "Entity"
+      },
+      {
+        "name": "master",
+        "type": "Entity"
+      },
+      {
+        "name": "exec",
+        "type": "Entity"
+      },
+      {
+        "name": "attach",
+        "type": "Entity"
+      },
+      {
+        "name": "portforward",
+        "type": "Entity"
+      },
+      {
+        "name": "metrics-server",
+        "type": "Entity"
+      },
+      {
+        "name": "servicecatalog",
+        "type": "Entity"
+      },
+      {
+        "name": "OpenShift Container Platform",
+        "type": "Entity"
+      },
+      {
+        "name": "OpenShift Online",
+        "type": "Entity"
+      },
+      {
+        "name": "OpenShift Dedicated",
+        "type": "Entity"
+      },
+      {
+        "name": "cluster-admin",
+        "type": "Entity"
+      },
+      {
+        "name": "service broker",
+        "type": "Entity"
+      },
+      {
+        "name": "unauthenticated user",
+        "type": "Entity"
+      },
+      {
+        "name": "privilege escalation",
+        "type": "Entity"
+      },
+      {
+        "name": "full administrator privileges",
+        "type": "Entity"
+      },
+      {
+        "name": "data theft",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious code injection",
+        "type": "Entity"
+      },
+      {
+        "name": "production applications",
+        "type": "Entity"
+      },
+      {
+        "name": "firewall",
+        "type": "Entity"
+      },
+      {
+        "name": "v1.10.11",
+        "type": "Entity"
+      },
+      {
+        "name": "v1.11.5",
+        "type": "Entity"
+      },
+      {
+        "name": "v1.12.3",
+        "type": "Entity"
+      },
+      {
+        "name": "v1.13.0-rc.1",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "enables",
+        "obj": "privilege escalation"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "leads to",
+        "obj": "full administrator privileges"
+      },
+      {
+        "sub": "Kubernetes",
+        "rel": "organizes",
+        "obj": "pod"
+      },
+      {
+        "sub": "Kubernetes",
+        "rel": "organizes",
+        "obj": "node"
+      },
+      {
+        "sub": "Kubernetes",
+        "rel": "organizes",
+        "obj": "cluster"
+      },
+      {
+        "sub": "master",
+        "rel": "coordinates",
+        "obj": "scaling"
+      },
+      {
+        "sub": "master",
+        "rel": "coordinates",
+        "obj": "scheduling"
+      },
+      {
+        "sub": "master",
+        "rel": "coordinates",
+        "obj": "updating apps"
+      },
+      {
+        "sub": "node",
+        "rel": "has",
+        "obj": "Kubelet"
+      },
+      {
+        "sub": "Kubelet",
+        "rel": "facilitates communication",
+        "obj": "Kubernetes master"
+      },
+      {
+        "sub": "Kubelet",
+        "rel": "communicates via",
+        "obj": "API"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "can be exploited by",
+        "obj": "unauthenticated user"
+      },
+      {
+        "sub": "OpenShift Container Platform",
+        "rel": "uses",
+        "obj": "Kubernetes"
+      },
+      {
+        "sub": "OpenShift Container Platform",
+        "rel": "is impacted by",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "OpenShift Container Platform",
+        "rel": "allows",
+        "obj": "privilege escalation from normal user to cluster-admin"
+      },
+      {
+        "sub": "normal user",
+        "rel": "has",
+        "obj": "exec"
+      },
+      {
+        "sub": "normal user",
+        "rel": "has",
+        "obj": "attach"
+      },
+      {
+        "sub": "normal user",
+        "rel": "has",
+        "obj": "portforward"
+      },
+      {
+        "sub": "normal user",
+        "rel": "can escalate to",
+        "obj": "cluster-admin"
+      },
+      {
+        "sub": "normal user",
+        "rel": "can execute",
+        "obj": "any process in a container"
+      },
+      {
+        "sub": "metrics-server",
+        "rel": "uses",
+        "obj": "API extension feature"
+      },
+      {
+        "sub": "servicecatalog",
+        "rel": "uses",
+        "obj": "API extension feature"
+      },
+      {
+        "sub": "OpenShift Online",
+        "rel": "uses",
+        "obj": "API extension feature"
+      },
+      {
+        "sub": "OpenShift Dedicated",
+        "rel": "uses",
+        "obj": "API extension feature"
+      },
+      {
+        "sub": "unauthenticated user",
+        "rel": "can gain",
+        "obj": "cluster-admin access"
+      },
+      {
+        "sub": "cluster-admin access",
+        "rel": "allows",
+        "obj": "creation of service brokers"
+      },
+      {
+        "sub": "cluster-admin access",
+        "rel": "allows",
+        "obj": "in any namespace"
+      },
+      {
+        "sub": "cluster-admin access",
+        "rel": "allows",
+        "obj": "on any node"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "is addressed in",
+        "obj": "v1.10.11"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "is addressed in",
+        "obj": "v1.11.5"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "is addressed in",
+        "obj": "v1.12.3"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "is addressed in",
+        "obj": "v1.13.0-rc.1"
+      },
+      {
+        "sub": "Kubernetes releases prior to v1.10.11",
+        "rel": "are affected by",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Kubernetes releases prior to v1.11.5",
+        "rel": "are affected by",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Kubernetes releases prior to v1.12.3",
+        "rel": "are affected by",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Kubernetes releases prior to v1.13.0-rc.1",
+        "rel": "are affected by",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "malicious actor",
+        "rel": "can exploit",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "malicious actor",
+        "rel": "can steal",
+        "obj": "data"
+      },
+      {
+        "sub": "malicious actor",
+        "rel": "can inject",
+        "obj": "malicious code"
+      },
+      {
+        "sub": "malicious actor",
+        "rel": "can bring down",
+        "obj": "production applications"
+      },
+      {
+        "sub": "malicious actor",
+        "rel": "can bring down",
+        "obj": "services"
+      },
+      {
+        "sub": "malicious actor",
+        "rel": "can operate within",
+        "obj": "firewall"
+      }
+    ]
+  }
+}

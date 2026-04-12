@@ -1,0 +1,180 @@
+{
+  "sample_id": "casie__1024.json",
+  "sample_index": 8,
+  "source": "casie",
+  "file_name": "1024.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Apache Struts",
+        "type": "Entity"
+      },
+      {
+        "name": "Jakarta Multipart parser",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2017-5638",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "Content-Type header",
+        "type": "Entity"
+      },
+      {
+        "name": "malformed Content-Type HTTP header",
+        "type": "Entity"
+      },
+      {
+        "name": "improper handling of Content-Type header",
+        "type": "Entity"
+      },
+      {
+        "name": "versions 2.3.5 through 2.3.31",
+        "type": "Entity"
+      },
+      {
+        "name": "versions 2.5 through 2.5.10",
+        "type": "Entity"
+      },
+      {
+        "name": "web application",
+        "type": "Entity"
+      },
+      {
+        "name": "file upload",
+        "type": "Entity"
+      },
+      {
+        "name": "authentication bypass",
+        "type": "Entity"
+      },
+      {
+        "name": "Cisco Talos",
+        "type": "Entity"
+      },
+      {
+        "name": "exploitation events",
+        "type": "Entity"
+      },
+      {
+        "name": "active exploitation",
+        "type": "Entity"
+      },
+      {
+        "name": "security advisory",
+        "type": "Entity"
+      },
+      {
+        "name": "remote control",
+        "type": "Entity"
+      },
+      {
+        "name": "system compromise",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Apache Struts",
+        "rel": "has vulnerability",
+        "obj": "CVE-2017-5638"
+      },
+      {
+        "sub": "CVE-2017-5638",
+        "rel": "affects",
+        "obj": "Jakarta Multipart parser"
+      },
+      {
+        "sub": "Jakarta Multipart parser",
+        "rel": "is vulnerable to",
+        "obj": "improper handling of Content-Type header"
+      },
+      {
+        "sub": "improper handling of Content-Type header",
+        "rel": "leads to",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "Apache Struts",
+        "rel": "is vulnerable in",
+        "obj": "versions 2.3.5 through 2.3.31"
+      },
+      {
+        "sub": "Apache Struts",
+        "rel": "is vulnerable in",
+        "obj": "versions 2.5 through 2.5.10"
+      },
+      {
+        "sub": "CVE-2017-5638",
+        "rel": "enables",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "remote code execution",
+        "rel": "allows",
+        "obj": "system compromise"
+      },
+      {
+        "sub": "CVE-2017-5638",
+        "rel": "is triggered by",
+        "obj": "malformed Content-Type HTTP header"
+      },
+      {
+        "sub": "malformed Content-Type HTTP header",
+        "rel": "is parsed by",
+        "obj": "Jakarta Multipart parser"
+      },
+      {
+        "sub": "web application",
+        "rel": "does not require",
+        "obj": "file upload"
+      },
+      {
+        "sub": "Cisco Talos",
+        "rel": "observed",
+        "obj": "exploitation events"
+      },
+      {
+        "sub": "Cisco Talos",
+        "rel": "reports",
+        "obj": "active exploitation"
+      },
+      {
+        "sub": "Cisco Talos",
+        "rel": "recommends",
+        "obj": "immediate upgrading"
+      },
+      {
+        "sub": "Cisco Talos",
+        "rel": "recommends",
+        "obj": "following workaround"
+      },
+      {
+        "sub": "CVE-2017-5638",
+        "rel": "is described in",
+        "obj": "security advisory"
+      }
+    ]
+  }
+}

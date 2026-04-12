@@ -1,0 +1,370 @@
+{
+  "sample_id": "casie__10341.json",
+  "sample_index": 36,
+  "source": "casie",
+  "file_name": "10341.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Action Fraud",
+        "type": "identity",
+        "alias": [
+          "the UK police’s dedicated fraud tracking team"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "TSB",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "botched IT upgrade",
+        "type": "attack-pattern",
+        "alias": [
+          "the bank’s staff overloaded trying to fix the problems that caused the outage"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "phishing attacks",
+        "type": "attack-pattern",
+        "alias": [
+          "phishing attempts",
+          "phishing texts",
+          "fraudulent transactions",
+          "scammers are using one of the most common tools in their arsenal: phishing attacks"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Action Fraud spokesperson",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "cyber criminals",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "scammers",
+          "scammers and hackers",
+          "fraudsters",
+          "criminals",
+          "criminals are happy to exploit people’s misery"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Barclays",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "NatWest",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "fraudulent websites",
+        "type": "url",
+        "alias": [
+          "legitimate-sounding but fraudulent websites"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "username and password",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Lucy Evans",
+        "type": "identity",
+        "alias": [
+          "one customer",
+          "Evans",
+          "she"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "TSB current account",
+        "type": "file",
+        "alias": [
+          "her current account",
+          "the contents of her current account"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "phone calls and texts",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Ian Thornton-Trump",
+        "type": "identity",
+        "alias": [
+          "chief technical officer of Octopi Managed Services"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Octopi Managed Services",
+        "type": "identity",
+        "alias": [
+          "an IT company"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Alan Woodward",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "University of Surrey",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "fraudulent domains",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "web banking",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "bank’s staff",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "TSB spokesperson",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "TSB’s banking meltdown",
+        "type": "attack-pattern",
+        "alias": [
+          "the bank’s staff overloaded trying to fix the problems that caused the outage"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Action Fraud",
+        "rel": "revealed significant increase in reports about",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "phishing attacks",
+        "special_factuality": []
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "exploiting TSB’s banking meltdown",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "TSB’s banking meltdown",
+        "special_factuality": []
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "waded into a confusing, chaotic situation",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "TSB’s banking meltdown",
+        "special_factuality": []
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "making out with thousands of pounds worth of savings from people’s accounts",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "TSB current account",
+        "special_factuality": []
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "using phishing attacks",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "phishing attacks",
+        "special_factuality": []
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "send out mass texts and emails with links to",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "fraudulent websites",
+        "special_factuality": []
+      },
+      {
+        "sub": "phishing attacks",
+        "rel": "encourage customers to click a link and input their username and password",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Lucy Evans",
+        "special_factuality": []
+      },
+      {
+        "sub": "Lucy Evans",
+        "rel": "had her TSB current account looted",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "TSB current account",
+        "special_factuality": []
+      },
+      {
+        "sub": "Lucy Evans",
+        "rel": "received a number of texts purporting to be from TSB",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "phone calls and texts",
+        "special_factuality": []
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "pretend to be the bank",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "bank’s staff",
+        "special_factuality": []
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "ask customers to undertake strange actions that under normal operations would seem suspicious",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "web banking",
+        "special_factuality": []
+      },
+      {
+        "sub": "TSB",
+        "rel": "shut down fraudulent domains",
+        "rel_type": [
+          "removes-or-replaces"
+        ],
+        "obj": "fraudulent domains",
+        "special_factuality": []
+      },
+      {
+        "sub": "bank’s staff",
+        "rel": "overloaded trying to fix the problems that caused the outage",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "phishing attacks",
+        "special_factuality": []
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "lure customers in",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "web banking",
+        "special_factuality": []
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "pay attention to companies rocked by internal scandals",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "TSB’s banking meltdown",
+        "special_factuality": []
+      },
+      {
+        "sub": "TSB",
+        "rel": "responding to customers",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "fraudulent domains",
+        "special_factuality": []
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "take advantage of situations like these",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "bank’s staff",
+        "special_factuality": []
+      },
+      {
+        "sub": "Ian Thornton-Trump",
+        "rel": "explains why cyber criminals pay attention to public ‘ball drops’",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "cyber criminals",
+        "special_factuality": []
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "react to public ‘ball drops’",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "phishing attacks",
+        "special_factuality": []
+      },
+      {
+        "sub": "Lucy Evans",
+        "rel": "lost the contents of her current account",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "TSB current account",
+        "special_factuality": []
+      }
+    ]
+  }
+}

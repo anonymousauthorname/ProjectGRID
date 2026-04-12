@@ -1,0 +1,154 @@
+{
+  "sample_id": "malkg__201207WiredDarkComet.txt",
+  "sample_index": 116,
+  "source": "malkg",
+  "file_name": "201207WiredDarkComet.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Dark Comet",
+        "type": "Malware"
+      },
+      {
+        "name": "Jean-Pierre Lesueur",
+        "type": "Person"
+      },
+      {
+        "name": "Dlshad Othman",
+        "type": "Person"
+      },
+      {
+        "name": "Osama",
+        "type": "Person"
+      },
+      {
+        "name": "Bashar Assad",
+        "type": "Location"
+      },
+      {
+        "name": "Syrian government",
+        "type": "Organization"
+      },
+      {
+        "name": "Electronic Frontier Foundation",
+        "type": "Organization"
+      },
+      {
+        "name": "Citizen Lab",
+        "type": "Organization"
+      },
+      {
+        "name": "Metasploit",
+        "type": "Malware"
+      },
+      {
+        "name": "BackTrack Linux",
+        "type": "Malware"
+      },
+      {
+        "name": "Blackshades",
+        "type": "Malware"
+      },
+      {
+        "name": "OpenSC",
+        "type": "Tool"
+      },
+      {
+        "name": "Skype",
+        "type": "Software"
+      },
+      {
+        "name": "PDF file",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Jean-Pierre Lesueur",
+        "rel": "DEVELOPED",
+        "obj": "Dark Comet"
+      },
+      {
+        "sub": "Syrian government",
+        "rel": "USED",
+        "obj": "Dark Comet"
+      },
+      {
+        "sub": "Dlshad Othman",
+        "rel": "DISCOVERED",
+        "obj": "Dark Comet"
+      },
+      {
+        "sub": "Osama",
+        "rel": "likely infected by",
+        "obj": "Dark Comet"
+      },
+      {
+        "sub": "Morgan Marquis-Boire",
+        "rel": "IDENTIFIED",
+        "obj": "Dark Comet"
+      },
+      {
+        "sub": "Electronic Frontier Foundation",
+        "rel": "REPORTED",
+        "obj": "Dark Comet"
+      },
+      {
+        "sub": "Citizen Lab",
+        "rel": "RESEARCHED",
+        "obj": "Dark Comet"
+      },
+      {
+        "sub": "Dark Comet",
+        "rel": "comparable to",
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "Dark Comet",
+        "rel": "comparable to",
+        "obj": "BackTrack Linux"
+      },
+      {
+        "sub": "Blackshades",
+        "rel": "similar use",
+        "obj": "Dark Comet"
+      },
+      {
+        "sub": "Jean-Pierre Lesueur",
+        "rel": "cut teeth in",
+        "obj": "OpenSC"
+      },
+      {
+        "sub": "Dark Comet",
+        "rel": "disseminates through",
+        "obj": "Skype"
+      },
+      {
+        "sub": "Dark Comet",
+        "rel": "installed by",
+        "obj": "PDF file"
+      },
+      {
+        "sub": "Jean-Pierre Lesueur",
+        "rel": "not influenced by",
+        "obj": "Blackshades"
+      }
+    ]
+  }
+}

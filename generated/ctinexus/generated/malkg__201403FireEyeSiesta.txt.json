@@ -1,0 +1,303 @@
+{
+  "sample_id": "malkg__201403FireEyeSiesta.txt",
+  "sample_index": 139,
+  "source": "malkg",
+  "file_name": "201403FireEyeSiesta.txt",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Siesta campaign",
+        "type": "Unknown"
+      },
+      {
+        "name": "APT1",
+        "type": "Unknown"
+      },
+      {
+        "name": "spear-phishing emails",
+        "type": "Unknown"
+      },
+      {
+        "name": "PDFmyURL",
+        "type": "Unknown"
+      },
+      {
+        "name": "Healthcare_Questionnaire.zip",
+        "type": "Unknown"
+      },
+      {
+        "name": "malicious executable",
+        "type": "Unknown"
+      },
+      {
+        "name": "61249bf64fa270931570b8a5eba06afa",
+        "type": "Unknown"
+      },
+      {
+        "name": "2014-02-20 02:28:21",
+        "type": "Unknown"
+      },
+      {
+        "name": "20ff5087740eabff5bdbdf99d9fb6853",
+        "type": "Unknown"
+      },
+      {
+        "name": "www.microsofthomes.com",
+        "type": "Unknown"
+      },
+      {
+        "name": "import hash 20ff5087740eabff5bdbdf99d9fb6853",
+        "type": "Unknown"
+      },
+      {
+        "name": "malicious executable with MD5 68f73d81c814ab2f70eed02c0be3b67d",
+        "type": "Unknown"
+      },
+      {
+        "name": "related dropper with MD5 0f3031412d255336a102bbc1dcd43812",
+        "type": "Unknown"
+      },
+      {
+        "name": "2014-02-19 09:29:04",
+        "type": "Unknown"
+      },
+      {
+        "name": "0fefba40443edd57f816502035077e3e",
+        "type": "Unknown"
+      },
+      {
+        "name": "backdoor with MD5 185e930a19ad1a99c226d59ef563e28c",
+        "type": "Unknown"
+      },
+      {
+        "name": "oWXYZabcdefghijkl123456789ABCDEFGHIJKL+/MNOPQRSTUVmn0pqrstuvwxyz",
+        "type": "Unknown"
+      },
+      {
+        "name": "custom base64 alphabet",
+        "type": "Unknown"
+      },
+      {
+        "name": "previous APT1 samples",
+        "type": "Unknown"
+      },
+      {
+        "name": "PE resource with SHA256 fb080cef60846528c409f60400f334100a16a5bd77b953c864b23a945fcf26fd",
+        "type": "Unknown"
+      },
+      {
+        "name": "PDF icon",
+        "type": "Unknown"
+      },
+      {
+        "name": "Menupass group samples",
+        "type": "Unknown"
+      },
+      {
+        "name": "binder tool",
+        "type": "Unknown"
+      },
+      {
+        "name": "Menupass group",
+        "type": "Unknown"
+      },
+      {
+        "name": "APT1 and Menupass",
+        "type": "Unknown"
+      },
+      {
+        "name": "social engineering",
+        "type": "Unknown"
+      },
+      {
+        "name": "malicious dropper",
+        "type": "Unknown"
+      },
+      {
+        "name": "previous APT1 activity",
+        "type": "Unknown"
+      },
+      {
+        "name": "monitoring for IOCs",
+        "type": "Unknown"
+      },
+      {
+        "name": "both Menupass and APT1 samples",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Siesta campaign",
+        "rel": "is attributed to",
+        "obj": "APT1"
+      },
+      {
+        "sub": "Siesta campaign",
+        "rel": "uses",
+        "obj": "spear-phishing emails"
+      },
+      {
+        "sub": "spear-phishing emails",
+        "rel": "contain links to",
+        "obj": "PDFmyURL"
+      },
+      {
+        "sub": "PDFmyURL",
+        "rel": "redirects to",
+        "obj": "Healthcare_Questionnaire.zip"
+      },
+      {
+        "sub": "Healthcare_Questionnaire.zip",
+        "rel": "contains",
+        "obj": "malicious executable"
+      },
+      {
+        "sub": "malicious executable",
+        "rel": "has MD5 hash",
+        "obj": "61249bf64fa270931570b8a5eba06afa"
+      },
+      {
+        "sub": "malicious executable",
+        "rel": "has compile time",
+        "obj": "2014-02-20 02:28:21"
+      },
+      {
+        "sub": "malicious executable",
+        "rel": "has import hash",
+        "obj": "20ff5087740eabff5bdbdf99d9fb6853"
+      },
+      {
+        "sub": "malicious executable",
+        "rel": "initiates callback to",
+        "obj": "www.microsofthomes.com"
+      },
+      {
+        "sub": "import hash 20ff5087740eabff5bdbdf99d9fb6853",
+        "rel": "is seen in",
+        "obj": "malicious executable with MD5 68f73d81c814ab2f70eed02c0be3b67d"
+      },
+      {
+        "sub": "related dropper with MD5 0f3031412d255336a102bbc1dcd43812",
+        "rel": "has compile time",
+        "obj": "2014-02-19 09:29:04"
+      },
+      {
+        "sub": "related dropper with MD5 0f3031412d255336a102bbc1dcd43812",
+        "rel": "has import hash",
+        "obj": "0fefba40443edd57f816502035077e3e"
+      },
+      {
+        "sub": "related dropper with MD5 0f3031412d255336a102bbc1dcd43812",
+        "rel": "drops",
+        "obj": "backdoor with MD5 185e930a19ad1a99c226d59ef563e28c"
+      },
+      {
+        "sub": "backdoor with MD5 185e930a19ad1a99c226d59ef563e28c",
+        "rel": "uses custom base64 alphabet",
+        "obj": "oWXYZabcdefghijkl123456789ABCDEFGHIJKL+/MNOPQRSTUVmn0pqrstuvwxyz"
+      },
+      {
+        "sub": "custom base64 alphabet",
+        "rel": "is used in",
+        "obj": "previous APT1 samples"
+      },
+      {
+        "sub": "PE resource with SHA256 fb080cef60846528c409f60400f334100a16a5bd77b953c864b23a945fcf26fd",
+        "rel": "contains",
+        "obj": "PDF icon"
+      },
+      {
+        "sub": "PE resource with SHA256 fb080cef60846528c409f60400f334100a16a5bd77b953c864b23a945fcf26fd",
+        "rel": "is used in",
+        "obj": "Siesta campaign"
+      },
+      {
+        "sub": "PE resource with SHA256 fb080cef60846528c409f60400f334100a16a5bd77b953c864b23a945fcf26fd",
+        "rel": "is used in",
+        "obj": "Menupass group samples"
+      },
+      {
+        "sub": "PE resource with SHA256 fb080cef60846528c409f60400f334100a16a5bd77b953c864b23a945fcf26fd",
+        "rel": "is used to disguise",
+        "obj": "malicious executable"
+      },
+      {
+        "sub": "APT1",
+        "rel": "used",
+        "obj": "binder tool"
+      },
+      {
+        "sub": "Menupass group",
+        "rel": "used",
+        "obj": "binder tool"
+      },
+      {
+        "sub": "APT1 and Menupass",
+        "rel": "share",
+        "obj": "binder tool"
+      },
+      {
+        "sub": "binder tool",
+        "rel": "enables",
+        "obj": "social engineering"
+      },
+      {
+        "sub": "binder tool",
+        "rel": "adds icon to",
+        "obj": "malicious dropper"
+      },
+      {
+        "sub": "Siesta campaign",
+        "rel": "shares characteristics with",
+        "obj": "previous APT1 activity"
+      },
+      {
+        "sub": "Siesta campaign",
+        "rel": "shares tools with",
+        "obj": "Menupass group"
+      },
+      {
+        "sub": "monitoring for IOCs",
+        "rel": "can detect",
+        "obj": "both Menupass and APT1 samples"
+      },
+      {
+        "sub": "malicious executable with MD5 68f73d81c814ab2f70eed02c0be3b67d",
+        "rel": "is a type of",
+        "obj": "malicious executable"
+      },
+      {
+        "sub": "related dropper with MD5 0f3031412d255336a102bbc1dcd43812",
+        "rel": "is a",
+        "obj": "malicious executable"
+      },
+      {
+        "sub": "previous APT1 samples",
+        "rel": "contain",
+        "obj": "malicious executable"
+      },
+      {
+        "sub": "both Menupass and APT1 samples",
+        "rel": "contain",
+        "obj": "malicious executable"
+      }
+    ]
+  }
+}

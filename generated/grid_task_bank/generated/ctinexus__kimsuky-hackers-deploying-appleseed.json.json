@@ -1,0 +1,322 @@
+{
+  "sample_id": "ctinexus__kimsuky-hackers-deploying-appleseed.json",
+  "sample_index": 72,
+  "source": "ctinexus",
+  "file_name": "kimsuky-hackers-deploying-appleseed.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "nation-state actors affiliated to North Korea",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Nation-state actors affiliated to North Korea"
+        ]
+      },
+      {
+        "name": "spear-phishing attacks",
+        "type": "attack-pattern",
+        "alias": [
+          "spear-phishing attacks"
+        ]
+      },
+      {
+        "name": "backdoors and tools",
+        "type": "general-software",
+        "alias": [
+          "backdoors and tools"
+        ]
+      },
+      {
+        "name": "AppleSeed",
+        "type": "malware",
+        "alias": [
+          "AppleSeed"
+        ]
+      },
+      {
+        "name": "Meterpreter",
+        "type": "malware",
+        "alias": [
+          "Meterpreter"
+        ]
+      },
+      {
+        "name": "TinyNuke",
+        "type": "malware",
+        "alias": [
+          "TinyNuke"
+        ]
+      },
+      {
+        "name": "AhnLab",
+        "type": "security-product",
+        "alias": [
+          "AhnLab"
+        ]
+      },
+      {
+        "name": "Kimsuky",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Kimsuky",
+          "advanced persistent threat group"
+        ]
+      },
+      {
+        "name": "South Korea",
+        "type": "location",
+        "alias": [
+          "South Korea"
+        ]
+      },
+      {
+        "name": "other geographies",
+        "type": "location",
+        "alias": [
+          "other geographies"
+        ]
+      },
+      {
+        "name": "U.S. government",
+        "type": "government-or-international-organization",
+        "alias": [
+          "U.S. government"
+        ]
+      },
+      {
+        "name": "intelligence",
+        "type": "abstract-concept",
+        "alias": [
+          "intelligence"
+        ]
+      },
+      {
+        "name": "strategic objectives",
+        "type": "abstract-concept",
+        "alias": [
+          "strategic objectives"
+        ]
+      },
+      {
+        "name": "malicious lure documents",
+        "type": "file",
+        "alias": [
+          "malicious lure documents"
+        ]
+      },
+      {
+        "name": "various malware families",
+        "type": "malware",
+        "alias": [
+          "various malware families"
+        ]
+      },
+      {
+        "name": "2017",
+        "type": "date-time",
+        "alias": [
+          "2017"
+        ]
+      },
+      {
+        "name": "late last month",
+        "type": "date-time",
+        "alias": [
+          "late last month"
+        ]
+      },
+      {
+        "name": "seize control of compromised machines",
+        "type": "abstract-concept",
+        "alias": [
+          "seize control of compromised machines"
+        ]
+      },
+      {
+        "name": "compromised machines",
+        "type": "process",
+        "alias": [
+          "compromised machines"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "nation-state actors affiliated to North Korea",
+        "rel": "using",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "spear-phishing attacks"
+      },
+      {
+        "sub": "spear-phishing attacks",
+        "rel": "deliver",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "backdoors and tools"
+      },
+      {
+        "sub": "backdoors and tools",
+        "rel": "such as",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "AppleSeed"
+      },
+      {
+        "sub": "backdoors and tools",
+        "rel": "such as",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Meterpreter"
+      },
+      {
+        "sub": "backdoors and tools",
+        "rel": "such as",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "TinyNuke"
+      },
+      {
+        "sub": "nation-state actors affiliated to North Korea",
+        "rel": "have been observed using",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "spear-phishing attacks"
+      },
+      {
+        "sub": "AppleSeed",
+        "rel": "has been used with similar methods of attack for many years",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "similar methods of attack"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "is active for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "over a decade"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a wide range of entities in South Korea"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "expanding its focus to include",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "other geographies"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "expanded its focus to include",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "other geographies in 2017"
+      },
+      {
+        "sub": "U.S. government",
+        "rel": "sanctioned",
+        "rel_type": [
+          "controls"
+        ],
+        "obj": "Kimsuky"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "amassing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "intelligence"
+      },
+      {
+        "sub": "intelligence",
+        "rel": "support",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "strategic objectives"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "realized through",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "spear-phishing attacks"
+      },
+      {
+        "sub": "spear-phishing attacks",
+        "rel": "containing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "malicious lure documents"
+      },
+      {
+        "sub": "malicious lure documents",
+        "rel": "upon opening",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the deployment of various malware families"
+      },
+      {
+        "sub": "various malware families",
+        "rel": "deploed by",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "spear-phishing attacks"
+      },
+      {
+        "sub": "AhnLab",
+        "rel": "attributed the activity to",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "Kimsuky"
+      },
+      {
+        "sub": "Kimsuky",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "South Korea"
+      }
+    ]
+  }
+}

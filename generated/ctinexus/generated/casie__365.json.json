@@ -1,0 +1,145 @@
+{
+  "sample_id": "casie__365.json",
+  "sample_index": 18,
+  "source": "casie",
+  "file_name": "365.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Cipher0007",
+        "type": "Malware"
+      },
+      {
+        "name": "two high-risk bugs on Reddit",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "200,000 private messages",
+        "type": "Information"
+      },
+      {
+        "name": "private messages",
+        "type": "Information"
+      },
+      {
+        "name": "users and sellers",
+        "type": "Organization"
+      },
+      {
+        "name": "two high-risk bugs",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "private messages on AlphaBay",
+        "type": "Information"
+      },
+      {
+        "name": "AlphaBay",
+        "type": "Organization"
+      },
+      {
+        "name": "Cipher0007 hacked 218,000 messages",
+        "type": "Event"
+      },
+      {
+        "name": "hacked messages",
+        "type": "Information"
+      },
+      {
+        "name": "30 days",
+        "type": "Time"
+      },
+      {
+        "name": "Cipher0007 for not selling flaws or exposing data",
+        "type": "Event"
+      },
+      {
+        "name": "developers at the trading platform",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cipher0007",
+        "rel": "disclosed",
+        "obj": "two high-risk bugs on Reddit"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "stole",
+        "obj": "200,000 private messages"
+      },
+      {
+        "sub": "private messages",
+        "rel": "exchanged between",
+        "obj": "users and sellers"
+      },
+      {
+        "sub": "two high-risk bugs",
+        "rel": "could be used to steal",
+        "obj": "private messages on AlphaBay"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "admitted presence of",
+        "obj": "two high-risk bugs"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "confirmed",
+        "obj": "Cipher0007 hacked 218,000 messages"
+      },
+      {
+        "sub": "hacked messages",
+        "rel": "were not older than",
+        "obj": "30 days"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "rewarded",
+        "obj": "Cipher0007 for not selling flaws or exposing data"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "disclosed exploitation methods to",
+        "obj": "developers at the trading platform"
+      },
+      {
+        "sub": "developers at the trading platform",
+        "rel": "fixed",
+        "obj": "two high-risk bugs"
+      },
+      {
+        "sub": "two high-risk bugs",
+        "rel": "affected",
+        "obj": "AlphaBay"
+      },
+      {
+        "sub": "users and sellers",
+        "rel": "exchange messages on",
+        "obj": "AlphaBay"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "automatically purges messages older than",
+        "obj": "30 days"
+      }
+    ]
+  }
+}

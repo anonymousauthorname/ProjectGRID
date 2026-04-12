@@ -1,0 +1,385 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_21.json",
+  "sample_index": 213,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_21.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "IcedID",
+        "type": "Entity"
+      },
+      {
+        "name": "Qbot",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious macros",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious attachments",
+        "type": "Entity"
+      },
+      {
+        "name": "Excel file",
+        "type": "Entity"
+      },
+      {
+        "name": "CompensationClaim",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "business correspondence",
+        "type": "Entity"
+      },
+      {
+        "name": "spammer",
+        "type": "Entity"
+      },
+      {
+        "name": "cybercriminals",
+        "type": "Entity"
+      },
+      {
+        "name": "steganography",
+        "type": "Entity"
+      },
+      {
+        "name": "PNG image",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious script",
+        "type": "Entity"
+      },
+      {
+        "name": "web page injection",
+        "type": "Entity"
+      },
+      {
+        "name": "fake login page",
+        "type": "Entity"
+      },
+      {
+        "name": "browser data theft",
+        "type": "Entity"
+      },
+      {
+        "name": "keystroke logging",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware",
+        "type": "Entity"
+      },
+      {
+        "name": "email thread stealing",
+        "type": "Entity"
+      },
+      {
+        "name": "remote access",
+        "type": "Entity"
+      },
+      {
+        "name": "work machines",
+        "type": "Entity"
+      },
+      {
+        "name": "macro execution",
+        "type": "Entity"
+      },
+      {
+        "name": "zipped Excel file",
+        "type": "Entity"
+      },
+      {
+        "name": "hacked website",
+        "type": "Entity"
+      },
+      {
+        "name": "shadow market",
+        "type": "Entity"
+      },
+      {
+        "name": "malware distribution",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing links",
+        "type": "Entity"
+      },
+      {
+        "name": "sender domain",
+        "type": "Entity"
+      },
+      {
+        "name": "Gmail address",
+        "type": "Entity"
+      },
+      {
+        "name": "prohibit macros",
+        "type": "Entity"
+      },
+      {
+        "name": "security solution",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "banking Trojans",
+        "type": "Entity"
+      },
+      {
+        "name": "spam campaigns",
+        "type": "Entity"
+      },
+      {
+        "name": "attack vector",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious document",
+        "type": "Entity"
+      },
+      {
+        "name": "attachment",
+        "type": "Entity"
+      },
+      {
+        "name": "business wrapper",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing",
+        "type": "Entity"
+      },
+      {
+        "name": "URL",
+        "type": "Entity"
+      },
+      {
+        "name": "domain name",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "spammers",
+        "rel": "distribute",
+        "obj": "IcedID"
+      },
+      {
+        "sub": "spammers",
+        "rel": "distribute",
+        "obj": "Qbot"
+      },
+      {
+        "sub": "spammers",
+        "rel": "use",
+        "obj": "malicious macros"
+      },
+      {
+        "sub": "malicious macros",
+        "rel": "enable",
+        "obj": "macro execution"
+      },
+      {
+        "sub": "malicious attachments",
+        "rel": "are attached to",
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "are disguised as",
+        "obj": "business correspondence"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "contain",
+        "obj": "zipped Excel file"
+      },
+      {
+        "sub": "zipped Excel file",
+        "rel": "is named",
+        "obj": "CompensationClaim"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "include",
+        "obj": "phishing links"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "include",
+        "obj": "link to hacked website"
+      },
+      {
+        "sub": "hacked website",
+        "rel": "stores",
+        "obj": "archive containing document"
+      },
+      {
+        "sub": "recipient",
+        "rel": "opens",
+        "obj": "malicious Excel file"
+      },
+      {
+        "sub": "recipient",
+        "rel": "runs",
+        "obj": "macro"
+      },
+      {
+        "sub": "macro execution",
+        "rel": "downloads",
+        "obj": "IcedID"
+      },
+      {
+        "sub": "macro execution",
+        "rel": "downloads",
+        "obj": "Qbot"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "steals",
+        "obj": "bank card details"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "steals",
+        "obj": "login credentials"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "can download",
+        "obj": "ransomware"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "logs keystrokes",
+        "obj": "passwords"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "steals",
+        "obj": "email threads"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "provides",
+        "obj": "remote access"
+      },
+      {
+        "sub": "remote access",
+        "rel": "is granted to",
+        "obj": "victims' computers"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "hides component",
+        "obj": "PNG image"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "uses",
+        "obj": "steganography"
+      },
+      {
+        "sub": "IcedID",
+        "rel": "is available on",
+        "obj": "shadow market"
+      },
+      {
+        "sub": "Qbot",
+        "rel": "is available on",
+        "obj": "shadow market"
+      },
+      {
+        "sub": "cybercriminals",
+        "rel": "send",
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "cybercriminals",
+        "rel": "take advantage of",
+        "obj": "employees' tendency to open attachments"
+      },
+      {
+        "sub": "security solution",
+        "rel": "detects",
+        "obj": "IcedID"
+      },
+      {
+        "sub": "security solution",
+        "rel": "detects",
+        "obj": "Qbot"
+      },
+      {
+        "sub": "sender domain",
+        "rel": "is suspicious when",
+        "obj": "Gmail address is used"
+      },
+      {
+        "sub": "work machines",
+        "rel": "are vulnerable to",
+        "obj": "serious consequences"
+      },
+      {
+        "sub": "malicious script",
+        "rel": "is injected into",
+        "obj": "web page"
+      },
+      {
+        "sub": "malicious script",
+        "rel": "intercepts",
+        "obj": "user-entered data"
+      },
+      {
+        "sub": "malware",
+        "rel": "redirects users to",
+        "obj": "fake login page"
+      },
+      {
+        "sub": "malware",
+        "rel": "steals",
+        "obj": "browser data"
+      },
+      {
+        "sub": "business wrapper",
+        "rel": "is used to disguise",
+        "obj": "banking Trojans"
+      }
+    ]
+  }
+}

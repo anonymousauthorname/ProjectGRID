@@ -1,0 +1,372 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_13.json",
+  "sample_index": 205,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_13.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TDSS",
+        "type": "malware",
+        "alias": [
+          "the malware",
+          "TDSS loader"
+        ]
+      },
+      {
+        "name": "NetWorm.Win32.Rorpian",
+        "type": "malware",
+        "alias": [
+          "the TDSS loader",
+          "the worm",
+          "NetWorm.Win32.Rorpian",
+          "the malware"
+        ]
+      },
+      {
+        "name": "removable media",
+        "type": "infrastructure",
+        "alias": [
+          "the removable media"
+        ]
+      },
+      {
+        "name": "LAN",
+        "type": "infrastructure",
+        "alias": [
+          "the LAN"
+        ]
+      },
+      {
+        "name": "setup.lnk",
+        "type": "file"
+      },
+      {
+        "name": "myporno.avi.lnk",
+        "type": "file"
+      },
+      {
+        "name": "pornmovs.lnk",
+        "type": "file"
+      },
+      {
+        "name": "autorun.inf",
+        "type": "file"
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "file"
+      },
+      {
+        "name": "the worms DLL",
+        "type": "file"
+      },
+      {
+        "name": "DHSP server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "DHCP protocol",
+        "type": "attack-pattern",
+        "alias": [
+          "the DHCP protocol"
+        ]
+      },
+      {
+        "name": "victim computer",
+        "type": "computer"
+      },
+      {
+        "name": "user",
+        "type": "user-account"
+      },
+      {
+        "name": "web page",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "web browser",
+        "type": "general-software"
+      },
+      {
+        "name": "IP address",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "main gateway",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "malicious DNS server",
+        "type": "domain-name",
+        "alias": [
+          "the address of the malicious DNS server"
+        ]
+      },
+      {
+        "name": "Google server address",
+        "type": "domain-name"
+      },
+      {
+        "name": "cybercriminals",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Evgeny Aseev",
+        "type": "identity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "The TDSS loader",
+        "rel": "is",
+        "rel_type": [
+          "malware"
+        ],
+        "obj": "a malicious program"
+      },
+      {
+        "sub": "TDSS",
+        "rel": "is",
+        "rel_type": [
+          "malware"
+        ],
+        "obj": "a very complicated piece of malware"
+      },
+      {
+        "sub": "the cybercriminals",
+        "rel": "created",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "an ingenious propagation tool for its loader"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "a name for, TDSS loader"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "propagates via",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "removable media"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "propagates via",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a LAN"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "creates",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "setup.lnk"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "creates",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "myporno.avi.lnk"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "creates",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "pornmovs.lnk"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "creates",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "autorun.inf"
+      },
+      {
+        "sub": "setup.lnk",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a link to, rundll32.exe"
+      },
+      {
+        "sub": "rundll32.exe",
+        "rel": "references",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the worms DLL"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "checks if",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "a DHSP server is used in the network"
+      },
+      {
+        "sub": "victim computer",
+        "rel": "is located on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "network using, DHCP protocol"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "starts scanning",
+        "rel_type": [
+          "scans"
+        ],
+        "obj": "the network"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "launches",
+        "rel_type": [
+          "starts"
+        ],
+        "obj": "its own DHCP server"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": [
+          "starts listening to"
+        ],
+        "rel_type": [
+          "listens-to"
+        ],
+        "obj": "the network"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "attempts to respond to",
+        "rel_type": [
+          "responds-to"
+        ],
+        "obj": "a DHCP request"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "species",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "An IP address from the pool of available IP addresses"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "species",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "The main gateway specified on the infected computer"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "species",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "the address of the malicious DNS server belonging to the cybercriminals"
+      },
+      {
+        "sub": "user",
+        "rel": "tries to visit",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "any web page"
+      },
+      {
+        "sub": "user",
+        "rel": "will be redirected to",
+        "rel_type": [
+          "redirects-to"
+        ],
+        "obj": "the malicious server"
+      },
+      {
+        "sub": "web page",
+        "rel": "prompts to update",
+        "rel_type": [
+          "prompts"
+        ],
+        "obj": "their web browser"
+      },
+      {
+        "sub": "user",
+        "rel": "unwittingly download",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "a variant of, NetWorm.Win32.Rorpian"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "changes",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "DNS settings into, Google server address"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "acts as",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "a loader for, TDSS"
+      },
+      {
+        "sub": "NetWorm.Win32.Rorpian",
+        "rel": "leverages",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the users indiscretion"
+      },
+      {
+        "sub": "Evgeny Aseev",
+        "rel": "acknowledged by",
+        "rel_type": [
+          "acknowledged-by"
+        ],
+        "obj": "the author of this article"
+      }
+    ]
+  }
+}

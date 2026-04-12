@@ -1,0 +1,274 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_25.json",
+  "sample_index": 217,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_25.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Websense ThreatSeeker Network",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "National Information Technology Center",
+        "type": "Organization"
+      },
+      {
+        "name": "Office of the Prime Minister and Council Minister",
+        "type": "Organization"
+      },
+      {
+        "name": "NITC",
+        "type": "Organization"
+      },
+      {
+        "name": "Amnesty International UK",
+        "type": "Organization"
+      },
+      {
+        "name": "INSS",
+        "type": "Organization"
+      },
+      {
+        "name": "CVE-2012-0507",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Metasploit",
+        "type": "Malware"
+      },
+      {
+        "name": "Zegost",
+        "type": "Malware"
+      },
+      {
+        "name": "tools.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "who.xhhow4.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "shell.xhhow4.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "hhow4.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "184.22.171.216",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Hichina Zhicheng Technology Co., Ltd.",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Uyghurs",
+        "type": "Location"
+      },
+      {
+        "name": "Tibetans",
+        "type": "Location"
+      },
+      {
+        "name": "Cyberwarnews",
+        "type": "Organization"
+      },
+      {
+        "name": "AlienVault",
+        "type": "Organization"
+      },
+      {
+        "name": "ACE",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "URATU",
+        "type": "Indicator"
+      },
+      {
+        "name": "microsoft.com",
+        "type": "Indicator"
+      },
+      {
+        "name": "360.cn",
+        "type": "Organization"
+      },
+      {
+        "name": "VeriSign",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Websense ThreatSeeker Network",
+        "rel": "detected compromise",
+        "obj": "National Information Technology Center"
+      },
+      {
+        "sub": "Websense ThreatSeeker Network",
+        "rel": "detected compromise",
+        "obj": "Office of the Prime Minister and Council Minister"
+      },
+      {
+        "sub": "National Information Technology Center",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2012-0507"
+      },
+      {
+        "sub": "Office of the Prime Minister and Council Minister",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2012-0507"
+      },
+      {
+        "sub": "National Information Technology Center",
+        "rel": "injected code from",
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "Office of the Prime Minister and Council Minister",
+        "rel": "injected code from",
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "National Information Technology Center",
+        "rel": "DROPS",
+        "obj": "tools.exe"
+      },
+      {
+        "sub": "Office of the Prime Minister and Council Minister",
+        "rel": "DROPS",
+        "obj": "tools.exe"
+      },
+      {
+        "sub": "tools.exe",
+        "rel": "is variant of",
+        "obj": "Zegost"
+      },
+      {
+        "sub": "tools.exe",
+        "rel": "connects to",
+        "obj": "who.xhhow4.com"
+      },
+      {
+        "sub": "tools.exe",
+        "rel": "connects to",
+        "obj": "shell.xhhow4.com"
+      },
+      {
+        "sub": "Amnesty International UK",
+        "rel": "injected code from",
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "Amnesty International UK",
+        "rel": "connects to",
+        "obj": "who.xhhow4.com"
+      },
+      {
+        "sub": "INSS",
+        "rel": "injected code from",
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "Zegost",
+        "rel": "used in attacks aggainst",
+        "obj": "Uyghurs"
+      },
+      {
+        "sub": "Zegost",
+        "rel": "used in attacks aggainst",
+        "obj": "Tibetans"
+      },
+      {
+        "sub": "Zegost",
+        "rel": "analyzed by",
+        "obj": "AlienVault"
+      },
+      {
+        "sub": "tools.exe",
+        "rel": "creates mutex named",
+        "obj": "microsoft.com"
+      },
+      {
+        "sub": "tools.exe",
+        "rel": "signed with invalid certificate issued to",
+        "obj": "360.cn"
+      },
+      {
+        "sub": "360.cn",
+        "rel": "issued certificate by",
+        "obj": "VeriSign"
+      },
+      {
+        "sub": "who.xhhow4.com",
+        "rel": "is subdomain of",
+        "obj": "hhow4.com"
+      },
+      {
+        "sub": "shell.xhhow4.com",
+        "rel": "is subdomain of",
+        "obj": "hhow4.com"
+      },
+      {
+        "sub": "hhow4.com",
+        "rel": "hosted on",
+        "obj": "184.22.171.216"
+      },
+      {
+        "sub": "hhow4.com",
+        "rel": "hosted by",
+        "obj": "Hichina Zhicheng Technology Co., Ltd."
+      },
+      {
+        "sub": "Websense ThreatSeeker Network",
+        "rel": "protects with",
+        "obj": "ACE"
+      },
+      {
+        "sub": "tools.exe",
+        "rel": "uses keyword",
+        "obj": "URATU"
+      },
+      {
+        "sub": "Cyberwarnews",
+        "rel": "reported attacks on",
+        "obj": "National Information Technology Center"
+      },
+      {
+        "sub": "Cyberwarnews",
+        "rel": "reported attacks on",
+        "obj": "Police"
+      },
+      {
+        "sub": "Websense ThreatSeeker Network",
+        "rel": "connected to attack",
+        "obj": "Amnesty International UK"
+      },
+      {
+        "sub": "Nepalese government websites",
+        "rel": "share common attack vector with",
+        "obj": "Amnesty International UK"
+      }
+    ]
+  }
+}

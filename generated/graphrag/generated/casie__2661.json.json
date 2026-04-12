@@ -1,0 +1,186 @@
+{
+  "sample_id": "casie__2661.json",
+  "sample_index": 29,
+  "source": "casie",
+  "file_name": "2661.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "HOSPITALGOWN",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "APPTHORITY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "ELASTICSEARCH",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "REDIS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MONGODB",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MYSQL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PULSE WORKSPACE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SETHER HARDY",
+        "type": "PERSON"
+      },
+      {
+        "name": "HOSPITALGOWN ATTACK",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "FEBRUARY INCIDENT",
+        "type": "EVENT"
+      },
+      {
+        "name": "MOBILE APPS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PERSONAL IDENTIFIABLE INFORMATION (PII)",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "CLOUD BASED SERVERS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "BRUTE FORCE ATTACK",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "SPEAR PHISHING ATTACK",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "PII",
+        "type": "Unknown"
+      },
+      {
+        "name": "HAPOD",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "HOSPITALGOWN",
+        "rel": "related_to",
+        "obj": "ELASTICSEARCH"
+      },
+      {
+        "sub": "HOSPITALGOWN",
+        "rel": "related_to",
+        "obj": "REDIS"
+      },
+      {
+        "sub": "HOSPITALGOWN",
+        "rel": "related_to",
+        "obj": "MONGODB"
+      },
+      {
+        "sub": "HOSPITALGOWN",
+        "rel": "related_to",
+        "obj": "MYSQL"
+      },
+      {
+        "sub": "HOSPITALGOWN",
+        "rel": "related_to",
+        "obj": "MOBILE APPS"
+      },
+      {
+        "sub": "HOSPITALGOWN",
+        "rel": "related_to",
+        "obj": "CLOUD BASED SERVERS"
+      },
+      {
+        "sub": "APPTHORITY",
+        "rel": "related_to",
+        "obj": "HOSPITALGOWN"
+      },
+      {
+        "sub": "APPTHORITY",
+        "rel": "related_to",
+        "obj": "SETHER HARDY"
+      },
+      {
+        "sub": "SETHER HARDY",
+        "rel": "related_to",
+        "obj": "HOSPITALGOWN"
+      },
+      {
+        "sub": "HOSPITALGOWN",
+        "rel": "related_to",
+        "obj": "PII"
+      },
+      {
+        "sub": "HOSPITALGOWN",
+        "rel": "related_to",
+        "obj": "BRUTE FORCE ATTACK"
+      },
+      {
+        "sub": "HOSPITALGOWN",
+        "rel": "related_to",
+        "obj": "SPEAR PHISHING ATTACK"
+      },
+      {
+        "sub": "FEBRUARY INCIDENT",
+        "rel": "related_to",
+        "obj": "MONGODB"
+      },
+      {
+        "sub": "FEBRUARY INCIDENT",
+        "rel": "related_to",
+        "obj": "HAPOD"
+      },
+      {
+        "sub": "PULSE WORKSPACE",
+        "rel": "related_to",
+        "obj": "HOSPITALGOWN"
+      },
+      {
+        "sub": "PULSE WORKSPACE",
+        "rel": "related_to",
+        "obj": "CLOUD BASED SERVERS"
+      },
+      {
+        "sub": "MOBILE APPS",
+        "rel": "related_to",
+        "obj": "PII"
+      },
+      {
+        "sub": "CLOUD BASED SERVERS",
+        "rel": "related_to",
+        "obj": "PII"
+      }
+    ]
+  }
+}

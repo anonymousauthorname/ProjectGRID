@@ -1,0 +1,452 @@
+{
+  "sample_id": "malkg__201411FSecureOnionDuke.txt",
+  "sample_index": 134,
+  "source": "malkg",
+  "file_name": "201411FSecureOnionDuke.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malicious Tor exit node",
+        "rel": "Locate at",
+        "obj": "Russia"
+      },
+      {
+        "sub": "Malicious Tor exit node",
+        "rel": "Use",
+        "obj": "Windows executables"
+      },
+      {
+        "sub": "Malicious Tor exit node",
+        "rel": "Modify",
+        "obj": "Windows executables"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Malicious Tor exit node"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Gather information about",
+        "obj": "Victim's systems"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Analyze behavior of",
+        "obj": "Downloaded binaries"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Gather victim host information by",
+        "obj": "Modifying and injecting malicious code into executables"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Identify and target",
+        "obj": "Systems that execute payload"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Gather victim network information by",
+        "obj": "Leveraging Tor network"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Remain anonymous and avoid detection during",
+        "obj": "Initial probing phase"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Construct",
+        "obj": "Dropper"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Construct",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Use",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Use",
+        "obj": "Compromise victim machines"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Use",
+        "obj": "Steal credentials"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Locate at",
+        "obj": "leveldelta.com"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Locate at",
+        "obj": "grouptumbler.com"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Belong to",
+        "obj": "Threat Actor"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Malicious Tor exit node"
+      },
+      {
+        "sub": "Malicious Tor exit node",
+        "rel": "Modify",
+        "obj": "Executable"
+      },
+      {
+        "sub": "Executable",
+        "rel": "Has value",
+        "obj": "Wrapper"
+      },
+      {
+        "sub": "Wrapper",
+        "rel": "Execute",
+        "obj": "Original payload"
+      },
+      {
+        "sub": "Wrapper",
+        "rel": "Execute",
+        "obj": "Malicious payload"
+      },
+      {
+        "sub": "Malicious dropper",
+        "rel": "Belong to",
+        "obj": "Wrapper"
+      },
+      {
+        "sub": "Downloaded file",
+        "rel": "Operate",
+        "obj": "Through .torrent files"
+      },
+      {
+        "sub": ".pirated software",
+        "rel": "Has URL",
+        "obj": ".torrent files"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Occur in",
+        "obj": "Direct user downloads"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Occur in",
+        "obj": ".torrent files containing pirated software"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Trojan-Dropper"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Trojan-Dropper",
+        "rel": "Decrypt",
+        "obj": "Embedded encrypted DLL"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Execute",
+        "obj": "Embedded encrypted DLL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "PE resource disguised as GIF image"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Decrypt",
+        "obj": "DLL from memory"
+      },
+      {
+        "sub": "Trojan-Dropper",
+        "rel": "Execute",
+        "obj": "Embedded encrypted DLL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Victim system"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Has vulnerability",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Use",
+        "obj": "C&C servers"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Communicate with",
+        "obj": "C&C domains"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Maintain connection to",
+        "obj": "Attacker's infrastructure"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Write",
+        "obj": "Additional components"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Operate",
+        "obj": "Victim system"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Belong to",
+        "obj": "Persistence mechanism"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Embedding malicious payload in legitimate executable wrapper"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Disguised PE resource"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Encryption of malicious DLL"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Obfuscation and encryption to hide true nature"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has URL",
+        "obj": "Hardcoded C&C URLs"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Operate",
+        "obj": "Through hardcoded C&C URLs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has component",
+        "obj": "Credential Stealer"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Use",
+        "obj": "Credential Stealer"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Modify",
+        "obj": "Victim machine"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Write",
+        "obj": "Login credentials"
+      },
+      {
+        "sub": "Credential Stealer",
+        "rel": "Detect",
+        "obj": "Sensitive authentication data"
+      },
+      {
+        "sub": "Sensitive authentication data",
+        "rel": "Use",
+        "obj": "Lateral movement"
+      },
+      {
+        "sub": "Stolen credentials",
+        "rel": "Operate",
+        "obj": "Other systems within the network"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Antivirus software"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Firewall configurations"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System details"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Network configuration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Software installations"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Security tools"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Victim's environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Vulnerable software"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "System's internal structure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "OnionDuke"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Use",
+        "obj": "Login credentials"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Use",
+        "obj": "System configuration details"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Use",
+        "obj": "User accounts"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Use",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Use",
+        "obj": "System settings"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Use",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Support",
+        "obj": "Lateral movement"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "Support",
+        "obj": "Exfiltration"
+      },
+      {
+        "sub": "C&C Domain",
+        "rel": "Has URL",
+        "obj": "overpict.com"
+      },
+      {
+        "sub": "C&C Domain",
+        "rel": "Has URL",
+        "obj": "leveldelta.com"
+      },
+      {
+        "sub": "C&C Domain",
+        "rel": "Has URL",
+        "obj": "grouptumbler.com"
+      },
+      {
+        "sub": "Backdoor Component",
+        "rel": "Has URL",
+        "obj": "overpict.com"
+      },
+      {
+        "sub": "Backdoor Component",
+        "rel": "Has URL",
+        "obj": "leveldelta.com"
+      },
+      {
+        "sub": "Backdoor Component",
+        "rel": "Has URL",
+        "obj": "grouptumbler.com"
+      },
+      {
+        "sub": "Backdoor Component",
+        "rel": "Use",
+        "obj": "Twitter"
+      },
+      {
+        "sub": "Backdoor Component",
+        "rel": "Modify",
+        "obj": "configuration data"
+      },
+      {
+        "sub": "C&C Domain",
+        "rel": "Belong to",
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "Backdoor Component",
+        "rel": "Has SHA1",
+        "obj": "b491c14d8cfb48636f6095b7b16555e9a575d57f"
+      },
+      {
+        "sub": "Component",
+        "rel": "Use",
+        "obj": "Twitter"
+      }
+    ]
+  }
+}

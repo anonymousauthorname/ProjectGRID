@@ -1,0 +1,302 @@
+{
+  "sample_id": "casie__2105.json",
+  "sample_index": 40,
+  "source": "casie",
+  "file_name": "2105.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "SS7"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "SS7 network"
+      },
+      {
+        "sub": "SS7 network",
+        "rel": "Has geolocation",
+        "obj": "Device location"
+      },
+      {
+        "sub": "SS7 network",
+        "rel": "Has vulnerability",
+        "obj": "Phone number"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Phone number"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Routing requests"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Text message interception"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Plan",
+        "obj": "Targeted attacks"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Execute",
+        "obj": "Targeted attacks"
+      },
+      {
+        "sub": "Targeted attacks",
+        "rel": "Belong to",
+        "obj": "Bank accounts"
+      },
+      {
+        "sub": "Financially-motivated hackers",
+        "rel": "Operate",
+        "obj": "SS7 network"
+      },
+      {
+        "sub": "SS7 network",
+        "rel": "Has value",
+        "obj": "Authentication codes"
+      },
+      {
+        "sub": "SS7 network",
+        "rel": "Has value",
+        "obj": "Location data"
+      },
+      {
+        "sub": "SS7 network",
+        "rel": "Modify",
+        "obj": "Attack resources"
+      },
+      {
+        "sub": "Attack resources",
+        "rel": "Construct",
+        "obj": "Interception of authentication codes"
+      },
+      {
+        "sub": "Attack resources",
+        "rel": "Construct",
+        "obj": "Interception of location data"
+      },
+      {
+        "sub": "Note: \"Financially-motivated hackers\" is treated as a Threat Actor",
+        "rel": "\"SS7 network\" is treated as an Infrastructure",
+        "obj": "\"Authentication codes\" and \"Location data\" are treated as data values . The relation \"Has value\" is used to indicate that the network holds or enables access to these data types. The phrase \"acquired access\" is interpreted as \"Operate\" since it implies active exploitation. \"Develop and deploy\" is translated into \"Construct\" and \"Modify\" as appropriate."
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "SS7 flaw"
+      },
+      {
+        "sub": "SS7 flaw",
+        "rel": "Has vulnerability",
+        "obj": "SMS-based two-factor authentication"
+      },
+      {
+        "sub": "SMS-based two-factor authentication",
+        "rel": "Modify",
+        "obj": "login credentials"
+      },
+      {
+        "sub": "login credentials",
+        "rel": "Enable",
+        "obj": "unauthorized money transfers"
+      },
+      {
+        "sub": "Hackers",
+        "rel": "Operate",
+        "obj": "bank accounts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Intercepted credentials"
+      },
+      {
+        "sub": "Intercepted credentials",
+        "rel": "Enable",
+        "obj": "Unauthorized operations"
+      },
+      {
+        "sub": "Unauthorized operations",
+        "rel": "Include",
+        "obj": "Logging into bank accounts"
+      },
+      {
+        "sub": "Unauthorized operations",
+        "rel": "Include",
+        "obj": "Initiating money transfers"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Has vulnerability",
+        "obj": "SMS-based two-factor authentication"
+      },
+      {
+        "sub": "SS7",
+        "rel": "Use",
+        "obj": "SMS-based two-factor authentication"
+      },
+      {
+        "sub": "SMS-based two-factor authentication",
+        "rel": "Operate",
+        "obj": "Verify user identity"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "SS7"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Modify",
+        "obj": "Login codes and passwords"
+      },
+      {
+        "sub": "Login codes and passwords",
+        "rel": "Belong to",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "Bank accounts",
+        "rel": "Require",
+        "obj": "Login codes and passwords"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "SS7 network"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Intercept",
+        "obj": "text messages"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Obtain",
+        "obj": "authentication codes"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Discover",
+        "obj": "location of target devices"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gain information about",
+        "obj": "victim’s network"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gain information about",
+        "obj": "victim’s account access methods"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Banking system"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Authentication codes"
+      },
+      {
+        "sub": "Banking system",
+        "rel": "Has vulnerability",
+        "obj": "Authentication codes"
+      },
+      {
+        "sub": "Authentication codes",
+        "rel": "Modify",
+        "obj": "Access to other accounts"
+      },
+      {
+        "sub": "Access to other accounts",
+        "rel": "Enable",
+        "obj": "Financial transactions"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Authentication codes"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Collect",
+        "obj": "Authentication codes"
+      },
+      {
+        "sub": "Authentication codes",
+        "rel": "Have value",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "Sensitive data",
+        "rel": "Be used to",
+        "obj": "Steal funds"
+      },
+      {
+        "sub": "Steal funds",
+        "rel": "Demonstrate",
+        "obj": "Financial gain"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "Authentication codes"
+      },
+      {
+        "sub": "Authentication codes",
+        "rel": "Operate",
+        "obj": "Bank accounts"
+      },
+      {
+        "sub": "Bank accounts",
+        "rel": "Execute",
+        "obj": "Financial transactions"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Has tactic",
+        "obj": "Unauthorized channel transfer"
+      },
+      {
+        "sub": "Financial data",
+        "rel": "Is exfiltrated from",
+        "obj": "Bank accounts"
+      },
+      {
+        "sub": "Attacker-controlled accounts",
+        "rel": "Receive",
+        "obj": "Stolen funds"
+      }
+    ]
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "sample_id": "securenlp__Operation_GreedyWonk",
+  "sample_index": 198,
+  "source": "securenlp",
+  "file_name": "Operation_GreedyWonk",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "FireEye",
+        "rel": "Identify",
+        "obj": "Zero-day Adobe Flash exploit"
+      },
+      {
+        "sub": "Zero-day Adobe Flash exploit",
+        "rel": "Affect",
+        "obj": "Flash Player 12.0.0.4"
+      },
+      {
+        "sub": "Zero-day Adobe Flash exploit",
+        "rel": "Affect",
+        "obj": "Flash Player 11.7.700.261"
+      },
+      {
+        "sub": "Peter G. Peterson Institute for International Economics",
+        "rel": "Have URL",
+        "obj": "www.piie.com"
+      },
+      {
+        "sub": "American Research Center in Egypt",
+        "rel": "Have URL",
+        "obj": "www.arce.org"
+      },
+      {
+        "sub": "Smith Richardson Foundation",
+        "rel": "Have URL",
+        "obj": "www.srf.org"
+      },
+      {
+        "sub": "Peter G. Peterson Institute for International Economics",
+        "rel": "Operate",
+        "obj": "Hidden iframe"
+      },
+      {
+        "sub": "American Research Center in Egypt",
+        "rel": "Operate",
+        "obj": "Hidden iframe"
+      },
+      {
+        "sub": "Smith Richardson Foundation",
+        "rel": "Operate",
+        "obj": "Hidden iframe"
+      },
+      {
+        "sub": "Hidden iframe",
+        "rel": "Host",
+        "obj": "Exploit server"
+      },
+      {
+        "sub": "Exploit server",
+        "rel": "Host",
+        "obj": "Zero-day Adobe Flash exploit"
+      },
+      {
+        "sub": "Peter G. Peterson Institute for International Economics",
+        "rel": "Belong to",
+        "obj": "Nonprofit institution"
+      },
+      {
+        "sub": "American Research Center in Egypt",
+        "rel": "Belong to",
+        "obj": "Nonprofit institution"
+      },
+      {
+        "sub": "Smith Richardson Foundation",
+        "rel": "Belong to",
+        "obj": "Nonprofit institution"
+      },
+      {
+        "sub": "Peter G. Peterson Institute for International Economics",
+        "rel": "Engage in",
+        "obj": "National security and public policy issues"
+      },
+      {
+        "sub": "Smith Richardson Foundation",
+        "rel": "Engage in",
+        "obj": "National security and public policy issues"
+      },
+      {
+        "sub": "Group behind campaign",
+        "rel": "Have determination",
+        "obj": "Infect users"
+      },
+      {
+        "sub": "Group behind campaign",
+        "rel": "Have resources",
+        "obj": "Infect users"
+      },
+      {
+        "sub": "Group behind campaign",
+        "rel": "Operate",
+        "obj": "Foreign and public policy websites"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Adobe Flash"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "PlugX/Kaba"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has MD5 hash",
+        "obj": "507aed81e3106da8c50efb3a045c5e2b"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Poison Ivy"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "Locate at",
+        "obj": "wmi.ns01.us"
+      },
+      {
+        "sub": "Poison Ivy",
+        "rel": "Locate at",
+        "obj": "microsafes.no-ip.org"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "PlugX/Kaba payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "compromised endpoints"
+      },
+      {
+        "sub": "Attack campaign",
+        "rel": "Modify",
+        "obj": "PlugX/Kaba payload"
+      },
+      {
+        "sub": "Attack campaign",
+        "rel": "Operate",
+        "obj": "Adobe Flash vulnerability"
+      },
+      {
+        "sub": "Peter G. Peterson Institute for International Economics",
+        "rel": "Has geolocation",
+        "obj": "United States"
+      },
+      {
+        "sub": "American Research Center in Egypt",
+        "rel": "Has geolocation",
+        "obj": "Egypt"
+      },
+      {
+        "sub": "Smith Richardson Foundation",
+        "rel": "Has geolocation",
+        "obj": "United States"
+      },
+      {
+        "sub": "Flash zero-day exploit",
+        "rel": "Target",
+        "obj": "Windows XP"
+      },
+      {
+        "sub": "Flash zero-day exploit",
+        "rel": "Target",
+        "obj": "Windows 7 with Java 1.6"
+      },
+      {
+        "sub": "Flash zero-day exploit",
+        "rel": "Target",
+        "obj": "Windows 7 with outdated Microsoft Office 2007 or 2010"
+      },
+      {
+        "sub": "Flash zero-day exploit",
+        "rel": "Use",
+        "obj": "Return-oriented programming  chains"
+      },
+      {
+        "sub": "Flash zero-day exploit",
+        "rel": "Modify",
+        "obj": "ASLR bypass"
+      },
+      {
+        "sub": "Flash zero-day exploit",
+        "rel": "Has URL",
+        "obj": "Hidden iframe"
+      },
+      {
+        "sub": "Windows XP",
+        "rel": "Has vulnerability",
+        "obj": "Flash zero-day exploit"
+      },
+      {
+        "sub": "Windows 7 with Java 1.6",
+        "rel": "Has vulnerability",
+        "obj": "Flash zero-day exploit"
+      },
+      {
+        "sub": "Windows 7 with outdated Microsoft Office 2007 or 2010",
+        "rel": "Has vulnerability",
+        "obj": "Flash zero-day exploit"
+      },
+      {
+        "sub": "Return-oriented programming  chains",
+        "rel": "Has value",
+        "obj": "ASLR bypass"
+      },
+      {
+        "sub": "Hidden iframe",
+        "rel": "Locate at",
+        "obj": "Exploit server"
+      },
+      {
+        "sub": "Exploit server",
+        "rel": "Operate",
+        "obj": "Redirect visitors"
+      },
+      {
+        "sub": "Flash zero-day exploit",
+        "rel": "Construct",
+        "obj": "Malicious code execution"
+      },
+      {
+        "sub": "Malicious code execution",
+        "rel": "Write",
+        "obj": "Exploit server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "InternetOpenURLA"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "InternetReadFile"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "CreateFileA"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "WriteFile"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "WinExec"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Shellcode"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "Modify",
+        "obj": "GIF image"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "VirtualProtect"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Return-oriented programming  chain"
+      },
+      {
+        "sub": "Windows XP",
+        "rel": "Has vulnerability",
+        "obj": "Address Space Layout Randomization"
+      },
+      {
+        "sub": "MSVCRT",
+        "rel": "Has value",
+        "obj": "Hard-coded base addresses"
+      },
+      {
+        "sub": "MSVCRT",
+        "rel": "Belong to",
+        "obj": "Visual C runtime"
+      },
+      {
+        "sub": "English",
+        "rel": "Has value",
+        "obj": "Hard-coded base address"
+      },
+      {
+        "sub": "Chinese",
+        "rel": "Has value",
+        "obj": "Hard-coded base address"
+      },
+      {
+        "sub": "Windows 7",
+        "rel": "Has vulnerability",
+        "obj": "Address Space Layout Randomization"
+      },
+      {
+        "sub": "Java 1.6",
+        "rel": "Has value",
+        "obj": "Enables use of ROP chain for MSVCR71.dll"
+      },
+      {
+        "sub": "Microsoft Office 2007",
+        "rel": "Has value",
+        "obj": "Enables use of ROP chain for HXDS.dll"
+      },
+      {
+        "sub": "Microsoft Office 2010",
+        "rel": "Has value",
+        "obj": "Enables use of ROP chain for HXDS.dll"
+      },
+      {
+        "sub": "HXDS.dll",
+        "rel": "Has value",
+        "obj": "Hard-coded ROP chain"
+      },
+      {
+        "sub": "MSVCR71.dll",
+        "rel": "Has value",
+        "obj": "Hard-coded ROP chain"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Return-oriented programming  chain"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Windows XP"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Windows 7"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Have determination",
+        "obj": "Infect users"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Have resources",
+        "obj": "Infect users"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Foreign and public policy websites"
+      },
+      {
+        "sub": "PlugX",
+        "rel": "Has hash",
+        "obj": "507aed81e3106da8c50efb3a045c5e2b"
+      },
+      {
+        "sub": "PlugX",
+        "rel": "Construct",
+        "obj": "Feb. 12"
+      },
+      {
+        "sub": "PlugX",
+        "rel": "Use",
+        "obj": "java.ns1.name"
+      },
+      {
+        "sub": "PlugX",
+        "rel": "Use",
+        "obj": "adservice.no-ip.org"
+      },
+      {
+        "sub": "PlugX",
+        "rel": "Use",
+        "obj": "wmi.ns01.us"
+      },
+      {
+        "sub": "PlugX",
+        "rel": "Write",
+        "obj": "POST /D28419029043311C6F8BF9F5 HTTP/1.1"
+      },
+      {
+        "sub": "PlugX",
+        "rel": "Has value",
+        "obj": "Mozilla/4.0 (compatible"
+      },
+      {
+        "sub": "PlugX",
+        "rel": "Has value",
+        "obj": "Host: java.ns1.name"
+      },
+      {
+        "sub": "PlugX",
+        "rel": "Operate",
+        "obj": "CnC domain"
+      }
+    ]
+  }
+}

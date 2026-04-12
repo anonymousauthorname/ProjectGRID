@@ -1,0 +1,131 @@
+{
+  "sample_id": "malkg__201207WiredDarkComet.txt",
+  "sample_index": 116,
+  "source": "malkg",
+  "file_name": "201207WiredDarkComet.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DARK COMET",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "JEAN-PIERRE LESSEUR",
+        "type": "PERSON"
+      },
+      {
+        "name": "SYRIAN GOVERNMENT",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "OSAMA",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "DLSHAD OTHMAN",
+        "type": "PERSON"
+      },
+      {
+        "name": "BLACKSHADES",
+        "type": "MALWARE"
+      },
+      {
+        "name": "SYRIA",
+        "type": "GEO"
+      },
+      {
+        "name": "ELECTRONIC FRONTIER FOUNDATION",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CITIZEN LAB",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "OPENSC",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "BASHAR ASSAD",
+        "type": "PERSON"
+      },
+      {
+        "name": "KEVIN MITNICK",
+        "type": "PERSON"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "JEAN-PIERRE LESSEUR",
+        "rel": "related_to",
+        "obj": "DARK COMET"
+      },
+      {
+        "sub": "DARK COMET",
+        "rel": "related_to",
+        "obj": "SYRIAN GOVERNMENT"
+      },
+      {
+        "sub": "DARK COMET",
+        "rel": "related_to",
+        "obj": "OSAMA"
+      },
+      {
+        "sub": "DARK COMET",
+        "rel": "related_to",
+        "obj": "DLSHAD OTHMAN"
+      },
+      {
+        "sub": "SYRIAN GOVERNMENT",
+        "rel": "related_to",
+        "obj": "BASHAR ASSAD"
+      },
+      {
+        "sub": "DARK COMET",
+        "rel": "related_to",
+        "obj": "BLACKSHADES"
+      },
+      {
+        "sub": "CITIZEN LAB",
+        "rel": "related_to",
+        "obj": "DARK COMET"
+      },
+      {
+        "sub": "ELECTRONIC FRONTIER FOUNDATION",
+        "rel": "related_to",
+        "obj": "DARK COMET"
+      },
+      {
+        "sub": "JEAN-PIERRE LESSEUR",
+        "rel": "related_to",
+        "obj": "OPENSC"
+      },
+      {
+        "sub": "OSAMA",
+        "rel": "related_to",
+        "obj": "SYRIA"
+      },
+      {
+        "sub": "DLSHAD OTHMAN",
+        "rel": "related_to",
+        "obj": "SYRIA"
+      }
+    ]
+  }
+}

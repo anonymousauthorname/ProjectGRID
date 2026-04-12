@@ -1,0 +1,422 @@
+{
+  "sample_id": "securenlp__Hikit_Analysis-Final",
+  "sample_index": 168,
+  "source": "securenlp",
+  "file_name": "Hikit_Analysis-Final",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Command and scripting interpreter"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Remote shell"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "File management"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Proxy functionality"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "XOR-based decryption scheme"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "DLL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Loader component"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Remote command shell"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Embedded DLL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Custom loading routine"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Network traffic"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Establishes persistence",
+        "obj": "Windows service"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Uses",
+        "obj": "Rootkit"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Activates",
+        "obj": "Service with driver in %TEMP% directory"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Deletes",
+        "obj": "Service after activation"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Hides",
+        "obj": "Service entry"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Hides",
+        "obj": "DLL’s PID"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Hides",
+        "obj": "References to GUID {4AE26357-79A3-466D-A6D9-FC38BFB67DEA}"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Uses",
+        "obj": "Cloaking functionality of rootkit"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Rootkit"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "XOR scheme"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Legitimate SSL certificate"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Network connections"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Registry keys"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Services"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "System detection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Heuristic IDS sensors"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Disrupt",
+        "obj": "Heuristic detection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Mimic",
+        "obj": "Normal encrypted traffic"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Network traffic"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "Listen",
+        "obj": "Local ports"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "Accept",
+        "obj": "Inbound connections"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "Detect",
+        "obj": "Infected machines"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "Gather",
+        "obj": "System information"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "Gather",
+        "obj": "Network configuration"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "Gather",
+        "obj": "Service details"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "Gather",
+        "obj": "File system structure"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "Execute",
+        "obj": "Remote shell commands"
+      },
+      {
+        "sub": "Gen 2",
+        "rel": "Detect",
+        "obj": "Network traffic"
+      },
+      {
+        "sub": "Gen 2",
+        "rel": "Respond",
+        "obj": "Network traffic"
+      },
+      {
+        "sub": "Gen 2",
+        "rel": "Provide visibility",
+        "obj": "Network activity"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Enable",
+        "obj": "Lateral Movement"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Use",
+        "obj": "Connect Command"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Use",
+        "obj": "Externally Exposed Gen 1 DLL"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Operate",
+        "obj": "Local Router"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Construct",
+        "obj": "Phantom Network"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Write",
+        "obj": "Up to 10 Listening Ports"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Has value",
+        "obj": "Local Router Functionality"
+      },
+      {
+        "sub": "Gen 2 Hikit Malware",
+        "rel": "Locate at",
+        "obj": "Behind Firewall"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "File management"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "Remote shell commands"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "'file' command"
+      },
+      {
+        "sub": "'file' command",
+        "rel": "Enable",
+        "obj": "File upload"
+      },
+      {
+        "sub": "'file' command",
+        "rel": "Enable",
+        "obj": "File download"
+      },
+      {
+        "sub": "'file' command",
+        "rel": "Enable",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "'shell' command"
+      },
+      {
+        "sub": "'shell' command",
+        "rel": "Enable",
+        "obj": "Command line access"
+      },
+      {
+        "sub": "'shell' command",
+        "rel": "Enable",
+        "obj": "Command execution"
+      },
+      {
+        "sub": "'shell' command",
+        "rel": "Enable",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "'shell' command",
+        "rel": "Enable",
+        "obj": "System compromise"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Use",
+        "obj": "Encrypted channel"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Use",
+        "obj": "DWORD XOR scheme"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Use",
+        "obj": "24-byte header"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Use",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Use",
+        "obj": "SSL certificate"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Use",
+        "obj": "Internal routing"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Operate",
+        "obj": "Command and control network"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Construct",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Modify",
+        "obj": "Encryption scheme"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Has value",
+        "obj": "Gen 1.2 header"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Belong to",
+        "obj": "Gen 2.3"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Use",
+        "obj": "file command"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Operate",
+        "obj": "encrypted command and control channel"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Use",
+        "obj": "obfuscation"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Use",
+        "obj": "encryption"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Modify",
+        "obj": "data transfer"
+      },
+      {
+        "sub": "Hikit Malware",
+        "rel": "Has technique",
+        "obj": "file transfer"
+      }
+    ]
+  }
+}

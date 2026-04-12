@@ -1,0 +1,187 @@
+{
+  "sample_id": "ctinexus__ragnar-locker-ransomware.json",
+  "sample_index": 61,
+  "source": "ctinexus",
+  "file_name": "ragnar-locker-ransomware.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Use",
+        "obj": "RDP service"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Use",
+        "obj": "brute force"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Use",
+        "obj": "stolen credentials"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Operate",
+        "obj": "network compromise"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2017-0213"
+      },
+      {
+        "sub": "CVE-2017-0213",
+        "rel": "Has vulnerability",
+        "obj": "Windows COM Aggregate Marshaler"
+      },
+      {
+        "sub": "Windows COM Aggregate Marshaler",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2017-0213"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "CVE-2017-0213"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Windows COM Aggregate Marshaler"
+      },
+      {
+        "sub": "CVE-2017-0213",
+        "rel": "Modify",
+        "obj": "Windows COM Aggregate Marshaler"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Specially crafted application"
+      },
+      {
+        "sub": "Specially crafted application",
+        "rel": "Has value",
+        "obj": "Arbitrary code with elevated privileges"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2017-0213"
+      },
+      {
+        "sub": "Specially crafted application",
+        "rel": "Use",
+        "obj": "CVE-2017-0213"
+      },
+      {
+        "sub": "CVE-2017-0213",
+        "rel": "Modify",
+        "obj": "Privilege escalation"
+      },
+      {
+        "sub": "Windows COM Aggregate Marshaler",
+        "rel": "Belong to",
+        "obj": "Windows"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Obfuscation technique"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Stolen Credentials"
+      },
+      {
+        "sub": "Stolen Credentials",
+        "rel": "Belong to",
+        "obj": "Dark Web"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Uses tactic",
+        "obj": "Double extortion"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Has technique",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Has technique",
+        "obj": "Encryption attack"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Has technique",
+        "obj": "Threat to leak data if ransom not paid"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Use",
+        "obj": "Double extortion"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Has tactic",
+        "obj": "Exfiltration"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Operate",
+        "obj": "Encryption attack"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Threaten",
+        "obj": "Data leak"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Has tactic",
+        "obj": "Encryption attack"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Modify",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Has technique",
+        "obj": "Threaten to leak data"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Operate",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "Threaten to leak",
+        "obj": "Sensitive data"
+      }
+    ]
+  }
+}

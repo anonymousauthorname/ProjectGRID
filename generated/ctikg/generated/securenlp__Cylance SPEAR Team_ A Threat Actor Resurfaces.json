@@ -1,0 +1,417 @@
+{
+  "sample_id": "securenlp__Cylance SPEAR Team_ A Threat Actor Resurfaces",
+  "sample_index": 196,
+  "source": "securenlp",
+  "file_name": "Cylance SPEAR Team_ A Threat Actor Resurfaces",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "malware",
+        "rel": "enables",
+        "obj": "continuation of operations"
+      },
+      {
+        "sub": "ISIS_twitter_list.doc",
+        "rel": "exploits",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "ISIS_twitter_list.doc",
+        "rel": "was uploaded to",
+        "obj": "Virustotal"
+      },
+      {
+        "sub": "ISIS_twitter_list.doc",
+        "rel": "has hash",
+        "obj": "6ba1d42c6493b18548e30bd60ca3d07a140d9d1945cf4e2b542e4a6d23913f40"
+      },
+      {
+        "sub": "ISIS_twitter_list.doc",
+        "rel": "has file size",
+        "obj": "146,338 bytes"
+      },
+      {
+        "sub": "ISIS_twitter_list.doc",
+        "rel": "has marker",
+        "obj": "GfCv"
+      },
+      {
+        "sub": "ISIS_twitter_list.doc",
+        "rel": "has byte pattern",
+        "obj": "EF FE EC CE"
+      },
+      {
+        "sub": "ISIS_twitter_list.doc",
+        "rel": "is associated with",
+        "obj": "user in India"
+      },
+      {
+        "sub": "ISIS_twitter_list.doc",
+        "rel": "targets",
+        "obj": "Australia"
+      },
+      {
+        "sub": "ISIS_twitter_list.doc",
+        "rel": "targets",
+        "obj": "New Zealand"
+      },
+      {
+        "sub": "ISIS_twitter_list.doc",
+        "rel": "targets",
+        "obj": "Vietnam"
+      },
+      {
+        "sub": "ISIS_twitter_list.doc",
+        "rel": "targets",
+        "obj": "United States"
+      },
+      {
+        "sub": "shellcode",
+        "rel": "searches for",
+        "obj": "marker"
+      },
+      {
+        "sub": "shellcode",
+        "rel": "checks",
+        "obj": "EF FE EC CE"
+      },
+      {
+        "sub": "ISIS_twitter_list.doc",
+        "rel": "decodes",
+        "obj": "shellcode"
+      },
+      {
+        "sub": "key",
+        "rel": "is permuted by",
+        "obj": "key transformation"
+      },
+      {
+        "sub": "binary",
+        "rel": "executes",
+        "obj": "files"
+      },
+      {
+        "sub": "binary",
+        "rel": "lists",
+        "obj": "drivers"
+      },
+      {
+        "sub": "binary",
+        "rel": "communicates",
+        "obj": "www.microsoftservices.proxydns.com"
+      },
+      {
+        "sub": "binary",
+        "rel": "uses",
+        "obj": "HTTP POST"
+      },
+      {
+        "sub": "binary",
+        "rel": "uses",
+        "obj": "HTTP GET"
+      },
+      {
+        "sub": "binary",
+        "rel": "is called from",
+        "obj": "Setup"
+      },
+      {
+        "sub": "Run key",
+        "rel": "ensures",
+        "obj": "backdoor executes"
+      },
+      {
+        "sub": "Run key",
+        "rel": "ensures",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "www.microsoftservices.proxydns.com",
+        "rel": "resolves to",
+        "obj": "103.229.125.157"
+      },
+      {
+        "sub": "fighthard.mooo.com",
+        "rel": "resolves to",
+        "obj": "103.229.125.157"
+      },
+      {
+        "sub": "rampage.freetcp.com",
+        "rel": "resolves to",
+        "obj": "103.229.125.157"
+      },
+      {
+        "sub": "beacon request",
+        "rel": "contains",
+        "obj": "GET /login?wd=hvJZkcIvKKupNRlsqI0aN6jZDTYPz6ZS9Q- H5bCXiER37jqqCDzS3wIUulYOjyKHcDomZCD72mAc4fSCoHhJJ1UQliBkraMepzS5J3UUFUH- nofoOgVM02UlCs4LJANIuZH90vM5KH_Ih59DdVRbgQ=="
+      },
+      {
+        "sub": "beacon request",
+        "rel": "contains",
+        "obj": "User-Agent"
+      },
+      {
+        "sub": "beacon request",
+        "rel": "contains",
+        "obj": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322)"
+      },
+      {
+        "sub": "beacon request",
+        "rel": "contains",
+        "obj": "Host"
+      },
+      {
+        "sub": "beacon request",
+        "rel": "contains",
+        "obj": "www.microsoftservices.proxydns.com"
+      },
+      {
+        "sub": "beacon request",
+        "rel": "can be decoded by",
+        "obj": "base64 decoding"
+      },
+      {
+        "sub": "beacon request",
+        "rel": "can be decoded by",
+        "obj": "RC4 decrypting"
+      },
+      {
+        "sub": "base64 decoding",
+        "rel": "uses",
+        "obj": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
+      },
+      {
+        "sub": "nofoOgVM02UlCs4LJANIuZH90vM5KH_Ih59DdVRbgQ==",
+        "rel": "is decoded to",
+        "obj": "win32.5.1.2600.2.1.Service Pack 3"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "may make requests to",
+        "obj": "C2"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "uses",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "uses",
+        "obj": "query?sid="
+      },
+      {
+        "sub": "backdoor",
+        "rel": "uses",
+        "obj": "result?"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "uses",
+        "obj": "query parameter"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "uses",
+        "obj": "result parameter"
+      },
+      {
+        "sub": "PDB path",
+        "rel": "was left in",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "path",
+        "rel": "resides in",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "Fighthard.mooo.com",
+        "rel": "resolves to",
+        "obj": "173.224.214.12"
+      },
+      {
+        "sub": "Naval Science Curriculum 2014.doc",
+        "rel": "communicates to",
+        "obj": "Fighthard.mooo.com"
+      },
+      {
+        "sub": "1.doc",
+        "rel": "communicates to",
+        "obj": "Fighthard.mooo.com"
+      },
+      {
+        "sub": "Republic Day speech 27 Jan 2014.doc",
+        "rel": "communicates to",
+        "obj": "Fighthard.mooo.com"
+      },
+      {
+        "sub": "binary",
+        "rel": "stored at",
+        "obj": "offset 0x1BC27"
+      },
+      {
+        "sub": "binary",
+        "rel": "encoded as",
+        "obj": "hex-encoded"
+      },
+      {
+        "sub": "binary",
+        "rel": "encoded as",
+        "obj": "xor-encoded"
+      },
+      {
+        "sub": "binary",
+        "rel": "decoded using",
+        "obj": "0xBF"
+      },
+      {
+        "sub": "decoded binary",
+        "rel": "written to",
+        "obj": "dw20.EXE"
+      },
+      {
+        "sub": "decoded binary",
+        "rel": "copied to",
+        "obj": "msascm32.drv"
+      },
+      {
+        "sub": "USER-D6921F6215",
+        "rel": "is the hostname of",
+        "obj": "the victim"
+      },
+      {
+        "sub": "Administrator",
+        "rel": "is the victim user",
+        "obj": "the victim"
+      },
+      {
+        "sub": "1676096002",
+        "rel": "is",
+        "obj": "current timestamp"
+      },
+      {
+        "sub": "1.0",
+        "rel": "is",
+        "obj": "a version number"
+      },
+      {
+        "sub": "XOR key",
+        "rel": "will be randomly generated",
+        "obj": "per request"
+      },
+      {
+        "sub": "command results",
+        "rel": "will be sent encoded to",
+        "obj": "server"
+      },
+      {
+        "sub": "command results",
+        "rel": "will be sent to",
+        "obj": "result.asp"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "will accept",
+        "obj": "#runhfcore"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "will accept",
+        "obj": "#getdrivelist?"
+      },
+      {
+        "sub": "#runhfcore",
+        "rel": "starts",
+        "obj": "backdoor functionality"
+      },
+      {
+        "sub": "#getdrivelist?",
+        "rel": "enumerates",
+        "obj": "logical drives"
+      },
+      {
+        "sub": "exploit documents",
+        "rel": "are similar to",
+        "obj": "the one described above"
+      },
+      {
+        "sub": "173.224.214.12",
+        "rel": "resolves to",
+        "obj": "fighthard.mooo.com"
+      },
+      {
+        "sub": "173.224.214.12",
+        "rel": "has domains pointing to",
+        "obj": "queenberry.www1.biz"
+      },
+      {
+        "sub": "173.224.214.12",
+        "rel": "has domains pointing to",
+        "obj": "word.crabdance.com"
+      },
+      {
+        "sub": "word.crabdance.com",
+        "rel": "resolved to",
+        "obj": "64.71.162.70"
+      },
+      {
+        "sub": "word.crabdance.com",
+        "rel": "resolved to",
+        "obj": "108.171.246.140"
+      },
+      {
+        "sub": "64.71.162.70",
+        "rel": "is associated with",
+        "obj": "www.ollay011.zyns.com"
+      },
+      {
+        "sub": "Hardcore Charlie",
+        "rel": "is the source of",
+        "obj": "data dump"
+      },
+      {
+        "sub": "Hardcore Charlie",
+        "rel": "is associated with",
+        "obj": "data dump"
+      },
+      {
+        "sub": "samples",
+        "rel": "traced back to",
+        "obj": "#A-000009-MW"
+      },
+      {
+        "sub": "#A-000009-MW",
+        "rel": "is traced to",
+        "obj": "Hardcore Charlie"
+      },
+      {
+        "sub": "domain and IP address crossover",
+        "rel": "is used to trace",
+        "obj": "samples"
+      },
+      {
+        "sub": "domains and IP addresses",
+        "rel": "related to",
+        "obj": "Hardcore Charlie"
+      }
+    ]
+  }
+}

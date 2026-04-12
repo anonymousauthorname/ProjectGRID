@@ -1,0 +1,225 @@
+{
+  "sample_id": "ctinexus__midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams.json",
+  "sample_index": 60,
+  "source": "ctinexus",
+  "file_name": "midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Microsoft Threat Intelligence",
+        "type": "Entity"
+      },
+      {
+        "name": "Midnight Blizzard",
+        "type": "Entity"
+      },
+      {
+        "name": "NOBELIUM",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Teams",
+        "type": "Entity"
+      },
+      {
+        "name": "credential theft",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing",
+        "type": "Entity"
+      },
+      {
+        "name": "social engineering",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft 365",
+        "type": "Entity"
+      },
+      {
+        "name": "small businesses",
+        "type": "Entity"
+      },
+      {
+        "name": "technical support entities",
+        "type": "Entity"
+      },
+      {
+        "name": "domains",
+        "type": "Entity"
+      },
+      {
+        "name": "multifactor authentication",
+        "type": "Entity"
+      },
+      {
+        "name": "MFA",
+        "type": "Entity"
+      },
+      {
+        "name": "authentication requests",
+        "type": "Entity"
+      },
+      {
+        "name": "user engagement",
+        "type": "Entity"
+      },
+      {
+        "name": "security best practices",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actor",
+        "type": "Entity"
+      },
+      {
+        "name": "compromised tenants",
+        "type": "Entity"
+      },
+      {
+        "name": "lures",
+        "type": "Entity"
+      },
+      {
+        "name": "credential stealing",
+        "type": "Entity"
+      },
+      {
+        "name": "Teams chats",
+        "type": "Entity"
+      },
+      {
+        "name": "user approval",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious authentication prompts",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft Threat Intelligence",
+        "rel": "identifies",
+        "obj": "Midnight Blizzard"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "is_a_variant_of",
+        "obj": "NOBELIUM"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "conducts",
+        "obj": "credential theft"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "uses",
+        "obj": "phishing"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "executes",
+        "obj": "social engineering"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "targets",
+        "obj": "Microsoft 365"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "targets",
+        "obj": "small businesses"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "creates",
+        "obj": "technical support entities"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "creates",
+        "obj": "domains"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "uses",
+        "obj": "Microsoft Teams"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "launches",
+        "obj": "lures"
+      },
+      {
+        "sub": "lures",
+        "rel": "is_sent_via",
+        "obj": "Teams chats"
+      },
+      {
+        "sub": "lures",
+        "rel": "engages",
+        "obj": "user approval"
+      },
+      {
+        "sub": "lures",
+        "rel": "is_a_form_of",
+        "obj": "malicious authentication prompts"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "operates_on",
+        "obj": "compromised tenants"
+      },
+      {
+        "sub": "compromised tenants",
+        "rel": "is_connected_to",
+        "obj": "small businesses"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "exploits",
+        "obj": "multifactor authentication"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "utilizes",
+        "obj": "MFA"
+      },
+      {
+        "sub": "lures",
+        "rel": "requests",
+        "obj": "authentication requests"
+      },
+      {
+        "sub": "Microsoft Threat Intelligence",
+        "rel": "reinforces",
+        "obj": "security best practices"
+      },
+      {
+        "sub": "Microsoft Threat Intelligence",
+        "rel": "treats_as_malicious",
+        "obj": "malicious authentication prompts"
+      }
+    ]
+  }
+}

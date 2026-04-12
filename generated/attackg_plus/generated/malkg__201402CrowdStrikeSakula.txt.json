@@ -1,0 +1,377 @@
+{
+  "sample_id": "malkg__201402CrowdStrikeSakula.txt",
+  "sample_index": 146,
+  "source": "malkg",
+  "file_name": "201402CrowdStrikeSakula.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "GIFAS",
+        "rel": "Has geolocation",
+        "obj": "France"
+      },
+      {
+        "sub": "GIFAS",
+        "rel": "Belong to",
+        "obj": "Groupement des industries françaises aéronautiques et spatiales"
+      },
+      {
+        "sub": "savmpet[.]com",
+        "rel": "Has URL",
+        "obj": "http://savmpet.com"
+      },
+      {
+        "sub": "gifas[.]assso[.]net",
+        "rel": "Hosts",
+        "obj": "include.html"
+      },
+      {
+        "sub": "gifas[.]assso[.]net",
+        "rel": "Hosts",
+        "obj": "Tope.swf"
+      },
+      {
+        "sub": "gifas[.]assso[.]net",
+        "rel": "Hosts",
+        "obj": "Erido.jpg"
+      },
+      {
+        "sub": "gifas[.]assso[.]net",
+        "rel": "Has value",
+        "obj": "exploit code"
+      },
+      {
+        "sub": "malicious iframe",
+        "rel": "Use",
+        "obj": "GIFAS-based content"
+      },
+      {
+        "sub": "malicious iframe",
+        "rel": "Redirect to",
+        "obj": "gifas[.]assso[.]net"
+      },
+      {
+        "sub": "adversary",
+        "rel": "Operate",
+        "obj": "reconnaissance"
+      },
+      {
+        "sub": "adversary",
+        "rel": "Use",
+        "obj": "Gather Victim Org Information"
+      },
+      {
+        "sub": "adversary",
+        "rel": "Use",
+        "obj": "Gather Victim Network Information"
+      },
+      {
+        "sub": "1. IP",
+        "rel": "Host",
+        "obj": "savmpet[.]com"
+      },
+      {
+        "sub": "2. IP",
+        "rel": "Host",
+        "obj": "gifas[.]assso[.]net"
+      },
+      {
+        "sub": "3. IP",
+        "rel": "Host",
+        "obj": "secure[.]safran-group[.]com"
+      },
+      {
+        "sub": "4. IP",
+        "rel": "Host",
+        "obj": "icbcqsz[.]com"
+      },
+      {
+        "sub": "5. Domain",
+        "rel": "Belong to",
+        "obj": "Safran"
+      },
+      {
+        "sub": "6. Safran",
+        "rel": "Has vulnerability",
+        "obj": "DNS infrastructure"
+      },
+      {
+        "sub": "7. Adversary",
+        "rel": "Operate",
+        "obj": "DNS infrastructure"
+      },
+      {
+        "sub": "8. IP",
+        "rel": "Locate at",
+        "obj": "173.252.252.204"
+      },
+      {
+        "sub": "9. secure[.]safran-group[.]com",
+        "rel": "Has geolocation",
+        "obj": "France"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "GIFAS website"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "iframe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "gifas[.]assso[.]net"
+      },
+      {
+        "sub": "URL",
+        "rel": "Has URL",
+        "obj": "gifas[.]assso[.]net"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "GIFAS website"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Exploit Public-Facing Application"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "CVE-2014-0322"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "exploit code"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Deliver",
+        "obj": "payload"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Belong to",
+        "obj": "CVE-2014-0322"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2014-0322"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerable Software"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "User Execution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Command and Scripting Interpreter"
+      },
+      {
+        "sub": "Exploit code",
+        "rel": "Deliver",
+        "obj": "Sakula malware"
+      },
+      {
+        "sub": "Sakula malware",
+        "rel": "Operate",
+        "obj": "Victim systems"
+      },
+      {
+        "sub": "Sakula malware",
+        "rel": "Establish",
+        "obj": "Foothold"
+      },
+      {
+        "sub": "include.html",
+        "rel": "Construct",
+        "obj": "Exploit code"
+      },
+      {
+        "sub": "Tope.swf",
+        "rel": "Construct",
+        "obj": "Exploit code"
+      },
+      {
+        "sub": "include.html",
+        "rel": "Has filename",
+        "obj": "Filename"
+      },
+      {
+        "sub": "Tope.swf",
+        "rel": "Has filename",
+        "obj": "Filename"
+      },
+      {
+        "sub": "include.html",
+        "rel": "Has filepath",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "Tope.swf",
+        "rel": "Has filepath",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "include.html",
+        "rel": "Has URL",
+        "obj": "URL"
+      },
+      {
+        "sub": "Tope.swf",
+        "rel": "Has URL",
+        "obj": "URL"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "Modify",
+        "obj": "Host file"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "Has value",
+        "obj": "snecma[.]fr"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "Operate",
+        "obj": "Safran"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "Operate",
+        "obj": "Snecma"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "Modify",
+        "obj": "System configuration"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "Use",
+        "obj": "Modify System Image"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "Use",
+        "obj": "Create or Modify System Process"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "Operate",
+        "obj": "legitimate network connection"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "Use",
+        "obj": "Masquerading"
+      },
+      {
+        "sub": "Sakula",
+        "rel": "Use",
+        "obj": "Impair Defenses"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "GIFAS website"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has URL",
+        "obj": "gifas[.]assso[.]net"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has value",
+        "obj": "Safran"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has value",
+        "obj": "Snecma"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "System Information Discovery"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Network Service Discovery"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "C2 infrastructure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Remote Access Software"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Encrypted Channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Communication channel"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Has value",
+        "obj": "oa[.]ameteksen[.]com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "oa[.]ameteksen[.]com"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Has hostname",
+        "obj": "oa[.]ameteksen[.]com"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Has URL",
+        "obj": "oa[.]ameteksen[.]com"
+      }
+    ]
+  }
+}

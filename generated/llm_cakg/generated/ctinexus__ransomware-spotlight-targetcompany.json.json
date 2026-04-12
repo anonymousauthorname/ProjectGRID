@@ -1,0 +1,162 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-targetcompany.json",
+  "sample_index": 68,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-targetcompany.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TargetCompany",
+        "type": "Entity"
+      },
+      {
+        "name": "Fargo",
+        "type": "Entity"
+      },
+      {
+        "name": "mallox",
+        "type": "Entity"
+      },
+      {
+        "name": "xollam",
+        "type": "Entity"
+      },
+      {
+        "name": "How to decrypt files.txt",
+        "type": "Entity"
+      },
+      {
+        "name": "HOW TO RECOVER!!.txt",
+        "type": "Entity"
+      },
+      {
+        "name": "Chacha20",
+        "type": "Entity"
+      },
+      {
+        "name": "Curve 25519",
+        "type": "Entity"
+      },
+      {
+        "name": "AES-128",
+        "type": "Entity"
+      },
+      {
+        "name": "onion",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware",
+        "type": "Entity"
+      },
+      {
+        "name": "encryption algorithm",
+        "type": "Entity"
+      },
+      {
+        "name": "decryptor characteristics",
+        "type": "Entity"
+      },
+      {
+        "name": "file name extensions",
+        "type": "Entity"
+      },
+      {
+        "name": "data leak site",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TargetCompany",
+        "rel": "uses",
+        "obj": "encryption algorithm"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "changes",
+        "obj": "decryptor characteristics"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "changes",
+        "obj": "file name extensions"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "provides",
+        "obj": ".onion"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "drops",
+        "obj": "How to decrypt files.txt"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "no longer uses",
+        "obj": "targeted enterprise name in file name extensions"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "is known as",
+        "obj": "Fargo"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "uses",
+        "obj": ".mallox"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "uses",
+        "obj": ".xollam"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "uses",
+        "obj": "Chacha20"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "uses",
+        "obj": "Curve 25519"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "uses",
+        "obj": "AES-128"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "establishes",
+        "obj": "data leak site"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "drops",
+        "obj": "HOW TO RECOVER!!.txt"
+      }
+    ]
+  }
+}

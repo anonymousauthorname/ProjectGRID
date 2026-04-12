@@ -1,0 +1,587 @@
+{
+  "sample_id": "casie__2661.json",
+  "sample_index": 29,
+  "source": "casie",
+  "file_name": "2661.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Vulnerable Software",
+        "rel": "Has vulnerability",
+        "obj": "Elasticsearch"
+      },
+      {
+        "sub": "Vulnerable Software",
+        "rel": "Has vulnerability",
+        "obj": "Redis"
+      },
+      {
+        "sub": "Vulnerable Software",
+        "rel": "Has vulnerability",
+        "obj": "MongoDB"
+      },
+      {
+        "sub": "Vulnerable Software",
+        "rel": "Has vulnerability",
+        "obj": "MySQL"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Locate at",
+        "obj": "Internet"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has value",
+        "obj": "43 terabytes of exposed data"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has value",
+        "obj": "personally identifiable information  such as passwords, location, VPN PINs, emails, and phone numbers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "publicly exposed databases"
+      },
+      {
+        "sub": "Report Type",
+        "rel": "Construct",
+        "obj": "open-source databases"
+      },
+      {
+        "sub": "Report Type",
+        "rel": "Use",
+        "obj": "public web searches"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "reconnaissance"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Scan",
+        "obj": "publicly exposed databases"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has URL",
+        "obj": "open-source databases"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has URL",
+        "obj": "public web searches"
+      },
+      {
+        "sub": "System",
+        "rel": "Has geolocation",
+        "obj": "location"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "personally identifiable information  such as passwords, location, VPN PINs, emails, and phone numbers"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has vulnerability",
+        "obj": "Elasticsearch"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has vulnerability",
+        "obj": "Redis"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has vulnerability",
+        "obj": "MongoDB"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has vulnerability",
+        "obj": "MySQL"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Modify",
+        "obj": "lack authentication"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Modify",
+        "obj": "fail to secure data transport using HTTPS"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "Has vulnerability",
+        "obj": "Elasticsearch"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "Has vulnerability",
+        "obj": "Redis"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "Has vulnerability",
+        "obj": "MongoDB"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "Has vulnerability",
+        "obj": "MySQL"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "Operate",
+        "obj": "HospitalGown"
+      },
+      {
+        "sub": "Redis",
+        "rel": "Operate",
+        "obj": "HospitalGown"
+      },
+      {
+        "sub": "MongoDB",
+        "rel": "Operate",
+        "obj": "HospitalGown"
+      },
+      {
+        "sub": "MySQL",
+        "rel": "Operate",
+        "obj": "HospitalGown"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "Has geolocation",
+        "obj": "Internet"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "Has value",
+        "obj": "Private user data"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "Modify",
+        "obj": "Backend storage platforms"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "Use",
+        "obj": "Mobile apps"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "Write",
+        "obj": "User data"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "Locate at",
+        "obj": "Internet"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Modify",
+        "obj": "Backend database"
+      },
+      {
+        "sub": "Mobile app Pulse Workspace",
+        "rel": "Has vulnerability",
+        "obj": "Exposed backend database"
+      },
+      {
+        "sub": "Backend database",
+        "rel": "Has geolocation",
+        "obj": "Public Internet"
+      },
+      {
+        "sub": "Backend database",
+        "rel": "Locate at",
+        "obj": "Insecure backend servers"
+      },
+      {
+        "sub": "Mobile app Pulse Workspace",
+        "rel": "Has URL",
+        "obj": "Exposed backend database"
+      },
+      {
+        "sub": "Backend database",
+        "rel": "Has value",
+        "obj": "Customer data"
+      },
+      {
+        "sub": "Customer data",
+        "rel": "Operate",
+        "obj": "Without authentication"
+      },
+      {
+        "sub": "Customer data",
+        "rel": "Operate",
+        "obj": "Without encryption"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Unsecured API Endpoints"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Direct Database Access"
+      },
+      {
+        "sub": "Backend Database",
+        "rel": "Has vulnerability",
+        "obj": "Lack of Authentication"
+      },
+      {
+        "sub": "Backend Database",
+        "rel": "Has vulnerability",
+        "obj": "Lack of Secure Data Transport Protocols"
+      },
+      {
+        "sub": "Backend Database",
+        "rel": "Has vulnerability",
+        "obj": "Absence of HTTPS"
+      },
+      {
+        "sub": "Backend Database",
+        "rel": "Contains",
+        "obj": "Personally Identifiable Information"
+      },
+      {
+        "sub": "Personally Identifiable Information",
+        "rel": "Includes",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "Personally Identifiable Information",
+        "rel": "Includes",
+        "obj": "Location"
+      },
+      {
+        "sub": "Personally Identifiable Information",
+        "rel": "Includes",
+        "obj": "Emails"
+      },
+      {
+        "sub": "Unsecured API Endpoints",
+        "rel": "Allow",
+        "obj": "Data Exfiltration"
+      },
+      {
+        "sub": "Direct Database Access",
+        "rel": "Allow",
+        "obj": "Data Exfiltration"
+      },
+      {
+        "sub": "Data Exfiltration",
+        "rel": "Occurs",
+        "obj": "Through Unsecured API Endpoints"
+      },
+      {
+        "sub": "Data Exfiltration",
+        "rel": "Occurs",
+        "obj": "Through Direct Database Access"
+      },
+      {
+        "sub": "Backend Database",
+        "rel": "Locate at",
+        "obj": "Internet Accessible Locations"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Exposed Backend Databases"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Has vulnerability",
+        "obj": "Insecure backend databases"
+      },
+      {
+        "sub": "Insecure backend databases",
+        "rel": "Lack",
+        "obj": "Authentication"
+      },
+      {
+        "sub": "Insecure backend databases",
+        "rel": "Lack",
+        "obj": "Secure transport"
+      },
+      {
+        "sub": "Insecure backend databases",
+        "rel": "Allow",
+        "obj": "Credential access"
+      },
+      {
+        "sub": "Credential access",
+        "rel": "Enable",
+        "obj": "Brute force attacks"
+      },
+      {
+        "sub": "Credential access",
+        "rel": "Enable",
+        "obj": "Spear phishing"
+      },
+      {
+        "sub": "Credential access",
+        "rel": "Result from",
+        "obj": "Misconfigured backend storage"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "Has vulnerability",
+        "obj": "Publicly accessible"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "Has geolocation",
+        "obj": "User location"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "Has value",
+        "obj": "Emails"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "Has value",
+        "obj": "Phone numbers"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "Has value",
+        "obj": "VPN PINs"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "Modify",
+        "obj": "21,000 open servers"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "Locate at",
+        "obj": "Publicly available databases"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "Operate",
+        "obj": "Passive reconnaissance"
+      },
+      {
+        "sub": "Redis",
+        "rel": "Has vulnerability",
+        "obj": "Publicly accessible"
+      },
+      {
+        "sub": "MongoDB",
+        "rel": "Has vulnerability",
+        "obj": "Publicly accessible"
+      },
+      {
+        "sub": "MySQL",
+        "rel": "Has vulnerability",
+        "obj": "Publicly accessible"
+      },
+      {
+        "sub": "Exposed backend database",
+        "rel": "Has vulnerability",
+        "obj": "Publicly accessible"
+      },
+      {
+        "sub": "Exposed backend database",
+        "rel": "Contains",
+        "obj": "Vast amounts of personal data"
+      },
+      {
+        "sub": "Passive reconnaissance",
+        "rel": "Detect",
+        "obj": "Exposed backend databases"
+      },
+      {
+        "sub": "Passive reconnaissance",
+        "rel": "Operate",
+        "obj": "Open technical databases"
+      },
+      {
+        "sub": "Open technical databases",
+        "rel": "Locate at",
+        "obj": "Publicly available databases"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Backend storage"
+      },
+      {
+        "sub": "Backend storage",
+        "rel": "Has geolocation",
+        "obj": "Internet"
+      },
+      {
+        "sub": "Backend storage",
+        "rel": "Belong to",
+        "obj": "Pulse Workspace"
+      },
+      {
+        "sub": "Pulse Workspace",
+        "rel": "Use",
+        "obj": "Personally identifiable information"
+      },
+      {
+        "sub": "Backend storage",
+        "rel": "Operate",
+        "obj": "Exposed backend databases"
+      },
+      {
+        "sub": "Exposed backend databases",
+        "rel": "Has value",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "Exposed backend databases",
+        "rel": "Has value",
+        "obj": "Location"
+      },
+      {
+        "sub": "Exposed backend databases",
+        "rel": "Has value",
+        "obj": "Emails"
+      },
+      {
+        "sub": "Exposed backend databases",
+        "rel": "Has value",
+        "obj": "Phone numbers"
+      },
+      {
+        "sub": "Backend storage",
+        "rel": "Modify",
+        "obj": "Misconfigurations"
+      },
+      {
+        "sub": "Misconfigurations",
+        "rel": "Cause",
+        "obj": "Data exposure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerable Software"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Unsecured Channel"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Data"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Database"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "Location"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Location"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Exfiltrate",
+        "obj": "Sensitive User Data"
+      },
+      {
+        "sub": "Sensitive User Data",
+        "rel": "Has value",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "Sensitive User Data",
+        "rel": "Has value",
+        "obj": "Location"
+      },
+      {
+        "sub": "Sensitive User Data",
+        "rel": "Has value",
+        "obj": "Emails"
+      },
+      {
+        "sub": "Sensitive User Data",
+        "rel": "Has value",
+        "obj": "Phone Numbers"
+      },
+      {
+        "sub": "Backend Database",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerable Software"
+      },
+      {
+        "sub": "Backend Database",
+        "rel": "Operate",
+        "obj": "Direct Access"
+      },
+      {
+        "sub": "Data",
+        "rel": "Store",
+        "obj": "Outside Enterprise Network"
+      },
+      {
+        "sub": "Data",
+        "rel": "Transfer",
+        "obj": "Over Unsecured Channel"
+      },
+      {
+        "sub": "Data",
+        "rel": "Not have",
+        "obj": "Encryption"
+      },
+      {
+        "sub": "Data",
+        "rel": "Not have",
+        "obj": "Obfuscation"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Exfiltration Activity"
+      }
+    ]
+  }
+}

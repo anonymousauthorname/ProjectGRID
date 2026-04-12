@@ -1,0 +1,267 @@
+{
+  "sample_id": "casie__10182.json",
+  "sample_index": 22,
+  "source": "casie",
+  "file_name": "10182.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "System"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Belong to",
+        "obj": "Kubernetes"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has value",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Modify",
+        "obj": "Network request"
+      },
+      {
+        "sub": "System",
+        "rel": "Operate",
+        "obj": "Compute node"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Tactic",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Technique",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Location",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "IP",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "URL",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Registry",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Filename",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Filepath",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Hash",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Vulnerable Software",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Author",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Report Type",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Vender",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Date",
+        "rel": "Not present",
+        "obj": "—"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Kubernetes",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Kubernetes API server",
+        "rel": "Use",
+        "obj": "Arbitrary requests"
+      },
+      {
+        "sub": "Kubernetes API server",
+        "rel": "Operate",
+        "obj": "Backend server"
+      },
+      {
+        "sub": "Compute node",
+        "rel": "Gain",
+        "obj": "Full administrator privileges"
+      },
+      {
+        "sub": "Any user",
+        "rel": "Perform",
+        "obj": "Discovery API calls"
+      },
+      {
+        "sub": "Any user",
+        "rel": "Modify",
+        "obj": "Access rights to compute nodes"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Arbitrary requests"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Write",
+        "obj": "Malicious code"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Steal",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Bring down",
+        "obj": "Production applications and services"
+      },
+      {
+        "sub": "Kubernetes",
+        "rel": "Has technique",
+        "obj": "Privilege escalation"
+      },
+      {
+        "sub": "Report Type",
+        "rel": "Has vulnerability",
+        "obj": "Default configuration"
+      },
+      {
+        "sub": "User",
+        "rel": "Operate",
+        "obj": "Discovery API calls"
+      },
+      {
+        "sub": "Discovery API calls",
+        "rel": "Enable",
+        "obj": "Environment discovery"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Use",
+        "obj": "Discovery API calls"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Gather information",
+        "obj": "Backend server"
+      },
+      {
+        "sub": "Backend server",
+        "rel": "Has value",
+        "obj": "Services"
+      },
+      {
+        "sub": "An attacker",
+        "rel": "Operate",
+        "obj": "Production applications"
+      },
+      {
+        "sub": "An attacker",
+        "rel": "Inject",
+        "obj": "Malicious code"
+      },
+      {
+        "sub": "An attacker",
+        "rel": "Steal",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "An attacker",
+        "rel": "Modify",
+        "obj": "Availability"
+      },
+      {
+        "sub": "An attacker",
+        "rel": "Compromise",
+        "obj": "Integrity"
+      }
+    ]
+  }
+}

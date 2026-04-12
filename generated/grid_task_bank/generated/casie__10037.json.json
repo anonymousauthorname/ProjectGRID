@@ -1,0 +1,536 @@
+{
+  "sample_id": "casie__10037.json",
+  "sample_index": 19,
+  "source": "casie",
+  "file_name": "10037.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Apple",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Apple"
+        ]
+      },
+      {
+        "name": "a hacker, or group of hackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "a hacker",
+          "group of hackers"
+        ]
+      },
+      {
+        "name": "Motherboard",
+        "type": "media-outlet",
+        "alias": [
+          "Motherboard"
+        ]
+      },
+      {
+        "name": "the Turkish Crime Family",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Turkish Crime Family",
+          "the hackers",
+          "the hacker gang"
+        ]
+      },
+      {
+        "name": "remote wipe",
+        "type": "attack-pattern",
+        "alias": [
+          "remote wipe"
+        ]
+      },
+      {
+        "name": "up to 559 million iPhones",
+        "type": "quantity",
+        "alias": [
+          "559 million iPhones"
+        ]
+      },
+      {
+        "name": "April 7",
+        "type": "date",
+        "alias": [
+          "April 7"
+        ]
+      },
+      {
+        "name": "alleged cache of stolen accounts",
+        "type": "indicator",
+        "alias": [
+          "alleged cache",
+          "stolen accounts"
+        ]
+      },
+      {
+        "name": "Apple IDs and passwords",
+        "type": "credential-value",
+        "alias": [
+          "Apple IDs",
+          "passwords"
+        ]
+      },
+      {
+        "name": "Bitcoin or Ethereum cryptocurrency",
+        "type": "cryptocurrency",
+        "alias": [
+          "Bitcoin",
+          "Ethereum cryptocurrency"
+        ]
+      },
+      {
+        "name": "iTunes gift cards",
+        "type": "payment-method",
+        "alias": [
+          "iTunes gift cards"
+        ]
+      },
+      {
+        "name": "a mere fraction of the 117 million from LinkedIn",
+        "type": "quantity",
+        "alias": [
+          "117 million accounts",
+          "fraction from LinkedIn"
+        ]
+      },
+      {
+        "name": "LinkedIn hack",
+        "type": "vulnerability-or-event",
+        "alias": [
+          "LinkedIn hack"
+        ]
+      },
+      {
+        "name": "117 million accounts",
+        "type": "quantity",
+        "alias": [
+          "117 million"
+        ]
+      },
+      {
+        "name": "The Real Deal",
+        "type": "domain-name",
+        "alias": [
+          "The Real Deal"
+        ]
+      },
+      {
+        "name": "The Next Web",
+        "type": "media-outlet",
+        "alias": [
+          "The Next Web",
+          "TNW"
+        ]
+      },
+      {
+        "name": "Have I Been Pwned",
+        "type": "security-product",
+        "alias": [
+          "Have I Been Pwned"
+        ]
+      },
+      {
+        "name": "login information",
+        "type": "credential-value",
+        "alias": [
+          "login details"
+        ]
+      },
+      {
+        "name": "news outlets such as BGR",
+        "type": "media-outlet",
+        "alias": [
+          "BGR"
+        ]
+      },
+      {
+        "name": "Motherboard's breaking March 21 report",
+        "type": "report",
+        "alias": [
+          "March 21 report"
+        ]
+      },
+      {
+        "name": "a breach was assumed",
+        "type": "abstract-concept",
+        "alias": [
+          "breach was assumed"
+        ]
+      },
+      {
+        "name": "a member that has now been removed",
+        "type": "identity",
+        "alias": [
+          "a member"
+        ]
+      },
+      {
+        "name": "inaccuracy and lack of professionalism",
+        "type": "abstract-concept",
+        "alias": [
+          "inaccuracy",
+          "lack of professionalism"
+        ]
+      },
+      {
+        "name": "previously compromised third-parties",
+        "type": "vulnerability-or-event",
+        "alias": [
+          "third-parties"
+        ]
+      },
+      {
+        "name": "Fortune",
+        "type": "media-outlet",
+        "alias": [
+          "Fortune"
+        ]
+      },
+      {
+        "name": "Apple spokesperson",
+        "type": "identity",
+        "alias": [
+          "spokesperson"
+        ]
+      },
+      {
+        "name": "90s",
+        "type": "generic-noun",
+        "alias": [
+          "90s"
+        ]
+      },
+      {
+        "name": "iCloud",
+        "type": "general-software",
+        "alias": [
+          "iCloud"
+        ]
+      },
+      {
+        "name": "Apple ID",
+        "type": "identity",
+        "alias": [
+          "Apple ID"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Apple",
+        "rel": "do not believe",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "a hacker, or group of hackers"
+      },
+      {
+        "sub": "a hacker, or group of hackers",
+        "rel": "breached",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "any of their systems"
+      },
+      {
+        "sub": "Motherboard",
+        "rel": "that",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "a hacker gang called the 'Turkish Crime Family'"
+      },
+      {
+        "sub": "the Turkish Crime Family",
+        "rel": "is threatening to remotely wipe",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "up to 559 million iPhones"
+      },
+      {
+        "sub": "April 7",
+        "rel": "by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "up to 559 million iPhones"
+      },
+      {
+        "sub": "The hackers",
+        "rel": "claim they hold",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "an alleged cache of stolen accounts"
+      },
+      {
+        "sub": "The hackers",
+        "rel": "goal is to shake down",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the big Apple"
+      },
+      {
+        "sub": "The hackers",
+        "rel": "for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "$75,000 in Bitcoin or Ethereum cryptocurrency"
+      },
+      {
+        "sub": "The hackers",
+        "rel": "will even accept",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "$100,000 in iTunes gift cards"
+      },
+      {
+        "sub": "Apple",
+        "rel": "responded to the allegation that",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "the hackers breached its systems"
+      },
+      {
+        "sub": "Apple",
+        "rel": "assuring",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "their systems were not compromised"
+      },
+      {
+        "sub": "Apple",
+        "rel": "did not confirm if",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the hackers do in fact hold an entire collection of Apple IDs and passwords"
+      },
+      {
+        "sub": "Whatever information",
+        "rel": "probably came from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "previously compromised third-parties"
+      },
+      {
+        "sub": "an Apple spokesperson",
+        "rel": "told",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Fortune"
+      },
+      {
+        "sub": "Apple",
+        "rel": "have not been breached in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "any of Apple's systems including iCloud and Apple ID"
+      },
+      {
+        "sub": "your iCloud login details",
+        "rel": "are out there",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "if the list is legitimate"
+      },
+      {
+        "sub": "Fortune",
+        "rel": "suggested that",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the logins could be from the LinkedIn hack"
+      },
+      {
+        "sub": "login info from 117 million accounts",
+        "rel": "was sold on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the black market site 'The Real Deal'"
+      },
+      {
+        "sub": "a mere fraction of the 117 million from LinkedIn",
+        "rel": "doesn't really cut it",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "if the Turkish Crime Family really has 559 million accounts"
+      },
+      {
+        "sub": "The hackers",
+        "rel": "have been sending",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "login information to media companies"
+      },
+      {
+        "sub": "The Next Web",
+        "rel": "received",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a small fraction of the alleged data"
+      },
+      {
+        "sub": "The Next Web",
+        "rel": "cross-referenced",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the info with the site Have I Been Pwned"
+      },
+      {
+        "sub": "Most of the samples",
+        "rel": "don't appear to have been involved in",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "the LinkedIn hack"
+      },
+      {
+        "sub": "The Next Web",
+        "rel": "was able to access",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the accounts with the login information provided by the hackers"
+      },
+      {
+        "sub": "The Turkish Crime Family",
+        "rel": "noted to TNW that",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "all conversations with Apple were actually kept private"
+      },
+      {
+        "sub": "The Turkish Crime Family",
+        "rel": "never reported to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Motherboard"
+      },
+      {
+        "sub": "the conversation between the Turkish Crime Family and Motherboard",
+        "rel": "were led by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a member that has now been removed"
+      },
+      {
+        "sub": "the group",
+        "rel": "denies the authenticity of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Motherboard's report"
+      },
+      {
+        "sub": "some news outlets",
+        "rel": "assumed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a breach"
+      },
+      {
+        "sub": "The Turkish Crime Family",
+        "rel": "extorted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Apple over an alleged cache of iCloud and other Apple email accounts"
+      },
+      {
+        "sub": "The Turkish Crime Family",
+        "rel": "never stated where their cache of data came from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "until today when they contacted TNW in response to Apple"
+      },
+      {
+        "sub": "The Turkish Crime Family",
+        "rel": "confirmed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Apple's statement that its systems have not been breached"
+      },
+      {
+        "sub": "The Turkish Crime Family",
+        "rel": "that the stolen data was obtained through",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "previously compromised systems over the last five years"
+      },
+      {
+        "sub": "The Turkish Crime Family",
+        "rel": "did not breach",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "the company"
+      },
+      {
+        "sub": "The Turkish Crime Family",
+        "rel": "did not ever state to Motherboard that",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "they stole the info directly from Apple"
+      },
+      {
+        "sub": "after Motherboard's breaking March 21 report",
+        "rel": "a breach was assumed by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "some news outlets such as BGR"
+      },
+      {
+        "sub": "The Turkish Crime Family",
+        "rel": "initial response to Motherboard",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "was to extort Apple over an alleged cache"
+      }
+    ]
+  }
+}

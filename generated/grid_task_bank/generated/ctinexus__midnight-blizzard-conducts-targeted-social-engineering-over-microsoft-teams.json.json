@@ -1,0 +1,252 @@
+{
+  "sample_id": "ctinexus__midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams.json",
+  "sample_index": 60,
+  "source": "ctinexus",
+  "file_name": "midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Microsoft Threat Intelligence",
+        "type": "security-product",
+        "alias": []
+      },
+      {
+        "name": "highly targeted social engineering attacks",
+        "type": "attack-pattern",
+        "alias": []
+      },
+      {
+        "name": "credential theft phishing lures",
+        "type": "malware",
+        "alias": []
+      },
+      {
+        "name": "Microsoft Teams chats",
+        "type": "general-software",
+        "alias": []
+      },
+      {
+        "name": "Midnight Blizzard",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "NOBELIUM"
+        ]
+      },
+      {
+        "name": "Microsoft 365 tenants",
+        "type": "infrastructure",
+        "alias": []
+      },
+      {
+        "name": "small businesses",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "new domains",
+        "type": "domain-name",
+        "alias": []
+      },
+      {
+        "name": "technical support entities",
+        "type": "abstract-concept",
+        "alias": []
+      },
+      {
+        "name": "multifactor authentication (MFA)",
+        "type": "security-product",
+        "alias": []
+      },
+      {
+        "name": "organizations",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "users",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "social engineering lures",
+        "type": "attack-pattern",
+        "alias": []
+      },
+      {
+        "name": "authentication requests",
+        "type": "abstract-concept",
+        "alias": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft Threat Intelligence",
+        "rel": "has identified",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "highly targeted social engineering attacks"
+      },
+      {
+        "sub": "highly targeted social engineering attacks",
+        "rel": "using",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "credential theft phishing lures"
+      },
+      {
+        "sub": "credential theft phishing lures",
+        "rel": "sent as",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Microsoft Teams chats"
+      },
+      {
+        "sub": "Microsoft Teams chats",
+        "rel": "sent by",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the threat actor"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "tracks as",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "Midnight Blizzard"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "previously tracked as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "NOBELIUM"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "demonstrates",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "ongoing execution of their objectives"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "uses",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "new and common techniques"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "uses",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "previously compromised Microsoft 365 tenants"
+      },
+      {
+        "sub": "Microsoft 365 tenants",
+        "rel": "owned by",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "small businesses"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "creates",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "new domains"
+      },
+      {
+        "sub": "new domains",
+        "rel": "appear as",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "technical support entities"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "leverages",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Teams messages"
+      },
+      {
+        "sub": "Teams messages",
+        "rel": "send lures that attempt to steal credentials from",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "targeted organization"
+      },
+      {
+        "sub": "lures",
+        "rel": "attempt to steal credentials from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "targeted organization"
+      },
+      {
+        "sub": "lures",
+        "rel": "engage a user and eliciting approval of",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "multifactor authentication (MFA) prompts"
+      },
+      {
+        "sub": "organizations",
+        "rel": "encourage to reinforce security best practices to",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "all users"
+      },
+      {
+        "sub": "authentication requests",
+        "rel": "should be treated as malicious",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "all users"
+      },
+      {
+        "sub": "users",
+        "rel": "are encouraged to treat",
+        "rel_type": [
+          "negates"
+        ],
+        "obj": "authentication requests not initiated by user"
+      }
+    ]
+  }
+}

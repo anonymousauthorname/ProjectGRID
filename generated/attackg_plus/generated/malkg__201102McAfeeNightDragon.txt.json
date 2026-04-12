@@ -1,0 +1,867 @@
+{
+  "sample_id": "malkg__201102McAfeeNightDragon.txt",
+  "sample_index": 114,
+  "source": "malkg",
+  "file_name": "201102McAfeeNightDragon.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "SQL-injection"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Spear-phishing"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Remote administration tools"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "ASPXSpy"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "WebShell"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Extranet web servers"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Internal desktops"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Internal servers"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Networked computers"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Plan",
+        "obj": "Further intrusions"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Access",
+        "obj": "Sensitive internal systems"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Bypass",
+        "obj": "Firewall rules"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Harvest",
+        "obj": "User account information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Harvest",
+        "obj": "Host configuration details"
+      },
+      {
+        "sub": "Report Type",
+        "rel": "Construct",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Author",
+        "rel": "Use",
+        "obj": "Remote administration tool"
+      },
+      {
+        "sub": "Remote administration tool",
+        "rel": "Has value",
+        "obj": "Persistent access"
+      },
+      {
+        "sub": "Remote administration tool",
+        "rel": "Operate",
+        "obj": "Compromised web server"
+      },
+      {
+        "sub": "Remote administration tool",
+        "rel": "Modify",
+        "obj": "Victim network"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Locate at",
+        "obj": "United States"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Locate at",
+        "obj": "Netherlands"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "zwShell"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Belong to",
+        "obj": "Attackers"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "Target network"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Infected machines"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Command and control infrastructure"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has geolocation",
+        "obj": "Netherlands"
+      },
+      {
+        "sub": "URL",
+        "rel": "Has value",
+        "obj": "Remote administration tool"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has hostname",
+        "obj": "Compromised web server"
+      },
+      {
+        "sub": "IP",
+        "rel": "Locate at",
+        "obj": "United States"
+      },
+      {
+        "sub": "IP",
+        "rel": "Locate at",
+        "obj": "Netherlands"
+      },
+      {
+        "sub": "Filename",
+        "rel": "Has value",
+        "obj": "zwShell"
+      },
+      {
+        "sub": "Filepath",
+        "rel": "Has value",
+        "obj": "Compromised web server"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "SQL-injection"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Spear-phishing"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Corporate VPN accounts"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Operate",
+        "obj": "Extranet web servers"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Operate",
+        "obj": "Mobile worker laptops"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Modify",
+        "obj": "System-level access"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Detect",
+        "obj": "Malicious code"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Write",
+        "obj": "RATs"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Compromise",
+        "obj": "User accounts"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Locate at",
+        "obj": "DMZs"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Operate",
+        "obj": "Firewalls"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Conduct",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "RAT"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "ASPXSpy"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Windows Registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "temporary file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "registry setting"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "as service"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "system directories"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Use",
+        "obj": "PSEXEC"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Use",
+        "obj": "RDP session"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Run",
+        "obj": "from any directory"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "svchost.exe netsvcs –k"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "compromised web servers"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Windows service"
+      },
+      {
+        "sub": "Windows service",
+        "rel": "Construct",
+        "obj": "'svchost.exe netsvcs –k' registry key"
+      },
+      {
+        "sub": "Windows service",
+        "rel": "Locate at",
+        "obj": "HKLM\\system\\<controlset>\\services\\"
+      },
+      {
+        "sub": "Windows service",
+        "rel": "Has value",
+        "obj": "ServiceDLL registry entry"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Write",
+        "obj": "Windows Registry"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Modify",
+        "obj": "ServiceDLL registry entry"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Delete",
+        "obj": "Temporary file"
+      },
+      {
+        "sub": "Temporary file",
+        "rel": "Remove",
+        "obj": "System restart"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Remain active",
+        "obj": "System reboot"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has value",
+        "obj": "'hW$'"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "zwShell"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Operate",
+        "obj": "Internet Explorer  proxy settings"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Modify",
+        "obj": "proxy settings"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "dynamic DNS services"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Locate at",
+        "obj": "legitimate-looking domains"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has URL",
+        "obj": "dynamic DNS services"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Write",
+        "obj": "fake crash error"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Write",
+        "obj": "hidden text entry field"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has vulnerability",
+        "obj": "plain text signature"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Use",
+        "obj": "gsecdump"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Use",
+        "obj": "Cain & Abel"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Use",
+        "obj": "WinlogonHack"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Has vulnerability",
+        "obj": "Active Directory"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Operate",
+        "obj": "internal desktops"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Operate",
+        "obj": "servers"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Intercept",
+        "obj": "Windows logon requests"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Hijack",
+        "obj": "usernames and passwords"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Obtain",
+        "obj": "valid credentials"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Filesystem"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Operating System Version"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Major Patch Level"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Logged-in User Name"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "PC Name"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Network Service"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Shared Drive"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Internal Network"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Use",
+        "obj": "SysInternals"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Internal Network"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Network Service"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Shared Drive"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Conduct",
+        "obj": "System Discovery"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Operate",
+        "obj": "Remote access tools"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Valid credentials"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Internal desktops"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Servers"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Manipulate",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Browse",
+        "obj": "File system"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Gain access to",
+        "obj": "Sensitive documents"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Gain access to",
+        "obj": "Email archives"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Compromised Active Directory accounts"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Pivot",
+        "obj": "One system"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "RAT"
+      },
+      {
+        "sub": "RAT",
+        "rel": "Launch",
+        "obj": "Command-line shells"
+      },
+      {
+        "sub": "RAT",
+        "rel": "Manipulate",
+        "obj": "Registry"
+      },
+      {
+        "sub": "RAT",
+        "rel": "Browse",
+        "obj": "File system"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Facilitated by",
+        "obj": "Compromised Active Directory accounts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "SCADA systems"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Copy",
+        "obj": "files"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Exfiltrate",
+        "obj": "sensitive data"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Download",
+        "obj": "C&C servers"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Collect",
+        "obj": "email archives"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Collect",
+        "obj": "financial documents"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Collect",
+        "obj": "operational information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Retrieve",
+        "obj": "sensitive documents"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Retrieve",
+        "obj": "confidential information"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Use",
+        "obj": "zwShell C&C server"
+      },
+      {
+        "sub": "zwShell C&C server",
+        "rel": "Has URL",
+        "obj": "[xxxx].is-a-chef.com"
+      },
+      {
+        "sub": "zwShell C&C server",
+        "rel": "Has URL",
+        "obj": "[xxxx].thruhere.net"
+      },
+      {
+        "sub": "zwShell C&C server",
+        "rel": "Has URL",
+        "obj": "[xxxx].office-on-the.net"
+      },
+      {
+        "sub": "zwShell C&C server",
+        "rel": "Has URL",
+        "obj": "[xxxx].selfip.com"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Use",
+        "obj": "beacon signature"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Use",
+        "obj": "server acknowledgment"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Write",
+        "obj": "passwords in clear text"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Operate",
+        "obj": "infected machines"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Modify",
+        "obj": "Data"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Use",
+        "obj": "Command and control  channel"
+      },
+      {
+        "sub": "Command and control  server",
+        "rel": "Locate at",
+        "obj": "United States"
+      },
+      {
+        "sub": "Command and control  server",
+        "rel": "Locate at",
+        "obj": "Netherlands"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Write",
+        "obj": "Company web servers"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Operate",
+        "obj": "Infected machines"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Has value",
+        "obj": "Email archives"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Has value",
+        "obj": "Financial documents"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Has value",
+        "obj": "Operational information"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Operate",
+        "obj": "Data transfer"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Occur during",
+        "obj": "Weekdays"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Occur from",
+        "obj": "9:00 a.m."
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Occur to",
+        "obj": "5:00 p.m."
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Has value",
+        "obj": "Clear text"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Use",
+        "obj": "Company web servers"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Copy",
+        "obj": "Company web servers"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Download",
+        "obj": "Company web servers"
+      },
+      {
+        "sub": "Data",
+        "rel": "Use",
+        "obj": "Command and control  channel"
+      },
+      {
+        "sub": "Data",
+        "rel": "Copy",
+        "obj": "Company web servers"
+      },
+      {
+        "sub": "Data",
+        "rel": "Download",
+        "obj": "Company web servers"
+      },
+      {
+        "sub": "Infected machine",
+        "rel": "Write",
+        "obj": "Data"
+      },
+      {
+        "sub": "Data",
+        "rel": "Operate",
+        "obj": "Command and control  channel"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Email archives"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Financial documents"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Operational information"
+      },
+      {
+        "sub": "Data",
+        "rel": "Transfer",
+        "obj": "Clear text"
+      },
+      {
+        "sub": "Command and control  channel",
+        "rel": "Use",
+        "obj": "Data"
+      },
+      {
+        "sub": "Infected machine",
+        "rel": "Write",
+        "obj": "Data → invalid"
+      },
+      {
+        "sub": "Command and control  channel",
+        "rel": "Use",
+        "obj": "Infected machine"
+      },
+      {
+        "sub": "Company web server",
+        "rel": "Copy",
+        "obj": "Data → invalid"
+      },
+      {
+        "sub": "Company web server",
+        "rel": "Download",
+        "obj": "Data → invalid"
+      },
+      {
+        "sub": "Infected machine",
+        "rel": "Write",
+        "obj": "Command and control  channel"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has goal",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Oil and gas field operations"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Financial bidding processes"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "Sensitive proprietary information"
+      }
+    ]
+  }
+}

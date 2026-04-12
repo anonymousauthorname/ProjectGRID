@@ -1,0 +1,844 @@
+{
+  "sample_id": "securenlp__NYTimes_Attackers_Evolve_Quickly",
+  "sample_index": 193,
+  "source": "securenlp",
+  "file_name": "NYTimes_Attackers_Evolve_Quickly",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "the attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "APT12",
+          "the group",
+          "cybercriminals",
+          "successful threat actors",
+          "larger, more successful threat actors",
+          "attackers",
+          "the attackers behind the breach",
+          "the attackers behind the intrusion"
+        ]
+      },
+      {
+        "name": "New York Times",
+        "type": "organization"
+      },
+      {
+        "name": "New York Times' computer network",
+        "type": "infrastructure"
+      },
+      {
+        "name": "Aumlib",
+        "type": "malware"
+      },
+      {
+        "name": "Backdoor.APT.Aumlib",
+        "type": "malware",
+        "alias": [
+          "Aumlib"
+        ]
+      },
+      {
+        "name": "Ixeshe",
+        "type": "malware"
+      },
+      {
+        "name": "Backdoor.APT.Ixeshe",
+        "type": "malware",
+        "alias": [
+          "Ixeshe"
+        ]
+      },
+      {
+        "name": "FireEye researchers",
+        "type": "security-product",
+        "alias": [
+          "FireEye"
+        ]
+      },
+      {
+        "name": "status[.]acmetoy[.]com",
+        "type": "domain-name"
+      },
+      {
+        "name": "myScript.js",
+        "type": "file"
+      },
+      {
+        "name": "css.css",
+        "type": "file"
+      },
+      {
+        "name": "bbs/info.asp",
+        "type": "url"
+      },
+      {
+        "name": "bbs/search.asp",
+        "type": "url"
+      },
+      {
+        "name": "documents[.]myPicture[.]info",
+        "type": "domain-name"
+      },
+      {
+        "name": "www[.]documents[.]myPicture[.]info",
+        "type": "domain-name"
+      },
+      {
+        "name": "ACD [EW]S[Numbers].jsp",
+        "type": "url"
+      },
+      {
+        "name": "campaign tag/code",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "ll65",
+        "type": "credential-value"
+      },
+      {
+        "name": "POST request",
+        "type": "network-traffic"
+      },
+      {
+        "name": "HTTP communications",
+        "type": "network-traffic"
+      },
+      {
+        "name": "network traffic patterns",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "Base64-encoded data",
+        "type": "network-traffic"
+      },
+      {
+        "name": "custom Base64 alphabet",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "victims",
+        "type": "victims/targets"
+      },
+      {
+        "name": "victims BIOS name",
+        "type": "identity"
+      },
+      {
+        "name": "campaign ID",
+        "type": "indicator"
+      },
+      {
+        "name": "victim external IP",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "victim OS",
+        "type": "identity"
+      },
+      {
+        "name": "organization involved in shaping economic policy",
+        "type": "victims/targets"
+      },
+      {
+        "name": "Taiwan",
+        "type": "location"
+      },
+      {
+        "name": "China",
+        "type": "location"
+      },
+      {
+        "name": "East Asia",
+        "type": "location"
+      },
+      {
+        "name": "May 2011",
+        "type": "date"
+      },
+      {
+        "name": "December 2011",
+        "type": "date"
+      },
+      {
+        "name": "January",
+        "type": "date"
+      },
+      {
+        "name": "May",
+        "type": "date"
+      },
+      {
+        "name": "The New York Times",
+        "type": "organization"
+      },
+      {
+        "name": "The New York Times' computer network",
+        "type": "infrastructure"
+      },
+      {
+        "name": "threat actors",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "operating system",
+        "type": "identity"
+      },
+      {
+        "name": "network security systems",
+        "type": "security-product"
+      },
+      {
+        "name": "IDS signatures",
+        "type": "indicator"
+      },
+      {
+        "name": "variant",
+        "type": "variant-of"
+      },
+      {
+        "name": "updated versions",
+        "type": "variant-of"
+      },
+      {
+        "name": "recently observed malware sample",
+        "type": "file"
+      },
+      {
+        "name": "sample (hash value 832f5e01be536da71d5b3f7e41938cfb)",
+        "type": "file",
+        "alias": [
+          "832f5e01be536da71d5b3f7e41938cfb"
+        ]
+      },
+      {
+        "name": "sample (hash value cb3dcde34fd9ff0e19381d99b02f9692)",
+        "type": "file",
+        "alias": [
+          "cb3dcde34fd9ff0e19381d99b02f9692"
+        ]
+      },
+      {
+        "name": "sample (hash value aa873ed803ca800ce92a39d9a683c644)",
+        "type": "file",
+        "alias": [
+          "aa873ed803ca800ce92a39d9a683c644"
+        ]
+      },
+      {
+        "name": "researchers",
+        "type": "security-product"
+      },
+      {
+        "name": "APT12",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Backdoor.APT.Aumlib",
+        "type": "malware"
+      },
+      {
+        "name": "Backdoor.APT.Ixeshe",
+        "type": "malware"
+      },
+      {
+        "name": "variant of Aumlib",
+        "type": "variant-of"
+      },
+      {
+        "name": "variant of Ixeshe",
+        "type": "variant-of"
+      },
+      {
+        "name": "previous versions of Aumlib",
+        "type": "variant-of"
+      },
+      {
+        "name": "previous versions of Ixeshe",
+        "type": "variant-of"
+      },
+      {
+        "name": "a new version of Ixeshe",
+        "type": "variant-of"
+      },
+      {
+        "name": "a modified variant of Aumlib",
+        "type": "variant-of"
+      },
+      {
+        "name": "exploits",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "vulnerability",
+        "type": "vulnerability"
+      },
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "tactics, techniques, and procedures (TTPs)",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "network defenses",
+        "type": "security-product"
+      },
+      {
+        "name": "scanning for new TTPs",
+        "type": "course-of-action"
+      },
+      {
+        "name": "cybercriminals",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "successful threat actors",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "retooling",
+        "type": "course-of-action"
+      },
+      {
+        "name": "bypass computer network defenses",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "stealing sensitive data",
+        "type": "course-of-action"
+      },
+      {
+        "name": "evolving at a slower rate",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "evolve quickly",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "changing tactics",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "external force or environmental shift",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "observations",
+        "type": "course-of-action"
+      },
+      {
+        "name": "computer network",
+        "type": "infrastructure"
+      },
+      {
+        "name": "attack on its network",
+        "type": "campaign"
+      },
+      {
+        "name": "detailed expose of the group",
+        "type": "publication"
+      },
+      {
+        "name": "massive spying operation",
+        "type": "campaign"
+      },
+      {
+        "name": "document",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "attackers do not change their approach",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "If it ain’t broke, don’t fix it",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "new and improved versions of malware",
+        "type": "variant-of"
+      },
+      {
+        "name": "campaigns",
+        "type": "campaign"
+      },
+      {
+        "name": "specific attack",
+        "type": "campaign"
+      },
+      {
+        "name": "The New York Times",
+        "type": "organization"
+      },
+      {
+        "name": "infiltrate New York Times computers",
+        "type": "campaign"
+      },
+      {
+        "name": "2009",
+        "type": "date"
+      },
+      {
+        "name": "April 2013",
+        "type": "date"
+      },
+      {
+        "name": "May",
+        "type": "date"
+      },
+      {
+        "name": "Trend Micro",
+        "type": "organization"
+      },
+      {
+        "name": "white papers",
+        "type": "publication"
+      },
+      {
+        "name": "http://www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp_ixeshe.pdf",
+        "type": "url"
+      },
+      {
+        "name": "http://www.nytimes.com/2013/01/31/technology/chinese-hackers-infiltrate-new-york-times-computers.html",
+        "type": "url"
+      },
+      {
+        "name": "FireEye",
+        "type": "security-product"
+      },
+      {
+        "name": "motive",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "continually evolving",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "regardless of success",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "change their approach",
+        "type": "course-of-action"
+      },
+      {
+        "name": "what broke?",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "predict future changes",
+        "type": "course-of-action"
+      },
+      {
+        "name": "high-level tactics",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "shifts in attacker behavior",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "capture",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "profile",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "New York Times' computer network",
+        "type": "infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "the attackers",
+        "rel": "appear to be mounting fresh assaults that leverage",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "new and improved versions of malware"
+      },
+      {
+        "sub": "the attackers behind the breach",
+        "rel": "are behind the breach of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the New York Times’ computer network"
+      },
+      {
+        "sub": "the new campaigns",
+        "rel": "mark the first significant stirrings from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the group"
+      },
+      {
+        "sub": "the group",
+        "rel": "went silent in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "January"
+      },
+      {
+        "sub": "the New York Times’ computer network",
+        "rel": "was breached",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the attackers"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "are leveraging",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "new and improved versions of malware"
+      },
+      {
+        "sub": "The newest campaign",
+        "rel": "uses",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "updated versions of Aumlib"
+      },
+      {
+        "sub": "The newest campaign",
+        "rel": "uses",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "updated versions of Ixeshe"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "has been used in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "targeted attacks"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "now encodes",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "certain HTTP communications"
+      },
+      {
+        "sub": "FireEye researchers",
+        "rel": "spotted",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "the malware"
+      },
+      {
+        "sub": "the malware",
+        "rel": "was analyzed during",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "an attempted attack on an organization involved in shaping economic policy"
+      },
+      {
+        "sub": "a new version of Ixeshe",
+        "rel": "uses",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "new network traffic patterns"
+      },
+      {
+        "sub": "new network traffic patterns",
+        "rel": "possibly to evade",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "traditional network security systems"
+      },
+      {
+        "sub": "previous versions of Aumlib",
+        "rel": "had not changed since",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "May 2011"
+      },
+      {
+        "sub": "Ixeshe",
+        "rel": "had not evolved since",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "December 2011"
+      },
+      {
+        "sub": "Aumlib",
+        "rel": "generates",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "POST request"
+      },
+      {
+        "sub": "POST request",
+        "rel": "transmitted data in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the following structure"
+      },
+      {
+        "sub": "A recently observed malware sample",
+        "rel": "appears to be a",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "modified variant of Aumlib"
+      },
+      {
+        "sub": "the sample",
+        "rel": "was deployed against",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "an organization involved in shaping economic policy"
+      },
+      {
+        "sub": "the sample",
+        "rel": "was downloaded from",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "status[.]acmetoy[.]com/DD/myScript.js or status[.]acmetoy[.]com/DD/css.css"
+      },
+      {
+        "sub": "the sample",
+        "rel": "generated",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the following traffic"
+      },
+      {
+        "sub": "The POST URI",
+        "rel": "is changed to",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "/bbs/search.asp"
+      },
+      {
+        "sub": "The POST body",
+        "rel": "is now encoded",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "in clear text"
+      },
+      {
+        "sub": "The sample 832f5e01be536da71d5b3f7e41938cfb",
+        "rel": "shares code with",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "an older Aumlib variant with the hash cb3dcde34fd9ff0e19381d99b02f9692"
+      },
+      {
+        "sub": "cb3dcde34fd9ff0e19381d99b02f9692",
+        "rel": "connected to",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "documents[.]myPicture[.]info"
+      },
+      {
+        "sub": "cb3dcde34fd9ff0e19381d99b02f9692",
+        "rel": "connected to",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "www[.]documents[.]myPicture[.]info"
+      },
+      {
+        "sub": "cb3dcde34fd9ff0e19381d99b02f9692",
+        "rel": "generated",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "a POST request to /bbs/info.asp"
+      },
+      {
+        "sub": "Ixeshe",
+        "rel": "has been used in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "targeted attacks since 2009"
+      },
+      {
+        "sub": "Ixeshe",
+        "rel": "often against",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "entities in East Asia"
+      },
+      {
+        "sub": "The sample (aa873ed803ca800ce92a39d9a683c644)",
+        "rel": "exhibits network traffic that does not match",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "the earlier pattern"
+      },
+      {
+        "sub": "The sample (aa873ed803ca800ce92a39d9a683c644)",
+        "rel": "may evade",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "existing network traffic signatures"
+      },
+      {
+        "sub": "The Base64-encoded data",
+        "rel": "contains information including",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "the victim’s hostname and IP address"
+      },
+      {
+        "sub": "The Base64-encoded data",
+        "rel": "also contains",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "a ‘mark’ or ‘campaign tag/code’"
+      },
+      {
+        "sub": "the mark for this particular attack",
+        "rel": "was",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "[ll65]"
+      },
+      {
+        "sub": "The attackers behind the intrusion",
+        "rel": "deployed",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "updated versions of their Backdoor.APT.Aumlib and Backdoor.APT.Ixeshe"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "changed tactics",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "in the wake of a detailed expose"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "may have responded to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the scrutiny they received"
+      },
+      {
+        "sub": "attackers",
+        "rel": "do not change their approach unless",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "an external force or environmental shift"
+      },
+      {
+        "sub": "When a larger, successful threat actor changes up tactics",
+        "rel": "piques our attention",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "our attention"
+      },
+      {
+        "sub": "researchers",
+        "rel": "attempt to figure out",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "why the adversary changed"
+      },
+      {
+        "sub": "The change",
+        "rel": "was sudden",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the change"
+      },
+      {
+        "sub": "retooling TTPs of large threat actors",
+        "rel": "is formidable",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "would require recoding malware"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "changed up tactics",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the attackers"
+      },
+      {
+        "sub": "researchers",
+        "rel": "attempt to figure out",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "why the adversary changed"
+      },
+      {
+        "sub": "successful threat actors",
+        "rel": "evolve slowly and deliberately",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "successful threat actors"
+      }
+    ]
+  }
+}

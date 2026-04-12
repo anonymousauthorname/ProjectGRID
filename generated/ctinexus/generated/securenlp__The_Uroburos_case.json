@@ -1,0 +1,262 @@
+{
+  "sample_id": "securenlp__The_Uroburos_case",
+  "sample_index": 183,
+  "source": "securenlp",
+  "file_name": "The_Uroburos_case",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "ComRAT",
+        "type": "Unknown"
+      },
+      {
+        "name": "Agent.BTZ",
+        "type": "Unknown"
+      },
+      {
+        "name": "Uroburos",
+        "type": "Unknown"
+      },
+      {
+        "name": "v3.26",
+        "type": "Unknown"
+      },
+      {
+        "name": "persistence mechanism",
+        "type": "Unknown"
+      },
+      {
+        "name": "credprov.tlb",
+        "type": "Unknown"
+      },
+      {
+        "name": "shdocvw.tlp",
+        "type": "Unknown"
+      },
+      {
+        "name": "HKCU\\Software\\Classes\\CLSID\\{42aedc87-2188-41fd-b9a3-0c966feabec1}\\InprocServer32",
+        "type": "Unknown"
+      },
+      {
+        "name": "command and control server",
+        "type": "Unknown"
+      },
+      {
+        "name": "weather-online.hopto.org",
+        "type": "Unknown"
+      },
+      {
+        "name": "webonline.mefound.com",
+        "type": "Unknown"
+      },
+      {
+        "name": "sportacademy.my03.com",
+        "type": "Unknown"
+      },
+      {
+        "name": "easport-news.publicvm.com",
+        "type": "Unknown"
+      },
+      {
+        "name": "new-book.linkpc.net",
+        "type": "Unknown"
+      },
+      {
+        "name": "ComRAT v3.26",
+        "type": "Unknown"
+      },
+      {
+        "name": "February 6th 2014",
+        "type": "Unknown"
+      },
+      {
+        "name": "January 3rd 2013",
+        "type": "Unknown"
+      },
+      {
+        "name": "firewall",
+        "type": "Unknown"
+      },
+      {
+        "name": "malware",
+        "type": "Unknown"
+      },
+      {
+        "name": "most significant breach of U.S. military computers",
+        "type": "Unknown"
+      },
+      {
+        "name": "COMpfun",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "ComRAT",
+        "rel": "is a version of",
+        "obj": "Agent.BTZ"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "uses the same encoding key as",
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "shares the same file name for log as",
+        "obj": "Agent.BTZ"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "uses a new key in version",
+        "obj": "v3.26"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "does not create installation log file in version",
+        "obj": "v3.26"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "employs COM Object hijacking",
+        "obj": "persistence mechanism"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "installs file",
+        "obj": "credprov.tlb"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "installs file",
+        "obj": "shdocvw.tlp"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "creates registry key",
+        "obj": "HKCU\\Software\\Classes\\CLSID\\{42aedc87-2188-41fd-b9a3-0c966feabec1}\\InprocServer32"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "loads library into every process",
+        "obj": "shdocvw.tlp"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "loads payload in explorer.exe",
+        "obj": "credprov.tlb"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "uses named pipe for communication",
+        "obj": "command and control server"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "communicates via browser process",
+        "obj": "command and control server"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "has command and control server",
+        "obj": "weather-online.hopto.org"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "has command and control server",
+        "obj": "webonline.mefound.com"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "has command and control server",
+        "obj": "sportacademy.my03.com"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "has command and control server",
+        "obj": "easport-news.publicvm.com"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "has command and control server",
+        "obj": "new-book.linkpc.net"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "is detected as",
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "shares C&C server domain with",
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "shares C&C server domain with",
+        "obj": "Agent.BTZ"
+      },
+      {
+        "sub": "ComRAT v3.26",
+        "rel": "has compilation date",
+        "obj": "February 6th 2014"
+      },
+      {
+        "sub": "ComRAT v3.26",
+        "rel": "has compilation date",
+        "obj": "January 3rd 2013"
+      },
+      {
+        "sub": "ComRAT v3.26",
+        "rel": "has spoofed compilation date",
+        "obj": "January 3rd 2013"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "is more complex than",
+        "obj": "Agent.BTZ"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "is designed to evade detection by",
+        "obj": "firewall"
+      },
+      {
+        "sub": "Uroburos",
+        "rel": "is a rootkit with Russian roots",
+        "obj": "malware"
+      },
+      {
+        "sub": "Agent.BTZ",
+        "rel": "was responsible for",
+        "obj": "most significant breach of U.S. military computers"
+      },
+      {
+        "sub": "COMpfun",
+        "rel": "uses the same persistence mechanism as",
+        "obj": "ComRAT"
+      },
+      {
+        "sub": "ComRAT v3.26",
+        "rel": "is a version of",
+        "obj": "ComRAT"
+      }
+    ]
+  }
+}

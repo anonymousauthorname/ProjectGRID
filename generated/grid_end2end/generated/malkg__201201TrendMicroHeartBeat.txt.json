@@ -1,0 +1,807 @@
+{
+  "sample_id": "malkg__201201TrendMicroHeartBeat.txt",
+  "sample_index": 105,
+  "source": "malkg",
+  "file_name": "201201TrendMicroHeartBeat.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "the HeartBeat APT Campaign",
+        "type": "campaign",
+        "alias": [
+          "the HeartBeat campaign",
+          "the HeartBeat APT campaign",
+          "malicious operation the HeartBeat campaign",
+          "the HeartBeat campaign has been persistently pursuing the South Korean government",
+          "this malicious operation",
+          "this campaign"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "South Korean government and related organizations",
+        "type": "identity",
+        "alias": [
+          "South Korean government organizations and institutions",
+          "South Korean government agencies",
+          "specific industries or communities of interest in specific regions",
+          "government organizations and institutions",
+          "governmental organizations"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "political parties",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "South Korean government and related organizations"
+        ]
+      },
+      {
+        "name": "media outfits",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "South Korean government and related organizations"
+        ]
+      },
+      {
+        "name": "national policy research institute",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "South Korean government and related organizations"
+        ]
+      },
+      {
+        "name": "military branch of South Korean armed forces",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "South Korean government and related organizations"
+        ]
+      },
+      {
+        "name": "small business sector organization",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "South Korean government and related organizations"
+        ]
+      },
+      {
+        "name": "branches of South Korean government",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "South Korean government and related organizations"
+        ]
+      },
+      {
+        "name": "Trend Micro Incorporated",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the RAT component",
+        "type": "hacker-tool",
+        "alias": [
+          "HeartBeat campaign’s RAT component",
+          "the RAT",
+          "the RAT component allows attackers to remotely execute commands",
+          "the RAT component... component",
+          "RAT component"
+        ],
+        "mother entity": [
+          "the HeartBeat APT Campaign"
+        ]
+      },
+      {
+        "name": "the RAT installer",
+        "type": "hacker-tool",
+        "alias": [
+          "the RAT installer in turn drops a .DLL component",
+          "packaged file",
+          "the packaged malware"
+        ],
+        "mother entity": [
+          "the RAT component"
+        ]
+      },
+      {
+        "name": "bundled file",
+        "type": "file",
+        "alias": [
+          "packaged file",
+          "the malware",
+          "these packaged malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "decoy document",
+        "type": "file",
+        "alias": [
+          "fake document",
+          "disguised or fake document",
+          "seemingly benign document attachment",
+          "packaged malware"
+        ],
+        "mother entity": [
+          "the RAT installer"
+        ]
+      },
+      {
+        "name": ".JPG, .PDF, XLS, and HWP files",
+        "type": "file",
+        "alias": [
+          "the campaign’s decoy documents",
+          "the Korean government standard word processor format"
+        ],
+        "mother entity": [
+          "decoy document"
+        ]
+      },
+      {
+        "name": "pornographic .JPG image",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "decoy document"
+        ]
+      },
+      {
+        "name": "spearphishing emails",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "packaged malware",
+        "type": "malware",
+        "alias": [
+          "the malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": ".EXE format",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "the RAT installer"
+        ]
+      },
+      {
+        "name": ".DLL file",
+        "type": "file",
+        "alias": [
+          "dropped .DLL files",
+          "backdoor payload",
+          "malware component",
+          "disguised .DLL"
+        ],
+        "mother entity": [
+          "the RAT installer"
+        ]
+      },
+      {
+        "name": "svchost.exe",
+        "type": "process",
+        "alias": [
+          "legitimate process svchost.exe"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Malware command and control (C&C) server",
+        "type": "infrastructure",
+        "alias": [
+          "C&C server",
+          "C&C domains",
+          "actual C&C servers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "campaign code",
+        "type": "indicator",
+        "alias": [
+          "strings that describe specific campaigns",
+          "campaign strings",
+          "campaign dates"
+        ],
+        "mother entity": [
+          "the RAT component"
+        ]
+      },
+      {
+        "name": "password",
+        "type": "credential-value",
+        "alias": [
+          "default campaign password"
+        ],
+        "mother entity": [
+          "the RAT component"
+        ]
+      },
+      {
+        "name": "XOR encryption",
+        "type": "general-software",
+        "alias": [
+          "XOR encryption using a single byte key 02H"
+        ],
+        "mother entity": [
+          "the RAT component"
+        ]
+      },
+      {
+        "name": "Trend Micro Threat Protection",
+        "type": "security-product",
+        "alias": [
+          "comprehensive security risk management strategy"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "TROJ_DRPBEAT and BKDR_HBEAT variants",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "IP addresses",
+        "type": "ipv4-addr",
+        "alias": [
+          "compromised hosts",
+          "legitimate ISPs"
+        ],
+        "mother entity": [
+          "the HeartBeat APT Campaign"
+        ]
+      },
+      {
+        "name": "domains",
+        "type": "domain-name",
+        "alias": [
+          "C&C domains",
+          "site redirection service"
+        ],
+        "mother entity": [
+          "the HeartBeat APT Campaign"
+        ]
+      },
+      {
+        "name": "binder tool",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "disguised .DLL",
+        "type": "file",
+        "alias": [
+          "the disguised .DLL",
+          "related registry entries"
+        ],
+        "mother entity": [
+          "the RAT component"
+        ]
+      },
+      {
+        "name": "regional policy research institute",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "South Korean government and related organizations"
+        ]
+      },
+      {
+        "name": "Korean newspaper company network",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "2009",
+        "type": "date",
+        "alias": [
+          "November 2009"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "June 2012",
+        "type": "date",
+        "alias": [
+          "June 2012 in a Korean newspaper company network"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "December 2010",
+        "type": "date",
+        "alias": [
+          "December 24, 2010"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Trend Micro solutions",
+        "type": "course-of-action",
+        "alias": [
+          "best practices",
+          "security-related policies"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malware command and control (C&C) traffic",
+        "type": "network-traffic",
+        "alias": [
+          "TCP traffic",
+          "dearctified traffic"
+        ],
+        "mother entity": [
+          "the RAT component"
+        ]
+      },
+      {
+        "name": "Trend Micro Smart Protection Network™",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Trend Micro researchers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Trend Micro file reputation solution",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Trend Micro web reputation solution",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Trend Micro web, domain, and IP reputation",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": [
+          "the HeartBeat APT Campaign"
+        ]
+      },
+      {
+        "name": "the campaign name HeartBeat",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": [
+          "the HeartBeat APT Campaign"
+        ]
+      },
+      {
+        "name": "Trend Micro blog URL",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the attacker uses compromised hosts",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": [
+          "the attacker"
+        ]
+      },
+      {
+        "name": "the RAT component is updated",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "the RAT component"
+        ]
+      },
+      {
+        "name": "the RAT component is uninstalled",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "the RAT component"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "the HeartBeat APT Campaign",
+        "rel": "pursuing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "South Korean government and related organizations"
+      },
+      {
+        "sub": "the HeartBeat APT Campaign",
+        "rel": "discovered in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Korean newspaper company network"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "is part of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "the HeartBeat APT Campaign"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "allows attackers to remotely execute",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "List running processes and their respective process IDs"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "allows attackers to remotely execute",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Download and execute file(s)"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "allows attackers to remotely execute",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Update itself"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "allows attackers to remotely execute",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Uninstall itself"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "allows attackers to remotely execute",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Create or terminate a process"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "allows attackers to remotely execute",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "List available removable and fixed drives"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "allows attackers to remotely execute",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Upload file(s)"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "allows attackers to remotely execute",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Delete file(s)"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "allows attackers to remotely execute",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Get the file creation date/time of a specific file"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "allows attackers to remotely execute",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Open a remote command shell access"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "allows attackers to remotely execute",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Reboot the system"
+      },
+      {
+        "sub": "the RAT installer",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": ".DLL file"
+      },
+      {
+        "sub": "the RAT installer",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "decoy document"
+      },
+      {
+        "sub": "bundled file",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "the RAT installer"
+      },
+      {
+        "sub": "bundled file",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "decoy document"
+      },
+      {
+        "sub": "the RAT installer",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": ".DLL file"
+      },
+      {
+        "sub": ".DLL file",
+        "rel": "is injected into",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": ".DLL file",
+        "rel": "connects to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Malware command and control (C&C) server"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "sends",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "C&C server"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "uses",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "campaign code"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "XOR encryption"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "uses",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "password"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": ".DLL file"
+      },
+      {
+        "sub": "the RAT installer",
+        "rel": "is dropped by",
+        "rel_type": [
+          "downloaded-by"
+        ],
+        "obj": "bundled file"
+      },
+      {
+        "sub": "the RAT installer",
+        "rel": "packaged together using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "binder tool"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "political parties"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "media outfits"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "national policy research institute"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "military branch of South Korean armed forces"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "small business sector organization"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "branches of South Korean government"
+      },
+      {
+        "sub": "the RAT installer",
+        "rel": "is dropped using",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": ".EXE format"
+      },
+      {
+        "sub": "the RAT installer",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": ".DLL file"
+      },
+      {
+        "sub": ".DLL file",
+        "rel": "is injected into",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "C&C domains",
+        "rel": "redirect to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "IP addresses"
+      },
+      {
+        "sub": "IP addresses",
+        "rel": "belong to",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "legitimate ISPs"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "IP addresses"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "campaign code"
+      },
+      {
+        "sub": "Trend Micro solutions",
+        "rel": "mitigates",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "the RAT component"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the attacker uses compromised hosts"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "is updated to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "the RAT component is updated"
+      },
+      {
+        "sub": "the RAT component",
+        "rel": "is uninstalled to",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "the RAT component is uninstalled"
+      }
+    ]
+  }
+}

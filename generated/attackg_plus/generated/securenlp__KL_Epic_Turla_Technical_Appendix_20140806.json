@@ -1,0 +1,572 @@
+{
+  "sample_id": "securenlp__KL_Epic_Turla_Technical_Appendix_20140806",
+  "sample_index": 161,
+  "source": "securenlp",
+  "file_name": "KL_Epic_Turla_Technical_Appendix_20140806",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Spearphishing"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Fake software installer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has filename",
+        "obj": "'Adobe Flash Player'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has filename",
+        "obj": "'Microsoft Security Essentials Quick Scan'"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has tactic",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has technique",
+        "obj": "Spearphishing"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "Open websites"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Search",
+        "obj": "Domains"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Victim identity information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Target",
+        "obj": "Vulnerable targets"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Fake installer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Waterhole attack"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Compromised infrastructure"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Compromised accounts"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Construct",
+        "obj": "Access to systems"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Has vulnerability",
+        "obj": "Software vulnerability"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Spearphishing"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Acquire",
+        "obj": "Compromised accounts"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Acquire",
+        "obj": "Compromised infrastructure"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Malicious PDF files"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Fake software installers"
+      },
+      {
+        "sub": "Malicious PDF files",
+        "rel": "Has filename",
+        "obj": "NATO position on Syria.scr"
+      },
+      {
+        "sub": "Malicious PDF files",
+        "rel": "Has filename",
+        "obj": "Russia position on Syria.scr"
+      },
+      {
+        "sub": "Fake software installers",
+        "rel": "Has filename",
+        "obj": "NATO position on Syria.scr"
+      },
+      {
+        "sub": "Fake software installers",
+        "rel": "Has filename",
+        "obj": "Russia position on Syria.scr"
+      },
+      {
+        "sub": "Spearphishing attacks",
+        "rel": "Enable",
+        "obj": "Keylogger"
+      },
+      {
+        "sub": "Spearphishing attacks",
+        "rel": "Enable",
+        "obj": "Backdoor modules"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Has hash",
+        "obj": "a3cbf6179d437909eb532b7319b3dafe"
+      },
+      {
+        "sub": "Backdoor modules",
+        "rel": "Has hash",
+        "obj": "a3cbf6179d437909eb532b7319b3dafe"
+      },
+      {
+        "sub": "Spearphishing attacks",
+        "rel": "Operate",
+        "obj": "Victim network"
+      },
+      {
+        "sub": "Spearphishing attacks",
+        "rel": "Establish",
+        "obj": "Foothold in victim network"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has hash",
+        "obj": "a3cbf6179d437909eb532b7319b3dafe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has hash",
+        "obj": "4dc22c1695d1f275c3b6e503a1b171f5"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Wininet"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Command and control server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "DLL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "After phishing delivery"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Construct",
+        "obj": "Persistence"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Operate",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Write",
+        "obj": "System information"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Communicate",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Execute",
+        "obj": "Commands"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Maintain",
+        "obj": "Access"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Ensure",
+        "obj": "Continued presence on system"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Obfuscate data"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Encrypt communications"
+      },
+      {
+        "sub": "Backdoor module",
+        "rel": "Use",
+        "obj": "bzip2"
+      },
+      {
+        "sub": "Backdoor module",
+        "rel": "Use",
+        "obj": "AES"
+      },
+      {
+        "sub": "Backdoor module",
+        "rel": "Write",
+        "obj": "Encrypted system information"
+      },
+      {
+        "sub": "Backdoor module",
+        "rel": "Transmit",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Backdoor module",
+        "rel": "Use",
+        "obj": "Base64 encoding"
+      },
+      {
+        "sub": "Backdoor module",
+        "rel": "Operate",
+        "obj": "HTTP/HTTPS protocols"
+      },
+      {
+        "sub": "Backdoor module",
+        "rel": "Construct",
+        "obj": "Dynamic command structures"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Construct",
+        "obj": "Temporary file"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Write",
+        "obj": "Keyboard events"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Has value",
+        "obj": "Usernames"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Has value",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Operate",
+        "obj": "User sessions"
+      },
+      {
+        "sub": "- Backdoor Module",
+        "rel": "Use",
+        "obj": "Hardware Information"
+      },
+      {
+        "sub": "- Backdoor Module",
+        "rel": "Use",
+        "obj": "OS Version"
+      },
+      {
+        "sub": "- Backdoor Module",
+        "rel": "Use",
+        "obj": "Computer Name"
+      },
+      {
+        "sub": "- Backdoor Module",
+        "rel": "Use",
+        "obj": "User Name"
+      },
+      {
+        "sub": "- Backdoor Module",
+        "rel": "Use",
+        "obj": "Local Group Name"
+      },
+      {
+        "sub": "- Backdoor Module",
+        "rel": "Use",
+        "obj": "Disk Space"
+      },
+      {
+        "sub": "- Backdoor Module",
+        "rel": "Use",
+        "obj": "Network Shares"
+      },
+      {
+        "sub": "- Backdoor Module",
+        "rel": "Use",
+        "obj": "Running Processes"
+      },
+      {
+        "sub": "- Backdoor Module",
+        "rel": "Use",
+        "obj": "Window Titles"
+      },
+      {
+        "sub": "- Backdoor Module",
+        "rel": "Use",
+        "obj": "Installed Updates"
+      },
+      {
+        "sub": "- Backdoor Module",
+        "rel": "Operate",
+        "obj": "Internal Environment"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Has vulnerability",
+        "obj": "Arbitrary command execution"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Use",
+        "obj": "Exe command"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Write",
+        "obj": "Files"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Operate",
+        "obj": "Network pivot"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Enable",
+        "obj": "Access to other systems"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Use",
+        "obj": "Keystrokes"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Use",
+        "obj": "Screen information"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Record",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Record",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Record",
+        "obj": "Window titles"
+      },
+      {
+        "sub": "Keylogger",
+        "rel": "Record",
+        "obj": "Application paths"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Collect",
+        "obj": "Data from system directories"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Operate",
+        "obj": "Desktop folder"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Operate",
+        "obj": "Temporary folder"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "HTTP/HTTPS"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "hardcoded C&C URLs"
+      },
+      {
+        "sub": "C2",
+        "rel": "Route through",
+        "obj": "first-level hacked sites"
+      },
+      {
+        "sub": "C2",
+        "rel": "Route through",
+        "obj": "second/third-level hacked sites"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "asymmetric encryption"
+      },
+      {
+        "sub": "C2",
+        "rel": "Generate",
+        "obj": "temporary AES session keys"
+      },
+      {
+        "sub": "C2",
+        "rel": "Include",
+        "obj": "Base64-encoded commands"
+      },
+      {
+        "sub": "C2",
+        "rel": "Transmit",
+        "obj": "HTML responses"
+      },
+      {
+        "sub": "'losdivulgadores.com'",
+        "rel": "Belong to",
+        "obj": "hacked sites"
+      },
+      {
+        "sub": "'masterciw.com'",
+        "rel": "Belong to",
+        "obj": "hacked sites"
+      },
+      {
+        "sub": "C2",
+        "rel": "Operate",
+        "obj": "encrypted traffic"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Modify",
+        "obj": "System"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Use",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Use",
+        "obj": "bzip2"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Use",
+        "obj": "AES"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Use",
+        "obj": "Base64"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Operate",
+        "obj": "HTTP/HTTPS"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Write",
+        "obj": "Temporary file"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Respond to",
+        "obj": "exe"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Locate at",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Has value",
+        "obj": "Compressed data"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Has value",
+        "obj": "Encrypted data"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Has value",
+        "obj": "Base64-encoded data"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Has URL",
+        "obj": "HTTP/HTTPS"
+      }
+    ]
+  }
+}

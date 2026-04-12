@@ -1,0 +1,766 @@
+{
+  "sample_id": "malkg__201407CrowdStrikeDeepPanda.txt",
+  "sample_index": 140,
+  "source": "malkg",
+  "file_name": "201407CrowdStrikeDeepPanda.txt",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DEEP PANDA",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "an actor we call DEEP PANDA",
+          "the adversary",
+          "this actor"
+        ]
+      },
+      {
+        "name": "China",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the Chinese",
+          "Chinese government"
+        ]
+      },
+      {
+        "name": "Iran",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "CrowdStrike",
+        "type": "security-product",
+        "alias": [
+          "CrowdStrike Labs",
+          "CrowdStrike Services",
+          "CrowdStrike Intelligence"
+        ]
+      },
+      {
+        "name": "powershell scripts",
+        "type": "hacker-tool",
+        "alias": [
+          "PowerShell scripts",
+          "scheduled tasks"
+        ]
+      },
+      {
+        "name": "the Baiji oil refinery",
+        "type": "location",
+        "alias": [
+          "Baiji oil refinery"
+        ]
+      },
+      {
+        "name": "Iraq",
+        "type": "location"
+      },
+      {
+        "name": "China/Asia Pacific policy experts",
+        "type": "victims/targets",
+        "alias": [
+          "policy experts"
+        ]
+      },
+      {
+        "name": "Iraq/Middle East policy experts",
+        "type": "victims/targets"
+      },
+      {
+        "name": "national security think tanks",
+        "type": "organization"
+      },
+      {
+        "name": "human rights organizations",
+        "type": "organization"
+      },
+      {
+        "name": "government",
+        "type": "victims/targets",
+        "alias": [
+          "Western governments"
+        ]
+      },
+      {
+        "name": "defense industry",
+        "type": "business-vertical"
+      },
+      {
+        "name": "financial industry",
+        "type": "business-vertical"
+      },
+      {
+        "name": "legal industry",
+        "type": "business-vertical"
+      },
+      {
+        "name": "telecommunications industries",
+        "type": "business-vertical"
+      },
+      {
+        "name": "CrowdStrike Services",
+        "type": "security-product"
+      },
+      {
+        "name": "7-zip",
+        "type": "general-software",
+        "alias": [
+          "7-zip compression tool"
+        ]
+      },
+      {
+        "name": "RAR archiver",
+        "type": "general-software",
+        "alias": [
+          "cftmon.exe",
+          "command-line version of RAR archiver"
+        ]
+      },
+      {
+        "name": "cftmon.exe",
+        "type": "file",
+        "alias": [
+          "RAR archiver"
+        ]
+      },
+      {
+        "name": "uinfw",
+        "type": "credential-value"
+      },
+      {
+        "name": "MadHatter .NET Remote Access Tool (RAT)",
+        "type": "malware",
+        "alias": [
+          "MadHatter RAT"
+        ]
+      },
+      {
+        "name": "anti-forensic techniques",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "TTPs",
+        "type": "abstract-concept",
+        "alias": [
+          "Tactics, Techniques, and Procedures"
+        ]
+      },
+      {
+        "name": "system",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Windows machines",
+        "type": "general-software",
+        "alias": [
+          "Windows servers"
+        ]
+      },
+      {
+        "name": "compromised certificate threat removal strategies",
+        "type": "security-product"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CrowdStrike",
+        "rel": "has been working with",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "national security think tanks"
+      },
+      {
+        "sub": "national security think tanks",
+        "rel": "face",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "China, Russia, and Iran"
+      },
+      {
+        "sub": "attacker",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "former senior government officials"
+      },
+      {
+        "sub": "attacker",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "private correspondence"
+      },
+      {
+        "sub": "attacker",
+        "rel": "collects",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "private communications"
+      },
+      {
+        "sub": "attacker",
+        "rel": "craft",
+        "rel_type": [
+          "creates"
+        ],
+        "obj": "spear-phishing lures"
+      },
+      {
+        "sub": "attacker",
+        "rel": "piggybacking on",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "ongoing real conversations"
+      },
+      {
+        "sub": "think tanks",
+        "rel": "lack",
+        "rel_type": [
+          "does not have"
+        ],
+        "obj": "budgets of commercial organizations"
+      },
+      {
+        "sub": "CrowdStrike",
+        "rel": "provided",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Falcon Host endpoint security technology"
+      },
+      {
+        "sub": "Falcon Host",
+        "rel": "detected",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "multiple simultaneous compromises"
+      },
+      {
+        "sub": "Falcon Host",
+        "rel": "detected targeting of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "senior individuals involved in geopolitical policy issues"
+      },
+      {
+        "sub": "CrowdStrike",
+        "rel": "has monitored",
+        "rel_type": [
+          "monitors"
+        ],
+        "obj": "DEEP PANDA"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "critical and strategic business verticals"
+      },
+      {
+        "sub": "critical and strategic business verticals",
+        "rel": "include",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "government"
+      },
+      {
+        "sub": "critical and strategic business verticals",
+        "rel": "include",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "defense"
+      },
+      {
+        "sub": "critical and strategic business verticals",
+        "rel": "include",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "financial"
+      },
+      {
+        "sub": "critical and strategic business verticals",
+        "rel": "include",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "legal"
+      },
+      {
+        "sub": "critical and strategic business verticals",
+        "rel": "include",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "telecommunications industries"
+      },
+      {
+        "sub": "Falcon Host",
+        "rel": "consists-of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "tiny (under 5mb in size) kernel sensor"
+      },
+      {
+        "sub": "kernel sensor",
+        "rel": "deployed on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Windows and Mac servers, desktops, and laptops"
+      },
+      {
+        "sub": "Falcon Host",
+        "rel": "can do",
+        "rel_type": [
+          "detection"
+        ],
+        "obj": "real-time detection and recording of all adversary activities"
+      },
+      {
+        "sub": "Falcon Host",
+        "rel": "can attribute",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "attack to a known adversary group"
+      },
+      {
+        "sub": "adversary",
+        "rel": "deployed",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "powershell scripts"
+      },
+      {
+        "sub": "powershell scripts",
+        "rel": "were scheduled to call back to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "DEEP PANDA Command and Control (C2) infrastructure"
+      },
+      {
+        "sub": "script",
+        "rel": "is base64 encoded",
+        "rel_type": [
+          "encoded-by"
+        ],
+        "obj": "base64"
+      },
+      {
+        "sub": "script",
+        "rel": "translates to",
+        "rel_type": [
+          "translates-to"
+        ],
+        "obj": "following code snippet"
+      },
+      {
+        "sub": "code snippet",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "System.Net.ServicePointManager"
+      },
+      {
+        "sub": "code snippet",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "WebClient"
+      },
+      {
+        "sub": "code snippet",
+        "rel": "sets header",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Accept-Language"
+      },
+      {
+        "sub": "code snippet",
+        "rel": "sets header",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "User-Agent"
+      },
+      {
+        "sub": "code snippet",
+        "rel": "sets header",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Cookie"
+      },
+      {
+        "sub": "code snippet",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "https://<ANONYMIZED>/config/oauth/"
+      },
+      {
+        "sub": "code snippet",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "xags array"
+      },
+      {
+        "sub": "code snippet",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Passphrase"
+      },
+      {
+        "sub": "code snippet",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "salts"
+      },
+      {
+        "sub": "code snippet",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "RijndaelManaged"
+      },
+      {
+        "sub": "code snippet",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "decryptor"
+      },
+      {
+        "sub": "code snippet",
+        "rel": "decompresses",
+        "rel_type": [
+          "decompresses"
+        ],
+        "obj": "via GzipStream"
+      },
+      {
+        "sub": "code snippet",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": ".NET executable (typically named Wafer)"
+      },
+      {
+        "sub": "Wafer",
+        "rel": "downloads and runs",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "MadHatter .NET Remote Access Tool (RAT)"
+      },
+      {
+        "sub": "adversary",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "webshells"
+      },
+      {
+        "sub": "webshell",
+        "rel": "allowed",
+        "rel_type": [
+          "allows"
+        ],
+        "obj": "execution of reconnaissance commands"
+      },
+      {
+        "sub": "adversary",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "compromised credentials"
+      },
+      {
+        "sub": "adversary",
+        "rel": "mounted",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "network shares via 'net use' command"
+      },
+      {
+        "sub": "adversary",
+        "rel": "brought in",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Cult of the Dead Cow’s NetE tool"
+      },
+      {
+        "sub": "adversary",
+        "rel": "leveraged",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "existing Windows tools"
+      },
+      {
+        "sub": "adversary",
+        "rel": "compressing data using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "7-zip"
+      },
+      {
+        "sub": "adversary",
+        "rel": "wildcarded",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "extensions such as *.rtf, *.doc, *.ppt"
+      },
+      {
+        "sub": "adversary",
+        "rel": "knew exactly which users to target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "based on their research policy area"
+      },
+      {
+        "sub": "adversary",
+        "rel": "pivoted from",
+        "rel_type": [
+          "shifts-targeting"
+        ],
+        "obj": "China/Asia Pacific policy experts"
+      },
+      {
+        "sub": "adversary",
+        "rel": "began targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Iraq/Middle East policy experts"
+      },
+      {
+        "sub": "adversary",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "ping to determine which machines are online"
+      },
+      {
+        "sub": "adversary",
+        "rel": "brought in",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "command-line version of RAR archiver"
+      },
+      {
+        "sub": "command-line version of RAR archiver",
+        "rel": "was named",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "cftmon.exe"
+      },
+      {
+        "sub": "cftmon.exe",
+        "rel": "placed into",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "c:windowstemphotfix directory"
+      },
+      {
+        "sub": "adversary",
+        "rel": "encrypted",
+        "rel_type": [
+          "encrypts"
+        ],
+        "obj": "files with 'uinfw' password"
+      },
+      {
+        "sub": "adversary",
+        "rel": "named files after",
+        "rel_type": [
+          "named-after"
+        ],
+        "obj": "initials of each user"
+      },
+      {
+        "sub": "adversary",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "WMI to deploy the powershell scripts"
+      },
+      {
+        "sub": "adversary",
+        "rel": "setup scheduled tasks on",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "remote systems"
+      },
+      {
+        "sub": "CrowdStrike",
+        "rel": "has worked on",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "intrusion investigations related to DEEP PANDA"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "presents a very serious threat to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "think tanks"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "presents a very serious threat to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "multinational financial institutions"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "presents a very serious threat to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "law firms"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "presents a very serious threat to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "defense contractors"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "presents a very serious threat to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "government agencies"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "anti-forensic techniques"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "anti-IOC detection techniques"
+      },
+      {
+        "sub": "Falcon Host",
+        "rel": "was able to detect",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "this adversary without relying on static signatures or IOCs"
+      },
+      {
+        "sub": "Falcon Host",
+        "rel": "was able to provide",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "instantaneous and full forensic analysis"
+      },
+      {
+        "sub": "China",
+        "rel": "is the fifth-largest source of crude oil imports for",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "China"
+      },
+      {
+        "sub": "China",
+        "rel": "is the largest foreign investor in",
+        "rel_type": [
+          "invests-in"
+        ],
+        "obj": "Iraq’s oil sector"
+      },
+      {
+        "sub": "Iraq",
+        "rel": "is the fifth-largest source of crude oil imports for",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "China"
+      },
+      {
+        "sub": "ISIS",
+        "rel": "began its attack on",
+        "rel_type": [
+          "attacked"
+        ],
+        "obj": "Baiji oil refinery"
+      }
+    ]
+  }
+}

@@ -1,0 +1,423 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_48.json",
+  "sample_index": 237,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_48.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "BitDefender",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the company",
+          "BitDefender security solution"
+        ]
+      },
+      {
+        "name": "free removal tool",
+        "type": "hacker-tool",
+        "alias": [
+          "the removal tool",
+          "attached removal tool"
+        ]
+      },
+      {
+        "name": "Win32.Worm.Stuxnet",
+        "type": "malware",
+        "alias": [
+          "the worm",
+          "Stuxnet"
+        ]
+      },
+      {
+        "name": "rootkit drivers",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "the rootkit drivers"
+        ]
+      },
+      {
+        "name": "critical components of the worm",
+        "type": "abstract-concept",
+        "alias": [
+          "critical components"
+        ]
+      },
+      {
+        "name": "SCADA systems",
+        "type": "victim",
+        "alias": [
+          "supervisory control and data acquisition systems"
+        ]
+      },
+      {
+        "name": "Siemens WinCC software",
+        "type": "software",
+        "alias": [
+          "WinCC software"
+        ]
+      },
+      {
+        "name": "0day exploits",
+        "type": "attack-pattern",
+        "alias": [
+          "the 0day exploits"
+        ]
+      },
+      {
+        "name": "current versions of Windows",
+        "type": "general-software",
+        "alias": [
+          "Windows"
+        ]
+      },
+      {
+        "name": "removable medium",
+        "type": "infrastructure",
+        "alias": [
+          "infected removable medium"
+        ]
+      },
+      {
+        "name": ".lnk file",
+        "type": "file",
+        "alias": [
+          ".lnk"
+        ]
+      },
+      {
+        "name": ".tmp files",
+        "type": "file",
+        "alias": [
+          ".tmp files"
+        ]
+      },
+      {
+        "name": "midJuly",
+        "type": "location",
+        "alias": [
+          "around midJuly"
+        ]
+      },
+      {
+        "name": "July 19",
+        "type": "date",
+        "alias": [
+          "July 19"
+        ]
+      },
+      {
+        "name": "Rzvan Benchea",
+        "type": "identity",
+        "alias": [
+          "the analyst"
+        ]
+      },
+      {
+        "name": "BitDefender Malware Analyst",
+        "type": "identity",
+        "alias": [
+          "the malware analyst"
+        ]
+      },
+      {
+        "name": "Bogdan Timofte",
+        "type": "identity",
+        "alias": [
+          "the researcher"
+        ]
+      },
+      {
+        "name": "BitDefender Online Threats Researcher",
+        "type": "identity",
+        "alias": [
+          "the researcher"
+        ]
+      },
+      {
+        "name": "vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "this vulnerability"
+        ]
+      },
+      {
+        "name": "backdoor",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "a backdoor"
+        ]
+      },
+      {
+        "name": "Windowsbased systems",
+        "type": "victim",
+        "alias": [
+          "Windows systems"
+        ]
+      },
+      {
+        "name": "Siemens",
+        "type": "company",
+        "alias": [
+          "Siemens"
+        ]
+      },
+      {
+        "name": "32 and 64bit installations",
+        "type": "location",
+        "alias": [
+          "32bit installations",
+          "64bit installations"
+        ]
+      },
+      {
+        "name": "ethreats",
+        "type": "generic-noun",
+        "alias": [
+          "ethreats"
+        ]
+      },
+      {
+        "name": "information in this article",
+        "type": "abstract-concept",
+        "alias": [
+          "this article"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "BitDefender",
+        "rel": "has just released",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "a free removal tool"
+      },
+      {
+        "sub": "free removal tool",
+        "rel": "to disinfect",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "computers affected by Win32.Worm.Stuxnet"
+      },
+      {
+        "sub": "free removal tool",
+        "rel": "capable of removing",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "all known variants of Win32.Worm.Stuxnet"
+      },
+      {
+        "sub": "free removal tool",
+        "rel": "removes",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the rootkit drivers"
+      },
+      {
+        "sub": "rootkit drivers",
+        "rel": "used to conceal",
+        "rel_type": [
+          "conceals"
+        ],
+        "obj": "critical components of the worm"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "is a new breed of",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "ethreats"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "emerged around",
+        "rel_type": [
+          "emerges-at"
+        ],
+        "obj": "midJuly"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "infects",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Windowsbased systems"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "primarily targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "SCADA systems"
+      },
+      {
+        "sub": "SCADA systems",
+        "rel": "run",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Siemens WinCC software"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "spreads by taking advantage of",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "a multitude of 0day exploits"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "takes advantage of",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "current versions of Windows"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "can execute itself from",
+        "rel_type": [
+          "executes-from"
+        ],
+        "obj": "an infected removable medium"
+      },
+      {
+        "sub": "Win32.Worm.Stuxnet",
+        "rel": "executes from",
+        "rel_type": [
+          "executes-from"
+        ],
+        "obj": ".lnk file"
+      },
+      {
+        "sub": "successful exploitation of this vulnerability",
+        "rel": "results in",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the injection of a backdoor"
+      },
+      {
+        "sub": "successful exploitation of this vulnerability",
+        "rel": "results in",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the installation of two rootkits"
+      },
+      {
+        "sub": "two rootkits",
+        "rel": "will conceal",
+        "rel_type": [
+          "conceals"
+        ],
+        "obj": ".lnk files"
+      },
+      {
+        "sub": "two rootkits",
+        "rel": "will conceal",
+        "rel_type": [
+          "conceals"
+        ],
+        "obj": ".tmp files"
+      },
+      {
+        "sub": "BitDefender",
+        "rel": "has added",
+        "rel_type": [
+          "adds"
+        ],
+        "obj": "generic detection covering all variants of Stuxnet"
+      },
+      {
+        "sub": "BitDefender",
+        "rel": "protecting its customers since day zero",
+        "rel_type": [
+          "protects"
+        ],
+        "obj": "its customers"
+      },
+      {
+        "sub": "Computer users",
+        "rel": "can eliminate",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Stuxnet"
+      },
+      {
+        "sub": "Computer users",
+        "rel": "by running",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the attached removal tool"
+      },
+      {
+        "sub": "the attached removal tool",
+        "rel": "can be run on",
+        "rel_type": [
+          "runs-on"
+        ],
+        "obj": "32 and 64bit installations"
+      },
+      {
+        "sub": "the attached removal tool",
+        "rel": "will eliminate",
+        "rel_type": [
+          "eliminates"
+        ],
+        "obj": "the rootkit drivers"
+      },
+      {
+        "sub": "the attached removal tool",
+        "rel": "will eliminate",
+        "rel_type": [
+          "eliminates"
+        ],
+        "obj": "the worm"
+      },
+      {
+        "sub": "information in this article",
+        "rel": "is available courtesy of",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "Rzvan Benchea"
+      },
+      {
+        "sub": "the removal tool",
+        "rel": "is available courtesy of",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "Bogdan Timofte"
+      }
+    ]
+  }
+}

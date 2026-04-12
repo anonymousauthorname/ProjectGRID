@@ -1,0 +1,876 @@
+{
+  "sample_id": "malkg__201411FSecureOnionDuke.txt",
+  "sample_index": 134,
+  "source": "malkg",
+  "file_name": "201411FSecureOnionDuke.txt",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Tor exit node",
+        "type": "infrastructure",
+        "alias": [
+          "malicious Tor exit node"
+        ]
+      },
+      {
+        "name": "Russia",
+        "type": "location",
+        "alias": [
+          "location"
+        ]
+      },
+      {
+        "name": "uncompressed Windows executables",
+        "type": "file",
+        "alias": [
+          "Windows executables"
+        ]
+      },
+      {
+        "name": "OnionDuke",
+        "type": "malware",
+        "alias": [
+          "malware",
+          "OnionDuke family",
+          "the malware"
+        ]
+      },
+      {
+        "name": "MiniDuke",
+        "type": "malware",
+        "alias": [
+          "Russian APT family MiniDuke"
+        ]
+      },
+      {
+        "name": "NATO",
+        "type": "victims/targets",
+        "alias": [
+          "agencies"
+        ]
+      },
+      {
+        "name": "European government agencies",
+        "type": "victims/targets",
+        "alias": [
+          "government agencies"
+        ]
+      },
+      {
+        "name": "user",
+        "type": "identity",
+        "alias": [
+          "user attempting to download"
+        ]
+      },
+      {
+        "name": "executable wrapper",
+        "type": "hacker-tool",
+        "alias": [
+          "wrapper"
+        ]
+      },
+      {
+        "name": "original executable",
+        "type": "file",
+        "alias": [
+          "original binary"
+        ]
+      },
+      {
+        "name": "second executable",
+        "type": "file",
+        "alias": [
+          "malicious executable",
+          "the second executable",
+          "the malware"
+        ]
+      },
+      {
+        "name": "integrity checks",
+        "type": "attack-pattern",
+        "alias": [
+          "integrity checks the original binary might contain"
+        ]
+      },
+      {
+        "name": "Trojan-Dropper:W32/OnionDuke.A",
+        "type": "malware",
+        "alias": [
+          "malicious executable",
+          "dropper"
+        ]
+      },
+      {
+        "name": "GIF image file",
+        "type": "file",
+        "alias": [
+          "embedded GIF image file"
+        ]
+      },
+      {
+        "name": "encrypted dynamically linked library (DLL) file",
+        "type": "file",
+        "alias": [
+          "encrypted DLL",
+          "DLL file"
+        ]
+      },
+      {
+        "name": "Backdoor:W32/OnionDuke.B",
+        "type": "malware",
+        "alias": [
+          "DLL file"
+        ]
+      },
+      {
+        "name": "embedded configuration",
+        "type": "file",
+        "alias": [
+          "configuration data"
+        ]
+      },
+      {
+        "name": "C&C URLs",
+        "type": "indicator",
+        "alias": [
+          "hardcoded C&C URLs"
+        ]
+      },
+      {
+        "name": "overpict.com",
+        "type": "domain-name",
+        "alias": [
+          "domain"
+        ]
+      },
+      {
+        "name": "John Kasai",
+        "type": "identity",
+        "alias": [
+          "alias of overpict.com"
+        ]
+      },
+      {
+        "name": "airtravelabroad.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "beijingnewsblog.net",
+        "type": "domain-name"
+      },
+      {
+        "name": "grouptumbler.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "leveldelta.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "nasdaqblog.net",
+        "type": "domain-name"
+      },
+      {
+        "name": "natureinhome.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "nestedmail.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "nostressjob.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "nytunion.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "oilnewsblog.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "sixsquare.net",
+        "type": "domain-name"
+      },
+      {
+        "name": "ustradecomp.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "Tor",
+        "type": "infrastructure",
+        "alias": [
+          "Tor network"
+        ]
+      },
+      {
+        "name": "executable",
+        "type": "file",
+        "alias": [
+          "downloaded executable"
+        ]
+      },
+      {
+        "name": "downloads",
+        "type": "course-of-action",
+        "alias": [
+          "download"
+        ]
+      },
+      {
+        "name": "compilation timestamps",
+        "type": "abstract-concept",
+        "alias": [
+          "timestamps"
+        ]
+      },
+      {
+        "name": "end of October 2013",
+        "type": "date/time",
+        "alias": [
+          "October 2013"
+        ]
+      },
+      {
+        "name": "February of 2014",
+        "type": "date/time",
+        "alias": [
+          "February 2014"
+        ]
+      },
+      {
+        "name": ".torrent files",
+        "type": "infrastructure",
+        "alias": [
+          "pirated software in .torrent files"
+        ]
+      },
+      {
+        "name": "pirated software",
+        "type": "file",
+        "alias": [
+          "software"
+        ]
+      },
+      {
+        "name": "F-Secure Weblog",
+        "type": "security-product",
+        "alias": [
+          "F-Secure"
+        ]
+      },
+      {
+        "name": "Freedome VPN",
+        "type": "security-product"
+      },
+      {
+        "name": "VPN",
+        "type": "security-product"
+      },
+      {
+        "name": "OnlyFans",
+        "type": "infrastructure",
+        "alias": [
+          "platform"
+        ]
+      },
+      {
+        "name": "Twitter",
+        "type": "infrastructure",
+        "alias": [
+          "Twitter as C&C channel"
+        ]
+      },
+      {
+        "name": "OnionDuke operators",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "OnionDuke operators"
+        ]
+      },
+      {
+        "name": "malicious actors",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "backdoor process",
+        "type": "process"
+      },
+      {
+        "name": "encrypted DLL",
+        "type": "file"
+      },
+      {
+        "name": "Tor network",
+        "type": "infrastructure"
+      },
+      {
+        "name": "Tor exit node operators",
+        "type": "identity"
+      },
+      {
+        "name": "antivirus software",
+        "type": "security-product"
+      },
+      {
+        "name": "firewall",
+        "type": "security-product"
+      },
+      {
+        "name": "shooting a fly with a cannon",
+        "type": "attack-pattern",
+        "alias": [
+          "mass-infection strategy"
+        ]
+      },
+      {
+        "name": "surgical targeting",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "F-Secure Lab",
+        "type": "research/analysis-disclosure"
+      },
+      {
+        "name": "samples",
+        "type": "file",
+        "alias": [
+          "file hashes"
+        ]
+      },
+      {
+        "name": "hash a75995f94854dea8799650a2f4a97980b71199d2",
+        "type": "indicator",
+        "alias": [
+          "SHA1"
+        ]
+      },
+      {
+        "name": "hash b491c14d8cfb48636f6095b7b16555e9a575d57f",
+        "type": "indicator"
+      },
+      {
+        "name": "hash d433f281cf56015941a1c2cb87066ca62ea1db37",
+        "type": "indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "a Tor exit node",
+        "rel": "located in",
+        "rel_type": [
+          "location"
+        ],
+        "obj": "Russia"
+      },
+      {
+        "sub": "a Tor exit node",
+        "rel": "maliciously modifying",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "uncompressed Windows executables"
+      },
+      {
+        "sub": "research was published identifying",
+        "rel": "identified",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "a Tor exit node"
+      },
+      {
+        "sub": "the hole",
+        "rel": "was a lot deeper than",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "we expected"
+      },
+      {
+        "sub": "the malware used in this case",
+        "rel": "is not a version of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "we have since taken to calling",
+        "rel": "called",
+        "rel_type": [
+          "named-as"
+        ],
+        "obj": "OnionDuke"
+      },
+      {
+        "sub": "a user",
+        "rel": "attempts to download",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "an executable via the malicious Tor exit node"
+      },
+      {
+        "sub": "what they actually receive",
+        "rel": "is",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "an executable wrapper"
+      },
+      {
+        "sub": "an executable wrapper",
+        "rel": "embeds",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "the original executable"
+      },
+      {
+        "sub": "an executable wrapper",
+        "rel": "embeds",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a second, malicious executable"
+      },
+      {
+        "sub": "malicious actors",
+        "rel": "are able to",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "any integrity checks the original binary might contain"
+      },
+      {
+        "sub": "the wrapper",
+        "rel": "will proceed to write to disk and execute",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "the original executable"
+      },
+      {
+        "sub": "the wrapper",
+        "rel": "will also write to disk and execute",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "the second executable"
+      },
+      {
+        "sub": "the malicious executable",
+        "rel": "has been the same binary",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "Trojan-Dropper:W32/OnionDuke.A"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is a dropper containing",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a PE resource"
+      },
+      {
+        "sub": "the PE resource",
+        "rel": "pretends to be",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "an embedded GIF image file"
+      },
+      {
+        "sub": "the resource",
+        "rel": "is actually",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "an encrypted dynamically linked library (DLL) file"
+      },
+      {
+        "sub": "the dropper",
+        "rel": "will proceed to",
+        "rel_type": [
+          "decrypt"
+        ],
+        "obj": "this DLL"
+      },
+      {
+        "sub": "the dropper",
+        "rel": "will write it to disk and execute it",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "it"
+      },
+      {
+        "sub": "Once executed",
+        "rel": "will decrypt",
+        "rel_type": [
+          "decrypts"
+        ],
+        "obj": "an embedded configuration"
+      },
+      {
+        "sub": "the DLL file",
+        "rel": "will attempt to connect to",
+        "rel_type": [
+          "connects-to"
+        ],
+        "obj": "hardcoded C&C URLs"
+      },
+      {
+        "sub": "the malware",
+        "rel": "may receive instructions to",
+        "rel_type": [
+          "downloads",
+          "executes"
+        ],
+        "obj": "additional malicious components"
+      },
+      {
+        "sub": "we believe",
+        "rel": "believe",
+        "rel_type": [
+          "considers"
+        ],
+        "obj": "all five domains contacted by the malware are innocent websites compromised by the malware operators"
+      },
+      {
+        "sub": "We have also been able to identify",
+        "rel": "identified",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "multiple other components of the OnionDuke malware family"
+      },
+      {
+        "sub": "components",
+        "rel": "dedicated to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "stealing login credentials"
+      },
+      {
+        "sub": "components",
+        "rel": "dedicated to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "gathering further information on the compromised system"
+      },
+      {
+        "sub": "Some of these components",
+        "rel": "have been observed being downloaded and executed by",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "the original backdoor process"
+      },
+      {
+        "sub": "for other components",
+        "rel": "have yet to identify",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "the infection vector"
+      },
+      {
+        "sub": "Most of these components",
+        "rel": "don't embed their own C&C information but rather communicate with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "their controllers through the original backdoor process"
+      },
+      {
+        "sub": "This DLL file",
+        "rel": "contains among its configuration data",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "a different hardcoded C&C domain, overpict.com"
+      },
+      {
+        "sub": "this component",
+        "rel": "may abuse",
+        "rel_type": [
+          "abuses"
+        ],
+        "obj": "Twitter"
+      },
+      {
+        "sub": "overpict.com",
+        "rel": "was originally registered in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "2011"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "was registered as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "overpict.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "also registered",
+        "rel_type": [
+          "registers"
+        ],
+        "obj": "airtravelabroad.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "also registered",
+        "rel_type": [
+          "registers"
+        ],
+        "obj": "beijingnewsblog.net"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "also registered",
+        "rel_type": [
+          "registers"
+        ],
+        "obj": "grouptumbler.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "also registered",
+        "rel_type": [
+          "registers"
+        ],
+        "obj": "leveldelta.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "also registered",
+        "rel_type": [
+          "registers"
+        ],
+        "obj": "nasdaqblog.net"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "also registered",
+        "rel_type": [
+          "registers"
+        ],
+        "obj": "natureinhome.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "also registered",
+        "rel_type": [
+          "registers"
+        ],
+        "obj": "nestedmail.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "also registered",
+        "rel_type": [
+          "registers"
+        ],
+        "obj": "nostressjob.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "also registered",
+        "rel_type": [
+          "registers"
+        ],
+        "obj": "nytunion.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "also registered",
+        "rel_type": [
+          "registers"
+        ],
+        "obj": "oilnewsblog.com"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "also registered",
+        "rel_type": [
+          "registers"
+        ],
+        "obj": "sixsquare.net"
+      },
+      {
+        "sub": "John Kasai",
+        "rel": "also registered",
+        "rel_type": [
+          "registers"
+        ],
+        "obj": "ustradecomp.com"
+      },
+      {
+        "sub": "leveldelta.com",
+        "rel": "have previously been identified as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "C&C domains used by MiniDuke"
+      },
+      {
+        "sub": "grouptumbler.com",
+        "rel": "have previously been identified as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "C&C domains used by MiniDuke"
+      },
+      {
+        "sub": "the actors behind them",
+        "rel": "are connected through",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "shared infrastructure"
+      },
+      {
+        "sub": "the OnionDuke operators",
+        "rel": "have been infecting",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "downloaded executables"
+      },
+      {
+        "sub": "we believe",
+        "rel": "believe",
+        "rel_type": [
+          "considers"
+        ],
+        "obj": "the OnionDuke operators have been infecting since the end of October 2013"
+      },
+      {
+        "sub": "we have evidence suggesting",
+        "rel": "suggesting",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "OnionDuke has not only been spread by modifying downloaded executables but also by infecting executables in .torrent files"
+      },
+      {
+        "sub": "based on older compilation timestamps",
+        "rel": "suggests",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "OnionDuke family is much older"
+      },
+      {
+        "sub": "some of the embedded configuration data",
+        "rel": "make reference to",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "an apparent version number of 4"
+      },
+      {
+        "sub": "OnionDuke has been used in",
+        "rel": "used in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "targeted attacks against European government agencies"
+      },
+      {
+        "sub": "OnionDuke",
+        "rel": "would suggest",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "two very different targeting strategies"
+      },
+      {
+        "sub": "using Tor",
+        "rel": "may help you stay anonymous",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "anonymity"
+      },
+      {
+        "sub": "VPNs (such as our Freedome VPN)",
+        "rel": "will encrypt your connection all the way through",
+        "rel_type": [
+          "encrypts"
+        ],
+        "obj": "the Tor network"
+      },
+      {
+        "sub": "the maintainers of Tor exit nodes",
+        "rel": "will not see",
+        "rel_type": [
+          "prevents"
+        ],
+        "obj": "your traffic"
+      },
+      {
+        "sub": "samples",
+        "rel": "consists-of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "a75995f94854dea8799650a2f4a97980b71199d2"
+      },
+      {
+        "sub": "Trojan-Dropper:W32/OnionDuke.A",
+        "rel": "detected as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "a75995f94854dea8799650a2f4a97980b71199d2"
+      },
+      {
+        "sub": "Backdoor:W32/OnionDuke.B",
+        "rel": "detected as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "b491c14d8cfb48636f6095b7b16555e9a575d57f"
+      },
+      {
+        "sub": "Backdoor:W32/OnionDuke.A",
+        "rel": "detected as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "d433f281cf56015941a1c2cb87066ca62ea1db37"
+      }
+    ]
+  }
+}

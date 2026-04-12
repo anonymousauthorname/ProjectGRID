@@ -1,0 +1,160 @@
+{
+  "sample_id": "casie__10188.json",
+  "sample_index": 25,
+  "source": "casie",
+  "file_name": "10188.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2018-17144",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Bitcoin Core",
+        "type": "Software"
+      },
+      {
+        "name": "Bitcoin (BTC) network",
+        "type": "Software"
+      },
+      {
+        "name": "Bitcoin",
+        "type": "Software"
+      },
+      {
+        "name": "Bitcoin Core client",
+        "type": "Software"
+      },
+      {
+        "name": "Bitcoin Private (BTCP)",
+        "type": "Software"
+      },
+      {
+        "name": "Litecoin (LTC) network",
+        "type": "Software"
+      },
+      {
+        "name": "Bitcoin Knots",
+        "type": "Software"
+      },
+      {
+        "name": "51% Attack",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Denial-of-Service (DoS)",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Casaba Security",
+        "type": "Organization"
+      },
+      {
+        "name": "Jason Glassberg",
+        "type": "Person"
+      },
+      {
+        "name": "ZDNet",
+        "type": "Organization"
+      },
+      {
+        "name": "Crypto51",
+        "type": "Organization"
+      },
+      {
+        "name": "Emin Gün Sirer",
+        "type": "Person"
+      },
+      {
+        "name": "Ethereum",
+        "type": "Software"
+      },
+      {
+        "name": "DAO attack",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Bitcoin forks",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2018-17144",
+        "rel": "AFFECTS",
+        "obj": "Bitcoin Core client"
+      },
+      {
+        "sub": "Bitcoin Core client",
+        "rel": "validates transactions for",
+        "obj": "Bitcoin (BTC) network"
+      },
+      {
+        "sub": "CVE-2018-17144",
+        "rel": "could enable",
+        "obj": "51% Attack"
+      },
+      {
+        "sub": "Bitcoin Core developers",
+        "rel": "released advisory for",
+        "obj": "CVE-2018-17144"
+      },
+      {
+        "sub": "Bitcoin Core developers",
+        "rel": "patched version",
+        "obj": "Bitcoin Core client"
+      },
+      {
+        "sub": "Bitcoin Core developers",
+        "rel": "PATCHED",
+        "obj": "Bitcoin Knots"
+      },
+      {
+        "sub": "CVE-2018-17144",
+        "rel": "could affect",
+        "obj": "Litecoin (LTC) network"
+      },
+      {
+        "sub": "Crypto51",
+        "rel": "estimates cost of 51 percent attack",
+        "obj": "Bitcoin Private (BTCP)"
+      },
+      {
+        "sub": "Emin Gün Sirer",
+        "rel": "statements copycat currencies at risk",
+        "obj": "Bitcoin forks"
+      },
+      {
+        "sub": "Jason Glassberg",
+        "rel": "commented on",
+        "obj": "CVE-2018-17144"
+      },
+      {
+        "sub": "ZDNet",
+        "rel": "reported on",
+        "obj": "Jason Glassberg"
+      },
+      {
+        "sub": "Ethereum",
+        "rel": "previously had vulnerability",
+        "obj": "DAO attack"
+      }
+    ]
+  }
+}

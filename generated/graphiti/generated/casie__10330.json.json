@@ -1,0 +1,124 @@
+{
+  "sample_id": "casie__10330.json",
+  "sample_index": 1,
+  "source": "casie",
+  "file_name": "10330.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Outlook 2010",
+        "type": "Software"
+      },
+      {
+        "name": "KB 4461529",
+        "type": "Indicator"
+      },
+      {
+        "name": "KB 4461585",
+        "type": "Indicator"
+      },
+      {
+        "name": "KB 4461522",
+        "type": "Indicator"
+      },
+      {
+        "name": "KB 2863821",
+        "type": "Indicator"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Organization"
+      },
+      {
+        "name": "Office 2010",
+        "type": "Software"
+      },
+      {
+        "name": "Office 365 Home",
+        "type": "Software"
+      },
+      {
+        "name": "Remote code execution",
+        "type": "AttackPattern"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft",
+        "rel": "released update for",
+        "obj": "Outlook 2010"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issued update for",
+        "obj": "KB 4461529"
+      },
+      {
+        "sub": "KB 4461529",
+        "rel": "causes crashes in",
+        "obj": "Outlook 2010"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "released update for",
+        "obj": "KB 4461585"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "fixes crashes in",
+        "obj": "Outlook 2010"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "PATCHES",
+        "obj": "Remote code execution"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "excludes update for",
+        "obj": "Office 365 Home"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "applies to",
+        "obj": "Office 2010"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "removed update",
+        "obj": "KB 4461522"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "removed update",
+        "obj": "KB 2863821"
+      },
+      {
+        "sub": "KB 4461522",
+        "rel": "causes crashes in",
+        "obj": "Access"
+      },
+      {
+        "sub": "KB 2863821",
+        "rel": "causes crashes in",
+        "obj": "Access"
+      }
+    ]
+  }
+}

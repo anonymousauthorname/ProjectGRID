@@ -1,0 +1,456 @@
+{
+  "sample_id": "casie__10242.json",
+  "sample_index": 11,
+  "source": "casie",
+  "file_name": "10242.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SCAMMERS",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "scammers",
+          "Christmas shopping fraudsters",
+          "fraudsters"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "fake websites",
+        "type": "infrastructure",
+        "alias": [
+          "fake websites that look like genuine retailers",
+          "fake websites",
+          "fake retailers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Cyber Monday and Christmas shoppers",
+        "type": "identity",
+        "alias": [
+          "shoppers",
+          "fraud victims",
+          "Christmas shoppers",
+          "young women"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "City of London Police",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Action Fraud",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Phishing emails",
+        "type": "network-traffic",
+        "alias": [
+          "emails"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "links to fake websites",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "social media websites such as Facebook",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "re-selling websites such as Gumtree",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "online auction websites such as eBay",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "mobile phones",
+        "type": "general-software",
+        "alias": [
+          "Apple iPhones",
+          "mobiles"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Apple iPhones",
+        "type": "generic-noun",
+        "alias": [
+          "iPhones"
+        ],
+        "mother entity": [
+          "mobile phones"
+        ]
+      },
+      {
+        "name": "Electrical and household items, computers, fashion and accessories",
+        "type": "generic-noun",
+        "alias": [
+          "Apple MacBooks",
+          "Ugg boots",
+          "Fingerlings toys"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Apple MacBooks",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": [
+          "computers"
+        ]
+      },
+      {
+        "name": "Ugg boots",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": [
+          "fashion and accessories"
+        ]
+      },
+      {
+        "name": "Fingerlings toys",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": [
+          "fashion and accessories"
+        ]
+      },
+      {
+        "name": "women aged between 20 and 29",
+        "type": "identity",
+        "alias": [
+          "young women"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Detective Chief Superintendent Pete O’Doherty",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Tony Neate",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Get Safe Online",
+        "type": "security-product",
+        "alias": [
+          "free fraud awareness website"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Black Friday and Cyber Monday scams",
+        "type": "campaign",
+        "alias": [
+          "tricks used by fraudsters"
+        ],
+        "mother entity": [
+          "SCAMMERS"
+        ]
+      },
+      {
+        "name": "counterfeit items",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "card details",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "£11million",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": [
+          "shoppers"
+        ]
+      },
+      {
+        "name": "£2.96billion",
+        "type": "monetary-amount",
+        "alias": [],
+        "mother entity": [
+          "shoppers"
+        ]
+      },
+      {
+        "name": "genuine retailers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Tesco",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "fake competition",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": [
+          "SCAMMERS"
+        ]
+      },
+      {
+        "name": "more than 15,000 shoppers",
+        "type": "identity",
+        "alias": [
+          "shoppers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "fraud experts",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SCAMMERS",
+        "rel": "are using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "fake websites"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "lure in",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Cyber Monday and Christmas shoppers"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "take their money from",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "Cyber Monday and Christmas shoppers"
+      },
+      {
+        "sub": "City of London Police",
+        "rel": "reports on",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "fake websites"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "tempt",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Cyber Monday and Christmas shoppers"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "sell",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "counterfeit items"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "steal",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "card details"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "trick into giving away data of",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "genuine retailers"
+      },
+      {
+        "sub": "Phishing emails",
+        "rel": "entice shoppers to click on",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "links to fake websites"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Cyber Monday and Christmas shoppers"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "social media websites such as Facebook"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "re-selling websites such as Gumtree"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "online auction websites such as eBay"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "sell",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "mobile phones"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "sell",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Apple MacBooks"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "sell",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Ugg boots"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "sell",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Fingerlings toys"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "women aged between 20 and 29"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "trick into giving away payment details to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "shoppers"
+      },
+      {
+        "sub": "City of London Police",
+        "rel": "warned about",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "fake websites"
+      },
+      {
+        "sub": "Tony Neate",
+        "rel": "advises on",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "online safety tips"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "running a fake competition in an attempt to steal",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "card details"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "claiming to be from",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "Tesco"
+      },
+      {
+        "sub": "Black Friday and Cyber Monday scams",
+        "rel": "used by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "SCAMMERS"
+      },
+      {
+        "sub": "SCAMMERS",
+        "rel": "tempt to buy",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Cyber Monday and Christmas shoppers"
+      }
+    ]
+  }
+}

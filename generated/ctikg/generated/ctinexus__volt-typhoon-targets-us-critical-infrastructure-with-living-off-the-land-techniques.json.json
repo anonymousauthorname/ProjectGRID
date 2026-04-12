@@ -1,0 +1,77 @@
+{
+  "sample_id": "ctinexus__volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques.json",
+  "sample_index": 75,
+  "source": "ctinexus",
+  "file_name": "volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Volt Typhoon",
+        "rel": "proxies",
+        "obj": "network traffic to targets via compromised edge devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "uses",
+        "obj": "compromised edge devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "uses",
+        "obj": "routers"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "confirms",
+        "obj": "devices allow the owner to expose HTTP or SSH management interfaces to the internet"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "confirms",
+        "obj": "exposes management interfaces to internet"
+      },
+      {
+        "sub": "management interface",
+        "rel": "should not be exposed to",
+        "obj": "internet"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "enhances",
+        "obj": "stealth of their operations"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "enhances",
+        "obj": "stealth"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "lowers",
+        "obj": "overhead costs for acquiring infrastructure"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "lowers",
+        "obj": "overhead costs"
+      }
+    ]
+  }
+}

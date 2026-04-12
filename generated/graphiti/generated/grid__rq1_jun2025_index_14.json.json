@@ -1,0 +1,157 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_14.json",
+  "sample_index": 206,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_14.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Mal/BadSrcC",
+        "type": "Malware"
+      },
+      {
+        "name": "Mal/JSRedirA",
+        "type": "Malware"
+      },
+      {
+        "name": "Mal/VidHtmlA",
+        "type": "Malware"
+      },
+      {
+        "name": "Mal/VidHtmlB",
+        "type": "Malware"
+      },
+      {
+        "name": "Mal/VidHtmlC",
+        "type": "Malware"
+      },
+      {
+        "name": "Mal/EncPkGA",
+        "type": "Malware"
+      },
+      {
+        "name": "W32/KoobfaGen",
+        "type": "Malware"
+      },
+      {
+        "name": "Zlob",
+        "type": "Malware"
+      },
+      {
+        "name": "Facebook",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "MySpace",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Bebo",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "hi5",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "GeoCities",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Google",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "flashupdate.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "setup.exe",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Mal/BadSrcC",
+        "rel": "redirects to",
+        "obj": "Mal/JSRedirA"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "redirects to",
+        "obj": "Mal/VidHtmlA"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "redirects to",
+        "obj": "Mal/VidHtmlB"
+      },
+      {
+        "sub": "Mal/VidHtmlB",
+        "rel": "redirects to",
+        "obj": "Mal/VidHtmlC"
+      },
+      {
+        "sub": "Mal/VidHtmlC",
+        "rel": "DOWNLOADS",
+        "obj": "setup.exe"
+      },
+      {
+        "sub": "setup.exe",
+        "rel": "is part of",
+        "obj": "Zlob"
+      },
+      {
+        "sub": "flashupdate.exe",
+        "rel": "IS",
+        "obj": "W32/KoobfaGen"
+      },
+      {
+        "sub": "Facebook",
+        "rel": "leads to",
+        "obj": "Mal/JSRedirA"
+      },
+      {
+        "sub": "MySpace",
+        "rel": "leads to",
+        "obj": "Mal/JSRedirA"
+      },
+      {
+        "sub": "Bebo",
+        "rel": "leads to",
+        "obj": "Mal/JSRedirA"
+      },
+      {
+        "sub": "hi5",
+        "rel": "leads to",
+        "obj": "Mal/JSRedirA"
+      },
+      {
+        "sub": "GeoCities",
+        "rel": "leads to",
+        "obj": "Mal/JSRedirA"
+      },
+      {
+        "sub": "Google",
+        "rel": "has cache of",
+        "obj": "Mal/BadSrcC"
+      }
+    ]
+  }
+}

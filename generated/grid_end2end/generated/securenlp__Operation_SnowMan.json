@@ -1,0 +1,766 @@
+{
+  "sample_id": "securenlp__Operation_SnowMan",
+  "sample_index": 156,
+  "source": "securenlp",
+  "file_name": "Operation_SnowMan",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Operation SnowMan",
+        "type": "campaign",
+        "alias": [
+          "Operation SnowMan"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "DeputyDog Actor",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the actors behind this campaign"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Operation DeputyDog",
+        "type": "campaign",
+        "alias": [
+          "two previously identified campaigns (Operation DeputyDog and Operation Ephemeral Hydra)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Operation Ephemeral Hydra",
+        "type": "campaign",
+        "alias": [
+          "two previously identified campaigns (Operation DeputyDog and Operation Ephemeral Hydra)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "U.S. Veterans of Foreign Wars’ website",
+        "type": "infrastructure",
+        "alias": [
+          "the VFW website"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "vfw[.]org",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2014-0322",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "iframe",
+        "type": "generic-noun",
+        "alias": [
+          "an iframe into the beginning of the website’s HTML code"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "attacker’s page",
+        "type": "hacker-tool",
+        "alias": [
+          "the attacker’s HTML/JavaScript page"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Flash object",
+        "type": "hacker-tool",
+        "alias": [
+          "the Flash object, which orchestrates the remainder of the exploit"
+        ],
+        "mother entity": [
+          "attacker’s page"
+        ]
+      },
+      {
+        "name": "IE 10",
+        "type": "general-software",
+        "alias": [
+          "Microsoft Internet Explorer 10"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "www.[REDACTED].com/Data/img/img.html",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Adobe Flash",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft’s Experience Mitigation Toolkit (EMET)",
+        "type": "security-product",
+        "alias": [
+          "EMET",
+          "the EMET DLL"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft.XMLDOM ActiveX control",
+        "type": "general-software",
+        "alias": [
+          "the Microsoft.XMLDOM ActiveX control"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "EMET DLL",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Microsoft’s Experience Mitigation Toolkit (EMET)"
+        ]
+      },
+      {
+        "name": "ASLR",
+        "type": "abstract-concept",
+        "alias": [
+          "address space layout randomization (ASLR)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "DEP",
+        "type": "abstract-concept",
+        "alias": [
+          "data execution prevention (DEP)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ROP exploit technique",
+        "type": "attack-pattern",
+        "alias": [
+          "return-oriented programing (ROP) exploit technique"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Flash Vector object",
+        "type": "detailed-part-of-general-software",
+        "alias": [
+          "Flash Vector object",
+          "a Flash Vector object"
+        ],
+        "mother entity": [
+          "Adobe Flash"
+        ]
+      },
+      {
+        "name": "Flash.Media.Sound() object",
+        "type": "detailed-part-of-general-software",
+        "alias": [
+          "flash.Media.Sound() object"
+        ],
+        "mother entity": [
+          "Adobe Flash"
+        ]
+      },
+      {
+        "name": "pivot",
+        "type": "course-of-action",
+        "alias": [
+          "the pivot"
+        ],
+        "mother entity": [
+          "ZxShell backdoor"
+        ]
+      },
+      {
+        "name": "XOR key of 0×95",
+        "type": "credential-value",
+        "alias": [
+          "single-byte XOR encoded (0×95) payload"
+        ],
+        "mother entity": [
+          "payload"
+        ]
+      },
+      {
+        "name": "ZxShell backdoor",
+        "type": "malware",
+        "alias": [
+          "a ZxShell backdoor (MD5: 8455bbb9a210ce603a1b646b0d951bce)",
+          "the dropped malware payload"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "newss[.]effers[.]com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "ZxShell backdoor"
+        ]
+      },
+      {
+        "name": "118.99.60.142",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "newss[.]effers[.]com"
+        ]
+      },
+      {
+        "name": "info[.]flnet[.]org",
+        "type": "domain-name",
+        "alias": [
+          "this IP address on 2014-02-12"
+        ],
+        "mother entity": [
+          "ZxShell backdoor"
+        ]
+      },
+      {
+        "name": "icybin[.]flnet[.]org",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "book[.]flnet[.]org",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "58.64.200.178",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "58.64.200.179",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "103.20.192.4",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Gh0stRat samples",
+        "type": "malware",
+        "alias": [
+          "Gh0stRat",
+          "the Gh0stRat samples"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "me[.]scieron[.]com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "Gh0stRat samples"
+        ]
+      },
+      {
+        "name": "58.64.199.22",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "me[.]scieron[.]com"
+        ]
+      },
+      {
+        "name": "58.64.199.0/24",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "dll[.]freshdns[.]org",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ali[.]blankchair[.]com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "cht[.]blankchair[.]com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "58.64.199.25",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "dll[.]freshdns[.]org"
+        ]
+      },
+      {
+        "name": "58.64.199.27",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "book[.]flnet[.]org"
+        ]
+      },
+      {
+        "name": "CVE-2013-3163 attack",
+        "type": "campaign",
+        "alias": [
+          "the CVE-2013-3163 attack"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Flash file",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Shellcode",
+        "type": "course-of-action",
+        "alias": [
+          "shellcode the same way"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "sqlrenew.txt",
+        "type": "file",
+        "alias": [
+          "malware creates files ‘sqlrenew.txt’"
+        ],
+        "mother entity": [
+          "ZxShell backdoor"
+        ]
+      },
+      {
+        "name": "stream.exe",
+        "type": "file",
+        "alias": [
+          "malware creates files ‘sqlrenew.txt’ and ‘stream.exe’"
+        ],
+        "mother entity": [
+          "ZxShell backdoor"
+        ]
+      },
+      {
+        "name": "Darien Kindlund",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Dan Caselden",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Xiaobo Chen",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Ned Moran",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Mike Scott",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "U.S. government entities",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Japanese firms",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Defense industrial base (DIB) companies",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Law firms",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Information technology (IT) companies",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Mining companies",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Non-governmental organizations (NGOs)",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "zero-day exploits",
+        "type": "attack-pattern",
+        "alias": [
+          "zero-day exploits to deliver a remote access Trojan (RAT)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "remote access Trojan (RAT)",
+        "type": "malware",
+        "alias": [
+          "remote access Trojan (RAT)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "XOR (0×95) payload",
+        "type": "file",
+        "alias": [
+          "XOR encoded (0×95) payload"
+        ],
+        "mother entity": [
+          "ZxShell backdoor"
+        ]
+      },
+      {
+        "name": ".jpg extension",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "XOR (0×95) payload"
+        ]
+      },
+      {
+        "name": "LoadLibraryA Windows API call",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "sqlrenew.txt"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Operation SnowMan",
+        "rel": "associates-with",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "DeputyDog Actor"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "associates-with",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Operation DeputyDog"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "associates-with",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Operation Ephemeral Hydra"
+      },
+      {
+        "sub": "Operation SnowMan",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "U.S. Veterans of Foreign Wars’ website"
+      },
+      {
+        "sub": "CVE-2014-0322",
+        "rel": "is-part-of",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "U.S. Veterans of Foreign Wars’ website"
+      },
+      {
+        "sub": "iframe",
+        "rel": "loads",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "attacker’s page"
+      },
+      {
+        "sub": "attacker’s page",
+        "rel": "runs",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Flash object"
+      },
+      {
+        "sub": "Flash object",
+        "rel": "orchestrates",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "IE 10"
+      },
+      {
+        "sub": "IE 10",
+        "rel": "vulnerable-to",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2014-0322"
+      },
+      {
+        "sub": "Flash object",
+        "rel": "bypasses",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "ASLR"
+      },
+      {
+        "sub": "Flash object",
+        "rel": "bypasses",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "DEP"
+      },
+      {
+        "sub": "Flash object",
+        "rel": "bypasses",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "Microsoft’s Experience Mitigation Toolkit (EMET)"
+      },
+      {
+        "sub": "Flash object",
+        "rel": "uses",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Microsoft.XMLDOM ActiveX control"
+      },
+      {
+        "sub": "Microsoft.XMLDOM ActiveX control",
+        "rel": "loads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "EMET DLL"
+      },
+      {
+        "sub": "Flash file",
+        "rel": "orchestrated",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "CVE-2013-3163 attack"
+      },
+      {
+        "sub": "Flash file",
+        "rel": "call-back-to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "IE JavaScript"
+      },
+      {
+        "sub": "Flash file",
+        "rel": "builds",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "ROP exploit technique"
+      },
+      {
+        "sub": "Flash file",
+        "rel": "corrupts",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Flash Vector object"
+      },
+      {
+        "sub": "Flash file",
+        "rel": "overwrites",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Flash.Media.Sound() object"
+      },
+      {
+        "sub": "Flash file",
+        "rel": "pivots-to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "pivot"
+      },
+      {
+        "sub": "ZxShell backdoor",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "XOR (0×95) payload"
+      },
+      {
+        "sub": "XOR (0×95) payload",
+        "rel": "encodes-with",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": ".jpg extension"
+      },
+      {
+        "sub": "ZxShell backdoor",
+        "rel": "beacons-to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "newss[.]effers[.]com"
+      },
+      {
+        "sub": "ZxShell backdoor",
+        "rel": "creates-or-generates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "sqlrenew.txt"
+      },
+      {
+        "sub": "ZxShell backdoor",
+        "rel": "creates-or-generates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "stream.exe"
+      },
+      {
+        "sub": "sqlrenew.txt",
+        "rel": "executes-with",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "LoadLibraryA Windows API call"
+      },
+      {
+        "sub": "Gh0stRat samples",
+        "rel": "communicates-with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "book[.]flnet[.]org"
+      },
+      {
+        "sub": "Gh0stRat samples",
+        "rel": "communicates-with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "icybin[.]flnet[.]org"
+      },
+      {
+        "sub": "Gh0stRat samples",
+        "rel": "communicates-with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "me[.]scieron[.]com"
+      },
+      {
+        "sub": "newss[.]effers[.]com",
+        "rel": "resolves-to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "118.99.60.142"
+      },
+      {
+        "sub": "info[.]flnet[.]org",
+        "rel": "resolves-to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "58.64.200.178"
+      },
+      {
+        "sub": "book[.]flnet[.]org",
+        "rel": "resolves-to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "58.64.199.27"
+      },
+      {
+        "sub": "dll[.]freshdns[.]org",
+        "rel": "resolves-to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "58.64.199.25"
+      }
+    ]
+  }
+}

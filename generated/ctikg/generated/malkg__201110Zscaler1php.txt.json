@@ -1,0 +1,632 @@
+{
+  "sample_id": "malkg__201110Zscaler1php.txt",
+  "sample_index": 128,
+  "source": "malkg",
+  "file_name": "201110Zscaler1php.txt",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "1.php",
+        "rel": "uses",
+        "obj": "spear-phishing"
+      },
+      {
+        "sub": "1.php",
+        "rel": "uses",
+        "obj": "malicious PDFs"
+      },
+      {
+        "sub": "1.php",
+        "rel": "uses",
+        "obj": "web links to binaries"
+      },
+      {
+        "sub": "1.php",
+        "rel": "uses",
+        "obj": "Poison Ivy RAT"
+      },
+      {
+        "sub": "1.php",
+        "rel": "targets",
+        "obj": "China-US experts"
+      },
+      {
+        "sub": "1.php",
+        "rel": "targets",
+        "obj": "Defense entities"
+      },
+      {
+        "sub": "1.php",
+        "rel": "targets",
+        "obj": "Geospatial industry"
+      },
+      {
+        "sub": "attack",
+        "rel": "are of type",
+        "obj": "APT attack"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "is defined by",
+        "obj": "Richard Bejtlich’s blog post"
+      },
+      {
+        "sub": "APT Intrusion Set",
+        "rel": "is",
+        "obj": "1.php"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "can use",
+        "obj": "publicly available exploit"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "can use",
+        "obj": "exploit"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "can target",
+        "obj": "well-known vulnerability"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "can target",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "can research",
+        "obj": "new vulnerabilities"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "can research",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "malicious phishing email",
+        "rel": "contains",
+        "obj": "Poison Ivy RAT"
+      },
+      {
+        "sub": "malicious phishing email",
+        "rel": "targets",
+        "obj": "troop deployment in Afghanistan"
+      },
+      {
+        "sub": "malicious phishing email",
+        "rel": "has link to",
+        "obj": "DREAMLIFES.NET/Afghanistan/Afghanistan.zip"
+      },
+      {
+        "sub": "DREAMLIFES.NET/Afghanistan/Afghanistan.zip",
+        "rel": "has MD5",
+        "obj": "052E62513505A25CCFADF900A052709C"
+      },
+      {
+        "sub": "DREAMLIFES.NET/Afghanistan/Afghanistan.zip",
+        "rel": "is a",
+        "obj": "Windows executable"
+      },
+      {
+        "sub": "Contagio2",
+        "rel": "details",
+        "obj": "malicious phishing email"
+      },
+      {
+        "sub": "malicious phishing email",
+        "rel": "regarding",
+        "obj": "troop deployment in Afghanistan"
+      },
+      {
+        "sub": "malicious phishing email",
+        "rel": "contains",
+        "obj": "SCR extension"
+      },
+      {
+        "sub": "SCR extension",
+        "rel": "is identified as",
+        "obj": "Poison Ivy RAT"
+      },
+      {
+        "sub": "malicious link",
+        "rel": "has file name",
+        "obj": "DREAMLIFES.NET/Afghanistan/Afghanistan.zip"
+      },
+      {
+        "sub": "malware",
+        "rel": "is a",
+        "obj": "Windows executable"
+      },
+      {
+        "sub": "Windows executable",
+        "rel": "has SCR extension",
+        "obj": "Poison Ivy RAT"
+      },
+      {
+        "sub": "Windows executable",
+        "rel": "has file extension",
+        "obj": "SCR"
+      },
+      {
+        "sub": "spearphishing emails",
+        "rel": "contain",
+        "obj": "DREAMLIFES.NET/Afghanistan/Afghanistan.zip"
+      },
+      {
+        "sub": "CVE-2010-2883",
+        "rel": "exploited in",
+        "obj": "spearphishing emails"
+      },
+      {
+        "sub": "spearphishing emails",
+        "rel": "targeted",
+        "obj": "experts on Japan, China, Taiwan / USA relationships"
+      },
+      {
+        "sub": "Poison Ivy RAT",
+        "rel": "used in",
+        "obj": "FLOWER-SHOW.ORG"
+      },
+      {
+        "sub": "generic Trojan",
+        "rel": "is listed as",
+        "obj": "Trojan.Win32.Buzus"
+      },
+      {
+        "sub": "generic Trojan",
+        "rel": "is listed as",
+        "obj": "Trojan.Win32.Agent"
+      },
+      {
+        "sub": "generic Trojan",
+        "rel": "is classified as",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "lists",
+        "obj": "Trojan.Win32.Buzus"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "lists",
+        "obj": "Trojan.Win32.Agent"
+      },
+      {
+        "sub": "HTTP GET request",
+        "rel": "is used for",
+        "obj": "initial C&C check-in"
+      },
+      {
+        "sub": "a hacking organization",
+        "rel": "has exhibited",
+        "obj": "a malicious behavior"
+      },
+      {
+        "sub": "a malicious behavior",
+        "rel": "is the reason for",
+        "obj": "an informal name"
+      },
+      {
+        "sub": "Zscaler",
+        "rel": "believes is related to",
+        "obj": "Group"
+      },
+      {
+        "sub": "Zscaler",
+        "rel": "believes attack is related to",
+        "obj": "customer"
+      },
+      {
+        "sub": "attack",
+        "rel": "appear related to",
+        "obj": "Group"
+      },
+      {
+        "sub": "beacons",
+        "rel": "does not have",
+        "obj": "path"
+      },
+      {
+        "sub": "beacons",
+        "rel": "similar to",
+        "obj": "beacons"
+      },
+      {
+        "sub": "Zscaler",
+        "rel": "observes",
+        "obj": "traffic characteristics"
+      },
+      {
+        "sub": "infected host",
+        "rel": "send",
+        "obj": "HTTP GET request"
+      },
+      {
+        "sub": "SATELLITE.QUICKSEARCHMOVIE.COM",
+        "rel": "is a",
+        "obj": "C&C"
+      },
+      {
+        "sub": "WORK.FREETHROWLINE.NET",
+        "rel": "is a",
+        "obj": "C&C"
+      },
+      {
+        "sub": "malicious email attachments",
+        "rel": "is",
+        "obj": "infection point"
+      },
+      {
+        "sub": "web transaction",
+        "rel": "connect to",
+        "obj": "C&C servers"
+      },
+      {
+        "sub": "web transaction",
+        "rel": "connect to",
+        "obj": "port 443/TCP"
+      },
+      {
+        "sub": "web transaction",
+        "rel": "produce",
+        "obj": "200 response code"
+      },
+      {
+        "sub": "web transaction",
+        "rel": "send",
+        "obj": "request version 1.0"
+      },
+      {
+        "sub": "web transaction",
+        "rel": "produce",
+        "obj": "response version 1.1"
+      },
+      {
+        "sub": "1.php",
+        "rel": "is part of",
+        "obj": "APT Intrusion Set"
+      },
+      {
+        "sub": "WWW.SAVAGECOUNTY.NET",
+        "rel": "is a",
+        "obj": "C&C"
+      },
+      {
+        "sub": "LOOK.CAPTAINSABERTOOTH.NET",
+        "rel": "is a",
+        "obj": "C&C"
+      },
+      {
+        "sub": "GEOINFO.SERVEHTTP.COM",
+        "rel": "is a",
+        "obj": "C&C"
+      },
+      {
+        "sub": "ROSE.OFFICESKYLINE.COM",
+        "rel": "is a",
+        "obj": "C&C"
+      },
+      {
+        "sub": "WWW.CAREERCHALLENGES.NET",
+        "rel": "is a",
+        "obj": "C&C"
+      },
+      {
+        "sub": "1.php",
+        "rel": "has nameservers",
+        "obj": "GEOINFO.SERVEHTTP.COM"
+      },
+      {
+        "sub": "1.php",
+        "rel": "has nameservers",
+        "obj": "LOOK.CAPTAINSABERTOOTH.NET"
+      },
+      {
+        "sub": "1.php",
+        "rel": "is associated with",
+        "obj": "victims"
+      },
+      {
+        "sub": "1.php",
+        "rel": "identify",
+        "obj": "US Government"
+      },
+      {
+        "sub": "1.php",
+        "rel": "identify",
+        "obj": "Defense Industrial Base"
+      },
+      {
+        "sub": "1.php",
+        "rel": "identify",
+        "obj": "Geospatial industry"
+      },
+      {
+        "sub": "1.php",
+        "rel": "is associated with",
+        "obj": "hostnames"
+      },
+      {
+        "sub": "hostnames",
+        "rel": "potentially identify",
+        "obj": "US Government"
+      },
+      {
+        "sub": "hostnames",
+        "rel": "potentially identify",
+        "obj": "Defense Industrial Base"
+      },
+      {
+        "sub": "hostnames",
+        "rel": "potentially identify",
+        "obj": "Geospatial industry"
+      },
+      {
+        "sub": "hostnames",
+        "rel": "identify",
+        "obj": "US Government"
+      },
+      {
+        "sub": "hostnames",
+        "rel": "identify",
+        "obj": "Defense Industrial Base"
+      },
+      {
+        "sub": "hostnames",
+        "rel": "identify",
+        "obj": "Geospatial industry"
+      },
+      {
+        "sub": "files",
+        "rel": "uses",
+        "obj": "steganography"
+      },
+      {
+        "sub": "steganography",
+        "rel": "is a technique used in",
+        "obj": "files"
+      },
+      {
+        "sub": "steganography",
+        "rel": "is a technique",
+        "obj": "files"
+      },
+      {
+        "sub": "HTTP version 1.0 requests",
+        "rel": "produce",
+        "obj": "version 1.1 responses"
+      },
+      {
+        "sub": "numerous transactions",
+        "rel": "target",
+        "obj": "unknown / uncategorized domain"
+      },
+      {
+        "sub": "transactions",
+        "rel": "occur to",
+        "obj": "No-IP dynamic DNS domains"
+      },
+      {
+        "sub": "communication to dynamic DNS domains",
+        "rel": "is recommended to be",
+        "obj": "blocking or heavily monitoring"
+      },
+      {
+        "sub": "some domains",
+        "rel": "are",
+        "obj": "parked"
+      },
+      {
+        "sub": "transactions",
+        "rel": "occur during",
+        "obj": "non-standard times"
+      },
+      {
+        "sub": "transaction",
+        "rel": "target",
+        "obj": "domain"
+      },
+      {
+        "sub": "transaction",
+        "rel": "target",
+        "obj": "dynamic DNS domain"
+      },
+      {
+        "sub": "communication",
+        "rel": "is recommended",
+        "obj": "blocking or monitoring"
+      },
+      {
+        "sub": "domain",
+        "rel": "is",
+        "obj": "parked"
+      },
+      {
+        "sub": "transaction",
+        "rel": "occur during",
+        "obj": "non-standard times"
+      },
+      {
+        "sub": "Group",
+        "rel": "leverages",
+        "obj": "passive DNS"
+      },
+      {
+        "sub": "Group",
+        "rel": "leverages",
+        "obj": "domain registration info"
+      },
+      {
+        "sub": "Group",
+        "rel": "leverages",
+        "obj": "open-source reports"
+      },
+      {
+        "sub": "Group",
+        "rel": "leverages",
+        "obj": "research"
+      },
+      {
+        "sub": "Group",
+        "rel": "can derive",
+        "obj": "domain and infrastructure information"
+      },
+      {
+        "sub": "Group",
+        "rel": "uses",
+        "obj": "other attacks"
+      },
+      {
+        "sub": "information",
+        "rel": "indicates",
+        "obj": "target"
+      },
+      {
+        "sub": "information",
+        "rel": "indicates",
+        "obj": "attack purpose"
+      },
+      {
+        "sub": "correlating domains",
+        "rel": "indicates",
+        "obj": "target"
+      },
+      {
+        "sub": "correlating domains",
+        "rel": "indicates",
+        "obj": "target"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "is part of",
+        "obj": "group"
+      },
+      {
+        "sub": "exploitation",
+        "rel": "is considered",
+        "obj": "advanced"
+      },
+      {
+        "sub": "exploitation",
+        "rel": "is considered",
+        "obj": "advanced"
+      },
+      {
+        "sub": "RSA",
+        "rel": "concludes",
+        "obj": "attack vector shift"
+      },
+      {
+        "sub": "entity",
+        "rel": "is attacked by",
+        "obj": "APT attack"
+      },
+      {
+        "sub": "APT attack",
+        "rel": "is linked to",
+        "obj": "1.php"
+      },
+      {
+        "sub": "enterprise",
+        "rel": "is targeted",
+        "obj": "industry"
+      },
+      {
+        "sub": "industry",
+        "rel": "is regularly targeted",
+        "obj": "attacks"
+      },
+      {
+        "sub": "previous incident",
+        "rel": "is linked to",
+        "obj": "incidents"
+      },
+      {
+        "sub": "APT Intrusion Set",
+        "rel": "uses",
+        "obj": "dynamic DNS domains"
+      },
+      {
+        "sub": "APT Intrusion Set",
+        "rel": "uses",
+        "obj": "victims hostname"
+      },
+      {
+        "sub": "APT Intrusion Set",
+        "rel": "uses",
+        "obj": "dynamic DNS domains"
+      },
+      {
+        "sub": "APT Intrusion Set",
+        "rel": "correlates with",
+        "obj": "APT incidents"
+      },
+      {
+        "sub": "APT Intrusion Set",
+        "rel": "uses",
+        "obj": "victims hostname"
+      },
+      {
+        "sub": "these attacks",
+        "rel": "relate to",
+        "obj": "others"
+      },
+      {
+        "sub": "these attacks",
+        "rel": "attributed to",
+        "obj": "1.php"
+      },
+      {
+        "sub": "these attacks",
+        "rel": "target",
+        "obj": "China-US relations expert"
+      },
+      {
+        "sub": "these attacks",
+        "rel": "target",
+        "obj": "U.S. entity"
+      },
+      {
+        "sub": "these attacks",
+        "rel": "target",
+        "obj": "Geospatial industry"
+      },
+      {
+        "sub": "these attacks",
+        "rel": "aim",
+        "obj": "corporate espionage"
+      },
+      {
+        "sub": "these attacks",
+        "rel": "involve",
+        "obj": "compromising organizations"
+      },
+      {
+        "sub": "these attacks",
+        "rel": "steal",
+        "obj": "sensitive data"
+      }
+    ]
+  }
+}

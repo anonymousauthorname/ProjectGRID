@@ -1,0 +1,963 @@
+{
+  "sample_id": "securenlp__TA14-353A_wiper",
+  "sample_index": 158,
+  "source": "securenlp",
+  "file_name": "TA14-353A_wiper",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TA14-353A",
+        "type": "other",
+        "alias": [
+          "the alert",
+          "this threat",
+          "Targeted Destructive Malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Windows",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "cyber threat actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the actors",
+          "cyber threat actors are using"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "SMB Worm Tool",
+        "type": "hacker-tool",
+        "alias": [
+          "the worm",
+          "the SMB worm"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Listening Implant",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Lightweight Backdoor",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Proxy Tool",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Destructive Hard Drive Tool",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Destructive Target Cleaning Tool",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "command and control (C2) infrastructure",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "TCP port 195",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "TCP port 444",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "AES decryption key",
+        "type": "credential-value",
+        "alias": [
+          "the phrase \"National Football League\""
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "sensvc.exe",
+        "type": "process",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "msensvc.exe",
+        "type": "process",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "netcfg.dll",
+        "type": "process",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "file share",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "file",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "network shares",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "wiper file \"taskhostXX.exe\"",
+        "type": "file",
+        "alias": [
+          "taskhostXX.exe"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "MD5 hashes",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "dropper file",
+        "type": "malware",
+        "alias": [
+          "diskpartmg16.exe"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "igfxtrayex.exe",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "net_ver.dat",
+        "type": "file",
+        "alias": [
+          "this is a log file"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "diskpartmg16.exe",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "igfxtpers.exe",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "iissvr.exe",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "usbdrv3_32bit.sys",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "usbdrv3_64bit.sys",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "C2 IP addresses",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "port 8080",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "port 8000",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows SMB shares",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "built-in file \"calc.exe\"",
+        "type": "file",
+        "alias": [
+          "the built-in file"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CNE operator",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows 7 operating system",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows 7 machines",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows 2000, XP, 2003, Vista, 2008",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "US-CERT",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Security Tip Handling Destructive Malware #ST13-003",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "victims",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "active directory",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "credential caching",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "AutoRun and Autoplay",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "two-factor authentication",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Software Restriction Policy",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "split-tunneling",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "SSL inspection",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "VLANs",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows XP",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows 2003",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows 2008",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows Vista",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows 2000",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows 7",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "web browsers",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "network hardware and software",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malicious activity",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TA14-353A",
+        "rel": "is using",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber threat actors",
+        "special_factuality": []
+      },
+      {
+        "sub": "cyber threat actors",
+        "rel": "using",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "SMB Worm Tool",
+        "special_factuality": []
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "is equipped with",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Listening Implant",
+        "special_factuality": []
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "is equipped with",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Lightweight Backdoor",
+        "special_factuality": []
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "is equipped with",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Proxy Tool",
+        "special_factuality": []
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "is equipped with",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Destructive Hard Drive Tool",
+        "special_factuality": []
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "is equipped with",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Destructive Target Cleaning Tool",
+        "special_factuality": []
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "propagates via",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Windows SMB shares",
+        "special_factuality": []
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "connects to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "command and control (C2) infrastructure",
+        "special_factuality": []
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "sends log data to",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "command and control (C2) infrastructure",
+        "special_factuality": []
+      },
+      {
+        "sub": "SMB Worm Tool",
+        "rel": "establishes",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "file share",
+        "special_factuality": []
+      },
+      {
+        "sub": "Listening Implant",
+        "rel": "listens for connections on",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "TCP port 195",
+        "special_factuality": []
+      },
+      {
+        "sub": "Listening Implant",
+        "rel": "listens for connections on",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "TCP port 444",
+        "special_factuality": []
+      },
+      {
+        "sub": "Listening Implant",
+        "rel": "decrypts",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "AES decryption key",
+        "special_factuality": []
+      },
+      {
+        "sub": "AES decryption key",
+        "rel": "derived from",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the phrase \"National Football League\"",
+        "special_factuality": []
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "includes functionality to",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "file transfer",
+        "special_factuality": []
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "includes functionality to",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "system survey",
+        "special_factuality": []
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "includes functionality to",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "process manipulation",
+        "special_factuality": []
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "includes functionality to",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "file time matching",
+        "special_factuality": []
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "includes functionality to",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "proxy capability",
+        "special_factuality": []
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "includes functionality to",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "arbitrary code execution",
+        "special_factuality": []
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "includes functionality to",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "execute commands on the command line",
+        "special_factuality": []
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "open ports in",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "victim host's firewall",
+        "special_factuality": []
+      },
+      {
+        "sub": "Lightweight Backdoor",
+        "rel": "discovery of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "routers and gateway devices",
+        "special_factuality": []
+      },
+      {
+        "sub": "Proxy Tool",
+        "rel": "configured to listen on",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "TCP port 443",
+        "special_factuality": []
+      },
+      {
+        "sub": "Proxy Tool",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "backdoor functionality",
+        "special_factuality": []
+      },
+      {
+        "sub": "Proxy Tool",
+        "rel": "is able to",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "fingerprint the victim machine",
+        "special_factuality": []
+      },
+      {
+        "sub": "Proxy Tool",
+        "rel": "is able to",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "run remote commands",
+        "special_factuality": []
+      },
+      {
+        "sub": "Proxy Tool",
+        "rel": "is able to",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "perform directory listings",
+        "special_factuality": []
+      },
+      {
+        "sub": "Proxy Tool",
+        "rel": "is able to",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "perform process listings",
+        "special_factuality": []
+      },
+      {
+        "sub": "Proxy Tool",
+        "rel": "is able to",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "transfer files",
+        "special_factuality": []
+      },
+      {
+        "sub": "Destructive Hard Drive Tool",
+        "rel": "overwrites",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "up-to the first four physical drives",
+        "special_factuality": []
+      },
+      {
+        "sub": "Destructive Hard Drive Tool",
+        "rel": "overwrites",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "master boot record (MBR)",
+        "special_factuality": []
+      },
+      {
+        "sub": "Destructive Hard Drive Tool",
+        "rel": "is tailored for",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Windows 7 operating system",
+        "special_factuality": []
+      },
+      {
+        "sub": "Destructive Hard Drive Tool",
+        "rel": "requires",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "CNE operator",
+        "special_factuality": []
+      },
+      {
+        "sub": "Destructive Target Cleaning Tool",
+        "rel": "renders victim machines inoperable",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "victims",
+        "special_factuality": []
+      },
+      {
+        "sub": "Destructive Target Cleaning Tool",
+        "rel": "consists of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "executable",
+        "special_factuality": []
+      },
+      {
+        "sub": "Destructive Target Cleaning Tool",
+        "rel": "consists of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "dll",
+        "special_factuality": []
+      },
+      {
+        "sub": "Network Propagation Wiper",
+        "rel": "uploads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "wiper file \"taskhostXX.exe\"",
+        "special_factuality": []
+      },
+      {
+        "sub": "Network Propagation Wiper",
+        "rel": "changes file-time to match",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "built-in file \"calc.exe\"",
+        "special_factuality": []
+      },
+      {
+        "sub": "Network Propagation Wiper",
+        "rel": "starts",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "remote process",
+        "special_factuality": []
+      },
+      {
+        "sub": "Network Propagation Wiper",
+        "rel": "reports status to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "C2 IP addresses",
+        "special_factuality": []
+      },
+      {
+        "sub": "dropper file",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "igfxtrayex.exe",
+        "special_factuality": []
+      },
+      {
+        "sub": "dropper file",
+        "rel": "created",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "net_ver.dat",
+        "special_factuality": []
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "makes copies of",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "igfxtrayex.exe",
+        "special_factuality": []
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "executed with",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "different arguments",
+        "special_factuality": []
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "attempts to connect to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "C2 IP addresses",
+        "special_factuality": []
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "shutdown and reboot",
+        "special_factuality": []
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "usbdrv3_32bit.sys",
+        "special_factuality": []
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "usbdrv3_64bit.sys",
+        "special_factuality": []
+      },
+      {
+        "sub": "US-CERT",
+        "rel": "recommends reviewing",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Security Tip Handling Destructive Malware #ST13-003",
+        "special_factuality": []
+      },
+      {
+        "sub": "Malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "MD5 hashes",
+        "special_factuality": []
+      },
+      {
+        "sub": "dropper file",
+        "rel": "uses",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "diskpartmg16.exe",
+        "special_factuality": []
+      },
+      {
+        "sub": "dropper file",
+        "rel": "started as",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "WinsSchMgmt service",
+        "special_factuality": []
+      },
+      {
+        "sub": "WinsSchMgmt service",
+        "rel": "executed",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "dropper file",
+        "special_factuality": []
+      },
+      {
+        "sub": "dropper file",
+        "rel": "executed with",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "different arguments",
+        "special_factuality": []
+      },
+      {
+        "sub": "dropper file",
+        "rel": "executed with",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "igfxtrayex.exe",
+        "special_factuality": []
+      },
+      {
+        "sub": "dropper file",
+        "rel": "executed with",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "different arguments",
+        "special_factuality": []
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "executed with",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "different arguments",
+        "special_factuality": []
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "executed with",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "different arguments",
+        "special_factuality": []
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "attempts to connect to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "port 8080",
+        "special_factuality": []
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "attempts to connect to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "port 8000",
+        "special_factuality": []
+      },
+      {
+        "sub": "igfxtrayex.exe",
+        "rel": "attempts to connect to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "port 8080",
+        "special_factuality": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "sample_id": "casie__10249.json",
+  "sample_index": 42,
+  "source": "casie",
+  "file_name": "10249.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "ATLANTA",
+        "type": "GEO"
+      },
+      {
+        "name": "AMANDA NOBLE",
+        "type": "PERSON"
+      },
+      {
+        "name": "SAMSAM",
+        "type": "MALWARE"
+      },
+      {
+        "name": "ATLANTA INFORMATION MANAGEMENT (AIM)",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "FBI",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "DEPARTMENT OF WATERSHED MANAGEMENT",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "DEPARTMENT OF FINANCE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "ATLANTA MUNICIPAL COURT",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "HANCOCK REGIONAL HOSPITAL",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "GREENFIELD, IND.",
+        "type": "GEO"
+      },
+      {
+        "name": "311 WEB SITE PORTAL",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "HARTSFIELD–JACKSON ATLANTA INTERNATIONAL AIRPORT WI-FI NETWORK",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "BITCOIN",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "JAKE WILLIAMS",
+        "type": "PERSON"
+      },
+      {
+        "name": "JUSTIN CAPPOS",
+        "type": "PERSON"
+      },
+      {
+        "name": "RANSOMWARE ATTACK ON ATLANTA",
+        "type": "EVENT"
+      },
+      {
+        "name": "ATTACKERS",
+        "type": "THREAT_ACTOR"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "AMANDA NOBLE",
+        "rel": "related_to",
+        "obj": "ATLANTA"
+      },
+      {
+        "sub": "SAMSAM",
+        "rel": "related_to",
+        "obj": "ATLANTA"
+      },
+      {
+        "sub": "SAMSAM",
+        "rel": "related_to",
+        "obj": "HANCOCK REGIONAL HOSPITAL"
+      },
+      {
+        "sub": "ATLANTA INFORMATION MANAGEMENT (AIM)",
+        "rel": "related_to",
+        "obj": "ATTACKERS"
+      },
+      {
+        "sub": "ATLANTA INFORMATION MANAGEMENT (AIM)",
+        "rel": "related_to",
+        "obj": "FBI"
+      },
+      {
+        "sub": "ATTACKERS",
+        "rel": "related_to",
+        "obj": "BITCOIN"
+      },
+      {
+        "sub": "ATTACKERS",
+        "rel": "related_to",
+        "obj": "RANSOMWARE ATTACK ON ATLANTA"
+      },
+      {
+        "sub": "RANSOMWARE ATTACK ON ATLANTA",
+        "rel": "related_to",
+        "obj": "DEPARTMENT OF WATERSHED MANAGEMENT"
+      },
+      {
+        "sub": "RANSOMWARE ATTACK ON ATLANTA",
+        "rel": "related_to",
+        "obj": "DEPARTMENT OF FINANCE"
+      },
+      {
+        "sub": "RANSOMWARE ATTACK ON ATLANTA",
+        "rel": "related_to",
+        "obj": "ATLANTA MUNICIPAL COURT"
+      },
+      {
+        "sub": "RANSOMWARE ATTACK ON ATLANTA",
+        "rel": "related_to",
+        "obj": "311 WEB SITE PORTAL"
+      },
+      {
+        "sub": "RANSOMWARE ATTACK ON ATLANTA",
+        "rel": "related_to",
+        "obj": "HARTSFIELD–JACKSON ATLANTA INTERNATIONAL AIRPORT WI-FI NETWORK"
+      },
+      {
+        "sub": "JAKE WILLIAMS",
+        "rel": "related_to",
+        "obj": "SAMSAM"
+      },
+      {
+        "sub": "JUSTIN CAPPOS",
+        "rel": "related_to",
+        "obj": "RANSOMWARE ATTACK ON ATLANTA"
+      },
+      {
+        "sub": "ATLANTA",
+        "rel": "related_to",
+        "obj": "RANSOMWARE ATTACK ON ATLANTA"
+      },
+      {
+        "sub": "ATTACKERS",
+        "rel": "related_to",
+        "obj": "ATLANTA"
+      }
+    ]
+  }
+}

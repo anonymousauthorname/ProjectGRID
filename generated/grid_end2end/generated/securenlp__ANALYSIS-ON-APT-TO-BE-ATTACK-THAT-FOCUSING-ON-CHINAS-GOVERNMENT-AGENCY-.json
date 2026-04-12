@@ -1,0 +1,376 @@
+{
+  "sample_id": "securenlp__ANALYSIS-ON-APT-TO-BE-ATTACK-THAT-FOCUSING-ON-CHINAS-GOVERNMENT-AGENCY-",
+  "sample_index": 181,
+  "source": "securenlp",
+  "file_name": "ANALYSIS-ON-APT-TO-BE-ATTACK-THAT-FOCUSING-ON-CHINAS-GOVERNMENT-AGENCY-",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT-TOCS",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Cobalt Strike",
+        "type": "hacker-tool",
+        "alias": [
+          "automatic attack testing platform-Cobalt Strike",
+          "the automatic attack testing platform"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Beacon mode",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Shellcode",
+        "type": "malware",
+        "alias": [
+          "encrypted data scripts",
+          "executing Shellcode scripts",
+          "Shellcode script",
+          "Shellcode script Antiy has acquired",
+          "Shellcode with backdoor functionality",
+          "Shellcode script Antiy has acquired"
+        ],
+        "mother entity": [
+          "Cobalt Strike"
+        ]
+      },
+      {
+        "name": "powershell.exe",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Sample A",
+        "type": "file",
+        "alias": [
+          "Trojan/Win32.MSShell",
+          "ab.exe"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Sample B",
+        "type": "file",
+        "alias": [
+          "encrypted data scripts",
+          "the major sample (Sample B) of APT-TOCS"
+        ],
+        "mother entity": [
+          "Cobalt Strike"
+        ]
+      },
+      {
+        "name": "module 1",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "sample module 1",
+          "the major sample (Sample B) of APT-TOCS"
+        ],
+        "mother entity": [
+          "Sample B"
+        ]
+      },
+      {
+        "name": "module 2",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "sample module 2"
+        ],
+        "mother entity": [
+          "Sample B"
+        ]
+      },
+      {
+        "name": "module 3",
+        "type": "malware",
+        "alias": [
+          "Shellcode that started with MZ",
+          "the module",
+          "backdoor program"
+        ],
+        "mother entity": [
+          "Sample B"
+        ]
+      },
+      {
+        "name": "http://146.0.43.107/hfYn",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "146.0.43.107",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "dc.******69.info",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "process",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Java",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Armitage",
+        "type": "hacker-tool",
+        "alias": [
+          "Metasploit figure interface"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Metasploit",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Raphael Mudge",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "digital signature",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "Sample A"
+        ]
+      },
+      {
+        "name": "security vulnerabilities",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "system and application vulnerabilities",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Antiy Labs",
+        "type": "identity",
+        "alias": [
+          "ANTIY Labs",
+          "the CERT Analysis Team of ANTIY"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "China's Government Agency",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT-TOCS",
+        "rel": "named it as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Cobalt Strike"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "conducted depending on",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Beacon mode"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "downloads a field of data into memory for operation by calling",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "powershell.exe"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "associated by analysts",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Sample B"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "resulting in",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "module 1"
+      },
+      {
+        "sub": "module 1",
+        "rel": "using PowerShell to download and execute",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "module 2"
+      },
+      {
+        "sub": "module 2",
+        "rel": "downloading operations of",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "module 2"
+      },
+      {
+        "sub": "module 2",
+        "rel": "established and listed",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "module 2",
+        "rel": "written into",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "module 3"
+      },
+      {
+        "sub": "module 3",
+        "rel": "GET to get",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "http://146.0.43.107/hfYn"
+      },
+      {
+        "sub": "module 3",
+        "rel": "connect... with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "146.0.43.107"
+      },
+      {
+        "sub": "module 3",
+        "rel": "connect... with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "dc.******69.info"
+      },
+      {
+        "sub": "module 3",
+        "rel": "writing to process powershell.exe and executing and operating",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "module 1"
+      },
+      {
+        "sub": "module 3",
+        "rel": "sending data information via",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Beacon mode"
+      },
+      {
+        "sub": "module 3",
+        "rel": "heartbeat package every 60 seconds",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "Beacon mode"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "is the business version of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Armitage"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "is the penetration testing software of",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "authored",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Cobalt Strike"
+      },
+      {
+        "sub": "digital signature",
+        "rel": "is NO",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "Sample A"
+      },
+      {
+        "sub": "APT-TOCS",
+        "rel": "relies on",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "security vulnerabilities"
+      },
+      {
+        "sub": "APT-TOCS",
+        "rel": "relies on",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "system and application vulnerabilities"
+      }
+    ]
+  }
+}

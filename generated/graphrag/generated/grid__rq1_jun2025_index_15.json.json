@@ -1,0 +1,98 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_15.json",
+  "sample_index": 207,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_15.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SOPHOSLABS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "RICHARD",
+        "type": "PERSON"
+      },
+      {
+        "name": "Troj/JSRedirBV",
+        "type": "MALWARE"
+      },
+      {
+        "name": "Mal/IframeQ",
+        "type": "MALWARE"
+      },
+      {
+        "name": "SETTIMEOUT",
+        "type": "TOOL"
+      },
+      {
+        "name": "XOR",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "CANADIAN PHARMACY",
+        "type": "LOCATION"
+      },
+      {
+        "name": "MALICIOUS JAVASCRIPT",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "setTimeOut",
+        "type": "Unknown"
+      },
+      {
+        "name": "Malicious JavaScript",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "RICHARD",
+        "rel": "related_to",
+        "obj": "SOPHOSLABS"
+      },
+      {
+        "sub": "Troj/JSRedirBV",
+        "rel": "related_to",
+        "obj": "Mal/IframeQ"
+      },
+      {
+        "sub": "setTimeOut",
+        "rel": "related_to",
+        "obj": "XOR"
+      },
+      {
+        "sub": "Malicious JavaScript",
+        "rel": "related_to",
+        "obj": "Troj/JSRedirBV"
+      },
+      {
+        "sub": "Malicious JavaScript",
+        "rel": "related_to",
+        "obj": "Mal/IframeQ"
+      },
+      {
+        "sub": "Troj/JSRedirBV",
+        "rel": "related_to",
+        "obj": "CANADIAN PHARMACY"
+      }
+    ]
+  }
+}

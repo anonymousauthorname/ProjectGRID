@@ -1,0 +1,348 @@
+{
+  "sample_id": "securenlp__ANALYSIS-ON-APT-TO-BE-ATTACK-THAT-FOCUSING-ON-CHINAS-GOVERNMENT-AGENCY-",
+  "sample_index": 181,
+  "source": "securenlp",
+  "file_name": "ANALYSIS-ON-APT-TO-BE-ATTACK-THAT-FOCUSING-ON-CHINAS-GOVERNMENT-AGENCY-",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT-TOCS",
+        "type": "attack-pattern",
+        "alias": [
+          "the attack pattern",
+          "APT-TOCS",
+          "an APT attack"
+        ]
+      },
+      {
+        "name": "China's Government Agency",
+        "type": "target",
+        "alias": [
+          "government agency in China"
+        ]
+      },
+      {
+        "name": "Cobalt Strike",
+        "type": "hacker-tool",
+        "alias": [
+          "automatic attack testing platform",
+          "Cobalt Strike (the platform)",
+          "attack platform",
+          "Beacon platform"
+        ]
+      },
+      {
+        "name": "Shellcode",
+        "type": "malware",
+        "alias": [
+          "embedded Shellcode",
+          "Shellcode script"
+        ]
+      },
+      {
+        "name": "WinExec",
+        "type": "general-software",
+        "alias": [
+          "WinExec function"
+        ]
+      },
+      {
+        "name": "PE program",
+        "type": "file",
+        "alias": [
+          "leading executable file",
+          "guiding executable file"
+        ]
+      },
+      {
+        "name": "Sample A",
+        "type": "file",
+        "alias": [
+          "ab.exe",
+          "Trojan/Win32.MSShell",
+          "leading file"
+        ]
+      },
+      {
+        "name": "Metasploit",
+        "type": "general-software",
+        "alias": [
+          "framework"
+        ]
+      },
+      {
+        "name": "powershell.exe",
+        "type": "general-software",
+        "alias": [
+          "powershell.exe"
+        ]
+      },
+      {
+        "name": "Sample B",
+        "type": "file",
+        "alias": [
+          "major sample of APT-TOCS"
+        ]
+      },
+      {
+        "name": "module 1",
+        "type": "module",
+        "alias": [
+          "first module"
+        ]
+      },
+      {
+        "name": "module 2",
+        "type": "module",
+        "alias": [
+          "second module"
+        ]
+      },
+      {
+        "name": "module 3",
+        "type": "module",
+        "alias": [
+          "third module"
+        ]
+      },
+      {
+        "name": "146.0.43.107",
+        "type": "ipv4-addr",
+        "alias": [
+          "146.0.43.107"
+        ]
+      },
+      {
+        "name": "dc.******69.info",
+        "type": "domain-name",
+        "alias": [
+          "dc.******69.info"
+        ]
+      },
+      {
+        "name": "Beacon",
+        "type": "hacker-tool",
+        "alias": [
+          "Beacon platform"
+        ]
+      },
+      {
+        "name": "Raphael Mudge",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "author of Cobalt Strike"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT-TOCS",
+        "rel": "relies on",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Cobalt Strike"
+      },
+      {
+        "sub": "APT-TOCS",
+        "rel": "focuses on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "China's Government Agency"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "is based on",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "penetrates",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "firewall"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "avoids",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "whitelist mechanism"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "is a platform of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Beacon"
+      },
+      {
+        "sub": "Cobalt Strike",
+        "rel": "can execute",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "communicates via",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "Beacon"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "is generated on the basis of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Cobalt Strike"
+      },
+      {
+        "sub": "PE program",
+        "rel": "operates embedded",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Shellcode"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "uses",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "powershell.exe"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "operates embedded",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Shellcode"
+      },
+      {
+        "sub": "Sample A",
+        "rel": "calls",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "WinExec"
+      },
+      {
+        "sub": "module 1",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "module 2"
+      },
+      {
+        "sub": "module 1",
+        "rel": "uses",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "module 2",
+        "rel": "established and listed",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "module 3",
+        "rel": "connects to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "146.0.43.107"
+      },
+      {
+        "sub": "module 3",
+        "rel": "connects to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "dc.******69.info"
+      },
+      {
+        "sub": "module 3",
+        "rel": "can send",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "heartbeat packages"
+      },
+      {
+        "sub": "module 1",
+        "rel": "is generated by",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Beacon"
+      },
+      {
+        "sub": "module 2",
+        "rel": "shares disassembling commands with",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Beacon"
+      },
+      {
+        "sub": "module 3",
+        "rel": "shares data package with",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Beacon"
+      },
+      {
+        "sub": "Beacon",
+        "rel": "connected to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Cobalt Strike"
+      },
+      {
+        "sub": "Raphael Mudge",
+        "rel": "authored by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Cobalt Strike"
+      }
+    ]
+  }
+}

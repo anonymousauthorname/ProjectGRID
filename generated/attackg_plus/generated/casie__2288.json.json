@@ -1,0 +1,277 @@
+{
+  "sample_id": "casie__2288.json",
+  "sample_index": 31,
+  "source": "casie",
+  "file_name": "2288.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "Non-core system used by DocuSign"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Non-core system used by DocuSign"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Customer and user email addresses"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Email content with subject line 'Completed: docusign.com – Wire Transfer Instructions for recipient-name Document Ready for Signature'"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Email content to appear legitimate"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "User expectations regarding email links"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Conduct",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Belong to",
+        "obj": "Malicious third party"
+      },
+      {
+        "sub": "Malicious third party",
+        "rel": "Gain access",
+        "obj": "Non-core system used by DocuSign"
+      },
+      {
+        "sub": "Malicious third party",
+        "rel": "Write",
+        "obj": "Email content"
+      },
+      {
+        "sub": "Malicious third party",
+        "rel": "Detect",
+        "obj": "User expectations"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "None"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has URL",
+        "obj": "docusign.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "DocuSign"
+      },
+      {
+        "sub": "DocuSign",
+        "rel": "Has geolocation",
+        "obj": "United States"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Stolen email addresses"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Phishing campaigns"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Targeted phishing attempts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "United States"
+      },
+      {
+        "sub": "Resource Development",
+        "rel": "Belong to",
+        "obj": "Initial access"
+      },
+      {
+        "sub": "Initial access",
+        "rel": "Use",
+        "obj": "Trust in DocuSign communications"
+      },
+      {
+        "sub": "- Stolen email addresses",
+        "rel": "Use",
+        "obj": "Targeted phishing attempts"
+      },
+      {
+        "sub": "- DocuSign",
+        "rel": "Has geolocation",
+        "obj": "United States"
+      },
+      {
+        "sub": "- Threat Actor",
+        "rel": "Operate",
+        "obj": "Phishing campaigns"
+      },
+      {
+        "sub": "- Threat Actor",
+        "rel": "Locate at",
+        "obj": "United States"
+      },
+      {
+        "sub": "Stolen email addresses",
+        "rel": "Use",
+        "obj": "Targeted phishing attempts"
+      },
+      {
+        "sub": "Initial Access: Phishing",
+        "rel": "Use",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "Link to downloadable Microsoft Word document"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Microsoft Word document"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Use",
+        "obj": "DocuSign branding"
+      },
+      {
+        "sub": "DocuSign branding",
+        "rel": "Belong to",
+        "obj": "Third party"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Exploit users' expectations of receiving a DocuSign document"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Users' expectations"
+      },
+      {
+        "sub": "Email",
+        "rel": "Has hostname",
+        "obj": "Malicious third party"
+      },
+      {
+        "sub": "Email",
+        "rel": "Has value",
+        "obj": "Contain link to downloadable Microsoft Word document"
+      },
+      {
+        "sub": "Email",
+        "rel": "Has URL",
+        "obj": "Link to downloadable Microsoft Word document"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Users' expectations of receiving a DocuSign document"
+      },
+      {
+        "sub": "- Phishing",
+        "rel": "Use",
+        "obj": "Malware"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Has URL",
+        "obj": "Link to downloadable Microsoft Word document"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Construct",
+        "obj": "Microsoft Word document"
+      },
+      {
+        "sub": "- Phishing",
+        "rel": "Use",
+        "obj": "DocuSign branding"
+      },
+      {
+        "sub": "- DocuSign branding",
+        "rel": "Belong to",
+        "obj": "Third party"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Exploit",
+        "obj": "Users' expectations"
+      },
+      {
+        "sub": "- Email",
+        "rel": "Has URL",
+        "obj": "Link to downloadable Microsoft Word document"
+      },
+      {
+        "sub": "- Email",
+        "rel": "Has value",
+        "obj": "Contain link to downloadable Microsoft Word document"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Has vulnerability",
+        "obj": "Exploit users' expectations  → remove"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "User execution"
+      },
+      {
+        "sub": "Malicious Word document",
+        "rel": "Has vulnerability",
+        "obj": "User execution"
+      },
+      {
+        "sub": "Malicious Word document",
+        "rel": "Execute",
+        "obj": "User"
+      }
+    ]
+  }
+}

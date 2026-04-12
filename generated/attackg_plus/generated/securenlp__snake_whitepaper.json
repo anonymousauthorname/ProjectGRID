@@ -1,0 +1,767 @@
+{
+  "sample_id": "securenlp__snake_whitepaper",
+  "sample_index": 176,
+  "source": "securenlp",
+  "file_name": "snake_whitepaper",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Rootkit",
+        "rel": "Use",
+        "obj": "Network reconnaissance tool"
+      },
+      {
+        "sub": "Network reconnaissance tool",
+        "rel": "Operate",
+        "obj": "Network hosts"
+      },
+      {
+        "sub": "Network reconnaissance tool",
+        "rel": "Detect",
+        "obj": "Enabled Windows RPC services"
+      },
+      {
+        "sub": "Network reconnaissance tool",
+        "rel": "Write",
+        "obj": "Messages via named pipes"
+      },
+      {
+        "sub": "Network reconnaissance tool",
+        "rel": "Read",
+        "obj": "Messages via named pipes"
+      },
+      {
+        "sub": "Network reconnaissance tool",
+        "rel": "Mimic",
+        "obj": "Metasploit's OS fingerprinting via SMB"
+      },
+      {
+        "sub": "Network reconnaissance tool",
+        "rel": "Reveal",
+        "obj": "Operating system version"
+      },
+      {
+        "sub": "Network reconnaissance tool",
+        "rel": "Reveal",
+        "obj": "Service pack version"
+      },
+      {
+        "sub": "Network reconnaissance tool",
+        "rel": "Reveal",
+        "obj": "Installed network services"
+      },
+      {
+        "sub": "Network reconnaissance tool",
+        "rel": "Encrypt",
+        "obj": "Data in configuration file %system%\\vtmon.bin"
+      },
+      {
+        "sub": "Configuration file %system%\\vtmon.bin",
+        "rel": "Has value",
+        "obj": "Encrypted data"
+      },
+      {
+        "sub": "Configuration file %system%\\vtmon.bin",
+        "rel": "Has value",
+        "obj": "NTL-based encryption"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Upload",
+        "obj": "Configuration files"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Upload",
+        "obj": "Encrypted data from %system%\\vtmon.bin"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Operate",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "The dropper",
+        "rel": "Construct",
+        "obj": "%windows%\\$NtUninstallQ817473\\fdisk.sys"
+      },
+      {
+        "sub": "The dropper",
+        "rel": "Use",
+        "obj": "MS09-025"
+      },
+      {
+        "sub": "The dropper",
+        "rel": "Use",
+        "obj": "MS10-015"
+      },
+      {
+        "sub": "The dropper",
+        "rel": "Register as service",
+        "obj": "Ultra3"
+      },
+      {
+        "sub": "The dropper",
+        "rel": "Has value",
+        "obj": "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\Ultra3"
+      },
+      {
+        "sub": "The dropper",
+        "rel": "Bundle",
+        "obj": "32-bit driver"
+      },
+      {
+        "sub": "The dropper",
+        "rel": "Bundle",
+        "obj": "64-bit driver"
+      },
+      {
+        "sub": "The dropper",
+        "rel": "Include",
+        "obj": "tool for creating NTFS file systems"
+      },
+      {
+        "sub": "The dropper",
+        "rel": "Include",
+        "obj": "initial message queue file"
+      },
+      {
+        "sub": "The dropper",
+        "rel": "Operate",
+        "obj": "through network exploit"
+      },
+      {
+        "sub": "The dropper",
+        "rel": "Operate",
+        "obj": "via phishing email attachment"
+      },
+      {
+        "sub": "The dropper",
+        "rel": "Operate",
+        "obj": "via thumb-drive distribution"
+      },
+      {
+        "sub": "The Snake rootkit",
+        "rel": "Has vulnerability",
+        "obj": "administrator privileges"
+      },
+      {
+        "sub": "The dropper",
+        "rel": "Write",
+        "obj": "registry entry under HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\Ultra3"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Dropper"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Install",
+        "obj": "Kernel-mode driver"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Install",
+        "obj": "Usermode DLL"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Attempt",
+        "obj": "Gain administrator privileges"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Use",
+        "obj": "MS09-025 exploit"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Use",
+        "obj": "MS10-015 exploit"
+      },
+      {
+        "sub": "Reconnaissance tool",
+        "rel": "Download",
+        "obj": "From C&C server"
+      },
+      {
+        "sub": "Reconnaissance tool",
+        "rel": "Operate",
+        "obj": "Enumerate network hosts"
+      },
+      {
+        "sub": "Reconnaissance tool",
+        "rel": "Detect",
+        "obj": "Potentially exploitable systems"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Use",
+        "obj": "MS09-025"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Use",
+        "obj": "MS10-015"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "DLL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "explorer.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "iexplore.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "\\Device\\vstor32"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "\\\\.pipe\\services_control"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "WinINet"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Winsock"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "configuration data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "data exfiltration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "logs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "named pipes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "usermode DLLs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "system processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "C&C server communication"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "\\Device\\vstor32"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "WinINet"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has hostname",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Establishes persistence",
+        "obj": "Kernel-mode driver"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Creates",
+        "obj": "Virtual file volume"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Registers in",
+        "obj": "Windows registry"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Has value",
+        "obj": "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\Ultra3"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Has value",
+        "obj": "ErrorControl"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Has value",
+        "obj": "Group"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Has value",
+        "obj": "ImagePath"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Has value",
+        "obj": "Start"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Has value",
+        "obj": "Type"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Creates",
+        "obj": "\\\\.Hd1"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Creates",
+        "obj": "\\\\.Hd2"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Has URL",
+        "obj": "\\\\.Hd1"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Has URL",
+        "obj": "\\\\.Hd2"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Hooks",
+        "obj": "System APIs"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Maintains access",
+        "obj": "Across system restarts"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Use",
+        "obj": "MS09-025"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Use",
+        "obj": "MS10-015"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Has vulnerability",
+        "obj": "VirtualBox driver version 1.6.2"
+      },
+      {
+        "sub": "VirtualBox driver version 1.6.2",
+        "rel": "Has vulnerability",
+        "obj": "METHOD_NEITHER"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Modify",
+        "obj": "nt!g_CiEnabled"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Operate",
+        "obj": "Code Integrity verification"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Write",
+        "obj": "unsigned 64-bit kernel-mode driver"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Construct",
+        "obj": "dropper"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Snake rootkit"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Modify",
+        "obj": "ZwQuerySystemInformation"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Modify",
+        "obj": "ZwQueryInformationProcess"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Modify",
+        "obj": "ZwClose"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Modify",
+        "obj": "ZwTerminateProcess"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Block access to",
+        "obj": "registry entries containing driver name"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Block access to",
+        "obj": "home directory"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Use",
+        "obj": "virtual file volumes"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Store data in",
+        "obj": "encrypted form"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Blend traffic with",
+        "obj": "legitimate web traffic"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Inject",
+        "obj": "malicious HTTP/SMTP requests"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Operate through",
+        "obj": "pipe server mode"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Delegate tasks to",
+        "obj": "explorer.exe"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Avoid detection by",
+        "obj": "behavioral analysis tools"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Reconnaissance tool"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Network hosts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Enabled Windows RPC services"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Identify",
+        "obj": "Operating system version"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Identify",
+        "obj": "Service pack version"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Identify",
+        "obj": "Installed network services"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Fingerprint",
+        "obj": "Network hosts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Identify",
+        "obj": "Potentially exploitable systems"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Mimic",
+        "obj": "Metasploit's OS fingerprinting"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "SMB"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Store",
+        "obj": "%system%\\vtmon.bin"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Encrypted configuration files"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Has vulnerability",
+        "obj": "Reconnaissance tool"
+      },
+      {
+        "sub": "Reconnaissance tool",
+        "rel": "Operate",
+        "obj": "Host"
+      },
+      {
+        "sub": "Reconnaissance tool",
+        "rel": "Detect",
+        "obj": "Enabled services"
+      },
+      {
+        "sub": "Reconnaissance tool",
+        "rel": "Fingerprint",
+        "obj": "Host"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Use",
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "Metasploit",
+        "rel": "Deliver",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Target",
+        "obj": "Target system"
+      },
+      {
+        "sub": "Target system",
+        "rel": "Belong to",
+        "obj": "Network"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Enable",
+        "obj": "Lateral movement"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Write",
+        "obj": "Exploit"
+      },
+      {
+        "sub": "Exploit",
+        "rel": "Craft",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Spread",
+        "obj": "Network"
+      },
+      {
+        "sub": "Host",
+        "rel": "Take control",
+        "obj": "New hosts"
+      },
+      {
+        "sub": "New hosts",
+        "rel": "Repeat",
+        "obj": "Infection cycle"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Modify",
+        "obj": "%windows%\\$NtUninstallQ[random]$"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Store",
+        "obj": "mtmon.sdb"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Store",
+        "obj": "mtmon_.sdb"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Store",
+        "obj": "scmp.bin"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Store",
+        "obj": "ucmp.bin"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Collect",
+        "obj": "infected processes"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Collect",
+        "obj": "dropped DLL names"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Collect",
+        "obj": "log directories"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Collect",
+        "obj": "registry entries"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Collect",
+        "obj": "timestamps"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Use",
+        "obj": "usermode DLL"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Upload",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Operate",
+        "obj": "reconnaissance tool"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Collect",
+        "obj": "network host information"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Collect",
+        "obj": "service details"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Use",
+        "obj": "HTTP/POST"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Use",
+        "obj": "user-agent string 'Mozilla/4.0 (compatible"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Encrypt",
+        "obj": "data"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Store",
+        "obj": "virtual volume %windows%\\$NtUninstallQ[random]$"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Use",
+        "obj": "MIME type application/x-shockwave-flash"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Use",
+        "obj": "MIME type image/pjpeg"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Use",
+        "obj": "MIME type application/msword"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Respond to",
+        "obj": "command 'UpLoad'"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Upload",
+        "obj": "logs and configuration files"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Modify",
+        "obj": "configuration files"
+      },
+      {
+        "sub": "Snake rootkit",
+        "rel": "Write",
+        "obj": "logs"
+      }
+    ]
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "sample_id": "ctinexus__russia-star-blizzard-apt-upgrades-stealth-unmasked.json",
+  "sample_index": 96,
+  "source": "ctinexus",
+  "file_name": "russia-star-blizzard-apt-upgrades-stealth-unmasked.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Star Blizzard",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Seaborgium",
+          "BlueCharlie",
+          "Callisto Group",
+          "Coldriver"
+        ]
+      },
+      {
+        "name": "email credential theft",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "cyberespionage",
+        "type": "campaign"
+      },
+      {
+        "name": "cyber influence campaigns",
+        "type": "campaign"
+      },
+      {
+        "name": "2017",
+        "type": "date"
+      },
+      {
+        "name": "public and private organizations",
+        "type": "victims/targets"
+      },
+      {
+        "name": "NATO member countries",
+        "type": "location"
+      },
+      {
+        "name": "politics",
+        "type": "field"
+      },
+      {
+        "name": "defense",
+        "type": "field"
+      },
+      {
+        "name": "NGOs",
+        "type": "victims/targets"
+      },
+      {
+        "name": "think tanks",
+        "type": "victims/targets"
+      },
+      {
+        "name": "journalists",
+        "type": "victims/targets"
+      },
+      {
+        "name": "academic institutions",
+        "type": "victims/targets"
+      },
+      {
+        "name": "intergovernmental organizations",
+        "type": "victims/targets"
+      },
+      {
+        "name": "individuals and organizations providing support for Ukraine",
+        "type": "victims/targets"
+      },
+      {
+        "name": "password-protected PDF lure documents",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "cloud-based file sharing platforms",
+        "type": "infrastructure"
+      },
+      {
+        "name": "phishing email",
+        "type": "email-address"
+      },
+      {
+        "name": "password",
+        "type": "credential-value"
+      },
+      {
+        "name": "email",
+        "type": "email-address"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Star Blizzard",
+        "rel": "has been carrying out",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "email credential theft"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has been carrying out",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyberespionage"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has been carrying out",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cyber influence campaigns"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has been carrying out",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "email credential theft",
+        "special_factuality": [
+          "since at least 2017"
+        ]
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has focused its aim on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "public and private organizations"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has focused on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "NATO member countries"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has focused on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "fields related to politics"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has focused on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "defense"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has focused on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "NGOs"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has focused on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "think tanks"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has focused on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "journalists"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has focused on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "academic institutions"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has focused on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "intergovernmental organizations"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has especially targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "individuals and organizations providing support for Ukraine"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has started using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "password-protected PDF lure documents"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has started using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "cloud-based file sharing platforms"
+      },
+      {
+        "sub": "passwords to these documents",
+        "rel": "come packaged in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "phishing email"
+      },
+      {
+        "sub": "passwords to these documents",
+        "rel": "come packaged in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "an email sent shortly after the first"
+      },
+      {
+        "sub": "password-protected PDF lure documents",
+        "rel": "contain links to",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "cloud-based file sharing platforms"
+      },
+      {
+        "sub": "phishing email",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "passwords to these documents"
+      }
+    ]
+  }
+}

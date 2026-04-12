@@ -1,0 +1,112 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_0.json",
+  "sample_index": 200,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_0.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SOPHOSLABS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MAL/JESSYA",
+        "type": "MALWARE"
+      },
+      {
+        "name": "TROJ/IFRAMEM",
+        "type": "MALWARE"
+      },
+      {
+        "name": "MAL/WSHlA",
+        "type": "MALWARE"
+      },
+      {
+        "name": "MAL/BASINEC",
+        "type": "MALWARE"
+      },
+      {
+        "name": "EXPRIME MINISTER OF PAKISTAN",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "BENAZIR BHUTTO",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "PAKISTAN",
+        "type": "GEO"
+      },
+      {
+        "name": "INDIA",
+        "type": "GEO"
+      },
+      {
+        "name": "WS1000",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "EXPATRIATE PAKISTANI COMMUNITIES",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SOPHOSLABS",
+        "rel": "related_to",
+        "obj": "MAL/JESSYA"
+      },
+      {
+        "sub": "MAL/JESSYA",
+        "rel": "related_to",
+        "obj": "TROJ/IFRAMEM"
+      },
+      {
+        "sub": "TROJ/IFRAMEM",
+        "rel": "related_to",
+        "obj": "MAL/WSHlA"
+      },
+      {
+        "sub": "MAL/WSHlA",
+        "rel": "related_to",
+        "obj": "MAL/BASINEC"
+      },
+      {
+        "sub": "MAL/JESSYA",
+        "rel": "related_to",
+        "obj": "PAKISTAN"
+      },
+      {
+        "sub": "MAL/JESSYA",
+        "rel": "related_to",
+        "obj": "INDIA"
+      },
+      {
+        "sub": "EXPATRIATE PAKISTANI COMMUNITIES",
+        "rel": "related_to",
+        "obj": "MAL/JESSYA"
+      },
+      {
+        "sub": "WS1000",
+        "rel": "related_to",
+        "obj": "MAL/JESSYA"
+      }
+    ]
+  }
+}

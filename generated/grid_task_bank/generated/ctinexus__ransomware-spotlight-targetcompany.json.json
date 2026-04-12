@@ -1,0 +1,333 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-targetcompany.json",
+  "sample_index": 68,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-targetcompany.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TargetCompany",
+        "type": "malware",
+        "alias": [
+          "the ransomware",
+          "TargetCompany ransomware",
+          "the ransomware group"
+        ]
+      },
+      {
+        "name": "Fargo",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the group"
+        ]
+      },
+      {
+        "name": "Chacha20",
+        "type": "attack-pattern",
+        "alias": [
+          "Chacha20 algorithm"
+        ]
+      },
+      {
+        "name": "Curve 25519",
+        "type": "attack-pattern",
+        "alias": [
+          "Curve 25519 algorithm"
+        ]
+      },
+      {
+        "name": "AES-128",
+        "type": "attack-pattern",
+        "alias": [
+          "AES-128 algorithm"
+        ]
+      },
+      {
+        "name": "How to decrypt files.txt",
+        "type": "file",
+        "alias": [
+          "ransom note"
+        ]
+      },
+      {
+        "name": "HOW TO RECOVER!!.txt",
+        "type": "file",
+        "alias": [
+          "later ransom note"
+        ]
+      },
+      {
+        "name": ".onion",
+        "type": "file",
+        "alias": [
+          "contact site extension"
+        ]
+      },
+      {
+        "name": ".mallox",
+        "type": "file",
+        "alias": [
+          "file extension"
+        ]
+      },
+      {
+        "name": ".xollam",
+        "type": "file",
+        "alias": [
+          "file extension"
+        ]
+      },
+      {
+        "name": "data leak site",
+        "type": "infrastructure"
+      },
+      {
+        "name": "January 2023",
+        "type": "date"
+      },
+      {
+        "name": "mid- to late 2022",
+        "type": "date"
+      },
+      {
+        "name": "TargetCompany's earlier variants",
+        "type": "variant-of",
+        "alias": [
+          "prior versions of TargetCompany"
+        ]
+      },
+      {
+        "name": "later variants",
+        "type": "variant-of",
+        "alias": [
+          "newer versions of TargetCompany"
+        ]
+      },
+      {
+        "name": "encryption algorithm",
+        "type": "attack-pattern",
+        "alias": [
+          "algorithm used to encrypt files"
+        ]
+      },
+      {
+        "name": "decryptor characteristics",
+        "type": "attack-pattern",
+        "alias": [
+          "decryptor traits"
+        ]
+      },
+      {
+        "name": "file name extensions",
+        "type": "file",
+        "alias": [
+          "encrypted file extensions"
+        ]
+      },
+      {
+        "name": "negotiations",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "encrypted files",
+        "type": "file",
+        "alias": [
+          "victim files"
+        ]
+      },
+      {
+        "name": "the group",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "ransomware group"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TargetCompany",
+        "rel": "clarified that each major update entailed a change in",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "encryption algorithm"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "entailed a change in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "decryptor characteristics"
+      },
+      {
+        "sub": "TargetCompany's earlier variants",
+        "rel": "provided",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": ".onion"
+      },
+      {
+        "sub": "TargetCompany's earlier variants",
+        "rel": "dropped",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "How to decrypt files.txt"
+      },
+      {
+        "sub": "later variants of the TargetCompany ransomware",
+        "rel": "no longer use",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the name of the targeted enterprise as file name extensions"
+      },
+      {
+        "sub": "the group",
+        "rel": "was given the name",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Fargo"
+      },
+      {
+        "sub": "other extensions used by the ransomware group",
+        "rel": "include",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": ".mallox"
+      },
+      {
+        "sub": "other extensions used by the ransomware group",
+        "rel": "include",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": ".xollam"
+      },
+      {
+        "sub": "These later variants",
+        "rel": "were observed using a combination of",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Chacha20"
+      },
+      {
+        "sub": "These later variants",
+        "rel": "were observed using a combination of",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Curve 25519"
+      },
+      {
+        "sub": "These later variants",
+        "rel": "were observed using a combination of",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "AES-128"
+      },
+      {
+        "sub": "The ransomware group",
+        "rel": "established",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "data leak site"
+      },
+      {
+        "sub": "later variants",
+        "rel": "dropped",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "HOW TO RECOVER!!.txt"
+      },
+      {
+        "sub": "in mid- to late 2022",
+        "rel": "the group was given the name",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Fargo"
+      },
+      {
+        "sub": "encryption algorithm",
+        "rel": "used to encrypt",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "victim's files"
+      },
+      {
+        "sub": "file name extensions",
+        "rel": "changed as part of evolution",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "evolution of names"
+      },
+      {
+        "sub": "negotiations",
+        "rel": "conducted via",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": ".onion"
+      },
+      {
+        "sub": "TargetCompany's earlier variants",
+        "rel": "variant-of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "TargetCompany"
+      },
+      {
+        "sub": "later variants",
+        "rel": "variant-of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "TargetCompany"
+      },
+      {
+        "sub": "TargetCompany ransomware",
+        "rel": "provided",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "how to decrypt files.txt"
+      },
+      {
+        "sub": "Fargo",
+        "rel": "was given the name",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the group"
+      }
+    ]
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_26.json",
+  "sample_index": 218,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_26.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Harvester",
+        "type": "Campaign"
+      },
+      {
+        "name": "Backdoor.Graphon",
+        "type": "Malware"
+      },
+      {
+        "name": "Custom Downloader",
+        "type": "Tool"
+      },
+      {
+        "name": "Custom Screenshotter",
+        "type": "Tool"
+      },
+      {
+        "name": "Cobalt Strike Beacon",
+        "type": "Tool"
+      },
+      {
+        "name": "Metasploit",
+        "type": "Tool"
+      },
+      {
+        "name": "Costura Assembly Loader",
+        "type": "Tool"
+      },
+      {
+        "name": "Microsoft infrastructure",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "CloudFront",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "azurewebsites.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "microsoftmsdn.azurewebsites.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "microsoftsgraphapi.azurewebsites.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "msdnmicrosoft.azurewebsites.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "perfect-couple.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "outportal.azurewebsites.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "usedust.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "South Asia",
+        "type": "Location"
+      },
+      {
+        "name": "Afghanistan",
+        "type": "Location"
+      },
+      {
+        "name": "telecommunications",
+        "type": "Software"
+      },
+      {
+        "name": "government",
+        "type": "Software"
+      },
+      {
+        "name": "information technology (IT)",
+        "type": "Software"
+      },
+      {
+        "name": "OfficeProjects",
+        "type": "Software"
+      },
+      {
+        "name": "Outlook",
+        "type": "Software"
+      },
+      {
+        "name": "NPServices",
+        "type": "Software"
+      },
+      {
+        "name": "Windows",
+        "type": "Software"
+      },
+      {
+        "name": "Registry",
+        "type": "Software"
+      },
+      {
+        "name": "winser.dll",
+        "type": "Indicator"
+      },
+      {
+        "name": "Microsoft Services.vbs",
+        "type": "Indicator"
+      },
+      {
+        "name": "hxxps://outportal.azurewebsites.net/api/Values_V2/Getting3210",
+        "type": "Indicator"
+      },
+      {
+        "name": "hxxps://usedust.com",
+        "type": "Indicator"
+      },
+      {
+        "name": "hxxps://microsoftmsdn.azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "type": "Indicator"
+      },
+      {
+        "name": "hxxps://microsoftsgraphapi.azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "type": "Indicator"
+      },
+      {
+        "name": "hxxps://msdnmicrosoft.azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "type": "Indicator"
+      },
+      {
+        "name": "hxxps://perfect-couple.com/perfectcouple.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "D:\\OfficeProjects\\Updated Working Due to Submission\\4.5\\Outlook_4.5\\Outlook 4.5.2 32 bit New without presistancy\\NPServices\\bin\\x86\\Debug\\NPServices.pdb",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Harvester",
+        "rel": "USES",
+        "obj": "Backdoor.Graphon"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "USES",
+        "obj": "Custom Downloader"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "USES",
+        "obj": "Custom Screenshotter"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "USES",
+        "obj": "Cobalt Strike Beacon"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "USES",
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "packed with",
+        "obj": "Costura Assembly Loader"
+      },
+      {
+        "sub": "Custom Screenshotter",
+        "rel": "packed with",
+        "obj": "Costura Assembly Loader"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "USES",
+        "obj": "Microsoft infrastructure"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "USES",
+        "obj": "Microsoft infrastructure"
+      },
+      {
+        "sub": "Cobalt Strike Beacon",
+        "rel": "USES",
+        "obj": "CloudFront"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "TARGETS",
+        "obj": "South Asia"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "TARGETS",
+        "obj": "Afghanistan"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "TARGETS",
+        "obj": "telecommunications"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "TARGETS",
+        "obj": "government"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "TARGETS",
+        "obj": "information technology (IT)"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "checks for existence",
+        "obj": "winser.dll"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "CREATES",
+        "obj": "Microsoft Services.vbs"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "MODIFIES",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "communicates with",
+        "obj": "azurewebsites.net"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "communicates with",
+        "obj": "microsoftmsdn.azurewebsites.net"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "communicates with",
+        "obj": "microsoftsgraphapi.azurewebsites.net"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "communicates with",
+        "obj": "msdnmicrosoft.azurewebsites.net"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "downloads from",
+        "obj": "outportal.azurewebsites.net"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "opens browser to",
+        "obj": "usedust.com"
+      },
+      {
+        "sub": "Custom Screenshotter",
+        "rel": "saves to",
+        "obj": "ZIP archive"
+      },
+      {
+        "sub": "Custom Screenshotter",
+        "rel": "deletes old archives",
+        "obj": "ZIP archive"
+      },
+      {
+        "sub": "Harvester",
+        "rel": "downloads from",
+        "obj": "perfect-couple.com"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "has pdb file",
+        "obj": "D:\\OfficeProjects\\Updated Working Due to Submission\\4.5\\Outlook_4.5\\Outlook 4.5.2 32 bit New without presistancy\\NPServices\\bin\\x86\\Debug\\NPServices.pdb"
+      }
+    ]
+  }
+}

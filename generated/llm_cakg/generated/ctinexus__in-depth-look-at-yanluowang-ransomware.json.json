@@ -1,0 +1,223 @@
+{
+  "sample_id": "ctinexus__in-depth-look-at-yanluowang-ransomware.json",
+  "sample_index": 54,
+  "source": "ctinexus",
+  "file_name": "in-depth-look-at-yanluowang-ransomware.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Yanluowang",
+        "type": "Entity"
+      },
+      {
+        "name": "Fivehands",
+        "type": "Entity"
+      },
+      {
+        "name": "Thieflock",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware-as-a-service (RaaS)",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "USB devices",
+        "type": "Entity"
+      },
+      {
+        "name": "AdFind",
+        "type": "Entity"
+      },
+      {
+        "name": "Active Directory",
+        "type": "Entity"
+      },
+      {
+        "name": "lateral movement",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware",
+        "type": "Entity"
+      },
+      {
+        "name": "tool",
+        "type": "Entity"
+      },
+      {
+        "name": "TTPs",
+        "type": "Entity"
+      },
+      {
+        "name": "October 2021",
+        "type": "Entity"
+      },
+      {
+        "name": "August 2021",
+        "type": "Entity"
+      },
+      {
+        "name": "Symantec",
+        "type": "Entity"
+      },
+      {
+        "name": "Threat Hunter Team",
+        "type": "Entity"
+      },
+      {
+        "name": "Broadcom Software",
+        "type": "Entity"
+      },
+      {
+        "name": "command-line Active Directory query tool",
+        "type": "Entity"
+      },
+      {
+        "name": "reconnaissance",
+        "type": "Entity"
+      },
+      {
+        "name": "registry keys",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled tasks",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanisms",
+        "type": "Entity"
+      },
+      {
+        "name": "underdeveloped ransomware",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Yanluowang",
+        "rel": "uses",
+        "obj": "ransomware-as-a-service (RaaS)"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "is linked to",
+        "obj": "Fivehands"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "is linked to",
+        "obj": "Thieflock"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "targets",
+        "obj": "financial sector organizations"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "targets",
+        "obj": "manufacturing companies"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "targets",
+        "obj": "IT services companies"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "targets",
+        "obj": "consultancy companies"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "targets",
+        "obj": "engineering companies"
+      },
+      {
+        "sub": "Symantec's Threat Hunter Team",
+        "rel": "discovered",
+        "obj": "Yanluowang ransomware"
+      },
+      {
+        "sub": "Symantec's Threat Hunter Team",
+        "rel": "discovered",
+        "obj": "AdFind"
+      },
+      {
+        "sub": "AdFind",
+        "rel": "is used as",
+        "obj": "reconnaissance tool"
+      },
+      {
+        "sub": "AdFind",
+        "rel": "enables",
+        "obj": "lateral movement"
+      },
+      {
+        "sub": "AdFind",
+        "rel": "is used for",
+        "obj": "Active Directory queries"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "attempts to deploy",
+        "obj": "ransomware"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "is considered",
+        "obj": "underdeveloped ransomware"
+      },
+      {
+        "sub": "Thieflock",
+        "rel": "used previously",
+        "obj": "TTPs"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "uses",
+        "obj": "AdFind"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "was active",
+        "obj": "since August 2021"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "was discovered",
+        "obj": "in October 2021"
+      }
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "sample_id": "casie__1024.json",
+  "sample_index": 8,
+  "source": "casie",
+  "file_name": "1024.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Vulnerability",
+        "type": "Unknown"
+      },
+      {
+        "name": "Exploit Target",
+        "type": "Unknown"
+      },
+      {
+        "name": "Malware Characteristic: Behavior",
+        "type": "Unknown"
+      },
+      {
+        "name": "Attacker",
+        "type": "Unknown"
+      },
+      {
+        "name": "Event",
+        "type": "Unknown"
+      },
+      {
+        "name": "Time",
+        "type": "Unknown"
+      },
+      {
+        "name": "Organization",
+        "type": "Unknown"
+      },
+      {
+        "name": "Information",
+        "type": "Unknown"
+      },
+      {
+        "name": "Attack",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Vulnerability",
+        "rel": "affects",
+        "obj": "Exploit Target"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "is caused by",
+        "obj": "Malware Characteristic: Behavior"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "allows attacker to",
+        "obj": "Attacker"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "is triggered when",
+        "obj": "Event"
+      },
+      {
+        "sub": "Exploit Target",
+        "rel": "is vulnerable in versions",
+        "obj": "Time"
+      },
+      {
+        "sub": "Organization",
+        "rel": "patched",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Organization",
+        "rel": "found",
+        "obj": "Event"
+      },
+      {
+        "sub": "Event",
+        "rel": "are actively underway",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "does not require",
+        "obj": "Information"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "is actively targeted in",
+        "obj": "Attack"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "said",
+        "obj": "Event"
+      },
+      {
+        "sub": "Organization",
+        "rel": "recommends",
+        "obj": "Information"
+      }
+    ]
+  }
+}

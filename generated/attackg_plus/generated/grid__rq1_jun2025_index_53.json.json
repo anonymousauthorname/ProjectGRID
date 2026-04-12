@@ -1,0 +1,392 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_53.json",
+  "sample_index": 241,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_53.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "1. 1fichier.com",
+        "rel": "Has URL",
+        "obj": "https://1fichier.com"
+      },
+      {
+        "sub": "2. 1fichier.com",
+        "rel": "Use",
+        "obj": "FAREIT"
+      },
+      {
+        "sub": "3. 1fichier.com",
+        "rel": "Use",
+        "obj": "COINSTEALER"
+      },
+      {
+        "sub": "4. 1fichier.com",
+        "rel": "Operate",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "5. JIGSAW",
+        "rel": "Has URL",
+        "obj": "porn sites"
+      },
+      {
+        "sub": "6. porn sites",
+        "rel": "Operate",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "7. MAKTUBLOCKER",
+        "rel": "Use",
+        "obj": "user-specific information in emails"
+      },
+      {
+        "sub": "8. MAKTUBLOCKER",
+        "rel": "Conduct",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "9. Reconnaissance",
+        "rel": "Belong to",
+        "obj": "adversary activity"
+      },
+      {
+        "sub": "10. adversary",
+        "rel": "Use",
+        "obj": "public-facing services"
+      },
+      {
+        "sub": "11. public-facing services",
+        "rel": "Locate at",
+        "obj": "open technical platforms"
+      },
+      {
+        "sub": "12. open technical platforms",
+        "rel": "Use",
+        "obj": "to distribute malicious payloads"
+      },
+      {
+        "sub": "13. malicious payloads",
+        "rel": "Have",
+        "obj": "vulnerable users"
+      },
+      {
+        "sub": "14. user-specific information in emails",
+        "rel": "Has value",
+        "obj": "victim identity"
+      },
+      {
+        "sub": "15. user-specific information in emails",
+        "rel": "Has value",
+        "obj": "organizational information"
+      },
+      {
+        "sub": "16. victim identity",
+        "rel": "Belong to",
+        "obj": "targeted users"
+      },
+      {
+        "sub": "17. organizational information",
+        "rel": "Belong to",
+        "obj": "targeted users"
+      },
+      {
+        "sub": "18. targeted users",
+        "rel": "Have",
+        "obj": "higher susceptibility to infection"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Has URL",
+        "obj": "1fichier.com"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Has URL",
+        "obj": "waldorftrust.com"
+      },
+      {
+        "sub": "1fichier.com",
+        "rel": "Belong to",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "waldorftrust.com",
+        "rel": "Belong to",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Bundle with",
+        "obj": "Cryptominer"
+      },
+      {
+        "sub": "Cryptominer",
+        "rel": "Use",
+        "obj": "Compromised domains"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Compromised domains"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Acquire",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Compromise",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "Distribution channels"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Use",
+        "obj": "1fichier.com"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Use",
+        "obj": "porn websites"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Use",
+        "obj": "phishing-like tactics"
+      },
+      {
+        "sub": "malicious links",
+        "rel": "Have URL",
+        "obj": "1fichier.com"
+      },
+      {
+        "sub": "malicious links",
+        "rel": "Operate",
+        "obj": "porn websites"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Deliver",
+        "obj": "victim systems"
+      },
+      {
+        "sub": "initial access",
+        "rel": "Use",
+        "obj": "cloud storage services"
+      },
+      {
+        "sub": "initial access",
+        "rel": "Use",
+        "obj": "PUA/adware"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Gain",
+        "obj": "initial access"
+      },
+      {
+        "sub": "adversaries",
+        "rel": "Use",
+        "obj": "external remote services"
+      },
+      {
+        "sub": "adversaries",
+        "rel": "Use",
+        "obj": "phishing-like tactics"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Use",
+        "obj": "Confuser"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Execute",
+        "obj": "Payload"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Create",
+        "obj": "Encrypted copies of files"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Delete",
+        "obj": "Original files"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Operate",
+        "obj": "Local system"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Use",
+        "obj": "Encrypted and obfuscated scripts"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Modify",
+        "obj": "Code"
+      },
+      {
+        "sub": "Note: \"Confuser\" is treated as a Security Tool, and \"JIGSAW\" is treated as Malware. The relations follow the defined types and are expressed in active voice in present tense. The triplet \"JIGSAW",
+        "rel": "Modify",
+        "obj": "Code\" is inferred from the use of Confuser to obfuscate code, which implies modification."
+      },
+      {
+        "sub": "JIGSAW 2.0",
+        "rel": "Has technique",
+        "obj": "Defense Evasion"
+      },
+      {
+        "sub": "JIGSAW 2.0",
+        "rel": "Use",
+        "obj": "Confuser"
+      },
+      {
+        "sub": "JIGSAW 2.0",
+        "rel": "Operate",
+        "obj": "Taskmgr"
+      },
+      {
+        "sub": "JIGSAW 2.0",
+        "rel": "Terminate",
+        "obj": "Procexp"
+      },
+      {
+        "sub": "JIGSAW 2.0",
+        "rel": "Disable",
+        "obj": "Regedit"
+      },
+      {
+        "sub": "JIGSAW 2.0",
+        "rel": "Disable",
+        "obj": "Autoruns"
+      },
+      {
+        "sub": "JIGSAW 2.0",
+        "rel": "Disable",
+        "obj": "cmd"
+      },
+      {
+        "sub": "JIGSAW 2.0",
+        "rel": "Modify",
+        "obj": "code"
+      },
+      {
+        "sub": "JIGSAW 2.0",
+        "rel": "Has technique",
+        "obj": "Antidebugging"
+      },
+      {
+        "sub": "JIGSAW 2.0",
+        "rel": "Avoid",
+        "obj": "signature-based detection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Document"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Image"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Database"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "File and directory enumeration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "System file structure"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Has value",
+        "obj": ".fun"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Has value",
+        "obj": ".KKK"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Has value",
+        "obj": ".BTC"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Has value",
+        "obj": ".GWS"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Modify",
+        "obj": "Files"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Delete",
+        "obj": "File"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Increase",
+        "obj": "Ransom amount"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Impact",
+        "obj": "Data integrity"
+      },
+      {
+        "sub": "JIGSAW",
+        "rel": "Impact",
+        "obj": "Data availability"
+      }
+    ]
+  }
+}

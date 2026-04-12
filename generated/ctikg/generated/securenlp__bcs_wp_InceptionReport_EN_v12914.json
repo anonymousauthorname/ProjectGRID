@@ -1,0 +1,1342 @@
+{
+  "sample_id": "securenlp__bcs_wp_InceptionReport_EN_v12914",
+  "sample_index": 178,
+  "source": "securenlp",
+  "file_name": "bcs_wp_InceptionReport_EN_v12914",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "framework",
+        "rel": "uses",
+        "obj": "infrastructure"
+      },
+      {
+        "sub": "framework",
+        "rel": "uses",
+        "obj": "WebDAV protocol"
+      },
+      {
+        "sub": "framework",
+        "rel": "performs",
+        "obj": "attack"
+      },
+      {
+        "sub": "framework",
+        "rel": "uses",
+        "obj": "command-and-control"
+      },
+      {
+        "sub": "framework",
+        "rel": "uses",
+        "obj": "instructions"
+      },
+      {
+        "sub": "framework",
+        "rel": "receives",
+        "obj": "exfiltrated information"
+      },
+      {
+        "sub": "framework",
+        "rel": "operates",
+        "obj": "system"
+      },
+      {
+        "sub": "WebDAV protocol",
+        "rel": "is used to",
+        "obj": "send instructions"
+      },
+      {
+        "sub": "WebDAV protocol",
+        "rel": "is used to",
+        "obj": "receive exfiltrated information"
+      },
+      {
+        "sub": "system",
+        "rel": "receive",
+        "obj": "exfiltrated information"
+      },
+      {
+        "sub": "method of attack",
+        "rel": "has",
+        "obj": "success rate"
+      },
+      {
+        "sub": "method of attack",
+        "rel": "is deployed by",
+        "obj": "attackers"
+      },
+      {
+        "sub": "method of attack",
+        "rel": "marks",
+        "obj": "threat"
+      },
+      {
+        "sub": "exploits",
+        "rel": "are used in",
+        "obj": "document formats"
+      },
+      {
+        "sub": "document formats",
+        "rel": "include",
+        "obj": "PDF"
+      },
+      {
+        "sub": "document formats",
+        "rel": "include",
+        "obj": "DOC"
+      },
+      {
+        "sub": "document formats",
+        "rel": "include",
+        "obj": "RTF"
+      },
+      {
+        "sub": "document",
+        "rel": "is commonly exchanged via",
+        "obj": "email"
+      },
+      {
+        "sub": "document",
+        "rel": "is used for",
+        "obj": "targeted email attacks"
+      },
+      {
+        "sub": "email-borne targeted attacks",
+        "rel": "is known as",
+        "obj": "spear phishing"
+      },
+      {
+        "sub": "RTF",
+        "rel": "has",
+        "obj": "CVE-2014-1761"
+      },
+      {
+        "sub": "CVE-2014-1761",
+        "rel": "is a vulnerability in",
+        "obj": "RTF"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "published information about",
+        "obj": "vulnerability in RTF"
+      },
+      {
+        "sub": "CVE-2010-3333",
+        "rel": "is a vulnerability in",
+        "obj": "RTF file format"
+      },
+      {
+        "sub": "CVE-2012-0158",
+        "rel": "is a vulnerability in",
+        "obj": "RTF file format"
+      },
+      {
+        "sub": "CVE-2014-1761",
+        "rel": "used by",
+        "obj": "malware espionage operation"
+      },
+      {
+        "sub": "CVE-2012-0158",
+        "rel": "used by",
+        "obj": "malware espionage operation"
+      },
+      {
+        "sub": "malware espionage operation",
+        "rel": "uses",
+        "obj": "CVE-2014-1761"
+      },
+      {
+        "sub": "malware espionage operation",
+        "rel": "uses",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "malware espionage operation",
+        "rel": "leverages",
+        "obj": "cloud service"
+      },
+      {
+        "sub": "malware espionage operation",
+        "rel": "leverages",
+        "obj": "single cloud service"
+      },
+      {
+        "sub": "malware espionage operation",
+        "rel": "leverages",
+        "obj": "cloud service"
+      },
+      {
+        "sub": "WMI object",
+        "rel": "is used to reach",
+        "obj": "registry"
+      },
+      {
+        "sub": "WMI object",
+        "rel": "is used to reach",
+        "obj": "file system"
+      },
+      {
+        "sub": "VBSript",
+        "rel": "drops",
+        "obj": "dll file"
+      },
+      {
+        "sub": "VBSript",
+        "rel": "drops",
+        "obj": "data file"
+      },
+      {
+        "sub": "data file",
+        "rel": "is encrypted using",
+        "obj": "AES-256"
+      },
+      {
+        "sub": "file",
+        "rel": "is installed in",
+        "obj": "WinDir"
+      },
+      {
+        "sub": "file",
+        "rel": "is installed in",
+        "obj": "APPDATA"
+      },
+      {
+        "sub": "key functions",
+        "rel": "have arguments",
+        "obj": "arguments"
+      },
+      {
+        "sub": "polymorphing mechanism",
+        "rel": "generates",
+        "obj": "unique functions"
+      },
+      {
+        "sub": "polymorphing mechanism",
+        "rel": "inserts",
+        "obj": "unique functions"
+      },
+      {
+        "sub": "unique functions",
+        "rel": "make calls to",
+        "obj": "floating-point operations"
+      },
+      {
+        "sub": "buffers allocated",
+        "rel": "are randomized",
+        "obj": "masking"
+      },
+      {
+        "sub": "function",
+        "rel": "is located",
+        "obj": "execution cycle"
+      },
+      {
+        "sub": "function",
+        "rel": "has size",
+        "obj": "over 200 kb"
+      },
+      {
+        "sub": "function",
+        "rel": "makes allocation",
+        "obj": "early allocation"
+      },
+      {
+        "sub": "DLL",
+        "rel": "decodes",
+        "obj": "configuration structure"
+      },
+      {
+        "sub": "configuration structure",
+        "rel": "contains",
+        "obj": "encrypted data file"
+      },
+      {
+        "sub": "configuration structure",
+        "rel": "contains",
+        "obj": "AES key"
+      },
+      {
+        "sub": "configuration structure",
+        "rel": "contains",
+        "obj": "global mutex"
+      },
+      {
+        "sub": "configuration",
+        "rel": "used for",
+        "obj": "load encrypted file"
+      },
+      {
+        "sub": "AES-encrypted configuration structure",
+        "rel": "is located in",
+        "obj": "binary"
+      },
+      {
+        "sub": "malware",
+        "rel": "downloads",
+        "obj": "configuration file"
+      },
+      {
+        "sub": "malware",
+        "rel": "decrypts",
+        "obj": "configuration file"
+      },
+      {
+        "sub": "download folder",
+        "rel": "contains",
+        "obj": "921.bin"
+      },
+      {
+        "sub": "download folder",
+        "rel": "contains",
+        "obj": "922.bin"
+      },
+      {
+        "sub": "921.bin",
+        "rel": "is",
+        "obj": "executable"
+      },
+      {
+        "sub": "922.bin",
+        "rel": "is",
+        "obj": "executable"
+      },
+      {
+        "sub": "921.bin",
+        "rel": "is",
+        "obj": "plugin"
+      },
+      {
+        "sub": "922.bin",
+        "rel": "is",
+        "obj": "plugin"
+      },
+      {
+        "sub": "plugin",
+        "rel": "is related to",
+        "obj": "Cloud persistence"
+      },
+      {
+        "sub": "Security researchers",
+        "rel": "use",
+        "obj": "lab machines"
+      },
+      {
+        "sub": "Security researchers",
+        "rel": "run",
+        "obj": "malware"
+      },
+      {
+        "sub": "attackers",
+        "rel": "uploaded",
+        "obj": "updates"
+      },
+      {
+        "sub": "attackers",
+        "rel": "used",
+        "obj": "account white3946"
+      },
+      {
+        "sub": "attackers",
+        "rel": "used",
+        "obj": "accounts"
+      },
+      {
+        "sub": "attackers",
+        "rel": "used",
+        "obj": "IP addresses"
+      },
+      {
+        "sub": "attackers",
+        "rel": "scan",
+        "obj": "tem5842 account"
+      },
+      {
+        "sub": "rotation scheme",
+        "rel": "uses",
+        "obj": "IP address"
+      },
+      {
+        "sub": "IP address",
+        "rel": "distributed",
+        "obj": "locations"
+      },
+      {
+        "sub": "IP address",
+        "rel": "distributed",
+        "obj": "providers"
+      },
+      {
+        "sub": "tail",
+        "rel": "serves as",
+        "obj": "SOCKS"
+      },
+      {
+        "sub": "tail",
+        "rel": "is configured with",
+        "obj": "blowfish key"
+      },
+      {
+        "sub": "tail",
+        "rel": "has",
+        "obj": "encrypted section"
+      },
+      {
+        "sub": "binary",
+        "rel": "uses",
+        "obj": "hardcoded key"
+      },
+      {
+        "sub": "binary",
+        "rel": "decrypts",
+        "obj": "configuration section"
+      },
+      {
+        "sub": "binary",
+        "rel": "retrieves",
+        "obj": "port"
+      },
+      {
+        "sub": "port",
+        "rel": "acts as",
+        "obj": "management interface"
+      },
+      {
+        "sub": "attacker",
+        "rel": "can request",
+        "obj": "port"
+      },
+      {
+        "sub": "port",
+        "rel": "can be opened",
+        "obj": "SOCKS"
+      },
+      {
+        "sub": "port",
+        "rel": "can be opened",
+        "obj": "SOCKS5"
+      },
+      {
+        "sub": "port",
+        "rel": "can be opened",
+        "obj": "STATUSPORT"
+      },
+      {
+        "sub": "attacker",
+        "rel": "must maintain",
+        "obj": "locations"
+      },
+      {
+        "sub": "attacker",
+        "rel": "connect to",
+        "obj": "port"
+      },
+      {
+        "sub": "attacker",
+        "rel": "request",
+        "obj": "SOCKS"
+      },
+      {
+        "sub": "configuration data",
+        "rel": "consists of",
+        "obj": "domain name"
+      },
+      {
+        "sub": "configuration data",
+        "rel": "consists of",
+        "obj": "destination port"
+      },
+      {
+        "sub": "configuration data",
+        "rel": "consists of",
+        "obj": "RC4 key"
+      },
+      {
+        "sub": "configuration data",
+        "rel": "is encrypted using",
+        "obj": "blowfish key"
+      },
+      {
+        "sub": "malware",
+        "rel": "connects to",
+        "obj": "domain name"
+      },
+      {
+        "sub": "malware",
+        "rel": "tunnels traffic from",
+        "obj": "SOCKS port"
+      },
+      {
+        "sub": "malware",
+        "rel": "tunnels traffic to",
+        "obj": "destination"
+      },
+      {
+        "sub": "malware",
+        "rel": "encodes traffic using",
+        "obj": "RC4 key"
+      },
+      {
+        "sub": "IP",
+        "rel": "would be connected to",
+        "obj": "another IP"
+      },
+      {
+        "sub": "IP",
+        "rel": "used to send",
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "Unlocker",
+        "rel": "taking over",
+        "obj": "Email sender IP"
+      },
+      {
+        "sub": "IP",
+        "rel": "is located in",
+        "obj": "Ukraine"
+      },
+      {
+        "sub": "Unlocker",
+        "rel": "opened",
+        "obj": "SOCKS port"
+      },
+      {
+        "sub": "this IP",
+        "rel": "would connect to",
+        "obj": "port"
+      },
+      {
+        "sub": "this IP",
+        "rel": "tunnels",
+        "obj": "email traffic"
+      },
+      {
+        "sub": "this IP",
+        "rel": "tunnels through",
+        "obj": "router"
+      },
+      {
+        "sub": "IP",
+        "rel": "connects to",
+        "obj": "port"
+      },
+      {
+        "sub": "IP",
+        "rel": "tunnels",
+        "obj": "email traffic"
+      },
+      {
+        "sub": "IP",
+        "rel": "tunnels through",
+        "obj": "router"
+      },
+      {
+        "sub": "haarmannsi.cz",
+        "rel": "is a spoof of",
+        "obj": "haarmannsi.com"
+      },
+      {
+        "sub": "attackers",
+        "rel": "registered",
+        "obj": "haarmannsi.cz"
+      },
+      {
+        "sub": "sanygroup.co.uk",
+        "rel": "is a spoof of",
+        "obj": "sanygroup.com"
+      },
+      {
+        "sub": "ecolines.es",
+        "rel": "is a spoof of",
+        "obj": "ecolines.net"
+      },
+      {
+        "sub": "Sanyi TERRAS",
+        "rel": "is the registrant",
+        "obj": "sanygroup.co.uk"
+      },
+      {
+        "sub": "Sanyi TERRAS",
+        "rel": "has address",
+        "obj": "R. FREI CANECA 1120 SAO PAULO 01307-003"
+      },
+      {
+        "sub": "Sanyi TERRAS",
+        "rel": "has email",
+        "obj": "sanyi_terras@outlook.com"
+      },
+      {
+        "sub": "ns*.frankdomains.com",
+        "rel": "is a nameserver of",
+        "obj": "sanygroup.co.uk"
+      },
+      {
+        "sub": "ns*.frankdomains.com",
+        "rel": "is a nameserver of",
+        "obj": "ecolines.es"
+      },
+      {
+        "sub": "ns*.domains4bitcoins.com",
+        "rel": "is a nameserver of",
+        "obj": "ecolines.es"
+      },
+      {
+        "sub": "Lyisa Almeida",
+        "rel": "is the registrant",
+        "obj": "ecolines.es"
+      },
+      {
+        "sub": "attack",
+        "rel": "can be mistaken to come from",
+        "obj": "businesses"
+      },
+      {
+        "sub": "attack",
+        "rel": "can be mistaken to come from",
+        "obj": "trusted organizations"
+      },
+      {
+        "sub": "phishing email",
+        "rel": "originates from",
+        "obj": "organization"
+      },
+      {
+        "sub": "organization",
+        "rel": "appears to be",
+        "obj": "associate"
+      },
+      {
+        "sub": "phishing email",
+        "rel": "appears to be from",
+        "obj": "associate"
+      },
+      {
+        "sub": "email",
+        "rel": "was sent to",
+        "obj": "target in oil industry"
+      },
+      {
+        "sub": "email address",
+        "rel": "is found in",
+        "obj": "document from World Petroleum Council"
+      },
+      {
+        "sub": "attack",
+        "rel": "targets",
+        "obj": "mobile devices"
+      },
+      {
+        "sub": "clicking from Windows PC",
+        "rel": "yielded",
+        "obj": "redirection to BBC"
+      },
+      {
+        "sub": "bit.ly",
+        "rel": "provides information on",
+        "obj": "user"
+      },
+      {
+        "sub": "bit.ly",
+        "rel": "provides information on",
+        "obj": "other links"
+      },
+      {
+        "sub": "nicolatesla53",
+        "rel": "has profile",
+        "obj": "bit.ly profile"
+      },
+      {
+        "sub": "nicolatesla53",
+        "rel": "is created",
+        "obj": "July 2014"
+      },
+      {
+        "sub": "nicolatesla53",
+        "rel": "creates",
+        "obj": "shortened links"
+      },
+      {
+        "sub": "nicolatesla53",
+        "rel": "harvests",
+        "obj": "9990 shortened links"
+      },
+      {
+        "sub": "shortened links",
+        "rel": "uses",
+        "obj": "IP addresses"
+      },
+      {
+        "sub": "link",
+        "rel": "has format",
+        "obj": "page/index?id=target_identifier&type2=action_code"
+      },
+      {
+        "sub": "Live Journal",
+        "rel": "acts as",
+        "obj": "data stores"
+      },
+      {
+        "sub": "accounts",
+        "rel": "contain",
+        "obj": "configuration block"
+      },
+      {
+        "sub": "configuration block",
+        "rel": "point to",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "are located in",
+        "obj": "Poland"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "are located in",
+        "obj": "Germany"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "are located in",
+        "obj": "Russia"
+      },
+      {
+        "sub": "IOS User-Agent",
+        "rel": "triggers",
+        "obj": "download of a Debian installer package"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "impersonates",
+        "obj": "Cydia installer"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "can only be installed on",
+        "obj": "device"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "platform"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "name"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "model"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "system name"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "version"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "address book"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "roaming status"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "carrier name"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "country name"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "battery level"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "free space"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "total space"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "CPU frequency and count"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "total memory"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "user memory"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "language local identifier"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "language display name"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "default time zone"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "may collect",
+        "obj": "local time zone"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "collects",
+        "obj": "deviceName"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "collects",
+        "obj": "manufacturerName"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "collects",
+        "obj": "platformVersion"
+      },
+      {
+        "sub": "WhatsAppUpdate",
+        "rel": "collects",
+        "obj": "softwareVersion"
+      },
+      {
+        "sub": "attack",
+        "rel": "ongoing",
+        "obj": "summer and autumn 2014"
+      },
+      {
+        "sub": "attacker",
+        "rel": "follow",
+        "obj": "24h cycle"
+      },
+      {
+        "sub": "main upload",
+        "rel": "occurs during",
+        "obj": "6:00–10:00 UTC"
+      },
+      {
+        "sub": "main upload",
+        "rel": "occurs during",
+        "obj": "17:00–21:00 UTC"
+      },
+      {
+        "sub": "upload",
+        "rel": "not seen during",
+        "obj": "23:00 to 05:00 UTC"
+      },
+      {
+        "sub": "attack",
+        "rel": "created",
+        "obj": "steady pace"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "obj": "random values"
+      },
+      {
+        "sub": "malware",
+        "rel": "creates",
+        "obj": "InitVector"
+      },
+      {
+        "sub": "InitVector",
+        "rel": "is a starting point for",
+        "obj": "AES function"
+      },
+      {
+        "sub": "attackers",
+        "rel": "use",
+        "obj": "C time() function"
+      },
+      {
+        "sub": "C time() function",
+        "rel": "returns",
+        "obj": "seconds"
+      },
+      {
+        "sub": "random seed",
+        "rel": "is a function of",
+        "obj": "time units"
+      },
+      {
+        "sub": "InitVector",
+        "rel": "is a function of",
+        "obj": "time units"
+      },
+      {
+        "sub": "encrypted file",
+        "rel": "comes with",
+        "obj": "InitVector"
+      },
+      {
+        "sub": "file creation times",
+        "rel": "are",
+        "obj": "hours after upload"
+      },
+      {
+        "sub": "attackers system clock",
+        "rel": "is",
+        "obj": "wrong"
+      },
+      {
+        "sub": "fixed offset",
+        "rel": "is",
+        "obj": "added to random"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "is",
+        "obj": "APT implant"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "is",
+        "obj": "downloader"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "is",
+        "obj": "remote shell"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "connects to",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "interacts with",
+        "obj": "attacker"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "downloads",
+        "obj": "malware"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "is",
+        "obj": "ict32.msname.org"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "issues",
+        "obj": "POST request"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "issues",
+        "obj": "HTTP request"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "issues",
+        "obj": "/check.jsp"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "issues",
+        "obj": "Accept: */*"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "issues",
+        "obj": "Accept-Language: en-us"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "issues",
+        "obj": "Content-Type: application/octet-stream"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "issues",
+        "obj": "Accept-Encoding: gzip, deflate"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "issues",
+        "obj": "User-Agent: MSIE 6.0"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "issues",
+        "obj": "Host: antivir.com"
+      },
+      {
+        "sub": "This C&C domain",
+        "rel": "is used by",
+        "obj": "malware"
+      },
+      {
+        "sub": "This C&C domain",
+        "rel": "is related to",
+        "obj": "sccm.exe"
+      },
+      {
+        "sub": "This C&C domain",
+        "rel": "shares connections with",
+        "obj": "Quarian malware family"
+      },
+      {
+        "sub": "Quarian malware family",
+        "rel": "is",
+        "obj": "APT"
+      },
+      {
+        "sub": "Inception",
+        "rel": "has strong obfuscation",
+        "obj": "broken"
+      },
+      {
+        "sub": "Inception",
+        "rel": "can perform",
+        "obj": "data exfiltration"
+      },
+      {
+        "sub": "Inception",
+        "rel": "does not resort to",
+        "obj": "traditional C&C"
+      },
+      {
+        "sub": "tool",
+        "rel": "is",
+        "obj": "well-understood"
+      },
+      {
+        "sub": "C&C",
+        "rel": "is",
+        "obj": "malicious"
+      },
+      {
+        "sub": "malware",
+        "rel": "shares connections with",
+        "obj": "Quarian malware family"
+      },
+      {
+        "sub": "Quarian malware family",
+        "rel": "is",
+        "obj": "APT"
+      },
+      {
+        "sub": "msname.org",
+        "rel": "is used as",
+        "obj": "C&C domain"
+      },
+      {
+        "sub": "msname.org",
+        "rel": "had registration timeout",
+        "obj": "September 27th 2014"
+      },
+      {
+        "sub": "msname.org",
+        "rel": "was left inactive",
+        "obj": "until Nov 12th"
+      },
+      {
+        "sub": "attackers",
+        "rel": "distributed",
+        "obj": "sccm.exe"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "was distributed",
+        "obj": "September 26th"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "is considered",
+        "obj": "unreliable indicator"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "is likely",
+        "obj": "red herring"
+      },
+      {
+        "sub": "sccm.exe",
+        "rel": "was purposefully placed",
+        "obj": "on shares"
+      },
+      {
+        "sub": "attackers",
+        "rel": "have seen signs of access",
+        "obj": "security researchers"
+      },
+      {
+        "sub": "attackers",
+        "rel": "performed manual action on",
+        "obj": "WebDAV"
+      },
+      {
+        "sub": "attackers",
+        "rel": "used",
+        "obj": "gvfs/1.12.3"
+      },
+      {
+        "sub": "attackers",
+        "rel": "caused",
+        "obj": "file upload"
+      },
+      {
+        "sub": "attackers",
+        "rel": "accessed",
+        "obj": "83.53.147.144"
+      },
+      {
+        "sub": "gvfs/1.12.3",
+        "rel": "is",
+        "obj": "virtual filesystem"
+      },
+      {
+        "sub": "file upload",
+        "rel": "contains",
+        "obj": "Untitled document"
+      },
+      {
+        "sub": "decoy documents",
+        "rel": "has similar topics",
+        "obj": "Diplomatic Car"
+      },
+      {
+        "sub": "exploited documents",
+        "rel": "has similarities",
+        "obj": "magic string"
+      },
+      {
+        "sub": "code",
+        "rel": "is rewritten",
+        "obj": "malware"
+      },
+      {
+        "sub": "code",
+        "rel": "has coding style",
+        "obj": "solutions to programmatic problems"
+      },
+      {
+        "sub": "code",
+        "rel": "has use",
+        "obj": "solutions to programmatic problems"
+      },
+      {
+        "sub": "Inception",
+        "rel": "uses",
+        "obj": "DLL"
+      },
+      {
+        "sub": "Inception",
+        "rel": "forged",
+        "obj": "compile time stamps"
+      },
+      {
+        "sub": "Inception",
+        "rel": "removes",
+        "obj": "resources"
+      },
+      {
+        "sub": "Inception",
+        "rel": "shuffles",
+        "obj": "import tables"
+      },
+      {
+        "sub": "Inception",
+        "rel": "renders",
+        "obj": "import hashes"
+      },
+      {
+        "sub": "Inception",
+        "rel": "renders",
+        "obj": "import hashes useless"
+      },
+      {
+        "sub": "DLL",
+        "rel": "is polymorphed",
+        "obj": "backend tool"
+      },
+      {
+        "sub": "compile time stamps",
+        "rel": "is forged",
+        "obj": "DLL"
+      },
+      {
+        "sub": "resources",
+        "rel": "are removed",
+        "obj": "to not give away any location information"
+      },
+      {
+        "sub": "resource",
+        "rel": "is removed",
+        "obj": "location information"
+      },
+      {
+        "sub": "import tables",
+        "rel": "is shuffled",
+        "obj": "DLL"
+      },
+      {
+        "sub": "import hashes",
+        "rel": "is rendered useless",
+        "obj": "import tables"
+      },
+      {
+        "sub": "import hashes",
+        "rel": "are rendered useless",
+        "obj": "by shuffling import tables"
+      },
+      {
+        "sub": "attacker",
+        "rel": "use",
+        "obj": "embedded devices"
+      },
+      {
+        "sub": "attacker",
+        "rel": "use",
+        "obj": "router"
+      },
+      {
+        "sub": "attacker",
+        "rel": "use",
+        "obj": "hosting provider"
+      },
+      {
+        "sub": "attacker",
+        "rel": "use",
+        "obj": "VPN services"
+      },
+      {
+        "sub": "attacker",
+        "rel": "mask",
+        "obj": "identity"
+      },
+      {
+        "sub": "attacker",
+        "rel": "mask",
+        "obj": "cloud storage provider"
+      },
+      {
+        "sub": "router botnet",
+        "rel": "is used for",
+        "obj": "platform"
+      },
+      {
+        "sub": "router botnet",
+        "rel": "is used for",
+        "obj": "attacks"
+      },
+      {
+        "sub": "target",
+        "rel": "is located in",
+        "obj": "Russia"
+      },
+      {
+        "sub": "target",
+        "rel": "is related to",
+        "obj": "Russia"
+      },
+      {
+        "sub": "c3f2fb7840228924e5af17787e163e07",
+        "rel": "downloaded",
+        "obj": "second-stage plugin"
+      },
+      {
+        "sub": "d007616dd3b2d52c30c0ebb0937e21b4",
+        "rel": "downloaded",
+        "obj": "second-stage plugin"
+      },
+      {
+        "sub": "d171db37ef28f42740644f4028bcf727",
+        "rel": "downloaded",
+        "obj": "second-stage plugin"
+      },
+      {
+        "sub": "d3886495935438f4a130d217d84ae8cb",
+        "rel": "downloaded",
+        "obj": "second-stage plugin"
+      },
+      {
+        "sub": "ea0d80db2075f789fc88c3fdf6e3d93e",
+        "rel": "downloaded",
+        "obj": "second-stage plugin"
+      },
+      {
+        "sub": "f2840be535fbaf8b15470d61967d527b",
+        "rel": "downloaded",
+        "obj": "second-stage plugin"
+      },
+      {
+        "sub": "90c93c9b80bbf31dce8434a565a0ec7b",
+        "rel": "downloaded",
+        "obj": "second-stage plugin"
+      },
+      {
+        "sub": "blackberry-support.herokuapp.com",
+        "rel": "is",
+        "obj": "Attacker-owned domain"
+      },
+      {
+        "sub": "Inception",
+        "rel": "is",
+        "obj": "APT actor that uses YARA rule"
+      },
+      {
+        "sub": "Inception",
+        "rel": "uses",
+        "obj": "YARA rule"
+      },
+      {
+        "sub": "Inception",
+        "rel": "is",
+        "obj": "APT actor"
+      }
+    ]
+  }
+}

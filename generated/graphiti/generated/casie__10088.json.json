@@ -1,0 +1,215 @@
+{
+  "sample_id": "casie__10088.json",
+  "sample_index": 35,
+  "source": "casie",
+  "file_name": "10088.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Robert Gren",
+        "type": "Person"
+      },
+      {
+        "name": "ransomware attack",
+        "type": "Malware"
+      },
+      {
+        "name": "bitcoin",
+        "type": "Indicator"
+      },
+      {
+        "name": "F-Secure",
+        "type": "Organization"
+      },
+      {
+        "name": "Elliptic",
+        "type": "Organization"
+      },
+      {
+        "name": "Krakow",
+        "type": "Location"
+      },
+      {
+        "name": "China",
+        "type": "Location"
+      },
+      {
+        "name": "Britain",
+        "type": "Location"
+      },
+      {
+        "name": "online entertainment business",
+        "type": "Software"
+      },
+      {
+        "name": "hospital patient records",
+        "type": "Software"
+      },
+      {
+        "name": "personal photos",
+        "type": "Software"
+      },
+      {
+        "name": "ATT&CK techniques",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "malware attachment",
+        "type": "Malware"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "digital currency",
+        "type": "Indicator"
+      },
+      {
+        "name": "cybersecurity experts",
+        "type": "Organization"
+      },
+      {
+        "name": "law enforcement officials",
+        "type": "Organization"
+      },
+      {
+        "name": "attackers",
+        "type": "ThreatActor"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Robert Gren",
+        "rel": "is victim of",
+        "obj": "ransomware attack"
+      },
+      {
+        "sub": "ransomware attack",
+        "rel": "AFFECTS",
+        "obj": "200000"
+      },
+      {
+        "sub": "ransomware attack",
+        "rel": "IMPACTS",
+        "obj": "China"
+      },
+      {
+        "sub": "ransomware attack",
+        "rel": "IMPACTS",
+        "obj": "Britain"
+      },
+      {
+        "sub": "ransomware attack",
+        "rel": "USES",
+        "obj": "bitcoin"
+      },
+      {
+        "sub": "ransomware attack",
+        "rel": "USES",
+        "obj": "digital currency"
+      },
+      {
+        "sub": "ransomware attack",
+        "rel": "DELIVERS",
+        "obj": "malware attachment"
+      },
+      {
+        "sub": "F-Secure",
+        "rel": "IDENTIFIES",
+        "obj": "200"
+      },
+      {
+        "sub": "F-Secure",
+        "rel": "MONITORS",
+        "obj": "ransomware attack"
+      },
+      {
+        "sub": "Elliptic",
+        "rel": "TRACKS",
+        "obj": "ransomware attack"
+      },
+      {
+        "sub": "Elliptic",
+        "rel": "RECORDS",
+        "obj": "80000"
+      },
+      {
+        "sub": "attackers",
+        "rel": "PROVIDES",
+        "obj": "bitcoin"
+      },
+      {
+        "sub": "attackers",
+        "rel": "PROVIDES",
+        "obj": "three"
+      },
+      {
+        "sub": "cybersecurity experts",
+        "rel": "warns against",
+        "obj": "ransomware attack"
+      },
+      {
+        "sub": "law enforcement officials",
+        "rel": "warns against",
+        "obj": "ransomware attack"
+      },
+      {
+        "sub": "ransomware attack",
+        "rel": "ENCRYPTS",
+        "obj": "personal photos"
+      },
+      {
+        "sub": "ransomware attack",
+        "rel": "ENCRYPTS",
+        "obj": "hospital patient records"
+      },
+      {
+        "sub": "ransomware attack",
+        "rel": "AFFECTS",
+        "obj": "online entertainment business"
+      },
+      {
+        "sub": "Robert Gren",
+        "rel": "lives in",
+        "obj": "Krakow"
+      },
+      {
+        "sub": "ransomware attack",
+        "rel": "has deadline",
+        "obj": "deadline"
+      },
+      {
+        "sub": "ransomware attack",
+        "rel": "DEMANDS",
+        "obj": "600"
+      },
+      {
+        "sub": "F-Secure",
+        "rel": "CONFIRMS",
+        "obj": "ransomware attack"
+      },
+      {
+        "sub": "Kim Peretti",
+        "rel": "PREDICTS",
+        "obj": "ransomware attack"
+      }
+    ]
+  }
+}

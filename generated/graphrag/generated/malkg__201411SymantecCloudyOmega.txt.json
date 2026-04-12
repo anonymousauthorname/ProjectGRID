@@ -1,0 +1,214 @@
+{
+  "sample_id": "malkg__201411SymantecCloudyOmega.txt",
+  "sample_index": 106,
+  "source": "malkg",
+  "file_name": "201411SymantecCloudyOmega.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "OPERATION CLOUDYOMEGA",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "ICHITARO",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "JUSTSYSTEMS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "BLOODHOUND.EXPLOIT.557",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BACKDOOR.EMDIVI",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BACKDOOR.KORPLUG",
+        "type": "MALWARE"
+      },
+      {
+        "name": "ZERO-DAY VULNERABILITY IN ICHITARO",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "JAPAN",
+        "type": "GEO"
+      },
+      {
+        "name": "PUBLIC SECTOR IN JAPAN",
+        "type": "LOCATION"
+      },
+      {
+        "name": "CLOUD-HOSTING SERVICE IN JAPAN",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "VIRTUAL MACHINE",
+        "type": "TOOL"
+      },
+      {
+        "name": "DEBUGGER",
+        "type": "TOOL"
+      },
+      {
+        "name": "SANDBOX",
+        "type": "TOOL"
+      },
+      {
+        "name": "ADOBES FLASH PLAYER CVE-2012-5054",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "ADOBES FLASH PLAYER CVE-2013-0634",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "LADYBOYLE",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "HIDDEN LYNX",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "PARENT ORGANIZATION",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "BACKDOOR.ZXSHELL",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "OPERATION CLOUDYOMEGA",
+        "rel": "related_to",
+        "obj": "ICHITARO"
+      },
+      {
+        "sub": "OPERATION CLOUDYOMEGA",
+        "rel": "related_to",
+        "obj": "JUSTSYSTEMS"
+      },
+      {
+        "sub": "OPERATION CLOUDYOMEGA",
+        "rel": "related_to",
+        "obj": "BLOODHOUND.EXPLOIT.557"
+      },
+      {
+        "sub": "OPERATION CLOUDYOMEGA",
+        "rel": "related_to",
+        "obj": "BACKDOOR.EMDIVI"
+      },
+      {
+        "sub": "BACKDOOR.EMDIVI",
+        "rel": "related_to",
+        "obj": "CLOUD-HOSTING SERVICE IN JAPAN"
+      },
+      {
+        "sub": "BACKDOOR.EMDIVI",
+        "rel": "related_to",
+        "obj": "VIRTUAL MACHINE"
+      },
+      {
+        "sub": "BACKDOOR.EMDIVI",
+        "rel": "related_to",
+        "obj": "DEBUGGER"
+      },
+      {
+        "sub": "BACKDOOR.EMDIVI",
+        "rel": "related_to",
+        "obj": "SANDBOX"
+      },
+      {
+        "sub": "OPERATION CLOUDYOMEGA",
+        "rel": "related_to",
+        "obj": "JAPAN"
+      },
+      {
+        "sub": "OPERATION CLOUDYOMEGA",
+        "rel": "related_to",
+        "obj": "PUBLIC SECTOR IN JAPAN"
+      },
+      {
+        "sub": "OPERATION CLOUDYOMEGA",
+        "rel": "related_to",
+        "obj": "ADOBES FLASH PLAYER CVE-2012-5054"
+      },
+      {
+        "sub": "LADYBOYLE",
+        "rel": "related_to",
+        "obj": "ADOBES FLASH PLAYER CVE-2013-0634"
+      },
+      {
+        "sub": "OPERATION CLOUDYOMEGA",
+        "rel": "related_to",
+        "obj": "LADYBOYLE"
+      },
+      {
+        "sub": "OPERATION CLOUDYOMEGA",
+        "rel": "related_to",
+        "obj": "HIDDEN LYNX"
+      },
+      {
+        "sub": "PARENT ORGANIZATION",
+        "rel": "related_to",
+        "obj": "OPERATION CLOUDYOMEGA"
+      },
+      {
+        "sub": "PARENT ORGANIZATION",
+        "rel": "related_to",
+        "obj": "LADYBOYLE"
+      },
+      {
+        "sub": "PARENT ORGANIZATION",
+        "rel": "related_to",
+        "obj": "HIDDEN LYNX"
+      },
+      {
+        "sub": "ZERO-DAY VULNERABILITY IN ICHITARO",
+        "rel": "related_to",
+        "obj": "OPERATION CLOUDYOMEGA"
+      },
+      {
+        "sub": "ZERO-DAY VULNERABILITY IN ICHITARO",
+        "rel": "related_to",
+        "obj": "BLOODHOUND.EXPLOIT.557"
+      },
+      {
+        "sub": "PARENT ORGANIZATION",
+        "rel": "related_to",
+        "obj": "BACKDOOR.EMDIVI"
+      },
+      {
+        "sub": "PARENT ORGANIZATION",
+        "rel": "related_to",
+        "obj": "BACKDOOR.KORPLUG"
+      },
+      {
+        "sub": "PARENT ORGANIZATION",
+        "rel": "related_to",
+        "obj": "BACKDOOR.ZXSHELL"
+      }
+    ]
+  }
+}

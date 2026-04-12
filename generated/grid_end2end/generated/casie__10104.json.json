@@ -1,0 +1,398 @@
+{
+  "sample_id": "casie__10104.json",
+  "sample_index": 6,
+  "source": "casie",
+  "file_name": "10104.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "A new form of ransomware",
+        "type": "malware",
+        "alias": [
+          "GandCrab",
+          "it",
+          "the ransomware",
+          "the payload",
+          "ransomware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "two separate exploit kits",
+        "type": "hacker-tool",
+        "alias": [
+          "one of which was thought to have disappeared",
+          "RIG EK and GrandSoft EK"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "RIG EK",
+        "type": "hacker-tool",
+        "alias": [
+          "RIG exploit kit"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "GrandSoft EK",
+        "type": "hacker-tool",
+        "alias": [
+          "GrandSoft",
+          "the GrandSoft EK"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "January 26",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "cybercriminals",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attackers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "vulnerabilities in systems",
+        "type": "vulnerability",
+        "alias": [
+          "vulnerabilities in Internet Explorer and Flash Player",
+          "vulnerabilities in the Java Runtime Environment"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malware",
+        "type": "malware",
+        "alias": [
+          "ransomware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "JavaScript, Flash, and VBscript-based attacks",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malvertising",
+        "type": "attack-pattern",
+        "alias": [
+          "attack method similar to that used by Princess ransomware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Princess ransomware",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "GandCrab",
+        "type": "malware",
+        "alias": [
+          "it",
+          "the payload",
+          "the ransomware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Internet Explorer and Flash Player",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Java Runtime Environment",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "remote execution of code",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "RSA algorithm",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "encrypted files",
+        "type": "file",
+        "alias": [
+          "Windows files",
+          "every file on the drive"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": ".GDCB extension",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Dash",
+        "type": "credential-value",
+        "alias": [
+          "a form of cryptocurrency",
+          "$1,200",
+          "$2,400"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "1.5 Dash",
+        "type": "credential-value",
+        "alias": [
+          "listed on the note as $1,200"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "3 Dash",
+        "type": "credential-value",
+        "alias": [
+          "listed on the note as $2,400"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Magniber",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "software updates and patches",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Malwarebytes",
+        "type": "security-product",
+        "alias": [
+          "researchers at security company Malwarebytes"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "coin-miners",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "encrypted drive",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "RIG",
+        "type": "hacker-tool",
+        "alias": [
+          "the RIG exploit kit"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "GrandSoft",
+        "type": "hacker-tool",
+        "alias": [
+          "GrandSoft EK"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "A new form of ransomware",
+        "rel": "being distributed by",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "two separate exploit kits"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "distributed via",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "RIG EK"
+      },
+      {
+        "sub": "RIG EK",
+        "rel": "uses",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "vulnerabilities in Internet Explorer and Flash Player"
+      },
+      {
+        "sub": "RIG EK",
+        "rel": "launches",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "JavaScript, Flash, and VBscript-based attacks",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "malvertising",
+        "rel": "delivers",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Princess ransomware",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "GrandSoft EK",
+        "rel": "takes advantage of",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "vulnerabilities in the Java Runtime Environment"
+      },
+      {
+        "sub": "vulnerabilities in the Java Runtime Environment",
+        "rel": "allows attackers to remotely execute",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "remote execution of code"
+      },
+      {
+        "sub": "GrandSoft EK",
+        "rel": "used to distribute",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "GandCrab"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "drops and runs",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "GandCrab"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "encrypts",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Windows files"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "RSA algorithm"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "demands payment in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Dash"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "demands 1.5 Dash",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "1.5 Dash"
+      },
+      {
+        "sub": "GandCrab",
+        "rel": "demands 3 Dash",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "3 Dash"
+      },
+      {
+        "sub": "cybercriminals",
+        "rel": "take advantage of",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "vulnerabilities in systems"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "delivered by",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "spam email"
+      },
+      {
+        "sub": "Malwarebytes",
+        "rel": "research-describes-analysis-of-characterizes-detects",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "GandCrab"
+      },
+      {
+        "sub": "software updates and patches",
+        "rel": "prevent use of vulnerabilities to distribute",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "exploit kits"
+      },
+      {
+        "sub": "RIG",
+        "rel": "used to distribute",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "GandCrab"
+      }
+    ]
+  }
+}

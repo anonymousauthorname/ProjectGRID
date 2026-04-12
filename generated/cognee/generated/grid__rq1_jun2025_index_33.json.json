@@ -1,0 +1,271 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_33.json",
+  "sample_index": 223,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_33.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Kido",
+        "type": "Entity"
+      },
+      {
+        "name": "Conficker",
+        "type": "Entity"
+      },
+      {
+        "name": "Downadup",
+        "type": "Entity"
+      },
+      {
+        "name": "TrojanDownloader.Win32.Kido",
+        "type": "Entity"
+      },
+      {
+        "name": "Conficker.c",
+        "type": "Entity"
+      },
+      {
+        "name": "NetWorm.Win32.Kido.js",
+        "type": "Entity"
+      },
+      {
+        "name": "worm",
+        "type": "Entity"
+      },
+      {
+        "name": "3rd May",
+        "type": "Entity"
+      },
+      {
+        "name": "fraudulent antivirus",
+        "type": "Entity"
+      },
+      {
+        "name": "FraudTool.Win32.SpywareProtect2009.s",
+        "type": "Entity"
+      },
+      {
+        "name": "SpywareProtect2009",
+        "type": "Entity"
+      },
+      {
+        "name": "spyprotect2009.com",
+        "type": "Entity"
+      },
+      {
+        "name": "spywrprotect2009.com",
+        "type": "Entity"
+      },
+      {
+        "name": "spywareprotector2009.com",
+        "type": "Entity"
+      },
+      {
+        "name": "Ukraine",
+        "type": "Entity"
+      },
+      {
+        "name": "1313.elaninet.com.78.26.179.107",
+        "type": "Entity"
+      },
+      {
+        "name": "EmailWorm.Win32.Iksmas.atz",
+        "type": "Entity"
+      },
+      {
+        "name": "Waledac",
+        "type": "Entity"
+      },
+      {
+        "name": "data theft",
+        "type": "Entity"
+      },
+      {
+        "name": "spam",
+        "type": "Entity"
+      },
+      {
+        "name": "January 2009",
+        "type": "Entity"
+      },
+      {
+        "name": "Conficker Working Group (CWG)",
+        "type": "Entity"
+      },
+      {
+        "name": "CWG site",
+        "type": "Entity"
+      },
+      {
+        "name": "outage",
+        "type": "Entity"
+      },
+      {
+        "name": "cable sabotage",
+        "type": "Entity"
+      },
+      {
+        "name": "ISC",
+        "type": "Entity"
+      },
+      {
+        "name": "Wired",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "NetWorm.Win32.Kido.js",
+        "rel": "is_variant_of",
+        "obj": "Kido"
+      },
+      {
+        "sub": "NetWorm.Win32.Kido.js",
+        "rel": "is_a_type_of",
+        "obj": "worm"
+      },
+      {
+        "sub": "NetWorm.Win32.Kido.js",
+        "rel": "is_active_until",
+        "obj": "3rd May"
+      },
+      {
+        "sub": "TrojanDownloader.Win32.Kido",
+        "rel": "is_detected_on",
+        "obj": "Kido"
+      },
+      {
+        "sub": "Conficker.c",
+        "rel": "is_a_form_of",
+        "obj": "Conficker"
+      },
+      {
+        "sub": "Conficker.c",
+        "rel": "is_a_form_of",
+        "obj": "Kido"
+      },
+      {
+        "sub": "Kido",
+        "rel": "is_aka",
+        "obj": "Downadup"
+      },
+      {
+        "sub": "FraudTool.Win32.SpywareProtect2009.s",
+        "rel": "is_a_form_of",
+        "obj": "fraudulent antivirus"
+      },
+      {
+        "sub": "SpywareProtect2009",
+        "rel": "is_a_form_of",
+        "obj": "fraudulent antivirus"
+      },
+      {
+        "sub": "FraudTool.Win32.SpywareProtect2009.s",
+        "rel": "downloads",
+        "obj": "Kido"
+      },
+      {
+        "sub": "Kido",
+        "rel": "downloads",
+        "obj": "SpywareProtect2009"
+      },
+      {
+        "sub": "SpywareProtect2009",
+        "rel": "is_hosted_at",
+        "obj": "spyprotect2009.com"
+      },
+      {
+        "sub": "SpywareProtect2009",
+        "rel": "is_hosted_at",
+        "obj": "spywrprotect2009.com"
+      },
+      {
+        "sub": "SpywareProtect2009",
+        "rel": "is_hosted_at",
+        "obj": "spywareprotector2009.com"
+      },
+      {
+        "sub": "SpywareProtect2009",
+        "rel": "originates_from",
+        "obj": "Ukraine"
+      },
+      {
+        "sub": "1313.elaninet.com.78.26.179.107",
+        "rel": "is_downloaded_from",
+        "obj": "SpywareProtect2009"
+      },
+      {
+        "sub": "Kido",
+        "rel": "downloads",
+        "obj": "EmailWorm.Win32.Iksmas.atz"
+      },
+      {
+        "sub": "EmailWorm.Win32.Iksmas.atz",
+        "rel": "is_aka",
+        "obj": "Waledac"
+      },
+      {
+        "sub": "EmailWorm.Win32.Iksmas.atz",
+        "rel": "is_used_for",
+        "obj": "data theft"
+      },
+      {
+        "sub": "EmailWorm.Win32.Iksmas.atz",
+        "rel": "is_used_for",
+        "obj": "spam"
+      },
+      {
+        "sub": "Kido",
+        "rel": "is_related_to",
+        "obj": "Waledac"
+      },
+      {
+        "sub": "Waledac",
+        "rel": "was_detected_in",
+        "obj": "January 2009"
+      },
+      {
+        "sub": "Conficker Working Group (CWG)",
+        "rel": "has_affiliation_with",
+        "obj": "CWG site"
+      },
+      {
+        "sub": "CWG site",
+        "rel": "is_involved_in",
+        "obj": "outage"
+      },
+      {
+        "sub": "outage",
+        "rel": "was_outaged_due_to",
+        "obj": "cable sabotage"
+      },
+      {
+        "sub": "ISC",
+        "rel": "is_reported_by",
+        "obj": "outage"
+      },
+      {
+        "sub": "Wired",
+        "rel": "is_reported_by",
+        "obj": "cable sabotage"
+      }
+    ]
+  }
+}

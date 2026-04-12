@@ -1,0 +1,176 @@
+{
+  "sample_id": "casie__10276.json",
+  "sample_index": 10,
+  "source": "casie",
+  "file_name": "10276.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "D-Link",
+        "type": "Organization"
+      },
+      {
+        "name": "Błazej Adamczyk",
+        "type": "Person"
+      },
+      {
+        "name": "Silesian University of Technology",
+        "type": "Organization"
+      },
+      {
+        "name": "DWR-116",
+        "type": "Indicator"
+      },
+      {
+        "name": "DWR-140L",
+        "type": "Indicator"
+      },
+      {
+        "name": "DWR-512",
+        "type": "Indicator"
+      },
+      {
+        "name": "DWR-640L",
+        "type": "Indicator"
+      },
+      {
+        "name": "DWR-712",
+        "type": "Indicator"
+      },
+      {
+        "name": "DWR-912",
+        "type": "Indicator"
+      },
+      {
+        "name": "DWR-921",
+        "type": "Indicator"
+      },
+      {
+        "name": "DWR-111",
+        "type": "Indicator"
+      },
+      {
+        "name": "DIR-640L",
+        "type": "Indicator"
+      },
+      {
+        "name": "directory traversal",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "dot dot slash",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "American Consumer Institute",
+        "type": "Organization"
+      },
+      {
+        "name": "firmware vulnerabilities",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "router",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Błazej Adamczyk",
+        "rel": "NOTIFIED",
+        "obj": "D-Link"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "has vulnerability",
+        "obj": "DWR-116"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "has vulnerability",
+        "obj": "DWR-140L"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "has vulnerability",
+        "obj": "DWR-512"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "has vulnerability",
+        "obj": "DWR-640L"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "has vulnerability",
+        "obj": "DWR-712"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "has vulnerability",
+        "obj": "DWR-912"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "has vulnerability",
+        "obj": "DWR-921"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "has vulnerability",
+        "obj": "DWR-111"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "has vulnerability",
+        "obj": "DIR-640L"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "is vulnerable to",
+        "obj": "directory traversal"
+      },
+      {
+        "sub": "directory traversal",
+        "rel": "is also known as",
+        "obj": "dot dot slash"
+      },
+      {
+        "sub": "American Consumer Institute",
+        "rel": "reported vulnerabilities in",
+        "obj": "router"
+      },
+      {
+        "sub": "American Consumer Institute",
+        "rel": "DISCOVERED",
+        "obj": "firmware vulnerabilities"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "received notification from",
+        "obj": "Silesian University of Technology"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "PROVIDES",
+        "obj": "router"
+      }
+    ]
+  }
+}

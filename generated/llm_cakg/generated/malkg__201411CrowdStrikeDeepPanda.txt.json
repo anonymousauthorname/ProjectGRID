@@ -1,0 +1,321 @@
+{
+  "sample_id": "malkg__201411CrowdStrikeDeepPanda.txt",
+  "sample_index": 133,
+  "source": "malkg",
+  "file_name": "201411CrowdStrikeDeepPanda.txt",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Sakula malware",
+        "type": "Entity"
+      },
+      {
+        "name": "DEEP PANDA",
+        "type": "Entity"
+      },
+      {
+        "name": "MediaSoft.exe",
+        "type": "Entity"
+      },
+      {
+        "name": "msi.dll",
+        "type": "Entity"
+      },
+      {
+        "name": "Sakula executable",
+        "type": "Entity"
+      },
+      {
+        "name": "DTOPTOOLZ Co., Ltd.",
+        "type": "Entity"
+      },
+      {
+        "name": "180.210.206.246",
+        "type": "Entity"
+      },
+      {
+        "name": "198.200.45.112",
+        "type": "Entity"
+      },
+      {
+        "name": "vpn.foundationssl.com",
+        "type": "Entity"
+      },
+      {
+        "name": "news.foundationssl.com",
+        "type": "Entity"
+      },
+      {
+        "name": "Career Credit Co., Ltd.",
+        "type": "Entity"
+      },
+      {
+        "name": "www.xha-mster.com",
+        "type": "Entity"
+      },
+      {
+        "name": "wendellom@yahoo.com",
+        "type": "Entity"
+      },
+      {
+        "name": "tonyy starke",
+        "type": "Entity"
+      },
+      {
+        "name": "Derusbi malware",
+        "type": "Entity"
+      },
+      {
+        "name": "Adobe Reader",
+        "type": "Entity"
+      },
+      {
+        "name": "Juniper VPN",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft ActiveX Control",
+        "type": "Entity"
+      },
+      {
+        "name": "ShellExecute() API",
+        "type": "Entity"
+      },
+      {
+        "name": "DLL side-loading",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious droppers",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "login pages",
+        "type": "Entity"
+      },
+      {
+        "name": "credential-collection",
+        "type": "Entity"
+      },
+      {
+        "name": "USB devices",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2014-0322",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "TTPs",
+        "type": "Entity"
+      },
+      {
+        "name": "Scanbox",
+        "type": "Entity"
+      },
+      {
+        "name": "Strategic Web Compromise (SWC)",
+        "type": "Entity"
+      },
+      {
+        "name": "alumni event website",
+        "type": "Entity"
+      },
+      {
+        "name": "Adobe-related plugin",
+        "type": "Entity"
+      },
+      {
+        "name": "progress bars",
+        "type": "Entity"
+      },
+      {
+        "name": "corporate VPN",
+        "type": "Entity"
+      },
+      {
+        "name": "webmail",
+        "type": "Entity"
+      },
+      {
+        "name": "document sharing",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft ActiveX software",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DEEP PANDA",
+        "rel": "uses",
+        "obj": "Sakula malware"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "targets",
+        "obj": "organizations in multiple sectors"
+      },
+      {
+        "sub": "Sakula malware",
+        "rel": "is loaded via",
+        "obj": "DLL side-loading"
+      },
+      {
+        "sub": "MediaSoft.exe",
+        "rel": "loads",
+        "obj": "msi.dll"
+      },
+      {
+        "sub": "msi.dll",
+        "rel": "loads",
+        "obj": "Sakula executable"
+      },
+      {
+        "sub": "Sakula executable",
+        "rel": "is signed with",
+        "obj": "DTOPTOOLZ Co., Ltd. certificate"
+      },
+      {
+        "sub": "malicious droppers",
+        "rel": "masquerade as",
+        "obj": "installers for Adobe Reader"
+      },
+      {
+        "sub": "malicious droppers",
+        "rel": "masquerade as",
+        "obj": "installers for Juniper VPN"
+      },
+      {
+        "sub": "malicious droppers",
+        "rel": "masquerade as",
+        "obj": "installers for Microsoft ActiveX Control"
+      },
+      {
+        "sub": "malicious droppers",
+        "rel": "display",
+        "obj": "progress bars"
+      },
+      {
+        "sub": "malicious droppers",
+        "rel": "redirect victims to",
+        "obj": "login pages"
+      },
+      {
+        "sub": "login pages",
+        "rel": "are hosted on",
+        "obj": "webmail"
+      },
+      {
+        "sub": "login pages",
+        "rel": "are hosted on",
+        "obj": "document sharing"
+      },
+      {
+        "sub": "login pages",
+        "rel": "are hosted on",
+        "obj": "corporate VPN"
+      },
+      {
+        "sub": "login pages",
+        "rel": "are hosted on",
+        "obj": "alumni event website"
+      },
+      {
+        "sub": "login pages",
+        "rel": "are spoofed",
+        "obj": "legitimate login pages"
+      },
+      {
+        "sub": "Sakula executable",
+        "rel": "is signed with",
+        "obj": "Career Credit Co., Ltd. certificate"
+      },
+      {
+        "sub": "Sakula executable",
+        "rel": "uses",
+        "obj": "www.xha-mster.com"
+      },
+      {
+        "sub": "www.xha-mster.com",
+        "rel": "is used for",
+        "obj": "C2 communications"
+      },
+      {
+        "sub": "180.210.206.246",
+        "rel": "is used for",
+        "obj": "C2 communications"
+      },
+      {
+        "sub": "198.200.45.112",
+        "rel": "is used in",
+        "obj": "DEEP PANDA activity"
+      },
+      {
+        "sub": "Derusbi malware",
+        "rel": "is used by",
+        "obj": "DEEP PANDA"
+      },
+      {
+        "sub": "Derusbi malware",
+        "rel": "uses",
+        "obj": "vpn.foundationssl.com"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "is used in",
+        "obj": "Strategic Web Compromise (SWC) activity"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "is placed on",
+        "obj": "website of a U.S.-based think tank"
+      },
+      {
+        "sub": "Scanbox",
+        "rel": "uses",
+        "obj": "news.foundationssl.com"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "is associated with",
+        "obj": "Scanbox activity"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "is associated with",
+        "obj": "Derusbi malware"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "targets",
+        "obj": "Mongolian government entity"
+      }
+    ]
+  }
+}

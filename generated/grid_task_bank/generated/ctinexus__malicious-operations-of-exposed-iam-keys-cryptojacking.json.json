@@ -1,0 +1,209 @@
+{
+  "sample_id": "ctinexus__malicious-operations-of-exposed-iam-keys-cryptojacking.json",
+  "sample_index": 62,
+  "source": "ctinexus",
+  "file_name": "malicious-operations-of-exposed-iam-keys-cryptojacking.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "EleKtra-Leak",
+        "type": "campaign",
+        "alias": [
+          "the campaign"
+        ]
+      },
+      {
+        "name": "exposed identity and access management (IAM) credentials",
+        "type": "vulnerability",
+        "alias": [
+          "exposed IAM credentials"
+        ]
+      },
+      {
+        "name": "public GitHub repositories",
+        "type": "location",
+        "alias": [
+          "public repositories"
+        ]
+      },
+      {
+        "name": "AWS",
+        "type": "security-product",
+        "alias": [
+          "Amazon Web Services"
+        ]
+      },
+      {
+        "name": "special quarantine policy",
+        "type": "course-of-action",
+        "alias": [
+          "quarantine policy"
+        ]
+      },
+      {
+        "name": "automatic protection",
+        "type": "course-of-action",
+        "alias": [
+          "automatic protection"
+        ]
+      },
+      {
+        "name": "the threat actor",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the actor"
+        ]
+      },
+      {
+        "name": "AWS Elastic Compute (EC2) instances",
+        "type": "infrastructure",
+        "alias": [
+          "EC2 instances"
+        ]
+      },
+      {
+        "name": "cryptojacking operations",
+        "type": "attack-pattern",
+        "alias": [
+          "cryptojacking"
+        ]
+      },
+      {
+        "name": "Unit 42 researchers",
+        "type": "identity",
+        "alias": [
+          "researchers"
+        ]
+      },
+      {
+        "name": "at least two years",
+        "type": "duration",
+        "alias": [
+          "two years"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Unit 42 researchers",
+        "rel": "have identified",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "EleKtra-Leak"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "exposed identity and access management (IAM) credentials"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "public GitHub repositories"
+      },
+      {
+        "sub": "AWS",
+        "rel": "detects",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "exposed identity and access management (IAM) credentials"
+      },
+      {
+        "sub": "AWS",
+        "rel": "auto-remediates",
+        "rel_type": [
+          "remediates"
+        ],
+        "obj": "exposed identity and access management (IAM) credentials"
+      },
+      {
+        "sub": "AWS",
+        "rel": "applies",
+        "rel_type": [
+          "applies"
+        ],
+        "obj": "special quarantine policy"
+      },
+      {
+        "sub": "we",
+        "rel": "developed insights into",
+        "rel_type": [
+          "investigates"
+        ],
+        "obj": "the activities that the actor would carry out"
+      },
+      {
+        "sub": "the threat actor",
+        "rel": "creates",
+        "rel_type": [
+          "creates"
+        ],
+        "obj": "AWS Elastic Compute (EC2) instances"
+      },
+      {
+        "sub": "the threat actor",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "cryptojacking operations"
+      },
+      {
+        "sub": "the threat actor",
+        "rel": "associated with",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "EleKtra-Leak"
+      },
+      {
+        "sub": "cryptojacking operations",
+        "rel": "have been active for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "at least two years"
+      },
+      {
+        "sub": "we",
+        "rel": "were able to",
+        "rel_type": [
+          "developed insights into"
+        ],
+        "obj": "the activities that the actor would carry out"
+      },
+      {
+        "sub": "the threat actor",
+        "rel": "was able to",
+        "rel_type": [
+          "creates"
+        ],
+        "obj": "multiple AWS Elastic Compute (EC2) instances"
+      }
+    ]
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "sample_id": "ctinexus__volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques.json",
+  "sample_index": 75,
+  "source": "ctinexus",
+  "file_name": "volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Volt Typhoon",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the threat actor",
+          "Volt Typhoon's methods"
+        ]
+      },
+      {
+        "name": "internet-facing Fortinet FortiGuard devices",
+        "type": "infrastructure",
+        "alias": [
+          "Fortinet FortiGuard devices"
+        ]
+      },
+      {
+        "name": "Microsoft",
+        "type": "security-product",
+        "alias": [
+          "Microsoft continues to investigate"
+        ]
+      },
+      {
+        "name": "Active Directory account",
+        "type": "user-account"
+      },
+      {
+        "name": "compromised SOHO network edge devices",
+        "type": "infrastructure"
+      },
+      {
+        "name": "network traffic",
+        "type": "network-traffic"
+      },
+      {
+        "name": "SOHO network edge devices",
+        "type": "infrastructure",
+        "alias": [
+          "routers"
+        ]
+      },
+      {
+        "name": "routers",
+        "type": "infrastructure"
+      },
+      {
+        "name": "ASUS",
+        "type": "general-software",
+        "alias": [
+          "devices manufactured by ASUS"
+        ]
+      },
+      {
+        "name": "Cisco",
+        "type": "general-software",
+        "alias": [
+          "devices manufactured by Cisco"
+        ]
+      },
+      {
+        "name": "D-Link",
+        "type": "general-software",
+        "alias": [
+          "devices manufactured by D-Link"
+        ]
+      },
+      {
+        "name": "NETGEAR",
+        "type": "general-software",
+        "alias": [
+          "devices manufactured by NETGEAR"
+        ]
+      },
+      {
+        "name": "Zyxel",
+        "type": "general-software",
+        "alias": [
+          "devices manufactured by Zyxel"
+        ]
+      },
+      {
+        "name": "HTTP or SSH management interfaces",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "management interfaces",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "owners of network edge devices",
+        "type": "identity"
+      },
+      {
+        "name": "attack surface",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "internet",
+        "type": "location"
+      },
+      {
+        "name": "FortiGuard",
+        "type": "general-software"
+      },
+      {
+        "name": "stealth",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "overhead costs",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Volt Typhoon's methods",
+        "type": "campaign",
+        "alias": [
+          "Volt Typhoon"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Volt Typhoon",
+        "rel": "achieves initial access to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "targeted organizations"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "achieves initial access to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "internet-facing Fortinet FortiGuard devices"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "continues to investigate",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Volt Typhoon's methods"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "continues to investigate",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "gaining access to",
+        "obj_additional": [
+          "internet-facing Fortinet FortiGuard devices"
+        ]
+      },
+      {
+        "sub": "the threat actor",
+        "rel": "attempts to leverage",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "privileges afforded by",
+        "obj_additional": [
+          "internet-facing Fortinet FortiGuard devices"
+        ]
+      },
+      {
+        "sub": "the threat actor",
+        "rel": "extracts",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "credentials"
+      },
+      {
+        "sub": "credentials",
+        "rel": "to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Active Directory account"
+      },
+      {
+        "sub": "the threat actor",
+        "rel": "attempts to authenticate to",
+        "rel_type": [
+          "authenticates to"
+        ],
+        "obj": "other devices on the network"
+      },
+      {
+        "sub": "credentials",
+        "rel": "with",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "those credentials"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "proxies",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "network traffic"
+      },
+      {
+        "sub": "network traffic",
+        "rel": "to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "targets"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "proxies",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "compromised SOHO network edge devices"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has confirmed",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "devices manufactured by ASUS"
+      },
+      {
+        "sub": "devices manufactured by ASUS",
+        "rel": "allow",
+        "rel_type": [
+          "exposes"
+        ],
+        "obj": "owner",
+        "obj_additional": [
+          "to expose",
+          "HTTP or SSH management interfaces"
+        ]
+      },
+      {
+        "sub": "Cisco",
+        "rel": "allow",
+        "rel_type": [
+          "exposes"
+        ],
+        "obj": "owner",
+        "obj_additional": [
+          "to expose",
+          "HTTP or SSH management interfaces"
+        ]
+      },
+      {
+        "sub": "D-Link",
+        "rel": "allow",
+        "rel_type": [
+          "exposes"
+        ],
+        "obj": "owner",
+        "obj_additional": [
+          "to expose",
+          "HTTP or SSH management interfaces"
+        ]
+      },
+      {
+        "sub": "NETGEAR",
+        "rel": "allow",
+        "rel_type": [
+          "exposes"
+        ],
+        "obj": "owner",
+        "obj_additional": [
+          "to expose",
+          "HTTP or SSH management interfaces"
+        ]
+      },
+      {
+        "sub": "Zyxel",
+        "rel": "allow",
+        "rel_type": [
+          "exposes"
+        ],
+        "obj": "owner",
+        "obj_additional": [
+          "to expose",
+          "HTTP or SSH management interfaces"
+        ]
+      },
+      {
+        "sub": "HTTP or SSH management interfaces",
+        "rel": "to",
+        "rel_type": [
+          "exposes"
+        ],
+        "obj": "internet"
+      },
+      {
+        "sub": "owners of network edge devices",
+        "rel": "should ensure",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "management interfaces are not exposed",
+        "obj_additional": [
+          "to",
+          "internet"
+        ]
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "enhances",
+        "rel_type": [
+          "increases"
+        ],
+        "obj": "stealth of",
+        "obj_additional": [
+          "their operations"
+        ]
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "lowers",
+        "rel_type": [
+          "reduces"
+        ],
+        "obj": "overhead costs",
+        "obj_additional": [
+          "for acquiring infrastructure"
+        ]
+      }
+    ]
+  }
+}

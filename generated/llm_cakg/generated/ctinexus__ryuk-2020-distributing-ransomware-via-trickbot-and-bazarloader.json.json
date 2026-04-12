@@ -1,0 +1,138 @@
+{
+  "sample_id": "ctinexus__ryuk-2020-distributing-ransomware-via-trickbot-and-bazarloader.json",
+  "sample_index": 85,
+  "source": "ctinexus",
+  "file_name": "ryuk-2020-distributing-ransomware-via-trickbot-and-bazarloader.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Ryuk",
+        "type": "Entity"
+      },
+      {
+        "name": "BazarLoader",
+        "type": "Entity"
+      },
+      {
+        "name": "BazarBackdoor",
+        "type": "Entity"
+      },
+      {
+        "name": "Trickbot",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious attachments",
+        "type": "Entity"
+      },
+      {
+        "name": "links to websites",
+        "type": "Entity"
+      },
+      {
+        "name": "free, online file-hosting solutions",
+        "type": "Entity"
+      },
+      {
+        "name": "command-and-control (C&C) server",
+        "type": "Entity"
+      },
+      {
+        "name": "backdoor",
+        "type": "Entity"
+      },
+      {
+        "name": "social engineering",
+        "type": "Entity"
+      },
+      {
+        "name": "business correspondence",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actor",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Ryuk",
+        "rel": "uses",
+        "obj": "BazarLoader"
+      },
+      {
+        "sub": "BazarLoader",
+        "rel": "is distributed via",
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "contain",
+        "obj": "malicious attachments"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "contain",
+        "obj": "links to websites"
+      },
+      {
+        "sub": "links to websites",
+        "rel": "host",
+        "obj": "malware"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "use",
+        "obj": "social engineering"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "are disguised as",
+        "obj": "business correspondence"
+      },
+      {
+        "sub": "BazarLoader",
+        "rel": "connects to",
+        "obj": "command-and-control (C&C) server"
+      },
+      {
+        "sub": "BazarLoader",
+        "rel": "installs",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "Trickbot",
+        "rel": "is connected to",
+        "obj": "BazarLoader"
+      }
+    ]
+  }
+}

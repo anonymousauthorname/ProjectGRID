@@ -1,0 +1,82 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-lockbit.json",
+  "sample_index": 77,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-lockbit.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "LockBit",
+        "rel": "Has vulnerability",
+        "obj": "StealBit"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "Use",
+        "obj": "StealBit"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "Operate",
+        "obj": "LockBit 2.0"
+      },
+      {
+        "sub": "LockBit 2.0",
+        "rel": "Has value",
+        "obj": "fastest and most efficient encryption"
+      },
+      {
+        "sub": "StealBit",
+        "rel": "Construct",
+        "obj": "data exfiltration automation"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "Belong to",
+        "obj": "RaaS model"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "Operate",
+        "obj": "StealBit"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "Construct",
+        "obj": "StealBit"
+      },
+      {
+        "sub": "StealBit",
+        "rel": "Modify",
+        "obj": "Data"
+      },
+      {
+        "sub": "StealBit",
+        "rel": "Write",
+        "obj": "Exfiltration"
+      },
+      {
+        "sub": "LockBit 2.0",
+        "rel": "Has value",
+        "obj": "\"fastest and most efficient encryption\""
+      }
+    ]
+  }
+}

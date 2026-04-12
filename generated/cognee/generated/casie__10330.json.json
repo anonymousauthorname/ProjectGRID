@@ -1,0 +1,289 @@
+{
+  "sample_id": "casie__10330.json",
+  "sample_index": 1,
+  "source": "casie",
+  "file_name": "10330.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Microsoft",
+        "type": "Entity"
+      },
+      {
+        "name": "Outlook 2010",
+        "type": "Entity"
+      },
+      {
+        "name": "KB 4461529",
+        "type": "Entity"
+      },
+      {
+        "name": "KB 4461585",
+        "type": "Entity"
+      },
+      {
+        "name": "64-bit version",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution flaws",
+        "type": "Entity"
+      },
+      {
+        "name": "crashes",
+        "type": "Entity"
+      },
+      {
+        "name": "Outlook Web Access",
+        "type": "Entity"
+      },
+      {
+        "name": "Woody Leonhard",
+        "type": "Entity"
+      },
+      {
+        "name": "Office 2010",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Installer (.msi) edition",
+        "type": "Entity"
+      },
+      {
+        "name": "Office 365 Home",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Download Center",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Update Catalog",
+        "type": "Entity"
+      },
+      {
+        "name": "November Patch Tuesday",
+        "type": "Entity"
+      },
+      {
+        "name": "Access",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft blogpost",
+        "type": "Entity"
+      },
+      {
+        "name": "KB4461522",
+        "type": "Entity"
+      },
+      {
+        "name": "KB2863821",
+        "type": "Entity"
+      },
+      {
+        "name": "security fixes",
+        "type": "Entity"
+      },
+      {
+        "name": "critical security flaws",
+        "type": "Entity"
+      },
+      {
+        "name": "non-security updates",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Update",
+        "type": "Entity"
+      },
+      {
+        "name": "Click-to-Run editions",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft",
+        "rel": "releases",
+        "obj": "Outlook 2010"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "releases",
+        "obj": "KB 4461529"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "releases",
+        "obj": "KB 4461585"
+      },
+      {
+        "sub": "KB 4461529",
+        "rel": "causes",
+        "obj": "64-bit version"
+      },
+      {
+        "sub": "KB 4461529",
+        "rel": "is associated with crashes",
+        "obj": "crashes"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "recommends alternative",
+        "obj": "Outlook Web Access"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "addresses",
+        "obj": "remote code execution flaws"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "fixes",
+        "obj": "crashes"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "fixes",
+        "obj": "KB 4461529"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "is available at",
+        "obj": "Microsoft Download Center"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "releases during",
+        "obj": "November Patch Tuesday"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "applies to",
+        "obj": "Microsoft Installer (.msi) edition"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "is not applicable to",
+        "obj": "Office 365 Home"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "does not distribute via",
+        "obj": "Microsoft Update Catalog"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "was pulled due to",
+        "obj": "Access"
+      },
+      {
+        "sub": "KB4461522",
+        "rel": "was pulled due to",
+        "obj": "Access"
+      },
+      {
+        "sub": "KB2863821",
+        "rel": "was pulled due to",
+        "obj": "Access"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "publishes",
+        "obj": "Microsoft blogpost"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "addresses",
+        "obj": "critical security flaws"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "provides",
+        "obj": "security fixes"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issues",
+        "obj": "non-security updates"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "uses",
+        "obj": "Microsoft Update"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issues updates for",
+        "obj": "Click-to-Run editions"
+      },
+      {
+        "sub": "Woody Leonhard",
+        "rel": "was spotted by",
+        "obj": "KB 4461529"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "targets",
+        "obj": "remote code execution flaws"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "is a patch for",
+        "obj": "critical security flaws"
+      },
+      {
+        "sub": "KB 4461529",
+        "rel": "is a patch for",
+        "obj": "critical security flaws"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "provides security fixes for",
+        "obj": "Outlook 2010"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "is a security update for",
+        "obj": "Outlook 2010"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issues updates during",
+        "obj": "November Patch Tuesday"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "distributes via",
+        "obj": "Microsoft Download Center"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "applies to edition",
+        "obj": "Microsoft Installer (.msi) edition"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "does not apply to edition",
+        "obj": "Office 365 Home"
+      }
+    ]
+  }
+}

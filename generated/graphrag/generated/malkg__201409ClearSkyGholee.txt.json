@@ -1,0 +1,139 @@
+{
+  "sample_id": "malkg__201409ClearSkyGholee.txt",
+  "sample_index": 101,
+  "source": "malkg",
+  "file_name": "201409ClearSkyGholee.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "OPERATION PROTECTIVE EDGE",
+        "type": "EVENT"
+      },
+      {
+        "name": "GHOLEE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "OPERATION PROTECTIVE EDGE.XLSB",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SVCHOST 67.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "83.170.33.60",
+        "type": "LOCATION"
+      },
+      {
+        "name": "83.170.33.37",
+        "type": "LOCATION"
+      },
+      {
+        "name": "CORE SECURITY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "THAWTE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "IRAN",
+        "type": "GEO"
+      },
+      {
+        "name": "IABG MBH",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "THREAT ACTOR",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "VIRUS TOTAL",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "GPO",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "YARA RULE",
+        "type": "SOFTWARE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "GHOLEE",
+        "rel": "related_to",
+        "obj": "OPERATION PROTECTIVE EDGE"
+      },
+      {
+        "sub": "GHOLEE",
+        "rel": "related_to",
+        "obj": "SVCHOST 67.EXE"
+      },
+      {
+        "sub": "GHOLEE",
+        "rel": "related_to",
+        "obj": "83.170.33.60"
+      },
+      {
+        "sub": "SVCHOST 67.EXE",
+        "rel": "related_to",
+        "obj": "83.170.33.37"
+      },
+      {
+        "sub": "GHOLEE",
+        "rel": "related_to",
+        "obj": "CORE SECURITY"
+      },
+      {
+        "sub": "GHOLEE",
+        "rel": "related_to",
+        "obj": "THAWTE"
+      },
+      {
+        "sub": "THREAT ACTOR",
+        "rel": "related_to",
+        "obj": "IRAN"
+      },
+      {
+        "sub": "GHOLEE",
+        "rel": "related_to",
+        "obj": "VIRUS TOTAL"
+      },
+      {
+        "sub": "THREAT ACTOR",
+        "rel": "related_to",
+        "obj": "OPERATION PROTECTIVE EDGE"
+      },
+      {
+        "sub": "GPO",
+        "rel": "related_to",
+        "obj": "GHOLEE"
+      },
+      {
+        "sub": "YARA RULE",
+        "rel": "related_to",
+        "obj": "GHOLEE"
+      }
+    ]
+  }
+}

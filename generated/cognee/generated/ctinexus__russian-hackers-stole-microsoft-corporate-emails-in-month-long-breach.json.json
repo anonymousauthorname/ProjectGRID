@@ -1,0 +1,467 @@
+{
+  "sample_id": "ctinexus__russian-hackers-stole-microsoft-corporate-emails-in-month-long-breach.json",
+  "sample_index": 64,
+  "source": "ctinexus",
+  "file_name": "russian-hackers-stole-microsoft-corporate-emails-in-month-long-breach.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Microsoft",
+        "type": "Entity"
+      },
+      {
+        "name": "Midnight Blizzard",
+        "type": "Entity"
+      },
+      {
+        "name": "Nobelium",
+        "type": "Entity"
+      },
+      {
+        "name": "APT29",
+        "type": "Entity"
+      },
+      {
+        "name": "January 12th",
+        "type": "Entity"
+      },
+      {
+        "name": "November 2023",
+        "type": "Entity"
+      },
+      {
+        "name": "password spray attack",
+        "type": "Entity"
+      },
+      {
+        "name": "legacy non-production test tenant account",
+        "type": "Entity"
+      },
+      {
+        "name": "corporate email accounts",
+        "type": "Entity"
+      },
+      {
+        "name": "data stolen",
+        "type": "Entity"
+      },
+      {
+        "name": "Russian state-sponsored hacking group",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft's leadership team",
+        "type": "Entity"
+      },
+      {
+        "name": "cybersecurity department",
+        "type": "Entity"
+      },
+      {
+        "name": "legal department",
+        "type": "Entity"
+      },
+      {
+        "name": "email accounts",
+        "type": "Entity"
+      },
+      {
+        "name": "emails",
+        "type": "Entity"
+      },
+      {
+        "name": "attachments",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actors",
+        "type": "Entity"
+      },
+      {
+        "name": "hackers",
+        "type": "Entity"
+      },
+      {
+        "name": "breach",
+        "type": "Entity"
+      },
+      {
+        "name": "system access",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft",
+        "rel": "was breached by",
+        "obj": "Midnight Blizzard"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "was breached by",
+        "obj": "Nobelium"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "was breached by",
+        "obj": "APT29"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "detected attack on",
+        "obj": "January 12th"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "attack started in November 2023",
+        "obj": "November 2023"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "used password spray attack to gain access",
+        "obj": "password spray attack"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "accessed tenant account",
+        "obj": "legacy non-production test tenant account"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "breached email accounts",
+        "obj": "corporate email accounts"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "is a state-sponsored group",
+        "obj": "Russian state-sponsored hacking group"
+      },
+      {
+        "sub": "Nobelium",
+        "rel": "is a state-sponsored group",
+        "obj": "Russian state-sponsored hacking group"
+      },
+      {
+        "sub": "APT29",
+        "rel": "is a state-sponsored group",
+        "obj": "Russian state-sponsored hacking group"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "is known as",
+        "obj": "Nobelium"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "is known as",
+        "obj": "APT29"
+      },
+      {
+        "sub": "Nobelium",
+        "rel": "is a type of",
+        "obj": "APT29"
+      },
+      {
+        "sub": "Nobelium",
+        "rel": "is an alias for",
+        "obj": "Midnight Blizzard"
+      },
+      {
+        "sub": "APT29",
+        "rel": "is an alias for",
+        "obj": "Midnight Blizzard"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "affected leadership team",
+        "obj": "Microsoft's leadership team"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "affected cybersecurity department",
+        "obj": "cybersecurity department"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "affected legal department",
+        "obj": "legal department"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "breached email accounts",
+        "obj": "email accounts"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "is associated with",
+        "obj": "Midnight Blizzard"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "is associated with",
+        "obj": "Nobelium"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "is associated with",
+        "obj": "APT29"
+      },
+      {
+        "sub": "hackers",
+        "rel": "is a type of",
+        "obj": "Midnight Blizzard"
+      },
+      {
+        "sub": "hackers",
+        "rel": "is a type of",
+        "obj": "Nobelium"
+      },
+      {
+        "sub": "hackers",
+        "rel": "is a type of",
+        "obj": "APT29"
+      },
+      {
+        "sub": "breach",
+        "rel": "caused by",
+        "obj": "password spray attack"
+      },
+      {
+        "sub": "breach",
+        "rel": "resulted in access to",
+        "obj": "legacy non-production test tenant account"
+      },
+      {
+        "sub": "breach",
+        "rel": "occurred in",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "breach",
+        "rel": "affected",
+        "obj": "Microsoft's leadership team"
+      },
+      {
+        "sub": "breach",
+        "rel": "affected",
+        "obj": "cybersecurity department"
+      },
+      {
+        "sub": "breach",
+        "rel": "affected",
+        "obj": "legal department"
+      },
+      {
+        "sub": "data stolen",
+        "rel": "includes",
+        "obj": "emails"
+      },
+      {
+        "sub": "data stolen",
+        "rel": "includes",
+        "obj": "attachments"
+      },
+      {
+        "sub": "data stolen",
+        "rel": "stole from",
+        "obj": "corporate email accounts"
+      },
+      {
+        "sub": "data exfiltration",
+        "rel": "exfiltrated data includes",
+        "obj": "emails"
+      },
+      {
+        "sub": "data exfiltration",
+        "rel": "exfiltrated data includes",
+        "obj": "attachments"
+      },
+      {
+        "sub": "data exfiltration",
+        "rel": "occurred from",
+        "obj": "corporate email accounts"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issued warning on",
+        "obj": "warning issued on Friday night"
+      },
+      {
+        "sub": "password spray attack",
+        "rel": "used to gain access",
+        "obj": "legacy non-production test tenant account"
+      },
+      {
+        "sub": "password spray attack",
+        "rel": "was used in",
+        "obj": "breach"
+      },
+      {
+        "sub": "legacy non-production test tenant account",
+        "rel": "was used to gain access",
+        "obj": "breach"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "threat actors are Russian state-sponsored",
+        "obj": "Russian state-sponsored hacking group"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "targeted corporate email accounts",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "Nobelium",
+        "rel": "targeted corporate email accounts",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "APT29",
+        "rel": "targeted corporate email accounts",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has department",
+        "obj": "cybersecurity department"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has department",
+        "obj": "legal department"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has leadership team",
+        "obj": "Microsoft's leadership team"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "attack conducted by",
+        "obj": "Midnight Blizzard"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "attack conducted by",
+        "obj": "Nobelium"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "attack conducted by",
+        "obj": "APT29"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "attack detected on",
+        "obj": "January 12th"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "attack initiated in",
+        "obj": "November 2023"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "involved in breach",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "Nobelium",
+        "rel": "involved in breach",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "APT29",
+        "rel": "involved in breach",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "is associated with",
+        "obj": "Midnight Blizzard"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "is associated with",
+        "obj": "Nobelium"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "is associated with",
+        "obj": "APT29"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "targeted employees in",
+        "obj": "cybersecurity department"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "targeted employees in",
+        "obj": "legal department"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "targeted employees in",
+        "obj": "Microsoft's leadership team"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "led to detection on",
+        "obj": "breach"
+      },
+      {
+        "sub": "breach",
+        "rel": "detected on",
+        "obj": "January 12th"
+      },
+      {
+        "sub": "breach",
+        "rel": "occurred in",
+        "obj": "November 2023"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "performed attack",
+        "obj": "password spray attack"
+      },
+      {
+        "sub": "password spray attack",
+        "rel": "used legacy tenant account",
+        "obj": "legacy non-production test tenant account"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "hacking group known as",
+        "obj": "Midnight Blizzard"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "hacking group known as",
+        "obj": "Nobelium"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "hacking group known as",
+        "obj": "APT29"
+      }
+    ]
+  }
+}

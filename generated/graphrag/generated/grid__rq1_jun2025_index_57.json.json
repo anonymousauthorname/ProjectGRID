@@ -1,0 +1,211 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_57.json",
+  "sample_index": 244,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_57.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SYMANTEC",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "LARGE LANGUAGE MODEL",
+        "type": "TOOL"
+      },
+      {
+        "name": "Rhadamanthys",
+        "type": "MALWARE"
+      },
+      {
+        "name": "NetSupport",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CleanUpLoader",
+        "type": "MALWARE"
+      },
+      {
+        "name": "ModiLoader",
+        "type": "MALWARE"
+      },
+      {
+        "name": "LokiBot",
+        "type": "MALWARE"
+      },
+      {
+        "name": "Dunihi",
+        "type": "MALWARE"
+      },
+      {
+        "name": "PHISHING EMAIL",
+        "type": "EVENT"
+      },
+      {
+        "name": "POWER SHELL SCRIPT",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "HTML FILE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CHATGPT",
+        "type": "TOOL"
+      },
+      {
+        "name": "LLM ATTACK CHAIN",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "PHISHING EMAIL WITH PASSWORD-PROTECTED ZIP",
+        "type": "EVENT"
+      },
+      {
+        "name": "MALWARE DELIVERY CAMPAIGN",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "THREAT ACTOR",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "THREAT_ACTOR",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SYMANTEC",
+        "rel": "related_to",
+        "obj": "LLM ATTACK CHAIN"
+      },
+      {
+        "sub": "LARGE LANGUAGE MODEL",
+        "rel": "related_to",
+        "obj": "Rhadamanthys"
+      },
+      {
+        "sub": "LARGE LANGUAGE MODEL",
+        "rel": "related_to",
+        "obj": "NetSupport"
+      },
+      {
+        "sub": "LARGE LANGUAGE MODEL",
+        "rel": "related_to",
+        "obj": "CleanUpLoader"
+      },
+      {
+        "sub": "LARGE LANGUAGE MODEL",
+        "rel": "related_to",
+        "obj": "ModiLoader"
+      },
+      {
+        "sub": "LARGE LANGUAGE MODEL",
+        "rel": "related_to",
+        "obj": "LokiBot"
+      },
+      {
+        "sub": "LARGE LANGUAGE MODEL",
+        "rel": "related_to",
+        "obj": "Dunihi"
+      },
+      {
+        "sub": "LARGE LANGUAGE MODEL",
+        "rel": "related_to",
+        "obj": "POWER SHELL SCRIPT"
+      },
+      {
+        "sub": "LARGE LANGUAGE MODEL",
+        "rel": "related_to",
+        "obj": "HTML FILE"
+      },
+      {
+        "sub": "CHATGPT",
+        "rel": "related_to",
+        "obj": "LARGE LANGUAGE MODEL"
+      },
+      {
+        "sub": "PHISHING EMAIL",
+        "rel": "related_to",
+        "obj": "LLM ATTACK CHAIN"
+      },
+      {
+        "sub": "PHISHING EMAIL",
+        "rel": "related_to",
+        "obj": "POWER SHELL SCRIPT"
+      },
+      {
+        "sub": "PHISHING EMAIL",
+        "rel": "related_to",
+        "obj": "HTML FILE"
+      },
+      {
+        "sub": "PHISHING EMAIL",
+        "rel": "related_to",
+        "obj": "MALWARE DELIVERY CAMPAIGN"
+      },
+      {
+        "sub": "THREAT ACTOR",
+        "rel": "related_to",
+        "obj": "LARGE LANGUAGE MODEL"
+      },
+      {
+        "sub": "THREAT ACTOR",
+        "rel": "related_to",
+        "obj": "LLM ATTACK CHAIN"
+      },
+      {
+        "sub": "MALWARE DELIVERY CAMPAIGN",
+        "rel": "related_to",
+        "obj": "LLM ATTACK CHAIN"
+      },
+      {
+        "sub": "POWER SHELL SCRIPT",
+        "rel": "related_to",
+        "obj": "Rhadamanthys"
+      },
+      {
+        "sub": "POWER SHELL SCRIPT",
+        "rel": "related_to",
+        "obj": "CleanUpLoader"
+      },
+      {
+        "sub": "POWER SHELL SCRIPT",
+        "rel": "related_to",
+        "obj": "ModiLoader"
+      },
+      {
+        "sub": "HTML FILE",
+        "rel": "related_to",
+        "obj": "Dunihi"
+      },
+      {
+        "sub": "HTML FILE",
+        "rel": "related_to",
+        "obj": "LokiBot"
+      },
+      {
+        "sub": "THREAT_ACTOR",
+        "rel": "related_to",
+        "obj": "CHATGPT"
+      }
+    ]
+  }
+}

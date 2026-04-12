@@ -1,0 +1,1799 @@
+{
+  "sample_id": "malkg__201407VinsulaSayad.txt",
+  "sample_index": 120,
+  "source": "malkg",
+  "file_name": "201407VinsulaSayad.txt",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Sayad",
+        "type": "malware",
+        "alias": [
+          "information stealing malware",
+          "infostealer",
+          "the malware",
+          "the Sayad malware"
+        ]
+      },
+      {
+        "name": "Flying Kitten",
+        "type": "malware",
+        "alias": [
+          "the Flying Kitten"
+        ]
+      },
+      {
+        "name": "WEXTRACT.exe",
+        "type": "hacker-tool",
+        "alias": [
+          "the main malware",
+          "the main self-extracting binary",
+          "the initial executable",
+          "self-extracting executable"
+        ]
+      },
+      {
+        "name": "~8f60957b3689075fa093b047242c0255.exe",
+        "type": "hacker-tool",
+        "alias": [
+          "the Binder",
+          "Binder executable malware"
+        ]
+      },
+      {
+        "name": "DiagnosticsService.dll",
+        "type": "file",
+        "alias": [
+          "Sayad Client",
+          "Client",
+          "the Client",
+          "the .NET DLL",
+          "the core malware component"
+        ]
+      },
+      {
+        "name": "base.dll",
+        "type": "file",
+        "alias": [
+          "the configuration disguised as a DLL file"
+        ]
+      },
+      {
+        "name": "sqlite3.dll",
+        "type": "file",
+        "alias": [
+          "the resource downloaded from ResourceURL"
+        ]
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "general-software",
+        "alias": [
+          "Windows utility",
+          "shell",
+          "rundll32"
+        ]
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+        "type": "windows-registry-key",
+        "alias": [
+          "registry key",
+          "startup registry key"
+        ]
+      },
+      {
+        "name": "78121",
+        "type": "abstract-concept",
+        "alias": [
+          "native API named '78121'",
+          "entry point '78121'"
+        ]
+      },
+      {
+        "name": "0o0o0o0o0.com",
+        "type": "domain-name",
+        "alias": [
+          "the malicious Web site",
+          "the malicious Web server"
+        ]
+      },
+      {
+        "name": "107.6.182.179",
+        "type": "ipv4-addr",
+        "alias": [
+          "the malicious Web server",
+          "the IP address of the server"
+        ]
+      },
+      {
+        "name": "http://0o0o0o0o0.com/soft.php",
+        "type": "url",
+        "alias": [
+          "PostURL",
+          "upload destination"
+        ]
+      },
+      {
+        "name": "http://www.ipligence.com/geolocation",
+        "type": "url",
+        "alias": [
+          "IP Geolocator"
+        ]
+      },
+      {
+        "name": "http://www.whois.net/",
+        "type": "url",
+        "alias": [
+          "WHOIS Search"
+        ]
+      },
+      {
+        "name": "http://vinsula.com/about/our-technology/",
+        "type": "url",
+        "alias": [
+          "Vinsula website"
+        ]
+      },
+      {
+        "name": "http://www.telerik.com/fiddler",
+        "type": "url",
+        "alias": [
+          "Fiddler"
+        ]
+      },
+      {
+        "name": "http://technet.microsoft.com/en-au/sysinternals/bb896653.aspx",
+        "type": "url",
+        "alias": [
+          "SysInternals Process Explorer"
+        ]
+      },
+      {
+        "name": "http://www.nirsoft.net/utils/hash_my_files.html",
+        "type": "url",
+        "alias": [
+          "Hashmyfiles"
+        ]
+      },
+      {
+        "name": "http://plusvic.readthedocs.org/en/modules/gettingstarted.html",
+        "type": "url",
+        "alias": [
+          "YARA documentation"
+        ]
+      },
+      {
+        "name": "http://plusvic.github.io/yara/",
+        "type": "url",
+        "alias": [
+          "YARA"
+        ]
+      },
+      {
+        "name": "http://www.dependencywalker.com/",
+        "type": "url",
+        "alias": [
+          "Dependency Walker"
+        ]
+      },
+      {
+        "name": "http://www.hex-rays.com/products/ida/",
+        "type": "url",
+        "alias": [
+          "IDA Pro"
+        ]
+      },
+      {
+        "name": "http://msdn.microsoft.com/en-au/windows/hardware/hh852365.aspx",
+        "type": "url",
+        "alias": [
+          "WinDBG"
+        ]
+      },
+      {
+        "name": "http://www.aldeid.com/wiki/PEView",
+        "type": "url",
+        "alias": [
+          "PEview"
+        ]
+      },
+      {
+        "name": "The attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the Iranian Ajax Security Team",
+          "Iranian hacking group",
+          "the authors"
+        ]
+      },
+      {
+        "name": "Iranian Ajax Security Team",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the Iranian hacking group"
+        ]
+      },
+      {
+        "name": "@MalwareChannel",
+        "type": "identity",
+        "alias": [
+          "the person who shared the sample"
+        ]
+      },
+      {
+        "name": "NCC Group’s Cyber Defence Operations",
+        "type": "identity",
+        "alias": [
+          "our colleagues from NCC Group’s Cyber Defence Operations"
+        ]
+      },
+      {
+        "name": "Vinsula Execution Engine (VEE)",
+        "type": "security-product",
+        "alias": [
+          "Vinsula Execution Engine"
+        ]
+      },
+      {
+        "name": "Microsoft C# compiler",
+        "type": "general-software",
+        "alias": [
+          "C# compiler"
+        ]
+      },
+      {
+        "name": "Microsoft .NET Framework",
+        "type": "general-software",
+        "alias": [
+          "the .NET Framework",
+          ".NET"
+        ]
+      },
+      {
+        "name": "WinExec API",
+        "type": "abstract-concept",
+        "alias": [
+          "the WinExec API"
+        ]
+      },
+      {
+        "name": "http://www.ipligence.com/geolocation",
+        "type": "url",
+        "alias": [
+          "the geolocation service"
+        ]
+      },
+      {
+        "name": "The configuration data",
+        "type": "indicator",
+        "alias": [
+          "the configuration attributes",
+          "config data"
+        ]
+      },
+      {
+        "name": "BuildId",
+        "type": "credential-value",
+        "alias": [
+          "a unique GUID"
+        ]
+      },
+      {
+        "name": "PublicKey",
+        "type": "credential-value",
+        "alias": [
+          "RSA public key"
+        ]
+      },
+      {
+        "name": "PostURL",
+        "type": "url",
+        "alias": [
+          "upload URL"
+        ]
+      },
+      {
+        "name": "ResourceURL",
+        "type": "url",
+        "alias": [
+          "URL to download sqllite3.dll"
+        ]
+      },
+      {
+        "name": "ScreenShotCount",
+        "type": "attack-pattern",
+        "alias": [
+          "determines how many screenshots"
+        ]
+      },
+      {
+        "name": "ScreenShotInterval",
+        "type": "attack-pattern",
+        "alias": [
+          "indicates how frequently screenshots"
+        ]
+      },
+      {
+        "name": "StartupScreenshot",
+        "type": "attack-pattern",
+        "alias": [
+          "determines whether to take a screenshot at startup"
+        ]
+      },
+      {
+        "name": "Host computer name",
+        "type": "abstract-concept",
+        "alias": [
+          "computer name"
+        ]
+      },
+      {
+        "name": "Internal and external IPs",
+        "type": "abstract-concept",
+        "alias": [
+          "IP addresses"
+        ]
+      },
+      {
+        "name": "Languages installed",
+        "type": "abstract-concept",
+        "alias": [
+          "installed languages"
+        ]
+      },
+      {
+        "name": "User name",
+        "type": "identity",
+        "alias": [
+          "the currently logged on user"
+        ]
+      },
+      {
+        "name": "Running processes",
+        "type": "process",
+        "alias": [
+          "the running processes"
+        ]
+      },
+      {
+        "name": "Open ports",
+        "type": "abstract-concept",
+        "alias": [
+          "open ports"
+        ]
+      },
+      {
+        "name": "Keystrokes",
+        "type": "abstract-concept",
+        "alias": [
+          "user keystrokes"
+        ]
+      },
+      {
+        "name": "Clipboard",
+        "type": "abstract-concept",
+        "alias": [
+          "information stored in the clipboard"
+        ]
+      },
+      {
+        "name": "FileZilla FTP Client",
+        "type": "general-software",
+        "alias": [
+          "FileZilla"
+        ]
+      },
+      {
+        "name": "WinSCP",
+        "type": "general-software",
+        "alias": [
+          "WinSCP"
+        ]
+      },
+      {
+        "name": "FileZilla FTP Server",
+        "type": "general-software",
+        "alias": [
+          "FileZilla FTP Server"
+        ]
+      },
+      {
+        "name": "Kerio VPN client",
+        "type": "general-software",
+        "alias": [
+          "Kerio VPN client"
+        ]
+      },
+      {
+        "name": "Chrome",
+        "type": "general-software",
+        "alias": [
+          "Google Chrome"
+        ]
+      },
+      {
+        "name": "Firefox",
+        "type": "general-software",
+        "alias": [
+          "Mozilla Firefox"
+        ]
+      },
+      {
+        "name": "Internet Explorer",
+        "type": "general-software",
+        "alias": [
+          "Internet Explorer"
+        ]
+      },
+      {
+        "name": "Opera",
+        "type": "general-software",
+        "alias": [
+          "Opera browser"
+        ]
+      },
+      {
+        "name": "Skype",
+        "type": "general-software",
+        "alias": [
+          "Skype"
+        ]
+      },
+      {
+        "name": "Yahoo Messenger",
+        "type": "general-software",
+        "alias": [
+          "Yahoo Messenger"
+        ]
+      },
+      {
+        "name": "Pidgin",
+        "type": "general-software",
+        "alias": [
+          "Pidgin"
+        ]
+      },
+      {
+        "name": "GTalk",
+        "type": "general-software",
+        "alias": [
+          "Google Talk"
+        ]
+      },
+      {
+        "name": "Putty",
+        "type": "general-software",
+        "alias": [
+          "PuTTY"
+        ]
+      },
+      {
+        "name": "Proxifier",
+        "type": "general-software",
+        "alias": [
+          "Proxifier"
+        ]
+      },
+      {
+        "name": "WinVPN",
+        "type": "general-software",
+        "alias": [
+          "WinVPN"
+        ]
+      },
+      {
+        "name": "RDP",
+        "type": "abstract-concept",
+        "alias": [
+          "Remote Desktop Protocol"
+        ]
+      },
+      {
+        "name": "Remote Desktop",
+        "type": "abstract-concept",
+        "alias": [
+          "Remote Desktop"
+        ]
+      },
+      {
+        "name": "The attacker’s question",
+        "type": "abstract-concept",
+        "alias": [
+          "is this the work of the Iranian Ajax Security Team?"
+        ]
+      },
+      {
+        "name": "The Iranian Ajax Security Team",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Iranian hacking group"
+        ]
+      },
+      {
+        "name": "a phishing email",
+        "type": "attack-pattern",
+        "alias": [
+          "phishing"
+        ]
+      },
+      {
+        "name": "the C2 server",
+        "type": "infrastructure",
+        "alias": [
+          "the malicious Web server"
+        ]
+      },
+      {
+        "name": "the malicious server",
+        "type": "infrastructure",
+        "alias": [
+          "the server"
+        ]
+      },
+      {
+        "name": "the malware",
+        "type": "malware",
+        "alias": [
+          "the Sayad malware"
+        ]
+      },
+      {
+        "name": "The attacker’s hypothesis",
+        "type": "abstract-concept",
+        "alias": [
+          "possible link to the activities of the Iranian hacking group"
+        ]
+      },
+      {
+        "name": "The Vinsula Execution Engine",
+        "type": "security-product",
+        "alias": [
+          "VEE"
+        ]
+      },
+      {
+        "name": "The process tree",
+        "type": "abstract-concept",
+        "alias": [
+          "process tree from our engine"
+        ]
+      },
+      {
+        "name": "The report",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "this post",
+          "the post"
+        ]
+      },
+      {
+        "name": "The code paths",
+        "type": "abstract-concept",
+        "alias": [
+          "code paths in Binder’s Main entry point"
+        ]
+      },
+      {
+        "name": "The functionality",
+        "type": "abstract-concept",
+        "alias": [
+          "the functionality of the Binder"
+        ]
+      },
+      {
+        "name": "The post",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "this post"
+        ]
+      },
+      {
+        "name": "The debugger",
+        "type": "security-product",
+        "alias": [
+          "IDA Pro",
+          "WinDBG"
+        ]
+      },
+      {
+        "name": "The tools used",
+        "type": "other",
+        "alias": [
+          "tools used for analyzing Sayad"
+        ]
+      },
+      {
+        "name": "The registry modification",
+        "type": "windows-registry-key",
+        "alias": [
+          "the registry key modification"
+        ]
+      },
+      {
+        "name": "The command line",
+        "type": "network-traffic",
+        "alias": [
+          "command line details"
+        ]
+      },
+      {
+        "name": "The network activity",
+        "type": "network-traffic",
+        "alias": [
+          "network activity report"
+        ]
+      },
+      {
+        "name": "The source code",
+        "type": "abstract-concept",
+        "alias": [
+          "source code of the two .NET projects"
+        ]
+      },
+      {
+        "name": "The debugging messages",
+        "type": "abstract-concept",
+        "alias": [
+          "debugging messages"
+        ]
+      },
+      {
+        "name": "The malware authors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the authors"
+        ]
+      },
+      {
+        "name": "The C# code",
+        "type": "abstract-concept",
+        "alias": [
+          "C# code"
+        ]
+      },
+      {
+        "name": "The malware sample",
+        "type": "file",
+        "alias": [
+          "the sample"
+        ]
+      },
+      {
+        "name": "The detection rate",
+        "type": "attack-pattern",
+        "alias": [
+          "detection rate"
+        ]
+      },
+      {
+        "name": "The payload",
+        "type": "malware",
+        "alias": [
+          "embedded payload"
+        ]
+      },
+      {
+        "name": "The temporary location",
+        "type": "location",
+        "alias": [
+          "C:\\Users\\[User]\\AppData\\Local\\Temp\\IXP000.TMP"
+        ]
+      },
+      {
+        "name": "The malware process tree",
+        "type": "process",
+        "alias": [
+          "process tree"
+        ]
+      },
+      {
+        "name": "The malware workflow",
+        "type": "attack-pattern",
+        "alias": [
+          "malware workflow"
+        ]
+      },
+      {
+        "name": "The attacker’s framework",
+        "type": "security-product",
+        "alias": [
+          "Vinsula Execution Engine"
+        ]
+      },
+      {
+        "name": "The process",
+        "type": "process",
+        "alias": [
+          "WEXTRACT.exe",
+          "the main executable"
+        ]
+      },
+      {
+        "name": "The executable",
+        "type": "file",
+        "alias": [
+          "the initial executable"
+        ]
+      },
+      {
+        "name": "The .NET DLL",
+        "type": "file",
+        "alias": [
+          "DiagnosticsService.dll"
+        ]
+      },
+      {
+        "name": "The command",
+        "type": "network-traffic",
+        "alias": [
+          "rundll32.exe command"
+        ]
+      },
+      {
+        "name": "The exploit",
+        "type": "vulnerability",
+        "alias": [
+          "use of .NET"
+        ]
+      },
+      {
+        "name": "The blog post",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "the article"
+        ]
+      },
+      {
+        "name": "The Vinsula report",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "our Vinsula malware report"
+        ]
+      },
+      {
+        "name": "The process explorer screenshot",
+        "type": "abstract-concept",
+        "alias": [
+          "screenshot from Process Explorer"
+        ]
+      },
+      {
+        "name": "The implementation",
+        "type": "attack-pattern",
+        "alias": [
+          "the implementation of the Binder"
+        ]
+      },
+      {
+        "name": "The detection rules",
+        "type": "indicator",
+        "alias": [
+          "YARA detection rule"
+        ]
+      },
+      {
+        "name": "The hashing identifiers",
+        "type": "indicator",
+        "alias": [
+          "SHA1, MD5, SHA256"
+        ]
+      },
+      {
+        "name": "The author of the post",
+        "type": "identity",
+        "alias": [
+          "the author"
+        ]
+      },
+      {
+        "name": "The hash of WEXTRACT.exe",
+        "type": "indicator",
+        "alias": [
+          "SHA1:1c52b749403d3f229636f07b0040eb17beba28e4"
+        ]
+      },
+      {
+        "name": "The hash of ~8f60957b3689075fa093b047242c0255.exe",
+        "type": "indicator",
+        "alias": [
+          "SHA1:69fd05ca3a7514ea79480d1dbb358fab391e738d"
+        ]
+      },
+      {
+        "name": "The hash of DiagnosticsService.dll",
+        "type": "indicator",
+        "alias": [
+          "SHA1:8521eefbf7336df5c275c3da4b61c94062fafdda"
+        ]
+      },
+      {
+        "name": "The hash of sqlite3.dll",
+        "type": "indicator",
+        "alias": [
+          "SHA1:25c3720c06de6d9b584a06ddf44c079c24df30ce"
+        ]
+      },
+      {
+        "name": "The hash of base.dll",
+        "type": "indicator",
+        "alias": [
+          "SHA1:082da03918039125dcf1f096a13ffa9ab6a56bde"
+        ]
+      },
+      {
+        "name": "The hash of WEXTRACT.exe (SHA2)",
+        "type": "indicator",
+        "alias": [
+          "SHA2:8904836017bc20972a769f8d4d6bee08388da3d0f83e362e67f9f0b6b1ae5c12"
+        ]
+      },
+      {
+        "name": "The hash of ~8f60957b3689075fa093b047242c0255.exe (SHA2)",
+        "type": "indicator",
+        "alias": [
+          "SHA2:780c86ec885ea48316995ae69965e314a750848413f94907cf54bdeba09b5c3c"
+        ]
+      },
+      {
+        "name": "The hash of DiagnosticsService.dll (SHA2)",
+        "type": "indicator",
+        "alias": [
+          "SHA2:bae3171917daf3eb498ae2fb1d0fcbfbb684a5314a8cbef2d5e3bd4c30ece8e1"
+        ]
+      },
+      {
+        "name": "The hash of sqlite3.dll (SHA2)",
+        "type": "indicator",
+        "alias": [
+          "SHA2:c8571f963541414666397dce06657594560eed4943c93780eb7a2358f0645515"
+        ]
+      },
+      {
+        "name": "The hash of base.dll (SHA2)",
+        "type": "indicator",
+        "alias": [
+          "SHA2:35cd39d419ab386aaa534b4ce95aa7fcda696ef6960fd103beaecf71bacd7398"
+        ]
+      },
+      {
+        "name": "The Windows utility",
+        "type": "general-software",
+        "alias": [
+          "rundll32.exe"
+        ]
+      },
+      {
+        "name": "The attacker’s interest",
+        "type": "abstract-concept",
+        "alias": [
+          "interest in Iranian hacking group"
+        ]
+      },
+      {
+        "name": "The Vinsula methodology",
+        "type": "attack-pattern",
+        "alias": [
+          "behavioral monitoring framework"
+        ]
+      },
+      {
+        "name": "The report's findings",
+        "type": "abstract-concept",
+        "alias": [
+          "findings from the analysis"
+        ]
+      },
+      {
+        "name": "The malware's behavior",
+        "type": "attack-pattern",
+        "alias": [
+          "malware behavior"
+        ]
+      },
+      {
+        "name": "The exploitation of .NET",
+        "type": "attack-pattern",
+        "alias": [
+          "exploiting .NET for interop"
+        ]
+      },
+      {
+        "name": "The static analysis",
+        "type": "attack-pattern",
+        "alias": [
+          "static building blocks"
+        ]
+      },
+      {
+        "name": "The runtime execution",
+        "type": "attack-pattern",
+        "alias": [
+          "the execution of the malware"
+        ]
+      },
+      {
+        "name": "The .NET OOP/OOD background",
+        "type": "abstract-concept",
+        "alias": [
+          "OOP background"
+        ]
+      },
+      {
+        "name": "The obfuscation method",
+        "type": "attack-pattern",
+        "alias": [
+          "Base64 encoding",
+          "simple obfuscation"
+        ]
+      },
+      {
+        "name": "The resource downloaded",
+        "type": "file",
+        "alias": [
+          "sqllite3.dll"
+        ]
+      },
+      {
+        "name": "The malware's description",
+        "type": "abstract-concept",
+        "alias": [
+          "the most interesting aspect"
+        ]
+      },
+      {
+        "name": "The debugging messages",
+        "type": "abstract-concept",
+        "alias": [
+          "messages indicating stages"
+        ]
+      },
+      {
+        "name": "The string decryption method",
+        "type": "attack-pattern",
+        "alias": [
+          "FromUrlSafeBase64String",
+          "ToUrlSafeBase64String"
+        ]
+      },
+      {
+        "name": "The source of the code",
+        "type": "abstract-concept",
+        "alias": [
+          "copied from StackOverflow"
+        ]
+      },
+      {
+        "name": "The Vinsula report section",
+        "type": "abstract-concept",
+        "alias": [
+          "the section on registry modification"
+        ]
+      },
+      {
+        "name": "The process of extraction",
+        "type": "attack-pattern",
+        "alias": [
+          "dropping files"
+        ]
+      },
+      {
+        "name": "The initial executable",
+        "type": "file",
+        "alias": [
+          "WEXTRACT.exe"
+        ]
+      },
+      {
+        "name": "The temporary directory",
+        "type": "location",
+        "alias": [
+          "C:\\Users\\[User]\\AppData\\Local\\Temp\\IXP000.TMP"
+        ]
+      },
+      {
+        "name": "The process launch",
+        "type": "attack-pattern",
+        "alias": [
+          "launching the Binder"
+        ]
+      },
+      {
+        "name": "The .NET version",
+        "type": "abstract-concept",
+        "alias": [
+          "installed .NET version"
+        ]
+      },
+      {
+        "name": "The infection vector",
+        "type": "attack-pattern",
+        "alias": [
+          "phishing emails"
+        ]
+      },
+      {
+        "name": "The embedded resource",
+        "type": "file",
+        "alias": [
+          "embedded resources"
+        ]
+      },
+      {
+        "name": "The malicious server",
+        "type": "infrastructure",
+        "alias": [
+          "0o0o0o0o0.com"
+        ]
+      },
+      {
+        "name": "The malware's attention to detail",
+        "type": "abstract-concept",
+        "alias": [
+          "attention to detail"
+        ]
+      },
+      {
+        "name": "The attacker's research",
+        "type": "abstract-concept",
+        "alias": [
+          "research into the code"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Sayad",
+        "rel": "is dubbed",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Flying Kitten"
+      },
+      {
+        "sub": "WEXTRACT.exe",
+        "rel": "is a",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "self-extracting executable"
+      },
+      {
+        "sub": "WEXTRACT.exe",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "~8f60957b3689075fa093b047242c0255.exe"
+      },
+      {
+        "sub": "WEXTRACT.exe",
+        "rel": "launches",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "~8f60957b3689075fa093b047242c0255.exe"
+      },
+      {
+        "sub": "~8f60957b3689075fa093b047242c0255.exe",
+        "rel": "checks",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": ".NET version"
+      },
+      {
+        "sub": "~8f60957b3689075fa093b047242c0255.exe",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "DiagnosticsService.dll"
+      },
+      {
+        "sub": "DiagnosticsService.dll",
+        "rel": "implements",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "data collection methods"
+      },
+      {
+        "sub": "DiagnosticsService.dll",
+        "rel": "sends",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "the C2 server"
+      },
+      {
+        "sub": "DiagnosticsService.dll",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "DiagnosticsService.dll",
+        "rel": "obtains",
+        "rel_type": [
+          "gets"
+        ],
+        "obj": "entry point '78121'"
+      },
+      {
+        "sub": "The attacker",
+        "rel": "is",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "Iranian Ajax Security Team"
+      },
+      {
+        "sub": "The attacker",
+        "rel": "is",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Iranian Ajax Security Team"
+      },
+      {
+        "sub": "WEXTRACT.exe",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the initial executable"
+      },
+      {
+        "sub": "The initial executable",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "WEXTRACT.exe"
+      },
+      {
+        "sub": "WEXTRACT.exe",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the main self-extracting binary"
+      },
+      {
+        "sub": "The initial executable",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the main executable"
+      },
+      {
+        "sub": "The main executable",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "WEXTRACT.exe"
+      },
+      {
+        "sub": "The malware",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the Sayad malware"
+      },
+      {
+        "sub": "The C2 server",
+        "rel": "is controlled by",
+        "rel_type": [
+          "controls"
+        ],
+        "obj": "the hackers"
+      },
+      {
+        "sub": "The C2 server",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the malicious Web server"
+      },
+      {
+        "sub": "DiagnosticsService.dll",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the Client"
+      },
+      {
+        "sub": "The malicious Web server",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "0o0o0o0o0.com"
+      },
+      {
+        "sub": "The malicious Web server",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "107.6.182.179"
+      },
+      {
+        "sub": "PostURL",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "http://0o0o0o0o0.com/soft.php"
+      },
+      {
+        "sub": "The geolocation service",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "http://www.ipligence.com/geolocation"
+      },
+      {
+        "sub": "The malware sample",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the sample"
+      },
+      {
+        "sub": "The post",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "this post"
+      },
+      {
+        "sub": "The process tree",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the process tree from our engine"
+      },
+      {
+        "sub": "The code paths",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "code paths in Binder’s Main entry point"
+      },
+      {
+        "sub": "The functionality",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the functionality of the Binder"
+      },
+      {
+        "sub": "The Vinsula report",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "our Vinsula malware report"
+      },
+      {
+        "sub": "The report",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "this post"
+      },
+      {
+        "sub": "The debugger",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "IDA Pro"
+      },
+      {
+        "sub": "The debugger",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "WinDBG"
+      },
+      {
+        "sub": "The tools used",
+        "rel": "are used for",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "analyzing Sayad"
+      },
+      {
+        "sub": "The registry modification",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the registry key modification"
+      },
+      {
+        "sub": "The command line",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "command line details"
+      },
+      {
+        "sub": "The network activity",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "network activity report"
+      },
+      {
+        "sub": "The source code",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "source code of the two .NET projects"
+      },
+      {
+        "sub": "The debugging messages",
+        "rel": "are",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "messages indicating stages"
+      },
+      {
+        "sub": "The malware authors",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the authors"
+      },
+      {
+        "sub": "The C# code",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "C# code"
+      },
+      {
+        "sub": "The payload",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "embedded payload"
+      },
+      {
+        "sub": "The temporary location",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "C:\\Users\\[User]\\AppData\\Local\\Temp\\IXP000.TMP"
+      },
+      {
+        "sub": "The malware process tree",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "process tree"
+      },
+      {
+        "sub": "The malware workflow",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "malware workflow"
+      },
+      {
+        "sub": "The attacker’s framework",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Vinsula Execution Engine"
+      },
+      {
+        "sub": "The process",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "WEXTRACT.exe"
+      },
+      {
+        "sub": "The executable",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the initial executable"
+      },
+      {
+        "sub": "The .NET DLL",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "DiagnosticsService.dll"
+      },
+      {
+        "sub": "The command",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "rundll32.exe command"
+      },
+      {
+        "sub": "The exploit",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "use of .NET"
+      },
+      {
+        "sub": "The blog post",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the article"
+      },
+      {
+        "sub": "The Vinsula report section",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the section on registry modification"
+      },
+      {
+        "sub": "The process of extraction",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "dropping files"
+      },
+      {
+        "sub": "The infection vector",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "The embedded resource",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "embedded resources"
+      },
+      {
+        "sub": "The malicious server",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "0o0o0o0o0.com"
+      },
+      {
+        "sub": "The attacker’s interest",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "interest in Iranian hacking group"
+      },
+      {
+        "sub": "The Vinsula methodology",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "behavioral monitoring framework"
+      },
+      {
+        "sub": "The report's findings",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "findings from the analysis"
+      },
+      {
+        "sub": "The malware's behavior",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "malware behavior"
+      },
+      {
+        "sub": "The exploitation of .NET",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "exploiting .NET for interop"
+      },
+      {
+        "sub": "The static analysis",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "static building blocks"
+      },
+      {
+        "sub": "The runtime execution",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the execution of the malware"
+      },
+      {
+        "sub": "The .NET OOP/OOD background",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "OOP background"
+      },
+      {
+        "sub": "The obfuscation method",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Base64 encoding"
+      },
+      {
+        "sub": "The resource downloaded",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "sqllite3.dll"
+      },
+      {
+        "sub": "The malware's description",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the most interesting aspect"
+      },
+      {
+        "sub": "The debugging messages",
+        "rel": "are",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "messages indicating stages"
+      },
+      {
+        "sub": "The string decryption method",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "FromUrlSafeBase64String"
+      },
+      {
+        "sub": "The source of the code",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "copied from StackOverflow"
+      },
+      {
+        "sub": "The process launch",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "launching the Binder"
+      },
+      {
+        "sub": "The .NET version",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "installed .NET version"
+      },
+      {
+        "sub": "The infection vector",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "The malware authors",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the authors"
+      },
+      {
+        "sub": "The C# code",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "C# code"
+      },
+      {
+        "sub": "The malware sample",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the sample"
+      },
+      {
+        "sub": "The detection rate",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "detection rate"
+      },
+      {
+        "sub": "The payload",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "embedded payload"
+      },
+      {
+        "sub": "The temporary directory",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "C:\\Users\\[User]\\AppData\\Local\\Temp\\IXP000.TMP"
+      },
+      {
+        "sub": "The attacker’s framework",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Vinsula Execution Engine"
+      },
+      {
+        "sub": "The malware workflow",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "malware workflow"
+      },
+      {
+        "sub": "The debugging messages",
+        "rel": "are",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "messages indicating stages"
+      },
+      {
+        "sub": "The malware sample",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the sample"
+      },
+      {
+        "sub": "The post",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "this post"
+      },
+      {
+        "sub": "The initial executable",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "WEXTRACT.exe"
+      },
+      {
+        "sub": "The main executable",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "WEXTRACT.exe"
+      },
+      {
+        "sub": "The .NET version",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "installed .NET version"
+      },
+      {
+        "sub": "The C2 server",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the malicious Web server"
+      },
+      {
+        "sub": "The malicious server",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "0o0o0o0o0.com"
+      },
+      {
+        "sub": "The malware sample",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the sample"
+      }
+    ]
+  }
+}

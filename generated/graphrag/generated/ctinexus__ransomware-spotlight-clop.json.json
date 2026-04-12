@@ -1,0 +1,104 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-clop.json",
+  "sample_index": 97,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-clop.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CLOP",
+        "type": "MALWARE"
+      },
+      {
+        "name": "SOLARWINDS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SERV-U",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CVE-2021-35211",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "FIN11",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "DEV-0950",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "RASPBERRY ROBIN",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "MARITIME SERVICES GIANT",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "SINGAPORE",
+        "type": "GEO"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CLOP",
+        "rel": "related_to",
+        "obj": "SOLARWINDS"
+      },
+      {
+        "sub": "CLOP",
+        "rel": "related_to",
+        "obj": "CVE-2021-35211"
+      },
+      {
+        "sub": "CVE-2021-35211",
+        "rel": "related_to",
+        "obj": "SERV-U"
+      },
+      {
+        "sub": "CLOP",
+        "rel": "related_to",
+        "obj": "FIN11"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "related_to",
+        "obj": "FIN11"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "related_to",
+        "obj": "RASPBERRY ROBIN"
+      },
+      {
+        "sub": "MARITIME SERVICES GIANT",
+        "rel": "related_to",
+        "obj": "CLOP"
+      },
+      {
+        "sub": "MARITIME SERVICES GIANT",
+        "rel": "related_to",
+        "obj": "SINGAPORE"
+      }
+    ]
+  }
+}

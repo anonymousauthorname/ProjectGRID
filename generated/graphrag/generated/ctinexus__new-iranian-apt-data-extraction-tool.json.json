@@ -1,0 +1,108 @@
+{
+  "sample_id": "ctinexus__new-iranian-apt-data-extraction-tool.json",
+  "sample_index": 92,
+  "source": "ctinexus",
+  "file_name": "new-iranian-apt-data-extraction-tool.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TAG",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "APT35",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "CHARMING KITTEN",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "HYPERSCRAPE",
+        "type": "TOOL"
+      },
+      {
+        "name": "GMAIL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "YAHOO!",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MICROSOFT OUTLOOK",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "IRAN",
+        "type": "GEO"
+      },
+      {
+        "name": "DECEMBER 2021",
+        "type": "EVENT"
+      },
+      {
+        "name": "GOVERNMENT BACKED ATTACKER WARNINGS",
+        "type": "INFRASTRUCTURE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CHARMING KITTEN",
+        "rel": "related_to",
+        "obj": "HYPERSCRAPE"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "related_to",
+        "obj": "GMAIL"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "related_to",
+        "obj": "YAHOO!"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "related_to",
+        "obj": "MICROSOFT OUTLOOK"
+      },
+      {
+        "sub": "CHARMING KITTEN",
+        "rel": "related_to",
+        "obj": "IRAN"
+      },
+      {
+        "sub": "TAG",
+        "rel": "related_to",
+        "obj": "CHARMING KITTEN"
+      },
+      {
+        "sub": "TAG",
+        "rel": "related_to",
+        "obj": "HYPERSCRAPE"
+      },
+      {
+        "sub": "TAG",
+        "rel": "related_to",
+        "obj": "GOVERNMENT BACKED ATTACKER WARNINGS"
+      }
+    ]
+  }
+}

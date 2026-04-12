@@ -1,0 +1,208 @@
+{
+  "sample_id": "ctinexus__ryuk-2020-distributing-ransomware-via-trickbot-and-bazarloader.json",
+  "sample_index": 85,
+  "source": "ctinexus",
+  "file_name": "ryuk-2020-distributing-ransomware-via-trickbot-and-bazarloader.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Ryuk",
+        "type": "malware",
+        "alias": [
+          "Ryuk"
+        ]
+      },
+      {
+        "name": "BazarLoader",
+        "type": "hacker-tool",
+        "alias": [
+          "BazarLoader",
+          "BazarBackdoor"
+        ]
+      },
+      {
+        "name": "BazarBackdoor",
+        "type": "hacker-tool",
+        "alias": [
+          "BazarBackdoor"
+        ]
+      },
+      {
+        "name": "Trickbot",
+        "type": "malware",
+        "alias": [
+          "Trickbot"
+        ]
+      },
+      {
+        "name": "phishing emails",
+        "type": "general-software",
+        "alias": [
+          "phishing emails"
+        ]
+      },
+      {
+        "name": "malicious attachments",
+        "type": "file",
+        "alias": [
+          "malicious attachments"
+        ]
+      },
+      {
+        "name": "links to websites",
+        "type": "url",
+        "alias": [
+          "links to websites"
+        ]
+      },
+      {
+        "name": "free, online file-hosting solutions",
+        "type": "website",
+        "alias": [
+          "free, online file-hosting solutions"
+        ]
+      },
+      {
+        "name": "command-and-control (C&C) server",
+        "type": "infrastructure",
+        "alias": [
+          "command-and-control (C&C) server"
+        ]
+      },
+      {
+        "name": "the threat actor behind TrickBot",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the threat actor behind TrickBot"
+        ]
+      },
+      {
+        "name": "advisory",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "advisory"
+        ]
+      },
+      {
+        "name": "business correspondence",
+        "type": "abstract-concept",
+        "alias": [
+          "business correspondence"
+        ]
+      },
+      {
+        "name": "important messages",
+        "type": "abstract-concept",
+        "alias": [
+          "important messages"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Ryuk",
+        "rel": "began using",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "BazarLoader"
+      },
+      {
+        "sub": "BazarLoader",
+        "rel": "is also primarily distributed via",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "contain",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "malicious attachments"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "contain",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "links to websites"
+      },
+      {
+        "sub": "links to websites",
+        "rel": "host",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "malware"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "use",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "normal social engineering techniques"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "are disguised as",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "business correspondence"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "are disguised as",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "other important messages"
+      },
+      {
+        "sub": "command-and-control (C&C) server",
+        "rel": "is used to deploy and install",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the backdoor"
+      },
+      {
+        "sub": "the threat actor behind TrickBot",
+        "rel": "is also connected to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "BazarLoader"
+      },
+      {
+        "sub": "Trickbot",
+        "rel": "is also primarily distributed via",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "phishing emails"
+      }
+    ]
+  }
+}

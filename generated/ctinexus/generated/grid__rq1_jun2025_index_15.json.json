@@ -1,0 +1,194 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_15.json",
+  "sample_index": 207,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_15.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "malicious HTML attachments",
+        "type": "Unknown"
+      },
+      {
+        "name": "Troj/JSRedirBV",
+        "type": "Unknown"
+      },
+      {
+        "name": "HTML attachment",
+        "type": "Unknown"
+      },
+      {
+        "name": "embedded script runs within browser",
+        "type": "Unknown"
+      },
+      {
+        "name": "embedded script",
+        "type": "Unknown"
+      },
+      {
+        "name": "Mal/IframeQ",
+        "type": "Unknown"
+      },
+      {
+        "name": "spammy site",
+        "type": "Unknown"
+      },
+      {
+        "name": "another site",
+        "type": "Unknown"
+      },
+      {
+        "name": "malicious JavaScript",
+        "type": "Unknown"
+      },
+      {
+        "name": "junk code",
+        "type": "Unknown"
+      },
+      {
+        "name": "contains simple XOR decryption",
+        "type": "Unknown"
+      },
+      {
+        "name": "decryption function",
+        "type": "Unknown"
+      },
+      {
+        "name": "setTimeOut",
+        "type": "Unknown"
+      },
+      {
+        "name": "to evade JavaScript emulation tools",
+        "type": "Unknown"
+      },
+      {
+        "name": "incorrect XOR key generation",
+        "type": "Unknown"
+      },
+      {
+        "name": "deobfuscated script",
+        "type": "Unknown"
+      },
+      {
+        "name": "location.href",
+        "type": "Unknown"
+      },
+      {
+        "name": "generic detection",
+        "type": "Unknown"
+      },
+      {
+        "name": "automated analysis techniques",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "malicious HTML attachments",
+        "rel": "blocked as",
+        "obj": "Troj/JSRedirBV"
+      },
+      {
+        "sub": "HTML attachment",
+        "rel": "when opened",
+        "obj": "embedded script runs within browser"
+      },
+      {
+        "sub": "embedded script",
+        "rel": "redirects victim to",
+        "obj": "Mal/IframeQ"
+      },
+      {
+        "sub": "Mal/IframeQ",
+        "rel": "leads to",
+        "obj": "spammy site"
+      },
+      {
+        "sub": "Mal/IframeQ",
+        "rel": "loads further content from",
+        "obj": "another site"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "is minified and contains",
+        "obj": "junk code"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "after deobfuscation",
+        "obj": "contains simple XOR decryption"
+      },
+      {
+        "sub": "decryption function",
+        "rel": "is called via",
+        "obj": "setTimeOut"
+      },
+      {
+        "sub": "setTimeOut",
+        "rel": "ensures sufficient delay",
+        "obj": "to evade JavaScript emulation tools"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "uses setTimeOut to prevent",
+        "obj": "incorrect XOR key generation"
+      },
+      {
+        "sub": "deobfuscated script",
+        "rel": "redirects victim with",
+        "obj": "location.href"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "is designed to evade",
+        "obj": "generic detection"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "is designed to hinder",
+        "obj": "automated analysis techniques"
+      },
+      {
+        "sub": "Troj/JSRedirBV",
+        "rel": "is_associated_with",
+        "obj": "malicious JavaScript"
+      },
+      {
+        "sub": "embedded script runs within browser",
+        "rel": "executed by",
+        "obj": "malicious JavaScript"
+      },
+      {
+        "sub": "Mal/IframeQ",
+        "rel": "is_a_result_of",
+        "obj": "malicious JavaScript"
+      },
+      {
+        "sub": "setTimeOut",
+        "rel": "used in",
+        "obj": "malicious JavaScript"
+      },
+      {
+        "sub": "location.href",
+        "rel": "used_in",
+        "obj": "malicious JavaScript"
+      }
+    ]
+  }
+}

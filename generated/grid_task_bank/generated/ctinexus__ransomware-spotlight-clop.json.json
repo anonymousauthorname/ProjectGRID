@@ -1,0 +1,333 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-clop.json",
+  "sample_index": 97,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-clop.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Clop",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Clop operators",
+          "the Clop ransomware",
+          "Clop ransomware"
+        ]
+      },
+      {
+        "name": "SolarWinds Serv-U",
+        "type": "general-software",
+        "alias": [
+          "Serv-U Managed File Transfer",
+          "Serv-U Secure FTP"
+        ]
+      },
+      {
+        "name": "Serv-U Managed File Transfer",
+        "type": "general-software"
+      },
+      {
+        "name": "Serv-U Secure FTP",
+        "type": "general-software"
+      },
+      {
+        "name": "Serv-U remote code execution (RCE) vulnerability",
+        "type": "vulnerability"
+      },
+      {
+        "name": "CVE-2021-35211",
+        "type": "vulnerability",
+        "alias": [
+          "the Serv-U vulnerability"
+        ]
+      },
+      {
+        "name": "corporate networks",
+        "type": "network-traffic"
+      },
+      {
+        "name": "the Clop ransomware",
+        "type": "malware",
+        "alias": [
+          "Clop ransomware"
+        ]
+      },
+      {
+        "name": "a maritime services giant",
+        "type": "identity",
+        "alias": [
+          "a maritime services giant with headquarters in Singapore"
+        ]
+      },
+      {
+        "name": "Singapore",
+        "type": "location"
+      },
+      {
+        "name": "IT systems",
+        "type": "infrastructure"
+      },
+      {
+        "name": "classified proprietary commercial information",
+        "type": "victims-targets"
+      },
+      {
+        "name": "employee data",
+        "type": "victims-targets"
+      },
+      {
+        "name": "bank account details",
+        "type": "credential-value"
+      },
+      {
+        "name": "payroll information",
+        "type": "victims-targets"
+      },
+      {
+        "name": "passports",
+        "type": "credential-value"
+      },
+      {
+        "name": "email addresses",
+        "type": "credential-value"
+      },
+      {
+        "name": "internal correspondence",
+        "type": "victims-targets"
+      },
+      {
+        "name": "Microsoft Security",
+        "type": "security-product"
+      },
+      {
+        "name": "DEV-0950",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "FIN11",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "TA505"
+        ]
+      },
+      {
+        "name": "TA505",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the Raspberry Robin worm",
+        "type": "malware"
+      },
+      {
+        "name": "October 2022",
+        "type": "date-time"
+      },
+      {
+        "name": "November 2021",
+        "type": "date-time"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Clop operators",
+        "rel": "exploited",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "a SolarWinds Serv-U vulnerability"
+      },
+      {
+        "sub": "Clop operators",
+        "rel": "breached",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "corporate networks"
+      },
+      {
+        "sub": "Clop operators",
+        "rel": "delivered",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "the Clop ransomware"
+      },
+      {
+        "sub": "the Clop ransomware",
+        "rel": "is delivered as",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "a payload"
+      },
+      {
+        "sub": "Serv-U Managed File Transfer",
+        "rel": "had",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Serv-U remote code execution (RCE) vulnerability"
+      },
+      {
+        "sub": "Serv-U Secure FTP",
+        "rel": "had",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Serv-U remote code execution (RCE) vulnerability"
+      },
+      {
+        "sub": "Serv-U remote code execution (RCE) vulnerability",
+        "rel": "was tracked as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "CVE-2021-35211"
+      },
+      {
+        "sub": "Serv-U remote code execution (RCE) vulnerability",
+        "rel": "allowed",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "RCE on the vulnerable server"
+      },
+      {
+        "sub": "a maritime services giant with headquarters in Singapore",
+        "rel": "fell prey to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Clop"
+      },
+      {
+        "sub": "Clop",
+        "rel": "breached",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "IT systems"
+      },
+      {
+        "sub": "Clop",
+        "rel": "stole",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "classified proprietary commercial information"
+      },
+      {
+        "sub": "Clop",
+        "rel": "stole",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "employee data"
+      },
+      {
+        "sub": "employee data",
+        "rel": "included",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "bank account details"
+      },
+      {
+        "sub": "employee data",
+        "rel": "included",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "payroll information"
+      },
+      {
+        "sub": "employee data",
+        "rel": "included",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "passports"
+      },
+      {
+        "sub": "employee data",
+        "rel": "included",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "email addresses"
+      },
+      {
+        "sub": "employee data",
+        "rel": "included",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "internal correspondence"
+      },
+      {
+        "sub": "Microsoft Security",
+        "rel": "reported that",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "DEV-0950"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "appears to be associated with",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "FIN11"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "distributed",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Clop"
+      },
+      {
+        "sub": "Clop",
+        "rel": "was targeted in a campaign that targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "one of the victims of the Raspberry Robin worm"
+      },
+      {
+        "sub": "Microsoft Security",
+        "rel": "reported that",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "DEV-0950"
+      },
+      {
+        "sub": "FIN11",
+        "rel": "is also known as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "TA505"
+      }
+    ]
+  }
+}

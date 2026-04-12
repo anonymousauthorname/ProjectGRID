@@ -1,0 +1,339 @@
+{
+  "sample_id": "casie__2056.json",
+  "sample_index": 23,
+  "source": "casie",
+  "file_name": "2056.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "A report released on Monday by The Centre for Internet and Society",
+        "type": "generic-noun",
+        "alias": [
+          "the report",
+          "The Centre for Internet and Society"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "over 135 million records from India's Aadhaar national ID systems",
+        "type": "indicator",
+        "alias": [
+          "the leaks",
+          "Aadhaar data",
+          "the full Aadhaar database",
+          "135 million details",
+          "the government program databases",
+          "Aadhaar database"
+        ],
+        "mother entity": [
+          "India's Aadhaar national ID systems"
+        ]
+      },
+      {
+        "name": "India's Aadhaar national ID systems",
+        "type": "infrastructure",
+        "alias": [
+          "the national Aadhaar system",
+          "Aadhaar system",
+          "Aadhaar",
+          "Aadhaa’rs"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "government agencies that handle Aadhar data",
+        "type": "infrastructure",
+        "alias": [
+          "ministries"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "four government programs",
+        "type": "campaign",
+        "alias": [
+          "the programs mentioned in the report",
+          "government programs"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "India's National Social Assistance Programme (NSAP)",
+        "type": "general-software",
+        "alias": [
+          "NSAP"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "National Rural Employment Guarantee Scheme (NREGA)",
+        "type": "general-software",
+        "alias": [
+          "NREGA"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Govt. of Andhra Pradesh's Chandranna Bima Scheme",
+        "type": "general-software",
+        "alias": [
+          "Chandranna Bima Scheme"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Govt. of Andhra Pradesh's Daily Online Payment Reports of NREGA",
+        "type": "general-software",
+        "alias": [
+          "Daily Online Payment Reports of NREGA"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "The Centre for Internet and Society",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "improperly configured systems",
+        "type": "infrastructure",
+        "alias": [
+          "systems"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "details of program participants",
+        "type": "credential-value",
+        "alias": [
+          "names, addresses, phone numbers",
+          "leaked details"
+        ],
+        "mother entity": [
+          "the government program databases"
+        ]
+      },
+      {
+        "name": "fraudster",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "fraudsters"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Indian citizens",
+        "type": "identity",
+        "alias": [
+          "a person",
+          "individuals"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "biometrics",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Indian government",
+        "type": "identity",
+        "alias": [
+          "the government",
+          "government ministries"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ministries",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": [
+          "Indian government"
+        ]
+      },
+      {
+        "name": "Aadhaa'rs security policies",
+        "type": "course-of-action",
+        "alias": [
+          "Aadhaar security policies"
+        ],
+        "mother entity": [
+          "Indian government"
+        ]
+      },
+      {
+        "name": "financial fraud",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": [
+          "Indians"
+        ]
+      },
+      {
+        "name": "other government programs",
+        "type": "general-software",
+        "alias": [
+          "more data"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "A report released on Monday by The Centre for Internet and Society",
+        "rel": "reveals that over 135 million records from India's Aadhaar national ID systems have already leaked online",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "over 135 million records from India's Aadhaar national ID systems"
+      },
+      {
+        "sub": "India's Aadhaar national ID systems",
+        "rel": "have already leaked",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "over 135 million records from India's Aadhaar national ID systems"
+      },
+      {
+        "sub": "The leaks",
+        "rel": "didn't take place because of a flaw in the national Aadhaar system",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "flaw in the national Aadhaar system"
+      },
+      {
+        "sub": "The leaks",
+        "rel": "took place through",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "government agencies that handle Aadhar data"
+      },
+      {
+        "sub": "the report",
+        "rel": "identifies that just four government programs are responsible for leaking a whopping number of 135 million records",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "four government programs"
+      },
+      {
+        "sub": "four government programs",
+        "rel": "leaking a whopping number of 135 million records",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "135 million details"
+      },
+      {
+        "sub": "The Centre for Internet and Society",
+        "rel": "has discovered the leak via the prevalence of Aadhaar data",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "the leaks"
+      },
+      {
+        "sub": "improperly configured systems",
+        "rel": "exposed",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "details of program participants"
+      },
+      {
+        "sub": "fraudster",
+        "rel": "tie a person's leaked details (names, addresses, phone numbers) to an Aadhaar 12-digit ID",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "names, addresses, phone numbers"
+      },
+      {
+        "sub": "fraudster",
+        "rel": "build comprehensive profiles on",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Indian citizens"
+      },
+      {
+        "sub": "Indian government",
+        "rel": "admitted that some of the Aadhaar database has leaked online",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "some of the Aadhaar database"
+      },
+      {
+        "sub": "Indian government",
+        "rel": "started investigations",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Aadhaar data leak"
+      },
+      {
+        "sub": "Indian government",
+        "rel": "preparing changes to",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Aadhaa'rs security policies"
+      },
+      {
+        "sub": "Indians",
+        "rel": "become victims of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "financial fraud"
+      },
+      {
+        "sub": "other government programs",
+        "rel": "leak more data, including",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "biometrics"
+      },
+      {
+        "sub": "Indian government",
+        "rel": "could do anything to fix",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "the leak"
+      },
+      {
+        "sub": "fraudster",
+        "rel": "recreating",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Aadhaar database"
+      }
+    ]
+  }
+}

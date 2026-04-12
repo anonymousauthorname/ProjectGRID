@@ -1,0 +1,394 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_26.json",
+  "sample_index": 218,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_26.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "HARVESTER",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "BACKDOOR.GRAPHON",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CUSTOM DOWNLOADER",
+        "type": "TOOL"
+      },
+      {
+        "name": "CUSTOM SCREENSHOTTER",
+        "type": "TOOL"
+      },
+      {
+        "name": "COBALT STRIKE BEACON",
+        "type": "TOOL"
+      },
+      {
+        "name": "METASPLOIT",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "COSTURA ASSEMBLY LOADER",
+        "type": "TOOL"
+      },
+      {
+        "name": "CLOUDFRONT",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MICROSOFT INFRASTRUCTURE",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "AFGHANISTAN",
+        "type": "GEO"
+      },
+      {
+        "name": "SOUTH ASIA",
+        "type": "GEO"
+      },
+      {
+        "name": "TELECOMMUNICATIONS SECTOR",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "INFORMATION TECHNOLOGY SECTOR",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "SYMANTEC THREAT HUNTER TEAM",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "PERFECT-COUPLE.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "OUTPORTAL.AZUREWEBSITES.NET",
+        "type": "LOCATION"
+      },
+      {
+        "name": "USEDUST.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "MICROSOFT MSDN",
+        "type": "LOCATION"
+      },
+      {
+        "name": "MICROSOFT SGRAPI",
+        "type": "LOCATION"
+      },
+      {
+        "name": "MSDNMICROSOFT.AZUREWEBSITES.NET",
+        "type": "LOCATION"
+      },
+      {
+        "name": "HARVESTER GROUP",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "NATION-STATE-BACKED",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "ESPIONAGE CAMPAIGN",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "GOVERNMENT SECTOR",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "BACKDOOR.GRAPHON"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "CUSTOM DOWNLOADER"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "CUSTOM SCREENSHOTTER"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "COBALT STRIKE BEACON"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "METASPLOIT"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "COSTURA ASSEMBLY LOADER"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "CLOUDFRONT"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "MICROSOFT INFRASTRUCTURE"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "AFGHANISTAN"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "SOUTH ASIA"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "TELECOMMUNICATIONS SECTOR"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "GOVERNMENT SECTOR"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "INFORMATION TECHNOLOGY SECTOR"
+      },
+      {
+        "sub": "BACKDOOR.GRAPHON",
+        "rel": "related_to",
+        "obj": "MICROSOFT INFRASTRUCTURE"
+      },
+      {
+        "sub": "CUSTOM DOWNLOADER",
+        "rel": "related_to",
+        "obj": "COSTURA ASSEMBLY LOADER"
+      },
+      {
+        "sub": "CUSTOM SCREENSHOTTER",
+        "rel": "related_to",
+        "obj": "COSTURA ASSEMBLY LOADER"
+      },
+      {
+        "sub": "ESPIONAGE CAMPAIGN",
+        "rel": "related_to",
+        "obj": "HARVESTER GROUP"
+      },
+      {
+        "sub": "ESPIONAGE CAMPAIGN",
+        "rel": "related_to",
+        "obj": "AFGHANISTAN"
+      },
+      {
+        "sub": "ESPIONAGE CAMPAIGN",
+        "rel": "related_to",
+        "obj": "SOUTH ASIA"
+      },
+      {
+        "sub": "SYMANTEC THREAT HUNTER TEAM",
+        "rel": "related_to",
+        "obj": "HARVESTER"
+      },
+      {
+        "sub": "PERFECT-COUPLE.COM",
+        "rel": "related_to",
+        "obj": "HARVESTER"
+      },
+      {
+        "sub": "OUTPORTAL.AZUREWEBSITES.NET",
+        "rel": "related_to",
+        "obj": "CUSTOM DOWNLOADER"
+      },
+      {
+        "sub": "USEDUST.COM",
+        "rel": "related_to",
+        "obj": "HARVESTER"
+      },
+      {
+        "sub": "MICROSOFT MSDN",
+        "rel": "related_to",
+        "obj": "BACKDOOR.GRAPHON"
+      },
+      {
+        "sub": "MICROSOFT SGRAPI",
+        "rel": "related_to",
+        "obj": "BACKDOOR.GRAPHON"
+      },
+      {
+        "sub": "MSDNMICROSOFT.AZUREWEBSITES.NET",
+        "rel": "related_to",
+        "obj": "BACKDOOR.GRAPHON"
+      },
+      {
+        "sub": "NATION-STATE-BACKED",
+        "rel": "related_to",
+        "obj": "HARVESTER GROUP"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "BACKDOOR.GRAPHON"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "CUSTOM DOWNLOADER"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "CUSTOM SCREENSHOTTER"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "COBALT STRIKE BEACON"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "METASPLOIT"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "COSTURA ASSEMBLY LOADER"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "CLOUDFRONT"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "MICROSOFT INFRASTRUCTURE"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "AFGHANISTAN"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "SOUTH ASIA"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "TELECOMMUNICATIONS SECTOR"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "GOVERNMENT SECTOR"
+      },
+      {
+        "sub": "HARVESTER",
+        "rel": "related_to",
+        "obj": "INFORMATION TECHNOLOGY SECTOR"
+      },
+      {
+        "sub": "BACKDOOR.GRAPHON",
+        "rel": "related_to",
+        "obj": "MICROSOFT INFRASTRUCTURE"
+      },
+      {
+        "sub": "CUSTOM DOWNLOADER",
+        "rel": "related_to",
+        "obj": "COSTURA ASSEMBLY LOADER"
+      },
+      {
+        "sub": "CUSTOM SCREENSHOTTER",
+        "rel": "related_to",
+        "obj": "COSTURA ASSEMBLY LOADER"
+      },
+      {
+        "sub": "ESPIONAGE CAMPAIGN",
+        "rel": "related_to",
+        "obj": "HARVESTER GROUP"
+      },
+      {
+        "sub": "ESPIONAGE CAMPAIGN",
+        "rel": "related_to",
+        "obj": "AFGHANISTAN"
+      },
+      {
+        "sub": "ESPIONAGE CAMPAIGN",
+        "rel": "related_to",
+        "obj": "SOUTH ASIA"
+      },
+      {
+        "sub": "SYMANTEC THREAT HUNTER TEAM",
+        "rel": "related_to",
+        "obj": "HARVESTER"
+      },
+      {
+        "sub": "PERFECT-COUPLE.COM",
+        "rel": "related_to",
+        "obj": "HARVESTER"
+      },
+      {
+        "sub": "OUTPORTAL.AZUREWEBSITES.NET",
+        "rel": "related_to",
+        "obj": "CUSTOM DOWNLOADER"
+      },
+      {
+        "sub": "USEDUST.COM",
+        "rel": "related_to",
+        "obj": "HARVESTER"
+      },
+      {
+        "sub": "MICROSOFT MSDN",
+        "rel": "related_to",
+        "obj": "BACKDOOR.GRAPHON"
+      },
+      {
+        "sub": "MICROSOFT SGRAPI",
+        "rel": "related_to",
+        "obj": "BACKDOOR.GRAPHON"
+      },
+      {
+        "sub": "MSDNMICROSOFT.AZUREWEBSITES.NET",
+        "rel": "related_to",
+        "obj": "BACKDOOR.GRAPHON"
+      },
+      {
+        "sub": "NATION-STATE-BACKED",
+        "rel": "related_to",
+        "obj": "HARVESTER GROUP"
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "sample_id": "casie__10150.json",
+  "sample_index": 48,
+  "source": "casie",
+  "file_name": "10150.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "utility",
+        "rel": "is",
+        "obj": "chip-on-chip"
+      },
+      {
+        "sub": "IT manager",
+        "rel": "can access",
+        "obj": "company PCs"
+      },
+      {
+        "sub": "IT manager",
+        "rel": "uses",
+        "obj": "AMT"
+      },
+      {
+        "sub": "utility",
+        "rel": "allows",
+        "obj": "remote access"
+      },
+      {
+        "sub": "utility",
+        "rel": "allows",
+        "obj": "access to company PCs"
+      },
+      {
+        "sub": "tools",
+        "rel": "include",
+        "obj": "AMT"
+      },
+      {
+        "sub": "ME",
+        "rel": "has vulnerability",
+        "obj": "USB"
+      },
+      {
+        "sub": "Positive Technologies",
+        "rel": "reveals",
+        "obj": "vulnerability in ME"
+      },
+      {
+        "sub": "vulnerability in ME",
+        "rel": "allows",
+        "obj": "full takeover of ME"
+      },
+      {
+        "sub": "vulnerability in ME",
+        "rel": "leads to",
+        "obj": "takeover of ME"
+      },
+      {
+        "sub": "vulnerability in ME",
+        "rel": "used",
+        "obj": "USB"
+      },
+      {
+        "sub": "vulnerability in ME",
+        "rel": "exploited via",
+        "obj": "USB"
+      },
+      {
+        "sub": "Positive Technologies",
+        "rel": "explained",
+        "obj": "attack via physical access"
+      },
+      {
+        "sub": "Dmitry Sklyarov",
+        "rel": "discovered",
+        "obj": "vulnerability CVE"
+      },
+      {
+        "sub": "vulnerability CVE",
+        "rel": "is described in",
+        "obj": "advisory Intel-SA-00125"
+      },
+      {
+        "sub": "Keys",
+        "rel": "are derived from",
+        "obj": "SVN"
+      },
+      {
+        "sub": "Keys",
+        "rel": "are derived from",
+        "obj": "root secret"
+      },
+      {
+        "sub": "root secret",
+        "rel": "is unique to",
+        "obj": "each platform"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "enables",
+        "obj": "JTAG debugger"
+      },
+      {
+        "sub": "JTAG debugger",
+        "rel": "is used to access",
+        "obj": "root secret"
+      },
+      {
+        "sub": "root secret",
+        "rel": "enables",
+        "obj": "Keys"
+      },
+      {
+        "sub": "MFS security mechanism",
+        "rel": "rely on",
+        "obj": "Integrity Key"
+      },
+      {
+        "sub": "MFS security mechanism",
+        "rel": "rely on",
+        "obj": "Confidentiality Key"
+      },
+      {
+        "sub": "Purism",
+        "rel": "avoids",
+        "obj": "ME"
+      },
+      {
+        "sub": "Google",
+        "rel": "uses",
+        "obj": "Intel processors"
+      }
+    ]
+  }
+}

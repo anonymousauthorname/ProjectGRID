@@ -1,0 +1,227 @@
+{
+  "sample_id": "ctinexus__russian-hackers-stole-microsoft-corporate-emails-in-month-long-breach.json",
+  "sample_index": 64,
+  "source": "ctinexus",
+  "file_name": "russian-hackers-stole-microsoft-corporate-emails-in-month-long-breach.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Conduct",
+        "obj": "Password spray attack"
+      },
+      {
+        "sub": "Password spray attack",
+        "rel": "Aim",
+        "obj": "Identify potential entry points"
+      },
+      {
+        "sub": "Legacy non-production test tenant account",
+        "rel": "Belong to",
+        "obj": "Microsoft employees"
+      },
+      {
+        "sub": "Microsoft employees",
+        "rel": "Include",
+        "obj": "Leadership team"
+      },
+      {
+        "sub": "Microsoft employees",
+        "rel": "Include",
+        "obj": "Cybersecurity department"
+      },
+      {
+        "sub": "Microsoft employees",
+        "rel": "Include",
+        "obj": "Legal department"
+      },
+      {
+        "sub": "Password spray attack",
+        "rel": "Have purpose",
+        "obj": "Gather victim identity information"
+      },
+      {
+        "sub": "Password spray attack",
+        "rel": "Contribute to",
+        "obj": "Initial access"
+      },
+      {
+        "sub": "Password spray attack",
+        "rel": "Target",
+        "obj": "Legacy non-production test tenant account"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Password spray"
+      },
+      {
+        "sub": "Password spray",
+        "rel": "Has technique",
+        "obj": "Credential-based access"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "Has vulnerability",
+        "obj": "Weak authentication practices"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "Operate",
+        "obj": "Legacy non-production test tenant account"
+      },
+      {
+        "sub": "Legacy non-production test tenant account",
+        "rel": "Belong to",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Authentication practices"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Has tactic",
+        "obj": "Password spray"
+      },
+      {
+        "sub": "Legacy non-production test tenant accounts",
+        "rel": "Belong to",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "Email accounts",
+        "rel": "Have been compromised",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "Emails and attachments",
+        "rel": "Have been stolen",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "User"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Discover",
+        "obj": "Email"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Discover",
+        "obj": "Attachment"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Discover",
+        "obj": "System"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Discover",
+        "obj": "User Information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Discover",
+        "obj": "Access Rights"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Discover",
+        "obj": "Key Personnel"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Discover",
+        "obj": "Sensitive Departments"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "System"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Data Collection"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Email"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Attachment"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Belong to",
+        "obj": "Cybersecurity and Legal Staff"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Command and control channel"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Microsoft's systems"
+      },
+      {
+        "sub": "Microsoft's systems",
+        "rel": "Have vulnerability",
+        "obj": "Compromised accounts"
+      },
+      {
+        "sub": "Compromised accounts",
+        "rel": "Modify",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "Sensitive data",
+        "rel": "Exfiltrate",
+        "obj": "Microsoft's systems"
+      }
+    ]
+  }
+}

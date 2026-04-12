@@ -1,0 +1,249 @@
+{
+  "sample_id": "casie__10057.json",
+  "sample_index": 41,
+  "source": "casie",
+  "file_name": "10057.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Ralf-Phillip Weinmann",
+        "type": "Person"
+      },
+      {
+        "name": "Comsecuris",
+        "type": "Organization"
+      },
+      {
+        "name": "Huawei",
+        "type": "Organization"
+      },
+      {
+        "name": "Huawei Technologies",
+        "type": "Organization"
+      },
+      {
+        "name": "HiSilicon Technologies",
+        "type": "Organization"
+      },
+      {
+        "name": "HiSilicon Balong",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Kirin",
+        "type": "Software"
+      },
+      {
+        "name": "Honor P10",
+        "type": "Indicator"
+      },
+      {
+        "name": "Huawei Mate 9",
+        "type": "Indicator"
+      },
+      {
+        "name": "Honor 9",
+        "type": "Indicator"
+      },
+      {
+        "name": "Honor 7",
+        "type": "Indicator"
+      },
+      {
+        "name": "Honor 5c",
+        "type": "Indicator"
+      },
+      {
+        "name": "Honor 6",
+        "type": "Indicator"
+      },
+      {
+        "name": "OpenLTE",
+        "type": "Tool"
+      },
+      {
+        "name": "VxWorks 7.0",
+        "type": "Software"
+      },
+      {
+        "name": "Intel Galileo",
+        "type": "Software"
+      },
+      {
+        "name": "LTE stack",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "baseband vulnerability",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "memory-corruption attack",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "stack buffer overflow",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "rootkit",
+        "type": "Indicator"
+      },
+      {
+        "name": "Infiltrate Conference",
+        "type": "Campaign"
+      },
+      {
+        "name": "Huawei H60 Linux kernel",
+        "type": "Software"
+      },
+      {
+        "name": "developer tar archive",
+        "type": "Infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Ralf-Phillip Weinmann",
+        "rel": "presented at",
+        "obj": "Infiltrate Conference"
+      },
+      {
+        "sub": "Ralf-Phillip Weinmann",
+        "rel": "DISCLOSED",
+        "obj": "baseband vulnerability"
+      },
+      {
+        "sub": "baseband vulnerability",
+        "rel": "AFFECTS",
+        "obj": "Huawei"
+      },
+      {
+        "sub": "baseband vulnerability",
+        "rel": "AFFECTS",
+        "obj": "Huawei Honor P10"
+      },
+      {
+        "sub": "baseband vulnerability",
+        "rel": "AFFECTS",
+        "obj": "Huawei Mate 9"
+      },
+      {
+        "sub": "baseband vulnerability",
+        "rel": "AFFECTS",
+        "obj": "Honor 9"
+      },
+      {
+        "sub": "baseband vulnerability",
+        "rel": "AFFECTS",
+        "obj": "Honor 7"
+      },
+      {
+        "sub": "baseband vulnerability",
+        "rel": "AFFECTS",
+        "obj": "Honor 5c"
+      },
+      {
+        "sub": "baseband vulnerability",
+        "rel": "AFFECTS",
+        "obj": "Honor 6"
+      },
+      {
+        "sub": "baseband vulnerability",
+        "rel": "AFFECTS",
+        "obj": "IoT devices"
+      },
+      {
+        "sub": "baseband vulnerability",
+        "rel": "AFFECTS",
+        "obj": "laptops"
+      },
+      {
+        "sub": "baseband vulnerability",
+        "rel": "resides in",
+        "obj": "HiSilicon Balong"
+      },
+      {
+        "sub": "HiSilicon Balong",
+        "rel": "has application processor",
+        "obj": "Kirin"
+      },
+      {
+        "sub": "HiSilicon Technologies",
+        "rel": "is subsidiary of",
+        "obj": "Huawei Technologies"
+      },
+      {
+        "sub": "Kirin",
+        "rel": "produced by",
+        "obj": "Huawei"
+      },
+      {
+        "sub": "OpenLTE",
+        "rel": "used to trigger",
+        "obj": "baseband vulnerability"
+      },
+      {
+        "sub": "LTE stack",
+        "rel": "is vulnerable to",
+        "obj": "stack buffer overflow"
+      },
+      {
+        "sub": "stack buffer overflow",
+        "rel": "leads to",
+        "obj": "memory-corruption attack"
+      },
+      {
+        "sub": "memory-corruption attack",
+        "rel": "leads to",
+        "obj": "rootkit"
+      },
+      {
+        "sub": "VxWorks 7.0",
+        "rel": "shipped with",
+        "obj": "Intel Galileo"
+      },
+      {
+        "sub": "Ralf-Phillip Weinmann",
+        "rel": "has offensive option",
+        "obj": "Lua scripting interpreter"
+      },
+      {
+        "sub": "Huawei H60 Linux kernel",
+        "rel": "associated with",
+        "obj": "developer tar archive"
+      },
+      {
+        "sub": "HiSilicon Balong",
+        "rel": "may have been released in",
+        "obj": "developer tar archive"
+      },
+      {
+        "sub": "Ralf-Phillip Weinmann",
+        "rel": "has in pipeline",
+        "obj": "higher-severity findings"
+      },
+      {
+        "sub": "Ralf-Phillip Weinmann",
+        "rel": "DISCLOSED",
+        "obj": "lower-severity findings"
+      }
+    ]
+  }
+}

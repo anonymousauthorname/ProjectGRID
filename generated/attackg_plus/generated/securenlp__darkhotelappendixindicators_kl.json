@@ -1,0 +1,662 @@
+{
+  "sample_id": "securenlp__darkhotelappendixindicators_kl",
+  "sample_index": 163,
+  "source": "securenlp",
+  "file_name": "darkhotelappendixindicators_kl",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "IP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "MAC Address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "String"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "System CPU name and identifier"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Substring 'VMWARE'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Substring 'QEMU'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Substring '192.168.100.'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Terminate",
+        "obj": "If substring found"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Check",
+        "obj": "System mutex named «132DF6E»"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Exit",
+        "obj": "If mutex exists"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Check",
+        "obj": "File named «U»"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Wipe",
+        "obj": "File «U» if older than 180 days"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Trigger",
+        "obj": "Special variable if file not older than 180 days"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Disable",
+        "obj": "Communication with C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "On victim system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "igfxext.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "acroedit.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "63kb self-injecting component"
+      },
+      {
+        "sub": "63kb self-injecting component",
+        "rel": "Decrypt",
+        "obj": "smaller executable"
+      },
+      {
+        "sub": "63kb self-injecting component",
+        "rel": "Run",
+        "obj": "smaller executable from memory"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "malicious payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "legitimate files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "igfxext.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "acroedit.exe"
+      },
+      {
+        "sub": "Darkhotel",
+        "rel": "Use",
+        "obj": "igfxext.exe"
+      },
+      {
+        "sub": "Darkhotel",
+        "rel": "Use",
+        "obj": "acroedit.exe"
+      },
+      {
+        "sub": "Darkhotel",
+        "rel": "Construct",
+        "obj": "self-injecting component"
+      },
+      {
+        "sub": "Darkhotel",
+        "rel": "Write",
+        "obj": "malicious code section"
+      },
+      {
+        "sub": "Darkhotel",
+        "rel": "Operate",
+        "obj": "system"
+      },
+      {
+        "sub": "Darkhotel",
+        "rel": "Has value",
+        "obj": "memory"
+      },
+      {
+        "sub": "Darkhotel",
+        "rel": "Write",
+        "obj": "new process"
+      },
+      {
+        "sub": "Darkhotel",
+        "rel": "Overwrite",
+        "obj": "original igfxext.exe"
+      },
+      {
+        "sub": "Darkhotel",
+        "rel": "Overwrite",
+        "obj": "original acroedit.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System mutex named «132DF6E»"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Check",
+        "obj": "VM-specific identifiers such as 'VMWARE', 'QEMU', or IP addresses in the 192.168.100. range"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "HTTP GET requests to domain autolace.twilightparadox.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "HTTP GET requests to domain automachine.servequake.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Retrieve",
+        "obj": "C2 IP address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Download",
+        "obj": "Additional data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "autolace.twilightparadox.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "automachine.servequake.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "autolace.twilightparadox.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "automachine.servequake.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "C2 IP address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "ndiskpro.sys"
+      },
+      {
+        "sub": "ndiskpro.sys",
+        "rel": "Locate at",
+        "obj": "HKCU\\Run"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "System startup"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Virtual environment detection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Check",
+        "obj": "IP address in 192.168.100. range"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Terminate",
+        "obj": "When virtual environment detected"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Obfuscation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Encode",
+        "obj": "Data with Base64"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "Data in POST request"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Symmetric key for encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Communicate",
+        "obj": "With C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Internet Explorer 6/7/8/9"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Mozilla Firefox"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Chrome"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "MS Outlook Express"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "MS Windows Mail"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "MS Windows Live Mail"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "MS Outlook accounts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "MSN Messenger"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Gmail Notifier"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Google Desktop"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Google Talk"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Encrypted credentials"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Network adapter's MAC address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "CPU name and identifier"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "System default codepage"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Windows OS and service pack versions"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Hostname and IP address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Local user name"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Cached passwords from various applications"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Unique system profile"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Transmit",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Check",
+        "obj": "Specific login page URLs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Determine",
+        "obj": "Origin of stolen credentials"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Stored credentials"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "System information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Encrypt",
+        "obj": "Collected data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "POST request"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Firefox"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Chrome"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Outlook"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Google services"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "CPU"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "OS"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Network details"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "POST request"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "HTTP GET requests"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send request",
+        "obj": "autolace.twilightparadox.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send request",
+        "obj": "automachine.servequake.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Check response",
+        "obj": "'DEXT87' followed by an IP address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "IP address as real C2 address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send request",
+        "obj": "hxxp://fenraw.northgeremy.info/html/docu.php"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send request",
+        "obj": "hxxp://fenrmi.eu.pn/html/docu.php"
+      },
+      {
+        "sub": "Malware",
+        "rel": "XOR data",
+        "obj": "0x55"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "file named 'ctfmon.exe'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Transmit data",
+        "obj": "POST request"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "hxxp://fenraw.northgeremy.info/html/docu.php"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "hxxp://fenrmi.eu.pn/html/docu.php"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "'DEXT87'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has hostname",
+        "obj": "fenraw.northgeremy.info"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has hostname",
+        "obj": "fenrmi.eu.pn"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has domain",
+        "obj": "autolace.twilightparadox.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has domain",
+        "obj": "automachine.servequake.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has domain",
+        "obj": "fenraw.northgeremy.info"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has domain",
+        "obj": "fenrmi.eu.pn"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "'ctfmon.exe'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Encode",
+        "obj": "Base64"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "hxxp://fenrix.yaahosting.info/html/docu.php"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Exfiltrate",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Include",
+        "obj": "User credentials"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Include",
+        "obj": "System information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Include",
+        "obj": "Sensitive details"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Keyword 'minmei'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Trigger",
+        "obj": "Transmission of additional information"
+      }
+    ]
+  }
+}

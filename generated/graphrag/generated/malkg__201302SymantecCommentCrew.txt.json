@@ -1,0 +1,125 @@
+{
+  "sample_id": "malkg__201302SymantecCommentCrew.txt",
+  "sample_index": 100,
+  "source": "malkg",
+  "file_name": "201302SymantecCommentCrew.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "COMMENT CREW",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "SYMANTEC",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "HTTP POST TRAFFIC",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "HTTP GET TRAFFIC",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "DOMAINS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "IP ADDRESSES",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "FILENAMES",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "FILE VERSION INFO",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "FILE MD5 HASHES",
+        "type": "MALWARE"
+      },
+      {
+        "name": "REGISTRY ENTRIES",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "SERVICE NAMES",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "EMAIL SUBJECT LINES",
+        "type": "EMAIL"
+      },
+      {
+        "name": "EMAIL ATTACHMENT NAMES",
+        "type": "EMAIL"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "COMMENT CREW",
+        "rel": "related_to",
+        "obj": "DOMAINS"
+      },
+      {
+        "sub": "COMMENT CREW",
+        "rel": "related_to",
+        "obj": "IP ADDRESSES"
+      },
+      {
+        "sub": "COMMENT CREW",
+        "rel": "related_to",
+        "obj": "FILENAMES"
+      },
+      {
+        "sub": "COMMENT CREW",
+        "rel": "related_to",
+        "obj": "FILE MD5 HASHES"
+      },
+      {
+        "sub": "COMMENT CREW",
+        "rel": "related_to",
+        "obj": "REGISTRY ENTRIES"
+      },
+      {
+        "sub": "COMMENT CREW",
+        "rel": "related_to",
+        "obj": "SERVICE NAMES"
+      },
+      {
+        "sub": "COMMENT CREW",
+        "rel": "related_to",
+        "obj": "EMAIL SUBJECT LINES"
+      },
+      {
+        "sub": "COMMENT CREW",
+        "rel": "related_to",
+        "obj": "EMAIL ATTACHMENT NAMES"
+      },
+      {
+        "sub": "SYMANTEC",
+        "rel": "related_to",
+        "obj": "COMMENT CREW"
+      }
+    ]
+  }
+}

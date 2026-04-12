@@ -1,0 +1,275 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_17.json",
+  "sample_index": 209,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_17.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "virustotal.TLD",
+        "type": "Entity"
+      },
+      {
+        "name": "virustotal.com",
+        "type": "Entity"
+      },
+      {
+        "name": "http://[Redacted]",
+        "type": "Entity"
+      },
+      {
+        "name": "http://www.virustotal.[TLD removed]/detected/[Redacted]",
+        "type": "Entity"
+      },
+      {
+        "name": "http://www.virustotal.[TLD removed]/scanning/",
+        "type": "Entity"
+      },
+      {
+        "name": "securitytoolsetup.exe",
+        "type": "Entity"
+      },
+      {
+        "name": "Mal/FakeVirPkA",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing email",
+        "type": "Entity"
+      },
+      {
+        "name": "fake antivirus",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious website",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 domain",
+        "type": "Entity"
+      },
+      {
+        "name": "redirect",
+        "type": "Entity"
+      },
+      {
+        "name": "popup",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows Security Alert",
+        "type": "Entity"
+      },
+      {
+        "name": "timedelayed object",
+        "type": "Entity"
+      },
+      {
+        "name": "USB device",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing",
+        "type": "Entity"
+      },
+      {
+        "name": "malware author",
+        "type": "Entity"
+      },
+      {
+        "name": "virus activities",
+        "type": "Entity"
+      },
+      {
+        "name": "spyware",
+        "type": "Entity"
+      },
+      {
+        "name": "potentially unwanted software",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious script",
+        "type": "Entity"
+      },
+      {
+        "name": "fake scanning page",
+        "type": "Entity"
+      },
+      {
+        "name": "registry key",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled task",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanism",
+        "type": "Entity"
+      },
+      {
+        "name": "URL redirection",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Entity"
+      },
+      {
+        "name": "malware distribution",
+        "type": "Entity"
+      },
+      {
+        "name": "social engineering",
+        "type": "Entity"
+      },
+      {
+        "name": "email-based attack",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "malware author",
+        "rel": "uses",
+        "obj": "phishing email"
+      },
+      {
+        "sub": "phishing email",
+        "rel": "contains",
+        "obj": "fake antivirus"
+      },
+      {
+        "sub": "phishing email",
+        "rel": "contains",
+        "obj": "malicious website"
+      },
+      {
+        "sub": "malicious website",
+        "rel": "redirects to",
+        "obj": "fake scanning page"
+      },
+      {
+        "sub": "fake scanning page",
+        "rel": "displays",
+        "obj": "Windows Security Alert"
+      },
+      {
+        "sub": "Windows Security Alert",
+        "rel": "is",
+        "obj": "timedelayed object"
+      },
+      {
+        "sub": "fake scanning page",
+        "rel": "loads",
+        "obj": "malicious script"
+      },
+      {
+        "sub": "malicious script",
+        "rel": "triggers",
+        "obj": "popup"
+      },
+      {
+        "sub": "popup",
+        "rel": "asks user to download",
+        "obj": "securitytoolsetup.exe"
+      },
+      {
+        "sub": "securitytoolsetup.exe",
+        "rel": "is",
+        "obj": "Mal/FakeVirPkA"
+      },
+      {
+        "sub": "malware author",
+        "rel": "registers",
+        "obj": "virustotal.TLD"
+      },
+      {
+        "sub": "virustotal.TLD",
+        "rel": "is",
+        "obj": "C2 domain"
+      },
+      {
+        "sub": "malware author",
+        "rel": "abuses",
+        "obj": "virus activities"
+      },
+      {
+        "sub": "malware author",
+        "rel": "uses",
+        "obj": "social engineering"
+      },
+      {
+        "sub": "malware author",
+        "rel": "distributes",
+        "obj": "malware"
+      },
+      {
+        "sub": "malware author",
+        "rel": "exploits",
+        "obj": "vulnerabilities"
+      },
+      {
+        "sub": "malicious website",
+        "rel": "uses",
+        "obj": "URL redirection"
+      },
+      {
+        "sub": "malicious website",
+        "rel": "uses",
+        "obj": "registry key"
+      },
+      {
+        "sub": "malicious website",
+        "rel": "creates",
+        "obj": "scheduled task"
+      },
+      {
+        "sub": "malicious website",
+        "rel": "establishes",
+        "obj": "persistence mechanism"
+      },
+      {
+        "sub": "fake scanning page",
+        "rel": "mimics",
+        "obj": "Windows Security Alert"
+      },
+      {
+        "sub": "malware author",
+        "rel": "targets",
+        "obj": "forum user"
+      },
+      {
+        "sub": "malware author",
+        "rel": "conducts",
+        "obj": "email-based attack"
+      }
+    ]
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "sample_id": "malkg__201306FireEyeSeinUp.txt",
+  "sample_index": 123,
+  "source": "malkg",
+  "file_name": "201306FireEyeSeinUp.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Trojan.APT.Seinup",
+        "type": "Malware"
+      },
+      {
+        "name": "Backdoor.Makadocs",
+        "type": "Malware"
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "elizabearden.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "symteconline.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "winshell.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "philnewsonline.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "www.info-week.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "go-twitter.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "dnsserviceonline.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "iexp1ore.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "wab.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "wab32res.dll",
+        "type": "Indicator"
+      },
+      {
+        "name": "msnetrsvw.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "Google Docs",
+        "type": "Tool"
+      },
+      {
+        "name": "XOR encryption",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Mersenne Twister algorithm",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Zero-Skipping XOR Encryption",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Base64 map",
+        "type": "Tool"
+      },
+      {
+        "name": "Custom Base64 encoding",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Salted digital thumbprint",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Malware dropper",
+        "type": "Tool"
+      },
+      {
+        "name": "DLL side-loading",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Windows service",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "ASEAN",
+        "type": "Location"
+      },
+      {
+        "name": "Brunei",
+        "type": "Location"
+      },
+      {
+        "name": "Cambodia",
+        "type": "Location"
+      },
+      {
+        "name": "Indonesia",
+        "type": "Location"
+      },
+      {
+        "name": "Laos",
+        "type": "Location"
+      },
+      {
+        "name": "Malaysia",
+        "type": "Location"
+      },
+      {
+        "name": "Myanmar",
+        "type": "Location"
+      },
+      {
+        "name": "Philippines",
+        "type": "Location"
+      },
+      {
+        "name": "Singapore",
+        "type": "Location"
+      },
+      {
+        "name": "Thailand",
+        "type": "Location"
+      },
+      {
+        "name": "Vietnam",
+        "type": "Location"
+      },
+      {
+        "name": "FireEye",
+        "type": "Organization"
+      },
+      {
+        "name": "Takashi Katsuki",
+        "type": "Person"
+      },
+      {
+        "name": "Katsuki, 2012",
+        "type": "Person"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Address Book Application",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Windows",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "USES",
+        "obj": "Google Docs"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "USES",
+        "obj": "Zero-Skipping XOR Encryption"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "USES",
+        "obj": "Mersenne Twister algorithm"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "USES",
+        "obj": "Custom Base64 encoding"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "USES",
+        "obj": "Salted digital thumbprint"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "PERFORMS",
+        "obj": "DLL side-loading"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "installs as",
+        "obj": "Windows service"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "has similar technique to",
+        "obj": "Backdoor.Makadocs"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "manually loads",
+        "obj": "wab32res.dll"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "is dropped by",
+        "obj": "iexp1ore.exe"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "triggers execution of",
+        "obj": "wab.exe"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "CREATES",
+        "obj": "msnetrsvw.exe"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "TARGETS",
+        "obj": "ASEAN"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "TARGETS",
+        "obj": "Brunei"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "TARGETS",
+        "obj": "Cambodia"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "TARGETS",
+        "obj": "Indonesia"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "TARGETS",
+        "obj": "Laos"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "TARGETS",
+        "obj": "Malaysia"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "TARGETS",
+        "obj": "Myanmar"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "TARGETS",
+        "obj": "Philippines"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "TARGETS",
+        "obj": "Singapore"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "TARGETS",
+        "obj": "Thailand"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "TARGETS",
+        "obj": "Vietnam"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "IDENTIFIES",
+        "obj": "Trojan.APT.Seinup"
+      },
+      {
+        "sub": "Takashi Katsuki",
+        "rel": "REPORTED",
+        "obj": "Backdoor.Makadocs"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "makes use of",
+        "obj": "Address Book Application"
+      },
+      {
+        "sub": "Trojan.APT.Seinup",
+        "rel": "runs on",
+        "obj": "Microsoft Windows"
+      },
+      {
+        "sub": "elizabearden.com",
+        "rel": "communicates with",
+        "obj": "Trojan.APT.Seinup"
+      },
+      {
+        "sub": "dnsserviceonline.com",
+        "rel": "communicates with",
+        "obj": "Trojan.APT.Seinup"
+      },
+      {
+        "sub": "symteconline.com",
+        "rel": "communicates with",
+        "obj": "Trojan.APT.Seinup"
+      },
+      {
+        "sub": "winshell.net",
+        "rel": "communicates with",
+        "obj": "Trojan.APT.Seinup"
+      },
+      {
+        "sub": "philnewsonline.com",
+        "rel": "communicates with",
+        "obj": "Trojan.APT.Seinup"
+      },
+      {
+        "sub": "www.info-week.com",
+        "rel": "communicates with",
+        "obj": "Trojan.APT.Seinup"
+      },
+      {
+        "sub": "go-twitter.com",
+        "rel": "communicates with",
+        "obj": "Trojan.APT.Seinup"
+      }
+    ]
+  }
+}

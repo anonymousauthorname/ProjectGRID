@@ -1,0 +1,813 @@
+{
+  "sample_id": "malkg__201102McAfeeNightDragon.txt",
+  "sample_index": 114,
+  "source": "malkg",
+  "file_name": "201102McAfeeNightDragon.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Night Dragon",
+        "type": "Campaign"
+      },
+      {
+        "name": "zwShell",
+        "type": "Malware"
+      },
+      {
+        "name": "SQL-injection",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "spear-phishing",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Microsoft Windows",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Active Directory",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Internet Explorer",
+        "type": "Software"
+      },
+      {
+        "name": "C&C infrastructure",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "reduh",
+        "type": "Tool"
+      },
+      {
+        "name": "WebShell",
+        "type": "Tool"
+      },
+      {
+        "name": "ASPXSpy",
+        "type": "Tool"
+      },
+      {
+        "name": "SysInternals tools",
+        "type": "Tool"
+      },
+      {
+        "name": "Cain & Abel",
+        "type": "Tool"
+      },
+      {
+        "name": "rootkin.net.cn",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "extranet web servers",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "SCADA systems",
+        "type": "Software"
+      },
+      {
+        "name": "zwShell.exe",
+        "type": "Malware"
+      },
+      {
+        "name": "startup.dll",
+        "type": "Malware"
+      },
+      {
+        "name": "connect.dll",
+        "type": "Malware"
+      },
+      {
+        "name": "PluginFile.dll",
+        "type": "Malware"
+      },
+      {
+        "name": "PluginScreen.dll",
+        "type": "Malware"
+      },
+      {
+        "name": "PluginCmd.dll",
+        "type": "Malware"
+      },
+      {
+        "name": "PluginKeyboard.dll",
+        "type": "Malware"
+      },
+      {
+        "name": "PluginProcess.dll",
+        "type": "Malware"
+      },
+      {
+        "name": "PluginService.dll",
+        "type": "Malware"
+      },
+      {
+        "name": "PluginRegedit.dll",
+        "type": "Malware"
+      },
+      {
+        "name": "NightDragon",
+        "type": "Campaign"
+      },
+      {
+        "name": "is-a-chef.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "thruhere.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "office-on-the.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "selfip.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "McAfee",
+        "type": "Organization"
+      },
+      {
+        "name": "ePolicy Orchestrator",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Event Log Explorer",
+        "type": "Tool"
+      },
+      {
+        "name": "EnCase",
+        "type": "Tool"
+      },
+      {
+        "name": "Windows update logs",
+        "type": "Indicator"
+      },
+      {
+        "name": "KB*.log",
+        "type": "Indicator"
+      },
+      {
+        "name": "HKLM\\system\\<controlset>\\services\\",
+        "type": "Indicator"
+      },
+      {
+        "name": "netsvcs",
+        "type": "Indicator"
+      },
+      {
+        "name": "svchost.exe",
+        "type": "Tool"
+      },
+      {
+        "name": "C&C server",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Dynamic DNS",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Malware toolkit",
+        "type": "Malware"
+      },
+      {
+        "name": "Trojan dropper",
+        "type": "Malware"
+      },
+      {
+        "name": "Trojan backdoor",
+        "type": "Malware"
+      },
+      {
+        "name": "Windows Registry",
+        "type": "Indicator"
+      },
+      {
+        "name": "TCP port 25",
+        "type": "Indicator"
+      },
+      {
+        "name": "TCP port 80",
+        "type": "Indicator"
+      },
+      {
+        "name": "hW$",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x68572413",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x0150",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x0160",
+        "type": "Indicator"
+      },
+      {
+        "name": "0x0350",
+        "type": "Indicator"
+      },
+      {
+        "name": "System32",
+        "type": "Software"
+      },
+      {
+        "name": "SysWow64",
+        "type": "Software"
+      },
+      {
+        "name": "System",
+        "type": "Software"
+      },
+      {
+        "name": "McAfee ePO",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "McAfee VirusScan Enterprise",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "McAfee Network Threat Response",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "McAfee Vulnerability Manager",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "McAfee Policy Auditor",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "McAfee Risk Advisory",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "wham-apt-nightdragon-detected-v7.fasl3",
+        "type": "Indicator"
+      },
+      {
+        "name": "McAfee Stinger",
+        "type": "Tool"
+      },
+      {
+        "name": "McAfee Application Control",
+        "type": "Tool"
+      },
+      {
+        "name": "McAfee Configuration Control",
+        "type": "Tool"
+      },
+      {
+        "name": "McAfee Database Activity Monitoring",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "McAfee Network Security Platform",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "McAfee Enterprise Firewall",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "McAfee Web Gateway",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "McAfee Endpoint Encryption",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "McAfee Data Loss Protection",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "McAfee Host Intrusion Prevention 8.0",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "McAfee Global Threat Intelligence",
+        "type": "Indicator"
+      },
+      {
+        "name": "Foundstone Professional Services",
+        "type": "Organization"
+      },
+      {
+        "name": "HBGary",
+        "type": "Organization"
+      },
+      {
+        "name": "National Cyber-Forensics & Training Alliance",
+        "type": "Organization"
+      },
+      {
+        "name": "Shane Shook",
+        "type": "Person"
+      },
+      {
+        "name": "Dmitri Alperovitch",
+        "type": "Person"
+      },
+      {
+        "name": "Stuart McClure",
+        "type": "Person"
+      },
+      {
+        "name": "Georg Wicherski",
+        "type": "Person"
+      },
+      {
+        "name": "Greg Hoglund",
+        "type": "Person"
+      },
+      {
+        "name": "Shawn Bracken",
+        "type": "Person"
+      },
+      {
+        "name": "Ryan Permeh",
+        "type": "Person"
+      },
+      {
+        "name": "Vitaly Zaytsev",
+        "type": "Person"
+      },
+      {
+        "name": "Mark Gilbert",
+        "type": "Person"
+      },
+      {
+        "name": "Mike Spohn",
+        "type": "Person"
+      },
+      {
+        "name": "George Kurtz",
+        "type": "Person"
+      },
+      {
+        "name": "Adam Meyers",
+        "type": "Person"
+      },
+      {
+        "name": "Hookmsgina",
+        "type": "Tool"
+      },
+      {
+        "name": "WinlogonHack",
+        "type": "Tool"
+      },
+      {
+        "name": "Heze City, Shandong Province, China",
+        "type": "Location"
+      },
+      {
+        "name": "Beijing",
+        "type": "Location"
+      },
+      {
+        "name": "U.S.",
+        "type": "Location"
+      },
+      {
+        "name": "China",
+        "type": "Location"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "registry",
+        "type": "Indicator"
+      },
+      {
+        "name": "CMD.EXE",
+        "type": "Software"
+      },
+      {
+        "name": "Windows %Temp% directory",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "zw.china",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Night Dragon",
+        "rel": "USES",
+        "obj": "SQL-injection"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "USES",
+        "obj": "spear-phishing"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "USES",
+        "obj": "zwShell"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "is written in",
+        "obj": "Microsoft Windows"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "ACCESSES",
+        "obj": "Microsoft Active Directory"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "disables proxy settings of",
+        "obj": "Microsoft Internet Explorer"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "USES",
+        "obj": "reduh"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "USES",
+        "obj": "WebShell"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "USES",
+        "obj": "ASPXSpy"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "USES",
+        "obj": "SysInternals tools"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "USES",
+        "obj": "Cain & Abel"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "ACCESSES",
+        "obj": "rootkin.net.cn"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "COMPROMISES",
+        "obj": "extranet web servers"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "collects data from",
+        "obj": "SCADA systems"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "USES",
+        "obj": "C&C infrastructure"
+      },
+      {
+        "sub": "zwShell.exe",
+        "rel": "is used by",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "startup.dll",
+        "rel": "is used by",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "connect.dll",
+        "rel": "is used by",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "PluginFile.dll",
+        "rel": "is used by",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "PluginScreen.dll",
+        "rel": "is used by",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "PluginCmd.dll",
+        "rel": "is used by",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "PluginKeyboard.dll",
+        "rel": "is used by",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "PluginProcess.dll",
+        "rel": "is used by",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "PluginService.dll",
+        "rel": "is used by",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "PluginRegedit.dll",
+        "rel": "is used by",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "NightDragon",
+        "rel": "uses dynamic dns",
+        "obj": "is-a-chef.com"
+      },
+      {
+        "sub": "NightDragon",
+        "rel": "uses dynamic dns",
+        "obj": "thruhere.net"
+      },
+      {
+        "sub": "NightDragon",
+        "rel": "uses dynamic dns",
+        "obj": "office-on-the.net"
+      },
+      {
+        "sub": "NightDragon",
+        "rel": "uses dynamic dns",
+        "obj": "selfip.com"
+      },
+      {
+        "sub": "NightDragon",
+        "rel": "communicates with",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Trojan dropper",
+        "rel": "leaves indicator in",
+        "obj": "Windows update logs"
+      },
+      {
+        "sub": "Trojan dropper",
+        "rel": "leaves indicator in",
+        "obj": "KB*.log"
+      },
+      {
+        "sub": "Trojan backdoor",
+        "rel": "registers in",
+        "obj": "HKLM\\system\\<controlset>\\services\\"
+      },
+      {
+        "sub": "Trojan backdoor",
+        "rel": "uses registry key",
+        "obj": "netsvcs"
+      },
+      {
+        "sub": "Trojan backdoor",
+        "rel": "operates as service through",
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "Trojan backdoor",
+        "rel": "is located in",
+        "obj": "System32"
+      },
+      {
+        "sub": "Trojan backdoor",
+        "rel": "is located in",
+        "obj": "SysWow64"
+      },
+      {
+        "sub": "Trojan backdoor",
+        "rel": "uses signature",
+        "obj": "hW$"
+      },
+      {
+        "sub": "Trojan backdoor",
+        "rel": "uses signature",
+        "obj": "0x68572413"
+      },
+      {
+        "sub": "Trojan backdoor",
+        "rel": "uses beacon pattern",
+        "obj": "0x0150"
+      },
+      {
+        "sub": "Trojan backdoor",
+        "rel": "uses response pattern",
+        "obj": "0x0160"
+      },
+      {
+        "sub": "Trojan backdoor",
+        "rel": "uses keep alive pattern",
+        "obj": "0x0350"
+      },
+      {
+        "sub": "McAfee",
+        "rel": "recommends detection for",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "McAfee ePO",
+        "rel": "recommends review of logs for",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "McAfee VirusScan Enterprise",
+        "rel": "recommends update and scan for",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "McAfee Network Threat Response",
+        "rel": "would have detected",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "McAfee Vulnerability Manager",
+        "rel": "would have detected",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "McAfee Policy Auditor",
+        "rel": "would have detected",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "McAfee Risk Advisory",
+        "rel": "would have detected",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "Event Log Explorer",
+        "rel": "can be used to review",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "EnCase",
+        "rel": "can be used to review",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "wham-apt-nightdragon-detected-v7.fasl3",
+        "rel": "DETECTS",
+        "obj": "NightDragon"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "detected by",
+        "obj": "McAfee VirusScan Enterprise"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "detected by",
+        "obj": "McAfee Network Threat Response"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "scanned by",
+        "obj": "McAfee Vulnerability Manager"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "detected by",
+        "obj": "McAfee Stinger"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "prevented by",
+        "obj": "McAfee Application Control"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "prevented by",
+        "obj": "McAfee Configuration Control"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "protected by",
+        "obj": "McAfee Database Activity Monitoring"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "blocked by",
+        "obj": "McAfee Network Security Platform"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "blocked by",
+        "obj": "McAfee Enterprise Firewall"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "prevented by",
+        "obj": "McAfee Web Gateway"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "reduced impact by",
+        "obj": "McAfee Endpoint Encryption"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "prevented by",
+        "obj": "McAfee Data Loss Protection"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "detected by",
+        "obj": "McAfee Host Intrusion Prevention 8.0"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "identified by",
+        "obj": "McAfee Global Threat Intelligence"
+      },
+      {
+        "sub": "Foundstone Professional Services",
+        "rel": "provides incident response for",
+        "obj": "Night Dragon"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "MANIPULATES",
+        "obj": "registry"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "VIEW",
+        "obj": "remote_desktop"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "UNINSTALLS",
+        "obj": "Trojan"
+      },
+      {
+        "sub": "zwShell",
+        "rel": "COPIES",
+        "obj": "CMD.EXE"
+      },
+      {
+        "sub": "Hookmsgina",
+        "rel": "is of chinese origin",
+        "obj": "China"
+      },
+      {
+        "sub": "WinlogonHack",
+        "rel": "is of chinese origin",
+        "obj": "China"
+      },
+      {
+        "sub": "ASPXSpy",
+        "rel": "is of chinese origin",
+        "obj": "China"
+      },
+      {
+        "sub": "Heze City, Shandong Province, China",
+        "rel": "HOSTS",
+        "obj": "C2 infrastructure"
+      },
+      {
+        "sub": "Beijing",
+        "rel": "occurs from",
+        "obj": "data_exfiltration"
+      },
+      {
+        "sub": "zw.china",
+        "rel": "UNLOCKS",
+        "obj": "zwShell"
+      }
+    ]
+  }
+}

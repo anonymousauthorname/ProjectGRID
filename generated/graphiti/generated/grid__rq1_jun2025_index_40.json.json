@@ -1,0 +1,108 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_40.json",
+  "sample_index": 230,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_40.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TopFlix",
+        "type": "Malware"
+      },
+      {
+        "name": "DNSUnlocker",
+        "type": "Malware"
+      },
+      {
+        "name": "SoftPulse",
+        "type": "Tool"
+      },
+      {
+        "name": "OneSafe PC Cleaner",
+        "type": "Malware"
+      },
+      {
+        "name": "Adware.TopGuard",
+        "type": "Indicator"
+      },
+      {
+        "name": "PUP.Optional.SoftPulse",
+        "type": "Indicator"
+      },
+      {
+        "name": "Malwarebytes AntiMalware",
+        "type": "Organization"
+      },
+      {
+        "name": "Java",
+        "type": "Software"
+      },
+      {
+        "name": "Flash Player",
+        "type": "Software"
+      },
+      {
+        "name": "adsupply",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TopFlix",
+        "rel": "belongs to",
+        "obj": "DNSUnlocker"
+      },
+      {
+        "sub": "SoftPulse",
+        "rel": "PUSHES",
+        "obj": "TopFlix"
+      },
+      {
+        "sub": "SoftPulse",
+        "rel": "PROMOTES",
+        "obj": "Java"
+      },
+      {
+        "sub": "SoftPulse",
+        "rel": "PROMOTES",
+        "obj": "Flash Player"
+      },
+      {
+        "sub": "TopFlix",
+        "rel": "leads to",
+        "obj": "OneSafe PC Cleaner"
+      },
+      {
+        "sub": "Malwarebytes AntiMalware",
+        "rel": "DETECTS",
+        "obj": "PUP.Optional.SoftPulse"
+      },
+      {
+        "sub": "Malwarebytes AntiMalware",
+        "rel": "DETECTS",
+        "obj": "Adware.TopGuard"
+      },
+      {
+        "sub": "TopFlix",
+        "rel": "has ad supplier",
+        "obj": "adsupply"
+      }
+    ]
+  }
+}

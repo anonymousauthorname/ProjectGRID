@@ -1,0 +1,512 @@
+{
+  "sample_id": "securenlp__CloudAtlas_RedOctober_APT",
+  "sample_index": 169,
+  "source": "securenlp",
+  "file_name": "CloudAtlas_RedOctober_APT",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Reconnaissance",
+        "rel": "Use",
+        "obj": "Spear-phishing documents with names such as 'Diplomatic Car for Sale.doc' and 'FT - Ukraine Russia's new art of war.doc'"
+      },
+      {
+        "sub": "Spear-phishing documents with names such as 'Diplomatic Car for Sale.doc' and 'FT - Ukraine Russia's new art of war.doc'",
+        "rel": "Has value",
+        "obj": "Indicative of targeted information gathering"
+      },
+      {
+        "sub": "Spear-phishing documents with names such as 'Diplomatic Car for Sale.doc' and 'FT - Ukraine Russia's new art of war.doc'",
+        "rel": "Has value",
+        "obj": "Mimic legitimate or sensitive content"
+      },
+      {
+        "sub": "Spear-phishing documents with names such as 'Diplomatic Car for Sale.doc' and 'FT - Ukraine Russia's new art of war.doc'",
+        "rel": "Has value",
+        "obj": "Gather victim identity and organizational information"
+      },
+      {
+        "sub": "Spear-phishing documents with names such as 'Diplomatic Car for Sale.doc' and 'FT - Ukraine Russia's new art of war.doc'",
+        "rel": "Belong to",
+        "obj": "Technique: Gather Victim Identity Information"
+      },
+      {
+        "sub": "Spear-phishing documents with names such as 'Diplomatic Car for Sale.doc' and 'FT - Ukraine Russia's new art of war.doc'",
+        "rel": "Belong to",
+        "obj": "Technique: Gather Victim Org Information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Loader"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Encrypted payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Shared compression algorithm"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Unique keys"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Command and control"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Compile with",
+        "obj": "Microsoft Visual Studio"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Compile with",
+        "obj": "VC 2010"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Compile with",
+        "obj": "VC 2008"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Specific build headers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Reusable components"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Diplomatic Car for Sale.doc"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Diplomatic Car for Sale.doc"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Exploit Public-Facing Application"
+      },
+      {
+        "sub": "Document",
+        "rel": "Has filename",
+        "obj": "Diplomatic Car for Sale.doc"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Belong to",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "Exploit Public-Facing Application",
+        "rel": "Has tactic",
+        "obj": "Exploit Public-Facing Application"
+      },
+      {
+        "sub": "Diplomatic Car for Sale.doc",
+        "rel": "Has value",
+        "obj": "Exploit Public-Facing Application"
+      },
+      {
+        "sub": "Microsoft Office",
+        "rel": "Has vulnerable software",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Modify",
+        "obj": "Exploit Public-Facing Application"
+      },
+      {
+        "sub": "- CVE-2012-0158",
+        "rel": "Has vulnerability",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "- Diplomatic Car for Sale.doc",
+        "rel": "Construct",
+        "obj": "Malware"
+      },
+      {
+        "sub": "- Diplomatic Car for Sale.doc",
+        "rel": "Use",
+        "obj": "Exploit Public-Facing Application"
+      },
+      {
+        "sub": "- Threat Actor",
+        "rel": "Operate",
+        "obj": "Exploit Public-Facing Application"
+      },
+      {
+        "sub": "- Microsoft Office",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "- Exploit Public-Facing Application",
+        "rel": "Has tactic",
+        "obj": "Exploit Public-Facing Application"
+      },
+      {
+        "sub": "CVE-2012-0158",
+        "rel": "Has vulnerability",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "Diplomatic Car for Sale.doc",
+        "rel": "Construct",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Diplomatic Car for Sale.doc",
+        "rel": "Use",
+        "obj": "Exploit Public-Facing Application"
+      },
+      {
+        "sub": "Microsoft Office",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Visual Basic Script"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "User Execution"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Boot or Logon Autostart Execution"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Modify",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Registry",
+        "rel": "Has value",
+        "obj": "'bookstore'"
+      },
+      {
+        "sub": "Registry",
+        "rel": "Has value",
+        "obj": "'regsvr32 %path%\\ctfmonrn.dll /s'"
+      },
+      {
+        "sub": "Windows registry",
+        "rel": "Locate at",
+        "obj": "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "regsvr32 %path%\\ctfmonrn.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System boot"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Startup entry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Current username"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Running processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "System configuration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "WebDAV URL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Username"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Password"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Paths for storing plugins"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Paths for uploading data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System Information Discovery"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Process Discovery"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System Network Configuration Discovery"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Configuration block"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Victim system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "Data to C&C server"
+      },
+      {
+        "sub": "Report Type",
+        "rel": "Has tactic",
+        "obj": "Collection"
+      },
+      {
+        "sub": "Victim system",
+        "rel": "Has value",
+        "obj": "System information"
+      },
+      {
+        "sub": "Victim system",
+        "rel": "Has value",
+        "obj": "Running processes"
+      },
+      {
+        "sub": "Victim system",
+        "rel": "Has value",
+        "obj": "Current username"
+      },
+      {
+        "sub": "Victim system",
+        "rel": "Modify",
+        "obj": "Data"
+      },
+      {
+        "sub": "Data",
+        "rel": "Construct",
+        "obj": "LZMA compression"
+      },
+      {
+        "sub": "Data",
+        "rel": "Use",
+        "obj": "AES encryption"
+      },
+      {
+        "sub": "Data",
+        "rel": "Write",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Operate",
+        "obj": "Data upload"
+      },
+      {
+        "sub": "Collection",
+        "rel": "Belong to",
+        "obj": "Data from Local System"
+      },
+      {
+        "sub": "Collection",
+        "rel": "Belong to",
+        "obj": "Data from Information Repositories"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Use",
+        "obj": "CloudMe"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Use",
+        "obj": "WebDAV"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Store",
+        "obj": "Encrypted and compressed logs"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Store",
+        "obj": "Plugins"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Store",
+        "obj": "Data from the victim"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Operate",
+        "obj": "HTTPS"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Decrypt",
+        "obj": "Data using keys stored within its own binary"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Mimic",
+        "obj": "Normal traffic"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Has URL",
+        "obj": "cloudme.com"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Has value",
+        "obj": "Encrypted and compressed logs"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Has value",
+        "obj": "Plugins"
+      },
+      {
+        "sub": "C&C",
+        "rel": "Has value",
+        "obj": "Data from the victim"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "WebDAV"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "System information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Running processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Current user data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "LZMA compression"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "AES encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "AES keys"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "LZMA keys"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Exfiltration Over C2 Channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Exfiltration Over Other Network Medium"
+      }
+    ]
+  }
+}

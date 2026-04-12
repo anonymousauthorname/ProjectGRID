@@ -1,0 +1,462 @@
+{
+  "sample_id": "malkg__201411FireEyeOperationDoubleTap.txt",
+  "sample_index": 135,
+  "source": "malkg",
+  "file_name": "201411FireEyeOperationDoubleTap.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Spearphishing"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "'One Month's Free Membership for The PLAYBOY ClUB'"
+      },
+      {
+        "sub": "Spearphishing",
+        "rel": "Has value",
+        "obj": "Victim identity"
+      },
+      {
+        "sub": "Spearphishing",
+        "rel": "Has value",
+        "obj": "Organizational interest information"
+      },
+      {
+        "sub": "Spearphishing",
+        "rel": "Modify",
+        "obj": "Victim interest"
+      },
+      {
+        "sub": "APT3",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2014-6332"
+      },
+      {
+        "sub": "APT3",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2014-4113"
+      },
+      {
+        "sub": "APT3",
+        "rel": "Use",
+        "obj": "install.exe"
+      },
+      {
+        "sub": "APT3",
+        "rel": "Use",
+        "obj": "doc.exe"
+      },
+      {
+        "sub": "APT3",
+        "rel": "Use",
+        "obj": "test.exe"
+      },
+      {
+        "sub": "APT3",
+        "rel": "Construct",
+        "obj": "malicious payload"
+      },
+      {
+        "sub": "APT3",
+        "rel": "Operate",
+        "obj": "compromised system"
+      },
+      {
+        "sub": "APT3",
+        "rel": "Modify",
+        "obj": "system privileges"
+      },
+      {
+        "sub": "APT3",
+        "rel": "Establish",
+        "obj": "persistent access"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Spearphishing"
+      },
+      {
+        "sub": "Spearphishing",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2014-6332"
+      },
+      {
+        "sub": "URL",
+        "rel": "Has value",
+        "obj": "hxxp://join.playboysplus.com/signup/"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "CVE-2014-6332"
+      },
+      {
+        "sub": "Windows OLE Automation Array Remote Code Execution",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2014-6332"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Operate",
+        "obj": "Public-facing applications"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "install.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "doc.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "test.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "with elevated privileges"
+      },
+      {
+        "sub": "VBScript",
+        "rel": "Invoke",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "PowerShell",
+        "rel": "Use",
+        "obj": "New-Object System.Net.WebClient"
+      },
+      {
+        "sub": "PowerShell",
+        "rel": "Download",
+        "obj": "install.exe"
+      },
+      {
+        "sub": "PowerShell",
+        "rel": "Run",
+        "obj": "payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "payload"
+      },
+      {
+        "sub": "PowerShell",
+        "rel": "Execute",
+        "obj": "download and run of payload"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "Has filename",
+        "obj": "install.exe"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "Has filename",
+        "obj": "doc.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "Has filename",
+        "obj": "test.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Scheduled task"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Scheduled task"
+      },
+      {
+        "sub": "Scheduled task",
+        "rel": "Has value",
+        "obj": "\"schtasks /create /tn \\\"mysc\\\" /tr C:\\\\Users\\\\Public\\\\test.exe /sc ONLOGON /ru \\\"System\\\"\""
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Persistence"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2014-4113"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "doc.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "SYSTEM-level access"
+      },
+      {
+        "sub": "Privilege Escalation",
+        "rel": "Has technique",
+        "obj": "Local kernel vulnerability"
+      },
+      {
+        "sub": "CVE-2014-4113",
+        "rel": "Modify",
+        "obj": "SYSTEM-level access"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "SOCKS5 proxy"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "protocol tunneling"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "obfuscated communication"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "non-standard path"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "legitimate system processes"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "Username"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "AppData\\Local\\Temp"
+      },
+      {
+        "sub": "System",
+        "rel": "Operate",
+        "obj": "cmd.exe"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "Elevated privileges"
+      },
+      {
+        "sub": "System",
+        "rel": "Locate at",
+        "obj": "C:\\Users\\[Username]\\AppData\\Local\\Temp"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "cmd.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "File in C:\\Users\\[Username]\\AppData\\Local\\Temp"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Presence of files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Perform",
+        "obj": "System discovery"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather information",
+        "obj": "System environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather information",
+        "obj": "User context"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Read",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "Domain"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Filename"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Filename"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Command"
+      },
+      {
+        "sub": "Command",
+        "rel": "Execute",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "User input"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "System information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Establish",
+        "obj": "Connection to 192.157.198.103"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Connect to",
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "Command identifier and data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Receive",
+        "obj": "Response from server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Through encrypted and obfuscated communication"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Have",
+        "obj": "Persistent command and control channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Dynamic command structure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Through proxy to hide traffic"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Command 00 00 06"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Command 00 00 07"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Filepath note.txt"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "Data to C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Download",
+        "obj": "Files from C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "External systems"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "File content from note.txt"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Exfiltrate",
+        "obj": "Data"
+      }
+    ]
+  }
+}

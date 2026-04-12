@@ -1,0 +1,113 @@
+{
+  "sample_id": "ctinexus__midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams.json",
+  "sample_index": 60,
+  "source": "ctinexus",
+  "file_name": "midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Midnight Blizzard",
+        "type": "Entity"
+      },
+      {
+        "name": "NOBELIUM",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Teams",
+        "type": "Entity"
+      },
+      {
+        "name": "credential theft phishing",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing lures",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft 365 tenants",
+        "type": "Entity"
+      },
+      {
+        "name": "small businesses",
+        "type": "Entity"
+      },
+      {
+        "name": "domains",
+        "type": "Entity"
+      },
+      {
+        "name": "technical support entities",
+        "type": "Entity"
+      },
+      {
+        "name": "multifactor authentication (MFA) prompts",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "uses",
+        "obj": "credential theft phishing"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "sends",
+        "obj": "phishing lures"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "uses",
+        "obj": "Microsoft Teams"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "compromises",
+        "obj": "Microsoft 365 tenants"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "creates",
+        "obj": "domains"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "makes",
+        "obj": "technical support entities"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "sends",
+        "obj": "phishing lures via Microsoft Teams"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "attempts to steal",
+        "obj": "credentials"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "triggers",
+        "obj": "multifactor authentication (MFA) prompts"
+      }
+    ]
+  }
+}

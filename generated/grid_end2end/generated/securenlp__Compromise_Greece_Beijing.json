@@ -1,0 +1,455 @@
+{
+  "sample_id": "securenlp__Compromise_Greece_Beijing",
+  "sample_index": 180,
+  "source": "securenlp",
+  "file_name": "Compromise_Greece_Beijing",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "PhysicalDrive0",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "URL: http://www.grpressbeijing.com/1.jar",
+        "type": "file",
+        "alias": [
+          "the 1.jar file",
+          "the Java package"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "csfn(String paramString)",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "the function init()"
+        ],
+        "mother entity": [
+          "URL: http://www.grpressbeijing.com/1.jar"
+        ]
+      },
+      {
+        "name": "setSecurityManager",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "pack",
+        "type": "file",
+        "alias": [
+          "the file named pack"
+        ],
+        "mother entity": [
+          "URL: http://www.grpressbeijing.com/1.jar"
+        ]
+      },
+      {
+        "name": "x86 PE executable",
+        "type": "malware",
+        "alias": [
+          "the payload",
+          "the malware payload"
+        ],
+        "mother entity": [
+          "pack"
+        ]
+      },
+      {
+        "name": "IDA Pro",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "SELECT * FROM AntiVirusProduct",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "dc12a687-737f-11cf-884d-00aa004b2e24",
+        "type": "x509-certificate",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "IWbemLocator",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "d30c1661-cdaf-11d0-8a3e-00c04fc9e26e",
+        "type": "x509-certificate",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "defense.miraclecz.com",
+        "type": "domain-name",
+        "alias": [
+          "the C&C server"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "208.115.124.83",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "/index.asp?id=50100",
+        "type": "url",
+        "alias": [
+          "the URL in Figure 4"
+        ],
+        "mother entity": [
+          "defense.miraclecz.com"
+        ]
+      },
+      {
+        "name": "Base64 encoded data",
+        "type": "indicator",
+        "alias": [
+          "the Base64 encoded data"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "http://www.motobit.com/util/base64-decoder-encoder.asp",
+        "type": "url",
+        "alias": [
+          "the following website"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "another executable",
+        "type": "file",
+        "alias": [
+          "the Downloaded Payload"
+        ],
+        "mother entity": [
+          "Base64 encoded data"
+        ]
+      },
+      {
+        "name": "buy.miraclecz.com",
+        "type": "domain-name",
+        "alias": [
+          "the C&C server"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "74.121.191.33",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "%s/?id1=blank%d&id2=%d%d",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "buy.miraclecz.com"
+        ]
+      },
+      {
+        "name": "%s/?id1=%d%d",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "buy.miraclecz.com"
+        ]
+      },
+      {
+        "name": "https://www.dropbox.com/s/ckr7p5kka62cc7s/Embassy%20of%20Greece%20-%20Beijing.zip",
+        "type": "file",
+        "alias": [
+          "the zipfile"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "infected",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "miraclecz.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "microsoft",
+        "type": "string",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "myWObject",
+        "type": "string",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "spoolsv.exe",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Registry keys",
+        "type": "windows-registry-key",
+        "alias": [
+          "HKCU\\Software\\Microsoft\\Internet Explorer\\Main",
+          "HKCU\\Software\\Microsoft\\Internet Explorer\\PhishingFilter",
+          "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings",
+          "HKCU\\Software\\Microsoft\\Internet Connection Wizard"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "cmd.exe",
+        "type": "general-software",
+        "alias": [
+          "the command line tool"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "The attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "PhysicalDrive0",
+        "rel": "found",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "URL: http://www.grpressbeijing.com/1.jar"
+      },
+      {
+        "sub": "URL: http://www.grpressbeijing.com/1.jar",
+        "rel": "contains function that decrypts",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "csfn(String paramString)"
+      },
+      {
+        "sub": "csfn(String paramString)",
+        "rel": "decrypts",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "setSecurityManager"
+      },
+      {
+        "sub": "csfn(String paramString)",
+        "rel": "creates",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "pack"
+      },
+      {
+        "sub": "pack",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "x86 PE executable"
+      },
+      {
+        "sub": "IDA Pro",
+        "rel": "analyzes",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "x86 PE executable"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "cmd.exe"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "modifies",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Registry keys"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "queries",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "SELECT * FROM AntiVirusProduct"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "communicates-with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "IWbemLocator"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "communicates-with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "d30c1661-cdaf-11d0-8a3e-00c04fc9e26e"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "contacting C&C server",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "defense.miraclecz.com",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "downloads",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "/index.asp?id=50100"
+      },
+      {
+        "sub": "Base64 encoded data",
+        "rel": "decodes into",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "another executable"
+      },
+      {
+        "sub": "another executable",
+        "rel": "creates registry entries",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Registry keys"
+      },
+      {
+        "sub": "another executable",
+        "rel": "contacting C&C server",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "buy.miraclecz.com"
+      },
+      {
+        "sub": "another executable",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "cmd.exe"
+      },
+      {
+        "sub": "URL: https://www.dropbox.com/s/ckr7p5kka62cc7s/Embassy%20of%20Greece%20-%20Beijing.zip",
+        "rel": "contains",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "x86 PE executable"
+      },
+      {
+        "sub": "URL: https://www.dropbox.com/s/ckr7p5kka62cc7s/Embassy%20of%20Greece%20-%20Beijing.zip",
+        "rel": "requires password",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "infected"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "spoolsv.exe"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "spoolsv.exe"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "contacting C&C server",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "buy.miraclecz.com"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "%s/?id1=blank%d&id2=%d%d"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "%s/?id1=%d%d"
+      },
+      {
+        "sub": "The attacker",
+        "rel": "authored",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "URL: http://www.grpressbeijing.com/1.jar"
+      }
+    ]
+  }
+}

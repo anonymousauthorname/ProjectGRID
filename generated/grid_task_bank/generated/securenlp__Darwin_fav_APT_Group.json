@@ -1,0 +1,593 @@
+{
+  "sample_id": "securenlp__Darwin_fav_APT_Group",
+  "sample_index": 191,
+  "source": "securenlp",
+  "file_name": "Darwin_fav_APT_Group",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT12",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "IXESHE",
+          "DynCalc",
+          "DNSCALC"
+        ]
+      },
+      {
+        "name": "IXESHE",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "DynCalc",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "DNSCALC",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Chinese People’s Liberation Army",
+        "type": "identity"
+      },
+      {
+        "name": "People’s Republic of China (PRC)",
+        "type": "identity"
+      },
+      {
+        "name": "New York Times",
+        "type": "identity"
+      },
+      {
+        "name": "Arbor Networks",
+        "type": "organization"
+      },
+      {
+        "name": "FireEye",
+        "type": "organization"
+      },
+      {
+        "name": "Etumbot backdoor",
+        "type": "malware"
+      },
+      {
+        "name": "RIPTIDE",
+        "type": "malware"
+      },
+      {
+        "name": "HIGHTIDE",
+        "type": "malware"
+      },
+      {
+        "name": "THREEBYTE",
+        "type": "malware"
+      },
+      {
+        "name": "WATERSPOUT",
+        "type": "malware"
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Tran Duy Linh exploit kit",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "Malicious Microsoft Word document",
+        "type": "file"
+      },
+      {
+        "name": "141.108.2.157",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "video[.]csmcpr[.]com",
+        "type": "domain-name"
+      },
+      {
+        "name": "icc[.]ignorelist[.]com",
+        "type": "domain-name"
+      },
+      {
+        "name": "lilywang823@gmail.com",
+        "type": "email-address"
+      },
+      {
+        "name": "f6fafb7c30b1114befc93f39d0698560",
+        "type": "md5-hash"
+      },
+      {
+        "name": "e009b95ff7b69cbbebc538b2c5728b11",
+        "type": "md5-hash"
+      },
+      {
+        "name": "499bec15ac83f2c8998f03917b63652e",
+        "type": "md5-hash"
+      },
+      {
+        "name": "C:\\Documents and Settings\\{user}\\Application Data\\Location",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "C:\\DOCUMENTS and SETTINGS\\{user}\\LOCAL SETTINGS\\Temp\\",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "word.exe",
+        "type": "file"
+      },
+      {
+        "name": "winword.exe",
+        "type": "file"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT12",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "organizations in Japan and Taiwan"
+      },
+      {
+        "sub": "APT12",
+        "rel": "compromised",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the New York Times"
+      },
+      {
+        "sub": "APT12",
+        "rel": "has links to",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Chinese People’s Liberation Army"
+      },
+      {
+        "sub": "APT12",
+        "rel": "is consistent with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "larger People’s Republic of China (PRC) goals"
+      },
+      {
+        "sub": "APT12",
+        "rel": "was observed using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "RIPTIDE"
+      },
+      {
+        "sub": "APT12",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a modified RIPTIDE backdoor that we call HIGHTIDE"
+      },
+      {
+        "sub": "APT12",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the same strategy after compromising the New York Times in Oct 2012"
+      },
+      {
+        "sub": "Arbor Networks",
+        "rel": "published",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "their blog \"Illuminating The Etumbot APT Backdoor.\""
+      },
+      {
+        "sub": "FireEye",
+        "rel": "refers to",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "the Etumbot backdoor as RIPTIDE"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "observed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "APT12 use a modified RIPTIDE backdoor that we call HIGHTIDE"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "observed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "APT12 retooling after a public disclosure"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "discovered",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "two possibly related campaigns utilizing two other backdoors"
+      },
+      {
+        "sub": "three-byte",
+        "rel": "dropped",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "from malicious documents"
+      },
+      {
+        "sub": "malicious documents",
+        "rel": "built utilizing",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the \"Tran Duy Linh\" exploit kit"
+      },
+      {
+        "sub": "malicious documents",
+        "rel": "exploited",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "APT12",
+        "rel": "utilizing",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "RIPTIDE"
+      },
+      {
+        "sub": "RIPTIDE",
+        "rel": "communicates via",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "HTTP to a hard-coded command and control (C2) server"
+      },
+      {
+        "sub": "RIPTIDE",
+        "rel": "fetches",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "an encryption key"
+      },
+      {
+        "sub": "RIPTIDE",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "RC4 encryption key to encrypt all further communication"
+      },
+      {
+        "sub": "Arbor Networks",
+        "rel": "published an article describing",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "the RIPTIDE backdoor and its C2 infrastructure"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "observed a distinct change in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "RIPTIDE’s protocols and strings"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "dubbed this new malware family",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "HIGHTIDE"
+      },
+      {
+        "sub": "APT12",
+        "rel": "infects target systems with",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "HIGHTIDE"
+      },
+      {
+        "sub": "APT12",
+        "rel": "delivers",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "exploit documents via phishing emails"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "connected directly to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "141.108.2.157"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "dropped",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an executable file onto the infected system"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "drops its executable file into",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "C:\\DOCUMENTS and SETTINGS\\{user}\\LOCAL SETTINGS\\Temp\\ folder"
+      },
+      {
+        "sub": "RIPTIDE",
+        "rel": "drops its executable file into",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "C:\\Documents and Settings\\{user}\\Application Data\\Location folder"
+      },
+      {
+        "sub": "APT12",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "multiple Taiwanese Government organizations"
+      },
+      {
+        "sub": "three-byte",
+        "rel": "compiled",
+        "rel_type": [
+          "compiles"
+        ],
+        "obj": "on 2014-08-25"
+      },
+      {
+        "sub": "three-byte",
+        "rel": "was compiled",
+        "rel_type": [
+          "compiles"
+        ],
+        "obj": "two days after the HIGHTIDE backdoors"
+      },
+      {
+        "sub": "three-byte",
+        "rel": "was written to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "C:\\DOCUMENTS and SETTINGS\\{user}\\LOCAL SETTINGS\\Temp\\word.exe"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "connects to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "icc[.]ignorelist[.]com"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "was compiled",
+        "rel_type": [
+          "compiles"
+        ],
+        "obj": "within two days of the last HIGHTIDE backdoor"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "was compiled",
+        "rel_type": [
+          "compiles"
+        ],
+        "obj": "on the same day as the THREEBYTE backdoor"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "dropped",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "to C:\\DOCUMENTS and SETTINGS\\{user}\\LOCAL SETTINGS\\Temp\\word.exe"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "was used in attacks targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "organizations in Taiwan"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "was used in attacks targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Japanese Tech Company"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "shares",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "similar characteristics with the HIGHTIDE campaign"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "believed",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "this change from RIPTIDE to HIGHTIDE"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "observed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "HIGHTIDE at multiple Taiwan-based organizations"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "observed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the suspected APT12 WATERSPOUT backdoor at a Japan-based electronics company"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "believes",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "the change from RIPTIDE to HIGHTIDE represents a temporary tool shift"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "believes",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "these development efforts may have resulted in the emergence of the WATERSPOUT backdoor"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "observed only a brief pause in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "APT12 activity"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "observed",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "APT12 returned to normal activity levels"
+      },
+      {
+        "sub": "APT12",
+        "rel": "evolves and adapt in order to maintain its mission",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "APT12"
+      },
+      {
+        "sub": "APT12",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "organizations and conduct cyber operations using its new tools"
+      },
+      {
+        "sub": "APT12",
+        "rel": "continues to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "target organizations"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "makes several conclusions about",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "this threat group"
+      },
+      {
+        "sub": "APT12",
+        "rel": "closely monitors",
+        "rel_type": [
+          "monitors"
+        ],
+        "obj": "online media related to its tools and operations"
+      },
+      {
+        "sub": "APT12",
+        "rel": "reacts when",
+        "rel_type": [
+          "reacts"
+        ],
+        "obj": "its tools are publicly disclosed"
+      },
+      {
+        "sub": "APT12",
+        "rel": "has the ability to",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "adapt quickly to public exposures"
+      },
+      {
+        "sub": "APT12",
+        "rel": "may result in",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "an immediate change in APT12’s tools"
+      },
+      {
+        "sub": "APT12",
+        "rel": "is believed to have",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "a new toolset"
+      },
+      {
+        "sub": "APT12",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "organizations in Japan and Taiwan"
+      }
+    ]
+  }
+}

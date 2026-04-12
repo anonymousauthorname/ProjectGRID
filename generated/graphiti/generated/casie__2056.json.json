@@ -1,0 +1,115 @@
+{
+  "sample_id": "casie__2056.json",
+  "sample_index": 23,
+  "source": "casie",
+  "file_name": "2056.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Aadhaar",
+        "type": "Software"
+      },
+      {
+        "name": "National Social Assistance Programme",
+        "type": "Organization"
+      },
+      {
+        "name": "National Rural Employment Guarantee Scheme",
+        "type": "Organization"
+      },
+      {
+        "name": "Chandranna Bima Scheme",
+        "type": "Organization"
+      },
+      {
+        "name": "Daily Online Payment Reports of NREGA",
+        "type": "Organization"
+      },
+      {
+        "name": "The Centre for Internet and Society",
+        "type": "Organization"
+      },
+      {
+        "name": "Government of Andhra Pradesh",
+        "type": "Organization"
+      },
+      {
+        "name": "India",
+        "type": "Location"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "The Centre for Internet and Society",
+        "rel": "revealed leak",
+        "obj": "Aadhaar"
+      },
+      {
+        "sub": "National Social Assistance Programme",
+        "rel": "leaks data",
+        "obj": "Aadhaar"
+      },
+      {
+        "sub": "National Rural Employment Guarantee Scheme",
+        "rel": "leaks data",
+        "obj": "Aadhaar"
+      },
+      {
+        "sub": "Chandranna Bima Scheme",
+        "rel": "leaks data",
+        "obj": "Aadhaar"
+      },
+      {
+        "sub": "Daily Online Payment Reports of NREGA",
+        "rel": "leaks data",
+        "obj": "Aadhaar"
+      },
+      {
+        "sub": "Government of Andhra Pradesh",
+        "rel": "MANAGES",
+        "obj": "Chandranna Bima Scheme"
+      },
+      {
+        "sub": "Government of Andhra Pradesh",
+        "rel": "MANAGES",
+        "obj": "Daily Online Payment Reports of NREGA"
+      },
+      {
+        "sub": "India",
+        "rel": "has national id system",
+        "obj": "Aadhaar"
+      },
+      {
+        "sub": "Indian government",
+        "rel": "admitted leak",
+        "obj": "Aadhaar"
+      },
+      {
+        "sub": "Indian government",
+        "rel": "started investigations",
+        "obj": "Aadhaar"
+      },
+      {
+        "sub": "Indian government",
+        "rel": "preparing security changes",
+        "obj": "Aadhaar"
+      }
+    ]
+  }
+}

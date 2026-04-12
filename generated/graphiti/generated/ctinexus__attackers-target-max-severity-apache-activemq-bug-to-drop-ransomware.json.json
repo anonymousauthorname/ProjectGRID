@@ -1,0 +1,73 @@
+{
+  "sample_id": "ctinexus__attackers-target-max-severity-apache-activemq-bug-to-drop-ransomware.json",
+  "sample_index": 51,
+  "source": "ctinexus",
+  "file_name": "attackers-target-max-severity-apache-activemq-bug-to-drop-ransomware.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Apache ActiveMQ",
+        "type": "Software"
+      },
+      {
+        "name": "CVE-2023-46604",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "HelloKitty",
+        "type": "Malware"
+      },
+      {
+        "name": "Rapid7",
+        "type": "Organization"
+      },
+      {
+        "name": "remote code execution",
+        "type": "AttackPattern"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Apache ActiveMQ",
+        "rel": "has vulnerability",
+        "obj": "CVE-2023-46604"
+      },
+      {
+        "sub": "CVE-2023-46604",
+        "rel": "ALLOWS",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "Rapid7",
+        "rel": "observed attacks using",
+        "obj": "HelloKitty"
+      },
+      {
+        "sub": "HelloKitty",
+        "rel": "attacks through",
+        "obj": "Apache ActiveMQ"
+      },
+      {
+        "sub": "HelloKitty",
+        "rel": "USES",
+        "obj": "remote code execution"
+      }
+    ]
+  }
+}

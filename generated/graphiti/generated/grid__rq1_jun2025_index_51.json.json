@@ -1,0 +1,118 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_51.json",
+  "sample_index": 240,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_51.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Cheerscrypt",
+        "type": "Malware"
+      },
+      {
+        "name": "Babuk",
+        "type": "Malware"
+      },
+      {
+        "name": "ESXi",
+        "type": "Software"
+      },
+      {
+        "name": "LockBit",
+        "type": "Malware"
+      },
+      {
+        "name": "Hive",
+        "type": "Malware"
+      },
+      {
+        "name": "RansomEXX",
+        "type": "Malware"
+      },
+      {
+        "name": "SOSEMANUK",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "ECDH",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Center for Internet Security",
+        "type": "Organization"
+      },
+      {
+        "name": "National Institute of Standards and Technology",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cheerscrypt",
+        "rel": "TARGETS",
+        "obj": "ESXi"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "derived from",
+        "obj": "Babuk"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "USES",
+        "obj": "SOSEMANUK"
+      },
+      {
+        "sub": "Cheerscrypt",
+        "rel": "USES",
+        "obj": "ECDH"
+      },
+      {
+        "sub": "Babuk",
+        "rel": "TARGETS",
+        "obj": "ESXi"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "TARGETS",
+        "obj": "ESXi"
+      },
+      {
+        "sub": "Hive",
+        "rel": "TARGETS",
+        "obj": "ESXi"
+      },
+      {
+        "sub": "RansomEXX",
+        "rel": "TARGETS",
+        "obj": "ESXi"
+      },
+      {
+        "sub": "Center for Internet Security",
+        "rel": "RECOMMENDS",
+        "obj": "Organization"
+      },
+      {
+        "sub": "National Institute of Standards and Technology",
+        "rel": "RECOMMENDS",
+        "obj": "Organization"
+      }
+    ]
+  }
+}

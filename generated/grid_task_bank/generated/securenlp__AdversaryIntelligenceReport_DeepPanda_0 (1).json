@@ -1,0 +1,907 @@
+{
+  "sample_id": "securenlp__AdversaryIntelligenceReport_DeepPanda_0 (1)",
+  "sample_index": 177,
+  "source": "securenlp",
+  "file_name": "AdversaryIntelligenceReport_DeepPanda_0 (1)",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CrowdStrike Intelligence Team",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "Dropper Sample",
+        "type": "malware"
+      },
+      {
+        "name": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "type": "malware",
+        "alias": [
+          "MD5: 14c04f88dc97aef3e9b516ef208a2bf5"
+        ]
+      },
+      {
+        "name": "Backdoor DLL Sample",
+        "type": "malware"
+      },
+      {
+        "name": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "type": "malware",
+        "alias": [
+          "MD5: 47619fca20895abc83807321cbb80a3d"
+        ]
+      },
+      {
+        "name": "Post Exploitation Tool Sample",
+        "type": "malware"
+      },
+      {
+        "name": "Post Exploitation Tool Sample (MD5: 2dce7fc3f52a692d8a84a0c182519133)",
+        "type": "malware",
+        "alias": [
+          "MD5: 2dce7fc3f52a692d8a84a0c182519133"
+        ]
+      },
+      {
+        "name": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "type": "malware",
+        "alias": [
+          "MD5: de7500fc1065a081180841f32f06a537"
+        ]
+      },
+      {
+        "name": "Kernel Driver Sample",
+        "type": "malware"
+      },
+      {
+        "name": "Kernel Driver Sample (MD5: dae6b9b3b8e39b08b10a51a6457444d8)",
+        "type": "malware",
+        "alias": [
+          "MD5: dae6b9b3b8e39b08b10a51a6457444d8"
+        ]
+      },
+      {
+        "name": "1.9.5.38",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "202.86.190.3",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "47619fca20895abc83807321cbb80a3d",
+        "type": "indicator"
+      },
+      {
+        "name": "de7500fc1065a081180841f32f06a537",
+        "type": "indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "analyzed",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "three binary executable files"
+      },
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "has seen Trojans from 8 different builder variants of this RAT",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "8 different builder variants of this RAT"
+      },
+      {
+        "sub": "crowdstrike intelligence team",
+        "rel": "has seen",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Trojans"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "is commonly referred to as a ‘dropper’",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "dropper"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "designed with the purpose of extracting from itself a malicious payload",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "malicious payload"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "first resolves several library functions provided by Microsoft",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "library functions provided by Microsoft"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "resolves",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "SHGetSpecialFolderPath()"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "malicious payload"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "writes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Dynamic-Link Library (DLL)"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "first resolves",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "LoadLibrary()"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "resolves",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "GetProcAddress()"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "invokes",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "SHGetSpecialFolderPath()"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "resolves",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "CSIDL"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "infoadmn.dll"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "infoctrs.dll"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "infocardapi.dll"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "sets the creation and last written timestamp",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "malicious DLL"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "executes",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "OpenINFOPerformanceData"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "loads",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "dropped DLL"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "invokes",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "OpenINFOPerformanceData"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "instatiated when it is mapped into the process space of its dropped file",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "dropped file"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "is a 'backdoor'",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "backdoor"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "attempts to stop",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "service named \"msupdate\""
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "replaces",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "previous instances or versions of this backdoor"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "tries to install itself as",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "service"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "attempts to use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "OpenSCManager()"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "attempts to use",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "CreateService()"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "writes settings directly to",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Windows Registry"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "creates the following key",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\msupdate\\Parameters"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "sets the value of the ‘ServiceDLL’ to",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "module handle of the DLL"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "creates the following key",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Svchost"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "will have",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "‘msupdate’ key set to ‘msupdate’"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "starts",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "new service"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "spawns a new process using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "calls",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "main functions export 'CollectW3PerfData'"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "creates and displays a fake Window with class",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "NOD32_%d"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "initiates calling out to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Command and Control (C2)"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "uses",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "WSAStartup()"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "resolves",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "LoadLibrary()"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "resolves",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "GetProcAddress()"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "assigns",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "NULL SID to the rundll32.exe executable"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "sets",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "current process’ Window Station to ‘winsta0’"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "will attempt to connect directly using a raw socket to the C2 located at",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "1.9.5.38:443"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "will attempt to connect directly using a raw socket to C2 located at",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "1.9.5.38:443"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "will attempt to connect directly using a raw socket to C2 located at",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "1.9.5.38:443"
+      },
+      {
+        "sub": "Dropper Sample (MD5: 14c04f88dc97aef3e9b516ef208a2bf5)",
+        "rel": "is compiled on",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Wednesday May 4th, 2011 at 11:04:24 A.M. UTC"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: 47619fca20895abc83807321cbb80a3d)",
+        "rel": "is compiled on",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Wednesday May 4th, 2011 at 10:48:19 A.M. UTC"
+      },
+      {
+        "sub": "Post Exploitation Tool Sample (MD5: 2dce7fc3f52a692d8a84a0c182519133)",
+        "rel": "is a typical of a post exploitation tool",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "post exploitation tool"
+      },
+      {
+        "sub": "Post Exploitation Tool Sample (MD5: 2dce7fc3f52a692d8a84a0c182519133)",
+        "rel": "can be instantiated either directly from the command line or through commands issued over a network based protocol via the C2",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "command line"
+      },
+      {
+        "sub": "Post Exploitation Tool Sample (MD5: 2dce7fc3f52a692d8a84a0c182519133)",
+        "rel": "is compiled on",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Thursday May 26th, 2011 at 10:21:44 A.M. UTC"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "is a sophisticated backdoor",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "sophisticated backdoor"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "implements several communications protocols",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "several communications protocols"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "is developed in",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "C++"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "is compiled on",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Sunday October 30, 2011 at 12:43:33 P.M. UTC"
+      },
+      {
+        "sub": "Kernel Driver Sample (MD5: dae6b9b3b8e39b08b10a51a6457444d8)",
+        "rel": "is extracted by",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)"
+      },
+      {
+        "sub": "Kernel Driver Sample (MD5: dae6b9b3b8e39b08b10a51a6457444d8)",
+        "rel": "will only function on",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Windows 32-bit kernel"
+      },
+      {
+        "sub": "Kernel Driver Sample (MD5: dae6b9b3b8e39b08b10a51a6457444d8)",
+        "rel": "is compiled on",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Sunday October 9, 2011 at 4:50:31 P.M. UTC"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "copies itself to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "%WINDIR%\\system32\\Msres<3 random characters>.ttf"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "modifies",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "creation time"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "modifies",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "last access time"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "modifies",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "last modification time"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "adds itself as a service name from the backdoor's configuration under",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\<service>"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "adds itself to list of services started by",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "‘netsvc’"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "creates a copy of regsvr32.exe named",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Update.exe"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "schedules the copy to be deleted on reboot using",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "MoveFileExA API"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "calls either the original or copy of regsvr32.exe with parameters",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "/s /u"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "calls",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "DllUnregisterServer"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "installs the driver and initiates the backdoor component",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "installs the driver"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "drops an embedded/encrypted kernel driver",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "embedded/encrypted kernel driver"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "decrypts the kernel driver to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "%sysdir%\\Drivers\\{6AB5E732-DFA9-4618-AF1C-F0D9DEF0E222}.sys"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "loads",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "ZwLoadDriver()"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "is capable of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "bypassing User Account Control (UAC)"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "uses the ‘sysprep.exe’ Microsoft Windows executable",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "sysprep.exe"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "uses the ‘sysprep.exe’ Microsoft Windows executable provided by the targeted system",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "sysprep.exe"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "uses",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "ZwLoadDriver()"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "bypasses",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "User Account Control (UAC)"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "if the process \"ZhuDongFangYu.exe\" is running",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "ZhuDongFangYu.exe"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "if the username of the DLL’s host process context is not ‘SYSTEM’",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "‘SYSTEM’"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "if the process \"ZhuDongFangYu.exe\" is running or the username of the DLL’s host process context is not ‘SYSTEM’",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "ZhuDongFangYu.exe"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "will not write",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "embedded/encrypted kernel driver"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "will write",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "embedded/encrypted kernel driver"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "uses",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "kernel mode"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "is capable of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "dropping a kernel driver"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "decrypts the kernel driver to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "%sysdir%\\Drivers\\{6AB5E732-DFA9-4618-AF1C-F0D9DEF0E222}.sys"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "is capable of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "bypassing User Account Control (UAC)"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "is capable of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "dropping a kernel driver"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "decrypts the kernel driver to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "%sysdir%\\Drivers\\{6AB5E732-DFA9-4618-AF1C-F0D9DEF0E222}.sys"
+      },
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "analyzes",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "three binary executable files"
+      },
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "has seen",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Trojans"
+      },
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "analyzes",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "samples"
+      },
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "has seen",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Trojans"
+      },
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "has seen",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "8 different builder variants of this RAT"
+      },
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "has seen",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Defense, Energy/Power, and Chemical Industries"
+      },
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "has seen",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "US and Japan"
+      },
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "attributed to",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "Chinese-speaking actor"
+      },
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "has seen",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Trojans"
+      },
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "has seen",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Defense, Energy/Power, and Chemical Industries"
+      },
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "has seen",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "US and Japan"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "is detected under the name",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Derusbi"
+      },
+      {
+        "sub": "Backdoor DLL Sample (MD5: de7500fc1065a081180841f32f06a537)",
+        "rel": "is sometimes detected under the name",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Derusbi"
+      },
+      {
+        "sub": "CrowdStrike Intelligence Team",
+        "rel": "has seen",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Trojans"
+      }
+    ]
+  }
+}

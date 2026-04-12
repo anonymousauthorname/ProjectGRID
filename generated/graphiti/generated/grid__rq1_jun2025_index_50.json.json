@@ -1,0 +1,400 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_50.json",
+  "sample_index": 239,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_50.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Earth Aughisky",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Taidoor",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Roudan",
+        "type": "Malware"
+      },
+      {
+        "name": "LuckDLL",
+        "type": "Malware"
+      },
+      {
+        "name": "GrubbyRAT",
+        "type": "Malware"
+      },
+      {
+        "name": "Taikite",
+        "type": "Malware"
+      },
+      {
+        "name": "SiyBot",
+        "type": "Malware"
+      },
+      {
+        "name": "ASRWEC",
+        "type": "Tool"
+      },
+      {
+        "name": "Taleret",
+        "type": "Malware"
+      },
+      {
+        "name": "30 Boxes",
+        "type": "Software"
+      },
+      {
+        "name": "Gubb",
+        "type": "Software"
+      },
+      {
+        "name": "C&C",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Base64",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "MAC address",
+        "type": "Indicator"
+      },
+      {
+        "name": "public key",
+        "type": "Indicator"
+      },
+      {
+        "name": "session key",
+        "type": "Indicator"
+      },
+      {
+        "name": "initialization vector",
+        "type": "Indicator"
+      },
+      {
+        "name": "registry key",
+        "type": "Indicator"
+      },
+      {
+        "name": "file path",
+        "type": "Indicator"
+      },
+      {
+        "name": "file name",
+        "type": "Indicator"
+      },
+      {
+        "name": "hash",
+        "type": "Indicator"
+      },
+      {
+        "name": "URL",
+        "type": "Indicator"
+      },
+      {
+        "name": "mutex",
+        "type": "Indicator"
+      },
+      {
+        "name": "vulnerability",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "ATT&CK techniques",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "cyberespionage",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "APT group",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "research paper",
+        "type": "Person"
+      },
+      {
+        "name": "security researchers",
+        "type": "Organization"
+      },
+      {
+        "name": "security analysts",
+        "type": "Organization"
+      },
+      {
+        "name": "threat actors",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "malware families",
+        "type": "Malware"
+      },
+      {
+        "name": "attack tools",
+        "type": "Tool"
+      },
+      {
+        "name": "backdoor",
+        "type": "Malware"
+      },
+      {
+        "name": "payload",
+        "type": "Malware"
+      },
+      {
+        "name": "downloader",
+        "type": "Tool"
+      },
+      {
+        "name": "callback traffic",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "log file",
+        "type": "Indicator"
+      },
+      {
+        "name": "configuration file",
+        "type": "Indicator"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "C&C server",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "malware configuration",
+        "type": "Indicator"
+      },
+      {
+        "name": "indicators of compromise",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Earth Aughisky",
+        "rel": "ATTRIBUTES",
+        "obj": "Roudan"
+      },
+      {
+        "sub": "Earth Aughisky",
+        "rel": "ATTRIBUTES",
+        "obj": "LuckDLL"
+      },
+      {
+        "sub": "Earth Aughisky",
+        "rel": "ATTRIBUTES",
+        "obj": "GrubbyRAT"
+      },
+      {
+        "sub": "Earth Aughisky",
+        "rel": "ATTRIBUTES",
+        "obj": "Taikite"
+      },
+      {
+        "sub": "Earth Aughisky",
+        "rel": "ATTRIBUTES",
+        "obj": "SiyBot"
+      },
+      {
+        "sub": "Earth Aughisky",
+        "rel": "ATTRIBUTES",
+        "obj": "ASRWEC"
+      },
+      {
+        "sub": "Roudan",
+        "rel": "shared c2",
+        "obj": "Taleret"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "shared c2",
+        "obj": "Roudan"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "shared c2",
+        "obj": "Taikite"
+      },
+      {
+        "sub": "Roudan",
+        "rel": "shared hosting",
+        "obj": "SiyBot"
+      },
+      {
+        "sub": "Roudan",
+        "rel": "shared hosting",
+        "obj": "ASRWEC"
+      },
+      {
+        "sub": "SiyBot",
+        "rel": "USES",
+        "obj": "30 Boxes"
+      },
+      {
+        "sub": "SiyBot",
+        "rel": "USES",
+        "obj": "Gubb"
+      },
+      {
+        "sub": "LuckDLL",
+        "rel": "EMBEDS",
+        "obj": "public key"
+      },
+      {
+        "sub": "LuckDLL",
+        "rel": "GENERATES",
+        "obj": "session key"
+      },
+      {
+        "sub": "LuckDLL",
+        "rel": "GENERATES",
+        "obj": "initialization vector"
+      },
+      {
+        "sub": "LuckDLL",
+        "rel": "communicates with",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "GrubbyRAT",
+        "rel": "installed in",
+        "obj": "configuration file"
+      },
+      {
+        "sub": "GrubbyRAT",
+        "rel": "installed in",
+        "obj": "existing application"
+      },
+      {
+        "sub": "GrubbyRAT",
+        "rel": "installed in",
+        "obj": "system folder"
+      },
+      {
+        "sub": "Taikite",
+        "rel": "ENCODES",
+        "obj": "Base64"
+      },
+      {
+        "sub": "Roudan",
+        "rel": "ENCODES",
+        "obj": "MAC address"
+      },
+      {
+        "sub": "Roudan",
+        "rel": "communicates with",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Taikite",
+        "rel": "EXPLOITS",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "Earth Aughisky",
+        "rel": "PRACTICES",
+        "obj": "cyberespionage"
+      },
+      {
+        "sub": "Earth Aughisky",
+        "rel": "is a",
+        "obj": "APT group"
+      },
+      {
+        "sub": "Taidoor",
+        "rel": "is also known as",
+        "obj": "Earth Aughisky"
+      },
+      {
+        "sub": "Roudan",
+        "rel": "is a",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "LuckDLL",
+        "rel": "is a",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "GrubbyRAT",
+        "rel": "is a",
+        "obj": "RAT"
+      },
+      {
+        "sub": "Taikite",
+        "rel": "is a",
+        "obj": "malware"
+      },
+      {
+        "sub": "SiyBot",
+        "rel": "is a",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "ASRWEC",
+        "rel": "is a",
+        "obj": "downloader"
+      },
+      {
+        "sub": "Taleret",
+        "rel": "is a",
+        "obj": "malware"
+      },
+      {
+        "sub": "30 Boxes",
+        "rel": "is a",
+        "obj": "public service"
+      },
+      {
+        "sub": "Gubb",
+        "rel": "is a",
+        "obj": "public service"
+      },
+      {
+        "sub": "Earth Aughisky",
+        "rel": "monitored by",
+        "obj": "security researchers"
+      },
+      {
+        "sub": "Earth Aughisky",
+        "rel": "monitored by",
+        "obj": "security analysts"
+      },
+      {
+        "sub": "Earth Aughisky",
+        "rel": "has research paper",
+        "obj": "research paper"
+      },
+      {
+        "sub": "Earth Aughisky",
+        "rel": "has iocs",
+        "obj": "indicators of compromise"
+      }
+    ]
+  }
+}

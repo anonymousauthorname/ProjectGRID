@@ -1,0 +1,495 @@
+{
+  "sample_id": "casie__1120.json",
+  "sample_index": 45,
+  "source": "casie",
+  "file_name": "1120.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Dun & Bradstreet",
+        "type": "identity",
+        "alias": [
+          "D&B",
+          "the company"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "33 million records",
+        "type": "file",
+        "alias": [
+          "the database",
+          "the file",
+          "the information shared with us",
+          "the database is about 52 gigabytes in size",
+          "the file is a ‘list rental’ file",
+          "this data"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "52 gigabytes",
+        "type": "quantity",
+        "alias": [],
+        "mother entity": [
+          "the database"
+        ]
+      },
+      {
+        "name": "email addresses",
+        "type": "credential-value",
+        "alias": [
+          "unique email addresses",
+          "contact information",
+          "personal identifiable information (PII)"
+        ],
+        "mother entity": [
+          "the database"
+        ]
+      },
+      {
+        "name": "thousands of large enterprises",
+        "type": "identity",
+        "alias": [
+          "large enterprises and government entities"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "government entities",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "NetProspex",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "2015",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "list rental file",
+        "type": "file",
+        "alias": [
+          "this data",
+          "this file"
+        ],
+        "mother entity": [
+          "the database"
+        ]
+      },
+      {
+        "name": "marketers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "email campaigns",
+        "type": "campaign",
+        "alias": [],
+        "mother entity": [
+          "marketers"
+        ]
+      },
+      {
+        "name": "one of these marketing firms",
+        "type": "identity",
+        "alias": [
+          "the source of the leak",
+          "the leak itself"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Stephen Boyer",
+        "type": "identity",
+        "alias": [
+          "co-founder and CTO of BitSight",
+          "BitSight"
+        ],
+        "mother entity": [
+          "BitSight"
+        ]
+      },
+      {
+        "name": "BitSight",
+        "type": "identity",
+        "alias": [
+          "third-party risk management and security ratings firm BitSight"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "third-party risk",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Wells Fargo",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "C-suite and 45 vice presidents, senior vice presidents, assistant vice presidents, executive vice presidents",
+        "type": "identity",
+        "alias": [
+          "employees of Wells Fargo"
+        ],
+        "mother entity": [
+          "Wells Fargo"
+        ]
+      },
+      {
+        "name": "Lee Weiner",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Rapid7",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "piggy-back attacks",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "phishing tactics",
+        "type": "attack-pattern",
+        "alias": [
+          "phishing attacks"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "business email compromise (BEC)",
+        "type": "attack-pattern",
+        "alias": [
+          "BEC"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "whaling attacks",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "cyber-criminals",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attackers",
+          "attackers using this information"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "data management",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ZDNet",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Troy Hunt",
+        "type": "identity",
+        "alias": [
+          "Hunt"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "US Department of Defense",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "personal identifiable information (PII)",
+        "type": "credential-value",
+        "alias": [
+          "PII"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "passwords",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "accounts",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "targeted phishing attacks",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "fraud schemes",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "D&B",
+        "type": "identity",
+        "alias": [
+          "Dun & Bradstreet"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "individuals",
+        "type": "identity",
+        "alias": [
+          "corporations"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "exposure",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Dun & Bradstreet",
+        "rel": "have been leaked",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "33 million records"
+      },
+      {
+        "sub": "33 million records",
+        "rel": "is about 52 gigabytes in size",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "52 gigabytes"
+      },
+      {
+        "sub": "33 million records",
+        "rel": "contains unique email addresses and other contact information",
+        "rel_type": [
+          "contains"
+        ],
+        "obj": "email addresses"
+      },
+      {
+        "sub": "33 million records",
+        "rel": "contains contact information from employees of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "thousands of large enterprises"
+      },
+      {
+        "sub": "33 million records",
+        "rel": "contains contact information from employees of thousands of large enterprises and government entities",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "government entities"
+      },
+      {
+        "sub": "Dun & Bradstreet",
+        "rel": "acquired from",
+        "rel_type": [
+          "obtained-from"
+        ],
+        "obj": "NetProspex"
+      },
+      {
+        "sub": "33 million records",
+        "rel": "is a ‘list rental’ file",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "list rental file"
+      },
+      {
+        "sub": "Dun & Bradstreet",
+        "rel": "offers",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "marketers"
+      },
+      {
+        "sub": "marketers",
+        "rel": "use for their own email campaigns",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "email campaigns"
+      },
+      {
+        "sub": "one of these marketing firms",
+        "rel": "is the source of the leak",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "33 million records"
+      },
+      {
+        "sub": "Dun & Bradstreet",
+        "rel": "suffered a breach",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "33 million records",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "Stephen Boyer",
+        "rel": "is co-founder and CTO of",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "BitSight"
+      },
+      {
+        "sub": "BitSight",
+        "rel": "represents a new dimension of",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "third-party risk"
+      },
+      {
+        "sub": "US Department of Defense",
+        "rel": "has most records in the database",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "33 million records"
+      },
+      {
+        "sub": "Wells Fargo",
+        "rel": "has information for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "C-suite and 45 vice presidents, senior vice presidents, assistant vice presidents, executive vice presidents"
+      },
+      {
+        "sub": "Lee Weiner",
+        "rel": "said individuals affected should be vigilant for",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "piggy-back attacks"
+      },
+      {
+        "sub": "cyber-criminals",
+        "rel": "using this information to engage in",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "phishing tactics"
+      },
+      {
+        "sub": "cyber-criminals",
+        "rel": "steal",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "passwords"
+      },
+      {
+        "sub": "cyber-criminals",
+        "rel": "gain access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "accounts"
+      },
+      {
+        "sub": "cyber-criminals",
+        "rel": "carry out",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "whaling attacks"
+      },
+      {
+        "sub": "some organizations",
+        "rel": "may witness an uptake in",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "targeted phishing attacks"
+      },
+      {
+        "sub": "some organizations",
+        "rel": "may witness an uptake in",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "fraud schemes"
+      },
+      {
+        "sub": "Troy Hunt",
+        "rel": "noted the leak is an example of an endemic problem in",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "data management"
+      },
+      {
+        "sub": "individuals",
+        "rel": "assess whether you've been",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "exposure"
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "sample_id": "casie__10182.json",
+  "sample_index": 22,
+  "source": "casie",
+  "file_name": "10182.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Kubernetes",
+        "type": "Software"
+      },
+      {
+        "name": "CVE-2018-1002105",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Kubernetes API server",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Transport Layer Security",
+        "type": "Tool"
+      },
+      {
+        "name": "Red Hat",
+        "type": "Organization"
+      },
+      {
+        "name": "Red Hat OpenShift Container Platform",
+        "type": "Organization"
+      },
+      {
+        "name": "Red Hat OpenShift Online",
+        "type": "Organization"
+      },
+      {
+        "name": "Red Hat OpenShift Dedicated",
+        "type": "Organization"
+      },
+      {
+        "name": "Rancher Labs",
+        "type": "Organization"
+      },
+      {
+        "name": "Darren Shepard",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Kubernetes",
+        "rel": "has vulnerability",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "AFFECTS",
+        "obj": "Kubernetes API server"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "uses authentication with",
+        "obj": "Transport Layer Security"
+      },
+      {
+        "sub": "Red Hat",
+        "rel": "provides service for",
+        "obj": "Red Hat OpenShift Container Platform"
+      },
+      {
+        "sub": "Red Hat",
+        "rel": "provides service for",
+        "obj": "Red Hat OpenShift Online"
+      },
+      {
+        "sub": "Red Hat",
+        "rel": "provides service for",
+        "obj": "Red Hat OpenShift Dedicated"
+      },
+      {
+        "sub": "Rancher Labs",
+        "rel": "has member",
+        "obj": "Darren Shepard"
+      },
+      {
+        "sub": "Darren Shepard",
+        "rel": "DISCOVERED",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "leads to privilege escalation",
+        "obj": "Kubernetes"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "allowed unauthenticated discovery calls",
+        "obj": "Kubernetes API server"
+      }
+    ]
+  }
+}

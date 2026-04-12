@@ -1,0 +1,90 @@
+{
+  "sample_id": "ctinexus__reservation-links-prey-on-travelers.json",
+  "sample_index": 90,
+  "source": "ctinexus",
+  "file_name": "reservation-links-prey-on-travelers.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TA558",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "travel and hospitality industries",
+        "type": "Location"
+      },
+      {
+        "name": "airline and hotel bookings",
+        "type": "Organization"
+      },
+      {
+        "name": "fake reservation emails",
+        "type": "Indicator"
+      },
+      {
+        "name": "malicious malware payload",
+        "type": "Malware"
+      },
+      {
+        "name": "RAR file attachments",
+        "type": "Indicator"
+      },
+      {
+        "name": "ISO file attachments",
+        "type": "Indicator"
+      },
+      {
+        "name": "malware variants",
+        "type": "Malware"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TA558",
+        "rel": "TARGETS",
+        "obj": "travel and hospitality industries"
+      },
+      {
+        "sub": "TA558",
+        "rel": "USES",
+        "obj": "fake reservation emails"
+      },
+      {
+        "sub": "fake reservation emails",
+        "rel": "CONTAINS",
+        "obj": "malicious malware payload"
+      },
+      {
+        "sub": "malicious malware payload",
+        "rel": "CONTAINS",
+        "obj": "malware variants"
+      },
+      {
+        "sub": "TA558",
+        "rel": "USES",
+        "obj": "RAR file attachments"
+      },
+      {
+        "sub": "TA558",
+        "rel": "USES",
+        "obj": "ISO file attachments"
+      }
+    ]
+  }
+}

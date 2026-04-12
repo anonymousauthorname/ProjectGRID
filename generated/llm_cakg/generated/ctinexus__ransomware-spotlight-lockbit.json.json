@@ -1,0 +1,192 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-lockbit.json",
+  "sample_index": 77,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-lockbit.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "LockBit",
+        "type": "Entity"
+      },
+      {
+        "name": "StealBit",
+        "type": "Entity"
+      },
+      {
+        "name": "LockBit 2.0",
+        "type": "Entity"
+      },
+      {
+        "name": "Linux-ESXI Locker version 1.0",
+        "type": "Entity"
+      },
+      {
+        "name": "ESXi servers",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware-as-a-service (RaaS)",
+        "type": "Entity"
+      },
+      {
+        "name": "double extortion",
+        "type": "Entity"
+      },
+      {
+        "name": "data exfiltration",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "USB devices",
+        "type": "Entity"
+      },
+      {
+        "name": "network access brokers",
+        "type": "Entity"
+      },
+      {
+        "name": "criminal groups",
+        "type": "Entity"
+      },
+      {
+        "name": "Maze",
+        "type": "Entity"
+      },
+      {
+        "name": "company insiders",
+        "type": "Entity"
+      },
+      {
+        "name": "underground technical writing contests",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanisms",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Entity"
+      },
+      {
+        "name": "exploits",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE numbers",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Entity"
+      },
+      {
+        "name": "shellcode",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious scripts",
+        "type": "Entity"
+      },
+      {
+        "name": "registry keys",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled tasks",
+        "type": "Entity"
+      },
+      {
+        "name": "Linux hosts",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "LockBit",
+        "rel": "uses",
+        "obj": "ransomware-as-a-service (RaaS)"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "employs",
+        "obj": "double extortion"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "creates",
+        "obj": "StealBit"
+      },
+      {
+        "sub": "StealBit",
+        "rel": "performs",
+        "obj": "data exfiltration"
+      },
+      {
+        "sub": "LockBit 2.0",
+        "rel": "has",
+        "obj": "fastest and most efficient encryption"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "expands to",
+        "obj": "Linux hosts"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "releases",
+        "obj": "Linux-ESXI Locker version 1.0"
+      },
+      {
+        "sub": "Linux-ESXI Locker version 1.0",
+        "rel": "targets",
+        "obj": "ESXi servers"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "hires",
+        "obj": "network access brokers"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "cooperates with",
+        "obj": "criminal groups"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "recruits",
+        "obj": "company insiders"
+      },
+      {
+        "sub": "LockBit",
+        "rel": "sponsors",
+        "obj": "underground technical writing contests"
+      }
+    ]
+  }
+}

@@ -1,0 +1,864 @@
+{
+  "sample_id": "securenlp__targeted_attacks_against_the_energy_sector",
+  "sample_index": 160,
+  "source": "securenlp",
+  "file_name": "targeted_attacks_against_the_energy_sector",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "energy sector",
+        "type": "vulnerability",
+        "alias": [
+          "the energy sector",
+          "energy sector companies",
+          "energy firms",
+          "energy sector",
+          "companies in the sector",
+          "the sector",
+          "the energy sector was the second most targeted with 16 percent of all the targeted attacks",
+          "the energy sector was ranked fifth with 7.6 percent of all attacks focused on this sector"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "smart meters and sensors",
+        "type": "generic-noun",
+        "alias": [
+          "billions of smart meters and sensors",
+          "smart meters",
+          "smart grid",
+          "smart metering"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "industrial control systems (ICS)",
+        "type": "general-software",
+        "alias": [
+          "ICS",
+          "industrial control systems"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "supervisory control and data acquisition (SCADA) systems",
+        "type": "general-software",
+        "alias": [
+          "SCADA systems"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Internet",
+        "type": "network-traffic",
+        "alias": [
+          "the Internet"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "USB sticks",
+        "type": "file",
+        "alias": [
+          "USB drive",
+          "infected portable media drives",
+          "removable drives"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "non-permanent modem connection",
+        "type": "network-traffic",
+        "alias": [
+          "non-permanent modem connection"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "digital certificates",
+        "type": "x509-certificate",
+        "alias": [
+          "revocation lists for digital certificates"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Stuxnet",
+        "type": "malware",
+        "alias": [
+          "Stuxnet incident",
+          "Stuxnet operation",
+          "the Stuxnet operation",
+          "Stuxnet 1.x",
+          "Stuxnet 0.5",
+          "the Stuxnet operation began in November 2005",
+          "Stuxnet 1.x is based on what is now known as the “tilded” platform",
+          "Stuxnet 0.5 is based on the Flamer framework",
+          "Stuxnet is a sophisticated piece of malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Stuxnet 1.x",
+        "type": "malware",
+        "alias": [
+          "Stuxnet 1.x is based on what is now known as the “tilded” platform"
+        ],
+        "mother entity": [
+          "Stuxnet"
+        ]
+      },
+      {
+        "name": "Stuxnet 0.5",
+        "type": "malware",
+        "alias": [
+          "The first recorded appearance of what we now call Stuxnet version 0.5",
+          "Stuxnet 0.5 is based on the Flamer framework"
+        ],
+        "mother entity": [
+          "Stuxnet"
+        ]
+      },
+      {
+        "name": "Flamer framework",
+        "type": "hacker-tool",
+        "alias": [
+          "the Flamer framework"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Windows Shortcut ‘LNK/PIF’ Files Automatic File Execution Vulnerability (CVE-2010-2568)",
+        "type": "vulnerability",
+        "alias": [
+          "the Microsoft Windows Shortcut ‘LNK/PIF’ Files Automatic File Execution Vulnerability (CVE-2010-2568)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Step7 project files",
+        "type": "file",
+        "alias": [
+          "Step7 project files, which are used to control Programmable Logic Controllers (PLCs)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Programmable Logic Controllers (PLCs)",
+        "type": "process",
+        "alias": [
+          "PLCs",
+          "different industrial components",
+          "S7-417 PLCs",
+          "S7-315 PLCs"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "uranium enrichment facilities",
+        "type": "location",
+        "alias": [
+          "uranium enrichment facility in Iran"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Slammer worm",
+        "type": "malware",
+        "alias": [
+          "the Slammer worm infection"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Gaussian",
+        "type": "malware",
+        "alias": [
+          "Gauss"
+        ],
+        "mother entity": [
+          "Stuxnet"
+        ]
+      },
+      {
+        "name": "Night Dragon",
+        "type": "malware",
+        "alias": [
+          "Operation Night Dragon",
+          "Night Dragon, which was uncovered in 2010"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Shamoon/Disttrack",
+        "type": "malware",
+        "alias": [
+          "W32.Disttrack malware used in this attack, also known as Shamoon"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "W32.Disttrack malware",
+        "type": "malware",
+        "alias": [
+          "the W32.Disttrack malware"
+        ],
+        "mother entity": [
+          "Shamoon/Disttrack"
+        ]
+      },
+      {
+        "name": "Backdoor.Trojan",
+        "type": "malware",
+        "alias": [
+          "a common Backdoor.Trojan"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "command and control (C&C) servers",
+        "type": "infrastructure",
+        "alias": [
+          "C&C server"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "spear phishing attacks",
+        "type": "attack-pattern",
+        "alias": [
+          "spear phishing",
+          "spear phishing attacks in the energy sector"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Poison Ivy",
+        "type": "malware",
+        "alias": [
+          "the Poison Ivy Trojan"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "AVP.dll",
+        "type": "file",
+        "alias": [
+          "a Trojan.Dropper disguised as an attachment with the filename AVP.dll",
+          "AVP.dll used in previous targeted attacks",
+          "the same family of dropper"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "clbcatq.dll",
+        "type": "hacker-tool",
+        "alias": [
+          "a malicious Downloader “clbcatq.dll”"
+        ],
+        "mother entity": [
+          "AVP.dll"
+        ]
+      },
+      {
+        "name": "wuauclt directory",
+        "type": "file",
+        "alias": [
+          "a newly created “wuauclt” directory"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Poison Ivy Trojan Backdoor.Darkmoon",
+        "type": "malware",
+        "alias": [
+          "a variant of the Poison Ivy Trojan Backdoor.Darkmoon"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Trojan droppers",
+        "type": "malware",
+        "alias": [
+          "Trojan droppers that would download additional malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Word document",
+        "type": "file",
+        "alias": [
+          "an infected Microsoft Word document"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft DirectX DirectShow Length Record Remote Code Execution Vulnerability (CVE-2009-1539)",
+        "type": "vulnerability",
+        "alias": [
+          "a Microsoft DirectX DirectShow Length Record Remote Code Execution Vulnerability (CVE-2009-1539) in .mp4 files"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "TRIAGE",
+        "type": "course-of-action",
+        "alias": [
+          "TRIAGE framework"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Hidden Lynx",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the Hidden Lynx group"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Duqu",
+        "type": "malware",
+        "alias": [
+          "Duqu, Flamer, and Gauss"
+        ],
+        "mother entity": [
+          "Stuxnet"
+        ]
+      },
+      {
+        "name": "Flamer",
+        "type": "malware",
+        "alias": [
+          "Flamer, Net Traveler and Elderwood"
+        ],
+        "mother entity": [
+          "Stuxnet"
+        ]
+      },
+      {
+        "name": "Nitro",
+        "type": "malware",
+        "alias": [
+          "Hidden Lynx, Nitro"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Elderwood",
+        "type": "malware",
+        "alias": [
+          "Hidden Lynx, Nitro, Flamer, Net Traveler and Elderwood"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Shamoon",
+        "type": "malware",
+        "alias": [
+          "Shamoon, a destructive cyberattack hit an estimated 30,000 computers at one of the largest oil producers of the world in Saudi Arabia"
+        ],
+        "mother entity": [
+          "Shamoon/Disttrack"
+        ]
+      },
+      {
+        "name": "users",
+        "type": "identity",
+        "alias": [
+          "a regional sales manager in Greece",
+          "HR person in the same country",
+          "many people",
+          "key users",
+          "target individuals"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "US Department of Energy",
+        "type": "identity",
+        "alias": [
+          "the US Department of Energy"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Chinese fighter jets",
+        "type": "file",
+        "alias": [
+          "3D printing technology used in Chinese fighter jets"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Windows Update",
+        "type": "general-software",
+        "alias": [
+          "Windows Update, in the case of Flamer"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malware authors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "a group with multiple interests",
+          "the attackers",
+          "hacktivists"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "enterprise data center",
+        "type": "location",
+        "alias": [
+          "enterprise data center to cloud-based systems"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "critical infrastructure",
+        "type": "other",
+        "alias": [
+          "critical infrastructures",
+          "critical infrastructure networks"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "energy sector",
+        "rel": "has become a major focus for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "energy sector"
+      },
+      {
+        "sub": "smart meters and sensors",
+        "rel": "will be installed worldwide over the next ten years",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Internet"
+      },
+      {
+        "sub": "industrial control systems (ICS)",
+        "rel": "connected to the Internet",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Internet"
+      },
+      {
+        "sub": "supervisory control and data acquisition (SCADA) systems",
+        "rel": "exposed to the Internet",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Internet"
+      },
+      {
+        "sub": "SCADA systems",
+        "rel": "exposed to the Internet",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Internet"
+      },
+      {
+        "sub": "SCADA systems",
+        "rel": "exposed to the Internet",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Internet"
+      },
+      {
+        "sub": "SCADA systems",
+        "rel": "exposed to the Internet",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Internet"
+      },
+      {
+        "sub": "SCADA systems",
+        "rel": "exposed to the Internet",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Internet"
+      },
+      {
+        "sub": "USB sticks",
+        "rel": "provides a way into",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "isolated networks"
+      },
+      {
+        "sub": "non-permanent modem connection",
+        "rel": "provides a way into",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "isolated networks"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "disrupted and partially destroyed",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "uranium enrichment facilities"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "uses",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Microsoft Windows Shortcut ‘LNK/PIF’ Files Automatic File Execution Vulnerability (CVE-2010-2568)"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "infects",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Step7 project files"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Step7 project files"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "propagated through",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "network shares"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "propagated through",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "printer spooler vulnerability"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "propagated through",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Windows RPC vulnerability"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "propagated through",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "WinCC database"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "focused on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Programmable Logic Controllers (PLCs)"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "infected",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Chevron computers"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "signed with",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "digital certificates"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "modified its valve settings",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "valve settings"
+      },
+      {
+        "sub": "Stuxnet",
+        "rel": "manipulating the spinning frequency of the rotating motors",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "spinning frequency"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "global oil companies"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "compromised",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "public facing Web servers"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "used",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Backdoor.Trojan"
+      },
+      {
+        "sub": "Night Dragon",
+        "rel": "communicate back to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "command and control (C&C) servers"
+      },
+      {
+        "sub": "Shamoon/Disttrack",
+        "rel": "hit",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Saudi Arabian oil producer"
+      },
+      {
+        "sub": "Shamoon/Disttrack",
+        "rel": "consists of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "dropper"
+      },
+      {
+        "sub": "Shamoon/Disttrack",
+        "rel": "consists of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "wiper"
+      },
+      {
+        "sub": "Shamoon/Disttrack",
+        "rel": "consists of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "reporter module"
+      },
+      {
+        "sub": "Shamoon/Disttrack",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "legitimate device driver"
+      },
+      {
+        "sub": "Shamoon/Disttrack",
+        "rel": "overwrites",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "files"
+      },
+      {
+        "sub": "Shamoon/Disttrack",
+        "rel": "wipes",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "master boot record"
+      },
+      {
+        "sub": "Shamoon/Disttrack",
+        "rel": "reports",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Shamoon/Disttrack",
+        "rel": "wiped",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "operational network"
+      },
+      {
+        "sub": "spear phishing attacks",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "energy sector"
+      },
+      {
+        "sub": "spear phishing attacks",
+        "rel": "sent to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "key users"
+      },
+      {
+        "sub": "AVP.dll",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "clbcatq.dll"
+      },
+      {
+        "sub": "AVP.dll",
+        "rel": "drops",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "wuauclt directory"
+      },
+      {
+        "sub": "AVP.dll",
+        "rel": "used in",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "targeted attacks"
+      },
+      {
+        "sub": "Poison Ivy Trojan Backdoor.Darkmoon",
+        "rel": "is variant of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Poison Ivy Trojan"
+      },
+      {
+        "sub": "Poison Ivy Trojan Backdoor.Darkmoon",
+        "rel": "connects to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "command and control (C&C) servers"
+      },
+      {
+        "sub": "W32.Disttrack malware",
+        "rel": "deletes",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "operating system"
+      },
+      {
+        "sub": "W32.Disttrack malware",
+        "rel": "wipes",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "master boot record"
+      },
+      {
+        "sub": "Shamoon",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "oil producers"
+      },
+      {
+        "sub": "Chinese fighter jets",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "3D printing technology"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "hijacking",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Windows Update"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "created",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "Trojan droppers"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Microsoft Word document"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "used",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Microsoft DirectX DirectShow Length Record Remote Code Execution Vulnerability (CVE-2009-1539)"
+      },
+      {
+        "sub": "Shamoon/Disttrack",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "oil producers"
+      }
+    ]
+  }
+}

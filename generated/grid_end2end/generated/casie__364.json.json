@@ -1,0 +1,409 @@
+{
+  "sample_id": "casie__364.json",
+  "sample_index": 33,
+  "source": "casie",
+  "file_name": "364.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "AlphaBay",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "researcher",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "security flaws",
+          "bugs",
+          "high-risk bugs",
+          "the bugs",
+          "potentially devastating bugs",
+          "loopholes"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "private messages",
+        "type": "file",
+        "alias": [
+          "messages",
+          "private messages exchanged between users and sellers",
+          "the messages",
+          "messages not protected by PGP keys"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "users and sellers",
+        "type": "identity",
+        "alias": [
+          "buyers and sellers",
+          "traders",
+          "users"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "nicknames, addresses, and tracking IDs",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PGP keys",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Reddit",
+        "type": "url",
+        "alias": [
+          "a forum post"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Cipher0007",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the hacker",
+          "the attacker",
+          "he"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "support tickets",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PasteBin",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "218,000 messages",
+        "type": "quantity/money",
+        "alias": [
+          "total of 218,000 messages",
+          "messages not older than 30 days"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "30 days",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "law enforcement agencies",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "illegal trading",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "personal encryption",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Dark Web trading post",
+        "type": "infrastructure",
+        "alias": [
+          "Dark Web marketplaces"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "stolen information",
+        "type": "indicator",
+        "alias": [
+          "the stolen information"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "system",
+        "type": "infrastructure",
+        "alias": [
+          "the system"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "AlphaBay developers",
+        "type": "identity",
+        "alias": [
+          "AlphaBay developers were able"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "exploitation",
+        "type": "attack-pattern",
+        "alias": [
+          "snatch private messages",
+          "compromise the privacy"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "researcher",
+        "rel": "disclosed the existence of",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "allowed him to steal",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "private messages"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "disclosed the existence of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "disclosed the existence of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "disclosed... through",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Reddit"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "could be exploited to snatch",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "private messages"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "compromise",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "AlphaBay"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "steal",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "nicknames, addresses, and tracking IDs"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "issued a number of screenshots of",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "private messages"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "warning",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Dark Web trading post"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "confirmed the validity of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "allow the hacker to slurp",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "218,000 messages"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "could compromise the privacy",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "users and sellers"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "could compromise the privacy",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "users"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "paid",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "Cipher0007"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "revealed his methods",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "AlphaBay developers"
+      },
+      {
+        "sub": "AlphaBay developers",
+        "rel": "were able to close",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "loopholes"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "have the potential to destroy",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Dark Web trading post"
+      },
+      {
+        "sub": "law enforcement agencies",
+        "rel": "attempting to close down",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Dark Web trading post"
+      },
+      {
+        "sub": "law enforcement agencies",
+        "rel": "may have been known to them",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "vulnerability",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "users",
+        "rel": "take responsibility for their own privacy by using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "PGP keys"
+      },
+      {
+        "sub": "users",
+        "rel": "take responsibility for their own privacy by using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "personal encryption"
+      },
+      {
+        "sub": "users",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "PGP keys"
+      },
+      {
+        "sub": "218,000 messages",
+        "rel": "not older than",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "30 days"
+      },
+      {
+        "sub": "messages",
+        "rel": "included in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "messages"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "allow the hacker to steal",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "stolen information"
+      },
+      {
+        "sub": "stolen information",
+        "rel": "released to the public",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "stolen information"
+      }
+    ]
+  }
+}

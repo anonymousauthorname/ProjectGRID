@@ -1,0 +1,72 @@
+{
+  "sample_id": "ctinexus__ragnar-locker-ransomware.json",
+  "sample_index": 61,
+  "source": "ctinexus",
+  "file_name": "ragnar-locker-ransomware.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Ragnar Locker",
+        "rel": "uses",
+        "obj": "double extortion tactic"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "involves",
+        "obj": "exfiltrating data"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "involves",
+        "obj": "triggering encryption attack"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "threatens",
+        "obj": "leak data"
+      },
+      {
+        "sub": "CVE-2017-0213",
+        "rel": "is an",
+        "obj": "elevation of privilege"
+      },
+      {
+        "sub": "elevation of privilege",
+        "rel": "allows",
+        "obj": "attackers"
+      },
+      {
+        "sub": "attackers",
+        "rel": "run",
+        "obj": "arbitrary code"
+      },
+      {
+        "sub": "attacker",
+        "rel": "runs",
+        "obj": "specially crafted application"
+      },
+      {
+        "sub": "attacker",
+        "rel": "runs",
+        "obj": "application"
+      }
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "sample_id": "casie__10330.json",
+  "sample_index": 1,
+  "source": "casie",
+  "file_name": "10330.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "KB 4461529",
+        "type": "Entity"
+      },
+      {
+        "name": "KB 4461585",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "Outlook 2010",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Installer (.msi)-based edition of Office 2010",
+        "type": "Entity"
+      },
+      {
+        "name": "Office 365 Home",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution flaws",
+        "type": "Entity"
+      },
+      {
+        "name": "crashes",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Download Center",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Update Catalog",
+        "type": "Entity"
+      },
+      {
+        "name": "KB4461522",
+        "type": "Entity"
+      },
+      {
+        "name": "KB2863821",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "KB 4461529",
+        "rel": "causes",
+        "obj": "crashes"
+      },
+      {
+        "sub": "KB 4461529",
+        "rel": "exploits",
+        "obj": "remote code execution flaws"
+      },
+      {
+        "sub": "KB 4461529",
+        "rel": "fixes",
+        "obj": "four remote code execution flaws"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "fixes",
+        "obj": "remote code execution flaws"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "resolves",
+        "obj": "crashes caused by KB 4461529"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "is available for download from",
+        "obj": "Microsoft Download Center"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "is not available for download from",
+        "obj": "Microsoft Update Catalog"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "applies to",
+        "obj": "Microsoft Installer (.msi)-based edition of Office 2010"
+      },
+      {
+        "sub": "KB 4461585",
+        "rel": "does not apply to",
+        "obj": "Office 365 Home"
+      },
+      {
+        "sub": "KB4461522",
+        "rel": "causes",
+        "obj": "crashes in Access and other apps"
+      },
+      {
+        "sub": "KB4461522",
+        "rel": "was removed by",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "KB2863821",
+        "rel": "causes",
+        "obj": "crashes in Access and other apps"
+      },
+      {
+        "sub": "KB2863821",
+        "rel": "was removed by",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "recommends",
+        "obj": "users uninstall KB4461522"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "recommends",
+        "obj": "users uninstall KB2863821"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "recommends",
+        "obj": "users use Outlook Web Access instead"
+      }
+    ]
+  }
+}

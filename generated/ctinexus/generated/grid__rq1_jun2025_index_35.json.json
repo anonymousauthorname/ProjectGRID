@@ -1,0 +1,301 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_35.json",
+  "sample_index": 225,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_35.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Gumblar",
+        "type": "Unknown"
+      },
+      {
+        "name": "FTP access",
+        "type": "Unknown"
+      },
+      {
+        "name": "serverside scripting",
+        "type": "Unknown"
+      },
+      {
+        "name": "downloading and modifying HTML files",
+        "type": "Unknown"
+      },
+      {
+        "name": "<script> tag in HTML files",
+        "type": "Unknown"
+      },
+      {
+        "name": "websites to become redirectors",
+        "type": "Unknown"
+      },
+      {
+        "name": "redirectors",
+        "type": "Unknown"
+      },
+      {
+        "name": "malware-hosting websites",
+        "type": "Unknown"
+      },
+      {
+        "name": "injected script",
+        "type": "Unknown"
+      },
+      {
+        "name": "a website hosting exploits",
+        "type": "Unknown"
+      },
+      {
+        "name": "attacked clients",
+        "type": "Unknown"
+      },
+      {
+        "name": "infectors",
+        "type": "Unknown"
+      },
+      {
+        "name": "exploits",
+        "type": "Unknown"
+      },
+      {
+        "name": "malicious Windows executable",
+        "type": "Unknown"
+      },
+      {
+        "name": "user to enter FTP credentials",
+        "type": "Unknown"
+      },
+      {
+        "name": "injectors",
+        "type": "Unknown"
+      },
+      {
+        "name": "generic PHP backdoor",
+        "type": "Unknown"
+      },
+      {
+        "name": "execution of any PHP code on webserver",
+        "type": "Unknown"
+      },
+      {
+        "name": "injection tasks",
+        "type": "Unknown"
+      },
+      {
+        "name": "dispatchers",
+        "type": "Unknown"
+      },
+      {
+        "name": "infect webpages on compromised webservers",
+        "type": "Unknown"
+      },
+      {
+        "name": "self-building botnet",
+        "type": "Unknown"
+      },
+      {
+        "name": "to infect with Windows executable",
+        "type": "Unknown"
+      },
+      {
+        "name": "infected victim machines",
+        "type": "Unknown"
+      },
+      {
+        "name": "infect every webpage on new webservers",
+        "type": "Unknown"
+      },
+      {
+        "name": "attacking more computers",
+        "type": "Unknown"
+      },
+      {
+        "name": "system owner",
+        "type": "Unknown"
+      },
+      {
+        "name": "Trojan executable",
+        "type": "Unknown"
+      },
+      {
+        "name": "exploits used to attack browser",
+        "type": "Unknown"
+      },
+      {
+        "name": "attacking new computers",
+        "type": "Unknown"
+      },
+      {
+        "name": "infected machines",
+        "type": "Unknown"
+      },
+      {
+        "name": "obtained FTP credentials",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Gumblar",
+        "rel": "operates by using",
+        "obj": "FTP access"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "requires",
+        "obj": "serverside scripting"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "infects websites by",
+        "obj": "downloading and modifying HTML files"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "injects",
+        "obj": "<script> tag in HTML files"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "modifies",
+        "obj": "websites to become redirectors"
+      },
+      {
+        "sub": "redirectors",
+        "rel": "redirect browsers to",
+        "obj": "malware-hosting websites"
+      },
+      {
+        "sub": "injected script",
+        "rel": "references",
+        "obj": "a website hosting exploits"
+      },
+      {
+        "sub": "injected script",
+        "rel": "registers",
+        "obj": "attacked clients"
+      },
+      {
+        "sub": "infectors",
+        "rel": "host",
+        "obj": "exploits"
+      },
+      {
+        "sub": "infectors",
+        "rel": "host",
+        "obj": "malicious Windows executable"
+      },
+      {
+        "sub": "malicious Windows executable",
+        "rel": "waits for",
+        "obj": "user to enter FTP credentials"
+      },
+      {
+        "sub": "injectors",
+        "rel": "host",
+        "obj": "generic PHP backdoor"
+      },
+      {
+        "sub": "injectors",
+        "rel": "enable",
+        "obj": "execution of any PHP code on webserver"
+      },
+      {
+        "sub": "injectors",
+        "rel": "are used to proxify",
+        "obj": "injection tasks"
+      },
+      {
+        "sub": "dispatchers",
+        "rel": "issue code and commands to",
+        "obj": "infect webpages on compromised webservers"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "is a fully automated system",
+        "obj": "self-building botnet"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "attacks visitors of websites",
+        "obj": "to infect with Windows executable"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "grabs FTP credentials from",
+        "obj": "infected victim machines"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "uses FTP credentials to",
+        "obj": "infect every webpage on new webservers"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "extends number of infected pages by",
+        "obj": "attacking more computers"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "is controlled by",
+        "obj": "system owner"
+      },
+      {
+        "sub": "system owner",
+        "rel": "updates",
+        "obj": "Trojan executable"
+      },
+      {
+        "sub": "system owner",
+        "rel": "updates",
+        "obj": "exploits used to attack browser"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "works in a constant loop of",
+        "obj": "attacking new computers"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "gathers new FTP accounts from",
+        "obj": "infected machines"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "infects new servers using",
+        "obj": "obtained FTP credentials"
+      },
+      {
+        "sub": "injected script",
+        "rel": "is a component of",
+        "obj": "Gumblar"
+      },
+      {
+        "sub": "malicious Windows executable",
+        "rel": "is a component of",
+        "obj": "Gumblar"
+      },
+      {
+        "sub": "injectors",
+        "rel": "serve as intermediaries for",
+        "obj": "Gumblar"
+      }
+    ]
+  }
+}

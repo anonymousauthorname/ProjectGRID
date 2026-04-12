@@ -1,0 +1,86 @@
+{
+  "sample_id": "ctinexus__new-iranian-apt-data-extraction-tool.json",
+  "sample_index": 92,
+  "source": "ctinexus",
+  "file_name": "new-iranian-apt-data-extraction-tool.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT35",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Charming Kitten",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "HYPERSCRAPE",
+        "type": "Malware"
+      },
+      {
+        "name": "Gmail",
+        "type": "Software"
+      },
+      {
+        "name": "Yahoo!",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Outlook",
+        "type": "Software"
+      },
+      {
+        "name": "Iran",
+        "type": "Location"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Charming Kitten",
+        "rel": "USES",
+        "obj": "HYPERSCRAPE"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "steals data from",
+        "obj": "Gmail"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "steals data from",
+        "obj": "Yahoo!"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "steals data from",
+        "obj": "Microsoft Outlook"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "is backed by",
+        "obj": "Iran"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "deployed by",
+        "obj": "Charming Kitten"
+      }
+    ]
+  }
+}

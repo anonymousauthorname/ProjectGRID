@@ -1,0 +1,218 @@
+{
+  "sample_id": "ctinexus__russian-hackers-stole-microsoft-corporate-emails-in-month-long-breach.json",
+  "sample_index": 64,
+  "source": "ctinexus",
+  "file_name": "russian-hackers-stole-microsoft-corporate-emails-in-month-long-breach.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Microsoft",
+        "type": "general-software",
+        "alias": [
+          "the company"
+        ]
+      },
+      {
+        "name": "Midnight Blizzard",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Russian state-sponsored hacking group"
+        ]
+      },
+      {
+        "name": "Nobelium",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Russian threat actors"
+        ]
+      },
+      {
+        "name": "APT29",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Russian threat actors"
+        ]
+      },
+      {
+        "name": "January 12th",
+        "type": "date"
+      },
+      {
+        "name": "November 2023",
+        "type": "date"
+      },
+      {
+        "name": "password spray attack",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "legacy non-production test tenant account",
+        "type": "user-account"
+      },
+      {
+        "name": "Microsoft's leadership team",
+        "type": "identity"
+      },
+      {
+        "name": "employees in the cybersecurity and legal departments",
+        "type": "identity"
+      },
+      {
+        "name": "emails",
+        "type": "file"
+      },
+      {
+        "name": "attachments",
+        "type": "file"
+      },
+      {
+        "name": "Microsoft's investigation",
+        "type": "course-of-action"
+      },
+      {
+        "name": "hackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the threat actors"
+        ]
+      },
+      {
+        "name": "the threat actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the threat actors"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft",
+        "rel": "warned",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "some of its corporate email accounts were breached and data stolen by a Russian state-sponsored hacking group known as Midnight Blizzard"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "is a",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Russian state-sponsored hacking group"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "detected the attack on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "January 12th"
+      },
+      {
+        "sub": "Microsoft's investigation",
+        "rel": "ultimately determining that the attack was conducted by",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Russian threat actors"
+      },
+      {
+        "sub": "Russian threat actors",
+        "rel": "known more commonly as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Nobelium"
+      },
+      {
+        "sub": "Russian threat actors",
+        "rel": "known more commonly as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "APT29"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "says the threat actors breached",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "their systems"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "conducted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "password spray attack"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "to access",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "legacy non-production test tenant account"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "says the breached email accounts included",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "members of Microsoft's leadership team"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "says the breached email accounts included",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "employees in the cybersecurity and legal departments"
+      },
+      {
+        "sub": "hackers",
+        "rel": "stole",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "emails"
+      },
+      {
+        "sub": "hackers",
+        "rel": "stole",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "attachments"
+      },
+      {
+        "sub": "Microsoft's investigation",
+        "rel": "determined that the attack was conducted by",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Russian threat actors"
+      }
+    ]
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "sample_id": "malkg__201210MatasanoRAT.txt",
+  "sample_index": 147,
+  "source": "malkg",
+  "file_name": "201210MatasanoRAT.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Initial Access: Phishing",
+        "rel": "Use",
+        "obj": "Social Engineering"
+      },
+      {
+        "sub": "Initial Access: Exploit Public-Facing Application",
+        "rel": "Use",
+        "obj": "Public-Facing Systems"
+      },
+      {
+        "sub": "Initial Access: Exploit Public-Facing Application",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerable Software"
+      },
+      {
+        "sub": "Initial Access: Phishing",
+        "rel": "Use",
+        "obj": "Executable"
+      },
+      {
+        "sub": "Initial Access: Exploit Public-Facing Application",
+        "rel": "Modify",
+        "obj": "System"
+      },
+      {
+        "sub": "Initial Access: RAT",
+        "rel": "Install",
+        "obj": "Victim System"
+      },
+      {
+        "sub": "Initial Access: RAT",
+        "rel": "Operate",
+        "obj": "Victim System"
+      },
+      {
+        "sub": "Initial Access: RAT",
+        "rel": "Write",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Initial Access: RAT",
+        "rel": "Construct",
+        "obj": "Executable"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Use",
+        "obj": "QuickUp protocol"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Use",
+        "obj": "Reverse-connecting architecture"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Execute",
+        "obj": "Editing of hosts file"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Execute",
+        "obj": "Reading of files"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Execute",
+        "obj": "File upload via QuickUp protocol"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Use",
+        "obj": "Process injection"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Use",
+        "obj": "API unhooking"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Has technique",
+        "obj": "User Execution"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Has technique",
+        "obj": "Process Injection"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Has technique",
+        "obj": "Command and Scripting Interpreter"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Has technique",
+        "obj": "Native API"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Obfuscation"
+      },
+      {
+        "sub": "Bandook RAT",
+        "rel": "Has technique",
+        "obj": "Obfuscated Files or Information"
+      },
+      {
+        "sub": "CyberGate RAT",
+        "rel": "Use",
+        "obj": "Base64 encoding"
+      },
+      {
+        "sub": "CyberGate RAT",
+        "rel": "Use",
+        "obj": "Scrambled dictionary"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Operate",
+        "obj": "Antivirus software"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Operate",
+        "obj": "Firewall software"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Has technique",
+        "obj": "Impair Defenses"
+      },
+      {
+        "sub": "Bandook RAT",
+        "rel": "Has technique",
+        "obj": "Hide Artifacts"
+      },
+      {
+        "sub": "CyberGate RAT",
+        "rel": "Has technique",
+        "obj": "Hide Artifacts"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Has technique",
+        "obj": "Masquerading"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Has technique",
+        "obj": "Password Sniffing"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Operate",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "Xtreme RAT",
+        "rel": "Store",
+        "obj": "Password"
+      },
+      {
+        "sub": "Xtreme RAT",
+        "rel": "Has technique",
+        "obj": "Steal Application Access Token"
+      },
+      {
+        "sub": "Xtreme RAT",
+        "rel": "Write",
+        "obj": "Password"
+      },
+      {
+        "sub": "Xtreme RAT",
+        "rel": "Use",
+        "obj": "Password"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "Operating System"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "User information"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "Network configuration"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "OS version"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "Hardware ID"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "Desktop window"
+      },
+      {
+        "sub": "System",
+        "rel": "Has value",
+        "obj": "Webcams"
+      },
+      {
+        "sub": "DarkComet",
+        "rel": "Operate",
+        "obj": "System Information Discovery"
+      },
+      {
+        "sub": "DarkComet",
+        "rel": "Operate",
+        "obj": "System Network Configuration Discovery"
+      },
+      {
+        "sub": "DarkComet",
+        "rel": "Operate",
+        "obj": "System Owner/User Discovery"
+      },
+      {
+        "sub": "DarkComet",
+        "rel": "Operate",
+        "obj": "System Service Discovery"
+      },
+      {
+        "sub": "CyberGate",
+        "rel": "Operate",
+        "obj": "System Information Discovery"
+      },
+      {
+        "sub": "CyberGate",
+        "rel": "Operate",
+        "obj": "System Network Configuration Discovery"
+      },
+      {
+        "sub": "CyberGate",
+        "rel": "Operate",
+        "obj": "System Owner/User Discovery"
+      },
+      {
+        "sub": "CyberGate",
+        "rel": "Operate",
+        "obj": "System Service Discovery"
+      },
+      {
+        "sub": "Xtreme RAT",
+        "rel": "Operate",
+        "obj": "System Information Discovery"
+      },
+      {
+        "sub": "Xtreme RAT",
+        "rel": "Operate",
+        "obj": "System Network Configuration Discovery"
+      },
+      {
+        "sub": "Xtreme RAT",
+        "rel": "Operate",
+        "obj": "System Owner/User Discovery"
+      },
+      {
+        "sub": "Xtreme RAT",
+        "rel": "Operate",
+        "obj": "System Service Discovery"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Has capability",
+        "obj": "Screen Capture"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Has capability",
+        "obj": "Camera Capture"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Has capability",
+        "obj": "Keylogging"
+      },
+      {
+        "sub": "Bandook RAT",
+        "rel": "Can be extended with",
+        "obj": "Plugins"
+      },
+      {
+        "sub": "Bandook RAT",
+        "rel": "Has capability",
+        "obj": "Additional functions"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Aligns with",
+        "obj": "Screen Capture"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Aligns with",
+        "obj": "Audio Capture"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Aligns with",
+        "obj": "Clipboard Data"
+      },
+      {
+        "sub": "DarkComet RAT",
+        "rel": "Aligns with",
+        "obj": "Input Capture"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "Reverse Connecting"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "Encrypted Channel"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "Data Obfuscation"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "Protocol Tunneling"
+      },
+      {
+        "sub": "DarkComet",
+        "rel": "Use",
+        "obj": "Custom Delimiter"
+      },
+      {
+        "sub": "CyberGate",
+        "rel": "Use",
+        "obj": "Base64 with Scrambled Dictionary and RC4 Encryption"
+      }
+    ]
+  }
+}

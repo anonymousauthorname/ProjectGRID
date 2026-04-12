@@ -1,0 +1,134 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_40.json",
+  "sample_index": 230,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_40.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "MALWAREBYTES",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "TOPFLIX",
+        "type": "MALWARE"
+      },
+      {
+        "name": "SOFTPULSE",
+        "type": "TOOL"
+      },
+      {
+        "name": "DNSUNLOCKER",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "ADWARE.TOPGUARD",
+        "type": "MALWARE"
+      },
+      {
+        "name": "PUP.OPTIONAL.SOFTPULSE",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "AVANQUEST",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "ONESAFE PC CLEANER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PIETER ARNTZ",
+        "type": "PERSON"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TOPFLIX",
+        "rel": "related_to",
+        "obj": "SOFTPULSE"
+      },
+      {
+        "sub": "SOFTPULSE",
+        "rel": "related_to",
+        "obj": "DNSUNLOCKER"
+      },
+      {
+        "sub": "TOPFLIX",
+        "rel": "related_to",
+        "obj": "DNSUNLOCKER"
+      },
+      {
+        "sub": "SOFTPULSE",
+        "rel": "related_to",
+        "obj": "ADWARE.TOPGUARD"
+      },
+      {
+        "sub": "ADWARE.TOPGUARD",
+        "rel": "related_to",
+        "obj": "TOPFLIX"
+      },
+      {
+        "sub": "SOFTPULSE",
+        "rel": "related_to",
+        "obj": "ONESAFE PC CLEANER"
+      },
+      {
+        "sub": "PIETER ARNTZ",
+        "rel": "related_to",
+        "obj": "MALWAREBYTES"
+      },
+      {
+        "sub": "TOPFLIX",
+        "rel": "related_to",
+        "obj": "SOFTPULSE"
+      },
+      {
+        "sub": "SOFTPULSE",
+        "rel": "related_to",
+        "obj": "DNSUNLOCKER"
+      },
+      {
+        "sub": "TOPFLIX",
+        "rel": "related_to",
+        "obj": "DNSUNLOCKER"
+      },
+      {
+        "sub": "SOFTPULSE",
+        "rel": "related_to",
+        "obj": "ADWARE.TOPGUARD"
+      },
+      {
+        "sub": "ADWARE.TOPGUARD",
+        "rel": "related_to",
+        "obj": "TOPFLIX"
+      },
+      {
+        "sub": "SOFTPULSE",
+        "rel": "related_to",
+        "obj": "ONESAFE PC CLEANER"
+      },
+      {
+        "sub": "PIETER ARNTZ",
+        "rel": "related_to",
+        "obj": "MALWAREBYTES"
+      }
+    ]
+  }
+}

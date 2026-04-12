@@ -1,0 +1,142 @@
+{
+  "sample_id": "ctinexus__reservation-links-prey-on-travelers.json",
+  "sample_index": 90,
+  "source": "ctinexus",
+  "file_name": "reservation-links-prey-on-travelers.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor TA558",
+        "rel": "Operate",
+        "obj": "Travel and hospitality industries"
+      },
+      {
+        "sub": "Threat Actor TA558",
+        "rel": "Use",
+        "obj": "Fake reservation emails"
+      },
+      {
+        "sub": "Threat Actor TA558",
+        "rel": "Construct",
+        "obj": "Malicious malware payload"
+      },
+      {
+        "sub": "Threat Actor TA558",
+        "rel": "Use",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "Threat Actor TA558",
+        "rel": "Target",
+        "obj": "Travel sector"
+      },
+      {
+        "sub": "Threat Actor TA558",
+        "rel": "Has vulnerability",
+        "obj": "Legitimate reservation communications"
+      },
+      {
+        "sub": "Threat Actor TA558",
+        "rel": "Modify",
+        "obj": "Email content to mimic legitimate reservation communications"
+      },
+      {
+        "sub": "Threat Actor TA558",
+        "rel": "Has URL",
+        "obj": "Links in fake reservation emails"
+      },
+      {
+        "sub": "Threat Actor TA558",
+        "rel": "Write",
+        "obj": "Malicious payload through clicked links"
+      },
+      {
+        "sub": "TA558",
+        "rel": "Use",
+        "obj": "Fake reservation emails"
+      },
+      {
+        "sub": "Fake reservation emails",
+        "rel": "Have value",
+        "obj": "Malicious links"
+      },
+      {
+        "sub": "Malicious links",
+        "rel": "Deliver",
+        "obj": "Malicious payload"
+      },
+      {
+        "sub": "Malicious payload",
+        "rel": "Execute",
+        "obj": "Upon user interaction"
+      },
+      {
+        "sub": "TA558",
+        "rel": "Establish",
+        "obj": "Foothold in target environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Compressed file attachment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "RAR file attachment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "ISO file attachment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Victim system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "User action"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Malicious code"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Decompress",
+        "obj": "RAR file attachment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Decompress",
+        "obj": "ISO file attachment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Deploy",
+        "obj": "Victim system"
+      }
+    ]
+  }
+}

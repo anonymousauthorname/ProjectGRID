@@ -1,0 +1,322 @@
+{
+  "sample_id": "casie__10276.json",
+  "sample_index": 10,
+  "source": "casie",
+  "file_name": "10276.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DWR-116",
+        "type": "Entity"
+      },
+      {
+        "name": "DWR-140L",
+        "type": "Entity"
+      },
+      {
+        "name": "DWR-512",
+        "type": "Entity"
+      },
+      {
+        "name": "DWR-640L",
+        "type": "Entity"
+      },
+      {
+        "name": "DWR-712",
+        "type": "Entity"
+      },
+      {
+        "name": "DWR-912",
+        "type": "Entity"
+      },
+      {
+        "name": "DWR-921",
+        "type": "Entity"
+      },
+      {
+        "name": "DWR-111",
+        "type": "Entity"
+      },
+      {
+        "name": "DIR-640L",
+        "type": "Entity"
+      },
+      {
+        "name": "directory traversal",
+        "type": "Entity"
+      },
+      {
+        "name": "dot dot slash",
+        "type": "Entity"
+      },
+      {
+        "name": "HTTP request",
+        "type": "Entity"
+      },
+      {
+        "name": "firmware vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "critical vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "high-risk vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "medium-risk vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "155",
+        "type": "Entity"
+      },
+      {
+        "name": "32,000",
+        "type": "Entity"
+      },
+      {
+        "name": "12",
+        "type": "Entity"
+      },
+      {
+        "name": "36",
+        "type": "Entity"
+      },
+      {
+        "name": "103",
+        "type": "Entity"
+      },
+      {
+        "name": "D-Link",
+        "type": "Entity"
+      },
+      {
+        "name": "Silesian University of Technology",
+        "type": "Entity"
+      },
+      {
+        "name": "Błazej Adamczyk",
+        "type": "Entity"
+      },
+      {
+        "name": "end-of-life models",
+        "type": "Entity"
+      },
+      {
+        "name": "security patch",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "router models",
+        "type": "Entity"
+      },
+      {
+        "name": "manufacturer",
+        "type": "Entity"
+      },
+      {
+        "name": "American Consumer Institute",
+        "type": "Entity"
+      },
+      {
+        "name": "ACI",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "D-Link",
+        "rel": "failed to act on",
+        "obj": "security warnings"
+      },
+      {
+        "sub": "Błazej Adamczyk",
+        "rel": "contacted",
+        "obj": "D-Link"
+      },
+      {
+        "sub": "Błazej Adamczyk",
+        "rel": "reported",
+        "obj": "three vulnerabilities"
+      },
+      {
+        "sub": "three vulnerabilities",
+        "rel": "affect",
+        "obj": "eight router models"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "patched",
+        "obj": "two of the affected router models"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "did not reveal",
+        "obj": "how it would proceed for the remaining six models"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "declared",
+        "obj": "remaining six router models are end-of-life models"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "did not provide",
+        "obj": "security patch for the remaining six router models"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "failed to address",
+        "obj": "security vulnerabilities after being notified by researchers"
+      },
+      {
+        "sub": "D-Link",
+        "rel": "reported",
+        "obj": "prior security flaw was fixed"
+      },
+      {
+        "sub": "directory traversal",
+        "rel": "allows",
+        "obj": "malicious attacker to gain access to system files"
+      },
+      {
+        "sub": "dot dot slash",
+        "rel": "is also known as",
+        "obj": "directory traversal"
+      },
+      {
+        "sub": "HTTP request",
+        "rel": "is used in",
+        "obj": "directory traversal attacks"
+      },
+      {
+        "sub": "American Consumer Institute",
+        "rel": "reported",
+        "obj": "155 routers contained firmware vulnerabilities"
+      },
+      {
+        "sub": "American Consumer Institute",
+        "rel": "discovered",
+        "obj": "more than 32,000 known vulnerabilities"
+      },
+      {
+        "sub": "American Consumer Institute",
+        "rel": "found",
+        "obj": "on average, routers contain 12 critical vulnerabilities"
+      },
+      {
+        "sub": "American Consumer Institute",
+        "rel": "found",
+        "obj": "on average, routers contain 36 high-risk vulnerabilities"
+      },
+      {
+        "sub": "American Consumer Institute",
+        "rel": "found",
+        "obj": "most common vulnerabilities are medium-risk"
+      },
+      {
+        "sub": "American Consumer Institute",
+        "rel": "found",
+        "obj": "average of 103 medium-risk vulnerabilities per router"
+      },
+      {
+        "sub": "Silesian University of Technology",
+        "rel": "has researcher",
+        "obj": "Błazej Adamczyk"
+      },
+      {
+        "sub": "DWR-116",
+        "rel": "is affected by",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "DWR-140L",
+        "rel": "is affected by",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "DWR-512",
+        "rel": "is affected by",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "DWR-640L",
+        "rel": "is affected by",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "DWR-712",
+        "rel": "is affected by",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "DWR-912",
+        "rel": "is affected by",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "DWR-921",
+        "rel": "is affected by",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "DWR-111",
+        "rel": "is affected by",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "DIR-640L",
+        "rel": "is affected by",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "end-of-life models",
+        "rel": "include",
+        "obj": "DWR-116, DWR-140L, DWR-512, DWR-640L, DWR-712, DWR-912, DWR-921, DWR-111"
+      },
+      {
+        "sub": "router models",
+        "rel": "are considered",
+        "obj": "end-of-life models"
+      },
+      {
+        "sub": "security patch",
+        "rel": "was not provided for",
+        "obj": "end-of-life models"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "is exploited via",
+        "obj": "directory traversal"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "is exploited via",
+        "obj": "HTTP request"
+      }
+    ]
+  }
+}

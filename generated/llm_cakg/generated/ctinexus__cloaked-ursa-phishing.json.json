@@ -1,0 +1,161 @@
+{
+  "sample_id": "ctinexus__cloaked-ursa-phishing.json",
+  "sample_index": 74,
+  "source": "ctinexus",
+  "file_name": "cloaked-ursa-phishing.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Cloaked Ursa",
+        "type": "Entity"
+      },
+      {
+        "name": "APT29",
+        "type": "Entity"
+      },
+      {
+        "name": "UAC-0004",
+        "type": "Entity"
+      },
+      {
+        "name": "Midnight Blizzard/Nobelium",
+        "type": "Entity"
+      },
+      {
+        "name": "Cozy Bear",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing lures",
+        "type": "Entity"
+      },
+      {
+        "name": "Notes verbale",
+        "type": "Entity"
+      },
+      {
+        "name": "embassies' operating status updates",
+        "type": "Entity"
+      },
+      {
+        "name": "schedules for diplomats",
+        "type": "Entity"
+      },
+      {
+        "name": "invitations to embassy events",
+        "type": "Entity"
+      },
+      {
+        "name": "diplomats",
+        "type": "Entity"
+      },
+      {
+        "name": "vehicle",
+        "type": "Entity"
+      },
+      {
+        "name": "Kyiv",
+        "type": "Entity"
+      },
+      {
+        "name": "foreign missions",
+        "type": "Entity"
+      },
+      {
+        "name": "Russia's Foreign Intelligence Service",
+        "type": "Entity"
+      },
+      {
+        "name": "SVR",
+        "type": "Entity"
+      },
+      {
+        "name": "advanced persistent threat (APT)",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "uses",
+        "obj": "phishing lures"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "uses",
+        "obj": "Notes verbale"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "uses",
+        "obj": "embassies' operating status updates"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "uses",
+        "obj": "schedules for diplomats"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "uses",
+        "obj": "invitations to embassy events"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "targets",
+        "obj": "diplomats"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "targets",
+        "obj": "foreign missions"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "targets",
+        "obj": "Ukraine"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "targets",
+        "obj": "Kyiv"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "leverages",
+        "obj": "vehicle"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "is associated with",
+        "obj": "Russia's Foreign Intelligence Service"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "is associated with",
+        "obj": "SVR"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "is categorized as",
+        "obj": "advanced persistent threat (APT)"
+      }
+    ]
+  }
+}

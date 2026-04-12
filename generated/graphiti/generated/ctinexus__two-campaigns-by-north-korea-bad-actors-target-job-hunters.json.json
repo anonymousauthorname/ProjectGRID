@@ -1,0 +1,86 @@
+{
+  "sample_id": "ctinexus__two-campaigns-by-north-korea-bad-actors-target-job-hunters.json",
+  "sample_index": 52,
+  "source": "ctinexus",
+  "file_name": "two-campaigns-by-north-korea-bad-actors-target-job-hunters.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Contagious Interview",
+        "type": "Campaign"
+      },
+      {
+        "name": "Wagemole",
+        "type": "Campaign"
+      },
+      {
+        "name": "Democratic People's Republic of Korea",
+        "type": "Location"
+      },
+      {
+        "name": "North Korea",
+        "type": "Location"
+      },
+      {
+        "name": "software developers",
+        "type": "Software"
+      },
+      {
+        "name": "employers",
+        "type": "Organization"
+      },
+      {
+        "name": "US",
+        "type": "Location"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Contagious Interview",
+        "rel": "TARGETS",
+        "obj": "software developers"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "poses as",
+        "obj": "employers"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "targets organizations in",
+        "obj": "US"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "seeks unauthorized employment with",
+        "obj": "software developers"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "attributed to",
+        "obj": "Democratic People's Republic of Korea"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "attributed to",
+        "obj": "Democratic People's Republic of Korea"
+      }
+    ]
+  }
+}

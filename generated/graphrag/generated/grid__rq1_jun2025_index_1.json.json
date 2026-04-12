@@ -1,0 +1,312 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_1.json",
+  "sample_index": 201,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_1.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CERBER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "LOADER",
+        "type": "TOOL"
+      },
+      {
+        "name": "SELF-EXTRACTING ARCHIVE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "VISUAL BASIC SCRIPT",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "DLL FILE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CONFIGURATION FILE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "DROPBOX",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "WINDOWS SCRIPT HOST",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "RUNDLL32.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "VIRTUAL MACHINE",
+        "type": "LOCATION"
+      },
+      {
+        "name": "MSCONFIG",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "REGEDIT",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "TASK MANAGER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "WIRESHARK",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "360",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "AVG",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "BITDEFENDER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "DR. WEB",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "KASPERSKY",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "NORTON",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "TREND MICRO",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "C:.WINDOWS.MICROSOFT.NETFRAMEWORKV2.0.50727CSC.EXE",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "C:.WINDOWS.MICROSOFT.NETFRAMEWORKV2.0.50727REGASM.EXE",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "C:.WINDOWS.MICROSOFT.NETFRAMEWORKV4.0.30319CSC.EXE",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "C:.WINDOWS.SYSWOW64WERFAULT.EXE",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "C:.WINDOWS.SYSTEM32WERFAULT.EXE",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "TREND MICRO SMART PROTECTION SUITES",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "WORRYFREE BUSINESS SECURITY",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "TREND MICRO DEEP DISCOVERY",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "TREND MICRO OFFICESCAN WITH XGEN",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "EMAIL PHISHING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "MACHINE LEARNING EVADE TECHNIQUE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "CERBER RANSOMWARE CAMPAIGN",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "BRIAN CAYANAN",
+        "type": "PERSON"
+      },
+      {
+        "name": "JON OLIVER",
+        "type": "PERSON"
+      },
+      {
+        "name": "SANDBOX",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CERBER",
+        "rel": "related_to",
+        "obj": "LOADER"
+      },
+      {
+        "sub": "CERBER",
+        "rel": "related_to",
+        "obj": "SELF-EXTRACTING ARCHIVE"
+      },
+      {
+        "sub": "SELF-EXTRACTING ARCHIVE",
+        "rel": "related_to",
+        "obj": "VISUAL BASIC SCRIPT"
+      },
+      {
+        "sub": "VISUAL BASIC SCRIPT",
+        "rel": "related_to",
+        "obj": "DLL FILE"
+      },
+      {
+        "sub": "DLL FILE",
+        "rel": "related_to",
+        "obj": "CONFIGURATION FILE"
+      },
+      {
+        "sub": "LOADER",
+        "rel": "related_to",
+        "obj": "VIRTUAL MACHINE"
+      },
+      {
+        "sub": "LOADER",
+        "rel": "related_to",
+        "obj": "SANDBOX"
+      },
+      {
+        "sub": "LOADER",
+        "rel": "related_to",
+        "obj": "MSCONFIG"
+      },
+      {
+        "sub": "LOADER",
+        "rel": "related_to",
+        "obj": "REGEDIT"
+      },
+      {
+        "sub": "LOADER",
+        "rel": "related_to",
+        "obj": "TASK MANAGER"
+      },
+      {
+        "sub": "LOADER",
+        "rel": "related_to",
+        "obj": "WIRESHARK"
+      },
+      {
+        "sub": "LOADER",
+        "rel": "related_to",
+        "obj": "360"
+      },
+      {
+        "sub": "LOADER",
+        "rel": "related_to",
+        "obj": "AVG"
+      },
+      {
+        "sub": "LOADER",
+        "rel": "related_to",
+        "obj": "BITDEFENDER"
+      },
+      {
+        "sub": "LOADER",
+        "rel": "related_to",
+        "obj": "DR. WEB"
+      },
+      {
+        "sub": "LOADER",
+        "rel": "related_to",
+        "obj": "KASPERSKY"
+      },
+      {
+        "sub": "LOADER",
+        "rel": "related_to",
+        "obj": "NORTON"
+      },
+      {
+        "sub": "LOADER",
+        "rel": "related_to",
+        "obj": "TREND MICRO"
+      },
+      {
+        "sub": "CERBER",
+        "rel": "related_to",
+        "obj": "EMAIL PHISHING"
+      },
+      {
+        "sub": "CERBER",
+        "rel": "related_to",
+        "obj": "MACHINE LEARNING EVADE TECHNIQUE"
+      },
+      {
+        "sub": "CERBER RANSOMWARE CAMPAIGN",
+        "rel": "related_to",
+        "obj": "EMAIL PHISHING"
+      },
+      {
+        "sub": "CERBER RANSOMWARE CAMPAIGN",
+        "rel": "related_to",
+        "obj": "MACHINE LEARNING EVADE TECHNIQUE"
+      },
+      {
+        "sub": "CERBER",
+        "rel": "related_to",
+        "obj": "TREND MICRO SMART PROTECTION SUITES"
+      },
+      {
+        "sub": "CERBER",
+        "rel": "related_to",
+        "obj": "WORRYFREE BUSINESS SECURITY"
+      },
+      {
+        "sub": "CERBER",
+        "rel": "related_to",
+        "obj": "TREND MICRO DEEP DISCOVERY"
+      },
+      {
+        "sub": "CERBER",
+        "rel": "related_to",
+        "obj": "TREND MICRO OFFICESCAN WITH XGEN"
+      },
+      {
+        "sub": "BRIAN CAYANAN",
+        "rel": "related_to",
+        "obj": "CERBER RANSOMWARE CAMPAIGN"
+      },
+      {
+        "sub": "JON OLIVER",
+        "rel": "related_to",
+        "obj": "CERBER RANSOMWARE CAMPAIGN"
+      }
+    ]
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_35.json",
+  "sample_index": 225,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_35.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Gumblar",
+        "type": "Entity"
+      },
+      {
+        "name": "FTP access",
+        "type": "Entity"
+      },
+      {
+        "name": "HTML pages",
+        "type": "Entity"
+      },
+      {
+        "name": "<script> tag",
+        "type": "Entity"
+      },
+      {
+        "name": "redirectors",
+        "type": "Entity"
+      },
+      {
+        "name": "infectors",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious Windows executable",
+        "type": "Entity"
+      },
+      {
+        "name": "PHP",
+        "type": "Entity"
+      },
+      {
+        "name": "backdoor",
+        "type": "Entity"
+      },
+      {
+        "name": "generic PHP backdoor",
+        "type": "Entity"
+      },
+      {
+        "name": "injectors",
+        "type": "Entity"
+      },
+      {
+        "name": "dispatchers",
+        "type": "Entity"
+      },
+      {
+        "name": "selfbuilding botnets",
+        "type": "Entity"
+      },
+      {
+        "name": "automated system",
+        "type": "Entity"
+      },
+      {
+        "name": "FTP credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "webpages",
+        "type": "Entity"
+      },
+      {
+        "name": "webservers",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious executable",
+        "type": "Entity"
+      },
+      {
+        "name": "exploits",
+        "type": "Entity"
+      },
+      {
+        "name": "Trojan executable",
+        "type": "Entity"
+      },
+      {
+        "name": "PHP backend",
+        "type": "Entity"
+      },
+      {
+        "name": "code injection",
+        "type": "Entity"
+      },
+      {
+        "name": "script injection",
+        "type": "Entity"
+      },
+      {
+        "name": "registry keys",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled tasks",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanisms",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "USB devices",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Gumblar",
+        "rel": "uses",
+        "obj": "FTP access"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "injects",
+        "obj": "HTML pages"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "injects",
+        "obj": "<script> tag"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "downloads",
+        "obj": "HTML files"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "modifies",
+        "obj": "HTML files"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "uploads",
+        "obj": "modified HTML files"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "creates",
+        "obj": "redirectors"
+      },
+      {
+        "sub": "redirectors",
+        "rel": "redirects",
+        "obj": "browsers"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "connects to",
+        "obj": "exploits"
+      },
+      {
+        "sub": "exploits",
+        "rel": "requires",
+        "obj": "PHP backend"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "uses",
+        "obj": "PHP"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "hosts",
+        "obj": "malicious Windows executable"
+      },
+      {
+        "sub": "malicious Windows executable",
+        "rel": "waits for",
+        "obj": "FTP credentials"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "uses",
+        "obj": "injectors"
+      },
+      {
+        "sub": "injectors",
+        "rel": "hosts",
+        "obj": "generic PHP backdoor"
+      },
+      {
+        "sub": "generic PHP backdoor",
+        "rel": "allows",
+        "obj": "execution of PHP code"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "uses",
+        "obj": "dispatchers"
+      },
+      {
+        "sub": "dispatchers",
+        "rel": "issues",
+        "obj": "code and commands"
+      },
+      {
+        "sub": "dispatchers",
+        "rel": "infects",
+        "obj": "webservers"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "automatically attacks",
+        "obj": "websites"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "grabs",
+        "obj": "FTP credentials"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "uses",
+        "obj": "FTP credentials"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "infects",
+        "obj": "webservers"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "extends",
+        "obj": "infected pages"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "is",
+        "obj": "selfbuilding botnet"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "is",
+        "obj": "automated system"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "updates",
+        "obj": "Trojan executable"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "updates",
+        "obj": "exploits"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "operates in a loop",
+        "obj": "attacking computers"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "uses",
+        "obj": "persistence mechanisms"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "uses",
+        "obj": "scheduled tasks"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "uses",
+        "obj": "registry keys"
+      }
+    ]
+  }
+}

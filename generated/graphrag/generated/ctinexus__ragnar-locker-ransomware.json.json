@@ -1,0 +1,95 @@
+{
+  "sample_id": "ctinexus__ragnar-locker-ransomware.json",
+  "sample_index": 61,
+  "source": "ctinexus",
+  "file_name": "ragnar-locker-ransomware.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "RAGNAR LOCKER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CVE-2017-0213",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "RDP SERVICE",
+        "type": "TOOL"
+      },
+      {
+        "name": "DOUBLE EXTORTION",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "WINDOWS COM AGGREGATE MARSHALER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "STOLEN CREDENTIALS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "DARK WEB",
+        "type": "LOCATION"
+      },
+      {
+        "name": "RANSOMWARE FAMILY",
+        "type": "THREAT_ACTOR"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "RAGNAR LOCKER",
+        "rel": "related_to",
+        "obj": "DOUBLE EXTORTION"
+      },
+      {
+        "sub": "RAGNAR LOCKER",
+        "rel": "related_to",
+        "obj": "CVE-2017-0213"
+      },
+      {
+        "sub": "RAGNAR LOCKER",
+        "rel": "related_to",
+        "obj": "RDP SERVICE"
+      },
+      {
+        "sub": "CVE-2017-0213",
+        "rel": "related_to",
+        "obj": "WINDOWS COM AGGREGATE MARSHALER"
+      },
+      {
+        "sub": "RDP SERVICE",
+        "rel": "related_to",
+        "obj": "STOLEN CREDENTIALS"
+      },
+      {
+        "sub": "STOLEN CREDENTIALS",
+        "rel": "related_to",
+        "obj": "DARK WEB"
+      },
+      {
+        "sub": "RAGNAR LOCKER",
+        "rel": "related_to",
+        "obj": "RANSOMWARE FAMILY"
+      }
+    ]
+  }
+}

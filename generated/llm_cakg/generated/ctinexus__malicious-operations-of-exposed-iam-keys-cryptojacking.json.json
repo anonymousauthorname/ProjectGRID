@@ -1,0 +1,145 @@
+{
+  "sample_id": "ctinexus__malicious-operations-of-exposed-iam-keys-cryptojacking.json",
+  "sample_index": 62,
+  "source": "ctinexus",
+  "file_name": "malicious-operations-of-exposed-iam-keys-cryptojacking.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "EleKtra-Leak",
+        "type": "Entity"
+      },
+      {
+        "name": "exposed identity and access management (IAM) credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "public GitHub repositories",
+        "type": "Entity"
+      },
+      {
+        "name": "AWS Elastic Compute (EC2) instances",
+        "type": "Entity"
+      },
+      {
+        "name": "cryptojacking operations",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "automated targeting",
+        "type": "Entity"
+      },
+      {
+        "name": "quarantine policy",
+        "type": "Entity"
+      },
+      {
+        "name": "manual removal of automatic protection",
+        "type": "Entity"
+      },
+      {
+        "name": "compromised credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "attack campaign",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actor",
+        "type": "Entity"
+      },
+      {
+        "name": "AWS detection",
+        "type": "Entity"
+      },
+      {
+        "name": "auto-remediation",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanisms",
+        "type": "Entity"
+      },
+      {
+        "name": "long-lasting cryptojacking operations",
+        "type": "Entity"
+      },
+      {
+        "name": "two years",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "performs",
+        "obj": "automated targeting"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "targets",
+        "obj": "exposed identity and access management (IAM) credentials"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "targets",
+        "obj": "public GitHub repositories"
+      },
+      {
+        "sub": "AWS detection",
+        "rel": "applies",
+        "obj": "quarantine policy"
+      },
+      {
+        "sub": "threat actor",
+        "rel": "manually removes",
+        "obj": "automatic protection"
+      },
+      {
+        "sub": "threat actor",
+        "rel": "creates",
+        "obj": "AWS Elastic Compute (EC2) instances"
+      },
+      {
+        "sub": "threat actor",
+        "rel": "uses",
+        "obj": "AWS Elastic Compute (EC2) instances"
+      },
+      {
+        "sub": "threat actor",
+        "rel": "conducts",
+        "obj": "long-lasting cryptojacking operations"
+      },
+      {
+        "sub": "long-lasting cryptojacking operations",
+        "rel": "have been active for",
+        "obj": "two years"
+      }
+    ]
+  }
+}

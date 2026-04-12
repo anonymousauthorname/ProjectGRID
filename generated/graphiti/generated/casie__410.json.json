@@ -1,0 +1,219 @@
+{
+  "sample_id": "casie__410.json",
+  "sample_index": 2,
+  "source": "casie",
+  "file_name": "410.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2016-7988",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "CVE-2016-7989",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Samsung Galaxy S4",
+        "type": "Organization"
+      },
+      {
+        "name": "Samsung Galaxy S4 Mini",
+        "type": "Organization"
+      },
+      {
+        "name": "Samsung Galaxy S5",
+        "type": "Organization"
+      },
+      {
+        "name": "Samsung Galaxy Note 4",
+        "type": "Organization"
+      },
+      {
+        "name": "Samsung",
+        "type": "Organization"
+      },
+      {
+        "name": "Android telephony framework",
+        "type": "Software"
+      },
+      {
+        "name": "Samsung-specific application for handling carrier messages",
+        "type": "Software"
+      },
+      {
+        "name": "SMS",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Ransom note",
+        "type": "Indicator"
+      },
+      {
+        "name": "Malicious configuration message",
+        "type": "Indicator"
+      },
+      {
+        "name": "ContextIS",
+        "type": "Person"
+      },
+      {
+        "name": "Help Net Security",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SMS",
+        "rel": "TRIGGERS",
+        "obj": "CVE-2016-7988"
+      },
+      {
+        "sub": "SMS",
+        "rel": "TRIGGERS",
+        "obj": "CVE-2016-7989"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "AFFECTS",
+        "obj": "Samsung Galaxy S4"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "AFFECTS",
+        "obj": "Samsung Galaxy S4 Mini"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "AFFECTS",
+        "obj": "Samsung Galaxy S5"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "AFFECTS",
+        "obj": "Samsung Galaxy Note 4"
+      },
+      {
+        "sub": "CVE-2016-7989",
+        "rel": "AFFECTS",
+        "obj": "Samsung Galaxy S4"
+      },
+      {
+        "sub": "CVE-2016-7989",
+        "rel": "AFFECTS",
+        "obj": "Samsung Galaxy S4 Mini"
+      },
+      {
+        "sub": "CVE-2016-7989",
+        "rel": "AFFECTS",
+        "obj": "Samsung Galaxy S5"
+      },
+      {
+        "sub": "CVE-2016-7989",
+        "rel": "AFFECTS",
+        "obj": "Samsung Galaxy Note 4"
+      },
+      {
+        "sub": "ContextIS",
+        "rel": "DISCOVERED",
+        "obj": "CVE-2016-7988"
+      },
+      {
+        "sub": "ContextIS",
+        "rel": "DISCOVERED",
+        "obj": "CVE-2016-7989"
+      },
+      {
+        "sub": "Samsung",
+        "rel": "MODIFIES",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "Samsung",
+        "rel": "DEVELOPS",
+        "obj": "Samsung-specific application for handling carrier messages"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "EXPLOITS",
+        "obj": "Samsung-specific application for handling carrier messages"
+      },
+      {
+        "sub": "Malicious configuration message",
+        "rel": "can be sent to",
+        "obj": "Samsung Galaxy S4"
+      },
+      {
+        "sub": "Malicious configuration message",
+        "rel": "can be sent to",
+        "obj": "Samsung Galaxy S4 Mini"
+      },
+      {
+        "sub": "Malicious configuration message",
+        "rel": "can be sent to",
+        "obj": "Samsung Galaxy S5"
+      },
+      {
+        "sub": "Malicious configuration message",
+        "rel": "can be sent to",
+        "obj": "Samsung Galaxy Note 4"
+      },
+      {
+        "sub": "Ransom note",
+        "rel": "can be sent to",
+        "obj": "Samsung Galaxy S4"
+      },
+      {
+        "sub": "Ransom note",
+        "rel": "can be sent to",
+        "obj": "Samsung Galaxy S4 Mini"
+      },
+      {
+        "sub": "Ransom note",
+        "rel": "can be sent to",
+        "obj": "Samsung Galaxy S5"
+      },
+      {
+        "sub": "Ransom note",
+        "rel": "can be sent to",
+        "obj": "Samsung Galaxy Note 4"
+      },
+      {
+        "sub": "ContextIS",
+        "rel": "reported to",
+        "obj": "Help Net Security"
+      },
+      {
+        "sub": "Samsung",
+        "rel": "PATCHES",
+        "obj": "CVE-2016-7988"
+      },
+      {
+        "sub": "Samsung",
+        "rel": "PATCHES",
+        "obj": "CVE-2016-7989"
+      },
+      {
+        "sub": "Samsung-specific application for handling carrier messages",
+        "rel": "MODIFIES",
+        "obj": "Android telephony framework"
+      }
+    ]
+  }
+}

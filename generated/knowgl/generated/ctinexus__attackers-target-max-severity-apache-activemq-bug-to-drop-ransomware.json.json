@@ -1,0 +1,57 @@
+{
+  "sample_id": "ctinexus__attackers-target-max-severity-apache-activemq-bug-to-drop-ransomware.json",
+  "sample_index": 51,
+  "source": "ctinexus",
+  "file_name": "attackers-target-max-severity-apache-activemq-bug-to-drop-ransomware.json",
+  "method_name": "KnowGL",
+  "method_file": "Approach_knowgl.py",
+  "approach_instance_key": "Approach_knowgl__799485be3cdf7d2b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.271968472913566,
+    "attempt_count": 1,
+    "model": "Unknown",
+    "backend_type": "native",
+    "token": 32768,
+    "temperature": null
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "ActiveMQ",
+        "rel": "instance of",
+        "obj": "message broker"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "subclass of",
+        "obj": "malware"
+      },
+      {
+        "sub": "ActiveMQ",
+        "rel": "part of",
+        "obj": "Apache"
+      },
+      {
+        "sub": "HelloKitty",
+        "rel": "instance of",
+        "obj": "ransomware"
+      },
+      {
+        "sub": "double-extortion attacks",
+        "rel": "subclass of",
+        "obj": "extortion"
+      },
+      {
+        "sub": "encrypt",
+        "rel": "use",
+        "obj": "data"
+      }
+    ]
+  }
+}

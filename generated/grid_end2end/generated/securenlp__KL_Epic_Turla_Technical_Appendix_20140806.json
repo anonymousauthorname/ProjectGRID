@@ -1,0 +1,978 @@
+{
+  "sample_id": "securenlp__KL_Epic_Turla_Technical_Appendix_20140806",
+  "sample_index": 161,
+  "source": "securenlp",
+  "file_name": "KL_Epic_Turla_Technical_Appendix_20140806",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Keylogger module",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "a3cbf6179d437909eb532b7319b3dafe",
+        "type": "file",
+        "alias": [
+          "custom keylogger"
+        ],
+        "mother entity": [
+          "Keylogger module"
+        ]
+      },
+      {
+        "name": "LowLevelKeyboardProc@12",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "WH_KEYBOARD_LL hook procedure"
+        ],
+        "mother entity": [
+          "Keylogger module"
+        ]
+      },
+      {
+        "name": "%TEMP%\\~DFD3O8.tmp",
+        "type": "file",
+        "alias": [
+          "the log file",
+          "f:\\keyhook.log"
+        ],
+        "mother entity": [
+          "Keylogger module"
+        ]
+      },
+      {
+        "name": "fully qualified computer name",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "timestamp",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "buffer overflow in the keyboard hook",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "type": "malware",
+        "alias": [
+          "the backdoor",
+          "Turla Carbon system"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "DllMain entry point",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ModuleStart",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": [
+          "Epic/Tavdig/Wipbot backdoor (Main backdoor module)"
+        ]
+      },
+      {
+        "name": "ModuleStop",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": [
+          "Epic/Tavdig/Wipbot backdoor (Main backdoor module)"
+        ]
+      },
+      {
+        "name": "start",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": [
+          "Epic/Tavdig/Wipbot backdoor (Main backdoor module)"
+        ]
+      },
+      {
+        "name": "tcpdump.exe",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "windump.exe",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ethereal.exe",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "wireshark.exe",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ettercap.exe",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "snoop.exe",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "dsniff.exe",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\SystemInformation",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ComputerNamePhysicalDnsFullyQualified",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "user name",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "local group name",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "C&C server",
+        "type": "infrastructure",
+        "alias": [
+          "the server’s response"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "HTTP/HTTPS protocols",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Base64-encoded strings",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "%TEMP%\\~D%random%.tmp",
+        "type": "file",
+        "alias": [
+          "the file"
+        ],
+        "mother entity": [
+          "Epic/Tavdig/Wipbot backdoor (Main backdoor module)"
+        ]
+      },
+      {
+        "name": "winword.exe",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "pdfview.exe",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Java CVE-2012-1723",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Fake “Adobe Flash Player” Epic backdoor installers",
+        "type": "hacker-tool",
+        "alias": [
+          "Epic backdoor installers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Fake “Microsoft Security Essentials Quick Scan” Epic backdoor installer",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Turla Carbon Pfinet backdoors",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Turla Carbon package",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Related Turla sample module",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Java Exploits used in waterhole attacks",
+        "type": "exploit",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://losdivulgadores[.]com/wp-content/plugins/wp-themes/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://gspersia[.]com/first/fa/components/com_sitemap/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://blog.epiccosplay[.]com/wp-includes/sitemap/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://gofree[.]ir/wp-content/plugins/online-chat/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://homaxcompany[.]com/components/com_sitemap/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://www.hadilotfi[.]com/wp-content/themes/profile/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://mortezanevis[.]ir/wp-content/plugins/wp-static/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://ncmp2014[.]com/modules/mod_feed/feed/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://mebroad[.]com/wp-content/gallery/posters/img/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://gruenerenate[.]de/wp-content/plugins/bbpress/includes/lang/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://www.arshinmalalan[.]com/themes/v6/templates/css/in.php",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://products.parentsupermarket[.]com/phpMyAdmin/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://c-si[.]ir/includes/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://mkiyanpoor[.]ir/wp-includes/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://www.massage-ketsch[.]de/wp-includes/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://onereliablesource[.]com/wp-content/plugins/sitemap/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://petrymantenimiento[.]com/wp-content/plugins/wordpress-form-manager/lang/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://ohsoverydarling[.]com/wp-content/themes/verification/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://poissonnerieantoine[.]com/web/wp-content/themes/titan/view/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://www.gholghola[.]com/azemashoorhost/smarty/tmpl/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://www.saglikdetay[.]com/wp-includes/images/icons/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://www.entesharati[.]com/wp-content/plugins/edd-paginate/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://iranabad[.]com/sarzamin/cms/application/classess/plugins/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://deltateam[.]ir/components/com_sitemap/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://akva-clean[.]ru/typo3temp/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://discontr[.]com/wp-content/themes/twentytwelve/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://curaj[.]net/pepeni/images/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://executrek[.]org/components/com_sitemap/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://amoodgostar[.]com/wp-content/themes/simplebanner/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://gayamore[.]com/gallery/090607/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://www.automation-net[.]ru/typo3temp/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://www.lacitedufleuve[.]com/Connections1/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://www.aspit[.]sn/administrator/modules/mod_feed/",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "C&C server"
+        ]
+      },
+      {
+        "name": "hxxp://masterciw[.]com/",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://khrn[.]tk/wp-includes/",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://pradlolux[.]cz/system/helper/",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://original-key[.]com/catalog/controller/payment/",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://www.noraci[.]com/wp-includes/",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://tuvpr[.]com/backup/wp-includes/",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://www.boshraamin[.]com/wp-includes/",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://www.bestjob[.]my/system/modules/comments/",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://rollinghillsfitness[.]com/wp-includes/",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://avg-update.sytes[.]net/",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://newsforum.servehttp[.]com/",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://newsweek.servehttp[.]com/",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://adobe.faqserv[.]com/",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://cqcount.servehttp[.]com/",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://easycounter.sytes[.]net/",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://newsweek.serveblog[.]net/",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://image.servepics[.]com/",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://bgl.serveftp[.]net/",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Keylogger module",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "%TEMP%\\~DFD3O8.tmp"
+      },
+      {
+        "sub": "Keylogger module",
+        "rel": "tries to write to",
+        "rel_type": [
+          "writes-to"
+        ],
+        "obj": "f:\\keyhook.log",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Keylogger module",
+        "rel": "appends",
+        "rel_type": [
+          "appends-to"
+        ],
+        "obj": "header to the log file",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Keylogger module",
+        "rel": "registers",
+        "rel_type": [
+          "registers"
+        ],
+        "obj": "LowLevelKeyboardProc@12 as a hook procedure"
+      },
+      {
+        "sub": "Keylogger module",
+        "rel": "writes",
+        "rel_type": [
+          "writes-to"
+        ],
+        "obj": "Started... or LoadLibrary ‘%path to its file%’ failed, %error code% to its log file"
+      },
+      {
+        "sub": "Keylogger module",
+        "rel": "starts",
+        "rel_type": [
+          "starts"
+        ],
+        "obj": "a thread"
+      },
+      {
+        "sub": "Keylogger module",
+        "rel": "intercepts",
+        "rel_type": [
+          "intercepts"
+        ],
+        "obj": "WM_KEYDOWN, WM_KEYUP, and WM_SYSKEYDOWN"
+      },
+      {
+        "sub": "Keylogger module",
+        "rel": "writes information about keystrokes",
+        "rel_type": [
+          "writes-to"
+        ],
+        "obj": "the log file"
+      },
+      {
+        "sub": "Keylogger module",
+        "rel": "retrieves",
+        "rel_type": [
+          "retrieves"
+        ],
+        "obj": "window name and path to its application"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "implements",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "main functionality"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "transmits information to",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "commands"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "delays execution while discovering",
+        "rel_type": [
+          "delays"
+        ],
+        "obj": "running processes"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "hardware information"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "OS version"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "computer name"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "user name"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "disk space"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "network shares"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "user accounts"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "IPV4 TCP connections"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "installed Windows updates"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "running processes"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "window titles"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "directory listings"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "transmits",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "information"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "file"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "delivers",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "commands"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "commands"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Wininet API"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "delivers",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "commands"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "stores configuration in",
+        "rel_type": [
+          "stores"
+        ],
+        "obj": "%TEMP%\\~D%random%.tmp"
+      },
+      {
+        "sub": "Epic/Tavdig/Wipbot backdoor (Main backdoor module)",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "executable file"
+      },
+      {
+        "sub": "Java CVE-2012-1723",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Epic backdoor"
+      },
+      {
+        "sub": "Fake “Adobe Flash Player” Epic backdoor installers",
+        "rel": "installs",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Epic backdoor"
+      },
+      {
+        "sub": "Fake “Microsoft Security Essentials Quick Scan” Epic backdoor installer",
+        "rel": "installs",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Epic backdoor"
+      },
+      {
+        "sub": "Turla Carbon Pfinet backdoors",
+        "rel": "dropped by",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Java CVE-2012-1723"
+      },
+      {
+        "sub": "Turla Carbon package",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Epic and Turla Carbon system"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "hosts",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "URLs"
+      },
+      {
+        "sub": "Motherships",
+        "rel": "hosting",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "exploits"
+      }
+    ]
+  }
+}

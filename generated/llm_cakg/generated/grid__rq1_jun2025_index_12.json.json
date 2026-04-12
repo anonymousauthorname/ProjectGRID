@@ -1,0 +1,403 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_12.json",
+  "sample_index": 204,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_12.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2022-30190",
+        "type": "Entity"
+      },
+      {
+        "name": "Follina",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Support Diagnostic Tool (MSDT)",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Office",
+        "type": "Entity"
+      },
+      {
+        "name": "MS Office document",
+        "type": "Entity"
+      },
+      {
+        "name": "docx",
+        "type": "Entity"
+      },
+      {
+        "name": "rtf",
+        "type": "Entity"
+      },
+      {
+        "name": "HTML file",
+        "type": "Entity"
+      },
+      {
+        "name": "word/_rels/document.xml.rels",
+        "type": "Entity"
+      },
+      {
+        "name": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+        "type": "Entity"
+      },
+      {
+        "name": "http_malicious_link!",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious script",
+        "type": "Entity"
+      },
+      {
+        "name": "URI scheme",
+        "type": "Entity"
+      },
+      {
+        "name": "Protected Mode",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "zero-day vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing via Office documents",
+        "type": "Entity"
+      },
+      {
+        "name": "previously unknown vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "attack vector",
+        "type": "Entity"
+      },
+      {
+        "name": "command execution",
+        "type": "Entity"
+      },
+      {
+        "name": "user privileges",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows Explorer",
+        "type": "Entity"
+      },
+      {
+        "name": "document preview",
+        "type": "Entity"
+      },
+      {
+        "name": "PDM:Exploit",
+        "type": "Entity"
+      },
+      {
+        "name": "Win32.Generic",
+        "type": "Entity"
+      },
+      {
+        "name": "HEUR:Exploit.MSOffice.Agent.n",
+        "type": "Entity"
+      },
+      {
+        "name": "HEUR:Exploit.MSOffice.Agent.gen",
+        "type": "Entity"
+      },
+      {
+        "name": "HEUR:Exploit.MSOffice.CVE-2017-0199.a",
+        "type": "Entity"
+      },
+      {
+        "name": "HEUR:Exploit.MSOffice.CVE-2021-40444.a",
+        "type": "Entity"
+      },
+      {
+        "name": "HEUR:Exploit.MSOffice.Generic",
+        "type": "Entity"
+      },
+      {
+        "name": "registry key HKEY_CLASSES_ROOT\\ms-msdt",
+        "type": "Entity"
+      },
+      {
+        "name": "reg export HKEY_CLASSES_ROOT\\ms-msdt filename",
+        "type": "Entity"
+      },
+      {
+        "name": "reg delete HKEY_CLASSES_ROOT\\ms-msdt /f",
+        "type": "Entity"
+      },
+      {
+        "name": "disable MSDT URL protocol",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft guidance for CVE-2022-30190",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability exploitation",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware attacks",
+        "type": "Entity"
+      },
+      {
+        "name": "data breaches",
+        "type": "Entity"
+      },
+      {
+        "name": "Managed Detection and Response",
+        "type": "Entity"
+      },
+      {
+        "name": "SOC experts",
+        "type": "Entity"
+      },
+      {
+        "name": "threat monitoring",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability detection",
+        "type": "Entity"
+      },
+      {
+        "name": "attack attempts",
+        "type": "Entity"
+      },
+      {
+        "name": "user-level prevention",
+        "type": "Entity"
+      },
+      {
+        "name": "admin privileges",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "is",
+        "obj": "Follina"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "affects",
+        "obj": "Microsoft Support Diagnostic Tool (MSDT)"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "is a",
+        "obj": "zero-day vulnerability"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "allows",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "can be exploited via",
+        "obj": "Microsoft Office documents"
+      },
+      {
+        "sub": "attacker",
+        "rel": "creates",
+        "obj": "MS Office document"
+      },
+      {
+        "sub": "MS Office document",
+        "rel": "contains",
+        "obj": "link to external malicious OLE object"
+      },
+      {
+        "sub": "link",
+        "rel": "is defined in",
+        "obj": "word/_rels/document.xml.rels"
+      },
+      {
+        "sub": "link",
+        "rel": "uses",
+        "obj": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"
+      },
+      {
+        "sub": "link",
+        "rel": "points to",
+        "obj": "http_malicious_link!"
+      },
+      {
+        "sub": "http_malicious_link!",
+        "rel": "contains",
+        "obj": "malicious script"
+      },
+      {
+        "sub": "malicious script",
+        "rel": "uses",
+        "obj": "URI scheme"
+      },
+      {
+        "sub": "attacker-created document",
+        "rel": "runs",
+        "obj": "MSDT"
+      },
+      {
+        "sub": "MSDT",
+        "rel": "executes",
+        "obj": "command passed by attacker"
+      },
+      {
+        "sub": "command",
+        "rel": "is executed with",
+        "obj": "user privileges"
+      },
+      {
+        "sub": "exploitation",
+        "rel": "occurs even when",
+        "obj": "Protected Mode is enabled"
+      },
+      {
+        "sub": "exploitation",
+        "rel": "occurs even when",
+        "obj": "macros are disabled"
+      },
+      {
+        "sub": "MS Office document",
+        "rel": "can be opened in",
+        "obj": "Protected Mode"
+      },
+      {
+        "sub": "docx",
+        "rel": "allows",
+        "obj": "CVE-2022-30190 exploitation"
+      },
+      {
+        "sub": "rtf",
+        "rel": "allows",
+        "obj": "CVE-2022-30190 exploitation"
+      },
+      {
+        "sub": "rtf",
+        "rel": "is more dangerous than",
+        "obj": "docx"
+      },
+      {
+        "sub": "rtf document",
+        "rel": "can execute malicious command",
+        "obj": "without opening"
+      },
+      {
+        "sub": "rtf document",
+        "rel": "can be previewed in",
+        "obj": "Windows Explorer"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "detects",
+        "obj": "vulnerability exploitation"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "uses",
+        "obj": "Behavior Detection and Exploit Prevention tools"
+      },
+      {
+        "sub": "vulnerability exploitation",
+        "rel": "leads to",
+        "obj": "attack attempts"
+      },
+      {
+        "sub": "attack attempts",
+        "rel": "are aimed at",
+        "obj": "corporate resources"
+      },
+      {
+        "sub": "attack attempts",
+        "rel": "can result in",
+        "obj": "ransomware attacks"
+      },
+      {
+        "sub": "attack attempts",
+        "rel": "can result in",
+        "obj": "data breaches"
+      },
+      {
+        "sub": "SOC experts",
+        "rel": "monitor",
+        "obj": "vulnerability exploitation"
+      },
+      {
+        "sub": "SOC experts",
+        "rel": "investigate",
+        "obj": "attacks"
+      },
+      {
+        "sub": "SOC experts",
+        "rel": "provide",
+        "obj": "threat-related information"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "provides",
+        "obj": "guidance for CVE-2022-30190"
+      },
+      {
+        "sub": "Microsoft guidance for CVE-2022-30190",
+        "rel": "includes",
+        "obj": "disable MSDT URL protocol"
+      },
+      {
+        "sub": "user",
+        "rel": "can disable",
+        "obj": "MSDT URL protocol"
+      },
+      {
+        "sub": "user",
+        "rel": "disables",
+        "obj": "MSDT URL protocol"
+      },
+      {
+        "sub": "reg export HKEY_CLASSES_ROOT\\ms-msdt filename",
+        "rel": "is used to",
+        "obj": "back up registry key"
+      },
+      {
+        "sub": "reg delete HKEY_CLASSES_ROOT\\ms-msdt /f",
+        "rel": "is used to",
+        "obj": "delete registry key"
+      },
+      {
+        "sub": "disable MSDT URL protocol",
+        "rel": "prevents",
+        "obj": "CVE-2022-30190 exploitation"
+      }
+    ]
+  }
+}

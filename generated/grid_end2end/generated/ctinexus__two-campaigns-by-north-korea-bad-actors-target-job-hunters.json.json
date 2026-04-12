@@ -1,0 +1,273 @@
+{
+  "sample_id": "ctinexus__two-campaigns-by-north-korea-bad-actors-target-job-hunters.json",
+  "sample_index": 52,
+  "source": "ctinexus",
+  "file_name": "two-campaigns-by-north-korea-bad-actors-target-job-hunters.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Unit 42 researchers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "two separate campaigns",
+        "type": "campaign",
+        "alias": [
+          "Contagious Interview",
+          "Wagemole",
+          "the first campaign",
+          "the second campaign"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "job-seeking activities",
+        "type": "abstract-concept",
+        "alias": [
+          "the interview process",
+          "unauthorized employment"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "state-sponsored threat actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "North Korea state-sponsored threat actor",
+          "North Korea state-sponsored threat",
+          "the attacker"
+        ],
+        "mother entity": [
+          "Democratic People's Republic of Korea (DPRK)"
+        ]
+      },
+      {
+        "name": "Democratic People's Republic of Korea (DPRK)",
+        "type": "identity",
+        "alias": [
+          "North Korea"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Contagious Interview",
+        "type": "campaign",
+        "alias": [
+          "the first campaign",
+          "malware through the interview process"
+        ],
+        "mother entity": [
+          "two separate campaigns"
+        ]
+      },
+      {
+        "name": "threat actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "malicious actors",
+          "employers (often anonymously or with vague identities)"
+        ],
+        "mother entity": [
+          "state-sponsored threat actors"
+        ]
+      },
+      {
+        "name": "software developers",
+        "type": "identity",
+        "alias": [
+          "targeted developers",
+          "targeted software developers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malware",
+        "type": "malware",
+        "alias": [
+          "the malware",
+          "various types of theft"
+        ],
+        "mother entity": [
+          "Contagious Interview"
+        ]
+      },
+      {
+        "name": "the interview process",
+        "type": "abstract-concept",
+        "alias": [
+          "interview process"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Wagemole",
+        "type": "campaign",
+        "alias": [
+          "the second campaign",
+          "organizations based in the US and other parts of the world"
+        ],
+        "mother entity": [
+          "two separate campaigns"
+        ]
+      },
+      {
+        "name": "organizations based in the US and other parts of the world",
+        "type": "identity",
+        "alias": [
+          "organizations"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "financial gain",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "espionage",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ongoing active threat",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Unit 42 researchers",
+        "rel": "discovered",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "two separate campaigns"
+      },
+      {
+        "sub": "two separate campaigns",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "job-seeking activities"
+      },
+      {
+        "sub": "state-sponsored threat actors",
+        "rel": "linked to",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Democratic People's Republic of Korea (DPRK)"
+      },
+      {
+        "sub": "Contagious Interview",
+        "rel": "run by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "state-sponsored threat actor"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "pose as",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "employers"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "lure",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "software developers"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "installing",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malware"
+      },
+      {
+        "sub": "malware",
+        "rel": "creates the potential for",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "various types of theft"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "seek unauthorized employment with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "organizations based in the US and other parts of the world"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "leads-to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "financial gain"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "leads-to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "espionage"
+      },
+      {
+        "sub": "Wagemole",
+        "rel": "is a",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "state-sponsored threat actor"
+      },
+      {
+        "sub": "state-sponsored threat actors",
+        "rel": "associated with",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Democratic People's Republic of Korea (DPRK)"
+      },
+      {
+        "sub": "two separate campaigns",
+        "rel": "remains",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "ongoing active threat"
+      }
+    ]
+  }
+}

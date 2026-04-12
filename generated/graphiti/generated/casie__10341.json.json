@@ -1,0 +1,238 @@
+{
+  "sample_id": "casie__10341.json",
+  "sample_index": 36,
+  "source": "casie",
+  "file_name": "10341.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Action Fraud",
+        "type": "Organization"
+      },
+      {
+        "name": "TSB",
+        "type": "Organization"
+      },
+      {
+        "name": "Barclays",
+        "type": "Organization"
+      },
+      {
+        "name": "NatWest",
+        "type": "Organization"
+      },
+      {
+        "name": "Octopi Managed Services",
+        "type": "Organization"
+      },
+      {
+        "name": "Ian Thornton-Trump",
+        "type": "Person"
+      },
+      {
+        "name": "University of Surrey",
+        "type": "Organization"
+      },
+      {
+        "name": "phishing attacks",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "malicious websites",
+        "type": "Indicator"
+      },
+      {
+        "name": "IT outage",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "banking meltdown",
+        "type": "Campaign"
+      },
+      {
+        "name": "fraudulent transactions",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "phishing texts",
+        "type": "Indicator"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Indicator"
+      },
+      {
+        "name": "cyber criminals",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "cyber blood in the water",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "TSB IT upgrade",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "web banking",
+        "type": "Software"
+      },
+      {
+        "name": "Lucy Evans",
+        "type": "Person"
+      },
+      {
+        "name": "cybersecurity specialist",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Action Fraud",
+        "rel": "has recorded",
+        "obj": "phishing attacks"
+      },
+      {
+        "sub": "Action Fraud",
+        "rel": "has received complaints from",
+        "obj": "TSB"
+      },
+      {
+        "sub": "Action Fraud",
+        "rel": "has received complaints from",
+        "obj": "Barclays"
+      },
+      {
+        "sub": "Action Fraud",
+        "rel": "has received complaints from",
+        "obj": "NatWest"
+      },
+      {
+        "sub": "TSB",
+        "rel": "has experienced",
+        "obj": "IT outage"
+      },
+      {
+        "sub": "TSB",
+        "rel": "has caused",
+        "obj": "TSB IT upgrade"
+      },
+      {
+        "sub": "TSB",
+        "rel": "has been targeted by",
+        "obj": "phishing attacks"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "CONDUCTS",
+        "obj": "phishing attacks"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "USES",
+        "obj": "phishing texts"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "USES",
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "USES",
+        "obj": "malicious websites"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "CONDUCTS",
+        "obj": "fraudulent transactions"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "EXPLOITS",
+        "obj": "TSB"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "EXPLOITS",
+        "obj": "Barclays"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "EXPLOITS",
+        "obj": "NatWest"
+      },
+      {
+        "sub": "cyber criminals",
+        "rel": "is associated with",
+        "obj": "cyber blood in the water"
+      },
+      {
+        "sub": "Ian Thornton-Trump",
+        "rel": "EXPLAINS",
+        "obj": "cyber blood in the water"
+      },
+      {
+        "sub": "University of Surrey",
+        "rel": "has specialist",
+        "obj": "cybersecurity specialist"
+      },
+      {
+        "sub": "Lucy Evans",
+        "rel": "has lost access to",
+        "obj": "TSB"
+      },
+      {
+        "sub": "Lucy Evans",
+        "rel": "has been targeted by",
+        "obj": "phishing texts"
+      },
+      {
+        "sub": "Lucy Evans",
+        "rel": "has been targeted by",
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "Lucy Evans",
+        "rel": "has used",
+        "obj": "web banking"
+      },
+      {
+        "sub": "Professor Alan Woodward",
+        "rel": "IS",
+        "obj": "cybersecurity specialist"
+      },
+      {
+        "sub": "Professor Alan Woodward",
+        "rel": "EXPLAINS",
+        "obj": "phishing attacks"
+      },
+      {
+        "sub": "Professor Alan Woodward",
+        "rel": "EXPLAINS",
+        "obj": "cyber criminals"
+      },
+      {
+        "sub": "Octopi Managed Services",
+        "rel": "EXPLAINS",
+        "obj": "cyber blood in the water"
+      }
+    ]
+  }
+}

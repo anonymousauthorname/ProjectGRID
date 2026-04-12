@@ -1,0 +1,443 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_57.json",
+  "sample_index": 244,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_57.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Large Language Model (LLM) AIs",
+        "type": "hacker-tool",
+        "alias": [
+          "LLMs",
+          "LLM-generated code",
+          "LLM-generated PowerShell scripts",
+          "LLMs",
+          "LLM-generated HTML file"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malware campaigns",
+        "type": "campaign",
+        "alias": [
+          "Recent malware campaigns",
+          "the attacks",
+          "the following example"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malware",
+        "type": "malware",
+        "alias": [
+          "malicious code",
+          "payloads",
+          "payload"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "phishing emails",
+        "type": "attack-pattern",
+        "alias": [
+          "human-crafted phishing email",
+          "phishing email with an attachment",
+          "phishing email mimicking HR notification",
+          "phishing emails with an attached password-protected ZIP file"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": ".zip archives",
+        "type": "file",
+        "alias": [
+          "password-protected ZIP file",
+          "ZIP file"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malicious .lnk files",
+        "type": "file",
+        "alias": [
+          "LNK file"
+        ],
+        "mother entity": [
+          ".zip archives"
+        ]
+      },
+      {
+        "name": "PowerShell scripts",
+        "type": "hacker-tool",
+        "alias": [
+          "LLM-generated PowerShell script",
+          "PowerShell script"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Rhadamanthys",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "NetSupport",
+        "type": "malware",
+        "alias": [
+          "remote access Trojan"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CleanUpLoader",
+        "type": "malware",
+        "alias": [
+          "Broomstick",
+          "Oyster"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ModiLoader",
+        "type": "malware",
+        "alias": [
+          "DBatLoader"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "LokiBot",
+        "type": "malware",
+        "alias": [
+          "information-stealing Trojan"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Dunihi",
+        "type": "malware",
+        "alias": [
+          "H-Worm"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "HTML files",
+        "type": "file",
+        "alias": [
+          "HTML file",
+          "webpage displayed during attack"
+        ],
+        "mother entity": [
+          "phishing emails"
+        ]
+      },
+      {
+        "name": "embedded JavaScript",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": [
+          "HTML files"
+        ]
+      },
+      {
+        "name": "ChatGPT",
+        "type": "general-software",
+        "alias": [
+          "a series of simple prompts"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Symantec",
+        "type": "identity",
+        "alias": [
+          "Our security solutions",
+          "Symantec is at the forefront of cybersecurity"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Threat actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "many threat actors"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "user",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "LLM-generated HTML file",
+        "type": "file",
+        "alias": [
+          "HTML file"
+        ],
+        "mother entity": [
+          "phishing emails"
+        ]
+      },
+      {
+        "name": "malicious attachment",
+        "type": "file",
+        "alias": [
+          "HTML file"
+        ],
+        "mother entity": [
+          "phishing emails"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Threat actors",
+        "rel": "utilizing",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Large Language Model (LLM) AIs"
+      },
+      {
+        "sub": "Large Language Model (LLM) AIs",
+        "rel": "generate code used in",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "malware campaigns"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "observed an increase in attacks that appear to leverage",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Large Language Model (LLM) AIs"
+      },
+      {
+        "sub": "Large Language Model (LLM) AIs",
+        "rel": "to generate",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "malicious code"
+      },
+      {
+        "sub": "malicious code",
+        "rel": "to download",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "various payloads"
+      },
+      {
+        "sub": "Recent malware campaigns",
+        "rel": "involved",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "with attached",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "password-protected ZIP file"
+      },
+      {
+        "sub": "password-protected ZIP file",
+        "rel": "contains",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "malicious .lnk files"
+      },
+      {
+        "sub": "malicious .lnk files",
+        "rel": "when executed, runs",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "PowerShell scripts"
+      },
+      {
+        "sub": "PowerShell scripts",
+        "rel": "that lead to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "deployment of malware"
+      },
+      {
+        "sub": "malicious .lnk files",
+        "rel": "trigger",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "LLM-generated PowerShell scripts"
+      },
+      {
+        "sub": "LLM-generated PowerShell scripts",
+        "rel": "likely generated using",
+        "rel_type": [
+          "derived-from"
+        ],
+        "obj": "Large Language Model (LLM) AIs"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "with attached",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malicious .lnk files"
+      },
+      {
+        "sub": "Threat actors",
+        "rel": "utilizing",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Large Language Model (LLM) AIs"
+      },
+      {
+        "sub": "user",
+        "rel": "receives",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "malicious attachment",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "embedded JavaScript"
+      },
+      {
+        "sub": "malicious attachment",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "HTML files"
+      },
+      {
+        "sub": "embedded JavaScript",
+        "rel": "designed to download and execute",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "additional payloads"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "observed campaigns delivering",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "ModiLoader"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "observed campaigns delivering",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "LokiBot"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "observed campaigns delivering",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "NetSupport"
+      },
+      {
+        "sub": "ChatGPT",
+        "rel": "produced",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "PowerShell script",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "LLM-generated HTML file",
+        "rel": "facilitates a crucial link of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "attack chain"
+      },
+      {
+        "sub": "LLM-generated HTML file",
+        "rel": "highly likely generated by",
+        "rel_type": [
+          "derived-from"
+        ],
+        "obj": "Large Language Model (LLM) AIs"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "offering robust protection against",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "malware campaigns"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "monitoring",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "threat landscape"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "harvesting",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "emerging threats"
+      },
+      {
+        "sub": "LLM-generated HTML file",
+        "rel": "downloaded",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Dunihi (H-Worm)"
+      }
+    ]
+  }
+}

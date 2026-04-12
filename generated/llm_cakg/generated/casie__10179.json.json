@@ -1,0 +1,277 @@
+{
+  "sample_id": "casie__10179.json",
+  "sample_index": 15,
+  "source": "casie",
+  "file_name": "10179.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Ryzenfall",
+        "type": "Entity"
+      },
+      {
+        "name": "AMD",
+        "type": "Entity"
+      },
+      {
+        "name": "CTS Labs",
+        "type": "Entity"
+      },
+      {
+        "name": "Ryzen",
+        "type": "Entity"
+      },
+      {
+        "name": "EPYC",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE",
+        "type": "Entity"
+      },
+      {
+        "name": "Chimera",
+        "type": "Entity"
+      },
+      {
+        "name": "processor vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "backdoor",
+        "type": "Entity"
+      },
+      {
+        "name": "dropper",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 infrastructure",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "USB devices",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "exploits",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Entity"
+      },
+      {
+        "name": "shellcode",
+        "type": "Entity"
+      },
+      {
+        "name": "macros",
+        "type": "Entity"
+      },
+      {
+        "name": "attack vectors",
+        "type": "Entity"
+      },
+      {
+        "name": "registry keys",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled tasks",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanisms",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious scripts",
+        "type": "Entity"
+      },
+      {
+        "name": "file paths",
+        "type": "Entity"
+      },
+      {
+        "name": "filenames",
+        "type": "Entity"
+      },
+      {
+        "name": "technical identifiers",
+        "type": "Entity"
+      },
+      {
+        "name": "attack stages",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actors",
+        "type": "Entity"
+      },
+      {
+        "name": "victims",
+        "type": "Entity"
+      },
+      {
+        "name": "security flaws",
+        "type": "Entity"
+      },
+      {
+        "name": "hardware change",
+        "type": "Entity"
+      },
+      {
+        "name": "patches",
+        "type": "Entity"
+      },
+      {
+        "name": "ecosystem partners",
+        "type": "Entity"
+      },
+      {
+        "name": "public disclosure",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability disclosure",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability reporting",
+        "type": "Entity"
+      },
+      {
+        "name": "security research",
+        "type": "Entity"
+      },
+      {
+        "name": "processor lines",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CTS Labs",
+        "rel": "revealed",
+        "obj": "processor vulnerabilities"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "dubbed",
+        "obj": "Ryzenfall"
+      },
+      {
+        "sub": "Ryzenfall",
+        "rel": "affects",
+        "obj": "Ryzen processors"
+      },
+      {
+        "sub": "Ryzenfall",
+        "rel": "affects",
+        "obj": "EPYC processors"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "published",
+        "obj": "vulnerability findings"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "bypassed",
+        "obj": "customary 90-day notice"
+      },
+      {
+        "sub": "CTS Labs",
+        "rel": "expressed concern about",
+        "obj": "AMD's lack of updates"
+      },
+      {
+        "sub": "AMD",
+        "rel": "released patches for",
+        "obj": "EPYC platform"
+      },
+      {
+        "sub": "AMD",
+        "rel": "released patches for",
+        "obj": "Chimera vulnerabilities"
+      },
+      {
+        "sub": "AMD",
+        "rel": "mitigated",
+        "obj": "vulnerabilities in EPYC platform"
+      },
+      {
+        "sub": "AMD",
+        "rel": "mitigated",
+        "obj": "Chimera across all AMD platforms"
+      },
+      {
+        "sub": "AMD",
+        "rel": "provided patches to",
+        "obj": "ecosystem partners"
+      },
+      {
+        "sub": "AMD",
+        "rel": "is on track to release",
+        "obj": "patches for other products"
+      },
+      {
+        "sub": "AMD",
+        "rel": "expects to release publicly",
+        "obj": "patches after ecosystem partners complete validation"
+      },
+      {
+        "sub": "Ryzenfall",
+        "rel": "requires",
+        "obj": "hardware change"
+      },
+      {
+        "sub": "Chimera",
+        "rel": "requires",
+        "obj": "hardware change"
+      },
+      {
+        "sub": "hardware change",
+        "rel": "cannot be implemented",
+        "obj": "shipped products"
+      }
+    ]
+  }
+}

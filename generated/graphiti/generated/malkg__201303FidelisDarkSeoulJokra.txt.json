@@ -1,0 +1,229 @@
+{
+  "sample_id": "malkg__201303FidelisDarkSeoulJokra.txt",
+  "sample_index": 111,
+  "source": "malkg",
+  "file_name": "201303FidelisDarkSeoulJokra.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DarkSeoul",
+        "type": "Malware"
+      },
+      {
+        "name": "Jokra",
+        "type": "Malware"
+      },
+      {
+        "name": "Shamoon",
+        "type": "Malware"
+      },
+      {
+        "name": "Fidelis Threat Advisory #1008",
+        "type": "Campaign"
+      },
+      {
+        "name": "Fidelis Threat Advisory #1007",
+        "type": "Campaign"
+      },
+      {
+        "name": "Fidelis Security Systems",
+        "type": "Organization"
+      },
+      {
+        "name": "AhnLab Policy Agent",
+        "type": "Software"
+      },
+      {
+        "name": "ViRobot ISMS",
+        "type": "Software"
+      },
+      {
+        "name": "Windows XP",
+        "type": "Software"
+      },
+      {
+        "name": "Windows 7",
+        "type": "Software"
+      },
+      {
+        "name": "MBR",
+        "type": "Indicator"
+      },
+      {
+        "name": "VBR",
+        "type": "Indicator"
+      },
+      {
+        "name": "HASTATI",
+        "type": "Indicator"
+      },
+      {
+        "name": "PR!NCPES",
+        "type": "Indicator"
+      },
+      {
+        "name": "pasvc.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "Clisvc.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "EnCase",
+        "type": "Indicator"
+      },
+      {
+        "name": "Fidelis XPS",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "ThreatGeek",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DarkSeoul",
+        "rel": "OVERWRITES",
+        "obj": "MBR"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "OVERWRITES",
+        "obj": "VBR"
+      },
+      {
+        "sub": "Jokra",
+        "rel": "OVERWRITES",
+        "obj": "MBR"
+      },
+      {
+        "sub": "Jokra",
+        "rel": "OVERWRITES",
+        "obj": "VBR"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "uses pattern",
+        "obj": "HASTATI"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "uses pattern",
+        "obj": "PR!NCPES"
+      },
+      {
+        "sub": "Jokra",
+        "rel": "uses pattern",
+        "obj": "HASTATI"
+      },
+      {
+        "sub": "Jokra",
+        "rel": "uses pattern",
+        "obj": "PR!NCPES"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "writes 512 byte pattern to",
+        "obj": "Windows XP"
+      },
+      {
+        "sub": "Jokra",
+        "rel": "writes 1023 byte pattern to",
+        "obj": "Windows 7"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "writes 512 byte pattern to",
+        "obj": "Windows 7"
+      },
+      {
+        "sub": "Fidelis Threat Advisory #1008",
+        "rel": "compares to",
+        "obj": "Shamoon"
+      },
+      {
+        "sub": "Fidelis Threat Advisory #1008",
+        "rel": "REFERENCES",
+        "obj": "Fidelis Threat Advisory #1007"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "terminates process",
+        "obj": "pasvc.exe"
+      },
+      {
+        "sub": "Jokra",
+        "rel": "terminates process",
+        "obj": "pasvc.exe"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "terminates process",
+        "obj": "Clisvc.exe"
+      },
+      {
+        "sub": "Jokra",
+        "rel": "terminates process",
+        "obj": "Clisvc.exe"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "recovers data using",
+        "obj": "EnCase"
+      },
+      {
+        "sub": "Jokra",
+        "rel": "recovers data using",
+        "obj": "EnCase"
+      },
+      {
+        "sub": "Fidelis XPS",
+        "rel": "DETECTS",
+        "obj": "DarkSeoul"
+      },
+      {
+        "sub": "Fidelis XPS",
+        "rel": "DETECTS",
+        "obj": "Jokra"
+      },
+      {
+        "sub": "Fidelis XPS",
+        "rel": "terminates process",
+        "obj": "AhnLab Policy Agent"
+      },
+      {
+        "sub": "Fidelis XPS",
+        "rel": "terminates process",
+        "obj": "ViRobot ISMS"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "analyzed in",
+        "obj": "Fidelis Threat Advisory #1008"
+      },
+      {
+        "sub": "Jokra",
+        "rel": "analyzed in",
+        "obj": "Fidelis Threat Advisory #1008"
+      }
+    ]
+  }
+}

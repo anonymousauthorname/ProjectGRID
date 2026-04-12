@@ -1,0 +1,166 @@
+{
+  "sample_id": "ctinexus__malicious-operations-of-exposed-iam-keys-cryptojacking.json",
+  "sample_index": 62,
+  "source": "ctinexus",
+  "file_name": "malicious-operations-of-exposed-iam-keys-cryptojacking.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Unit 42",
+        "type": "Entity"
+      },
+      {
+        "name": "EleKtra-Leak",
+        "type": "Entity"
+      },
+      {
+        "name": "exposed identity and access management (IAM) credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "public GitHub repositories",
+        "type": "Entity"
+      },
+      {
+        "name": "AWS",
+        "type": "Entity"
+      },
+      {
+        "name": "quarantine policy",
+        "type": "Entity"
+      },
+      {
+        "name": "automated targeting",
+        "type": "Entity"
+      },
+      {
+        "name": "compromised credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "AWS Elastic Compute (EC2) instances",
+        "type": "Entity"
+      },
+      {
+        "name": "cryptojacking operations",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actor",
+        "type": "Entity"
+      },
+      {
+        "name": "source code repositories",
+        "type": "Entity"
+      },
+      {
+        "name": "automatic protection",
+        "type": "Entity"
+      },
+      {
+        "name": "manual removal",
+        "type": "Entity"
+      },
+      {
+        "name": "long-lasting cryptojacking",
+        "type": "Entity"
+      },
+      {
+        "name": "at least two years",
+        "type": "Entity"
+      },
+      {
+        "name": "active today",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Unit 42",
+        "rel": "has identified",
+        "obj": "EleKtra-Leak"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "performs automated targeting on",
+        "obj": "exposed identity and access management (IAM) credentials"
+      },
+      {
+        "sub": "EleKtra-Leak",
+        "rel": "targets",
+        "obj": "public GitHub repositories"
+      },
+      {
+        "sub": "AWS",
+        "rel": "applies",
+        "obj": "quarantine policy"
+      },
+      {
+        "sub": "AWS",
+        "rel": "detects",
+        "obj": "exposed identity and access management (IAM) credentials"
+      },
+      {
+        "sub": "AWS",
+        "rel": "is protected by",
+        "obj": "quarantine policy"
+      },
+      {
+        "sub": "Unit 42",
+        "rel": "removes",
+        "obj": "manual removal"
+      },
+      {
+        "sub": "manual removal",
+        "rel": "is manually removed from",
+        "obj": "quarantine policy"
+      },
+      {
+        "sub": "threat actor",
+        "rel": "is associated with",
+        "obj": "EleKtra-Leak"
+      },
+      {
+        "sub": "threat actor",
+        "rel": "creates",
+        "obj": "AWS Elastic Compute (EC2) instances"
+      },
+      {
+        "sub": "AWS Elastic Compute (EC2) instances",
+        "rel": "is used for",
+        "obj": "cryptojacking operations"
+      },
+      {
+        "sub": "cryptojacking operations",
+        "rel": "carries out",
+        "obj": "long-lasting cryptojacking"
+      },
+      {
+        "sub": "cryptojacking operations",
+        "rel": "has duration of",
+        "obj": "at least two years"
+      },
+      {
+        "sub": "cryptojacking operations",
+        "rel": "is active for",
+        "obj": "active today"
+      }
+    ]
+  }
+}

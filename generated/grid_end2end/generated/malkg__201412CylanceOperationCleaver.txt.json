@@ -1,0 +1,797 @@
+{
+  "sample_id": "malkg__201412CylanceOperationCleaver.txt",
+  "sample_index": 118,
+  "source": "malkg",
+  "file_name": "201412CylanceOperationCleaver.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Operation Cleaver",
+        "type": "campaign",
+        "alias": [
+          "Operation Cleaver: The Notepad Files"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Brian Wallace",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the attackers",
+          "attacker",
+          "Cleaver"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Notepad",
+        "type": "general-software",
+        "alias": [
+          "Notepads",
+          "the real thing",
+          "the files in question",
+          "a purloined Notepad icon",
+          "the Notepad Doppelgängers",
+          "the Notepads in question",
+          "the files",
+          "Notepad.exe"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the Notepads in question",
+        "type": "malware",
+        "alias": [
+          "the samples",
+          "the malicious Notepads",
+          "the Notepad Doppelgängers",
+          "the files",
+          "the Notepads in question",
+          "the Notepads"
+        ],
+        "mother entity": [
+          "Notepad"
+        ]
+      },
+      {
+        "name": "Windows XP x64 / Windows Server 2003",
+        "type": "general-software",
+        "alias": [
+          "the legitimate Windows XP/2003 Notepad"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Windows 7",
+        "type": "general-software",
+        "alias": [
+          "the legitimate Windows 7 Notepad"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "credential dumps",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hacking utilities",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "RATs",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "legitimate software installers",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "FTP server",
+        "type": "infrastructure",
+        "alias": [
+          "the attackers' FTP drop"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "MD5 hashes",
+        "type": "indicator",
+        "alias": [
+          "hashes"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "notepad.exe",
+        "type": "file",
+        "alias": [
+          "the official 32-bit Simplified Chinese Notepad"
+        ],
+        "mother entity": [
+          "Windows XP x64 / Windows Server 2003"
+        ]
+      },
+      {
+        "name": "NOTEPAD2.EXE",
+        "type": "file",
+        "alias": [
+          "the legitimate Windows 7 Notepad"
+        ],
+        "mother entity": [
+          "Windows 7"
+        ]
+      },
+      {
+        "name": "Notepad3.exe",
+        "type": "file",
+        "alias": [
+          "the legitimate Windows 7 Notepad"
+        ],
+        "mother entity": [
+          "Windows 7"
+        ]
+      },
+      {
+        "name": "Notepad4.exe",
+        "type": "file",
+        "alias": [
+          "the legitimate Windows 7 Notepad"
+        ],
+        "mother entity": [
+          "Windows 7"
+        ]
+      },
+      {
+        "name": "notepad10.exe",
+        "type": "file",
+        "alias": [
+          "the legitimate Windows 7 Notepad"
+        ],
+        "mother entity": [
+          "Windows 7"
+        ]
+      },
+      {
+        "name": "Windows 7 Notepad",
+        "type": "general-software",
+        "alias": [
+          "the legitimate Windows 7 Notepad"
+        ],
+        "mother entity": [
+          "Windows 7"
+        ]
+      },
+      {
+        "name": "Portable Executable (PE)",
+        "type": "general-software",
+        "alias": [
+          "PE level"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "IMAGE_NT_HEADERS.FileHeader.TimeDateStamp",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": [
+          "the Notepads in question"
+        ]
+      },
+      {
+        "name": "IMAGE_NT_HEADERS.OptionalHeader.AddressOfEntryPoint",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": [
+          "the Notepads in question"
+        ]
+      },
+      {
+        "name": "IMAGE_NT_HEADERS.OptionalHeader.CheckSum",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": [
+          "the Notepads in question"
+        ]
+      },
+      {
+        "name": "the .text section",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "the .text sections of NOTEPAD2.EXE, Notepad3.exe, Notepad4.exe, and notepad10.exe"
+        ],
+        "mother entity": [
+          "the Notepads in question"
+        ]
+      },
+      {
+        "name": "the original entry point",
+        "type": "process",
+        "alias": [
+          "OEP (Original Entry Point)"
+        ],
+        "mother entity": [
+          "the Notepads in question"
+        ]
+      },
+      {
+        "name": "the malware entry point",
+        "type": "process",
+        "alias": [
+          "EP (malware entry point)"
+        ],
+        "mother entity": [
+          "the Notepads in question"
+        ]
+      },
+      {
+        "name": "the import directory",
+        "type": "windows-registry-key",
+        "alias": [
+          "Imp"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the load configuration directory",
+        "type": "windows-registry-key",
+        "alias": [
+          "LC"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the debug directory",
+        "type": "windows-registry-key",
+        "alias": [
+          "Dbg"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Metasploit",
+        "type": "hacker-tool",
+        "alias": [
+          "msfvenom",
+          "Metasploit reverse connect stager",
+          "Metasploit payload",
+          "the msfvenom tool"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "msfvenom",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": [
+          "Metasploit"
+        ]
+      },
+      {
+        "name": "msfvenom command",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "Metasploit"
+        ]
+      },
+      {
+        "name": "reverse connect stager",
+        "type": "malware",
+        "alias": [
+          "Metasploit reverse connect stager"
+        ],
+        "mother entity": [
+          "Metasploit"
+        ]
+      },
+      {
+        "name": "kernel32!LoadLibraryA(\"ws2_32\")",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "reverse connect stager"
+        ]
+      },
+      {
+        "name": "ws2_32!WSAStartup(...)",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "reverse connect stager"
+        ]
+      },
+      {
+        "name": "socket",
+        "type": "course-of-action",
+        "alias": [
+          "s"
+        ],
+        "mother entity": [
+          "reverse connect stager"
+        ]
+      },
+      {
+        "name": "connect(s, {...})",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "reverse connect stager"
+        ]
+      },
+      {
+        "name": "recv(s, &cb, 4, 0)",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "reverse connect stager"
+        ]
+      },
+      {
+        "name": "VirtualAlloc(...)",
+        "type": "course-of-action",
+        "alias": [
+          "kernel32!VirtualAlloc"
+        ],
+        "mother entity": [
+          "reverse connect stager"
+        ]
+      },
+      {
+        "name": "recv(s, p, cb, 0)",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "reverse connect stager"
+        ]
+      },
+      {
+        "name": "p()",
+        "type": "executes",
+        "alias": [],
+        "mother entity": [
+          "reverse connect stager"
+        ]
+      },
+      {
+        "name": "LHOST=108.175.152.230",
+        "type": "ipv4-addr",
+        "alias": [
+          "108.175.152.230"
+        ],
+        "mother entity": [
+          "the attacker"
+        ]
+      },
+      {
+        "name": "LPORT=12345",
+        "type": "ipv4-addr",
+        "alias": [
+          "12345"
+        ],
+        "mother entity": [
+          "the attacker"
+        ]
+      },
+      {
+        "name": "108.175.152.230",
+        "type": "ipv4-addr",
+        "alias": [
+          "108.175.152.230"
+        ],
+        "mother entity": [
+          "the attacker"
+        ]
+      },
+      {
+        "name": "Derek Soeder",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the Cleaver team",
+        "type": "identity",
+        "alias": [
+          "Cleaver team"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Metasploit payloads",
+        "type": "malware",
+        "alias": [
+          "Metasploit reverse connect stager"
+        ],
+        "mother entity": [
+          "Metasploit"
+        ]
+      },
+      {
+        "name": "shikata ga nai decoder stub",
+        "type": "hacker-tool",
+        "alias": [
+          "decoder stub"
+        ],
+        "mother entity": [
+          "Metasploit"
+        ]
+      },
+      {
+        "name": "VirtualAlloc",
+        "type": "general-software",
+        "alias": [
+          "kernel32!VirtualAlloc"
+        ],
+        "mother entity": [
+          "Windows 7"
+        ]
+      },
+      {
+        "name": "GetProcAddress",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ws2_32",
+        "type": "general-software",
+        "alias": [
+          "Windows Sockets (Winsock) library"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Operation Cleaver",
+        "rel": "investigated and included",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the Notepads in question"
+      },
+      {
+        "sub": "Brian Wallace",
+        "rel": "led the investigation",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Operation Cleaver"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "located on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "FTP server"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "compromised via",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "the Notepads in question"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "compromised via",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "credential dumps"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "compromised via",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "hacking utilities"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "compromised via",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "RATs"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "compromised via",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "legitimate software installers"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "are derivatives of",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Windows XP x64 / Windows Server 2003"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "are derivatives of",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Windows 7"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "are derivatives of",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "notepad.exe"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "are derivatives of",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "NOTEPAD2.EXE"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "are derivatives of",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Notepad3.exe"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "are derivatives of",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Notepad4.exe"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "have a distinct hash from",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the original Windows 7 Notepad"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "have a distinct hash from",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the original Windows XP/2003 Notepad"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "have timestamps",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "IMAGE_NT_HEADERS.FileHeader.TimeDateStamp"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "have entry points",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "IMAGE_NT_HEADERS.OptionalHeader.AddressOfEntryPoint"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "have checksums",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "IMAGE_NT_HEADERS.OptionalHeader.CheckSum"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "have modifications confined to",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the .text section"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "have modifications in",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the original entry point"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "have modifications in",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the malware entry point"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "avoid",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the import directory"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "avoid",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the load configuration directory"
+      },
+      {
+        "sub": "the Notepads in question",
+        "rel": "avoid",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the debug directory"
+      },
+      {
+        "sub": "Metasploit",
+        "rel": "generated",
+        "rel_type": [
+          "generated-by"
+        ],
+        "obj": "the Notepads in question"
+      },
+      {
+        "sub": "msfvenom",
+        "rel": "fuses payload into",
+        "rel_type": [
+          "generates"
+        ],
+        "obj": "the Notepads in question"
+      },
+      {
+        "sub": "msfvenom command",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Metasploit payloads"
+      },
+      {
+        "sub": "reverse connect stager",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "kernel32!LoadLibraryA(\"ws2_32\")"
+      },
+      {
+        "sub": "reverse connect stager",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "ws2_32!WSAStartup(...)"
+      },
+      {
+        "sub": "reverse connect stager",
+        "rel": "creates",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "socket"
+      },
+      {
+        "sub": "reverse connect stager",
+        "rel": "connects to",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "connect(s, {...})"
+      },
+      {
+        "sub": "reverse connect stager",
+        "rel": "receives data from",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "recv(s, &cb, 4, 0)"
+      },
+      {
+        "sub": "reverse connect stager",
+        "rel": "allocates memory",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "VirtualAlloc(...)"
+      },
+      {
+        "sub": "reverse connect stager",
+        "rel": "receives data into",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "recv(s, p, cb, 0)"
+      },
+      {
+        "sub": "reverse connect stager",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "p()"
+      },
+      {
+        "sub": "reverse connect stager",
+        "rel": "beacons to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "LHOST=108.175.152.230"
+      },
+      {
+        "sub": "reverse connect stager",
+        "rel": "beacons on",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "LPORT=12345"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "located at",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "LHOST=108.175.152.230"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "located at",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "LPORT=12345"
+      }
+    ]
+  }
+}

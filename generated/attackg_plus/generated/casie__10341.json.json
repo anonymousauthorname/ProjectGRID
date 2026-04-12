@@ -1,0 +1,492 @@
+{
+  "sample_id": "casie__10341.json",
+  "sample_index": 36,
+  "source": "casie",
+  "file_name": "10341.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Reconnaissance",
+        "rel": "Operate",
+        "obj": "Open websites and domains related to TSB, Barclays, and NatWest"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Use",
+        "obj": "Public communications about IT outage"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Construct",
+        "obj": "Phishing campaigns"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Modify",
+        "obj": "Phishing messages to mimic official communications"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Has vulnerability",
+        "obj": "Public chaos of IT outage"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Locate at",
+        "obj": "TSB, Barclays, NatWest"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Fake website"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Fraudulent domain"
+      },
+      {
+        "sub": "Fraudulent domain",
+        "rel": "Has value",
+        "obj": "TSB bank portal"
+      },
+      {
+        "sub": "Fraudulent domain",
+        "rel": "Has value",
+        "obj": "Other bank portal"
+      },
+      {
+        "sub": "Fraudulent website",
+        "rel": "Hosted on",
+        "obj": "Compromised infrastructure"
+      },
+      {
+        "sub": "Compromised infrastructure",
+        "rel": "Is used by",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Fake website"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Fraudulent domain"
+      },
+      {
+        "sub": "Fraudulent domain",
+        "rel": "Belong to",
+        "obj": "Scammers"
+      },
+      {
+        "sub": "Fake website",
+        "rel": "Locate at",
+        "obj": "Compromised infrastructure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Compromised infrastructure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Fake website"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Fraudulent domain"
+      },
+      {
+        "sub": "Fraudulent domain",
+        "rel": "Belong to",
+        "obj": "Threat Actor"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Use",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Mass emails",
+        "rel": "Have",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Text messages",
+        "rel": "Have",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Malicious links",
+        "rel": "Be located at",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Username and password",
+        "rel": "Be entered by",
+        "obj": "Victim"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Gain",
+        "obj": "Valid credentials"
+      },
+      {
+        "sub": "Valid credentials",
+        "rel": "Provide",
+        "obj": "Access to victim's account"
+      },
+      {
+        "sub": "TSB",
+        "rel": "Be used as",
+        "obj": "Source of phishing messages"
+      },
+      {
+        "sub": "Other banks",
+        "rel": "Be used as",
+        "obj": "Source of phishing messages"
+      },
+      {
+        "sub": "Victim",
+        "rel": "Click on",
+        "obj": "Malicious links"
+      },
+      {
+        "sub": "Victim",
+        "rel": "Enter",
+        "obj": "Username and password"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Access",
+        "obj": "Victim's account"
+      },
+      {
+        "sub": "Malicious links",
+        "rel": "Have",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Valid credentials",
+        "rel": "Enable",
+        "obj": "Access to victim's account"
+      },
+      {
+        "sub": "Malicious links",
+        "rel": "Have URL",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "TSB",
+        "rel": "Be used as",
+        "obj": "Source of phishing"
+      },
+      {
+        "sub": "Other banks",
+        "rel": "Be used as",
+        "obj": "Source of phishing"
+      },
+      {
+        "sub": "Malicious links",
+        "rel": "Has URL",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "TSB",
+        "rel": "Belong to",
+        "obj": "Phishing messages"
+      },
+      {
+        "sub": "Other banks",
+        "rel": "Belong to",
+        "obj": "Phishing messages"
+      },
+      {
+        "sub": "TSB",
+        "rel": "Operate",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "Other banks",
+        "rel": "Operate",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "URL",
+        "rel": "Has URL",
+        "obj": "Initial Access → invalid"
+      },
+      {
+        "sub": "URL",
+        "rel": "Has value",
+        "obj": "Initial Access → not clear"
+      },
+      {
+        "sub": "Malicious link",
+        "rel": "Lead to",
+        "obj": "Execution of malicious code"
+      },
+      {
+        "sub": "Phishing message",
+        "rel": "Contain",
+        "obj": "Malicious link"
+      },
+      {
+        "sub": "Fraudulent website",
+        "rel": "Initiate",
+        "obj": "Execution of scripts"
+      },
+      {
+        "sub": "Script",
+        "rel": "Allow",
+        "obj": "Attacker to gain control of session"
+      },
+      {
+        "sub": "Script",
+        "rel": "Enable",
+        "obj": "Extraction of sensitive data"
+      },
+      {
+        "sub": "Compromised web application",
+        "rel": "Exploit",
+        "obj": "User trust"
+      },
+      {
+        "sub": "Web script",
+        "rel": "Facilitate",
+        "obj": "Execution"
+      },
+      {
+        "sub": "User",
+        "rel": "Enter",
+        "obj": "Credentials"
+      },
+      {
+        "sub": "User trust",
+        "rel": "Exploited",
+        "obj": "By compromised web applications"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Use",
+        "obj": "Credential dumping"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Use",
+        "obj": "Input capture"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Modify",
+        "obj": "Fraudulent websites"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Operate",
+        "obj": "Victim's device"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Operate",
+        "obj": "Victim's session"
+      },
+      {
+        "sub": "Credential dumping",
+        "rel": "Extract",
+        "obj": "Login information"
+      },
+      {
+        "sub": "Input capture",
+        "rel": "Extract",
+        "obj": "Login information"
+      },
+      {
+        "sub": "Fraudulent websites",
+        "rel": "Has URL",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "Victim's device",
+        "rel": "Has value",
+        "obj": "Login information"
+      },
+      {
+        "sub": "Victim's session",
+        "rel": "Has value",
+        "obj": "Login information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Web interface"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Identify",
+        "obj": "System configurations"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Discover",
+        "obj": "Available services"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Discover",
+        "obj": "Accounts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Identify",
+        "obj": "Bank account details"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Discover",
+        "obj": "Web portal"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Plan",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Capture",
+        "obj": "Web sessions"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Compile",
+        "obj": "Victim's financial profile"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Fraudulent website"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Automated collection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Input capture"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "Attacker-controlled servers"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Send",
+        "obj": "Commands"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Receive",
+        "obj": "Commands"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Operate",
+        "obj": "Phishing attempts"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "Encrypted channels"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "Application layer protocols"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "Traffic signaling"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Trigger",
+        "obj": "Fraudulent transactions"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Retrieve",
+        "obj": "Stolen data"
+      },
+      {
+        "sub": "Stolen data",
+        "rel": "Use",
+        "obj": "Command and control channel"
+      },
+      {
+        "sub": "Stolen data",
+        "rel": "Transfer",
+        "obj": "Attacker-controlled servers"
+      },
+      {
+        "sub": "Stolen data",
+        "rel": "Store",
+        "obj": "Attacker-controlled servers"
+      },
+      {
+        "sub": "Stolen data",
+        "rel": "Exfiltrate",
+        "obj": "Web service"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Occur",
+        "obj": "Alternative protocols"
+      },
+      {
+        "sub": "Exfiltration",
+        "rel": "Avoid",
+        "obj": "Network monitoring tools"
+      }
+    ]
+  }
+}

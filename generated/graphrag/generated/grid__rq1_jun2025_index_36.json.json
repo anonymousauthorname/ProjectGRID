@@ -1,0 +1,220 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_36.json",
+  "sample_index": 226,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_36.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "ANDROMEDA",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BLACKHOLE EXPLOIT KIT",
+        "type": "TOOL"
+      },
+      {
+        "name": "KEYLOGGER",
+        "type": "TOOL"
+      },
+      {
+        "name": "FORM GRABBER",
+        "type": "TOOL"
+      },
+      {
+        "name": "SOCKS4 PROXY MODULE",
+        "type": "TOOL"
+      },
+      {
+        "name": "ROOTKIT",
+        "type": "TOOL"
+      },
+      {
+        "name": "ZEUS",
+        "type": "MALWARE"
+      },
+      {
+        "name": "COMMAND AND CONTROL (CC) SERVER",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "TCP PORT 8000",
+        "type": "LOCATION"
+      },
+      {
+        "name": "COMMAND SHELL (CMD.EXE)",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ZwCreateSection",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "ZwMapViewOfSection",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "ZwResumeThread",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "ZwUnmapViewOfSection",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "AUSTRALIA",
+        "type": "GEO"
+      },
+      {
+        "name": "TURKEY",
+        "type": "GEO"
+      },
+      {
+        "name": "GERMANY",
+        "type": "GEO"
+      },
+      {
+        "name": "TREND MICRO",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "BHEK",
+        "type": "TOOL"
+      },
+      {
+        "name": "BKDRANDROM.DA",
+        "type": "MALWARE"
+      },
+      {
+        "name": "DUQU",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "KULUOZ",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "MALWARE",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "ANDROMEDA",
+        "rel": "related_to",
+        "obj": "BLACKHOLE EXPLOIT KIT"
+      },
+      {
+        "sub": "ANDROMEDA",
+        "rel": "related_to",
+        "obj": "KEYLOGGER"
+      },
+      {
+        "sub": "ANDROMEDA",
+        "rel": "related_to",
+        "obj": "FORM GRABBER"
+      },
+      {
+        "sub": "ANDROMEDA",
+        "rel": "related_to",
+        "obj": "SOCKS4 PROXY MODULE"
+      },
+      {
+        "sub": "ANDROMEDA",
+        "rel": "related_to",
+        "obj": "ROOTKIT"
+      },
+      {
+        "sub": "ANDROMEDA",
+        "rel": "related_to",
+        "obj": "ZEUS"
+      },
+      {
+        "sub": "ANDROMEDA",
+        "rel": "related_to",
+        "obj": "COMMAND AND CONTROL (CC) SERVER"
+      },
+      {
+        "sub": "ANDROMEDA",
+        "rel": "related_to",
+        "obj": "TCP PORT 8000"
+      },
+      {
+        "sub": "ANDROMEDA",
+        "rel": "related_to",
+        "obj": "COMMAND SHELL (CMD.EXE)"
+      },
+      {
+        "sub": "ANDROMEDA",
+        "rel": "related_to",
+        "obj": "ZwCreateSection"
+      },
+      {
+        "sub": "ANDROMEDA",
+        "rel": "related_to",
+        "obj": "ZwMapViewOfSection"
+      },
+      {
+        "sub": "ANDROMEDA",
+        "rel": "related_to",
+        "obj": "ZwResumeThread"
+      },
+      {
+        "sub": "ANDROMEDA",
+        "rel": "related_to",
+        "obj": "ZwUnmapViewOfSection"
+      },
+      {
+        "sub": "AUSTRALIA",
+        "rel": "related_to",
+        "obj": "ANDROMEDA"
+      },
+      {
+        "sub": "TURKEY",
+        "rel": "related_to",
+        "obj": "ANDROMEDA"
+      },
+      {
+        "sub": "GERMANY",
+        "rel": "related_to",
+        "obj": "ANDROMEDA"
+      },
+      {
+        "sub": "TREND MICRO",
+        "rel": "related_to",
+        "obj": "ANDROMEDA"
+      },
+      {
+        "sub": "DUQU",
+        "rel": "related_to",
+        "obj": "ANDROMEDA"
+      },
+      {
+        "sub": "KULUOZ",
+        "rel": "related_to",
+        "obj": "ANDROMEDA"
+      },
+      {
+        "sub": "ANDROMEDA",
+        "rel": "related_to",
+        "obj": "MALWARE"
+      }
+    ]
+  }
+}

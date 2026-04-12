@@ -1,0 +1,163 @@
+{
+  "sample_id": "ctinexus__volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques.json",
+  "sample_index": 75,
+  "source": "ctinexus",
+  "file_name": "volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Volt Typhoon",
+        "type": "Unknown"
+      },
+      {
+        "name": "Fortinet FortiGuard devices",
+        "type": "Unknown"
+      },
+      {
+        "name": "Fortinet device",
+        "type": "Unknown"
+      },
+      {
+        "name": "Active Directory account",
+        "type": "Unknown"
+      },
+      {
+        "name": "other devices on the network",
+        "type": "Unknown"
+      },
+      {
+        "name": "compromised SOHO network edge devices",
+        "type": "Unknown"
+      },
+      {
+        "name": "ASUS",
+        "type": "Unknown"
+      },
+      {
+        "name": "Cisco",
+        "type": "Unknown"
+      },
+      {
+        "name": "D-Link",
+        "type": "Unknown"
+      },
+      {
+        "name": "NETGEAR",
+        "type": "Unknown"
+      },
+      {
+        "name": "Zyxel",
+        "type": "Unknown"
+      },
+      {
+        "name": "SOHO network edge devices",
+        "type": "Unknown"
+      },
+      {
+        "name": "HTTP or SSH management interfaces to the internet",
+        "type": "Unknown"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Unknown"
+      },
+      {
+        "name": "exposure of management interfaces on SOHO devices to the public internet",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Volt Typhoon",
+        "rel": "achieves initial access through",
+        "obj": "Fortinet FortiGuard devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "leverages privileges from",
+        "obj": "Fortinet device"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "extracts credentials from",
+        "obj": "Active Directory account"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "attempts to authenticate to",
+        "obj": "other devices on the network"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "proxies network traffic through",
+        "obj": "compromised SOHO network edge devices"
+      },
+      {
+        "sub": "compromised SOHO network edge devices",
+        "rel": "include those manufactured by",
+        "obj": "ASUS"
+      },
+      {
+        "sub": "compromised SOHO network edge devices",
+        "rel": "include those manufactured by",
+        "obj": "Cisco"
+      },
+      {
+        "sub": "compromised SOHO network edge devices",
+        "rel": "include those manufactured by",
+        "obj": "D-Link"
+      },
+      {
+        "sub": "compromised SOHO network edge devices",
+        "rel": "include those manufactured by",
+        "obj": "NETGEAR"
+      },
+      {
+        "sub": "compromised SOHO network edge devices",
+        "rel": "include those manufactured by",
+        "obj": "Zyxel"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "enhances stealth by proxying through",
+        "obj": "compromised SOHO network edge devices"
+      },
+      {
+        "sub": "SOHO network edge devices",
+        "rel": "allow owner to expose",
+        "obj": "HTTP or SSH management interfaces to the internet"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has confirmed",
+        "obj": "exposure of management interfaces on SOHO devices to the public internet"
+      },
+      {
+        "sub": "HTTP or SSH management interfaces to the internet",
+        "rel": "exposed via",
+        "obj": "compromised SOHO network edge devices"
+      },
+      {
+        "sub": "exposure of management interfaces on SOHO devices to the public internet",
+        "rel": "enables",
+        "obj": "compromised SOHO network edge devices"
+      }
+    ]
+  }
+}

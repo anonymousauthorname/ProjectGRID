@@ -1,0 +1,92 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-akira.json",
+  "sample_index": 91,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-akira.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Akira",
+        "rel": "exploit",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "exists in",
+        "obj": "Cisco Adaptive Security Appliance (ASA) software"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "exists in",
+        "obj": "Cisco Firepower Thread Defense (FTD) software"
+      },
+      {
+        "sub": "malicious actor",
+        "rel": "can identify",
+        "obj": "valid credentials"
+      },
+      {
+        "sub": "valid credentials",
+        "rel": "can be abused",
+        "obj": "unauthorized VPN sessions"
+      },
+      {
+        "sub": "valid credentials",
+        "rel": "can establish",
+        "obj": "unauthorized VPN sessions"
+      },
+      {
+        "sub": "victim running Cisco ASA Software Release 9.16 or earlier",
+        "rel": "can establish",
+        "obj": "clientless SSL VPN session"
+      },
+      {
+        "sub": "Sentinel One",
+        "rel": "released an analysis",
+        "obj": "Akira ransomware variant"
+      },
+      {
+        "sub": "Akira ransomware variant",
+        "rel": "is named",
+        "obj": "Megazord"
+      },
+      {
+        "sub": "Sentinel One",
+        "rel": "analyzed",
+        "obj": "Megazord"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "emerges in",
+        "obj": "August 2023"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "references",
+        "obj": "Power Rangers"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "encrypts files with",
+        "obj": "POWERRANGES"
+      }
+    ]
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "sample_id": "malkg__201302SymantecStuxnet.txt",
+  "sample_index": 107,
+  "source": "malkg",
+  "file_name": "201302SymantecStuxnet.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "STUXNET 0.5",
+        "type": "MALWARE"
+      },
+      {
+        "name": "STUXNET 1.X",
+        "type": "MALWARE"
+      },
+      {
+        "name": "SIEMENS STEP 7",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PLC",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "NATANZ",
+        "type": "LOCATION"
+      },
+      {
+        "name": "SYMANTEC",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "INSTITUTE FOR SCIENCE AND INTERNATIONAL SECURITY (ISIS)",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "GEOFF McDOUGAL",
+        "type": "PERSON"
+      },
+      {
+        "name": "LIAM O MURCHU",
+        "type": "PERSON"
+      },
+      {
+        "name": "STEPHEN DOHERTY",
+        "type": "PERSON"
+      },
+      {
+        "name": "ERIC CHIEN",
+        "type": "PERSON"
+      },
+      {
+        "name": "CVE-2010-3888",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "CVE-2010-2729",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "CVE-2008-4250",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "CVE-2012-3015",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "FLAMER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "TILDED",
+        "type": "TOOL"
+      },
+      {
+        "name": "COMMAND-AND-CONTROL (C&C)",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "PEER-TO-PEER COMMUNICATION",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "VALVE SYSTEMS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "CENTRIFUGE VALVES",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "AUXILIARY VALVES",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "STAGE PRESSURE TRANSDUCERS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "DB8061",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MEDIUM-ENRICHED URANIUM",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "LOW-ENRICHED URANIUM",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "URANIUM HEXAFLUORIDE (UF6)",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "SIMATIC 400 STATION",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "S7OTBXDX.DLL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MRXCLS.SYS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "USBACC11.SYS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PCIBUS.SYS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "INETPSP.DLL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "NETSIMP32.DLL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "S7HKKIMDB.DLL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "OUTBREAK.DLL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "INSTALLATION.DLL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MARTIN SMITH",
+        "type": "PERSON"
+      },
+      {
+        "name": "CENTRAL INSTITUTION",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MARKET STRATEGY COMMITTEE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "S7AAAPIX.DLL",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "STUXNET 1.X"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "SIEMENS STEP 7"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "PLC"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "NATANZ"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "SYMANTEC"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "INSTITUTE FOR SCIENCE AND INTERNATIONAL SECURITY (ISIS)"
+      },
+      {
+        "sub": "GEOFF McDOUGAL",
+        "rel": "related_to",
+        "obj": "SYMANTEC"
+      },
+      {
+        "sub": "LIAM O MURCHU",
+        "rel": "related_to",
+        "obj": "SYMANTEC"
+      },
+      {
+        "sub": "STEPHEN DOHERTY",
+        "rel": "related_to",
+        "obj": "SYMANTEC"
+      },
+      {
+        "sub": "ERIC CHIEN",
+        "rel": "related_to",
+        "obj": "SYMANTEC"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "CVE-2012-3015"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "FLAMER"
+      },
+      {
+        "sub": "STUXNET 1.X",
+        "rel": "related_to",
+        "obj": "TILDED"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "COMMAND-AND-CONTROL (C&C)"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "PEER-TO-PEER COMMUNICATION"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "VALVE SYSTEMS"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "CENTRIFUGE VALVES"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "AUXILIARY VALVES"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "STAGE PRESSURE TRANSDUCERS"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "DB8061"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "MEDIUM-ENRICHED URANIUM"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "LOW-ENRICHED URANIUM"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "URANIUM HEXAFLUORIDE (UF6)"
+      },
+      {
+        "sub": "STUXNET 0.5",
+        "rel": "related_to",
+        "obj": "SIMATIC 400 STATION"
+      },
+      {
+        "sub": "S7OTBXDX.DLL",
+        "rel": "related_to",
+        "obj": "PLC"
+      },
+      {
+        "sub": "S7AAAPIX.DLL",
+        "rel": "related_to",
+        "obj": "STUXNET 0.5"
+      },
+      {
+        "sub": "MRXCLS.SYS",
+        "rel": "related_to",
+        "obj": "STUXNET 0.5"
+      },
+      {
+        "sub": "USBACC11.SYS",
+        "rel": "related_to",
+        "obj": "STUXNET 0.5"
+      },
+      {
+        "sub": "PCIBUS.SYS",
+        "rel": "related_to",
+        "obj": "STUXNET 0.5"
+      },
+      {
+        "sub": "INETPSP.DLL",
+        "rel": "related_to",
+        "obj": "STUXNET 0.5"
+      },
+      {
+        "sub": "NETSIMP32.DLL",
+        "rel": "related_to",
+        "obj": "STUXNET 0.5"
+      },
+      {
+        "sub": "S7HKKIMDB.DLL",
+        "rel": "related_to",
+        "obj": "STUXNET 0.5"
+      },
+      {
+        "sub": "OUTBREAK.DLL",
+        "rel": "related_to",
+        "obj": "STUXNET 0.5"
+      },
+      {
+        "sub": "INSTALLATION.DLL",
+        "rel": "related_to",
+        "obj": "STUXNET 0.5"
+      }
+    ]
+  }
+}

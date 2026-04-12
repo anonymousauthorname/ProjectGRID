@@ -1,0 +1,357 @@
+{
+  "sample_id": "casie__364.json",
+  "sample_index": 33,
+  "source": "casie",
+  "file_name": "364.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Cipher0007",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the hacker"
+        ]
+      },
+      {
+        "name": "AlphaBay",
+        "type": "infrastructure",
+        "alias": [
+          "one of the largest trading posts on the Dark Web"
+        ]
+      },
+      {
+        "name": "Reddit",
+        "type": "infrastructure",
+        "alias": [
+          "the platform"
+        ]
+      },
+      {
+        "name": "private messages",
+        "type": "file",
+        "alias": [
+          "messages"
+        ]
+      },
+      {
+        "name": "messages not older than 30 days",
+        "type": "abstract-concept",
+        "alias": [
+          "messages within 30 days"
+        ]
+      },
+      {
+        "name": "tracking IDs",
+        "type": "indicator",
+        "alias": [
+          "tracking IDs of packages"
+        ]
+      },
+      {
+        "name": "buyer and seller names",
+        "type": "credential-value",
+        "alias": [
+          "first and last names of buyers and sellers"
+        ]
+      },
+      {
+        "name": "nicknames",
+        "type": "credential-value",
+        "alias": [
+          "nicknames"
+        ]
+      },
+      {
+        "name": "addresses",
+        "type": "credential-value",
+        "alias": [
+          "addresses"
+        ]
+      },
+      {
+        "name": "PGP keys",
+        "type": "general-software",
+        "alias": [
+          "keys protected by PGP"
+        ]
+      },
+      {
+        "name": "PasteBin",
+        "type": "infrastructure",
+        "alias": [
+          "the platform"
+        ]
+      },
+      {
+        "name": "support tickets",
+        "type": "course-of-action",
+        "alias": [
+          "tickets"
+        ]
+      },
+      {
+        "name": "loopholes",
+        "type": "vulnerability",
+        "alias": [
+          "bugs"
+        ]
+      },
+      {
+        "name": "law enforcement agencies",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "agencies"
+        ]
+      },
+      {
+        "name": "Dark Web marketplaces",
+        "type": "infrastructure",
+        "alias": [
+          "such businesses"
+        ]
+      },
+      {
+        "name": "the vulnerabilities",
+        "type": "vulnerability",
+        "alias": [
+          "bugs",
+          "security flaws"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "AlphaBay",
+        "rel": "has rewarded",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a researcher"
+      },
+      {
+        "sub": "the hacker",
+        "rel": "disclosing the existence of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a vulnerability"
+      },
+      {
+        "sub": "a vulnerability",
+        "rel": "allowed him to steal",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "over 200,000 private messages"
+      },
+      {
+        "sub": "the hacker",
+        "rel": "disclosed the existence of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "two 'high-risk' bugs"
+      },
+      {
+        "sub": "two 'high-risk' bugs",
+        "rel": "could be exploited to snatch",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "private messages"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "was able to compromise",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "AlphaBay"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "steal",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the first and last names of buyers and sellers"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "steal",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "nicknames"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "steal",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "addresses"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "steal",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the tracking IDs of packages"
+      },
+      {
+        "sub": "private messages",
+        "rel": "were not encrypted by default",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "the messages"
+      },
+      {
+        "sub": "the hacker",
+        "rel": "disclosed the vulnerabilities",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Reddit"
+      },
+      {
+        "sub": "the hacker",
+        "rel": "opened a number of support tickets",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "on AlphaBay"
+      },
+      {
+        "sub": "the potentially devastating bugs",
+        "rel": "could compromise",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the privacy and identities of users"
+      },
+      {
+        "sub": "AlphaBay",
+        "rel": "confirmed the validity of",
+        "rel_type": [
+          "validates"
+        ],
+        "obj": "the vulnerabilities"
+      },
+      {
+        "sub": "the bugs",
+        "rel": "allowed the hacker to slurp",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "a total of 218,000 messages"
+      },
+      {
+        "sub": "218,000 messages",
+        "rel": "were not older than",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "30 days"
+      },
+      {
+        "sub": "Older messages",
+        "rel": "are automatically purged from",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the system"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "was paid for",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "disclosing the flaws"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "rather than selling them on or releasing the stolen information",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "disclosing the flaws"
+      },
+      {
+        "sub": "Cipher0007",
+        "rel": "revealed his methods",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "his methods"
+      },
+      {
+        "sub": "AlphaBay developers",
+        "rel": "were able to close",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "the loopholes"
+      },
+      {
+        "sub": "these vulnerabilities",
+        "rel": "have the potential to destroy",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "such businesses"
+      },
+      {
+        "sub": "these security flaws",
+        "rel": "would be of interest to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "law enforcement agencies"
+      },
+      {
+        "sub": "law enforcement agencies",
+        "rel": "may have been known to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "them"
+      },
+      {
+        "sub": "users indulging in risky, illegal trading",
+        "rel": "take responsibility for",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "their own privacy by using PGP keys"
+      },
+      {
+        "sub": "users indulging in risky, illegal trading",
+        "rel": "cannot cry foul if",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "their personal information is leaked"
+      }
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "sample_id": "ctinexus__in-depth-look-at-apt35-aka-charming-kitten.json",
+  "sample_index": 55,
+  "source": "ctinexus",
+  "file_name": "in-depth-look-at-apt35-aka-charming-kitten.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT35",
+        "type": "Entity"
+      },
+      {
+        "name": "Charming Kitten",
+        "type": "Entity"
+      },
+      {
+        "name": "Phosphorus",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Exchange Server",
+        "type": "Entity"
+      },
+      {
+        "name": "ProxyShell",
+        "type": "Entity"
+      },
+      {
+        "name": "Hyperscrape",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "email extraction",
+        "type": "Entity"
+      },
+      {
+        "name": "cyberespionage",
+        "type": "Entity"
+      },
+      {
+        "name": "social media",
+        "type": "Entity"
+      },
+      {
+        "name": "academic institutions",
+        "type": "Entity"
+      },
+      {
+        "name": "medical research organizations",
+        "type": "Entity"
+      },
+      {
+        "name": "U.S.",
+        "type": "Entity"
+      },
+      {
+        "name": "France",
+        "type": "Entity"
+      },
+      {
+        "name": "Middle East",
+        "type": "Entity"
+      },
+      {
+        "name": "Israel",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT35",
+        "rel": "uses",
+        "obj": "social media"
+      },
+      {
+        "sub": "APT35",
+        "rel": "targets",
+        "obj": "academic institutions"
+      },
+      {
+        "sub": "APT35",
+        "rel": "targets",
+        "obj": "medical research organizations"
+      },
+      {
+        "sub": "APT35",
+        "rel": "exploits",
+        "obj": "Microsoft Exchange Server"
+      },
+      {
+        "sub": "APT35",
+        "rel": "uses",
+        "obj": "ProxyShell"
+      },
+      {
+        "sub": "APT35",
+        "rel": "uses",
+        "obj": "malware"
+      },
+      {
+        "sub": "APT35",
+        "rel": "uses",
+        "obj": "Hyperscrape"
+      },
+      {
+        "sub": "Hyperscrape",
+        "rel": "performs",
+        "obj": "email extraction"
+      }
+    ]
+  }
+}

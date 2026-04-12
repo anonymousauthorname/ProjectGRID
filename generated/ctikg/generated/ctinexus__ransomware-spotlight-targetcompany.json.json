@@ -1,0 +1,92 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-targetcompany.json",
+  "sample_index": 68,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-targetcompany.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "TargetCompany",
+        "rel": "has variant",
+        "obj": ".onion contact site"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "provides",
+        "obj": ".onion contact site"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "has earlier variant",
+        "obj": ".onion contact site"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "provides",
+        "obj": ".onion contact site"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "dropped",
+        "obj": "How to decrypt files.txt"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "dropped",
+        "obj": "decryption guide"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "dropped",
+        "obj": "ransom notes named How to decrypt files.txt"
+      },
+      {
+        "sub": "TargetCompany",
+        "rel": "dropped",
+        "obj": "ransom notes"
+      },
+      {
+        "sub": "the ransomware group",
+        "rel": "uses",
+        "obj": "mallox"
+      },
+      {
+        "sub": "the ransomware group",
+        "rel": "uses",
+        "obj": "xollam"
+      },
+      {
+        "sub": "later variants",
+        "rel": "use",
+        "obj": "Chacha20"
+      },
+      {
+        "sub": "later variants",
+        "rel": "use",
+        "obj": "Curve 25519"
+      },
+      {
+        "sub": "later variants",
+        "rel": "use",
+        "obj": "AES-128"
+      }
+    ]
+  }
+}

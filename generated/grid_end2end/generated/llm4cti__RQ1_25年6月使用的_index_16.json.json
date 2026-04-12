@@ -1,0 +1,336 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_16.json",
+  "sample_index": 208,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_16.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SophosLabs",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "emails",
+        "type": "email-address",
+        "alias": [
+          "the emails",
+          "unsolicited emails"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Windows computers",
+        "type": "general-software",
+        "alias": [
+          "your computer",
+          "computers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "email purporting to be an invoice from a car rental company",
+        "type": "email-address",
+        "alias": [
+          "the emails",
+          "unsolicited emails"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Europcar",
+        "type": "identity",
+        "alias": [
+          "Europcar UK Customer Services",
+          "Europcar UK Ltd",
+          "Europcar UK"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ZIP file",
+        "type": "file",
+        "alias": [
+          "the ZIP file",
+          "the attached file",
+          "EuropCar Invoice.zip"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malicious payload",
+        "type": "malware",
+        "alias": [
+          "the malware",
+          "the real thing"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "EuropCar Invoice.zip",
+        "type": "file",
+        "alias": [
+          "the attached file"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Troj/InvoZip",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "cybercriminals behind the attack",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the cybercriminals",
+          "hackers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Europcar UK Customer Services",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "CustomerServicesUKeuropcar.com",
+        "type": "email-address",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://www.europcar.co.uk",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "remote hackers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "antivirus defences",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Car rental image from Shutterstock",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "car rental company",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "credit card",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Sophos products",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Europcar UK Ltd",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SophosLabs",
+        "rel": "intercepted",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "emails"
+      },
+      {
+        "sub": "emails",
+        "rel": "attempt to infect",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Windows computers"
+      },
+      {
+        "sub": "emails",
+        "rel": "purporting to be from",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "Europcar"
+      },
+      {
+        "sub": "emails",
+        "rel": "have attached",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "ZIP file"
+      },
+      {
+        "sub": "ZIP file",
+        "rel": "contains",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "malicious payload"
+      },
+      {
+        "sub": "emails",
+        "rel": "detected as",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Troj/InvoZip"
+      },
+      {
+        "sub": "cybercriminals behind the attack",
+        "rel": "forged",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "CustomerServicesUKeuropcar.com"
+      },
+      {
+        "sub": "cybercriminals behind the attack",
+        "rel": "authored-by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "emails"
+      },
+      {
+        "sub": "malicious payload",
+        "rel": "compromises",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Windows computers"
+      },
+      {
+        "sub": "remote hackers",
+        "rel": "take control of",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Windows computers"
+      },
+      {
+        "sub": "remote hackers",
+        "rel": "leads to spamming out",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "attacks"
+      },
+      {
+        "sub": "remote hackers",
+        "rel": "steal information from",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "you"
+      },
+      {
+        "sub": "antivirus defences",
+        "rel": "mitigate",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Windows computers"
+      },
+      {
+        "sub": "antivirus defences",
+        "rel": "detect",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "emails"
+      },
+      {
+        "sub": "EuropCar Invoice.zip",
+        "rel": "is a",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "ZIP file"
+      },
+      {
+        "sub": "EuropCar Invoice.zip",
+        "rel": "detected as",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Troj/InvoZip"
+      },
+      {
+        "sub": "emails",
+        "rel": "lure into opening",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "ZIP file"
+      },
+      {
+        "sub": "cybercriminals behind the attack",
+        "rel": "impersonate",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "car rental company"
+      },
+      {
+        "sub": "credit card",
+        "rel": "might have been compromised",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "emails",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Europcar UK Ltd",
+        "rel": "affiliated-with",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Europcar"
+      }
+    ]
+  }
+}

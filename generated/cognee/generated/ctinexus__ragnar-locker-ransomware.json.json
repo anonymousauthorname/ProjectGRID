@@ -1,0 +1,251 @@
+{
+  "sample_id": "ctinexus__ragnar-locker-ransomware.json",
+  "sample_index": 61,
+  "source": "ctinexus",
+  "file_name": "ragnar-locker-ransomware.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Ragnar Locker",
+        "type": "Entity"
+      },
+      {
+        "name": "FBI",
+        "type": "Entity"
+      },
+      {
+        "name": "April 2020",
+        "type": "Entity"
+      },
+      {
+        "name": "December 2019",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware group",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware",
+        "type": "Entity"
+      },
+      {
+        "name": "double extortion tactic",
+        "type": "Entity"
+      },
+      {
+        "name": "data exfiltration",
+        "type": "Entity"
+      },
+      {
+        "name": "encryption attack",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actors",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware family",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware variants",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actor groups",
+        "type": "Entity"
+      },
+      {
+        "name": "obfuscation techniques",
+        "type": "Entity"
+      },
+      {
+        "name": "RDP service",
+        "type": "Entity"
+      },
+      {
+        "name": "brute force",
+        "type": "Entity"
+      },
+      {
+        "name": "stolen credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "dark web",
+        "type": "Entity"
+      },
+      {
+        "name": "network compromise",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2017-0213",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows COM Aggregate Marshaler",
+        "type": "Entity"
+      },
+      {
+        "name": "elevation of privilege",
+        "type": "Entity"
+      },
+      {
+        "name": "arbitrary code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "specially crafted application",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Entity"
+      },
+      {
+        "name": "cyberattack",
+        "type": "Entity"
+      },
+      {
+        "name": "cybersecurity threat",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Ragnar Locker",
+        "rel": "discovered_by",
+        "obj": "FBI"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "active_since",
+        "obj": "December 2019"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "is_known_for",
+        "obj": "double extortion tactic"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "belongs_to",
+        "obj": "ransomware family"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "is_a_member_of",
+        "obj": "threat actor groups"
+      },
+      {
+        "sub": "double extortion tactic",
+        "rel": "involves",
+        "obj": "data exfiltration"
+      },
+      {
+        "sub": "double extortion tactic",
+        "rel": "involves",
+        "obj": "encryption attack"
+      },
+      {
+        "sub": "double extortion tactic",
+        "rel": "is_a_type_of",
+        "obj": "cybersecurity threat"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "changes",
+        "obj": "obfuscation techniques"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "initiates_attack_via",
+        "obj": "RDP service"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "uses_brute_force",
+        "obj": "brute force"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "uses_stolen_credentials",
+        "obj": "stolen credentials"
+      },
+      {
+        "sub": "stolen credentials",
+        "rel": "purchases_credentials_on",
+        "obj": "dark web"
+      },
+      {
+        "sub": "network compromise",
+        "rel": "compromises_network_through",
+        "obj": "RDP service"
+      },
+      {
+        "sub": "network compromise",
+        "rel": "exploits",
+        "obj": "CVE-2017-0213"
+      },
+      {
+        "sub": "CVE-2017-0213",
+        "rel": "has_vulnerability",
+        "obj": "Windows COM Aggregate Marshaler"
+      },
+      {
+        "sub": "CVE-2017-0213",
+        "rel": "allows",
+        "obj": "elevation of privilege"
+      },
+      {
+        "sub": "CVE-2017-0213",
+        "rel": "leads_to",
+        "obj": "arbitrary code execution"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "runs_specially_crafted_application",
+        "obj": "specially crafted application"
+      },
+      {
+        "sub": "specially crafted application",
+        "rel": "executes_arbitrary_code",
+        "obj": "arbitrary code execution"
+      },
+      {
+        "sub": "CVE-2017-0213",
+        "rel": "is_identified_by",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "network compromise",
+        "rel": "is_a_type_of",
+        "obj": "cyberattack"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "is_a_type_of",
+        "obj": "cybersecurity threat"
+      }
+    ]
+  }
+}

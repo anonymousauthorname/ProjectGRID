@@ -1,0 +1,91 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_45.json",
+  "sample_index": 234,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_45.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Virus.Win32.Induc.a",
+        "type": "Malware"
+      },
+      {
+        "name": "Delphi",
+        "type": "Software"
+      },
+      {
+        "name": "SysConst.pas",
+        "type": "Indicator"
+      },
+      {
+        "name": "SysConst.dcu",
+        "type": "Indicator"
+      },
+      {
+        "name": "Lib",
+        "type": "Indicator"
+      },
+      {
+        "name": "LibSysConst.pas",
+        "type": "Indicator"
+      },
+      {
+        "name": "SysConst.bak",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "checks for",
+        "obj": "Delphi"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "copies to",
+        "obj": "SysConst.pas"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "makes backup of",
+        "obj": "SysConst.dcu"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "writes code to",
+        "obj": "LibSysConst.pas"
+      },
+      {
+        "sub": "Virus.Win32.Induc.a",
+        "rel": "writes code to",
+        "obj": "Lib"
+      },
+      {
+        "sub": "LibSysConst.pas",
+        "rel": "compils to",
+        "obj": "SysConst.dcu"
+      },
+      {
+        "sub": "LibSysConst.pas",
+        "rel": "REPLACES",
+        "obj": "SysConst.pas"
+      }
+    ]
+  }
+}

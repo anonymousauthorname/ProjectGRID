@@ -1,0 +1,235 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_14.json",
+  "sample_index": 206,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_14.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Facebook worms",
+        "type": "Unknown"
+      },
+      {
+        "name": "social networking sites",
+        "type": "Unknown"
+      },
+      {
+        "name": "MySpace",
+        "type": "Unknown"
+      },
+      {
+        "name": "Facebook message",
+        "type": "Unknown"
+      },
+      {
+        "name": "cached Google page",
+        "type": "Unknown"
+      },
+      {
+        "name": "Mal/BadSrcC",
+        "type": "Unknown"
+      },
+      {
+        "name": "redirect visitors silently",
+        "type": "Unknown"
+      },
+      {
+        "name": "Mal/JSRedirA",
+        "type": "Unknown"
+      },
+      {
+        "name": "determine the source site",
+        "type": "Unknown"
+      },
+      {
+        "name": "a different page based on referrer",
+        "type": "Unknown"
+      },
+      {
+        "name": "Mal/VidHtmlC",
+        "type": "Unknown"
+      },
+      {
+        "name": "a video page",
+        "type": "Unknown"
+      },
+      {
+        "name": "flashupdate.exe",
+        "type": "Unknown"
+      },
+      {
+        "name": "W32/KoobfaGen",
+        "type": "Unknown"
+      },
+      {
+        "name": "setup.exe",
+        "type": "Unknown"
+      },
+      {
+        "name": "Mal/EncPkGA",
+        "type": "Unknown"
+      },
+      {
+        "name": "Zlob family",
+        "type": "Unknown"
+      },
+      {
+        "name": "fake antivirus Trojan",
+        "type": "Unknown"
+      },
+      {
+        "name": "SQL injection",
+        "type": "Unknown"
+      },
+      {
+        "name": "bogus video sites",
+        "type": "Unknown"
+      },
+      {
+        "name": "fake antivirus software",
+        "type": "Unknown"
+      },
+      {
+        "name": "malware authors",
+        "type": "Unknown"
+      },
+      {
+        "name": "MySpace, Bebo, hi5, and GeoCities",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Facebook worms",
+        "rel": "are referencing",
+        "obj": "social networking sites"
+      },
+      {
+        "sub": "Facebook worms",
+        "rel": "have started to reference",
+        "obj": "MySpace"
+      },
+      {
+        "sub": "Facebook message",
+        "rel": "contains a link that redirects to",
+        "obj": "cached Google page"
+      },
+      {
+        "sub": "cached Google page",
+        "rel": "is detected as",
+        "obj": "Mal/BadSrcC"
+      },
+      {
+        "sub": "Mal/BadSrcC",
+        "rel": "uses SQL injection to",
+        "obj": "redirect visitors silently"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "uses document.referrer to",
+        "obj": "determine the source site"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "redirects users to",
+        "obj": "a different page based on referrer"
+      },
+      {
+        "sub": "Mal/VidHtmlC",
+        "rel": "is detected as",
+        "obj": "a video page"
+      },
+      {
+        "sub": "Mal/VidHtmlC",
+        "rel": "attempts to get user to install",
+        "obj": "flashupdate.exe"
+      },
+      {
+        "sub": "flashupdate.exe",
+        "rel": "is detected as",
+        "obj": "W32/KoobfaGen"
+      },
+      {
+        "sub": "Mal/VidHtmlC",
+        "rel": "redirects to",
+        "obj": "Mal/VidHtmlC"
+      },
+      {
+        "sub": "Mal/VidHtmlC",
+        "rel": "attempts to download",
+        "obj": "setup.exe"
+      },
+      {
+        "sub": "setup.exe",
+        "rel": "is detected as",
+        "obj": "Mal/EncPkGA"
+      },
+      {
+        "sub": "Mal/EncPkGA",
+        "rel": "is a component of",
+        "obj": "Zlob family"
+      },
+      {
+        "sub": "Zlob family",
+        "rel": "is a type of",
+        "obj": "fake antivirus Trojan"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "is part of a chain that includes",
+        "obj": "SQL injection"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "is part of a chain that includes",
+        "obj": "bogus video sites"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "is part of a chain that includes",
+        "obj": "fake antivirus software"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "is part of a chain that includes",
+        "obj": "Facebook worms"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "are targeting",
+        "obj": "social networking sites"
+      },
+      {
+        "sub": "malware authors",
+        "rel": "are expanding targets to include",
+        "obj": "MySpace, Bebo, hi5, and GeoCities"
+      },
+      {
+        "sub": "Mal/BadSrcC",
+        "rel": "is exploited by",
+        "obj": "Mal/JSRedirA"
+      },
+      {
+        "sub": "Mal/VidHtmlC",
+        "rel": "is_redirected_to_by",
+        "obj": "Mal/JSRedirA"
+      }
+    ]
+  }
+}

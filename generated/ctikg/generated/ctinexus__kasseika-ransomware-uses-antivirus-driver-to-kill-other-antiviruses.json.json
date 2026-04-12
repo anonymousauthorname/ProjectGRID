@@ -1,0 +1,137 @@
+{
+  "sample_id": "ctinexus__kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "sample_index": 57,
+  "source": "ctinexus",
+  "file_name": "kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Kasseika",
+        "rel": "employs",
+        "obj": "BYOVD tactics"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "disables",
+        "obj": "antivirus"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "encrypts",
+        "obj": "files"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "abuses",
+        "obj": "Martini"
+      },
+      {
+        "sub": "Martini",
+        "rel": "belongs to",
+        "obj": "VirtIT Agent System"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "disables",
+        "obj": "antivirus"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "launches",
+        "obj": "phishing email"
+      },
+      {
+        "sub": "phishing email",
+        "rel": "targets",
+        "obj": "employee"
+      },
+      {
+        "sub": "phishing email",
+        "rel": "steals",
+        "obj": "account credentials"
+      },
+      {
+        "sub": "account credentials",
+        "rel": "used for",
+        "obj": "initial access"
+      },
+      {
+        "sub": "Kasseika operators",
+        "rel": "downloads",
+        "obj": "Martini"
+      },
+      {
+        "sub": "Martini",
+        "rel": "downloaded on",
+        "obj": "machine"
+      },
+      {
+        "sub": "BYOVD attacks",
+        "rel": "exploit",
+        "obj": "flaws in the loaded driver"
+      },
+      {
+        "sub": "malware",
+        "rel": "gains privileges to terminate",
+        "obj": "991 processes"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "obj": "antivirus products"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "obj": "security tools"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "obj": "analysis tools"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "obj": "system utilities"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "obj": "antivirus"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "obj": "security"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "obj": "analysis"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "obj": "system utility"
+      }
+    ]
+  }
+}

@@ -1,0 +1,391 @@
+{
+  "sample_id": "ctinexus__in-depth-look-at-yanluowang-ransomware.json",
+  "sample_index": 54,
+  "source": "ctinexus",
+  "file_name": "in-depth-look-at-yanluowang-ransomware.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "United States",
+        "type": "Entity"
+      },
+      {
+        "name": "financial sector",
+        "type": "Entity"
+      },
+      {
+        "name": "Yanluowang",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware-as-a-service (RaaS)",
+        "type": "Entity"
+      },
+      {
+        "name": "Fivehands",
+        "type": "Entity"
+      },
+      {
+        "name": "Thieflock",
+        "type": "Entity"
+      },
+      {
+        "name": "manufacturing sector",
+        "type": "Entity"
+      },
+      {
+        "name": "IT services",
+        "type": "Entity"
+      },
+      {
+        "name": "consultancy",
+        "type": "Entity"
+      },
+      {
+        "name": "engineering sector",
+        "type": "Entity"
+      },
+      {
+        "name": "Symantec",
+        "type": "Entity"
+      },
+      {
+        "name": "Threat Hunter Team",
+        "type": "Entity"
+      },
+      {
+        "name": "Broadcom Software",
+        "type": "Entity"
+      },
+      {
+        "name": "August 2021",
+        "type": "Entity"
+      },
+      {
+        "name": "October 2021",
+        "type": "Entity"
+      },
+      {
+        "name": "AdFind",
+        "type": "Entity"
+      },
+      {
+        "name": "Active Directory",
+        "type": "Entity"
+      },
+      {
+        "name": "lateral movement",
+        "type": "Entity"
+      },
+      {
+        "name": "reconnaissance",
+        "type": "Entity"
+      },
+      {
+        "name": "U.S. corporations",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware attack",
+        "type": "Entity"
+      },
+      {
+        "name": "tool usage",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actor",
+        "type": "Entity"
+      },
+      {
+        "name": "affiliation",
+        "type": "Entity"
+      },
+      {
+        "name": "allegiance shift",
+        "type": "Entity"
+      },
+      {
+        "name": "underdeveloped ransomware",
+        "type": "Entity"
+      },
+      {
+        "name": "network reconnaissance",
+        "type": "Entity"
+      },
+      {
+        "name": "command-line tool",
+        "type": "Entity"
+      },
+      {
+        "name": "Active Directory query tool",
+        "type": "Entity"
+      },
+      {
+        "name": "attack success",
+        "type": "Entity"
+      },
+      {
+        "name": "attack failure",
+        "type": "Entity"
+      },
+      {
+        "name": "threat intelligence",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware deployment",
+        "type": "Entity"
+      },
+      {
+        "name": "attack techniques",
+        "type": "Entity"
+      },
+      {
+        "name": "tactics",
+        "type": "Entity"
+      },
+      {
+        "name": "procedures (TTPs)",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Yanluowang",
+        "rel": "targets",
+        "obj": "financial sector"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "targets",
+        "obj": "manufacturing sector"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "targets",
+        "obj": "IT services"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "targets",
+        "obj": "consultancy"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "targets",
+        "obj": "engineering sector"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "acts against",
+        "obj": "U.S. corporations"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "operates as",
+        "obj": "ransomware"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "is linked to",
+        "obj": "ransomware-as-a-service (RaaS)"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "shares TTPs with",
+        "obj": "Thieflock"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "is linked to",
+        "obj": "Fivehands"
+      },
+      {
+        "sub": "Threat Hunter Team",
+        "rel": "discovered by",
+        "obj": "Yanluowang"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "is part of",
+        "obj": "Threat Hunter Team"
+      },
+      {
+        "sub": "Broadcom Software",
+        "rel": "is part of",
+        "obj": "Threat Hunter Team"
+      },
+      {
+        "sub": "AdFind",
+        "rel": "uses as a reconnaissance tool",
+        "obj": "Yanluowang"
+      },
+      {
+        "sub": "AdFind",
+        "rel": "is used for network reconnaissance",
+        "obj": "reconnaissance"
+      },
+      {
+        "sub": "AdFind",
+        "rel": "enables lateral movement in",
+        "obj": "Active Directory"
+      },
+      {
+        "sub": "AdFind",
+        "rel": "is used for lateral movement",
+        "obj": "lateral movement"
+      },
+      {
+        "sub": "AdFind",
+        "rel": "is a legitimate command-line tool",
+        "obj": "is a legitimate command-line tool"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "was active during",
+        "obj": "August 2021"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "was discovered in October 2021",
+        "obj": "October 2021"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "deployed ransomware",
+        "obj": "October 2021"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "has a technical profile of",
+        "obj": "underdeveloped ransomware"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "failed to achieve success in",
+        "obj": "attack success"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "failed to achieve success in",
+        "obj": "attack failure"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "uses attack techniques",
+        "obj": "attack techniques"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "employs tactics",
+        "obj": "tactics"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "has procedures (TTPs) of",
+        "obj": "procedures (TTPs)"
+      },
+      {
+        "sub": "Thieflock",
+        "rel": "shares TTPs with",
+        "obj": "Yanluowang"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "is associated with",
+        "obj": "affiliation"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "shifted allegiance to",
+        "obj": "allegiance shift"
+      },
+      {
+        "sub": "AdFind",
+        "rel": "has been observed using",
+        "obj": "Yanluowang"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "is used for network reconnaissance",
+        "obj": "is used for network reconnaissance"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "is used for lateral movement",
+        "obj": "is used for lateral movement"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "is a component of",
+        "obj": "is a component of"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "shares TTPs with",
+        "obj": "shares TTPs with"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "was active during",
+        "obj": "was active during"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "is discovered in August 2021",
+        "obj": "is discovered in August 2021"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "is discovered in October 2021",
+        "obj": "is discovered in October 2021"
+      },
+      {
+        "sub": "threat actor",
+        "rel": "is a threat actor",
+        "obj": "Yanluowang"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "operates within",
+        "obj": "United States"
+      },
+      {
+        "sub": "ransomware attack",
+        "rel": "is a type of",
+        "obj": "Yanluowang"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "is used in",
+        "obj": "is used in"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "has a known attack pattern",
+        "obj": "has a known attack pattern"
+      }
+    ]
+  }
+}

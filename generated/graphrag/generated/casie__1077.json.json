@@ -1,0 +1,210 @@
+{
+  "sample_id": "casie__1077.json",
+  "sample_index": 4,
+  "source": "casie",
+  "file_name": "1077.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "MAGENTO",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "SF9 REALEX",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "REALEX REALAUTH REMOTE AND REDIRECT",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SENDCCNUMBER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BINLIST.NET",
+        "type": "TOOL"
+      },
+      {
+        "name": "BRUNO ZANELATO",
+        "type": "PERSON"
+      },
+      {
+        "name": "CESAR ANJOS",
+        "type": "PERSON"
+      },
+      {
+        "name": "BEN MARTIN",
+        "type": "PERSON"
+      },
+      {
+        "name": "RISKIQ",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "HACKING GROUP",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "POWERFRONT CMS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "OPENCART",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "WEB-BASED KEYLOGGER",
+        "type": "TOOL"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SENDCCNUMBER",
+        "rel": "related_to",
+        "obj": "SF9 REALEX"
+      },
+      {
+        "sub": "SF9 REALEX",
+        "rel": "related_to",
+        "obj": "REALEX REALAUTH REMOTE AND REDIRECT"
+      },
+      {
+        "sub": "SENDCCNUMBER",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "BRUNO ZANELATO",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "BRUNO ZANELATO",
+        "rel": "related_to",
+        "obj": "SENDCCNUMBER"
+      },
+      {
+        "sub": "BINLIST.NET",
+        "rel": "related_to",
+        "obj": "SENDCCNUMBER"
+      },
+      {
+        "sub": "RISKIQ",
+        "rel": "related_to",
+        "obj": "HACKING GROUP"
+      },
+      {
+        "sub": "HACKING GROUP",
+        "rel": "related_to",
+        "obj": "POWERFRONT CMS"
+      },
+      {
+        "sub": "HACKING GROUP",
+        "rel": "related_to",
+        "obj": "OPENCART"
+      },
+      {
+        "sub": "HACKING GROUP",
+        "rel": "related_to",
+        "obj": "WEB-BASED KEYLOGGER"
+      },
+      {
+        "sub": "BEN MARTIN",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "CESAR ANJOS",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "MAGENTO",
+        "rel": "related_to",
+        "obj": "HACKING GROUP"
+      },
+      {
+        "sub": "SENDCCNUMBER",
+        "rel": "related_to",
+        "obj": "SF9 REALEX"
+      },
+      {
+        "sub": "SF9 REALEX",
+        "rel": "related_to",
+        "obj": "REALEX REALAUTH REMOTE AND REDIRECT"
+      },
+      {
+        "sub": "SENDCCNUMBER",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "BRUNO ZANELATO",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "BRUNO ZANELATO",
+        "rel": "related_to",
+        "obj": "SENDCCNUMBER"
+      },
+      {
+        "sub": "BINLIST.NET",
+        "rel": "related_to",
+        "obj": "SENDCCNUMBER"
+      },
+      {
+        "sub": "RISKIQ",
+        "rel": "related_to",
+        "obj": "HACKING GROUP"
+      },
+      {
+        "sub": "HACKING GROUP",
+        "rel": "related_to",
+        "obj": "POWERFRONT CMS"
+      },
+      {
+        "sub": "HACKING GROUP",
+        "rel": "related_to",
+        "obj": "OPENCART"
+      },
+      {
+        "sub": "HACKING GROUP",
+        "rel": "related_to",
+        "obj": "WEB-BASED KEYLOGGER"
+      },
+      {
+        "sub": "BEN MARTIN",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "CESAR ANJOS",
+        "rel": "related_to",
+        "obj": "MAGENTO"
+      },
+      {
+        "sub": "MAGENTO",
+        "rel": "related_to",
+        "obj": "HACKING GROUP"
+      }
+    ]
+  }
+}

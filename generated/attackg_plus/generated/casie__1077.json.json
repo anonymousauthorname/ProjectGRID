@@ -1,0 +1,322 @@
+{
+  "sample_id": "casie__1077.json",
+  "sample_index": 4,
+  "source": "casie",
+  "file_name": "1077.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Magento",
+        "rel": "Has vulnerability",
+        "obj": "Credit card data"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Operate",
+        "obj": "binlist.net"
+      },
+      {
+        "sub": "binlist.net",
+        "rel": "Use",
+        "obj": "Issuer identification numbers"
+      },
+      {
+        "sub": "binlist.net",
+        "rel": "Detect",
+        "obj": "Bank association"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Belong to",
+        "obj": "E-commerce platform"
+      },
+      {
+        "sub": "Powerfront CMS",
+        "rel": "Belong to",
+        "obj": "E-commerce platform"
+      },
+      {
+        "sub": "OpenCart",
+        "rel": "Belong to",
+        "obj": "E-commerce platform"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Conduct",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Gather",
+        "obj": "Information about user behavior"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Leverage",
+        "obj": "Financial data structures"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "SF9 Realex module"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "legitimate module for one-click checkout"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "compromised infrastructure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "credit card data exfiltration"
+      },
+      {
+        "sub": "Magento module",
+        "rel": "Has vulnerability",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Magento module",
+        "rel": "Use",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Magento module",
+        "rel": "Belong to",
+        "obj": "Magento"
+      },
+      {
+        "sub": "Magento module",
+        "rel": "Has value",
+        "obj": "Customer credit card data"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Operate",
+        "obj": "Malicious code injection"
+      },
+      {
+        "sub": "Malicious code injection",
+        "rel": "Modify",
+        "obj": "Legitimate Magento module"
+      },
+      {
+        "sub": "Legitimate Magento module",
+        "rel": "Has geolocation",
+        "obj": "Platform"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has hostname",
+        "obj": "Magento"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "sendCCNumber"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Operate",
+        "obj": "sendCCNumber"
+      },
+      {
+        "sub": "sendCCNumber",
+        "rel": "Has technique",
+        "obj": "User interaction"
+      },
+      {
+        "sub": "Magento",
+        "rel": "Has platform",
+        "obj": "sendCCNumber"
+      },
+      {
+        "sub": "Malicious function",
+        "rel": "Operate",
+        "obj": "Covertly"
+      },
+      {
+        "sub": "Malicious function",
+        "rel": "Modify",
+        "obj": "Hidden variable"
+      },
+      {
+        "sub": "Malicious function",
+        "rel": "Construct",
+        "obj": "JSON"
+      },
+      {
+        "sub": "Malicious function",
+        "rel": "Use",
+        "obj": "Obfuscated data transfer"
+      },
+      {
+        "sub": "Malicious function",
+        "rel": "Integrate",
+        "obj": "Legitimate module"
+      },
+      {
+        "sub": "Malicious function",
+        "rel": "Avoid",
+        "obj": "Detection by security tools"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Man-in-the-middle attack"
+      },
+      {
+        "sub": "Man-in-the-middle attack",
+        "rel": "Has tactic",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "Credit card information",
+        "rel": "Has value",
+        "obj": "Authentication tokens or session data"
+      },
+      {
+        "sub": "Magento Platform",
+        "rel": "Operate",
+        "obj": "Realex RealAuth Remote and Redirect systems"
+      },
+      {
+        "sub": "Magento Platform",
+        "rel": "Has vulnerability",
+        "obj": "Data flow from customer input to checkout process"
+      },
+      {
+        "sub": "Magento Platform",
+        "rel": "Use",
+        "obj": "Specific APIs"
+      },
+      {
+        "sub": "Magento Platform",
+        "rel": "Perform",
+        "obj": "Redirects"
+      },
+      {
+        "sub": "Magento Platform",
+        "rel": "Locate at",
+        "obj": "Checkout process"
+      },
+      {
+        "sub": "Magento Platform",
+        "rel": "Has value",
+        "obj": "Credit card numbers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "JSON"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Checkout process"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Hidden email address"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Write",
+        "obj": "Sensitive financial data"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Exfiltrate",
+        "obj": "Credit card numbers"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Collect",
+        "obj": "Credit card numbers"
+      },
+      {
+        "sub": "C2 channel",
+        "rel": "Has value",
+        "obj": "Email address"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Use",
+        "obj": "C2 channel"
+      },
+      {
+        "sub": "C2 channel",
+        "rel": "Operate",
+        "obj": "Stolen credit card data"
+      },
+      {
+        "sub": "Credit card information",
+        "rel": "Has vulnerability",
+        "obj": "JSON encoding"
+      },
+      {
+        "sub": "Credit card information",
+        "rel": "Exfiltrated over",
+        "obj": "Email channel"
+      },
+      {
+        "sub": "Email channel",
+        "rel": "Use",
+        "obj": "Disguised format"
+      },
+      {
+        "sub": "Email channel",
+        "rel": "Operate",
+        "obj": "Remote location"
+      },
+      {
+        "sub": "Credit card information",
+        "rel": "Modify",
+        "obj": "Disguised format"
+      },
+      {
+        "sub": "Email channel",
+        "rel": "Locate at",
+        "obj": "Attacker’s inbox"
+      },
+      {
+        "sub": "Credit card information",
+        "rel": "Has value",
+        "obj": "Encoded in JSON"
+      },
+      {
+        "sub": "Exfiltration technique",
+        "rel": "Use",
+        "obj": "Non-standard channel"
+      },
+      {
+        "sub": "Non-standard channel",
+        "rel": "Operate",
+        "obj": "Remote location"
+      }
+    ]
+  }
+}

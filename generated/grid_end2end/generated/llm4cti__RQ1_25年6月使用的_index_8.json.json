@@ -1,0 +1,255 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_8.json",
+  "sample_index": 247,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_8.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Flash vulnerability (CVE-2018-4878)",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Remote Code Execute",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malformed Flash object",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "KISA",
+        "type": "identity",
+        "alias": [
+          "Korean CERT"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "advisory",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Flash 0-day",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Excel document",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "compromised website",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "additional payload",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Talos",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Flash object embedded in a Microsoft Excel document",
+        "type": "file",
+        "alias": [
+          "the exploit"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the exploit",
+        "type": "hacker-tool",
+        "alias": [
+          "the exploit",
+          "the Flash object embedded in a Microsoft Excel document"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Adobe",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Group 123",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2018-4878",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Talos Group",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "February 2, 2018",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Adobe",
+        "rel": "published an advisory concerning",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Flash vulnerability (CVE-2018-4878)"
+      },
+      {
+        "sub": "malformed Flash object",
+        "rel": "allows",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Remote Code Execute"
+      },
+      {
+        "sub": "KISA",
+        "rel": "published an advisory about",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Flash 0-day"
+      },
+      {
+        "sub": "attacker",
+        "rel": "exploited",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Flash vulnerability (CVE-2018-4878)"
+      },
+      {
+        "sub": "attacker",
+        "rel": "exploited",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Flash object embedded in a Microsoft Excel document"
+      },
+      {
+        "sub": "attacker",
+        "rel": "embedded in",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Microsoft Excel document"
+      },
+      {
+        "sub": "Flash object embedded in a Microsoft Excel document",
+        "rel": "was executed",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "the exploit"
+      },
+      {
+        "sub": "the exploit",
+        "rel": "downloaded",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "additional payload"
+      },
+      {
+        "sub": "the exploit",
+        "rel": "downloaded from",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "compromised website"
+      },
+      {
+        "sub": "Talos",
+        "rel": "identified that an attacker exploited",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Flash vulnerability (CVE-2018-4878)"
+      },
+      {
+        "sub": "Group 123",
+        "rel": "used",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Flash 0-day"
+      },
+      {
+        "sub": "Group 123",
+        "rel": "At The Controls",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Flash vulnerability (CVE-2018-4878)"
+      },
+      {
+        "sub": "Talos Group",
+        "rel": "identified that the vulnerability was exploited",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Flash vulnerability (CVE-2018-4878)"
+      },
+      {
+        "sub": "Adobe",
+        "rel": "published advisory",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "CVE-2018-4878"
+      }
+    ]
+  }
+}

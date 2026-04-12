@@ -1,0 +1,212 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_46.json",
+  "sample_index": 235,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_46.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "WANNACRY",
+        "type": "MALWARE"
+      },
+      {
+        "name": "SOPHOS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "SHADOW BROKERS",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "ETERNALBLUE",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "WINDOWS SMB SERVICE",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "MICROSOFT",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "NATIONAL HEALTH SERVICE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "WANACRYPT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "INTERCEPT X",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SOPHOS EXP",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CRYPTOGUARD",
+        "type": "TOOL"
+      },
+      {
+        "name": "MS17010",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "WINDOWS XP",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "WINDOWS 8",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "WINDOWS SERVER 2003",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "WANACRYPT 2.0",
+        "type": "MALWARE"
+      },
+      {
+        "name": "SLAMMER",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "CONFICKER",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "WANACRYPT ATTACK",
+        "type": "EVENT"
+      },
+      {
+        "name": "CUSTOM SUPPORT PLATFORMS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "SECURITY UPDATE",
+        "type": "SOFTWARE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "WANNACRY",
+        "rel": "related_to",
+        "obj": "ETERNALBLUE"
+      },
+      {
+        "sub": "WANNACRY",
+        "rel": "related_to",
+        "obj": "WINDOWS SMB SERVICE"
+      },
+      {
+        "sub": "WANNACRY",
+        "rel": "related_to",
+        "obj": "SHADOW BROKERS"
+      },
+      {
+        "sub": "SOPHOS",
+        "rel": "related_to",
+        "obj": "INTERCEPT X"
+      },
+      {
+        "sub": "SOPHOS",
+        "rel": "related_to",
+        "obj": "SOPHOS EXP"
+      },
+      {
+        "sub": "SOPHOS",
+        "rel": "related_to",
+        "obj": "CRYPTOGUARD"
+      },
+      {
+        "sub": "MICROSOFT",
+        "rel": "related_to",
+        "obj": "MS17010"
+      },
+      {
+        "sub": "MICROSOFT",
+        "rel": "related_to",
+        "obj": "WINDOWS XP"
+      },
+      {
+        "sub": "MICROSOFT",
+        "rel": "related_to",
+        "obj": "WINDOWS 8"
+      },
+      {
+        "sub": "MICROSOFT",
+        "rel": "related_to",
+        "obj": "WINDOWS SERVER 2003"
+      },
+      {
+        "sub": "WANNACRY",
+        "rel": "related_to",
+        "obj": "NATIONAL HEALTH SERVICE"
+      },
+      {
+        "sub": "WANNACRY",
+        "rel": "related_to",
+        "obj": "SLAMMER"
+      },
+      {
+        "sub": "WANNACRY",
+        "rel": "related_to",
+        "obj": "CONFICKER"
+      },
+      {
+        "sub": "WANNACRY",
+        "rel": "related_to",
+        "obj": "WANACRYPT 2.0"
+      },
+      {
+        "sub": "WANACRYPT ATTACK",
+        "rel": "related_to",
+        "obj": "WANNACRY"
+      },
+      {
+        "sub": "WANACRYPT ATTACK",
+        "rel": "related_to",
+        "obj": "MS17010"
+      },
+      {
+        "sub": "CUSTOM SUPPORT PLATFORMS",
+        "rel": "related_to",
+        "obj": "WANNACRY"
+      },
+      {
+        "sub": "ETERNALBLUE",
+        "rel": "related_to",
+        "obj": "WINDOWS SMB SERVICE"
+      },
+      {
+        "sub": "INTERCEPT X",
+        "rel": "related_to",
+        "obj": "CRYPTOGUARD"
+      },
+      {
+        "sub": "SOPHOS EXP",
+        "rel": "related_to",
+        "obj": "CRYPTOGUARD"
+      }
+    ]
+  }
+}

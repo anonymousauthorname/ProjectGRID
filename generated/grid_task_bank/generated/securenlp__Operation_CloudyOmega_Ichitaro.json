@@ -1,0 +1,595 @@
+{
+  "sample_id": "securenlp__Operation_CloudyOmega_Ichitaro",
+  "sample_index": 171,
+  "source": "securenlp",
+  "file_name": "Operation_CloudyOmega_Ichitaro",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Operation CloudyOmega",
+        "type": "campaign",
+        "alias": [
+          "Ichitaro zero-day and ongoing cyberespionage campaign targeting Japan",
+          "the attack campaign",
+          "CloudyOmega"
+        ]
+      },
+      {
+        "name": "JustSystems",
+        "type": "general-software",
+        "alias": [
+          "the company issuing an update to its Ichitaro product line"
+        ]
+      },
+      {
+        "name": "Ichitaro",
+        "type": "general-software",
+        "alias": [
+          "Japanese office suite software",
+          "the software",
+          "Ichitaro product line"
+        ]
+      },
+      {
+        "name": "Symantec",
+        "type": "security-product",
+        "alias": [
+          "the company that names the attack campaign",
+          "Symantec products"
+        ]
+      },
+      {
+        "name": "Bloodhound.Exploit.557",
+        "type": "hacker-tool",
+        "alias": [
+          "the exploit",
+          "the malicious Ichitaro document file",
+          "the malware"
+        ]
+      },
+      {
+        "name": "Backdoor.Emdivi",
+        "type": "malware",
+        "alias": [
+          "the malicious payload",
+          "the back door",
+          "the malware",
+          "Emdivi",
+          "the Emdivi variant"
+        ]
+      },
+      {
+        "name": "Backdoor.ZXshell",
+        "type": "malware",
+        "alias": [
+          "a payload",
+          "the malware"
+        ]
+      },
+      {
+        "name": "CloudyOmega",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the attack group",
+          "the attackers",
+          "the perpetrators"
+        ]
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the group carrying out the attacks"
+        ]
+      },
+      {
+        "name": "AIR 'copyRawDataTo()' Integer Overflow Vulnerability (CVE-2012-5054)",
+        "type": "vulnerability",
+        "alias": [
+          "CVE-2012-5054",
+          "the zero-day Adobe Flash Player vulnerability"
+        ]
+      },
+      {
+        "name": "CVE-2013-0634",
+        "type": "vulnerability",
+        "alias": [
+          "the Adobe Flash Player CVE-2013-0634 Remote Memory Corruption Vulnerability"
+        ]
+      },
+      {
+        "name": "Microsoft Word",
+        "type": "general-software",
+        "alias": [
+          "the Word file",
+          "the document"
+        ]
+      },
+      {
+        "name": "the exploit",
+        "type": "hacker-tool",
+        "alias": [
+          "the exploit"
+        ]
+      },
+      {
+        "name": "the document",
+        "type": "file",
+        "alias": [
+          "the malicious attachment",
+          "the document"
+        ]
+      },
+      {
+        "name": "document viewer",
+        "type": "process",
+        "alias": [
+          "the document viewer"
+        ]
+      },
+      {
+        "name": "public sector in Japan",
+        "type": "victims/targets",
+        "alias": [
+          "the public sector",
+          "the most targeted sector"
+        ]
+      },
+      {
+        "name": "the campaign",
+        "type": "campaign",
+        "alias": [
+          "Operation CloudyOmega"
+        ]
+      },
+      {
+        "name": "email",
+        "type": "network-traffic",
+        "alias": [
+          "the emails",
+          "the infection vector"
+        ]
+      },
+      {
+        "name": "the blog",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "Symantec Security Response’s Elderwood blog"
+        ]
+      },
+      {
+        "name": "the compromised websites",
+        "type": "infrastructure",
+        "alias": [
+          "the websites",
+          "the C&C servers"
+        ]
+      },
+      {
+        "name": "Apache",
+        "type": "general-software",
+        "alias": [
+          "the web server software"
+        ]
+      },
+      {
+        "name": "Microsoft Internet Information Services (IIS)",
+        "type": "general-software",
+        "alias": [
+          "IIS",
+          "the web server software"
+        ]
+      },
+      {
+        "name": "Hidden Lynx",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "a notorious attack group"
+        ]
+      },
+      {
+        "name": "LadyBoyle",
+        "type": "campaign",
+        "alias": [
+          "the LadyBoyle attack",
+          "the campaign"
+        ]
+      },
+      {
+        "name": "the malware",
+        "type": "malware",
+        "alias": [
+          "Emdivi"
+        ]
+      },
+      {
+        "name": "the Emdivi variant",
+        "type": "malware",
+        "alias": [
+          "Type S",
+          "Type T"
+        ]
+      },
+      {
+        "name": "the campaign",
+        "type": "campaign",
+        "alias": [
+          "CloudyOmega"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "JustSystems",
+        "rel": "issued an update to",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "its Ichitaro product line"
+      },
+      {
+        "sub": "Its Ichitaro product line",
+        "rel": "plugging",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "a zero-day vulnerability"
+      },
+      {
+        "sub": "AIR 'copyRawDataTo()' Integer Overflow Vulnerability (CVE-2012-5054)",
+        "rel": "is being actively exploited in the wild",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "in the wild"
+      },
+      {
+        "sub": "The exploit",
+        "rel": "is sent to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the targeted organizations"
+      },
+      {
+        "sub": "the malicious Ichitaro document file",
+        "rel": "detect as",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Bloodhound.Exploit.557"
+      },
+      {
+        "sub": "Payloads from the exploit",
+        "rel": "may include",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Backdoor.Emdivi"
+      },
+      {
+        "sub": "Payloads from the exploit",
+        "rel": "may include",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Backdoor.Korplug"
+      },
+      {
+        "sub": "Payloads from the exploit",
+        "rel": "may include",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Backdoor.ZXshell"
+      },
+      {
+        "sub": "all payloads",
+        "rel": "aim to steal",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "confidential information"
+      },
+      {
+        "sub": "The content of the emails",
+        "rel": "vary depending on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "political events associated with Japan"
+      },
+      {
+        "sub": "Opening the malicious attachment with Ichitaro",
+        "rel": "will drop",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "the payload"
+      },
+      {
+        "sub": "the malicious attachment",
+        "rel": "is opened with",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Ichitaro"
+      },
+      {
+        "sub": "such exploitation attempts",
+        "rel": "crash",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "Ichitaro"
+      },
+      {
+        "sub": "such exploitation attempts",
+        "rel": "relaunch",
+        "rel_type": [
+          "relaunches"
+        ],
+        "obj": "the document viewer"
+      },
+      {
+        "sub": "in this particular attack",
+        "rel": "are done without",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "crashing Ichitaro"
+      },
+      {
+        "sub": "unpatched vulnerabilities being exploited",
+        "rel": "is nothing new for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Ichitaro"
+      },
+      {
+        "sub": "the attack",
+        "rel": "was in fact part of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "an ongoing cyberespionage campaign"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "named",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "CloudyOmega"
+      },
+      {
+        "sub": "In this campaign",
+        "rel": "are persistently used as",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "a payload"
+      },
+      {
+        "sub": "All attacks",
+        "rel": "arrive on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "target computers"
+      },
+      {
+        "sub": "All attacks",
+        "rel": "arrive as",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "an attachment to email messages"
+      },
+      {
+        "sub": "attachments",
+        "rel": "are in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a simple executable format"
+      },
+      {
+        "sub": "the aforementioned vulnerability in Ichitaro software",
+        "rel": "is only one of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "them"
+      },
+      {
+        "sub": "This group",
+        "rel": "primary goal is to steal",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "confidential information"
+      },
+      {
+        "sub": "This blog",
+        "rel": "provides",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "insights into the history of the attack campaign, infection methods, malware payload, and the group carrying out the attacks"
+      },
+      {
+        "sub": "The first attack of the campaign",
+        "rel": "can be traced back to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "at least 2011"
+      },
+      {
+        "sub": "the public sector in Japan",
+        "rel": "is the most targeted sector",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "hit by Operation CloudyOmega"
+      },
+      {
+        "sub": "Email",
+        "rel": "is the predominant infection vector",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "used in this campaign"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "sent",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "a Microsoft Word file"
+      },
+      {
+        "sub": "Microsoft Word file",
+        "rel": "containing",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "a maliciously crafted SWF file"
+      },
+      {
+        "sub": "maliciously crafted SWF file",
+        "rel": "exploited",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "the vulnerability"
+      },
+      {
+        "sub": "the file",
+        "rel": "installed",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Backdoor.Emdivi"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "exploited",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "AIR 'copyRawDataTo()' Integer Overflow Vulnerability (CVE-2012-5054)"
+      },
+      {
+        "sub": "the Flash file used in the Emdivi attack in 2012",
+        "rel": "look very similar",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "to the one used in the LadyBoyle attack in 2013"
+      },
+      {
+        "sub": "Both attacks",
+        "rel": "use",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a .doc file containing",
+        "negation": [
+          "the Adobe Flash zero-day exploit"
+        ]
+      },
+      {
+        "sub": "the parent organization",
+        "rel": "supplied",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "the zero-day exploit"
+      },
+      {
+        "sub": "each group",
+        "rel": "launched",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a separate attack using their chosen malware"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "has been in operation since",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "2011"
+      },
+      {
+        "sub": "Operation CloudyOmega",
+        "rel": "was launched by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "an attack group"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "has communication channels with",
+        "rel_type": [
+          "cooperates-with"
+        ],
+        "obj": "Hidden Lynx"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "has communication channels with",
+        "rel_type": [
+          "cooperates-with"
+        ],
+        "obj": "the group responsible for LadyBoyle"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "offers",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "two IPS signatures that detect and block network communication"
+      },
+      {
+        "sub": "customers using Ichitaro products",
+        "rel": "apply any patches",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "as soon as possible"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "offers",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "the following protection against attacks associated with Operation CloudyOmega"
+      }
+    ]
+  }
+}

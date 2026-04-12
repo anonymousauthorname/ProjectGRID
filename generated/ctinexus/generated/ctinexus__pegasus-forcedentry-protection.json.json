@@ -1,0 +1,144 @@
+{
+  "sample_id": "ctinexus__pegasus-forcedentry-protection.json",
+  "sample_index": 83,
+  "source": "ctinexus",
+  "file_name": "pegasus-forcedentry-protection.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "iOS 14.8 update",
+        "type": "Unknown"
+      },
+      {
+        "name": "a zero-day, zero-click exploit",
+        "type": "Unknown"
+      },
+      {
+        "name": "mobile iOS device",
+        "type": "Unknown"
+      },
+      {
+        "name": "FORCEDENTRY",
+        "type": "Unknown"
+      },
+      {
+        "name": "Apple's iMessage",
+        "type": "Unknown"
+      },
+      {
+        "name": "NSO Group's Pegasus spyware",
+        "type": "Unknown"
+      },
+      {
+        "name": "journalists",
+        "type": "Unknown"
+      },
+      {
+        "name": "activists",
+        "type": "Unknown"
+      },
+      {
+        "name": "a zero-click attack",
+        "type": "Unknown"
+      },
+      {
+        "name": "February 2021",
+        "type": "Unknown"
+      },
+      {
+        "name": "attacker",
+        "type": "Unknown"
+      },
+      {
+        "name": "Apple ID",
+        "type": "Unknown"
+      },
+      {
+        "name": "The Citizen Lab",
+        "type": "Unknown"
+      },
+      {
+        "name": "FORCEDENTRY (CVE-2021-30860) was used to push NSO Group's Pegasus spyware",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "iOS 14.8 update",
+        "rel": "fixes",
+        "obj": "a zero-day, zero-click exploit"
+      },
+      {
+        "sub": "a zero-day, zero-click exploit",
+        "rel": "affects",
+        "obj": "mobile iOS device"
+      },
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "resided in",
+        "obj": "Apple's iMessage"
+      },
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "was used to push",
+        "obj": "NSO Group's Pegasus spyware"
+      },
+      {
+        "sub": "NSO Group's Pegasus spyware",
+        "rel": "targeted",
+        "obj": "journalists"
+      },
+      {
+        "sub": "NSO Group's Pegasus spyware",
+        "rel": "targeted",
+        "obj": "activists"
+      },
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "can be used in",
+        "obj": "a zero-click attack"
+      },
+      {
+        "sub": "FORCEDENTRY",
+        "rel": "was used since",
+        "obj": "February 2021"
+      },
+      {
+        "sub": "attacker",
+        "rel": "only needs",
+        "obj": "Apple ID"
+      },
+      {
+        "sub": "attacker",
+        "rel": "can silently compromise",
+        "obj": "mobile iOS device"
+      },
+      {
+        "sub": "The Citizen Lab",
+        "rel": "reported",
+        "obj": "FORCEDENTRY (CVE-2021-30860) was used to push NSO Group's Pegasus spyware"
+      },
+      {
+        "sub": "attacker",
+        "rel": "exploits",
+        "obj": "FORCEDENTRY"
+      }
+    ]
+  }
+}

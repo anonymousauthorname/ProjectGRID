@@ -1,0 +1,304 @@
+{
+  "sample_id": "ctinexus__pensive-ursa-uses-upgraded-kazuar-backdoor_1.json",
+  "sample_index": 69,
+  "source": "ctinexus",
+  "file_name": "pensive-ursa-uses-upgraded-kazuar-backdoor_1.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Pensive Ursa",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Turla",
+          "Uroburos",
+          "the threat group behind this variant"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Kazuar",
+        "type": "malware",
+        "alias": [
+          "another name for the enormous and dangerous cassowary bird",
+          "the backdoor",
+          "this version of Kazuar",
+          "Kazuar samples",
+          "an advanced and stealthy .NET backdoor",
+          "the second stage payload"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "cassowary bird",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Unit 42 researchers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Russian Federal Security Service (FSB)",
+        "type": "identity",
+        "alias": [
+          "Russian Federal Security Service (FSB)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Ukrainian CERT",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Ukrainian defense sector",
+        "type": "victim",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Signal messages",
+        "type": "victim",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "source control and cloud platforms data",
+        "type": "victim",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "European government and military sectors",
+        "type": "victim",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Sunburst backdoor",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "2017",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "July 2023",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "second stage payload",
+        "type": "course-of-action",
+        "alias": [
+          "second stage payload"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "code resemblance",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "late 2020",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "constant development",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Unit 42 researchers",
+        "rel": "came across",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Kazuar"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "is another name for",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "cassowary bird"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "is an advanced and stealthy .NET backdoor",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "advanced and stealthy .NET backdoor"
+      },
+      {
+        "sub": "Pensive Ursa",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Kazuar",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Pensive Ursa",
+        "rel": "operating since",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "2004",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Pensive Ursa",
+        "rel": "linked to",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Russian Federal Security Service (FSB)"
+      },
+      {
+        "sub": "Ukrainian CERT",
+        "rel": "reported",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Kazuar"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Ukrainian defense sector"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "going after",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Signal messages"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "going after",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "source control and cloud platforms data"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "European government and military sectors",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Sunburst backdoor",
+        "rel": "tied to",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Kazuar"
+      },
+      {
+        "sub": "Unit 42 researchers",
+        "rel": "discovered",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Kazuar"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "was under constant development",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "constant development",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "disappeared after",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "late 2020",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "Pensive Ursa",
+        "rel": "behind",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "Kazuar"
+      },
+      {
+        "sub": "Kazuar",
+        "rel": "used as",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "second stage payload"
+      },
+      {
+        "sub": "code resemblance",
+        "rel": "demonstrates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "complexity level"
+      }
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "sample_id": "casie__410.json",
+  "sample_index": 2,
+  "source": "casie",
+  "file_name": "410.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SAMSUNG GALAXY",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CVE-2016-7988",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "CVE-2016-7989",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "CONTEXTIS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "RANSOM NOTE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "MALICIOUS CONFIGURATION MESSAGE",
+        "type": "TOOL"
+      },
+      {
+        "name": "S4",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "S4 MINI",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "S5",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "NOTE 4",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "S6",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "S7",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ANDROID TELEPHONY FRAMEWORK",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SAMSUNG-SPECIFIC CARRIER MESSAGE APP",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "HELP NET SECURITY",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "related_to",
+        "obj": "SAMSUNG GALAXY"
+      },
+      {
+        "sub": "CVE-2016-7989",
+        "rel": "related_to",
+        "obj": "SAMSUNG GALAXY"
+      },
+      {
+        "sub": "CONTEXTIS",
+        "rel": "related_to",
+        "obj": "CVE-2016-7988"
+      },
+      {
+        "sub": "CONTEXTIS",
+        "rel": "related_to",
+        "obj": "CVE-2016-7989"
+      },
+      {
+        "sub": "CONTEXTIS",
+        "rel": "related_to",
+        "obj": "SAMSUNG GALAXY"
+      },
+      {
+        "sub": "RANSOM NOTE",
+        "rel": "related_to",
+        "obj": "MALICIOUS CONFIGURATION MESSAGE"
+      },
+      {
+        "sub": "MALICIOUS CONFIGURATION MESSAGE",
+        "rel": "related_to",
+        "obj": "SAMSUNG GALAXY"
+      },
+      {
+        "sub": "S4",
+        "rel": "related_to",
+        "obj": "CVE-2016-7988"
+      },
+      {
+        "sub": "S4 MINI",
+        "rel": "related_to",
+        "obj": "CVE-2016-7988"
+      },
+      {
+        "sub": "S5",
+        "rel": "related_to",
+        "obj": "CVE-2016-7988"
+      },
+      {
+        "sub": "NOTE 4",
+        "rel": "related_to",
+        "obj": "CVE-2016-7988"
+      },
+      {
+        "sub": "S4",
+        "rel": "related_to",
+        "obj": "CVE-2016-7989"
+      },
+      {
+        "sub": "S4 MINI",
+        "rel": "related_to",
+        "obj": "CVE-2016-7989"
+      },
+      {
+        "sub": "S5",
+        "rel": "related_to",
+        "obj": "CVE-2016-7989"
+      },
+      {
+        "sub": "NOTE 4",
+        "rel": "related_to",
+        "obj": "CVE-2016-7989"
+      },
+      {
+        "sub": "ANDROID TELEPHONY FRAMEWORK",
+        "rel": "related_to",
+        "obj": "CVE-2016-7988"
+      },
+      {
+        "sub": "ANDROID TELEPHONY FRAMEWORK",
+        "rel": "related_to",
+        "obj": "CVE-2016-7989"
+      },
+      {
+        "sub": "SAMSUNG-SPECIFIC CARRIER MESSAGE APP",
+        "rel": "related_to",
+        "obj": "CVE-2016-7988"
+      },
+      {
+        "sub": "SAMSUNG-SPECIFIC CARRIER MESSAGE APP",
+        "rel": "related_to",
+        "obj": "CVE-2016-7989"
+      },
+      {
+        "sub": "HELP NET SECURITY",
+        "rel": "related_to",
+        "obj": "CONTEXTIS"
+      }
+    ]
+  }
+}

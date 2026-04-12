@@ -1,0 +1,336 @@
+{
+  "sample_id": "securenlp__The_Uroburos_case",
+  "sample_index": 183,
+  "source": "securenlp",
+  "file_name": "The_Uroburos_case",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Uroburos",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Agent.BTZ",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "ComRAT",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Snake",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Turla",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "COMpfun",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "credprov.tlb",
+        "type": "Indicator"
+      },
+      {
+        "name": "shdocvw.tlp",
+        "type": "Indicator"
+      },
+      {
+        "name": "oleaut32.dll",
+        "type": "Indicator"
+      },
+      {
+        "name": "oleaut32.tlb",
+        "type": "Indicator"
+      },
+      {
+        "name": "libadcodec.dll",
+        "type": "Indicator"
+      },
+      {
+        "name": "libadcodec.tlb",
+        "type": "Indicator"
+      },
+      {
+        "name": "mskfp32.ocx",
+        "type": "Indicator"
+      },
+      {
+        "name": "msvcrtd.tlb",
+        "type": "Indicator"
+      },
+      {
+        "name": "winview.ocx",
+        "type": "Indicator"
+      },
+      {
+        "name": "weather-online.hopto.org",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "webonline.mefound.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "sportacademy.my03.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "easport-news.publicvm.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "new-book.linkpc.net",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "1dM3uu4j7Fw4sjnbcwlDqet4F7JyuUi4m5Imnxl1pzxI6as80cbLnmz54cs5Ldn4ri3do5L6gs923HL34x2f5cvd0fk6c1a0s",
+        "type": "Indicator"
+      },
+      {
+        "name": "51e7e58a1e654b6e586fe36e10c67a73",
+        "type": "Indicator"
+      },
+      {
+        "name": "e6ce1f962a47479a86ff2e67129f4ecc",
+        "type": "Indicator"
+      },
+      {
+        "name": "ec7e3cfaeaac0401316d66e964be684e",
+        "type": "Indicator"
+      },
+      {
+        "name": "0ae421691579ff6b27f65f49e79e88f6",
+        "type": "Indicator"
+      },
+      {
+        "name": "255118ac14a9e66124f7110acd16f2cd",
+        "type": "Indicator"
+      },
+      {
+        "name": "b407b6e5b4046da226d6e189a67f62ca",
+        "type": "Indicator"
+      },
+      {
+        "name": "8ebf7f768d7214f99905c99b6f8242dc",
+        "type": "Indicator"
+      },
+      {
+        "name": "9d481769de63789d571805009cbf709a",
+        "type": "Indicator"
+      },
+      {
+        "name": "83a48760e92bf30961b4a943d3095b0a",
+        "type": "Indicator"
+      },
+      {
+        "name": "ea23d67e41d1f0a7f7e7a8b59e7cb60f",
+        "type": "Indicator"
+      },
+      {
+        "name": "COM Object hijacking",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "Tool"
+      },
+      {
+        "name": "named pipe",
+        "type": "Tool"
+      },
+      {
+        "name": "Windows dynamic libraries",
+        "type": "Software"
+      },
+      {
+        "name": "G DATA SecurityLabs",
+        "type": "Organization"
+      },
+      {
+        "name": "BAE System",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "ComRAT",
+        "rel": "shares attack pattern",
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "shares attack pattern",
+        "obj": "Agent.BTZ"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "uses persistence mechanism",
+        "obj": "COMpfun"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "has payload",
+        "obj": "credprov.tlb"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "loads into all processes",
+        "obj": "shdocvw.tlp"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "uses tool",
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "uses tool",
+        "obj": "named pipe"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "communicates with",
+        "obj": "weather-online.hopto.org"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "communicates with",
+        "obj": "webonline.mefound.com"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "communicates with",
+        "obj": "sportacademy.my03.com"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "communicates with",
+        "obj": "easport-news.publicvm.com"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "communicates with",
+        "obj": "new-book.linkpc.net"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "uses xor key",
+        "obj": "1dM3uu4j7Fw4sjnbcwlDqet4F7JyuUi4m5Imnxl1pzxI6as80cbLnmz54cs5Ldn4ri3do5L6gs923HL34x2f5cvd0fk6c1a0s"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "creates log file",
+        "obj": "winview.ocx"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "creates log file",
+        "obj": "mskfp32.ocx"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "creates log file",
+        "obj": "msvcrtd.tlb"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "analyzed by",
+        "obj": "G DATA SecurityLabs"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "mentioned in analysis",
+        "obj": "BAE System"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "has same xor key as",
+        "obj": "Uroburos"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "has same xor key as",
+        "obj": "Agent.BTZ"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "installed in",
+        "obj": "shdocvw.tlp"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "installed in",
+        "obj": "credprov.tlb"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "REMOVES",
+        "obj": "oleaut32.dll"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "REMOVES",
+        "obj": "oleaut32.tlb"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "REMOVES",
+        "obj": "libadcodec.dll"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "REMOVES",
+        "obj": "libadcodec.tlb"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "USES",
+        "obj": "Windows dynamic libraries"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "USES",
+        "obj": "COM Object hijacking"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "has version",
+        "obj": "v3.25"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "has version",
+        "obj": "v3.26"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "has spoofed compilation date",
+        "obj": "v3.26"
+      },
+      {
+        "sub": "ComRAT",
+        "rel": "has compilation date",
+        "obj": "v3.25"
+      }
+    ]
+  }
+}

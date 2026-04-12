@@ -1,0 +1,379 @@
+{
+  "sample_id": "ctinexus__attackers-target-max-severity-apache-activemq-bug-to-drop-ransomware.json",
+  "sample_index": 51,
+  "source": "ctinexus",
+  "file_name": "attackers-target-max-severity-apache-activemq-bug-to-drop-ransomware.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Apache ActiveMQ Servers",
+        "type": "general-software",
+        "alias": [
+          "Internet-accessible Apache ActiveMQ Servers"
+        ]
+      },
+      {
+        "name": "critical remote code execution vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "vulnerability",
+          "the bug"
+        ]
+      },
+      {
+        "name": "CVE-2023-46604",
+        "type": "indicator",
+        "alias": [
+          "the vulnerability"
+        ]
+      },
+      {
+        "name": "Apache Software Foundation (ASF)",
+        "type": "organization",
+        "alias": [
+          "ASF"
+        ]
+      },
+      {
+        "name": "Rapid7",
+        "type": "organization",
+        "alias": [
+          "researchers at Rapid7"
+        ]
+      },
+      {
+        "name": "ransomware",
+        "type": "malware",
+        "alias": [
+          "ransomware binaries"
+        ]
+      },
+      {
+        "name": "HelloKitty ransomware family",
+        "type": "malware",
+        "alias": [
+          "HelloKitty ransomware",
+          "the threat actor",
+          "the adversary"
+        ]
+      },
+      {
+        "name": "double-extortion attacks",
+        "type": "attack-pattern",
+        "alias": [
+          "double-extortion"
+        ]
+      },
+      {
+        "name": "threat actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the attacker",
+          "the adversary"
+        ]
+      },
+      {
+        "name": "two customer locations",
+        "type": "location",
+        "alias": [
+          "customer locations"
+        ]
+      },
+      {
+        "name": "target systems",
+        "type": "process",
+        "alias": [
+          "affected systems"
+        ]
+      },
+      {
+        "name": "ransomware binaries",
+        "type": "file",
+        "alias": [
+          "binaries"
+        ]
+      },
+      {
+        "name": "ransom note",
+        "type": "document",
+        "alias": [
+          "the ransom note"
+        ]
+      },
+      {
+        "name": "outdated versions of Apache ActiveMQ",
+        "type": "general-software",
+        "alias": [
+          "outdated versions"
+        ]
+      },
+      {
+        "name": "proof-of-concept exploit code",
+        "type": "hacker-tool",
+        "alias": [
+          "PoC exploit code"
+        ]
+      },
+      {
+        "name": "Oct. 27",
+        "type": "date",
+        "alias": [
+          "October 27"
+        ]
+      },
+      {
+        "name": "2020",
+        "type": "date",
+        "alias": [
+          "at least 2020"
+        ]
+      },
+      {
+        "name": "ActiveMQ message broker",
+        "type": "process",
+        "alias": [
+          "message broker"
+        ]
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the adversary"
+        ]
+      },
+      {
+        "name": "more than a half dozen attempts",
+        "type": "quantity",
+        "alias": [
+          "half dozen attempts"
+        ]
+      },
+      {
+        "name": "the researchers",
+        "type": "organization",
+        "alias": [
+          "researchers at Rapid7"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "More than 3,000 Internet-accessible Apache ActiveMQ Servers",
+        "rel": "are exposed to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a critical remote code execution vulnerability"
+      },
+      {
+        "sub": "critical remote code execution vulnerability",
+        "rel": "is tracked as",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "CVE-2023-46604"
+      },
+      {
+        "sub": "Apache Software Foundation (ASF)",
+        "rel": "disclosed",
+        "rel_type": [
+          "disclosed"
+        ],
+        "obj": "the vulnerability"
+      },
+      {
+        "sub": "the bug",
+        "rel": "allows",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "a remote attacker"
+      },
+      {
+        "sub": "a remote attacker",
+        "rel": "with access to",
+        "rel_type": [
+          "has-access-to"
+        ],
+        "obj": "an ActiveMQ message broker"
+      },
+      {
+        "sub": "a remote attacker",
+        "rel": "execute",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "arbitrary commands on affected systems"
+      },
+      {
+        "sub": "Proof-of-concept exploit code",
+        "rel": "and full details of",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "the vulnerability"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "have",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "the means"
+      },
+      {
+        "sub": "threat actors",
+        "rel": "have",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "the information to launch attacks against"
+      },
+      {
+        "sub": "Researchers at Rapid7",
+        "rel": "reported observing",
+        "rel_type": [
+          "observes"
+        ],
+        "obj": "exploit activity targeting the flaw"
+      },
+      {
+        "sub": "exploit activity",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the flaw"
+      },
+      {
+        "sub": "Researchers at Rapid7",
+        "rel": "reported observing",
+        "rel_type": [
+          "observes"
+        ],
+        "obj": "activity at two customer locations"
+      },
+      {
+        "sub": "the adversary",
+        "rel": "attempted to deploy",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "ransomware binaries"
+      },
+      {
+        "sub": "ransomware binaries",
+        "rel": "on",
+        "rel_type": [
+          "drops-on"
+        ],
+        "obj": "target systems"
+      },
+      {
+        "sub": "the adversary",
+        "rel": "effort to ransom",
+        "rel_type": [
+          "efforts-to-ransom"
+        ],
+        "obj": "victim organizations"
+      },
+      {
+        "sub": "targeted organizations",
+        "rel": "were running",
+        "rel_type": [
+          "runs"
+        ],
+        "obj": "outdated versions of Apache ActiveMQ"
+      },
+      {
+        "sub": "the researchers",
+        "rel": "attributed",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "malicious activity"
+      },
+      {
+        "sub": "malicious activity",
+        "rel": "to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "HelloKitty ransomware family"
+      },
+      {
+        "sub": "HelloKitty ransomware family",
+        "rel": "has been percolating in the wild since at least",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "2020"
+      },
+      {
+        "sub": "its operators",
+        "rel": "favor",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "double-extortion attacks"
+      },
+      {
+        "sub": "double-extortion attacks",
+        "rel": "in which they have not just encrypted the data but also stolen it",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "stolen it"
+      },
+      {
+        "sub": "HelloKitty ransomware attacks leveraging the ActiveMQ flaw",
+        "rel": "were",
+        "rel_type": [
+          "describes"
+        ],
+        "obj": "somewhat rudimentary"
+      },
+      {
+        "sub": "the threat actor",
+        "rel": "made",
+        "rel_type": [
+          "made"
+        ],
+        "obj": "more than a half dozen attempts"
+      },
+      {
+        "sub": "the researchers",
+        "rel": "labeled",
+        "rel_type": [
+          "labels"
+        ],
+        "obj": "the threat actor as 'clumsy'"
+      },
+      {
+        "sub": "two customer locations",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the flaw"
+      }
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_33.json",
+  "sample_index": 223,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_33.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Kido",
+        "type": "Malware"
+      },
+      {
+        "name": "Conficker",
+        "type": "Malware"
+      },
+      {
+        "name": "Downadup",
+        "type": "Malware"
+      },
+      {
+        "name": "TrojanDownloader.Win32.Kido",
+        "type": "Malware"
+      },
+      {
+        "name": "Conficker.c",
+        "type": "Malware"
+      },
+      {
+        "name": "NetWorm.Win32.Kido.js",
+        "type": "Malware"
+      },
+      {
+        "name": "FraudTool.Win32.SpywareProtect2009.s",
+        "type": "Malware"
+      },
+      {
+        "name": "SpywareProtect2009",
+        "type": "Malware"
+      },
+      {
+        "name": "EmailWorm.Win32.Iksmas.atz",
+        "type": "Malware"
+      },
+      {
+        "name": "Waledac",
+        "type": "Malware"
+      },
+      {
+        "name": "spyprotect2009.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "spywrprotect2009.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "spywareprotector2009.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "1313.elaninet.com.78.26.179.107",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Conficker Working Group",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "NetWorm.Win32.Kido.js",
+        "rel": "DOWNLOADS",
+        "obj": "FraudTool.Win32.SpywareProtect2009.s"
+      },
+      {
+        "sub": "NetWorm.Win32.Kido.js",
+        "rel": "DOWNLOADS",
+        "obj": "EmailWorm.Win32.Iksmas.atz"
+      },
+      {
+        "sub": "NetWorm.Win32.Kido.js",
+        "rel": "is also known as",
+        "obj": "Conficker"
+      },
+      {
+        "sub": "NetWorm.Win32.Kido.js",
+        "rel": "is a",
+        "obj": "Kido"
+      },
+      {
+        "sub": "TrojanDownloader.Win32.Kido",
+        "rel": "is also known as",
+        "obj": "Conficker.c"
+      },
+      {
+        "sub": "SpywareProtect2009",
+        "rel": "available on",
+        "obj": "spyprotect2009.com"
+      },
+      {
+        "sub": "SpywareProtect2009",
+        "rel": "available on",
+        "obj": "spywrprotect2009.com"
+      },
+      {
+        "sub": "SpywareProtect2009",
+        "rel": "available on",
+        "obj": "spywareprotector2009.com"
+      },
+      {
+        "sub": "EmailWorm.Win32.Iksmas.atz",
+        "rel": "is also known as",
+        "obj": "Waledac"
+      },
+      {
+        "sub": "Kido",
+        "rel": "may attack",
+        "obj": "Conficker Working Group"
+      },
+      {
+        "sub": "1313.elaninet.com.78.26.179.107",
+        "rel": "downloads from",
+        "obj": "FraudTool.Win32.SpywareProtect2009.s"
+      }
+    ]
+  }
+}

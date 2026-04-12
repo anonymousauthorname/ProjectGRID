@@ -1,0 +1,502 @@
+{
+  "sample_id": "securenlp__Targeting_Syrian_ISIS_Critics",
+  "sample_index": 166,
+  "source": "securenlp",
+  "file_name": "Targeting_Syrian_ISIS_Critics",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Organization"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Email"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Map"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Preliminary Report"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Request",
+        "obj": "Facebook Account"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Victim Identity Information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Build",
+        "obj": "Social Engineering Context"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Has geolocation",
+        "obj": "Raqqah"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Belong to",
+        "obj": "Syrian Citizen Media Group"
+      },
+      {
+        "sub": "Email",
+        "rel": "Has value",
+        "obj": "Map"
+      },
+      {
+        "sub": "Email",
+        "rel": "Has value",
+        "obj": "Preliminary Report"
+      },
+      {
+        "sub": "Email",
+        "rel": "Has URL",
+        "obj": "Facebook Account"
+      },
+      {
+        "sub": "Email",
+        "rel": "Has hostname",
+        "obj": "Facebook Account"
+      },
+      {
+        "sub": "Initial Access: Spearphishing campaign",
+        "rel": "Use",
+        "obj": "Phishing email"
+      },
+      {
+        "sub": "Phishing email",
+        "rel": "Contain",
+        "obj": "'slideshow.zip'"
+      },
+      {
+        "sub": "'slideshow.zip'",
+        "rel": "Has filename",
+        "obj": "slideshow.zip"
+      },
+      {
+        "sub": "'slideshow.zip'",
+        "rel": "Execute",
+        "obj": "Self-extracting archive"
+      },
+      {
+        "sub": "Self-extracting archive",
+        "rel": "Deliver",
+        "obj": "Malicious payloads"
+      },
+      {
+        "sub": "Malicious payloads",
+        "rel": "Execute",
+        "obj": "On victim's system"
+      },
+      {
+        "sub": "Spearphishing campaign",
+        "rel": "Use",
+        "obj": "Social engineering"
+      },
+      {
+        "sub": "Social engineering",
+        "rel": "Trick",
+        "obj": "Victim"
+      },
+      {
+        "sub": "Victim",
+        "rel": "Open",
+        "obj": "'slideshow.zip'"
+      },
+      {
+        "sub": "'slideshow.zip'",
+        "rel": "Operate",
+        "obj": "On victim's system"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Construct",
+        "obj": "AdbrRader.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Construct",
+        "obj": "AdobeIns.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Construct",
+        "obj": "GoogleUpate.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Construct",
+        "obj": "GooglUpd.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Construct",
+        "obj": "nvidrv.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Construct",
+        "obj": "nvisdvr.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Construct",
+        "obj": "rundl132.exe"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Use",
+        "obj": "System"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Operate",
+        "obj": "Registry"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Write",
+        "obj": "Registry"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Modify",
+        "obj": "Process list"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Detect",
+        "obj": "System information"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Operate",
+        "obj": "Legitimate Windows processes"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Locate at",
+        "obj": "System paths"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Has value",
+        "obj": "System information"
+      },
+      {
+        "sub": "AdobeR1.exe",
+        "rel": "Has value",
+        "obj": "Process list"
+      },
+      {
+        "sub": "Self-extracting archive",
+        "rel": "Use",
+        "obj": "AdobeR1.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "UpdAdbreader"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Windows startup"
+      },
+      {
+        "sub": "nvidrv",
+        "rel": "Construct",
+        "obj": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+      },
+      {
+        "sub": "nvidrv",
+        "rel": "Modify",
+        "obj": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Lack of obfuscation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Standard Windows system calls"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Clear, recognizable file names"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Without hiding artifacts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "System processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "By endpoint protection tools"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "v2cgplst.tmp"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "vg2sxoysinf.tmp"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "vgosysaext.tmp"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "System configuration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "Running processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "External IP address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "System information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Victim’s environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Registry keys"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "v2cgplst.tmp"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "vg2sxoysinf.tmp"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "vgosysaext.tmp"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Local temporary files"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Data points for network mapping"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Data points to identify potential targets"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "External IP address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Process list"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "System configuration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not collect",
+        "obj": "Browser data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not collect",
+        "obj": "Audio data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not collect",
+        "obj": "Video data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not collect",
+        "obj": "Screenshots"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not collect",
+        "obj": "Keyboard input"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not collect",
+        "obj": "Email content"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not operate",
+        "obj": "User activities"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Does not capture",
+        "obj": "Sensitive information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Email attachment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Inbox.com account"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Hardcoded SMTP credentials"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Communication channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Low-visibility, decentralized communication channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Avoid",
+        "obj": "Persistent command-and-control server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "AdobeIns.exe"
+      },
+      {
+        "sub": "AdobeIns.exe",
+        "rel": "Construct",
+        "obj": "mxtd"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "mxtd"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "inbox.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "\"mailto:inbox.com\""
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "encrypted file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "system restart"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "single encrypted file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "e-mail"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has filename",
+        "obj": "mxtd"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has platform",
+        "obj": "system"
+      }
+    ]
+  }
+}

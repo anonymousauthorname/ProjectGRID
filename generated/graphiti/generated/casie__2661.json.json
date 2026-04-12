@@ -1,0 +1,197 @@
+{
+  "sample_id": "casie__2661.json",
+  "sample_index": 29,
+  "source": "casie",
+  "file_name": "2661.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "HospitalGown",
+        "type": "Campaign"
+      },
+      {
+        "name": "Elasticsearch",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Redis",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "MongoDB",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "MySQL",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Pulse Workspace",
+        "type": "Indicator"
+      },
+      {
+        "name": "Appthority",
+        "type": "Organization"
+      },
+      {
+        "name": "Seth Hardy",
+        "type": "Person"
+      },
+      {
+        "name": "ATT&CK",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "mobile apps",
+        "type": "Software"
+      },
+      {
+        "name": "backend servers",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "cloud based servers",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "data exposure",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "PII",
+        "type": "Indicator"
+      },
+      {
+        "name": "HTTPS",
+        "type": "Indicator"
+      },
+      {
+        "name": "vulnerable servers",
+        "type": "Infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "HospitalGown",
+        "rel": "causes data exposure in",
+        "obj": "mobile apps"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "EXPLOITS",
+        "obj": "backend servers"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "EXPLOITS",
+        "obj": "Elasticsearch"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "EXPLOITS",
+        "obj": "Redis"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "EXPLOITS",
+        "obj": "MongoDB"
+      },
+      {
+        "sub": "HospitalGown",
+        "rel": "EXPLOITS",
+        "obj": "MySQL"
+      },
+      {
+        "sub": "Appthority",
+        "rel": "REPORTED",
+        "obj": "HospitalGown"
+      },
+      {
+        "sub": "Appthority",
+        "rel": "NOTIFIED",
+        "obj": "Pulse Workspace"
+      },
+      {
+        "sub": "Pulse Workspace",
+        "rel": "has backend",
+        "obj": "Elasticsearch"
+      },
+      {
+        "sub": "Pulse Workspace",
+        "rel": "LEAKS",
+        "obj": "PII"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "fails to enforce",
+        "obj": "HTTPS"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "leads to",
+        "obj": "data exposure"
+      },
+      {
+        "sub": "Seth Hardy",
+        "rel": "DESCRIBED",
+        "obj": "HospitalGown"
+      },
+      {
+        "sub": "Seth Hardy",
+        "rel": "works for",
+        "obj": "Appthority"
+      },
+      {
+        "sub": "mobile apps",
+        "rel": "communicate with",
+        "obj": "backend servers"
+      },
+      {
+        "sub": "backend servers",
+        "rel": "ARE",
+        "obj": "cloud based servers"
+      },
+      {
+        "sub": "cloud based servers",
+        "rel": "EXPOSE",
+        "obj": "PII"
+      },
+      {
+        "sub": "mobile apps",
+        "rel": "HANDLE",
+        "obj": "PII"
+      },
+      {
+        "sub": "vulnerable servers",
+        "rel": "CONTAIN",
+        "obj": "PII"
+      },
+      {
+        "sub": "Elasticsearch",
+        "rel": "HAS",
+        "obj": "security plugins"
+      },
+      {
+        "sub": "Appthority",
+        "rel": "RECOMMENDS",
+        "obj": "security best practices"
+      }
+    ]
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "sample_id": "ctinexus__volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques.json",
+  "sample_index": 75,
+  "source": "ctinexus",
+  "file_name": "volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Volt Typhoon",
+        "type": "Entity"
+      },
+      {
+        "name": "Fortinet FortiGuard devices",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Entity"
+      },
+      {
+        "name": "Active Directory",
+        "type": "Entity"
+      },
+      {
+        "name": "SOHO network edge devices",
+        "type": "Entity"
+      },
+      {
+        "name": "routers",
+        "type": "Entity"
+      },
+      {
+        "name": "ASUS",
+        "type": "Entity"
+      },
+      {
+        "name": "Cisco",
+        "type": "Entity"
+      },
+      {
+        "name": "D-Link",
+        "type": "Entity"
+      },
+      {
+        "name": "NETGEAR",
+        "type": "Entity"
+      },
+      {
+        "name": "Zyxel",
+        "type": "Entity"
+      },
+      {
+        "name": "HTTP management interfaces",
+        "type": "Entity"
+      },
+      {
+        "name": "SSH management interfaces",
+        "type": "Entity"
+      },
+      {
+        "name": "public internet",
+        "type": "Entity"
+      },
+      {
+        "name": "network traffic",
+        "type": "Entity"
+      },
+      {
+        "name": "attack surface",
+        "type": "Entity"
+      },
+      {
+        "name": "stealth operations",
+        "type": "Entity"
+      },
+      {
+        "name": "infrastructure costs",
+        "type": "Entity"
+      },
+      {
+        "name": "device privileges",
+        "type": "Entity"
+      },
+      {
+        "name": "credential extraction",
+        "type": "Entity"
+      },
+      {
+        "name": "network authentication",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actor",
+        "type": "Entity"
+      },
+      {
+        "name": "exposed management interfaces",
+        "type": "Entity"
+      },
+      {
+        "name": "network access",
+        "type": "Entity"
+      },
+      {
+        "name": "internet-facing devices",
+        "type": "Entity"
+      },
+      {
+        "name": "proxying network traffic",
+        "type": "Entity"
+      },
+      {
+        "name": "attack methods",
+        "type": "Entity"
+      },
+      {
+        "name": "network edge device ownership",
+        "type": "Entity"
+      },
+      {
+        "name": "security best practices",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Volt Typhoon",
+        "rel": "achieves initial access to",
+        "obj": "Fortinet FortiGuard devices"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "investigates",
+        "obj": "Volt Typhoon"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "gains access to Active Directory",
+        "obj": "Active Directory"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "operates via compromised devices",
+        "obj": "SOHO network edge devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "uses compromised routers",
+        "obj": "routers"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "is linked to device exposure",
+        "obj": "ASUS"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "is linked to device exposure",
+        "obj": "Cisco"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "is linked to device exposure",
+        "obj": "D-Link"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "is linked to device exposure",
+        "obj": "NETGEAR"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "is linked to device exposure",
+        "obj": "Zyxel"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "uses internet-facing interfaces",
+        "obj": "HTTP management interfaces"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "uses internet-facing interfaces",
+        "obj": "SSH management interfaces"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "proxies network traffic through",
+        "obj": "public internet"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "has access to network traffic",
+        "obj": "network traffic"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "reduces attack surface",
+        "obj": "attack surface"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "enhances stealth of",
+        "obj": "stealth operations"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "lowers infrastructure costs",
+        "obj": "infrastructure costs"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "leverages",
+        "obj": "device privileges"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "extracts credentials from",
+        "obj": "credential extraction"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "uses credentials for authentication",
+        "obj": "network authentication"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "is a threat actor",
+        "obj": "threat actor"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "is linked to device exposure",
+        "obj": "exposed management interfaces"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "targets network access",
+        "obj": "network access"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "targets internet-facing devices",
+        "obj": "internet-facing devices"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "proxies network traffic through",
+        "obj": "proxying network traffic"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "has attack methods involving privilege escalation",
+        "obj": "attack methods"
+      },
+      {
+        "sub": "Volt Typhoon",
+        "rel": "targets network edge device ownership",
+        "obj": "network edge device ownership"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has confirmed",
+        "obj": "exposed management interfaces"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "advises on security best practices",
+        "obj": "security best practices"
+      }
+    ]
+  }
+}

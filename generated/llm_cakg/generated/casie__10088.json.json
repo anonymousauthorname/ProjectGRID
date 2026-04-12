@@ -1,0 +1,327 @@
+{
+  "sample_id": "casie__10088.json",
+  "sample_index": 35,
+  "source": "casie",
+  "file_name": "10088.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "ransomware",
+        "type": "Entity"
+      },
+      {
+        "name": "malware attachment",
+        "type": "Entity"
+      },
+      {
+        "name": "encrypted email",
+        "type": "Entity"
+      },
+      {
+        "name": "bitcoin",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 infrastructure (implied)",
+        "type": "Entity"
+      },
+      {
+        "name": "attackers (unspecified)",
+        "type": "Entity"
+      },
+      {
+        "name": "attack vector (phishing emails)",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanism (implied via malware attachment)",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerability (implied)",
+        "type": "Entity"
+      },
+      {
+        "name": "file encryption",
+        "type": "Entity"
+      },
+      {
+        "name": "digital currency",
+        "type": "Entity"
+      },
+      {
+        "name": "ransom demand",
+        "type": "Entity"
+      },
+      {
+        "name": "file decryption",
+        "type": "Entity"
+      },
+      {
+        "name": "personal files",
+        "type": "Entity"
+      },
+      {
+        "name": "hospital patient records",
+        "type": "Entity"
+      },
+      {
+        "name": "USB devices (implied in general attack context)",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled tasks (implied)",
+        "type": "Entity"
+      },
+      {
+        "name": "registry keys (implied)",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell (implied in general attack context)",
+        "type": "Entity"
+      },
+      {
+        "name": "shellcode (implied)",
+        "type": "Entity"
+      },
+      {
+        "name": "macro (implied)",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE (implied)",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell (implied)",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious scripts",
+        "type": "Entity"
+      },
+      {
+        "name": "dropper files (implied)",
+        "type": "Entity"
+      },
+      {
+        "name": "backdoor programs (implied)",
+        "type": "Entity"
+      },
+      {
+        "name": "file paths (implied)",
+        "type": "Entity"
+      },
+      {
+        "name": "filenames (implied)",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actors (unspecified)",
+        "type": "Entity"
+      },
+      {
+        "name": "victim",
+        "type": "Entity"
+      },
+      {
+        "name": "attack stage (initial infection)",
+        "type": "Entity"
+      },
+      {
+        "name": "attack stage (data encryption)",
+        "type": "Entity"
+      },
+      {
+        "name": "attack stage (ransom demand)",
+        "type": "Entity"
+      },
+      {
+        "name": "attack stage (persistence)",
+        "type": "Entity"
+      },
+      {
+        "name": "attack stage (data loss)",
+        "type": "Entity"
+      },
+      {
+        "name": "attack stage (recovery attempt)",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "attackers (unspecified)",
+        "rel": "uses",
+        "obj": "attack vector (phishing emails)"
+      },
+      {
+        "sub": "attackers (unspecified)",
+        "rel": "sends",
+        "obj": "encrypted email"
+      },
+      {
+        "sub": "encrypted email",
+        "rel": "contains",
+        "obj": "malware attachment"
+      },
+      {
+        "sub": "malware attachment",
+        "rel": "is downloaded and executed",
+        "obj": "victim"
+      },
+      {
+        "sub": "malware attachment",
+        "rel": "exploits",
+        "obj": "vulnerability (implied)"
+      },
+      {
+        "sub": "malware attachment",
+        "rel": "installs",
+        "obj": "dropper files (implied)"
+      },
+      {
+        "sub": "dropper files (implied)",
+        "rel": "installs",
+        "obj": "backdoor programs (implied)"
+      },
+      {
+        "sub": "backdoor programs (implied)",
+        "rel": "establishes",
+        "obj": "C2 infrastructure (implied)"
+      },
+      {
+        "sub": "attackers (unspecified)",
+        "rel": "issues",
+        "obj": "ransom demand"
+      },
+      {
+        "sub": "ransom demand",
+        "rel": "is paid in",
+        "obj": "bitcoin"
+      },
+      {
+        "sub": "bitcoin",
+        "rel": "is used as",
+        "obj": "digital currency"
+      },
+      {
+        "sub": "ransom demand",
+        "rel": "targets",
+        "obj": "personal files"
+      },
+      {
+        "sub": "ransom demand",
+        "rel": "targets",
+        "obj": "hospital patient records"
+      },
+      {
+        "sub": "attackers (unspecified)",
+        "rel": "encrypts",
+        "obj": "personal files"
+      },
+      {
+        "sub": "attackers (unspecified)",
+        "rel": "encrypts",
+        "obj": "hospital patient records"
+      },
+      {
+        "sub": "attackers (unspecified)",
+        "rel": "uses",
+        "obj": "PowerShell (implied)"
+      },
+      {
+        "sub": "attackers (unspecified)",
+        "rel": "uses",
+        "obj": "shellcode (implied)"
+      },
+      {
+        "sub": "attackers (unspecified)",
+        "rel": "uses",
+        "obj": "macro (implied)"
+      },
+      {
+        "sub": "attackers (unspecified)",
+        "rel": "provides",
+        "obj": "three bitcoin addresses"
+      },
+      {
+        "sub": "victim",
+        "rel": "receives",
+        "obj": "ransom demand"
+      },
+      {
+        "sub": "victim",
+        "rel": "faces",
+        "obj": "attack stage (initial infection)"
+      },
+      {
+        "sub": "victim",
+        "rel": "faces",
+        "obj": "attack stage (data encryption)"
+      },
+      {
+        "sub": "victim",
+        "rel": "faces",
+        "obj": "attack stage (ransom demand)"
+      },
+      {
+        "sub": "victim",
+        "rel": "faces",
+        "obj": "attack stage (data loss)"
+      },
+      {
+        "sub": "victim",
+        "rel": "attempts",
+        "obj": "file decryption"
+      },
+      {
+        "sub": "F-Secure",
+        "rel": "confirms",
+        "obj": "some victims have had files decrypted"
+      },
+      {
+        "sub": "ransom payments",
+        "rel": "total",
+        "obj": "$80,000"
+      },
+      {
+        "sub": "ransom payments",
+        "rel": "are deposited into",
+        "obj": "bitcoin addresses"
+      },
+      {
+        "sub": "attack stage (persistence)",
+        "rel": "is established via",
+        "obj": "scheduled tasks (implied)"
+      },
+      {
+        "sub": "attack stage (persistence)",
+        "rel": "is established via",
+        "obj": "registry keys (implied)"
+      },
+      {
+        "sub": "attack stage (recovery attempt)",
+        "rel": "is initiated by",
+        "obj": "victim"
+      }
+    ]
+  }
+}

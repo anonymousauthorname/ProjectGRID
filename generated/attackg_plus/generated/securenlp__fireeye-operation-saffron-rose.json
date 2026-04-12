@@ -1,0 +1,777 @@
+{
+  "sample_id": "securenlp__fireeye-operation-saffron-rose",
+  "sample_index": 151,
+  "source": "securenlp",
+  "file_name": "fireeye-operation-saffron-rose",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Domain",
+        "rel": "Has URL",
+        "obj": "aeroconf2014.org"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Belong to",
+        "obj": "keyvan.ajaxtm@gmail.com"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Mimic",
+        "obj": "IEEE Aerospace Conference"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Use",
+        "obj": "spoofed login pages for Outlook Web Access"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Use",
+        "obj": "spoofed login pages for VPNs"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Collect",
+        "obj": "victim credentials"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Gather",
+        "obj": "information about potential targets"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Use",
+        "obj": "domains associated with Google"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Use",
+        "obj": "domains associated with Facebook"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Use",
+        "obj": "domains associated with Yahoo"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Use",
+        "obj": "domains associated with LinkedIn"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Locate at",
+        "obj": "internet"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Operate",
+        "obj": "to identify and target specific organizations"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has value",
+        "obj": "keyvan.ajaxtm@gmail.com"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has geolocation",
+        "obj": "internet"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has hostname",
+        "obj": "aeroconf2014.org"
+      },
+      {
+        "sub": "URL",
+        "rel": "Belong to",
+        "obj": "keyvan.ajaxtm@gmail.com"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has URL",
+        "obj": "outlookwebaccess.com"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has URL",
+        "obj": "vpnlogin.com"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has URL",
+        "obj": "google.com"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has URL",
+        "obj": "facebook.com"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has URL",
+        "obj": "yahoo.com"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has URL",
+        "obj": "linkedin.com"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Use",
+        "obj": "spoofed login pages"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Detect",
+        "obj": "victim credentials"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Detect",
+        "obj": "information about potential targets"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Operate",
+        "obj": "to identify and target specific organizations"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Stealer Builder"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Base64 encoder"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Stealer Builder"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Base64 encoder"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Portable executable  resource"
+      },
+      {
+        "sub": "Portable executable  resource",
+        "rel": "Has hash",
+        "obj": "5156aca994ecfcb40458ead8c830cd66469d5f5a031392898d323a8d7a7f23d3"
+      },
+      {
+        "sub": "Portable executable  resource",
+        "rel": "Has value",
+        "obj": "Stealer.exe"
+      },
+      {
+        "sub": "Stealer Builder",
+        "rel": "Operate",
+        "obj": "Command-and-control  server"
+      },
+      {
+        "sub": "Stealer Builder",
+        "rel": "Modify",
+        "obj": "Customized usernames and passwords"
+      },
+      {
+        "sub": "Stealer Builder",
+        "rel": "Enable",
+        "obj": "Cloaking with legitimate application icons"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Spear phishing"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Credential phishing"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Fake conference invitation"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Spoofed domain 'aeroconf2014.org'"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Malicious 'proxy' software"
+      },
+      {
+        "sub": "Malicious 'proxy' software",
+        "rel": "Deliver",
+        "obj": "Stealer malware"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Fake login page"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Outlook Web Access"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "VPN"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Phishing campaign"
+      },
+      {
+        "sub": "Stealer malware",
+        "rel": "Has vulnerability",
+        "obj": "Credential theft"
+      },
+      {
+        "sub": "Fake login page",
+        "rel": "Has URL",
+        "obj": "URL of fake login page"
+      },
+      {
+        "sub": "Spoofed domain 'aeroconf2014.org'",
+        "rel": "Has value",
+        "obj": "Domain name"
+      },
+      {
+        "sub": "Malicious 'proxy' software",
+        "rel": "Has filename",
+        "obj": "'proxy'"
+      },
+      {
+        "sub": "Malicious 'proxy' software",
+        "rel": "Has filepath",
+        "obj": "Path to malicious proxy"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Defense industrial base  companies"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Dropper"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "CAB extractor"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "IntelRS.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "C:\\Documents and Settings\\{USER}\\Application Data\\IntelRapidStart\\"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "StartBypass"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "AppTransferWiz.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "DelphiNative.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Perform",
+        "obj": "Key logging"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Perform",
+        "obj": "Screenshot capture"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Perform",
+        "obj": "Credential extraction"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Global atom"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "IntelRS.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "State via FTP component"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Persistence mechanism"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "State in indefinite loop"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "AppTransferWiz.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Maintain",
+        "obj": "Persistence after system restarts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Enable",
+        "obj": "Ongoing data collection and exfiltration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encrypted data exfiltration over FTP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "AES-256 encryption"
+      },
+      {
+        "sub": "AES-256",
+        "rel": "Has value",
+        "obj": "'HavijeBaba'"
+      },
+      {
+        "sub": "AES-256",
+        "rel": "Has value",
+        "obj": "'salam!*%'"
+      },
+      {
+        "sub": "AES-256",
+        "rel": "Use",
+        "obj": "PBKDF2 derivation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Base64-encoded data"
+      },
+      {
+        "sub": "Base64-encoded data",
+        "rel": "Store in",
+        "obj": "RapidStartTech.stl"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Obfuscation in configuration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Legitimate-looking application icon"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Hide",
+        "obj": "Malicious functions"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Hide",
+        "obj": "Malicious functions within legitimate software components"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Use",
+        "obj": "Phishing attacks"
+      },
+      {
+        "sub": "Phishing attacks",
+        "rel": "Mimic",
+        "obj": "Outlook Web Access"
+      },
+      {
+        "sub": "Phishing attacks",
+        "rel": "Mimic",
+        "obj": "VPN login pages"
+      },
+      {
+        "sub": "Phishing attacks",
+        "rel": "Capture",
+        "obj": "User credentials"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Harvest",
+        "obj": "Internet Explorer accounts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Harvest",
+        "obj": "Remote Desktop Protocol accounts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Harvest",
+        "obj": "Browser URLs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Harvest",
+        "obj": "Installed proxy software configurations"
+      },
+      {
+        "sub": "Stealer component",
+        "rel": "Load",
+        "obj": "vaultcli.DLL"
+      },
+      {
+        "sub": "Stealer component",
+        "rel": "Use",
+        "obj": "Windows APIs"
+      },
+      {
+        "sub": "Stealer component",
+        "rel": "Extract",
+        "obj": "RDP account information from Windows vault"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Has value",
+        "obj": "Hostname"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Has value",
+        "obj": "Username"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Has value",
+        "obj": "Timezone"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Has value",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Has value",
+        "obj": "Open Port"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Has value",
+        "obj": "Installed Application"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Has value",
+        "obj": "Running Process"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Has value",
+        "obj": "System Service"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Has value",
+        "obj": "Browser"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Has value",
+        "obj": "Instant Messaging Account"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Has value",
+        "obj": "Email Account"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Has value",
+        "obj": "Proxy Software Configuration"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Has value",
+        "obj": "Cookie"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Operate",
+        "obj": "Victim Environment"
+      },
+      {
+        "sub": "Stealer",
+        "rel": "Identify",
+        "obj": "Valuable Data Source"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "System information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Browser history"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Instant messaging account details"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Email account information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Installed proxy configurations"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Cookies"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Perform",
+        "obj": "Screenshots"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Filename"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "{stolen data type}_{victim system name}_YYYYMMDD_HHMM.Enc"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "None"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has hostname",
+        "obj": "None"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "None"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Regular intervals"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Has value",
+        "obj": "aeroconf2014.org"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Has value",
+        "obj": "intel-update.com"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Has value",
+        "obj": "update-mirror.com"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Has value",
+        "obj": "ultrasms.ir"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Has value",
+        "obj": "plugin-adobe.com"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Locate at",
+        "obj": "5.9.244.151"
+      },
+      {
+        "sub": "Malware Sample",
+        "rel": "Use",
+        "obj": "aeroconf2014.org"
+      },
+      {
+        "sub": "Malware Sample",
+        "rel": "Use",
+        "obj": "intel-update.com"
+      },
+      {
+        "sub": "Malware Sample",
+        "rel": "Use",
+        "obj": "update-mirror.com"
+      },
+      {
+        "sub": "Malware Sample",
+        "rel": "Use",
+        "obj": "ultrasms.ir"
+      },
+      {
+        "sub": "Malware Sample",
+        "rel": "Use",
+        "obj": "plugin-adobe.com"
+      },
+      {
+        "sub": "C2 Domain",
+        "rel": "Belong to",
+        "obj": "Ajax Security Team"
+      },
+      {
+        "sub": "Email Address",
+        "rel": "Belong to",
+        "obj": "Ajax Security Team"
+      },
+      {
+        "sub": "Email Address",
+        "rel": "Has value",
+        "obj": "keyvan.ajaxtm@gmail.com"
+      },
+      {
+        "sub": "Email Address",
+        "rel": "Has value",
+        "obj": "james.mateo@aim.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "FTP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Encrypted data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "AES-256"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Incomplete code for SFTP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Incomplete code for SMTP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Data transfer in chunks"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Standardized naming scheme for filenames"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Encrypted data transfer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "FTP transfer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Data naming scheme"
+      }
+    ]
+  }
+}

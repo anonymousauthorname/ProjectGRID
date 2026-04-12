@@ -1,0 +1,189 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_14.json",
+  "sample_index": 206,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_14.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Mal/BadSrcC",
+        "type": "Entity"
+      },
+      {
+        "name": "Mal/JSRedirA",
+        "type": "Entity"
+      },
+      {
+        "name": "Mal/VidHtmlA",
+        "type": "Entity"
+      },
+      {
+        "name": "Mal/VidHtmlB",
+        "type": "Entity"
+      },
+      {
+        "name": "Mal/VidHtmlC",
+        "type": "Entity"
+      },
+      {
+        "name": "Mal/EncPkGA",
+        "type": "Entity"
+      },
+      {
+        "name": "W32/KoobfaGen",
+        "type": "Entity"
+      },
+      {
+        "name": "flashupdate.exe",
+        "type": "Entity"
+      },
+      {
+        "name": "setup.exe",
+        "type": "Entity"
+      },
+      {
+        "name": "SQL injection",
+        "type": "Entity"
+      },
+      {
+        "name": "Facebook worms",
+        "type": "Entity"
+      },
+      {
+        "name": "fake antivirus Trojans",
+        "type": "Entity"
+      },
+      {
+        "name": "Zlob family",
+        "type": "Entity"
+      },
+      {
+        "name": "MySpace",
+        "type": "Entity"
+      },
+      {
+        "name": "Bebo",
+        "type": "Entity"
+      },
+      {
+        "name": "hi5",
+        "type": "Entity"
+      },
+      {
+        "name": "GeoCities",
+        "type": "Entity"
+      },
+      {
+        "name": "http://www.facebook.com/l.php?u=http://google.com2Fsearch3Fq3Dcache",
+        "type": "Entity"
+      },
+      {
+        "name": "http://google.com/search?q=cache",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Facebook worms",
+        "rel": "uses",
+        "obj": "SQL injection"
+      },
+      {
+        "sub": "Facebook worms",
+        "rel": "references",
+        "obj": "MySpace"
+      },
+      {
+        "sub": "Facebook worms",
+        "rel": "references",
+        "obj": "Bebo"
+      },
+      {
+        "sub": "Facebook worms",
+        "rel": "references",
+        "obj": "hi5"
+      },
+      {
+        "sub": "Facebook worms",
+        "rel": "references",
+        "obj": "GeoCities"
+      },
+      {
+        "sub": "Facebook worms",
+        "rel": "redirects to",
+        "obj": "Mal/BadSrcC"
+      },
+      {
+        "sub": "Mal/BadSrcC",
+        "rel": "redirects visitors to",
+        "obj": "Mal/JSRedirA"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "uses",
+        "obj": "document.referrer"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "redirects to",
+        "obj": "Mal/VidHtmlA"
+      },
+      {
+        "sub": "Mal/VidHtmlA",
+        "rel": "tries to install",
+        "obj": "flashupdate.exe"
+      },
+      {
+        "sub": "flashupdate.exe",
+        "rel": "is detected as",
+        "obj": "W32/KoobfaGen"
+      },
+      {
+        "sub": "Mal/JSRedirA",
+        "rel": "redirects to",
+        "obj": "Mal/VidHtmlB"
+      },
+      {
+        "sub": "Mal/VidHtmlB",
+        "rel": "redirects to",
+        "obj": "Mal/VidHtmlC"
+      },
+      {
+        "sub": "Mal/VidHtmlC",
+        "rel": "downloads",
+        "obj": "setup.exe"
+      },
+      {
+        "sub": "setup.exe",
+        "rel": "is detected as",
+        "obj": "Mal/EncPkGA"
+      },
+      {
+        "sub": "Mal/EncPkGA",
+        "rel": "is a component of",
+        "obj": "Zlob family"
+      },
+      {
+        "sub": "Zlob family",
+        "rel": "is a type of",
+        "obj": "fake antivirus Trojans"
+      }
+    ]
+  }
+}

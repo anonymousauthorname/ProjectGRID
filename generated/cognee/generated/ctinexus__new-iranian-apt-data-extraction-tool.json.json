@@ -1,0 +1,419 @@
+{
+  "sample_id": "ctinexus__new-iranian-apt-data-extraction-tool.json",
+  "sample_index": 92,
+  "source": "ctinexus",
+  "file_name": "new-iranian-apt-data-extraction-tool.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TAG",
+        "type": "Entity"
+      },
+      {
+        "name": "Google",
+        "type": "Entity"
+      },
+      {
+        "name": "user",
+        "type": "Entity"
+      },
+      {
+        "name": "APT35",
+        "type": "Entity"
+      },
+      {
+        "name": "Charming Kitten",
+        "type": "Entity"
+      },
+      {
+        "name": "Iranian government",
+        "type": "Entity"
+      },
+      {
+        "name": "high risk users",
+        "type": "Entity"
+      },
+      {
+        "name": "hijack accounts",
+        "type": "Entity"
+      },
+      {
+        "name": "deploy malware",
+        "type": "Entity"
+      },
+      {
+        "name": "espionage",
+        "type": "Entity"
+      },
+      {
+        "name": "HYPERSCRAPE",
+        "type": "Entity"
+      },
+      {
+        "name": "Gmail",
+        "type": "Entity"
+      },
+      {
+        "name": "Yahoo!",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Outlook",
+        "type": "Entity"
+      },
+      {
+        "name": "credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "Iran",
+        "type": "Entity"
+      },
+      {
+        "name": "December 2021",
+        "type": "Entity"
+      },
+      {
+        "name": "2020",
+        "type": "Entity"
+      },
+      {
+        "name": "active development",
+        "type": "Entity"
+      },
+      {
+        "name": "account security",
+        "type": "Entity"
+      },
+      {
+        "name": "Government Backed Attacker Warnings",
+        "type": "Entity"
+      },
+      {
+        "name": "attack tool",
+        "type": "Entity"
+      },
+      {
+        "name": "data theft",
+        "type": "Entity"
+      },
+      {
+        "name": "inbox access",
+        "type": "Entity"
+      },
+      {
+        "name": "victims",
+        "type": "Entity"
+      },
+      {
+        "name": "threat analysis",
+        "type": "Entity"
+      },
+      {
+        "name": "persistent threats",
+        "type": "Entity"
+      },
+      {
+        "name": "malware deployment",
+        "type": "Entity"
+      },
+      {
+        "name": "novel techniques",
+        "type": "Entity"
+      },
+      {
+        "name": "account compromise",
+        "type": "Entity"
+      },
+      {
+        "name": "attack vector",
+        "type": "Entity"
+      },
+      {
+        "name": "cyber espionage",
+        "type": "Entity"
+      },
+      {
+        "name": "threat intelligence",
+        "type": "Entity"
+      },
+      {
+        "name": "security measures",
+        "type": "Entity"
+      },
+      {
+        "name": "re-secure accounts",
+        "type": "Entity"
+      },
+      {
+        "name": "notification",
+        "type": "Entity"
+      },
+      {
+        "name": "attack group",
+        "type": "Entity"
+      },
+      {
+        "name": "Iranian government-backed group",
+        "type": "Entity"
+      },
+      {
+        "name": "user data",
+        "type": "Entity"
+      },
+      {
+        "name": "machine-based operation",
+        "type": "Entity"
+      },
+      {
+        "name": "previously acquired credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "tool deployment",
+        "type": "Entity"
+      },
+      {
+        "name": "known sample",
+        "type": "Entity"
+      },
+      {
+        "name": "under active development",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TAG",
+        "rel": "counters",
+        "obj": "Charming Kitten"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "is backed by",
+        "obj": "Iranian government"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "targets",
+        "obj": "high risk users"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "uses",
+        "obj": "HYPERSCRAPE"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "targets",
+        "obj": "Gmail"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "targets",
+        "obj": "Yahoo!"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "targets",
+        "obj": "Microsoft Outlook"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "steals user data from",
+        "obj": "user"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "requires previously acquired credentials",
+        "obj": "credentials"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "operates on attacker's machine",
+        "obj": "machine-based operation"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "enables",
+        "obj": "data theft"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "accesses inbox",
+        "obj": "inbox access"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "has a known sample from",
+        "obj": "2020"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "is under active development",
+        "obj": "active development"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "was deployed against fewer than two dozen accounts in",
+        "obj": "Iran"
+      },
+      {
+        "sub": "TAG",
+        "rel": "discovered HYPERSCRAPE in",
+        "obj": "HYPERSCRAPE"
+      },
+      {
+        "sub": "TAG",
+        "rel": "discovered HYPERSCRAPE in",
+        "obj": "December 2021"
+      },
+      {
+        "sub": "TAG",
+        "rel": "analyzes persistent threats",
+        "obj": "Charming Kitten"
+      },
+      {
+        "sub": "TAG",
+        "rel": "performs threat analysis",
+        "obj": "Charming Kitten"
+      },
+      {
+        "sub": "TAG",
+        "rel": "notifies victims via",
+        "obj": "victims"
+      },
+      {
+        "sub": "TAG",
+        "rel": "notifies victims via",
+        "obj": "Government Backed Attacker Warnings"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "conducts espionage",
+        "obj": "espionage"
+      },
+      {
+        "sub": "espionage",
+        "rel": "aligns with interests of",
+        "obj": "Iranian government"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "leads to",
+        "obj": "account compromise"
+      },
+      {
+        "sub": "account compromise",
+        "rel": "leads to",
+        "obj": "data theft"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "is part of",
+        "obj": "persistent threats"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "is used to steal user data from",
+        "obj": "Gmail"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "is used to steal user data from",
+        "obj": "Yahoo!"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "is used to steal user data from",
+        "obj": "Microsoft Outlook"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "is used to access inboxes",
+        "obj": "inbox access"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "is used to conduct data theft",
+        "obj": "data theft"
+      },
+      {
+        "sub": "TAG",
+        "rel": "re-secures compromised accounts of",
+        "obj": "user"
+      },
+      {
+        "sub": "TAG",
+        "rel": "notifies victims of",
+        "obj": "victims"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "is a persistent threat",
+        "obj": "persistent threats"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "is part of threat intelligence",
+        "obj": "threat analysis"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "is still under active development",
+        "obj": "active development"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "is machine-based",
+        "obj": "machine-based operation"
+      },
+      {
+        "sub": "credentials",
+        "rel": "is used to access accounts of",
+        "obj": "user"
+      },
+      {
+        "sub": "espionage",
+        "rel": "is aligned with Iranian government interests",
+        "obj": "persistent threats"
+      },
+      {
+        "sub": "TAG",
+        "rel": "counters",
+        "obj": "persistent threats"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "is used in threat analysis",
+        "obj": "threat analysis"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "is a threat",
+        "obj": "persistent threats"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "is used to compromise accounts",
+        "obj": "account compromise"
+      }
+    ]
+  }
+}

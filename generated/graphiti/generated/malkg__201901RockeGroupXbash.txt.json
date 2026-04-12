@@ -1,0 +1,258 @@
+{
+  "sample_id": "malkg__201901RockeGroupXbash.txt",
+  "sample_index": 110,
+  "source": "malkg",
+  "file_name": "201901RockeGroupXbash.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Rocke",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Iron",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Xbash",
+        "type": "Malware"
+      },
+      {
+        "name": "CVE-2017-10271",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "0720.bin",
+        "type": "Malware"
+      },
+      {
+        "name": "a7",
+        "type": "Malware"
+      },
+      {
+        "name": "libprocesshider",
+        "type": "Tool"
+      },
+      {
+        "name": "Tencent Host Security",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Alibaba Threat Detection Service",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Alibaba CloudMonitor",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Alibaba Cloud Assistant",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Tencent Cloud Monitor",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Tencent Cloud",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Alibaba Cloud",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Trend Micro",
+        "type": "Organization"
+      },
+      {
+        "name": "Symantec",
+        "type": "Organization"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Organization"
+      },
+      {
+        "name": "dwn.rundll32.ml",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "www.aybc.so",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "a.ssvs.space",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "sydwzl.cn",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "118.24.150.172",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "120.55.54.65",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "pastebin.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "42im1KxfTw2Sxa716eKkQAcJpS6cwqkGaHHGnnUAcdDhG2NJhqEF1nNRwjkBsYDJQtDkLCTPehfDC4zjMy5hefT81Xk2h7V.v7",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Rocke",
+        "rel": "associated with",
+        "obj": "Xbash"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "developed by",
+        "obj": "Iron"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2017-10271"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "DOWNLOADS",
+        "obj": "0720.bin"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "DOWNLOADS",
+        "obj": "a7"
+      },
+      {
+        "sub": "a7",
+        "rel": "USES",
+        "obj": "libprocesshider"
+      },
+      {
+        "sub": "a7",
+        "rel": "achieves persistence through",
+        "obj": "cronjobs"
+      },
+      {
+        "sub": "a7",
+        "rel": "KILLS",
+        "obj": "crypto mining processes"
+      },
+      {
+        "sub": "a7",
+        "rel": "add rules to",
+        "obj": "iptables"
+      },
+      {
+        "sub": "a7",
+        "rel": "KILLS",
+        "obj": "Tencent Cloud Monitor"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "UNINSTALLS",
+        "obj": "Alibaba Threat Detection Service"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "UNINSTALLS",
+        "obj": "Alibaba CloudMonitor"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "UNINSTALLS",
+        "obj": "Alibaba Cloud Assistant"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "UNINSTALLS",
+        "obj": "Tencent Host Security"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "UNINSTALLS",
+        "obj": "Tencent Cloud Monitor"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "communicates through",
+        "obj": "dwn.rundll32.ml"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "communicates through",
+        "obj": "www.aybc.so"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "communicates through",
+        "obj": "a.ssvs.space"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "communicates through",
+        "obj": "sydwzl.cn"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "uses ip for c2",
+        "obj": "118.24.150.172"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "uses ip for c2",
+        "obj": "120.55.54.65"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "retrieves code from",
+        "obj": "pastebin.com"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "uses wallet address",
+        "obj": "42im1KxfTw2Sxa716eKkQAcJpS6cwqkGaHHGnnUAcdDhG2NJhqEF1nNRwjkBsYDJQtDkLCTPehfDC4zjMy5hefT81Xk2h7V.v7"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "provides cwpp",
+        "obj": "Trend Micro"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "provides cwpp",
+        "obj": "Symantec"
+      },
+      {
+        "sub": "Rocke",
+        "rel": "provides cwpp",
+        "obj": "Microsoft"
+      }
+    ]
+  }
+}

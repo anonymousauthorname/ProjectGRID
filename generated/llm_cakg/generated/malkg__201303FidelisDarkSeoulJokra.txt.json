@@ -1,0 +1,240 @@
+{
+  "sample_id": "malkg__201303FidelisDarkSeoulJokra.txt",
+  "sample_index": 111,
+  "source": "malkg",
+  "file_name": "201303FidelisDarkSeoulJokra.txt",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DarkSeoul",
+        "type": "Entity"
+      },
+      {
+        "name": "Jokra",
+        "type": "Entity"
+      },
+      {
+        "name": "mb_join.exe",
+        "type": "Entity"
+      },
+      {
+        "name": "239ed75323.exe",
+        "type": "Entity"
+      },
+      {
+        "name": "5fcd6e1dace6b0599429d913850f0364",
+        "type": "Entity"
+      },
+      {
+        "name": "0a8032cd6b4a710b1771a080fa09fb87",
+        "type": "Entity"
+      },
+      {
+        "name": "HASTATI",
+        "type": "Entity"
+      },
+      {
+        "name": "PR!NCPES",
+        "type": "Entity"
+      },
+      {
+        "name": "\\.\\PhysicalDrive%d",
+        "type": "Entity"
+      },
+      {
+        "name": "0x7000",
+        "type": "Entity"
+      },
+      {
+        "name": "512-byte pattern",
+        "type": "Entity"
+      },
+      {
+        "name": "1023 byte pattern",
+        "type": "Entity"
+      },
+      {
+        "name": "taskkill /F /IM pasvc.exe",
+        "type": "Entity"
+      },
+      {
+        "name": "taskkill /F /IM Clisvc.exe",
+        "type": "Entity"
+      },
+      {
+        "name": "shutdown -r -t 0",
+        "type": "Entity"
+      },
+      {
+        "name": "AhnLab Policy Agent",
+        "type": "Entity"
+      },
+      {
+        "name": "ViRobot ISMS security tool",
+        "type": "Entity"
+      },
+      {
+        "name": "Fidelis XPS",
+        "type": "Entity"
+      },
+      {
+        "name": "Trojan.Win32.EraseMBR.b",
+        "type": "Entity"
+      },
+      {
+        "name": "zip files",
+        "type": "Entity"
+      },
+      {
+        "name": "XOR'ed",
+        "type": "Entity"
+      },
+      {
+        "name": "MS Office document",
+        "type": "Entity"
+      },
+      {
+        "name": "Adobe PDF File",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DarkSeoul",
+        "rel": "uses",
+        "obj": "mb_join.exe"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "overwrites",
+        "obj": "0x7000"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "writes",
+        "obj": "512-byte pattern"
+      },
+      {
+        "sub": "Jokra",
+        "rel": "uses",
+        "obj": "mb_join.exe"
+      },
+      {
+        "sub": "Jokra",
+        "rel": "overwrites",
+        "obj": "0x7000"
+      },
+      {
+        "sub": "Jokra",
+        "rel": "writes",
+        "obj": "1023 byte pattern"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "opens",
+        "obj": "\\.\\PhysicalDrive%d"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "creates",
+        "obj": "thread for each fixed drive"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "enumerates",
+        "obj": "PhysicalDrive[0-9]"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "detects",
+        "obj": "fixed drives"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "executes",
+        "obj": "taskkill /F /IM pasvc.exe"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "targets",
+        "obj": "AhnLab Policy Agent"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "executes",
+        "obj": "taskkill /F /IM Clisvc.exe"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "targets",
+        "obj": "ViRobot ISMS security tool"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "executes",
+        "obj": "shutdown -r -t 0"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "wipes",
+        "obj": "Master Boot Record"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "wipes",
+        "obj": "Volume Boot Record"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "overwrites",
+        "obj": "HASTATI"
+      },
+      {
+        "sub": "DarkSeoul",
+        "rel": "overwrites",
+        "obj": "PR!NCPES"
+      },
+      {
+        "sub": "Fidelis XPS",
+        "rel": "detects",
+        "obj": "Trojan.Win32.EraseMBR.b"
+      },
+      {
+        "sub": "Fidelis XPS",
+        "rel": "detects",
+        "obj": "mb_join.exe"
+      },
+      {
+        "sub": "Fidelis XPS",
+        "rel": "detects",
+        "obj": "XOR'ed"
+      },
+      {
+        "sub": "Fidelis XPS",
+        "rel": "detects",
+        "obj": "MS Office document"
+      },
+      {
+        "sub": "Fidelis XPS",
+        "rel": "detects",
+        "obj": "Adobe PDF File"
+      }
+    ]
+  }
+}

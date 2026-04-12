@@ -1,0 +1,152 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-ransomexx.json",
+  "sample_index": 95,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-ransomexx.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "Data collection technique"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Data collection technique"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Scottish mental health charity"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Personal information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Credit card details"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Data of interest"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "Scottish mental health charity"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has URL",
+        "obj": "Leak site"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Data of interest"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Detect",
+        "obj": "Sensitive information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "RansomEXX"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerable Software"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Exfiltrate",
+        "obj": "Data"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has geolocation",
+        "obj": "Location"
+      },
+      {
+        "sub": "Leak site",
+        "rel": "Has URL",
+        "obj": "URL"
+      },
+      {
+        "sub": "RansomEXX",
+        "rel": "Is a",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Personal information",
+        "rel": "Belong to",
+        "obj": "Data"
+      },
+      {
+        "sub": "Credit card details",
+        "rel": "Belong to",
+        "obj": "Data"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Personal information"
+      },
+      {
+        "sub": "Data",
+        "rel": "Has value",
+        "obj": "Credit card details"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Locate at",
+        "obj": "Location"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Has geolocation",
+        "obj": "Location"
+      },
+      {
+        "sub": "Note: The original article does not explicitly mention specific entities like \"Threat Actor\", \"Vulnerable Software\", \"Malware\", or \"Leak site\" by name. Therefore, the above triplets are inferred based on context and standard CTI reporting conventions. For a more precise extraction, explicit entity mentions are required. The triplet \"Threat Actor",
+        "rel": "Exfiltrate",
+        "obj": "Data\" is directly implied by \"the adversary is trying to steal data\" and \"stolen data... was exfiltrated\". The rest are derived from contextual inferences. If a strict literal extraction is required, only the following directly supported triplet should be included:"
+      }
+    ]
+  }
+}

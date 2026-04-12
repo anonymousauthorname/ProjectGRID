@@ -1,0 +1,182 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_33.json",
+  "sample_index": 223,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_33.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "KIDO",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CONFICKER",
+        "type": "MALWARE"
+      },
+      {
+        "name": "NETWORM.WIN32.KIDO.JS",
+        "type": "MALWARE"
+      },
+      {
+        "name": "TRAYDOWNLOADER.WIN32.KIDO",
+        "type": "MALWARE"
+      },
+      {
+        "name": "FRAUDTOOL.WIN32.SPYWAREPROTECT2009.S",
+        "type": "TOOL"
+      },
+      {
+        "name": "EMAILWORM.WIN32.IKSMAS.ATZ",
+        "type": "MALWARE"
+      },
+      {
+        "name": "WALEDAC",
+        "type": "MALWARE"
+      },
+      {
+        "name": "SPYPROTECT2009",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SPYPROTECT2009.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "SPYWRPROTECT2009.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "SPYWAREPROTECTOR2009.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "1313.ELANINET.COM.78.26.179.107",
+        "type": "LOCATION"
+      },
+      {
+        "name": "Ukraine",
+        "type": "GEO"
+      },
+      {
+        "name": "CONFICKER WORKING GROUP",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "ISC",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "WIRED",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "KIDO",
+        "rel": "related_to",
+        "obj": "NETWORM.WIN32.KIDO.JS"
+      },
+      {
+        "sub": "KIDO",
+        "rel": "related_to",
+        "obj": "TRAYDOWNLOADER.WIN32.KIDO"
+      },
+      {
+        "sub": "KIDO",
+        "rel": "related_to",
+        "obj": "FRAUDTOOL.WIN32.SPYWAREPROTECT2009.S"
+      },
+      {
+        "sub": "KIDO",
+        "rel": "related_to",
+        "obj": "EMAILWORM.WIN32.IKSMAS.ATZ"
+      },
+      {
+        "sub": "FRAUDTOOL.WIN32.SPYWAREPROTECT2009.S",
+        "rel": "related_to",
+        "obj": "SPYPROTECT2009.COM"
+      },
+      {
+        "sub": "FRAUDTOOL.WIN32.SPYWAREPROTECT2009.S",
+        "rel": "related_to",
+        "obj": "SPYWRPROTECT2009.COM"
+      },
+      {
+        "sub": "FRAUDTOOL.WIN32.SPYWAREPROTECT2009.S",
+        "rel": "related_to",
+        "obj": "SPYWAREPROTECTOR2009.COM"
+      },
+      {
+        "sub": "SPYPROTECT2009.COM",
+        "rel": "related_to",
+        "obj": "Ukraine"
+      },
+      {
+        "sub": "SPYWRPROTECT2009.COM",
+        "rel": "related_to",
+        "obj": "Ukraine"
+      },
+      {
+        "sub": "SPYWAREPROTECTOR2009.COM",
+        "rel": "related_to",
+        "obj": "Ukraine"
+      },
+      {
+        "sub": "1313.ELANINET.COM.78.26.179.107",
+        "rel": "related_to",
+        "obj": "Ukraine"
+      },
+      {
+        "sub": "KIDO",
+        "rel": "related_to",
+        "obj": "EMAILWORM.WIN32.IKSMAS.ATZ"
+      },
+      {
+        "sub": "KIDO",
+        "rel": "related_to",
+        "obj": "CONFICKER WORKING GROUP"
+      },
+      {
+        "sub": "CONFICKER WORKING GROUP",
+        "rel": "related_to",
+        "obj": "ISC"
+      },
+      {
+        "sub": "ISC",
+        "rel": "related_to",
+        "obj": "WIRED"
+      },
+      {
+        "sub": "ISC",
+        "rel": "related_to",
+        "obj": "CONFICKER WORKING GROUP"
+      },
+      {
+        "sub": "WIRED",
+        "rel": "related_to",
+        "obj": "CONFICKER WORKING GROUP"
+      },
+      {
+        "sub": "EMAILWORM.WIN32.IKSMAS.ATZ",
+        "rel": "related_to",
+        "obj": "WALEDAC"
+      }
+    ]
+  }
+}

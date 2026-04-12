@@ -1,0 +1,200 @@
+{
+  "sample_id": "ctinexus__evasive-jupyter-infostealer-campaign-dangerous-variant.json",
+  "sample_index": 53,
+  "source": "ctinexus",
+  "file_name": "evasive-jupyter-infostealer-campaign-dangerous-variant.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Jupyter",
+        "type": "Malware"
+      },
+      {
+        "name": "Yellow Cockatoo",
+        "type": "Malware"
+      },
+      {
+        "name": "Solarmarker",
+        "type": "Malware"
+      },
+      {
+        "name": "Polazert",
+        "type": "Malware"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Tool"
+      },
+      {
+        "name": "Chrome",
+        "type": "Software"
+      },
+      {
+        "name": "Edge",
+        "type": "Software"
+      },
+      {
+        "name": "Firefox",
+        "type": "Software"
+      },
+      {
+        "name": "Ethereum Wallet",
+        "type": "Software"
+      },
+      {
+        "name": "MyMonero Wallet",
+        "type": "Software"
+      },
+      {
+        "name": "Atomic Wallet",
+        "type": "Software"
+      },
+      {
+        "name": "OpenVPN",
+        "type": "Software"
+      },
+      {
+        "name": "Remote Desktop Protocol",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Jupyter",
+        "rel": "LEVERAGES",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "TARGETS",
+        "obj": "Chrome"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "TARGETS",
+        "obj": "Edge"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "TARGETS",
+        "obj": "Firefox"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "TARGETS",
+        "obj": "Ethereum Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "TARGETS",
+        "obj": "MyMonero Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "TARGETS",
+        "obj": "Atomic Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "ACCESSES",
+        "obj": "OpenVPN"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "ACCESSES",
+        "obj": "Remote Desktop Protocol"
+      },
+      {
+        "sub": "Yellow Cockatoo",
+        "rel": "is also known as",
+        "obj": "Jupyter"
+      },
+      {
+        "sub": "Solarmarker",
+        "rel": "is also known as",
+        "obj": "Jupyter"
+      },
+      {
+        "sub": "Polazert",
+        "rel": "is also known as",
+        "obj": "Jupyter"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "EXECUTES",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "MODIFIES",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "HARVESTS",
+        "obj": "Computer Name"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "HARVESTS",
+        "obj": "User Admin Privileges"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "HARVESTS",
+        "obj": "Cookies"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "HARVESTS",
+        "obj": "Web Data"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "HARVESTS",
+        "obj": "Browser Password Manager Information"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "HARVESTS",
+        "obj": "Crypto-Wallet Logins"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "HARVESTS",
+        "obj": "Remote Access Apps"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "establishes communication with",
+        "obj": "Command and Control"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "loads as dropper",
+        "obj": "Other Malware"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "HOLLOWING",
+        "obj": "Shell Code"
+      }
+    ]
+  }
+}

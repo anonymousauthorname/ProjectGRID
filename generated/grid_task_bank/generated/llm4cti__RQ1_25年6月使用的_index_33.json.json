@@ -1,0 +1,462 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_33.json",
+  "sample_index": 223,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_33.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Kido",
+        "type": "malware",
+        "alias": [
+          "Conficker",
+          "Downadup",
+          "TrojanDownloader.Win32.Kido",
+          "Conficker.c"
+        ]
+      },
+      {
+        "name": "NetWorm.Win32.Kido.js",
+        "type": "malware",
+        "alias": [
+          "latest Kido variant"
+        ]
+      },
+      {
+        "name": "FraudTool.Win32.SpywareProtect2009.s",
+        "type": "malware",
+        "alias": [
+          "rogue antivirus app",
+          "SpywareProtect2009"
+        ]
+      },
+      {
+        "name": "EmailWorm.Win32.Iksmas.atz",
+        "type": "malware",
+        "alias": [
+          "Waledac"
+        ]
+      },
+      {
+        "name": "TrojanDownloader.Win32.Kido",
+        "type": "malware",
+        "alias": [
+          "Kido"
+        ]
+      },
+      {
+        "name": "Conficker",
+        "type": "malware",
+        "alias": [
+          "Kido",
+          "Downadup"
+        ]
+      },
+      {
+        "name": "spyprotect2009.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "spywrprotect2009.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "spywareprotector2009.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "1313.elaninet.com.78.26.179.107",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "Conficker Working Group",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "CWG"
+        ]
+      },
+      {
+        "name": "ISC",
+        "type": "security-product",
+        "alias": [
+          "our colleagues over at ISC"
+        ]
+      },
+      {
+        "name": "Wired",
+        "type": "media-outlet",
+        "alias": [
+          "Wired is reporting"
+        ]
+      },
+      {
+        "name": "49.95",
+        "type": "credential-value",
+        "alias": [
+          "price"
+        ]
+      },
+      {
+        "name": "3rd May",
+        "type": "date-time"
+      },
+      {
+        "name": "1st April",
+        "type": "date-time"
+      },
+      {
+        "name": "January 2009",
+        "type": "date-time"
+      },
+      {
+        "name": "November 2008",
+        "type": "date-time"
+      },
+      {
+        "name": "last night",
+        "type": "date-time",
+        "alias": [
+          "night of action"
+        ]
+      },
+      {
+        "name": "P2P",
+        "type": "network-traffic"
+      },
+      {
+        "name": "spam mailings",
+        "type": "course-of-action"
+      },
+      {
+        "name": "cable sabotage",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "rogue antivirus",
+        "type": "general-software",
+        "alias": [
+          "fraudulent security tool"
+        ]
+      },
+      {
+        "name": "infected machines",
+        "type": "victims/targets"
+      },
+      {
+        "name": "botnet",
+        "type": "infrastructure"
+      },
+      {
+        "name": "Kido epidemic",
+        "type": "campaign"
+      },
+      {
+        "name": "Iksmas epidemic",
+        "type": "campaign"
+      },
+      {
+        "name": "Conficker Working Group site",
+        "type": "domain-name",
+        "alias": [
+          "CWG site"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "the Kido (aka Conficker/ Downadup) botnet",
+        "rel": "kicked into action",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "what everyones been on the lookout for since 1st April"
+      },
+      {
+        "sub": "computers infected with TrojanDownloader.Win32.Kido (aka Conficker.c)",
+        "rel": "contacted each other over",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "P2P"
+      },
+      {
+        "sub": "infected machines",
+        "rel": "to download new malicious files",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "new malicious files"
+      },
+      {
+        "sub": "NetWorm.Win32.Kido.js",
+        "rel": "is very different to",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "previous ones"
+      },
+      {
+        "sub": "NetWorm.Win32.Kido.js",
+        "rel": "is a worm",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "worm"
+      },
+      {
+        "sub": "NetWorm.Win32.Kido.js",
+        "rel": "is only functional until",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "3rd May"
+      },
+      {
+        "sub": "we",
+        "rel": "are still digging into",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "the files"
+      },
+      {
+        "sub": "we detect as",
+        "rel": "detect",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "FraudTool.Win32.SpywareProtect2009.s"
+      },
+      {
+        "sub": "first version of Kido",
+        "rel": "tried to download",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "fake antivirus"
+      },
+      {
+        "sub": "unknown cybercriminals",
+        "rel": "using the same trick",
+        "rel_type": [
+          "cooperates-with"
+        ],
+        "obj": "the same trick"
+      },
+      {
+        "sub": "The rogue software",
+        "rel": "is",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "SpywareProtect2009"
+      },
+      {
+        "sub": "SpywareProtect2009",
+        "rel": "can be found on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "spyprotect2009.com"
+      },
+      {
+        "sub": "SpywareProtect2009",
+        "rel": "can be found on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "spywrprotect2009.com"
+      },
+      {
+        "sub": "SpywareProtect2009",
+        "rel": "can be found on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "spywareprotector2009.com"
+      },
+      {
+        "sub": "once its run",
+        "rel": "you see",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "the app interface"
+      },
+      {
+        "sub": "the app interface",
+        "rel": "asks if you want to remove",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "the threats its detected"
+      },
+      {
+        "sub": "this service",
+        "rel": "comes at a price",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "49.95"
+      },
+      {
+        "sub": "1313.elaninet.com.78.26.179.107",
+        "rel": "located in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Ukraine"
+      },
+      {
+        "sub": "Kido",
+        "rel": "is downloading it from",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "other sites"
+      },
+      {
+        "sub": "The latest version of Kido",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "EmailWorm.Win32.Iksmas.atz"
+      },
+      {
+        "sub": "EmailWorm.Win32.Iksmas.atz",
+        "rel": "is also known as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Waledac"
+      },
+      {
+        "sub": "Waledac",
+        "rel": "is able to",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "steal data and send spam"
+      },
+      {
+        "sub": "EmailWorm.Win32.Iksmas.atz",
+        "rel": "first appeared in",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "January 2009"
+      },
+      {
+        "sub": "a lot of IT experts",
+        "rel": "noted the similarity between",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": [
+          "Kido",
+          "Iksmas"
+        ]
+      },
+      {
+        "sub": "The Kido epidemic",
+        "rel": "was mirrored by",
+        "rel_type": [
+          "mirrors"
+        ],
+        "obj": "an email epidemic caused by Iksmas"
+      },
+      {
+        "sub": "there wasnt any firm evidence of",
+        "rel": "a link between",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": [
+          "Kido",
+          "Iksmas"
+        ]
+      },
+      {
+        "sub": "Both Kido and Iksmas",
+        "rel": "are now present on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "infected machines"
+      },
+      {
+        "sub": "Both Kido and Iksmas",
+        "rel": "are part of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "the gigantic botnet"
+      },
+      {
+        "sub": "the gigantic botnet",
+        "rel": "designed to conduct",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "spam mailings"
+      },
+      {
+        "sub": "sites belonging to companies and organizations which are part of the Conficker Working Group",
+        "rel": "will find themselves under attack",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "under attack"
+      },
+      {
+        "sub": "Our colleagues over at ISC",
+        "rel": "have just posted saying",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "the CWG site is down"
+      },
+      {
+        "sub": "ISC",
+        "rel": "are looking into",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "it"
+      },
+      {
+        "sub": "Wired",
+        "rel": "is reporting that",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "the outage is due to cable sabotage"
+      },
+      {
+        "sub": "cable sabotage",
+        "rel": "is due to",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "the outage"
+      }
+    ]
+  }
+}

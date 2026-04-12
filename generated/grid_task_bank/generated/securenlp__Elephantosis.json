@@ -1,0 +1,790 @@
+{
+  "sample_id": "securenlp__Elephantosis",
+  "sample_index": 154,
+  "source": "securenlp",
+  "file_name": "Elephantosis",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Babar",
+        "type": "malware",
+        "alias": [
+          "the malware",
+          "Babar64"
+        ]
+      },
+      {
+        "name": "Babar64",
+        "type": "malware"
+      },
+      {
+        "name": "CodeProject",
+        "type": "security-product"
+      },
+      {
+        "name": "the dropper",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "the implant",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "MSSecurity",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "regsvr32.exe",
+        "type": "general-software"
+      },
+      {
+        "name": "perf585.dll",
+        "type": "file"
+      },
+      {
+        "name": "dump21cb.dll",
+        "type": "file"
+      },
+      {
+        "name": "perf_585.dll",
+        "type": "file"
+      },
+      {
+        "name": "update.msi",
+        "type": "file"
+      },
+      {
+        "name": "MSI",
+        "type": "directory"
+      },
+      {
+        "name": "horizons-tourisme.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "gezelimmi.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "alexpetro.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "etehadyie.ir",
+        "type": "domain-name"
+      },
+      {
+        "name": "MSNP21",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "DirectSoundCreate",
+        "type": "API"
+      },
+      {
+        "name": "waveOutOpen",
+        "type": "API"
+      },
+      {
+        "name": "Zlib",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Deflate",
+        "type": "vulnerability"
+      },
+      {
+        "name": "AES",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Rising",
+        "type": "security-product"
+      },
+      {
+        "name": "Kaspersky",
+        "type": "security-product"
+      },
+      {
+        "name": "AntiVir",
+        "type": "security-product"
+      },
+      {
+        "name": "MSIE",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "MSI",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Bunny",
+        "type": "malware"
+      },
+      {
+        "name": "TFC",
+        "type": "malware"
+      },
+      {
+        "name": "NBOT",
+        "type": "malware"
+      },
+      {
+        "name": "CSEC",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "French intelligence",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Babar",
+        "rel": "is a variant of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Babar64"
+      },
+      {
+        "sub": "the dropper",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "the implant"
+      },
+      {
+        "sub": "the dropper",
+        "rel": "fetches from",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "an encrypted DLL"
+      },
+      {
+        "sub": "the dropper",
+        "rel": "decrypted from",
+        "rel_type": [
+          "decrypts"
+        ],
+        "obj": "an encrypted DLL"
+      },
+      {
+        "sub": "the dropper",
+        "rel": "loads using",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "regsvr32.exe"
+      },
+      {
+        "sub": "the dropper",
+        "rel": "executes command line",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "'\"regsvr32.exe\" /s /n /i \"%APPDATA%\\%DLLNAME%\"'"
+      },
+      {
+        "sub": "the implant",
+        "rel": "is dropped into",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "the application data folder"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is able to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Windows desktop machines"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is able to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "instant messengers"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is able to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "softphones"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is able to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "browsers"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is able to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "office applications"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is able to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "running processes"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is able to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "desktop applications"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is able to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "instant messengers"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is able to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "softphones"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is able to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "browsers"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is able to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "office applications"
+      },
+      {
+        "sub": "the dropper",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "regsvr32.exe"
+      },
+      {
+        "sub": "Babar",
+        "rel": "implements",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "anti-analysis measures"
+      },
+      {
+        "sub": "Babar",
+        "rel": "enumerates",
+        "rel_type": [
+          "enumerates"
+        ],
+        "obj": "installed anti-virus products"
+      },
+      {
+        "sub": "Babar",
+        "rel": "queries",
+        "rel_type": [
+          "queries"
+        ],
+        "obj": "AntiVirusProduct"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "API resolution via hash"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "SHA-1"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "obfuscation technique"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "named pipes"
+      },
+      {
+        "sub": "Babar",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "a registry key"
+      },
+      {
+        "sub": "Babar",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "registry key under [HKU]\\..\\CurrentVersion\\Run"
+      },
+      {
+        "sub": "Babar",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "command line"
+      },
+      {
+        "sub": "Babar",
+        "rel": "loads",
+        "rel_type": [
+          "loads"
+        ],
+        "obj": "a set of configuration parameters"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "C&C servers"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "AES encryption"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Deflate algorithm"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is able to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "keystrokes"
+      },
+      {
+        "sub": "Babar",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "an invisible window"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Windows RAWINPUT"
+      },
+      {
+        "sub": "Babar",
+        "rel": "applies",
+        "rel_type": [
+          "applies"
+        ],
+        "obj": "global Windows hooks"
+      },
+      {
+        "sub": "Babar",
+        "rel": "installs hooks for",
+        "rel_type": [
+          "hooks"
+        ],
+        "obj": "WH_KEYBOARD"
+      },
+      {
+        "sub": "Babar",
+        "rel": "installs hooks for",
+        "rel_type": [
+          "hooks"
+        ],
+        "obj": "WH_GETMESSAGE"
+      },
+      {
+        "sub": "Babar",
+        "rel": "hooks",
+        "rel_type": [
+          "hooks"
+        ],
+        "obj": "specific APIs"
+      },
+      {
+        "sub": "Babar",
+        "rel": "hooks",
+        "rel_type": [
+          "hooks"
+        ],
+        "obj": "DirectSoundCreate"
+      },
+      {
+        "sub": "Babar",
+        "rel": "captures",
+        "rel_type": [
+          "captures"
+        ],
+        "obj": "audio streams"
+      },
+      {
+        "sub": "Babar",
+        "rel": "captures",
+        "rel_type": [
+          "captures"
+        ],
+        "obj": "screen shots"
+      },
+      {
+        "sub": "Babar",
+        "rel": "steals",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "clipboard data"
+      },
+      {
+        "sub": "Babar",
+        "rel": "steals",
+        "rel_type": [
+          "steals"
+        ],
+        "obj": "system and user default language"
+      },
+      {
+        "sub": "Babar",
+        "rel": "steals",
+        "rel_type": [
+          "steals"
+        ],
+        "obj": "keyboard layout"
+      },
+      {
+        "sub": "Babar",
+        "rel": "steals",
+        "rel_type": [
+          "steals"
+        ],
+        "obj": "names of desktop windows"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "DirectSoundCreate8"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "DirectSoundCaptureCreate"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "DirectSoundCaptureCreate8"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "CoCreateInstance"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "waveOutOpen"
+      },
+      {
+        "sub": "Babar",
+        "rel": [
+          "uses"
+        ],
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "waveOutClose"
+      },
+      {
+        "sub": "Babar",
+        "rel": [
+          "uses"
+        ],
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "waveOutWrite"
+      },
+      {
+        "sub": "Babar",
+        "rel": [
+          "uses"
+        ],
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "waveInOpen"
+      },
+      {
+        "sub": "Babar",
+        "rel": [
+          "uses"
+        ],
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "waveInClose"
+      },
+      {
+        "sub": "Babar",
+        "rel": [
+          "uses"
+        ],
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "waveInAddBuffer"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "MSNP21"
+      },
+      {
+        "sub": "Babar",
+        "rel": "searches for",
+        "rel_type": [
+          "searches-for"
+        ],
+        "obj": "tags such as 'Message-Type', 'Reliability', 'To', 'From', 'Text'"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is similar to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Bunny"
+      },
+      {
+        "sub": "Babar",
+        "rel": "shares source code with",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Bunny"
+      },
+      {
+        "sub": "Babar",
+        "rel": "shares source code with",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "TFC"
+      },
+      {
+        "sub": "Babar",
+        "rel": "shares source code with",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "NBOT"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Zlib"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Deflate"
+      },
+      {
+        "sub": "Babar",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the OpenCORE AMR library"
+      },
+      {
+        "sub": "CSEC",
+        "rel": "authored by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "a leaked government presentation"
+      },
+      {
+        "sub": "CSEC",
+        "rel": "reports about",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a potential nation state attack"
+      },
+      {
+        "sub": "CSEC",
+        "rel": "reports about",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "malware named Babar"
+      },
+      {
+        "sub": "CSEC",
+        "rel": "has uncovered",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the attack in 2009"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "is assumed to be",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "French intelligence"
+      },
+      {
+        "sub": "Babar",
+        "rel": "was compiled in",
+        "rel_type": [
+          "compiles"
+        ],
+        "obj": "2011"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is similar to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "the Bunny malware"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is similar to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "the NBOT family"
+      },
+      {
+        "sub": "Babar",
+        "rel": "is similar to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "TFC"
+      },
+      {
+        "sub": "Babar64",
+        "rel": "is a campaign of",
+        "rel_type": [
+          "campaign"
+        ],
+        "obj": "two Babar64 droppers"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "is attributed to",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "French intelligence"
+      }
+    ]
+  }
+}

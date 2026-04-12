@@ -1,0 +1,194 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_27.json",
+  "sample_index": 219,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_27.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Thrip",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "PsExec",
+        "type": "Tool"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Tool"
+      },
+      {
+        "name": "Mimikatz",
+        "type": "Tool"
+      },
+      {
+        "name": "WinSCP",
+        "type": "Tool"
+      },
+      {
+        "name": "LogMeIn",
+        "type": "Tool"
+      },
+      {
+        "name": "Infostealer.Catchamas",
+        "type": "Malware"
+      },
+      {
+        "name": "MapXtreme Geographic Information System",
+        "type": "Software"
+      },
+      {
+        "name": "Google Earth Server",
+        "type": "Software"
+      },
+      {
+        "name": "Garmin imaging software",
+        "type": "Software"
+      },
+      {
+        "name": "satellite communications operator",
+        "type": "Organization"
+      },
+      {
+        "name": "telecoms operator",
+        "type": "Organization"
+      },
+      {
+        "name": "defense contractor",
+        "type": "Organization"
+      },
+      {
+        "name": "China",
+        "type": "Location"
+      },
+      {
+        "name": "United States",
+        "type": "Location"
+      },
+      {
+        "name": "Southeast Asia",
+        "type": "Location"
+      },
+      {
+        "name": "Symantec",
+        "type": "Organization"
+      },
+      {
+        "name": "Targeted Attack Analytics",
+        "type": "Campaign"
+      },
+      {
+        "name": "Advanced Threat Protection",
+        "type": "Campaign"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Thrip",
+        "rel": "USES",
+        "obj": "PsExec"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "USES",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "USES",
+        "obj": "Mimikatz"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "USES",
+        "obj": "WinSCP"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "USES",
+        "obj": "LogMeIn"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "USES",
+        "obj": "Infostealer.Catchamas"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "TARGETS",
+        "obj": "MapXtreme Geographic Information System"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "TARGETS",
+        "obj": "Google Earth Server"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "TARGETS",
+        "obj": "Garmin imaging software"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "TARGETS",
+        "obj": "satellite communications operator"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "TARGETS",
+        "obj": "telecoms operator"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "TARGETS",
+        "obj": "defense contractor"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "DEVELOPS",
+        "obj": "Targeted Attack Analytics"
+      },
+      {
+        "sub": "Targeted Attack Analytics",
+        "rel": "DETECTED",
+        "obj": "Thrip"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "OFFERS",
+        "obj": "Advanced Threat Protection"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "origins from",
+        "obj": "China"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "TARGETS",
+        "obj": "United States"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "TARGETS",
+        "obj": "Southeast Asia"
+      }
+    ]
+  }
+}

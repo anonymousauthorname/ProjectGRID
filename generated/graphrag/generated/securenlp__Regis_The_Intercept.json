@@ -1,0 +1,271 @@
+{
+  "sample_id": "securenlp__Regis_The_Intercept",
+  "sample_index": 187,
+  "source": "securenlp",
+  "file_name": "Regis_The_Intercept",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "REGIN",
+        "type": "MALWARE"
+      },
+      {
+        "name": "GOVERNMENT COMMUNICATIONS HEADQUARTERS (GCHQ)",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "NATIONAL SECURITY AGENCY (NSA)",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "BELGACOM",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "EUROPEAN UNION",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "EDWARD SNOWDEN",
+        "type": "PERSON"
+      },
+      {
+        "name": "OPERATION SOCIALIST",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "SYMANTEC",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MICROSOFT",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "FABRICE CLÉMENT",
+        "type": "PERSON"
+      },
+      {
+        "name": "JAN MARGOT",
+        "type": "PERSON"
+      },
+      {
+        "name": "VIRUSTOTAL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "GETTHIS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PROCMON",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SVA-STAT.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "EUROPEAN COMMISSION",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "EUROPEAN PARLIAMENT",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "EUROPEAN COUNCIL",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "RIDGE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "FRAUDULENT LINKEDIN PAGE",
+        "type": "TOOL"
+      },
+      {
+        "name": "STEALTH IMPLANT",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "REGIN LOADER",
+        "type": "TOOL"
+      },
+      {
+        "name": "REGIN ORCHESTRATOR",
+        "type": "TOOL"
+      },
+      {
+        "name": "REGIN INFORMATION HARVESTERS",
+        "type": "TOOL"
+      },
+      {
+        "name": "REGIN STEALTH FUNCTIONALITY",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "REGIN MODULAR DESIGN",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "REGIN DEVELOPMENT OVER 10 YEARS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "REGIN FIRST DETECTED 2011",
+        "type": "EVENT"
+      },
+      {
+        "name": "BELGACOM BREACH DISCLOSURE 2013",
+        "type": "EVENT"
+      },
+      {
+        "name": "GCHQ",
+        "type": "Unknown"
+      },
+      {
+        "name": "NSA",
+        "type": "Unknown"
+      },
+      {
+        "name": "REGIN SECOND STAGE LOADER",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "GCHQ",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "NSA",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "BELGACOM",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "EUROPEAN UNION",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "EDWARD SNOWDEN",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "OPERATION SOCIALIST",
+        "rel": "related_to",
+        "obj": "GCHQ"
+      },
+      {
+        "sub": "OPERATION SOCIALIST",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "SYMANTEC",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "MICROSOFT",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "FABRICE CLÉMENT",
+        "rel": "related_to",
+        "obj": "BELGACOM"
+      },
+      {
+        "sub": "JAN MARGOT",
+        "rel": "related_to",
+        "obj": "BELGACOM"
+      },
+      {
+        "sub": "VIRUSTOTAL",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "GETTHIS",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "PROCMON",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "REGIN LOADER",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "REGIN SECOND STAGE LOADER",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "REGIN ORCHESTRATOR",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "REGIN INFORMATION HARVESTERS",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "REGIN STEALTH FUNCTIONALITY",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "REGIN MODULAR DESIGN",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "REGIN DEVELOPMENT OVER 10 YEARS",
+        "rel": "related_to",
+        "obj": "REGIN"
+      },
+      {
+        "sub": "REGIN FIRST DETECTED 2011",
+        "rel": "related_to",
+        "obj": "SYMANTEC"
+      },
+      {
+        "sub": "BELGACOM BREACH DISCLOSURE 2013",
+        "rel": "related_to",
+        "obj": "FABRICE CLÉMENT"
+      }
+    ]
+  }
+}

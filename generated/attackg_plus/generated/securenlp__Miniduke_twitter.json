@@ -1,0 +1,367 @@
+{
+  "sample_id": "securenlp__Miniduke_twitter",
+  "sample_index": 186,
+  "source": "securenlp",
+  "file_name": "Miniduke_twitter",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Microsoft Word",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2014-1761"
+      },
+      {
+        "sub": "'Proposal-Cover-Sheet-English.rtf'",
+        "rel": "Use",
+        "obj": "Microsoft Word"
+      },
+      {
+        "sub": "'Proposal-Cover-Sheet-English.rtf'",
+        "rel": "Modify",
+        "obj": "Vulnerability in Microsoft Word"
+      },
+      {
+        "sub": "'Proposal-Cover-Sheet-English.rtf'",
+        "rel": "Construct",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Microsoft Word",
+        "rel": "Operate",
+        "obj": "Active reconnaissance"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Deliver",
+        "obj": "'Proposal-Cover-Sheet-English.rtf'"
+      },
+      {
+        "sub": "Active reconnaissance",
+        "rel": "Has technique",
+        "obj": "Exploitation of public-facing application"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "TwitterJS"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "document exploit"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "cryptdll.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Register",
+        "obj": "drive open events"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "C2 communication"
+      },
+      {
+        "sub": "Secondary Component",
+        "rel": "Embed",
+        "obj": "cryptdll.dll"
+      },
+      {
+        "sub": "Secondary Component",
+        "rel": "Locate at",
+        "obj": "cryptdll.dll"
+      },
+      {
+        "sub": "Secondary Component",
+        "rel": "Has value",
+        "obj": "drive open events"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Proposal-Cover-Sheet-English.rtf"
+      },
+      {
+        "sub": "Proposal-Cover-Sheet-English.rtf",
+        "rel": "Construct",
+        "obj": "RTF"
+      },
+      {
+        "sub": "Microsoft Word",
+        "rel": "Operate",
+        "obj": "Victim's system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "Victim's system"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Modify",
+        "obj": "Foothold"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "System"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Modify",
+        "obj": "Shellcode"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "Use",
+        "obj": "LoadLibraryA"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "Write",
+        "obj": "%TEMP% directory"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "Operate",
+        "obj": "cryptdll.dll"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "Construct",
+        "obj": "TwitterJS"
+      },
+      {
+        "sub": "TwitterJS",
+        "rel": "Execute",
+        "obj": "Windows DLL"
+      },
+      {
+        "sub": "TwitterJS",
+        "rel": "Inject",
+        "obj": "cryptdll.dll"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Locate at",
+        "obj": "%TEMP% directory"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Has value",
+        "obj": "Shellcode"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Belong to",
+        "obj": "MiniDuke"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Construct",
+        "obj": ".LNK file"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Use",
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Modify",
+        "obj": "main module"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Has value",
+        "obj": "Startup directory"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Use",
+        "obj": "IShellLinkA interface"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Operate",
+        "obj": "system boot"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Obfuscation of JScript code"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Checking for debugger breakpoints in shellcode"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "Detect",
+        "obj": "Debugger breakpoints"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "Write",
+        "obj": "Prologue instructions"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "Operate",
+        "obj": "Function code"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "Modify",
+        "obj": "First bytes of API function"
+      },
+      {
+        "sub": "Shellcode",
+        "rel": "Skip",
+        "obj": "First 5 bytes if breakpoints detected"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "Defense evasion"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Gather",
+        "obj": "Computer name"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Gather",
+        "obj": "User domain name"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Gather",
+        "obj": "OS version"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Gather",
+        "obj": "Domain controller name"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Gather",
+        "obj": "User groups"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Gather",
+        "obj": "AV products installed"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Gather",
+        "obj": "Internet proxy configuration"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Send",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Use",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "MiniDuke",
+        "rel": "Modify",
+        "obj": "Victim's environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Collect",
+        "obj": "System information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Send",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Has objective",
+        "obj": "Gather data relevant to their goals"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Twitter-based domain generation algorithm"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "@FloydLSchwartz"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Retrieve",
+        "obj": "URL from tag 'X)))'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Generate",
+        "obj": "new Twitter username based on current date"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "C&C URL using base64-encoded and encrypted system information string"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "C&C URL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "system information string"
+      }
+    ]
+  }
+}

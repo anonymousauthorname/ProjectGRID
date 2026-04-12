@@ -1,0 +1,273 @@
+{
+  "sample_id": "casie__2073.json",
+  "sample_index": 30,
+  "source": "casie",
+  "file_name": "2073.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2016-10033",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2017-8295",
+        "type": "Entity"
+      },
+      {
+        "name": "WordPress 4.6",
+        "type": "Entity"
+      },
+      {
+        "name": "WordPress 4.7.1",
+        "type": "Entity"
+      },
+      {
+        "name": "WordPress 4.7.4",
+        "type": "Entity"
+      },
+      {
+        "name": "PHPMailer",
+        "type": "Entity"
+      },
+      {
+        "name": "unauthenticated remote code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "unauthorized password reset",
+        "type": "Entity"
+      },
+      {
+        "name": "password reset vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "UseCanonicalName",
+        "type": "Entity"
+      },
+      {
+        "name": "WordPress Core",
+        "type": "Entity"
+      },
+      {
+        "name": "default configuration",
+        "type": "Entity"
+      },
+      {
+        "name": "remote attackers",
+        "type": "Entity"
+      },
+      {
+        "name": "target application server",
+        "type": "Entity"
+      },
+      {
+        "name": "older WordPress versions",
+        "type": "Entity"
+      },
+      {
+        "name": "WordPress 4.3.1",
+        "type": "Entity"
+      },
+      {
+        "name": "security researcher Dawid Golunski",
+        "type": "Entity"
+      },
+      {
+        "name": "BeyondSecurity",
+        "type": "Entity"
+      },
+      {
+        "name": "SecuriTeam",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerable WordPress installation",
+        "type": "Entity"
+      },
+      {
+        "name": "attackers gaining unauthorized access",
+        "type": "Entity"
+      },
+      {
+        "name": "untrusted data",
+        "type": "Entity"
+      },
+      {
+        "name": "password reset e-mail",
+        "type": "Entity"
+      },
+      {
+        "name": "SERVER_NAME",
+        "type": "Entity"
+      },
+      {
+        "name": "temporary solution",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2016-10033",
+        "rel": "affects",
+        "obj": "WordPress 4.6"
+      },
+      {
+        "sub": "CVE-2017-8295",
+        "rel": "affects",
+        "obj": "WordPress 4.3.1"
+      },
+      {
+        "sub": "CVE-2017-8295",
+        "rel": "affects",
+        "obj": "WordPress Core"
+      },
+      {
+        "sub": "CVE-2017-8295",
+        "rel": "allows",
+        "obj": "unauthorized password reset"
+      },
+      {
+        "sub": "CVE-2017-8295",
+        "rel": "leads to",
+        "obj": "attackers gaining unauthorized access"
+      },
+      {
+        "sub": "CVE-2017-8295",
+        "rel": "exploits",
+        "obj": "untrusted data"
+      },
+      {
+        "sub": "WordPress Core",
+        "rel": "uses",
+        "obj": "untrusted data"
+      },
+      {
+        "sub": "WordPress Core",
+        "rel": "is installed on",
+        "obj": "target application server"
+      },
+      {
+        "sub": "WordPress 4.6",
+        "rel": "has default configuration",
+        "obj": "default configuration"
+      },
+      {
+        "sub": "remote attackers",
+        "rel": "exploits",
+        "obj": "CVE-2016-10033"
+      },
+      {
+        "sub": "remote attackers",
+        "rel": "exploits",
+        "obj": "CVE-2017-8295"
+      },
+      {
+        "sub": "remote attackers",
+        "rel": "gains unauthorized access to",
+        "obj": "vulnerable WordPress installation"
+      },
+      {
+        "sub": "security researcher Dawid Golunski",
+        "rel": "released",
+        "obj": "proof-of-concept exploit code for CVE-2016-10033"
+      },
+      {
+        "sub": "security researcher Dawid Golunski",
+        "rel": "released",
+        "obj": "information about CVE-2017-8295"
+      },
+      {
+        "sub": "security researcher Dawid Golunski",
+        "rel": "found",
+        "obj": "CVE-2017-8295 in WordPress 4.3.1"
+      },
+      {
+        "sub": "security researcher Dawid Golunski",
+        "rel": "reported",
+        "obj": "CVE-2017-8295 to WordPress security team"
+      },
+      {
+        "sub": "security researcher Dawid Golunski",
+        "rel": "decided to publish",
+        "obj": "findings on CVE-2017-8295"
+      },
+      {
+        "sub": "security researcher Dawid Golunski",
+        "rel": "offered",
+        "obj": "temporary solution"
+      },
+      {
+        "sub": "temporary solution",
+        "rel": "enforces",
+        "obj": "static SERVER_NAME value"
+      },
+      {
+        "sub": "temporary solution",
+        "rel": "involves",
+        "obj": "UseCanonicalName"
+      },
+      {
+        "sub": "BeyondSecurity",
+        "rel": "coordinated",
+        "obj": "disclosure of CVE-2017-8295 to WordPress developers"
+      },
+      {
+        "sub": "WordPress Foundation",
+        "rel": "patched",
+        "obj": "CVE-2016-10033"
+      },
+      {
+        "sub": "WordPress Foundation",
+        "rel": "patched",
+        "obj": "CVE-2017-8295"
+      },
+      {
+        "sub": "WordPress Foundation",
+        "rel": "released",
+        "obj": "WordPress 4.7.1"
+      },
+      {
+        "sub": "WordPress Foundation",
+        "rel": "released",
+        "obj": "WordPress 4.7.4"
+      },
+      {
+        "sub": "older WordPress versions",
+        "rel": "may be affected by",
+        "obj": "CVE-2017-8295"
+      },
+      {
+        "sub": "WordPress 4.6",
+        "rel": "is still widely used",
+        "obj": "nearly 11 percent of WordPress installations"
+      },
+      {
+        "sub": "admins",
+        "rel": "should upgrade",
+        "obj": "older WordPress versions"
+      },
+      {
+        "sub": "admins",
+        "rel": "should upgrade to",
+        "obj": "WordPress 4.7.4"
+      }
+    ]
+  }
+}

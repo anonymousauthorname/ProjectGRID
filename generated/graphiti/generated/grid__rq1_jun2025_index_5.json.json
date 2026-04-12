@@ -1,0 +1,185 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_5.json",
+  "sample_index": 238,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_5.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DMA Locker",
+        "type": "Malware"
+      },
+      {
+        "name": "AES",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "ECB mode",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "RSA",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "fakturax.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "ntserver.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "rstrui.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "ShadowExplorer.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "sesvc.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "cbengine.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "BMP",
+        "type": "Software"
+      },
+      {
+        "name": "HTML",
+        "type": "Software"
+      },
+      {
+        "name": "PNG",
+        "type": "Software"
+      },
+      {
+        "name": "C:ProgramData",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "C:Documents and SettingsAll UsersDokumenty",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "4190df2af81ece296c465e245fc0caea",
+        "type": "Indicator"
+      },
+      {
+        "name": "d35344b1f48764ba083e51438121e6a9",
+        "type": "Indicator"
+      },
+      {
+        "name": "6fbd3cdcafd6695c384a1119873786aa",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DMA Locker",
+        "rel": "USES",
+        "obj": "AES"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "USES",
+        "obj": "ECB mode"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "DEPLOYS",
+        "obj": "fakturax.exe"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "DEPLOYS",
+        "obj": "ntserver.exe"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "TERMINATES",
+        "obj": "rstrui.exe"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "TERMINATES",
+        "obj": "ShadowExplorer.exe"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "TERMINATES",
+        "obj": "sesvc.exe"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "TERMINATES",
+        "obj": "cbengine.exe"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "ENCRYPTS",
+        "obj": "BMP"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "ENCRYPTS",
+        "obj": "HTML"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "ENCRYPTS",
+        "obj": "PNG"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "moves to",
+        "obj": "C:ProgramData"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "moves to",
+        "obj": "C:Documents and SettingsAll UsersDokumenty"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "has sample",
+        "obj": "4190df2af81ece296c465e245fc0caea"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "has sample",
+        "obj": "d35344b1f48764ba083e51438121e6a9"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "has sample",
+        "obj": "6fbd3cdcafd6695c384a1119873786aa"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "does not use",
+        "obj": "RSA"
+      }
+    ]
+  }
+}

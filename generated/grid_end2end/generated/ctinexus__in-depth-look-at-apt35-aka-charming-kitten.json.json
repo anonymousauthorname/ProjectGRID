@@ -1,0 +1,159 @@
+{
+  "sample_id": "ctinexus__in-depth-look-at-apt35-aka-charming-kitten.json",
+  "sample_index": 55,
+  "source": "ctinexus",
+  "file_name": "in-depth-look-at-apt35-aka-charming-kitten.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT35",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Charming Kitten",
+          "Phosphorus",
+          "the Iranian advanced persistent threat actor and cyberespionage group",
+          "Iranian threat actors"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "a campaign conducted via social media",
+        "type": "campaign",
+        "alias": [
+          "one of the most sophisticated internet based spying campaigns"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "academic institutions in the U.S, France, and the Middle East region",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "medical research organizations in Israel and in the U.S.",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Exchange Server vulnerabilities",
+        "type": "vulnerability",
+        "alias": [
+          "ProxyShell"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "new strain of malware",
+        "type": "malware",
+        "alias": [
+          "the malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "intelligence collection",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Hyperscrape",
+        "type": "hacker-tool",
+        "alias": [
+          "a new tool called Hyperscrape"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "victim's mailboxes",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT35",
+        "rel": "launched",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a campaign conducted via social media"
+      },
+      {
+        "sub": "APT35",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "academic institutions in the U.S, France, and the Middle East region"
+      },
+      {
+        "sub": "APT35",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "medical research organizations in Israel and in the U.S."
+      },
+      {
+        "sub": "APT35",
+        "rel": "abusing",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Microsoft Exchange Server vulnerabilities"
+      },
+      {
+        "sub": "APT35",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "new strain of malware"
+      },
+      {
+        "sub": "new strain of malware",
+        "rel": "for intelligence collection",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "intelligence collection"
+      },
+      {
+        "sub": "APT35",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Hyperscrape"
+      },
+      {
+        "sub": "Hyperscrape",
+        "rel": "extract emails from",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "victim's mailboxes"
+      }
+    ]
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "sample_id": "malkg__201305CIRCLMiniDuke.txt",
+  "sample_index": 130,
+  "source": "malkg",
+  "file_name": "201305CIRCLMiniDuke.txt",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "CIRCL",
+        "rel": "is interested in",
+        "obj": "malware’s later stages"
+      },
+      {
+        "sub": "CIRCL",
+        "rel": "is interested in",
+        "obj": "how malware works"
+      },
+      {
+        "sub": "CIRCL",
+        "rel": "is interested in",
+        "obj": "information revealed by malware"
+      },
+      {
+        "sub": "CIRCL",
+        "rel": "took",
+        "obj": "known sample"
+      },
+      {
+        "sub": "CIRCL",
+        "rel": "analyzes",
+        "obj": "malware’s later stages"
+      },
+      {
+        "sub": "CIRCL",
+        "rel": "found",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "CIRCL",
+        "rel": "identifies",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "CIRCL",
+        "rel": "uses",
+        "obj": "known sample"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "is identified as",
+        "obj": "HTTP controlled backdoor"
+      },
+      {
+        "sub": "HTTP controlled backdoor",
+        "rel": "enables",
+        "obj": "attacker"
+      },
+      {
+        "sub": "HTTP controlled backdoor",
+        "rel": "enables",
+        "obj": "full control"
+      },
+      {
+        "sub": "Sample B",
+        "rel": "is identified as",
+        "obj": "HTTP controlled backdoor"
+      },
+      {
+        "sub": "HTTP controlled backdoor",
+        "rel": "enables",
+        "obj": "attacker"
+      },
+      {
+        "sub": "HTTP controlled backdoor",
+        "rel": "enables",
+        "obj": "full control"
+      },
+      {
+        "sub": "analysis",
+        "rel": "uses",
+        "obj": "mixed analysis approach"
+      },
+      {
+        "sub": "mixed analysis approach",
+        "rel": "overcomes",
+        "obj": "obfuscation and encryption"
+      },
+      {
+        "sub": "mixed analysis approach",
+        "rel": "impacts",
+        "obj": "malware interpretation"
+      },
+      {
+        "sub": "domain",
+        "rel": "is pointing to",
+        "obj": "Google"
+      },
+      {
+        "sub": "domain",
+        "rel": "points to",
+        "obj": "Google"
+      },
+      {
+        "sub": "domain",
+        "rel": "returns",
+        "obj": "404 error"
+      },
+      {
+        "sub": "backdoor access",
+        "rel": "performs",
+        "obj": "cyber attack"
+      },
+      {
+        "sub": "backdoor access",
+        "rel": "retrieves",
+        "obj": "computer name"
+      },
+      {
+        "sub": "backdoor access",
+        "rel": "retrieves",
+        "obj": "username"
+      },
+      {
+        "sub": "backdoor access",
+        "rel": "retrieves",
+        "obj": "process information"
+      },
+      {
+        "sub": "directory content",
+        "rel": "execute",
+        "obj": "command"
+      },
+      {
+        "sub": "interactive command execution",
+        "rel": "execute",
+        "obj": "command"
+      },
+      {
+        "sub": "interactive command execution as domain user",
+        "rel": "execute",
+        "obj": "command"
+      },
+      {
+        "sub": "backdoor access",
+        "rel": "retrieves",
+        "obj": "running processes"
+      },
+      {
+        "sub": "GroupTumbler",
+        "rel": "controls",
+        "obj": "remote computer"
+      },
+      {
+        "sub": "http://news.grouptumbler.com/news/feed.php?i=Me3tMZEHAuvkc~uJsO~W7lX1vSsgkuW99vD3FRgi",
+        "rel": "used in",
+        "obj": "HTTP requests"
+      },
+      {
+        "sub": "custom encoding",
+        "rel": "used to encode",
+        "obj": "request"
+      },
+      {
+        "sub": "request",
+        "rel": "is encoded in",
+        "obj": "custom encoding"
+      },
+      {
+        "sub": "backdoor",
+        "rel": "is",
+        "obj": "malware"
+      },
+      {
+        "sub": "The malware",
+        "rel": "connects via HTTP requests to",
+        "obj": "http://news.grouptumbler.com/"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "obj": "news/feed.php?i="
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "obj": "BASE64 encoded string"
+      },
+      {
+        "sub": "The malware",
+        "rel": "uses",
+        "obj": "i="
+      },
+      {
+        "sub": "Init phase of Sample B",
+        "rel": "decrypts",
+        "obj": "decode_functions_and_start_internet_loop"
+      },
+      {
+        "sub": "Init phase of Sample B",
+        "rel": "decrypts",
+        "obj": "wininet.dll"
+      },
+      {
+        "sub": "Init phase of Sample B",
+        "rel": "loads",
+        "obj": "wininet.dll"
+      },
+      {
+        "sub": "Init phase of Sample B",
+        "rel": "decrypts",
+        "obj": "InternetOpenA"
+      },
+      {
+        "sub": "Init phase of Sample B",
+        "rel": "assigns",
+        "obj": "InternetOpenA"
+      },
+      {
+        "sub": "Init phase of Sample B",
+        "rel": "decrypts",
+        "obj": "InternetConnectA"
+      },
+      {
+        "sub": "Init phase of Sample B",
+        "rel": "assigns",
+        "obj": "InternetConnectA"
+      },
+      {
+        "sub": "Init phase of Sample B",
+        "rel": "decrypts",
+        "obj": "InternetSetOptionA"
+      },
+      {
+        "sub": "Init phase of Sample B",
+        "rel": "assigns",
+        "obj": "InternetSetOptionA"
+      },
+      {
+        "sub": "Init phase of Sample B",
+        "rel": "decrypts",
+        "obj": "module names"
+      },
+      {
+        "sub": "Init phase of Sample B",
+        "rel": "decrypts",
+        "obj": "function names"
+      },
+      {
+        "sub": "decode_functions_and_start_internet_loop",
+        "rel": "resolves from",
+        "obj": "wininet.dll"
+      },
+      {
+        "sub": "CIRCL",
+        "rel": "has contact information",
+        "obj": "24788444"
+      },
+      {
+        "sub": "CIRCL",
+        "rel": "has contact information",
+        "obj": "info@circl.lu"
+      },
+      {
+        "sub": "CIRCL",
+        "rel": "has contact information",
+        "obj": "circl.lu"
+      },
+      {
+        "sub": "this",
+        "rel": "calls",
+        "obj": "InternetConnectA"
+      },
+      {
+        "sub": "this",
+        "rel": "uses",
+        "obj": "InternetOpenA"
+      },
+      {
+        "sub": "news.grouptumbler.com",
+        "rel": "resolves to",
+        "obj": "173.194.70.101"
+      },
+      {
+        "sub": "news.grouptumbler.com",
+        "rel": "was first seen",
+        "obj": "2013-03-03 01:57:37-0000"
+      },
+      {
+        "sub": "news.grouptumbler.com",
+        "rel": "was last seen",
+        "obj": "2013-03-06 02:34:47-0000"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "was first seen",
+        "obj": "2012-03-14 4:21:10-0000"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "was last seen",
+        "obj": "2013-02-26 2:04:07-0000"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosting",
+        "obj": "dvdform.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosting",
+        "obj": "p90xprice.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosting",
+        "obj": "dexter season.com"
+      },
+      {
+        "sub": "200.63.46.33",
+        "rel": "hosting",
+        "obj": "news.grouptumbler.com"
+      },
+      {
+        "sub": "...",
+        "rel": "is associated with",
+        "obj": "malicious domains"
+      }
+    ]
+  }
+}

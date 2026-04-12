@@ -1,0 +1,1178 @@
+{
+  "sample_id": "securenlp__Hikit_Analysis-Final",
+  "sample_index": 168,
+  "source": "securenlp",
+  "file_name": "Hikit_Analysis-Final",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Hikit",
+        "type": "malware",
+        "alias": [
+          "the attacker",
+          "the malware",
+          "RAT functionality",
+          "the RAT function",
+          "the RAT",
+          "the RAT functionality",
+          "Hikit malware",
+          "the malware",
+          "the RAT functionality"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Gen 1",
+        "type": "campaign",
+        "alias": [
+          "Gen 1 Hikit variants",
+          "Gen 1 Hikit family",
+          "Gen 1 sub-family",
+          "Gen 1 sub-families",
+          "Gen 1.0",
+          "Gen 1.1",
+          "Gen 1.2",
+          "Gen 1.0 to Gen 1.2"
+        ],
+        "mother entity": [
+          "Hikit"
+        ]
+      },
+      {
+        "name": "Gen 2",
+        "type": "campaign",
+        "alias": [
+          "Gen 2 Hikit variants",
+          "Gen 2 Hikit sub-family",
+          "Gen 2.0",
+          "Gen 2.0 Alpha",
+          "Gen 2.0 Beta",
+          "Gen 2.1",
+          "Gen 2.2",
+          "Gen 2.3",
+          "Gen 2.0 to Gen 2.3"
+        ],
+        "mother entity": [
+          "Hikit"
+        ]
+      },
+      {
+        "name": "Gen 1.0",
+        "type": "campaign",
+        "alias": [
+          "the first known sample of Hikit",
+          "Gen 1.0 sample",
+          "Gen 1.0 sample is clearly a work-in-progress",
+          "the first known Hikit samples"
+        ],
+        "mother entity": [
+          "Gen 1"
+        ]
+      },
+      {
+        "name": "Gen 1.1",
+        "type": "campaign",
+        "alias": [
+          "subsequent Gen 1 sub-generations"
+        ],
+        "mother entity": [
+          "Gen 1"
+        ]
+      },
+      {
+        "name": "Gen 1.2",
+        "type": "campaign",
+        "alias": [
+          "Gen 1.2 sample",
+          "Gen 1.2 sub-generations",
+          "Gen 1.2 sub-families",
+          "Gen 1.2 sub-family"
+        ],
+        "mother entity": [
+          "Gen 1"
+        ]
+      },
+      {
+        "name": "Gen 2.0 Alpha",
+        "type": "campaign",
+        "alias": [
+          "Gen 2.0 Alpha variants",
+          "Gen 2.0 Alpha malware",
+          "Gen 2.0 Alpha variants"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "Gen 2.0 Beta",
+        "type": "campaign",
+        "alias": [
+          "Gen 2.0 Beta code"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "Gen 2.1",
+        "type": "campaign",
+        "alias": [
+          "Gen 2.1 sub-generation",
+          "Gen 2.1 sub-generation to use an executable-based loader"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "Gen 2.2",
+        "type": "campaign",
+        "alias": [
+          "Gen 2.2 sub-generations",
+          "Gen 2.2 sub-families"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "Gen 2.3",
+        "type": "campaign",
+        "alias": [
+          "Gen 2.3 sub-generation",
+          "Gen 2.3 sub-families"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "the DLL",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "DLL",
+          "the main DLL",
+          "the RAT functionality",
+          "DLL component",
+          "DLLs",
+          "the embedded DLL",
+          "Gen 1 DLL",
+          "Gen 2 DLL",
+          "the DLL’s resource section",
+          "DLL component of Hikit",
+          "embedded DLL",
+          "DLL functionality",
+          "DLLs in the Gen 2 sub-family"
+        ],
+        "mother entity": [
+          "Hikit"
+        ]
+      },
+      {
+        "name": "the Driver",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "Gen 1 Driver",
+          "Gen 2 Driver",
+          "Gen 1 Driver component",
+          "Gen 2 Driver component",
+          "the Gen 1 Driver",
+          "the Gen 2 Driver",
+          "network driver",
+          "system driver",
+          "Windows device driver",
+          "the Driver component",
+          "the Driver’s interface",
+          "the Driver is a relatively straightforward piece of software"
+        ],
+        "mother entity": [
+          "Hikit"
+        ]
+      },
+      {
+        "name": "the Loader",
+        "type": "hacker-tool",
+        "alias": [
+          "standalone Loaders",
+          "DLL Loaders",
+          "Loader executable",
+          "Loaders (referred to simply as “the Loader”) for the Gen 2 sub-family",
+          "the Loader component",
+          "Loader application",
+          "Loader"
+        ],
+        "mother entity": [
+          "Hikit"
+        ]
+      },
+      {
+        "name": "XOR mask",
+        "type": "course-of-action",
+        "alias": [
+          "XOR mask for encrypted communication"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "XOR scheme",
+        "type": "course-of-action",
+        "alias": [
+          "XOR scheme works on 32-bit chunks of data",
+          "XOR key"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "PassThruEx",
+        "type": "general-software",
+        "alias": [
+          "modified version of the PassThru example, PassThruEx",
+          "PassThruEx by James Antognini and Thomas Devine"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Agony rootkit",
+        "type": "general-software",
+        "alias": [
+          "open source Agony rootkit"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Chinese blog",
+        "type": "research-describes-analysis-of-characterizes-detects",
+        "alias": [
+          "a Chinese blog"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "support programs",
+        "type": "general-software",
+        "alias": [
+          "operator consoles",
+          "Gen 1.0 and Gen 1.2 operator consoles"
+        ],
+        "mother entity": [
+          "Hikit"
+        ]
+      },
+      {
+        "name": "YARA signature",
+        "type": "security-product",
+        "alias": [
+          "YARA signature developed by Symantec"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Snort signature 30948",
+        "type": "security-product",
+        "alias": [
+          "Snort signature 30948",
+          "Snort signature"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "mutex strings",
+        "type": "indicator",
+        "alias": [
+          "Global\\%s__SHOW__",
+          "Global\\%s__HIDE__",
+          "Global\\%s__STOP__"
+        ],
+        "mother entity": [
+          "Hikit"
+        ]
+      },
+      {
+        "name": "w7fw.sys",
+        "type": "file",
+        "alias": [
+          "w7fw.sys wide",
+          "w7fw.sys"
+        ],
+        "mother entity": [
+          "Gen 1 Driver"
+        ]
+      },
+      {
+        "name": "\\Device\\w7fw",
+        "type": "windows-registry-key",
+        "alias": [
+          "\\Device\\w7fw",
+          "\\DosDevices\\w7fw"
+        ],
+        "mother entity": [
+          "Gen 1 Driver"
+        ]
+      },
+      {
+        "name": "\\DosDevices\\w7fw",
+        "type": "windows-registry-key",
+        "alias": [
+          "\\DosDevices\\w7fw"
+        ],
+        "mother entity": [
+          "Gen 1 Driver"
+        ]
+      },
+      {
+        "name": "\\Device\\agony",
+        "type": "windows-registry-key",
+        "alias": [
+          "\\Device\\agony",
+          "\\Device\\HTTPS",
+          "\\Device\\advcachemgr",
+          "\\Device\\diskdump"
+        ],
+        "mother entity": [
+          "Gen 2 Driver"
+        ]
+      },
+      {
+        "name": "\\DosDevices\\agony",
+        "type": "windows-registry-key",
+        "alias": [
+          "\\DosDevices\\agony"
+        ],
+        "mother entity": [
+          "Gen 2 Driver"
+        ]
+      },
+      {
+        "name": "\\Device\\HTTPS",
+        "type": "windows-registry-key",
+        "alias": [
+          "\\Device\\HTTPS"
+        ],
+        "mother entity": [
+          "Gen 2 Driver"
+        ]
+      },
+      {
+        "name": "\\Device\\advcachemgr",
+        "type": "windows-registry-key",
+        "alias": [
+          "\\Device\\advcachemgr"
+        ],
+        "mother entity": [
+          "Gen 2 Driver"
+        ]
+      },
+      {
+        "name": "\\Device\\diskdump",
+        "type": "windows-registry-key",
+        "alias": [
+          "\\Device\\diskdump"
+        ],
+        "mother entity": [
+          "Gen 2 Driver"
+        ]
+      },
+      {
+        "name": "hikit>",
+        "type": "abstract-concept",
+        "alias": [
+          "Hikit>",
+          "Hikit command prompt"
+        ],
+        "mother entity": [
+          "Gen 1 DLL",
+          "Gen 2 DLL"
+        ]
+      },
+      {
+        "name": "BIOSSettings",
+        "type": "file",
+        "alias": [
+          "legitimate SSL certificate",
+          "SSL certificate"
+        ],
+        "mother entity": [
+          "Gen 2.3"
+        ]
+      },
+      {
+        "name": "8C 24 24 43 2B 2B 22 13 13 13 00",
+        "type": "indicator",
+        "alias": [
+          "8C 24 24 43 2B 2B 22 13 13 13 00"
+        ],
+        "mother entity": [
+          "Hikit"
+        ]
+      },
+      {
+        "name": "8A 25 25 42 28 28 20 1C 1C 1C 15 15 15 0E 0E 0E 05 05 05 00",
+        "type": "indicator",
+        "alias": [
+          "8A 25 25 42 28 28 20 1C 1C 1C 15 15 15 0E 0E 0E 05 05 05 00"
+        ],
+        "mother entity": [
+          "Hikit"
+        ]
+      },
+      {
+        "name": "Program Database (PDB) file strings",
+        "type": "file",
+        "alias": [
+          "PDB file strings",
+          "PDB file path strings"
+        ],
+        "mother entity": [
+          "Gen 1"
+        ]
+      },
+      {
+        "name": "h:\\JmVodServer\\hikit",
+        "type": "file",
+        "alias": [
+          "h:\\JmVodServer\\hikit"
+        ],
+        "mother entity": [
+          "Gen 1"
+        ]
+      },
+      {
+        "name": "e:\\SourceCode\\hikit_new",
+        "type": "file",
+        "alias": [
+          "e:\\SourceCode\\hikit_new"
+        ],
+        "mother entity": [
+          "Gen 1"
+        ]
+      },
+      {
+        "name": "H:\\JmVodServer\\Matrix_new2",
+        "type": "file",
+        "alias": [
+          "H:\\JmVodServer\\Matrix_new2"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "E:\\SourceCode\\Matrix_new",
+        "type": "file",
+        "alias": [
+          "E:\\SourceCode\\Matrix_new"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "DLL’s resource section",
+        "type": "file",
+        "alias": [
+          "BIN resource tree"
+        ],
+        "mother entity": [
+          "Gen 1 DLL"
+        ]
+      },
+      {
+        "name": "Rootkit",
+        "type": "hacker-tool",
+        "alias": [
+          "rootkit",
+          "a rootkit"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "%TEMP% directory",
+        "type": "location",
+        "alias": [
+          "%TEMP% directory"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "GUID",
+        "type": "credential-value",
+        "alias": [
+          "unique identifier for the specific infection",
+          "16 bytes GUID value"
+        ],
+        "mother entity": [
+          "Gen 2 DLL"
+        ]
+      },
+      {
+        "name": "Gen 1.0 to Gen 1.2",
+        "type": "campaign",
+        "alias": [
+          "Gen 1 sub-family evolution"
+        ],
+        "mother entity": [
+          "Gen 1"
+        ]
+      },
+      {
+        "name": "Gen 2.0 to Gen 2.3",
+        "type": "campaign",
+        "alias": [
+          "Gen 2 sub-family evolution"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "encrypted network traffic",
+        "type": "network-traffic",
+        "alias": [
+          "encrypted network traffic"
+        ],
+        "mother entity": [
+          "Hikit"
+        ]
+      },
+      {
+        "name": "Gen 1 Driver",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "the Gen 1 Driver",
+          "Gen 1 Driver component"
+        ],
+        "mother entity": [
+          "Gen 1"
+        ]
+      },
+      {
+        "name": "Gen 2 Driver",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "the Gen 2 Driver",
+          "Gen 2 Driver component"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "DLL exports: DllEntryPoint and DllRegisterServer",
+        "type": "general-software",
+        "alias": [
+          "only two exports: DllEntryPoint and DllRegisterServer"
+        ],
+        "mother entity": [
+          "Gen 1 DLL"
+        ]
+      },
+      {
+        "name": "DLL exports: DllMain, MatrixMain, StartServer, StopServer",
+        "type": "general-software",
+        "alias": [
+          "five exported functions (besides DllEntryPoint/DllMain)"
+        ],
+        "mother entity": [
+          "Gen 2 DLL"
+        ]
+      },
+      {
+        "name": "Config structure",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "configuration data structure"
+        ],
+        "mother entity": [
+          "Gen 2 DLL"
+        ]
+      },
+      {
+        "name": "hikit>",
+        "type": "abstract-concept",
+        "alias": [
+          "Hikit command prompt"
+        ],
+        "mother entity": [
+          "Gen 1 DLL"
+        ]
+      },
+      {
+        "name": "Gen 2.0 Beta",
+        "type": "campaign",
+        "alias": [
+          "Gen 2.0 Beta code"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "Gen 2.1",
+        "type": "campaign",
+        "alias": [
+          "Gen 2.1 sub-generation"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "Gen 2.2",
+        "type": "campaign",
+        "alias": [
+          "Gen 2.2 sub-generations"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "Gen 2.3",
+        "type": "campaign",
+        "alias": [
+          "Gen 2.3 sub-generation"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "hikit>",
+        "type": "abstract-concept",
+        "alias": [
+          "Hikit command prompt"
+        ],
+        "mother entity": [
+          "Gen 2 DLL"
+        ]
+      },
+      {
+        "name": "w7fw.sys",
+        "type": "file",
+        "alias": [
+          "w7fw.sys"
+        ],
+        "mother entity": [
+          "Gen 1"
+        ]
+      },
+      {
+        "name": "Gen 1.2",
+        "type": "campaign",
+        "alias": [
+          "Gen 1.2 sub-generations"
+        ],
+        "mother entity": [
+          "Gen 1"
+        ]
+      },
+      {
+        "name": "w7fw.sys",
+        "type": "file",
+        "alias": [
+          "w7fw.sys"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "hikit>",
+        "type": "abstract-concept",
+        "alias": [
+          "Hikit command prompt"
+        ],
+        "mother entity": [
+          "Gen 2 DLL"
+        ]
+      },
+      {
+        "name": "w7fw.sys",
+        "type": "file",
+        "alias": [
+          "w7fw.sys"
+        ],
+        "mother entity": [
+          "Gen 1"
+        ]
+      },
+      {
+        "name": "w7fw.sys",
+        "type": "file",
+        "alias": [
+          "w7fw.sys"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "hikit>",
+        "type": "abstract-concept",
+        "alias": [
+          "Hikit command prompt"
+        ],
+        "mother entity": [
+          "Gen 2 DLL"
+        ]
+      },
+      {
+        "name": "w7fw.sys",
+        "type": "file",
+        "alias": [
+          "w7fw.sys"
+        ],
+        "mother entity": [
+          "Gen 1"
+        ]
+      },
+      {
+        "name": "w7fw.sys",
+        "type": "file",
+        "alias": [
+          "w7fw.sys"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "hikit>",
+        "type": "abstract-concept",
+        "alias": [
+          "Hikit command prompt"
+        ],
+        "mother entity": [
+          "Gen 2 DLL"
+        ]
+      },
+      {
+        "name": "w7fw.sys",
+        "type": "file",
+        "alias": [
+          "w7fw.sys"
+        ],
+        "mother entity": [
+          "Gen 1"
+        ]
+      },
+      {
+        "name": "w7fw.sys",
+        "type": "file",
+        "alias": [
+          "w7fw.sys"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "hikit>",
+        "type": "abstract-concept",
+        "alias": [
+          "Hikit command prompt"
+        ],
+        "mother entity": [
+          "Gen 2 DLL"
+        ]
+      },
+      {
+        "name": "w7fw.sys",
+        "type": "file",
+        "alias": [
+          "w7fw.sys"
+        ],
+        "mother entity": [
+          "Gen 1"
+        ]
+      },
+      {
+        "name": "w7fw.sys",
+        "type": "file",
+        "alias": [
+          "w7fw.sys"
+        ],
+        "mother entity": [
+          "Gen 2"
+        ]
+      },
+      {
+        "name": "hikit>",
+        "type": "abstract-concept",
+        "alias": [
+          "Hikit command prompt"
+        ],
+        "mother entity": [
+          "Gen 2 DLL"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Hikit",
+        "rel": "consists of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Gen 1"
+      },
+      {
+        "sub": "Gen 1",
+        "rel": "operates as a server",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "attacker"
+      },
+      {
+        "sub": "Gen 2",
+        "rel": "uses the more traditional client model",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "attacker"
+      },
+      {
+        "sub": "Hikit",
+        "rel": "provides basic RAT functionality",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "Gen 2"
+      },
+      {
+        "sub": "Gen 1 sub-families",
+        "rel": "consist of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "main DLL"
+      },
+      {
+        "sub": "Gen 1 sub-families",
+        "rel": "consist of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "kernel driver"
+      },
+      {
+        "sub": "Gen 2 sub-families",
+        "rel": "employs an additional component",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "loader executable"
+      },
+      {
+        "sub": "Gen 1 Driver",
+        "rel": "acts as a NDIS (network) driver",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "victim’s network interface card (NIC)"
+      },
+      {
+        "sub": "Gen 1 Driver",
+        "rel": "intercepts any and all network communication",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "network communication"
+      },
+      {
+        "sub": "Gen 1 Driver",
+        "rel": "stores the removed data in local buffers",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "data"
+      },
+      {
+        "sub": "Gen 1 Driver",
+        "rel": "listens for a specific trigger string",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "traffic arriving at the local network interface"
+      },
+      {
+        "sub": "Gen 1 Driver",
+        "rel": "responds with another string",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "DLL"
+      },
+      {
+        "sub": "Gen 2 Driver",
+        "rel": "is a rootkit to hide processes",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "processes"
+      },
+      {
+        "sub": "Gen 2 Driver",
+        "rel": "hides processes",
+        "rel_type": [
+          "hides"
+        ],
+        "obj": "processes"
+      },
+      {
+        "sub": "Gen 2 Driver",
+        "rel": "exposes an IOCTL interface",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "IOCTL interface"
+      },
+      {
+        "sub": "Gen 2 Driver",
+        "rel": "exposes its interface at",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "\\Device\\agony"
+      },
+      {
+        "sub": "Gen 2 Driver",
+        "rel": "is based primarily on",
+        "rel_type": [
+          "derived-from"
+        ],
+        "obj": "Agony rootkit"
+      },
+      {
+        "sub": "Gen 2 Driver",
+        "rel": "has evidence of code coming directly from",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Chinese blog"
+      },
+      {
+        "sub": "Gen 2 DLL",
+        "rel": "supports",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "commands"
+      },
+      {
+        "sub": "Gen 2 DLL",
+        "rel": "executes commands",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "remote command shell"
+      },
+      {
+        "sub": "Gen 2 DLL",
+        "rel": "drops the current configuration to disk",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "configuration"
+      },
+      {
+        "sub": "Gen 2 DLL",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "XOR scheme"
+      },
+      {
+        "sub": "Gen 2 DLL",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "GUID"
+      },
+      {
+        "sub": "Gen 2 DLL",
+        "rel": "hides",
+        "rel_type": [
+          "hides"
+        ],
+        "obj": "DLL’s PID"
+      },
+      {
+        "sub": "YARA signature",
+        "rel": "detects",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Hikit"
+      },
+      {
+        "sub": "Snort signature 30948",
+        "rel": "detects",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Gen 1.0 and Gen 1.1"
+      },
+      {
+        "sub": "support programs",
+        "rel": "connect to the infected server",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "infected server"
+      },
+      {
+        "sub": "Gen 1.0",
+        "rel": "evolves to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Gen 1.1"
+      },
+      {
+        "sub": "Gen 1.1",
+        "rel": "evolves to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Gen 1.2"
+      },
+      {
+        "sub": "Gen 2.0 Alpha",
+        "rel": "evolves to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Gen 2.0 Beta"
+      },
+      {
+        "sub": "Gen 2.0 Beta",
+        "rel": "evolves to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Gen 2.1"
+      },
+      {
+        "sub": "Gen 2.1",
+        "rel": "evolves to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Gen 2.2"
+      },
+      {
+        "sub": "Gen 2.2",
+        "rel": "evolves to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Gen 2.3"
+      },
+      {
+        "sub": "Gen 1 DLL",
+        "rel": "contains exports",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "DllEntryPoint"
+      },
+      {
+        "sub": "Gen 1 DLL",
+        "rel": "contains exports",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "DllRegisterServer"
+      },
+      {
+        "sub": "Gen 2 DLL",
+        "rel": "exposes exported functions",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "DllRegisterServer"
+      },
+      {
+        "sub": "Gen 2 DLL",
+        "rel": "exposes exported functions",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "MatrixMain"
+      },
+      {
+        "sub": "Gen 2 DLL",
+        "rel": "exposes exported functions",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "StartServer"
+      },
+      {
+        "sub": "Gen 2 DLL",
+        "rel": "exposes exported functions",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "StopServer"
+      },
+      {
+        "sub": "Gen 2.3",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "legitimate SSL certificate"
+      },
+      {
+        "sub": "Gen 2.3",
+        "rel": "stores the configuration within",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "loader component"
+      },
+      {
+        "sub": "Gen 1.2",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "XOR mask"
+      },
+      {
+        "sub": "Gen 2.0 Alpha",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "hikit>"
+      }
+    ]
+  }
+}

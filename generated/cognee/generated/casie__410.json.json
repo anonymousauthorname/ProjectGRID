@@ -1,0 +1,1126 @@
+{
+  "sample_id": "casie__410.json",
+  "sample_index": 2,
+  "source": "casie",
+  "file_name": "410.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SMS",
+        "type": "Entity"
+      },
+      {
+        "name": "Samsung Galaxy",
+        "type": "Entity"
+      },
+      {
+        "name": "crash",
+        "type": "Entity"
+      },
+      {
+        "name": "reboot loop",
+        "type": "Entity"
+      },
+      {
+        "name": "factory reset",
+        "type": "Entity"
+      },
+      {
+        "name": "data loss",
+        "type": "Entity"
+      },
+      {
+        "name": "bug",
+        "type": "Entity"
+      },
+      {
+        "name": "older Samsung Galaxy phones",
+        "type": "Entity"
+      },
+      {
+        "name": "older Samsung Galaxy tablets",
+        "type": "Entity"
+      },
+      {
+        "name": "maliciously crafted configuration messages",
+        "type": "Entity"
+      },
+      {
+        "name": "user interaction",
+        "type": "Entity"
+      },
+      {
+        "name": "ransom note",
+        "type": "Entity"
+      },
+      {
+        "name": "crooks",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2016-7988",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2016-7989",
+        "type": "Entity"
+      },
+      {
+        "name": "S4",
+        "type": "Entity"
+      },
+      {
+        "name": "S4 Mini",
+        "type": "Entity"
+      },
+      {
+        "name": "S5",
+        "type": "Entity"
+      },
+      {
+        "name": "Note 4",
+        "type": "Entity"
+      },
+      {
+        "name": "newer Samsung devices",
+        "type": "Entity"
+      },
+      {
+        "name": "S6",
+        "type": "Entity"
+      },
+      {
+        "name": "S7",
+        "type": "Entity"
+      },
+      {
+        "name": "Android telephony framework",
+        "type": "Entity"
+      },
+      {
+        "name": "Samsung-specific application",
+        "type": "Entity"
+      },
+      {
+        "name": "carrier messages",
+        "type": "Entity"
+      },
+      {
+        "name": "responsible disclosure",
+        "type": "Entity"
+      },
+      {
+        "name": "patching process",
+        "type": "Entity"
+      },
+      {
+        "name": "carriers",
+        "type": "Entity"
+      },
+      {
+        "name": "90 day disclosure policy",
+        "type": "Entity"
+      },
+      {
+        "name": "Android update process",
+        "type": "Entity"
+      },
+      {
+        "name": "HTC diagram",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious app",
+        "type": "Entity"
+      },
+      {
+        "name": "device exploitation",
+        "type": "Entity"
+      },
+      {
+        "name": "other vendors",
+        "type": "Entity"
+      },
+      {
+        "name": "ContextIS researchers",
+        "type": "Entity"
+      },
+      {
+        "name": "Help Net Security",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SMS",
+        "rel": "can be exploited via",
+        "obj": "older Samsung Galaxy phones"
+      },
+      {
+        "sub": "SMS",
+        "rel": "can be exploited via",
+        "obj": "older Samsung Galaxy tablets"
+      },
+      {
+        "sub": "SMS",
+        "rel": "can be exploited via",
+        "obj": "S4"
+      },
+      {
+        "sub": "SMS",
+        "rel": "can be exploited via",
+        "obj": "S4 Mini"
+      },
+      {
+        "sub": "SMS",
+        "rel": "can be exploited via",
+        "obj": "S5"
+      },
+      {
+        "sub": "SMS",
+        "rel": "can be exploited via",
+        "obj": "Note 4"
+      },
+      {
+        "sub": "SMS",
+        "rel": "is a vector for",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "SMS",
+        "rel": "is used to deliver",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "maliciously crafted configuration messages",
+        "rel": "is delivered via",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "maliciously crafted configuration messages",
+        "rel": "is a component of",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "maliciously crafted configuration messages",
+        "rel": "is a component of",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "maliciously crafted configuration messages",
+        "rel": "is a type of",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "maliciously crafted configuration messages",
+        "rel": "is delivered via",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransom note",
+        "rel": "is sent before",
+        "obj": "maliciously crafted configuration messages"
+      },
+      {
+        "sub": "ransom note",
+        "rel": "is used to deliver",
+        "obj": "crooks"
+      },
+      {
+        "sub": "crooks",
+        "rel": "can be used to deliver",
+        "obj": "maliciously crafted configuration messages"
+      },
+      {
+        "sub": "crooks",
+        "rel": "can be used to initiate",
+        "obj": "ransomware"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "can be used to deliver",
+        "obj": "maliciously crafted configuration messages"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "is exploited via",
+        "obj": "SMS"
+      },
+      {
+        "sub": "CVE-2016-7989",
+        "rel": "is exploited via",
+        "obj": "SMS"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "is found in",
+        "obj": "older Samsung Galaxy phones"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "is found in",
+        "obj": "older Samsung Galaxy tablets"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "is found in",
+        "obj": "S4"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "is found in",
+        "obj": "S4 Mini"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "is found in",
+        "obj": "S5"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "is found in",
+        "obj": "Note 4"
+      },
+      {
+        "sub": "CVE-2016-7989",
+        "rel": "is found in",
+        "obj": "older Samsung Galaxy phones"
+      },
+      {
+        "sub": "CVE-2016-7989",
+        "rel": "is found in",
+        "obj": "older Samsung Galaxy tablets"
+      },
+      {
+        "sub": "CVE-2016-7989",
+        "rel": "is found in",
+        "obj": "S4"
+      },
+      {
+        "sub": "CVE-2016-7989",
+        "rel": "is found in",
+        "obj": "S4 Mini"
+      },
+      {
+        "sub": "CVE-2016-7989",
+        "rel": "is found in",
+        "obj": "S5"
+      },
+      {
+        "sub": "CVE-2016-7989",
+        "rel": "is found in",
+        "obj": "Note 4"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "is a vulnerability in",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "CVE-2016-7989",
+        "rel": "is a vulnerability in",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "Samsung-specific application",
+        "rel": "is a component of",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "Samsung-specific application",
+        "rel": "is used to handle",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "Samsung-specific application",
+        "rel": "is a part of the Android telephony framework",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "Samsung-specific application",
+        "rel": "is a component of a Samsung-specific application",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "Samsung-specific application",
+        "rel": "is a part of",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "Samsung-specific application",
+        "rel": "is related to modifications in",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "Samsung-specific application",
+        "rel": "is a vulnerability in",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "Samsung-specific application",
+        "rel": "is related to carrier message handling",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "crooks",
+        "rel": "can be used to force",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "crooks",
+        "rel": "can be used to exploit",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "crooks",
+        "rel": "can be used to hold",
+        "obj": "ransomware"
+      },
+      {
+        "sub": "crooks",
+        "rel": "is not affected by",
+        "obj": "newer Samsung devices"
+      },
+      {
+        "sub": "crooks",
+        "rel": "is not affected by",
+        "obj": "S6"
+      },
+      {
+        "sub": "crooks",
+        "rel": "is not affected by",
+        "obj": "S7"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is used by",
+        "obj": "crooks"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "can be used to initiate",
+        "obj": "maliciously crafted configuration messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a form of",
+        "obj": "maliciously crafted configuration messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a form of",
+        "obj": "crooks"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "can be used to execute without user interaction",
+        "obj": "maliciously crafted configuration messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "can be used to force device into loop",
+        "obj": "maliciously crafted configuration messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "can be used to cause data loss",
+        "obj": "maliciously crafted configuration messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "can be used to deliver ransom note",
+        "obj": "maliciously crafted configuration messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "can be used to stop rebooting",
+        "obj": "maliciously crafted configuration messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "can be used to force",
+        "obj": "crash"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "can be used to cause",
+        "obj": "reboot loop"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "can be used to initiate",
+        "obj": "factory reset"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "can be used to cause",
+        "obj": "data loss"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a form of",
+        "obj": "bug"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a method of attack",
+        "obj": "maliciously crafted configuration messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability in",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability in",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability in",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability in Android telephony framework",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability in Samsung-specific application",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability in carrier message handling",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a form of device attack",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a form of device attack",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a form of device attack",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a device-specific security flaw",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a device-specific security flaw",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a device-specific security flaw",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that can be triggered remotely",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that can be triggered remotely",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that can be triggered remotely",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to device crash",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to device crash",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to device crash",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to reboot loop",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to reboot loop",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to reboot loop",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to data loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to data loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to data loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to device reset",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to device reset",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to device reset",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user data loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user data loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user data loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user device compromise",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user device compromise",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user device compromise",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user financial loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user financial loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user financial loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user trust erosion",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user trust erosion",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user trust erosion",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user frustration",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user frustration",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user frustration",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to device instability",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to device instability",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to device instability",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to security breach",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to security breach",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to security breach",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to unauthorized access",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to unauthorized access",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to unauthorized access",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to remote execution",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to remote execution",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to remote execution",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to configuration takeover",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to configuration takeover",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to configuration takeover",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to device takeover",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to device takeover",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to device takeover",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user experience degradation",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user experience degradation",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user experience degradation",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user trust loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user trust loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user trust loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user satisfaction loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user satisfaction loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user satisfaction loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user engagement loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user engagement loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user engagement loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user retention loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user retention loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user retention loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user loyalty loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user loyalty loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user loyalty loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user brand trust loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user brand trust loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user brand trust loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user market share loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user market share loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user market share loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user competitive disadvantage",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user competitive disadvantage",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user competitive disadvantage",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user economic loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user economic loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user economic loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user opportunity cost loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user opportunity cost loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user opportunity cost loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user time cost loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user time cost loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user time cost loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user effort cost loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user effort cost loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user effort cost loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user emotional cost loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user emotional cost loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user emotional cost loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user mental cost loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user mental cost loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user mental cost loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user physical cost loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user physical cost loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user physical cost loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user social cost loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user social cost loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user social cost loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user environmental cost loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user environmental cost loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user environmental cost loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user ethical cost loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user ethical cost loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user ethical cost loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user legal cost loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user legal cost loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user legal cost loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user compliance cost loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user compliance cost loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user compliance cost loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user regulatory cost loss",
+        "obj": "Android telephony framework"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user regulatory cost loss",
+        "obj": "Samsung-specific application"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user regulatory cost loss",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "ransomware",
+        "rel": "is a vulnerability that leads to user financial risk",
+        "obj": "Android telephony framework"
+      }
+    ]
+  }
+}

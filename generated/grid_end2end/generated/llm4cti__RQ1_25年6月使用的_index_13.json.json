@@ -1,0 +1,414 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_13.json",
+  "sample_index": 205,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_13.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "The TDSS loader",
+        "type": "hacker-tool",
+        "alias": [
+          "a malicious program",
+          "a tool for selfpropagation",
+          "the worm",
+          "the malware",
+          "its loader",
+          "the NetWorm.Win32.Rorpian worm"
+        ],
+        "mother entity": [
+          "TDSS"
+        ]
+      },
+      {
+        "name": "TDSS",
+        "type": "malware",
+        "alias": [
+          "one of the most advanced and sophisticated malicious programs around"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "NetWorm.Win32.Rorpian",
+        "type": "malware",
+        "alias": [
+          "the NetWorm.Win32.Rorpian worm",
+          "the malware",
+          "it",
+          "the worm"
+        ],
+        "mother entity": [
+          "The TDSS loader"
+        ]
+      },
+      {
+        "name": "removable media",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "LAN",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "setup.lnk",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "myporno.avi.lnk",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "pornmovs.lnk",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "autorun.inf",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "rundll32.exe",
+        "type": "general-software",
+        "alias": [
+          "the file rundll32.exe"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the worms DLL",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "The TDSS loader"
+        ]
+      },
+      {
+        "name": "DHSP server",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "DHCP protocol",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "IP addresses",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the worms own DHCP server",
+        "type": "infrastructure",
+        "alias": [
+          "its own DHCP server"
+        ],
+        "mother entity": [
+          "the worm"
+        ]
+      },
+      {
+        "name": "malicious DNS server belonging to the cybercriminals",
+        "type": "domain-name",
+        "alias": [
+          "the malicious DNS server"
+        ],
+        "mother entity": [
+          "the cybercriminals"
+        ]
+      },
+      {
+        "name": "Google server address",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "the worm"
+        ]
+      },
+      {
+        "name": "the users indiscretion",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Evgeny Aseev",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "a malicious program",
+        "type": "general-software",
+        "alias": [
+          "malicious programs"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "a variant of NetWorm.Win32.Rorpian",
+        "type": "malware",
+        "alias": [
+          "the real thing"
+        ],
+        "mother entity": [
+          "NetWorm.Win32.Rorpian"
+        ]
+      },
+      {
+        "name": "a web page",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "a malicious server",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "an update",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "a malicious site",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "The TDSS loader",
+        "rel": "was named",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "NetWorm.Win32.Rorpian"
+      },
+      {
+        "sub": "TDSS",
+        "rel": "is-part-of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "The TDSS loader"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "has methods of propagation via",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "removable media"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "has methods of propagation via",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "LAN"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "creates",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "setup.lnk"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "creates",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "myporno.avi.lnk"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "creates",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "pornmovs.lnk"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "creates",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "autorun.inf"
+      },
+      {
+        "sub": "setup.lnk",
+        "rel": "contains a link to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "rundll32.exe"
+      },
+      {
+        "sub": "rundll32.exe",
+        "rel": "references",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "the worms DLL"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "checks if a",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "DHSP server"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "scans the network to see if there are any available",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "IP addresses"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "launches",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "the worms own DHCP server"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "attempts to respond to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "DHCP request",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "specifies",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "malicious DNS server belonging to the cybercriminals"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "redirects user visits to",
+        "rel_type": [
+          "redirects-to"
+        ],
+        "obj": "a web page",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "prompted to update",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "an update"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "leads-to downloading",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "a variant of NetWorm.Win32.Rorpian"
+      },
+      {
+        "sub": "a variant of NetWorm.Win32.Rorpian",
+        "rel": "changes DNS settings into",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "Google server address"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "leverages",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the users indiscretion"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "propagates from",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "a malicious site"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "communicates-with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "a malicious server"
+      },
+      {
+        "sub": "Evgeny Aseev",
+        "rel": "help in preparing",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "The TDSS loader"
+      },
+      {
+        "sub": "The TDSS loader",
+        "rel": "uses standard technique from",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a malicious program"
+      }
+    ]
+  }
+}

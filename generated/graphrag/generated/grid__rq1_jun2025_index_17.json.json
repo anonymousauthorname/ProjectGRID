@@ -1,0 +1,120 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_17.json",
+  "sample_index": 209,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_17.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "MIKE COULTER",
+        "type": "PERSON"
+      },
+      {
+        "name": "VIRUSTOTAL",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MAL/FAKEVIRPKA",
+        "type": "MALWARE"
+      },
+      {
+        "name": "SECURITYTOOLSETUP.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "VIRUSTOTAL.TLD",
+        "type": "DOMAIN"
+      },
+      {
+        "name": "FAKE ANTIVIRUS",
+        "type": "TOOL"
+      },
+      {
+        "name": "CAR-RELATED FORUM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "PHISHING MESSAGE",
+        "type": "EVENT"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "MAL/FAKEVIRPKA",
+        "rel": "related_to",
+        "obj": "SECURITYTOOLSETUP.EXE"
+      },
+      {
+        "sub": "VIRUSTOTAL.TLD",
+        "rel": "related_to",
+        "obj": "MAL/FAKEVIRPKA"
+      },
+      {
+        "sub": "PHISHING MESSAGE",
+        "rel": "related_to",
+        "obj": "VIRUSTOTAL.TLD"
+      },
+      {
+        "sub": "PHISHING MESSAGE",
+        "rel": "related_to",
+        "obj": "CAR-RELATED FORUM"
+      },
+      {
+        "sub": "FAKE ANTIVIRUS",
+        "rel": "related_to",
+        "obj": "VIRUSTOTAL.TLD"
+      },
+      {
+        "sub": "MIKE COULTER",
+        "rel": "related_to",
+        "obj": "VIRUSTOTAL"
+      },
+      {
+        "sub": "MAL/FAKEVIRPKA",
+        "rel": "related_to",
+        "obj": "SECURITYTOOLSETUP.EXE"
+      },
+      {
+        "sub": "VIRUSTOTAL.TLD",
+        "rel": "related_to",
+        "obj": "MAL/FAKEVIRPKA"
+      },
+      {
+        "sub": "PHISHING MESSAGE",
+        "rel": "related_to",
+        "obj": "VIRUSTOTAL.TLD"
+      },
+      {
+        "sub": "PHISHING MESSAGE",
+        "rel": "related_to",
+        "obj": "CAR-RELATED FORUM"
+      },
+      {
+        "sub": "FAKE ANTIVIRUS",
+        "rel": "related_to",
+        "obj": "VIRUSTOTAL.TLD"
+      },
+      {
+        "sub": "MIKE COULTER",
+        "rel": "related_to",
+        "obj": "VIRUSTOTAL"
+      }
+    ]
+  }
+}

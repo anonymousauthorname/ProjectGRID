@@ -1,0 +1,406 @@
+{
+  "sample_id": "malkg__201306Rapid7KeyBoy.txt",
+  "sample_index": 137,
+  "source": "malkg",
+  "file_name": "201306Rapid7KeyBoy.txt",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "KeyBoy",
+        "type": "Unknown"
+      },
+      {
+        "name": "used in targeted attacks against Vietnam and India",
+        "type": "Unknown"
+      },
+      {
+        "name": "Internet Explorer",
+        "type": "Unknown"
+      },
+      {
+        "name": "Mozilla Firefox",
+        "type": "Unknown"
+      },
+      {
+        "name": "Google Chrome credentials",
+        "type": "Unknown"
+      },
+      {
+        "name": "attacker to perform additional investigation and exfiltrate data",
+        "type": "Unknown"
+      },
+      {
+        "name": "MdAdum",
+        "type": "Unknown"
+      },
+      {
+        "name": "presence of C:\\WINDOWS\\system32\\CREDRIVER.dll",
+        "type": "Unknown"
+      },
+      {
+        "name": "the service",
+        "type": "Unknown"
+      },
+      {
+        "name": "silence.phdns01.com",
+        "type": "Unknown"
+      },
+      {
+        "name": "cpnet.phmail.us",
+        "type": "Unknown"
+      },
+      {
+        "name": "imlang.phmail.org",
+        "type": "Unknown"
+      },
+      {
+        "name": "Indian KeyBoy variant",
+        "type": "Unknown"
+      },
+      {
+        "name": "cresy.zyns.com",
+        "type": "Unknown"
+      },
+      {
+        "name": "preter.epac.to",
+        "type": "Unknown"
+      },
+      {
+        "name": "backto.ddns.name",
+        "type": "Unknown"
+      },
+      {
+        "name": "sent to C&C servers",
+        "type": "Unknown"
+      },
+      {
+        "name": "to extract payload content",
+        "type": "Unknown"
+      },
+      {
+        "name": "$login$ LAB IP MyUser Date Proxy 20130401",
+        "type": "Unknown"
+      },
+      {
+        "name": "Sysinfo",
+        "type": "Unknown"
+      },
+      {
+        "name": "FileManager",
+        "type": "Unknown"
+      },
+      {
+        "name": "Download",
+        "type": "Unknown"
+      },
+      {
+        "name": "UploadFileOk",
+        "type": "Unknown"
+      },
+      {
+        "name": "Shell",
+        "type": "Unknown"
+      },
+      {
+        "name": "$sysinfo$",
+        "type": "Unknown"
+      },
+      {
+        "name": "$fileManager$",
+        "type": "Unknown"
+      },
+      {
+        "name": "$fileDownload$",
+        "type": "Unknown"
+      },
+      {
+        "name": "$fileUpload$",
+        "type": "Unknown"
+      },
+      {
+        "name": "Shell command is issued",
+        "type": "Unknown"
+      },
+      {
+        "name": "April 1st 2013",
+        "type": "Unknown"
+      },
+      {
+        "name": "document named THAM luan- GD- NCKH2.doc",
+        "type": "Unknown"
+      },
+      {
+        "name": "document named iafbsnl.doc",
+        "type": "Unknown"
+      },
+      {
+        "name": "THAM luan- GD- NCKH2.doc",
+        "type": "Unknown"
+      },
+      {
+        "name": "MS12-060",
+        "type": "Unknown"
+      },
+      {
+        "name": "iafbsnl.doc",
+        "type": "Unknown"
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "Unknown"
+      },
+      {
+        "name": "Nguyen Anh Tuan",
+        "type": "Unknown"
+      },
+      {
+        "name": "Amir Kumar Gupta",
+        "type": "Unknown"
+      },
+      {
+        "name": "Snort rule with SID 1000001",
+        "type": "Unknown"
+      },
+      {
+        "name": "presence of service MdAdum",
+        "type": "Unknown"
+      },
+      {
+        "name": "Yara rules",
+        "type": "Unknown"
+      },
+      {
+        "name": "targeted attacks in Vietnam and India",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "KeyBoy",
+        "rel": "is a custom backdoor",
+        "obj": "used in targeted attacks against Vietnam and India"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "steals credentials from",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "steals credentials from",
+        "obj": "Mozilla Firefox"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "installs a keylogger to intercept",
+        "obj": "Google Chrome credentials"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "operates in interactive mode to allow",
+        "obj": "attacker to perform additional investigation and exfiltrate data"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "creates a Windows service called",
+        "obj": "MdAdum"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "launches",
+        "obj": "presence of C:\\WINDOWS\\system32\\CREDRIVER.dll"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "deletes itself after launching",
+        "obj": "the service"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "contacts the following domains to communicate with C&C servers",
+        "obj": "silence.phdns01.com"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "contacts the following domains to communicate with C&C servers",
+        "obj": "cpnet.phmail.us"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "contacts the following domains to communicate with C&C servers",
+        "obj": "imlang.phmail.org"
+      },
+      {
+        "sub": "Indian KeyBoy variant",
+        "rel": "contacts the following domains to communicate with C&C servers",
+        "obj": "cresy.zyns.com"
+      },
+      {
+        "sub": "Indian KeyBoy variant",
+        "rel": "contacts the following domains to communicate with C&C servers",
+        "obj": "preter.epac.to"
+      },
+      {
+        "sub": "Indian KeyBoy variant",
+        "rel": "contacts the following domains to communicate with C&C servers",
+        "obj": "backto.ddns.name"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "uses a multiply with 0x69 to encode traffic",
+        "obj": "sent to C&C servers"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "decodes traffic using a multiply with 0xd9",
+        "obj": "to extract payload content"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "sends login request with the following format",
+        "obj": "$login$ LAB IP MyUser Date Proxy 20130401"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "expects the following commands from C&C server",
+        "obj": "Sysinfo"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "expects the following commands from C&C server",
+        "obj": "FileManager"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "expects the following commands from C&C server",
+        "obj": "Download"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "expects the following commands from C&C server",
+        "obj": "UploadFileOk"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "expects the following commands from C&C server",
+        "obj": "Shell"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "responds to Sysinfo command with",
+        "obj": "$sysinfo$"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "responds to FileManager command with",
+        "obj": "$fileManager$"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "responds to Download command with",
+        "obj": "$fileDownload$"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "responds to UploadFileOk command with",
+        "obj": "$fileUpload$"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "spawns a Windows command shell when",
+        "obj": "Shell command is issued"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "is compiled on",
+        "obj": "April 1st 2013"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "is used in a Vietnamese attack",
+        "obj": "document named THAM luan- GD- NCKH2.doc"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "is used in an Indian attack",
+        "obj": "document named iafbsnl.doc"
+      },
+      {
+        "sub": "THAM luan- GD- NCKH2.doc",
+        "rel": "leverages vulnerability",
+        "obj": "MS12-060"
+      },
+      {
+        "sub": "iafbsnl.doc",
+        "rel": "exploits",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "THAM luan- GD- NCKH2.doc",
+        "rel": "appears to be authored by",
+        "obj": "Nguyen Anh Tuan"
+      },
+      {
+        "sub": "iafbsnl.doc",
+        "rel": "appears to be authored by",
+        "obj": "Amir Kumar Gupta"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "is detected by",
+        "obj": "Snort rule with SID 1000001"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "is detected by",
+        "obj": "presence of C:\\WINDOWS\\system32\\CREDRIVER.dll"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "is detected by",
+        "obj": "presence of service MdAdum"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "is detected by",
+        "obj": "Yara rules"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "is associated with",
+        "obj": "targeted attacks in Vietnam and India"
+      },
+      {
+        "sub": "Indian KeyBoy variant",
+        "rel": "is_a_variant_of",
+        "obj": "KeyBoy"
+      },
+      {
+        "sub": "THAM luan- GD- NCKH2.doc",
+        "rel": "is exploited by",
+        "obj": "KeyBoy"
+      },
+      {
+        "sub": "iafbsnl.doc",
+        "rel": "is part of",
+        "obj": "KeyBoy"
+      }
+    ]
+  }
+}

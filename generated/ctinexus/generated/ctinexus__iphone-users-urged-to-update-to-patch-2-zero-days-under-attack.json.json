@@ -1,0 +1,158 @@
+{
+  "sample_id": "ctinexus__iphone-users-urged-to-update-to-patch-2-zero-days-under-attack.json",
+  "sample_index": 93,
+  "source": "ctinexus",
+  "file_name": "iphone-users-urged-to-update-to-patch-2-zero-days-under-attack.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Apple",
+        "type": "Unknown"
+      },
+      {
+        "name": "macOS, iPhone and iPad users",
+        "type": "Unknown"
+      },
+      {
+        "name": "attackers",
+        "type": "Unknown"
+      },
+      {
+        "name": "arbitrary code",
+        "type": "Unknown"
+      },
+      {
+        "name": "devices",
+        "type": "Unknown"
+      },
+      {
+        "name": "patches",
+        "type": "Unknown"
+      },
+      {
+        "name": "devices running iOS 15.6.1 and macOS Monterey 12.5.1",
+        "type": "Unknown"
+      },
+      {
+        "name": "two flaws",
+        "type": "Unknown"
+      },
+      {
+        "name": "Apple devices running iOS 15 or macOS Monterey",
+        "type": "Unknown"
+      },
+      {
+        "name": "CVE-2022-32894",
+        "type": "Unknown"
+      },
+      {
+        "name": "iOS",
+        "type": "Unknown"
+      },
+      {
+        "name": "macOS",
+        "type": "Unknown"
+      },
+      {
+        "name": "out-of-bounds write issue",
+        "type": "Unknown"
+      },
+      {
+        "name": "application to execute arbitrary code with kernel privileges",
+        "type": "Unknown"
+      },
+      {
+        "name": "Wednesday",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Apple",
+        "rel": "is urging",
+        "obj": "macOS, iPhone and iPad users"
+      },
+      {
+        "sub": "attackers",
+        "rel": "can execute",
+        "obj": "arbitrary code"
+      },
+      {
+        "sub": "attackers",
+        "rel": "can take over",
+        "obj": "devices"
+      },
+      {
+        "sub": "patches",
+        "rel": "are available for",
+        "obj": "devices running iOS 15.6.1 and macOS Monterey 12.5.1"
+      },
+      {
+        "sub": "patches",
+        "rel": "address",
+        "obj": "two flaws"
+      },
+      {
+        "sub": "two flaws",
+        "rel": "impact",
+        "obj": "Apple devices running iOS 15 or macOS Monterey"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "is present in",
+        "obj": "iOS"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "is present in",
+        "obj": "macOS"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "is",
+        "obj": "out-of-bounds write issue"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "allows",
+        "obj": "application to execute arbitrary code with kernel privileges"
+      },
+      {
+        "sub": "Apple",
+        "rel": "released patches on",
+        "obj": "Wednesday"
+      },
+      {
+        "sub": "CVE-2022-32894",
+        "rel": "may have been actively exploited",
+        "obj": "attackers"
+      },
+      {
+        "sub": "Apple",
+        "rel": "released a patch for",
+        "obj": "CVE-2022-32894"
+      },
+      {
+        "sub": "two flaws",
+        "rel": "include",
+        "obj": "CVE-2022-32894"
+      }
+    ]
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "sample_id": "casie__1693.json",
+  "sample_index": 46,
+  "source": "casie",
+  "file_name": "1693.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "The Shadow Brokers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows exploits",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "patches",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "majority of attacks",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "last month",
+        "type": "date/time",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ERRATICGOPHER attack",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows Vista",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ETERNALCHAMPION",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "two other previously disclosed vulnerabilities",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ETERNALBLUE",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ETERNALROMANCE",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ETERNALSYNERGY",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Security Bulletin",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "March 14",
+        "type": "date/time",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ENGLISHMANDENTIST",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ESTEEMAUDIT",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "EXPLODINGCAN",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "supported systems",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows 7 or above",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "prior versions of these products",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows 10",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "fully up to date copy of Windows 10",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "zero-days",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Matthew Hickey",
+        "type": "identity",
+        "alias": [
+          "Hacker Fantastic"
+        ],
+        "mother entity": [
+          "Hacker House"
+        ]
+      },
+      {
+        "name": "Hacker Fantastic",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Hacker House",
+        "type": "identity",
+        "alias": [
+          "British cybersecurity firm Hacker House"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "clean install of Windows",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "latest security fixes",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "The Shadow Brokers",
+        "rel": "released",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Windows exploits"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issued patches for",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "majority of attacks"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issued patches for",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Windows exploits"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issued patches for",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "majority of attacks",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "patches",
+        "rel": "came",
+        "rel_type": [
+          "occurs-at"
+        ],
+        "obj": "last month"
+      },
+      {
+        "sub": "Windows exploits",
+        "rel": "could have allowed a hacker to compromise",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "affected computers on a variety of Windows versions"
+      },
+      {
+        "sub": "ERRATICGOPHER attack",
+        "rel": "was addressed prior to release of",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Windows Vista"
+      },
+      {
+        "sub": "ETERNALCHAMPION",
+        "rel": "was fixed with",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "two other previously disclosed vulnerabilities"
+      },
+      {
+        "sub": "ETERNALBLUE",
+        "rel": "patched on",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "March 14"
+      },
+      {
+        "sub": "ETERNALROMANCE",
+        "rel": "patched on",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "March 14"
+      },
+      {
+        "sub": "ETERNALSYNERGY",
+        "rel": "patched on",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "March 14"
+      },
+      {
+        "sub": "Microsoft Security Bulletin",
+        "rel": "describes",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "ETERNALBLUE"
+      },
+      {
+        "sub": "Microsoft Security Bulletin",
+        "rel": "describes",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "ETERNALROMANCE"
+      },
+      {
+        "sub": "Microsoft Security Bulletin",
+        "rel": "describes",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "ETERNALSYNERGY"
+      },
+      {
+        "sub": "ENGLISHMANDENTIST",
+        "rel": "did not patch because could not be reproduced on",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "supported systems"
+      },
+      {
+        "sub": "ESTEEMAUDIT",
+        "rel": "did not patch because could not be reproduced on",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "supported systems"
+      },
+      {
+        "sub": "EXPLODINGCAN",
+        "rel": "did not patch because could not be reproduced on",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "supported systems"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "says customers using Windows 7 or above are not at risk",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Windows 7 or above"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "encouraged upgrade to",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "supported systems"
+      },
+      {
+        "sub": "vulnerabilities related to several ETERNAL exploits",
+        "rel": "affected",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Windows 10"
+      },
+      {
+        "sub": "fully up to date copy of Windows 10",
+        "rel": "will not be vulnerable",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "vulnerabilities related to several ETERNAL exploits"
+      },
+      {
+        "sub": "Matthew Hickey",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "clean install of Windows"
+      },
+      {
+        "sub": "Matthew Hickey",
+        "rel": "used",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "clean install of Windows"
+      },
+      {
+        "sub": "clean install of Windows",
+        "rel": "didn't include",
+        "rel_type": [
+          "lacks"
+        ],
+        "obj": "latest security fixes"
+      },
+      {
+        "sub": "Matthew Hickey",
+        "rel": "led to erroneous results",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "clean install of Windows"
+      },
+      {
+        "sub": "Matthew Hickey",
+        "rel": "is part of",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Hacker House"
+      },
+      {
+        "sub": "Matthew Hickey",
+        "rel": "known as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Hacker Fantastic"
+      },
+      {
+        "sub": "Hacker Fantastic",
+        "rel": "is part of",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Hacker House"
+      }
+    ]
+  }
+}

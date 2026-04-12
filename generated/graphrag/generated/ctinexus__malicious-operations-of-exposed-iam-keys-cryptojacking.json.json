@@ -1,0 +1,138 @@
+{
+  "sample_id": "ctinexus__malicious-operations-of-exposed-iam-keys-cryptojacking.json",
+  "sample_index": 62,
+  "source": "ctinexus",
+  "file_name": "malicious-operations-of-exposed-iam-keys-cryptojacking.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "ELEKTRA-LEAK",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "UNIT 42",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "AWS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "IDENTITY AND ACCESS MANAGEMENT (IAM) CREDENTIALS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "CRYPTOJACKING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "AWS ELASTIC COMPUTE (EC2) INSTANCES",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "PUBLIC GITHUB REPOSITORIES",
+        "type": "LOCATION"
+      },
+      {
+        "name": "THREAT ACTOR",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "AWS EC2 INSTANCES",
+        "type": "Unknown"
+      },
+      {
+        "name": "EXPOSED IAM CREDENTIALS",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "ELEKTRA-LEAK",
+        "rel": "related_to",
+        "obj": "THREAT ACTOR"
+      },
+      {
+        "sub": "THREAT ACTOR",
+        "rel": "related_to",
+        "obj": "AWS EC2 INSTANCES"
+      },
+      {
+        "sub": "ELEKTRA-LEAK",
+        "rel": "related_to",
+        "obj": "EXPOSED IAM CREDENTIALS"
+      },
+      {
+        "sub": "EXPOSED IAM CREDENTIALS",
+        "rel": "related_to",
+        "obj": "CRYPTOJACKING"
+      },
+      {
+        "sub": "UNIT 42",
+        "rel": "related_to",
+        "obj": "ELEKTRA-LEAK"
+      },
+      {
+        "sub": "AWS",
+        "rel": "related_to",
+        "obj": "EXPOSED IAM CREDENTIALS"
+      },
+      {
+        "sub": "AWS",
+        "rel": "related_to",
+        "obj": "CRYPTOJACKING"
+      },
+      {
+        "sub": "ELEKTRA-LEAK",
+        "rel": "related_to",
+        "obj": "THREAT ACTOR"
+      },
+      {
+        "sub": "THREAT ACTOR",
+        "rel": "related_to",
+        "obj": "AWS EC2 INSTANCES"
+      },
+      {
+        "sub": "ELEKTRA-LEAK",
+        "rel": "related_to",
+        "obj": "EXPOSED IAM CREDENTIALS"
+      },
+      {
+        "sub": "EXPOSED IAM CREDENTIALS",
+        "rel": "related_to",
+        "obj": "CRYPTOJACKING"
+      },
+      {
+        "sub": "UNIT 42",
+        "rel": "related_to",
+        "obj": "ELEKTRA-LEAK"
+      },
+      {
+        "sub": "AWS",
+        "rel": "related_to",
+        "obj": "EXPOSED IAM CREDENTIALS"
+      },
+      {
+        "sub": "AWS",
+        "rel": "related_to",
+        "obj": "CRYPTOJACKING"
+      }
+    ]
+  }
+}

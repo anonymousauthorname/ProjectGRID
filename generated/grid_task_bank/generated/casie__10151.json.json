@@ -1,0 +1,442 @@
+{
+  "sample_id": "casie__10151.json",
+  "sample_index": 21,
+  "source": "casie",
+  "file_name": "10151.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Microsoft",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the OS maker",
+          "Microsoft"
+        ]
+      },
+      {
+        "name": "Alex Ionescu",
+        "type": "identity",
+        "alias": [
+          "a security researcher"
+        ]
+      },
+      {
+        "name": "Crowdstrike",
+        "type": "cyber-security firm",
+        "alias": [
+          "cyber-security firm"
+        ]
+      },
+      {
+        "name": "Meltdown vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "the Meltdown patches",
+          "Meltdown",
+          "the two flaws"
+        ]
+      },
+      {
+        "name": "Spectre vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "the two flaws",
+          "Spectre"
+        ]
+      },
+      {
+        "name": "Windows 10 versions",
+        "type": "general-software",
+        "alias": [
+          "older Windows 10 versions"
+        ]
+      },
+      {
+        "name": "Redstone 4",
+        "type": "windows-registry-key",
+        "alias": [
+          "v1803",
+          "April 2018 Update",
+          "the April 2018 Update"
+        ]
+      },
+      {
+        "name": "January 4",
+        "type": "date",
+        "alias": [
+          "January 4, 2018"
+        ]
+      },
+      {
+        "name": "CVE-2018-8115",
+        "type": "vulnerability",
+        "alias": [
+          "a vulnerability in the Windows Host Compute Service Shim (hcsshim) library"
+        ]
+      },
+      {
+        "name": "Windows Host Compute Service Shim (hcsshim)",
+        "type": "general-software",
+        "alias": [
+          "hcsshim",
+          "the Windows Host Compute Service Shim"
+        ]
+      },
+      {
+        "name": "NtCallEnclave",
+        "type": "windows-registry-key",
+        "alias": [
+          "NtCallEnclave"
+        ]
+      },
+      {
+        "name": "kernel page table directory",
+        "type": "abstract-concept",
+        "alias": [
+          "the full kernel page table directory"
+        ]
+      },
+      {
+        "name": "user space",
+        "type": "abstract-concept",
+        "alias": [
+          "user space"
+        ]
+      },
+      {
+        "name": "patch for Meltdown vulnerability",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "the Meltdown patches"
+        ]
+      },
+      {
+        "name": "security update",
+        "type": "course-of-action",
+        "alias": [
+          "emergency update"
+        ]
+      },
+      {
+        "name": "Windows",
+        "type": "general-software",
+        "alias": [
+          "the OS"
+        ]
+      },
+      {
+        "name": "Intel",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Intel CPU"
+        ]
+      },
+      {
+        "name": "Intel CPU microcode updates",
+        "type": "course-of-action",
+        "alias": [
+          "microcode updates"
+        ]
+      },
+      {
+        "name": "GitHub",
+        "type": "infrastructure",
+        "alias": [
+          "GitHub"
+        ]
+      },
+      {
+        "name": "Bleeping Computer",
+        "type": "security-product",
+        "alias": [
+          "Bleeping Computer"
+        ]
+      },
+      {
+        "name": "May 2018 Patch Tuesday",
+        "type": "date",
+        "alias": [
+          "Microsoft's May 2018 Patch Tuesday"
+        ]
+      },
+      {
+        "name": "attacker",
+        "type": "identity"
+      },
+      {
+        "name": "vulnerable systems",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "out-of-band update",
+        "type": "course-of-action"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft's patches for the Meltdown vulnerability",
+        "rel": "have had",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "the Meltdown vulnerability"
+      },
+      {
+        "sub": "Alex Ionescu",
+        "rel": "is a",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "security researcher"
+      },
+      {
+        "sub": "Alex Ionescu",
+        "rel": "is affiliated-with",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Crowdstrike"
+      },
+      {
+        "sub": "Crowdstrike",
+        "rel": "is affiliated-with",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Alex Ionescu"
+      },
+      {
+        "sub": "patches for the Meltdown vulnerability",
+        "rel": "were affected",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Windows 10 versions"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "quietly fixed the issue on",
+        "rel_type": [
+          "fixes"
+        ],
+        "obj": "Windows 10 Redstone 4"
+      },
+      {
+        "sub": "Alex Ionescu",
+        "rel": "wrote",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "today in a tweet"
+      },
+      {
+        "sub": "the Meltdown patches for Windows 10",
+        "rel": "had",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "a fatal flaw"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issued",
+        "rel_type": [
+          "issued"
+        ],
+        "obj": "a security update"
+      },
+      {
+        "sub": "security update",
+        "rel": "wasn't to",
+        "rel_type": [
+          "negates"
+        ],
+        "obj": "backport the 'fixed' Meltdown patches for older Windows 10 versions"
+      },
+      {
+        "sub": "security update",
+        "rel": "fixed",
+        "rel_type": [
+          "fixes"
+        ],
+        "obj": "a vulnerability in the Windows Host Compute Service Shim (hcsshim) library"
+      },
+      {
+        "sub": "vulnerability in the Windows Host Compute Service Shim (hcsshim) library",
+        "rel": "allows",
+        "rel_type": [
+          "allows"
+        ],
+        "obj": "an attacker"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "remotely execute",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "code"
+      },
+      {
+        "sub": "attacker",
+        "rel": "remotely execute",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "code on vulnerable systems"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "classified",
+        "rel_type": [
+          "classified"
+        ],
+        "obj": "CVE-2018-8115"
+      },
+      {
+        "sub": "patched hcsshim file",
+        "rel": "is available for download from",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "GitHub"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "working to provide",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "customers with an update"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "released",
+        "rel_type": [
+          "released"
+        ],
+        "obj": "its Meltdown and Spectre patches"
+      },
+      {
+        "sub": "security researchers",
+        "rel": "disclosed",
+        "rel_type": [
+          "discloses"
+        ],
+        "obj": "the two flaws"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "had a hard time patching",
+        "rel_type": [
+          "patching"
+        ],
+        "obj": "the two flaws"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "issued",
+        "rel_type": [
+          "issued"
+        ],
+        "obj": "additional security updates"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "to fix",
+        "rel_type": [
+          "fixes"
+        ],
+        "obj": "the original Spectre mitigations"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "deliver",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Intel CPU microcode updates"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "deliver",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Intel CPU microcode updates"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "as a favor to",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Intel"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "released",
+        "rel_type": [
+          "released"
+        ],
+        "obj": "Meltdown and Spectre patches"
+      },
+      {
+        "sub": "January 4",
+        "rel": "on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Microsoft released its Meltdown and Spectre patches"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "may not bundle",
+        "rel_type": [
+          "may not bundle"
+        ],
+        "obj": "out-of-band update"
+      },
+      {
+        "sub": "out-of-band update",
+        "rel": "will most likely arrive in",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Microsoft's May 2018 Patch Tuesday"
+      },
+      {
+        "sub": "the two flaws",
+        "rel": "allow attackers to retrieve data from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "protected areas of modern CPUs"
+      },
+      {
+        "sub": "Redmond-based OS maker",
+        "rel": "has had a hard time patching",
+        "rel_type": [
+          "patching"
+        ],
+        "obj": "the two flaws"
+      }
+    ]
+  }
+}

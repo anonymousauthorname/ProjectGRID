@@ -1,0 +1,182 @@
+{
+  "sample_id": "casie__1592.json",
+  "sample_index": 7,
+  "source": "casie",
+  "file_name": "1592.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TP-Link M5350",
+        "type": "Entity"
+      },
+      {
+        "name": "SMS message",
+        "type": "Entity"
+      },
+      {
+        "name": "SIM card",
+        "type": "Entity"
+      },
+      {
+        "name": "admin password",
+        "type": "Entity"
+      },
+      {
+        "name": "Wi-Fi network SSID",
+        "type": "Entity"
+      },
+      {
+        "name": "Wi-Fi network password",
+        "type": "Entity"
+      },
+      {
+        "name": "Telnet password",
+        "type": "Entity"
+      },
+      {
+        "name": "Hootoo Travelmate",
+        "type": "Entity"
+      },
+      {
+        "name": "Trendnet TEW714TRU",
+        "type": "Entity"
+      },
+      {
+        "name": "Vstarcam webcams",
+        "type": "Entity"
+      },
+      {
+        "name": "Startech modems",
+        "type": "Entity"
+      },
+      {
+        "name": "Panasonic BM ET200 retina scanners",
+        "type": "Entity"
+      },
+      {
+        "name": "Western Digital MyCloud NAS hard drives",
+        "type": "Entity"
+      },
+      {
+        "name": "authentication bypass",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TP-Link M5350",
+        "rel": "exposes",
+        "obj": "admin password"
+      },
+      {
+        "sub": "TP-Link M5350",
+        "rel": "exposes",
+        "obj": "Wi-Fi network SSID"
+      },
+      {
+        "sub": "TP-Link M5350",
+        "rel": "exposes",
+        "obj": "Wi-Fi network password"
+      },
+      {
+        "sub": "TP-Link M5350",
+        "rel": "responds to",
+        "obj": "SMS message"
+      },
+      {
+        "sub": "SMS message",
+        "rel": "is sent to",
+        "obj": "SIM card"
+      },
+      {
+        "sub": "SIM card",
+        "rel": "is inserted in",
+        "obj": "TP-Link M5350"
+      },
+      {
+        "sub": "TP-Link M5350",
+        "rel": "uses",
+        "obj": "SMS message"
+      },
+      {
+        "sub": "TP-Link M5350",
+        "rel": "has",
+        "obj": "SIM card"
+      },
+      {
+        "sub": "TP-Link M5350",
+        "rel": "has",
+        "obj": "authentication bypass"
+      },
+      {
+        "sub": "Panasonic BM ET200 retina scanners",
+        "rel": "is vulnerable to",
+        "obj": "authentication bypass"
+      },
+      {
+        "sub": "Panasonic BM ET200 retina scanners",
+        "rel": "allows access to",
+        "obj": "admin panel"
+      },
+      {
+        "sub": "Panasonic BM ET200 retina scanners",
+        "rel": "can be exploited by",
+        "obj": "deleting URL parameters"
+      },
+      {
+        "sub": "Hootoo Travelmate",
+        "rel": "is vulnerable to",
+        "obj": "root access vulnerability"
+      },
+      {
+        "sub": "Trendnet TEW714TRU",
+        "rel": "is vulnerable to",
+        "obj": "root access vulnerability"
+      },
+      {
+        "sub": "Vstarcam webcams",
+        "rel": "is vulnerable to",
+        "obj": "root access vulnerability"
+      },
+      {
+        "sub": "Startech modems",
+        "rel": "has",
+        "obj": "hardcoded Telnet password"
+      },
+      {
+        "sub": "Western Digital MyCloud NAS hard drives",
+        "rel": "has",
+        "obj": "flaws"
+      },
+      {
+        "sub": "Western Digital MyCloud NAS hard drives",
+        "rel": "are vulnerable to",
+        "obj": "authentication bypass"
+      }
+    ]
+  }
+}

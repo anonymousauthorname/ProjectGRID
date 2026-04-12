@@ -1,0 +1,381 @@
+{
+  "sample_id": "casie__10141.json",
+  "sample_index": 28,
+  "source": "casie",
+  "file_name": "10141.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "vulnerability",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "threat actors",
+          "cyberattackers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "network traffic",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "KRACK",
+        "type": "attack-pattern",
+        "alias": [
+          "the bug",
+          "the vulnerability"
+        ],
+        "mother entity": [
+          "vulnerability"
+        ]
+      },
+      {
+        "name": "WPA2",
+        "type": "general-software",
+        "alias": [
+          "the security protocol",
+          "WPA2 wireless security",
+          "WPA2-enabled device"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "WEP",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "four-way handshake",
+        "type": "detailed-part-of-general-software",
+        "alias": [],
+        "mother entity": [
+          "WPA2"
+        ]
+      },
+      {
+        "name": "pre-shared password",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Mathy Vanhoef",
+        "type": "identity",
+        "alias": [
+          "security researcher and academic Mathy Vanhoef"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "threat actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attackers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "US-CERT",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "vendors",
+        "type": "identity",
+        "alias": [
+          "main affected vendors"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "patches",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "vendors"
+        ]
+      },
+      {
+        "name": "cryptographic nonce",
+        "type": "detailed-part-of-general-software",
+        "alias": [],
+        "mother entity": [
+          "WPA2"
+        ]
+      },
+      {
+        "name": "connected party",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Windows",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "iOS",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Android 6.0 Marshmallow",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "IoT devices",
+        "type": "general-software",
+        "alias": [
+          "millions of vulnerable and unpatched IoT devices"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "botnets",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": [
+          "IoT devices"
+        ]
+      },
+      {
+        "name": "CVE numbers",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "vulnerability"
+        ]
+      },
+      {
+        "name": "Aruba, Cisco, Espressif Systems, Fortinet, the FreeBSD Project, HostAP, Intel, Juniper Networks, Microchip Technology, Red Hat, Samsung, various units of Toshiba and Ubiquiti Networks",
+        "type": "identity",
+        "alias": [
+          "main affected vendors"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "vulnerability",
+        "rel": "lets attackers eavesdrop on",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "attackers",
+        "special_factuality": []
+      },
+      {
+        "sub": "attackers",
+        "rel": "eavesdrop on",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "network traffic",
+        "special_factuality": []
+      },
+      {
+        "sub": "KRACK",
+        "rel": "is a fundamental flaw in the way",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "WPA2",
+        "special_factuality": []
+      },
+      {
+        "sub": "KRACK",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "WPA2",
+        "special_factuality": []
+      },
+      {
+        "sub": "US-CERT",
+        "rel": "has known of",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "vulnerability",
+        "special_factuality": []
+      },
+      {
+        "sub": "US-CERT",
+        "rel": "informed",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "vendors",
+        "special_factuality": []
+      },
+      {
+        "sub": "vendors",
+        "rel": "prepare",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "patches",
+        "special_factuality": []
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "effectively broke",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "WPA2",
+        "special_factuality": []
+      },
+      {
+        "sub": "Mathy Vanhoef",
+        "rel": "discovered the flaw",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "KRACK",
+        "special_factuality": []
+      },
+      {
+        "sub": "threat actors",
+        "rel": "leverage the vulnerability to decrypt",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "network traffic",
+        "special_factuality": []
+      },
+      {
+        "sub": "threat actors",
+        "rel": "hijack connections",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "connections",
+        "special_factuality": []
+      },
+      {
+        "sub": "threat actors",
+        "rel": "perform man-in-the-middle attacks",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "traffic",
+        "special_factuality": []
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "can be utilized to dupe a connected party into reinstalling a key",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "connected party",
+        "special_factuality": []
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "allows attackers to replay, decrypt, or forge packets",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "replay attacks",
+        "special_factuality": []
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "has a serious impact on",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Android 6.0 Marshmallow",
+        "special_factuality": []
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "devastating for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "IoT devices",
+        "special_factuality": []
+      },
+      {
+        "sub": "IoT devices",
+        "rel": "being exposed for use by",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "botnets",
+        "special_factuality": []
+      },
+      {
+        "sub": "CVE numbers",
+        "rel": "preserve to describe",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "vulnerability",
+        "special_factuality": []
+      },
+      {
+        "sub": "vendors",
+        "rel": "fail to implement acceptable security standards",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "IoT devices",
+        "special_factuality": []
+      },
+      {
+        "sub": "Aruba, Cisco, Espressif Systems, Fortinet, the FreeBSD Project, HostAP, Intel, Juniper Networks, Microchip Technology, Red Hat, Samsung, various units of Toshiba and Ubiquiti Networks",
+        "rel": "are affected by",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "vulnerability",
+        "special_factuality": []
+      },
+      {
+        "sub": "vendors",
+        "rel": "mitigate the issues",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "vulnerability",
+        "special_factuality": []
+      }
+    ]
+  }
+}

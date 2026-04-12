@@ -1,0 +1,556 @@
+{
+  "sample_id": "malkg__201303FidelisDarkSeoulJokra.txt",
+  "sample_index": 111,
+  "source": "malkg",
+  "file_name": "201303FidelisDarkSeoulJokra.txt",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "www.fidelissecurity.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "www.threatgeek.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "@FidSecSys",
+        "type": "email-address"
+      },
+      {
+        "name": "+1800.652.4020",
+        "type": "phone-number"
+      },
+      {
+        "name": "Fidelis Threat Advisory #1008",
+        "type": "document-or-publication"
+      },
+      {
+        "name": "DarkSeoul/Jokra",
+        "type": "malware"
+      },
+      {
+        "name": "Shamoon malware",
+        "type": "malware"
+      },
+      {
+        "name": "Fidelis Threat Advisory #1007",
+        "type": "document-or-publication"
+      },
+      {
+        "name": "Master Boot Record (MBR)",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "Volume Boot Record (VBR)",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "'HASTATI' or 'PR!NCPES’",
+        "type": "indicator"
+      },
+      {
+        "name": "239ed75323.exe",
+        "type": "file"
+      },
+      {
+        "name": "5fcd6e1dace6b0599429d913850f0364",
+        "type": "credential-value"
+      },
+      {
+        "name": "mb_join.exe",
+        "type": "file"
+      },
+      {
+        "name": "0a8032cd6b4a710b1771a080fa09fb87",
+        "type": "credential-value"
+      },
+      {
+        "name": "taskkill /F /IM pasvc.exe",
+        "type": "command"
+      },
+      {
+        "name": "taskkill /F /IM Clisvc.exe",
+        "type": "command"
+      },
+      {
+        "name": "shutdown -r -t 0",
+        "type": "command"
+      },
+      {
+        "name": "AhnLab Policy Agent",
+        "type": "general-software"
+      },
+      {
+        "name": "ViRobot ISMS security tool",
+        "type": "security-product"
+      },
+      {
+        "name": "HAURI Inc.",
+        "type": "organization"
+      },
+      {
+        "name": "EnCase (v6.19.6)",
+        "type": "security-product"
+      },
+      {
+        "name": "Fidelis XPS sensors",
+        "type": "security-product"
+      },
+      {
+        "name": "Trojan.Win32.EraseMBR.b",
+        "type": "indicator"
+      },
+      {
+        "name": "zip files",
+        "type": "infrastructure"
+      },
+      {
+        "name": "weaponized MS Office document or Adobe PDF File",
+        "type": "document-or-publication"
+      },
+      {
+        "name": "Windows 7 VM",
+        "type": "infrastructure"
+      },
+      {
+        "name": "Windows XP system",
+        "type": "infrastructure"
+      },
+      {
+        "name": "PhysicalDrive[0-9]",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "fixed devices",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "new threads",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "512-byte pattern",
+        "type": "indicator"
+      },
+      {
+        "name": "1023 byte pattern",
+        "type": "indicator"
+      },
+      {
+        "name": "Func 00401d55",
+        "type": "function"
+      },
+      {
+        "name": "B:\\",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "GetDriveType",
+        "type": "function"
+      },
+      {
+        "name": "0x7000",
+        "type": "hex-address"
+      },
+      {
+        "name": "102,400d bytes",
+        "type": "quantity"
+      },
+      {
+        "name": "10 to 15 minutes",
+        "type": "time"
+      },
+      {
+        "name": "backup VBR",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "logical file system",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "chkdisk cycle",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "bluescreen error",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "Fidelis Security Systems, Inc.",
+        "type": "organization"
+      },
+      {
+        "name": "community",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "debugging session",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "same techniques utilized to recover data from Shamoon",
+        "type": "course-of-action"
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "www.fidelissecurity.com",
+        "rel": "published",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Fidelis Threat Advisory #1008"
+      },
+      {
+        "sub": "www.threatgeek.com",
+        "rel": "published",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Fidelis Threat Advisory #1008"
+      },
+      {
+        "sub": "@FidSecSys",
+        "rel": "contact-of",
+        "rel_type": [
+          "contact"
+        ],
+        "obj": "Fidelis Threat Advisory #1008"
+      },
+      {
+        "sub": "+1800.652.4020",
+        "rel": "contact-of",
+        "rel_type": [
+          "contact"
+        ],
+        "obj": "Fidelis Threat Advisory #1008"
+      },
+      {
+        "sub": "Fidelis Threat Advisory #1008",
+        "rel": "is the subject of analysis",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "DarkSeoul/Jokra"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "compares to",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "Shamoon malware"
+      },
+      {
+        "sub": "Shamoon malware",
+        "rel": "compared to",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "DarkSeoul/Jokra"
+      },
+      {
+        "sub": "Fidelis Threat Advisory #1007",
+        "rel": "covered in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "same techniques utilized to recover data from Shamoon"
+      },
+      {
+        "sub": "Shamoon malware",
+        "rel": "wipes with pattern",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "'HASTATI' or 'PR!NCPES’"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "overwrites",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Master Boot Record (MBR)"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "overwrites",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Volume Boot Record (VBR)"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "overwrites with pattern",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "'HASTATI' or 'PR!NCPES’"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "gains disk access by opening",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the physical drive"
+      },
+      {
+        "sub": "the physical drive",
+        "rel": "opened as a file",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Func 00401d55"
+      },
+      {
+        "sub": "Func 00401d55",
+        "rel": "opens",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "PhysicalDrive%d"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "overwrites at location",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "0x7000"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "continues overwriting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "102,400d bytes"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "taskkill /F /IM pasvc.exe"
+      },
+      {
+        "sub": "taskkill /F /IM pasvc.exe",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "pasvc.exe"
+      },
+      {
+        "sub": "pasvc.exe",
+        "rel": "associated with",
+        "rel_type": [
+          "associated-with"
+        ],
+        "obj": "AhnLab Policy Agent"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "taskkill /F /IM Clisvc.exe"
+      },
+      {
+        "sub": "taskkill /F /IM Clisvc.exe",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Clisvc.exe"
+      },
+      {
+        "sub": "Clisvc.exe",
+        "rel": "associated with",
+        "rel_type": [
+          "associated-with"
+        ],
+        "obj": "ViRobot ISMS security tool"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "shutdown -r -t 0"
+      },
+      {
+        "sub": "Windows 7 VM",
+        "rel": "tested in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "DarkSeoul/Jokra"
+      },
+      {
+        "sub": "Windows XP system",
+        "rel": "tested in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "DarkSeoul/Jokra"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "creates new threads for",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "new threads"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "enumerates",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "PhysicalDrive[0-9]"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "makes distinction based on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "fixed devices"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "writes to disk in XP",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "512-byte pattern"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "writes to disk in Windows 7",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "1023 byte pattern"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "observed during",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "debugging session"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "taskkill /F /IM pasvc.exe"
+      },
+      {
+        "sub": "239ed75323.exe",
+        "rel": "used for analysis of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "DarkSeoul/Jokra"
+      },
+      {
+        "sub": "mb_join.exe",
+        "rel": "used for analysis of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "DarkSeoul/Jokra"
+      },
+      {
+        "sub": "EnCase (v6.19.6)",
+        "rel": "used to detect",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "backup VBR"
+      },
+      {
+        "sub": "DarkSeoul/Jokra",
+        "rel": "detected as",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Trojan.Win32.EraseMBR.b"
+      },
+      {
+        "sub": "zip files",
+        "rel": "detected inside",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Fidelis XPS sensors"
+      },
+      {
+        "sub": "weaponized MS Office document or Adobe PDF File",
+        "rel": "detected inside",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Fidelis XPS sensors"
+      },
+      {
+        "sub": "Fidelis XPS sensors",
+        "rel": "detects as",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "DarkSeoul/Jokra"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "performed attack on",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "South Korean broadcasting and banking infrastructure"
+      },
+      {
+        "sub": "same techniques utilized to recover data from Shamoon",
+        "rel": "utilized techniques of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Shamoon malware"
+      }
+    ]
+  }
+}

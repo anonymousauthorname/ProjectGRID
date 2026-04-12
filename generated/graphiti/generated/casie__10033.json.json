@@ -1,0 +1,154 @@
+{
+  "sample_id": "casie__10033.json",
+  "sample_index": 16,
+  "source": "casie",
+  "file_name": "10033.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "ABTA",
+        "type": "Organization"
+      },
+      {
+        "name": "web server",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "abta.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Mark Tanzer",
+        "type": "Person"
+      },
+      {
+        "name": "third-party web developer and hosting company",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "holiday and travel association",
+        "type": "Organization"
+      },
+      {
+        "name": "personal identity information",
+        "type": "Indicator"
+      },
+      {
+        "name": "online form",
+        "type": "Software"
+      },
+      {
+        "name": "encrypted passwords",
+        "type": "Indicator"
+      },
+      {
+        "name": "supporting documentation",
+        "type": "Indicator"
+      },
+      {
+        "name": "complaints uploaded to ABTA",
+        "type": "Indicator"
+      },
+      {
+        "name": "vulnerability",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Information Commissioner",
+        "type": "Organization"
+      },
+      {
+        "name": "police",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "ABTA",
+        "rel": "has vulnerability",
+        "obj": "web server"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "MANAGES",
+        "obj": "abta.com"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "outsource management to",
+        "obj": "third-party web developer and hosting company"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "NOTIFIES",
+        "obj": "Information Commissioner"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "NOTIFIES",
+        "obj": "police"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "ACCESSES",
+        "obj": "personal identity information"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "receives data from",
+        "obj": "online form"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "STORES",
+        "obj": "encrypted passwords"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "RECEIVES",
+        "obj": "supporting documentation"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "RECEIVES",
+        "obj": "complaints uploaded to ABTA"
+      },
+      {
+        "sub": "Mark Tanzer",
+        "rel": "is ceо of",
+        "obj": "ABTA"
+      },
+      {
+        "sub": "external infiltrator",
+        "rel": "ACCESSES",
+        "obj": "web server"
+      },
+      {
+        "sub": "third-party web developer and hosting company",
+        "rel": "MANAGES",
+        "obj": "web server"
+      },
+      {
+        "sub": "ABTA",
+        "rel": "IS",
+        "obj": "holiday and travel association"
+      }
+    ]
+  }
+}

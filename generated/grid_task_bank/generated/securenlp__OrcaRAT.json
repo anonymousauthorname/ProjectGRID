@@ -1,0 +1,1380 @@
+{
+  "sample_id": "securenlp__OrcaRAT",
+  "sample_index": 172,
+  "source": "securenlp",
+  "file_name": "OrcaRAT",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "OrcaRAT",
+        "type": "malware",
+        "alias": [
+          "the malware",
+          "the malware in question",
+          "the implant",
+          "OrcaRAT"
+        ]
+      },
+      {
+        "name": "Comfoo",
+        "type": "malware",
+        "alias": [
+          "some samples of Comfoo malware"
+        ]
+      },
+      {
+        "name": "Comment Crew",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the well-known Comment Crew"
+        ]
+      },
+      {
+        "name": "Yara",
+        "type": "security-product",
+        "alias": [
+          "disk detection using Yara"
+        ]
+      },
+      {
+        "name": "Snort",
+        "type": "security-product",
+        "alias": [
+          "Snort or Suricata IDS rule"
+        ]
+      },
+      {
+        "name": "Suricata",
+        "type": "security-product",
+        "alias": [
+          "Suricata IDS rule"
+        ]
+      },
+      {
+        "name": "Windows Crypto API",
+        "type": "general-software",
+        "alias": [
+          "Windows crypto API",
+          "the Windows Crypto API functions"
+        ]
+      },
+      {
+        "name": "RC4",
+        "type": "attack-pattern",
+        "alias": [
+          "the RC4 algorithm"
+        ]
+      },
+      {
+        "name": "MD5",
+        "type": "vulnerability",
+        "alias": [
+          "the MD5 hash"
+        ]
+      },
+      {
+        "name": "User-Agent",
+        "type": "text-string",
+        "alias": [
+          "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET4.0C; .NET4.0E)"
+        ]
+      },
+      {
+        "name": "HTTP headers",
+        "type": "abstract-concept",
+        "alias": [
+          "forged HTTP headers"
+        ]
+      },
+      {
+        "name": "URI",
+        "type": "url",
+        "alias": [
+          "the URI string",
+          "the HTTP URI field"
+        ]
+      },
+      {
+        "name": "base64",
+        "type": "attack-pattern",
+        "alias": [
+          "modified version of the Base64 algorithm"
+        ]
+      },
+      {
+        "name": "HTTP POST",
+        "type": "network-traffic",
+        "alias": [
+          "HTTP POST message"
+        ]
+      },
+      {
+        "name": "C2",
+        "type": "infrastructure",
+        "alias": [
+          "command and control server",
+          "command and control server (known as beaconing)"
+        ]
+      },
+      {
+        "name": "check-in",
+        "type": "course-of-action",
+        "alias": [
+          "OrcaRAT implant check-in"
+        ]
+      },
+      {
+        "name": "C2 confirmation response",
+        "type": "course-of-action",
+        "alias": [
+          "OrcaRAT implant C2 confirmation response"
+        ]
+      },
+      {
+        "name": "kill chain",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "webpage",
+        "type": "file",
+        "alias": [
+          "the command and control routine",
+          "a webpage"
+        ]
+      },
+      {
+        "name": "HTML tags",
+        "type": "text-string",
+        "alias": [
+          "<P> and the terminating tag </P>",
+          "<H1> tag that is terminated by </H1>",
+          "specific sets of HTML tags"
+        ]
+      },
+      {
+        "name": "payload text",
+        "type": "text-string",
+        "alias": [
+          "the payload text",
+          "the extracted payload text"
+        ]
+      },
+      {
+        "name": "encryption key",
+        "type": "credential-value",
+        "alias": [
+          "the RC4 encryption key"
+        ]
+      },
+      {
+        "name": "first stage analysis",
+        "type": "course-of-action",
+        "alias": [
+          "first stage analysis",
+          "running the file in a sandbox environment"
+        ]
+      },
+      {
+        "name": "disassembly",
+        "type": "course-of-action",
+        "alias": [
+          "delving deeper in to the disassembly"
+        ]
+      },
+      {
+        "name": "sandbox environment",
+        "type": "infrastructure",
+        "alias": [
+          "sandbox report",
+          "sandbox"
+        ]
+      },
+      {
+        "name": "threat intelligence analyst",
+        "type": "identity",
+        "alias": [
+          "one of our threat intelligence analysts"
+        ]
+      },
+      {
+        "name": "AV community",
+        "type": "identity",
+        "alias": [
+          "the AV community"
+        ]
+      },
+      {
+        "name": "Dan Kelly",
+        "type": "identity"
+      },
+      {
+        "name": "Tom Lancaster",
+        "type": "identity"
+      },
+      {
+        "name": "PwC Cyber Threat Operations",
+        "type": "identity",
+        "alias": [
+          "PwC Cyber Threat Operations :: @tlansec"
+        ]
+      },
+      {
+        "name": "author",
+        "type": "identity",
+        "alias": [
+          "PwC Cyber Threat Operations"
+        ]
+      },
+      {
+        "name": "253a704acd7952677c70e0c2d787791b8359efe2c92a5e77acea028393a85613",
+        "type": "file",
+        "alias": [
+          "the malware sample",
+          "the hash"
+        ]
+      },
+      {
+        "name": "adda.lengendport.com",
+        "type": "domain-name",
+        "alias": [
+          "adda.lengendport.com"
+        ]
+      },
+      {
+        "name": "tsl.gettrials.com",
+        "type": "domain-name",
+        "alias": [
+          "tsl.gettrials.com"
+        ]
+      },
+      {
+        "name": "auty.organiccrap.com",
+        "type": "domain-name",
+        "alias": [
+          "auty.organiccrap.com"
+        ]
+      },
+      {
+        "name": "11.38.64.251",
+        "type": "ipv4-addr",
+        "alias": [
+          "11.38.64.251"
+        ]
+      },
+      {
+        "name": "123.120.115.77",
+        "type": "ipv4-addr",
+        "alias": [
+          "123.120.115.77"
+        ]
+      },
+      {
+        "name": "123.120.99.228",
+        "type": "ipv4-addr",
+        "alias": [
+          "123.120.99.228"
+        ]
+      },
+      {
+        "name": "142.0.134.20",
+        "type": "ipv4-addr",
+        "alias": [
+          "142.0.134.20"
+        ]
+      },
+      {
+        "name": "147.96.68.184",
+        "type": "ipv4-addr",
+        "alias": [
+          "147.96.68.184"
+        ]
+      },
+      {
+        "name": "176.31.24.182",
+        "type": "ipv4-addr",
+        "alias": [
+          "176.31.24.182"
+        ]
+      },
+      {
+        "name": "176.31.24.184",
+        "type": "ipv4-addr",
+        "alias": [
+          "176.31.24.184"
+        ]
+      },
+      {
+        "name": "190.114.241.170",
+        "type": "ipv4-addr",
+        "alias": [
+          "190.114.241.170"
+        ]
+      },
+      {
+        "name": "200.78.201.24",
+        "type": "ipv4-addr",
+        "alias": [
+          "200.78.201.24"
+        ]
+      },
+      {
+        "name": "202.124.151.94",
+        "type": "ipv4-addr",
+        "alias": [
+          "202.124.151.94"
+        ]
+      },
+      {
+        "name": "202.2.108.142",
+        "type": "ipv4-addr",
+        "alias": [
+          "202.2.108.142"
+        ]
+      },
+      {
+        "name": "203.146.251.11",
+        "type": "ipv4-addr",
+        "alias": [
+          "203.146.251.11"
+        ]
+      },
+      {
+        "name": "204.152.209.74",
+        "type": "ipv4-addr",
+        "alias": [
+          "204.152.209.74"
+        ]
+      },
+      {
+        "name": "213.147.54.170",
+        "type": "ipv4-addr",
+        "alias": [
+          "213.147.54.170"
+        ]
+      },
+      {
+        "name": "23.19.39.19",
+        "type": "ipv4-addr",
+        "alias": [
+          "23.19.39.19"
+        ]
+      },
+      {
+        "name": "58.71.158.21",
+        "type": "ipv4-addr",
+        "alias": [
+          "58.71.158.21"
+        ]
+      },
+      {
+        "name": "62.73.174.134",
+        "type": "ipv4-addr",
+        "alias": [
+          "62.73.174.134"
+        ]
+      },
+      {
+        "name": "71.183.67.163",
+        "type": "ipv4-addr",
+        "alias": [
+          "71.183.67.163"
+        ]
+      },
+      {
+        "name": "74.116.128.15",
+        "type": "ipv4-addr",
+        "alias": [
+          "74.116.128.15"
+        ]
+      },
+      {
+        "name": "81.218.149.207",
+        "type": "ipv4-addr",
+        "alias": [
+          "81.218.149.207"
+        ]
+      },
+      {
+        "name": "84c68f2d2dd569c4620dabcecd477e69",
+        "type": "hash",
+        "alias": [
+          "84c68f2d2dd569c4620dabcecd477e69"
+        ]
+      },
+      {
+        "name": "8fbc8c7d62a41b6513603c4051a3ee7b",
+        "type": "hash",
+        "alias": [
+          "8fbc8c7d62a41b6513603c4051a3ee7b"
+        ]
+      },
+      {
+        "name": "91.198.50.31",
+        "type": "ipv4-addr",
+        "alias": [
+          "91.198.50.31"
+        ]
+      },
+      {
+        "name": "affisensors.com",
+        "type": "domain-name",
+        "alias": [
+          "affisensors.com"
+        ]
+      },
+      {
+        "name": "analysis.ittecbbs.com",
+        "type": "domain-name",
+        "alias": [
+          "analysis.ittecbbs.com"
+        ]
+      },
+      {
+        "name": "at.acmetoy.com",
+        "type": "domain-name",
+        "alias": [
+          "at.acmetoy.com"
+        ]
+      },
+      {
+        "name": "aucy.affisensors.com",
+        "type": "domain-name",
+        "alias": [
+          "aucy.affisensors.com"
+        ]
+      },
+      {
+        "name": "bbs.dynssl.com",
+        "type": "domain-name",
+        "alias": [
+          "bbs.dynssl.com"
+        ]
+      },
+      {
+        "name": "bbs.serveuser.com",
+        "type": "domain-name",
+        "alias": [
+          "bbs.serveuser.com"
+        ]
+      },
+      {
+        "name": "bbslab.acmetoy.com",
+        "type": "domain-name",
+        "alias": [
+          "bbslab.acmetoy.com"
+        ]
+      },
+      {
+        "name": "bbslab.lflink.com",
+        "type": "domain-name",
+        "alias": [
+          "bbslab.lflink.com"
+        ]
+      },
+      {
+        "name": "cdna.acmetoy.com",
+        "type": "domain-name",
+        "alias": [
+          "cdna.acmetoy.com"
+        ]
+      },
+      {
+        "name": "cune.lengendport.com",
+        "type": "domain-name",
+        "alias": [
+          "cune.lengendport.com"
+        ]
+      },
+      {
+        "name": "cure.yourtrap.com",
+        "type": "domain-name",
+        "alias": [
+          "cure.yourtrap.com"
+        ]
+      },
+      {
+        "name": "dasheng.lonidc.com",
+        "type": "domain-name",
+        "alias": [
+          "dasheng.lonidc.com"
+        ]
+      },
+      {
+        "name": "dns.affisensors.com",
+        "type": "domain-name",
+        "alias": [
+          "dns.affisensors.com"
+        ]
+      },
+      {
+        "name": "edu.authorizeddns.org",
+        "type": "domain-name",
+        "alias": [
+          "edu.authorizeddns.org"
+        ]
+      },
+      {
+        "name": "edu.onmypc.org",
+        "type": "domain-name",
+        "alias": [
+          "edu.onmypc.org"
+        ]
+      },
+      {
+        "name": "fee0e6b8157099ad09380a94b7cbbea4",
+        "type": "hash",
+        "alias": [
+          "fee0e6b8157099ad09380a94b7cbbea4"
+        ]
+      },
+      {
+        "name": "ftp.bbs.dynssl.com",
+        "type": "domain-name",
+        "alias": [
+          "ftp.bbs.dynssl.com"
+        ]
+      },
+      {
+        "name": "ftp.bbs.serveuser.com",
+        "type": "domain-name",
+        "alias": [
+          "ftp.bbs.serveuser.com"
+        ]
+      },
+      {
+        "name": "ftp.bbslab.acmetoy.com",
+        "type": "domain-name",
+        "alias": [
+          "ftp.bbslab.acmetoy.com"
+        ]
+      },
+      {
+        "name": "ftp.edu.authorizeddns.org",
+        "type": "domain-name",
+        "alias": [
+          "ftp.edu.authorizeddns.org"
+        ]
+      },
+      {
+        "name": "ftp.edu.onmypc.org",
+        "type": "domain-name",
+        "alias": [
+          "ftp.edu.onmypc.org"
+        ]
+      },
+      {
+        "name": "ftp.lucy.justdied.com",
+        "type": "domain-name",
+        "alias": [
+          "ftp.lucy.justdied.com"
+        ]
+      },
+      {
+        "name": "ftp.nuac.jkub.com",
+        "type": "domain-name",
+        "alias": [
+          "ftp.nuac.jkub.com"
+        ]
+      },
+      {
+        "name": "ftp.osk.lflink.com",
+        "type": "domain-name",
+        "alias": [
+          "ftp.osk.lflink.com"
+        ]
+      },
+      {
+        "name": "ftp.reg.dsmtp.com",
+        "type": "domain-name",
+        "alias": [
+          "ftp.reg.dsmtp.com"
+        ]
+      },
+      {
+        "name": "ftp.tt0320.portrelay.com",
+        "type": "domain-name",
+        "alias": [
+          "ftp.tt0320.portrelay.com"
+        ]
+      },
+      {
+        "name": "home.affisensors.com",
+        "type": "domain-name",
+        "alias": [
+          "home.affisensors.com"
+        ]
+      },
+      {
+        "name": "hot.mrface.com",
+        "type": "domain-name",
+        "alias": [
+          "hot.mrface.com"
+        ]
+      },
+      {
+        "name": "info.affisensors.com",
+        "type": "domain-name",
+        "alias": [
+          "info.affisensors.com"
+        ]
+      },
+      {
+        "name": "jucy.wikaba.com",
+        "type": "domain-name",
+        "alias": [
+          "jucy.wikaba.com"
+        ]
+      },
+      {
+        "name": "jutty.organiccrap.com",
+        "type": "domain-name",
+        "alias": [
+          "jutty.organiccrap.com"
+        ]
+      },
+      {
+        "name": "lengendport.com",
+        "type": "domain-name",
+        "alias": [
+          "lengendport.com"
+        ]
+      },
+      {
+        "name": "lucy.justdied.com",
+        "type": "domain-name",
+        "alias": [
+          "lucy.justdied.com"
+        ]
+      },
+      {
+        "name": "newtect.ddns.us",
+        "type": "domain-name",
+        "alias": [
+          "newtect.ddns.us"
+        ]
+      },
+      {
+        "name": "nuac.jkub.com",
+        "type": "domain-name",
+        "alias": [
+          "nuac.jkub.com"
+        ]
+      },
+      {
+        "name": "nunok.ninth.biz",
+        "type": "domain-name",
+        "alias": [
+          "nunok.ninth.biz"
+        ]
+      },
+      {
+        "name": "osk.lflink.com",
+        "type": "domain-name",
+        "alias": [
+          "osk.lflink.com"
+        ]
+      },
+      {
+        "name": "philipine.gnway.net",
+        "type": "domain-name",
+        "alias": [
+          "philipine.gnway.net"
+        ]
+      },
+      {
+        "name": "pure.mypop3.org",
+        "type": "domain-name",
+        "alias": [
+          "pure.mypop3.org"
+        ]
+      },
+      {
+        "name": "reg.dsmtp.com",
+        "type": "domain-name",
+        "alias": [
+          "reg.dsmtp.com"
+        ]
+      },
+      {
+        "name": "tt0320.portrelay.com",
+        "type": "domain-name",
+        "alias": [
+          "tt0320.portrelay.com"
+        ]
+      },
+      {
+        "name": "venus.gr8domain.biz",
+        "type": "domain-name",
+        "alias": [
+          "venus.gr8domain.biz"
+        ]
+      },
+      {
+        "name": "www.bbs.dynssl.com",
+        "type": "domain-name",
+        "alias": [
+          "www.bbs.dynssl.com"
+        ]
+      },
+      {
+        "name": "www.bbs.serveuser.com",
+        "type": "domain-name",
+        "alias": [
+          "www.bbs.serveuser.com"
+        ]
+      },
+      {
+        "name": "www.bbslab.acmetoy.com",
+        "type": "domain-name",
+        "alias": [
+          "www.bbslab.acmetoy.com"
+        ]
+      },
+      {
+        "name": "www.edu.authorizeddns.org",
+        "type": "domain-name",
+        "alias": [
+          "www.edu.authorizeddns.org"
+        ]
+      },
+      {
+        "name": "www.edu.onmypc.org",
+        "type": "domain-name",
+        "alias": [
+          "www.edu.onmypc.org"
+        ]
+      },
+      {
+        "name": "www.fgtr.info",
+        "type": "domain-name",
+        "alias": [
+          "www.fgtr.info"
+        ]
+      },
+      {
+        "name": "www.hot.mrface.com",
+        "type": "domain-name",
+        "alias": [
+          "www.hot.mrface.com"
+        ]
+      },
+      {
+        "name": "www.ktry.info",
+        "type": "domain-name",
+        "alias": [
+          "www.ktry.info"
+        ]
+      },
+      {
+        "name": "www.lucy.justdied.com",
+        "type": "domain-name",
+        "alias": [
+          "www.lucy.justdied.com"
+        ]
+      },
+      {
+        "name": "www.osk.lflink.com",
+        "type": "domain-name",
+        "alias": [
+          "www.osk.lflink.com"
+        ]
+      },
+      {
+        "name": "www.reg.dsmtp.com",
+        "type": "domain-name",
+        "alias": [
+          "www.reg.dsmtp.com"
+        ]
+      },
+      {
+        "name": "www.tt0320.portrelay.com",
+        "type": "domain-name",
+        "alias": [
+          "www.tt0320.portrelay.com"
+        ]
+      },
+      {
+        "name": "OrcaKiller",
+        "type": "string",
+        "alias": [
+          "the word 'OrcaKiller'",
+          "the string 'OrcaKiller'"
+        ]
+      },
+      {
+        "name": "wHaLe",
+        "type": "string",
+        "alias": [
+          "wHaLe",
+          "the value 'wHaLe'"
+        ]
+      },
+      {
+        "name": "first stage analysis",
+        "type": "course-of-action"
+      },
+      {
+        "name": "second stage malware implant",
+        "type": "malware",
+        "alias": [
+          "second stage implant"
+        ]
+      },
+      {
+        "name": "surveying",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "arbitrary commands",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "arbitrary file upload/download",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "first stage implant",
+        "type": "malware",
+        "alias": [
+          "first stage implant"
+        ]
+      },
+      {
+        "name": "command and control routine",
+        "type": "infrastructure"
+      },
+      {
+        "name": "function",
+        "type": "detailed-part-of-malware-or-hackertool"
+      },
+      {
+        "name": "randomly generated bytes",
+        "type": "string"
+      },
+      {
+        "name": "encrypted values",
+        "type": "string"
+      },
+      {
+        "name": "decryption routine",
+        "type": "course-of-action"
+      },
+      {
+        "name": "the operator",
+        "type": "identity"
+      },
+      {
+        "name": "the compromised system",
+        "type": "identity"
+      },
+      {
+        "name": "the filesystem",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "command line",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "default command",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "sleep",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "forged headers",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the structure",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the very first thing",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "the initial communications",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "OrcaRAT implant",
+        "type": "malware"
+      },
+      {
+        "name": "the attack",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "programmers and operators",
+        "type": "identity"
+      },
+      {
+        "name": "the author",
+        "type": "identity"
+      },
+      {
+        "name": "a well-known APT group",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "http://www.secureworks.com/cyber-threat-intelligence/threats/secrets-of-the-comfoo-masters/",
+        "type": "url",
+        "alias": [
+          "[1]"
+        ]
+      },
+      {
+        "name": "http://msdn.microsoft.com/en-gb/library/windows/desktop/aa380255(v=vs.85).aspx",
+        "type": "url",
+        "alias": [
+          "[2]"
+        ]
+      },
+      {
+        "name": "http://en.wikipedia.org/wiki/RC4",
+        "type": "url",
+        "alias": [
+          "[3]"
+        ]
+      },
+      {
+        "name": "http://en.wikipedia.org/wiki/MD5",
+        "type": "url",
+        "alias": [
+          "[4]"
+        ]
+      },
+      {
+        "name": "http://intelreport.mandiant.com/Mandiant_APT1_Report.pdf",
+        "type": "url",
+        "alias": [
+          "[5]"
+        ]
+      },
+      {
+        "name": "http://www.lockheedmartin.com/content/dam/lockheed/data/corporate/documents/LM-White-Report-Intel-Driven-Defense.pdf",
+        "type": "url",
+        "alias": [
+          "[6]"
+        ]
+      },
+      {
+        "name": "6 bytes",
+        "type": "quantity"
+      },
+      {
+        "name": "14 to 18 characters",
+        "type": "quantity"
+      },
+      {
+        "name": "33 to 38 characters",
+        "type": "quantity"
+      },
+      {
+        "name": "5 to 50 characters",
+        "type": "quantity"
+      },
+      {
+        "name": "67 to 170 bytes",
+        "type": "quantity"
+      },
+      {
+        "name": "the author of the malware",
+        "type": "identity"
+      },
+      {
+        "name": "the operators",
+        "type": "identity"
+      },
+      {
+        "name": "a modified version",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "the malware sample",
+        "type": "file"
+      },
+      {
+        "name": "a new variant",
+        "type": "variant-of"
+      },
+      {
+        "name": "the real thing",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "a low detection rate",
+        "type": "indicator"
+      },
+      {
+        "name": "the top 40 anti-virus companies",
+        "type": "identity"
+      },
+      {
+        "name": "the analysts",
+        "type": "identity"
+      },
+      {
+        "name": "the report",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "an HTTP URI field",
+        "type": "text-string"
+      },
+      {
+        "name": "the command structure",
+        "type": "abstract-concept"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "OrcaRAT",
+        "rel": "may have links to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a well-known APT group"
+      },
+      {
+        "sub": "threat intelligence analyst",
+        "rel": "was handed",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "a malware sample (253a704acd7952677c70e0c2d787791b8359efe2c92a5e77acea028393a85613)"
+      },
+      {
+        "sub": "threat intelligence analyst",
+        "rel": "hunting through infrastructure associated with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "some samples of Comfoo malware"
+      },
+      {
+        "sub": "threat intelligence analyst",
+        "rel": "handed it through",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "first stage analysis"
+      },
+      {
+        "sub": "first stage analysis",
+        "rel": "involves",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "sandbox environment"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "uses",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "modified version of the Base64 algorithm"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "imports",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Windows Crypto API"
+      },
+      {
+        "sub": "function",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Windows Crypto API"
+      },
+      {
+        "sub": "function",
+        "rel": "dynamically builds and appends",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the word 'OrcaKiller'"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "constructs",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "URI"
+      },
+      {
+        "sub": "randomly generated values",
+        "rel": "are used to encrypt",
+        "rel_type": [
+          "encrypts"
+        ],
+        "obj": "several pieces of information"
+      },
+      {
+        "sub": "system information",
+        "rel": "is encrypted using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "RC4 algorithm"
+      },
+      {
+        "sub": "RC4 encryption key",
+        "rel": "is derived from",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "MD5 hash"
+      },
+      {
+        "sub": "data",
+        "rel": "is base64 encoded",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "base64 encoded"
+      },
+      {
+        "sub": "system information",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "RC4 algorithm"
+      },
+      {
+        "sub": "command and control routine",
+        "rel": "appears to serve two purposes",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "two purposes"
+      },
+      {
+        "sub": "this group",
+        "rel": "does not hide",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "HTML comments"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "places",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "commands in plain view"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "looks for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "<P> and the terminating tag </P>"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "drops in to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "first command and control function"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "extracts",
+        "rel_type": [
+          "extracts"
+        ],
+        "obj": "payload text"
+      },
+      {
+        "sub": "payload text",
+        "rel": "is decrypted using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "encryption key"
+      },
+      {
+        "sub": "payload text",
+        "rel": "points to",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "command function"
+      },
+      {
+        "sub": "operator",
+        "rel": "has executed",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "command"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "sends an HTTP POST message back to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "command and control server"
+      },
+      {
+        "sub": "URI",
+        "rel": "generates",
+        "rel_type": [
+          "creates"
+        ],
+        "obj": "new encryption key"
+      },
+      {
+        "sub": "command structure",
+        "rel": "includes",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "default command"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "was most likely designed as",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "first stage implant"
+      },
+      {
+        "sub": "first stage implant",
+        "rel": "allows",
+        "rel_type": [
+          "provides access to"
+        ],
+        "obj": "operator"
+      },
+      {
+        "sub": "first stage implant",
+        "rel": "leads-to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "second stage malware implant"
+      },
+      {
+        "sub": "Yara",
+        "rel": "detects",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "OrcaRAT"
+      },
+      {
+        "sub": "Snort",
+        "rel": "detects",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "OrcaRAT implant check-in"
+      },
+      {
+        "sub": "Snort",
+        "rel": "detects",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "OrcaRAT implant C2 confirmation response"
+      },
+      {
+        "sub": "Suricata",
+        "rel": "detects",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "OrcaRAT implant check-in"
+      },
+      {
+        "sub": "Suricata",
+        "rel": "detects",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "OrcaRAT implant C2 confirmation response"
+      },
+      {
+        "sub": "campaign ID value",
+        "rel": "is constructed using",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "encryption key"
+      },
+      {
+        "sub": "OrcaKiller",
+        "rel": "is the word",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the word 'OrcaKiller'"
+      },
+      {
+        "sub": "wHaLe",
+        "rel": "is the value",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the value 'wHaLe'"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "uses",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "encryption routine"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "drops in to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "second set of remote control functions"
+      },
+      {
+        "sub": "OrcaRAT",
+        "rel": "is designed as",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "first stage implant"
+      }
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "sample_id": "ctinexus__apache-erp-0day-underscores-dangers-of-incomplete-patches.json",
+  "sample_index": 86,
+  "source": "ctinexus",
+  "file_name": "apache-erp-0day-underscores-dangers-of-incomplete-patches.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Unknown groups",
+        "type": "Unknown"
+      },
+      {
+        "name": "zero-day vulnerability CVE-2023-51467",
+        "type": "Unknown"
+      },
+      {
+        "name": "Apache OfBiz",
+        "type": "Unknown"
+      },
+      {
+        "name": "access sensitive information",
+        "type": "Unknown"
+      },
+      {
+        "name": "remotely execute code against applications",
+        "type": "Unknown"
+      },
+      {
+        "name": "Dec. 26",
+        "type": "Unknown"
+      },
+      {
+        "name": "SonicWall",
+        "type": "Unknown"
+      },
+      {
+        "name": "Apache Software Foundation",
+        "type": "Unknown"
+      },
+      {
+        "name": "CVE-2023-49070",
+        "type": "Unknown"
+      },
+      {
+        "name": "patch for CVE-2023-49070",
+        "type": "Unknown"
+      },
+      {
+        "name": "other variations of the attack",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Unknown groups",
+        "rel": "launched probes against",
+        "obj": "zero-day vulnerability CVE-2023-51467"
+      },
+      {
+        "sub": "zero-day vulnerability CVE-2023-51467",
+        "rel": "affects",
+        "obj": "Apache OfBiz"
+      },
+      {
+        "sub": "zero-day vulnerability CVE-2023-51467",
+        "rel": "allows attacker to",
+        "obj": "access sensitive information"
+      },
+      {
+        "sub": "zero-day vulnerability CVE-2023-51467",
+        "rel": "allows attacker to",
+        "obj": "remotely execute code against applications"
+      },
+      {
+        "sub": "zero-day vulnerability CVE-2023-51467",
+        "rel": "was disclosed on",
+        "obj": "Dec. 26"
+      },
+      {
+        "sub": "SonicWall",
+        "rel": "analyzed",
+        "obj": "zero-day vulnerability CVE-2023-51467"
+      },
+      {
+        "sub": "Apache Software Foundation",
+        "rel": "released patch for",
+        "obj": "CVE-2023-49070"
+      },
+      {
+        "sub": "patch for CVE-2023-49070",
+        "rel": "failed to protect against",
+        "obj": "other variations of the attack"
+      },
+      {
+        "sub": "CVE-2023-49070",
+        "rel": "related_to",
+        "obj": "zero-day vulnerability CVE-2023-51467"
+      },
+      {
+        "sub": "other variations of the attack",
+        "rel": "are related to",
+        "obj": "zero-day vulnerability CVE-2023-51467"
+      }
+    ]
+  }
+}

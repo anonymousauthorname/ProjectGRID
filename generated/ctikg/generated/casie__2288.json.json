@@ -1,0 +1,102 @@
+{
+  "sample_id": "casie__2288.json",
+  "sample_index": 31,
+  "source": "casie",
+  "file_name": "2288.json",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "attackers",
+        "rel": "can target",
+        "obj": "users"
+      },
+      {
+        "sub": "users",
+        "rel": "may already be expecting to click on links",
+        "obj": "emails from DocuSign"
+      },
+      {
+        "sub": "users",
+        "rel": "expect",
+        "obj": "clicking on links"
+      },
+      {
+        "sub": "email campaign",
+        "rel": "contains",
+        "obj": "link"
+      },
+      {
+        "sub": "email campaign",
+        "rel": "contains",
+        "obj": "Microsoft Word document"
+      },
+      {
+        "sub": "Microsoft Word document",
+        "rel": "harbors",
+        "obj": "malware"
+      },
+      {
+        "sub": "email campaign",
+        "rel": "is sent from",
+        "obj": "third-party"
+      },
+      {
+        "sub": "email campaign",
+        "rel": "uses",
+        "obj": "DocuSign branding"
+      },
+      {
+        "sub": "third-party",
+        "rel": "uses",
+        "obj": "DocuSign branding"
+      },
+      {
+        "sub": "third-party",
+        "rel": "stole",
+        "obj": "list of users"
+      },
+      {
+        "sub": "third-party",
+        "rel": "gained access to",
+        "obj": "system"
+      },
+      {
+        "sub": "third-party",
+        "rel": "sent",
+        "obj": "messages to users"
+      },
+      {
+        "sub": "system",
+        "rel": "allows",
+        "obj": "send announcements to users via email"
+      },
+      {
+        "sub": "link",
+        "rel": "start",
+        "obj": "docusign.com"
+      },
+      {
+        "sub": "third-party",
+        "rel": "stole",
+        "obj": "list of users"
+      }
+    ]
+  }
+}

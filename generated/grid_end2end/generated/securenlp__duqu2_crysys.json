@@ -1,0 +1,404 @@
+{
+  "sample_id": "securenlp__duqu2_crysys",
+  "sample_index": 194,
+  "source": "securenlp",
+  "file_name": "duqu2_crysys",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Duqu",
+        "type": "malware",
+        "alias": [
+          "the original Duqu attack",
+          "the Duqu attack",
+          "the Duqu malware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Duqu 2.0",
+        "type": "malware",
+        "alias": [
+          "the new threat",
+          "the new Duqu samples",
+          "the new version of Duqu",
+          "the new Duqu attack"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Stuxnet",
+        "type": "malware",
+        "alias": [
+          "the infamous Stuxnet attack"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "String decryption routines",
+        "type": "attack-pattern",
+        "alias": [
+          "Similar string decryption routines",
+          "The above string decryptor routine"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "0xB31FB31F",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "AES wrapper object",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "the AES wrapper object"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "aesencryptor object",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "magic numbers",
+        "type": "generic-noun",
+        "alias": [
+          "magic constants",
+          "magic value"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "initialization vector (IV)",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Command & Control communication",
+        "type": "infrastructure",
+        "alias": [
+          "the network communication methods used by Duqu 2.0"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "HttpClient",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "user agent string",
+        "type": "other",
+        "alias": [
+          "Browser agent strings",
+          "user agent strings"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "self signed certificate",
+        "type": "x509-certificate",
+        "alias": [
+          "a self signed certificate"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Yara rules",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the CrySyS Lab",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "CrySyS Lab"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Stuxnet",
+        "rel": "has very strong similarities to Duqu in terms of architecture, code, and methods to achieve stealthiness",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Duqu",
+        "special_factuality": []
+      },
+      {
+        "sub": "the CrySyS Lab",
+        "rel": "analyzed Duqu",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Duqu",
+        "special_factuality": []
+      },
+      {
+        "sub": "the CrySyS Lab",
+        "rel": "analyzed Duqu",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Duqu 2.0",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has similar string decryption routines",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "String decryption routines",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has similar methods, magic number, bug and file format",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "String decryption routines",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has same non-standard CBC mode AES encryption",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "String decryption routines",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has extremely similar logging module",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "String decryption routines",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has similar C++-like coding and compiling style",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "String decryption routines",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "uses Command & Control communication",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Command & Control communication",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "uses HttpClient",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "HttpClient",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "uses user agent string",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "user agent string",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "creates-or-generates self signed certificate",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "self signed certificate",
+        "special_factuality": []
+      },
+      {
+        "sub": "the attacker",
+        "rel": "authored-by Duqu",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Duqu",
+        "special_factuality": []
+      },
+      {
+        "sub": "the attacker",
+        "rel": "authored-by Duqu 2.0",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Duqu 2.0",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has AES wrapper object",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "AES wrapper object",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has aesencryptor object",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "aesencryptor object",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has magic numbers",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "magic numbers",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has initialization vector (IV)",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "initialization vector (IV)",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has String decryption routines",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "String decryption routines",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has magic numbers",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "magic numbers",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has magic numbers",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "magic numbers",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has magic numbers",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "magic numbers",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has magic numbers",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "magic numbers",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has Command & Control communication",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Command & Control communication",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has magic numbers",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "magic numbers",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has magic numbers",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "magic numbers",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has magic numbers",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "magic numbers",
+        "special_factuality": []
+      },
+      {
+        "sub": "Duqu 2.0",
+        "rel": "has magic numbers",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "magic numbers",
+        "special_factuality": []
+      }
+    ]
+  }
+}

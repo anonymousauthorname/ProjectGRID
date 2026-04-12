@@ -1,0 +1,279 @@
+{
+  "sample_id": "securenlp__Operation_CloudyOmega_Ichitaro",
+  "sample_index": 171,
+  "source": "securenlp",
+  "file_name": "Operation_CloudyOmega_Ichitaro",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CloudyOmega",
+        "type": "Campaign"
+      },
+      {
+        "name": "Backdoor.Emdivi",
+        "type": "Malware"
+      },
+      {
+        "name": "Backdoor.Korplug",
+        "type": "Malware"
+      },
+      {
+        "name": "Backdoor.ZXshell",
+        "type": "Malware"
+      },
+      {
+        "name": "Bloodhound.Exploit.557",
+        "type": "Indicator"
+      },
+      {
+        "name": "Ichitaro",
+        "type": "Software"
+      },
+      {
+        "name": "Adobe Flash Player",
+        "type": "Software"
+      },
+      {
+        "name": "CVE-2012-5054",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "CVE-2013-0634",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "LadyBoyle",
+        "type": "Campaign"
+      },
+      {
+        "name": "Hidden Lynx",
+        "type": "Campaign"
+      },
+      {
+        "name": "Japanese office suite software",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Word",
+        "type": "Software"
+      },
+      {
+        "name": "Apache",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Microsoft Internet Information Services (IIS)",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Cloud-hosting service in Japan",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Symantec",
+        "type": "Organization"
+      },
+      {
+        "name": "Unpatched vulnerabilities",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "C2 server",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "VirtualMachine",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Debugger",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Sandbox",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Emdivi Type S",
+        "type": "Malware"
+      },
+      {
+        "name": "Emdivi Type T",
+        "type": "Malware"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CloudyOmega",
+        "rel": "USES",
+        "obj": "Backdoor.Emdivi"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "USES",
+        "obj": "Bloodhound.Exploit.557"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "USES",
+        "obj": "Backdoor.Korplug"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "USES",
+        "obj": "Backdoor.ZXshell"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "EXPLOITS",
+        "obj": "Ichitaro"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "EXPLOITS",
+        "obj": "Adobe Flash Player"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2012-5054"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "has link to",
+        "obj": "LadyBoyle"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "has link to",
+        "obj": "Hidden Lynx"
+      },
+      {
+        "sub": "Emdivi Type T",
+        "rel": "connects to",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Emdivi Type S",
+        "rel": "connects to",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Emdivi Type T",
+        "rel": "DETECTS",
+        "obj": "VirtualMachine"
+      },
+      {
+        "sub": "Emdivi Type T",
+        "rel": "DETECTS",
+        "obj": "Debugger"
+      },
+      {
+        "sub": "Emdivi Type T",
+        "rel": "DETECTS",
+        "obj": "Sandbox"
+      },
+      {
+        "sub": "Emdivi Type S",
+        "rel": "USES",
+        "obj": "Japanese sentences"
+      },
+      {
+        "sub": "Cloud-hosting service in Japan",
+        "rel": "HOSTS",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "offers protection for",
+        "obj": "Backdoor.Emdivi"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "offers protection for",
+        "obj": "Bloodhound.Exploit.557"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "offers protection for",
+        "obj": "Trojan.Mdropper"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "offers protection for",
+        "obj": "System Infected: Backdoor.Emdivi Activity"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "offers protection for",
+        "obj": "System Infected: Backdoor.Emdivi Activity 2"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "TARGETS",
+        "obj": "Japanese office suite software"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "TARGETS",
+        "obj": "Public sector in Japan"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "steals credentials from",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Emdivi Type T",
+        "rel": "written in",
+        "obj": "C++"
+      },
+      {
+        "sub": "Emdivi Type S",
+        "rel": "based on",
+        "obj": ".NET"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "EXPLOITS",
+        "obj": "Unpatched vulnerabilities"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "EXPLOITS",
+        "obj": "CVE-2013-0634"
+      },
+      {
+        "sub": "CloudyOmega",
+        "rel": "uses as attachment",
+        "obj": "Microsoft Word"
+      },
+      {
+        "sub": "Apache",
+        "rel": "HOSTS",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Microsoft Internet Information Services (IIS)",
+        "rel": "HOSTS",
+        "obj": "C2 server"
+      }
+    ]
+  }
+}

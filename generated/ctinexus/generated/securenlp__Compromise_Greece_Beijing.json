@@ -1,0 +1,339 @@
+{
+  "sample_id": "securenlp__Compromise_Greece_Beijing",
+  "sample_index": 180,
+  "source": "securenlp",
+  "file_name": "Compromise_Greece_Beijing",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "malicious Java file",
+        "type": "Unknown"
+      },
+      {
+        "name": "x86 PE executable",
+        "type": "Unknown"
+      },
+      {
+        "name": "b832e4b5a4829c8df6de7b42c5cb32ef25b5ab59072b4c2a7838404cd0dd5e5f",
+        "type": "Unknown"
+      },
+      {
+        "name": "command line tool cmd.exe",
+        "type": "Unknown"
+      },
+      {
+        "name": "Internet Explorer",
+        "type": "Unknown"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\PrivDiscUiShown",
+        "type": "Unknown"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Internet Explorer\\Main\\DEPOff",
+        "type": "Unknown"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Internet Explorer\\Main\\DisableFirstRunCustomize",
+        "type": "Unknown"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Internet Explorer\\Main\\Check_Associations",
+        "type": "Unknown"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Internet Explorer\\PhishingFilter\\ShownVerifyBalloon",
+        "type": "Unknown"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Internet Explorer\\PhishingFilter\\Enabled",
+        "type": "Unknown"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\WarnOnPostRedirect",
+        "type": "Unknown"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\WarnonZoneCrossing",
+        "type": "Unknown"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Internet Connection Wizard\\AutoRecover",
+        "type": "Unknown"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Internet Connection Wizard\\Completed",
+        "type": "Unknown"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\spoolsv.exe",
+        "type": "Unknown"
+      },
+      {
+        "name": "defense.miraclecz.com/index.asp?id=50100",
+        "type": "Unknown"
+      },
+      {
+        "name": "Base64 encoded data",
+        "type": "Unknown"
+      },
+      {
+        "name": "another executable",
+        "type": "Unknown"
+      },
+      {
+        "name": "a4863f44f48d1c4c050dd7baad767a86b348dd4d33924acf4e0a3cd40c6ae29f",
+        "type": "Unknown"
+      },
+      {
+        "name": "buy.miraclecz.com",
+        "type": "Unknown"
+      },
+      {
+        "name": "%s/?id1=blank%d&id2=%d%d",
+        "type": "Unknown"
+      },
+      {
+        "name": "%s/?id1=%d%d",
+        "type": "Unknown"
+      },
+      {
+        "name": "www.grpressbeijing.com",
+        "type": "Unknown"
+      },
+      {
+        "name": "PhysicalDrive0",
+        "type": "Unknown"
+      },
+      {
+        "name": "csfn function",
+        "type": "Unknown"
+      },
+      {
+        "name": "removing numbers",
+        "type": "Unknown"
+      },
+      {
+        "name": "pack",
+        "type": "Unknown"
+      },
+      {
+        "name": "7-Zip",
+        "type": "Unknown"
+      },
+      {
+        "name": "PE viewer",
+        "type": "Unknown"
+      },
+      {
+        "name": "IWbemLocator",
+        "type": "Unknown"
+      },
+      {
+        "name": "IWebBrowser2",
+        "type": "Unknown"
+      },
+      {
+        "name": "HTTP GET request",
+        "type": "Unknown"
+      },
+      {
+        "name": "to encode/decode data",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "malicious Java file",
+        "rel": "contains",
+        "obj": "x86 PE executable"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "has SHA256 hash",
+        "obj": "b832e4b5a4829c8df6de7b42c5cb32ef25b5ab59072b4c2a7838404cd0dd5e5f"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "uses",
+        "obj": "command line tool cmd.exe"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "modifies registry keys in",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "modifies registry key",
+        "obj": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\PrivDiscUiShown"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "modifies registry key",
+        "obj": "HKCU\\Software\\Microsoft\\Internet Explorer\\Main\\DEPOff"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "modifies registry key",
+        "obj": "HKCU\\Software\\Microsoft\\Internet Explorer\\Main\\DisableFirstRunCustomize"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "modifies registry key",
+        "obj": "HKCU\\Software\\Microsoft\\Internet Explorer\\Main\\Check_Associations"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "modifies registry key",
+        "obj": "HKCU\\Software\\Microsoft\\Internet Explorer\\PhishingFilter\\ShownVerifyBalloon"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "modifies registry key",
+        "obj": "HKCU\\Software\\Microsoft\\Internet Explorer\\PhishingFilter\\Enabled"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "modifies registry key",
+        "obj": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\WarnOnPostRedirect"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "modifies registry key",
+        "obj": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\WarnonZoneCrossing"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "modifies registry key",
+        "obj": "HKCU\\Software\\Microsoft\\Internet Connection Wizard\\AutoRecover"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "modifies registry key",
+        "obj": "HKCU\\Software\\Microsoft\\Internet Connection Wizard\\Completed"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "creates entry in",
+        "obj": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\spoolsv.exe"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "launches instance of",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "contacts C&C server at",
+        "obj": "defense.miraclecz.com/index.asp?id=50100"
+      },
+      {
+        "sub": "x86 PE executable",
+        "rel": "downloads Base64 encoded data from",
+        "obj": "defense.miraclecz.com/index.asp?id=50100"
+      },
+      {
+        "sub": "Base64 encoded data",
+        "rel": "decodes into",
+        "obj": "another executable"
+      },
+      {
+        "sub": "another executable",
+        "rel": "has SHA256 hash",
+        "obj": "a4863f44f48d1c4c050dd7baad767a86b348dd4d33924acf4e0a3cd40c6ae29f"
+      },
+      {
+        "sub": "another executable",
+        "rel": "contacts C&C server at",
+        "obj": "buy.miraclecz.com"
+      },
+      {
+        "sub": "another executable",
+        "rel": "uses URL parameters",
+        "obj": "%s/?id1=blank%d&id2=%d%d"
+      },
+      {
+        "sub": "another executable",
+        "rel": "uses URL parameters",
+        "obj": "%s/?id1=%d%d"
+      },
+      {
+        "sub": "malicious Java file",
+        "rel": "found on",
+        "obj": "www.grpressbeijing.com"
+      },
+      {
+        "sub": "malicious Java file",
+        "rel": "discovered by",
+        "obj": "PhysicalDrive0"
+      },
+      {
+        "sub": "malicious Java file",
+        "rel": "obfuscates strings using",
+        "obj": "csfn function"
+      },
+      {
+        "sub": "csfn function",
+        "rel": "decrypts string by",
+        "obj": "removing numbers"
+      },
+      {
+        "sub": "malicious Java file",
+        "rel": "deobfuscated to reveal",
+        "obj": "pack"
+      },
+      {
+        "sub": "pack",
+        "rel": "is unpacked from",
+        "obj": "7-Zip"
+      },
+      {
+        "sub": "pack",
+        "rel": "is analyzed with",
+        "obj": "PE viewer"
+      },
+      {
+        "sub": "pack",
+        "rel": "uses COM interface",
+        "obj": "IWbemLocator"
+      },
+      {
+        "sub": "pack",
+        "rel": "uses COM interface",
+        "obj": "IWebBrowser2"
+      },
+      {
+        "sub": "pack",
+        "rel": "downloads data via",
+        "obj": "HTTP GET request"
+      },
+      {
+        "sub": "pack",
+        "rel": "uses Base64 encoding/decoding",
+        "obj": "to encode/decode data"
+      },
+      {
+        "sub": "another executable",
+        "rel": "is a type of",
+        "obj": "x86 PE executable"
+      }
+    ]
+  }
+}

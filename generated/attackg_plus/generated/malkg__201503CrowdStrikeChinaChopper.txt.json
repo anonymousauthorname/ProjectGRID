@@ -1,0 +1,212 @@
+{
+  "sample_id": "malkg__201503CrowdStrikeChinaChopper.txt",
+  "sample_index": 144,
+  "source": "malkg",
+  "file_name": "201503CrowdStrikeChinaChopper.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Chopper Web shell",
+        "rel": "Use",
+        "obj": "ASPX page"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "Use",
+        "obj": "JScript-based eval function"
+      },
+      {
+        "sub": "JScript-based eval function",
+        "rel": "Execute",
+        "obj": "user input"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "Enable",
+        "obj": "remote access"
+      },
+      {
+        "sub": "System.WebServices.dll",
+        "rel": "Belong to",
+        "obj": "Chopper API functions"
+      },
+      {
+        "sub": "System.WebServices.dll",
+        "rel": "Has value",
+        "obj": "command execution"
+      },
+      {
+        "sub": "System.WebServices.dll",
+        "rel": "Deploy via",
+        "obj": "ASPX page injection"
+      },
+      {
+        "sub": "System.WebServices.dll",
+        "rel": "Modify",
+        "obj": "malicious functionality"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "Construct",
+        "obj": "payload"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "Operate",
+        "obj": "compromised Web server"
+      },
+      {
+        "sub": "ASPX page",
+        "rel": "Has URL",
+        "obj": "injected code"
+      },
+      {
+        "sub": "System.WebServices.dll",
+        "rel": "Has filename",
+        "obj": "System.WebServices.dll"
+      },
+      {
+        "sub": "System.WebServices.dll",
+        "rel": "Has vulnerability",
+        "obj": "command execution through injection"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "Use",
+        "obj": "C# DLL"
+      },
+      {
+        "sub": "C# DLL",
+        "rel": "Has value",
+        "obj": "internal API functions"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "Operate",
+        "obj": "legitimate system behavior"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "Modify",
+        "obj": "host-based detection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "mimikatz"
+      },
+      {
+        "sub": "Filepath",
+        "rel": "Has value",
+        "obj": "pwd.txt"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "w3wp.exe"
+      },
+      {
+        "sub": "Tactic",
+        "rel": "Is",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "- Attacker",
+        "rel": "Operate",
+        "obj": "Server"
+      },
+      {
+        "sub": "- Attacker",
+        "rel": "Use",
+        "obj": "dir"
+      },
+      {
+        "sub": "- Attacker",
+        "rel": "Use",
+        "obj": "w3wp.exe"
+      },
+      {
+        "sub": "- Attacker",
+        "rel": "Modify",
+        "obj": "System environment"
+      },
+      {
+        "sub": "- Attacker",
+        "rel": "Discover",
+        "obj": "File system"
+      },
+      {
+        "sub": "Mimikatz",
+        "rel": "Has value",
+        "obj": "Password"
+      },
+      {
+        "sub": "Mimikatz",
+        "rel": "Has value",
+        "obj": "Authentication token"
+      },
+      {
+        "sub": "Mimikatz",
+        "rel": "Modify",
+        "obj": "Credential data"
+      },
+      {
+        "sub": "Mimikatz",
+        "rel": "Operate",
+        "obj": "Compromised system"
+      },
+      {
+        "sub": "Mimikatz",
+        "rel": "Detect",
+        "obj": "Sensitive information"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "Operate",
+        "obj": "Secure channel"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "Use",
+        "obj": "SSL"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "Communicate with",
+        "obj": "Command and Control server"
+      },
+      {
+        "sub": "Chopper client",
+        "rel": "Send commands to",
+        "obj": "Chopper Web shell"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "Use",
+        "obj": "HTTP POST requests"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "Has value",
+        "obj": "Secure communication over TCP"
+      }
+    ]
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_17.json",
+  "sample_index": 209,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_17.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Domain virustotal.TLD",
+        "rel": "Construct",
+        "obj": "Domain virustotal.com"
+      },
+      {
+        "sub": "Domain virustotal.TLD",
+        "rel": "Use",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Has value",
+        "obj": "Victim-specific details including user name and forum login link"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Has URL",
+        "obj": "Forum login link"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Operate",
+        "obj": "Victim network information"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Has vulnerability",
+        "obj": "Victim identity information"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Has geolocation",
+        "obj": "Forum users"
+      },
+      {
+        "sub": "IP",
+        "rel": "Referenced",
+        "obj": "Victim network information"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Conduct",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Domain virustotal.TLD",
+        "rel": "Construct",
+        "obj": "Malicious executable"
+      },
+      {
+        "sub": "Domain virustotal.TLD",
+        "rel": "Use",
+        "obj": "Phishing infrastructure"
+      },
+      {
+        "sub": "Domain virustotal.TLD",
+        "rel": "Operate",
+        "obj": "Initial Access phase"
+      },
+      {
+        "sub": "Domain virustotal.TLD",
+        "rel": "Has URL",
+        "obj": "fake scanning page"
+      },
+      {
+        "sub": "Domain virustotal.TLD",
+        "rel": "Has value",
+        "obj": "fraudulent service"
+      },
+      {
+        "sub": "Domain virustotal.TLD",
+        "rel": "Has hostname",
+        "obj": "virustotal.TLD"
+      },
+      {
+        "sub": "Malicious executable",
+        "rel": "Use",
+        "obj": "Deliver malware"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "Malicious email",
+        "rel": "Has URL",
+        "obj": "fake scanning service"
+      },
+      {
+        "sub": "Securitytoolsetup.exe",
+        "rel": "Has filename",
+        "obj": "securitytoolsetup.exe"
+      },
+      {
+        "sub": "Securitytoolsetup.exe",
+        "rel": "Has vulnerability",
+        "obj": "Phishing"
+      },
+      {
+        "sub": "Securitytoolsetup.exe",
+        "rel": "Construct",
+        "obj": "malicious executable"
+      },
+      {
+        "sub": "Car-related forum",
+        "rel": "Has URL",
+        "obj": "malicious website"
+      },
+      {
+        "sub": "Malicious website",
+        "rel": "Has value",
+        "obj": "false claim about virus activity"
+      },
+      {
+        "sub": "Spearphishing",
+        "rel": "Belong to",
+        "obj": "Initial Access"
+      },
+      {
+        "sub": "Securitytoolsetup.exe",
+        "rel": "Write",
+        "obj": "malicious executable"
+      },
+      {
+        "sub": "Securitytoolsetup.exe",
+        "rel": "Operate",
+        "obj": "User's computer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has filename",
+        "obj": "securitytoolsetup.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Mal/FakeVirPkA"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "User execution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Fake scanning page"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Victim's system"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "virustotal.TLD"
+      },
+      {
+        "sub": "virustotal.TLD",
+        "rel": "Has value",
+        "obj": "fake scanning page"
+      },
+      {
+        "sub": "fake scanning page",
+        "rel": "Redirect",
+        "obj": "malicious page"
+      },
+      {
+        "sub": "malicious page",
+        "rel": "Generate",
+        "obj": "popups"
+      },
+      {
+        "sub": "malicious page",
+        "rel": "Load",
+        "obj": "malicious executable"
+      },
+      {
+        "sub": "malicious executable",
+        "rel": "Communicate with",
+        "obj": "external servers"
+      },
+      {
+        "sub": "redirect",
+        "rel": "Suggest",
+        "obj": "C2 channel"
+      }
+    ]
+  }
+}

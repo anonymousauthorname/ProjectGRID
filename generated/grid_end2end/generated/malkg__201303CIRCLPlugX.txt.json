@@ -1,0 +1,447 @@
+{
+  "sample_id": "malkg__201303CIRCLPlugX.txt",
+  "sample_index": 121,
+  "source": "malkg",
+  "file_name": "201303CIRCLPlugX.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "PlugX variant (PlugX version 7.0)",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "CIRCL - Computer Incident Response Center Luxembourg",
+        "type": "identity",
+        "alias": [
+          "Team CIRCL"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "McAfee",
+        "type": "general-software",
+        "alias": [
+          "McAfee Inc."
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "update.exe",
+        "type": "file",
+        "alias": [
+          "Sample A",
+          "RAR self-extracting archive"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "mcvsmap.exe",
+        "type": "file",
+        "alias": [
+          "Sample B",
+          "Valid, signed McAfee binary",
+          "McAfee VirusMap Reporting module"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "McUtil.DLL",
+        "type": "file",
+        "alias": [
+          "Sample C",
+          "DLL to be loaded by Sample B"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "McUtil.DLL.PPT",
+        "type": "file",
+        "alias": [
+          "Sample D",
+          "Malicious payload"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "dump00C60000.bin",
+        "type": "file",
+        "alias": [
+          "Sample E",
+          "extracted version of this memory segment"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "UAC.TMP",
+        "type": "file",
+        "alias": [
+          "Sample F",
+          "UAC circumvention"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "help.yahoo-upgrade.com",
+        "type": "domain-name",
+        "alias": [
+          "Yahoo-upgrade.com",
+          "support.yahoo-upgrade.com",
+          "update.ayuisyahooapis.com",
+          "support.ayuisyahooapis.com",
+          "update.trendmicrosos.in"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "122.199.194.197",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "122.199.128.0/255.255.255.255",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Pipe \\PIPE\\a$PID",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Pipe \\PIPE\\b$PID",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Pipe \\PIPE\\RUN_AS_USER($PID)",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "C: \\ Documents and S e t t i n g s \\ A l l Users \\VirusMap",
+        "type": "directory",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "HKEY_CURRENT_USER\\ Software \\ M i c r o s o f t \\Windows\\ CurrentVersion \\Run",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "HKEY_LOCAL_MACHINE\\SYSTEM\\ ControlSet001 \\ S e r v i c e s \\VirusMap",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "XPlugOption.cpp",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "XPlugDisk.cpp",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "XPlugScreen.cpp",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "XPlugProcess.cpp",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "XPlugService.cpp",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "XPlugShell.cpp",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "XPlugTelnet.cpp",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "XPlugRegedit.cpp",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "XPlugNethood.cpp",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "XPlugPortMap.cpp",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "XPlugSQL.cpp",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "XPlugNetstat.cpp",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "XPlugKeyLogger.cpp",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "RAR self-extracting archive",
+        "type": "file",
+        "alias": [
+          "Sample A"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "svchost.exe",
+        "type": "process",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "msiexec.exe",
+        "type": "process",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "RtlDecompressBuﬀer",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "log",
+        "type": "course-of-action",
+        "alias": [
+          "write_log",
+          "call_wr it e_l og",
+          "log function"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "VirusMap",
+        "type": "generic-noun",
+        "alias": [
+          "NvSmart"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "update.exe",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "mcvsmap.exe"
+      },
+      {
+        "sub": "mcvsmap.exe",
+        "rel": "loads",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "McUtil.DLL"
+      },
+      {
+        "sub": "McUtil.DLL",
+        "rel": "loads",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "McUtil.DLL.PPT"
+      },
+      {
+        "sub": "update.exe",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "dump00C60000.bin"
+      },
+      {
+        "sub": "update.exe",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "UAC.TMP"
+      },
+      {
+        "sub": "PlugX variant (PlugX version 7.0)",
+        "rel": "communicates-with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "help.yahoo-upgrade.com"
+      },
+      {
+        "sub": "PlugX variant (PlugX version 7.0)",
+        "rel": "communicates-with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "122.199.194.197"
+      },
+      {
+        "sub": "PlugX variant (PlugX version 7.0)",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Pipe \\PIPE\\a$PID"
+      },
+      {
+        "sub": "PlugX variant (PlugX version 7.0)",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Pipe \\PIPE\\b$PID"
+      },
+      {
+        "sub": "PlugX variant (PlugX version 7.0)",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Pipe \\PIPE\\RUN_AS_USER($PID)"
+      },
+      {
+        "sub": "PlugX variant (PlugX version 7.0)",
+        "rel": "writes to",
+        "rel_type": [
+          "stores-at"
+        ],
+        "obj": "C: \\ Documents and S e t t i n g s \\ A l l Users \\VirusMap"
+      },
+      {
+        "sub": "PlugX variant (PlugX version 7.0)",
+        "rel": "modifies",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "HKEY_CURRENT_USER\\ Software \\ M i c r o s o f t \\Windows\\ CurrentVersion \\Run"
+      },
+      {
+        "sub": "PlugX variant (PlugX version 7.0)",
+        "rel": "modifies",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "HKEY_LOCAL_MACHINE\\SYSTEM\\ ControlSet001 \\ S e r v i c e s \\VirusMap"
+      },
+      {
+        "sub": "mcvsmap.exe",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "McUtil.DLL.PPT"
+      },
+      {
+        "sub": "McUtil.DLL.PPT",
+        "rel": "decrypts",
+        "rel_type": [
+          "decrypts"
+        ],
+        "obj": "McUtil.DLL.PPT"
+      },
+      {
+        "sub": "McUtil.DLL.PPT",
+        "rel": "injects",
+        "rel_type": [
+          "injects"
+        ],
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "McUtil.DLL.PPT",
+        "rel": "injects",
+        "rel_type": [
+          "injects"
+        ],
+        "obj": "msiexec.exe"
+      },
+      {
+        "sub": "log",
+        "rel": "writes",
+        "rel_type": [
+          "logs"
+        ],
+        "obj": "log function"
+      },
+      {
+        "sub": "McUtil.DLL.PPT",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "RtlDecompressBuﬀer"
+      },
+      {
+        "sub": "VirusMap",
+        "rel": "has",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "NvSmart"
+      }
+    ]
+  }
+}

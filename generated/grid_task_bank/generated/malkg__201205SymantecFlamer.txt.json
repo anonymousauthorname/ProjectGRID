@@ -1,0 +1,1707 @@
+{
+  "sample_id": "malkg__201205SymantecFlamer.txt",
+  "sample_index": 132,
+  "source": "malkg",
+  "file_name": "201205SymantecFlamer.txt",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "W32.Flamer",
+        "type": "malware",
+        "alias": [
+          "cyber espionage tool",
+          "Flamer"
+        ]
+      },
+      {
+        "name": "command-and-control (C&C) servers",
+        "type": "infrastructure",
+        "alias": [
+          "C&C servers"
+        ]
+      },
+      {
+        "name": "Symantec",
+        "type": "security-product",
+        "alias": [
+          "Symantec Security"
+        ]
+      },
+      {
+        "name": "CERT-Bund/BSI",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "CERT-Bund",
+          "BSI"
+        ]
+      },
+      {
+        "name": "IMPACT",
+        "type": "security-product",
+        "alias": [
+          "IMPACT"
+        ]
+      },
+      {
+        "name": "Kaspersky",
+        "type": "security-product",
+        "alias": [
+          "Kaspersky"
+        ]
+      },
+      {
+        "name": "the first server",
+        "type": "infrastructure",
+        "alias": [
+          "first C&C server"
+        ]
+      },
+      {
+        "name": "the second server",
+        "type": "infrastructure",
+        "alias": [
+          "second C&C server"
+        ]
+      },
+      {
+        "name": "May 18, 2012",
+        "type": "date",
+        "alias": [
+          "May 18"
+        ]
+      },
+      {
+        "name": "March 25, 2012",
+        "type": "date",
+        "alias": [
+          "March 25"
+        ]
+      },
+      {
+        "name": "newsforyou",
+        "type": "hacker-tool",
+        "alias": [
+          "Newsforyou Web application"
+        ]
+      },
+      {
+        "name": "Flamer-compromised client",
+        "type": "vulnerability",
+        "alias": [
+          "compromised client"
+        ]
+      },
+      {
+        "name": "Windows Update",
+        "type": "general-software",
+        "alias": [
+          "Windows Update feature"
+        ]
+      },
+      {
+        "name": "Middle East",
+        "type": "location",
+        "alias": [
+          "Middle East region"
+        ]
+      },
+      {
+        "name": "D***",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "D***"
+        ]
+      },
+      {
+        "name": "H*****",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "H*****"
+        ]
+      },
+      {
+        "name": "O******",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "O******"
+        ]
+      },
+      {
+        "name": "R***",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "R***"
+        ]
+      },
+      {
+        "name": "root user",
+        "type": "user-account",
+        "alias": [
+          "root account"
+        ]
+      },
+      {
+        "name": "/root/.bash_history",
+        "type": "file",
+        "alias": [
+          "bash history"
+        ]
+      },
+      {
+        "name": "/var/spool/crontabs/root",
+        "type": "file",
+        "alias": [
+          "crontab root"
+        ]
+      },
+      {
+        "name": "/home/[USERNAME]",
+        "type": "file",
+        "alias": [
+          "operator home directory"
+        ]
+      },
+      {
+        "name": "/var/www/htdocs/newsforyou",
+        "type": "file",
+        "alias": [
+          "Newsforyou application"
+        ]
+      },
+      {
+        "name": "/var/lib/mysql",
+        "type": "file",
+        "alias": [
+          "MySQL database"
+        ]
+      },
+      {
+        "name": "MySQL database",
+        "type": "database",
+        "alias": [
+          "news database"
+        ]
+      },
+      {
+        "name": "Apache server",
+        "type": "general-software",
+        "alias": [
+          "web server"
+        ]
+      },
+      {
+        "name": "SSL key / TLS certificate",
+        "type": "indicator",
+        "alias": [
+          "certificate"
+        ]
+      },
+      {
+        "name": "iptables",
+        "type": "hacker-tool",
+        "alias": [
+          "firewall tool"
+        ]
+      },
+      {
+        "name": "crontab /etc/cron.newsforyou",
+        "type": "file",
+        "alias": [
+          "cronjob"
+        ]
+      },
+      {
+        "name": "/var/www/htdocs/newsforyou/UnloadChecker.php",
+        "type": "script",
+        "alias": [
+          "UnloadChecker.php"
+        ]
+      },
+      {
+        "name": "/home/[USERNAME]/pycleaner/Eraser.py",
+        "type": "script",
+        "alias": [
+          "Eraser.py"
+        ]
+      },
+      {
+        "name": "/home/[USERNAME]/LogWiper_fixed.txt",
+        "type": "script",
+        "alias": [
+          "LogWiper_fixed.txt"
+        ]
+      },
+      {
+        "name": "/var/www/htdocs/newsforyou/tmp",
+        "type": "directory",
+        "alias": [
+          "tmp directory"
+        ]
+      },
+      {
+        "name": "/var/www/htdocs/newsforyou/bak",
+        "type": "directory",
+        "alias": [
+          "bak directory"
+        ]
+      },
+      {
+        "name": "/var/www/htdocs/newsforyou/ads",
+        "type": "directory",
+        "alias": [
+          "ads directory"
+        ]
+      },
+      {
+        "name": "/var/www/htdocs/newsforyou/entries",
+        "type": "directory",
+        "alias": [
+          "entries directory"
+        ]
+      },
+      {
+        "name": "/var/www/htdocs/newsforyou/files",
+        "type": "directory",
+        "alias": [
+          "files directory"
+        ]
+      },
+      {
+        "name": "/var/www/htdocs/newsforyou/CP",
+        "type": "directory",
+        "alias": [
+          "control panel"
+        ]
+      },
+      {
+        "name": "GETNEWSHANDLER",
+        "type": "function",
+        "alias": [
+          "GetNewsHandler"
+        ]
+      },
+      {
+        "name": "ADDENTRYHANDLER",
+        "type": "function",
+        "alias": [
+          "AddEntryHandler"
+        ]
+      },
+      {
+        "name": "GETADHANDLER",
+        "type": "function",
+        "alias": [
+          "GetAdHandler"
+        ]
+      },
+      {
+        "name": "PROTOCOL_OLD",
+        "type": "attack-pattern",
+        "alias": [
+          "old protocol"
+        ]
+      },
+      {
+        "name": "PROTOCOL_SIGNUP",
+        "type": "attack-pattern",
+        "alias": [
+          "signup protocol"
+        ]
+      },
+      {
+        "name": "PROTOCOL_OLD_E",
+        "type": "attack-pattern",
+        "alias": [
+          "old E protocol"
+        ]
+      },
+      {
+        "name": "PROTOCOL_RED",
+        "type": "attack-pattern",
+        "alias": [
+          "Red protocol"
+        ]
+      },
+      {
+        "name": "Client Type FL",
+        "type": "client",
+        "alias": [
+          "W32.Flamer"
+        ]
+      },
+      {
+        "name": "Client Type SP",
+        "type": "client",
+        "alias": [
+          "SP"
+        ]
+      },
+      {
+        "name": "Client Type SPE",
+        "type": "client",
+        "alias": [
+          "SPE"
+        ]
+      },
+      {
+        "name": "Client Type IP",
+        "type": "client",
+        "alias": [
+          "IP"
+        ]
+      },
+      {
+        "name": "Stolen data",
+        "type": "indicator",
+        "alias": [
+          "compromised files"
+        ]
+      },
+      {
+        "name": "157,548 bytes",
+        "type": "file-size",
+        "alias": [
+          "157.5 KB"
+        ]
+      },
+      {
+        "name": "5.7 GB",
+        "type": "file-size",
+        "alias": [
+          "5.7 gigabytes"
+        ]
+      },
+      {
+        "name": "symmetric key",
+        "type": "indicator",
+        "alias": [
+          "encryption key"
+        ]
+      },
+      {
+        "name": "public key",
+        "type": "indicator",
+        "alias": [
+          "key stored in database"
+        ]
+      },
+      {
+        "name": "private key",
+        "type": "indicator",
+        "alias": [
+          "unknown private key"
+        ]
+      },
+      {
+        "name": "27934e96d90d06818674b98bec7230fa",
+        "type": "indicator",
+        "alias": [
+          "password hash"
+        ]
+      },
+      {
+        "name": "username",
+        "type": "user-account",
+        "alias": [
+          "control panel username"
+        ]
+      },
+      {
+        "name": "2012-05-22",
+        "type": "date",
+        "alias": [
+          "May 22"
+        ]
+      },
+      {
+        "name": "2012-05-23",
+        "type": "date",
+        "alias": [
+          "May 23"
+        ]
+      },
+      {
+        "name": "2012-05-24",
+        "type": "date",
+        "alias": [
+          "May 24"
+        ]
+      },
+      {
+        "name": "2012-05-30",
+        "type": "date",
+        "alias": [
+          "May 30"
+        ]
+      },
+      {
+        "name": "2012-05-18",
+        "type": "date",
+        "alias": [
+          "May 18"
+        ]
+      },
+      {
+        "name": "13:53",
+        "type": "time",
+        "alias": [
+          "13:53"
+        ]
+      },
+      {
+        "name": "16:15",
+        "type": "time",
+        "alias": [
+          "16:15"
+        ]
+      },
+      {
+        "name": "May 20, 2012",
+        "type": "date",
+        "alias": [
+          "May 20"
+        ]
+      },
+      {
+        "name": "June 1, 2012",
+        "type": "date",
+        "alias": [
+          "June 1"
+        ]
+      },
+      {
+        "name": "client_log",
+        "type": "database-table",
+        "alias": [
+          "client log"
+        ]
+      },
+      {
+        "name": "session_log",
+        "type": "database-table",
+        "alias": [
+          "session log"
+        ]
+      },
+      {
+        "name": "log",
+        "type": "database-table",
+        "alias": [
+          "encrypted logs"
+        ]
+      },
+      {
+        "name": "settings",
+        "type": "database-table",
+        "alias": [
+          "settings table"
+        ]
+      },
+      {
+        "name": "112",
+        "type": "file-id",
+        "alias": [
+          "file ID 112"
+        ]
+      },
+      {
+        "name": "12",
+        "type": "file-id",
+        "alias": [
+          "file ID 12"
+        ]
+      },
+      {
+        "name": "11",
+        "type": "file-id",
+        "alias": [
+          "file ID 11"
+        ]
+      },
+      {
+        "name": "43",
+        "type": "file-id",
+        "alias": [
+          "file ID 43"
+        ]
+      },
+      {
+        "name": "DNS location.info",
+        "type": "domain-name",
+        "alias": [
+          "dnslocation.info"
+        ]
+      },
+      {
+        "name": "Security Response",
+        "type": "document",
+        "alias": [
+          "paper"
+        ]
+      },
+      {
+        "name": "Have I Got Newsforyou",
+        "type": "document",
+        "alias": [
+          "report"
+        ]
+      },
+      {
+        "name": "browsers32.ocx",
+        "type": "file",
+        "alias": [
+          "Flamer module"
+        ]
+      },
+      {
+        "name": "Flamer module",
+        "type": "payload",
+        "alias": [
+          "suicide module"
+        ]
+      },
+      {
+        "name": "networks",
+        "type": "location",
+        "alias": [
+          "network"
+        ]
+      },
+      {
+        "name": "attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "attackers"
+        ]
+      },
+      {
+        "name": "operators",
+        "type": "identity",
+        "alias": [
+          "operator"
+        ]
+      },
+      {
+        "name": "attack coordinators",
+        "type": "identity",
+        "alias": [
+          "attack coordinator"
+        ]
+      },
+      {
+        "name": "administrators",
+        "type": "identity",
+        "alias": [
+          "admin"
+        ]
+      },
+      {
+        "name": "researchers",
+        "type": "identity",
+        "alias": [
+          "researchers"
+        ]
+      },
+      {
+        "name": "Lebanon",
+        "type": "location",
+        "alias": [
+          "Lebanon"
+        ]
+      },
+      {
+        "name": "Israel",
+        "type": "location",
+        "alias": [
+          "Israel"
+        ]
+      },
+      {
+        "name": "Palestine",
+        "type": "location",
+        "alias": [
+          "Palestine"
+        ]
+      },
+      {
+        "name": "Germany",
+        "type": "location",
+        "alias": [
+          "Germany"
+        ]
+      },
+      {
+        "name": "Netherlands",
+        "type": "location",
+        "alias": [
+          "Netherlands"
+        ]
+      },
+      {
+        "name": "LIBANTELECOM",
+        "type": "organization",
+        "alias": [
+          "LIBANTELECOM"
+        ]
+      },
+      {
+        "name": "Israel Haifa Hadara Technologies Private Shareholding Company",
+        "type": "organization",
+        "alias": [
+          "Israel Haifa Hadara"
+        ]
+      },
+      {
+        "name": "Orange Palestine Group Co. for Technological Inves",
+        "type": "organization",
+        "alias": [
+          "Orange"
+        ]
+      },
+      {
+        "name": "Deutsche Telekom AG",
+        "type": "organization",
+        "alias": [
+          "Deutsche Telekom"
+        ]
+      },
+      {
+        "name": "LeaseWeb B.V.",
+        "type": "organization",
+        "alias": [
+          "LeaseWeb"
+        ]
+      },
+      {
+        "name": "Linux server",
+        "type": "general-software",
+        "alias": [
+          "server platform"
+        ]
+      },
+      {
+        "name": "Windows",
+        "type": "general-software",
+        "alias": [
+          "Windows OS"
+        ]
+      },
+      {
+        "name": "compromised honeypots",
+        "type": "infrastructure",
+        "alias": [
+          "honeypots"
+        ]
+      },
+      {
+        "name": "Flamer suicide module",
+        "type": "file",
+        "alias": [
+          "suicide instruction"
+        ]
+      },
+      {
+        "name": "Flamer exploitation",
+        "type": "attack-pattern",
+        "alias": [
+          "exploit"
+        ]
+      },
+      {
+        "name": "multi-evolution of W32.Flamer",
+        "type": "attack-pattern",
+        "alias": [
+          "variants"
+        ]
+      },
+      {
+        "name": "course-of-action",
+        "type": "course-of-action",
+        "alias": [
+          "action"
+        ]
+      },
+      {
+        "name": "Flamer attack campaign",
+        "type": "campaign",
+        "alias": [
+          "Flamer campaign"
+        ]
+      },
+      {
+        "name": "defense",
+        "type": "course-of-action",
+        "alias": [
+          "preventative action"
+        ]
+      },
+      {
+        "name": "log files",
+        "type": "file",
+        "alias": [
+          "system logs"
+        ]
+      },
+      {
+        "name": "Shred",
+        "type": "security-product",
+        "alias": [
+          "file shredder"
+        ]
+      },
+      {
+        "name": "Flamer",
+        "type": "malware",
+        "alias": [
+          "W32.Flamer"
+        ]
+      },
+      {
+        "name": "Flamer C&C Server",
+        "type": "infrastructure",
+        "alias": [
+          "C&C Server"
+        ]
+      },
+      {
+        "name": "Wyse",
+        "type": "research-or-analysis-document",
+        "alias": [
+          "Wyse report"
+        ]
+      },
+      {
+        "name": "anonymous source",
+        "type": "anonymous-source",
+        "alias": [
+          "anonymous"
+        ]
+      },
+      {
+        "name": "Symantec.com",
+        "type": "website",
+        "alias": [
+          "Symantec website"
+        ]
+      },
+      {
+        "name": "KEYCHAIN",
+        "type": "indicator",
+        "alias": [
+          "keychain"
+        ]
+      },
+      {
+        "name": "W32.Flamer",
+        "type": "malware",
+        "alias": [
+          "Flamer"
+        ]
+      },
+      {
+        "name": "C&C",
+        "type": "infrastructure",
+        "alias": [
+          "command-and-control"
+        ]
+      },
+      {
+        "name": "control panel",
+        "type": "hacker-tool",
+        "alias": [
+          "CP"
+        ]
+      },
+      {
+        "name": "payload",
+        "type": "file",
+        "alias": [
+          "module"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "type": "general-software",
+        "alias": [
+          "JS"
+        ]
+      },
+      {
+        "name": "Flamer module",
+        "type": "file",
+        "alias": [
+          "remove malware"
+        ]
+      },
+      {
+        "name": "middleware",
+        "type": "infrastructure",
+        "alias": [
+          "man-in-the-middle"
+        ]
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the malware",
+        "type": "malware"
+      },
+      {
+        "name": "the Web application",
+        "type": "infrastructure"
+      },
+      {
+        "name": "the server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "the hackers",
+        "type": "threat-actor-or-intrusion-set"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "W32.Flamer",
+        "rel": "is a sophisticated cyber espionage tool that targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the Middle East"
+      },
+      {
+        "sub": "W32.Flamer",
+        "rel": "is modular in design and contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "some novel functionality"
+      },
+      {
+        "sub": "W32.Flamer",
+        "rel": "spreads across networks using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a previously unknown man-in-the-middle attack against Windows Update"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "has performed a detailed forensic analysis of",
+        "rel_type": [
+          "analyzes"
+        ],
+        "obj": "two of the command-and-control (C&C) servers used in the W32.Flamer attacks"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "carried out",
+        "rel_type": [
+          "analyzed"
+        ],
+        "obj": "the C&C server images"
+      },
+      {
+        "sub": "the first server",
+        "rel": "was set up on",
+        "rel_type": [
+          "set up"
+        ],
+        "obj": "May 18, 2012"
+      },
+      {
+        "sub": "the first server",
+        "rel": "recorded the first interaction with",
+        "rel_type": [
+          "interacts-with"
+        ],
+        "obj": "a Flamer-compromised client"
+      },
+      {
+        "sub": "the first server",
+        "rel": "controlled at least a few hundred",
+        "rel_type": [
+          "controls"
+        ],
+        "obj": "compromised clients"
+      },
+      {
+        "sub": "the second server",
+        "rel": "was set up on",
+        "rel_type": [
+          "set up"
+        ],
+        "obj": "March 25, 2012"
+      },
+      {
+        "sub": "the second server",
+        "rel": "controlled",
+        "rel_type": [
+          "controls"
+        ],
+        "obj": "over a thousand clients"
+      },
+      {
+        "sub": "the servers",
+        "rel": "were set up to record",
+        "rel_type": [
+          "set up to record"
+        ],
+        "obj": "a minimal amount of information"
+      },
+      {
+        "sub": "the systems",
+        "rel": "were configured to disable",
+        "rel_type": [
+          "configured to disable"
+        ],
+        "obj": "any unnecessary logging events"
+      },
+      {
+        "sub": "existing log files",
+        "rel": "were securely deleted from",
+        "rel_type": [
+          "securely deleted"
+        ],
+        "obj": "the servers"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "were not thorough enough, as",
+        "rel_type": [
+          "were not thorough enough"
+        ],
+        "obj": "files revealing the entire history of the servers’ setup were available"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "were able to recover",
+        "rel_type": [
+          "recovered"
+        ],
+        "obj": "the nicknames of four authors—D***, H***** O******, and R***"
+      },
+      {
+        "sub": "the Web application",
+        "rel": "called",
+        "rel_type": [
+          "called"
+        ],
+        "obj": "Newsforyou"
+      },
+      {
+        "sub": "the Web application",
+        "rel": "processes",
+        "rel_type": [
+          "processes"
+        ],
+        "obj": "the W32.Flamer client interactions"
+      },
+      {
+        "sub": "the Web application",
+        "rel": "provides",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "a simple control panel"
+      },
+      {
+        "sub": "the control panel",
+        "rel": "allows the attackers to upload",
+        "rel_type": [
+          "allows to upload"
+        ],
+        "obj": "packages of code to deliver to compromised clients"
+      },
+      {
+        "sub": "the control panel",
+        "rel": "allows for the retrieval of",
+        "rel_type": [
+          "allows for retrieval"
+        ],
+        "obj": "stolen client data"
+      },
+      {
+        "sub": "the uploaded and downloaded packages",
+        "rel": "are encrypted",
+        "rel_type": [
+          "is encrypted"
+        ],
+        "obj": "so infiltrating the command-and-control server does not reveal"
+      },
+      {
+        "sub": "the command-and-control server",
+        "rel": "serves as a proxy for",
+        "rel_type": [
+          "serves as proxy for"
+        ],
+        "obj": "the data"
+      },
+      {
+        "sub": "the command-and-control server",
+        "rel": "is designed to be a framework for supporting",
+        "rel_type": [
+          "designed to be a framework"
+        ],
+        "obj": "different malware campaigns"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "responsible for setting up the server",
+        "rel_type": [
+          "responsible for"
+        ],
+        "obj": "admins"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "responsible for uploading packages and downloading stolen data",
+        "rel_type": [
+          "responsible for"
+        ],
+        "obj": "operators"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "with the ability to decrypt the stolen data",
+        "rel_type": [
+          "with the ability to decrypt"
+        ],
+        "obj": "attack coordinators"
+      },
+      {
+        "sub": "the operators",
+        "rel": "may actually be completely unaware of",
+        "rel_type": [
+          "may be unaware of"
+        ],
+        "obj": "the contents in the stolen data"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "delivered",
+        "rel_type": [
+          "delivered"
+        ],
+        "obj": "a module instructing Flamer to commit suicide"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "witnessed",
+        "rel_type": [
+          "witnessed"
+        ],
+        "obj": "an action: Flamer to commit suicide"
+      },
+      {
+        "sub": "the command-and-control server",
+        "rel": "required a password which is stored as",
+        "rel_type": [
+          "required a password"
+        ],
+        "obj": "a hash"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "did not clear out",
+        "rel_type": [
+          "did not clear out"
+        ],
+        "obj": "the history of commands issued through the console by the administrator"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "disabling logging",
+        "rel_type": [
+          "disabling"
+        ],
+        "obj": "and securely removing existing log files"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "installed",
+        "rel_type": [
+          "installed"
+        ],
+        "obj": "various applications"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "end goal was to install",
+        "rel_type": [
+          "end goal was to install"
+        ],
+        "obj": "a command-and-control application called Newsforyou"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "was to hide traces of their activity on",
+        "rel_type": [
+          "was to hide"
+        ],
+        "obj": "the server"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "set up",
+        "rel_type": [
+          "set up"
+        ],
+        "obj": "some URL redirections"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "set up",
+        "rel_type": [
+          "set up"
+        ],
+        "obj": "a cronjob"
+      },
+      {
+        "sub": "the cronjob",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "UnloadChecker.php"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "used to wipe certain files and content",
+        "rel_type": [
+          "used to wipe"
+        ],
+        "obj": "from folders"
+      },
+      {
+        "sub": "the operators",
+        "rel": "made an error when setting up",
+        "rel_type": [
+          "made an error when"
+        ],
+        "obj": "the scheduled task"
+      },
+      {
+        "sub": "the operators",
+        "rel": "used",
+        "rel_type": [
+          "used"
+        ],
+        "obj": "the folder name pycleaner"
+      },
+      {
+        "sub": "the Eraser.py script",
+        "rel": "was never automatically executed",
+        "rel_type": [
+          "was never automatically executed"
+        ],
+        "obj": "on one of the servers"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "discussed",
+        "rel_type": [
+          "discuss"
+        ],
+        "obj": "the files and applications"
+      },
+      {
+        "sub": "the application",
+        "rel": "is written in",
+        "rel_type": [
+          "written in"
+        ],
+        "obj": "PHP"
+      },
+      {
+        "sub": "the control panel",
+        "rel": "is a basic user interface",
+        "rel_type": [
+          "is a"
+        ],
+        "obj": "that allows packages to be uploaded"
+      },
+      {
+        "sub": "the control panel",
+        "rel": "allows",
+        "rel_type": [
+          "allows"
+        ],
+        "obj": "the operator to upload data"
+      },
+      {
+        "sub": "the control panel",
+        "rel": "allows",
+        "rel_type": [
+          "allows"
+        ],
+        "obj": "the user to download backed up data"
+      },
+      {
+        "sub": "the application",
+        "rel": "is designed to resemble",
+        "rel_type": [
+          "designed to resemble"
+        ],
+        "obj": "a simple news/blog application"
+      },
+      {
+        "sub": "the application",
+        "rel": "may serve to disguise",
+        "rel_type": [
+          "may serve to disguise"
+        ],
+        "obj": "the true nature of the application"
+      },
+      {
+        "sub": "D***",
+        "rel": "added",
+        "rel_type": [
+          "added"
+        ],
+        "obj": "a function"
+      },
+      {
+        "sub": "D***",
+        "rel": "edited",
+        "rel_type": [
+          "edited"
+        ],
+        "obj": "33 files"
+      },
+      {
+        "sub": "D***",
+        "rel": "worked on",
+        "rel_type": [
+          "worked on"
+        ],
+        "obj": "the control panel"
+      },
+      {
+        "sub": "H*****",
+        "rel": "edited",
+        "rel_type": [
+          "edited"
+        ],
+        "obj": "10 files"
+      },
+      {
+        "sub": "O******",
+        "rel": "edited",
+        "rel_type": [
+          "edited"
+        ],
+        "obj": "4 files"
+      },
+      {
+        "sub": "R***",
+        "rel": "edited",
+        "rel_type": [
+          "edited"
+        ],
+        "obj": "1 file"
+      },
+      {
+        "sub": "D***",
+        "rel": "worked on",
+        "rel_type": [
+          "worked on"
+        ],
+        "obj": "the protocols"
+      },
+      {
+        "sub": "D***",
+        "rel": "worked on",
+        "rel_type": [
+          "worked on"
+        ],
+        "obj": "the control panel"
+      },
+      {
+        "sub": "H*****",
+        "rel": "worked on",
+        "rel_type": [
+          "worked on"
+        ],
+        "obj": "the SignupProtocol"
+      },
+      {
+        "sub": "D***",
+        "rel": "worked on",
+        "rel_type": [
+          "worked on"
+        ],
+        "obj": "the OldProtocol"
+      },
+      {
+        "sub": "The main module",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicating with"
+        ],
+        "obj": "the compromised clients"
+      },
+      {
+        "sub": "The main module",
+        "rel": "deciphers",
+        "rel_type": [
+          "deciphers"
+        ],
+        "obj": "the protocol"
+      },
+      {
+        "sub": "The main module",
+        "rel": "logs",
+        "rel_type": [
+          "logs"
+        ],
+        "obj": "requests"
+      },
+      {
+        "sub": "The main module",
+        "rel": "decodes",
+        "rel_type": [
+          "decodes"
+        ],
+        "obj": "requests"
+      },
+      {
+        "sub": "The main module",
+        "rel": "processes",
+        "rel_type": [
+          "processes"
+        ],
+        "obj": "requests"
+      },
+      {
+        "sub": "The C&C server",
+        "rel": "requires",
+        "rel_type": [
+          "requires"
+        ],
+        "obj": "a password"
+      },
+      {
+        "sub": "The C&C server",
+        "rel": "has an encryption key",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "symmetric key"
+      },
+      {
+        "sub": "The C&C server",
+        "rel": "has a public key",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "public key"
+      },
+      {
+        "sub": "The C&C server",
+        "rel": "has a private key",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "private key"
+      },
+      {
+        "sub": "The C&C server",
+        "rel": "has a file",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "157,548 bytes"
+      },
+      {
+        "sub": "The C&C server",
+        "rel": "had a file",
+        "rel_type": [
+          "had"
+        ],
+        "obj": "157,548 bytes"
+      },
+      {
+        "sub": "The C&C server",
+        "rel": "had a file",
+        "rel_type": [
+          "had"
+        ],
+        "obj": "5.7 GB"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "are using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the unique certificate weakness"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "were careful to unload",
+        "rel_type": [
+          "careful to unload"
+        ],
+        "obj": "and archive data"
+      },
+      {
+        "sub": "the server",
+        "rel": "was fully operational",
+        "rel_type": [
+          "set up"
+        ],
+        "obj": "on March 25, 2012"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "determined that",
+        "rel_type": [
+          "determined"
+        ],
+        "obj": "one of the servers delivered a module"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "were able to determine",
+        "rel_type": [
+          "determine"
+        ],
+        "obj": "that one of the servers delivered a module"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "witnessed",
+        "rel_type": [
+          "witnessed"
+        ],
+        "obj": "compromised honeypots"
+      },
+      {
+        "sub": "The C&C server",
+        "rel": "contains",
+        "rel_type": [
+          "contains"
+        ],
+        "obj": "a control panel"
+      },
+      {
+        "sub": "the control panel",
+        "rel": "allows the operator to upload",
+        "rel_type": [
+          "allows to upload"
+        ],
+        "obj": "data"
+      },
+      {
+        "sub": "the control panel",
+        "rel": "allows the operator to download",
+        "rel_type": [
+          "allows to download"
+        ],
+        "obj": "stolen data"
+      },
+      {
+        "sub": "the control panel",
+        "rel": "requires",
+        "rel_type": [
+          "requires"
+        ],
+        "obj": "authentication"
+      },
+      {
+        "sub": "the control panel",
+        "rel": "requires",
+        "rel_type": [
+          "requires"
+        ],
+        "obj": "a username"
+      },
+      {
+        "sub": "the control panel",
+        "rel": "requires",
+        "rel_type": [
+          "requires"
+        ],
+        "obj": "a password hash"
+      },
+      {
+        "sub": "the database",
+        "rel": "stores",
+        "rel_type": [
+          "stores"
+        ],
+        "obj": "relevant data about connecting clients"
+      },
+      {
+        "sub": "the database",
+        "rel": "stores",
+        "rel_type": [
+          "stores"
+        ],
+        "obj": "packages to send to the clients"
+      },
+      {
+        "sub": "the database",
+        "rel": "stores",
+        "rel_type": [
+          "stores"
+        ],
+        "obj": "some logging and settings"
+      },
+      {
+        "sub": "the database",
+        "rel": "stores",
+        "rel_type": [
+          "stores"
+        ],
+        "obj": "authentication to access the control panel"
+      },
+      {
+        "sub": "the database",
+        "rel": "was regularly emptied",
+        "rel_type": [
+          "was regularly emptied"
+        ],
+        "obj": "by the delete.php script"
+      },
+      {
+        "sub": "the session_log table",
+        "rel": "contains",
+        "rel_type": [
+          "contains"
+        ],
+        "obj": "details of all connections"
+      },
+      {
+        "sub": "the client_log",
+        "rel": "only contains",
+        "rel_type": [
+          "only contains"
+        ],
+        "obj": "connections with a recognized protocol"
+      },
+      {
+        "sub": "The session_log data",
+        "rel": "contained",
+        "rel_type": [
+          "contained"
+        ],
+        "obj": "three separate HTTP_HOST values"
+      },
+      {
+        "sub": "the database",
+        "rel": "reveals that",
+        "rel_type": [
+          "reveals"
+        ],
+        "obj": "189 records had been created"
+      },
+      {
+        "sub": "the database",
+        "rel": "had one record ever existed",
+        "rel_type": [
+          "had"
+        ],
+        "obj": "the malicious payload"
+      },
+      {
+        "sub": "the database",
+        "rel": "had one record ever existed",
+        "rel_type": [
+          "had"
+        ],
+        "obj": "the stolen data"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "are using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the man-in-the-middle attack"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "are using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the unique certificate weakness"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "is using",
+        "rel_type": [
+          "using"
+        ],
+        "obj": "a man-in-the-middle attack"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "was using",
+        "rel_type": [
+          "was using"
+        ],
+        "obj": "the unique certificate weakness"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "were using",
+        "rel_type": [
+          "were using"
+        ],
+        "obj": "the unique certificate weakness"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "are careful to unload",
+        "rel_type": [
+          "careful to unload"
+        ],
+        "obj": "and archive data"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "are careful to remove",
+        "rel_type": [
+          "careful to remove"
+        ],
+        "obj": "duplicate files"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "are careful to delete",
+        "rel_type": [
+          "careful to delete"
+        ],
+        "obj": "unnecessary files"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "are careful to ensure",
+        "rel_type": [
+          "careful to ensure"
+        ],
+        "obj": "there was ample room on the servers"
+      }
+    ]
+  }
+}

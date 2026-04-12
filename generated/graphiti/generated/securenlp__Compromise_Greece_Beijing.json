@@ -1,0 +1,243 @@
+{
+  "sample_id": "securenlp__Compromise_Greece_Beijing",
+  "sample_index": 180,
+  "source": "securenlp",
+  "file_name": "Compromise_Greece_Beijing",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "defense.miraclecz.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "buy.miraclecz.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "grpressbeijing.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "1.jar",
+        "type": "Indicator"
+      },
+      {
+        "name": "pack",
+        "type": "Indicator"
+      },
+      {
+        "name": "pack.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "microsoft",
+        "type": "Software"
+      },
+      {
+        "name": "AntiVirusProduct",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings",
+        "type": "Indicator"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Internet Explorer\\Main",
+        "type": "Indicator"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Internet Explorer\\PhishingFilter",
+        "type": "Indicator"
+      },
+      {
+        "name": "HKCU\\Software\\Microsoft\\Internet Connection Wizard",
+        "type": "Indicator"
+      },
+      {
+        "name": "IWbemLocator",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "IWebBrowser2",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "csfn",
+        "type": "Malware"
+      },
+      {
+        "name": "Base64",
+        "type": "Tool"
+      },
+      {
+        "name": "cmd.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "7-Zip",
+        "type": "Tool"
+      },
+      {
+        "name": "Java Decompiler",
+        "type": "Tool"
+      },
+      {
+        "name": "IDA Pro",
+        "type": "Tool"
+      },
+      {
+        "name": "Wireshark",
+        "type": "Tool"
+      },
+      {
+        "name": "microsoft.com",
+        "type": "Software"
+      },
+      {
+        "name": "http://buy.miraclecz.com",
+        "type": "Indicator"
+      },
+      {
+        "name": "http://defense.miraclecz.com/index.asp?id=50100",
+        "type": "Indicator"
+      },
+      {
+        "name": "http://www.motobit.com/util/base64-decoder-encoder.asp",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "1.jar",
+        "rel": "CONTAINS",
+        "obj": "pack"
+      },
+      {
+        "sub": "pack",
+        "rel": "is renamed as",
+        "obj": "pack.exe"
+      },
+      {
+        "sub": "1.jar",
+        "rel": "decompilable with",
+        "obj": "Java Decompiler"
+      },
+      {
+        "sub": "pack.exe",
+        "rel": "analyzed with",
+        "obj": "IDA Pro"
+      },
+      {
+        "sub": "pack.exe",
+        "rel": "monitored with",
+        "obj": "Wireshark"
+      },
+      {
+        "sub": "pack.exe",
+        "rel": "USES",
+        "obj": "Base64"
+      },
+      {
+        "sub": "pack.exe",
+        "rel": "USES",
+        "obj": "cmd.exe"
+      },
+      {
+        "sub": "pack.exe",
+        "rel": "USES",
+        "obj": "IWbemLocator"
+      },
+      {
+        "sub": "pack.exe",
+        "rel": "USES",
+        "obj": "IWebBrowser2"
+      },
+      {
+        "sub": "pack.exe",
+        "rel": "CONTACTS",
+        "obj": "defense.miraclecz.com"
+      },
+      {
+        "sub": "pack.exe",
+        "rel": "CONTACTS",
+        "obj": "buy.miraclecz.com"
+      },
+      {
+        "sub": "defense.miraclecz.com",
+        "rel": "SERVES",
+        "obj": "http://defense.miraclecz.com/index.asp?id=50100"
+      },
+      {
+        "sub": "buy.miraclecz.com",
+        "rel": "SERVES",
+        "obj": "http://buy.miraclecz.com"
+      },
+      {
+        "sub": "http://defense.miraclecz.com/index.asp?id=50100",
+        "rel": "CONTAINS",
+        "obj": "microsoft"
+      },
+      {
+        "sub": "http://defense.miraclecz.com/index.asp?id=50100",
+        "rel": "CONTAINS",
+        "obj": "Base64"
+      },
+      {
+        "sub": "http://www.motobit.com/util/base64-decoder-encoder.asp",
+        "rel": "DECODES",
+        "obj": "Base64"
+      },
+      {
+        "sub": "grpressbeijing.com",
+        "rel": "HOSTS",
+        "obj": "1.jar"
+      },
+      {
+        "sub": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings",
+        "rel": "MODIFIES",
+        "obj": "pack.exe"
+      },
+      {
+        "sub": "HKCU\\Software\\Microsoft\\Internet Explorer\\Main",
+        "rel": "MODIFIES",
+        "obj": "pack.exe"
+      },
+      {
+        "sub": "HKCU\\Software\\Microsoft\\Internet Explorer\\PhishingFilter",
+        "rel": "MODIFIES",
+        "obj": "pack.exe"
+      },
+      {
+        "sub": "HKCU\\Software\\Microsoft\\Internet Connection Wizard",
+        "rel": "MODIFIES",
+        "obj": "pack.exe"
+      },
+      {
+        "sub": "AntiVirusProduct",
+        "rel": "QUERIES",
+        "obj": "IWbemLocator"
+      },
+      {
+        "sub": "7-Zip",
+        "rel": "UNPACKS",
+        "obj": "pack"
+      }
+    ]
+  }
+}

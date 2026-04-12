@@ -1,0 +1,63 @@
+{
+  "sample_id": "ctinexus__threat-group-using-rare-data-transfer-tactic-in-new-remcosrat-campaign.json",
+  "sample_index": 78,
+  "source": "ctinexus",
+  "file_name": "threat-group-using-rare-data-transfer-tactic-in-new-remcosrat-campaign.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "UNC-0050",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "RemcosRAT",
+        "type": "Malware"
+      },
+      {
+        "name": "Ukraine",
+        "type": "Location"
+      },
+      {
+        "name": "government entities",
+        "type": "Organization"
+      },
+      {
+        "name": "Windows systems",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "UNC-0050",
+        "rel": "USES",
+        "obj": "RemcosRAT"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "TARGETS",
+        "obj": "government entities"
+      },
+      {
+        "sub": "RemcosRAT",
+        "rel": "ATTACKS",
+        "obj": "Windows systems"
+      }
+    ]
+  }
+}

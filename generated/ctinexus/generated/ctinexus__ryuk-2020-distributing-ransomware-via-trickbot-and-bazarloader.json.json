@@ -1,0 +1,113 @@
+{
+  "sample_id": "ctinexus__ryuk-2020-distributing-ransomware-via-trickbot-and-bazarloader.json",
+  "sample_index": 85,
+  "source": "ctinexus",
+  "file_name": "ryuk-2020-distributing-ransomware-via-trickbot-and-bazarloader.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Ryuk",
+        "type": "Unknown"
+      },
+      {
+        "name": "BazarLoader",
+        "type": "Unknown"
+      },
+      {
+        "name": "BazarBackdoor",
+        "type": "Unknown"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Unknown"
+      },
+      {
+        "name": "malicious attachments",
+        "type": "Unknown"
+      },
+      {
+        "name": "links to websites",
+        "type": "Unknown"
+      },
+      {
+        "name": "free, online file-hosting solutions",
+        "type": "Unknown"
+      },
+      {
+        "name": "business correspondence or other important messages",
+        "type": "Unknown"
+      },
+      {
+        "name": "command-and-control (C&C) server",
+        "type": "Unknown"
+      },
+      {
+        "name": "threat actor behind TrickBot",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Ryuk",
+        "rel": "began using",
+        "obj": "BazarLoader"
+      },
+      {
+        "sub": "BazarLoader",
+        "rel": "is also known as",
+        "obj": "BazarBackdoor"
+      },
+      {
+        "sub": "BazarLoader",
+        "rel": "is primarily distributed via",
+        "obj": "phishing emails"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "contain",
+        "obj": "malicious attachments"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "contain",
+        "obj": "links to websites"
+      },
+      {
+        "sub": "links to websites",
+        "rel": "point to",
+        "obj": "free, online file-hosting solutions"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "are usually disguised as",
+        "obj": "business correspondence or other important messages"
+      },
+      {
+        "sub": "command-and-control (C&C) server",
+        "rel": "is used to deploy and install",
+        "obj": "BazarLoader"
+      },
+      {
+        "sub": "threat actor behind TrickBot",
+        "rel": "is connected to",
+        "obj": "BazarLoader"
+      }
+    ]
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-ransomexx.json",
+  "sample_index": 95,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-ransomexx.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "RansomExx",
+        "type": "malware",
+        "alias": [
+          "Defray777",
+          "RansomEXX",
+          "ransom.exx",
+          "the malware",
+          "the group"
+        ]
+      },
+      {
+        "name": "Defray777",
+        "type": "malware",
+        "alias": [
+          "RansomExx"
+        ]
+      },
+      {
+        "name": "ransom.exx",
+        "type": "string",
+        "alias": [
+          "the string 'ransom.exx'"
+        ]
+      },
+      {
+        "name": "2018",
+        "type": "year",
+        "alias": [
+          "the year 2018"
+        ]
+      },
+      {
+        "name": "2020",
+        "type": "year",
+        "alias": [
+          "the year 2020"
+        ]
+      },
+      {
+        "name": "government agencies",
+        "type": "victims/targets",
+        "alias": [
+          "government agencies",
+          "agencies"
+        ]
+      },
+      {
+        "name": "manufacturers",
+        "type": "victims/targets",
+        "alias": [
+          "manufacturers"
+        ]
+      },
+      {
+        "name": "LockBit",
+        "type": "malware",
+        "alias": [
+          "other ransomware variants"
+        ]
+      },
+      {
+        "name": "Conti",
+        "type": "malware",
+        "alias": [
+          "other ransomware variants"
+        ]
+      },
+      {
+        "name": "the group",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the one running RansomEXX"
+        ]
+      },
+      {
+        "name": "leak site",
+        "type": "infrastructure",
+        "alias": [
+          "the leak site"
+        ]
+      },
+      {
+        "name": "Scottish mental health charity",
+        "type": "victims/targets",
+        "alias": [
+          "a Scottish mental health charity"
+        ]
+      },
+      {
+        "name": "March 2022",
+        "type": "date",
+        "alias": [
+          "the attack in March 2022"
+        ]
+      },
+      {
+        "name": "12GB worth of data",
+        "type": "quantity",
+        "alias": [
+          "12GB of data"
+        ]
+      },
+      {
+        "name": "personal information",
+        "type": "stolen data",
+        "alias": [
+          "data that included personal information"
+        ]
+      },
+      {
+        "name": "credit card details",
+        "type": "stolen data",
+        "alias": [
+          "credit card details of the charity's volunteers"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "RansomExx",
+        "rel": "is a variant of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Defray777"
+      },
+      {
+        "sub": "Defray777",
+        "rel": "debuted in",
+        "rel_type": [
+          "targets",
+          "date"
+        ],
+        "obj": "2018"
+      },
+      {
+        "sub": "RansomExx",
+        "rel": "made a name for itself in",
+        "rel_type": [
+          "targets",
+          "date"
+        ],
+        "obj": "2020"
+      },
+      {
+        "sub": "RansomExx",
+        "rel": "was used in attacks on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "government agencies"
+      },
+      {
+        "sub": "RansomExx",
+        "rel": "was used in attacks on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "manufacturers"
+      },
+      {
+        "sub": "RansomExx",
+        "rel": "was used in attacks on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "other such high-profile"
+      },
+      {
+        "sub": "RansomEXX",
+        "rel": "was dubbed after",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "the string 'ransom.exx'"
+      },
+      {
+        "sub": "the group",
+        "rel": "started",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "a leak site"
+      },
+      {
+        "sub": "RansomEXX",
+        "rel": "remains an active name among",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "LockBit"
+      },
+      {
+        "sub": "RansomEXX",
+        "rel": "remains an active name among",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Conti"
+      },
+      {
+        "sub": "the one running RansomEXX",
+        "rel": "appears to have no qualms about publishing",
+        "rel_type": [
+          "publishes"
+        ],
+        "obj": "data stolen from its targets"
+      },
+      {
+        "sub": "the group",
+        "rel": "published information stolen from",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "government agencies"
+      },
+      {
+        "sub": "the group",
+        "rel": "attacked",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a Scottish mental health charity"
+      },
+      {
+        "sub": "a Scottish mental health charity",
+        "rel": "was attacked in",
+        "rel_type": [
+          "date"
+        ],
+        "obj": "March 2022"
+      },
+      {
+        "sub": "the group",
+        "rel": "published",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "12GB worth of data"
+      },
+      {
+        "sub": "12GB worth of data",
+        "rel": "included",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "personal information"
+      },
+      {
+        "sub": "12GB worth of data",
+        "rel": "included",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "credit card details of the charity's volunteers"
+      }
+    ]
+  }
+}

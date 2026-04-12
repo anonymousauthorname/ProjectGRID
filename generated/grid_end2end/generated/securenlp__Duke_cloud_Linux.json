@@ -1,0 +1,547 @@
+{
+  "sample_id": "securenlp__Duke_cloud_Linux",
+  "sample_index": 189,
+  "source": "securenlp",
+  "file_name": "Duke_cloud_Linux",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SeaDuke",
+        "type": "malware",
+        "alias": [
+          "the Duke group's toolset",
+          "a newer addition to the arsenal of trojans being used by the Duke group",
+          "the same SeaDuke Python code",
+          "SeaDuke, with its built-in support for both Windows and Linux",
+          "cross-platform malware",
+          "SeaDuke-laden executables",
+          "SeaDuke loader",
+          "SeaDuke downloader",
+          "SeaDuke trojans",
+          "SeaDuke components",
+          "SeaDuke Python code",
+          "SeaDuke components",
+          "SeaDuke malware",
+          "SeaDuke malware toolset",
+          "SeaDuke components"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CloudDuke",
+        "type": "malware",
+        "alias": [
+          "an entire toolset of malware components",
+          "a larger malware toolset we call CloudDuke",
+          "the CloudDuke toolset",
+          "the CloudDuke toolset",
+          "CloudDuke components"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "MiniDionis",
+        "type": "malware",
+        "alias": [
+          "MiniDionis",
+          "distinct trojan component"
+        ],
+        "mother entity": [
+          "CloudDuke"
+        ]
+      },
+      {
+        "name": "CloudLook",
+        "type": "malware",
+        "alias": [],
+        "mother entity": [
+          "CloudDuke"
+        ]
+      },
+      {
+        "name": "DropperSolution",
+        "type": "malware",
+        "alias": [
+          "downloader",
+          "DropperSolution",
+          "the downloader"
+        ],
+        "mother entity": [
+          "CloudDuke"
+        ]
+      },
+      {
+        "name": "BastionSolution",
+        "type": "malware",
+        "alias": [
+          "MiniDionis",
+          "the trojan that Palo Alto Networks described in their research into MiniDionis",
+          "the BastionSolution component",
+          "BastionSolution"
+        ],
+        "mother entity": [
+          "CloudDuke"
+        ]
+      },
+      {
+        "name": "OneDriveSolution",
+        "type": "malware",
+        "alias": [
+          "OneDriveSolution",
+          "the second trojan component",
+          "OneDriveSolution trojan"
+        ],
+        "mother entity": [
+          "CloudDuke"
+        ]
+      },
+      {
+        "name": "Z",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "the code framework",
+          "classes from the 'Z' framework"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CozyDuke",
+        "type": "malware",
+        "alias": [
+          "CozyDuke spear-phishing campaigns",
+          "CozyDuke",
+          "CozyDuke-inspired CloudDuke"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft OneDrive",
+        "type": "cloud-storage-service",
+        "alias": [
+          "Microsoft's OneDrive",
+          "OneDrive",
+          "OneDrive account",
+          "cloud storage service"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Compromised websites",
+        "type": "url",
+        "alias": [
+          "compromised websites",
+          "the malicious files",
+          "zip archives"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "zip archives",
+        "type": "file",
+        "alias": [
+          "CloudDuke-laden executables",
+          "malicious archive",
+          "5442.ZIP"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "decoy",
+        "type": "file",
+        "alias": [
+          "decoy file",
+          "an audio file or a PDF file",
+          "decoy documents",
+          "the same PDF file"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "US Department of Defense",
+        "type": "identity",
+        "alias": [
+          "organizations such as the US Department of Defense"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://flockfilmseries.com/eFax/incoming/5442.ZIP",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "Compromised websites"
+        ]
+      },
+      {
+        "name": "hxxp://www.recordsmanagementservices.com/eFax/incoming/150721/5442.ZIP",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "Compromised websites"
+        ]
+      },
+      {
+        "name": "hxxp://files.counseling.org/eFax/incoming/150721/5442.ZIP",
+        "type": "url",
+        "alias": [],
+        "mother entity": [
+          "Compromised websites"
+        ]
+      },
+      {
+        "name": "hxxps://cognimuse.cs.ntua.gr/search.php",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxps://portal.sbn.co.th/rss.php",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxps://97.75.120.45/news/archive.php",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxps://58.80.109.59/plugins/search.php",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "US letter fax test page (28d29c702fdf3c16f27b33f3e32687dd82185e8b)",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "decoy"
+        ]
+      },
+      {
+        "name": "Visual Basic scripts",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": [
+          "CozyDuke"
+        ]
+      },
+      {
+        "name": "embedded malicious payload",
+        "type": "file",
+        "alias": [
+          "encrypted malicious payload"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "preconfigured username and password",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "payload from OneDrive",
+        "type": "file",
+        "alias": [
+          "the payload from there"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "victim's hard disk",
+        "type": "file",
+        "alias": [
+          "the victim's hard disk"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "loader",
+        "type": "hacker-tool",
+        "alias": [
+          "the CloudDuke loader",
+          "piece of code whose primary purpose is to decrypt",
+          "the final payload"
+        ],
+        "mother entity": [
+          "CloudDuke"
+        ]
+      },
+      {
+        "name": "CloudDuke samples",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "CloudDuke"
+        ]
+      },
+      {
+        "name": "py2exe or pyinstaller",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CloudDuke",
+        "rel": "consists-of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "SeaDuke"
+      },
+      {
+        "sub": "SeaDuke",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "cross-platform malware"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Microsoft OneDrive"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "impersonates",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "MiniDionis",
+        "rel": "is-part-of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "CloudLook",
+        "rel": "is-part-of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "DropperSolution",
+        "rel": "is-part-of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "DropperSolution",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "embedded malicious payload"
+      },
+      {
+        "sub": "DropperSolution",
+        "rel": "retrieves",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "Microsoft OneDrive"
+      },
+      {
+        "sub": "DropperSolution",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "compromised websites"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "is-part-of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "communicates-with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Microsoft OneDrive"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "exfiltrate-to",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "victim's hard disk"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "leaks",
+        "rel_type": [
+          "leaks"
+        ],
+        "obj": "Microsoft OneDrive"
+      },
+      {
+        "sub": "CloudDuke samples",
+        "rel": "is-part-of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "SeaDuke",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "py2exe or pyinstaller"
+      },
+      {
+        "sub": "SeaDuke",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Linux"
+      },
+      {
+        "sub": "BastionSolution",
+        "rel": "variant-of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "SeaDuke"
+      },
+      {
+        "sub": "BastionSolution",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Z"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "decoy"
+      },
+      {
+        "sub": "loader",
+        "rel": "is-part-of",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "loader",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "embedded malicious payload"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "exfiltrate-to",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "Microsoft OneDrive"
+      },
+      {
+        "sub": "CozyDuke",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Visual Basic scripts"
+      },
+      {
+        "sub": "CozyDuke-inspired CloudDuke",
+        "rel": "bypasses",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "CloudDuke downloader"
+      },
+      {
+        "sub": "decoy",
+        "rel": "delivers",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "US Department of Defense",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "zip archives",
+        "rel": "delivers",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "hxxp://flockfilmseries.com/eFax/incoming/5442.ZIP",
+        "rel": "hosts",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "hxxps://cognimuse.cs.ntua.gr/search.php",
+        "rel": "beacons-to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "CloudDuke"
+      }
+    ]
+  }
+}

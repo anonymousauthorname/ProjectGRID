@@ -1,0 +1,287 @@
+{
+  "sample_id": "malkg__201412CylanceOperationCleaver.txt",
+  "sample_index": 118,
+  "source": "malkg",
+  "file_name": "201412CylanceOperationCleaver.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Notepad4.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Notepad.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "reverse TCP shellcode"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Notepad application"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "legitimate Notepad binary"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Belong to",
+        "obj": "Windows"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has geolocation",
+        "obj": "Notepad.exe"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Use",
+        "obj": "msfvenom"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Use",
+        "obj": "x86/shikata_ga_nai"
+      },
+      {
+        "sub": "Vulnerable Software",
+        "rel": "Has vulnerability",
+        "obj": "Notepad.exe"
+      },
+      {
+        "sub": "System",
+        "rel": "Locate at",
+        "obj": "Windows"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Execute",
+        "obj": "Notepad4.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Notepad"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Compromised system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Persistence"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Compromised system"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "Notepad application"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Self-modifying code structure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Static code analysis"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "XOR-based decoding"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "'shikata ga nai' decoder stub"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Dynamic code generation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Instructions"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Detect",
+        "obj": "Static code"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Signature-based detection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Perform",
+        "obj": "Module and export name hashing operation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has tactic",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System components"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Identify",
+        "obj": "Loaded DLLs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Identify",
+        "obj": "Exported functions"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "DLL and function enumeration"
+      },
+      {
+        "sub": "Notepad",
+        "rel": "Use",
+        "obj": "Metasploit reverse connect stager"
+      },
+      {
+        "sub": "Metasploit reverse connect stager",
+        "rel": "Operate",
+        "obj": "Command and control server"
+      },
+      {
+        "sub": "Command and control server",
+        "rel": "Has value",
+        "obj": "Data retrieval"
+      },
+      {
+        "sub": "Command and control server",
+        "rel": "Has value",
+        "obj": "Remote command execution"
+      },
+      {
+        "sub": "Notepad",
+        "rel": "Modify",
+        "obj": "System"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "C2 Channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Reverse TCP Connection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "108.175.152.230:12345"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "108.175.152.230:12345"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Socket Calls"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Data Reception"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has hostname",
+        "obj": "108.175.152.230"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has value",
+        "obj": "12345"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "https://108.175.152.230:12345"
+      },
+      {
+        "sub": "Notepad",
+        "rel": "Use",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Communicate with",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Notepad",
+        "rel": "Execute",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Operate",
+        "obj": "C2 server"
+      }
+    ]
+  }
+}

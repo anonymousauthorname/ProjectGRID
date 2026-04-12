@@ -1,0 +1,122 @@
+{
+  "sample_id": "casie__1782.json",
+  "sample_index": 32,
+  "source": "casie",
+  "file_name": "1782.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Snapchat",
+        "type": "Organization"
+      },
+      {
+        "name": "Anonymous India",
+        "type": "Person"
+      },
+      {
+        "name": "India",
+        "type": "Location"
+      },
+      {
+        "name": "Spain",
+        "type": "Location"
+      },
+      {
+        "name": "CEO of Snapchat",
+        "type": "Person"
+      },
+      {
+        "name": "bug bounty hunting groups",
+        "type": "Tool"
+      },
+      {
+        "name": "Snapchat's systems",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Snapchat users data",
+        "type": "Indicator"
+      },
+      {
+        "name": "dark web",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Apple's App Store",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Google Play Store",
+        "type": "Infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Anonymous India",
+        "rel": "EXPLOITED",
+        "obj": "Snapchat's systems"
+      },
+      {
+        "sub": "bug bounty hunting groups",
+        "rel": "discovered vulnerability in",
+        "obj": "Snapchat's systems"
+      },
+      {
+        "sub": "Snapchat's systems",
+        "rel": "STOLE",
+        "obj": "Snapchat users data"
+      },
+      {
+        "sub": "Snapchat users data",
+        "rel": "leaked on",
+        "obj": "dark web"
+      },
+      {
+        "sub": "India",
+        "rel": "accused of",
+        "obj": "CEO of Snapchat"
+      },
+      {
+        "sub": "India",
+        "rel": "launched boycott against",
+        "obj": "Snapchat"
+      },
+      {
+        "sub": "Snapchat",
+        "rel": "has rating of",
+        "obj": "Apple's App Store"
+      },
+      {
+        "sub": "Snapchat",
+        "rel": "has rating of",
+        "obj": "Google Play Store"
+      },
+      {
+        "sub": "Anonymous India",
+        "rel": "is demanding aplogy from",
+        "obj": "CEO of Snapchat"
+      },
+      {
+        "sub": "Snapchat",
+        "rel": "HAS",
+        "obj": "Snapchat users data"
+      }
+    ]
+  }
+}

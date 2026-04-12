@@ -1,0 +1,140 @@
+{
+  "sample_id": "casie__2173.json",
+  "sample_index": 17,
+  "source": "casie",
+  "file_name": "2173.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SS7",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "two-factor authentication",
+        "type": "Entity"
+      },
+      {
+        "name": "SMS messages",
+        "type": "Entity"
+      },
+      {
+        "name": "bank login credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "German victims' bank accounts",
+        "type": "Entity"
+      },
+      {
+        "name": "foreign mobile network operator",
+        "type": "Entity"
+      },
+      {
+        "name": "O2 Telefonica",
+        "type": "Entity"
+      },
+      {
+        "name": "Criminals",
+        "type": "Entity"
+      },
+      {
+        "name": "attack from a network of a foreign mobile network operator",
+        "type": "Entity"
+      },
+      {
+        "name": "redirect incoming SMS messages",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Criminals",
+        "rel": "redirects",
+        "obj": "SMS messages"
+      },
+      {
+        "sub": "Criminals",
+        "rel": "uses",
+        "obj": "SS7"
+      },
+      {
+        "sub": "Criminals",
+        "rel": "exploits",
+        "obj": "CVE-2021-44228"
+      },
+      {
+        "sub": "Criminals",
+        "rel": "steals",
+        "obj": "bank login credentials"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "target",
+        "obj": "German victims' bank accounts"
+      },
+      {
+        "sub": "phishing emails",
+        "rel": "leads to",
+        "obj": "bank login credentials"
+      },
+      {
+        "sub": "attack from a network of a foreign mobile network operator",
+        "rel": "initiates",
+        "obj": "redirect incoming SMS messages"
+      },
+      {
+        "sub": "attack from a network of a foreign mobile network operator",
+        "rel": "targets",
+        "obj": "German victims' bank accounts"
+      },
+      {
+        "sub": "SS7",
+        "rel": "allows",
+        "obj": "bypass of two-factor authentication"
+      },
+      {
+        "sub": "SS7",
+        "rel": "enables",
+        "obj": "redirection of SMS messages"
+      },
+      {
+        "sub": "O2 Telefonica",
+        "rel": "reports",
+        "obj": "attack from a network of a foreign mobile network operator"
+      },
+      {
+        "sub": "SS7",
+        "rel": "has vulnerability",
+        "obj": "CVE-2021-44228"
+      }
+    ]
+  }
+}

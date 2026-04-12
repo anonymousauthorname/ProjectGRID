@@ -1,0 +1,658 @@
+{
+  "sample_id": "malkg__201409ClearSkyGholee.txt",
+  "sample_index": 101,
+  "source": "malkg",
+  "file_name": "201409ClearSkyGholee.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Operation Protective Edge",
+        "type": "campaign",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "malicious excel file",
+        "type": "file",
+        "alias": [
+          "the file",
+          "the �le",
+          "suspicious �le",
+          "Operation Protective Edge.xlsb"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Operation Protective Edge.xlsb",
+        "type": "file",
+        "alias": [
+          "MD5: d0c3f4c9896d41a7c42737134ffb4c2e"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Virus Total",
+        "type": "infrastructure",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Kaspersky",
+        "type": "security-product",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "TrojanDropper.MSExcel.Agent.ce",
+        "type": "malware",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Microsoft Excel",
+        "type": "general-software",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Macro content",
+        "type": "general-software",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "NTUSER.data.{GUIDE}.dll",
+        "type": "file",
+        "alias": [
+          "the Dll file",
+          "the �le",
+          "NTUSER.DAT.{$GUID}.dll",
+          "NTUSER.DAT{016888bd-...}.dll"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "ShellExecte",
+        "type": "hacker-tool",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "cmd.exe /C",
+        "type": "general-software",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Rundll32",
+        "type": "general-software",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Gholee",
+        "type": "malware",
+        "alias": [
+          "the gholee malware",
+          "the malware",
+          "entry point called gholee",
+          "the real thing",
+          "a popular Iranian singer"
+        ],
+        "mother entity": [
+          "NTUSER.data.{GUIDE}.dll"
+        ]
+      },
+      {
+        "name": "Iranian singer",
+        "type": "identity",
+        "alias": [
+          "Iran"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "83.170.33.60",
+        "type": "ipv4-addr",
+        "alias": [
+          "Kuwait based IP address",
+          "the malware’s communication address"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "German company iABG Mbh",
+        "type": "infrastructure",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "SSL connection",
+        "type": "network-traffic",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "digital certificate",
+        "type": "x509-certificate",
+        "alias": [
+          "expired certificate",
+          "certiﬁcate"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Core Security",
+        "type": "identity",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Core Impact",
+        "type": "general-software",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "coreimpactagent.net",
+        "type": "domain-name",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "svchost 67.exe",
+        "type": "file",
+        "alias": [
+          "MD5: 916be1b609ed3dc80e5039a1d8102e82"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "83.170.33.37",
+        "type": "ipv4-addr",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "GPO",
+        "type": "course-of-action",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "email gateway",
+        "type": "infrastructure",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "anti-spam solution",
+        "type": "security-product",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Cuckoo",
+        "type": "security-product",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Anubis",
+        "type": "security-product",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Ollydbg",
+        "type": "security-product",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "IDA",
+        "type": "security-product",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Yara rule gholee",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "sandbox_avg10_vc9_SP1_2011",
+        "type": "indicator",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "gholee",
+        "type": "indicator",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "83.170.33.60",
+        "type": "ipv4-addr",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "83.170.33.37",
+        "type": "ipv4-addr",
+        "alias": [
+          "None"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "Operation Protective Edge.xlsb",
+        "type": "file",
+        "alias": [
+          "MD5: d0c3f4c9896d41a7c42737134ffb4c2e"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      },
+      {
+        "name": "svchost 67.exe",
+        "type": "file",
+        "alias": [
+          "MD5: 916be1b609ed3dc80e5039a1d8102e82"
+        ],
+        "mother entity": [
+          "None"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Operation Protective Edge",
+        "rel": "contained",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "malicious excel file"
+      },
+      {
+        "sub": "malicious excel file",
+        "rel": "is named",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Operation Protective Edge.xlsb"
+      },
+      {
+        "sub": "Operation Protective Edge.xlsb",
+        "rel": "uploaded to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "Virus Total"
+      },
+      {
+        "sub": "Operation Protective Edge.xlsb",
+        "rel": "detected by",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Kaspersky"
+      },
+      {
+        "sub": "Operation Protective Edge.xlsb",
+        "rel": "identified as",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "TrojanDropper.MSExcel.Agent.ce"
+      },
+      {
+        "sub": "malicious excel file",
+        "rel": "executed in",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Microsoft Excel"
+      },
+      {
+        "sub": "malicious excel file",
+        "rel": "enabled",
+        "rel_type": [
+          "enables"
+        ],
+        "obj": "Macro content"
+      },
+      {
+        "sub": "malicious excel file",
+        "rel": "saves to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "NTUSER.data.{GUIDE}.dll"
+      },
+      {
+        "sub": "NTUSER.data.{GUIDE}.dll",
+        "rel": "has entry point called",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "Gholee"
+      },
+      {
+        "sub": "NTUSER.data.{GUIDE}.dll",
+        "rel": "run via",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "ShellExecte"
+      },
+      {
+        "sub": "NTUSER.data.{GUIDE}.dll",
+        "rel": "executed under",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "cmd.exe /C"
+      },
+      {
+        "sub": "NTUSER.data.{GUIDE}.dll",
+        "rel": "executed under",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Rundll32"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "is",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Iranian singer"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "83.170.33.60"
+      },
+      {
+        "sub": "83.170.33.60",
+        "rel": "owned by",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "German company iABG Mbh"
+      },
+      {
+        "sub": "Gholee",
+        "rel": "opens",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "SSL connection"
+      },
+      {
+        "sub": "SSL connection",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "digital certificate"
+      },
+      {
+        "sub": "digital certificate",
+        "rel": "issued for",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Core Security"
+      },
+      {
+        "sub": "digital certificate",
+        "rel": "valid for",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "coreimpactagent.net"
+      },
+      {
+        "sub": "digital certificate",
+        "rel": "issued by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Thawte certi�cate authority"
+      },
+      {
+        "sub": "svchost 67.exe",
+        "rel": "communicated with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "83.170.33.37"
+      },
+      {
+        "sub": "svchost 67.exe",
+        "rel": "same network as",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Operation Protective Edge.xlsb"
+      },
+      {
+        "sub": "svchost 67.exe",
+        "rel": "uploaded earlier than",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Operation Protective Edge.xlsb"
+      },
+      {
+        "sub": "GPO",
+        "rel": "disables",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "malicious excel file"
+      },
+      {
+        "sub": "email gateway",
+        "rel": "blocks",
+        "rel_type": [
+          "blocks"
+        ],
+        "obj": "malicious excel file"
+      },
+      {
+        "sub": "anti-spam solution",
+        "rel": "blocks",
+        "rel_type": [
+          "blocks"
+        ],
+        "obj": "malicious excel file"
+      },
+      {
+        "sub": "Yara rule gholee",
+        "rel": "detects",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Gholee"
+      },
+      {
+        "sub": "sandbox_avg10_vc9_SP1_2011",
+        "rel": "indicates",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "Gholee"
+      },
+      {
+        "sub": "gholee",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "83.170.33.60"
+      },
+      {
+        "sub": "gholee",
+        "rel": "communicates with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "83.170.33.37"
+      },
+      {
+        "sub": "malicious excel file",
+        "rel": "infect",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "malicious excel file"
+      }
+    ]
+  }
+}

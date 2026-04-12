@@ -1,0 +1,692 @@
+{
+  "sample_id": "securenlp__ASERT-Threat-Intelligence-Brief-2014-07-Illuminating-Etumbot-APT",
+  "sample_index": 159,
+  "source": "securenlp",
+  "file_name": "ASERT-Threat-Intelligence-Brief-2014-07-Illuminating-Etumbot-APT",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Has filename",
+        "obj": "'1030522 新機關籌備小組清單 rcs.DOC'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has filename",
+        "obj": "'報價單 Finarcs.xls'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Spear phishing emails"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Malicious PDF or Office document attachments"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Targeting individuals in Taiwan and Japan"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Unicode Right-to-Left Override  trick"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "File extension to disguise actual file type"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Spear phishing emails"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Conduct",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Taiwan"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Japan"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Belong to",
+        "obj": "Long-term, targeted campaign"
+      },
+      {
+        "sub": "Campaign",
+        "rel": "Has duration",
+        "obj": "Since at least 2009"
+      },
+      {
+        "sub": "Campaign",
+        "rel": "Has samples",
+        "obj": "2011 to 2014"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Disguised file extension leading to execution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Executable content when opened"
+      },
+      {
+        "sub": "System",
+        "rel": "Operate",
+        "obj": "Through execution of malicious documents"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has value",
+        "obj": "Exploitation via misleading file names"
+      },
+      {
+        "sub": "Filepath",
+        "rel": "Has value",
+        "obj": "Embedded in malicious documents"
+      },
+      {
+        "sub": "Filename",
+        "rel": "Has URL",
+        "obj": "None"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has value",
+        "obj": "Not explicitly mentioned"
+      },
+      {
+        "sub": "IP",
+        "rel": "Has value",
+        "obj": "Not explicitly mentioned"
+      },
+      {
+        "sub": "Registry",
+        "rel": "Has value",
+        "obj": "Not explicitly mentioned"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Locate at",
+        "obj": "Government, financial, or corporate entities"
+      },
+      {
+        "sub": "Security Tool",
+        "rel": "Detect",
+        "obj": "Malicious document execution"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Documents appearing relevant to victim's interests"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "Construct",
+        "obj": "JavaSvc.exe"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "Use",
+        "obj": "JavaSvc.exe"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "Operate",
+        "obj": "finance.yesplusno.com"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "Operate",
+        "obj": "intro.sunnyschool.com.tw"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "Operate",
+        "obj": "wwap.publiclol.com"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "Has URL",
+        "obj": "finance.yesplusno.com"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "Has URL",
+        "obj": "intro.sunnyschool.com.tw"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "Has URL",
+        "obj": "wwap.publiclol.com"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "Belong to",
+        "obj": "Numbered Panda"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "Belong to",
+        "obj": "APT12"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "Belong to",
+        "obj": "DYNCALC/CALC Team"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "Belong to",
+        "obj": "IXESHE"
+      },
+      {
+        "sub": "JavaSvc.exe",
+        "rel": "Write",
+        "obj": "\\Documents and Settings\\User\\Application Data\\JAVA"
+      },
+      {
+        "sub": "JavaSvc.exe",
+        "rel": "Locate at",
+        "obj": "\\Documents and Settings\\User\\Application Data\\JAVA"
+      },
+      {
+        "sub": "JavaSvc.exe",
+        "rel": "Has value",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Etumbot",
+        "rel": "Has vulnerability",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "**Malware",
+        "rel": "Has vulnerability",
+        "obj": "Unicode Right-to-Left Override **"
+      },
+      {
+        "sub": "**Malware",
+        "rel": "Use",
+        "obj": "Spear phishing**"
+      },
+      {
+        "sub": "**Malware",
+        "rel": "Construct",
+        "obj": "Dropper**"
+      },
+      {
+        "sub": "**Dropper",
+        "rel": "Write",
+        "obj": "Etumbot backdoor**"
+      },
+      {
+        "sub": "**Dropper",
+        "rel": "Operate",
+        "obj": "Victim's machine**"
+      },
+      {
+        "sub": "**Dropper",
+        "rel": "Has filename",
+        "obj": "1030522 新機關籌備小組清單 rcs.DOC**"
+      },
+      {
+        "sub": "**Dropper",
+        "rel": "Has value",
+        "obj": "Password embedded in email**"
+      },
+      {
+        "sub": "**Dropper",
+        "rel": "Belong to",
+        "obj": "Etumbot backdoor**"
+      },
+      {
+        "sub": "**Malware",
+        "rel": "Has URL",
+        "obj": "Email**"
+      },
+      {
+        "sub": "**Filepath",
+        "rel": "Has hostname",
+        "obj": "Government meeting in Taiwan**"
+      },
+      {
+        "sub": "**Malware",
+        "rel": "Modify",
+        "obj": "Appearance of legitimate document**"
+      },
+      {
+        "sub": "**Malware",
+        "rel": "Locate at",
+        "obj": "Victim's machine**"
+      },
+      {
+        "sub": "**Threat Actor",
+        "rel": "Use",
+        "obj": "Spear phishing**"
+      },
+      {
+        "sub": "**Threat Actor",
+        "rel": "Operate",
+        "obj": "Initial access**"
+      },
+      {
+        "sub": "**Dropper",
+        "rel": "Has geolocation",
+        "obj": "Taiwan**"
+      },
+      {
+        "sub": "**Malware",
+        "rel": "Has vulnerability",
+        "obj": "Password protection**"
+      },
+      {
+        "sub": "**Malware",
+        "rel": "Use",
+        "obj": "Legitimate document **"
+      },
+      {
+        "sub": "**Malware",
+        "rel": "Construct",
+        "obj": "Payload**"
+      },
+      {
+        "sub": "**Payload",
+        "rel": "Has value",
+        "obj": "Password**"
+      },
+      {
+        "sub": "**Dropper",
+        "rel": "Execute",
+        "obj": "On victim's machine**"
+      },
+      {
+        "sub": "JavaSvc.exe",
+        "rel": "Construct",
+        "obj": "BINARY"
+      },
+      {
+        "sub": "JavaSvc.exe",
+        "rel": "Operate",
+        "obj": "Command and Control server"
+      },
+      {
+        "sub": "JavaSvc.exe",
+        "rel": "Use",
+        "obj": "CreateProcessInternalW"
+      },
+      {
+        "sub": "JavaSvc.exe",
+        "rel": "Has value",
+        "obj": "elevated privileges"
+      },
+      {
+        "sub": "JavaSvc.exe",
+        "rel": "Modify",
+        "obj": "ka4281x3.log"
+      },
+      {
+        "sub": "JavaSvc.exe",
+        "rel": "Execute",
+        "obj": "arbitrary commands"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Execute",
+        "obj": "JavaSvc.exe"
+      },
+      {
+        "sub": "Dropper",
+        "rel": "Locate at",
+        "obj": "\\Documents and Settings\\User\\Application Data\\JAVA"
+      },
+      {
+        "sub": "JavaSvc.exe",
+        "rel": "Has hostname",
+        "obj": "JavaSvc.exe"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Modify",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Create",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Create",
+        "obj": "Filename"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Use",
+        "obj": "Filepath"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Operate",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Has value",
+        "obj": "JavaSvc"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Locate at",
+        "obj": "[HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run]"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Write",
+        "obj": "ka4281x3.log"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Write",
+        "obj": "kb71271.log"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Use",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Unicode Right-to-Left Override"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Hardcoded HTTP headers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Fake User-Agent string"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Base64-encoded and URL-safe encrypted payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Proxy bypass mechanism"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Connection bouncer HTran"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Proxy configuration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Legitimate traffic"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "File extensions"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Network logs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Use",
+        "obj": "System"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Write",
+        "obj": "NetBIOS name"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Write",
+        "obj": "User name"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Write",
+        "obj": "IP address"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Write",
+        "obj": "Proxy usage"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Write",
+        "obj": "Campaign code"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Detect",
+        "obj": "Proxy settings"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Has value",
+        "obj": "'WINXPBOX|johnsmith|10.0.1.15|No Proxy|05147|'"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Operate",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Send",
+        "obj": "Encrypted system information"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Report",
+        "obj": "Proxy settings to C2 server"
+      },
+      {
+        "sub": "C2 endpoint",
+        "rel": "Has URL",
+        "obj": "/home/index.asp?typeid=N"
+      },
+      {
+        "sub": "C2 endpoint",
+        "rel": "Has URL",
+        "obj": "/image/<encrypted data>.jpg"
+      },
+      {
+        "sub": "C2 endpoint",
+        "rel": "Has URL",
+        "obj": "/history/<encrypted NetBIOS name>.asp"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Locate at",
+        "obj": "200.27.173.58"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Locate at",
+        "obj": "98.188.111.244"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Locate at",
+        "obj": "133.87.242.63"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Has IP",
+        "obj": "200.27.173.58"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Has IP",
+        "obj": "98.188.111.244"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Has IP",
+        "obj": "133.87.242.63"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Has domain",
+        "obj": "200.27.173.58"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Has domain",
+        "obj": "98.188.111.244"
+      },
+      {
+        "sub": "C2 infrastructure",
+        "rel": "Has domain",
+        "obj": "133.87.242.63"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Use",
+        "obj": "HTTP request"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Write",
+        "obj": "RC4 encryption key"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Send",
+        "obj": "registration data"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Send",
+        "obj": "periodic pings"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Operate",
+        "obj": "/home/index.asp?typeid=N"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Operate",
+        "obj": "/image/<encrypted data>.jpg"
+      },
+      {
+        "sub": "Backdoor",
+        "rel": "Operate",
+        "obj": "/history/<encrypted NetBIOS name>.asp"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Respond",
+        "obj": "to HTTP request"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Deliver",
+        "obj": "RC4 encryption key"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has value",
+        "obj": "base64-encoded string"
+      },
+      {
+        "sub": "Bot",
+        "rel": "Send",
+        "obj": "system information"
+      },
+      {
+        "sub": "Bot",
+        "rel": "Send",
+        "obj": "NetBIOS name"
+      },
+      {
+        "sub": "Bot",
+        "rel": "Send",
+        "obj": "user name"
+      },
+      {
+        "sub": "Bot",
+        "rel": "Send",
+        "obj": "IP address"
+      },
+      {
+        "sub": "Bot",
+        "rel": "Send",
+        "obj": "proxy status"
+      },
+      {
+        "sub": "Bot",
+        "rel": "Request",
+        "obj": "new commands"
+      }
+    ]
+  }
+}

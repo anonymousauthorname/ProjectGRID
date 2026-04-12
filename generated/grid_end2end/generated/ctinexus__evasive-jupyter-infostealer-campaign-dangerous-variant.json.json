@@ -1,0 +1,458 @@
+{
+  "sample_id": "ctinexus__evasive-jupyter-infostealer-campaign-dangerous-variant.json",
+  "sample_index": 53,
+  "source": "ctinexus",
+  "file_name": "evasive-jupyter-infostealer-campaign-dangerous-variant.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Jupyter",
+        "type": "malware",
+        "alias": [
+          "the malware",
+          "the new version of the malware",
+          "the malware leveraging PowerShell command modifications",
+          "it"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Yellow Cockatoo",
+        "type": "alias-of",
+        "alias": [],
+        "mother entity": [
+          "Jupyter"
+        ]
+      },
+      {
+        "name": "Solarmarker",
+        "type": "alias-of",
+        "alias": [],
+        "mother entity": [
+          "Jupyter"
+        ]
+      },
+      {
+        "name": "Polazert",
+        "type": "alias-of",
+        "alias": [],
+        "mother entity": [
+          "Jupyter"
+        ]
+      },
+      {
+        "name": "Chrome",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Edge",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Firefox",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PowerShell",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "digitally signed payloads",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "computer name",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "user's admin privileges",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "cookies",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Web data",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "browser password manager information",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "logins for crypto-wallets",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "remote access apps",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "VMware's Carbon Black managed detection and response (MDR) service",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Morphisec",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "BlackBerry",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "command and control (C2) communications",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": [
+          "Jupyter"
+        ]
+      },
+      {
+        "name": "dropper and loader for other malware",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": [
+          "Jupyter"
+        ]
+      },
+      {
+        "name": "hollowing shell code",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": [
+          "Jupyter"
+        ]
+      },
+      {
+        "name": "PowerShell scripts and commands",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": [
+          "Jupyter"
+        ]
+      },
+      {
+        "name": "Ethereum Wallet",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "MyMonero Wallet",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Atomic Wallet",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "OpenVPN",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Remote Desktop Protocol (RDP)",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "late October",
+        "type": "time",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "victim systems",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "regression testing",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Jupyter",
+        "rel": "targeting users of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Chrome",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "targeting users of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Edge",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "targeting users of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Firefox",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "can backdoor machines",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "machines",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvest",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "computer name",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvest",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "user's admin privileges",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvest",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "cookies",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvest",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "Web data",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvest",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "browser password manager information",
+        "special_factuality": []
+      },
+      {
+        "sub": "VMware's Carbon Black managed detection and response (MDR) service",
+        "rel": "observed",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Jupyter",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "leveraging",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "PowerShell command modifications",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "leveraging",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "digitally signed payloads",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "infecting",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "victim systems",
+        "special_factuality": []
+      },
+      {
+        "sub": "Morphisec",
+        "rel": "identified as capable of functioning as",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Jupyter",
+        "special_factuality": []
+      },
+      {
+        "sub": "BlackBerry",
+        "rel": "identified as capable of functioning as",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Jupyter",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "supports",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "command and control (C2) communications",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "acting as",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "dropper and loader for other malware",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "hollowing",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "hollowing shell code",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "executing",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "PowerShell scripts and commands",
+        "special_factuality": []
+      },
+      {
+        "sub": "BlackBerry",
+        "rel": "observing Jupyter targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Ethereum Wallet",
+        "special_factuality": []
+      },
+      {
+        "sub": "BlackBerry",
+        "rel": "observing Jupyter targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "MyMonero Wallet",
+        "special_factuality": []
+      },
+      {
+        "sub": "BlackBerry",
+        "rel": "observing Jupyter targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Atomic Wallet",
+        "special_factuality": []
+      },
+      {
+        "sub": "BlackBerry",
+        "rel": "observing Jupyter accessing",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "OpenVPN",
+        "special_factuality": []
+      },
+      {
+        "sub": "BlackBerry",
+        "rel": "observing Jupyter accessing",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Remote Desktop Protocol (RDP)",
+        "special_factuality": []
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "functioning as",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "full-fledged backdoor",
+        "special_factuality": []
+      }
+    ]
+  }
+}

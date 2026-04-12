@@ -1,0 +1,140 @@
+{
+  "sample_id": "ctinexus__critical-risk-in-google-workspace-delegation-feature.json",
+  "sample_index": 94,
+  "source": "ctinexus",
+  "file_name": "critical-risk-in-google-workspace-delegation-feature.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Unit 42",
+        "type": "Unknown"
+      },
+      {
+        "name": "Vulnerability",
+        "type": "Unknown"
+      },
+      {
+        "name": "Google Workspace",
+        "type": "Unknown"
+      },
+      {
+        "name": "Organization",
+        "type": "Unknown"
+      },
+      {
+        "name": "Google Workspace domain-wide delegation feature",
+        "type": "Unknown"
+      },
+      {
+        "name": "Exploit Target",
+        "type": "Unknown"
+      },
+      {
+        "name": "GCP identity",
+        "type": "Unknown"
+      },
+      {
+        "name": "Access Token",
+        "type": "Unknown"
+      },
+      {
+        "name": "a malicious insider",
+        "type": "Unknown"
+      },
+      {
+        "name": "an external attacker with stolen credentials",
+        "type": "Unknown"
+      },
+      {
+        "name": "access token",
+        "type": "Unknown"
+      },
+      {
+        "name": "Unauthorized Access",
+        "type": "Unknown"
+      },
+      {
+        "name": "Operations",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Unit 42",
+        "rel": "discovered",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Google Workspace",
+        "rel": "formerly known as",
+        "obj": "Organization"
+      },
+      {
+        "sub": "Google Workspace domain-wide delegation feature",
+        "rel": "allows",
+        "obj": "Exploit Target"
+      },
+      {
+        "sub": "GCP identity",
+        "rel": "with necessary permissions can generate",
+        "obj": "Access Token"
+      },
+      {
+        "sub": "a malicious insider",
+        "rel": "can use",
+        "obj": "Access Token"
+      },
+      {
+        "sub": "an external attacker with stolen credentials",
+        "rel": "can use",
+        "obj": "Access Token"
+      },
+      {
+        "sub": "access token",
+        "rel": "grants",
+        "obj": "Unauthorized Access"
+      },
+      {
+        "sub": "access token",
+        "rel": "grants permission to perform",
+        "obj": "Operations"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "enables",
+        "obj": "Access Token"
+      },
+      {
+        "sub": "Access Token",
+        "rel": "grants access to",
+        "obj": "Organization"
+      },
+      {
+        "sub": "Access Token",
+        "rel": "used to gain unauthorized access to",
+        "obj": "Exploit Target"
+      },
+      {
+        "sub": "access token",
+        "rel": "is the same as",
+        "obj": "Access Token"
+      }
+    ]
+  }
+}

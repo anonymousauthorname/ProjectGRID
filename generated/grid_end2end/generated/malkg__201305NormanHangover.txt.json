@@ -1,0 +1,306 @@
+{
+  "sample_id": "malkg__201305NormanHangover.txt",
+  "sample_index": 131,
+  "source": "malkg",
+  "file_name": "201305NormanHangover.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "a sophisticated cyberattack infrastructure",
+        "type": "infrastructure",
+        "alias": [
+          "this long-running, global command-and-control network",
+          "Operation Hangover",
+          "this network",
+          "the infrastructure"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "India",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "private threat actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "private syndicates of threat actors",
+          "individual actors",
+          "the attackers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Telenor",
+        "type": "identity",
+        "alias": [
+          "Norway’s telecommunications giant Telenor",
+          "the country’s telecommunications giant Telenor"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "criminal police case",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Spear phishing emails",
+        "type": "attack-pattern",
+        "alias": [
+          "spear phishing"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "IP addresses",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Norwegian newspaper",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Java, Word documents, and web browsers",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malicious code",
+        "type": "malware",
+        "alias": [
+          "malicious code",
+          "unseen malicious download"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "malicious websites",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "legitimate government, entertainment, security related, and commercial sites",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Norman Shark",
+        "type": "security-product",
+        "alias": [
+          "our partners"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "freelance programmers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "frameworks, modules, and subcomponents",
+        "type": "detailed-part-of-general-software",
+        "alias": [],
+        "mother entity": [
+          "a sophisticated cyberattack infrastructure"
+        ]
+      },
+      {
+        "name": "text-based identifiers",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "China",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "a sophisticated cyberattack infrastructure",
+        "rel": "appears to originate from",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "India"
+      },
+      {
+        "sub": "private threat actors",
+        "rel": "conducted",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a sophisticated cyberattack infrastructure"
+      },
+      {
+        "sub": "private threat actors",
+        "rel": "used for surveillance against targets of national security interest",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "targets of national security interest"
+      },
+      {
+        "sub": "private threat actors",
+        "rel": "used for industrial espionage against",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Telenor"
+      },
+      {
+        "sub": "Telenor",
+        "rel": "filed a criminal police case for an unlawful computer intrusion",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "criminal police case"
+      },
+      {
+        "sub": "Spear phishing emails",
+        "rel": "appeared to be the source of the infection",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "a sophisticated cyberattack infrastructure"
+      },
+      {
+        "sub": "security analysts at Norman Shark",
+        "rel": "uncovered a previously unknown and sophisticated infrastructure",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "a sophisticated cyberattack infrastructure"
+      },
+      {
+        "sub": "private threat actors",
+        "rel": "relied exclusively upon well-known... vulnerabilities in",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Java, Word documents, and web browsers"
+      },
+      {
+        "sub": "documents",
+        "rel": "infected with",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "malicious code"
+      },
+      {
+        "sub": "malicious websites",
+        "rel": "presented with names deliberately similar to",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "legitimate government, entertainment, security related, and commercial sites"
+      },
+      {
+        "sub": "malicious websites",
+        "rel": "leads-to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "unseen malicious download"
+      },
+      {
+        "sub": "private threat actors",
+        "rel": "developed over many months or years by numerous developers",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "a sophisticated cyberattack infrastructure"
+      },
+      {
+        "sub": "private threat actors",
+        "rel": "outsourced components to",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "freelance programmers"
+      },
+      {
+        "sub": "freelance programmers",
+        "rel": "built components for",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "frameworks, modules, and subcomponents"
+      },
+      {
+        "sub": "private threat actors",
+        "rel": "attributed to originating exclusively in",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "India"
+      },
+      {
+        "sub": "private threat actors",
+        "rel": "no direct evidence of state-sponsorship by the Indian government",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "India",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "IP addresses",
+        "rel": "targeted victims in over a dozen countries",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "over a dozen countries"
+      },
+      {
+        "sub": "malicious code",
+        "rel": "contained within the malicious code itself",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "text-based identifiers"
+      },
+      {
+        "sub": "Norman Shark",
+        "rel": "in conjunction with",
+        "rel_type": [
+          "cooperates-with"
+        ],
+        "obj": "our partners"
+      }
+    ]
+  }
+}

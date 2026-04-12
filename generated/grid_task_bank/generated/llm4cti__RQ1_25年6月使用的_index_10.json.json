@@ -1,0 +1,386 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_10.json",
+  "sample_index": 202,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_10.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2022-22965",
+        "type": "vulnerability",
+        "alias": [
+          "Spring4Shell",
+          "SpringShell"
+        ]
+      },
+      {
+        "name": "CVE-2022-22963",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Spring Framework",
+        "type": "general-software"
+      },
+      {
+        "name": "Tomcat",
+        "type": "general-software"
+      },
+      {
+        "name": "JDK version 9+",
+        "type": "general-software"
+      },
+      {
+        "name": "Java 9 Platform Module System",
+        "type": "general-software"
+      },
+      {
+        "name": "Spring Cloud Function",
+        "type": "general-software"
+      },
+      {
+        "name": "Spring Cloud Function 3.1.6",
+        "type": "general-software"
+      },
+      {
+        "name": "Spring Cloud Function 3.2.2",
+        "type": "general-software"
+      },
+      {
+        "name": "HTTP request",
+        "type": "network-traffic"
+      },
+      {
+        "name": "getCachedIntrospectionResults method",
+        "type": "detailed-part-of-general-software"
+      },
+      {
+        "name": "SpEL",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "JSP web shell",
+        "type": "file"
+      },
+      {
+        "name": "WAR file",
+        "type": "file"
+      },
+      {
+        "name": "7e46801dd171bb5bf1771df1239d760c",
+        "type": "indicator",
+        "alias": [
+          "shell.jsp"
+        ]
+      },
+      {
+        "name": "3de4e174c2c8612aebb3adef10027679",
+        "type": "indicator",
+        "alias": [
+          "exploit.py"
+        ]
+      },
+      {
+        "name": "Advanced Exploit Prevention",
+        "type": "security-product"
+      },
+      {
+        "name": "Network Attack Blocker",
+        "type": "security-product"
+      },
+      {
+        "name": "Kaspersky EDR Expert",
+        "type": "security-product"
+      },
+      {
+        "name": "Spring blog",
+        "type": "course-of-action"
+      },
+      {
+        "name": "VMware website",
+        "type": "course-of-action"
+      },
+      {
+        "name": "Log4Shell",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "is a vulnerability in",
+        "rel_type": [
+          "vulnerability"
+        ],
+        "obj": "Spring Framework"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can execute arbitrary code on",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "a remote web server"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "was named",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Spring4Shell"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "is a vulnerability in",
+        "rel_type": [
+          "vulnerability"
+        ],
+        "obj": "the Spring Framework"
+      },
+      {
+        "sub": "The bug",
+        "rel": "exists in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "the getCachedIntrospectionResults method"
+      },
+      {
+        "sub": "the getCachedIntrospectionResults method",
+        "rel": "can be used to gain unauthorized access to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "such objects"
+      },
+      {
+        "sub": "the getCachedIntrospectionResults method",
+        "rel": "by passing their class names via",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "an HTTP request"
+      },
+      {
+        "sub": "It",
+        "rel": "creates the risks of",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "data leakage and remote code execution"
+      },
+      {
+        "sub": "This vulnerability",
+        "rel": "is similar to",
+        "rel_type": [
+          "compares-to"
+        ],
+        "obj": "CVE-2010-1622"
+      },
+      {
+        "sub": "in a newer version of JDK",
+        "rel": "an alternative method exists for",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "such exploitation"
+      },
+      {
+        "sub": "through Java 9 Platform Module System functionality",
+        "rel": "for such exploitation",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "exploitation"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can overwrite",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the Tomcat logging configuration"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "can then upload",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "a JSP web shell"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "to execute arbitrary commands on",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "a server running a vulnerable version of the framework"
+      },
+      {
+        "sub": "A vulnerable configuration consists of",
+        "rel": "consists-of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "JDK version 9+"
+      },
+      {
+        "sub": "A vulnerable configuration consists of",
+        "rel": "consists-of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Apache Tomcat"
+      },
+      {
+        "sub": "A vulnerable configuration consists of",
+        "rel": "consists-of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Spring Framework versions 5.3.0 to 5.3.17 and 5.2.0 to 5.2.19 and below"
+      },
+      {
+        "sub": "A vulnerable configuration consists of",
+        "rel": "consists-of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "application built as a WAR file"
+      },
+      {
+        "sub": "CVE-2022-22963",
+        "rel": "is a vulnerability in",
+        "rel_type": [
+          "vulnerability"
+        ],
+        "obj": "the routing functionality of Spring Cloud Function"
+      },
+      {
+        "sub": "CVE-2022-22963",
+        "rel": "allows code injection through",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Spring Expression Language (SpEL)"
+      },
+      {
+        "sub": "SpEL",
+        "rel": "is a special expression language created for",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Spring Framework"
+      },
+      {
+        "sub": "This vulnerability",
+        "rel": "can also be used for",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "A vulnerable configuration consists of",
+        "rel": "consists-of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Spring Cloud Function 3.1.6, 3.2.2 and older versions"
+      },
+      {
+        "sub": "CVE-2022-22965",
+        "rel": "is fixed in",
+        "rel_type": [
+          "fixes"
+        ],
+        "obj": "2.6.6"
+      },
+      {
+        "sub": "To fix CVE-2022-22963",
+        "rel": "you also need to install",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the new Spring Cloud Function versions"
+      },
+      {
+        "sub": "To detect exploitation attempts",
+        "rel": "ensure that",
+        "rel_type": [
+          "controls"
+        ],
+        "obj": "Advanced Exploit Prevention features are enabled"
+      },
+      {
+        "sub": "To detect exploitation attempts",
+        "rel": "ensure that",
+        "rel_type": [
+          "controls"
+        ],
+        "obj": "Network Attack Blocker features are enabled"
+      },
+      {
+        "sub": "7e46801dd171bb5bf1771df1239d760c",
+        "rel": "is a hash of",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "shell.jsp"
+      },
+      {
+        "sub": "3de4e174c2c8612aebb3adef10027679",
+        "rel": "is a hash of",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "exploit.py"
+      },
+      {
+        "sub": "Kaspersky EDR Expert",
+        "rel": "can detect",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "the exploitation process"
+      },
+      {
+        "sub": "By analogy with",
+        "rel": "with",
+        "rel_type": [
+          "analogy"
+        ],
+        "obj": "the infamous Log4Shell threat"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "can execute arbitrary code on",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "a remote web server"
+      }
+    ]
+  }
+}

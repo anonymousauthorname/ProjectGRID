@@ -1,0 +1,202 @@
+{
+  "sample_id": "casie__2056.json",
+  "sample_index": 23,
+  "source": "casie",
+  "file_name": "2056.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "National Social Assistance Programme (NSAP)",
+        "type": "Entity"
+      },
+      {
+        "name": "National Rural Employment Guarantee Scheme (NREGA)",
+        "type": "Entity"
+      },
+      {
+        "name": "Govt. of Andhra Pradesh's Chandranna Bima Scheme",
+        "type": "Entity"
+      },
+      {
+        "name": "Govt. of Andhra Pradesh's Daily Online Payment Reports of NREGA",
+        "type": "Entity"
+      },
+      {
+        "name": "Aadhaar",
+        "type": "Entity"
+      },
+      {
+        "name": "Aadhaar national ID systems",
+        "type": "Entity"
+      },
+      {
+        "name": "Aadhaar 12-digit ID",
+        "type": "Entity"
+      },
+      {
+        "name": "names",
+        "type": "Entity"
+      },
+      {
+        "name": "addresses",
+        "type": "Entity"
+      },
+      {
+        "name": "phone numbers",
+        "type": "Entity"
+      },
+      {
+        "name": "financial fraud",
+        "type": "Entity"
+      },
+      {
+        "name": "government programs",
+        "type": "Entity"
+      },
+      {
+        "name": "improperly configured systems",
+        "type": "Entity"
+      },
+      {
+        "name": "leak of 135 million details",
+        "type": "Entity"
+      },
+      {
+        "name": "biometrics",
+        "type": "Entity"
+      },
+      {
+        "name": "Indian government",
+        "type": "Entity"
+      },
+      {
+        "name": "ministries",
+        "type": "Entity"
+      },
+      {
+        "name": "Aadhaar database",
+        "type": "Entity"
+      },
+      {
+        "name": "fraudster",
+        "type": "Entity"
+      },
+      {
+        "name": "comprehensive profiles",
+        "type": "Entity"
+      },
+      {
+        "name": "security policies",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "leak of 135 million details",
+        "rel": "exposes",
+        "obj": "Aadhaar national ID systems"
+      },
+      {
+        "sub": "government agencies that handle Aadhar data",
+        "rel": "caused",
+        "obj": "leak of 135 million details"
+      },
+      {
+        "sub": "National Social Assistance Programme (NSAP)",
+        "rel": "is responsible for",
+        "obj": "leak of 135 million details"
+      },
+      {
+        "sub": "National Rural Employment Guarantee Scheme (NREGA)",
+        "rel": "is responsible for",
+        "obj": "leak of 135 million details"
+      },
+      {
+        "sub": "Govt. of Andhra Pradesh's Chandranna Bima Scheme",
+        "rel": "is responsible for",
+        "obj": "leak of 135 million details"
+      },
+      {
+        "sub": "Govt. of Andhra Pradesh's Daily Online Payment Reports of NREGA",
+        "rel": "is responsible for",
+        "obj": "leak of 135 million details"
+      },
+      {
+        "sub": "improperly configured systems",
+        "rel": "exposed",
+        "obj": "details of program participants"
+      },
+      {
+        "sub": "details of program participants",
+        "rel": "include",
+        "obj": "names"
+      },
+      {
+        "sub": "details of program participants",
+        "rel": "include",
+        "obj": "addresses"
+      },
+      {
+        "sub": "details of program participants",
+        "rel": "include",
+        "obj": "phone numbers"
+      },
+      {
+        "sub": "fraudster",
+        "rel": "ties",
+        "obj": "names, addresses, phone numbers to Aadhaar 12-digit ID"
+      },
+      {
+        "sub": "fraudster",
+        "rel": "builds",
+        "obj": "comprehensive profiles"
+      },
+      {
+        "sub": "fraudster",
+        "rel": "can recreate",
+        "obj": "Aadhaar database"
+      },
+      {
+        "sub": "Indian government",
+        "rel": "admitted",
+        "obj": "leak of Aadhaar database through ministries"
+      },
+      {
+        "sub": "Indian government",
+        "rel": "started investigations into",
+        "obj": "leak of Aadhaar database"
+      },
+      {
+        "sub": "Indian government",
+        "rel": "is preparing changes to",
+        "obj": "Aadhaar security policies"
+      },
+      {
+        "sub": "leak of 135 million details",
+        "rel": "leads to",
+        "obj": "financial fraud"
+      },
+      {
+        "sub": "future government program data leaks",
+        "rel": "will include",
+        "obj": "biometrics"
+      }
+    ]
+  }
+}

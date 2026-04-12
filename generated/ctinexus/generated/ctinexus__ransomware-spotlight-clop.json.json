@@ -1,0 +1,203 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-clop.json",
+  "sample_index": 97,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-clop.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Clop operators",
+        "type": "Unknown"
+      },
+      {
+        "name": "SolarWinds Serv-U vulnerability",
+        "type": "Unknown"
+      },
+      {
+        "name": "CVE-2021-35211",
+        "type": "Unknown"
+      },
+      {
+        "name": "remote code execution on the vulnerable server with elevated privileges",
+        "type": "Unknown"
+      },
+      {
+        "name": "corporate networks",
+        "type": "Unknown"
+      },
+      {
+        "name": "Clop ransomware as a payload",
+        "type": "Unknown"
+      },
+      {
+        "name": "Clop",
+        "type": "Unknown"
+      },
+      {
+        "name": "a maritime services giant with headquarters in Singapore",
+        "type": "Unknown"
+      },
+      {
+        "name": "classified proprietary commercial information",
+        "type": "Unknown"
+      },
+      {
+        "name": "employee data",
+        "type": "Unknown"
+      },
+      {
+        "name": "bank account details",
+        "type": "Unknown"
+      },
+      {
+        "name": "payroll information",
+        "type": "Unknown"
+      },
+      {
+        "name": "passports",
+        "type": "Unknown"
+      },
+      {
+        "name": "email addresses",
+        "type": "Unknown"
+      },
+      {
+        "name": "internal correspondence",
+        "type": "Unknown"
+      },
+      {
+        "name": "DEV-0950",
+        "type": "Unknown"
+      },
+      {
+        "name": "FIN11",
+        "type": "Unknown"
+      },
+      {
+        "name": "October 2022",
+        "type": "Unknown"
+      },
+      {
+        "name": "Microsoft Security",
+        "type": "Unknown"
+      },
+      {
+        "name": "victims of the Raspberry Robin worm",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Clop operators",
+        "rel": "exploited",
+        "obj": "SolarWinds Serv-U vulnerability"
+      },
+      {
+        "sub": "SolarWinds Serv-U vulnerability",
+        "rel": "is tracked as",
+        "obj": "CVE-2021-35211"
+      },
+      {
+        "sub": "CVE-2021-35211",
+        "rel": "allowed",
+        "obj": "remote code execution on the vulnerable server with elevated privileges"
+      },
+      {
+        "sub": "Clop operators",
+        "rel": "breached",
+        "obj": "corporate networks"
+      },
+      {
+        "sub": "Clop operators",
+        "rel": "delivered",
+        "obj": "Clop ransomware as a payload"
+      },
+      {
+        "sub": "Clop",
+        "rel": "breached",
+        "obj": "a maritime services giant with headquarters in Singapore"
+      },
+      {
+        "sub": "Clop",
+        "rel": "stole",
+        "obj": "classified proprietary commercial information"
+      },
+      {
+        "sub": "Clop",
+        "rel": "stole",
+        "obj": "employee data"
+      },
+      {
+        "sub": "employee data",
+        "rel": "included",
+        "obj": "bank account details"
+      },
+      {
+        "sub": "employee data",
+        "rel": "included",
+        "obj": "payroll information"
+      },
+      {
+        "sub": "employee data",
+        "rel": "included",
+        "obj": "passports"
+      },
+      {
+        "sub": "employee data",
+        "rel": "included",
+        "obj": "email addresses"
+      },
+      {
+        "sub": "employee data",
+        "rel": "included",
+        "obj": "internal correspondence"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "distributed",
+        "obj": "Clop"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "appears associated with",
+        "obj": "FIN11"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "distributed Clop in",
+        "obj": "October 2022"
+      },
+      {
+        "sub": "DEV-0950",
+        "rel": "reported by",
+        "obj": "Microsoft Security"
+      },
+      {
+        "sub": "Clop",
+        "rel": "targeted",
+        "obj": "victims of the Raspberry Robin worm"
+      },
+      {
+        "sub": "Clop operators",
+        "rel": "exploited to access",
+        "obj": "employee data"
+      }
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "sample_id": "ctinexus__midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams.json",
+  "sample_index": 60,
+  "source": "ctinexus",
+  "file_name": "midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Midnight Blizzard",
+        "type": "Unknown"
+      },
+      {
+        "name": "highly targeted social engineering attacks",
+        "type": "Unknown"
+      },
+      {
+        "name": "credential theft phishing lures",
+        "type": "Unknown"
+      },
+      {
+        "name": "Microsoft Teams chats",
+        "type": "Unknown"
+      },
+      {
+        "name": "NOBELIUM",
+        "type": "Unknown"
+      },
+      {
+        "name": "owned by small businesses",
+        "type": "Unknown"
+      },
+      {
+        "name": "new domains",
+        "type": "Unknown"
+      },
+      {
+        "name": "technical support entities",
+        "type": "Unknown"
+      },
+      {
+        "name": "Teams messages",
+        "type": "Unknown"
+      },
+      {
+        "name": "lures that attempt to steal credentials",
+        "type": "Unknown"
+      },
+      {
+        "name": "organization",
+        "type": "Unknown"
+      },
+      {
+        "name": "approval of multifactor authentication (MFA) prompts",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "conducts",
+        "obj": "highly targeted social engineering attacks"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "leverages",
+        "obj": "credential theft phishing lures"
+      },
+      {
+        "sub": "credential theft phishing lures",
+        "rel": "sent as",
+        "obj": "Microsoft Teams chats"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "previously tracked as",
+        "obj": "NOBELIUM"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "uses previously compromised Microsoft 365 tenants",
+        "obj": "owned by small businesses"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "creates",
+        "obj": "new domains"
+      },
+      {
+        "sub": "new domains",
+        "rel": "appear as",
+        "obj": "technical support entities"
+      },
+      {
+        "sub": "Midnight Blizzard",
+        "rel": "leverages",
+        "obj": "Teams messages"
+      },
+      {
+        "sub": "Teams messages",
+        "rel": "used to deliver",
+        "obj": "lures that attempt to steal credentials"
+      },
+      {
+        "sub": "lures that attempt to steal credentials",
+        "rel": "target",
+        "obj": "organization"
+      },
+      {
+        "sub": "lures that attempt to steal credentials",
+        "rel": "elicit",
+        "obj": "approval of multifactor authentication (MFA) prompts"
+      }
+    ]
+  }
+}

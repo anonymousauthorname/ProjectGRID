@@ -1,0 +1,270 @@
+{
+  "sample_id": "casie__1103.json",
+  "sample_index": 38,
+  "source": "casie",
+  "file_name": "1103.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "WhatsApp Web",
+        "type": "Entity"
+      },
+      {
+        "name": "Telegram Web",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious code",
+        "type": "Entity"
+      },
+      {
+        "name": "innocent looking image",
+        "type": "Entity"
+      },
+      {
+        "name": "click",
+        "type": "Entity"
+      },
+      {
+        "name": "full access",
+        "type": "Entity"
+      },
+      {
+        "name": "user accounts",
+        "type": "Entity"
+      },
+      {
+        "name": "personal and group conversations",
+        "type": "Entity"
+      },
+      {
+        "name": "photos",
+        "type": "Entity"
+      },
+      {
+        "name": "videos",
+        "type": "Entity"
+      },
+      {
+        "name": "shared files",
+        "type": "Entity"
+      },
+      {
+        "name": "contact lists",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious file",
+        "type": "Entity"
+      },
+      {
+        "name": "widespread attack",
+        "type": "Entity"
+      },
+      {
+        "name": "March 8, 2017",
+        "type": "Entity"
+      },
+      {
+        "name": "end-to-end message encryption",
+        "type": "Entity"
+      },
+      {
+        "name": "sender side encryption",
+        "type": "Entity"
+      },
+      {
+        "name": "content validation",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious files blocked",
+        "type": "Entity"
+      },
+      {
+        "name": "web clients",
+        "type": "Entity"
+      },
+      {
+        "name": "browser restart",
+        "type": "Entity"
+      },
+      {
+        "name": "mobile app",
+        "type": "Entity"
+      },
+      {
+        "name": "message synchronization",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "malicious code",
+        "rel": "is hidden within",
+        "obj": "innocent looking image"
+      },
+      {
+        "sub": "innocent looking image",
+        "rel": "is clicked by",
+        "obj": "user"
+      },
+      {
+        "sub": "user",
+        "rel": "executes",
+        "obj": "malicious code"
+      },
+      {
+        "sub": "malicious code",
+        "rel": "grants",
+        "obj": "full access"
+      },
+      {
+        "sub": "full access",
+        "rel": "enables access to",
+        "obj": "personal and group conversations"
+      },
+      {
+        "sub": "full access",
+        "rel": "enables access to",
+        "obj": "photos"
+      },
+      {
+        "sub": "full access",
+        "rel": "enables access to",
+        "obj": "videos"
+      },
+      {
+        "sub": "full access",
+        "rel": "enables access to",
+        "obj": "shared files"
+      },
+      {
+        "sub": "full access",
+        "rel": "enables access to",
+        "obj": "contact lists"
+      },
+      {
+        "sub": "attacker",
+        "rel": "sends",
+        "obj": "malicious file"
+      },
+      {
+        "sub": "malicious file",
+        "rel": "is sent to",
+        "obj": "all victim’s contacts"
+      },
+      {
+        "sub": "malicious file",
+        "rel": "enables",
+        "obj": "widespread attack"
+      },
+      {
+        "sub": "Check Point",
+        "rel": "disclosed",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "is exploited by",
+        "obj": "attacker"
+      },
+      {
+        "sub": "WhatsApp Web",
+        "rel": "is affected by",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "Telegram Web",
+        "rel": "is affected by",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "acknowledged",
+        "obj": "security issue"
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "developed fixes for",
+        "obj": "worldwide web clients"
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "deployed mitigation",
+        "obj": "against exploitation of vulnerability"
+      },
+      {
+        "sub": "WhatsApp Web users",
+        "rel": "are advised to",
+        "obj": "restart their browser"
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "use",
+        "obj": "end-to-end message encryption"
+      },
+      {
+        "sub": "end-to-end message encryption",
+        "rel": "is applied on",
+        "obj": "sender side"
+      },
+      {
+        "sub": "sender side encryption",
+        "rel": "causes",
+        "obj": "blindness to content"
+      },
+      {
+        "sub": "WhatsApp and Telegram",
+        "rel": "were unable to prevent",
+        "obj": "malicious content from being sent"
+      },
+      {
+        "sub": "after fixing vulnerability",
+        "rel": "enables",
+        "obj": "content validation"
+      },
+      {
+        "sub": "content validation",
+        "rel": "allows",
+        "obj": "malicious files to be blocked"
+      },
+      {
+        "sub": "WhatsApp Web",
+        "rel": "mirrors",
+        "obj": "messages sent and received by user on mobile app"
+      },
+      {
+        "sub": "Telegram Web",
+        "rel": "mirrors",
+        "obj": "messages sent and received by user on mobile app"
+      },
+      {
+        "sub": "WhatsApp Web",
+        "rel": "is fully synced with",
+        "obj": "users’ devices"
+      },
+      {
+        "sub": "Telegram Web",
+        "rel": "is fully synced with",
+        "obj": "users’ devices"
+      }
+    ]
+  }
+}

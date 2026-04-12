@@ -1,0 +1,495 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_18.json",
+  "sample_index": 210,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_18.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TSPYSPCESEND.A",
+        "type": "Entity"
+      },
+      {
+        "name": "FAKEAV",
+        "type": "Entity"
+      },
+      {
+        "name": "FakeHDD",
+        "type": "Entity"
+      },
+      {
+        "name": "sendspace.com",
+        "type": "Entity"
+      },
+      {
+        "name": "BLOCKED28889.ru",
+        "type": "Entity"
+      },
+      {
+        "name": "BLOCKED8483825.ru",
+        "type": "Entity"
+      },
+      {
+        "name": "BLOCKED372721.ru",
+        "type": "Entity"
+      },
+      {
+        "name": "31.184.237.143",
+        "type": "Entity"
+      },
+      {
+        "name": "31.184.237.142",
+        "type": "Entity"
+      },
+      {
+        "name": "BFBot (Palevo)",
+        "type": "Entity"
+      },
+      {
+        "name": "NgrBot",
+        "type": "Entity"
+      },
+      {
+        "name": "IRCBot",
+        "type": "Entity"
+      },
+      {
+        "name": "log.txt",
+        "type": "Entity"
+      },
+      {
+        "name": "serialse.txt",
+        "type": "Entity"
+      },
+      {
+        "name": "JSON",
+        "type": "Entity"
+      },
+      {
+        "name": "18,644",
+        "type": "Entity"
+      },
+      {
+        "name": "21,929",
+        "type": "Entity"
+      },
+      {
+        "name": "19,695",
+        "type": "Entity"
+      },
+      {
+        "name": "United States",
+        "type": "Entity"
+      },
+      {
+        "name": "United Kingdom",
+        "type": "Entity"
+      },
+      {
+        "name": "India",
+        "type": "Entity"
+      },
+      {
+        "name": "Canada",
+        "type": "Entity"
+      },
+      {
+        "name": "Australia",
+        "type": "Entity"
+      },
+      {
+        "name": "Spain",
+        "type": "Entity"
+      },
+      {
+        "name": "China",
+        "type": "Entity"
+      },
+      {
+        "name": "Mexico",
+        "type": "Entity"
+      },
+      {
+        "name": "Turkey",
+        "type": "Entity"
+      },
+      {
+        "name": "Colombia",
+        "type": "Entity"
+      },
+      {
+        "name": "Germany",
+        "type": "Entity"
+      },
+      {
+        "name": "United Arab Emirates",
+        "type": "Entity"
+      },
+      {
+        "name": "South Africa",
+        "type": "Entity"
+      },
+      {
+        "name": "France",
+        "type": "Entity"
+      },
+      {
+        "name": "Netherlands",
+        "type": "Entity"
+      },
+      {
+        "name": "sendspaceTrojan",
+        "type": "Entity"
+      },
+      {
+        "name": "Trend Micro",
+        "type": "Entity"
+      },
+      {
+        "name": "sendspace",
+        "type": "Entity"
+      },
+      {
+        "name": "75,000",
+        "type": "Entity"
+      },
+      {
+        "name": "December 25, 2011",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "Fedex",
+        "type": "Entity"
+      },
+      {
+        "name": "email disguised as a shipment notification",
+        "type": "Entity"
+      },
+      {
+        "name": "downloader Trojan",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious executables",
+        "type": "Entity"
+      },
+      {
+        "name": "compromised, legitimate websites",
+        "type": "Entity"
+      },
+      {
+        "name": "PayPerSell (PPS) underground business",
+        "type": "Entity"
+      },
+      {
+        "name": "Command and Control (CC) server",
+        "type": "Entity"
+      },
+      {
+        "name": "registry keys",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled tasks",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanisms",
+        "type": "Entity"
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "Entity"
+      },
+      {
+        "name": "exploits",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE numbers",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "email disguised as a shipment notification",
+        "rel": "contains",
+        "obj": "downloader Trojan"
+      },
+      {
+        "sub": "downloader Trojan",
+        "rel": "installs",
+        "obj": "TSPYSPCESEND.A"
+      },
+      {
+        "sub": "downloader Trojan",
+        "rel": "installs",
+        "obj": "FAKEAV"
+      },
+      {
+        "sub": "downloader Trojan",
+        "rel": "installs",
+        "obj": "FakeHDD"
+      },
+      {
+        "sub": "FAKEAV",
+        "rel": "originates from",
+        "obj": "BestAV affiliate network"
+      },
+      {
+        "sub": "FakeHDD",
+        "rel": "originates from",
+        "obj": "Yamba network"
+      },
+      {
+        "sub": "malicious executables",
+        "rel": "are downloaded from",
+        "obj": "compromised, legitimate websites"
+      },
+      {
+        "sub": "downloader Trojan",
+        "rel": "shares CC with",
+        "obj": "TSPYSPCESEND.A"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "uploads",
+        "obj": ".ZIP archive"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "uploads to",
+        "obj": "sendspace.com"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "sends to",
+        "obj": "Command and Control (CC) server"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "sends",
+        "obj": "sendspace download link"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "sends",
+        "obj": "unique ID"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "sends",
+        "obj": "password for .ZIP archive"
+      },
+      {
+        "sub": "TSPYSPCESEND.A",
+        "rel": "sends",
+        "obj": "victims IP address"
+      },
+      {
+        "sub": "Command and Control (CC) server",
+        "rel": "uses",
+        "obj": "BLOCKED28889.ru"
+      },
+      {
+        "sub": "Command and Control (CC) server",
+        "rel": "uses",
+        "obj": "BLOCKED8483825.ru"
+      },
+      {
+        "sub": "Command and Control (CC) server",
+        "rel": "uses",
+        "obj": "BLOCKED372721.ru"
+      },
+      {
+        "sub": "BLOCKED28889.ru",
+        "rel": "points to",
+        "obj": "31.184.237.143"
+      },
+      {
+        "sub": "BLOCKED8483825.ru",
+        "rel": "points to",
+        "obj": "31.184.237.142"
+      },
+      {
+        "sub": "31.184.237.143",
+        "rel": "has hosted",
+        "obj": "malicious files since July 2011"
+      },
+      {
+        "sub": "31.184.237.142",
+        "rel": "has hosted",
+        "obj": "malicious files since July 2011"
+      },
+      {
+        "sub": "Command and Control (CC) server",
+        "rel": "contains",
+        "obj": "log.txt"
+      },
+      {
+        "sub": "Command and Control (CC) server",
+        "rel": "contains",
+        "obj": "serialse.txt"
+      },
+      {
+        "sub": "serialse.txt",
+        "rel": "is formatted for",
+        "obj": "automated, programmatic parsing"
+      },
+      {
+        "sub": "serialse.txt",
+        "rel": "is in",
+        "obj": "JSON format"
+      },
+      {
+        "sub": "log.txt",
+        "rel": "contains",
+        "obj": "18,644 unique victims"
+      },
+      {
+        "sub": "log.txt",
+        "rel": "contains",
+        "obj": "21,929 unique IP addresses"
+      },
+      {
+        "sub": "log.txt",
+        "rel": "contains",
+        "obj": "19,695 unique sendspace URLs"
+      },
+      {
+        "sub": "United States",
+        "rel": "has",
+        "obj": "13,939 victims"
+      },
+      {
+        "sub": "United Kingdom",
+        "rel": "has",
+        "obj": "1,877 victims"
+      },
+      {
+        "sub": "India",
+        "rel": "has",
+        "obj": "669 victims"
+      },
+      {
+        "sub": "Canada",
+        "rel": "has",
+        "obj": "619 victims"
+      },
+      {
+        "sub": "Australia",
+        "rel": "has",
+        "obj": "568 victims"
+      },
+      {
+        "sub": "Spain",
+        "rel": "has",
+        "obj": "391 victims"
+      },
+      {
+        "sub": "China",
+        "rel": "has",
+        "obj": "304 victims"
+      },
+      {
+        "sub": "Mexico",
+        "rel": "has",
+        "obj": "292 victims"
+      },
+      {
+        "sub": "Turkey",
+        "rel": "has",
+        "obj": "206 victims"
+      },
+      {
+        "sub": "Colombia",
+        "rel": "has",
+        "obj": "189 victims"
+      },
+      {
+        "sub": "Germany",
+        "rel": "has",
+        "obj": "178 victims"
+      },
+      {
+        "sub": "United Arab Emirates",
+        "rel": "has",
+        "obj": "139 victims"
+      },
+      {
+        "sub": "South Africa",
+        "rel": "has",
+        "obj": "134 victims"
+      },
+      {
+        "sub": "France",
+        "rel": "has",
+        "obj": "121 victims"
+      },
+      {
+        "sub": "Netherlands",
+        "rel": "has",
+        "obj": "120 victims"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "assisted",
+        "obj": "sendspace"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "removed",
+        "obj": "75,000 uploaded malicious archives"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "discovered",
+        "obj": "first archive uploaded on December 25, 2011"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "currently monitors",
+        "obj": "servers via automated job"
+      },
+      {
+        "sub": "sendspace",
+        "rel": "blocks",
+        "obj": "archives uploaded by sendspaceTrojan"
+      },
+      {
+        "sub": "sendspaceTrojan",
+        "rel": "uploads",
+        "obj": "malicious archives"
+      },
+      {
+        "sub": "Trend Micro",
+        "rel": "is willing to assist",
+        "obj": "in making Internet safer"
+      }
+    ]
+  }
+}

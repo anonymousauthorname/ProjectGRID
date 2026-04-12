@@ -1,0 +1,338 @@
+{
+  "sample_id": "malkg__201306Rapid7KeyBoy.txt",
+  "sample_index": 137,
+  "source": "malkg",
+  "file_name": "201306Rapid7KeyBoy.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "KeyBoy",
+        "type": "Malware"
+      },
+      {
+        "name": "THAM luan- GD- NCKH2.doc",
+        "type": "Indicator"
+      },
+      {
+        "name": "iafbsnl.doc",
+        "type": "Indicator"
+      },
+      {
+        "name": "svchost.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "CREDRIVER.dll",
+        "type": "Indicator"
+      },
+      {
+        "name": "silence.phdns01.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "cpnet.phmail.us",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "imlang.phmail.org",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "cresy.zyns.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "preter.epac.to",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "backto.ddns.name",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "vtt.phdns01.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "MS12-060",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Mozilla Firefox",
+        "type": "Software"
+      },
+      {
+        "name": "Internet Explorer",
+        "type": "Software"
+      },
+      {
+        "name": "Google Chrome",
+        "type": "Software"
+      },
+      {
+        "name": "Hurricane Electric, Inc.",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Hanaro Telecom Inc.",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "VNPT Corp",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Nguyen Anh Tuan",
+        "type": "Person"
+      },
+      {
+        "name": "Amir Kumar Gupta",
+        "type": "Person"
+      },
+      {
+        "name": "MdAdum",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "Snort",
+        "type": "Tool"
+      },
+      {
+        "name": "Windows XP",
+        "type": "Software"
+      },
+      {
+        "name": "VBoxService.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "explorer.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "vmware-usbarbitrator.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "wuauclt.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "cmd.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "tasklist.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "wmiprvse.exe",
+        "type": "Indicator"
+      },
+      {
+        "name": "Rapid7 Labs",
+        "type": "Organization"
+      },
+      {
+        "name": "Claudio Guarnieri",
+        "type": "Person"
+      },
+      {
+        "name": "Mark Schloesser",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "KeyBoy",
+        "rel": "EXPLOITS",
+        "obj": "THAM luan- GD- NCKH2.doc"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "EXPLOITS",
+        "obj": "iafbsnl.doc"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "CREATES",
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "DEPLOYES",
+        "obj": "CREDRIVER.dll"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "CONTACTS",
+        "obj": "silence.phdns01.com"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "CONTACTS",
+        "obj": "cpnet.phmail.us"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "CONTACTS",
+        "obj": "imlang.phmail.org"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "CONTACTS",
+        "obj": "cresy.zyns.com"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "CONTACTS",
+        "obj": "preter.epac.to"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "CONTACTS",
+        "obj": "backto.ddns.name"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "LEVERAGES",
+        "obj": "MS12-060"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "LEVERAGES",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "steals credentials from",
+        "obj": "Mozilla Firefox"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "steals credentials from",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "installed keylogger on",
+        "obj": "Google Chrome"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "creates windows service",
+        "obj": "MdAdum"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "TARGETS",
+        "obj": "Nguyen Anh Tuan"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "TARGETS",
+        "obj": "Amir Kumar Gupta"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "uses domain registered by",
+        "obj": "Hurricane Electric, Inc."
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "uses domain registered by",
+        "obj": "Hanaro Telecom Inc."
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "uses domain registered by",
+        "obj": "VNPT Corp"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "USES",
+        "obj": "CREDRIVER.dll"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "CREATES",
+        "obj": "MdAdum"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "USES",
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "USES",
+        "obj": "explorer.exe"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "USES",
+        "obj": "vmware-usbarbitrator.exe"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "USES",
+        "obj": "wuauclt.exe"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "USES",
+        "obj": "cmd.exe"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "USES",
+        "obj": "tasklist.exe"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "USES",
+        "obj": "wmiprvse.exe"
+      },
+      {
+        "sub": "KeyBoy",
+        "rel": "detected by",
+        "obj": "Snort"
+      },
+      {
+        "sub": "Rapid7 Labs",
+        "rel": "RESEARCHED",
+        "obj": "KeyBoy"
+      },
+      {
+        "sub": "Claudio Guarnieri",
+        "rel": "RESEARCHED",
+        "obj": "KeyBoy"
+      },
+      {
+        "sub": "Mark Schloesser",
+        "rel": "RESEARCHED",
+        "obj": "KeyBoy"
+      }
+    ]
+  }
+}

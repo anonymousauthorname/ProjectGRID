@@ -1,0 +1,147 @@
+{
+  "sample_id": "casie__10359.json",
+  "sample_index": 44,
+  "source": "casie",
+  "file_name": "10359.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Logitech",
+        "type": "Organization"
+      },
+      {
+        "name": "Project Zero",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Tavis Ormandy",
+        "type": "Person"
+      },
+      {
+        "name": "Logitech Options",
+        "type": "Software"
+      },
+      {
+        "name": "websocket",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "port 10134",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "keystroke injection",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Windows",
+        "type": "Software"
+      },
+      {
+        "name": "Mac",
+        "type": "Software"
+      },
+      {
+        "name": "Edge browser",
+        "type": "Software"
+      },
+      {
+        "name": "CVE",
+        "type": "Vulnerability"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Tavis Ormandy",
+        "rel": "discovered vulnerability in",
+        "obj": "Logitech Options"
+      },
+      {
+        "sub": "Logitech Options",
+        "rel": "USES",
+        "obj": "websocket"
+      },
+      {
+        "sub": "Logitech Options",
+        "rel": "listens on",
+        "obj": "port 10134"
+      },
+      {
+        "sub": "Logitech Options",
+        "rel": "available for",
+        "obj": "Windows"
+      },
+      {
+        "sub": "Logitech Options",
+        "rel": "available for",
+        "obj": "Mac"
+      },
+      {
+        "sub": "Logitech Options",
+        "rel": "can enable",
+        "obj": "keystroke injection"
+      },
+      {
+        "sub": "Project Zero",
+        "rel": "disclosed vulnerability to",
+        "obj": "Logitech"
+      },
+      {
+        "sub": "Project Zero",
+        "rel": "disclosed vulnerability to",
+        "obj": "Microsoft"
+      },
+      {
+        "sub": "Project Zero",
+        "rel": "discovered vulnerability in",
+        "obj": "Edge browser"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "MAINTAINS",
+        "obj": "Logitech Options"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "had meeting with",
+        "obj": "Tavis Ormandy"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "released update to",
+        "obj": "Logitech Options"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "responded to vulnerability disclosure from",
+        "obj": "Project Zero"
+      },
+      {
+        "sub": "Project Zero",
+        "rel": "discovered vulnerability in",
+        "obj": "Logitech Options"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "updated on",
+        "obj": "Logitech Options"
+      }
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "sample_id": "securenlp__OrcaRAT",
+  "sample_index": 172,
+  "source": "securenlp",
+  "file_name": "OrcaRAT",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "ORCARAT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "COMFOO",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "COMMENT CREW",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "PWC CYBER THREAT OPERATIONS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "ORCAKILLER",
+        "type": "TOOL"
+      },
+      {
+        "name": "RC4",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "MD5",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "COMMAND AND CONTROL",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "ORCARAT C2 DOMAIN",
+        "type": "LOCATION"
+      },
+      {
+        "name": "ORCARAT C2 IP ADDRESS",
+        "type": "LOCATION"
+      },
+      {
+        "name": "YARA RULE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SNORT RULE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SURICATA RULE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "WHALE",
+        "type": "TOOL"
+      },
+      {
+        "name": "ORCA RAT",
+        "type": "MALWARE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "ORCARAT",
+        "rel": "related_to",
+        "obj": "COMFOO"
+      },
+      {
+        "sub": "ORCARAT",
+        "rel": "related_to",
+        "obj": "COMMENT CREW"
+      },
+      {
+        "sub": "ORCARAT",
+        "rel": "related_to",
+        "obj": "PWC CYBER THREAT OPERATIONS"
+      },
+      {
+        "sub": "ORCARAT",
+        "rel": "related_to",
+        "obj": "RC4"
+      },
+      {
+        "sub": "ORCARAT",
+        "rel": "related_to",
+        "obj": "MD5"
+      },
+      {
+        "sub": "ORCARAT",
+        "rel": "related_to",
+        "obj": "COMMAND AND CONTROL"
+      },
+      {
+        "sub": "ORCARAT C2 DOMAIN",
+        "rel": "related_to",
+        "obj": "ORCARAT"
+      },
+      {
+        "sub": "ORCARAT C2 IP ADDRESS",
+        "rel": "related_to",
+        "obj": "ORCARAT"
+      },
+      {
+        "sub": "YARA RULE",
+        "rel": "related_to",
+        "obj": "ORCARAT"
+      },
+      {
+        "sub": "SNORT RULE",
+        "rel": "related_to",
+        "obj": "ORCARAT"
+      },
+      {
+        "sub": "SURICATA RULE",
+        "rel": "related_to",
+        "obj": "ORCARAT"
+      },
+      {
+        "sub": "ORCAKILLER",
+        "rel": "related_to",
+        "obj": "ORCARAT"
+      },
+      {
+        "sub": "WHALE",
+        "rel": "related_to",
+        "obj": "ORCARAT"
+      },
+      {
+        "sub": "ORCA RAT",
+        "rel": "related_to",
+        "obj": "ORCARAT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_12.json",
+  "sample_index": 204,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_12.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2022-30190",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Follina",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Microsoft Support Diagnostic Tool",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft Office",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Organization"
+      },
+      {
+        "name": "nao_sec",
+        "type": "Person"
+      },
+      {
+        "name": "Kaspersky",
+        "type": "Organization"
+      },
+      {
+        "name": "PDM:Exploit",
+        "type": "Indicator"
+      },
+      {
+        "name": "Win32.Generic",
+        "type": "Indicator"
+      },
+      {
+        "name": "HEUR:Exploit.MSOffice.Agent.n",
+        "type": "Indicator"
+      },
+      {
+        "name": "HEUR:Exploit.MSOffice.Agent.gen",
+        "type": "Indicator"
+      },
+      {
+        "name": "HEUR:Exploit.MSOffice.CVE-2017-0199.a",
+        "type": "Indicator"
+      },
+      {
+        "name": "HEUR:Exploit.MSOffice.CVE-2021-40444.a",
+        "type": "Indicator"
+      },
+      {
+        "name": "HEUR:Exploit.MSOffice.Generic",
+        "type": "Indicator"
+      },
+      {
+        "name": "MSDT",
+        "type": "Software"
+      },
+      {
+        "name": "docx",
+        "type": "Software"
+      },
+      {
+        "name": "rtf",
+        "type": "Software"
+      },
+      {
+        "name": "Office document",
+        "type": "Indicator"
+      },
+      {
+        "name": "OLE object",
+        "type": "Tool"
+      },
+      {
+        "name": "HTML file",
+        "type": "Indicator"
+      },
+      {
+        "name": "malicious script",
+        "type": "Indicator"
+      },
+      {
+        "name": "Windows",
+        "type": "Software"
+      },
+      {
+        "name": "Protected Mode",
+        "type": "Indicator"
+      },
+      {
+        "name": "registry key",
+        "type": "Indicator"
+      },
+      {
+        "name": "Command Prompt",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "AFFECTS",
+        "obj": "Microsoft Support Diagnostic Tool"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "exploited through",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "EXPLOITS",
+        "obj": "Office document"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "USES",
+        "obj": "OLE object"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "USES",
+        "obj": "HTML file"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "USES",
+        "obj": "malicious script"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "BYPASSES",
+        "obj": "Protected Mode"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "exploitable in",
+        "obj": "docx"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "exploitable in",
+        "obj": "rtf"
+      },
+      {
+        "sub": "CVE-2022-30190",
+        "rel": "allow remote execution on",
+        "obj": "Windows"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "DETECTS",
+        "obj": "PDM:Exploit"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "DETECTS",
+        "obj": "Win32.Generic"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "DETECTS",
+        "obj": "HEUR:Exploit.MSOffice.Agent.n"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "DETECTS",
+        "obj": "HEUR:Exploit.MSOffice.Agent.gen"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "DETECTS",
+        "obj": "HEUR:Exploit.MSOffice.CVE-2017-0199.a"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "DETECTS",
+        "obj": "HEUR:Exploit.MSOffice.CVE-2021-40444.a"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "DETECTS",
+        "obj": "HEUR:Exploit.MSOffice.Generic"
+      },
+      {
+        "sub": "nao_sec",
+        "rel": "REPORTED",
+        "obj": "CVE-2022-30190"
+      },
+      {
+        "sub": "Kaspersky",
+        "rel": "MODIFIES",
+        "obj": "registry key"
+      },
+      {
+        "sub": "Command Prompt",
+        "rel": "uses to modify",
+        "obj": "registry key"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "PRODUCES",
+        "obj": "MSDT"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "PRODUCES",
+        "obj": "Microsoft Office"
+      }
+    ]
+  }
+}

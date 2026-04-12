@@ -1,0 +1,137 @@
+{
+  "sample_id": "securenlp__ThreatConnect_Operation_Arachnophobia_Report",
+  "sample_index": 199,
+  "source": "securenlp",
+  "file_name": "ThreatConnect_Operation_Arachnophobia_Report",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "OPERATION ARACHNOPHOBIA",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "BITTERBUG",
+        "type": "MALWARE"
+      },
+      {
+        "name": "VPSNOC",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "DIGITAL LINX",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "TRANCHULAS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MUHAMMAD NAASEER BHATTI",
+        "type": "PERSON"
+      },
+      {
+        "name": "ABUNASAR KHAN",
+        "type": "PERSON"
+      },
+      {
+        "name": "HAMZA QAMAR",
+        "type": "PERSON"
+      },
+      {
+        "name": "UMAIR AZIZ",
+        "type": "PERSON"
+      },
+      {
+        "name": "CATH",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "CERT-INDIA",
+        "type": "VULNERABILITY"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "BITTERBUG",
+        "rel": "related_to",
+        "obj": "VPSNOC"
+      },
+      {
+        "sub": "BITTERBUG",
+        "rel": "related_to",
+        "obj": "TRANCHULAS"
+      },
+      {
+        "sub": "VPSNOC",
+        "rel": "related_to",
+        "obj": "DIGITAL LINX"
+      },
+      {
+        "sub": "TRANCHULAS",
+        "rel": "related_to",
+        "obj": "ABUNASAR KHAN"
+      },
+      {
+        "sub": "TRANCHULAS",
+        "rel": "related_to",
+        "obj": "HAMZA QAMAR"
+      },
+      {
+        "sub": "TRANCHULAS",
+        "rel": "related_to",
+        "obj": "MUHAMMAD NAASEER BHATTI"
+      },
+      {
+        "sub": "ABUNASAR KHAN",
+        "rel": "related_to",
+        "obj": "DIGITAL LINX"
+      },
+      {
+        "sub": "CATH",
+        "rel": "related_to",
+        "obj": "BITTERBUG"
+      },
+      {
+        "sub": "CERT-INDIA",
+        "rel": "related_to",
+        "obj": "BITTERBUG"
+      },
+      {
+        "sub": "VPSNOC",
+        "rel": "related_to",
+        "obj": "ABUNASAR KHAN"
+      },
+      {
+        "sub": "TRANCHULAS",
+        "rel": "related_to",
+        "obj": "OPERATION ARACHNOPHOBIA"
+      },
+      {
+        "sub": "DIGITAL LINX",
+        "rel": "related_to",
+        "obj": "OPERATION ARACHNOPHOBIA"
+      },
+      {
+        "sub": "MUHAMMAD NAASEER BHATTI",
+        "rel": "related_to",
+        "obj": "ABUNASAR KHAN"
+      }
+    ]
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "sample_id": "securenlp__OperationDoubleTap",
+  "sample_index": 192,
+  "source": "securenlp",
+  "file_name": "OperationDoubleTap",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "APT3",
+        "rel": "is responsible for",
+        "obj": "Operation Clandestine Fox"
+      },
+      {
+        "sub": "APT3",
+        "rel": "sends",
+        "obj": "spearphishing"
+      },
+      {
+        "sub": "APT3",
+        "rel": "sends",
+        "obj": "spearphishing messages"
+      },
+      {
+        "sub": "APT3",
+        "rel": "targets",
+        "obj": "organization"
+      },
+      {
+        "sub": "APT3",
+        "rel": "targets",
+        "obj": "multiple organizations"
+      },
+      {
+        "sub": "APT3",
+        "rel": "leverages",
+        "obj": "CVE"
+      },
+      {
+        "sub": "CVE",
+        "rel": "is",
+        "obj": "a Windows OLE Automation Array Remote Code Execution vulnerability"
+      },
+      {
+        "sub": "CVE",
+        "rel": "is",
+        "obj": "a remote code execution vulnerability"
+      },
+      {
+        "sub": "CVE",
+        "rel": "was disclosed",
+        "obj": "on 2014-11-11"
+      },
+      {
+        "sub": "CVE",
+        "rel": "is disclosed",
+        "obj": "2014-11-11"
+      },
+      {
+        "sub": "system",
+        "rel": "downloads",
+        "obj": "install.exe"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "has MD5",
+        "obj": "5a0c4e1925c76a959ab0588f683ab437"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "has size",
+        "obj": "46592 bytes"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "has compile time",
+        "obj": "2014-11-19 08:55:10Z"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "has import hash",
+        "obj": "6b8611f8148a6b51e37fd68e75b6a81c"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "attempts to write",
+        "obj": "doc.exe"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "attempts to write",
+        "obj": "test.exe"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "contains",
+        "obj": "CVE-2014-4113"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "attempts to execute",
+        "obj": "test.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "executed with",
+        "obj": "elevated privileges"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "contains",
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "writes to",
+        "obj": "doc.exe"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "writes to",
+        "obj": "test.exe"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "executes",
+        "obj": "test.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "runs with",
+        "obj": "elevated privileges"
+      },
+      {
+        "sub": "malware",
+        "rel": "writes content to",
+        "obj": "notepad1.exe"
+      },
+      {
+        "sub": "malware",
+        "rel": "deletes files",
+        "obj": "notepad.exe"
+      },
+      {
+        "sub": "malware",
+        "rel": "deletes files",
+        "obj": "newnotepad.exe"
+      },
+      {
+        "sub": "malware",
+        "rel": "downloads URL",
+        "obj": "URL after command ID"
+      },
+      {
+        "sub": "malware",
+        "rel": "saves file to",
+        "obj": "notepad.exe"
+      },
+      {
+        "sub": "malware",
+        "rel": "writes content to",
+        "obj": "notepad2.exe"
+      },
+      {
+        "sub": "attachment",
+        "rel": "is a variant of",
+        "obj": "downloader"
+      },
+      {
+        "sub": "attachment",
+        "rel": "connected to",
+        "obj": "198.55.115.71"
+      },
+      {
+        "sub": "attachment",
+        "rel": "uses",
+        "obj": "SOCKS5 proxy"
+      },
+      {
+        "sub": "secondary payload",
+        "rel": "is detected as",
+        "obj": "Backdoor.APT"
+      },
+      {
+        "sub": "secondary payload",
+        "rel": "is named",
+        "obj": "newnotepad"
+      },
+      {
+        "sub": "secondary payload",
+        "rel": "connected to",
+        "obj": "inform.bedircati[."
+      },
+      {
+        "sub": "secondary payload",
+        "rel": "connected to",
+        "obj": "pn.lamb-site[."
+      },
+      {
+        "sub": "192.184.60.229",
+        "rel": "hosts",
+        "obj": "securitywap[."
+      },
+      {
+        "sub": "securitywap.com",
+        "rel": "resolves to",
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "hacking organization",
+        "rel": "execute",
+        "obj": "attacks"
+      },
+      {
+        "sub": "hacking organization",
+        "rel": "does not rely on",
+        "obj": "zero-day exploits"
+      },
+      {
+        "sub": "hacking organization",
+        "rel": "has demonstrated",
+        "obj": "operational capability"
+      },
+      {
+        "sub": "hacking organization",
+        "rel": "has changed strategy",
+        "obj": "attack frequency"
+      },
+      {
+        "sub": "hacking organization",
+        "rel": "does not have",
+        "obj": "access to zero-day exploit code"
+      },
+      {
+        "sub": "hacking organization",
+        "rel": "increases attack frequency",
+        "obj": "attack frequency"
+      }
+    ]
+  }
+}

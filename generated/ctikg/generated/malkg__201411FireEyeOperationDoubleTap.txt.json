@@ -1,0 +1,202 @@
+{
+  "sample_id": "malkg__201411FireEyeOperationDoubleTap.txt",
+  "sample_index": 135,
+  "source": "malkg",
+  "file_name": "201411FireEyeOperationDoubleTap.txt",
+  "method_name": "CTIKG",
+  "method_file": "Approach_GTIKGResearch.py",
+  "approach_instance_key": "Approach_GTIKGResearch__77669740fbf878d7",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00022869416508808672,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Operation Double Tap APT3",
+        "rel": "is responsible for",
+        "obj": "Operation Clandestine Fox"
+      },
+      {
+        "sub": "Operation Double Tap APT3",
+        "rel": "initiated",
+        "obj": "a campaign"
+      },
+      {
+        "sub": "Operation Double Tap APT3",
+        "rel": "targeted",
+        "obj": "organization"
+      },
+      {
+        "sub": "Operation Double Tap APT3",
+        "rel": "leveraged",
+        "obj": "CVE-2014-6332"
+      },
+      {
+        "sub": "Operation Double Tap APT3",
+        "rel": "leveraged",
+        "obj": "CVE-2014-4113"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "is used by",
+        "obj": "actor"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "is incorporated into",
+        "obj": "toolkit"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "is associated with",
+        "obj": "actor"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "is associated with",
+        "obj": "actor"
+      },
+      {
+        "sub": "System.Net.WebClient",
+        "rel": "downloads",
+        "obj": "install.exe"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "is derived from",
+        "obj": "code published at http://www.exploit-db.com/exploits/35230/"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "is derived from",
+        "obj": "exploit-db.com/exploit/35230"
+      },
+      {
+        "sub": "exploit-db.com/exploit/35230",
+        "rel": "is a",
+        "obj": "publicly published exploit"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "is used in",
+        "obj": "Metasploit project"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "has metadata",
+        "obj": "5a0c4e1925c76a959ab0588f683ab437 2014-11-19 08:55:10Z 6b8611f8148a6b51e37fd68e75b6a81c"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "attempts to write",
+        "obj": "doc.exe"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "attempts to write",
+        "obj": "test.exe"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "contains",
+        "obj": "CVE-2014-4113"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "attempts to execute",
+        "obj": "test.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "executes with",
+        "obj": "elevated privileges"
+      },
+      {
+        "sub": "CVE-2014-4113",
+        "rel": "is",
+        "obj": "kernel vulnerability"
+      },
+      {
+        "sub": "CVE-2014-4113",
+        "rel": "with successful exploitation",
+        "obj": "grants SYSTEM access"
+      },
+      {
+        "sub": "CVE-2014-4113",
+        "rel": "when exploited",
+        "obj": "grants SYSTEM access"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "verifies",
+        "obj": "SYSTEM"
+      },
+      {
+        "sub": "Malware",
+        "rel": "downloads",
+        "obj": "URL after command ID"
+      },
+      {
+        "sub": "Malware",
+        "rel": "saves file",
+        "obj": "\\\\AppData\\\\Local\\\\Temp\\\\notepad.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "writes file",
+        "obj": "\\\\AppData\\\\Local\\\\Temp\\\\notepad2.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "concatenates file",
+        "obj": "notepad1.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "concatenates file",
+        "obj": "notepad2.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "writes file",
+        "obj": "\\\\AppData\\\\Local\\\\Temp\\\\newnotepad.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "sends file",
+        "obj": "\\\\AppData\\\\Local\\\\Temp\\\\note.txt"
+      },
+      {
+        "sub": "Malware",
+        "rel": "executes string following command ID using",
+        "obj": "cmd /C"
+      },
+      {
+        "sub": "Malware",
+        "rel": "executes command",
+        "obj": "cmd /C"
+      },
+      {
+        "sub": "Malware",
+        "rel": "sends result",
+        "obj": "server"
+      },
+      {
+        "sub": "secondary payload",
+        "rel": "is named",
+        "obj": "newnotepad"
+      }
+    ]
+  }
+}

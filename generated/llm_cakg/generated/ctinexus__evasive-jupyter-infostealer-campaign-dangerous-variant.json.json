@@ -1,0 +1,252 @@
+{
+  "sample_id": "ctinexus__evasive-jupyter-infostealer-campaign-dangerous-variant.json",
+  "sample_index": 53,
+  "source": "ctinexus",
+  "file_name": "evasive-jupyter-infostealer-campaign-dangerous-variant.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Jupyter",
+        "type": "Entity"
+      },
+      {
+        "name": "Yellow Cockatoo",
+        "type": "Entity"
+      },
+      {
+        "name": "Solarmarker",
+        "type": "Entity"
+      },
+      {
+        "name": "Polazert",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Entity"
+      },
+      {
+        "name": "digitally signed payloads",
+        "type": "Entity"
+      },
+      {
+        "name": "backdoor",
+        "type": "Entity"
+      },
+      {
+        "name": "credential harvesting",
+        "type": "Entity"
+      },
+      {
+        "name": "computer name",
+        "type": "Entity"
+      },
+      {
+        "name": "admin privileges",
+        "type": "Entity"
+      },
+      {
+        "name": "cookies",
+        "type": "Entity"
+      },
+      {
+        "name": "Web data",
+        "type": "Entity"
+      },
+      {
+        "name": "browser password manager information",
+        "type": "Entity"
+      },
+      {
+        "name": "crypto-wallet logins",
+        "type": "Entity"
+      },
+      {
+        "name": "remote access app logins",
+        "type": "Entity"
+      },
+      {
+        "name": "C2 communications",
+        "type": "Entity"
+      },
+      {
+        "name": "dropper",
+        "type": "Entity"
+      },
+      {
+        "name": "loader",
+        "type": "Entity"
+      },
+      {
+        "name": "hollowing shell code",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell scripts",
+        "type": "Entity"
+      },
+      {
+        "name": "Ethereum Wallet",
+        "type": "Entity"
+      },
+      {
+        "name": "MyMonero Wallet",
+        "type": "Entity"
+      },
+      {
+        "name": "Atomic Wallet",
+        "type": "Entity"
+      },
+      {
+        "name": "OpenVPN",
+        "type": "Entity"
+      },
+      {
+        "name": "Remote Desktop Protocol",
+        "type": "Entity"
+      },
+      {
+        "name": "late October",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Jupyter",
+        "rel": "uses",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "uses",
+        "obj": "digitally signed payloads"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "downloads",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvests",
+        "obj": "computer name"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvests",
+        "obj": "admin privileges"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvests",
+        "obj": "cookies"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvests",
+        "obj": "Web data"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvests",
+        "obj": "browser password manager information"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvests",
+        "obj": "crypto-wallet logins"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "harvests",
+        "obj": "remote access app logins"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "establishes",
+        "obj": "C2 communications"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "acts as",
+        "obj": "dropper"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "acts as",
+        "obj": "loader"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "injects",
+        "obj": "hollowing shell code"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "executes",
+        "obj": "PowerShell scripts"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "targets",
+        "obj": "Ethereum Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "targets",
+        "obj": "MyMonero Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "targets",
+        "obj": "Atomic Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "accesses",
+        "obj": "OpenVPN"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "accesses",
+        "obj": "Remote Desktop Protocol"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "is known as",
+        "obj": "Yellow Cockatoo"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "is known as",
+        "obj": "Solarmarker"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "is known as",
+        "obj": "Polazert"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "has been active since",
+        "obj": "late October"
+      }
+    ]
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "sample_id": "ctinexus__in-depth-look-at-yanluowang-ransomware.json",
+  "sample_index": 54,
+  "source": "ctinexus",
+  "file_name": "in-depth-look-at-yanluowang-ransomware.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "United States organizations within the financial sector",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Yanluowang",
+        "type": "malware",
+        "alias": [
+          "the ransomware operation",
+          "Yanluowang ransomware"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "ransomware-as-a-service (RaaS)",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Fivehands",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Thieflock",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "manufacturing, IT services, consultancy, and engineering",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Symantec's Threat Hunter Team",
+        "type": "security-product",
+        "alias": [
+          "a division of Broadcom Software"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "U.S. corporations",
+        "type": "identity",
+        "alias": [
+          "the undisclosed target's network",
+          "large organization"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "AdFind",
+        "type": "hacker-tool",
+        "alias": [
+          "legitimate command-line Active Directory query tool"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Active Directory",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "October 2021",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "August 2021",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the ransomware being somewhat underdeveloped",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "the threat actor using Yanluowang",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "United States organizations within the financial sector",
+        "rel": "being attacked by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Yanluowang"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "is highly experienced with",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "ransomware-as-a-service (RaaS)"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "could be linked to",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Fivehands"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "could be linked to",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Thieflock"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "U.S. corporations"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "targeted companies in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "manufacturing, IT services, consultancy, and engineering"
+      },
+      {
+        "sub": "Symantec's Threat Hunter Team",
+        "rel": "discovered",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Yanluowang"
+      },
+      {
+        "sub": "Symantec's Threat Hunter Team",
+        "rel": "discovered",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "the threat actor using Yanluowang"
+      },
+      {
+        "sub": "Thieflock",
+        "rel": "used previously used by ransomware threat actor",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the ransomware being somewhat underdeveloped"
+      },
+      {
+        "sub": "the threat actor using Yanluowang",
+        "rel": "affiliated-with",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Thieflock"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "attempted to attack",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "U.S. corporations"
+      },
+      {
+        "sub": "Yanluowang",
+        "rel": "was not successful due to",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "the ransomware being somewhat underdeveloped",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "Symantec's Threat Hunter Team",
+        "rel": "discovered the use of",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "AdFind"
+      },
+      {
+        "sub": "AdFind",
+        "rel": "identified as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "legitimate command-line Active Directory query tool"
+      },
+      {
+        "sub": "AdFind",
+        "rel": "used as a reconnaissance tool",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "ransomware attackers"
+      },
+      {
+        "sub": "AdFind",
+        "rel": "equipped attackers with resources that they needed for lateral movement by way of",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Active Directory"
+      },
+      {
+        "sub": "attackers",
+        "rel": "attempted to deploy",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Yanluowang"
+      }
+    ]
+  }
+}

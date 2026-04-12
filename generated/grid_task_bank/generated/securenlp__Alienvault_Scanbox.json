@@ -1,0 +1,559 @@
+{
+  "sample_id": "securenlp__Alienvault_Scanbox",
+  "sample_index": 173,
+  "source": "securenlp",
+  "file_name": "Alienvault_Scanbox",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Scanbox",
+        "type": "hacker-tool",
+        "alias": [
+          "framework for reconnaissance",
+          "the framework"
+        ]
+      },
+      {
+        "name": "watering hole campaign",
+        "type": "campaign"
+      },
+      {
+        "name": "one big industrial company",
+        "type": "victims/targets"
+      },
+      {
+        "name": "software used for simulation and system engineering",
+        "type": "general-software"
+      },
+      {
+        "name": "automotive",
+        "type": "industry"
+      },
+      {
+        "name": "aerospace",
+        "type": "industry"
+      },
+      {
+        "name": "manufacturing",
+        "type": "industry"
+      },
+      {
+        "name": "attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "compromised website",
+        "type": "website"
+      },
+      {
+        "name": "remote server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "malicious Javascript file",
+        "type": "file"
+      },
+      {
+        "name": "Internet Explorer",
+        "type": "general-software"
+      },
+      {
+        "name": "EMET (Enhanced Mitigation Experience Toolkit)",
+        "type": "security-product"
+      },
+      {
+        "name": "Adobe Flash",
+        "type": "general-software"
+      },
+      {
+        "name": "Microsoft Office",
+        "type": "general-software"
+      },
+      {
+        "name": "Acrobat Reader",
+        "type": "general-software"
+      },
+      {
+        "name": "Java",
+        "type": "general-software"
+      },
+      {
+        "name": "keylogger",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "C&C server",
+        "type": "infrastructure"
+      },
+      {
+        "name": "122.10.9[.]109",
+        "type": "ipv4-addr"
+      },
+      {
+        "name": "mail[.]webmailgoogle.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "js[.]webmailgoogle.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "Referer",
+        "type": "network-traffic"
+      },
+      {
+        "name": "User-Agent",
+        "type": "network-traffic"
+      },
+      {
+        "name": "Location",
+        "type": "network-traffic"
+      },
+      {
+        "name": "Cookie",
+        "type": "network-traffic"
+      },
+      {
+        "name": "Title",
+        "type": "network-traffic"
+      },
+      {
+        "name": "Domain",
+        "type": "network-traffic"
+      },
+      {
+        "name": "Charset",
+        "type": "network-traffic"
+      },
+      {
+        "name": "Screen width and height",
+        "type": "network-traffic"
+      },
+      {
+        "name": "Operating System",
+        "type": "network-traffic"
+      },
+      {
+        "name": "Language",
+        "type": "network-traffic"
+      },
+      {
+        "name": "pluginid 1",
+        "type": "detailed-part-of-malware-or-hackertool"
+      },
+      {
+        "name": "pluginid 2",
+        "type": "detailed-part-of-malware-or-hackertool"
+      },
+      {
+        "name": "pluginid 5",
+        "type": "detailed-part-of-malware-or-hackertool"
+      },
+      {
+        "name": "pluginid 6",
+        "type": "detailed-part-of-malware-or-hackertool"
+      },
+      {
+        "name": "pluginid 8",
+        "type": "detailed-part-of-malware-or-hackertool"
+      },
+      {
+        "name": "pluginid 21",
+        "type": "detailed-part-of-malware-or-hackertool"
+      },
+      {
+        "name": "Metasploit",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "exploits",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "web forms",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "keystrokes",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "security products",
+        "type": "vulnerability"
+      },
+      {
+        "name": "targeted versions of Java",
+        "type": "vulnerability"
+      },
+      {
+        "name": "system",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "victim",
+        "type": "identity"
+      },
+      {
+        "name": "Scanbox framework",
+        "type": "hacker-tool",
+        "alias": [
+          "Scanbox"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "a watering hole campaign",
+        "rel": "was detected",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a website owned by one big industrial company"
+      },
+      {
+        "sub": "one big industrial company",
+        "rel": "owns",
+        "rel_type": [
+          "controls"
+        ],
+        "obj": "a website"
+      },
+      {
+        "sub": "The website",
+        "rel": "is related to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "software used for simulation and system engineering"
+      },
+      {
+        "sub": "software used for simulation and system engineering",
+        "rel": "is used in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "automotive"
+      },
+      {
+        "sub": "software used for simulation and system engineering",
+        "rel": "is used in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "aerospace"
+      },
+      {
+        "sub": "software used for simulation and system engineering",
+        "rel": "is used in",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "manufacturing"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "were able to compromise",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the website"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "include code that loaded",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "a malicious Javascript file"
+      },
+      {
+        "sub": "a malicious Javascript file",
+        "rel": "is a framework for reconnaissance",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "Scanbox"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "call",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "Scanbox"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "first configures",
+        "rel_type": [
+          "configures"
+        ],
+        "obj": "the remote C&C server"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "collects information about",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the victim"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "Referer"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "User-Agent"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "Location"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "Cookie"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "Title"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "Domain"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "Charset"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "Screen width and height"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "Operating System"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "collects",
+        "rel_type": [
+          "collects"
+        ],
+        "obj": "Language"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "encodes and encrypts",
+        "rel_type": [
+          "encrypts"
+        ],
+        "obj": "the data"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "produces",
+        "rel_type": [
+          "produces"
+        ],
+        "obj": "the request"
+      },
+      {
+        "sub": "the request",
+        "rel": "translates to",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "the following data"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "plugins"
+      },
+      {
+        "sub": "Pluginid 1",
+        "rel": "enumerates software installed in the system",
+        "rel_type": [
+          "enumerates"
+        ],
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Pluginid 1",
+        "rel": "checks if the system is running",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "EMET (Enhanced Mitigation Experience Toolkit)"
+      },
+      {
+        "sub": "Pluginid 2",
+        "rel": "enumerates",
+        "rel_type": [
+          "enumerates"
+        ],
+        "obj": "Adobe Flash versions"
+      },
+      {
+        "sub": "Pluginid 5",
+        "rel": "enumerates",
+        "rel_type": [
+          "enumerates"
+        ],
+        "obj": "Microsoft Office versions"
+      },
+      {
+        "sub": "Pluginid 6",
+        "rel": "enumerates",
+        "rel_type": [
+          "enumerates"
+        ],
+        "obj": "Acrobat Reader versions"
+      },
+      {
+        "sub": "Pluginid 8",
+        "rel": "enumerates",
+        "rel_type": [
+          "enumerates"
+        ],
+        "obj": "Java versions"
+      },
+      {
+        "sub": "Pluginid 21",
+        "rel": "implements",
+        "rel_type": [
+          "implements"
+        ],
+        "obj": "a keylogger functionality"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "logs all keystrokes the user is typing",
+        "rel_type": [
+          "logs"
+        ],
+        "obj": "keystrokes"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "sends keystrokes to",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "the C&C server"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "sends keystrokes when",
+        "rel_type": [
+          "sends"
+        ],
+        "obj": "the user submits web forms"
+      },
+      {
+        "sub": "Metasploit-produced exploits",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "targeted versions of Java"
+      },
+      {
+        "sub": "Metasploit-produced exploits",
+        "rel": "are hosted at",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "122.10.9[.]109"
+      },
+      {
+        "sub": "Scanbox framework",
+        "rel": "is hosted at",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "122.10.9[.]109"
+      },
+      {
+        "sub": "We recommend you look for this type of activity against",
+        "rel": "look for activity against",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "mail[.]webmailgoogle.com"
+      },
+      {
+        "sub": "We recommend you look for this type of activity against",
+        "rel": "look for activity against",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "js[.]webmailgoogle.com"
+      },
+      {
+        "sub": "We recommend you look for this type of activity against",
+        "rel": "look for activity against",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "122.10.9.109"
+      }
+    ]
+  }
+}

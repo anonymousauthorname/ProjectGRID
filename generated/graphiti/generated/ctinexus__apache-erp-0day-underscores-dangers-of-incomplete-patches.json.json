@@ -1,0 +1,59 @@
+{
+  "sample_id": "ctinexus__apache-erp-0day-underscores-dangers-of-incomplete-patches.json",
+  "sample_index": 86,
+  "source": "ctinexus",
+  "file_name": "apache-erp-0day-underscores-dangers-of-incomplete-patches.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2023-51467",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Apache OFBiz",
+        "type": "Software"
+      },
+      {
+        "name": "SonicWall",
+        "type": "Organization"
+      },
+      {
+        "name": "Apache Software Foundation",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2023-51467",
+        "rel": "AFFECTS",
+        "obj": "Apache OFBiz"
+      },
+      {
+        "sub": "SonicWall",
+        "rel": "ANALYZED",
+        "obj": "CVE-2023-51467"
+      },
+      {
+        "sub": "Apache Software Foundation",
+        "rel": "released patch for",
+        "obj": "CVE-2023-49070"
+      }
+    ]
+  }
+}

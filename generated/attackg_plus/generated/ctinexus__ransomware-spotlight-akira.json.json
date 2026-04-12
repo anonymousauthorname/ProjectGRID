@@ -1,0 +1,162 @@
+{
+  "sample_id": "ctinexus__ransomware-spotlight-akira.json",
+  "sample_index": 91,
+  "source": "ctinexus",
+  "file_name": "ransomware-spotlight-akira.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Cisco Adaptive Security Appliance"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Cisco Firepower Threat Defense"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has URL",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Clientless SSL VPN session feature"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "ASA Software Release 9.16 or earlier"
+      },
+      {
+        "sub": "Platform",
+        "rel": "Has value",
+        "obj": "ASA Software Release 9.16 or earlier"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Cisco ASA and FTD software"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "Has vulnerability",
+        "obj": "Cisco ASA and FTD software"
+      },
+      {
+        "sub": "CVE-2023-20269",
+        "rel": "Modify",
+        "obj": "Remote access VPN sessions"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Use",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "Internal networks"
+      },
+      {
+        "sub": "Cisco ASA and FTD software",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2023-20269"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Write",
+        "obj": "Unauthorized remote access VPN sessions"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "System"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "Credential Access",
+        "rel": "Enable",
+        "obj": "Unauthorized Remote Access"
+      },
+      {
+        "sub": "Unauthorized Remote Access",
+        "rel": "Allow",
+        "obj": "Privilege Escalation"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Network"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Zero-day vulnerability"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Detect",
+        "obj": "Valid credentials"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Map",
+        "obj": "Network"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Identify",
+        "obj": "Systems"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Clientless SSL VPN sessions"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "Zero-day vulnerability"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "Use",
+        "obj": "TOX messenger"
+      },
+      {
+        "sub": "Megazord",
+        "rel": "Operate",
+        "obj": "Command and control channel"
+      }
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "sample_id": "casie__10206.json",
+  "sample_index": 37,
+  "source": "casie",
+  "file_name": "10206.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-201808115",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Windows Host Compute Service Shim",
+        "type": "Malware"
+      },
+      {
+        "name": "Docker for Windows",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "hcsshim",
+        "type": "Malware"
+      },
+      {
+        "name": "Windows 10",
+        "type": "Organization"
+      },
+      {
+        "name": "Meltdown",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Go",
+        "type": "Software"
+      },
+      {
+        "name": "Hyper-V",
+        "type": "Software"
+      },
+      {
+        "name": "Linux Namespaces",
+        "type": "Software"
+      },
+      {
+        "name": "Control Groups",
+        "type": "Software"
+      },
+      {
+        "name": "Microsoft",
+        "type": "Organization"
+      },
+      {
+        "name": "Crowdstrike",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-201808115",
+        "rel": "AFFECTS",
+        "obj": "Windows Host Compute Service Shim"
+      },
+      {
+        "sub": "Windows Host Compute Service Shim",
+        "rel": "USES",
+        "obj": "Go"
+      },
+      {
+        "sub": "Windows Host Compute Service Shim",
+        "rel": "is used by",
+        "obj": "Docker for Windows"
+      },
+      {
+        "sub": "Docker for Windows",
+        "rel": "depends on",
+        "obj": "Windows Host Compute Service Shim"
+      },
+      {
+        "sub": "Windows Host Compute Service Shim",
+        "rel": "part of",
+        "obj": "Host Compute Service"
+      },
+      {
+        "sub": "Host Compute Service",
+        "rel": "runs on",
+        "obj": "Hyper-V"
+      },
+      {
+        "sub": "Windows Host Compute Service Shim",
+        "rel": "ENABLES",
+        "obj": "Linux Namespaces"
+      },
+      {
+        "sub": "Windows Host Compute Service Shim",
+        "rel": "ENABLES",
+        "obj": "Control Groups"
+      },
+      {
+        "sub": "Meltdown",
+        "rel": "has initial fix in",
+        "obj": "Windows 10"
+      },
+      {
+        "sub": "Windows 10",
+        "rel": "receives patch in",
+        "obj": "April 2018 Update"
+      },
+      {
+        "sub": "Crowdstrike",
+        "rel": "reports on",
+        "obj": "Windows 10"
+      }
+    ]
+  }
+}

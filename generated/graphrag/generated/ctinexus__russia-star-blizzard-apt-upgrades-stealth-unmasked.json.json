@@ -1,0 +1,167 @@
+{
+  "sample_id": "ctinexus__russia-star-blizzard-apt-upgrades-stealth-unmasked.json",
+  "sample_index": 96,
+  "source": "ctinexus",
+  "file_name": "russia-star-blizzard-apt-upgrades-stealth-unmasked.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "STAR BLIZZARD",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "EMAIL CREDENTIAL THEFT",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "CYBERESPIONAGE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "CYBER INFLUENCE CAMPAIGN",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "NATO MEMBER COUNTRIES",
+        "type": "GEO"
+      },
+      {
+        "name": "POLITICS",
+        "type": "LOCATION"
+      },
+      {
+        "name": "DEFENSE SECTOR",
+        "type": "LOCATION"
+      },
+      {
+        "name": "NON-GOVERNMENTAL ORGANIZATIONS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "THINK TANKS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "JOURNALISTS",
+        "type": "PERSON"
+      },
+      {
+        "name": "ACADEMIC INSTITUTIONS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "INTERGOVERNMENTAL ORGANIZATIONS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "UKRAINE SUPPORT PROVIDERS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "PASSWORD-PROTECTED PDF LURE DOCUMENTS",
+        "type": "TOOL"
+      },
+      {
+        "name": "CLOUD-BASED FILE SHARING PLATFORMS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "PHISHING EMAIL",
+        "type": "ATTACK_PATTERN"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "STAR BLIZZARD",
+        "rel": "related_to",
+        "obj": "EMAIL CREDENTIAL THEFT"
+      },
+      {
+        "sub": "STAR BLIZZARD",
+        "rel": "related_to",
+        "obj": "CYBERESPIONAGE"
+      },
+      {
+        "sub": "STAR BLIZZARD",
+        "rel": "related_to",
+        "obj": "CYBER INFLUENCE CAMPAIGN"
+      },
+      {
+        "sub": "STAR BLIZZARD",
+        "rel": "related_to",
+        "obj": "NATO MEMBER COUNTRIES"
+      },
+      {
+        "sub": "STAR BLIZZARD",
+        "rel": "related_to",
+        "obj": "POLITICS"
+      },
+      {
+        "sub": "STAR BLIZZARD",
+        "rel": "related_to",
+        "obj": "DEFENSE SECTOR"
+      },
+      {
+        "sub": "STAR BLIZZARD",
+        "rel": "related_to",
+        "obj": "NON-GOVERNMENTAL ORGANIZATIONS"
+      },
+      {
+        "sub": "STAR BLIZZARD",
+        "rel": "related_to",
+        "obj": "THINK TANKS"
+      },
+      {
+        "sub": "STAR BLIZZARD",
+        "rel": "related_to",
+        "obj": "JOURNALISTS"
+      },
+      {
+        "sub": "STAR BLIZZARD",
+        "rel": "related_to",
+        "obj": "ACADEMIC INSTITUTIONS"
+      },
+      {
+        "sub": "STAR BLIZZARD",
+        "rel": "related_to",
+        "obj": "INTERGOVERNMENTAL ORGANIZATIONS"
+      },
+      {
+        "sub": "STAR BLIZZARD",
+        "rel": "related_to",
+        "obj": "UKRAINE SUPPORT PROVIDERS"
+      },
+      {
+        "sub": "PASSWORD-PROTECTED PDF LURE DOCUMENTS",
+        "rel": "related_to",
+        "obj": "PHISHING EMAIL"
+      },
+      {
+        "sub": "CLOUD-BASED FILE SHARING PLATFORMS",
+        "rel": "related_to",
+        "obj": "PASSWORD-PROTECTED PDF LURE DOCUMENTS"
+      },
+      {
+        "sub": "PHISHING EMAIL",
+        "rel": "related_to",
+        "obj": "EMAIL CREDENTIAL THEFT"
+      }
+    ]
+  }
+}

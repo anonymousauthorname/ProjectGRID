@@ -1,0 +1,543 @@
+{
+  "sample_id": "securenlp__Derusbi_Server_Analysis-Final",
+  "sample_index": 153,
+  "source": "securenlp",
+  "file_name": "Derusbi_Server_Analysis-Final",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Derusbi server variant",
+        "type": "malware",
+        "alias": [
+          "the server variant",
+          "the server-client variant",
+          "Derusbi server variant"
+        ]
+      },
+      {
+        "name": "client-server model",
+        "type": "attack-pattern",
+        "alias": [
+          "client-server model"
+        ]
+      },
+      {
+        "name": "server-client model",
+        "type": "attack-pattern",
+        "alias": [
+          "server-client model"
+        ]
+      },
+      {
+        "name": "basic RAT functionality",
+        "type": "attack-pattern",
+        "alias": [
+          "RAT functionality"
+        ]
+      },
+      {
+        "name": "file management",
+        "type": "attack-pattern",
+        "alias": [
+          "uploading and downloading"
+        ]
+      },
+      {
+        "name": "network tunneling",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "remote command shell",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "Windows Firewall",
+        "type": "general-software"
+      },
+      {
+        "name": "Windows Filtering Platform (WFP)",
+        "type": "general-software"
+      },
+      {
+        "name": "Windows XP",
+        "type": "location",
+        "alias": [
+          "Windows XP and older"
+        ]
+      },
+      {
+        "name": "Windows 2000",
+        "type": "location"
+      },
+      {
+        "name": "Windows Vista",
+        "type": "location"
+      },
+      {
+        "name": "Windows",
+        "type": "location"
+      },
+      {
+        "name": "user’s machine",
+        "type": "location"
+      },
+      {
+        "name": "svchost.exe",
+        "type": "general-software"
+      },
+      {
+        "name": "DllEntryPoint function",
+        "type": "general-software"
+      },
+      {
+        "name": "LoadLibrary",
+        "type": "general-software"
+      },
+      {
+        "name": "GetCommandLineW",
+        "type": "general-software"
+      },
+      {
+        "name": "command line string",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "NT Authority",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "fShutdown flag",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "DllRegisterServer",
+        "type": "general-software"
+      },
+      {
+        "name": "HKLM\\SOFTWARE\\Microsoft\\Rpc\\Security",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "infection ID",
+        "type": "abstract-concept",
+        "alias": [
+          "unique infection ID"
+        ]
+      },
+      {
+        "name": "XOR",
+        "type": "attack-pattern",
+        "alias": [
+          "rotating 4-byte XOR key"
+        ]
+      },
+      {
+        "name": "ROR",
+        "type": "attack-pattern",
+        "alias": [
+          "Rotate Right"
+        ]
+      },
+      {
+        "name": "40,000 to 45,000",
+        "type": "network-traffic",
+        "alias": [
+          "range of 40,000 to 45,000"
+        ]
+      },
+      {
+        "name": "network packets",
+        "type": "network-traffic"
+      },
+      {
+        "name": "IOCTL 0x220200",
+        "type": "network-traffic"
+      },
+      {
+        "name": "ZhuDongFangYu.exe",
+        "type": "general-software"
+      },
+      {
+        "name": "360 antivirus product",
+        "type": "security-product"
+      },
+      {
+        "name": "DerusbiThread::DerusbiThread",
+        "type": "process"
+      },
+      {
+        "name": "PCC_SOCK",
+        "type": "hacker-tool",
+        "alias": [
+          "communication subsystem"
+        ]
+      },
+      {
+        "name": "BD_SOCK",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "VictimInfoPacket",
+        "type": "file",
+        "alias": [
+          "180 byte data structure"
+        ]
+      },
+      {
+        "name": "PacketHeader",
+        "type": "file",
+        "alias": [
+          "24 byte header"
+        ]
+      },
+      {
+        "name": "PCCCMDPacketHeader",
+        "type": "file"
+      },
+      {
+        "name": "PCCFilePacketHeader",
+        "type": "file"
+      },
+      {
+        "name": "PCC_BASEMOD",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "PCC_CMD",
+        "type": "hacker-tool",
+        "alias": [
+          "remote command shell"
+        ]
+      },
+      {
+        "name": "PCC_PROXY",
+        "type": "hacker-tool",
+        "alias": [
+          "network tunneling"
+        ]
+      },
+      {
+        "name": "PCC_FILE",
+        "type": "hacker-tool",
+        "alias": [
+          "file management"
+        ]
+      },
+      {
+        "name": "UUID {93144EB0-8E3E-4591-B307-8EEBFE7DB28F}",
+        "type": "indicator",
+        "alias": [
+          "{93144EB0-8E3E-4591-B307-8EEBFE7DB28F}"
+        ]
+      },
+      {
+        "name": "infectionID format",
+        "type": "attack-pattern",
+        "alias": [
+          "infectionID1",
+          "infectionID2"
+        ]
+      },
+      {
+        "name": "ZwLoadDriver",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "network traffic redirection",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "specific handshake",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "command dispatch",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "server variant",
+        "type": "malware",
+        "alias": [
+          "the Derusbi server variant"
+        ]
+      },
+      {
+        "name": "client",
+        "type": "identity"
+      },
+      {
+        "name": "network session",
+        "type": "network-traffic"
+      },
+      {
+        "name": "payload data",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "encrypted datagrams",
+        "type": "network-traffic"
+      },
+      {
+        "name": "command handlers",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "remote shell",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "file system administration functions",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "network backbone",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "tunneling network traffic",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "specific channel identifier",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "network traffic inspection",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "device driver",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "Windows Device Driver (Firewall Hook)",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "IOCTL",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "standard service DLL",
+        "type": "general-software"
+      },
+      {
+        "name": "ServiceMain",
+        "type": "general-software"
+      },
+      {
+        "name": "DllRegisterService",
+        "type": "general-software"
+      },
+      {
+        "name": "SeDebugPrivilege",
+        "type": "security-product"
+      },
+      {
+        "name": "SeLoadDriverPrivilege",
+        "type": "security-product"
+      },
+      {
+        "name": "SeShutdownPrivilege",
+        "type": "security-product"
+      },
+      {
+        "name": "SeTcbPrivilege",
+        "type": "security-product"
+      },
+      {
+        "name": "modular design",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "modules per sample",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "unique ID",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "network traffic inspection",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "initial handshake inspection",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "client-to-server communication",
+        "type": "network-traffic"
+      },
+      {
+        "name": "attacker’s communication",
+        "type": "network-traffic"
+      },
+      {
+        "name": "traffic being redirected",
+        "type": "network-traffic"
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the malware",
+        "type": "malware"
+      },
+      {
+        "name": "the driver",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "Windows XP or older",
+        "type": "location"
+      },
+      {
+        "name": "Windows Vista or later",
+        "type": "location"
+      },
+      {
+        "name": "command channel",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "network tunneling infrastructure",
+        "type": "infrastructure"
+      },
+      {
+        "name": "client commands",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "command packet",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "security product",
+        "type": "security-product"
+      },
+      {
+        "name": "encrypted information",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "encrypted session",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "network traffic",
+        "type": "network-traffic"
+      },
+      {
+        "name": "network endpoint",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "network tunnel",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "command execution",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "network operation",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "attack pattern",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "network traffic sideband",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "traffic redirection",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "tunneling capability",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "generic network session",
+        "type": "network-traffic"
+      },
+      {
+        "name": "client-machine",
+        "type": "location"
+      },
+      {
+        "name": "server variant communication",
+        "type": "network-traffic"
+      },
+      {
+        "name": "Dword",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "offset",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "network tunneling endpoints",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "network traffic detection",
+        "type": "course-of-action"
+      },
+      {
+        "name": "network communication",
+        "type": "network-traffic"
+      },
+      {
+        "name": "client authentication",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "authentication",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "network channel",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "network packet",
+        "type": "network-traffic"
+      },
+      {
+        "name": "network session origin",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "traffic inspection",
+        "type": "attack-pattern"
+      }
+    ],
+    "relations": []
+  }
+}

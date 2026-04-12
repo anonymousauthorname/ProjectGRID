@@ -1,0 +1,173 @@
+{
+  "sample_id": "casie__1120.json",
+  "sample_index": 45,
+  "source": "casie",
+  "file_name": "1120.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Dun & Bradstreet",
+        "type": "Organization"
+      },
+      {
+        "name": "NetProspex",
+        "type": "Organization"
+      },
+      {
+        "name": "Troy Hunt",
+        "type": "Person"
+      },
+      {
+        "name": "BitSight",
+        "type": "Organization"
+      },
+      {
+        "name": "Rapid7",
+        "type": "Organization"
+      },
+      {
+        "name": "US Department of Defense",
+        "type": "Location"
+      },
+      {
+        "name": "Wells Fargo",
+        "type": "Organization"
+      },
+      {
+        "name": "ZDNet",
+        "type": "Organization"
+      },
+      {
+        "name": "Business Email Compromise",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Whaling attacks",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "List rental",
+        "type": "Tool"
+      },
+      {
+        "name": "Email campaigns",
+        "type": "Tool"
+      },
+      {
+        "name": "Phishing tactics",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Personal Identifiable Information",
+        "type": "Indicator"
+      },
+      {
+        "name": "C-suite",
+        "type": "Software"
+      },
+      {
+        "name": "Vice presidents",
+        "type": "Software"
+      },
+      {
+        "name": "Senior vice presidents",
+        "type": "Software"
+      },
+      {
+        "name": "Assistant vice presidents",
+        "type": "Software"
+      },
+      {
+        "name": "Executive vice presidents",
+        "type": "Software"
+      },
+      {
+        "name": "Third-party risk",
+        "type": "Campaign"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Dun & Bradstreet",
+        "rel": "acquired from",
+        "obj": "NetProspex"
+      },
+      {
+        "sub": "Dun & Bradstreet",
+        "rel": "OFFERS",
+        "obj": "List rental"
+      },
+      {
+        "sub": "Troy Hunt",
+        "rel": "EVALUATED",
+        "obj": "Dun & Bradstreet"
+      },
+      {
+        "sub": "BitSight",
+        "rel": "has cofounder",
+        "obj": "Stephen Boyer"
+      },
+      {
+        "sub": "Stephen Boyer",
+        "rel": "IDENTIFIES",
+        "obj": "Third-party risk"
+      },
+      {
+        "sub": "Rapid7",
+        "rel": "deemes lucrative",
+        "obj": "Personal Identifiable Information"
+      },
+      {
+        "sub": "US Department of Defense",
+        "rel": "provides data to",
+        "obj": "Dun & Bradstreet"
+      },
+      {
+        "sub": "Wells Fargo",
+        "rel": "has employee records in",
+        "obj": "Dun & Bradstreet"
+      },
+      {
+        "sub": "ZDNet",
+        "rel": "REPORTED",
+        "obj": "Troy Hunt"
+      },
+      {
+        "sub": "Dun & Bradstreet",
+        "rel": "ENABLES",
+        "obj": "Business Email Compromise"
+      },
+      {
+        "sub": "Dun & Bradstreet",
+        "rel": "ENABLES",
+        "obj": "Whaling attacks"
+      },
+      {
+        "sub": "Dun & Bradstreet",
+        "rel": "ENABLES",
+        "obj": "Phishing tactics"
+      },
+      {
+        "sub": "Troy Hunt",
+        "rel": "IDENTIFIES",
+        "obj": "Third-party risk"
+      }
+    ]
+  }
+}

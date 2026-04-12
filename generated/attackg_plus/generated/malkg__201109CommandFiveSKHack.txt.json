@@ -1,0 +1,472 @@
+{
+  "sample_id": "malkg__201109CommandFiveSKHack.txt",
+  "sample_index": 143,
+  "source": "malkg",
+  "file_name": "201109CommandFiveSKHack.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "SK Communications",
+        "rel": "Has vulnerable software",
+        "obj": "ALZip"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "Operate",
+        "obj": "ESTsoft ALZip update server"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "Operate",
+        "obj": "Taiwanese publishing company's webserver"
+      },
+      {
+        "sub": "ESTsoft ALZip update server",
+        "rel": "Belong to",
+        "obj": "ESTsoft"
+      },
+      {
+        "sub": "Taiwanese publishing company's webserver",
+        "rel": "Belong to",
+        "obj": "Taiwanese publishing company"
+      },
+      {
+        "sub": "Backdoor.Agent.Hza",
+        "rel": "Has vulnerability",
+        "obj": "ALTools Common Module Update Application"
+      },
+      {
+        "sub": "ALZip update server",
+        "rel": "Modify",
+        "obj": "ALTools Common Module Update Application"
+      },
+      {
+        "sub": "ALZip update server",
+        "rel": "Modify",
+        "obj": "Content Delivery Network"
+      },
+      {
+        "sub": "Content Delivery Network",
+        "rel": "Deliver",
+        "obj": "Backdoor.Agent.Hza"
+      },
+      {
+        "sub": "ALTools Common Module Update Application",
+        "rel": "Has vulnerability",
+        "obj": "ALCMUpdate.exe"
+      },
+      {
+        "sub": "Backdoor.Agent.Hza",
+        "rel": "Use",
+        "obj": "ALCMUpdate.exe"
+      },
+      {
+        "sub": "ALZip update server",
+        "rel": "Operate",
+        "obj": "SK Communications computers"
+      },
+      {
+        "sub": "Backdoor.Agent.Hza",
+        "rel": "Write",
+        "obj": "winsvcfs.dll"
+      },
+      {
+        "sub": "Backdoor.Agent.Hza",
+        "rel": "Operate",
+        "obj": "infected computers"
+      },
+      {
+        "sub": "Backdoor.Agent.Hza",
+        "rel": "Has value",
+        "obj": "remote administration tool"
+      },
+      {
+        "sub": "Backdoor.Agent.Hza",
+        "rel": "Use",
+        "obj": "malicious code"
+      },
+      {
+        "sub": "dropped",
+        "rel": "Modify",
+        "obj": "Backdoor.Agent.Hza"
+      },
+      {
+        "sub": "'dropped'",
+        "rel": "Construct",
+        "obj": "Backdoor.Agent.Hza"
+      },
+      {
+        "sub": "nateon.exe",
+        "rel": "Construct",
+        "obj": "winsvcfs.dll"
+      },
+      {
+        "sub": "winsvcfs.dll",
+        "rel": "Use",
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "winsvcfs.dll",
+        "rel": "Operate",
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "nateon.exe",
+        "rel": "Modify",
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Service"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "System-level APIs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Obfuscation of strings"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Code obfuscation"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Malformed user-agent string"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Callback domain"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Callback port"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Local loopback IP address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Legitimate domains"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Through masked communications"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "'x.exe'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Internal access information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Database credentials"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Obtain",
+        "obj": "Usernames"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Obtain",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "x.exe"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Internal network structure"
+      },
+      {
+        "sub": "Infected computers",
+        "rel": "Modify",
+        "obj": "Internal access information"
+      },
+      {
+        "sub": "Infected computers",
+        "rel": "Modify",
+        "obj": "Database credentials"
+      },
+      {
+        "sub": "x.exe",
+        "rel": "Use",
+        "obj": "Network enumeration"
+      },
+      {
+        "sub": "x.exe",
+        "rel": "Use",
+        "obj": "Credential acquisition"
+      },
+      {
+        "sub": "Network enumeration",
+        "rel": "Detect",
+        "obj": "Internal network structure"
+      },
+      {
+        "sub": "Malware 'nateon.exe'",
+        "rel": "Use",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Malware 'nateon.exe'",
+        "rel": "Operate",
+        "obj": "User databases"
+      },
+      {
+        "sub": "Malware 'nateon.exe'",
+        "rel": "Modify",
+        "obj": "Internal access information"
+      },
+      {
+        "sub": "Malware 'nateon.exe'",
+        "rel": "Operate",
+        "obj": "Network"
+      },
+      {
+        "sub": "Nate and CyWorld user databases",
+        "rel": "Belong to",
+        "obj": "Organization"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Nate user database"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "CyWorld user database"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Extract",
+        "obj": "personal information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Extract",
+        "obj": "names"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Extract",
+        "obj": "phone numbers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Extract",
+        "obj": "home addresses"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Extract",
+        "obj": "email addresses"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Extract",
+        "obj": "birth dates"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Extract",
+        "obj": "gender details"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Extract",
+        "obj": "user identifiers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Extract",
+        "obj": "passwords"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Extract",
+        "obj": "resident registration numbers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Domain"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Callback domain"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Belong to",
+        "obj": "Threat Actor"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has value",
+        "obj": "'nateon.duamlive.com'"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has value",
+        "obj": "'ro.diggfunny.com'"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has value",
+        "obj": "'update.alyac.org'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Command and Control infrastructure"
+      },
+      {
+        "sub": "Command and Control infrastructure",
+        "rel": "Has URL",
+        "obj": "'nateon.duamlive.com'"
+      },
+      {
+        "sub": "Command and Control infrastructure",
+        "rel": "Has URL",
+        "obj": "'ro.diggfunny.com'"
+      },
+      {
+        "sub": "Command and Control infrastructure",
+        "rel": "Has URL",
+        "obj": "'update.alyac.org'"
+      },
+      {
+        "sub": "- Personal information",
+        "rel": "Has vulnerability",
+        "obj": "Command and control channels"
+      },
+      {
+        "sub": "- Command and control channels",
+        "rel": "Use",
+        "obj": "Malware"
+      },
+      {
+        "sub": "- Personal information",
+        "rel": "Exfiltrate to",
+        "obj": "Chinese IP address"
+      },
+      {
+        "sub": "- Chinese IP address",
+        "rel": "Belong to",
+        "obj": "China"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Construct",
+        "obj": "Command and control channels"
+      },
+      {
+        "sub": "SK Communications",
+        "rel": "Has vulnerability",
+        "obj": "Personal information"
+      },
+      {
+        "sub": "Personal information",
+        "rel": "Use",
+        "obj": "Malicious purposes"
+      },
+      {
+        "sub": "Personal information",
+        "rel": "Include",
+        "obj": "Names"
+      },
+      {
+        "sub": "Personal information",
+        "rel": "Include",
+        "obj": "Phone numbers"
+      },
+      {
+        "sub": "Personal information",
+        "rel": "Include",
+        "obj": "Home and email addresses"
+      },
+      {
+        "sub": "Personal information",
+        "rel": "Include",
+        "obj": "Birth dates"
+      },
+      {
+        "sub": "Personal information",
+        "rel": "Include",
+        "obj": "Gender details"
+      },
+      {
+        "sub": "Personal information",
+        "rel": "Include",
+        "obj": "User identifiers"
+      },
+      {
+        "sub": "Personal information",
+        "rel": "Include",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "Personal information",
+        "rel": "Include",
+        "obj": "Resident registration numbers"
+      },
+      {
+        "sub": "Personal information",
+        "rel": "Lead to",
+        "obj": "Privacy impacts"
+      },
+      {
+        "sub": "Personal information",
+        "rel": "Lead to",
+        "obj": "Security impacts"
+      }
+    ]
+  }
+}

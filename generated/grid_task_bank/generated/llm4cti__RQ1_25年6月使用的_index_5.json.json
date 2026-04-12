@@ -1,0 +1,1024 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_5.json",
+  "sample_index": 238,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_5.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DMA Locker",
+        "type": "malware",
+        "alias": [
+          "ransomware",
+          "the malware"
+        ]
+      },
+      {
+        "name": "fakturax.exe",
+        "type": "file",
+        "alias": [
+          "the file faktura.exe"
+        ]
+      },
+      {
+        "name": "ntserver.exe",
+        "type": "file",
+        "alias": [
+          "the dropped copy of the program",
+          "DMALOCK 41:55:16:13:51:76:67:99ntserver.exe"
+        ]
+      },
+      {
+        "name": "C:ProgramData",
+        "type": "windows-registry-key",
+        "alias": [
+          "C:ProgramData"
+        ]
+      },
+      {
+        "name": "C:Documents and SettingsAll UsersDokumenty",
+        "type": "windows-registry-key",
+        "alias": [
+          "C:Documents and SettingsAll UsersDokumenty"
+        ]
+      },
+      {
+        "name": "AES in ECB mode",
+        "type": "attack-pattern",
+        "alias": [
+          "AES in ECB mode"
+        ]
+      },
+      {
+        "name": "RSA",
+        "type": "vulnerability",
+        "alias": [
+          "RSA"
+        ]
+      },
+      {
+        "name": "4.0",
+        "type": "version",
+        "alias": [
+          "latest version of DMA Locker"
+        ]
+      },
+      {
+        "name": "rstrui.exe",
+        "type": "process",
+        "alias": [
+          "rstrui.exe"
+        ]
+      },
+      {
+        "name": "ShadowExplorer.exe",
+        "type": "process",
+        "alias": [
+          "ShadowExplorer.exe"
+        ]
+      },
+      {
+        "name": "sesvc.exe",
+        "type": "process",
+        "alias": [
+          "sesvc.exe"
+        ]
+      },
+      {
+        "name": "cbengine.exe",
+        "type": "process",
+        "alias": [
+          "cbengine.exe"
+        ]
+      },
+      {
+        "name": "decryption mode",
+        "type": "attack-pattern",
+        "alias": [
+          "decrypting feature"
+        ]
+      },
+      {
+        "name": "encryption mode",
+        "type": "attack-pattern",
+        "alias": [
+          "encryption"
+        ]
+      },
+      {
+        "name": "red window",
+        "type": "symptom",
+        "alias": [
+          "red window popping up"
+        ]
+      },
+      {
+        "name": "GUI",
+        "type": "general-software",
+        "alias": [
+          "the GUI with ransom note",
+          "GUI"
+        ]
+      },
+      {
+        "name": "key",
+        "type": "credential-value",
+        "alias": [
+          "32 characters long key",
+          "the supplied key",
+          "the key"
+        ]
+      },
+      {
+        "name": "16 byte chunks",
+        "type": "attack-pattern",
+        "alias": [
+          "16 bytes",
+          "single unit have 16 bytes"
+        ]
+      },
+      {
+        "name": "4190df2af81ece296c465e245fc0caea",
+        "type": "file",
+        "alias": [
+          "English version type 2 (from Jan 2016)"
+        ]
+      },
+      {
+        "name": "d35344b1f48764ba083e51438121e6a9",
+        "type": "file",
+        "alias": [
+          "Polish version type 2 (from Jan 2016)"
+        ]
+      },
+      {
+        "name": "6fbd3cdcafd6695c384a1119873786aa",
+        "type": "file",
+        "alias": [
+          "Polish version type 1 (from Dec 2015)"
+        ]
+      },
+      {
+        "name": "Malwarebytes AntiMalware",
+        "type": "security-product",
+        "alias": [
+          "Malwarebytes AntiMalware"
+        ]
+      },
+      {
+        "name": "Ransom.DMALocker",
+        "type": "indicator",
+        "alias": [
+          "Ransom.DMALocker"
+        ]
+      },
+      {
+        "name": "shadow processes",
+        "type": "process",
+        "alias": [
+          "ShadowExplorer.exe",
+          "rstrui.exe",
+          "sesvc.exe",
+          "cbengine.exe"
+        ]
+      },
+      {
+        "name": "faktura.exe",
+        "type": "file",
+        "alias": [
+          "faktura.exe"
+        ]
+      },
+      {
+        "name": "original sample",
+        "type": "file",
+        "alias": [
+          "original copy of the malware sample"
+        ]
+      },
+      {
+        "name": "encrypted content",
+        "type": "file",
+        "alias": [
+          "encrypted files"
+        ]
+      },
+      {
+        "name": "BMP",
+        "type": "file",
+        "alias": [
+          "BMP"
+        ]
+      },
+      {
+        "name": "PNG",
+        "type": "file",
+        "alias": [
+          "PNG"
+        ]
+      },
+      {
+        "name": "HTML files",
+        "type": "file",
+        "alias": [
+          "HTML files"
+        ]
+      },
+      {
+        "name": "magic value ABCXYZ11",
+        "type": "indicator",
+        "alias": [
+          "ABCXYZ11",
+          "magic value"
+        ]
+      },
+      {
+        "name": "DMALOCK 41:55:16:13:51:76:67:99",
+        "type": "file",
+        "alias": [
+          "DMALOCK 41:55:16:13:51:76:67:99ntserver.exe"
+        ]
+      },
+      {
+        "name": "square.png",
+        "type": "file",
+        "alias": [
+          "sample file square.png"
+        ]
+      },
+      {
+        "name": "blacklist for directories",
+        "type": "attack-pattern",
+        "alias": [
+          "blacklist for directories"
+        ]
+      },
+      {
+        "name": "blacklist for file extensions",
+        "type": "attack-pattern",
+        "alias": [
+          "blacklist for file extensions"
+        ]
+      },
+      {
+        "name": "key stored at the end of the original file",
+        "type": "attack-pattern",
+        "alias": [
+          "hardcoded at the end of the original file"
+        ]
+      },
+      {
+        "name": "original key of this sample",
+        "type": "credential-value",
+        "alias": [
+          "original key"
+        ]
+      },
+      {
+        "name": "Thread to check for processes",
+        "type": "general-software",
+        "alias": [
+          "new thread"
+        ]
+      },
+      {
+        "name": "PhysicalDrive0",
+        "type": "identity",
+        "alias": [
+          "malware hunter"
+        ]
+      },
+      {
+        "name": "JAMESWTMHT",
+        "type": "identity",
+        "alias": [
+          "malware hunter"
+        ]
+      },
+      {
+        "name": "siriurz",
+        "type": "identity",
+        "alias": [
+          "malware hunter"
+        ]
+      },
+      {
+        "name": "fwosar",
+        "type": "identity",
+        "alias": [
+          "analyst"
+        ]
+      },
+      {
+        "name": "maciekkotowicz",
+        "type": "identity",
+        "alias": [
+          "analyst"
+        ]
+      },
+      {
+        "name": "4programmers.net",
+        "type": "domain-name",
+        "alias": [
+          "4programmers.net"
+        ]
+      },
+      {
+        "name": "topic on a Polish forum",
+        "type": "document-or-publication",
+        "alias": [
+          "a thread on a Polish forum"
+        ]
+      },
+      {
+        "name": "Dashboard relays",
+        "type": "infrastructure",
+        "alias": [
+          "Dashboard relays"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DMA Locker",
+        "rel": "is another",
+        "rel_type": [
+          "malware"
+        ],
+        "obj": "ransomware"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "has been observed to be active only on",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "a small scale"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "appeared at the beginning of this year",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "this year"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "is active only on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a small scale"
+      },
+      {
+        "sub": "4.0",
+        "rel": "is the latest version of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "DMA Locker"
+      },
+      {
+        "sub": "I",
+        "rel": "confirmed that in reality it is",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "AES in ECB mode"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "encrypts separately",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "16 byte chunks"
+      },
+      {
+        "sub": "the malware authors",
+        "rel": "claimed that they used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "AES and RSA"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "is detected by",
+        "rel_type": [
+          "detected-by"
+        ],
+        "obj": "Malwarebytes AntiMalware"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is detected as",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "Ransom.DMALocker"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "moves itself into",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "C:ProgramData"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "renamed to",
+        "rel_type": [
+          "renamed-to"
+        ],
+        "obj": "fakturax.exe"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "ntserver.exe"
+      },
+      {
+        "sub": "fakturax.exe",
+        "rel": "is removed after execution",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "fakturax.exe"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "can be recognized by",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a red window popping up"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "comes with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a decrypting feature"
+      },
+      {
+        "sub": "GUI",
+        "rel": "with ransom note",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "the GUI with ransom note"
+      },
+      {
+        "sub": "the user",
+        "rel": "enters a key",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a key"
+      },
+      {
+        "sub": "the user",
+        "rel": "clicks the button",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the button"
+      },
+      {
+        "sub": "the program",
+        "rel": "switches to",
+        "rel_type": [
+          "switches-to"
+        ],
+        "obj": "decryption mode"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "may crash during",
+        "rel_type": [
+          "may-crash"
+        ],
+        "obj": "encryption"
+      },
+      {
+        "sub": "an older version of DMA Locker",
+        "rel": "crash after finishing",
+        "rel_type": [
+          "crash"
+        ],
+        "obj": "encryption"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "does not change",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "file extensions"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "adds",
+        "rel_type": [
+          "adds"
+        ],
+        "obj": "keys to the autorun"
+      },
+      {
+        "sub": "DMALOCK 41:55:16:13:51:76:67:99ntserver.exe",
+        "rel": "is not always dropped successfully",
+        "rel_type": [
+          "dropped"
+        ],
+        "obj": "successfully"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "a copy of the program"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "is distributed without any packing",
+        "rel_type": [
+          "is distributed without"
+        ],
+        "obj": "any packing"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "has no defence against analysis",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "analysis"
+      },
+      {
+        "sub": "the malware",
+        "rel": "provides",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "a lot of debug strings"
+      },
+      {
+        "sub": "at the beginning of the execution",
+        "rel": "deploys",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a new thread"
+      },
+      {
+        "sub": "a new thread",
+        "rel": "is deployed to check for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the presence of following processes"
+      },
+      {
+        "sub": "the new thread",
+        "rel": "tries to terminate",
+        "rel_type": [
+          "terminates"
+        ],
+        "obj": "rstrui.exe"
+      },
+      {
+        "sub": "the new thread",
+        "rel": "tries to terminate",
+        "rel_type": [
+          "terminates"
+        ],
+        "obj": "ShadowExplorer.exe"
+      },
+      {
+        "sub": "the new thread",
+        "rel": "tries to terminate",
+        "rel_type": [
+          "terminates"
+        ],
+        "obj": "sesvc.exe"
+      },
+      {
+        "sub": "the new thread",
+        "rel": "tries to terminate",
+        "rel_type": [
+          "terminates"
+        ],
+        "obj": "cbengine.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "logs",
+        "rel_type": [
+          "logs"
+        ],
+        "obj": "Blocking processes of system recovery"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "contains",
+        "rel_type": [
+          "contains"
+        ],
+        "obj": "a blacklist for directories"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "contains",
+        "rel_type": [
+          "contains"
+        ],
+        "obj": "a blacklist for file extensions"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "skips files",
+        "rel_type": [
+          "skips"
+        ],
+        "obj": "that contain blacklisted substrings"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "enumerates all files",
+        "rel_type": [
+          "enumerates"
+        ],
+        "obj": "browsing first logical drives"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "enumerates all files",
+        "rel_type": [
+          "enumerates"
+        ],
+        "obj": "after that network resources"
+      },
+      {
+        "sub": "a single flag",
+        "rel": "decides whether the malware is in",
+        "rel_type": [
+          "decides"
+        ],
+        "obj": "encryption or decryption mode"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "is deployed in a new thread",
+        "rel_type": [
+          "is deployed in"
+        ],
+        "obj": "encryption"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "is deployed in a new thread",
+        "rel_type": [
+          "is deployed in"
+        ],
+        "obj": "decryption"
+      },
+      {
+        "sub": "the key",
+        "rel": "is 32 byte long",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "32 byte long"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "is hardcoded at the end of",
+        "rel_type": [
+          "is hardcoded at"
+        ],
+        "obj": "the original file"
+      },
+      {
+        "sub": "fakturax.exe",
+        "rel": "contains the key",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "the key"
+      },
+      {
+        "sub": "ntserver.exe",
+        "rel": "have it cleaned",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "it"
+      },
+      {
+        "sub": "fakturax.exe",
+        "rel": "is removed",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "fakturax.exe"
+      },
+      {
+        "sub": "the key",
+        "rel": "is lost along with it",
+        "rel_type": [
+          "lost"
+        ],
+        "obj": "fakturax.exe"
+      },
+      {
+        "sub": "the examined variant",
+        "rel": "was enough to find the key at the end of",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "the original sample"
+      },
+      {
+        "sub": "the malware",
+        "rel": "encrypts",
+        "rel_type": [
+          "encrypts"
+        ],
+        "obj": "chunk by chunk"
+      },
+      {
+        "sub": "the encrypting function",
+        "rel": "processes",
+        "rel_type": [
+          "processes"
+        ],
+        "obj": "square.png"
+      },
+      {
+        "sub": "the encrypting function",
+        "rel": "outputs",
+        "rel_type": [
+          "outputs"
+        ],
+        "obj": "encrypted output"
+      },
+      {
+        "sub": "the output",
+        "rel": "is prefixed by",
+        "rel_type": [
+          "has-prefix"
+        ],
+        "obj": "ABCXYZ11"
+      },
+      {
+        "sub": "DMA Locker",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "16 byte chunks of file"
+      },
+      {
+        "sub": "the encryption key",
+        "rel": "is preprocessed before the encryption",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "encryption"
+      },
+      {
+        "sub": "both elements",
+        "rel": "are copied to",
+        "rel_type": [
+          "copies-to"
+        ],
+        "obj": "a buffer"
+      },
+      {
+        "sub": "the key",
+        "rel": "is stored in",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "the original file"
+      },
+      {
+        "sub": "an older version",
+        "rel": "has been observed to sometimes crash",
+        "rel_type": [
+          "crash"
+        ],
+        "obj": "after finishing encryption"
+      },
+      {
+        "sub": "the authors",
+        "rel": "told many lies in their ransom note",
+        "rel_type": [
+          "told"
+        ],
+        "obj": "lies in their ransom note"
+      },
+      {
+        "sub": "the authors",
+        "rel": "this one was true",
+        "rel_type": [
+          "told"
+        ],
+        "obj": "this one was true"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is deployed",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "C:ProgramData"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is deployed",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "C:Documents and SettingsAll UsersDokumenty"
+      },
+      {
+        "sub": "the malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "16 byte chunks"
+      },
+      {
+        "sub": "the ransom note",
+        "rel": "mentions that the data is encrypted by",
+        "rel_type": [
+          "mentions"
+        ],
+        "obj": "AES and RSA"
+      },
+      {
+        "sub": "the malware",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "ntserver.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the flag"
+      },
+      {
+        "sub": "the key",
+        "rel": "is stored at the end of",
+        "rel_type": [
+          "stored-at"
+        ],
+        "obj": "the original file"
+      },
+      {
+        "sub": "the malware",
+        "rel": "recovered the key if",
+        "rel_type": [
+          "recovered"
+        ],
+        "obj": "we managed to persist the original copy of the malware sample"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is not regularly updated",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "4.0"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is used to recover",
+        "rel_type": [
+          "recover"
+        ],
+        "obj": "the files"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is used to recover",
+        "rel_type": [
+          "recover"
+        ],
+        "obj": "the files"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is used to demonstrate",
+        "rel_type": [
+          "demonstrates"
+        ],
+        "obj": "how it works"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is used to demonstrate",
+        "rel_type": [
+          "demonstrates"
+        ],
+        "obj": "where the real key can be found"
+      },
+      {
+        "sub": "fwosar",
+        "rel": "received thanks",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "for consultation"
+      },
+      {
+        "sub": "maciekkotowicz",
+        "rel": "received thanks",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "for consultation"
+      },
+      {
+        "sub": "PhysicalDrive0",
+        "rel": "provided help",
+        "rel_type": [
+          "helped"
+        ],
+        "obj": "in collecting the samples"
+      },
+      {
+        "sub": "JAMESWTMHT",
+        "rel": "provided help",
+        "rel_type": [
+          "helped"
+        ],
+        "obj": "in collecting the samples"
+      },
+      {
+        "sub": "siriurz",
+        "rel": "provided help",
+        "rel_type": [
+          "helped"
+        ],
+        "obj": "in collecting the samples"
+      },
+      {
+        "sub": "4programmers.net",
+        "rel": "has a thread",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "a thread on a Polish forum"
+      },
+      {
+        "sub": "a user infected by DMA Locker",
+        "rel": "created",
+        "rel_type": [
+          "created"
+        ],
+        "obj": "a thread on a Polish forum"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is distributed",
+        "rel_type": [
+          "is distributed"
+        ],
+        "obj": "without any packing"
+      }
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_16.json",
+  "sample_index": 208,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_16.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SophosLabs",
+        "type": "Unknown"
+      },
+      {
+        "name": "emails",
+        "type": "Unknown"
+      },
+      {
+        "name": "Windows computers",
+        "type": "Unknown"
+      },
+      {
+        "name": "Europcar",
+        "type": "Unknown"
+      },
+      {
+        "name": "EuropCar Invoice.zip",
+        "type": "Unknown"
+      },
+      {
+        "name": "Troj/InvoZip",
+        "type": "Unknown"
+      },
+      {
+        "name": "cybercriminals",
+        "type": "Unknown"
+      },
+      {
+        "name": "sender email address",
+        "type": "Unknown"
+      },
+      {
+        "name": "computers",
+        "type": "Unknown"
+      },
+      {
+        "name": "remote hackers",
+        "type": "Unknown"
+      },
+      {
+        "name": "steal information",
+        "type": "Unknown"
+      },
+      {
+        "name": "launch spam attacks",
+        "type": "Unknown"
+      },
+      {
+        "name": "users",
+        "type": "Unknown"
+      },
+      {
+        "name": "credit card compromise",
+        "type": "Unknown"
+      },
+      {
+        "name": "ZIP file without considering risks",
+        "type": "Unknown"
+      },
+      {
+        "name": "antivirus defences",
+        "type": "Unknown"
+      },
+      {
+        "name": "System",
+        "type": "Unknown"
+      },
+      {
+        "name": "unsolicited emails with attachments",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SophosLabs",
+        "rel": "intercepted",
+        "obj": "emails"
+      },
+      {
+        "sub": "emails",
+        "rel": "attempt to infect",
+        "obj": "Windows computers"
+      },
+      {
+        "sub": "emails",
+        "rel": "purport to be from",
+        "obj": "Europcar"
+      },
+      {
+        "sub": "emails",
+        "rel": "contain",
+        "obj": "EuropCar Invoice.zip"
+      },
+      {
+        "sub": "EuropCar Invoice.zip",
+        "rel": "is detected as",
+        "obj": "Troj/InvoZip"
+      },
+      {
+        "sub": "cybercriminals",
+        "rel": "forged",
+        "obj": "sender email address"
+      },
+      {
+        "sub": "Troj/InvoZip",
+        "rel": "allows remote hackers to take control of",
+        "obj": "computers"
+      },
+      {
+        "sub": "remote hackers",
+        "rel": "can use infected computers to",
+        "obj": "steal information"
+      },
+      {
+        "sub": "remote hackers",
+        "rel": "can use infected computers to",
+        "obj": "launch spam attacks"
+      },
+      {
+        "sub": "users",
+        "rel": "may be concerned about",
+        "obj": "credit card compromise"
+      },
+      {
+        "sub": "users",
+        "rel": "may open",
+        "obj": "ZIP file without considering risks"
+      },
+      {
+        "sub": "antivirus defences",
+        "rel": "should be kept up to date",
+        "obj": "System"
+      },
+      {
+        "sub": "unsolicited emails with attachments",
+        "rel": "should be treated with suspicion",
+        "obj": "System"
+      },
+      {
+        "sub": "sender email address",
+        "rel": "is associated with",
+        "obj": "emails"
+      },
+      {
+        "sub": "remote hackers",
+        "rel": "infect via",
+        "obj": "emails"
+      },
+      {
+        "sub": "users",
+        "rel": "receive",
+        "obj": "emails"
+      }
+    ]
+  }
+}

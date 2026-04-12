@@ -1,0 +1,381 @@
+{
+  "sample_id": "securenlp__Darwin_fav_APT_Group",
+  "sample_index": 191,
+  "source": "securenlp",
+  "file_name": "Darwin_fav_APT_Group",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT12",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "IXESHE",
+          "DynCalc",
+          "DNSCALC"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Chinese People’s Liberation Army",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PRC",
+        "type": "identity",
+        "alias": [
+          "People’s Republic of China"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "New York Times",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Arbor Networks",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Etumbot APT Backdoor",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "RIPTIDE",
+        "type": "malware",
+        "alias": [
+          "Etumbot backdoor"
+        ],
+        "mother entity": [
+          "Etumbot APT Backdoor"
+        ]
+      },
+      {
+        "name": "HIGHTIDE",
+        "type": "malware",
+        "alias": [],
+        "mother entity": [
+          "RIPTIDE"
+        ]
+      },
+      {
+        "name": "THREEBYTE",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "WATERSPOUT",
+        "type": "malware",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Tran Duy Linh",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Malicious Microsoft Word document",
+        "type": "file",
+        "alias": [
+          "exploit document",
+          "exploit documents",
+          "documents"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "141.108.2.157",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "video[.]csmcpr[.]com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "icc[.]ignorelist[.]com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Word (.doc) document",
+        "type": "file",
+        "alias": [
+          "exploit document"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "C:\\DOCUMENTS and SETTINGS\\{user}\\LOCAL SETTINGS\\Temp\\word.exe",
+        "type": "file",
+        "alias": [
+          "word.exe",
+          "winword.exe"
+        ],
+        "mother entity": [
+          "HIGHTIDE",
+          "THREEBYTE",
+          "WATERSPOUT"
+        ]
+      },
+      {
+        "name": "C:\\Documents and Settings\\{user}\\Application Data\\Location",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "RIPTIDE"
+        ]
+      },
+      {
+        "name": "lilywang823@gmail.com",
+        "type": "email-address",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Taiwanese Government organizations",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Japan-based electronics company",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "FireEye",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Mandiant 2014 M-Trends report",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "valid but compromised account",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT12",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "organizations in Japan and Taiwan"
+      },
+      {
+        "sub": "APT12",
+        "rel": "thought to have links to",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "Chinese People’s Liberation Army"
+      },
+      {
+        "sub": "APT12",
+        "rel": "compromising",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "New York Times"
+      },
+      {
+        "sub": "Arbor Networks",
+        "rel": "released their blog about the Etumbot APT Backdoor",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Etumbot APT Backdoor"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "observed APT12 use a modified RIPTIDE backdoor",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "APT12"
+      },
+      {
+        "sub": "Malicious Microsoft Word document",
+        "rel": "exploits",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "Malicious Microsoft Word document",
+        "rel": "dropped",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "HIGHTIDE"
+      },
+      {
+        "sub": "HIGHTIDE",
+        "rel": "connected directly to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "141.108.2.157"
+      },
+      {
+        "sub": "Malicious Microsoft Word document",
+        "rel": "delivered via phishing emails to",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "Taiwanese Government organizations"
+      },
+      {
+        "sub": "Malicious Microsoft Word document",
+        "rel": "dropped to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "C:\\DOCUMENTS and SETTINGS\\{user}\\LOCAL SETTINGS\\Temp\\word.exe"
+      },
+      {
+        "sub": "RIPTIDE",
+        "rel": "drops into",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "C:\\Documents and Settings\\{user}\\Application Data\\Location"
+      },
+      {
+        "sub": "Malicious Microsoft Word document",
+        "rel": "utilizing",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Tran Duy Linh"
+      },
+      {
+        "sub": "Malicious Microsoft Word document",
+        "rel": "dropped",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "THREEBYTE"
+      },
+      {
+        "sub": "THREEBYTE",
+        "rel": "sent callback traffic to",
+        "rel_type": [
+          "beacons-to"
+        ],
+        "obj": "video[.]csmcpr[.]com"
+      },
+      {
+        "sub": "Malicious Microsoft Word document",
+        "rel": "designed to exploit",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "drops to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "C:\\DOCUMENTS and SETTINGS\\{user}\\LOCAL SETTINGS\\Temp\\word.exe"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "connects to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "icc[.]ignorelist[.]com"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Japan-based electronics company"
+      },
+      {
+        "sub": "WATERSPOUT",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Taiwanese Government organizations"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "believed the change from RIPTIDE to HIGHTIDE represents a temporary tool shift",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "APT12"
+      },
+      {
+        "sub": "APT12",
+        "rel": "targeted",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Taiwanese Government organizations"
+      },
+      {
+        "sub": "Mandiant 2014 M-Trends report",
+        "rel": "describes the pause and retooling by APT12",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "APT12"
+      }
+    ]
+  }
+}

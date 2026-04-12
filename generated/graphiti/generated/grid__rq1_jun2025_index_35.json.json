@@ -1,0 +1,148 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_35.json",
+  "sample_index": 225,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_35.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Gumblar",
+        "type": "Malware"
+      },
+      {
+        "name": "FTP",
+        "type": "Tool"
+      },
+      {
+        "name": "HTML",
+        "type": "Software"
+      },
+      {
+        "name": "PHP",
+        "type": "Software"
+      },
+      {
+        "name": "Windows",
+        "type": "Software"
+      },
+      {
+        "name": "redirectors",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "infectors",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "injectors",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "dispatchers",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "malicious Windows executable",
+        "type": "Indicator"
+      },
+      {
+        "name": "exploits",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "backdoor",
+        "type": "Tool"
+      },
+      {
+        "name": "FTP credentials",
+        "type": "Indicator"
+      },
+      {
+        "name": "webpages",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "webservers",
+        "type": "Infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Gumblar",
+        "rel": "USES",
+        "obj": "FTP"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "MODIFIES",
+        "obj": "HTML"
+      },
+      {
+        "sub": "redirectors",
+        "rel": "redirects to",
+        "obj": "webpages"
+      },
+      {
+        "sub": "infectors",
+        "rel": "REQUIRES",
+        "obj": "PHP"
+      },
+      {
+        "sub": "infectors",
+        "rel": "HOSTS",
+        "obj": "exploits"
+      },
+      {
+        "sub": "malicious Windows executable",
+        "rel": "waits for",
+        "obj": "FTP credentials"
+      },
+      {
+        "sub": "injectors",
+        "rel": "HOSTS",
+        "obj": "backdoor"
+      },
+      {
+        "sub": "injectors",
+        "rel": "injects into",
+        "obj": "webservers"
+      },
+      {
+        "sub": "dispatchers",
+        "rel": "issues commands to",
+        "obj": "injectors"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "INFECTS",
+        "obj": "webpages"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "expands infection to",
+        "obj": "webservers"
+      },
+      {
+        "sub": "Gumblar",
+        "rel": "USES",
+        "obj": "exploits"
+      }
+    ]
+  }
+}

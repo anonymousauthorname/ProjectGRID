@@ -1,0 +1,352 @@
+{
+  "sample_id": "securenlp__Duke_cloud_Linux",
+  "sample_index": 189,
+  "source": "securenlp",
+  "file_name": "Duke_cloud_Linux",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Spear-phishing campaign"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has filename",
+        "obj": "US letter fax test page"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has hash",
+        "obj": "28d29c702fdf3c16f27b33f3e32687dd82185e8b"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has tactic",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Belong to",
+        "obj": "Duke group"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Has geolocation",
+        "obj": "US Department of Defense"
+      },
+      {
+        "sub": "Decoy document",
+        "rel": "Mimic",
+        "obj": "eFax-related content"
+      },
+      {
+        "sub": "Decoy document",
+        "rel": "Has value",
+        "obj": "Legitimate eFax-related content"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "US Department of Defense"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Spear-phishing campaign"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Loader"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "DropperSolution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "BastionSolution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "OneDriveSolution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Belong to",
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Shared code framework 'Z'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Modular, reusable components"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Reuse across different malware solutions"
+      },
+      {
+        "sub": "Initial Access: Spear-phishing emails",
+        "rel": "Contain",
+        "obj": "Links to compromised websites"
+      },
+      {
+        "sub": "Compromised websites",
+        "rel": "Host",
+        "obj": "Zip archives"
+      },
+      {
+        "sub": "Zip archives",
+        "rel": "Contain",
+        "obj": "CloudDuke-laden executables"
+      },
+      {
+        "sub": "CloudDuke-laden executables",
+        "rel": "Execute",
+        "obj": "CloudDuke loader"
+      },
+      {
+        "sub": "CloudDuke loader",
+        "rel": "Embed",
+        "obj": "Downloader"
+      },
+      {
+        "sub": "CloudDuke loader",
+        "rel": "Execute",
+        "obj": "Trojan component"
+      },
+      {
+        "sub": "Trojan component",
+        "rel": "Establish",
+        "obj": "Initial access to victim's system"
+      },
+      {
+        "sub": "Note: \"CloudDuke\" is treated as a Malware entity",
+        "rel": "\"spear-phishing emails\" is a Tactic",
+        "obj": "\"compromised websites\", \"zip archives\", \"downloader\", \"trojan component\" are Infrastructure or Malware"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Loader"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "DropperSolution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "BastionSolution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "OneDriveSolution"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Compression"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Randomization"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Network communications"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Z"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Victim's system"
+      },
+      {
+        "sub": "Shared code framework 'Z'",
+        "rel": "Modify",
+        "obj": "Encryption"
+      },
+      {
+        "sub": "Shared code framework 'Z'",
+        "rel": "Modify",
+        "obj": "Compression"
+      },
+      {
+        "sub": "Shared code framework 'Z'",
+        "rel": "Modify",
+        "obj": "Randomization"
+      },
+      {
+        "sub": "Shared code framework 'Z'",
+        "rel": "Modify",
+        "obj": "Network communications"
+      },
+      {
+        "sub": "Microsoft OneDrive",
+        "rel": "Use",
+        "obj": "Defense Evasion"
+      },
+      {
+        "sub": "The Duke group",
+        "rel": "Operate",
+        "obj": "Microsoft OneDrive"
+      },
+      {
+        "sub": "Microsoft OneDrive",
+        "rel": "Has value",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "Microsoft OneDrive",
+        "rel": "Has value",
+        "obj": "Command and control"
+      },
+      {
+        "sub": "Microsoft OneDrive",
+        "rel": "Modify",
+        "obj": "Legitimate user behavior"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "OneDrive"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Discover",
+        "obj": "Internal data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Discover",
+        "obj": "Command structures"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "Search",
+        "obj": "Files containing commands"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has tactic",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "Operate",
+        "obj": "Victim's computer"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "Write",
+        "obj": "Files containing commands"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "Copy",
+        "obj": "Data from victim's computer"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "Locate at",
+        "obj": "OneDrive account"
+      },
+      {
+        "sub": "OneDrive",
+        "rel": "Use",
+        "obj": "CloudDuke"
+      },
+      {
+        "sub": "CloudDuke",
+        "rel": "Operate",
+        "obj": "OneDrive"
+      },
+      {
+        "sub": "OneDrive",
+        "rel": "Has value",
+        "obj": "Command and Control"
+      },
+      {
+        "sub": "OneDrive",
+        "rel": "Has value",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "Use",
+        "obj": "Cloud storage"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "Operate",
+        "obj": "Victim's OneDrive account"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "Search",
+        "obj": "Files"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "Has value",
+        "obj": "Stolen data"
+      },
+      {
+        "sub": "OneDriveSolution",
+        "rel": "Modify",
+        "obj": "Victim's computer"
+      }
+    ]
+  }
+}

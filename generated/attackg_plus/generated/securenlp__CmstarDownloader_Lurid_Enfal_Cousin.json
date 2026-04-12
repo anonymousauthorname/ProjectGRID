@@ -1,0 +1,502 @@
+{
+  "sample_id": "securenlp__CmstarDownloader_Lurid_Enfal_Cousin",
+  "sample_index": 164,
+  "source": "securenlp",
+  "file_name": "CmstarDownloader_Lurid_Enfal_Cousin",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "Cmstar downloader",
+        "rel": "Construct",
+        "obj": "malicious document"
+      },
+      {
+        "sub": "Malicious document",
+        "rel": "Has value",
+        "obj": "'Какая реформа армии нужна Украине.doc'"
+      },
+      {
+        "sub": "Malicious document",
+        "rel": "Has value",
+        "obj": "'запуск ракеты-носителя Союз.doc'"
+      },
+      {
+        "sub": "Malicious document",
+        "rel": "Has value",
+        "obj": "'launch of the carrier rocket Soyuz'"
+      },
+      {
+        "sub": "Malicious document",
+        "rel": "Has value",
+        "obj": "'Army-2015'"
+      },
+      {
+        "sub": "Malicious document",
+        "rel": "Operate",
+        "obj": "victim organization"
+      },
+      {
+        "sub": "Malicious document",
+        "rel": "Belong to",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Malicious document",
+        "rel": "Has geolocation",
+        "obj": "target organization"
+      },
+      {
+        "sub": "Cmstar downloader",
+        "rel": "Has URL",
+        "obj": "malicious document"
+      },
+      {
+        "sub": "Cmstar downloader",
+        "rel": "Modify",
+        "obj": "phishing for information"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Use",
+        "obj": "MNKit"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Use",
+        "obj": "Tran Duy Linh toolkit"
+      },
+      {
+        "sub": "MNKit",
+        "rel": "Construct",
+        "obj": "Malicious document"
+      },
+      {
+        "sub": "Tran Duy Linh toolkit",
+        "rel": "Construct",
+        "obj": "Malicious document"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Operate",
+        "obj": "happy.launchtrue.com"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Operate",
+        "obj": "links.dogsforhelp.com"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Operate",
+        "obj": "three.earewq.com"
+      },
+      {
+        "sub": "C2 domain",
+        "rel": "Locate at",
+        "obj": "happy.launchtrue.com"
+      },
+      {
+        "sub": "C2 domain",
+        "rel": "Locate at",
+        "obj": "links.dogsforhelp.com"
+      },
+      {
+        "sub": "C2 domain",
+        "rel": "Locate at",
+        "obj": "three.earewq.com"
+      },
+      {
+        "sub": "Threat actor",
+        "rel": "Develop",
+        "obj": "Cmstar"
+      },
+      {
+        "sub": "Threat actor",
+        "rel": "Maintain",
+        "obj": "C2 domain"
+      },
+      {
+        "sub": "Threat actor",
+        "rel": "Belong to",
+        "obj": "MNKit"
+      },
+      {
+        "sub": "Threat actor",
+        "rel": "Belong to",
+        "obj": "Tran Duy Linh toolkit"
+      },
+      {
+        "sub": "Cmstar downloader",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "Cmstar downloader",
+        "rel": "Use",
+        "obj": "Microsoft Office Word document"
+      },
+      {
+        "sub": "Microsoft Office Word document",
+        "rel": "Exploit",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "Cmstar downloader",
+        "rel": "Construct",
+        "obj": "malicious Microsoft Office Word document"
+      },
+      {
+        "sub": "Malicious Microsoft Office Word document",
+        "rel": "Belong to",
+        "obj": "spear-phishing attack"
+      },
+      {
+        "sub": "spear-phishing attack",
+        "rel": "Modify",
+        "obj": "document content to appear legitimate"
+      },
+      {
+        "sub": "document content",
+        "rel": "Has value",
+        "obj": "'launch of the carrier rocket Soyuz'"
+      },
+      {
+        "sub": "document content",
+        "rel": "Has value",
+        "obj": "'Army-2015'"
+      },
+      {
+        "sub": "MNKit",
+        "rel": "Construct",
+        "obj": "malicious Microsoft Office Word document"
+      },
+      {
+        "sub": "Tran Duy Linh",
+        "rel": "Construct",
+        "obj": "malicious Microsoft Office Word document"
+      },
+      {
+        "sub": "Cmstar downloader",
+        "rel": "Write",
+        "obj": "victim's system"
+      },
+      {
+        "sub": "malicious Microsoft Office Word document",
+        "rel": "Operate",
+        "obj": "victim's system"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "wininet.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "advapi32.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "kernel32.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Decrypt",
+        "obj": "Configuration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Decrypt",
+        "obj": "Encrypted strings"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Decrypt",
+        "obj": "Shellcode payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "HTTP POST requests"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Has URL",
+        "obj": "http://happy.launchtrue.com:8080/cgl-bin/update.cgi"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Import address table"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Character-to-offset mapping"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Shellcode payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "http://happy.launchtrue.com:8080/cgl-bin/update.cgi"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Modify",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Registry",
+        "rel": "Has value",
+        "obj": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\xpsfiltsvcs"
+      },
+      {
+        "sub": "Registry",
+        "rel": "Has value",
+        "obj": "rundll32.exe C:\\DOCUME~1\\ADMINI~1\\LOCALS~1\\Temp\\xpsfiltsvcs.dll,XpsRegisterServer"
+      },
+      {
+        "sub": "Registry",
+        "rel": "Construct",
+        "obj": "HKCU\\Software\\Microsoft\\CTF\\LangBarAddIn"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Belong to",
+        "obj": "Cmstar"
+      },
+      {
+        "sub": "Persistence",
+        "rel": "Use",
+        "obj": "Run at system startup"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has technique",
+        "obj": "Hashing process names"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Obfuscation"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Use",
+        "obj": "Encryption"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Operate",
+        "obj": "Antivirus process detection"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Modify",
+        "obj": "Boolean flag in data sent to C2 server"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Locate at",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has value",
+        "obj": "0x1E00AFA"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has value",
+        "obj": "0xBEE091E8"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Has value",
+        "obj": "0xD46FCDFA"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Detect",
+        "obj": "Kaspersky’s 'avp.exe'"
+      },
+      {
+        "sub": "Defense Evasion",
+        "rel": "Avoid",
+        "obj": "Analysis environments"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Use",
+        "obj": "avp.exe"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Detect",
+        "obj": "antivirus process"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Has value",
+        "obj": "Windows version"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Has value",
+        "obj": "CPU architecture"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Has value",
+        "obj": "elevated privileges"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Has value",
+        "obj": "antivirus presence"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Operate",
+        "obj": "compromised system"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Modify",
+        "obj": "system-specific information"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Use",
+        "obj": "http://happy.launchtrue.com:8080/cgl-bin/update.cgi"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Operate",
+        "obj": "question.eboregi.com"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Operate",
+        "obj": "help.ubxpi0s.com"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Has URL",
+        "obj": "http://happy.launchtrue.com:8080/cgl-bin/update.cgi"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Has value",
+        "obj": "\"cgl-bin\""
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Modify",
+        "obj": "HTTP POST request"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Use",
+        "obj": "Windows version"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Use",
+        "obj": "CPU architecture"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Use",
+        "obj": "elevated privileges"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Use",
+        "obj": "antivirus presence"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Has vulnerability",
+        "obj": "encrypted and obfuscated communication"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Use",
+        "obj": "HTTP POST"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Write",
+        "obj": "C2 server"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Operate",
+        "obj": "C2 channel"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Modify",
+        "obj": "data structure"
+      },
+      {
+        "sub": "Cmstar",
+        "rel": "Encrypt",
+        "obj": "data using single-byte XOR with key 0x45"
+      },
+      {
+        "sub": "C2 server",
+        "rel": "Receive",
+        "obj": "data from Cmstar"
+      },
+      {
+        "sub": "C2 channel",
+        "rel": "Operate",
+        "obj": "data exfiltration"
+      },
+      {
+        "sub": "C2 channel",
+        "rel": "Construct",
+        "obj": "HTTP POST requests"
+      }
+    ]
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "sample_id": "casie__10150.json",
+  "sample_index": 48,
+  "source": "casie",
+  "file_name": "10150.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "INTEL",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MANAGEMENT ENGINE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ACTIVE MANAGEMENT TECHNOLOGY",
+        "type": "TOOL"
+      },
+      {
+        "name": "POSITIVE TECHNOLOGIES",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CVE-2018-3655",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "DMITRY SKLYAROV",
+        "type": "PERSON"
+      },
+      {
+        "name": "INTEL-SA-00125",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MFS FILE SYSTEM",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "INTEL INTEGRITY KEY",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "NON-INTEL INTEGRITY KEY",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "INTEL CONFIDENTIALITY KEY",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "NON-INTEL CONFIDENTIALITY KEY",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "JTAG DEBUGGER",
+        "type": "TOOL"
+      },
+      {
+        "name": "LIBREM NOTEBOOKS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PURISM",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "GOOGLE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "NON-INTEL ROOT SECRET",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DMITRY SKLYAROV",
+        "rel": "related_to",
+        "obj": "POSITIVE TECHNOLOGIES"
+      },
+      {
+        "sub": "POSITIVE TECHNOLOGIES",
+        "rel": "related_to",
+        "obj": "CVE-2018-3655"
+      },
+      {
+        "sub": "CVE-2018-3655",
+        "rel": "related_to",
+        "obj": "MANAGEMENT ENGINE"
+      },
+      {
+        "sub": "MANAGEMENT ENGINE",
+        "rel": "related_to",
+        "obj": "ACTIVE MANAGEMENT TECHNOLOGY"
+      },
+      {
+        "sub": "MANAGEMENT ENGINE",
+        "rel": "related_to",
+        "obj": "MFS FILE SYSTEM"
+      },
+      {
+        "sub": "MANAGEMENT ENGINE",
+        "rel": "related_to",
+        "obj": "INTEL-SA-00125"
+      },
+      {
+        "sub": "INTEL-SA-00125",
+        "rel": "related_to",
+        "obj": "MFS FILE SYSTEM"
+      },
+      {
+        "sub": "INTEL",
+        "rel": "related_to",
+        "obj": "MANAGEMENT ENGINE"
+      },
+      {
+        "sub": "INTEL",
+        "rel": "related_to",
+        "obj": "CVE-2018-3655"
+      },
+      {
+        "sub": "INTEL",
+        "rel": "related_to",
+        "obj": "INTEL-SA-00125"
+      },
+      {
+        "sub": "PURISM",
+        "rel": "related_to",
+        "obj": "LIBREM NOTEBOOKS"
+      },
+      {
+        "sub": "PURISM",
+        "rel": "related_to",
+        "obj": "MANAGEMENT ENGINE"
+      },
+      {
+        "sub": "GOOGLE",
+        "rel": "related_to",
+        "obj": "MANAGEMENT ENGINE"
+      },
+      {
+        "sub": "DMITRY SKLYAROV",
+        "rel": "related_to",
+        "obj": "CVE-2018-3655"
+      },
+      {
+        "sub": "JTAG DEBUGGER",
+        "rel": "related_to",
+        "obj": "MANAGEMENT ENGINE"
+      },
+      {
+        "sub": "MFS FILE SYSTEM",
+        "rel": "related_to",
+        "obj": "INTEL INTEGRITY KEY"
+      },
+      {
+        "sub": "MFS FILE SYSTEM",
+        "rel": "related_to",
+        "obj": "NON-INTEL INTEGRITY KEY"
+      },
+      {
+        "sub": "MFS FILE SYSTEM",
+        "rel": "related_to",
+        "obj": "INTEL CONFIDENTIALITY KEY"
+      },
+      {
+        "sub": "MFS FILE SYSTEM",
+        "rel": "related_to",
+        "obj": "NON-INTEL CONFIDENTIALITY KEY"
+      },
+      {
+        "sub": "NON-INTEL INTEGRITY KEY",
+        "rel": "related_to",
+        "obj": "CVE-2018-3655"
+      },
+      {
+        "sub": "NON-INTEL CONFIDENTIALITY KEY",
+        "rel": "related_to",
+        "obj": "CVE-2018-3655"
+      },
+      {
+        "sub": "JTAG DEBUGGER",
+        "rel": "related_to",
+        "obj": "NON-INTEL ROOT SECRET"
+      },
+      {
+        "sub": "INTEL",
+        "rel": "related_to",
+        "obj": "PURISM"
+      },
+      {
+        "sub": "INTEL",
+        "rel": "related_to",
+        "obj": "GOOGLE"
+      }
+    ]
+  }
+}

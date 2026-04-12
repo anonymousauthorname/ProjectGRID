@@ -1,0 +1,326 @@
+{
+  "sample_id": "securenlp__Compromise_Greece_Beijing",
+  "sample_index": 180,
+  "source": "securenlp",
+  "file_name": "Compromise_Greece_Beijing",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "EMBASSY OF GREECE BEIJING",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "PHYSICALDRIVE0",
+        "type": "PERSON"
+      },
+      {
+        "name": "1.JAR",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PACK",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "DEFENSE.MIRACLECZ.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "BUY.MIRACLECZ.COM",
+        "type": "LOCATION"
+      },
+      {
+        "name": "MALWARE_SAMPLE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BASE64_DECODED_PAYLOAD",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "C&C_COMMUNICATION",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "REGISTRY_MODIFICATION",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "INTERNET_EXPLORER_INSTANCE",
+        "type": "TOOL"
+      },
+      {
+        "name": "JAVA_DECOMPILER",
+        "type": "TOOL"
+      },
+      {
+        "name": "7-ZIP",
+        "type": "TOOL"
+      },
+      {
+        "name": "IDA PRO",
+        "type": "TOOL"
+      },
+      {
+        "name": "WIRESHARK",
+        "type": "TOOL"
+      },
+      {
+        "name": "BASE64_DECODE_SITE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MALWARE_CAMPAIGN",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "SHADOWED_URL_PATTERN",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "WbemLocator_COM_INTERFACE",
+        "type": "TOOL"
+      },
+      {
+        "name": "EMBASSY_OF_GREECE_BEIJING_COMPROMISE",
+        "type": "EVENT"
+      },
+      {
+        "name": "EMBASSY_OF_GREECE_BEIJING",
+        "type": "Unknown"
+      },
+      {
+        "name": "SPPOOLSV.EXE",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "PHYSICALDRIVE0",
+        "rel": "related_to",
+        "obj": "1.JAR"
+      },
+      {
+        "sub": "1.JAR",
+        "rel": "related_to",
+        "obj": "MALWARE_SAMPLE"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "DEFENSE.MIRACLECZ.COM"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "BUY.MIRACLECZ.COM"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "REGISTRY_MODIFICATION"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "C&C_COMMUNICATION"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "INTERNET_EXPLORER_INSTANCE"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "BASE64_DECODED_PAYLOAD"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "MALWARE_CAMPAIGN"
+      },
+      {
+        "sub": "1.JAR",
+        "rel": "related_to",
+        "obj": "PACK"
+      },
+      {
+        "sub": "DEFENSE.MIRACLECZ.COM",
+        "rel": "related_to",
+        "obj": "BASE64_DECODED_PAYLOAD"
+      },
+      {
+        "sub": "BUY.MIRACLECZ.COM",
+        "rel": "related_to",
+        "obj": "SHADOWED_URL_PATTERN"
+      },
+      {
+        "sub": "MALWARE_CAMPAIGN",
+        "rel": "related_to",
+        "obj": "EMBASSY_OF_GREECE_BEIJING"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "WbemLocator_COM_INTERFACE"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "SPPOOLSV.EXE"
+      },
+      {
+        "sub": "EMBASSY_OF_GREECE_BEIJING",
+        "rel": "related_to",
+        "obj": "EMBASSY_OF_GREECE_BEIJING_COMPROMISE"
+      },
+      {
+        "sub": "JAVA_DECOMPILER",
+        "rel": "related_to",
+        "obj": "1.JAR"
+      },
+      {
+        "sub": "7-ZIP",
+        "rel": "related_to",
+        "obj": "PACK"
+      },
+      {
+        "sub": "IDA PRO",
+        "rel": "related_to",
+        "obj": "MALWARE_SAMPLE"
+      },
+      {
+        "sub": "WIRESHARK",
+        "rel": "related_to",
+        "obj": "DEFENSE.MIRACLECZ.COM"
+      },
+      {
+        "sub": "BASE64_DECODE_SITE",
+        "rel": "related_to",
+        "obj": "BASE64_DECODED_PAYLOAD"
+      },
+      {
+        "sub": "PHYSICALDRIVE0",
+        "rel": "related_to",
+        "obj": "1.JAR"
+      },
+      {
+        "sub": "1.JAR",
+        "rel": "related_to",
+        "obj": "MALWARE_SAMPLE"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "DEFENSE.MIRACLECZ.COM"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "BUY.MIRACLECZ.COM"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "REGISTRY_MODIFICATION"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "C&C_COMMUNICATION"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "INTERNET_EXPLORER_INSTANCE"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "BASE64_DECODED_PAYLOAD"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "MALWARE_CAMPAIGN"
+      },
+      {
+        "sub": "1.JAR",
+        "rel": "related_to",
+        "obj": "PACK"
+      },
+      {
+        "sub": "DEFENSE.MIRACLECZ.COM",
+        "rel": "related_to",
+        "obj": "BASE64_DECODED_PAYLOAD"
+      },
+      {
+        "sub": "BUY.MIRACLECZ.COM",
+        "rel": "related_to",
+        "obj": "SHADOWED_URL_PATTERN"
+      },
+      {
+        "sub": "MALWARE_CAMPAIGN",
+        "rel": "related_to",
+        "obj": "EMBASSY_OF_GREECE_BEIJING"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "WbemLocator_COM_INTERFACE"
+      },
+      {
+        "sub": "MALWARE_SAMPLE",
+        "rel": "related_to",
+        "obj": "SPPOOLSV.EXE"
+      },
+      {
+        "sub": "EMBASSY_OF_GREECE_BEIJING",
+        "rel": "related_to",
+        "obj": "EMBASSY_OF_GREECE_BEIJING_COMPROMISE"
+      },
+      {
+        "sub": "JAVA_DECOMPILER",
+        "rel": "related_to",
+        "obj": "1.JAR"
+      },
+      {
+        "sub": "7-ZIP",
+        "rel": "related_to",
+        "obj": "PACK"
+      },
+      {
+        "sub": "IDA PRO",
+        "rel": "related_to",
+        "obj": "MALWARE_SAMPLE"
+      },
+      {
+        "sub": "WIRESHARK",
+        "rel": "related_to",
+        "obj": "DEFENSE.MIRACLECZ.COM"
+      },
+      {
+        "sub": "BASE64_DECODE_SITE",
+        "rel": "related_to",
+        "obj": "BASE64_DECODED_PAYLOAD"
+      }
+    ]
+  }
+}

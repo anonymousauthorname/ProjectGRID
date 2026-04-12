@@ -1,0 +1,234 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_14.json",
+  "sample_index": 206,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_14.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SOPHOSLABS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "FACEBOOK",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MYSPACE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "GOOGLE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MAL/BADSRCC",
+        "type": "MALWARE"
+      },
+      {
+        "name": "MAL/JSREDIRA",
+        "type": "MALWARE"
+      },
+      {
+        "name": "MAL/VIDHTMLA",
+        "type": "MALWARE"
+      },
+      {
+        "name": "MAL/VIDHTMLB",
+        "type": "MALWARE"
+      },
+      {
+        "name": "MAL/VIDHTMLC",
+        "type": "MALWARE"
+      },
+      {
+        "name": "MAL/ENCPKGA",
+        "type": "MALWARE"
+      },
+      {
+        "name": "W32/KOOFAGEN",
+        "type": "MALWARE"
+      },
+      {
+        "name": "FLASHUPDATE.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ZLOB FAMILY",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "SQL INJECTION",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "FAKE ANTIVIRUS TROJANS",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "FACEBOOK WORMS",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "HERES A VIDEO PAGE",
+        "type": "EVENT"
+      },
+      {
+        "name": "THREAT ACTOR",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "FINDING THE MALWARE AUTHOR",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SOPHOSLABS",
+        "rel": "related_to",
+        "obj": "MAL/BADSRCC"
+      },
+      {
+        "sub": "SOPHOSLABS",
+        "rel": "related_to",
+        "obj": "MAL/JSREDIRA"
+      },
+      {
+        "sub": "SOPHOSLABS",
+        "rel": "related_to",
+        "obj": "MAL/VIDHTMLA"
+      },
+      {
+        "sub": "SOPHOSLABS",
+        "rel": "related_to",
+        "obj": "MAL/VIDHTMLB"
+      },
+      {
+        "sub": "SOPHOSLABS",
+        "rel": "related_to",
+        "obj": "MAL/VIDHTMLC"
+      },
+      {
+        "sub": "SOPHOSLABS",
+        "rel": "related_to",
+        "obj": "MAL/ENCPKGA"
+      },
+      {
+        "sub": "SOPHOSLABS",
+        "rel": "related_to",
+        "obj": "W32/KOOFAGEN"
+      },
+      {
+        "sub": "FACEBOOK",
+        "rel": "related_to",
+        "obj": "MAL/JSREDIRA"
+      },
+      {
+        "sub": "MYSPACE",
+        "rel": "related_to",
+        "obj": "MAL/JSREDIRA"
+      },
+      {
+        "sub": "GOOGLE",
+        "rel": "related_to",
+        "obj": "MAL/BADSRCC"
+      },
+      {
+        "sub": "MAL/BADSRCC",
+        "rel": "related_to",
+        "obj": "MAL/JSREDIRA"
+      },
+      {
+        "sub": "MAL/JSREDIRA",
+        "rel": "related_to",
+        "obj": "MAL/VIDHTMLA"
+      },
+      {
+        "sub": "MAL/VIDHTMLA",
+        "rel": "related_to",
+        "obj": "FLASHUPDATE.EXE"
+      },
+      {
+        "sub": "MAL/VIDHTMLC",
+        "rel": "related_to",
+        "obj": "MAL/ENCPKGA"
+      },
+      {
+        "sub": "MAL/ENCPKGA",
+        "rel": "related_to",
+        "obj": "ZLOB FAMILY"
+      },
+      {
+        "sub": "SQL INJECTION",
+        "rel": "related_to",
+        "obj": "MAL/BADSRCC"
+      },
+      {
+        "sub": "FAKE ANTIVIRUS TROJANS",
+        "rel": "related_to",
+        "obj": "ZLOB FAMILY"
+      },
+      {
+        "sub": "FACEBOOK WORMS",
+        "rel": "related_to",
+        "obj": "MAL/JSREDIRA"
+      },
+      {
+        "sub": "THREAT ACTOR",
+        "rel": "related_to",
+        "obj": "FACEBOOK"
+      },
+      {
+        "sub": "THREAT ACTOR",
+        "rel": "related_to",
+        "obj": "MYSPACE"
+      },
+      {
+        "sub": "THREAT ACTOR",
+        "rel": "related_to",
+        "obj": "ZLOB FAMILY"
+      },
+      {
+        "sub": "THREAT ACTOR",
+        "rel": "related_to",
+        "obj": "SQL INJECTION"
+      },
+      {
+        "sub": "THREAT ACTOR",
+        "rel": "related_to",
+        "obj": "FAKE ANTIVIRUS TROJANS"
+      },
+      {
+        "sub": "THREAT ACTOR",
+        "rel": "related_to",
+        "obj": "MAL/JSREDIRA"
+      },
+      {
+        "sub": "THREAT ACTOR",
+        "rel": "related_to",
+        "obj": "HERES A VIDEO PAGE"
+      },
+      {
+        "sub": "THREAT ACTOR",
+        "rel": "related_to",
+        "obj": "FINDING THE MALWARE AUTHOR"
+      }
+    ]
+  }
+}

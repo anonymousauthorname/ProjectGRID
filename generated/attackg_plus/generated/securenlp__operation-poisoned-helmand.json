@@ -1,0 +1,382 @@
+{
+  "sample_id": "securenlp__operation-poisoned-helmand",
+  "sample_index": 174,
+  "source": "securenlp",
+  "file_name": "operation-poisoned-helmand",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Infrastructurе",
+        "rel": "Has geolocation",
+        "obj": "Location"
+      },
+      {
+        "sub": "Website",
+        "rel": "Locate at",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Conduct",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Infrastructure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather information about",
+        "obj": "Website"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Determine",
+        "obj": "Attack surface"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Identify",
+        "obj": "Potential entry points"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Resource"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Modify",
+        "obj": "cdn.afghanistan.af"
+      },
+      {
+        "sub": "cdn.afghanistan.af",
+        "rel": "Has value",
+        "obj": "CDN"
+      },
+      {
+        "sub": "cdn.afghanistan.af",
+        "rel": "Operate",
+        "obj": "Afghan Ministry of Communications and IT"
+      },
+      {
+        "sub": "Malicious JavaScript code",
+        "rel": "Inject",
+        "obj": "Content served to users"
+      },
+      {
+        "sub": "Malicious JavaScript code",
+        "rel": "Use",
+        "obj": "Distribution platform"
+      },
+      {
+        "sub": "Malicious Java applets",
+        "rel": "Deliver",
+        "obj": "Government websites"
+      },
+      {
+        "sub": "Malicious Java applets",
+        "rel": "Have URL",
+        "obj": "Resource hosted on cdn.afghanistan.af"
+      },
+      {
+        "sub": "Resource",
+        "rel": "Belong to",
+        "obj": "CDN infrastructure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "cdn.afghanistan.af"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "JavaScript code"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Government websites"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has geolocation",
+        "obj": "Afghanistan"
+      },
+      {
+        "sub": "Vulnerable Software",
+        "rel": "Has vulnerability",
+        "obj": "CDN infrastructure"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "XSS Vulnerability"
+      },
+      {
+        "sub": "CDN Infrastructure",
+        "rel": "Has vulnerability",
+        "obj": "XSS Vulnerability"
+      },
+      {
+        "sub": "gop-script.js",
+        "rel": "Has URL",
+        "obj": "cdn.afghanistan.af/scripts/gop-script.js"
+      },
+      {
+        "sub": "gop-script.js",
+        "rel": "Modify",
+        "obj": "Malicious JavaScript Code"
+      },
+      {
+        "sub": "Malicious JavaScript Code",
+        "rel": "Execute",
+        "obj": "User Browser"
+      },
+      {
+        "sub": "Official Afghan Government Websites",
+        "rel": "Locate at",
+        "obj": "cdn.afghanistan.af"
+      },
+      {
+        "sub": "Malicious JavaScript Code",
+        "rel": "Write",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Deliver",
+        "obj": "User"
+      },
+      {
+        "sub": "CDN Infrastructure",
+        "rel": "Belong to",
+        "obj": "Afghan Government Websites"
+      },
+      {
+        "sub": "XSS Vulnerability",
+        "rel": "Construct",
+        "obj": "Drive-by Compromise"
+      },
+      {
+        "sub": "Malicious JavaScript",
+        "rel": "Use",
+        "obj": "document.write"
+      },
+      {
+        "sub": "Malicious JavaScript",
+        "rel": "Write",
+        "obj": "external domains"
+      },
+      {
+        "sub": "external domains",
+        "rel": "Has URL",
+        "obj": "update.javaplug-in.com"
+      },
+      {
+        "sub": "external domains",
+        "rel": "Has URL",
+        "obj": "neoting.com"
+      },
+      {
+        "sub": "Malicious Java applet",
+        "rel": "Has hash",
+        "obj": "388E6F41462774268491D1F121F333618C6A2C9A"
+      },
+      {
+        "sub": "Malicious Java applet",
+        "rel": "Download",
+        "obj": "Windows PE executable payload"
+      },
+      {
+        "sub": "Windows PE executable payload",
+        "rel": "Has URL",
+        "obj": "http://mfa.gov.af/content/images/icon35.png"
+      },
+      {
+        "sub": "Windows PE executable payload",
+        "rel": "Operate",
+        "obj": "as self-extracting  Microsoft Cabinet executable"
+      },
+      {
+        "sub": "self-extracting  Microsoft Cabinet executable",
+        "rel": "Deploy",
+        "obj": "further malicious components"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "XOR 0xC8"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "XOR 0xFF"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Disguise as",
+        "obj": "Java applet"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Disguise as",
+        "obj": "Windows PE payload"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "DLL sideloading"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Load into",
+        "obj": "dllhost.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Evade",
+        "obj": "process-based security mechanisms"
+      },
+      {
+        "sub": "CDN",
+        "rel": "Has vulnerability",
+        "obj": "XSS attack"
+      },
+      {
+        "sub": "CDN",
+        "rel": "Serve content to",
+        "obj": "Government domain"
+      },
+      {
+        "sub": "CDN",
+        "rel": "Belong to",
+        "obj": "Multiple ministries"
+      },
+      {
+        "sub": "Government domain",
+        "rel": "Locate at",
+        "obj": "Afghan government"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "Internal network structure of Afghan government"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Identify",
+        "obj": "Shared CDN infrastructure"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Map out",
+        "obj": "Network topology"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Target",
+        "obj": "Official sites"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Windows PE executable"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "DLL"
+      },
+      {
+        "sub": "DLL",
+        "rel": "Load",
+        "obj": "Backdoor binary"
+      },
+      {
+        "sub": "Backdoor binary",
+        "rel": "Operate",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "Backdoor binary",
+        "rel": "Maintain access",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Domain"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Domain"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has value",
+        "obj": "oracle0876634.javaplug-in.com"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Has hostname",
+        "obj": "oracle0876634.javaplug-in.com"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Share root domain with",
+        "obj": "update.javaplug-in.com"
+      },
+      {
+        "sub": "Domain",
+        "rel": "Mimic",
+        "obj": "Oracle Java update"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Establish",
+        "obj": "Command and Control communication"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Connect to",
+        "obj": "oracle0876634.javaplug-in.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Evade detection by",
+        "obj": "Using domain mimicking legitimate Oracle Java update"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Maintain persistent control over",
+        "obj": "Compromised systems"
+      }
+    ]
+  }
+}

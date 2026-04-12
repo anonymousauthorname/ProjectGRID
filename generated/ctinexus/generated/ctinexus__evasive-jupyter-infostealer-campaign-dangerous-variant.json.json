@@ -1,0 +1,284 @@
+{
+  "sample_id": "ctinexus__evasive-jupyter-infostealer-campaign-dangerous-variant.json",
+  "sample_index": 53,
+  "source": "ctinexus",
+  "file_name": "evasive-jupyter-infostealer-campaign-dangerous-variant.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Jupyter",
+        "type": "Unknown"
+      },
+      {
+        "name": "Chrome, Edge, and Firefox browsers",
+        "type": "Unknown"
+      },
+      {
+        "name": "Yellow Cockatoo",
+        "type": "Unknown"
+      },
+      {
+        "name": "Solarmarker",
+        "type": "Unknown"
+      },
+      {
+        "name": "Polazert",
+        "type": "Unknown"
+      },
+      {
+        "name": "credential information",
+        "type": "Unknown"
+      },
+      {
+        "name": "computer name",
+        "type": "Unknown"
+      },
+      {
+        "name": "user's admin privileges",
+        "type": "Unknown"
+      },
+      {
+        "name": "cookies",
+        "type": "Unknown"
+      },
+      {
+        "name": "Web data",
+        "type": "Unknown"
+      },
+      {
+        "name": "browser password manager information",
+        "type": "Unknown"
+      },
+      {
+        "name": "crypto-wallets",
+        "type": "Unknown"
+      },
+      {
+        "name": "remote access apps",
+        "type": "Unknown"
+      },
+      {
+        "name": "a full-fledged backdoor",
+        "type": "Unknown"
+      },
+      {
+        "name": "command and control (C2) communications",
+        "type": "Unknown"
+      },
+      {
+        "name": "dropper and loader for other malware",
+        "type": "Unknown"
+      },
+      {
+        "name": "PowerShell scripts and commands",
+        "type": "Unknown"
+      },
+      {
+        "name": "PowerShell command modifications",
+        "type": "Unknown"
+      },
+      {
+        "name": "legitimate-looking, digitally signed payloads",
+        "type": "Unknown"
+      },
+      {
+        "name": "late October",
+        "type": "Unknown"
+      },
+      {
+        "name": "VMware's Carbon Black MDR service",
+        "type": "Unknown"
+      },
+      {
+        "name": "the new version of the malware",
+        "type": "Unknown"
+      },
+      {
+        "name": "Morphisec",
+        "type": "Unknown"
+      },
+      {
+        "name": "BlackBerry",
+        "type": "Unknown"
+      },
+      {
+        "name": "Ethereum Wallet",
+        "type": "Unknown"
+      },
+      {
+        "name": "MyMonero Wallet",
+        "type": "Unknown"
+      },
+      {
+        "name": "Atomic Wallet",
+        "type": "Unknown"
+      },
+      {
+        "name": "OpenVPN",
+        "type": "Unknown"
+      },
+      {
+        "name": "Remote Desktop Protocol",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Jupyter",
+        "rel": "targets",
+        "obj": "Chrome, Edge, and Firefox browsers"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "is also referred to as",
+        "obj": "Yellow Cockatoo"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "is also referred to as",
+        "obj": "Solarmarker"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "is also referred to as",
+        "obj": "Polazert"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "can steal",
+        "obj": "credential information"
+      },
+      {
+        "sub": "credential information",
+        "rel": "includes",
+        "obj": "computer name"
+      },
+      {
+        "sub": "credential information",
+        "rel": "includes",
+        "obj": "user's admin privileges"
+      },
+      {
+        "sub": "credential information",
+        "rel": "includes",
+        "obj": "cookies"
+      },
+      {
+        "sub": "credential information",
+        "rel": "includes",
+        "obj": "Web data"
+      },
+      {
+        "sub": "credential information",
+        "rel": "includes",
+        "obj": "browser password manager information"
+      },
+      {
+        "sub": "credential information",
+        "rel": "includes logins for",
+        "obj": "crypto-wallets"
+      },
+      {
+        "sub": "credential information",
+        "rel": "includes logins for",
+        "obj": "remote access apps"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "functions as",
+        "obj": "a full-fledged backdoor"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "supports",
+        "obj": "command and control (C2) communications"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "acts as",
+        "obj": "dropper and loader for other malware"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "executes",
+        "obj": "PowerShell scripts and commands"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "leverages",
+        "obj": "PowerShell command modifications"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "uses",
+        "obj": "legitimate-looking, digitally signed payloads"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "infected systems since",
+        "obj": "late October"
+      },
+      {
+        "sub": "VMware's Carbon Black MDR service",
+        "rel": "observed",
+        "obj": "the new version of the malware"
+      },
+      {
+        "sub": "Morphisec",
+        "rel": "identified",
+        "obj": "Jupyter"
+      },
+      {
+        "sub": "BlackBerry",
+        "rel": "identified",
+        "obj": "Jupyter"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "targets",
+        "obj": "Ethereum Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "targets",
+        "obj": "MyMonero Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "targets",
+        "obj": "Atomic Wallet"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "accesses",
+        "obj": "OpenVPN"
+      },
+      {
+        "sub": "Jupyter",
+        "rel": "accesses",
+        "obj": "Remote Desktop Protocol"
+      },
+      {
+        "sub": "the new version of the malware",
+        "rel": "is a variant of",
+        "obj": "Jupyter"
+      }
+    ]
+  }
+}

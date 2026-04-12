@@ -1,0 +1,191 @@
+{
+  "sample_id": "casie__410.json",
+  "sample_index": 2,
+  "source": "casie",
+  "file_name": "410.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2016-7988",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2016-7989",
+        "type": "Entity"
+      },
+      {
+        "name": "SMS",
+        "type": "Entity"
+      },
+      {
+        "name": "Samsung Galaxy S4",
+        "type": "Entity"
+      },
+      {
+        "name": "Samsung Galaxy S4 Mini",
+        "type": "Entity"
+      },
+      {
+        "name": "Samsung Galaxy S5",
+        "type": "Entity"
+      },
+      {
+        "name": "Samsung Note 4",
+        "type": "Entity"
+      },
+      {
+        "name": "Android telephony framework",
+        "type": "Entity"
+      },
+      {
+        "name": "maliciously crafted configuration messages",
+        "type": "Entity"
+      },
+      {
+        "name": "ransom note",
+        "type": "Entity"
+      },
+      {
+        "name": "factory settings",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious app",
+        "type": "Entity"
+      },
+      {
+        "name": "carrier messages",
+        "type": "Entity"
+      },
+      {
+        "name": "Samsung-specific application",
+        "type": "Entity"
+      },
+      {
+        "name": "over the air",
+        "type": "Entity"
+      },
+      {
+        "name": "Android update process",
+        "type": "Entity"
+      },
+      {
+        "name": "HTC diagram",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SMS",
+        "rel": "forces",
+        "obj": "Samsung Galaxy S4"
+      },
+      {
+        "sub": "SMS",
+        "rel": "forces",
+        "obj": "Samsung Galaxy S4 Mini"
+      },
+      {
+        "sub": "SMS",
+        "rel": "forces",
+        "obj": "Samsung Galaxy S5"
+      },
+      {
+        "sub": "SMS",
+        "rel": "forces",
+        "obj": "Samsung Note 4"
+      },
+      {
+        "sub": "SMS",
+        "rel": "triggers",
+        "obj": "maliciously crafted configuration messages"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "can be triggered by",
+        "obj": "SMS"
+      },
+      {
+        "sub": "CVE-2016-7989",
+        "rel": "can be triggered by",
+        "obj": "SMS"
+      },
+      {
+        "sub": "maliciously crafted configuration messages",
+        "rel": "are executed",
+        "obj": "without user interaction"
+      },
+      {
+        "sub": "maliciously crafted configuration messages",
+        "rel": "are sent",
+        "obj": "after ransom note is ignored"
+      },
+      {
+        "sub": "ransom note",
+        "rel": "is sent",
+        "obj": "to victim"
+      },
+      {
+        "sub": "ransom note",
+        "rel": "is sent",
+        "obj": "before malicious configuration message"
+      },
+      {
+        "sub": "configuration message",
+        "rel": "is sent",
+        "obj": "to stop rebooting"
+      },
+      {
+        "sub": "CVE-2016-7988",
+        "rel": "can be abused by",
+        "obj": "malicious app"
+      },
+      {
+        "sub": "malicious app",
+        "rel": "abuses",
+        "obj": "CVE-2016-7988"
+      },
+      {
+        "sub": "Android telephony framework",
+        "rel": "is modified by",
+        "obj": "Samsung"
+      },
+      {
+        "sub": "Samsung-specific application",
+        "rel": "handles",
+        "obj": "carrier messages"
+      },
+      {
+        "sub": "Samsung-specific application",
+        "rel": "is affected by",
+        "obj": "CVE-2016-7988"
+      },
+      {
+        "sub": "Android update process",
+        "rel": "is hindered by",
+        "obj": "patch distribution delays"
+      },
+      {
+        "sub": "HTC diagram",
+        "rel": "illustrates",
+        "obj": "Android update process"
+      }
+    ]
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "sample_id": "casie__10276.json",
+  "sample_index": 10,
+  "source": "casie",
+  "file_name": "10276.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "D-Link",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Błazej Adamczyk",
+        "type": "identity",
+        "alias": [
+          "security researcher",
+          "Adamczyk",
+          "the security researcher"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "three vulnerabilities",
+        "type": "vulnerability",
+        "alias": [
+          "security flaws",
+          "the new flaw",
+          "the security flaws"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "eight router models",
+        "type": "file",
+        "alias": [
+          "the D-Link models affected",
+          "these",
+          "the listed models"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "DWR-116",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "DWR-140L",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "DWR-512",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "DWR-640L",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "DWR-712",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "DWR-912",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "DWR-921",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "DWR-111",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "DIR-640L",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Naked Security",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "American Consumer Institute (ACI)",
+        "type": "identity",
+        "alias": [
+          "ACI"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "186 routers",
+        "type": "file",
+        "alias": [
+          "the entire sample"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "32,000 known vulnerabilities",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "12 critical vulnerabilities",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "36 high-risk vulnerabilities",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "103 medium-risk vulnerabilities",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "directory traversal",
+        "type": "attack-pattern",
+        "alias": [
+          "dot dot slash attacks"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "HTTP request",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "system files",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "end-of-life models",
+        "type": "generic-noun",
+        "alias": [
+          "the remaining six models"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "manufacturer",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "shoppers",
+        "type": "identity",
+        "alias": [
+          "you"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "manufacturer’s supported lifespan",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "older router",
+        "type": "file",
+        "alias": [
+          "the router"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "the security flaws",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": [
+          "three vulnerabilities"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "D-Link",
+        "rel": "failed to act on warnings from",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "security researchers",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "Błazej Adamczyk",
+        "rel": "contacted",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "D-Link",
+        "special_factuality": []
+      },
+      {
+        "sub": "Błazej Adamczyk",
+        "rel": "contacted about",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "three vulnerabilities",
+        "special_factuality": []
+      },
+      {
+        "sub": "three vulnerabilities",
+        "rel": "affect",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "eight router models",
+        "special_factuality": []
+      },
+      {
+        "sub": "D-Link",
+        "rel": "patched",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "DWR-116",
+        "special_factuality": []
+      },
+      {
+        "sub": "D-Link",
+        "rel": "patched",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "DWR-140L",
+        "special_factuality": []
+      },
+      {
+        "sub": "D-Link",
+        "rel": "patched",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "DWR-512",
+        "special_factuality": []
+      },
+      {
+        "sub": "D-Link",
+        "rel": "patched",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "DWR-640L",
+        "special_factuality": []
+      },
+      {
+        "sub": "D-Link",
+        "rel": "patched",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "DWR-712",
+        "special_factuality": []
+      },
+      {
+        "sub": "D-Link",
+        "rel": "patched",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "DWR-912",
+        "special_factuality": []
+      },
+      {
+        "sub": "D-Link",
+        "rel": "patched",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "DWR-921",
+        "special_factuality": []
+      },
+      {
+        "sub": "D-Link",
+        "rel": "patched",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "DWR-111",
+        "special_factuality": []
+      },
+      {
+        "sub": "D-Link",
+        "rel": "did not initially reveal how it would proceed for",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "end-of-life models",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "D-Link",
+        "rel": "would not get a security patch because",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "end-of-life models",
+        "special_factuality": [
+          "future"
+        ]
+      },
+      {
+        "sub": "Naked Security",
+        "rel": "reported",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "D-Link models affected",
+        "special_factuality": []
+      },
+      {
+        "sub": "Błazej Adamczyk",
+        "rel": "released details about",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "three vulnerabilities",
+        "special_factuality": []
+      },
+      {
+        "sub": "D-Link",
+        "rel": "reported that it had fixed",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "three vulnerabilities",
+        "special_factuality": []
+      },
+      {
+        "sub": "directory traversal",
+        "rel": "allow a malicious attacker to gain access to",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "system files",
+        "special_factuality": []
+      },
+      {
+        "sub": "directory traversal",
+        "rel": "allow access to with",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "HTTP request",
+        "special_factuality": []
+      },
+      {
+        "sub": "American Consumer Institute (ACI)",
+        "rel": "tested",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "186 routers",
+        "special_factuality": []
+      },
+      {
+        "sub": "American Consumer Institute (ACI)",
+        "rel": "discovered",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "32,000 known vulnerabilities",
+        "special_factuality": []
+      },
+      {
+        "sub": "American Consumer Institute (ACI)",
+        "rel": "showed that routers contained",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "12 critical vulnerabilities",
+        "special_factuality": []
+      },
+      {
+        "sub": "manufacturer",
+        "rel": "leaving routers unpatched",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "routers",
+        "special_factuality": []
+      },
+      {
+        "sub": "manufacturer",
+        "rel": "supporting",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "older router",
+        "special_factuality": []
+      },
+      {
+        "sub": "shoppers",
+        "rel": "check with manufacturer to see what the supported lifespan of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "older router",
+        "special_factuality": []
+      },
+      {
+        "sub": "older router",
+        "rel": "may not get patches regardless of",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "three vulnerabilities",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "three vulnerabilities",
+        "rel": "arose after D-Link reported it had fixed",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "three vulnerabilities",
+        "special_factuality": []
+      }
+    ]
+  }
+}

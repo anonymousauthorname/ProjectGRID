@@ -1,0 +1,192 @@
+{
+  "sample_id": "ctinexus__star-blizzard-increases-sophistication-and-evasion-in-ongoing-attacks.json",
+  "sample_index": 79,
+  "source": "ctinexus",
+  "file_name": "star-blizzard-increases-sophistication-and-evasion-in-ongoing-attacks.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Microsoft Threat Intelligence",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Star Blizzard",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "a Russian state-sponsored actor we track as Star Blizzard",
+          "SEABORGIUM",
+          "COLDRIVER",
+          "Callisto Group"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "detection evasion capabilities",
+        "type": "attack-pattern",
+        "alias": [
+          "improved their detection evasion capabilities",
+          "evolving spear-phishing tactics"
+        ],
+        "mother entity": [
+          "Star Blizzard"
+        ]
+      },
+      {
+        "name": "email credential theft",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": [
+          "Star Blizzard"
+        ]
+      },
+      {
+        "name": "the same targets",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "Star Blizzard"
+        ]
+      },
+      {
+        "name": "espionage and cyber influence objectives",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": [
+          "Star Blizzard"
+        ]
+      },
+      {
+        "name": "individuals and organizations involved in international affairs, defense, and logistics support to Ukraine",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "Star Blizzard"
+        ]
+      },
+      {
+        "name": "academia, information security companies, and other entities aligning with Russian state interests",
+        "type": "identity",
+        "alias": [],
+        "mother entity": [
+          "Star Blizzard"
+        ]
+      },
+      {
+        "name": "Microsoft",
+        "type": "security-product",
+        "alias": [
+          "Microsoft Threat Intelligence"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "spear-phishing tactics",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": [
+          "Star Blizzard"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft Threat Intelligence",
+        "rel": "track and disrupt malicious activity attributed to",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Star Blizzard"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "improved",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "detection evasion capabilities"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "focused on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "email credential theft"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the same targets"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "historically supported",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "espionage and cyber influence objectives"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "individuals and organizations involved in international affairs, defense, and logistics support to Ukraine"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "target",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "academia, information security companies, and other entities aligning with Russian state interests"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "refine and deploy protections against",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "spear-phishing tactics"
+      },
+      {
+        "sub": "Star Blizzard",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "detection evasion capabilities"
+      },
+      {
+        "sub": "Microsoft Threat Intelligence",
+        "rel": "is",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Microsoft"
+      }
+    ]
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "sample_id": "casie__10223.json",
+  "sample_index": 13,
+  "source": "casie",
+  "file_name": "10223.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Check Point",
+        "type": "cybersecurity company",
+        "alias": [
+          "researchers at Check Point",
+          "Check Point researchers"
+        ]
+      },
+      {
+        "name": "DJI",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "DJI Forum",
+          "DJI",
+          "DJI infrastructure",
+          "DJI web platform",
+          "DJI’s FlightHub application",
+          "DJI Forum (an online forum DJI runs for discussions about its products)",
+          "DJI’s various platforms"
+        ]
+      },
+      {
+        "name": "DJI Forum",
+        "type": "online forum",
+        "alias": [
+          "DJI Forum (an online forum DJI runs for discussions about its products)"
+        ]
+      },
+      {
+        "name": "user identification process",
+        "type": "attack-pattern",
+        "alias": [
+          "the user identification process"
+        ]
+      },
+      {
+        "name": "token",
+        "type": "indicator",
+        "alias": [
+          "DJI’s token"
+        ]
+      },
+      {
+        "name": "malicious links",
+        "type": "hacker-tool",
+        "alias": [
+          "a specially-planted malicious link"
+        ]
+      },
+      {
+        "name": "login credentials",
+        "type": "credential-value",
+        "alias": [
+          "user’s account",
+          "login credentials"
+        ]
+      },
+      {
+        "name": "web platform",
+        "type": "infrastructure",
+        "alias": [
+          "DJI’s web platform"
+        ]
+      },
+      {
+        "name": "account",
+        "type": "user-account",
+        "alias": [
+          "DJI’s account"
+        ]
+      },
+      {
+        "name": "store",
+        "type": "infrastructure",
+        "alias": [
+          "DJI’s store"
+        ]
+      },
+      {
+        "name": "Cloud server data",
+        "type": "infrastructure",
+        "alias": [
+          "data synced from DJI’s GO or GO 4 pilot apps"
+        ]
+      },
+      {
+        "name": "FlightHub",
+        "type": "infrastructure",
+        "alias": [
+          "DJI’s FlightHub",
+          "centralized drone operations management platform"
+        ]
+      },
+      {
+        "name": "FlightHub application",
+        "type": "general-software",
+        "alias": [
+          "DJI’s FlightHub application"
+        ]
+      },
+      {
+        "name": "Bug Bounty Program",
+        "type": "infrastructure",
+        "alias": [
+          "DJI’s Bug Bounty Program"
+        ]
+      },
+      {
+        "name": "March 2018",
+        "type": "date",
+        "alias": [
+          "March 2018"
+        ]
+      },
+      {
+        "name": "vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "a vulnerability in DJI’s infrastructure",
+          "the vulnerability",
+          "this vulnerability"
+        ]
+      },
+      {
+        "name": "personal data",
+        "type": "data-type",
+        "alias": [
+          "personal data"
+        ]
+      },
+      {
+        "name": "flight logs",
+        "type": "data-type",
+        "alias": [
+          "flight logs"
+        ]
+      },
+      {
+        "name": "photos",
+        "type": "data-type",
+        "alias": [
+          "photos"
+        ]
+      },
+      {
+        "name": "videos",
+        "type": "data-type",
+        "alias": [
+          "videos"
+        ]
+      },
+      {
+        "name": "live camera feed",
+        "type": "data-type",
+        "alias": [
+          "live camera feed"
+        ]
+      },
+      {
+        "name": "map",
+        "type": "data-type",
+        "alias": [
+          "map"
+        ]
+      },
+      {
+        "name": "user",
+        "type": "identity",
+        "alias": [
+          "a user",
+          "his or her"
+        ]
+      },
+      {
+        "name": "Check Point researchers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "researchers at Check Point"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Check Point researchers",
+        "rel": "have today shared details of",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "a vulnerability in DJI’s infrastructure"
+      },
+      {
+        "sub": "Check Point researchers",
+        "rel": "submitted a report to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "DJI’s Bug Bounty Program"
+      },
+      {
+        "sub": "a vulnerability in DJI’s infrastructure",
+        "rel": "could have given hackers access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "consumer and corporate user accounts"
+      },
+      {
+        "sub": "hackers",
+        "rel": "could have gained access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "a user’s account"
+      },
+      {
+        "sub": "a vulnerability",
+        "rel": "could have given access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "personal data"
+      },
+      {
+        "sub": "a vulnerability",
+        "rel": "could have given access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "flight logs"
+      },
+      {
+        "sub": "a vulnerability",
+        "rel": "could have given access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "photos"
+      },
+      {
+        "sub": "a vulnerability",
+        "rel": "could have given access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "videos"
+      },
+      {
+        "sub": "a vulnerability",
+        "rel": "could have given access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "a live camera feed and map during missions"
+      },
+      {
+        "sub": "Check Point",
+        "rel": "submitted a report to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "DJI’s Bug Bounty Program"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "could have gained access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "a user’s account"
+      },
+      {
+        "sub": "the vulnerability",
+        "rel": "was accessed through",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "DJI Forum"
+      },
+      {
+        "sub": "a user",
+        "rel": "logged into",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "DJI Forum"
+      },
+      {
+        "sub": "a user",
+        "rel": "clicked",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "a specially-planted malicious link"
+      },
+      {
+        "sub": "a user",
+        "rel": "could have had",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "his or her login credentials"
+      },
+      {
+        "sub": "his or her login credentials",
+        "rel": "would allow access to",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "other DJI online assets"
+      },
+      {
+        "sub": "DJI’s various platforms",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a token"
+      },
+      {
+        "sub": "hackers",
+        "rel": "could plant",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "malicious links"
+      },
+      {
+        "sub": "malicious links",
+        "rel": "could compromise",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "accounts"
+      },
+      {
+        "sub": "The vulnerability",
+        "rel": "was accessed through",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "DJI Forum"
+      },
+      {
+        "sub": "Check Point",
+        "rel": "notified DJI about",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "this vulnerability"
+      },
+      {
+        "sub": "DJI",
+        "rel": "responded responsibly",
+        "rel_type": [
+          "responds-to"
+        ],
+        "obj": "the vulnerability"
+      },
+      {
+        "sub": "the vulnerability",
+        "rel": "has since been patched",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "the vulnerability"
+      },
+      {
+        "sub": "DJI",
+        "rel": "classified",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "this vulnerability"
+      },
+      {
+        "sub": "DJI",
+        "rel": "indicated there is no evidence",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "this vulnerability was ever exploited by anyone other than Check Point researchers"
+      },
+      {
+        "sub": "Check Point researchers",
+        "rel": "have found that",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "DJI’s various platforms"
+      },
+      {
+        "sub": "Check Point researchers",
+        "rel": "made",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "a Mission Impossible-style trailer"
+      }
+    ]
+  }
+}

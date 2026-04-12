@@ -1,0 +1,415 @@
+{
+  "sample_id": "malkg__201305WeLiveSecurityPakistanAttack.txt",
+  "sample_index": 136,
+  "source": "malkg",
+  "file_name": "201305WeLiveSecurityPakistanAttack.txt",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "the ground truth payload",
+        "type": "malware"
+      },
+      {
+        "name": "code signing certificate",
+        "type": "general-software",
+        "alias": [
+          "code signing certificate issued to Technical and Commercial Consulting Pvt. Ltd."
+        ]
+      },
+      {
+        "name": "Technical and Commercial Consulting Pvt. Ltd.",
+        "type": "identity"
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "vulnerability"
+      },
+      {
+        "name": "RTF document",
+        "type": "file"
+      },
+      {
+        "name": "two-stage shellcode",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "feds.comule.com",
+        "type": "domain-name"
+      },
+      {
+        "name": "digitalapp.org",
+        "type": "domain-name"
+      },
+      {
+        "name": "OVH",
+        "type": "infrastructure"
+      },
+      {
+        "name": "Asian Defence blog",
+        "type": "location"
+      },
+      {
+        "name": "India",
+        "type": "location"
+      },
+      {
+        "name": "Pakistan",
+        "type": "location"
+      },
+      {
+        "name": "VeriSign",
+        "type": "security-product"
+      },
+      {
+        "name": "Win32/Agent.NLD worm",
+        "type": "malware"
+      },
+      {
+        "name": "Win32/Spy.Agent.NZD trojan",
+        "type": "malware"
+      },
+      {
+        "name": "Win32/Spy.Agent.OBF trojan",
+        "type": "malware"
+      },
+      {
+        "name": "Win32/Spy.Agent.OBV trojan",
+        "type": "malware"
+      },
+      {
+        "name": "Win32/Spy.KeyLogger.NZL trojan",
+        "type": "malware"
+      },
+      {
+        "name": "Win32/Spy.KeyLogger.NZN trojan",
+        "type": "malware"
+      },
+      {
+        "name": "Win32/VB.NTC trojan",
+        "type": "malware"
+      },
+      {
+        "name": "Win32/VB.NVM trojan",
+        "type": "malware"
+      },
+      {
+        "name": "Win32/VB.NWB trojan",
+        "type": "malware"
+      },
+      {
+        "name": "Win32/VB.QPK trojan",
+        "type": "malware"
+      },
+      {
+        "name": "Win32/VB.QTV trojan",
+        "type": "malware"
+      },
+      {
+        "name": "Win32/VB.QTY trojan",
+        "type": "malware"
+      },
+      {
+        "name": "Win32/Spy.Agent.NVL trojan",
+        "type": "malware"
+      },
+      {
+        "name": "Win32/Spy.Agent.OAZ trojan",
+        "type": "malware"
+      },
+      {
+        "name": "pakistandefencetoindiantopmiltrysecreat.exe",
+        "type": "file"
+      },
+      {
+        "name": "pakterrisiomforindian.exe",
+        "type": "file"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "the attacker",
+        "rel": "compromises",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "different organizations"
+      },
+      {
+        "sub": "targeted campaign",
+        "rel": "tries to steal",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "sensitive information"
+      },
+      {
+        "sub": "code signing certificate",
+        "rel": "was used to sign",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "malicious binaries"
+      },
+      {
+        "sub": "code signing certificate",
+        "rel": "issued to",
+        "rel_type": [
+          "issued-to"
+        ],
+        "obj": "Technical and Commercial Consulting Pvt. Ltd."
+      },
+      {
+        "sub": "code signing certificate",
+        "rel": "had been revoked for files signed after",
+        "rel_type": [
+          "revoked-for"
+        ],
+        "obj": "March 31st 2012"
+      },
+      {
+        "sub": "VeriSign",
+        "rel": "revoked",
+        "rel_type": [
+          "revoked"
+        ],
+        "obj": "code signing certificate"
+      },
+      {
+        "sub": "attackers",
+        "rel": "actively signing",
+        "rel_type": [
+          "signing"
+        ],
+        "obj": "malicious binaries"
+      },
+      {
+        "sub": "RTF document",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "two-stage shellcode"
+      },
+      {
+        "sub": "two-stage shellcode",
+        "rel": "sends information about the system to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "feds.comule.com"
+      },
+      {
+        "sub": "two-stage shellcode",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "malicious binary"
+      },
+      {
+        "sub": "two-stage shellcode",
+        "rel": "downloads from",
+        "rel_type": [
+          "downloads-from"
+        ],
+        "obj": "digitalapp.org"
+      },
+      {
+        "sub": "PE files",
+        "rel": "disguised as",
+        "rel_type": [
+          "disguised-as"
+        ],
+        "obj": "Microsoft Word or PDF documents"
+      },
+      {
+        "sub": "fake PDF document",
+        "rel": "delivered through",
+        "rel_type": [
+          "delivered-through"
+        ],
+        "obj": "pakistandefencetoindiantopmiltrysecreat.exe"
+      },
+      {
+        "sub": "fake PDF document",
+        "rel": "delivered through",
+        "rel_type": [
+          "delivered-through"
+        ],
+        "obj": "pakterrisiomforindian.exe"
+      },
+      {
+        "sub": "pakterrisiomforindian.exe",
+        "rel": "delivers",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "PDF document"
+      },
+      {
+        "sub": "pakistandefencetoindiantopmiltrysecreat.exe",
+        "rel": "delivers",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "PDF document"
+      },
+      {
+        "sub": "targeted campaign",
+        "rel": "originates from",
+        "rel_type": [
+          "originates-from"
+        ],
+        "obj": "India"
+      },
+      {
+        "sub": "malicious files",
+        "rel": "appeared in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "India"
+      },
+      {
+        "sub": "malware variants",
+        "rel": "had minor differences from",
+        "rel_type": [
+          "had-minor-differences-from"
+        ],
+        "obj": "each other"
+      },
+      {
+        "sub": "domains",
+        "rel": "hosted by",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "OVH"
+      },
+      {
+        "sub": "domain names",
+        "rel": "are very close to",
+        "rel_type": [
+          "is-closely-related-to"
+        ],
+        "obj": "real site or company names"
+      },
+      {
+        "sub": "malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "ROT-1"
+      },
+      {
+        "sub": "malware",
+        "rel": "does not use",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "cryptography"
+      },
+      {
+        "sub": "two-stage shellcode",
+        "rel": "sends information about the system to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "feds.comule.com"
+      },
+      {
+        "sub": "Asian Defence blog",
+        "rel": "contains",
+        "rel_type": [
+          "contains"
+        ],
+        "obj": "text"
+      },
+      {
+        "sub": "information",
+        "rel": "uploaded to",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "attacker's server"
+      },
+      {
+        "sub": "attackers",
+        "rel": "compromises",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "organizations"
+      },
+      {
+        "sub": "unsigned samples",
+        "rel": "used in",
+        "rel_type": [
+          "used-in"
+        ],
+        "obj": "campaign"
+      },
+      {
+        "sub": "malicious binaries",
+        "rel": "contain",
+        "rel_type": [
+          "contains"
+        ],
+        "obj": "URL"
+      },
+      {
+        "sub": "The ground truth payload",
+        "rel": "is installed by",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "droppers"
+      },
+      {
+        "sub": "attacker's server",
+        "rel": "receives",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "information"
+      },
+      {
+        "sub": "code signing certificate",
+        "rel": "used maliciously since it was issued",
+        "rel_type": [
+          "used-maliciously-since"
+        ],
+        "obj": "issue date"
+      },
+      {
+        "sub": "The attacker",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Pakistan"
+      }
+    ]
+  }
+}

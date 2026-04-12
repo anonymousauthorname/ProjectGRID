@@ -1,0 +1,401 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_9.json",
+  "sample_index": 248,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_9.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Microsoft",
+        "type": "general-software",
+        "alias": [
+          "Microsoft"
+        ]
+      },
+      {
+        "name": "Microsoft Word",
+        "type": "general-software",
+        "alias": [
+          "Microsoft Word",
+          "the default email reader",
+          "Microsoft Office product"
+        ]
+      },
+      {
+        "name": "Microsoft Outlook",
+        "type": "general-software",
+        "alias": [
+          "Microsoft Outlook"
+        ]
+      },
+      {
+        "name": "Microsoft Word 2010",
+        "type": "general-software"
+      },
+      {
+        "name": "Microsoft Office 2003",
+        "type": "general-software"
+      },
+      {
+        "name": "CVE20141761",
+        "type": "vulnerability"
+      },
+      {
+        "name": "RTF file",
+        "type": "file"
+      },
+      {
+        "name": "email messages",
+        "type": "email-address"
+      },
+      {
+        "name": "Trend Micro Deep Security",
+        "type": "security-product"
+      },
+      {
+        "name": "HEURRTFEXP.A",
+        "type": "indicator"
+      },
+      {
+        "name": "TROJARTIEF.NSA",
+        "type": "indicator"
+      },
+      {
+        "name": "TROJARTIEF.NSB",
+        "type": "indicator"
+      },
+      {
+        "name": "April 8th",
+        "type": "date",
+        "alias": [
+          "April 8"
+        ]
+      },
+      {
+        "name": "April Patch Tuesday",
+        "type": "course-of-action"
+      },
+      {
+        "name": "Protected View",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "exploits",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "zero-day vulnerability",
+        "type": "vulnerability"
+      },
+      {
+        "name": "Microsoft Word RTF Remote Code Execution Vulnerability (CVE20141761)",
+        "type": "vulnerability",
+        "alias": [
+          "Microsoft Word RTF Remote Code Execution Vulnerability"
+        ]
+      },
+      {
+        "name": "remote attacker",
+        "type": "identity"
+      },
+      {
+        "name": "specially crafted files",
+        "type": "file"
+      },
+      {
+        "name": "RTF email message",
+        "type": "email-address"
+      },
+      {
+        "name": "Microsoft Outlook 2007",
+        "type": "general-software"
+      },
+      {
+        "name": "Microsoft Outlook 2010",
+        "type": "general-software"
+      },
+      {
+        "name": "Microsoft Outlook 2013",
+        "type": "general-software"
+      },
+      {
+        "name": "fixtool",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "Microsofts initial bulletin",
+        "type": "malware-analysis-document-or-publication-or-conference"
+      },
+      {
+        "name": "workarounds",
+        "type": "course-of-action"
+      },
+      {
+        "name": "remote code execution",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "fonts",
+        "type": "general-software"
+      },
+      {
+        "name": "keyboard",
+        "type": "general-software"
+      },
+      {
+        "name": "deep packet inspection (DPI) rule",
+        "type": "course-of-action"
+      },
+      {
+        "name": "related posts",
+        "type": "document-publication"
+      },
+      {
+        "name": "ransomware",
+        "type": "threat-actor-or-intrusion-set"
+      },
+      {
+        "name": "enterprise",
+        "type": "location"
+      },
+      {
+        "name": "small businesses",
+        "type": "location"
+      },
+      {
+        "name": "home users",
+        "type": "location"
+      },
+      {
+        "name": "security updates",
+        "type": "course-of-action"
+      },
+      {
+        "name": "connected home",
+        "type": "location"
+      },
+      {
+        "name": "specialty email viewer",
+        "type": "general-software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Microsoft",
+        "rel": "has released a security bulletin announcing of",
+        "rel_type": [
+          "vulnerability"
+        ],
+        "obj": "a zeroday vulnerability affecting Microsoft Word"
+      },
+      {
+        "sub": "limited, targeted attacks",
+        "rel": "directed at",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Microsoft Word 2010"
+      },
+      {
+        "sub": "this vulnerability (CVE20141761)",
+        "rel": "could allow",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "a remote attacker"
+      },
+      {
+        "sub": "a remote attacker",
+        "rel": "to execute commands remotely via",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "specially crafted files and email messages"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has also released preliminary details of",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "the vulnerability and the exploit code"
+      },
+      {
+        "sub": "The vulnerability",
+        "rel": "is exploited if",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "a user opens an RTF file in Microsoft Word"
+      },
+      {
+        "sub": "a user",
+        "rel": "opens or previews",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "an RTF email message in Microsoft Outlook"
+      },
+      {
+        "sub": "Microsoft Word",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Microsoft Word as the email viewer"
+      },
+      {
+        "sub": "Microsoft Word",
+        "rel": "is the default email reader for",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Microsoft Outlook 2007"
+      },
+      {
+        "sub": "Microsoft Word",
+        "rel": "is the default email reader for",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Microsoft Outlook 2010"
+      },
+      {
+        "sub": "Microsoft Word",
+        "rel": "is the default email reader for",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Microsoft Outlook 2013"
+      },
+      {
+        "sub": "Several workarounds",
+        "rel": "were included in",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "Microsofts initial bulletin"
+      },
+      {
+        "sub": "workarounds",
+        "rel": "including",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "disabling opening of RTF files"
+      },
+      {
+        "sub": "workarounds",
+        "rel": "including",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "enforcing Word to always open said type of file in Protected View"
+      },
+      {
+        "sub": "A fixtool",
+        "rel": "has been made available to help address",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "the vulnerability"
+      },
+      {
+        "sub": "Microsoft Word 2003",
+        "rel": "is listed as one of the affected software for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "this particular vulnerability"
+      },
+      {
+        "sub": "users",
+        "rel": "to upgrade to later versions of the software",
+        "rel_type": [
+          "advises-to"
+        ],
+        "obj": "to continue receiving security updates"
+      },
+      {
+        "sub": "We are currently looking into",
+        "rel": "this vulnerability",
+        "rel_type": [
+          "investigates"
+        ],
+        "obj": "and will provide further information as appropriate"
+      },
+      {
+        "sub": "Trend Micro Deep Security",
+        "rel": "has released a new",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "deep packet inspection (DPI) rule"
+      },
+      {
+        "sub": "deep packet inspection (DPI) rule",
+        "rel": "to protect against exploits leveraging",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "this vulnerability"
+      },
+      {
+        "sub": "Exploits related to this vulnerability",
+        "rel": "are detected by Trend Micro as",
+        "rel_type": [
+          "detected-by"
+        ],
+        "obj": "HEURRTFEXP.A"
+      },
+      {
+        "sub": "Exploits related to this vulnerability",
+        "rel": "are detected by Trend Micro as",
+        "rel_type": [
+          "detected-by"
+        ],
+        "obj": "TROJARTIEF.NSA"
+      },
+      {
+        "sub": "Exploits related to this vulnerability",
+        "rel": "are detected by Trend Micro as",
+        "rel_type": [
+          "detected-by"
+        ],
+        "obj": "TROJARTIEF.NSB"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "announcing of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a zeroday vulnerability affecting Microsoft Word"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has released",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "security bulletin"
+      }
+    ]
+  }
+}

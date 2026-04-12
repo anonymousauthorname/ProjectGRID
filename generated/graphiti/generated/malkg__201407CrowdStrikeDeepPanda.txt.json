@@ -1,0 +1,254 @@
+{
+  "sample_id": "malkg__201407CrowdStrikeDeepPanda.txt",
+  "sample_index": 140,
+  "source": "malkg",
+  "file_name": "201407CrowdStrikeDeepPanda.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DEEP PANDA",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Falcon Host",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Software"
+      },
+      {
+        "name": "Wafer",
+        "type": "Malware"
+      },
+      {
+        "name": "MadHatter",
+        "type": "Malware"
+      },
+      {
+        "name": "7-zip",
+        "type": "Software"
+      },
+      {
+        "name": "RAR",
+        "type": "Software"
+      },
+      {
+        "name": "Cult of the Dead Cow",
+        "type": "Organization"
+      },
+      {
+        "name": "NetE",
+        "type": "Tool"
+      },
+      {
+        "name": "Windows",
+        "type": "Software"
+      },
+      {
+        "name": "Internet Explorer",
+        "type": "Software"
+      },
+      {
+        "name": "China",
+        "type": "Location"
+      },
+      {
+        "name": "Iraq",
+        "type": "Location"
+      },
+      {
+        "name": "Southeast Asia",
+        "type": "Location"
+      },
+      {
+        "name": "Middle East",
+        "type": "Location"
+      },
+      {
+        "name": "Baiji oil refinery",
+        "type": "Location"
+      },
+      {
+        "name": "Islamic State of Iraq and the Levant (ISIS)",
+        "type": "Location"
+      },
+      {
+        "name": "China/Asia Pacific region",
+        "type": "Location"
+      },
+      {
+        "name": "U.S. military",
+        "type": "Location"
+      },
+      {
+        "name": "China/Asia Pacific policy experts",
+        "type": "Location"
+      },
+      {
+        "name": "Iraq/Middle East policy experts",
+        "type": "Location"
+      },
+      {
+        "name": "CrowdStrike",
+        "type": "Organization"
+      },
+      {
+        "name": "Falcon Intelligence",
+        "type": "Indicator"
+      },
+      {
+        "name": "VENOM",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Dmitri Alperovitch",
+        "type": "Person"
+      },
+      {
+        "name": "Chinese",
+        "type": "Location"
+      },
+      {
+        "name": "non-profit think tank",
+        "type": "Organization"
+      },
+      {
+        "name": "human rights organization",
+        "type": "Organization"
+      },
+      {
+        "name": "national security think tanks",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DEEP PANDA",
+        "rel": "USES",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "DEPLOYS",
+        "obj": "Wafer"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "DEPLOYS",
+        "obj": "MadHatter"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "USES",
+        "obj": "7-zip"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "USES",
+        "obj": "RAR"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "USES",
+        "obj": "NetE"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "is detected by",
+        "obj": "Falcon Host"
+      },
+      {
+        "sub": "CrowdStrike",
+        "rel": "PROVIDES",
+        "obj": "Falcon Host"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "TARGETS",
+        "obj": "China/Asia Pacific region"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "TARGETS",
+        "obj": "Iraq/Middle East policy experts"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "activated by",
+        "obj": "Baiji oil refinery"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "responds to",
+        "obj": "Islamic State of Iraq and the Levant (ISIS)"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "interested in",
+        "obj": "U.S. military"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "uses tool from",
+        "obj": "Cult of the Dead Cow"
+      },
+      {
+        "sub": "Falcon Host",
+        "rel": "deployed on",
+        "obj": "Windows"
+      },
+      {
+        "sub": "Falcon Host",
+        "rel": "deployed on",
+        "obj": "Mac"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "has interest in",
+        "obj": "China"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "TARGETS",
+        "obj": "Southeast Asia"
+      },
+      {
+        "sub": "DEEP PANDA",
+        "rel": "has reports on",
+        "obj": "Falcon Intelligence"
+      },
+      {
+        "sub": "CrowdStrike Services",
+        "rel": "has worked on intrusion investigations for",
+        "obj": "DEEP PANDA"
+      },
+      {
+        "sub": "non-profit think tank",
+        "rel": "receives no charge licenses from",
+        "obj": "Falcon Host"
+      },
+      {
+        "sub": "human rights organization",
+        "rel": "receives no charge licenses from",
+        "obj": "Falcon Host"
+      }
+    ]
+  }
+}

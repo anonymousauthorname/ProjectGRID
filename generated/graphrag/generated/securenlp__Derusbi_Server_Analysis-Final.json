@@ -1,0 +1,257 @@
+{
+  "sample_id": "securenlp__Derusbi_Server_Analysis-Final",
+  "sample_index": 153,
+  "source": "securenlp",
+  "file_name": "Derusbi_Server_Analysis-Final",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DERUSBI SERVER VARIANT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "DEVICE DRIVER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PCC_CMD",
+        "type": "TOOL"
+      },
+      {
+        "name": "PCC_FILE",
+        "type": "TOOL"
+      },
+      {
+        "name": "PCC_PROXY",
+        "type": "TOOL"
+      },
+      {
+        "name": "{93144EB0-8E3E-4591-B307-8EEBFE7DB28F}",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "HANDSHAKE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "INFECTION ID",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "VICTIMINFO PACKET",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PACKET HEADER",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "YARA SIGNATURE",
+        "type": "TOOL"
+      },
+      {
+        "name": "NETWORK TUNNELING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "REMOTE COMMAND SHELL",
+        "type": "TOOL"
+      },
+      {
+        "name": "FILE MANAGEMENT",
+        "type": "TOOL"
+      },
+      {
+        "name": "SECURITY BEEP",
+        "type": "EVENT"
+      },
+      {
+        "name": "WINDOWS FIREWALL HOOKING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "RANDOM PORT (40,000–45,000)",
+        "type": "LOCATION"
+      },
+      {
+        "name": "DERUSBI ADMINISTRATIVE COMMANDS",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "LZO COMPRESSION",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "XOR ENCRYPTION",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "PCC_BASEMOD",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "DLL REGISTER SERVER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CONTROLLED CLIENT",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "VICTIM'S MACHINE",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "WINDOWS OPERATING SYSTEM",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "NETWORK TRAFFIC REDIRECTION",
+        "type": "ATTACK_PATTERN"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DERUSBI SERVER VARIANT",
+        "rel": "related_to",
+        "obj": "DEVICE DRIVER"
+      },
+      {
+        "sub": "DEVICE DRIVER",
+        "rel": "related_to",
+        "obj": "HANDSHAKE"
+      },
+      {
+        "sub": "DERUSBI SERVER VARIANT",
+        "rel": "related_to",
+        "obj": "PCC_CMD"
+      },
+      {
+        "sub": "DERUSBI SERVER VARIANT",
+        "rel": "related_to",
+        "obj": "PCC_FILE"
+      },
+      {
+        "sub": "DERUSBI SERVER VARIANT",
+        "rel": "related_to",
+        "obj": "PCC_PROXY"
+      },
+      {
+        "sub": "DERUSBI SERVER VARIANT",
+        "rel": "related_to",
+        "obj": "INFECTION ID"
+      },
+      {
+        "sub": "DERUSBI SERVER VARIANT",
+        "rel": "related_to",
+        "obj": "VICTIMINFO PACKET"
+      },
+      {
+        "sub": "DERUSBI SERVER VARIANT",
+        "rel": "related_to",
+        "obj": "RANDOM PORT (40,000–45,000)"
+      },
+      {
+        "sub": "DEVICE DRIVER",
+        "rel": "related_to",
+        "obj": "WINDOWS FIREWALL HOOKING"
+      },
+      {
+        "sub": "PCC_CMD",
+        "rel": "related_to",
+        "obj": "REMOTE COMMAND SHELL"
+      },
+      {
+        "sub": "PCC_FILE",
+        "rel": "related_to",
+        "obj": "FILE MANAGEMENT"
+      },
+      {
+        "sub": "PCC_PROXY",
+        "rel": "related_to",
+        "obj": "NETWORK TUNNELING"
+      },
+      {
+        "sub": "HANDSHAKE",
+        "rel": "related_to",
+        "obj": "SECURITY BEEP"
+      },
+      {
+        "sub": "DERUSBI ADMINISTRATIVE COMMANDS",
+        "rel": "related_to",
+        "obj": "DERUSBI SERVER VARIANT"
+      },
+      {
+        "sub": "LZO COMPRESSION",
+        "rel": "related_to",
+        "obj": "PACKET HEADER"
+      },
+      {
+        "sub": "XOR ENCRYPTION",
+        "rel": "related_to",
+        "obj": "PACKET HEADER"
+      },
+      {
+        "sub": "PCC_BASEMOD",
+        "rel": "related_to",
+        "obj": "PCC_CMD"
+      },
+      {
+        "sub": "PCC_BASEMOD",
+        "rel": "related_to",
+        "obj": "PCC_FILE"
+      },
+      {
+        "sub": "PCC_BASEMOD",
+        "rel": "related_to",
+        "obj": "PCC_PROXY"
+      },
+      {
+        "sub": "DLL REGISTER SERVER",
+        "rel": "related_to",
+        "obj": "DERUSBI SERVER VARIANT"
+      },
+      {
+        "sub": "CONTROLLED CLIENT",
+        "rel": "related_to",
+        "obj": "DERUSBI SERVER VARIANT"
+      },
+      {
+        "sub": "VICTIM'S MACHINE",
+        "rel": "related_to",
+        "obj": "DERUSBI SERVER VARIANT"
+      },
+      {
+        "sub": "WINDOWS OPERATING SYSTEM",
+        "rel": "related_to",
+        "obj": "DERUSBI SERVER VARIANT"
+      },
+      {
+        "sub": "NETWORK TRAFFIC REDIRECTION",
+        "rel": "related_to",
+        "obj": "DEVICE DRIVER"
+      },
+      {
+        "sub": "YARA SIGNATURE",
+        "rel": "related_to",
+        "obj": "DERUSBI SERVER VARIANT"
+      }
+    ]
+  }
+}

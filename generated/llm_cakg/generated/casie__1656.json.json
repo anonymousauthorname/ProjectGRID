@@ -1,0 +1,289 @@
+{
+  "sample_id": "casie__1656.json",
+  "sample_index": 34,
+  "source": "casie",
+  "file_name": "1656.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2017-0199",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2017-0106",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2017-0204",
+        "type": "Entity"
+      },
+      {
+        "name": "RTF files",
+        "type": "Entity"
+      },
+      {
+        "name": "Microsoft Office",
+        "type": "Entity"
+      },
+      {
+        "name": "WordPad",
+        "type": "Entity"
+      },
+      {
+        "name": "FinSpy module",
+        "type": "Entity"
+      },
+      {
+        "name": "LatentBot",
+        "type": "Entity"
+      },
+      {
+        "name": "HTA (HTML application)",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Entity"
+      },
+      {
+        "name": "Gamma Group",
+        "type": "Entity"
+      },
+      {
+        "name": "cyber-criminals",
+        "type": "Entity"
+      },
+      {
+        "name": "state-sponsored cyber-espionage groups",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing emails",
+        "type": "Entity"
+      },
+      {
+        "name": "zero-day vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "backdoor trojan",
+        "type": "Entity"
+      },
+      {
+        "name": "enterprise environments",
+        "type": "Entity"
+      },
+      {
+        "name": "economic espionage campaigns",
+        "type": "Entity"
+      },
+      {
+        "name": "lawful intercept spyware",
+        "type": "Entity"
+      },
+      {
+        "name": "patch Tuesday",
+        "type": "Entity"
+      },
+      {
+        "name": "McAfee",
+        "type": "Entity"
+      },
+      {
+        "name": "FireEye",
+        "type": "Entity"
+      },
+      {
+        "name": "scheduled tasks",
+        "type": "Entity"
+      },
+      {
+        "name": "registry keys",
+        "type": "Entity"
+      },
+      {
+        "name": "persistence mechanisms",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious scripts",
+        "type": "Entity"
+      },
+      {
+        "name": "file exploitation",
+        "type": "Entity"
+      },
+      {
+        "name": "user computer exploitation",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2017-0199",
+        "rel": "affects",
+        "obj": "Microsoft Office"
+      },
+      {
+        "sub": "CVE-2017-0199",
+        "rel": "affects",
+        "obj": "WordPad"
+      },
+      {
+        "sub": "CVE-2017-0199",
+        "rel": "is exploited by",
+        "obj": "cyber-criminals"
+      },
+      {
+        "sub": "CVE-2017-0199",
+        "rel": "is exploited by",
+        "obj": "state-sponsored cyber-espionage groups"
+      },
+      {
+        "sub": "Ryan Hanson",
+        "rel": "discovered",
+        "obj": "CVE-2017-0199"
+      },
+      {
+        "sub": "Ryan Hanson",
+        "rel": "submitted a write-up on",
+        "obj": "CVE-2017-0106"
+      },
+      {
+        "sub": "Ryan Hanson",
+        "rel": "submitted a write-up on",
+        "obj": "CVE-2017-0199"
+      },
+      {
+        "sub": "Ryan Hanson",
+        "rel": "submitted a write-up on",
+        "obj": "CVE-2017-0204"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "patched",
+        "obj": "CVE-2017-0106"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "patched",
+        "obj": "CVE-2017-0199"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "patched",
+        "obj": "CVE-2017-0204"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "released patches in",
+        "obj": "April's Patch Tuesday"
+      },
+      {
+        "sub": "McAfee",
+        "rel": "revealed",
+        "obj": "CVE-2017-0199 was under active exploitation"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "revealed",
+        "obj": "CVE-2017-0199 was under active exploitation"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "detected",
+        "obj": "FinSpy module exploiting CVE-2017-0199"
+      },
+      {
+        "sub": "Gamma Group",
+        "rel": "made available",
+        "obj": "CVE-2017-0199 to clients"
+      },
+      {
+        "sub": "Gamma Group",
+        "rel": "used",
+        "obj": "CVE-2017-0199 in countries where it sold lawful intercept spyware"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "detected",
+        "obj": "CVE-2017-0199 used by cyber-criminals"
+      },
+      {
+        "sub": "cyber-criminals",
+        "rel": "spread",
+        "obj": "LatentBot"
+      },
+      {
+        "sub": "LatentBot",
+        "rel": "is a",
+        "obj": "backdoor trojan"
+      },
+      {
+        "sub": "LatentBot",
+        "rel": "is used in",
+        "obj": "enterprise environments"
+      },
+      {
+        "sub": "LatentBot",
+        "rel": "is used for",
+        "obj": "economic espionage campaigns"
+      },
+      {
+        "sub": "cyber-criminals",
+        "rel": "shared",
+        "obj": "CVE-2017-0199 with other crimeware groups"
+      },
+      {
+        "sub": "CVE-2017-0199",
+        "rel": "was exploited via",
+        "obj": "RTF files"
+      },
+      {
+        "sub": "RTF files",
+        "rel": "contain",
+        "obj": "malicious scripts"
+      },
+      {
+        "sub": "malicious scripts",
+        "rel": "download and execute",
+        "obj": "HTA (HTML application)"
+      },
+      {
+        "sub": "HTA (HTML application)",
+        "rel": "runs",
+        "obj": "PowerShell commands"
+      },
+      {
+        "sub": "PowerShell commands",
+        "rel": "exploit",
+        "obj": "user computer"
+      },
+      {
+        "sub": "CVE-2017-0199",
+        "rel": "was initially classified as",
+        "obj": "Office vulnerability"
+      }
+    ]
+  }
+}

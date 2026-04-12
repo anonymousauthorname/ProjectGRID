@@ -1,0 +1,557 @@
+{
+  "sample_id": "casie__10141.json",
+  "sample_index": 28,
+  "source": "casie",
+  "file_name": "10141.json",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Has vulnerability",
+        "obj": "KRACK"
+      },
+      {
+        "sub": "KRACK",
+        "rel": "Allows",
+        "obj": "Man-in-the-middle attack"
+      },
+      {
+        "sub": "Man-in-the-middle attack",
+        "rel": "Operate",
+        "obj": "Network traffic"
+      },
+      {
+        "sub": "Network traffic",
+        "rel": "Has value",
+        "obj": "Operational details"
+      },
+      {
+        "sub": "Network traffic",
+        "rel": "Has value",
+        "obj": "Sensitive data flows"
+      },
+      {
+        "sub": "Network traffic",
+        "rel": "Has value",
+        "obj": "Internal systems"
+      },
+      {
+        "sub": "Network traffic",
+        "rel": "Has value",
+        "obj": "Network usage"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Active information gathering"
+      },
+      {
+        "sub": "Active information gathering",
+        "rel": "Modify",
+        "obj": "Attack lifecycle"
+      },
+      {
+        "sub": "Attack lifecycle",
+        "rel": "Include",
+        "obj": "Lateral movement"
+      },
+      {
+        "sub": "Attack lifecycle",
+        "rel": "Include",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "WPA2",
+        "rel": "Has vulnerability",
+        "obj": "Four-way handshake"
+      },
+      {
+        "sub": "Four-way handshake",
+        "rel": "Modify",
+        "obj": "Cryptographic nonce mechanism"
+      },
+      {
+        "sub": "Cryptographic nonce mechanism",
+        "rel": "Use",
+        "obj": "Compromise wireless network security"
+      },
+      {
+        "sub": "Wireless network",
+        "rel": "Has vulnerability",
+        "obj": "WPA2"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Operate",
+        "obj": "Compromised network infrastructure"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Construct",
+        "obj": "Persistent access points"
+      },
+      {
+        "sub": "Outdated IoT device",
+        "rel": "Has vulnerability",
+        "obj": "WPA2"
+      },
+      {
+        "sub": "IoT system",
+        "rel": "Locate at",
+        "obj": "Environment with unpatched devices"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Use",
+        "obj": "Unsecured communications"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Use",
+        "obj": "KRACK vulnerability"
+      },
+      {
+        "sub": "KRACK vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "WPA2 networks"
+      },
+      {
+        "sub": "KRACK vulnerability",
+        "rel": "Enable",
+        "obj": "man-in-the-middle attacks"
+      },
+      {
+        "sub": "man-in-the-middle attacks",
+        "rel": "Allow",
+        "obj": "unauthorized access to systems"
+      },
+      {
+        "sub": "Android 6.0",
+        "rel": "Has vulnerability",
+        "obj": "KRACK vulnerability"
+      },
+      {
+        "sub": "KRACK vulnerability",
+        "rel": "Operate",
+        "obj": "network traffic interception"
+      },
+      {
+        "sub": "KRACK vulnerability",
+        "rel": "Modify",
+        "obj": "authentication process"
+      },
+      {
+        "sub": "WPA2 networks",
+        "rel": "Belong to",
+        "obj": "Android 6.0 and newer devices"
+      },
+      {
+        "sub": "Android 6.0 and newer",
+        "rel": "Locate at",
+        "obj": "devices running Android 6.0 and newer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "KRACK"
+      },
+      {
+        "sub": "Packet replay",
+        "rel": "Use",
+        "obj": "Session hijacking"
+      },
+      {
+        "sub": "Packet decryption",
+        "rel": "Enable",
+        "obj": "Data manipulation"
+      },
+      {
+        "sub": "Data manipulation",
+        "rel": "May involve",
+        "obj": "Unauthorized commands"
+      },
+      {
+        "sub": "Data manipulation",
+        "rel": "May involve",
+        "obj": "Unauthorized scripts"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "System"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Use",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Enable",
+        "obj": "Session hijacking"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Allow",
+        "obj": "Credential access"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Man-in-the-middle attack"
+      },
+      {
+        "sub": "Man-in-the-middle attack",
+        "rel": "Has technique",
+        "obj": "Session hijacking"
+      },
+      {
+        "sub": "Man-in-the-middle attack",
+        "rel": "Use",
+        "obj": "Network traffic interception"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Authentication tokens"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Steal",
+        "obj": "Account names"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Steal",
+        "obj": "Passwords"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Perform",
+        "obj": "Session hijacking"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Modify",
+        "obj": "Network traffic"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Write",
+        "obj": "Decrypted credentials"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Detect",
+        "obj": "Authentication data"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "Network"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Credentials"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Session hijacking tool"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Belong to",
+        "obj": "Credential Access group"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Network Traffic"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Packet Decryption"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Analyze",
+        "obj": "Network Packets"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Identify",
+        "obj": "Network Devices"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Detect",
+        "obj": "Device Types"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Detect",
+        "obj": "Communication Patterns"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Detect",
+        "obj": "Service Usage"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Map",
+        "obj": "Internal Network Structure"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Identify",
+        "obj": "Potential Targets"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "IoT Systems"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Locate at",
+        "obj": "Mobile Devices"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Detect",
+        "obj": "Operational Behavior"
+      },
+      {
+        "sub": "Lateral Movement",
+        "rel": "Operate",
+        "obj": "Network"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Use",
+        "obj": "Intercepted traffic"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Analyze",
+        "obj": "Decrypted packets"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Determine",
+        "obj": "Connected devices"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Determine",
+        "obj": "Communication patterns"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Pivot",
+        "obj": "Systems"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Exploit",
+        "obj": "Weak authentication mechanisms"
+      },
+      {
+        "sub": "KRACK vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Network systems"
+      },
+      {
+        "sub": "KRACK vulnerability",
+        "rel": "Belong to",
+        "obj": "Initial access"
+      },
+      {
+        "sub": "Decrypted packets",
+        "rel": "Has value",
+        "obj": "Communication patterns"
+      },
+      {
+        "sub": "Connected devices",
+        "rel": "Locate at",
+        "obj": "Network"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Mobile phone"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "IoT device"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Laptop"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Collect",
+        "obj": "User credentials"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Collect",
+        "obj": "Session tokens"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Collect",
+        "obj": "Personal information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "User accounts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Personal data"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Modify",
+        "obj": "Network transmission"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Locate at",
+        "obj": "Wireless network"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Belong to",
+        "obj": "KRACK"
+      },
+      {
+        "sub": "C2",
+        "rel": "Use",
+        "obj": "Decrypted traffic from KRACK attack"
+      },
+      {
+        "sub": "C2",
+        "rel": "Operate",
+        "obj": "Compromised devices"
+      },
+      {
+        "sub": "C2",
+        "rel": "Enable",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "C2",
+        "rel": "Enable",
+        "obj": "Launching further attacks"
+      },
+      {
+        "sub": "C2",
+        "rel": "Operate",
+        "obj": "Vulnerable devices"
+      },
+      {
+        "sub": "C2",
+        "rel": "Operate",
+        "obj": "Android systems"
+      },
+      {
+        "sub": "C2",
+        "rel": "Operate",
+        "obj": "IoT systems"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "KRACK vulnerability"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Network"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Write",
+        "obj": "Decrypted traffic"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Data transfer"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Detect",
+        "obj": "Legitimate traffic"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Small chunks of data"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Schedule",
+        "obj": "Data transfer"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Exfiltrate",
+        "obj": "Sensitive information"
+      },
+      {
+        "sub": "System",
+        "rel": "Has vulnerability",
+        "obj": "KRACK vulnerability"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Locate at",
+        "obj": "Network"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has value",
+        "obj": "Decrypted traffic"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has URL",
+        "obj": "Data transfer channel"
+      }
+    ]
+  }
+}

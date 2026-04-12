@@ -1,0 +1,265 @@
+{
+  "sample_id": "malkg__201210MatasanoRAT.txt",
+  "sample_index": 147,
+  "source": "malkg",
+  "file_name": "201210MatasanoRAT.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "SHAWN DENBOW",
+        "type": "PERSON"
+      },
+      {
+        "name": "JESSE HERTZ",
+        "type": "PERSON"
+      },
+      {
+        "name": "MATASANO SECURITY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "REMOTE ADMINISTRATION TOOLS",
+        "type": "TOOL"
+      },
+      {
+        "name": "DARKCOMET",
+        "type": "MALWARE"
+      },
+      {
+        "name": "BANDOOK",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CYBERGATE",
+        "type": "MALWARE"
+      },
+      {
+        "name": "XTREME RAT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "JOHN VILLAMIL",
+        "type": "PERSON"
+      },
+      {
+        "name": "SYRIAN GOVERNMENT",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "SQL INJECTION",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "ARBITRARY FILE READ",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "BASE64 OBFUSCATION",
+        "type": "TOOL"
+      },
+      {
+        "name": "RC4 ENCRYPTION",
+        "type": "TOOL"
+      },
+      {
+        "name": "ZLIB COMPRESSION",
+        "type": "TOOL"
+      },
+      {
+        "name": "QUICKUP PROTOCOL",
+        "type": "TOOL"
+      },
+      {
+        "name": "TIGHTVNC 1.2.9.0",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "UPX",
+        "type": "TOOL"
+      },
+      {
+        "name": "DELPHI",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SQLITE DATABASE",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "REVERSE CONNECTING ARCHITECTURE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "KEYLOGGING",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "SCREEN AND CAMERA CAPTURE",
+        "type": "VULNERABILITY"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "SHAWN DENBOW",
+        "rel": "related_to",
+        "obj": "MATASANO SECURITY"
+      },
+      {
+        "sub": "JESSE HERTZ",
+        "rel": "related_to",
+        "obj": "MATASANO SECURITY"
+      },
+      {
+        "sub": "MATASANO SECURITY",
+        "rel": "related_to",
+        "obj": "DARKCOMET"
+      },
+      {
+        "sub": "MATASANO SECURITY",
+        "rel": "related_to",
+        "obj": "BANDOOK"
+      },
+      {
+        "sub": "MATASANO SECURITY",
+        "rel": "related_to",
+        "obj": "CYBERGATE"
+      },
+      {
+        "sub": "MATASANO SECURITY",
+        "rel": "related_to",
+        "obj": "XTREME RAT"
+      },
+      {
+        "sub": "DARKCOMET",
+        "rel": "related_to",
+        "obj": "SYRIAN GOVERNMENT"
+      },
+      {
+        "sub": "XTREME RAT",
+        "rel": "related_to",
+        "obj": "SYRIAN GOVERNMENT"
+      },
+      {
+        "sub": "JOHN VILLAMIL",
+        "rel": "related_to",
+        "obj": "MATASANO SECURITY"
+      },
+      {
+        "sub": "DARKCOMET",
+        "rel": "related_to",
+        "obj": "SQL INJECTION"
+      },
+      {
+        "sub": "DARKCOMET",
+        "rel": "related_to",
+        "obj": "ARBITRARY FILE READ"
+      },
+      {
+        "sub": "BANDOOK",
+        "rel": "related_to",
+        "obj": "TIGHTVNC 1.2.9.0"
+      },
+      {
+        "sub": "CYBERGATE",
+        "rel": "related_to",
+        "obj": "BASE64 OBFUSCATION"
+      },
+      {
+        "sub": "CYBERGATE",
+        "rel": "related_to",
+        "obj": "RC4 ENCRYPTION"
+      },
+      {
+        "sub": "CYBERGATE",
+        "rel": "related_to",
+        "obj": "ZLIB COMPRESSION"
+      },
+      {
+        "sub": "DARKCOMET",
+        "rel": "related_to",
+        "obj": "REVERSE CONNECTING ARCHITECTURE"
+      },
+      {
+        "sub": "BANDOOK",
+        "rel": "related_to",
+        "obj": "REVERSE CONNECTING ARCHITECTURE"
+      },
+      {
+        "sub": "CYBERGATE",
+        "rel": "related_to",
+        "obj": "REVERSE CONNECTING ARCHITECTURE"
+      },
+      {
+        "sub": "XTREME RAT",
+        "rel": "related_to",
+        "obj": "REVERSE CONNECTING ARCHITECTURE"
+      },
+      {
+        "sub": "DELPHI",
+        "rel": "related_to",
+        "obj": "DARKCOMET"
+      },
+      {
+        "sub": "DELPHI",
+        "rel": "related_to",
+        "obj": "BANDOOK"
+      },
+      {
+        "sub": "DELPHI",
+        "rel": "related_to",
+        "obj": "CYBERGATE"
+      },
+      {
+        "sub": "DELPHI",
+        "rel": "related_to",
+        "obj": "XTREME RAT"
+      },
+      {
+        "sub": "QUICKUP PROTOCOL",
+        "rel": "related_to",
+        "obj": "DARKCOMET"
+      },
+      {
+        "sub": "UPX",
+        "rel": "related_to",
+        "obj": "XTREME RAT"
+      },
+      {
+        "sub": "SQLITE DATABASE",
+        "rel": "related_to",
+        "obj": "DARKCOMET"
+      },
+      {
+        "sub": "ZLIB COMPRESSION",
+        "rel": "related_to",
+        "obj": "DARKCOMET"
+      },
+      {
+        "sub": "ZLIB COMPRESSION",
+        "rel": "related_to",
+        "obj": "CYBERGATE"
+      },
+      {
+        "sub": "ZLIB COMPRESSION",
+        "rel": "related_to",
+        "obj": "XTREME RAT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "sample_id": "ctinexus__ragnar-locker-ransomware.json",
+  "sample_index": 61,
+  "source": "ctinexus",
+  "file_name": "ragnar-locker-ransomware.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Ragnar Locker",
+        "type": "Entity"
+      },
+      {
+        "name": "double extortion",
+        "type": "Entity"
+      },
+      {
+        "name": "RDP service",
+        "type": "Entity"
+      },
+      {
+        "name": "brute force",
+        "type": "Entity"
+      },
+      {
+        "name": "stolen credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2017-0213",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows COM Aggregate Marshaler",
+        "type": "Entity"
+      },
+      {
+        "name": "elevation of privilege",
+        "type": "Entity"
+      },
+      {
+        "name": "arbitrary code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "specially crafted application",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Ragnar Locker",
+        "rel": "uses",
+        "obj": "double extortion"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "compromises",
+        "obj": "RDP service"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "uses",
+        "obj": "brute force"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "uses",
+        "obj": "stolen credentials"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "exploits",
+        "obj": "CVE-2017-0213"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "exploits",
+        "obj": "Windows COM Aggregate Marshaler"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "performs",
+        "obj": "elevation of privilege"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "achieves",
+        "obj": "arbitrary code execution"
+      },
+      {
+        "sub": "Ragnar Locker",
+        "rel": "runs",
+        "obj": "specially crafted application"
+      }
+    ]
+  }
+}

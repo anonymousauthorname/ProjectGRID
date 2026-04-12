@@ -1,0 +1,104 @@
+{
+  "sample_id": "ctinexus__reservation-links-prey-on-travelers.json",
+  "sample_index": 90,
+  "source": "ctinexus",
+  "file_name": "reservation-links-prey-on-travelers.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TA558",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "TRAVEL AND HOSPITALITY INDUSTRIES",
+        "type": "INDUSTRY"
+      },
+      {
+        "name": "FAKE RESERVATION EMAILS",
+        "type": "TOOL"
+      },
+      {
+        "name": "MALICIOUS MALWARE PAYLOAD",
+        "type": "MALWARE"
+      },
+      {
+        "name": "RAR FILES",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "ISO FILES",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "PROOFPOINT",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "2018 CAMPAIGNS",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "CYBERCRIMINALS",
+        "type": "THREAT_ACTOR"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TA558",
+        "rel": "related_to",
+        "obj": "TRAVEL AND HOSPITALITY INDUSTRIES"
+      },
+      {
+        "sub": "TA558",
+        "rel": "related_to",
+        "obj": "FAKE RESERVATION EMAILS"
+      },
+      {
+        "sub": "FAKE RESERVATION EMAILS",
+        "rel": "related_to",
+        "obj": "MALICIOUS MALWARE PAYLOAD"
+      },
+      {
+        "sub": "RAR FILES",
+        "rel": "related_to",
+        "obj": "MALICIOUS MALWARE PAYLOAD"
+      },
+      {
+        "sub": "ISO FILES",
+        "rel": "related_to",
+        "obj": "MALICIOUS MALWARE PAYLOAD"
+      },
+      {
+        "sub": "PROOFPOINT",
+        "rel": "related_to",
+        "obj": "TA558"
+      },
+      {
+        "sub": "2018 CAMPAIGNS",
+        "rel": "related_to",
+        "obj": "TA558"
+      },
+      {
+        "sub": "TA558",
+        "rel": "related_to",
+        "obj": "CYBERCRIMINALS"
+      }
+    ]
+  }
+}

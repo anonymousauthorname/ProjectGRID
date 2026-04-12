@@ -1,0 +1,167 @@
+{
+  "sample_id": "malkg__201304FireEyeTrojanAPTBaneChant.txt",
+  "sample_index": 108,
+  "source": "malkg",
+  "file_name": "201304FireEyeTrojanAPTBaneChant.txt",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Trojan.APT.BaneChant",
+        "type": "Malware"
+      },
+      {
+        "name": "CVE 2012-0158",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "ow.ly",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "symbisecure.com",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "kibber.no-ip.org",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "NO-IP",
+        "type": "Tool"
+      },
+      {
+        "name": "MSCOMCTL.ocx",
+        "type": "Software"
+      },
+      {
+        "name": "GoogleUpdate.exe",
+        "type": "Software"
+      },
+      {
+        "name": "Islamic Jihad.doc",
+        "type": "Indicator"
+      },
+      {
+        "name": "Middle East",
+        "type": "Location"
+      },
+      {
+        "name": "Central Asia",
+        "type": "Location"
+      },
+      {
+        "name": "Abhishek Singh",
+        "type": "Person"
+      },
+      {
+        "name": "Chong Rong Hwa",
+        "type": "Person"
+      },
+      {
+        "name": "Hans Zimmer",
+        "type": "Person"
+      },
+      {
+        "name": "The Dark Knight Rises",
+        "type": "Organization"
+      },
+      {
+        "name": "RTF",
+        "type": "Software"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "EXPLOITS",
+        "obj": "CVE 2012-0158"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "USES",
+        "obj": "ow.ly"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "communicates with",
+        "obj": "symbisecure.com"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "communicates with",
+        "obj": "kibber.no-ip.org"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "USES",
+        "obj": "NO-IP"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "LOADS",
+        "obj": "MSCOMCTL.ocx"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "masquerades as",
+        "obj": "GoogleUpdate.exe"
+      },
+      {
+        "sub": "Islamic Jihad.doc",
+        "rel": "DOWNLOADS",
+        "obj": "Trojan.APT.BaneChant"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "TARGETS",
+        "obj": "Middle East"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "TARGETS",
+        "obj": "Central Asia"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "is delivered in",
+        "obj": "RTF"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "named after",
+        "obj": "Hans Zimmer"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "named after",
+        "obj": "The Dark Knight Rises"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "REMOVES",
+        "obj": "GoogleUpdate.exe"
+      },
+      {
+        "sub": "Trojan.APT.BaneChant",
+        "rel": "downloads file with prefix",
+        "obj": "Java"
+      }
+    ]
+  }
+}

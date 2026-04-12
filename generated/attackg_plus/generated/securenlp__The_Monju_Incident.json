@@ -1,0 +1,527 @@
+{
+  "sample_id": "securenlp__The_Monju_Incident",
+  "sample_index": 185,
+  "source": "securenlp",
+  "file_name": "The_Monju_Incident",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "GOM Player update server",
+        "rel": "Has URL",
+        "obj": "app.gomlab.com"
+      },
+      {
+        "sub": "GOM Player update server",
+        "rel": "Has value",
+        "obj": "PHP-based webshell"
+      },
+      {
+        "sub": "GOM Player update server",
+        "rel": "Modify",
+        "obj": "update file"
+      },
+      {
+        "sub": "GOM Player update server",
+        "rel": "Operate",
+        "obj": "systems accessing the update server"
+      },
+      {
+        "sub": "GOM Player update server",
+        "rel": "Has geolocation",
+        "obj": "IP ranges"
+      },
+      {
+        "sub": "Compromised server",
+        "rel": "Has URL",
+        "obj": "www.fudousankaitori.jp"
+      },
+      {
+        "sub": "Compromised server",
+        "rel": "Use",
+        "obj": "redirect victims"
+      },
+      {
+        "sub": "Monju nuclear facility",
+        "rel": "Locate at",
+        "obj": "systems accessing the GOM Player update process"
+      },
+      {
+        "sub": "Monju nuclear facility",
+        "rel": "Has vulnerability",
+        "obj": "GOM Player update process"
+      },
+      {
+        "sub": "GOM Player update process",
+        "rel": "Has vulnerability",
+        "obj": "Monju nuclear facility"
+      },
+      {
+        "sub": "PHP-based webshell",
+        "rel": "Construct",
+        "obj": "within an image"
+      },
+      {
+        "sub": "PHP-based webshell",
+        "rel": "Install",
+        "obj": "since October 2011"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "www.fudousankaitori.jp"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Operate",
+        "obj": "www.fudousankaitori.jp"
+      },
+      {
+        "sub": "www.fudousankaitori.jp",
+        "rel": "Has value",
+        "obj": "Legitimate updates"
+      },
+      {
+        "sub": "www.fudousankaitori.jp",
+        "rel": "Has value",
+        "obj": "Malicious payloads"
+      },
+      {
+        "sub": "www.fudousankaitori.jp",
+        "rel": "Locate at",
+        "obj": "Japan"
+      },
+      {
+        "sub": "Monju facility",
+        "rel": "Has vulnerability",
+        "obj": "Update mechanism"
+      },
+      {
+        "sub": "Update mechanism",
+        "rel": "Modify",
+        "obj": "GOM Player"
+      },
+      {
+        "sub": "GOM Player update server",
+        "rel": "Compromise",
+        "obj": "Adversary"
+      },
+      {
+        "sub": "Adversary",
+        "rel": "Construct",
+        "obj": "Watering hole"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Operate",
+        "obj": "GOM Player update server"
+      },
+      {
+        "sub": "GOM Player update server",
+        "rel": "Modify",
+        "obj": "www.fudousankaitori.jp"
+      },
+      {
+        "sub": "www.fudousankaitori.jp",
+        "rel": "Has URL",
+        "obj": "http://www.fudousankaitori.jp"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Has filename",
+        "obj": "RAR archive"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Contain",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Deliver",
+        "obj": "via"
+      },
+      {
+        "sub": "Software update process",
+        "rel": "Use",
+        "obj": "GOM Player update server"
+      },
+      {
+        "sub": "Software update process",
+        "rel": "Exploit",
+        "obj": "Routine software update process"
+      },
+      {
+        "sub": "Routine software update process",
+        "rel": "Belong to",
+        "obj": "User behavior"
+      },
+      {
+        "sub": "www.fudousankaitori.jp",
+        "rel": "Has URL",
+        "obj": "www.fudousankaitori.jp"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Has value",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Self-extracting RAR archive"
+      },
+      {
+        "sub": "Routine software update process",
+        "rel": "Locate at",
+        "obj": "User behavior"
+      },
+      {
+        "sub": "Self-extracting RAR archive",
+        "rel": "Construct",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "GOM Player installer"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Self-extracting RAR archive"
+      },
+      {
+        "sub": "GOM Player installer",
+        "rel": "Modify",
+        "obj": "install.exe"
+      },
+      {
+        "sub": "GOM Player update",
+        "rel": "Distraction",
+        "obj": "User"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Deobfuscate",
+        "obj": "DLLs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "Payload"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Store",
+        "obj": "instructions.pdf"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Store",
+        "obj": "instructions64.pdf"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Registry entry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "HKEY_USERS\\default\\Software\\Classes\\CLSID\\{ECD4FC4D-5213-11D0-B792-00A0C90312E1}\\InProcServer32\\@"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "C:\\WINDOWS\\temp\\install.ocx"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System startup"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Ensure",
+        "obj": "Persistence after system restarts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Defense evasion technique"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "\"Miǎnshā\""
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "\"White on Black\""
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "One-byte XOR with 0x14"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Legitimate update processes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Trusted executables"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Blend in with",
+        "obj": "Normal system behavior"
+      },
+      {
+        "sub": "Report Type",
+        "rel": "Has vulnerability",
+        "obj": "Vulnerable Software"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has geolocation",
+        "obj": "Location"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Update server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Deliver to",
+        "obj": "System"
+      },
+      {
+        "sub": "System",
+        "rel": "Operate",
+        "obj": "Update process"
+      },
+      {
+        "sub": "Update server",
+        "rel": "Has URL",
+        "obj": "URL"
+      },
+      {
+        "sub": "Update server",
+        "rel": "Modify",
+        "obj": "URL"
+      },
+      {
+        "sub": "Update server",
+        "rel": "Locate at",
+        "obj": "IP"
+      },
+      {
+        "sub": "IP",
+        "rel": "Access",
+        "obj": "GOM Player update server"
+      },
+      {
+        "sub": "GOM Player update server",
+        "rel": "Operate",
+        "obj": "Monju facility"
+      },
+      {
+        "sub": "Monju facility",
+        "rel": "Belong to",
+        "obj": "Organization"
+      },
+      {
+        "sub": "www.fudousankaitori.jp",
+        "rel": "Belong to",
+        "obj": "Organization"
+      },
+      {
+        "sub": "www.fudousankaitori.jp",
+        "rel": "Operate",
+        "obj": "Malware delivery"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Discover",
+        "obj": "Environment"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Analyze",
+        "obj": "Update process"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Identify",
+        "obj": "System"
+      },
+      {
+        "sub": "System",
+        "rel": "Access",
+        "obj": "GOM Player update server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Update server"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Modify",
+        "obj": "Update URL"
+      },
+      {
+        "sub": "Update URL",
+        "rel": "Modify",
+        "obj": "IP range"
+      },
+      {
+        "sub": "IP range",
+        "rel": "Access",
+        "obj": "GOM Player update server"
+      },
+      {
+        "sub": "Attacker",
+        "rel": "Target",
+        "obj": "Specific machine"
+      },
+      {
+        "sub": "Specific machine",
+        "rel": "Access",
+        "obj": "Update server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Staff training documents"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Emails"
+      },
+      {
+        "sub": "Gh0st RAT",
+        "rel": "Use",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Gh0st RAT",
+        "rel": "Enable",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "Gh0st RAT",
+        "rel": "Operate",
+        "obj": "Sensitive organizational information"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Has URL",
+        "obj": "testqweasd.tk"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Has value",
+        "obj": "211.43.220.89"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Operate",
+        "obj": "HTTPS"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Use",
+        "obj": "TCP port 443"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Has hostname",
+        "obj": "testqweasd.tk"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Has value",
+        "obj": "443"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Modify",
+        "obj": "'HTTPS'"
+      },
+      {
+        "sub": "Command and Control",
+        "rel": "Belong to",
+        "obj": "VOHO campaign"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Monju facility"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has functionality",
+        "obj": "Data harvesting"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has functionality",
+        "obj": "Transmission to external servers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Command and control channel"
+      },
+      {
+        "sub": "Command and control channel",
+        "rel": "Has URL",
+        "obj": "testqweasd.tk"
+      },
+      {
+        "sub": "Data harvesting",
+        "rel": "Modify",
+        "obj": "Staff training documents"
+      },
+      {
+        "sub": "Data harvesting",
+        "rel": "Modify",
+        "obj": "Over 40,000 emails"
+      },
+      {
+        "sub": "Command and control channel",
+        "rel": "Locate at",
+        "obj": "testqweasd.tk"
+      }
+    ]
+  }
+}

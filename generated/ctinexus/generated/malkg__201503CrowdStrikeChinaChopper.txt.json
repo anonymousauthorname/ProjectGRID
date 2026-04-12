@@ -1,0 +1,315 @@
+{
+  "sample_id": "malkg__201503CrowdStrikeChinaChopper.txt",
+  "sample_index": 144,
+  "source": "malkg",
+  "file_name": "201503CrowdStrikeChinaChopper.txt",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Chopper Web shell",
+        "type": "Unknown"
+      },
+      {
+        "name": "Attacker",
+        "type": "Unknown"
+      },
+      {
+        "name": "inserting a single line into any ASPX page",
+        "type": "Unknown"
+      },
+      {
+        "name": "various programming languages including ASP, ASPX, PHP, JSP, and CFM",
+        "type": "Unknown"
+      },
+      {
+        "name": "compromised Web server",
+        "type": "Unknown"
+      },
+      {
+        "name": "attackers",
+        "type": "Unknown"
+      },
+      {
+        "name": "System.WebServices.dll",
+        "type": "Unknown"
+      },
+      {
+        "name": "C#",
+        "type": "Unknown"
+      },
+      {
+        "name": "multiple Chopper API functions",
+        "type": "Unknown"
+      },
+      {
+        "name": "the line <% WebServices.InitalizeWebServices(\"shell_password\"); %>",
+        "type": "Unknown"
+      },
+      {
+        "name": "suspicious functions such as 'eval'",
+        "type": "Unknown"
+      },
+      {
+        "name": "HTTP POST requests",
+        "type": "Unknown"
+      },
+      {
+        "name": "SSL",
+        "type": "Unknown"
+      },
+      {
+        "name": "Chopper network traffic",
+        "type": "Unknown"
+      },
+      {
+        "name": "attacker actions, intentions, and next steps",
+        "type": "Unknown"
+      },
+      {
+        "name": "ChopShop framework",
+        "type": "Unknown"
+      },
+      {
+        "name": "MITRE",
+        "type": "Unknown"
+      },
+      {
+        "name": "modules",
+        "type": "Unknown"
+      },
+      {
+        "name": "webshell_chopper_decode module",
+        "type": "Unknown"
+      },
+      {
+        "name": "chop_ssl and http modules",
+        "type": "Unknown"
+      },
+      {
+        "name": "server's private key in RSA format to decode SSL traffic",
+        "type": "Unknown"
+      },
+      {
+        "name": "Chopper Webshell commands and responses from HTTP traffic",
+        "type": "Unknown"
+      },
+      {
+        "name": "on separate lines",
+        "type": "Unknown"
+      },
+      {
+        "name": "command parameters z0, z1, z2",
+        "type": "Unknown"
+      },
+      {
+        "name": "arguments passed from Chopper client to server payload",
+        "type": "Unknown"
+      },
+      {
+        "name": "commands in Chopper traffic",
+        "type": "Unknown"
+      },
+      {
+        "name": "base64 or hex",
+        "type": "Unknown"
+      },
+      {
+        "name": "PE files from session commands or responses",
+        "type": "Unknown"
+      },
+      {
+        "name": "PE files used by Chopper Web shell",
+        "type": "Unknown"
+      },
+      {
+        "name": "hex encoded",
+        "type": "Unknown"
+      },
+      {
+        "name": "credential dumper mimikatz",
+        "type": "Unknown"
+      },
+      {
+        "name": "an attacker",
+        "type": "Unknown"
+      },
+      {
+        "name": "w3wp.exe",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Chopper Web shell",
+        "rel": "is used by",
+        "obj": "Attacker"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "is deployed by",
+        "obj": "inserting a single line into any ASPX page"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "is available in",
+        "obj": "various programming languages including ASP, ASPX, PHP, JSP, and CFM"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "allows remote access to",
+        "obj": "compromised Web server"
+      },
+      {
+        "sub": "attackers",
+        "rel": "upload a trojanized DLL file named",
+        "obj": "System.WebServices.dll"
+      },
+      {
+        "sub": "System.WebServices.dll",
+        "rel": "is written in",
+        "obj": "C#"
+      },
+      {
+        "sub": "System.WebServices.dll",
+        "rel": "contains",
+        "obj": "multiple Chopper API functions"
+      },
+      {
+        "sub": "attackers",
+        "rel": "invoke Chopper API functions by inserting",
+        "obj": "the line <% WebServices.InitalizeWebServices(\"shell_password\"); %>"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "evades host-based detection methods that look for",
+        "obj": "suspicious functions such as 'eval'"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "generates TCP traffic using",
+        "obj": "HTTP POST requests"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "produces encrypted traffic when deployed behind",
+        "obj": "SSL"
+      },
+      {
+        "sub": "Chopper network traffic",
+        "rel": "can reveal",
+        "obj": "attacker actions, intentions, and next steps"
+      },
+      {
+        "sub": "ChopShop framework",
+        "rel": "is developed by",
+        "obj": "MITRE"
+      },
+      {
+        "sub": "ChopShop framework",
+        "rel": "is extendable with",
+        "obj": "modules"
+      },
+      {
+        "sub": "webshell_chopper_decode module",
+        "rel": "is designed to be chained with",
+        "obj": "chop_ssl and http modules"
+      },
+      {
+        "sub": "webshell_chopper_decode module",
+        "rel": "requires",
+        "obj": "server's private key in RSA format to decode SSL traffic"
+      },
+      {
+        "sub": "webshell_chopper_decode module",
+        "rel": "extracts",
+        "obj": "Chopper Webshell commands and responses from HTTP traffic"
+      },
+      {
+        "sub": "webshell_chopper_decode module",
+        "rel": "separates command parameters z0, z1, z2",
+        "obj": "on separate lines"
+      },
+      {
+        "sub": "command parameters z0, z1, z2",
+        "rel": "contain",
+        "obj": "arguments passed from Chopper client to server payload"
+      },
+      {
+        "sub": "commands in Chopper traffic",
+        "rel": "are encoded in",
+        "obj": "base64 or hex"
+      },
+      {
+        "sub": "webshell_chopper_decode module",
+        "rel": "can attempt to carve out and save",
+        "obj": "PE files from session commands or responses"
+      },
+      {
+        "sub": "PE files used by Chopper Web shell",
+        "rel": "are parsed as",
+        "obj": "hex encoded"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "is used to execute",
+        "obj": "credential dumper mimikatz"
+      },
+      {
+        "sub": "an attacker",
+        "rel": "runs a 'dir' command to look for",
+        "obj": "w3wp.exe"
+      },
+      {
+        "sub": "System.WebServices.dll",
+        "rel": "is a deployed variant of",
+        "obj": "Chopper Web shell"
+      },
+      {
+        "sub": "attacker actions, intentions, and next steps",
+        "rel": "are revealed by",
+        "obj": "Chopper Web shell"
+      },
+      {
+        "sub": "ChopShop framework",
+        "rel": "is used to decode",
+        "obj": "Chopper Web shell"
+      },
+      {
+        "sub": "webshell_chopper_decode module",
+        "rel": "is a decoding tool for",
+        "obj": "Chopper Web shell"
+      },
+      {
+        "sub": "arguments passed from Chopper client to server payload",
+        "rel": "are transmitted to",
+        "obj": "Chopper Web shell"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "uses",
+        "obj": "base64 or hex"
+      },
+      {
+        "sub": "Chopper Web shell",
+        "rel": "generates or contains",
+        "obj": "hex encoded"
+      }
+    ]
+  }
+}

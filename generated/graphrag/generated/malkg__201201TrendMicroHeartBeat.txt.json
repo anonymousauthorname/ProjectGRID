@@ -1,0 +1,270 @@
+{
+  "sample_id": "malkg__201201TrendMicroHeartBeat.txt",
+  "sample_index": 105,
+  "source": "malkg",
+  "file_name": "201201TrendMicroHeartBeat.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "HEARTBEAT APT CAMPAIGN",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "TREND MICRO INCORPORATED",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "ROLAND DELA PAZ",
+        "type": "PERSON"
+      },
+      {
+        "name": "SOUTH KOREAN GOVERNMENT",
+        "type": "GEO"
+      },
+      {
+        "name": "POLITICAL PARTIES",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "MEDIA OUTFITS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "NATIONAL POLICY RESEARCH INSTITUTE",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "MILITARY BRANCH OF SOUTH KOREAN ARMED FORCES",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "SMALL BUSINESS SECTOR ORGANIZATION",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "BRANCHES OF SOUTH KOREAN GOVERNMENT",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "HEARTBEAT RAT",
+        "type": "TOOL"
+      },
+      {
+        "name": "COMMAND AND CONTROL (C&C)",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "CAMPAGIN CODES",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "DECOY DOCUMENTS",
+        "type": "EVENT"
+      },
+      {
+        "name": "SPEARPHISHING EMAILS",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "XOR ENCRYPTION",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "SVCHOST.EXE INJECTION",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "FILE EXTENSIONS",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "BINDER TOOL",
+        "type": "TOOL"
+      },
+      {
+        "name": "TROJ_DRPBEAT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "COMMAND AND CONTROL",
+        "type": "Unknown"
+      },
+      {
+        "name": "CAMPAIGN CODES",
+        "type": "Unknown"
+      },
+      {
+        "name": "BKDR_HBEAT",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "HEARTBEAT APT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "HEARTBEAT RAT"
+      },
+      {
+        "sub": "HEARTBEAT APT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "SPEARPHISHING EMAILS"
+      },
+      {
+        "sub": "HEARTBEAT APT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "DECOY DOCUMENTS"
+      },
+      {
+        "sub": "HEARTBEAT RAT",
+        "rel": "related_to",
+        "obj": "COMMAND AND CONTROL"
+      },
+      {
+        "sub": "HEARTBEAT RAT",
+        "rel": "related_to",
+        "obj": "BINDER TOOL"
+      },
+      {
+        "sub": "HEARTBEAT APT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "SOUTH KOREAN GOVERNMENT"
+      },
+      {
+        "sub": "HEARTBEAT RAT",
+        "rel": "related_to",
+        "obj": "SVCHOST.EXE INJECTION"
+      },
+      {
+        "sub": "HEARTBEAT APT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "CAMPAGIN CODES"
+      },
+      {
+        "sub": "HEARTBEAT APT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "TREND MICRO INCORPORATED"
+      },
+      {
+        "sub": "COMMAND AND CONTROL",
+        "rel": "related_to",
+        "obj": "CAMPAGIN CODES"
+      },
+      {
+        "sub": "DECOY DOCUMENTS",
+        "rel": "related_to",
+        "obj": "CAMPAIGN CODES"
+      },
+      {
+        "sub": "HEARTBEAT RAT",
+        "rel": "related_to",
+        "obj": "XOR ENCRYPTION"
+      },
+      {
+        "sub": "HEARTBEAT APT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "FILE EXTENSIONS"
+      },
+      {
+        "sub": "TROJ_DRPBEAT",
+        "rel": "related_to",
+        "obj": "HEARTBEAT RAT"
+      },
+      {
+        "sub": "BKDR_HBEAT",
+        "rel": "related_to",
+        "obj": "HEARTBEAT RAT"
+      },
+      {
+        "sub": "HEARTBEAT APT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "HEARTBEAT RAT"
+      },
+      {
+        "sub": "HEARTBEAT APT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "SPEARPHISHING EMAILS"
+      },
+      {
+        "sub": "HEARTBEAT APT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "DECOY DOCUMENTS"
+      },
+      {
+        "sub": "HEARTBEAT RAT",
+        "rel": "related_to",
+        "obj": "COMMAND AND CONTROL"
+      },
+      {
+        "sub": "HEARTBEAT RAT",
+        "rel": "related_to",
+        "obj": "BINDER TOOL"
+      },
+      {
+        "sub": "HEARTBEAT APT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "SOUTH KOREAN GOVERNMENT"
+      },
+      {
+        "sub": "HEARTBEAT RAT",
+        "rel": "related_to",
+        "obj": "SVCHOST.EXE INJECTION"
+      },
+      {
+        "sub": "HEARTBEAT APT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "CAMPAGIN CODES"
+      },
+      {
+        "sub": "HEARTBEAT APT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "TREND MICRO INCORPORATED"
+      },
+      {
+        "sub": "COMMAND AND CONTROL",
+        "rel": "related_to",
+        "obj": "CAMPAGIN CODES"
+      },
+      {
+        "sub": "DECOY DOCUMENTS",
+        "rel": "related_to",
+        "obj": "CAMPAIGN CODES"
+      },
+      {
+        "sub": "HEARTBEAT RAT",
+        "rel": "related_to",
+        "obj": "XOR ENCRYPTION"
+      },
+      {
+        "sub": "HEARTBEAT APT CAMPAIGN",
+        "rel": "related_to",
+        "obj": "FILE EXTENSIONS"
+      },
+      {
+        "sub": "TROJ_DRPBEAT",
+        "rel": "related_to",
+        "obj": "HEARTBEAT RAT"
+      },
+      {
+        "sub": "BKDR_HBEAT",
+        "rel": "related_to",
+        "obj": "HEARTBEAT RAT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "sample_id": "ctinexus__apts-swarm-zimbra-zero-day-to-steal-government-info-worldwide.json",
+  "sample_index": 82,
+  "source": "ctinexus",
+  "file_name": "apts-swarm-zimbra-zero-day-to-steal-government-info-worldwide.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2023-37580",
+        "type": "Entity"
+      },
+      {
+        "name": "Zimbra Collaboration Suite",
+        "type": "Entity"
+      },
+      {
+        "name": "reflected cross-site scripting (XSS) vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "Google's Threat Analysis Group (TAG)",
+        "type": "Entity"
+      },
+      {
+        "name": "June",
+        "type": "Entity"
+      },
+      {
+        "name": "July 5",
+        "type": "Entity"
+      },
+      {
+        "name": "July 25",
+        "type": "Entity"
+      },
+      {
+        "name": "Zimbra email server",
+        "type": "Entity"
+      },
+      {
+        "name": "government organizations",
+        "type": "Entity"
+      },
+      {
+        "name": "email data",
+        "type": "Entity"
+      },
+      {
+        "name": "user credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "authentication tokens",
+        "type": "Entity"
+      },
+      {
+        "name": "Japan Advanced Institute of Science and Technology",
+        "type": "Entity"
+      },
+      {
+        "name": "Germany's Max Planck Institute",
+        "type": "Entity"
+      },
+      {
+        "name": "Gunung Sewu",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2023-37580",
+        "rel": "is a",
+        "obj": "reflected cross-site scripting (XSS) vulnerability"
+      },
+      {
+        "sub": "CVE-2023-37580",
+        "rel": "affects",
+        "obj": "Zimbra email server"
+      },
+      {
+        "sub": "CVE-2023-37580",
+        "rel": "was patched on",
+        "obj": "July 25"
+      },
+      {
+        "sub": "CVE-2023-37580",
+        "rel": "had hotfix released on",
+        "obj": "July 5"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "is a",
+        "obj": "email server"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "is a",
+        "obj": "calendaring platform"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "is a",
+        "obj": "chat and video platform"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "was exploited by",
+        "obj": "cyberattack groups"
+      },
+      {
+        "sub": "cyberattack groups",
+        "rel": "used",
+        "obj": "CVE-2023-37580"
+      },
+      {
+        "sub": "cyberattack groups",
+        "rel": "stole",
+        "obj": "email data"
+      },
+      {
+        "sub": "cyberattack groups",
+        "rel": "stole",
+        "obj": "user credentials"
+      },
+      {
+        "sub": "cyberattack groups",
+        "rel": "stole",
+        "obj": "authentication tokens"
+      },
+      {
+        "sub": "cyberattack groups",
+        "rel": "targeted",
+        "obj": "government organizations"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "is used by",
+        "obj": "Japan Advanced Institute of Science and Technology"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "is used by",
+        "obj": "Germany's Max Planck Institute"
+      },
+      {
+        "sub": "Zimbra Collaboration Suite",
+        "rel": "is used by",
+        "obj": "Gunung Sewu"
+      },
+      {
+        "sub": "Google's Threat Analysis Group (TAG)",
+        "rel": "reported",
+        "obj": "zero-day exploitation started in June"
+      },
+      {
+        "sub": "zero-day exploitation",
+        "rel": "began in",
+        "obj": "June"
+      },
+      {
+        "sub": "zero-day exploitation",
+        "rel": "occurred before",
+        "obj": "July 5"
+      }
+    ]
+  }
+}

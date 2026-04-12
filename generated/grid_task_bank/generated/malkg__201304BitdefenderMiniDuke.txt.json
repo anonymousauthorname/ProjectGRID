@@ -1,0 +1,1433 @@
+{
+  "sample_id": "malkg__201304BitdefenderMiniDuke.txt",
+  "sample_index": 127,
+  "source": "malkg",
+  "file_name": "201304BitdefenderMiniDuke.txt",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "MiniDuke",
+        "type": "malware",
+        "alias": [
+          "the malware",
+          "MiniDuke"
+        ]
+      },
+      {
+        "name": "dropper",
+        "type": "hacker-tool",
+        "alias": [
+          "the dropper"
+        ]
+      },
+      {
+        "name": "Twitter",
+        "type": "service",
+        "alias": [
+          "the Twitter account",
+          "mobile.twitter.com"
+        ]
+      },
+      {
+        "name": "SHA1",
+        "type": "vulnerability",
+        "alias": [
+          "the SHA1 (probably modified)"
+        ]
+      },
+      {
+        "name": "document exfiltration",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "Cristian ISTRATE",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Cristian ISTRATE"
+        ]
+      },
+      {
+        "name": "http://www.tsoftonline.com/conf/",
+        "type": "url"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "MiniDuke",
+        "rel": "is made of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "pdf"
+      },
+      {
+        "sub": "pdf",
+        "rel": "embeds",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "exploit code"
+      },
+      {
+        "sub": "pdf",
+        "rel": "embeds",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "a dropper"
+      },
+      {
+        "sub": "the dropper",
+        "rel": "writes",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "the \"main\" DLL component"
+      },
+      {
+        "sub": "the malware",
+        "rel": "calls back home using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "a URL found via"
+      },
+      {
+        "sub": "the malware",
+        "rel": "calls back home using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Google"
+      },
+      {
+        "sub": "the malware",
+        "rel": "connects to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a command and control server"
+      },
+      {
+        "sub": "the malware",
+        "rel": "connects to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Twitter"
+      },
+      {
+        "sub": "the malware",
+        "rel": "connects to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Google"
+      },
+      {
+        "sub": "the malware",
+        "rel": "connects to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "mobile.twitter.com"
+      },
+      {
+        "sub": "the malware",
+        "rel": "uses",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a Twitter URL"
+      },
+      {
+        "sub": "the malware",
+        "rel": "connects to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "twitter.com"
+      },
+      {
+        "sub": "the variant of the malware dated 2011",
+        "rel": "connects to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "twitter.com"
+      },
+      {
+        "sub": "the variant of the malware dated 2012/2013",
+        "rel": "connects to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "mobile.twitter.com"
+      },
+      {
+        "sub": "the malware variant dated 2011",
+        "rel": "connects to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "twitter.com"
+      },
+      {
+        "sub": "the malware variant dated 2012/2013",
+        "rel": "connects to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "mobile.twitter.com"
+      },
+      {
+        "sub": "the tweets",
+        "rel": "are encoded in the following form",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "uri!..."
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is decoded from",
+        "rel_type": [
+          "decodes"
+        ],
+        "obj": "a tweet"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "index.php"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "main.htm"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "default.htm"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "home.htm"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "out.htm"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "click.htm"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "link.htm"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "page.htm"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "browse.htm"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "directory_home.htm"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "portal.htm"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "info.htm"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "current.htm"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "details.htm"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "search.htm"
+      },
+      {
+        "sub": "the C&C address",
+        "rel": "is concatenated with",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "article.htm"
+      },
+      {
+        "sub": "the malware",
+        "rel": "performs a GET request to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a server"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "a GIF file"
+      },
+      {
+        "sub": "the malware",
+        "rel": "checks for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the 'GIF8' magic"
+      },
+      {
+        "sub": "the malware",
+        "rel": "checks for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the 0x3b00 word"
+      },
+      {
+        "sub": "the malware",
+        "rel": "isolates",
+        "rel_type": [
+          "decodes"
+        ],
+        "obj": "the next four bytes that are the decryption key"
+      },
+      {
+        "sub": "the malware",
+        "rel": "isolates",
+        "rel_type": [
+          "decodes"
+        ],
+        "obj": "the encrypted payload"
+      },
+      {
+        "sub": "the malware",
+        "rel": "verifies",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "the digital signature"
+      },
+      {
+        "sub": "the malware",
+        "rel": "decrypts",
+        "rel_type": [
+          "decrypts"
+        ],
+        "obj": "the payload"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to load",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "a DLL via LoadLibrary()"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name winupdt.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name wcsntfy.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name netmngr.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name dumpreport.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name taskhosts.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name wupdmngr.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name winhlp.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name dllhosts.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name dxdiagupd.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name dialers.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name netschd.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name connwiz.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name certupdt.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name repfault.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name wuapreport.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name lanmgr.exe"
+      },
+      {
+        "sub": "the GIF file",
+        "rel": "is digitally signed with",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "RSA 2048bit"
+      },
+      {
+        "sub": "the GIF file",
+        "rel": "uses",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "SHA-1"
+      },
+      {
+        "sub": "the malware",
+        "rel": "sends the identifier to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the server"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "16 bytes from the socket"
+      },
+      {
+        "sub": "the malware",
+        "rel": "creates a MD5 hash on",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "these bytes"
+      },
+      {
+        "sub": "the malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "this MD5 hash as a key for the AES algorithm"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "16 bytes for AES encryption"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "4 bytes for XOR"
+      },
+      {
+        "sub": "the malware",
+        "rel": "performs a XOR operation with",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the identifier"
+      },
+      {
+        "sub": "the malware",
+        "rel": "allocates memory from",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "the result"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "a number of size bytes"
+      },
+      {
+        "sub": "the malware",
+        "rel": "decrypts",
+        "rel_type": [
+          "decodes"
+        ],
+        "obj": "these bytes with AES"
+      },
+      {
+        "sub": "the malware",
+        "rel": "calls the start of",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "the decrypted buffer"
+      },
+      {
+        "sub": "the malware",
+        "rel": "can be used to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "load new modules"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is used for",
+        "rel_type": [
+          "documents"
+        ],
+        "obj": "exfiltration"
+      },
+      {
+        "sub": "the malware",
+        "rel": "creates a key in",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the Registry"
+      },
+      {
+        "sub": "the malware",
+        "rel": "sends a request to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "info.leveldelta.com"
+      },
+      {
+        "sub": "the malware",
+        "rel": "performs requests to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "info.leveldelta.com"
+      },
+      {
+        "sub": "the malware",
+        "rel": "sends a POST request",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the server"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives a response from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the server"
+      },
+      {
+        "sub": "the malware",
+        "rel": "sends a POST request with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the identifier"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the command’s result"
+      },
+      {
+        "sub": "the malware",
+        "rel": "exfiltrates",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "documents from the target computers"
+      },
+      {
+        "sub": "the malware",
+        "rel": "checks if the host computer connects to the Internet through a proxy server",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a proxy server"
+      },
+      {
+        "sub": "the malware",
+        "rel": "uses",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the proxy settings"
+      },
+      {
+        "sub": "the malware",
+        "rel": "connects to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "85.95.236.114:443"
+      },
+      {
+        "sub": "the malware",
+        "rel": "creates a unique identifier",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "from the socket handle"
+      },
+      {
+        "sub": "the malware",
+        "rel": "sends the identifier on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the opened socket"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "16 bytes from the socket"
+      },
+      {
+        "sub": "the malware",
+        "rel": "creates a MD5 hash on",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "these bytes"
+      },
+      {
+        "sub": "the malware",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "this MD5 hash as a key for the AES algorithm"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "16 bytes for AES encryption"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "4 bytes for XOR"
+      },
+      {
+        "sub": "the malware",
+        "rel": "performs a XOR operation with",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the identifier"
+      },
+      {
+        "sub": "the malware",
+        "rel": "allocates memory from",
+        "rel_type": [
+          "depends-on"
+        ],
+        "obj": "the result"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "a number of size bytes"
+      },
+      {
+        "sub": "the malware",
+        "rel": "decrypts",
+        "rel_type": [
+          "decodes"
+        ],
+        "obj": "these bytes with AES"
+      },
+      {
+        "sub": "the malware",
+        "rel": "calls the start of",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "the decrypted buffer"
+      },
+      {
+        "sub": "the malware",
+        "rel": "can be used to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "load new modules"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is used for",
+        "rel_type": [
+          "documents"
+        ],
+        "obj": "exfiltration"
+      },
+      {
+        "sub": "the malware",
+        "rel": "performs a GET request to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a server"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "a file with a .GIF header"
+      },
+      {
+        "sub": "the malware",
+        "rel": "checks for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the 'GIF8' magic"
+      },
+      {
+        "sub": "the malware",
+        "rel": "checks for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the 0x3b00 word"
+      },
+      {
+        "sub": "the malware",
+        "rel": "isolates",
+        "rel_type": [
+          "decodes"
+        ],
+        "obj": "the next four bytes that are the decryption key"
+      },
+      {
+        "sub": "the malware",
+        "rel": "isolates",
+        "rel_type": [
+          "decodes"
+        ],
+        "obj": "the encrypted payload"
+      },
+      {
+        "sub": "the malware",
+        "rel": "verifies",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "the digital signature"
+      },
+      {
+        "sub": "the malware",
+        "rel": "decrypts",
+        "rel_type": [
+          "decrypts"
+        ],
+        "obj": "the payload"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to load",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "a DLL via LoadLibrary()"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name winupdt.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name wcsntfy.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name netmngr.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name dumpreport.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name taskhosts.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name wupdmngr.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name winhlp.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name dllhosts.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name dxdiagupd.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name dialers.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name netschd.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name connwiz.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name certupdt.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name repfault.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name wuapreport.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name lanmgr.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is used for",
+        "rel_type": [
+          "documents"
+        ],
+        "obj": "exfiltration"
+      },
+      {
+        "sub": "the malware",
+        "rel": "creates a key in",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the Registry"
+      },
+      {
+        "sub": "the malware",
+        "rel": "sends a request to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "info.leveldelta.com"
+      },
+      {
+        "sub": "the malware",
+        "rel": "performs requests to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "info.leveldelta.com"
+      },
+      {
+        "sub": "the malware",
+        "rel": "sends a POST request",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the server"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives a response from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the server"
+      },
+      {
+        "sub": "the malware",
+        "rel": "sends a POST request with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the identifier"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the command’s result"
+      },
+      {
+        "sub": "the malware",
+        "rel": "exfiltrates",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "documents from the target computers"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is used to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "load new modules"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is used for",
+        "rel_type": [
+          "documents"
+        ],
+        "obj": "exfiltration"
+      },
+      {
+        "sub": "the malware",
+        "rel": "performs a GET request to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "a server"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "a file with a .GIF header"
+      },
+      {
+        "sub": "the malware",
+        "rel": "checks for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the 'GIF8' magic"
+      },
+      {
+        "sub": "the malware",
+        "rel": "checks for",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the 0x3b00 word"
+      },
+      {
+        "sub": "the malware",
+        "rel": "isolates",
+        "rel_type": [
+          "decodes"
+        ],
+        "obj": "the next four bytes that are the decryption key"
+      },
+      {
+        "sub": "the malware",
+        "rel": "isolates",
+        "rel_type": [
+          "decodes"
+        ],
+        "obj": "the encrypted payload"
+      },
+      {
+        "sub": "the malware",
+        "rel": "verifies",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "the digital signature"
+      },
+      {
+        "sub": "the malware",
+        "rel": "decrypts",
+        "rel_type": [
+          "decrypts"
+        ],
+        "obj": "the payload"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to load",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "a DLL via LoadLibrary()"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name winupdt.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name wcsntfy.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name netmngr.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name dumpreport.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name taskhosts.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name wupdmngr.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name winhlp.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name dllhosts.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name dxdiagupd.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name dialers.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name netschd.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name connwiz.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name certupdt.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name repfault.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name wuapreport.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "attempts to write",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "an EXE file with name lanmgr.exe"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is used for",
+        "rel_type": [
+          "documents"
+        ],
+        "obj": "exfiltration"
+      },
+      {
+        "sub": "the malware",
+        "rel": "creates a key in",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "the Registry"
+      },
+      {
+        "sub": "the malware",
+        "rel": "sends a request to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "info.leveldelta.com"
+      },
+      {
+        "sub": "the malware",
+        "rel": "performs requests to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "info.leveldelta.com"
+      },
+      {
+        "sub": "the malware",
+        "rel": "sends a POST request",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the server"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives a response from",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the server"
+      },
+      {
+        "sub": "the malware",
+        "rel": "sends a POST request with",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the identifier"
+      },
+      {
+        "sub": "the malware",
+        "rel": "receives",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "the command’s result"
+      },
+      {
+        "sub": "the malware",
+        "rel": "exfiltrates",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "documents from the target computers"
+      },
+      {
+        "sub": "the malware",
+        "rel": "is used to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "load new modules"
+      }
+    ]
+  }
+}

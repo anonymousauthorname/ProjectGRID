@@ -1,0 +1,808 @@
+{
+  "sample_id": "securenlp__Operation_GreedyWonk",
+  "sample_index": 198,
+  "source": "securenlp",
+  "file_name": "Operation_GreedyWonk",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Operation GreedyWonk",
+        "type": "campaign",
+        "alias": [
+          "this attack",
+          "the campaign"
+        ]
+      },
+      {
+        "name": "Operation SnowMan",
+        "type": "campaign",
+        "alias": [
+          "the prior campaign"
+        ]
+      },
+      {
+        "name": "FireEye Dynamic Threat Intelligence cloud",
+        "type": "security-product",
+        "alias": [
+          "FireEye"
+        ]
+      },
+      {
+        "name": "Adobe",
+        "type": "company",
+        "alias": [
+          "Adobe security"
+        ]
+      },
+      {
+        "name": "CVE-2014-0502",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerability"
+        ]
+      },
+      {
+        "name": "Flash Zero-Day Exploit",
+        "type": "malware",
+        "alias": [
+          "the Flash zero-day exploit"
+        ]
+      },
+      {
+        "name": "Windows XP",
+        "type": "windows-registry-key",
+        "alias": [
+          "Windows XP"
+        ]
+      },
+      {
+        "name": "Windows 7",
+        "type": "windows-registry-key",
+        "alias": [
+          "Windows 7"
+        ]
+      },
+      {
+        "name": "Java 1.6",
+        "type": "general-software",
+        "alias": [
+          "Java 1.6"
+        ]
+      },
+      {
+        "name": "Microsoft Office 2007 or 2010",
+        "type": "general-software",
+        "alias": [
+          "Microsoft Office 2007 or 2010"
+        ]
+      },
+      {
+        "name": "Peter G. Peterson Institute for International Economics",
+        "type": "nonprofit-institution",
+        "alias": [
+          "Peter G. Peterson Institute",
+          "www.piie.com"
+        ]
+      },
+      {
+        "name": "American Research Center in Egypt",
+        "type": "nonprofit-institution",
+        "alias": [
+          "American Research Center",
+          "www.arce.org"
+        ]
+      },
+      {
+        "name": "Smith Richardson Foundation",
+        "type": "nonprofit-institution",
+        "alias": [
+          "Smith Richardson Foundation",
+          "www.srf.org"
+        ]
+      },
+      {
+        "name": "PlugX/Kaba remote access tool (RAT)",
+        "type": "hacker-tool",
+        "alias": [
+          "PlugX",
+          "Kaba",
+          "RAT"
+        ]
+      },
+      {
+        "name": "MD5 hash 507aed81e3106da8c50efb3a045c5e2b",
+        "type": "indicator",
+        "alias": [
+          "PlugX sample"
+        ]
+      },
+      {
+        "name": "java.ns1.name",
+        "type": "domain-name",
+        "alias": [
+          "java.ns1[.]name"
+        ]
+      },
+      {
+        "name": "adservice.no-ip.org",
+        "type": "domain-name",
+        "alias": [
+          "adservice.no-ip[.]org"
+        ]
+      },
+      {
+        "name": "wmi.ns01.us",
+        "type": "domain-name",
+        "alias": [
+          "wmi.ns01[.]us"
+        ]
+      },
+      {
+        "name": "74.126.177.68",
+        "type": "ipv4-addr",
+        "alias": [
+          "74.126.177.68"
+        ]
+      },
+      {
+        "name": "103.246.246.103",
+        "type": "ipv4-addr",
+        "alias": [
+          "103.246.246.103"
+        ]
+      },
+      {
+        "name": "192.74.246.219",
+        "type": "ipv4-addr",
+        "alias": [
+          "192.74.246.219"
+        ]
+      },
+      {
+        "name": "76.73.80.188",
+        "type": "ipv4-addr",
+        "alias": [
+          "76.73.80.188"
+        ]
+      },
+      {
+        "name": "194.183.224.75",
+        "type": "ipv4-addr",
+        "alias": [
+          "194.183.224.75"
+        ]
+      },
+      {
+        "name": "159.54.62.92",
+        "type": "ipv4-addr",
+        "alias": [
+          "159.54.62.92"
+        ]
+      },
+      {
+        "name": "shop.fujifilm.be",
+        "type": "domain-name",
+        "alias": [
+          "shop.fujifilm[.]be"
+        ]
+      },
+      {
+        "name": "Center for Defense Information",
+        "type": "nonprofit-institution",
+        "alias": [
+          "Center for Defense Information",
+          "www.cdi.org"
+        ]
+      },
+      {
+        "name": "Center for European Policy Studies",
+        "type": "nonprofit-institution",
+        "alias": [
+          "Center for European Policy Studies",
+          "www.ceps.be"
+        ]
+      },
+      {
+        "name": "BrightBalls.swf",
+        "type": "file",
+        "alias": [
+          "BrightBalls.swf",
+          "Flash exploit file"
+        ]
+      },
+      {
+        "name": "MD5 1ec5141051776ec9092db92050192758",
+        "type": "indicator",
+        "alias": [
+          "BrightBalls.swf MD5"
+        ]
+      },
+      {
+        "name": "test.jar",
+        "type": "file",
+        "alias": [
+          "Java exploit test.jar"
+        ]
+      },
+      {
+        "name": "MD5 7d810e3564c4eb95bcb3d11ce191208e",
+        "type": "indicator",
+        "alias": [
+          "test.jar MD5"
+        ]
+      },
+      {
+        "name": "Poison Ivy",
+        "type": "malware",
+        "alias": [
+          "Poison Ivy variants"
+        ]
+      },
+      {
+        "name": "vftable pointer",
+        "type": "abstract-concept",
+        "alias": [
+          "vftable"
+        ]
+      },
+      {
+        "name": "ASLR",
+        "type": "abstract-concept",
+        "alias": [
+          "Address Space Layout Randomization"
+        ]
+      },
+      {
+        "name": "ROP chain",
+        "type": "attack-pattern",
+        "alias": [
+          "return-oriented programming chain"
+        ]
+      },
+      {
+        "name": "MSVCRT",
+        "type": "general-software",
+        "alias": [
+          "Visual C runtime"
+        ]
+      },
+      {
+        "name": "MSVCR71.dll",
+        "type": "general-software",
+        "alias": [
+          "Visual C++ runtime"
+        ]
+      },
+      {
+        "name": "HXDS.dll",
+        "type": "general-software",
+        "alias": [
+          "Help Data Services Module"
+        ]
+      },
+      {
+        "name": "VirtualProtect function",
+        "type": "windows-registry-key",
+        "alias": [
+          "VirtualProtect"
+        ]
+      },
+      {
+        "name": "InternetOpenURLA",
+        "type": "network-traffic",
+        "alias": [
+          "InternetOpenURLA function"
+        ]
+      },
+      {
+        "name": "InternetReadFile",
+        "type": "network-traffic",
+        "alias": [
+          "InternetReadFile function"
+        ]
+      },
+      {
+        "name": "CreateFileA",
+        "type": "network-traffic",
+        "alias": [
+          "CreateFileA function"
+        ]
+      },
+      {
+        "name": "WriteFile",
+        "type": "network-traffic",
+        "alias": [
+          "WriteFile function"
+        ]
+      },
+      {
+        "name": "WinExec",
+        "type": "network-traffic",
+        "alias": [
+          "WinExec function"
+        ]
+      },
+      {
+        "name": "Microsoft Security Bulletin MS13-106",
+        "type": "security-product",
+        "alias": [
+          "MS13-106"
+        ]
+      },
+      {
+        "name": "Java 1.7",
+        "type": "general-software",
+        "alias": [
+          "Java 1.7"
+        ]
+      },
+      {
+        "name": "February 12, 2014",
+        "type": "date",
+        "alias": [
+          "Feb 12, 2014"
+        ]
+      },
+      {
+        "name": "February 13, 2014",
+        "type": "date",
+        "alias": [
+          "Feb 13, 2014"
+        ]
+      },
+      {
+        "name": "May 2012 campaign",
+        "type": "campaign",
+        "alias": [
+          "the May 2012 campaign"
+        ]
+      },
+      {
+        "name": "ShadowServer",
+        "type": "research-group",
+        "alias": [
+          "ShadowServer"
+        ]
+      },
+      {
+        "name": "tradecraft",
+        "type": "attack-pattern",
+        "alias": [
+          "craft"
+        ]
+      },
+      {
+        "name": "zero-day exploits",
+        "type": "malware",
+        "alias": [
+          "zero-day"
+        ]
+      },
+      {
+        "name": "defense and public policy matters",
+        "type": "abstract-concept",
+        "alias": [
+          "defense matters",
+          "public policy"
+        ]
+      },
+      {
+        "name": "the attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the group behind this campaign"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "compromised",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "multiple economic and foreign policy sites"
+      },
+      {
+        "sub": "FireEye Dynamic Threat Intelligence cloud",
+        "rel": "has identified",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "Operation GreedyWonk"
+      },
+      {
+        "sub": "FireEye Dynamic Threat Intelligence cloud",
+        "rel": "is collaborating with",
+        "rel_type": [
+          "cooperates-with"
+        ],
+        "obj": "Adobe security"
+      },
+      {
+        "sub": "Adobe",
+        "rel": "has assigned",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "CVE-2014-0502"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "exploiting",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "zero-day vulnerability in Flash"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "exploit server hosting the zero-day exploit"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "impacted",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Peter G. Peterson Institute for International Economics"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "impacted",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "American Research Center in Egypt"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "impacted",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Smith Richardson Foundation"
+      },
+      {
+        "sub": "ShadowServer",
+        "rel": "outlined",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "May 2012 campaign"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "may be related to",
+        "rel_type": [
+          "variant-of"
+        ],
+        "obj": "May 2012 campaign"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "has access to",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "zero-day exploits"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "seeks to infect",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "foreign and public policy websites"
+      },
+      {
+        "sub": "the attacker",
+        "rel": "seeks to steal",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "information related to defense and public policy matters"
+      },
+      {
+        "sub": "FireEye",
+        "rel": "identified",
+        "rel_type": [
+          "detects"
+        ],
+        "obj": "zero-day Adobe Flash exploit"
+      },
+      {
+        "sub": "visitors to Peter G. Peterson Institute for International Economics",
+        "rel": "were redirected to",
+        "rel_type": [
+          "redirected-to"
+        ],
+        "obj": "exploit server hosting this Flash zero-day"
+      },
+      {
+        "sub": "American Research Center in Egypt",
+        "rel": "also redirected visitors to",
+        "rel_type": [
+          "redirected-to"
+        ],
+        "obj": "exploit server hosting this Flash zero-day"
+      },
+      {
+        "sub": "Smith Richardson Foundation",
+        "rel": "also redirected visitors to",
+        "rel_type": [
+          "redirected-to"
+        ],
+        "obj": "exploit server hosting this Flash zero-day"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Windows XP"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Windows 7 and Java 1.6"
+      },
+      {
+        "sub": "Operation GreedyWonk",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Windows 7 and an out-of-date version of Microsoft Office 2007 or 2010"
+      },
+      {
+        "sub": "Microsoft Security Bulletin MS13-106",
+        "rel": "patched",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "Microsoft Office HXDS.dll ASLR bypass"
+      },
+      {
+        "sub": "Java 1.6",
+        "rel": "is no longer supported",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "security updates"
+      },
+      {
+        "sub": "Poison Ivy variants",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "wmi.ns01.us"
+      },
+      {
+        "sub": "Poison Ivy variant with MD5 fd69793...",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "password java7"
+      },
+      {
+        "sub": "Poison Ivy variant with MD5 fd69793...",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "mutex NBCD*&^FE"
+      },
+      {
+        "sub": "Poison Ivy variant with MD5 88b375e...",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "password admin"
+      },
+      {
+        "sub": "Poison Ivy variant with MD5 88b375e...",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "mutex ytf^&^333"
+      },
+      {
+        "sub": "Poison Ivy variant with MD5 cd07a9e...",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "password admin"
+      },
+      {
+        "sub": "Poison Ivy variant with MD5 cd07a9e...",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "mutex ytf^&^333"
+      },
+      {
+        "sub": "Poison Ivy variant with MD5 8936c87a...",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "password java7"
+      },
+      {
+        "sub": "Poison Ivy variant with MD5 8936c87a...",
+        "rel": "has",
+        "rel_type": [
+          "has"
+        ],
+        "obj": "mutex YFds*&^ff"
+      },
+      {
+        "sub": "Poison Ivy variant with MD5 8936c87a...",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "windows.ddns.us"
+      },
+      {
+        "sub": "wmi.ns01.us",
+        "rel": "resolved to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "74.126.177.68"
+      },
+      {
+        "sub": "wmi.ns01.us",
+        "rel": "resolved to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "103.246.246.103"
+      },
+      {
+        "sub": "wmi.ns01.us",
+        "rel": "resolved to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "192.74.246.219"
+      },
+      {
+        "sub": "adservice.no-ip.org",
+        "rel": "resolved to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "74.126.177.68"
+      },
+      {
+        "sub": "Center for Defense Information",
+        "rel": "was redirected to",
+        "rel_type": [
+          "redirected-to"
+        ],
+        "obj": "exploit server at 159.54.62.92"
+      },
+      {
+        "sub": "Center for European Policy Studies",
+        "rel": "redirected visitors to",
+        "rel_type": [
+          "redirected-to"
+        ],
+        "obj": "Java exploit hosted on shop.fujifilm.be"
+      },
+      {
+        "sub": "American Research Center in Egypt",
+        "rel": "also redirect visitors to",
+        "rel_type": [
+          "redirected-to"
+        ],
+        "obj": "Java exploit on shop.fujifilm.be"
+      },
+      {
+        "sub": "test.jar",
+        "rel": "exploited",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2012-0507"
+      },
+      {
+        "sub": "test.jar",
+        "rel": "dropped",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Poison Ivy payload with MD5 52aa791a524b61b129344f10b4712f52"
+      },
+      {
+        "sub": "Poison Ivy payload with MD5 52aa791a...",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "ids.ns01.us"
+      },
+      {
+        "sub": "wmi.ns01.us",
+        "rel": "resolved to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "76.73.80.188"
+      },
+      {
+        "sub": "windows.ddns.us",
+        "rel": "resolved to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "76.73.80.188"
+      },
+      {
+        "sub": "wmi.ns01.us",
+        "rel": "resolved to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "194.183.224.75"
+      },
+      {
+        "sub": "ids.ns01.us",
+        "rel": "resolved to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "194.183.224.75"
+      },
+      {
+        "sub": "Poison Ivy variant with MD5 52aa791a...",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "ids.ns01.us"
+      },
+      {
+        "sub": "PlugX/Kaba remote access tool (RAT)",
+        "rel": "is installed as",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "PlugX payload with MD5 507aed81..."
+      }
+    ]
+  }
+}

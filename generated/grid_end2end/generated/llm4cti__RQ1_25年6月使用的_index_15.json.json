@@ -1,0 +1,299 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_15.json",
+  "sample_index": 207,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_15.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Richard",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malicious HTML attachments",
+        "type": "file",
+        "alias": [
+          "the HTML attachment",
+          "the malicious JavaScript",
+          "the script",
+          "the script is minified",
+          "the decryption routine",
+          "the script redirects the victim"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Troj/JSRedirBV",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "browser",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "another remote web page",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "legitimate but compromised site",
+        "type": "infrastructure",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Mal/IframeQ",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Canadian Pharmacy and similar",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "malicious IFRAME",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "further content",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "another site",
+        "type": "url",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "JavaScript emulation tools",
+        "type": "security-product",
+        "alias": [
+          "emulation tools",
+          "most emulation tools"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "setTimeOut",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "decryption function",
+        "type": "hacker-tool",
+        "alias": [
+          "the decryption routine",
+          "decryption"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "xor",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "location.href",
+        "type": "command/script",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Sophos products",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "generic detection",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "automated analysis techniques",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "malicious HTML attachments",
+        "rel": "blocked as",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Troj/JSRedirBV"
+      },
+      {
+        "sub": "malicious HTML attachments",
+        "rel": "will run within",
+        "rel_type": [
+          "executes-in"
+        ],
+        "obj": "browser"
+      },
+      {
+        "sub": "malicious HTML attachments",
+        "rel": "redirects the victim to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "another remote web page"
+      },
+      {
+        "sub": "another remote web page",
+        "rel": "hosted within",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "legitimate but compromised site"
+      },
+      {
+        "sub": "Sophos products",
+        "rel": "block this page as",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Mal/IframeQ"
+      },
+      {
+        "sub": "another remote web page",
+        "rel": "redirect to some spammy site (Canadian Pharmacy and similar)",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Canadian Pharmacy and similar"
+      },
+      {
+        "sub": "another remote web page",
+        "rel": "malicious IFRAME loading",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "further content"
+      },
+      {
+        "sub": "further content",
+        "rel": "from",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "another site"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "called via",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "setTimeOut"
+      },
+      {
+        "sub": "decryption function",
+        "rel": "consists of",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "xor"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "designed to break",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "JavaScript emulation tools"
+      },
+      {
+        "sub": "JavaScript emulation tools",
+        "rel": "ignore the setTimeOut delay",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "setTimeOut"
+      },
+      {
+        "sub": "JavaScript emulation tools",
+        "rel": "resulting in an incorrect xor key",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "incorrect xor key"
+      },
+      {
+        "sub": "incorrect xor key",
+        "rel": "decryption failing",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "decryption failing"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "redirects the victim with",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "location.href"
+      },
+      {
+        "sub": "malicious HTML attachments",
+        "rel": "tricks... to evade",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "generic detection"
+      },
+      {
+        "sub": "malicious JavaScript",
+        "rel": "hinder",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "automated analysis techniques"
+      },
+      {
+        "sub": "Sophos products",
+        "rel": "block this page as",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Mal/IframeQ"
+      }
+    ]
+  }
+}

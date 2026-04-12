@@ -1,0 +1,840 @@
+{
+  "sample_id": "securenlp__snake_whitepaper",
+  "sample_index": 176,
+  "source": "securenlp",
+  "file_name": "snake_whitepaper",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Snake",
+        "type": "malware",
+        "alias": [
+          "the cyber-espionage operation behind the Snake rootkit",
+          "the Snake rootkit",
+          "the Snake operators",
+          "the operators behind the attacks"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "agent.BTZ",
+        "type": "malware",
+        "alias": [
+          "the original Agent.BTZ",
+          "the malware behind the Agent.BTZ"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "kernel-mode driver",
+        "type": "hacker-tool",
+        "alias": [
+          "the driver",
+          "the Snake driver",
+          "a kernel mode driver",
+          "the rootkit",
+          "the kernel-mode driver to carry out the network communications",
+          "the kernel-mode driver installed",
+          "its kernel-mode driver",
+          "the kernel-mode driver installed via an update",
+          "its own network drivers",
+          "the kernel-mode driver for the Snake rootkit",
+          "the kernel-mode driver that is responsible for the communications"
+        ],
+        "mother entity": "Snake"
+      },
+      {
+        "name": "usermode DLLs",
+        "type": "hacker-tool",
+        "alias": [
+          "the usermode DLLs injected by the kernel-mode driver",
+          "the DLLs",
+          "the DLL module",
+          "the DLL module embedded in it",
+          "the usermode DLLs still injected into the system processes",
+          "the usermode DLLs into the userland system process",
+          "the DLLs injected",
+          "the DLLs that can be installed as a service",
+          "the DLL module that can be installed as a service",
+          "the DLL module (e.g., mscpx32n.dll)",
+          "the DLLs that can be installed as a service"
+        ],
+        "mother entity": "Snake"
+      },
+      {
+        "name": "fdisk.sys",
+        "type": "file",
+        "alias": [
+          "the 32-bit driver",
+          "the 32-bit driver fdisk.sys",
+          "the driver",
+          "a 32-bit driver"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "Ultra3.sys",
+        "type": "file",
+        "alias": [
+          "the 64-bit driver",
+          "the 64-bit driver fdisk.sys",
+          "the driver",
+          "the driver named Ultra3.sys"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "fdisk_mon.exe",
+        "type": "hacker-tool",
+        "alias": [
+          "the dropper",
+          "the 32-bit dropper",
+          "the dropper that installs the driver",
+          "the dropper itself",
+          "the dropper that registers itself",
+          "the dropper that starts each time Windows starts",
+          "the dropper that copies itself"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "reconnaissance tool",
+        "type": "hacker-tool",
+        "alias": [
+          "One of the Snake components",
+          "the tool",
+          "wextract.exe",
+          "the network reconnaissance tool"
+        ],
+        "mother entity": "Snake"
+      },
+      {
+        "name": "virtual volumes",
+        "type": "virtual-file-volume",
+        "alias": [
+          "the created virtual file volumes",
+          "the created virtual volumes",
+          "the virtual file volumes created",
+          "the volumes",
+          "the virtual partition"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "C&C servers",
+        "type": "indicator",
+        "alias": [
+          "its C&C servers",
+          "its C&C",
+          "the C&C server",
+          "the C&C servers it relies on",
+          "the command and control servers",
+          "the command and control servers it relies on",
+          "the command and control servers it uses for communications"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "C&C commands",
+        "type": "course-of-action",
+        "alias": [
+          "the commands received from C&C",
+          "the commands it receives",
+          "the command it receives",
+          "the command from C&C",
+          "the command it receives from C&C",
+          "the command it receives from C&C server"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "htaccess.dll",
+        "type": "file",
+        "alias": [
+          "the DLL module (htaccess.dll)"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "MTA",
+        "type": "hacker-tool",
+        "alias": [
+          "the MTA",
+          "the tool for creating NTFS file systems"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "fdisk",
+        "type": "hacker-tool",
+        "alias": [
+          "the driver fdisk.sys",
+          "the driver fdisk.sys (Ultra3.sys)",
+          "the driver fdisk.sys (Ultra3.sys)",
+          "the driver fdisk.sys"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "nvram",
+        "type": "abstract-concept",
+        "alias": [
+          "the nvram"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the attackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the operators",
+          "the Snake operators",
+          "the masters behind the Snake rootkit",
+          "the operators behind the attacks"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the dropper",
+        "type": "hacker-tool",
+        "alias": [
+          "the 32-bit dropper",
+          "the dropper that installs the driver",
+          "the dropper itself",
+          "the dropper that registers itself",
+          "the dropper that starts each time Windows starts",
+          "the dropper that copies itself"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "msw32.sys",
+        "type": "file",
+        "alias": [
+          "a 32-bit driver msw32.sys",
+          "the 32-bit driver msw32.sys"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "CMBAWT.sys",
+        "type": "file",
+        "alias": [
+          "a 32-bit driver cmbawt.sys"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "usermode-centric architecture",
+        "type": "campaign",
+        "alias": [
+          "the usermode-centric architecture",
+          "the usermode-centric model",
+          "the usermode-centric variant"
+        ],
+        "mother entity": "Snake"
+      },
+      {
+        "name": "kernel-centric architecture",
+        "type": "campaign",
+        "alias": [
+          "the kernel-centric architecture",
+          "the kernel-centric variant",
+          "the kernel-centric model"
+        ],
+        "mother entity": "Snake"
+      },
+      {
+        "name": "VirtualBox driver",
+        "type": "general-software",
+        "alias": [
+          "the VirtualBox driver",
+          "the main driver component of VirtualBox",
+          "the Vulnerable VirtualBox driver"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "VBoxDrv",
+        "type": "detailed-part-of-general-software",
+        "alias": [
+          "the driver VBoxDrv"
+        ],
+        "mother entity": "VirtualBox driver"
+      },
+      {
+        "name": "nt!g_CiEnabled",
+        "type": "variable",
+        "alias": [
+          "the variable nt!g_CiEnabled"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "VirtualBox",
+        "type": "general-software",
+        "alias": [
+          "the VirtualBox software"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the Metasploit framework",
+        "type": "hacker-tool",
+        "alias": [
+          "the Metasploit framework"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the VirtualBox vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "the privilege escalation vulnerability in VirtualBox driver"
+        ],
+        "mother entity": "VirtualBox driver"
+      },
+      {
+        "name": "the VirtualBox driver version 1.6.2",
+        "type": "general-software",
+        "alias": [
+          "the driver version 1.6.2",
+          "the released driver version 1.6.2"
+        ],
+        "mother entity": "VirtualBox driver"
+      },
+      {
+        "name": "the Native API",
+        "type": "general-software",
+        "alias": [
+          "the Windows API"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the kernel",
+        "type": "windows-registry-key",
+        "alias": [
+          "the Windows kernel",
+          "the NT core (ntoskrnl.exe)"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "CI.dll",
+        "type": "hacker-tool",
+        "alias": [
+          "CI.dll’s function CiInitialize()"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the NDIS layer",
+        "type": "general-software",
+        "alias": [
+          "the NDIS driver",
+          "the NDIS filter driver"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the NDIS 5.X layer",
+        "type": "general-software",
+        "alias": [
+          "the NDIS 5.X layer"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the NDIS 6.0 layer",
+        "type": "general-software",
+        "alias": [
+          "the NDIS 6.0 layer"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the driver for NDIS 6.0",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "the NDIS filter driver for NDIS 6.0",
+          "the NDIS filter driver for NDIS 6.0 with the unique name {c06b1a3b-3d16-4181-8c8d-7015bfc5b972}"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the NDIS filter driver for NDIS 5.X",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "the NDIS filter driver for NDIS 5.X installed above the miniport driver"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the NDIS filter driver for NDIS 5.X configuration",
+        "type": "location",
+        "alias": [
+          "the registry entry HKLM\\SYSTEM\\CurrentControlSet\\Control\\Network\\{4d36e974-e325-11ce-bfc1-08002be10318}"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the NDIS miniport driver",
+        "type": "detailed-part-of-general-software",
+        "alias": [
+          "the miniport driver",
+          "the underlying miniport driver"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the NDIS protocol driver",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "the Snake rootkit registers itself as NDIS protocol driver"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the NDIS protocol driver API",
+        "type": "general-software",
+        "alias": [
+          "the NDIS ProtocolReceiveNetBufferLists()",
+          "the NDIS SendNetBufferLists()"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the NDIS miniport driver API",
+        "type": "general-software",
+        "alias": [
+          "the MiniportSendNetBufferLists()"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the NDIS protocol driver registers itself",
+        "type": "hacker-tool",
+        "alias": [
+          "the NDIS protocol driver registers itself as Network Driver Interface Specification (NDIS) protocol driver"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the NDIS protocol driver API calls",
+        "type": "course-of-action",
+        "alias": [
+          "the API calls (e.g., NdisSendNetBufferLists())"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the NDIS protocol driver hooks the following exports",
+        "type": "detailed-part-of-general-software",
+        "alias": [
+          "the driver hooks the following exports within ndis.sys: NdisFRegisterFilterDriver, NdisFDeregisterFilterDriver, NdisSetOptionalHandlers, NdisFSetAttributes, NdisMRegisterMiniportDriver, NdisMDeregisterMiniportDriver, NdisMIndicateReceiveNetBufferLists, NdisMRestartComplete, NdisMPauseComplete"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "the NDIS protocol driver maps the section",
+        "type": "uses",
+        "alias": [
+          "the driver maps a view of the created section into the virtual address space"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "mswint.exe",
+        "type": "file",
+        "alias": [
+          "the 32-bit executable file mswint.exe"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "chset.exe",
+        "type": "file",
+        "alias": [
+          "the 32-bit executable file chset.exe"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "libadcodec.dll",
+        "type": "file",
+        "alias": [
+          "the 32-bit DLL file libadcodec.dll"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "oleaut32.dll",
+        "type": "file",
+        "alias": [
+          "the 32-bit DLL file oleaut32.dll"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "A0009548.sys",
+        "type": "file",
+        "alias": [
+          "the 64-bit driver A0009548.sys"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "mswaudit.exe",
+        "type": "file",
+        "alias": [
+          "the 32-bit utility mswaudit.exe"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "sengoku",
+        "type": "campaign",
+        "alias": [
+          "the ‘sengoku’ variant",
+          "the project name of this particular variant as ‘sengoku’"
+        ],
+        "mother entity": "Snake"
+      },
+      {
+        "name": "uroburos",
+        "type": "campaign",
+        "alias": [
+          "the ‘uroburos’ variant of this framework",
+          "the Uroburos variant"
+        ],
+        "mother entity": "Snake"
+      },
+      {
+        "name": "Agent.BTZ",
+        "type": "malware",
+        "alias": [
+          "unknown malicious file",
+          "Agent.BTZ",
+          "the first sample of Agent.BTZ"
+        ],
+        "mother entity": "agent.BTZ"
+      },
+      {
+        "name": "64-bit versions of Windows",
+        "type": "general-software",
+        "alias": [
+          "64-bit editions of Microsoft Windows"
+        ],
+        "mother entity": "None"
+      },
+      {
+        "name": "PatchGuard",
+        "type": "security-product",
+        "alias": [
+          "Kernel Patch Protection"
+        ],
+        "mother entity": "64-bit versions of Windows"
+      },
+      {
+        "name": "mscpx32n.dll",
+        "type": "file",
+        "alias": [
+          "the DLL (mscpx32n.dll)"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "kbdfaori.dll",
+        "type": "file",
+        "alias": [
+          "the DLL (kbdfaori.dll)",
+          "the DLL with a random name"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "gstatsnd.bin",
+        "type": "file",
+        "alias": [
+          "the log files found in the %windows%\\$NtUninstallQ[random]$ directory"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "gstat.bin",
+        "type": "file",
+        "alias": [
+          "the log files found in the %windows%\\$NtUninstallQ[random]$ directory"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "gstat32.bin",
+        "type": "file",
+        "alias": [
+          "the log files found in the %windows%\\$NtUninstallQ[random]$ directory"
+        ],
+        "mother entity": "kernel-mode driver"
+      },
+      {
+        "name": "tiger.got-game.org",
+        "type": "domain-name",
+        "alias": [
+          "the domain name tiger.got-game.org"
+        ],
+        "mother entity": "C&C servers"
+      },
+      {
+        "name": "the VirtualBox vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "the privilege escalation vulnerability in VirtualBox driver"
+        ],
+        "mother entity": "VirtualBox driver"
+      },
+      {
+        "name": "the VirtualBox driver version 1.6.2",
+        "type": "general-software",
+        "alias": [
+          "the driver version 1.6.2"
+        ],
+        "mother entity": "VirtualBox driver"
+      },
+      {
+        "name": "the VirtualBox vulnerability document",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "security researchers reported that its main driver component... contained a privilege escalation vulnerability"
+        ],
+        "mother entity": "VirtualBox driver"
+      },
+      {
+        "name": "the VirtualBox vulnerability in the driver",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerability in the driver"
+        ],
+        "mother entity": "VirtualBox driver"
+      },
+      {
+        "name": "the VirtualBox vulnerability in the driver, VBoxDrv",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerability in the driver VBoxDrv"
+        ],
+        "mother entity": "VirtualBox driver"
+      },
+      {
+        "name": "the VirtualBox vulnerability in the driver, VBoxDrv, vulnerability code",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerability code"
+        ],
+        "mother entity": "VirtualBox driver"
+      },
+      {
+        "name": "the VirtualBox vulnerability in the driver, VBoxDrv, vulnerability code, vulnerability patch",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerability patch"
+        ],
+        "mother entity": "VirtualBox driver"
+      },
+      {
+        "name": "the VirtualBox vulnerability in the driver, VBoxDrv, vulnerability code, vulnerability patch, vulnerability fix",
+        "type": "vulnerability",
+        "alias": [
+          "the vulnerability fix"
+        ],
+        "mother entity": "VirtualBox driver"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Snake",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "kernel-mode driver"
+      },
+      {
+        "sub": "kernel-mode driver",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "usermode DLLs"
+      },
+      {
+        "sub": "kernel-mode driver",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "fdisk.sys"
+      },
+      {
+        "sub": "kernel-mode driver",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Ultra3.sys"
+      },
+      {
+        "sub": "fdisk_mon.exe",
+        "rel": "installs",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "kernel-mode driver"
+      },
+      {
+        "sub": "Snake",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "reconnaissance tool"
+      },
+      {
+        "sub": "reconnaissance tool",
+        "rel": "communicates-with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "C&C servers"
+      },
+      {
+        "sub": "Snake",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "C&C servers"
+      },
+      {
+        "sub": "the VirtualBox vulnerability",
+        "rel": "compromises",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the kernel"
+      },
+      {
+        "sub": "the VirtualBox vulnerability",
+        "rel": "compromises",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "the kernel"
+      },
+      {
+        "sub": "the VirtualBox vulnerability",
+        "rel": "research-describes-analysis-of-characterizes-detects",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "the VirtualBox vulnerability document"
+      },
+      {
+        "sub": "the VirtualBox vulnerability in the driver, VBoxDrv",
+        "rel": "leads-to",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Agent.BTZ"
+      },
+      {
+        "sub": "the NDIS protocol driver",
+        "rel": "utilizes",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the NDIS protocol driver API"
+      },
+      {
+        "sub": "the NDIS protocol driver",
+        "rel": "utilizes",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the NDIS miniport driver API"
+      },
+      {
+        "sub": "the NDIS protocol driver",
+        "rel": "registers itself as",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the NDIS protocol driver"
+      },
+      {
+        "sub": "the NDIS protocol driver",
+        "rel": "hooks the following exports",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "NDIS protocol driver hooks the following exports"
+      },
+      {
+        "sub": "the NDIS protocol driver maps the section",
+        "rel": "maps a view of the created section into the virtual address space",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the NDIS protocol driver maps the section"
+      },
+      {
+        "sub": "the NDIS protocol driver API calls",
+        "rel": "makes API calls",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "the NDIS protocol driver API calls"
+      },
+      {
+        "sub": "the NDIS filter driver for NDIS 5.X",
+        "rel": "installed above the miniport driver",
+        "rel_type": [
+          "is-part-of"
+        ],
+        "obj": "the NDIS filter driver for NDIS 5.X"
+      },
+      {
+        "sub": "the NDIS filter driver for NDIS 5.X configuration",
+        "rel": "configured in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "the NDIS filter driver for NDIS 5.X configuration"
+      },
+      {
+        "sub": "the NDIS protocol driver",
+        "rel": "intercepts data",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "the NDIS protocol driver"
+      }
+    ]
+  }
+}

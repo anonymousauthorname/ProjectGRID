@@ -1,0 +1,172 @@
+{
+  "sample_id": "ctinexus__attackers-target-max-severity-apache-activemq-bug-to-drop-ransomware.json",
+  "sample_index": 51,
+  "source": "ctinexus",
+  "file_name": "attackers-target-max-severity-apache-activemq-bug-to-drop-ransomware.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2023-46604",
+        "type": "Entity"
+      },
+      {
+        "name": "Apache ActiveMQ",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware",
+        "type": "Entity"
+      },
+      {
+        "name": "HelloKitty ransomware family",
+        "type": "Entity"
+      },
+      {
+        "name": "double-extortion attacks",
+        "type": "Entity"
+      },
+      {
+        "name": "proof-of-concept exploit code",
+        "type": "Entity"
+      },
+      {
+        "name": "outdated versions of Apache ActiveMQ",
+        "type": "Entity"
+      },
+      {
+        "name": "ransom notes",
+        "type": "Entity"
+      },
+      {
+        "name": "clumsy",
+        "type": "Entity"
+      },
+      {
+        "name": "ActiveMQ message broker",
+        "type": "Entity"
+      },
+      {
+        "name": "attackers",
+        "type": "Entity"
+      },
+      {
+        "name": "threat actors",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware binaries",
+        "type": "Entity"
+      },
+      {
+        "name": "exploit activity",
+        "type": "Entity"
+      },
+      {
+        "name": "Apache Software Foundation (ASF)",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2023-46604",
+        "rel": "affects",
+        "obj": "outdated versions of Apache ActiveMQ"
+      },
+      {
+        "sub": "CVE-2023-46604",
+        "rel": "allows",
+        "obj": "remote code execution vulnerability"
+      },
+      {
+        "sub": "attackers",
+        "rel": "uses",
+        "obj": "CVE-2023-46604"
+      },
+      {
+        "sub": "attackers",
+        "rel": "exploits",
+        "obj": "remote code execution vulnerability"
+      },
+      {
+        "sub": "attackers",
+        "rel": "downloads",
+        "obj": "ransomware binaries"
+      },
+      {
+        "sub": "attackers",
+        "rel": "deploys",
+        "obj": "ransomware binaries"
+      },
+      {
+        "sub": "attackers",
+        "rel": "targets",
+        "obj": "Apache ActiveMQ message broker"
+      },
+      {
+        "sub": "attackers",
+        "rel": "performs",
+        "obj": "exploit activity"
+      },
+      {
+        "sub": "exploit activity",
+        "rel": "targets",
+        "obj": "CVE-2023-46604"
+      },
+      {
+        "sub": "HelloKitty ransomware family",
+        "rel": "is attributed to",
+        "obj": "attackers"
+      },
+      {
+        "sub": "HelloKitty ransomware family",
+        "rel": "uses",
+        "obj": "double-extortion attacks"
+      },
+      {
+        "sub": "HelloKitty ransomware family",
+        "rel": "drops",
+        "obj": "ransomware binaries"
+      },
+      {
+        "sub": "attackers",
+        "rel": "leverages",
+        "obj": "proof-of-concept exploit code"
+      },
+      {
+        "sub": "attackers",
+        "rel": "writes",
+        "obj": "ransom notes"
+      },
+      {
+        "sub": "attackers",
+        "rel": "makes",
+        "obj": "multiple attempts to encrypt data"
+      },
+      {
+        "sub": "attackers",
+        "rel": "is described as",
+        "obj": "clumsy"
+      }
+    ]
+  }
+}

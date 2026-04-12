@@ -1,0 +1,333 @@
+{
+  "sample_id": "casie__10223.json",
+  "sample_index": 13,
+  "source": "casie",
+  "file_name": "10223.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Check Point",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "DJI",
+        "type": "general-software",
+        "alias": [
+          "DJI Forum",
+          "DJI’s various platforms",
+          "DJI’s web platform",
+          "DJI’s FlightHub",
+          "DJI run"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "DJI Forum",
+        "type": "general-software",
+        "alias": [
+          "online forum DJI runs for discussions about its products"
+        ],
+        "mother entity": "DJI"
+      },
+      {
+        "name": "user account",
+        "type": "user-account",
+        "alias": [
+          "registered users",
+          "a user’s account",
+          "the user"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "personal data",
+        "type": "other",
+        "alias": [
+          "flight logs, photos, videos"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "flight logs",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "photos",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "videos",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "live camera feed",
+        "type": "network-traffic",
+        "alias": [],
+        "mother entity": "DJI"
+      },
+      {
+        "name": "map",
+        "type": "other",
+        "alias": [],
+        "mother entity": "DJI"
+      },
+      {
+        "name": "Bug Bounty Program",
+        "type": "other",
+        "alias": [],
+        "mother entity": "DJI"
+      },
+      {
+        "name": "vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "this vulnerability",
+          "the vulnerability"
+        ],
+        "mother entity": "DJI"
+      },
+      {
+        "name": "user identification process within DJI Forum",
+        "type": "vulnerability",
+        "alias": [
+          "the user identification process"
+        ],
+        "mother entity": "DJI Forum"
+      },
+      {
+        "name": "token",
+        "type": "credential-value",
+        "alias": [
+          "a token"
+        ],
+        "mother entity": "DJI"
+      },
+      {
+        "name": "malicious links",
+        "type": "url",
+        "alias": [
+          "specially-planted malicious link"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Cloud server data",
+        "type": "other",
+        "alias": [
+          "data synced from DJI’s GO or GO 4 pilot apps"
+        ],
+        "mother entity": "DJI"
+      },
+      {
+        "name": "DJI’s GO or GO 4 pilot apps",
+        "type": "general-software",
+        "alias": [
+          "pilot apps"
+        ],
+        "mother entity": "DJI"
+      },
+      {
+        "name": "DJI’s FlightHub",
+        "type": "general-software",
+        "alias": [
+          "centralized drone operations management platform"
+        ],
+        "mother entity": "DJI"
+      },
+      {
+        "name": "March 2018",
+        "type": "other",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Check Point researchers",
+        "type": "identity",
+        "alias": [
+          "Check Point researchers"
+        ],
+        "mother entity": "Check Point"
+      },
+      {
+        "name": "Mission Impossible-style trailer",
+        "type": "malware-analysis-document-or-publication-or-conference",
+        "alias": [
+          "trailer for their findings"
+        ],
+        "mother entity": "Check Point"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Check Point",
+        "rel": "submitted a report to",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Bug Bounty Program"
+      },
+      {
+        "sub": "Check Point",
+        "rel": "highlighting a process in which an attacker could have gained access to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "user account",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "discovered in",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "user identification process within DJI Forum"
+      },
+      {
+        "sub": "Check Point researchers",
+        "rel": "found that DJI’s various platforms used a token to identify registered users",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "token"
+      },
+      {
+        "sub": "Check Point researchers",
+        "rel": "found that DJI’s various platforms used a token to identify registered users",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "DJI"
+      },
+      {
+        "sub": "malicious links",
+        "rel": "would compromise accounts within that framework",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "user account",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "malicious links",
+        "rel": "compromise accounts within that framework",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "was accessed through",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "DJI Forum"
+      },
+      {
+        "sub": "user",
+        "rel": "logged into",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "DJI Forum"
+      },
+      {
+        "sub": "malicious links",
+        "rel": "compromise accounts within that framework",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "DJI’s web platform",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "malicious links",
+        "rel": "compromise accounts within that framework",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Cloud server data",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "malicious links",
+        "rel": "compromise accounts within that framework",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "DJI’s FlightHub",
+        "special_factuality": [
+          "possible"
+        ]
+      },
+      {
+        "sub": "DJI",
+        "rel": "classified this vulnerability as high risk",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "vulnerability"
+      },
+      {
+        "sub": "Check Point researchers",
+        "rel": "notified DJI about this vulnerability",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "DJI"
+      },
+      {
+        "sub": "vulnerability",
+        "rel": "was never exploited by anyone other than Check Point researchers",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "anyone",
+        "special_factuality": [
+          "negated"
+        ]
+      },
+      {
+        "sub": "Check Point",
+        "rel": "made a Mission Impossible-style trailer for their findings",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "Mission Impossible-style trailer"
+      }
+    ]
+  }
+}

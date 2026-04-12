@@ -1,0 +1,390 @@
+{
+  "sample_id": "ctinexus__kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "sample_index": 57,
+  "source": "ctinexus",
+  "file_name": "kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "method_name": "Cognee",
+  "method_file": "Approach_cognee.py",
+  "approach_instance_key": "Approach_cognee__20bb79ef4131354b",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 29.991248670830785,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Kasseika",
+        "type": "Entity"
+      },
+      {
+        "name": "Bring Your Own Vulnerable Driver (BYOVD)",
+        "type": "Entity"
+      },
+      {
+        "name": "Martini driver",
+        "type": "Entity"
+      },
+      {
+        "name": "Martini.sys",
+        "type": "Entity"
+      },
+      {
+        "name": "viragt64.sys",
+        "type": "Entity"
+      },
+      {
+        "name": "TG Soft",
+        "type": "Entity"
+      },
+      {
+        "name": "VirtIT Agent System",
+        "type": "Entity"
+      },
+      {
+        "name": "antivirus software",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing email",
+        "type": "Entity"
+      },
+      {
+        "name": "employee",
+        "type": "Entity"
+      },
+      {
+        "name": "account credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "corporate network",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows PsExec",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious .bat file",
+        "type": "Entity"
+      },
+      {
+        "name": "batch file",
+        "type": "Entity"
+      },
+      {
+        "name": "Martini.exe",
+        "type": "Entity"
+      },
+      {
+        "name": "process termination",
+        "type": "Entity"
+      },
+      {
+        "name": "hardcoded list",
+        "type": "Entity"
+      },
+      {
+        "name": "991 processes",
+        "type": "Entity"
+      },
+      {
+        "name": "security tools",
+        "type": "Entity"
+      },
+      {
+        "name": "analysis tools",
+        "type": "Entity"
+      },
+      {
+        "name": "system utilities",
+        "type": "Entity"
+      },
+      {
+        "name": "lateral movement",
+        "type": "Entity"
+      },
+      {
+        "name": "ransomware operation",
+        "type": "Entity"
+      },
+      {
+        "name": "malware",
+        "type": "Entity"
+      },
+      {
+        "name": "initial access",
+        "type": "Entity"
+      },
+      {
+        "name": "targeted organization",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows operating system",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Kasseika",
+        "rel": "employs",
+        "obj": "Bring Your Own Vulnerable Driver (BYOVD)"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "abuses",
+        "obj": "Martini driver"
+      },
+      {
+        "sub": "Martini driver",
+        "rel": "is part of",
+        "obj": "VirtIT Agent System"
+      },
+      {
+        "sub": "Martini.sys",
+        "rel": "is part of",
+        "obj": "VirtIT Agent System"
+      },
+      {
+        "sub": "viragt64.sys",
+        "rel": "is part of",
+        "obj": "VirtIT Agent System"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "disables",
+        "obj": "antivirus software"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "disables",
+        "obj": "security tools"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "disables",
+        "obj": "analysis tools"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "disables",
+        "obj": "system utilities"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "uses to disable 991 processes",
+        "obj": "991 processes"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "uses to terminate processes in a hardcoded list",
+        "obj": "hardcoded list"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "initiates",
+        "obj": "initial access"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "targets",
+        "obj": "targeted organization"
+      },
+      {
+        "sub": "phishing email",
+        "rel": "is used to steal",
+        "obj": "employee"
+      },
+      {
+        "sub": "phishing email",
+        "rel": "leads to",
+        "obj": "account credentials"
+      },
+      {
+        "sub": "account credentials",
+        "rel": "is used to gain access to",
+        "obj": "corporate network"
+      },
+      {
+        "sub": "Windows PsExec",
+        "rel": "is used to execute",
+        "obj": "malicious .bat file"
+      },
+      {
+        "sub": "malicious .bat file",
+        "rel": "is a variant of",
+        "obj": "batch file"
+      },
+      {
+        "sub": "batch file",
+        "rel": "is used to check for process",
+        "obj": "Martini.exe"
+      },
+      {
+        "sub": "batch file",
+        "rel": "terminates",
+        "obj": "process termination"
+      },
+      {
+        "sub": "batch file",
+        "rel": "downloads",
+        "obj": "Martini.sys"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "exploits",
+        "obj": "Martini.sys"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "exploits",
+        "obj": "viragt64.sys"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is used to disable processes related to antivirus",
+        "obj": "991 processes"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is used to disable processes related to security tools",
+        "obj": "991 processes"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is used to disable processes related to analysis tools",
+        "obj": "991 processes"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is used to disable processes related to system utilities",
+        "obj": "991 processes"
+      },
+      {
+        "sub": "Windows PsExec",
+        "rel": "is used to perform lateral movement",
+        "obj": "lateral movement"
+      },
+      {
+        "sub": "malicious .bat file",
+        "rel": "is used to initiate lateral movement",
+        "obj": "lateral movement"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "runs on",
+        "obj": "Windows operating system"
+      },
+      {
+        "sub": "Windows PsExec",
+        "rel": "is used to operate on Windows systems",
+        "obj": "Windows operating system"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is a component of",
+        "obj": "malware"
+      },
+      {
+        "sub": "Martini.sys",
+        "rel": "is associated with",
+        "obj": "TG Soft"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "uses to disable a list of 991 processes",
+        "obj": "hardcoded list"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is used to avoid interference",
+        "obj": "Martini.exe"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is used to disable critical security processes",
+        "obj": "991 processes"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is used to disable security tools and utilities",
+        "obj": "security tools"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is used to disable analysis tools",
+        "obj": "analysis tools"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is used to disable system utilities",
+        "obj": "system utilities"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "gains privileges through",
+        "obj": "process termination"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is used to exploit a flaw in a driver",
+        "obj": "991 processes"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is used to exploit a vulnerability in a legitimate driver",
+        "obj": "Martini.sys"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is associated with",
+        "obj": "VirtIT Agent System"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is used to achieve initial access",
+        "obj": "initial access"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "infiltrates",
+        "obj": "corporate network"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "attacks",
+        "obj": "targeted organization"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "executes",
+        "obj": "batch file"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "launches",
+        "obj": "malicious .bat file"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is used to disable 991 processes",
+        "obj": "991 processes"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "is used to terminate processes",
+        "obj": "process termination"
+      }
+    ]
+  }
+}

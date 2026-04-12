@@ -1,0 +1,543 @@
+{
+  "sample_id": "securenlp__Derusbi_Server_Analysis-Final",
+  "sample_index": 153,
+  "source": "securenlp",
+  "file_name": "Derusbi_Server_Analysis-Final",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Derusbi",
+        "type": "malware",
+        "alias": [
+          "the Derusbi server variant",
+          "Derusbi malware",
+          "the server variant"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "client",
+        "type": "identity",
+        "alias": [
+          "controlling client"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Windows Firewall",
+        "type": "general-software",
+        "alias": [
+          "Windows Filtering Platform (WFP)",
+          "Windows 2000 and later versions of the Windows operating system"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "device driver",
+        "type": "hacker-tool",
+        "alias": [
+          "the device driver",
+          "Windows Device Driver (Firewall Hook)",
+          "the device driver designed the driver"
+        ],
+        "mother entity": [
+          "Derusbi"
+        ]
+      },
+      {
+        "name": "svchost.exe",
+        "type": "general-software",
+        "alias": [
+          "the host binary"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "mainThread",
+        "type": "detailed-part-of-malware-or-hackertool",
+        "alias": [
+          "the main server variant function"
+        ],
+        "mother entity": [
+          "Derusbi"
+        ]
+      },
+      {
+        "name": "GetCommandLineW",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "fShutdown flag",
+        "type": "abstract-concept",
+        "alias": [
+          "fShutdown flag",
+          "the fShutdown flag"
+        ],
+        "mother entity": [
+          "Derusbi"
+        ]
+      },
+      {
+        "name": "HKLM\\SOFTWARE\\Microsoft\\Rpc\\Security",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "infection ID",
+        "type": "credential-value",
+        "alias": [
+          "the infection ID",
+          "Infection ID",
+          "the infection ID’s base",
+          "the infection ID for the victim’s machine"
+        ],
+        "mother entity": [
+          "Derusbi"
+        ]
+      },
+      {
+        "name": "ZhuDongFangYu.exe",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PCC_SOCK",
+        "type": "hacker-tool",
+        "alias": [
+          "BD_SOCK",
+          "PCC_SOCK object",
+          "the PCC_SOCK object"
+        ],
+        "mother entity": [
+          "Derusbi"
+        ]
+      },
+      {
+        "name": "PCC_BASEMOD",
+        "type": "general-software",
+        "alias": [
+          "base object PCC_BASEMOD"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "DerusbiThread::DerusbiThread",
+        "type": "process",
+        "alias": [
+          "primary communication loop"
+        ],
+        "mother entity": [
+          "Derusbi"
+        ]
+      },
+      {
+        "name": "CommLoop",
+        "type": "process",
+        "alias": [
+          "CommLoop thread"
+        ],
+        "mother entity": [
+          "Derusbi"
+        ]
+      },
+      {
+        "name": "remote command shell",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "network tunneling",
+        "type": "attack-pattern",
+        "alias": [
+          "Network tunneling"
+        ],
+        "mother entity": [
+          "Derusbi"
+        ]
+      },
+      {
+        "name": "file management",
+        "type": "attack-pattern",
+        "alias": [
+          "File management"
+        ],
+        "mother entity": [
+          "Derusbi"
+        ]
+      },
+      {
+        "name": "%SYSDIR%\\\\Drivers\\\\{93144EB0-8E3E-4591-B307-8EEBFE7DB28F}.sys",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "device driver"
+        ]
+      },
+      {
+        "name": "client’s handshake",
+        "type": "attack-pattern",
+        "alias": [
+          "handshake",
+          "valid handshake"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "VictimInfoPacket",
+        "type": "file",
+        "alias": [
+          "VictimInfoPacket Structure Definition"
+        ],
+        "mother entity": [
+          "Derusbi"
+        ]
+      },
+      {
+        "name": "PacketHeader",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "PCCCMDPacketHeader",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": [
+          "PCC_CMD"
+        ]
+      },
+      {
+        "name": "PCCFilePacketHeader",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": [
+          "PCC_FILE"
+        ]
+      },
+      {
+        "name": "PCC_PROXY",
+        "type": "hacker-tool",
+        "alias": [
+          "PCC_PROXY object"
+        ],
+        "mother entity": [
+          "Derusbi"
+        ]
+      },
+      {
+        "name": "%TEMP%\\\\tmp1.dat",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Derusbi"
+        ]
+      },
+      {
+        "name": "YARA rules",
+        "type": "course-of-action",
+        "alias": [
+          "YARA signature"
+        ],
+        "mother entity": [
+          "Derusbi"
+        ]
+      },
+      {
+        "name": "IOCTL 0x220200",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "40,000 to 45,000",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Derusbi",
+        "rel": "installs",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "device driver"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "waits for commands from",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "client"
+      },
+      {
+        "sub": "device driver",
+        "rel": "hooking into",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Windows Firewall"
+      },
+      {
+        "sub": "device driver",
+        "rel": "inspects",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "incoming network packets"
+      },
+      {
+        "sub": "device driver",
+        "rel": "reroute",
+        "rel_type": [
+          "redirects"
+        ],
+        "obj": "network traffic"
+      },
+      {
+        "sub": "device driver",
+        "rel": "does not detect",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "client’s handshake"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "runs as",
+        "rel_type": [
+          "resides-on"
+        ],
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "determines the name of",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "svchost.exe"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "spawns",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "mainThread"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "GetCommandLineW"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "checks",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "fShutdown flag"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "verifies",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "fShutdown flag"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "calls",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "mainLoop function"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "loads",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "infection ID"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "attempts to get privileges for",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": [
+          "SeDebugPrivilege",
+          "SeLoadDriverPrivilege",
+          "SeShutdownPrivilege",
+          "SeTcbPrivilege"
+        ]
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "attempts to open handle to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "device driver"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "determines",
+        "rel_type": [
+          "investigates"
+        ],
+        "obj": "ZhuDongFangYu.exe"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "extracts",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "device driver"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "installs",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "device driver"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "generates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "PCC_SOCK"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "binds to",
+        "rel_type": [
+          "listens-on"
+        ],
+        "obj": "40,000 to 45,000"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "sends",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "IOCTL 0x220200"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "reroute",
+        "rel_type": [
+          "redirects"
+        ],
+        "obj": "network traffic"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "sends",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "VictimInfoPacket"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "spins off",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "CommLoop"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "supports",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "remote command shell"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "supports",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "network tunneling"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "supports",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "file management"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "provides",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "YARA rules"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "IOCTL 0x220200"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "drops",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "%TEMP%\\\\tmp1.dat"
+      },
+      {
+        "sub": "Derusbi",
+        "rel": "calls",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "DllRegisterServer"
+      }
+    ]
+  }
+}

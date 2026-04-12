@@ -1,0 +1,520 @@
+{
+  "sample_id": "llm4cti__RQ1_25年6月使用的_index_26.json",
+  "sample_index": 218,
+  "source": "llm4cti",
+  "file_name": "RQ1_25年6月使用的_index_26.json",
+  "method_name": "GRID_Ours (Task-bank)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__e317548d844af295",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 20.33056755717021,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Harvester",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Nation-State-Backed Group",
+          "the attacker",
+          "the group"
+        ]
+      },
+      {
+        "name": "Backdoor.Graphon",
+        "type": "malware",
+        "alias": [
+          "the custom backdoor"
+        ]
+      },
+      {
+        "name": "Custom Downloader",
+        "type": "hacker-tool",
+        "alias": [
+          "the custom downloader"
+        ]
+      },
+      {
+        "name": "Custom Screenshotter",
+        "type": "hacker-tool",
+        "alias": [
+          "the custom screenshot tool"
+        ]
+      },
+      {
+        "name": "Cobalt Strike Beacon",
+        "type": "hacker-tool",
+        "alias": [
+          "Cobalt Strike",
+          "the Cobalt Strike Beacon"
+        ]
+      },
+      {
+        "name": "Metasploit",
+        "type": "general-software",
+        "alias": [
+          "Metasploit"
+        ]
+      },
+      {
+        "name": "Costura Assembly Loader",
+        "type": "hacker-tool"
+      },
+      {
+        "name": "CloudFront",
+        "type": "infrastructure"
+      },
+      {
+        "name": "Microsoft infrastructure",
+        "type": "infrastructure"
+      },
+      {
+        "name": "hxxps://outportal[.]azurewebsites.net/api/Values_V2/Getting3210",
+        "type": "url"
+      },
+      {
+        "name": "hxxps://usedust[.]com",
+        "type": "url",
+        "alias": [
+          "the decoy URL"
+        ]
+      },
+      {
+        "name": "hxxps://microsoftmsdn[.]azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "type": "url"
+      },
+      {
+        "name": "hxxps://microsoftsgraphapi[.]azurewebsites.net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "type": "url"
+      },
+      {
+        "name": "hxxps://msdnmicrosoft.azurewebsites[.]net/api/Values_V1/AuthAsyncComplete_V1?Identity=[INFECTION_ID]",
+        "type": "url"
+      },
+      {
+        "name": "[ARTEFACTS_FOLDER]\\winser.dll",
+        "type": "file"
+      },
+      {
+        "name": "[ARTEFACTS_FOLDER]\\Microsoft Services[.]vbs",
+        "type": "file"
+      },
+      {
+        "name": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\"MicrosoftSystemServices\"",
+        "type": "windows-registry-key"
+      },
+      {
+        "name": "D:\\OfficeProjects\\Updated Working Due to Submission\\4.5\\Outlook_4.5\\Outlook 4.5.2 32 bit New without presistancy\\NPServices\\bin\\x86\\Debug\\NPServices[.]pdb",
+        "type": "x509-certificate",
+        "alias": [
+          "PDB file name"
+        ]
+      },
+      {
+        "name": "perfect-couple.com/perfectcouple[.]exe",
+        "type": "url",
+        "alias": [
+          "sample was downloaded from this address"
+        ]
+      },
+      {
+        "name": "telecommunications sector",
+        "type": "sector targeted"
+      },
+      {
+        "name": "government sector",
+        "type": "sector targeted"
+      },
+      {
+        "name": "information technology (IT) sector",
+        "type": "sector targeted"
+      },
+      {
+        "name": "South Asia",
+        "type": "location"
+      },
+      {
+        "name": "Afghanistan",
+        "type": "location"
+      },
+      {
+        "name": "Symantec",
+        "type": "security-product"
+      },
+      {
+        "name": "Threat Hunter Team",
+        "type": "identity"
+      },
+      {
+        "name": "Symantec Enterprise",
+        "type": "identity"
+      },
+      {
+        "name": "Nation-State-Backed Group",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "Harvester"
+        ]
+      },
+      {
+        "name": "new toolset",
+        "type": "campaign",
+        "alias": [
+          "the campaign"
+        ]
+      },
+      {
+        "name": "campaign",
+        "type": "campaign"
+      },
+      {
+        "name": "initial infection vector",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "malicious URL",
+        "type": "indicator"
+      },
+      {
+        "name": "remote access",
+        "type": "course-of-action"
+      },
+      {
+        "name": "spy on user activities",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "exfiltrate information",
+        "type": "attack-pattern"
+      },
+      {
+        "name": "command and control (C&C) activity",
+        "type": "abstract-concept"
+      },
+      {
+        "name": "legitimate CloudFront infrastructure",
+        "type": "infrastructure"
+      },
+      {
+        "name": "legitimate Microsoft infrastructure",
+        "type": "infrastructure"
+      },
+      {
+        "name": "victims",
+        "type": "victim-targeted"
+      },
+      {
+        "name": "attackers",
+        "type": "identity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Harvester",
+        "rel": "is",
+        "rel_type": [
+          "threat-actor-or-intrusion-set"
+        ],
+        "obj": "Nation-State-Backed Group"
+      },
+      {
+        "sub": "Nation-State-Backed Group",
+        "rel": "uses",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "new toolset"
+      },
+      {
+        "sub": "Nation-State-Backed Group",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "victims in South Asia"
+      },
+      {
+        "sub": "Nation-State-Backed Group",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "telecommunications sector"
+      },
+      {
+        "sub": "Nation-State-Backed Group",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "government sector"
+      },
+      {
+        "sub": "Nation-State-Backed Group",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "information technology (IT) sector"
+      },
+      {
+        "sub": "Nation-State-Backed Group",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Afghanistan"
+      },
+      {
+        "sub": "the Harvester group",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "custom malware"
+      },
+      {
+        "sub": "the Harvester group",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "publicly available tools"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "deployed",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Backdoor.Graphon"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "deployed",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Custom Downloader"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "deployed",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Custom Screenshotter"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "deployed",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "Cobalt Strike Beacon"
+      },
+      {
+        "sub": "the attackers",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "the custom downloader",
+        "rel": "leverages",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Costura Assembly Loader"
+      },
+      {
+        "sub": "the custom downloader",
+        "rel": "checks if the following file exists",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "[ARTEFACTS_FOLDER]\\winser.dll"
+      },
+      {
+        "sub": "the custom downloader",
+        "rel": "downloads a copy from",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "hxxps://outportal[.]azurewebsites.net/api/Values_V2/Getting3210"
+      },
+      {
+        "sub": "the sample",
+        "rel": "creates",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "[ARTEFACTS_FOLDER]\\Microsoft Services[.]vbs"
+      },
+      {
+        "sub": "the sample",
+        "rel": "sets",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\"MicrosoftSystemServices\" = \"[ARTEFACTS_FOLDER]\\Microsoft Services[.]vbs\""
+      },
+      {
+        "sub": "the sample",
+        "rel": "opens an embedded web browser using",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "hxxps://usedust[.]com"
+      },
+      {
+        "sub": "hxxps://usedust[.]com",
+        "rel": "appears to be",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "a decoy"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "uses",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "Microsoft infrastructure for its C&C activity"
+      },
+      {
+        "sub": "Custom Downloader",
+        "rel": "uses",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "Microsoft infrastructure for its C&C activity"
+      },
+      {
+        "sub": "Cobalt Strike Beacon",
+        "rel": "uses",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "CloudFront infrastructure for its C&C activity"
+      },
+      {
+        "sub": "Backdoor.Graphon",
+        "rel": "attempts to communicate with",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "the attackers’ C&C servers"
+      },
+      {
+        "sub": "the attackers’ C&C servers",
+        "rel": "are hosted on",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "Microsoft infrastructure"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "run commands to control their input stream",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "their input stream"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "capture the output and error streams",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "output and error streams"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "periodically send GET requests to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "the C&C server"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "exfiltrate information",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "the attackers’ servers"
+      },
+      {
+        "sub": "The custom screenshot tool",
+        "rel": "saves photos to",
+        "rel_type": [
+          "drops"
+        ],
+        "obj": "a password-protected ZIP archive"
+      },
+      {
+        "sub": "The custom screenshot tool",
+        "rel": "deletes archives older than a week",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "archives"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "used legitimate CloudFront infrastructure",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "legitimate CloudFront infrastructure"
+      },
+      {
+        "sub": "The attackers",
+        "rel": "used legitimate Microsoft infrastructure",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "legitimate Microsoft infrastructure"
+      },
+      {
+        "sub": "The activity carried out by Harvester",
+        "rel": "makes it clear the purpose is",
+        "rel_type": [
+          "indicates"
+        ],
+        "obj": "espionage"
+      },
+      {
+        "sub": "hxxps://perfect-couple.com/perfectcouple[.]exe",
+        "rel": "was downloaded from",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "the sample"
+      },
+      {
+        "sub": "Symantec Enterprise",
+        "rel": "authored",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "this blog"
+      }
+    ]
+  }
+}

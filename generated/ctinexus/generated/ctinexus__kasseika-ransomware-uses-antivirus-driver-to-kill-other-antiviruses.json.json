@@ -1,0 +1,145 @@
+{
+  "sample_id": "ctinexus__kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "sample_index": 57,
+  "source": "ctinexus",
+  "file_name": "kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "method_name": "CTINexus",
+  "method_file": "Approach_CTINexus.py",
+  "approach_instance_key": "Approach_CTINexus__eace15bd0372d0fa",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 6.788326497058792,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Kasseika",
+        "type": "Unknown"
+      },
+      {
+        "name": "Bring Your Own Vulnerable Driver (BYOVD) tactics",
+        "type": "Unknown"
+      },
+      {
+        "name": "Martini driver",
+        "type": "Unknown"
+      },
+      {
+        "name": "TG Soft's VirtIT Agent System",
+        "type": "Unknown"
+      },
+      {
+        "name": "phishing email",
+        "type": "Unknown"
+      },
+      {
+        "name": "employees of the targeted organization",
+        "type": "Unknown"
+      },
+      {
+        "name": "Kasseika operators",
+        "type": "Unknown"
+      },
+      {
+        "name": "Windows PsExec tool",
+        "type": "Unknown"
+      },
+      {
+        "name": "malicious .bat files",
+        "type": "Unknown"
+      },
+      {
+        "name": "Martini.exe",
+        "type": "Unknown"
+      },
+      {
+        "name": "Martini.sys driver",
+        "type": "Unknown"
+      },
+      {
+        "name": "vulnerable Martini.sys driver",
+        "type": "Unknown"
+      },
+      {
+        "name": "991 processes",
+        "type": "Unknown"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Kasseika",
+        "rel": "employs",
+        "obj": "Bring Your Own Vulnerable Driver (BYOVD) tactics"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "abuses",
+        "obj": "Martini driver"
+      },
+      {
+        "sub": "Martini driver",
+        "rel": "is part of",
+        "obj": "TG Soft's VirtIT Agent System"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "starts attacks with",
+        "obj": "phishing email"
+      },
+      {
+        "sub": "phishing email",
+        "rel": "targets",
+        "obj": "employees of the targeted organization"
+      },
+      {
+        "sub": "Kasseika operators",
+        "rel": "abuse",
+        "obj": "Windows PsExec tool"
+      },
+      {
+        "sub": "Windows PsExec tool",
+        "rel": "executes",
+        "obj": "malicious .bat files"
+      },
+      {
+        "sub": "malicious .bat files",
+        "rel": "checks for process",
+        "obj": "Martini.exe"
+      },
+      {
+        "sub": "malicious .bat files",
+        "rel": "terminates",
+        "obj": "Martini.exe"
+      },
+      {
+        "sub": "malicious .bat files",
+        "rel": "downloads",
+        "obj": "Martini.sys driver"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "exploits",
+        "obj": "vulnerable Martini.sys driver"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "gains privileges to terminate",
+        "obj": "991 processes"
+      },
+      {
+        "sub": "malicious .bat files",
+        "rel": "used by",
+        "obj": "Kasseika"
+      }
+    ]
+  }
+}

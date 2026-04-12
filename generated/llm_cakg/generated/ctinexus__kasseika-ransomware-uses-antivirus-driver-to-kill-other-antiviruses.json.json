@@ -1,0 +1,199 @@
+{
+  "sample_id": "ctinexus__kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "sample_index": 57,
+  "source": "ctinexus",
+  "file_name": "kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Kasseika",
+        "type": "Entity"
+      },
+      {
+        "name": "Martini.sys",
+        "type": "Entity"
+      },
+      {
+        "name": "viragt64.sys",
+        "type": "Entity"
+      },
+      {
+        "name": "TG Soft",
+        "type": "Entity"
+      },
+      {
+        "name": "VirtIT Agent System",
+        "type": "Entity"
+      },
+      {
+        "name": "phishing email",
+        "type": "Entity"
+      },
+      {
+        "name": "account credentials",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows PsExec",
+        "type": "Entity"
+      },
+      {
+        "name": ".bat files",
+        "type": "Entity"
+      },
+      {
+        "name": "Martini.exe",
+        "type": "Entity"
+      },
+      {
+        "name": "BYOVD",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      },
+      {
+        "name": "hardcoded list",
+        "type": "Entity"
+      },
+      {
+        "name": "991 processes",
+        "type": "Entity"
+      },
+      {
+        "name": "antivirus products",
+        "type": "Entity"
+      },
+      {
+        "name": "security tools",
+        "type": "Entity"
+      },
+      {
+        "name": "analysis tools",
+        "type": "Entity"
+      },
+      {
+        "name": "system utilities",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Kasseika",
+        "rel": "uses",
+        "obj": "BYOVD"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "abuses",
+        "obj": "Martini.sys"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "abuses",
+        "obj": "viragt64.sys"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "uses",
+        "obj": "TG Soft"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "uses",
+        "obj": "VirtIT Agent System"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "uses",
+        "obj": "phishing email"
+      },
+      {
+        "sub": "phishing email",
+        "rel": "attempts to steal",
+        "obj": "account credentials"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "uses",
+        "obj": "Windows PsExec"
+      },
+      {
+        "sub": "Windows PsExec",
+        "rel": "executes",
+        "obj": ".bat files"
+      },
+      {
+        "sub": ".bat files",
+        "rel": "checks for",
+        "obj": "Martini.exe"
+      },
+      {
+        "sub": ".bat files",
+        "rel": "terminates",
+        "obj": "Martini.exe"
+      },
+      {
+        "sub": ".bat files",
+        "rel": "downloads",
+        "obj": "Martini.sys"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "exploits",
+        "obj": "CVE-2021-44228"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "exploits",
+        "obj": "Log4Shell vulnerability"
+      },
+      {
+        "sub": "Kasseika",
+        "rel": "gains privileges to terminate",
+        "obj": "991 processes"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "obj": "antivirus products"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "obj": "security tools"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "obj": "analysis tools"
+      },
+      {
+        "sub": "991 processes",
+        "rel": "correspond to",
+        "obj": "system utilities"
+      }
+    ]
+  }
+}

@@ -1,0 +1,427 @@
+{
+  "sample_id": "ctinexus__cloaked-ursa-phishing.json",
+  "sample_index": 74,
+  "source": "ctinexus",
+  "file_name": "cloaked-ursa-phishing.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Russia's Foreign Intelligence Service hackers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "which we call Cloaked Ursa (aka APT29, UAC-0004, Midnight Blizzard/Nobelium, Cozy Bear)",
+          "Cloaked Ursa (aka APT29, UAC-0004, Midnight Blizzard/Nobelium, Cozy Bear)",
+          "they",
+          "Cloaked Ursa",
+          "Cloaked Ursa (aka APT29, UAC-0004, Midnight Blizzard/Nobelium, Cozy Bear)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Cloaked Ursa",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "which we call Cloaked Ursa",
+          "Cloaked Ursa",
+          "Cloaked Ursa (aka APT29, UAC-0004, Midnight Blizzard/Nobelium, Cozy Bear)",
+          "Cloaked Ursa (aka APT29, UAC-0004, Midnight Blizzard/Nobelium, Cozy Bear)",
+          "the attacker"
+        ],
+        "mother entity": [
+          "Russia's Foreign Intelligence Service hackers"
+        ]
+      },
+      {
+        "name": "APT29",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": [
+          "Cloaked Ursa"
+        ]
+      },
+      {
+        "name": "UAC-0004",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": [
+          "Cloaked Ursa"
+        ]
+      },
+      {
+        "name": "Midnight Blizzard/Nobelium",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": [
+          "Cloaked Ursa"
+        ]
+      },
+      {
+        "name": "Cozy Bear",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": [
+          "Cloaked Ursa"
+        ]
+      },
+      {
+        "name": "diplomatic missions",
+        "type": "identity",
+        "alias": [
+          "diplomatic missions within Ukraine",
+          "foreign missions",
+          "diplomatic missions in Kyiv"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Kyiv",
+        "type": "location",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "phishing lures",
+        "type": "hacker-tool",
+        "alias": [
+          "these types of lures",
+          "lures focusing on the diplomats themselves"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "diplomatic operations",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Notes verbale",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Embassies' operating status updates",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Schedules for diplomats",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Invitations to embassy events",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "individuals who handle this type of embassy correspondence",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "files",
+        "type": "file",
+        "alias": [
+          "the files"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "organization they work for",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Unit 42 researchers",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "vehicle",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "over 80 foreign missions",
+        "type": "identity",
+        "alias": [
+          "at least 22 of over 80 foreign missions"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "United States",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "United Kingdom",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Russia's Foreign Intelligence Service (SVR)",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the United States and the United Kingdom publicly attribute to Russia's Foreign Intelligence Service (SVR)"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "infection success rate",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "advanced persistent threat (APT)",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "diplomatic missions within Ukraine",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "22 foreign missions",
+        "type": "quantity",
+        "alias": [
+          "at least 22 of over 80 foreign missions"
+        ],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Russia's Foreign Intelligence Service hackers",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "diplomatic missions"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "used",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "phishing lures"
+      },
+      {
+        "sub": "phishing lures",
+        "rel": "with a theme of",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "diplomatic operations"
+      },
+      {
+        "sub": "phishing lures",
+        "rel": "based on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Notes verbale"
+      },
+      {
+        "sub": "phishing lures",
+        "rel": "based on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Embassies' operating status updates"
+      },
+      {
+        "sub": "phishing lures",
+        "rel": "based on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Schedules for diplomats"
+      },
+      {
+        "sub": "phishing lures",
+        "rel": "based on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Invitations to embassy events"
+      },
+      {
+        "sub": "phishing lures",
+        "rel": "sent to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "individuals who handle this type of embassy correspondence"
+      },
+      {
+        "sub": "phishing lures",
+        "rel": "entice targets to open",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "files"
+      },
+      {
+        "sub": "individuals who handle this type of embassy correspondence",
+        "rel": "open the files on behalf of",
+        "rel_type": [
+          "impersonates"
+        ],
+        "obj": "organization they work for"
+      },
+      {
+        "sub": "Unit 42 researchers",
+        "rel": "observed instances of",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Cloaked Ursa"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "using",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "lures focusing on the diplomats themselves"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "diplomatic missions within Ukraine"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "leveraging",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "vehicle"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "22 foreign missions"
+      },
+      {
+        "sub": "Cloaked Ursa",
+        "rel": "targeting foreign missions located in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Kyiv"
+      },
+      {
+        "sub": "United States",
+        "rel": "publicly attribute to",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "Russia's Foreign Intelligence Service (SVR)"
+      },
+      {
+        "sub": "United Kingdom",
+        "rel": "publicly attribute to",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "Russia's Foreign Intelligence Service (SVR)"
+      },
+      {
+        "sub": "Russia's Foreign Intelligence Service hackers",
+        "rel": "are characterized as",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "advanced persistent threat (APT)"
+      },
+      {
+        "sub": "Russia's Foreign Intelligence Service hackers",
+        "rel": "targeting",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "over 80 foreign missions"
+      },
+      {
+        "sub": "APT29",
+        "rel": "is an alias of",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Cloaked Ursa"
+      },
+      {
+        "sub": "UAC-0004",
+        "rel": "is an alias of",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Cloaked Ursa"
+      },
+      {
+        "sub": "Midnight Blizzard/Nobelium",
+        "rel": "is an alias of",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Cloaked Ursa"
+      },
+      {
+        "sub": "Cozy Bear",
+        "rel": "is an alias of",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "Cloaked Ursa"
+      },
+      {
+        "sub": "infection success rate",
+        "rel": "details on",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "Cloaked Ursa"
+      }
+    ]
+  }
+}

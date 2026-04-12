@@ -1,0 +1,117 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_43.json",
+  "sample_index": 233,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_43.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "DDoS attack",
+        "type": "AttackPattern"
+      },
+      {
+        "name": "Anonymous",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Lizard Squad",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "Armada Collective",
+        "type": "ThreatActor"
+      },
+      {
+        "name": "ProtonMail",
+        "type": "Organization"
+      },
+      {
+        "name": "Graham Cluley",
+        "type": "Person"
+      },
+      {
+        "name": "bitcoins",
+        "type": "Software"
+      },
+      {
+        "name": "web server",
+        "type": "Software"
+      },
+      {
+        "name": "DDoS for hire",
+        "type": "Tool"
+      },
+      {
+        "name": "zombified computers",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "illegitimate web requests",
+        "type": "Indicator"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "DDoS attack",
+        "rel": "OVERWHELMS",
+        "obj": "web server"
+      },
+      {
+        "sub": "Anonymous",
+        "rel": "USES",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "Lizard Squad",
+        "rel": "USES",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "Armada Collective",
+        "rel": "USES",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "Armada Collective",
+        "rel": "USES",
+        "obj": "bitcoins"
+      },
+      {
+        "sub": "ProtonMail",
+        "rel": "paid ransom to",
+        "obj": "Armada Collective"
+      },
+      {
+        "sub": "Graham Cluley",
+        "rel": "targeted by",
+        "obj": "DDoS attack"
+      },
+      {
+        "sub": "DDoS for hire",
+        "rel": "HARNESSES",
+        "obj": "zombified computers"
+      },
+      {
+        "sub": "DDoS for hire",
+        "rel": "GENERATES",
+        "obj": "illegitimate web requests"
+      }
+    ]
+  }
+}

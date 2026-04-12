@@ -1,0 +1,317 @@
+{
+  "sample_id": "ctinexus__new-iranian-apt-data-extraction-tool.json",
+  "sample_index": 92,
+  "source": "ctinexus",
+  "file_name": "new-iranian-apt-data-extraction-tool.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT35",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Charming Kitten",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the group"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Iranian government",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "high risk users",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "TAG",
+        "type": "security-product",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "HYPERSCRAPE",
+        "type": "hacker-tool",
+        "alias": [
+          "the tool"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Gmail",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Yahoo!",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Microsoft Outlook",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "victims",
+        "type": "identity",
+        "alias": [
+          "these accounts",
+          "the victims"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Iran",
+        "type": "location",
+        "alias": [
+          "accounts located in Iran"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "inboxes",
+        "type": "file",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "previously acquired credentials",
+        "type": "credential-value",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "their"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "2020",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "December 2021",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Government Backed Attacker Warnings",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TAG",
+        "rel": "counter serious threats to",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "APT35"
+      },
+      {
+        "sub": "TAG",
+        "rel": "counter serious threats to",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Charming Kitten"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "targets",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "high risk users"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "backed by",
+        "rel_type": [
+          "affiliated-with"
+        ],
+        "obj": "Iranian government"
+      },
+      {
+        "sub": "TAG",
+        "rel": "countering",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Charming Kitten"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "hijack",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "accounts"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "deploy",
+        "rel_type": [
+          "delivers"
+        ],
+        "obj": "malware"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "uses novel techniques to conduct espionage",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "espionage"
+      },
+      {
+        "sub": "TAG",
+        "rel": "discovered",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "HYPERSCRAPE"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "steal user data from",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "Gmail"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "steal user data from",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "Yahoo!"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "steal user data from",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "Microsoft Outlook"
+      },
+      {
+        "sub": "attacker",
+        "rel": "runs",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "HYPERSCRAPE"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "downloads victims’ inboxes",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "victims"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "using previously acquired credentials",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "previously acquired credentials"
+      },
+      {
+        "sub": "HYPERSCRAPE",
+        "rel": "deployed against",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "victims"
+      },
+      {
+        "sub": "victims",
+        "rel": "located in",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "Iran"
+      },
+      {
+        "sub": "oldest known sample",
+        "rel": "is from",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "2020"
+      },
+      {
+        "sub": "TAG",
+        "rel": "re-secured",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "these accounts"
+      },
+      {
+        "sub": "TAG",
+        "rel": "notified",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "victims"
+      },
+      {
+        "sub": "Government Backed Attacker Warnings",
+        "rel": "describes threat activity",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "Charming Kitten"
+      },
+      {
+        "sub": "Charming Kitten",
+        "rel": "is a tool of",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "HYPERSCRAPE"
+      }
+    ]
+  }
+}

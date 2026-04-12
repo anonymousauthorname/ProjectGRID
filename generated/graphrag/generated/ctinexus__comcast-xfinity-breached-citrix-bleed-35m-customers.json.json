@@ -1,0 +1,84 @@
+{
+  "sample_id": "ctinexus__comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "sample_index": 98,
+  "source": "ctinexus",
+  "file_name": "comcast-xfinity-breached-citrix-bleed-35m-customers.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2023-4966",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "CITRIX SYSTEMS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "COMCAST XFINITY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CITRIXBLEED",
+        "type": "ATTACK_PATTERN"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "related_to",
+        "obj": "CITRIX SYSTEMS"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "related_to",
+        "obj": "CITRIXBLEED"
+      },
+      {
+        "sub": "CITRIXBLEED",
+        "rel": "related_to",
+        "obj": "COMCAST XFINITY"
+      },
+      {
+        "sub": "COMCAST XFINITY",
+        "rel": "related_to",
+        "obj": "CVE-2023-4966"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "related_to",
+        "obj": "CITRIX SYSTEMS"
+      },
+      {
+        "sub": "CVE-2023-4966",
+        "rel": "related_to",
+        "obj": "CITRIXBLEED"
+      },
+      {
+        "sub": "CITRIXBLEED",
+        "rel": "related_to",
+        "obj": "COMCAST XFINITY"
+      },
+      {
+        "sub": "COMCAST XFINITY",
+        "rel": "related_to",
+        "obj": "CVE-2023-4966"
+      }
+    ]
+  }
+}

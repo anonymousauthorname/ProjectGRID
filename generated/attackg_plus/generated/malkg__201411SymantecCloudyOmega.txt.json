@@ -1,0 +1,572 @@
+{
+  "sample_id": "malkg__201411SymantecCloudyOmega.txt",
+  "sample_index": 106,
+  "source": "malkg",
+  "file_name": "201411SymantecCloudyOmega.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Reconnaissance"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Fake medical receipts"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Phishing emails"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has value",
+        "obj": "Recent political events associated with Japan"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Belong to",
+        "obj": "Operation CloudyOmega"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Has geolocation",
+        "obj": "Japan"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Has tactic",
+        "obj": "Information gathering"
+      },
+      {
+        "sub": "Reconnaissance",
+        "rel": "Has technique",
+        "obj": "Email-based phishing"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Compromised Japanese websites"
+      },
+      {
+        "sub": "Compromised Japanese websites",
+        "rel": "Locate at",
+        "obj": "Japan"
+      },
+      {
+        "sub": "Cloud-hosting service",
+        "rel": "Host",
+        "obj": "Compromised Japanese websites"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Exploit",
+        "obj": "Vulnerability"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Adobe Flash Player"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Ichitaro"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Payload delivery"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Maintain",
+        "obj": "Persistent communication"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Compromised systems"
+      },
+      {
+        "sub": "Initial Access",
+        "rel": "Achieved through",
+        "obj": "Email-based phishing attacks"
+      },
+      {
+        "sub": "Malicious attachment",
+        "rel": "Has URL",
+        "obj": "Fake icon"
+      },
+      {
+        "sub": "Malicious attachment",
+        "rel": "Disguised as",
+        "obj": "Legitimate file"
+      },
+      {
+        "sub": "Malicious attachment",
+        "rel": "Is a type of",
+        "obj": "Password-protected .zip file"
+      },
+      {
+        "sub": "Malicious attachment",
+        "rel": "Is a type of",
+        "obj": "Malicious Ichitaro document"
+      },
+      {
+        "sub": "Malicious Ichitaro document",
+        "rel": "Has vulnerability",
+        "obj": "Ichitaro zero-day exploit"
+      },
+      {
+        "sub": "Malicious Ichitaro document",
+        "rel": "Has value",
+        "obj": "Fake icon"
+      },
+      {
+        "sub": "Malicious Ichitaro document",
+        "rel": "Designed to",
+        "obj": "Appear legitimate"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Use",
+        "obj": "Social engineering techniques"
+      },
+      {
+        "sub": "Social engineering techniques",
+        "rel": "Include",
+        "obj": "Claiming the password will be sent separately"
+      },
+      {
+        "sub": "Malicious attachment",
+        "rel": "Causes",
+        "obj": "Payload execution"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Executes without",
+        "obj": "Crashing the application"
+      },
+      {
+        "sub": "Payload",
+        "rel": "Enables",
+        "obj": "Initial access to the system"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Use",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Communicate with",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Operate",
+        "obj": "Local system"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Has vulnerability",
+        "obj": "Ichitaro zero-day"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Execute",
+        "obj": "Upon opening malicious attachment"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Deploy",
+        "obj": "Through opening malicious file"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Has vulnerability",
+        "obj": "Virtual machine"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Detect",
+        "obj": "Virtual machine"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Detect",
+        "obj": "Debugger"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Detect",
+        "obj": "Sandbox"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Use",
+        "obj": "Encrypted C&C server address"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Modify",
+        "obj": "System"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Operate",
+        "obj": "Compromised system"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Construct",
+        "obj": "Backdoor"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Has value",
+        "obj": "Version number"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Use",
+        "obj": "Version number as encryption key"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Protect",
+        "obj": "Functionality"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Prevent",
+        "obj": "Detection during analysis"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Has technique",
+        "obj": "Encryption"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Has technique",
+        "obj": "Obfuscation"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Detect",
+        "obj": "Virtual machines"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Detect",
+        "obj": "Debuggers"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Detect",
+        "obj": "Sandboxes"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Avoid",
+        "obj": "Execution in virtual machines"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Avoid",
+        "obj": "Execution in sandboxes"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Avoid",
+        "obj": "Execution in debuggers"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Belong to",
+        "obj": "CloudyOmega campaign"
+      },
+      {
+        "sub": "Type T",
+        "rel": "Has technique",
+        "obj": "Encryption"
+      },
+      {
+        "sub": "Type T",
+        "rel": "Has technique",
+        "obj": "Obfuscation"
+      },
+      {
+        "sub": "Type T",
+        "rel": "Operate",
+        "obj": "Defense Evasion"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Operate",
+        "obj": "Defense Evasion"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Use",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Steal",
+        "obj": "Login information"
+      },
+      {
+        "sub": "Internet Explorer",
+        "rel": "Store",
+        "obj": "Login information"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Has tactic",
+        "obj": "Credential Access"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Has objective",
+        "obj": "Gain access to sensitive information"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Has objective",
+        "obj": "Maintain long-term access to the network"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "C&C Infrastructure"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Retrieve",
+        "obj": "System Information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Connect",
+        "obj": "Hardcoded C&C Servers"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Execute",
+        "obj": "Remote Commands"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Probe",
+        "obj": "Network Environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Identify",
+        "obj": "Valuable Targets"
+      },
+      {
+        "sub": "C&C Infrastructure",
+        "rel": "Has value",
+        "obj": "System Information"
+      },
+      {
+        "sub": "C&C Infrastructure",
+        "rel": "Has URL",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "Remote Command Execution"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Has vulnerability",
+        "obj": "Internet Explorer"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Write",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Transmit",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Operate",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Has value",
+        "obj": "Confidential information"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Receive",
+        "obj": "Sensitive data"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Construct",
+        "obj": "Data exfiltration"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Modify",
+        "obj": "Credentials stored by Internet Explorer"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Operate",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Has URL",
+        "obj": "Domain"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Locate at",
+        "obj": "Japan"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Belong to",
+        "obj": "Compromised Japanese websites"
+      },
+      {
+        "sub": "Compromised Japanese websites",
+        "rel": "Operate",
+        "obj": "Backdoor.Emdivi"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Has geolocation",
+        "obj": "Japan"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Modify",
+        "obj": "50 unique domains"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Construct",
+        "obj": "58 Emdivi variants"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Has value",
+        "obj": "40 domains hosted on a single cloud-hosting service"
+      },
+      {
+        "sub": "Cloud-hosting service",
+        "rel": "Locate at",
+        "obj": "Japan"
+      },
+      {
+        "sub": "Compromised Japanese websites",
+        "rel": "Has value",
+        "obj": "Small business sites"
+      },
+      {
+        "sub": "Compromised Japanese websites",
+        "rel": "Has value",
+        "obj": "Personal blogs"
+      },
+      {
+        "sub": "Backdoor.Emdivi",
+        "rel": "Write",
+        "obj": "Persistent communication"
+      },
+      {
+        "sub": "Persistent communication",
+        "rel": "Has value",
+        "obj": "Infected systems"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "HTTP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Data"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Credentials"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Sensitive information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Network traffic"
+      },
+      {
+        "sub": "C&C server",
+        "rel": "Receive",
+        "obj": "Data"
+      },
+      {
+        "sub": "Attackers",
+        "rel": "Operate",
+        "obj": "C&C server"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Avoid detection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Exfiltration pathway"
+      }
+    ]
+  }
+}

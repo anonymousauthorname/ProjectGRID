@@ -1,0 +1,734 @@
+{
+  "sample_id": "securenlp__OperationDoubleTap",
+  "sample_index": 192,
+  "source": "securenlp",
+  "file_name": "OperationDoubleTap",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APT3",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "the actors responsible for Operation Clandestine Fox",
+          "the attacker",
+          "this actor",
+          "this group"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Operation Clandestine Fox",
+        "type": "campaign",
+        "alias": [
+          "this group's operations",
+          "the attacker's attacks"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "November 19, 2014",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2014-6332",
+        "type": "vulnerability",
+        "alias": [
+          "this exploit",
+          "the CVE-2014-6332 exploit code",
+          "Windows OLE Automation Array Remote Code Execution vulnerability"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2014-4113",
+        "type": "vulnerability",
+        "alias": [
+          "the CVE-2014-4113 exploit"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "2014-11-11",
+        "type": "date",
+        "alias": [],
+        "mother entity": [
+          "CVE-2014-6332"
+        ]
+      },
+      {
+        "name": "2014-10-14",
+        "type": "date",
+        "alias": [],
+        "mother entity": [
+          "CVE-2014-4113"
+        ]
+      },
+      {
+        "name": "The PLAYBOY ClUB",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "hxxp://join.playboysplus.com/signup/",
+        "type": "url",
+        "alias": [
+          "the join.playboysplus[.]com exploit and payload delivery site"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "104.151.248.173",
+        "type": "ipv4-addr",
+        "alias": [
+          "the IP address"
+        ],
+        "mother entity": [
+          "hxxp://join.playboysplus.com/signup/"
+        ]
+      },
+      {
+        "name": "192.157.198.103",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "test.exe"
+        ]
+      },
+      {
+        "name": "192.184.60.229",
+        "type": "ipv4-addr",
+        "alias": [
+          "the 192.184.60.229 IP address seen in this current campaign"
+        ],
+        "mother entity": [
+          "test.exe"
+        ]
+      },
+      {
+        "name": "198.55.115.71",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "newnotepad.exe"
+        ]
+      },
+      {
+        "name": "inform.bedircati[.]com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "newnotepad.exe"
+        ]
+      },
+      {
+        "name": "pn.lamb-site[.]com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "newnotepad.exe"
+        ]
+      },
+      {
+        "name": "210.109.99.64",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": [
+          "newnotepad.exe"
+        ]
+      },
+      {
+        "name": "securitywap.com",
+        "type": "domain-name",
+        "alias": [
+          "www.securitywap.com"
+        ],
+        "mother entity": [
+          "192.184.60.229"
+        ]
+      },
+      {
+        "name": "install.exe",
+        "type": "file",
+        "alias": [
+          "the malware component",
+          "the downloader"
+        ],
+        "mother entity": [
+          "CVE-2014-6332 exploit code"
+        ]
+      },
+      {
+        "name": "doc.exe",
+        "type": "file",
+        "alias": [
+          "the first dropped file",
+          "the payload files"
+        ],
+        "mother entity": [
+          "install.exe"
+        ]
+      },
+      {
+        "name": "test.exe",
+        "type": "file",
+        "alias": [
+          "newnotepad.exe",
+          "the malware component"
+        ],
+        "mother entity": [
+          "install.exe"
+        ]
+      },
+      {
+        "name": "doc.exe (x86)",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "doc.exe"
+        ]
+      },
+      {
+        "name": "doc.exe (x64)",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "doc.exe"
+        ]
+      },
+      {
+        "name": "VBScript",
+        "type": "hacker-tool",
+        "alias": [
+          "the script"
+        ],
+        "mother entity": [
+          "install.exe"
+        ]
+      },
+      {
+        "name": "powershell.exe",
+        "type": "general-software",
+        "alias": [
+          "PowerShell"
+        ],
+        "mother entity": [
+          "VBScript"
+        ]
+      },
+      {
+        "name": "http://www.exploit-db.com/exploits/35230/",
+        "type": "url",
+        "alias": [
+          "the code published at..."
+        ],
+        "mother entity": [
+          "CVE-2014-6332"
+        ]
+      },
+      {
+        "name": "Metasploit",
+        "type": "general-software",
+        "alias": [
+          "the Metasploit project"
+        ],
+        "mother entity": [
+          "CVE-2014-6332"
+        ]
+      },
+      {
+        "name": "C:\\Users\\Public",
+        "type": "windows-registry-key",
+        "alias": [
+          "the hard-coded path"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "C:\\Users\\Public\\test.exe",
+        "type": "file",
+        "alias": [
+          "the file in the scheduled task"
+        ],
+        "mother entity": [
+          "test.exe"
+        ]
+      },
+      {
+        "name": "mysc",
+        "type": "windows-registry-key",
+        "alias": [],
+        "mother entity": [
+          "test.exe"
+        ]
+      },
+      {
+        "name": "C:\\Users\\aa\\Documents\\Visual Studio 2008\\Projects\\MShell\\Release\\ MShell.pdb",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "install.exe"
+        ]
+      },
+      {
+        "name": "C:\\Users\\aa\\Documents\\Visual Studio 2008\\Projects\\4113\\Release\\ 4113.pdb",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "doc.exe"
+        ]
+      },
+      {
+        "name": "C:\\Users\\aa\\Documents\\Visual Studio 2010\\Projects\\MyRat\\Client\\Client\\obj\\x86\\Release\\Client.pdb",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "test.exe"
+        ]
+      },
+      {
+        "name": "C:\\Users\\[Username]\\AppData\\Local\\Temp\\notepad1.exe",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "test.exe"
+        ]
+      },
+      {
+        "name": "C:\\Users\\[Username]\\AppData\\Local\\Temp\\notepad2.exe",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "test.exe"
+        ]
+      },
+      {
+        "name": "C:\\Users\\[Username]\\AppData\\Local\\Temp\\note.txt",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "test.exe"
+        ]
+      },
+      {
+        "name": "cmd.exe",
+        "type": "general-software",
+        "alias": [
+          "Windows command"
+        ],
+        "mother entity": [
+          "test.exe"
+        ]
+      },
+      {
+        "name": "cmd /C",
+        "type": "command",
+        "alias": [],
+        "mother entity": [
+          "test.exe"
+        ]
+      },
+      {
+        "name": "Backdoor.APT.CookieCutter (aka Pirpi)",
+        "type": "malware",
+        "alias": [
+          "newnotepad.exe"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "newnotepad.exe (MD5 8849538ef1c3471640230605c2623c67)",
+        "type": "file",
+        "alias": [
+          "the secondary payload"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "walterclean.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "104.151.248.173"
+        ]
+      },
+      {
+        "name": "www.walterclean.com",
+        "type": "domain-name",
+        "alias": [],
+        "mother entity": [
+          "104.151.248.173"
+        ]
+      },
+      {
+        "name": "Plugx/Kaba",
+        "type": "hacker-tool",
+        "alias": [],
+        "mother entity": [
+          "walterclean.com"
+        ]
+      },
+      {
+        "name": "users’ system",
+        "type": "general-software",
+        "alias": [
+          "the system"
+        ],
+        "mother entity": [
+          "VBScript"
+        ]
+      },
+      {
+        "name": "The attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "this group",
+          "this actor"
+        ],
+        "mother entity": [
+          "APT3"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APT3",
+        "rel": "initiated campaign on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "November 19, 2014"
+      },
+      {
+        "sub": "APT3",
+        "rel": "leveraged",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2014-6332"
+      },
+      {
+        "sub": "APT3",
+        "rel": "leveraged",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "CVE-2014-4113"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "was disclosed on",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "2014-11-11"
+      },
+      {
+        "sub": "CVE-2014-4113",
+        "rel": "was disclosed on",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "2014-10-14"
+      },
+      {
+        "sub": "APT3",
+        "rel": "initiated campaign on",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Operation Clandestine Fox"
+      },
+      {
+        "sub": "The PLAYBOY ClUB",
+        "rel": "resolved to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "hxxp://join.playboysplus.com/signup/"
+      },
+      {
+        "sub": "hxxp://join.playboysplus.com/signup/",
+        "rel": "resolves to",
+        "rel_type": [
+          "resolves-to"
+        ],
+        "obj": "104.151.248.173"
+      },
+      {
+        "sub": "hxxp://join.playboysplus.com/signup/",
+        "rel": "contained",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "CVE-2014-6332 exploit code"
+      },
+      {
+        "sub": "hxxp://join.playboysplus.com/signup/",
+        "rel": "contained",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "VBScript"
+      },
+      {
+        "sub": "VBScript",
+        "rel": "invoked",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "powershell.exe"
+      },
+      {
+        "sub": "VBScript",
+        "rel": "downloads",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "install.exe"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "attempts to write",
+        "rel_type": [
+          "writes-to"
+        ],
+        "obj": "C:\\Users\\Public\\test.exe"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "contains",
+        "rel_type": [
+          "contains"
+        ],
+        "obj": "CVE-2014-4113 exploit"
+      },
+      {
+        "sub": "doc.exe",
+        "rel": "attempts to execute",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "test.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "cmd.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "uses",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "cmd /C"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "creates persistence via",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "C:\\Users\\Public\\test.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "establishes a SOCKS5 connection to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "192.157.198.103"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "requests a connection to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "expects message from",
+        "rel_type": [
+          "receives-from"
+        ],
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "sends command ID to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "creates scheduled task",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "mysc"
+      },
+      {
+        "sub": "newnotepad.exe (MD5 8849538ef1c3471640230605c2623c67)",
+        "rel": "detected as",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "Backdoor.APT.CookieCutter (aka Pirpi)"
+      },
+      {
+        "sub": "newnotepad.exe (MD5 8849538ef1c3471640230605c2623c67)",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "inform.bedircati[.]com"
+      },
+      {
+        "sub": "newnotepad.exe (MD5 8849538ef1c3471640230605c2623c67)",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "pn.lamb-site[.]com"
+      },
+      {
+        "sub": "newnotepad.exe (MD5 8849538ef1c3471640230605c2623c67)",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "210.109.99.64"
+      },
+      {
+        "sub": "securitywap.com",
+        "rel": "hosted by",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "192.184.60.229"
+      },
+      {
+        "sub": "install.exe",
+        "rel": "derived from",
+        "rel_type": [
+          "derived-from"
+        ],
+        "obj": "http://www.exploit-db.com/exploits/35230/"
+      },
+      {
+        "sub": "CVE-2014-6332",
+        "rel": "incorporated in",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Metasploit"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "verifies privilege",
+        "rel_type": [
+          "validates"
+        ],
+        "obj": "SYSTEM"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "writes to",
+        "rel_type": [
+          "creates-or-generates"
+        ],
+        "obj": "C:\\Users\\Public\\test.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "downloads URL",
+        "rel_type": [
+          "downloads"
+        ],
+        "obj": "C:\\Users\\Public\\test.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "concatenates",
+        "rel_type": [
+          "modifies-or-removes-or-replaces"
+        ],
+        "obj": "notepad1.exe, notepad2.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "executes",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "notepad1.exe, notepad2.exe"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "sends contents of",
+        "rel_type": [
+          "exfiltrate-to"
+        ],
+        "obj": "note.txt"
+      },
+      {
+        "sub": "test.exe",
+        "rel": "executes string via",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "cmd /C"
+      },
+      {
+        "sub": "APT3",
+        "rel": "connected to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "198.55.115.71"
+      },
+      {
+        "sub": "APT3",
+        "rel": "used domains",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "walterclean.com"
+      },
+      {
+        "sub": "walterclean.com",
+        "rel": "served as",
+        "rel_type": [
+          "hosts"
+        ],
+        "obj": "Plugx/Kaba"
+      }
+    ]
+  }
+}

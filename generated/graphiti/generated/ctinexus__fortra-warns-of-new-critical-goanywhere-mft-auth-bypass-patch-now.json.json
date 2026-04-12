@@ -1,0 +1,131 @@
+{
+  "sample_id": "ctinexus__fortra-warns-of-new-critical-goanywhere-mft-auth-bypass-patch-now.json",
+  "sample_index": 66,
+  "source": "ctinexus",
+  "file_name": "fortra-warns-of-new-critical-goanywhere-mft-auth-bypass-patch-now.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Clop",
+        "type": "Malware"
+      },
+      {
+        "name": "GoAnywhere MFT",
+        "type": "Software"
+      },
+      {
+        "name": "CVE-2023-0669",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Fortra",
+        "type": "Organization"
+      },
+      {
+        "name": "Crown Resorts",
+        "type": "Organization"
+      },
+      {
+        "name": "CHS",
+        "type": "Organization"
+      },
+      {
+        "name": "Hatch Bank",
+        "type": "Organization"
+      },
+      {
+        "name": "Rubrik",
+        "type": "Organization"
+      },
+      {
+        "name": "City of Toronto",
+        "type": "Organization"
+      },
+      {
+        "name": "Hitachi Energy",
+        "type": "Organization"
+      },
+      {
+        "name": "Procter & Gamble",
+        "type": "Organization"
+      },
+      {
+        "name": "Saks Fifth Avenue",
+        "type": "Organization"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Clop",
+        "rel": "EXPLOITED",
+        "obj": "GoAnywhere MFT"
+      },
+      {
+        "sub": "GoAnywhere MFT",
+        "rel": "has vulnerability",
+        "obj": "CVE-2023-0669"
+      },
+      {
+        "sub": "Fortra",
+        "rel": "released patch for",
+        "obj": "CVE-2023-0669"
+      },
+      {
+        "sub": "Clop",
+        "rel": "ATTACKED",
+        "obj": "Crown Resorts"
+      },
+      {
+        "sub": "Clop",
+        "rel": "ATTACKED",
+        "obj": "CHS"
+      },
+      {
+        "sub": "Clop",
+        "rel": "ATTACKED",
+        "obj": "Hatch Bank"
+      },
+      {
+        "sub": "Clop",
+        "rel": "ATTACKED",
+        "obj": "Rubrik"
+      },
+      {
+        "sub": "Clop",
+        "rel": "ATTACKED",
+        "obj": "City of Toronto"
+      },
+      {
+        "sub": "Clop",
+        "rel": "ATTACKED",
+        "obj": "Hitachi Energy"
+      },
+      {
+        "sub": "Clop",
+        "rel": "ATTACKED",
+        "obj": "Procter & Gamble"
+      },
+      {
+        "sub": "Clop",
+        "rel": "ATTACKED",
+        "obj": "Saks Fifth Avenue"
+      }
+    ]
+  }
+}

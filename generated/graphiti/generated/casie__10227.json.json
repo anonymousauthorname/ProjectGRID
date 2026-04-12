@@ -1,0 +1,181 @@
+{
+  "sample_id": "casie__10227.json",
+  "sample_index": 43,
+  "source": "casie",
+  "file_name": "10227.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Kubernetes",
+        "type": "Software"
+      },
+      {
+        "name": "CVE-2018-1002105",
+        "type": "Vulnerability"
+      },
+      {
+        "name": "Kubelet",
+        "type": "Tool"
+      },
+      {
+        "name": "API",
+        "type": "Indicator"
+      },
+      {
+        "name": "exec",
+        "type": "Indicator"
+      },
+      {
+        "name": "attach",
+        "type": "Indicator"
+      },
+      {
+        "name": "portforward",
+        "type": "Indicator"
+      },
+      {
+        "name": "metrics-server",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "servicecatalog",
+        "type": "Infrastructure"
+      },
+      {
+        "name": "OpenShift Container Platform",
+        "type": "Organization"
+      },
+      {
+        "name": "OpenShift Online",
+        "type": "Organization"
+      },
+      {
+        "name": "OpenShift Dedicated",
+        "type": "Organization"
+      },
+      {
+        "name": "Rancher",
+        "type": "Organization"
+      },
+      {
+        "name": "Rancher Labs",
+        "type": "Organization"
+      },
+      {
+        "name": "Red Hat",
+        "type": "Organization"
+      },
+      {
+        "name": "Jordan Liggitt",
+        "type": "Person"
+      },
+      {
+        "name": "Darren Shepherd",
+        "type": "Person"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Kubernetes",
+        "rel": "has agent",
+        "obj": "Kubelet"
+      },
+      {
+        "sub": "Kubernetes",
+        "rel": "uses discovery api calls",
+        "obj": "API"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "AFFECTS",
+        "obj": "Kubernetes"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "AFFECTS",
+        "obj": "Red Hat"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "AFFECTS",
+        "obj": "OpenShift Container Platform"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "AFFECTS",
+        "obj": "OpenShift Online"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "AFFECTS",
+        "obj": "OpenShift Dedicated"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "exploits api extension",
+        "obj": "metrics-server"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "exploits api extension",
+        "obj": "servicecatalog"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "enables privilege escalation",
+        "obj": "exec"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "enables privilege escalation",
+        "obj": "attach"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "enables privilege escalation",
+        "obj": "portforward"
+      },
+      {
+        "sub": "CVE-2018-1002105",
+        "rel": "grants cluster admin access",
+        "obj": "servicecatalog"
+      },
+      {
+        "sub": "Rancher Labs",
+        "rel": "DISCOVERED",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Darren Shepherd",
+        "rel": "DISCOVERED",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Jordan Liggitt",
+        "rel": "DESCRIBED",
+        "obj": "CVE-2018-1002105"
+      },
+      {
+        "sub": "Red Hat",
+        "rel": "USES",
+        "obj": "OpenShift Container Platform"
+      }
+    ]
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_57.json",
+  "sample_index": 244,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_57.json",
+  "method_name": "Graphiti",
+  "method_file": "Approach_graphiti.py",
+  "approach_instance_key": "Approach_graphiti__b6c34a497ca218f9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 4.403254499397125,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Large Language Model",
+        "type": "Malware"
+      },
+      {
+        "name": "Rhadamanthys",
+        "type": "Malware"
+      },
+      {
+        "name": "NetSupport",
+        "type": "Malware"
+      },
+      {
+        "name": "CleanUpLoader",
+        "type": "Malware"
+      },
+      {
+        "name": "Broomstick",
+        "type": "Malware"
+      },
+      {
+        "name": "Oyster",
+        "type": "Malware"
+      },
+      {
+        "name": "ModiLoader",
+        "type": "Malware"
+      },
+      {
+        "name": "DBatLoader",
+        "type": "Malware"
+      },
+      {
+        "name": "LokiBot",
+        "type": "Malware"
+      },
+      {
+        "name": "Dunihi",
+        "type": "Malware"
+      },
+      {
+        "name": "H-Worm",
+        "type": "Malware"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Software"
+      },
+      {
+        "name": "Symantec",
+        "type": "Organization"
+      },
+      {
+        "name": "ChatGPT",
+        "type": "Tool"
+      },
+      {
+        "name": "phishing email",
+        "type": "Indicator"
+      },
+      {
+        "name": ".zip",
+        "type": "Indicator"
+      },
+      {
+        "name": ".lnk",
+        "type": "Indicator"
+      },
+      {
+        "name": "HTML file",
+        "type": "Indicator"
+      },
+      {
+        "name": "JavaScript",
+        "type": "Tool"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Large Language Model",
+        "rel": "GENERATES",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Large Language Model",
+        "rel": "GENERATES",
+        "obj": "HTML file"
+      },
+      {
+        "sub": "Large Language Model",
+        "rel": "assists in",
+        "obj": "phishing email"
+      },
+      {
+        "sub": "Large Language Model",
+        "rel": "DELIVERS",
+        "obj": "Rhadamanthys"
+      },
+      {
+        "sub": "Large Language Model",
+        "rel": "DELIVERS",
+        "obj": "CleanUpLoader"
+      },
+      {
+        "sub": "Large Language Model",
+        "rel": "DELIVERS",
+        "obj": "ModiLoader"
+      },
+      {
+        "sub": "Large Language Model",
+        "rel": "DELIVERS",
+        "obj": "LokiBot"
+      },
+      {
+        "sub": "Large Language Model",
+        "rel": "DELIVERS",
+        "obj": "Dunihi"
+      },
+      {
+        "sub": "Large Language Model",
+        "rel": "DELIVERS",
+        "obj": "NetSupport"
+      },
+      {
+        "sub": "ChatGPT",
+        "rel": "GENERATES",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "ChatGPT",
+        "rel": "GENERATES",
+        "obj": "HTML file"
+      },
+      {
+        "sub": "phishing email",
+        "rel": "CONTAINS",
+        "obj": ".zip"
+      },
+      {
+        "sub": ".zip",
+        "rel": "CONTAINS",
+        "obj": ".lnk"
+      },
+      {
+        "sub": ".lnk",
+        "rel": "TRIGGERS",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "HTML file",
+        "rel": "EMBEDS",
+        "obj": "JavaScript"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "MONITORS",
+        "obj": "Large Language Model"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "DETECTS",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Symantec",
+        "rel": "DETECTS",
+        "obj": "HTML file"
+      }
+    ]
+  }
+}

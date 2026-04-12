@@ -1,0 +1,322 @@
+{
+  "sample_id": "malkg__201306FireEyeSeinUp.txt",
+  "sample_index": 123,
+  "source": "malkg",
+  "file_name": "201306FireEyeSeinUp.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Brunei"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Cambodia"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Indonesia"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Laos"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Malaysia"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Myanmar"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Philippines"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Singapore"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Thailand"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Has geolocation",
+        "obj": "Vietnam"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Spear phishing"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Stolen document"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Metadata"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "Content"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Organizational information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Geographical information"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Modify",
+        "obj": "Temp folder"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Construct",
+        "obj": "Temp folder"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Use",
+        "obj": "Malicious document"
+      },
+      {
+        "sub": "- Malicious document",
+        "rel": "Has vulnerability",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "- Malicious document",
+        "rel": "Mimic",
+        "obj": "Legitimate software"
+      },
+      {
+        "sub": "- Malware",
+        "rel": "Operate",
+        "obj": "Initial access"
+      },
+      {
+        "sub": "Vulnerability",
+        "rel": "Has vulnerability",
+        "obj": "Malicious document"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "DLL side-loading"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "wab32res.dll"
+      },
+      {
+        "sub": "wab.exe",
+        "rel": "Execute",
+        "obj": "wab32res.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Execution phase"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Bypass",
+        "obj": "Traditional scanning tools"
+      },
+      {
+        "sub": "wab.exe",
+        "rel": "Modify",
+        "obj": "Memory loading"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has technique",
+        "obj": "DLL side-loading"
+      },
+      {
+        "sub": "wab32res.dll",
+        "rel": "Belong to",
+        "obj": "Malware"
+      },
+      {
+        "sub": "wab.exe",
+        "rel": "Has value",
+        "obj": "Manual execution"
+      },
+      {
+        "sub": "wab.exe",
+        "rel": "Locate at",
+        "obj": "In-memory loading"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "wab32res.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "msnetrsvw.exe"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Register as",
+        "obj": "Windows service"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "persistent access"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "network"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Windows service"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has vulnerability",
+        "obj": "persistent access"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Zero-skipping XOR encryption"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Custom Base64 encoding"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Custom character map"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Salted digital thumbprint"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Random parameter names"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Mersenne Twister algorithm"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "URL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Hostname"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Discover",
+        "obj": "Hostname"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Discover",
+        "obj": "IP Address"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System Information"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Google Docs"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "SSL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "custom-encoded URL"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "www.elizabearden.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "www.dnsserviceonline.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "www.elizabearden.com"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "www.dnsserviceonline.com"
+      }
+    ]
+  }
+}

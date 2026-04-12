@@ -1,0 +1,113 @@
+{
+  "sample_id": "casie__1024.json",
+  "sample_index": 8,
+  "source": "casie",
+  "file_name": "1024.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "APACHE SOFTWARE FOUNDATION",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "APACHE STRUTS",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CVE-2017-5638",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "JAKARTA MULTIPART PARSER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "CONTENT-TYPE HEADER",
+        "type": "TOOL"
+      },
+      {
+        "name": "CISCO TALOS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "NICK BIASINI",
+        "type": "PERSON"
+      },
+      {
+        "name": "REMOTE CODE EXECUTION",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "VULNERABILITY EXPLOITATION",
+        "type": "EVENT"
+      },
+      {
+        "name": "WORKAROUND",
+        "type": "TOOL"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "APACHE SOFTWARE FOUNDATION",
+        "rel": "related_to",
+        "obj": "APACHE STRUTS"
+      },
+      {
+        "sub": "APACHE STRUTS",
+        "rel": "related_to",
+        "obj": "CVE-2017-5638"
+      },
+      {
+        "sub": "CVE-2017-5638",
+        "rel": "related_to",
+        "obj": "REMOTE CODE EXECUTION"
+      },
+      {
+        "sub": "CVE-2017-5638",
+        "rel": "related_to",
+        "obj": "VULNERABILITY EXPLOITATION"
+      },
+      {
+        "sub": "CISCO TALOS",
+        "rel": "related_to",
+        "obj": "CVE-2017-5638"
+      },
+      {
+        "sub": "NICK BIASINI",
+        "rel": "related_to",
+        "obj": "CISCO TALOS"
+      },
+      {
+        "sub": "JAKARTA MULTIPART PARSER",
+        "rel": "related_to",
+        "obj": "CVE-2017-5638"
+      },
+      {
+        "sub": "CONTENT-TYPE HEADER",
+        "rel": "related_to",
+        "obj": "CVE-2017-5638"
+      },
+      {
+        "sub": "APACHE STRUTS",
+        "rel": "related_to",
+        "obj": "WORKAROUND"
+      }
+    ]
+  }
+}

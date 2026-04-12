@@ -1,0 +1,170 @@
+{
+  "sample_id": "casie__10341.json",
+  "sample_index": 36,
+  "source": "casie",
+  "file_name": "10341.json",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "ACTION FRAUD",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "TSB",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "BARCLAYS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "NATWEST",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "IAN THORNTON-TRUMP",
+        "type": "PERSON"
+      },
+      {
+        "name": "OCTOPI MANAGED SERVICES",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "LUCY EVANS",
+        "type": "PERSON"
+      },
+      {
+        "name": "PROFESSOR ALAN WOODWARD",
+        "type": "PERSON"
+      },
+      {
+        "name": "UNIVERSITY OF SURREY",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "PHISHING ATTACKS",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "IT OUTAGE",
+        "type": "EVENT"
+      },
+      {
+        "name": "FRAUDULENT WEBSITES",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "PHISHING",
+        "type": "MALWARE"
+      },
+      {
+        "name": "CYBER CRIMINALS",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "PHISHING TEXTS",
+        "type": "TOOL"
+      },
+      {
+        "name": "CHANGE IN BANK SERVICE",
+        "type": "EVENT"
+      },
+      {
+        "name": "CUSTOMER MISERY",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "WEB BANKING ACCESS",
+        "type": "SOFTWARE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "ACTION FRAUD",
+        "rel": "related_to",
+        "obj": "TSB"
+      },
+      {
+        "sub": "TSB",
+        "rel": "related_to",
+        "obj": "PHISHING ATTACKS"
+      },
+      {
+        "sub": "PHISHING ATTACKS",
+        "rel": "related_to",
+        "obj": "PHISHING TEXTS"
+      },
+      {
+        "sub": "PHISHING ATTACKS",
+        "rel": "related_to",
+        "obj": "FRAUDULENT WEBSITES"
+      },
+      {
+        "sub": "TSB",
+        "rel": "related_to",
+        "obj": "NATWEST"
+      },
+      {
+        "sub": "CYBER CRIMINALS",
+        "rel": "related_to",
+        "obj": "PHISHING ATTACKS"
+      },
+      {
+        "sub": "CYBER CRIMINALS",
+        "rel": "related_to",
+        "obj": "TSB"
+      },
+      {
+        "sub": "IAN THORNTON-TRUMP",
+        "rel": "related_to",
+        "obj": "CYBER CRIMINALS"
+      },
+      {
+        "sub": "PROFESSOR ALAN WOODWARD",
+        "rel": "related_to",
+        "obj": "CUSTOMER MISERY"
+      },
+      {
+        "sub": "PROFESSOR ALAN WOODWARD",
+        "rel": "related_to",
+        "obj": "PHISHING ATTACKS"
+      },
+      {
+        "sub": "LUCY EVANS",
+        "rel": "related_to",
+        "obj": "TSB"
+      },
+      {
+        "sub": "LUCY EVANS",
+        "rel": "related_to",
+        "obj": "PHISHING TEXTS"
+      },
+      {
+        "sub": "TSB",
+        "rel": "related_to",
+        "obj": "UNIVERSITY OF SURREY"
+      },
+      {
+        "sub": "PHISHING ATTACKS",
+        "rel": "related_to",
+        "obj": "WEB BANKING ACCESS"
+      }
+    ]
+  }
+}

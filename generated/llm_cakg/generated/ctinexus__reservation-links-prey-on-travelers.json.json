@@ -1,0 +1,105 @@
+{
+  "sample_id": "ctinexus__reservation-links-prey-on-travelers.json",
+  "sample_index": 90,
+  "source": "ctinexus",
+  "file_name": "reservation-links-prey-on-travelers.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "TA558",
+        "type": "Entity"
+      },
+      {
+        "name": "fake reservation emails",
+        "type": "Entity"
+      },
+      {
+        "name": "RAR file attachments",
+        "type": "Entity"
+      },
+      {
+        "name": "ISO file attachments",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious malware payload",
+        "type": "Entity"
+      },
+      {
+        "name": "malware variants",
+        "type": "Entity"
+      },
+      {
+        "name": "decompress",
+        "type": "Entity"
+      },
+      {
+        "name": "file and folder data",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "TA558",
+        "rel": "uses",
+        "obj": "fake reservation emails"
+      },
+      {
+        "sub": "TA558",
+        "rel": "includes",
+        "obj": "links"
+      },
+      {
+        "sub": "links",
+        "rel": "deliver",
+        "obj": "malicious malware payload"
+      },
+      {
+        "sub": "malicious malware payload",
+        "rel": "contains",
+        "obj": "malware variants"
+      },
+      {
+        "sub": "TA558",
+        "rel": "uses",
+        "obj": "RAR file attachments"
+      },
+      {
+        "sub": "TA558",
+        "rel": "uses",
+        "obj": "ISO file attachments"
+      },
+      {
+        "sub": "RAR file attachments",
+        "rel": "executes",
+        "obj": "decompress"
+      },
+      {
+        "sub": "ISO file attachments",
+        "rel": "executes",
+        "obj": "decompress"
+      },
+      {
+        "sub": "decompress",
+        "rel": "reveals",
+        "obj": "file and folder data"
+      }
+    ]
+  }
+}

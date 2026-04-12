@@ -1,0 +1,248 @@
+{
+  "sample_id": "casie__10215.json",
+  "sample_index": 47,
+  "source": "casie",
+  "file_name": "10215.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CVE-2018-0171",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2018-0150",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2018-0151",
+        "type": "Entity"
+      },
+      {
+        "name": "Smart Install",
+        "type": "Entity"
+      },
+      {
+        "name": "TCP port 4786",
+        "type": "Entity"
+      },
+      {
+        "name": "UDP port 18999",
+        "type": "Entity"
+      },
+      {
+        "name": "remote code execution",
+        "type": "Entity"
+      },
+      {
+        "name": "denial of service",
+        "type": "Entity"
+      },
+      {
+        "name": "crafted messages",
+        "type": "Entity"
+      },
+      {
+        "name": "unauthenticated remote attack",
+        "type": "Entity"
+      },
+      {
+        "name": "undocumented user account",
+        "type": "Entity"
+      },
+      {
+        "name": "default username and password",
+        "type": "Entity"
+      },
+      {
+        "name": "malicious packets",
+        "type": "Entity"
+      },
+      {
+        "name": "proof-of-concept exploit code",
+        "type": "Entity"
+      },
+      {
+        "name": "Embedi",
+        "type": "Entity"
+      },
+      {
+        "name": "Cisco IOS",
+        "type": "Entity"
+      },
+      {
+        "name": "Cisco IOS XE",
+        "type": "Entity"
+      },
+      {
+        "name": "networking software",
+        "type": "Entity"
+      },
+      {
+        "name": "Cisco routers",
+        "type": "Entity"
+      },
+      {
+        "name": "Cisco switches",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CVE-2018-0171",
+        "rel": "affects",
+        "obj": "Smart Install"
+      },
+      {
+        "sub": "Smart Install",
+        "rel": "uses",
+        "obj": "TCP port 4786"
+      },
+      {
+        "sub": "crafted messages",
+        "rel": "are sent to",
+        "obj": "TCP port 4786"
+      },
+      {
+        "sub": "crafted messages",
+        "rel": "are sent to",
+        "obj": "Smart Install"
+      },
+      {
+        "sub": "unauthenticated remote attacker",
+        "rel": "exploits",
+        "obj": "CVE-2018-0171"
+      },
+      {
+        "sub": "CVE-2018-0171",
+        "rel": "can cause",
+        "obj": "denial of service"
+      },
+      {
+        "sub": "CVE-2018-0171",
+        "rel": "can lead to",
+        "obj": "remote code execution"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "discovered",
+        "obj": "CVE-2018-0171"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "found",
+        "obj": "250,000 vulnerable devices"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "detected",
+        "obj": "8.5 million devices with vulnerable port open"
+      },
+      {
+        "sub": "Smart Install",
+        "rel": "is supported by",
+        "obj": "Cisco routers"
+      },
+      {
+        "sub": "Smart Install",
+        "rel": "is supported by",
+        "obj": "Cisco switches"
+      },
+      {
+        "sub": "CVE-2018-0150",
+        "rel": "affects",
+        "obj": "Cisco IOS XE"
+      },
+      {
+        "sub": "CVE-2018-0150",
+        "rel": "is due to",
+        "obj": "undocumented user account"
+      },
+      {
+        "sub": "undocumented user account",
+        "rel": "has",
+        "obj": "default username and password"
+      },
+      {
+        "sub": "attacker",
+        "rel": "can remotely connect to",
+        "obj": "Cisco IOS XE"
+      },
+      {
+        "sub": "CVE-2018-0151",
+        "rel": "affects",
+        "obj": "Cisco IOS"
+      },
+      {
+        "sub": "CVE-2018-0151",
+        "rel": "affects",
+        "obj": "Cisco IOS XE"
+      },
+      {
+        "sub": "CVE-2018-0151",
+        "rel": "is due to",
+        "obj": "incorrect bounds checking of packets"
+      },
+      {
+        "sub": "malicious packets",
+        "rel": "are sent to",
+        "obj": "UDP port 18999"
+      },
+      {
+        "sub": "malicious packets",
+        "rel": "are sent to",
+        "obj": "affected device"
+      },
+      {
+        "sub": "attacker",
+        "rel": "exploits",
+        "obj": "CVE-2018-0151"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "released patches for",
+        "obj": "CVE-2018-0171"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "released patches for",
+        "obj": "CVE-2018-0150"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "released patches for",
+        "obj": "CVE-2018-0151"
+      },
+      {
+        "sub": "Cisco",
+        "rel": "published",
+        "obj": "proof-of-concept exploit code"
+      },
+      {
+        "sub": "Embedi",
+        "rel": "reported",
+        "obj": "CVE-2018-0171"
+      },
+      {
+        "sub": "Cisco internal testing",
+        "rel": "discovered",
+        "obj": "CVE-2018-0150"
+      }
+    ]
+  }
+}

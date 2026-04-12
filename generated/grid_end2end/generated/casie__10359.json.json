@@ -1,0 +1,363 @@
+{
+  "sample_id": "casie__10359.json",
+  "sample_index": 44,
+  "source": "casie",
+  "file_name": "10359.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Logitech",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "Google’s Project Zero team",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": []
+      },
+      {
+        "name": "Tavis Ormandy",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "Logitech’s Options application for Windows",
+        "type": "general-software",
+        "alias": [
+          "the application",
+          "the software"
+        ]
+      },
+      {
+        "name": "Mac version of Options",
+        "type": "general-software",
+        "alias": []
+      },
+      {
+        "name": "websocket server",
+        "type": "process",
+        "alias": [],
+        "mother entity": "Logitech’s Options application for Windows"
+      },
+      {
+        "name": "port 10134",
+        "type": "ipv4-addr",
+        "alias": [],
+        "mother entity": "websocket server"
+      },
+      {
+        "name": "any website",
+        "type": "generic-noun",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "origin checking",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": "websocket server"
+      },
+      {
+        "name": "Websockets",
+        "type": "general-software",
+        "alias": []
+      },
+      {
+        "name": "HTTP",
+        "type": "general-software",
+        "alias": []
+      },
+      {
+        "name": "process owned by your user",
+        "type": "process",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "bruteforce",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": "process owned by your user"
+      },
+      {
+        "name": "keystroke injection",
+        "type": "attack-pattern",
+        "alias": [],
+        "mother entity": "Logitech’s Options application for Windows"
+      },
+      {
+        "name": "Windows PC",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Logitech engineers",
+        "type": "identity",
+        "alias": []
+      },
+      {
+        "name": "18 September",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "1 October",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "90-day deadline",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": "Google’s Project Zero team"
+      },
+      {
+        "name": "13 December",
+        "type": "date",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "version 7.00.564",
+        "type": "file",
+        "alias": [],
+        "mother entity": "Logitech’s Options application for Windows"
+      },
+      {
+        "name": "7.00.554 for Mac",
+        "type": "file",
+        "alias": [],
+        "mother entity": [
+          "Mac version of Options"
+        ]
+      },
+      {
+        "name": "Microsoft",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Edge browser",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "vendors",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "bug",
+        "type": "vulnerability",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "fix",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Logitech",
+        "rel": "received disclosure from",
+        "rel_type": [
+          "other"
+        ],
+        "obj": "Google’s Project Zero team"
+      },
+      {
+        "sub": "Tavis Ormandy",
+        "rel": "installed",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Logitech’s Options application for Windows"
+      },
+      {
+        "sub": "Logitech’s Options application for Windows",
+        "rel": "opens a websocket server",
+        "rel_type": [
+          "executes"
+        ],
+        "obj": "websocket server"
+      },
+      {
+        "sub": "websocket server",
+        "rel": "on",
+        "rel_type": [
+          "located-at"
+        ],
+        "obj": "port 10134"
+      },
+      {
+        "sub": "any website",
+        "rel": "connect to",
+        "rel_type": [
+          "communicates-with"
+        ],
+        "obj": "websocket server"
+      },
+      {
+        "sub": "websocket server",
+        "rel": "has no",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "origin checking"
+      },
+      {
+        "sub": "Websockets",
+        "rel": "simplify the communication between a client and a server",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "client and a server"
+      },
+      {
+        "sub": "Websockets",
+        "rel": "make it possible for servers to send data to clients",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "servers to send data to clients"
+      },
+      {
+        "sub": "Websockets",
+        "rel": "makes possible",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "servers to send data to clients"
+      },
+      {
+        "sub": "process owned by your user",
+        "rel": "authenticated via provision of process ID",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "websocket server"
+      },
+      {
+        "sub": "bruteforce",
+        "rel": "against the authentication of the process",
+        "rel_type": [
+          "bypasses"
+        ],
+        "obj": "process owned by your user"
+      },
+      {
+        "sub": "bruteforce",
+        "rel": "might allow",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "keystroke injection"
+      },
+      {
+        "sub": "keystroke injection",
+        "rel": "to take control of",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Windows PC"
+      },
+      {
+        "sub": "Tavis Ormandy",
+        "rel": "had a meeting with",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "Logitech engineers"
+      },
+      {
+        "sub": "Logitech engineers",
+        "rel": "assured Ormandy they understood the problem",
+        "rel_type": [
+          "research-describes-analysis-of-characterizes-detects"
+        ],
+        "obj": "bug"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "updated to version",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "version 7.00.564"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "updated to version",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "7.00.554 for Mac"
+      },
+      {
+        "sub": "Logitech",
+        "rel": "tweeted that the flaws had been fixed",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "bug"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "faced a similar issue over",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "bug"
+      },
+      {
+        "sub": "vendors",
+        "rel": "must release a fix",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "fix"
+      },
+      {
+        "sub": "Google’s Project Zero team",
+        "rel": "disclosed a vulnerability to",
+        "rel_type": [
+          "attributed-to"
+        ],
+        "obj": "bug"
+      },
+      {
+        "sub": "Microsoft",
+        "rel": "has vulnerability in",
+        "rel_type": [
+          "exploits"
+        ],
+        "obj": "Edge browser"
+      }
+    ]
+  }
+}

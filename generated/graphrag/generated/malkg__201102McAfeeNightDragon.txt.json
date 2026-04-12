@@ -1,0 +1,315 @@
+{
+  "sample_id": "malkg__201102McAfeeNightDragon.txt",
+  "sample_index": 114,
+  "source": "malkg",
+  "file_name": "201102McAfeeNightDragon.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "NIGHT DRAGON",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "ZWSHELL",
+        "type": "TOOL"
+      },
+      {
+        "name": "SQL INJECTION",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "SPEAR-PHISHING",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "ACTIVE DIRECTORY COMPROMISE",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "MCAFEELABS",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MCAFEELABS FOUNDSTONE",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "CHINA",
+        "type": "GEO"
+      },
+      {
+        "name": "HEZE CITY",
+        "type": "LOCATION"
+      },
+      {
+        "name": "SHANDONG PROVINCE",
+        "type": "LOCATION"
+      },
+      {
+        "name": "WINLOGONHACK",
+        "type": "TOOL"
+      },
+      {
+        "name": "ASPXSPY",
+        "type": "TOOL"
+      },
+      {
+        "name": "ZW.CHINA",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "DYNAMIC DNS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "EXTRANET WEB SERVERS",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "ACTIVE DIRECTORY",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "C&C SERVER",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "RAT",
+        "type": "TOOL"
+      },
+      {
+        "name": "MCAFEELAB",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "MCAFEELAB VULNERABILITY MANAGER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCAFEELAB HOST INTRUSION PREVENTION 8.0",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCAFEELAB NETWORK THREAT RESPONSE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCAFEELAB APPLICATION CONTROL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCAFEELAB CONFIGURATION CONTROL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCAFEELAB DATA LOSS PROTECTION",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCAFEELAB WEB GATEWAY",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCAFEELAB ENDPOINT ENCRYPTION",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCAFEELAB VIRUSSCAN ENTERPRISE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCAFEELAB NETWORK SECURITY PLATFORM",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCAFEELAB ENTERPRISE FIREWALL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCAFEELAB HOST INTRUSION PREVENTION",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCAFEELAB STINGER",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCAFEELAB RISK ADVISORY",
+        "type": "SOFTWARE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "NIGHT DRAGON",
+        "rel": "related_to",
+        "obj": "ZWSHELL"
+      },
+      {
+        "sub": "NIGHT DRAGON",
+        "rel": "related_to",
+        "obj": "SQL INJECTION"
+      },
+      {
+        "sub": "NIGHT DRAGON",
+        "rel": "related_to",
+        "obj": "SPEAR-PHISHING"
+      },
+      {
+        "sub": "NIGHT DRAGON",
+        "rel": "related_to",
+        "obj": "ACTIVE DIRECTORY COMPROMISE"
+      },
+      {
+        "sub": "NIGHT DRAGON",
+        "rel": "related_to",
+        "obj": "DYNAMIC DNS"
+      },
+      {
+        "sub": "NIGHT DRAGON",
+        "rel": "related_to",
+        "obj": "EXTRANET WEB SERVERS"
+      },
+      {
+        "sub": "NIGHT DRAGON",
+        "rel": "related_to",
+        "obj": "C&C SERVER"
+      },
+      {
+        "sub": "ZWSHELL",
+        "rel": "related_to",
+        "obj": "WINLOGONHACK"
+      },
+      {
+        "sub": "ZWSHELL",
+        "rel": "related_to",
+        "obj": "ASPXSPY"
+      },
+      {
+        "sub": "CHINA",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "HEZE CITY",
+        "rel": "related_to",
+        "obj": "C&C SERVER"
+      },
+      {
+        "sub": "SHANDONG PROVINCE",
+        "rel": "related_to",
+        "obj": "CHINA"
+      },
+      {
+        "sub": "WINLOGONHACK",
+        "rel": "related_to",
+        "obj": "CHINA"
+      },
+      {
+        "sub": "ASPXSPY",
+        "rel": "related_to",
+        "obj": "CHINA"
+      },
+      {
+        "sub": "ZW.CHINA",
+        "rel": "related_to",
+        "obj": "ZWSHELL"
+      },
+      {
+        "sub": "MCAFEELABS",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELABS FOUNDSTONE",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELAB VULNERABILITY MANAGER",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELAB HOST INTRUSION PREVENTION 8.0",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELAB NETWORK THREAT RESPONSE",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELAB APPLICATION CONTROL",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELAB CONFIGURATION CONTROL",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELAB DATA LOSS PROTECTION",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELAB WEB GATEWAY",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELAB ENDPOINT ENCRYPTION",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELAB VIRUSSCAN ENTERPRISE",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELAB NETWORK SECURITY PLATFORM",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELAB ENTERPRISE FIREWALL",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELAB HOST INTRUSION PREVENTION",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELAB STINGER",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      },
+      {
+        "sub": "MCAFEELAB RISK ADVISORY",
+        "rel": "related_to",
+        "obj": "NIGHT DRAGON"
+      }
+    ]
+  }
+}

@@ -1,0 +1,472 @@
+{
+  "sample_id": "malkg__201409ClearSkyGholee.txt",
+  "sample_index": 101,
+  "source": "malkg",
+  "file_name": "201409ClearSkyGholee.txt",
+  "method_name": "AttacKG+",
+  "method_file": "Approach_AttacKG_plus.py",
+  "approach_instance_key": "Approach_AttacKG_plus__68407ea862d683d9",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 3.6038344930932227,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [],
+    "relations": [
+      {
+        "sub": "Malware",
+        "rel": "Has filename",
+        "obj": "'Operation Protective Edge.xlsb'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Macro content"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "Spear-phishing email"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Operate",
+        "obj": "Spear-phishing email"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Use",
+        "obj": "Social engineering"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Victim host information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Victim identity information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Gather",
+        "obj": "Victim org information"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Modify",
+        "obj": "File name to reference real-world event"
+      },
+      {
+        "sub": "Filename",
+        "rel": "Has value",
+        "obj": "'Operation Protective Edge'"
+      },
+      {
+        "sub": "Organization",
+        "rel": "Belong to",
+        "obj": "Israel–Gaza conflict"
+      },
+      {
+        "sub": "Location",
+        "rel": "Has geolocation",
+        "obj": "Israel–Gaza conflict"
+      },
+      {
+        "sub": "Threat Actor",
+        "rel": "Construct",
+        "obj": "Malware"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has filename",
+        "obj": "Gholee"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has filepath",
+        "obj": "NTUSER.data.{GUIDE}.dll"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Obfuscate",
+        "obj": "Detection tools"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Digital certificate"
+      },
+      {
+        "sub": "Digital certificate",
+        "rel": "Issued for",
+        "obj": "Core Security"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Communicate with",
+        "obj": "83.170.33.60"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Communicate with",
+        "obj": "83.170.33.37"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "Kuwait"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has IP",
+        "obj": "83.170.33.60"
+      },
+      {
+        "sub": "Infrastructure",
+        "rel": "Has IP",
+        "obj": "83.170.33.37"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Excel file 'Operation Protective Edge.xlsb'"
+      },
+      {
+        "sub": "Phishing",
+        "rel": "Has technique",
+        "obj": "Spearphishing"
+      },
+      {
+        "sub": "Malicious VBA code",
+        "rel": "Execute",
+        "obj": "Upon enabling macro content"
+      },
+      {
+        "sub": "Spearphishing",
+        "rel": "Modify",
+        "obj": "Initial access to victim's system"
+      },
+      {
+        "sub": "Excel file 'Operation Protective Edge.xlsb'",
+        "rel": "Has filename",
+        "obj": "Operation Protective Edge.xlsb"
+      },
+      {
+        "sub": "Malicious VBA code",
+        "rel": "Construct",
+        "obj": "Through spear-phishing attack"
+      },
+      {
+        "sub": "Malicious VBA code",
+        "rel": "Write",
+        "obj": "In macro content of Excel file"
+      },
+      {
+        "sub": "VBA code",
+        "rel": "Construct",
+        "obj": "PE file"
+      },
+      {
+        "sub": "PE file",
+        "rel": "Has filename",
+        "obj": "NTUSER.data.{GUIDE}.dll"
+      },
+      {
+        "sub": "NTUSER.data.{GUIDE}.dll",
+        "rel": "Use",
+        "obj": "ShellExecute"
+      },
+      {
+        "sub": "NTUSER.data.{GUIDE}.dll",
+        "rel": "Use",
+        "obj": "Rundll32"
+      },
+      {
+        "sub": "PE file",
+        "rel": "Modify",
+        "obj": "ASCII code obfuscation"
+      },
+      {
+        "sub": "PE file",
+        "rel": "Write",
+        "obj": "NTUSER.data.{GUIDE}.dll"
+      },
+      {
+        "sub": "PE file",
+        "rel": "Operate",
+        "obj": "cmd.exe /C"
+      },
+      {
+        "sub": "PE file",
+        "rel": "Operate",
+        "obj": "Rundll32"
+      },
+      {
+        "sub": "PE file",
+        "rel": "Operate",
+        "obj": "ShellExecute"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "DLL file"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "NTUSER.DAT directory"
+      },
+      {
+        "sub": "DLL file",
+        "rel": "Locate at",
+        "obj": "NTUSER.DAT directory"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "User logon"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Persist",
+        "obj": "System restarts"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Persist",
+        "obj": "Logon sessions"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Obfuscation of code using ASCII character codes"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Hide from",
+        "obj": "OllyDbg"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Hide from",
+        "obj": "IDA"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Evasion of",
+        "obj": "Cuckoo"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Evasion of",
+        "obj": "Anubis"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Certificate from Core Security"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Non-standard domain *coreimpactagent.net"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "Long-expired certificate validity period"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "*coreimpactagent.net"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has hostname",
+        "obj": "coreimpactagent.net"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate in",
+        "obj": "Sandbox environment"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "IP"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Domain"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "System"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Detect",
+        "obj": "Network"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "Registry"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "/index.php"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "SSL connection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Communicate",
+        "obj": "83.170.33.60"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Perform",
+        "obj": "Remote system discovery"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Gather",
+        "obj": "System configuration"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "HTTP POST requests"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "'c=Ud7atknq'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has value",
+        "obj": "'r=17117d'"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Data collection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "SSL connection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "IP address 83.170.33.60"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "domain coreimpactagent.net"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "digital certificate issued by Thawte"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "encrypted channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Construct",
+        "obj": "C2 connection"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Locate at",
+        "obj": "IP address 83.170.33.60"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "coreimpactagent.net"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Belong to",
+        "obj": "Threat Actor"
+      },
+      {
+        "sub": "Domain coreimpactagent.net",
+        "rel": "Has value",
+        "obj": "mimics legitimate security services"
+      },
+      {
+        "sub": "IP address 83.170.33.60",
+        "rel": "Has hostname",
+        "obj": "coreimpactagent.net"
+      },
+      {
+        "sub": "Digital certificate",
+        "rel": "Issued by",
+        "obj": "Thawte"
+      },
+      {
+        "sub": "Thawte",
+        "rel": "Vender",
+        "obj": "Certificate authority"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Command and control channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Write",
+        "obj": "HTTP POST requests"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Operate",
+        "obj": "Endpoint /index.php?c=Ud7atknq&r=17117d"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Has URL",
+        "obj": "/index.php?c=Ud7atknq&r=17117d"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Use",
+        "obj": "Encrypted channel"
+      },
+      {
+        "sub": "Malware",
+        "rel": "Modify",
+        "obj": "Structured format"
+      }
+    ]
+  }
+}

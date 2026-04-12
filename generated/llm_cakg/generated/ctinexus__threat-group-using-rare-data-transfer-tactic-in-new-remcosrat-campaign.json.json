@@ -1,0 +1,90 @@
+{
+  "sample_id": "ctinexus__threat-group-using-rare-data-transfer-tactic-in-new-remcosrat-campaign.json",
+  "sample_index": 78,
+  "source": "ctinexus",
+  "file_name": "threat-group-using-rare-data-transfer-tactic-in-new-remcosrat-campaign.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "RemcosRAT",
+        "type": "Entity"
+      },
+      {
+        "name": "UNC-0050",
+        "type": "Entity"
+      },
+      {
+        "name": "Ukraine",
+        "type": "Entity"
+      },
+      {
+        "name": "government entities",
+        "type": "Entity"
+      },
+      {
+        "name": "endpoint detection and response systems",
+        "type": "Entity"
+      },
+      {
+        "name": "politically motivated",
+        "type": "Entity"
+      },
+      {
+        "name": "state sponsorship",
+        "type": "Entity"
+      },
+      {
+        "name": "Windows systems",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "UNC-0050",
+        "rel": "uses",
+        "obj": "RemcosRAT"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "targets",
+        "obj": "Ukraine"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "targets",
+        "obj": "government entities"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "transfers data to",
+        "obj": "endpoint detection and response systems"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "is associated with",
+        "obj": "politically motivated"
+      },
+      {
+        "sub": "UNC-0050",
+        "rel": "poses a risk to",
+        "obj": "Windows systems"
+      }
+    ]
+  }
+}

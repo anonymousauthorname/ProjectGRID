@@ -1,0 +1,386 @@
+{
+  "sample_id": "casie__10188.json",
+  "sample_index": 25,
+  "source": "casie",
+  "file_name": "10188.json",
+  "method_name": "GRID_Ours (End2End)",
+  "method_file": "GRID_Ours.py",
+  "approach_instance_key": "GRID_two_steps_v2__764c1ab0c67006a2",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 12.144203727025104,
+    "attempt_count": 1,
+    "model": "local",
+    "backend_type": "shared_vllm",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Bitcoin Core developers",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "major vulnerability",
+        "type": "vulnerability",
+        "alias": [
+          "the software bug",
+          "the vulnerability in the Bitcoin Core codebase",
+          "DoS vulnerability"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "Bitcoin (BTC) network’s (client) codebase",
+        "type": "general-software",
+        "alias": [
+          "Bitcoin Core codebase",
+          "the Bitcoin Core client software",
+          "Bitcoin Core client",
+          "the client software"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "CVE-2018-17144",
+        "type": "indicator",
+        "alias": [],
+        "mother entity": [
+          "major vulnerability"
+        ]
+      },
+      {
+        "name": "denial-of-service (DoS) attack",
+        "type": "attack-pattern",
+        "alias": [
+          "DoS",
+          "DoS vulnerability"
+        ],
+        "mother entity": [
+          "major vulnerability"
+        ]
+      },
+      {
+        "name": "Jason Glassberg",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "ZDNet",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "cryptocurrency’s blockchain",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Bitcoin full-node operators",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "51% attack",
+        "type": "attack-pattern",
+        "alias": [
+          "51% Attacks",
+          "a 51% attack",
+          "51% attack"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "advisory notice",
+        "type": "course-of-action",
+        "alias": [],
+        "mother entity": [
+          "Bitcoin Core developers"
+        ]
+      },
+      {
+        "name": "version 0.16.3",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": [
+          "Bitcoin (BTC) network’s (client) codebase"
+        ]
+      },
+      {
+        "name": "Bitcoin Core clients (0.14.0 to 0.16.3)",
+        "type": "general-software",
+        "alias": [
+          "Previous versions",
+          "the DoS vulnerability"
+        ],
+        "mother entity": [
+          "Bitcoin (BTC) network’s (client) codebase"
+        ]
+      },
+      {
+        "name": "Bitcoin Knots",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "litecoin (LTC) network",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Emin Gün Sirer",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Bitcoin forks",
+        "type": "general-software",
+        "alias": [
+          "copycat currencies",
+          "bitcoin forks",
+          "forks"
+        ],
+        "mother entity": [
+          "Bitcoin (BTC) network’s (client) codebase"
+        ]
+      },
+      {
+        "name": "Crypto51",
+        "type": "identity",
+        "alias": [],
+        "mother entity": []
+      },
+      {
+        "name": "Bitcoin Private (BTCP) network",
+        "type": "general-software",
+        "alias": [],
+        "mother entity": [
+          "Bitcoin forks"
+        ]
+      },
+      {
+        "name": "attacker",
+        "type": "threat-actor-or-intrusion-set",
+        "alias": [
+          "bad actor",
+          "a bad actor"
+        ],
+        "mother entity": []
+      },
+      {
+        "name": "hashing (or computing) power",
+        "type": "abstract-concept",
+        "alias": [],
+        "mother entity": []
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Bitcoin Core developers",
+        "rel": "fixed",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "major vulnerability"
+      },
+      {
+        "sub": "major vulnerability",
+        "rel": "is tracked as",
+        "rel_type": [
+          "alias-of"
+        ],
+        "obj": "CVE-2018-17144"
+      },
+      {
+        "sub": "major vulnerability",
+        "rel": "classified as",
+        "rel_type": [
+          "categorized-as"
+        ],
+        "obj": "denial-of-service (DoS) attack"
+      },
+      {
+        "sub": "Jason Glassberg",
+        "rel": "said: [It] can take down the network",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Bitcoin (BTC) network’s (client) codebase"
+      },
+      {
+        "sub": "Jason Glassberg",
+        "rel": "said the vulnerability would have affected transactions",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Bitcoin full-node operators"
+      },
+      {
+        "sub": "Bitcoin Core client software",
+        "rel": "is used by",
+        "rel_type": [
+          "uses"
+        ],
+        "obj": "Bitcoin miners"
+      },
+      {
+        "sub": "Bitcoin Core client software",
+        "rel": "validate transactions on",
+        "rel_type": [
+          "malicious-investigates-track-detects"
+        ],
+        "obj": "cryptocurrency’s blockchain"
+      },
+      {
+        "sub": "the recent vulnerability",
+        "rel": "could have been used to intentionally crash",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "Bitcoin full-node operators"
+      },
+      {
+        "sub": "the software bug",
+        "rel": "could have been remotely exploited by",
+        "rel_type": [
+          "compromises"
+        ],
+        "obj": "attacker"
+      },
+      {
+        "sub": "attacker",
+        "rel": "launch",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "51% attack"
+      },
+      {
+        "sub": "51% attack",
+        "rel": "controls the majority of",
+        "rel_type": [
+          "owns"
+        ],
+        "obj": "hashing (or computing) power"
+      },
+      {
+        "sub": "Bitcoin Core developers",
+        "rel": "posted",
+        "rel_type": [
+          "authored-by"
+        ],
+        "obj": "advisory notice"
+      },
+      {
+        "sub": "Users of Bitcoin Core",
+        "rel": "instructed to upgrade to",
+        "rel_type": [
+          "provides"
+        ],
+        "obj": "version 0.16.3"
+      },
+      {
+        "sub": "Bitcoin Core clients (0.14.0 to 0.16.3)",
+        "rel": "contain",
+        "rel_type": [
+          "consists-of"
+        ],
+        "obj": "major vulnerability"
+      },
+      {
+        "sub": "Bitcoin Knots",
+        "rel": "was considered vulnerable",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "major vulnerability"
+      },
+      {
+        "sub": "Bitcoin Knots",
+        "rel": "its client software was patched",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "major vulnerability"
+      },
+      {
+        "sub": "major vulnerability",
+        "rel": "could have also affected",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "litecoin (LTC) network"
+      },
+      {
+        "sub": "litecoin (LTC) network",
+        "rel": "has received a patch",
+        "rel_type": [
+          "mitigates"
+        ],
+        "obj": "major vulnerability"
+      },
+      {
+        "sub": "Emin Gün Sirer",
+        "rel": "said: Copycat currencies are at risk",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "Bitcoin forks"
+      },
+      {
+        "sub": "Crypto51",
+        "rel": "estimated it would only cost to launch a 51% attack on",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "Bitcoin Private (BTCP) network"
+      },
+      {
+        "sub": "bad actor",
+        "rel": "could have initiated",
+        "rel_type": [
+          "leads-to"
+        ],
+        "obj": "51% attack"
+      },
+      {
+        "sub": "Bitcoin forks",
+        "rel": "are vulnerable to",
+        "rel_type": [
+          "targets"
+        ],
+        "obj": "major vulnerability"
+      },
+      {
+        "sub": "Bitcoin forks",
+        "rel": "may still not have received a patch",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "major vulnerability"
+      },
+      {
+        "sub": "Bitcoin forks",
+        "rel": "are not as secure as bitcoin network due to their smaller size",
+        "rel_type": [
+          "negation"
+        ],
+        "obj": "Bitcoin (BTC) network’s (client) codebase"
+      }
+    ]
+  }
+}

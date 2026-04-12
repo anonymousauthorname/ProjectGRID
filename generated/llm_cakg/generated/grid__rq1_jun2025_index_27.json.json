@@ -1,0 +1,167 @@
+{
+  "sample_id": "grid__rq1_jun2025_index_27.json",
+  "sample_index": 219,
+  "source": "grid",
+  "file_name": "rq1_jun2025_index_27.json",
+  "method_name": "LLM-CAKG",
+  "method_file": "Approach_llm_akg.py",
+  "approach_instance_key": "Approach_llm_akg__7b89fe12261070c5",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 5.400143496003975,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "Infostealer.Catchamas",
+        "type": "Entity"
+      },
+      {
+        "name": "PsExec",
+        "type": "Entity"
+      },
+      {
+        "name": "PowerShell",
+        "type": "Entity"
+      },
+      {
+        "name": "Mimikatz",
+        "type": "Entity"
+      },
+      {
+        "name": "WinSCP",
+        "type": "Entity"
+      },
+      {
+        "name": "LogMeIn",
+        "type": "Entity"
+      },
+      {
+        "name": "MapXtreme Geographic Information System (GIS)",
+        "type": "Entity"
+      },
+      {
+        "name": "Google Earth Server",
+        "type": "Entity"
+      },
+      {
+        "name": "Garmin imaging software",
+        "type": "Entity"
+      },
+      {
+        "name": "Thrip",
+        "type": "Entity"
+      },
+      {
+        "name": "satellite communications operator",
+        "type": "Entity"
+      },
+      {
+        "name": "geospatial imaging and mapping organization",
+        "type": "Entity"
+      },
+      {
+        "name": "telecoms operators",
+        "type": "Entity"
+      },
+      {
+        "name": "defense contractor",
+        "type": "Entity"
+      },
+      {
+        "name": "CVE-2021-44228",
+        "type": "Entity"
+      },
+      {
+        "name": "Log4Shell vulnerability",
+        "type": "Entity"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "Thrip",
+        "rel": "uses",
+        "obj": "PsExec"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "uses",
+        "obj": "PowerShell"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "uses",
+        "obj": "Mimikatz"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "uses",
+        "obj": "WinSCP"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "uses",
+        "obj": "LogMeIn"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "exploits",
+        "obj": "Infostealer.Catchamas"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targets",
+        "obj": "satellite communications operator"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targets",
+        "obj": "telecoms operators"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targets",
+        "obj": "geospatial imaging and mapping organization"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "targets",
+        "obj": "defense contractor"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "downloads",
+        "obj": "Infostealer.Catchamas"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "infects",
+        "obj": "computers running MapXtreme Geographic Information System (GIS) software"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "infects",
+        "obj": "computers running Google Earth Server"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "infects",
+        "obj": "computers running Garmin imaging software"
+      },
+      {
+        "sub": "Thrip",
+        "rel": "moves laterally",
+        "obj": "on the victim's network"
+      }
+    ]
+  }
+}

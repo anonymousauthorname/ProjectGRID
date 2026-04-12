@@ -1,0 +1,293 @@
+{
+  "sample_id": "malkg__201303CIRCLPlugX.txt",
+  "sample_index": 121,
+  "source": "malkg",
+  "file_name": "201303CIRCLPlugX.txt",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "CIRCL",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "PLUGX",
+        "type": "MALWARE"
+      },
+      {
+        "name": "PLUGX_VERSION_7.0",
+        "type": "VERSION"
+      },
+      {
+        "name": "UPDATE.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCVSMAP.EXE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCUTIL.DLL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "MCUTIL.DLL.PPT",
+        "type": "MALWARE"
+      },
+      {
+        "name": "UAC.TMP",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "HELP.YAHOO-UPGRADE.COM",
+        "type": "EVENT"
+      },
+      {
+        "name": "122.199.194.197",
+        "type": "LOCATION"
+      },
+      {
+        "name": "NEXG",
+        "type": "ORGANIZATION"
+      },
+      {
+        "name": "WINDOWS_7",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "USER_ACCOUNT_CONTROL",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "KEYLOGGER",
+        "type": "TOOL"
+      },
+      {
+        "name": "NETWORK_PORT_443",
+        "type": "LOCATION"
+      },
+      {
+        "name": "SERVICE_VIRUSMAP",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "RUN_KEY",
+        "type": "LOCATION"
+      },
+      {
+        "name": "PIPE_A$PID",
+        "type": "TOOL"
+      },
+      {
+        "name": "PIPE_RUN_AS_USER$PID",
+        "type": "TOOL"
+      },
+      {
+        "name": "XPLUGOPTION",
+        "type": "TOOL"
+      },
+      {
+        "name": "XPLUGDISK",
+        "type": "TOOL"
+      },
+      {
+        "name": "XPLUGSCREEN",
+        "type": "TOOL"
+      },
+      {
+        "name": "XPLUGPROCESS",
+        "type": "TOOL"
+      },
+      {
+        "name": "XPLUGSERVICE",
+        "type": "TOOL"
+      },
+      {
+        "name": "XPLUGSHELL",
+        "type": "TOOL"
+      },
+      {
+        "name": "XPLUGTELNET",
+        "type": "TOOL"
+      },
+      {
+        "name": "XPLUGREGEDIT",
+        "type": "TOOL"
+      },
+      {
+        "name": "XPLUGNETHOOD",
+        "type": "TOOL"
+      },
+      {
+        "name": "XPLUGPORTMAP",
+        "type": "TOOL"
+      },
+      {
+        "name": "XPLUGSQL",
+        "type": "TOOL"
+      },
+      {
+        "name": "XPLUGNETSTAT",
+        "type": "TOOL"
+      },
+      {
+        "name": "PLUGX_ATTACK_PATTERN",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "PLUGX_CAMPAIGN",
+        "type": "CAMPAIGN"
+      },
+      {
+        "name": "PLUGX_VULNERABILITY",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "PLUGX_THREAT_ACTOR",
+        "type": "THREAT_ACTOR"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "CIRCL",
+        "rel": "related_to",
+        "obj": "PLUGX"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "UPDATE.EXE"
+      },
+      {
+        "sub": "UPDATE.EXE",
+        "rel": "related_to",
+        "obj": "MCVSMAP.EXE"
+      },
+      {
+        "sub": "MCVSMAP.EXE",
+        "rel": "related_to",
+        "obj": "MCUTIL.DLL"
+      },
+      {
+        "sub": "MCUTIL.DLL",
+        "rel": "related_to",
+        "obj": "MCUTIL.DLL.PPT"
+      },
+      {
+        "sub": "MCUTIL.DLL.PPT",
+        "rel": "related_to",
+        "obj": "KEYLOGGER"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "UAC.TMP"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "HELP.YAHOO-UPGRADE.COM"
+      },
+      {
+        "sub": "HELP.YAHOO-UPGRADE.COM",
+        "rel": "related_to",
+        "obj": "122.199.194.197"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "SERVICE_VIRUSMAP"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "RUN_KEY"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "XPLUGSHELL"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "XPLUGREGEDIT"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "XPLUGPORTMAP"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "XPLUGSQL"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "XPLUGNETSTAT"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "XPLUGDISK"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "XPLUGSCREEN"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "XPLUGPROCESS"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "XPLUGSERVICE"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "XPLUGTELNET"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "PLUGX_ATTACK_PATTERN"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "PLUGX_CAMPAIGN"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "PLUGX_VULNERABILITY"
+      },
+      {
+        "sub": "PLUGX",
+        "rel": "related_to",
+        "obj": "PLUGX_THREAT_ACTOR"
+      }
+    ]
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "sample_id": "securenlp__NetTraveler_Makeover_10th_Birthday",
+  "sample_index": 175,
+  "source": "securenlp",
+  "file_name": "NetTraveler_Makeover_10th_Birthday",
+  "method_name": "GraphRAG",
+  "method_file": "Approach_graphrag.py",
+  "approach_instance_key": "Approach_graphrag__c76591eb9e8574b8",
+  "generation": {
+    "status": "success",
+    "wall_seconds": 0.00018839185017658524,
+    "attempt_count": 1,
+    "model": "Qwen3-4B-Instruct-2507",
+    "backend_type": "local_runtime",
+    "token": 32768,
+    "temperature": 0.7
+  },
+  "parser": {
+    "name": "method_internal_parser",
+    "success": true
+  },
+  "generated_graph": {
+    "entities": [
+      {
+        "name": "NETTRAVELER",
+        "type": "ATTACK_PATTERN"
+      },
+      {
+        "name": "UYGHURINFO.COM",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "SSDCRU.COM",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "SAMEDONE.COM",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "GOBACKTO.NET",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "WORKSWARE.NET",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "JOJOMIC.COM",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "ANGELOST.NET",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "HUSDEN.COM",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "CVE-2012-0158",
+        "type": "VULNERABILITY"
+      },
+      {
+        "name": "EXPLOIT.MSWORD.CVE-2012-0158.DB",
+        "type": "MALWARE"
+      },
+      {
+        "name": "TROJAN-DROPPER.WIN32.AGENT.LIFR",
+        "type": "MALWARE"
+      },
+      {
+        "name": "TROJAN-SPY.WIN32.TRAVNET.QFR",
+        "type": "MALWARE"
+      },
+      {
+        "name": "WINDOWSUPDATANEY.DLL",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "TROJAN.BAT.TINY.B",
+        "type": "MALWARE"
+      },
+      {
+        "name": "NETTRAVELER APT",
+        "type": "THREAT_ACTOR"
+      },
+      {
+        "name": "UYGUR ACTIVISTS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "TIBETAN ACTIVISTS",
+        "type": "IDENTITY"
+      },
+      {
+        "name": "MARCH 2014",
+        "type": "EVENT"
+      },
+      {
+        "name": "MICROSOFT OFFICE",
+        "type": "SOFTWARE"
+      },
+      {
+        "name": "SABIQ SOT XADIMI GULNAR ABLETNING QEYIN-QISTAQTA OLGENLIKI",
+        "type": "FILE_NAME"
+      },
+      {
+        "name": "ASHKARILANMAQTA.DOC",
+        "type": "FILE_NAME"
+      },
+      {
+        "name": "SINGLE FILE WEB PAGE CONTAINER",
+        "type": "TOOL"
+      },
+      {
+        "name": "MUTEX SD_2013 IS RUNNING!",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MUTEX NETTRAVELER IS RUNNING!",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MUTEX NETTRAVELER2012 IS RUNNING!",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MUTEX DOCHUNTER2012 IS RUNNING!",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MUTEX BOAT-12 IS RUNNING!",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MUTEX NT-2012 IS RUNNING!",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MUTEX SH-2011 IS RUNNING!",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MUTEX SHENGHAI IS RUNNING!",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MUTEX SD2013 IS RUNNING!",
+        "type": "INFRASTRUCTURE"
+      },
+      {
+        "name": "MUTEX HUNTER-2012 IS RUNNING!",
+        "type": "INFRASTRUCTURE"
+      }
+    ],
+    "relations": [
+      {
+        "sub": "NETTRAVELER APT",
+        "rel": "related_to",
+        "obj": "NETTRAVELER"
+      },
+      {
+        "sub": "NETTRAVELER APT",
+        "rel": "related_to",
+        "obj": "UYGUR ACTIVISTS"
+      },
+      {
+        "sub": "NETTRAVELER APT",
+        "rel": "related_to",
+        "obj": "TIBETAN ACTIVISTS"
+      },
+      {
+        "sub": "NETTRAVELER",
+        "rel": "related_to",
+        "obj": "CVE-2012-0158"
+      },
+      {
+        "sub": "CVE-2012-0158",
+        "rel": "related_to",
+        "obj": "MICROSOFT OFFICE"
+      },
+      {
+        "sub": "EXPLOIT.MSWORD.CVE-2012-0158.DB",
+        "rel": "related_to",
+        "obj": "ASHKARILANMAQTA.DOC"
+      },
+      {
+        "sub": "EXPLOIT.MSWORD.CVE-2012-0158.DB",
+        "rel": "related_to",
+        "obj": "NETTRAVELER"
+      },
+      {
+        "sub": "TROJAN-DROPPER.WIN32.AGENT.LIFR",
+        "rel": "related_to",
+        "obj": "NETTRAVELER"
+      },
+      {
+        "sub": "TROJAN-DROPPER.WIN32.AGENT.LIFR",
+        "rel": "related_to",
+        "obj": "TROJAN-SPY.WIN32.TRAVNET.QFR"
+      },
+      {
+        "sub": "TROJAN-SPY.WIN32.TRAVNET.QFR",
+        "rel": "related_to",
+        "obj": "WINDOWSUPDATANEY.DLL"
+      },
+      {
+        "sub": "TROJAN.BAT.TINY.B",
+        "rel": "related_to",
+        "obj": "NETTRAVELER"
+      },
+      {
+        "sub": "TROJAN.BAT.TINY.B",
+        "rel": "related_to",
+        "obj": "WINDOWSUPDATANEY.DLL"
+      },
+      {
+        "sub": "NETTRAVELER APT",
+        "rel": "related_to",
+        "obj": "MARCH 2014"
+      },
+      {
+        "sub": "NETTRAVELER",
+        "rel": "related_to",
+        "obj": "SINGLE FILE WEB PAGE CONTAINER"
+      },
+      {
+        "sub": "SINGLE FILE WEB PAGE CONTAINER",
+        "rel": "related_to",
+        "obj": "ASHKARILANMAQTA.DOC"
+      },
+      {
+        "sub": "NETTRAVELER APT",
+        "rel": "related_to",
+        "obj": "MUTEX SD_2013 IS RUNNING!"
+      },
+      {
+        "sub": "NETTRAVELER APT",
+        "rel": "related_to",
+        "obj": "MUTEX NETTRAVELER IS RUNNING!"
+      },
+      {
+        "sub": "NETTRAVELER APT",
+        "rel": "related_to",
+        "obj": "MUTEX NETTRAVELER2012 IS RUNNING!"
+      },
+      {
+        "sub": "NETTRAVELER APT",
+        "rel": "related_to",
+        "obj": "MUTEX DOCHUNTER2012 IS RUNNING!"
+      },
+      {
+        "sub": "NETTRAVELER APT",
+        "rel": "related_to",
+        "obj": "MUTEX BOAT-12 IS RUNNING!"
+      },
+      {
+        "sub": "NETTRAVELER APT",
+        "rel": "related_to",
+        "obj": "MUTEX NT-2012 IS RUNNING!"
+      },
+      {
+        "sub": "NETTRAVELER APT",
+        "rel": "related_to",
+        "obj": "MUTEX SH-2011 IS RUNNING!"
+      },
+      {
+        "sub": "NETTRAVELER APT",
+        "rel": "related_to",
+        "obj": "MUTEX SHENGHAI IS RUNNING!"
+      },
+      {
+        "sub": "NETTRAVELER APT",
+        "rel": "related_to",
+        "obj": "MUTEX SD2013 IS RUNNING!"
+      },
+      {
+        "sub": "NETTRAVELER APT",
+        "rel": "related_to",
+        "obj": "MUTEX HUNTER-2012 IS RUNNING!"
+      },
+      {
+        "sub": "WINDOWSUPDATANEY.DLL",
+        "rel": "related_to",
+        "obj": "UYGHURINFO.COM"
+      },
+      {
+        "sub": "WINDOWSUPDATANEY.DLL",
+        "rel": "related_to",
+        "obj": "SSDCRU.COM"
+      },
+      {
+        "sub": "WINDOWSUPDATANEY.DLL",
+        "rel": "related_to",
+        "obj": "SAMEDONE.COM"
+      },
+      {
+        "sub": "WINDOWSUPDATANEY.DLL",
+        "rel": "related_to",
+        "obj": "GOBACKTO.NET"
+      },
+      {
+        "sub": "WINDOWSUPDATANEY.DLL",
+        "rel": "related_to",
+        "obj": "WORKSWARE.NET"
+      },
+      {
+        "sub": "WINDOWSUPDATANEY.DLL",
+        "rel": "related_to",
+        "obj": "JOJOMIC.COM"
+      },
+      {
+        "sub": "WINDOWSUPDATANEY.DLL",
+        "rel": "related_to",
+        "obj": "ANGELOST.NET"
+      },
+      {
+        "sub": "WINDOWSUPDATANEY.DLL",
+        "rel": "related_to",
+        "obj": "HUSDEN.COM"
+      }
+    ]
+  }
+}
