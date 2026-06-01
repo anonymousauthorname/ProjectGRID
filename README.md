@@ -50,6 +50,51 @@ Main findings:
 - `benchmark/`: the canonical full-249 runtime input, source-level split views, and schemas
 - `result/`: paper-aligned artifacts for RQ1, RQ2, and RQ3
 
+## Docker Artifact Entrypoint
+
+The repository includes a Docker entrypoint for reviewer smoke tests and portable
+artifact checks. It does not require local Dropbox paths, vLLM services, or a
+VERL cluster. The default command runs the complete minimal workflow:
+
+```bash
+docker build -t grid-artifact:latest .
+docker run --rm -v "$PWD/docker_output:/workspace/grid/docker_output" grid-artifact:latest smoke
+```
+
+The `smoke` command performs the five artifact operations requested by the
+reviewer-facing reproducibility response:
+
+1. resolve runtime environment variables such as input file, LLM endpoint, LLM key, and LLM model
+2. generate article, training, and evaluation Parquet files
+3. train and export a portable deterministic KG lookup model
+4. generate KG predictions
+5. evaluate precision, recall, and F1 against gold KG edges
+
+The same functionality can be called step by step:
+
+```bash
+python -m src.grid.docker_cli env-check
+python -m src.grid.docker_cli make-parquet
+python -m src.grid.docker_cli train-export
+python -m src.grid.docker_cli generate-kg --backend model
+python -m src.grid.docker_cli evaluate
+```
+
+Important environment variables:
+
+- `GRID_INPUT_FILE`: input article file (`.txt`, `.jsonl`, `.json`, `.csv`, or `.parquet`)
+- `GRID_CONTENT_COL` and `GRID_ID_COL`: input schema overrides
+- `GRID_OUTPUT_DIR`: output directory
+- `GRID_TRAIN_PARQUET`, `GRID_MODEL_DIR`, `GRID_PREDICTIONS_FILE`, `GRID_EVAL_FILE`: explicit artifact paths
+- `GRID_LLM_ENDPOINT` or `GRID_LLM_BASE_URL`, `GRID_LLM_KEY` or `GRID_LLM_API_KEY`, and `GRID_LLM_MODEL`: OpenAI-compatible LLM settings
+
+The default `train-export` backend is intentionally small: it learns an
+article-id/content-hash to gold-KG mapping from the generated training Parquet so
+that the artifact can run in any environment. When GPU/VERL infrastructure is
+available, `GRID_TRAIN_BACKEND=external` plus `GRID_TRAIN_COMMAND` can route the
+same Docker entrypoint to an external full-training command. See
+`docker/README.md` for examples.
+
 ## Evaluation Artifacts
 
 - `generated/registry.csv` indexes the public baseline artifacts included in `generated/<method>/`.
