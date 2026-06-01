@@ -33,6 +33,9 @@ It uses `docker/sample_articles.jsonl` and writes results to `docker_output/`.
 - `GRID_OUTPUT_DIR`: output directory inside the container
 - `GRID_TRAIN_PARQUET`: training parquet path
 - `GRID_MODEL_DIR`: exported portable model directory
+- `GRID_RL_STEPS`: local RL smoke steps, default `1`
+- `GRID_RL_LEARNING_RATE`: local RL smoke learning rate, default `0.2`
+- `GRID_RL_SEED`: local RL smoke random seed, default `7`
 - `GRID_PREDICTIONS_FILE`: generated KG JSONL path
 - `GRID_EVAL_FILE`: evaluation JSON path
 - `GRID_LLM_ENDPOINT` or `GRID_LLM_BASE_URL`: OpenAI-compatible endpoint
@@ -61,9 +64,12 @@ docker run --rm \
   grid-artifact:latest generate-kg
 ```
 
-The default `train-export` backend is a deterministic portable model that learns
-article-id/content-hash to gold-KG mappings from the generated training Parquet.
-It is intentionally small so the artifact can run anywhere. Full paper-scale
-post-training remains a GPU/VERL workflow; use `GRID_TRAIN_BACKEND=external`
-with `GRID_TRAIN_COMMAND` to route the Docker entrypoint to an external training
-command when that infrastructure is available.
+The default `train-export` backend is a one-step local RL smoke train. It reads
+the generated training Parquet, builds gold-edge versus mutated-edge choices,
+rewards selecting the gold edge, performs one categorical policy-gradient update,
+and exports `model.json`, `training_summary.json`, and `rl_trace.json`. It is
+intentionally small so the artifact can run anywhere while still exercising a
+real training-step and export path. Full paper-scale post-training remains a
+GPU/VERL workflow; use `GRID_TRAIN_BACKEND=external` with `GRID_TRAIN_COMMAND`
+to route the Docker entrypoint to an external training command when that
+infrastructure is available.

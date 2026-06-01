@@ -66,7 +66,7 @@ reviewer-facing reproducibility response:
 
 1. resolve runtime environment variables such as input file, LLM endpoint, LLM key, and LLM model
 2. generate article, training, and evaluation Parquet files
-3. train and export a portable deterministic KG lookup model
+3. run a one-step local RL smoke train and export a portable model
 4. generate KG predictions
 5. evaluate precision, recall, and F1 against gold KG edges
 
@@ -88,12 +88,15 @@ Important environment variables:
 - `GRID_TRAIN_PARQUET`, `GRID_MODEL_DIR`, `GRID_PREDICTIONS_FILE`, `GRID_EVAL_FILE`: explicit artifact paths
 - `GRID_LLM_ENDPOINT` or `GRID_LLM_BASE_URL`, `GRID_LLM_KEY` or `GRID_LLM_API_KEY`, and `GRID_LLM_MODEL`: OpenAI-compatible LLM settings
 
-The default `train-export` backend is intentionally small: it learns an
-article-id/content-hash to gold-KG mapping from the generated training Parquet so
-that the artifact can run in any environment. When GPU/VERL infrastructure is
-available, `GRID_TRAIN_BACKEND=external` plus `GRID_TRAIN_COMMAND` can route the
-same Docker entrypoint to an external full-training command. See
-`docker/README.md` for examples.
+The default `train-export` backend is intentionally small but performs a real
+one-step local RL smoke update: from the generated training Parquet, it builds
+gold-edge versus mutated-edge choices, rewards choosing the gold edge, updates a
+categorical policy once, and exports `model.json`, `training_summary.json`, and
+`rl_trace.json`. This verifies that the training launch and export path is
+executable in any environment. Full paper-scale VERL/RL training remains a GPU
+workflow; when that infrastructure is available, `GRID_TRAIN_BACKEND=external`
+plus `GRID_TRAIN_COMMAND` can route the same Docker entrypoint to an external
+full-training command. See `docker/README.md` for examples.
 
 ## Evaluation Artifacts
 

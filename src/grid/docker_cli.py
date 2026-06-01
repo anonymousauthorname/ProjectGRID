@@ -7,7 +7,7 @@ Keywords: GRID, Docker, parquet, training smoke, KG extraction, evaluation
 Workflow:
 1. Read CTI articles from TXT, JSONL, JSON, CSV, or Parquet.
 2. Materialize article, training, and evaluation Parquet files.
-3. Train and export a small deterministic KG lookup model for smoke tests.
+3. Run a one-step local RL smoke train and export a small KG model.
 4. Generate knowledge graphs either from the exported smoke model or an
    OpenAI-compatible LLM endpoint configured through environment variables.
 5. Evaluate predicted KG edges against gold KG edges with exact normalized
@@ -15,7 +15,7 @@ Workflow:
 
 This module is intentionally independent of local Dropbox paths, vLLM clusters,
 and VERL. It provides an executable artifact path for reviewers; paper-scale
-post-training can still be run outside this portable smoke backend.
+VERL/RL post-training can still be run outside this portable smoke backend.
 """
 
 from __future__ import annotations
@@ -23,7 +23,9 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
 import os
+import random
 import re
 import subprocess
 import sys
@@ -406,8 +408,142 @@ def _run_external_command(command: str, cwd: Path) -> int:
     return int(proc.returncode)
 
 
+def _load_train_lookup(df: pd.DataFrame) -> Tuple[Dict[str, Dict[str, Any]], Dict[str, Dict[str, Any]]]:
+    id_to_kg: Dict[str, Dict[str, Any]] = {}
+    hash_to_kg: Dict[str, Dict[str, Any]] = {}
+    for _, row in df.drop_duplicates(subset=["article_id", "content_sha1"]).iterrows():
+        kg = _compact_kg(_json_or_empty(row["gold_kg_json"]))
+        id_to_kg[str(row["article_id"])] = kg
+        hash_to_kg[str(row["content_sha1"])] = kg
+    return id_to_kg, hash_to_kg
+
+
+def _triple_key_text(edge: Dict[str, Any]) -> str:
+    return " | ".join(_triple_key(edge))
+
+
+def _mutated_negative_edge(edge: Dict[str, Any], gold_edges: Sequence[Dict[str, Any]], index: int) -> Dict[str, Any]:
+    negative = dict(edge)
+    if len(gold_edges) > 1:
+        other = gold_edges[(index + 1) % len(gold_edges)]
+        other_obj = _edge_value(other, OBJ_KEYS)
+        if other_obj and other_obj != _edge_value(edge, OBJ_KEYS):
+            negative["obj"] = other_obj
+            return negative
+    rel = _edge_value(edge, REL_KEYS) or "related_to"
+    negative["rel"] = f"not_{rel}"
+    return negative
+
+
+def _softmax(scores: Sequence[float]) -> List[float]:
+    if not scores:
+        return []
+    max_score = max(scores)
+    exps = [math.exp(score - max_score) for score in scores]
+    total = sum(exps) or 1.0
+    return [value / total for value in exps]
+
+
+def _sample_index(probs: Sequence[float], rng: random.Random) -> int:
+    threshold = rng.random()
+    running = 0.0
+    for index, prob in enumerate(probs):
+        running += prob
+        if threshold <= running:
+            return index
+    return max(0, len(probs) - 1)
+
+
+def _run_local_rl_smoke(
+    id_to_kg: Dict[str, Dict[str, Any]],
+    *,
+    steps: int,
+    learning_rate: float,
+    seed: int,
+) -> Dict[str, Any]:
+    rng = random.Random(seed)
+    train_cases: List[Dict[str, Any]] = []
+    for article_id, kg in id_to_kg.items():
+        gold_edges = _iter_edges(kg)
+        for edge_index, gold_edge in enumerate(gold_edges):
+            negative_edge = _mutated_negative_edge(gold_edge, gold_edges, edge_index)
+            train_cases.append(
+                {
+                    "article_id": article_id,
+                    "gold_edge": gold_edge,
+                    "negative_edge": negative_edge,
+                    "candidate_edges": [gold_edge, negative_edge],
+                    "gold_index": 0,
+                }
+            )
+
+    weights: Dict[str, float] = {}
+    trace: List[Dict[str, Any]] = []
+    steps = max(0, int(steps))
+    learning_rate = float(learning_rate)
+    for step in range(steps):
+        if not train_cases:
+            trace.append(
+                {
+                    "step": step + 1,
+                    "cases": 0,
+                    "mean_reward": 0.0,
+                    "mean_gold_probability_before_update": 0.0,
+                    "mean_policy_loss": 0.0,
+                }
+            )
+            continue
+
+        reward_sum = 0.0
+        gold_prob_sum = 0.0
+        loss_sum = 0.0
+        rng.shuffle(train_cases)
+        for case in train_cases:
+            candidate_edges = case["candidate_edges"]
+            keys = [_triple_key_text(edge) for edge in candidate_edges]
+            scores = [weights.get(key, 0.0) for key in keys]
+            probs = _softmax(scores)
+            selected_index = _sample_index(probs, rng)
+            reward = 1.0 if selected_index == case["gold_index"] else 0.0
+            expected_reward = probs[case["gold_index"]]
+            advantage = reward - expected_reward
+            for i, key in enumerate(keys):
+                indicator = 1.0 if i == selected_index else 0.0
+                weights[key] = weights.get(key, 0.0) + learning_rate * advantage * (indicator - probs[i])
+            reward_sum += reward
+            gold_prob_sum += expected_reward
+            loss_sum += -math.log(max(probs[selected_index], 1e-12)) * reward
+
+        case_count = len(train_cases)
+        trace.append(
+            {
+                "step": step + 1,
+                "cases": case_count,
+                "mean_reward": reward_sum / case_count,
+                "mean_gold_probability_before_update": gold_prob_sum / case_count,
+                "mean_policy_loss": loss_sum / case_count,
+            }
+        )
+
+    return {
+        "algorithm": "one-step categorical policy-gradient smoke",
+        "description": (
+            "A portable local RL smoke test: for each gold KG edge, the policy chooses "
+            "between the gold edge and a mutated distractor edge, receives reward 1 for "
+            "choosing the gold edge and 0 otherwise, and updates policy weights once per step."
+        ),
+        "steps_requested": steps,
+        "steps_completed": len(trace),
+        "learning_rate": learning_rate,
+        "seed": seed,
+        "training_case_count": len(train_cases),
+        "trace": trace,
+        "policy_weights": weights,
+    }
+
+
 def cmd_train_export(args: argparse.Namespace) -> int:
-    backend = str(args.backend or "portable").lower()
+    backend = str(args.backend or "local-rl").lower()
     model_dir = _path_from_output_dir(args, args.model_dir, "model_export")
     model_dir.mkdir(parents=True, exist_ok=True)
 
@@ -426,31 +562,41 @@ def cmd_train_export(args: argparse.Namespace) -> int:
     if missing:
         raise ValueError(f"Training parquet is missing columns: {sorted(missing)}")
 
-    id_to_kg: Dict[str, Dict[str, Any]] = {}
-    hash_to_kg: Dict[str, Dict[str, Any]] = {}
-    for _, row in df.drop_duplicates(subset=["article_id", "content_sha1"]).iterrows():
-        kg = _compact_kg(_json_or_empty(row["gold_kg_json"]))
-        id_to_kg[str(row["article_id"])] = kg
-        hash_to_kg[str(row["content_sha1"])] = kg
+    id_to_kg, hash_to_kg = _load_train_lookup(df)
+    rl_report: Dict[str, Any] = {}
+    if backend == "local-rl":
+        rl_report = _run_local_rl_smoke(
+            id_to_kg,
+            steps=int(args.rl_steps),
+            learning_rate=float(args.rl_learning_rate),
+            seed=int(args.rl_seed),
+        )
 
     model = {
-        "model_type": "grid-portable-kg-lookup-v1",
+        "model_type": "grid-local-rl-smoke-v1" if backend == "local-rl" else "grid-portable-kg-lookup-v1",
         "created_at": _now_iso(),
-        "backend": "portable",
+        "backend": backend,
         "train_parquet": str(train_parquet),
         "training_rows": int(len(df)),
         "article_count": len(id_to_kg),
         "base_model_reference": args.base_model or os.environ.get("GRID_BASE_MODEL", "portable-smoke"),
         "id_to_kg": id_to_kg,
         "content_sha1_to_kg": hash_to_kg,
+        "rl_training": rl_report,
     }
     _dump_json(model_dir / "model.json", model)
+    if rl_report:
+        _dump_json(model_dir / "rl_trace.json", rl_report)
     summary = {
         "model_dir": str(model_dir),
         "model_type": model["model_type"],
+        "backend": backend,
         "training_rows": model["training_rows"],
         "article_count": model["article_count"],
-        "exported_files": ["model.json", "training_summary.json"],
+        "rl_steps_completed": rl_report.get("steps_completed", 0),
+        "rl_training_case_count": rl_report.get("training_case_count", 0),
+        "rl_last_mean_reward": (rl_report.get("trace") or [{}])[-1].get("mean_reward", 0.0) if rl_report else 0.0,
+        "exported_files": ["model.json", "training_summary.json"] + (["rl_trace.json"] if rl_report else []),
     }
     _dump_json(model_dir / "training_summary.json", summary)
     print(json.dumps(summary, ensure_ascii=False, indent=2))
@@ -613,12 +759,15 @@ def cmd_smoke(args: argparse.Namespace) -> int:
         eval_parquet="",
     )
     train_args = argparse.Namespace(
-        backend="portable",
+        backend="local-rl",
         output_dir=str(output_dir),
         train_parquet=str(train_parquet),
         model_dir=str(model_dir),
         base_model="portable-smoke",
         train_command="",
+        rl_steps=1,
+        rl_learning_rate=0.2,
+        rl_seed=7,
     )
     gen_args = argparse.Namespace(
         input_file=str(input_file),
@@ -672,12 +821,15 @@ def build_parser() -> argparse.ArgumentParser:
     p_make.add_argument("--train-parquet", default=_env_any(("GRID_TRAIN_PARQUET",), ""))
     p_make.add_argument("--eval-parquet", default=_env_any(("GRID_EVAL_PARQUET",), ""))
 
-    p_train = subparsers.add_parser("train-export", help="Train and export a portable model.")
+    p_train = subparsers.add_parser("train-export", help="Run a portable one-step RL smoke train and export a model.")
     p_train.add_argument("--train-parquet", default=_env_any(("GRID_TRAIN_PARQUET",), str(DEFAULT_OUTPUT_DIR / "train_task_bank.parquet")))
     p_train.add_argument("--model-dir", default=_env_any(("GRID_MODEL_DIR",), str(DEFAULT_OUTPUT_DIR / "model_export")))
-    p_train.add_argument("--backend", default=_env_any(("GRID_TRAIN_BACKEND",), "portable"), choices=["portable", "external"])
+    p_train.add_argument("--backend", default=_env_any(("GRID_TRAIN_BACKEND",), "local-rl"), choices=["local-rl", "portable", "external"])
     p_train.add_argument("--base-model", default=_env_any(("GRID_BASE_MODEL",), "portable-smoke"))
     p_train.add_argument("--train-command", default=_env_any(("GRID_TRAIN_COMMAND",), ""))
+    p_train.add_argument("--rl-steps", type=int, default=int(_env_any(("GRID_RL_STEPS",), "1")))
+    p_train.add_argument("--rl-learning-rate", type=float, default=float(_env_any(("GRID_RL_LEARNING_RATE",), "0.2")))
+    p_train.add_argument("--rl-seed", type=int, default=int(_env_any(("GRID_RL_SEED",), "7")))
 
     p_gen = subparsers.add_parser("generate-kg", help="Generate KG predictions.")
     add_input_flags(p_gen)
