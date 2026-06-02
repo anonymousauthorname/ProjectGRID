@@ -13,9 +13,9 @@ Workflow:
 5. Evaluate predicted KG edges against gold KG edges with exact normalized
    triple matching.
 
-This module is intentionally independent of local Dropbox paths. The
-reviewer-facing Docker default delegates to docker/verl_sft_rl_export.sh, which
-starts VERL, runs one SFT step, exports, runs one RL step, and exports again.
+The reviewer-facing Docker default delegates to docker/verl_sft_rl_export.sh,
+which starts VERL, runs one SFT step, exports, runs one RL step, and exports
+again.
 """
 
 from __future__ import annotations
@@ -318,16 +318,21 @@ def _llm_extract_kg(content: str, args: argparse.Namespace) -> Dict[str, Any]:
 
 def cmd_env_check(args: argparse.Namespace) -> int:
     model, api_key, base_url = _configure_openai_env(args)
+    llm_inputs = {
+        "endpoint": base_url,
+        "endpoint_present": bool(base_url),
+        "key_present": bool(api_key),
+        "model": model,
+        "model_present": bool(model),
+        "ready": bool(model and api_key),
+    }
     payload = {
         "repo_root": str(REPO_ROOT),
         "sample_input_exists": DEFAULT_SAMPLE_INPUT.exists(),
         "output_dir": str(Path(args.output_dir).expanduser()),
         "python": sys.version.split()[0],
         "pandas": pd.__version__,
-        "openai_model": model,
-        "openai_base_url": base_url,
-        "openai_key_present": bool(api_key),
-        "llm_ready": bool(model and api_key),
+        "llm_inputs": llm_inputs,
     }
     print(json.dumps(payload, ensure_ascii=False, indent=2))
     return 0
@@ -419,6 +424,8 @@ def cmd_verl_sft_rl_export(args: argparse.Namespace) -> int:
         env["GRID_VERL_BASE_MODEL"] = args.base_model
     if getattr(args, "gpus", None):
         env["GRID_VERL_GPUS"] = str(args.gpus)
+    if getattr(args, "source_parquet", ""):
+        env["GRID_VERL_SOURCE_PARQUET"] = args.source_parquet
     proc = subprocess.run(["bash", str(script)], cwd=str(REPO_ROOT), env=env, check=False)
     return int(proc.returncode)
 
@@ -823,7 +830,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--llm-base-url", default=_env_any(("GRID_LLM_BASE_URL", "GRID_LLM_ENDPOINT", "OPENAI_BASE_URL"), ""))
 
     subparsers = parser.add_subparsers(dest="command", required=True)
-    subparsers.add_parser("env-check", help="Print resolved Docker/runtime environment.")
+    subparsers.add_parser("env-check", help="Print resolved Docker/runtime environment and LLM input status.")
 
     def add_input_flags(sub: argparse.ArgumentParser) -> None:
         sub.add_argument("--input-file", default=_env_any(("GRID_INPUT_FILE",), str(DEFAULT_SAMPLE_INPUT)))
@@ -839,6 +846,7 @@ def build_parser() -> argparse.ArgumentParser:
     p_verl = subparsers.add_parser("verl-sft-rl-export", help="Run VERL SFT -> export -> RL -> export.")
     p_verl.add_argument("--base-model", default=_env_any(("GRID_VERL_BASE_MODEL",), ""))
     p_verl.add_argument("--gpus", type=int, default=int(_env_any(("GRID_VERL_GPUS",), "2")))
+    p_verl.add_argument("--source-parquet", default=_env_any(("GRID_VERL_SOURCE_PARQUET",), ""))
 
     p_train = subparsers.add_parser("train-export", help="Run a portable one-step RL smoke train and export a model.")
     p_train.add_argument("--train-parquet", default=_env_any(("GRID_TRAIN_PARQUET",), str(DEFAULT_OUTPUT_DIR / "train_task_bank.parquet")))
