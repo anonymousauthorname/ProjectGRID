@@ -123,6 +123,8 @@ Each directory contains `ref-to-hf-link.txt` with the corresponding Hugging Face
 
 ## Figures
 
+Reviewer-support figures: [rebuttal-support-fig/](rebuttal-support-fig/)
+
 Architecture overview:
 
 ![GRID Overview](result/assets/overview.png)
