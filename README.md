@@ -53,31 +53,51 @@ Main findings:
 ## Docker Artifact Entrypoint
 
 The repository includes a Docker entrypoint for reviewer smoke tests and portable
-artifact checks. It does not require local Dropbox paths, vLLM services, or a
-VERL cluster. The default command runs the complete minimal workflow:
+artifact checks. It does not require local Dropbox paths or API keys. The default
+Docker command runs a real GPU VERL chain: one SFT step, SFT checkpoint export,
+one RL/GRPO step with the local task-bank reward, and RL checkpoint export.
+
+On a 2-GPU machine, build and run:
 
 ```bash
 docker build -t grid-artifact:latest .
-docker run --rm -v "$PWD/docker_output:/workspace/grid/docker_output" grid-artifact:latest smoke
+docker run --rm --gpus '"device=0,1"' --ipc=host --shm-size=16g \
+  -e CUDA_VISIBLE_DEVICES=0,1 \
+  -e GRID_VERL_GPUS=2 \
+  -v "$PWD/docker_output:/workspace/grid/docker_output" \
+  grid-artifact:latest
 ```
 
-The `smoke` command performs the five artifact operations requested by the
-reviewer-facing reproducibility response:
+If the base model is already available locally, mount it and point the container
+to that path:
 
-1. resolve runtime environment variables such as input file, LLM endpoint, LLM key, and LLM model
-2. generate article, training, and evaluation Parquet files
-3. run a one-step local RL smoke train and export a portable model
-4. generate KG predictions
-5. evaluate precision, recall, and F1 against gold KG edges
+```bash
+docker run --rm --gpus '"device=0,1"' --ipc=host --shm-size=16g \
+  -e CUDA_VISIBLE_DEVICES=0,1 \
+  -e GRID_VERL_GPUS=2 \
+  -e GRID_VERL_BASE_MODEL=/models/Qwen3-4B-Instruct-2507 \
+  -v "$HOME/llmmodel:/models:ro" \
+  -v "$PWD/docker_output:/workspace/grid/docker_output" \
+  grid-artifact:latest
+```
+
+The `verl-sft-rl-export` command performs the four reviewer-facing training
+operations:
+
+1. prepare compact task-bank Parquet files from the packaged GRID training Parquet
+2. launch VERL SFT for one step
+3. export the SFT checkpoint
+4. launch VERL RL/GRPO for one step with a local scripted task-bank reward and export the RL checkpoint
 
 The same functionality can be called step by step:
 
 ```bash
-python -m src.grid.docker_cli env-check
-python -m src.grid.docker_cli make-parquet
-python -m src.grid.docker_cli train-export
-python -m src.grid.docker_cli generate-kg --backend model
-python -m src.grid.docker_cli evaluate
+python3 -m src.grid.docker_cli env-check
+python3 -m src.grid.docker_cli verl-sft-rl-export
+python3 -m src.grid.docker_cli make-parquet
+python3 -m src.grid.docker_cli train-export
+python3 -m src.grid.docker_cli generate-kg --backend model
+python3 -m src.grid.docker_cli evaluate
 ```
 
 Important environment variables:
@@ -85,18 +105,18 @@ Important environment variables:
 - `GRID_INPUT_FILE`: input article file (`.txt`, `.jsonl`, `.json`, `.csv`, or `.parquet`)
 - `GRID_CONTENT_COL` and `GRID_ID_COL`: input schema overrides
 - `GRID_OUTPUT_DIR`: output directory
+- `GRID_VERL_BASE_MODEL`: Hugging Face model id or mounted local model path for VERL SFT/RL
+- `GRID_VERL_GPUS`: number of visible GPUs used by the VERL smoke path, default `2`
+- `GRID_VERL_SOURCE_PARQUET`: task-bank training Parquet used to create the compact VERL smoke files
 - `GRID_TRAIN_PARQUET`, `GRID_MODEL_DIR`, `GRID_PREDICTIONS_FILE`, `GRID_EVAL_FILE`: explicit artifact paths
 - `GRID_LLM_ENDPOINT` or `GRID_LLM_BASE_URL`, `GRID_LLM_KEY` or `GRID_LLM_API_KEY`, and `GRID_LLM_MODEL`: OpenAI-compatible LLM settings
 
-The default `train-export` backend is intentionally small but performs a real
-one-step local RL smoke update: from the generated training Parquet, it builds
-gold-edge versus mutated-edge choices, rewards choosing the gold edge, updates a
-categorical policy once, and exports `model.json`, `training_summary.json`, and
-`rl_trace.json`. This verifies that the training launch and export path is
-executable in any environment. Full paper-scale VERL/RL training remains a GPU
-workflow; when that infrastructure is available, `GRID_TRAIN_BACKEND=external`
-plus `GRID_TRAIN_COMMAND` can route the same Docker entrypoint to an external
-full-training command. See `docker/README.md` for examples.
+For non-GPU environments, the older `smoke` command remains available as a
+CPU-only artifact check. It creates small Parquet files, runs a one-step local
+categorical RL update, generates KGs from the exported lookup model, and computes
+exact-match precision/recall/F1. This auxiliary path is not the default Docker
+training command; the default reviewer-facing command is the VERL SFT/RL export
+chain above. See `docker/README.md` for examples.
 
 ## Evaluation Artifacts
 

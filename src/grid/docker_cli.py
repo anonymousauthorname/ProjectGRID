@@ -1,21 +1,21 @@
 # -*- coding: utf-8 -*-
 """
 Filename: docker_cli.py
-Description: Portable Docker entrypoint for the packaged GRID artifact.
-Keywords: GRID, Docker, parquet, training smoke, KG extraction, evaluation
+Description: Docker entrypoint for the packaged GRID artifact.
+Keywords: GRID, Docker, parquet, VERL, training smoke, KG extraction, evaluation
 
 Workflow:
 1. Read CTI articles from TXT, JSONL, JSON, CSV, or Parquet.
 2. Materialize article, training, and evaluation Parquet files.
-3. Run a one-step local RL smoke train and export a small KG model.
+3. Run a one-step local RL smoke train or the reviewer-facing VERL SFT/RL path.
 4. Generate knowledge graphs either from the exported smoke model or an
    OpenAI-compatible LLM endpoint configured through environment variables.
 5. Evaluate predicted KG edges against gold KG edges with exact normalized
    triple matching.
 
-This module is intentionally independent of local Dropbox paths, vLLM clusters,
-and VERL. It provides an executable artifact path for reviewers; paper-scale
-VERL/RL post-training can still be run outside this portable smoke backend.
+This module is intentionally independent of local Dropbox paths. The
+reviewer-facing Docker default delegates to docker/verl_sft_rl_export.sh, which
+starts VERL, runs one SFT step, exports, runs one RL step, and exports again.
 """
 
 from __future__ import annotations
@@ -405,6 +405,21 @@ def _run_external_command(command: str, cwd: Path) -> int:
     if not argv:
         raise ValueError("Empty command")
     proc = subprocess.run(argv, cwd=str(cwd), check=False)
+    return int(proc.returncode)
+
+
+def cmd_verl_sft_rl_export(args: argparse.Namespace) -> int:
+    script = REPO_ROOT / "docker" / "verl_sft_rl_export.sh"
+    if not script.exists():
+        raise FileNotFoundError(f"VERL Docker script not found: {script}")
+    env = os.environ.copy()
+    env.setdefault("GRID_OUTPUT_DIR", str(Path(args.output_dir).expanduser().resolve()))
+    env.setdefault("GRID_REPO_ROOT", str(REPO_ROOT))
+    if getattr(args, "base_model", ""):
+        env["GRID_VERL_BASE_MODEL"] = args.base_model
+    if getattr(args, "gpus", None):
+        env["GRID_VERL_GPUS"] = str(args.gpus)
+    proc = subprocess.run(["bash", str(script)], cwd=str(REPO_ROOT), env=env, check=False)
     return int(proc.returncode)
 
 
@@ -821,6 +836,10 @@ def build_parser() -> argparse.ArgumentParser:
     p_make.add_argument("--train-parquet", default=_env_any(("GRID_TRAIN_PARQUET",), ""))
     p_make.add_argument("--eval-parquet", default=_env_any(("GRID_EVAL_PARQUET",), ""))
 
+    p_verl = subparsers.add_parser("verl-sft-rl-export", help="Run VERL SFT -> export -> RL -> export.")
+    p_verl.add_argument("--base-model", default=_env_any(("GRID_VERL_BASE_MODEL",), ""))
+    p_verl.add_argument("--gpus", type=int, default=int(_env_any(("GRID_VERL_GPUS",), "2")))
+
     p_train = subparsers.add_parser("train-export", help="Run a portable one-step RL smoke train and export a model.")
     p_train.add_argument("--train-parquet", default=_env_any(("GRID_TRAIN_PARQUET",), str(DEFAULT_OUTPUT_DIR / "train_task_bank.parquet")))
     p_train.add_argument("--model-dir", default=_env_any(("GRID_MODEL_DIR",), str(DEFAULT_OUTPUT_DIR / "model_export")))
@@ -857,6 +876,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         return cmd_env_check(args)
     if args.command == "make-parquet":
         return cmd_make_parquet(args)
+    if args.command == "verl-sft-rl-export":
+        return cmd_verl_sft_rl_export(args)
     if args.command == "train-export":
         return cmd_train_export(args)
     if args.command == "generate-kg":
