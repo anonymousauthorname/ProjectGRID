@@ -62,6 +62,18 @@ The examples below pass required files at startup. Host inputs are mounted at
 `/input`, outputs at `/workspace/grid/docker_output`, and local models at
 `/models`.
 
+### 0. Configuration Check
+
+Input: optional LLM endpoint, key, and model.
+
+```bash
+docker run --rm \
+  -e GRID_LLM_ENDPOINT="https://your-openai-compatible-endpoint/v1" \
+  -e GRID_LLM_KEY="..." \
+  -e GRID_LLM_MODEL="your-model" \
+  grid-artifact:latest check
+```
+
 ### 1. Training Data Generation
 
 Input: CTI article file. For CSV/Parquet, pass text/id column names when needed.
@@ -95,18 +107,6 @@ docker run --rm --gpus '"device=0,1"' --ipc=host --shm-size=16g \
 ### 3. Generation
 
 Input: article file plus LLM endpoint, key, and model.
-
-LLM input self-check:
-
-```bash
-docker run --rm \
-  -e GRID_LLM_ENDPOINT="https://your-openai-compatible-endpoint/v1" \
-  -e GRID_LLM_KEY="..." \
-  -e GRID_LLM_MODEL="your-model" \
-  grid-artifact:latest env-check
-```
-
-Run generation:
 
 ```bash
 docker run --rm \

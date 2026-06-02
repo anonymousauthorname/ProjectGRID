@@ -830,6 +830,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--llm-base-url", default=_env_any(("GRID_LLM_BASE_URL", "GRID_LLM_ENDPOINT", "OPENAI_BASE_URL"), ""))
 
     subparsers = parser.add_subparsers(dest="command", required=True)
+    subparsers.add_parser("check", help="Alias for env-check.")
     subparsers.add_parser("env-check", help="Print resolved Docker/runtime environment and LLM input status.")
 
     def add_input_flags(sub: argparse.ArgumentParser) -> None:
@@ -880,7 +881,7 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
-    if args.command == "env-check":
+    if args.command in {"check", "env-check"}:
         return cmd_env_check(args)
     if args.command == "make-parquet":
         return cmd_make_parquet(args)
